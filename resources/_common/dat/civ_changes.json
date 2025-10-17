@@ -1,0 +1,23 @@
+{
+    "changes":
+    [
+        {
+            "note": "阿萨辛刺客",
+            "civilizations": "Saracens",
+            "icon": 163,
+            "name": 700038
+        },
+        {
+            "note": "射击军",
+            "civilizations": "Slavs",
+            "icon": 22,
+            "name": 700039
+        },
+        {
+            "note": "赫雷苏维季战士",
+            "civilizations": "Georgians",
+            "icon": 162,
+            "name": 700040
+        }
+    ]
+}

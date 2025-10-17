@@ -1,0 +1,1071 @@
+{
+    "changes":
+    [
+        {
+            "note": "阿萨辛刺客",
+            "civilizations": "Saracens",
+            "unit_id": 4001,
+            "building_id": 12,
+            "Name": "Assassin",
+            "RequiredAge": 3
+        },
+        {
+            "note": "射击军",
+            "civilizations": "Slavs",
+            "unit_id": 4002,
+            "building_id": 87,
+            "Name": "Streltsy",
+            "RequiredAge": 4
+        },
+        {
+            "note": "赫雷苏维季战士",
+            "civilizations": "Georgians",
+            "unit_id": 4003,
+            "building_id": 12,
+            "Name": "Khevsureti Warrior",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐赫雷苏维季战士",
+            "civilizations": "Georgians",
+            "tech_id": 3007,
+            "building_id": 12,
+            "Name": "Elite Khevsureti Warrior",
+            "RequiredAge": 4
+        },
+        {
+            "note": "铁炮足轻",
+            "civilizations": "Japanese",
+            "unit_id": 4005,
+            "building_id": 87,
+            "Name": "Handcannon Ashigaru",
+            "RequiredAge": 4
+        },
+        {
+            "note": "弓足轻",
+            "civilizations": "Japanese",
+            "unit_id": 4006,
+            "building_id": 87,
+            "Name": "Yumi Ashigaru",
+            "RequiredAge": 2
+        },
+        {
+            "note": "老练弓足轻",
+            "civilizations": "Japanese",
+            "tech_id": 3009,
+            "building_id": 87,
+            "Name": "Veteran Yumi Ashigaru",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐弓足轻",
+            "civilizations": "Japanese",
+            "tech_id": 3010,
+            "building_id": 87,
+            "Name": "Elite Yumi Ashigaru",
+            "RequiredAge": 4
+        },
+        {
+            "note": "日本移除步弓手系和火枪手",
+            "civilizations": "Japanese",
+            "unit_id": [4, 5, 24, 492],
+            "type": "delete"
+        },
+        {
+            "note": "日本移除弩手和劲弩手科技",
+            "civilizations": "Japanese",
+            "tech_id": [100, 237],
+            "type": "delete"
+        },
+        {
+            "note": "木制要塞",
+            "civilizations": ["Goths", "Vikings", "Huns"],
+            "unit_id": 4009,
+            "building_id": 118,
+            "Name": "Wooden Fortress",
+            "RequiredAge": 2
+        },
+        {
+            "note": "哥特, 维京和匈奴移除箭塔系",
+            "civilizations": ["Goths", "Vikings", "Huns"],
+            "unit_id": [79, 234, 235],
+            "building_id": 118,
+            "type": "delete"
+        },
+        {
+            "note": "瓦兰吉卫队",
+            "civilizations": "Byzantines",
+            "unit_id": 4011,
+            "building_id": 12,
+            "Name": "Varangians",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐瓦兰吉卫队",
+            "civilizations": "Byzantines",
+            "tech_id": 3014,
+            "building_id": 12,
+            "Name": "Elite Varangians",
+            "RequiredAge": 4
+        },
+        {
+            "note": "西帕希骑兵",
+            "civilizations": "Turks",
+            "unit_id": 4014,
+            "building_id": 101,
+            "Name": "Sipahi",
+            "RequiredAge": 3,
+            "position": "after",
+            "target_id": 441
+        },
+        {
+            "note": "精锐西帕希骑兵",
+            "civilizations": "Turks",
+            "tech_id": 3015,
+            "building_id": 101,
+            "Name": "Elite Sipahi",
+            "RequiredAge": 4,
+            "position": "after",
+            "target_id": 428
+        },
+        {
+            "note": "土耳其移除骑士",
+            "civilizations": "Turks",
+            "unit_id": 38,
+            "building_id": 101,
+            "type": "delete"
+        },
+        {
+            "note": "土耳其移除重装骑士",
+            "civilizations": "Turks",
+            "unit_id": 283,
+            "building_id": 101,
+            "type": "delete"
+        },
+        {
+            "note": "土耳其移除重装骑士",
+            "civilizations": "Turks",
+            "tech_id": 209,
+            "building_id": 101,
+            "type": "delete"
+        },
+        {
+            "note": "坞堡",
+            "civilizations": ["Shu", "Wu", "Wei"],
+            "unit_id": 4016,
+            "building_id": 118,
+            "Name": "Wubao",
+            "RequiredAge": 2
+        },
+        {
+            "note": "坞堡",
+            "civilizations": ["Shu", "Wu", "Wei"],
+            "building_id" : 4016,
+            "Name": "Wubao",
+            "type": "add"
+        },
+        {
+            "note": "士族制",
+            "civilizations": ["Shu", "Wu", "Wei"],
+            "tech_id": 3022,
+            "building_id": 4016,
+            "Name": "Gentry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "雇佣军",
+            "civilizations": ["Shu", "Wu", "Wei"],
+            "tech_id": 3023,
+            "building_id": 4016,
+            "Name": "Mercenary",
+            "RequiredAge": 3
+        },
+        {
+            "note": "坚固防御",
+            "civilizations": ["Shu", "Wu", "Wei"],
+            "tech_id": 3024,
+            "building_id": 4016,
+            "Name": "Strong Fortress",
+            "RequiredAge": 3
+        },
+        {
+            "note": "早期骑射手",
+            "civilizations": "Huns",
+            "unit_id": 4017,
+            "building_id": 87,
+            "Name": "Early Cavalry Archer",
+            "RequiredAge": 2
+        },
+        {
+            "note": "安息骑射手",
+            "civilizations": "Persians",
+            "unit_id": 4020,
+            "building_id": 87,
+            "Name": "Parthian Cavalry Archer",
+            "RequiredAge": 2
+        },
+        {
+            "note": "精锐安息骑射手",
+            "civilizations": "Persians",
+            "tech_id": 3027,
+            "building_id": 87,
+            "Name": "Elite Parthian Cavalry Archer",
+            "RequiredAge": 3
+        },
+        {
+            "note": "波斯移除骑射手系",
+            "civilizations": "Persians",
+            "unit_id": [39, 474],
+            "building_id": 87,
+            "type": "delete"
+        },
+        {
+            "note": "波斯移除骑射手系",
+            "civilizations": "Persians",
+            "tech_id": [218],
+            "building_id": 87,
+            "type": "delete"
+        },
+        {
+            "note": "战车弓兵",
+            "civilizations": "Bohemians",
+            "unit_id": 4025,
+            "building_id": 87,
+            "RequiredAge": 3,
+            "Name": "Chariot Archer"
+        },
+        {
+            "note": "丛林斥候",
+            "civilizations": "Vietnamese",
+            "unit_id": 4027,
+            "building_id": 12,
+            "Name": "Rung Scout",
+            "RequiredAge": 3,
+            "position": "after",
+            "target_id": 359
+        },
+        {
+            "note": "精锐丛林斥候",
+            "civilizations": "Vietnamese",
+            "tech_id": 3031,
+            "building_id": 12,
+            "Name": "Elite Rung Scout",
+            "RequiredAge": 4,
+            "position": "after",
+            "target_id": 429
+        },
+        {
+            "note": "瑞士枪兵",
+            "civilizations": "Franks",
+            "unit_id": 4031,
+            "building_id": 12,
+            "Name": "Swiss Lancer",
+            "RequiredAge": 4,
+            "position":"after",
+            "target_id": 359
+        },
+        {
+            "note": "小艇",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "unit_id": 4032,
+            "building_id": 45,
+            "Name": "Lembos",
+            "RequiredAge": 2
+        },
+        {
+            "note": "阿兹特克, 玛雅和印加移除箭船系",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "unit_id": [21, 442, 539],
+            "building_id": 45,
+            "type": "delete"
+        },
+        {
+            "note": "阿兹特克, 玛雅和印加移除箭船系",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "tech_id": 35,
+            "building_id": 45,
+            "type": "delete"
+        },
+        {
+            "note": "签军骑兵",
+            "civilizations": "Jurchens",
+            "unit_id": 4033,
+            "Name": "Conscripted Cavalry",
+            "building_id": 109,
+            "RequiredAge": 2
+        },
+        {
+            "note": "骆驼长矛骑兵",
+            "civilizations": "Saracens",
+            "unit_id": 4034,
+            "Name": "Camel Lancer",
+            "building_id": 101,
+            "RequiredAge": 3,
+            "position": "after",
+            "target_id": 569
+        },
+        {
+            "note": "精锐骆驼长矛骑兵",
+            "civilizations": "Saracens",
+            "tech_id": 3036,
+            "Name": "Elite Camel Lancer",
+            "building_id": 101,
+            "RequiredAge": 4
+        },
+        {
+            "note": "萨拉森禁用骆驼兵",
+            "civilizations": "Saracens",
+            "unit_id": [329, 330],
+            "building_id": 101,
+            "type": "delete"
+        },
+        {
+            "note": "萨拉森禁用重装骆驼兵",
+            "civilizations": "Saracens",
+            "tech_id" : 236,
+            "building_id": 101,
+            "type": "delete"
+        },
+        {
+            "note": "骑马步兵",
+            "civilizations": "Britons",
+            "unit_id": 4036,
+            "building_id": 101,
+            "Name": "Hobelar",
+            "RequiredAge": 3,
+            "position": "after",
+            "target_id": 569
+        },
+        {
+            "note": "精锐骑马步兵",
+            "civilizations": "Britons",
+            "tech_id": 3037,
+            "Name": "Elite Hobelar",
+            "RequiredAge": 4
+        },
+        {
+            "note": "医院骑士",
+            "civilizations": "Hospitaller Knight",
+            "unit_id": 4038,
+            "Name": "Hospitaller Knight",
+            "RequiredAge": 3
+        },
+        {
+            "note": "十字军骑士",
+            "civilizations": "Teutons",
+            "unit_id": 4041,
+            "Name": "Crusader Knight",
+            "RequiredAge": 3
+        },
+        {
+            "note": "僧兵",
+            "civilizations": "Japanese",
+            "unit_id": 4042,
+            "building_id": 104,
+            "Name": "Sohei",
+            "RequiredAge": 3
+        },
+        {
+            "note": "僧兵",
+            "civilizations": "Japanese",
+            "unit_id": 4043,
+            "building_id": 109,
+            "Name": "Sohei",
+            "RequiredAge": 3
+        },
+        {
+            "note": "维京掠夺者",
+            "civilizations": "Vikings",
+            "unit_id": 4044,
+            "building_id": 12,
+            "Name": "Viking Raider",
+            "RequiredAge": 1
+        },
+        {
+            "note": "索法骑手",
+            "civilizations": "Malians",
+            "unit_id": 4045,
+            "building_id": 101,
+            "Name": "Sofa",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐索法骑手",
+            "civilizations": "Malians",
+            "tech_id": 3053,
+            "building_id": 101,
+            "Name": "Elite Sofa",
+            "RequiredAge": 4
+        },
+        {
+            "note": "猛火油柜",
+            "civilizations": "Chinese",
+            "unit_id": 4047,
+            "building_id": 39,
+            "Name": "Flame Thrower",
+            "RequiredAge": 3
+        },
+        {
+            "note": "塔博尔战士",
+            "civilizations": "Bohemians",
+            "unit_id": 4048,
+            "building_id": 109,
+            "Name": "Taborite Warrior",
+            "RequiredAge": 3
+        },
+        {
+            "note": "园艺学",
+            "civilizations": "all",
+            "tech_id": 3054,
+            "building_id": 68,
+            "Name": "Horticulture",
+            "RequiredAge": 2
+        },
+        {
+            "note": "施肥",
+            "civilizations": "all",
+            "tech_id": 3055,
+            "building_id": 68,
+            "Name": "Fertilization",
+            "RequiredAge": 3
+        },
+        {
+            "note": "育种",
+            "civilizations": "all",
+            "tech_id": 3056,
+            "building_id": 68,
+            "Name": "Breeding",
+            "RequiredAge": 4
+        },
+        {
+            "note": "经济作物",
+            "civilizations": "all",
+            "tech_id": 3057,
+            "building_id": 68,
+            "Name": "Cash Crop",
+            "RequiredAge": 3
+        },
+        {
+            "note": "契丹移除园艺学, 施肥, 育种, 经济作物",
+            "civilizations": "Khitans",
+            "tech_id": [3054, 3055, 3056, 3057],
+            "building_id": 68,
+            "type": "delete"
+        },
+        {
+            "note": "军事训练",
+            "civilizations": "all",
+            "tech_id": 3058,
+            "building_id": 103,
+            "Name": "Military Training",
+            "RequiredAge": 3
+        },
+        {
+            "note": "什一税",
+            "civilizations": "all",
+            "tech_id": 3059,
+            "building_id": 104,
+            "Name": "Tithe",
+            "RequiredAge": 4
+        },
+        {
+            "note": "马扎尔, 土耳其和匈奴启用草原枪兵",
+            "civilizations": ["Turks", "Huns", "Magyars"],
+            "unit_id": 1370,
+            "building_id": 101,
+            "Name": "Steppe Lancer",
+            "RequiredAge": 3
+        },
+        {
+            "note": "马扎尔和土耳其启用精锐草原枪兵",
+            "civilizations": ["Turks", "Magyars"],
+            "tech_id": 715,
+            "building_id": 101,
+            "Name": "Elite Steppe Lancer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "互市",
+            "civilizations": "Mongols",
+            "tech_id": 3061,
+            "building_id": 209,
+            "Name": "Mutual Trade",
+            "RequiredAge": 3
+        },
+        {
+            "note": "撒哈拉商道",
+            "civilizations": "Malians",
+            "tech_id": 3062,
+            "building_id": 209,
+            "Name": "Sahara Caravan Route",
+            "RequiredAge": 3
+        },
+        {
+            "note": "陶鲁斯伏击",
+            "civilizations": "Armenians",
+            "tech_id": 3063,
+            "building_id": 209,
+            "Name": "Taurus Ambush",
+            "RequiredAge": 4
+        },
+        {
+            "note": "大盾",
+            "civilizations": "Franks",
+            "tech_id": 3064,
+            "building_id": 209,
+            "Name": "Pavise",
+            "RequiredAge": 3
+        },
+        {
+            "note": "霹雳车",
+            "civilizations": "Wei",
+            "tech_id": 3065,
+            "building_id": 209,
+            "Name": "Thunderclap Cart",
+            "RequiredAge": 3
+        },
+        {
+            "note": "阿奴律陀运河",
+            "civilizations": "Burmese",
+            "tech_id": 3066,
+            "building_id": 209,
+            "Name": "Anawrahta's Canals",
+            "RequiredAge": 3
+        },
+        {
+            "note": "季风航行",
+            "civilizations": "Vietnamese",
+            "tech_id": 3067,
+            "building_id": 209,
+            "Name": "Monsoon Navigation",
+            "RequiredAge": 3
+        },
+        {
+            "note": "本愿寺一揆",
+            "civilizations": "Japanese",
+            "tech_id": 3068,
+            "building_id": 209,
+            "Name": "Hongan Ikki",
+            "RequiredAge": 3
+        },
+        {
+            "note": "翼骑兵冲锋",
+            "civilizations": "Poles",
+            "tech_id": 3071,
+            "building_id": 209,
+            "Name": "Winged Charge",
+            "RequiredAge": 4
+        },
+        {
+            "note": "前哨",
+            "civilizations": "Huns",
+            "tech_id": 3072,
+            "building_id": 209,
+            "Name": "Frontline Outpost",
+            "RequiredAge": 3
+        },
+        {
+            "note": "冰海霸权",
+            "civilizations": "Vikings",
+            "tech_id": 3073,
+            "building_id": 209,
+            "Name": "Frozen Sea Dominance",
+            "RequiredAge": 3
+        },
+        {
+            "note": "红海舰队",
+            "civilizations": "Saracens",
+            "tech_id": 3074,
+            "building_id": 209,
+            "Name": "Red Sea Fleet",
+            "RequiredAge": 4
+        },
+        {
+            "note": "沙漠护卫",
+            "civilizations": "Gurjaras",
+            "tech_id": 3075,
+            "building_id": 209,
+            "Name": "Desert Guard",
+            "RequiredAge": 3
+        },
+        {
+            "note": "徳夫希尔梅",
+            "civilizations": "Turks",
+            "tech_id": 3076,
+            "building_id": 209,
+            "Name": "Devsirme",
+            "RequiredAge": 4
+        },
+        {
+            "note": "教皇国",
+            "civilizations": "Italians",
+            "tech_id": 3077,
+            "building_id": 209,
+            "Name": "Papal State",
+            "RequiredAge": 3
+        },
+        {
+            "note": "城镇防御",
+            "civilizations": "all",
+            "tech_id": 3078,
+            "building_id": 109,
+            "Name": "Town Defense",
+            "RequiredAge": 4
+        },
+        {
+            "note": "免役税",
+            "civilizations": "Sicilians",
+            "tech_id": 3079,
+            "building_id": 209,
+            "Name": "Scutage",
+            "RequiredAge": 3
+        },
+        {
+            "note": "可汗征召",
+            "civilizations": "Tatars",
+            "tech_id": 3080,
+            "building_id": 209,
+            "Name": "Khan's Conscription",
+            "RequiredAge": 4
+        },
+        {
+            "note": "鸣镝箭",
+            "civilizations": "Huns",
+            "tech_id": 3081,
+            "building_id": 209,
+            "Name": "Whistling Arrow",
+            "RequiredAge": 4
+        },
+        {
+            "note": "鳕鱼贸易",
+            "civilizations": "Vikings",
+            "tech_id": 3082,
+            "building_id": 209,
+            "Name": "Stockfish Trade",
+            "RequiredAge": 4
+        },
+        {
+            "note": "羁縻",
+            "civilizations": "Chinese",
+            "tech_id": 3084,
+            "building_id": 209,
+            "Name": "Jimi",
+            "RequiredAge": 4
+        },
+        {
+            "note": "塔博尔派",
+            "civilizations": "Bohemians",
+            "tech_id": 3085,
+            "building_id": 209,
+            "Name": "Taborites",
+            "RequiredAge": 3
+        },
+        {
+            "note": "圈地",
+            "civilizations": "Britons",
+            "tech_id": 3086,
+            "building_id": 209,
+            "Name": "Enclosure",
+            "RequiredAge": 4
+        },
+        {
+            "note": "苏福塔亚",
+            "civilizations": "Saracens",
+            "tech_id": 3090,
+            "building_id": 209,
+            "Name": "Suftaja",
+            "RequiredAge": 3
+        },
+        {
+            "note": "城堡网络",
+            "civilizations": "Britons",
+            "tech_id": 3091,
+            "building_id": 209,
+            "Name": "Castle Network",
+            "RequiredAge": 3
+        },
+        {
+            "note": "考纳斯城堡",
+            "civilizations": "Lithuanians",
+            "tech_id": 3092,
+            "building_id": 209,
+            "Name": "Kaunus Castle",
+            "RequiredAge": 3
+        },
+        {
+            "note": "打草谷",
+            "civilizations": "Khitans",
+            "tech_id": 3093,
+            "building_id": 209,
+            "Name": "Dacaogu",
+            "RequiredAge": 4
+        },
+        {
+            "note": "祭祀仪式",
+            "civilizations": "Aztecs",
+            "tech_id": 3094,
+            "building_id": 209,
+            "Name": "Ixiplta",
+            "RequiredAge": 4
+        },
+        {
+            "note": "黑曜石之箭",
+            "civilizations": "Mayans",
+            "tech_id": 3095,
+            "building_id": 209,
+            "Name": "Obsidian Arrow",
+            "RequiredAge": 3
+        },
+        {
+            "note": "变法",
+            "civilizations": "Chinese",
+            "tech_id": 3096,
+            "building_id": 209,
+            "Name": "Political Reform",
+            "RequiredAge": 3
+        },
+        {
+            "note": "东正教",
+            "civilizations": "Slavs",
+            "tech_id": 3097,
+            "building_id": 209,
+            "Name": "Orthodoxy",
+            "RequiredAge": 4
+        },
+        {
+            "note": "攻城术",
+            "civilizations": "Shu",
+            "tech_id": 3098,
+            "building_id": 209,
+            "Name": "Siege Technique",
+            "RequiredAge": 4
+        },
+        {
+            "note": "购买圣物",
+            "civilizations": "Italians",
+            "tech_id": 3099,
+            "building_id": 104,
+            "Name": "Purchase Relic",
+            "RequiredAge": 3
+        },
+        {
+            "note": "圣坛",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "unit_id": 4049,
+            "building_id": 118,
+            "Name": "Shrine",
+            "RequiredAge": 2
+        },
+        {
+            "note": "圣坛",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "building_id" : 4049,
+            "Name": "Shrine",
+            "type": "add"
+        },
+        {
+            "note": "切换到训练民兵系",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "tech_id": 3100,
+            "building_id": 4049,
+            "Name": "Switch to training Militia Line",
+            "RequiredAge": 2
+        },
+        {
+            "note": "切换到训练长矛兵系",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "tech_id": 3101,
+            "building_id": 4049,
+            "Name": "Switch to training Spearman Line",
+            "RequiredAge": 2
+        },
+        {
+            "note": "切换到训练鹰斥候系",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "tech_id": 3102,
+            "building_id": 4049,
+            "Name": "Switch to training Eagle Scout Line",
+            "RequiredAge": 2
+        },
+        {
+            "note": "切换到训练步弓手系",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "tech_id": 3103,
+            "building_id": 4049,
+            "Name": "Switch to training Archer Line",
+            "RequiredAge": 2
+        },
+        {
+            "note": "切换到训练掷矛手系",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "tech_id": 3104,
+            "building_id": 4049,
+            "Name": "Switch to training Skirmisher Line",
+            "RequiredAge": 2
+        },
+        {
+            "note": "切换到训练豹勇士",
+            "civilizations": "Aztecs",
+            "tech_id": 3118,
+            "building_id": 4049,
+            "Name": "Switch to training Jaguar Warrior",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练羽箭手",
+            "civilizations": "Mayans",
+            "tech_id": 3119,
+            "building_id": 4049,
+            "Name": "Switch to training Plumed Archer",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练投石手",
+            "civilizations": "Incas",
+            "tech_id": 3105,
+            "building_id": 4049,
+            "Name": "Switch to training Slinger",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练印加枪兵长",
+            "civilizations": "Incas",
+            "tech_id": 3106,
+            "building_id": 4049,
+            "Name": "Switch to training Kamayuk",
+            "RequiredAge": 3
+        },
+        {
+            "note": "掠夺号角",
+            "civilizations": "Tatars",
+            "tech_id": 3111,
+            "building_id": 209,
+            "Name": "Raide Horn",
+            "RequiredAge": 3
+        },
+        {
+            "note": "浮动园地",
+            "civilizations": "Aztecs",
+            "tech_id": 3112,
+            "building_id": 209,
+            "Name": "Floating Garden",
+            "RequiredAge": 3
+        },
+        {
+            "note": "玉米神祝福",
+            "civilizations": "Mayans",
+            "tech_id": 3113,
+            "building_id": 209,
+            "Name": "Yum Kaax's Blessing",
+            "RequiredAge": 4
+        },
+        {
+            "note": "佣兵合同",
+            "civilizations": "Italians",
+            "tech_id": 3114,
+            "building_id": 209,
+            "Name": "Mercenary Contract",
+            "RequiredAge": 3
+        },
+        {
+            "note": "高级佣兵合同",
+            "civilizations": "Italians",
+            "tech_id": 3115,
+            "building_id": 209,
+            "Name": "Elite Mercenary Contract",
+            "RequiredAge": 4
+        },
+        {
+            "note": "火长矛骑兵",
+            "civilizations": "Chinese",
+            "tech_id": 3026,
+            "building_id": 101,
+            "Name": "Fire Lancer Cavalry",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用火枪手",
+            "civilizations": "Chinese",
+            "unit_id": 5,
+            "building_id": 87,
+            "Name": "Hand Cannoneer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用手推炮",
+            "civilizations": "Chinese",
+            "unit_id": 36,
+            "building_id": 39,
+            "Name": "Bombard Cannon",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用炮舰",
+            "civilizations": "Chinese",
+            "unit_id": 420,
+            "building_id": 45,
+            "Name": "Cannon Galleon",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用精锐炮舰",
+            "civilizations": "Chinese",
+            "tech_id": 376,
+            "building_id": 45,
+            "Name": "Elite Cannon Galleon",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用轮作",
+            "civilizations": "Chinese",
+            "tech_id": 12,
+            "building_id": 68,
+            "Name": "Crop Rotation",
+            "RequiredAge": 4
+        },
+        {
+            "note": "拜占庭启用石匠",
+            "civilizations": "Byzantines",
+            "tech_id": 50,
+            "building_id": 209,
+            "Name": "Masonry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "拜占庭启用建筑学",
+            "civilizations": "Byzantines",
+            "tech_id": 51,
+            "building_id": 209,
+            "Name": "Architecture",
+            "RequiredAge": 4
+        },
+        {
+            "note": "越南移除重装骑射手",
+            "civilizations": "Vietnamese",
+            "unit_id": 474,
+            "type": "delete"
+        },
+        {
+            "note": "越南移除重装骑射手",
+            "civilizations": "Vietnamese",
+            "tech_id": 218,
+            "type": "delete"
+        },
+        {
+            "note": "象阵",
+            "civilizations": "Vietnamese",
+            "tech_id": 3124,
+            "building_id": 209,
+            "Name": "Elephant Formation",
+            "RequiredAge": 4
+        },
+        {
+            "note": "信使",
+            "civilizations": "Incas",
+            "tech_id": 3125,
+            "building_id": 209,
+            "Name": "Couriers",
+            "RequiredAge": 3
+        },
+        {
+            "note": "奇普",
+            "civilizations": "Incas",
+            "tech_id": 3126,
+            "building_id": 209,
+            "Name": "Quipu",
+            "RequiredAge": 4
+        },
+        {
+            "note": "切换到训练索洛托勇士",
+            "civilizations": "Incas",
+            "tech_id": 3127,
+            "building_id": 4049,
+            "Name": "Switch to training Xolotl Warrior",
+            "RequiredAge": 3
+        },
+        {
+            "note": "缅甸启用火枪手",
+            "civilizations": "Burmese",
+            "unit_id": 5,
+            "building_id": 87,
+            "Name": "Hand Cannoneer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "金玺诏书",
+            "civilizations": "Teutons",
+            "tech_id": 3130,
+            "building_id": 209,
+            "Name": "Die Goldene Bulle",
+            "RequiredAge": 4
+        },
+        {
+            "note": "使徒",
+            "civilizations": "Armenians",
+            "tech_id": 3131,
+            "building_id": 209,
+            "Name": "Apostle",
+            "RequiredAge": 3
+        },
+        {
+            "note": "静修士",
+            "civilizations": "Bulgarians",
+            "tech_id": 3132,
+            "building_id": 209,
+            "Name": "Hesychast",
+            "RequiredAge": 3
+        },
+        {
+            "note": "库曼启用畜牧",
+            "civilizations": "Cumans",
+            "tech_id": 39,
+            "building_id": 101,
+            "Name": "Husbandry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "维利奇卡盐矿",
+            "civilizations": "Poles",
+            "tech_id": 3133,
+            "building_id": 209,
+            "Name": "Kopalnia Soli Wieliczka",
+            "RequiredAge": 3
+        },
+        {
+            "note": "游击战术",
+            "civilizations": "Spanish",
+            "tech_id": 3134,
+            "building_id": 209,
+            "Name": "Jinete Tactics",
+            "RequiredAge": 4
+        },
+        {
+            "note": "西班牙标枪骑兵",
+            "civilizations": "Spanish",
+            "unit_id" : 1010,
+            "building_id": 87,
+            "RequiredAge": 2
+        },
+        {
+            "note": "葡萄牙标枪骑兵",
+            "civilizations": "Portuguese",
+            "unit_id" : 1010,
+            "building_id": 87,
+            "RequiredAge": 3
+        },
+        {
+            "note": "西班牙精锐标枪骑兵",
+            "civilizations": "Spanish",
+            "tech_id" : 599,
+            "building_id": 87,
+            "RequiredAge": 3
+        },
+        {
+            "note": "葡萄牙精锐标枪骑兵",
+            "civilizations": "Portuguese",
+            "tech_id": 599,
+            "building_id": 87,
+            "RequiredAge": 4
+        }
+    ]
+}
