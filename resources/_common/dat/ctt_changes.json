@@ -2232,7 +2232,7 @@
         },
         {
             "action": "modify",
-            "civ_id": "ARMENIANS",
+            "civ_id": ["ARMENIANS", "GEORGIANS"],
             "Node ID": 3059,
             "Use Type": "Tech",
             "Building ID": 1806
@@ -2385,6 +2385,13 @@
             "Node ID": 436,
             "Use Type": "Tech",
             "Link ID": 437
+        },
+        {
+            "action": "modify",
+            "civ_id": "POLES",
+            "Node ID": [3054, 3055, 3056, 3057],
+            "Use Type": "Tech",
+            "Building ID": 1734
         }
     ]
 }

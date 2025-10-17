@@ -96,18 +96,10 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cDisableTech, 192, 0, 0, playerId);
             xsEffectAmount(cDisableTech, 218, 0, 0, playerId);
             //  波斯文明加成, 市场科技免费升级
-            xsEffectAmount(cModifyTech, 48, cAttrSetFoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 48, cAttrSetGoldCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 48, cAttrSetTime, 0, playerId);
-            xsEffectAmount(cModifyTech, 23, cAttrSetFoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 23, cAttrSetGoldCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 23, cAttrSetTime, 0, playerId);
-            xsEffectAmount(cModifyTech, 17, cAttrSetFoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 17, cAttrSetGoldCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 17, cAttrSetTime, 0, playerId);
-            xsEffectAmount(cModifyTech, 15, cAttrSetFoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 15, cAttrSetWoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 15, cAttrSetTime, 0, playerId);
+            SetTechAuto(playerId, 48);
+            SetTechAuto(playerId, 23);
+            SetTechAuto(playerId, 17);
+            SetTechAuto(playerId, 15);
         }
         case cSaracens:
         {
@@ -128,6 +120,11 @@ void EffectFunction10002(int playerId = -1)
         case cVikings:
         {
             xsEffectAmount(cDisableTech, 127, 0, 0, playerId);
+        }
+        case cMongols:
+        {
+            //  蒙古文明加成, 骑兵攻击建筑产生黄金
+            SetResource(playerId, cAttributeMaintenance, 10003);
         }
         case cCelts:
         {
@@ -307,6 +304,7 @@ void EffectFunction10002(int playerId = -1)
         }
         case cCumans:
         {
+            //  禁用原有的库曼城堡时代和帝王时代移动速度科技
             xsEffectAmount(cDisableTech, 727, 0, 0, playerId);
             xsEffectAmount(cDisableTech, 728, 0, 0, playerId);
             //  库曼文明加成, 骑兵相关科技 +200% 研究速度

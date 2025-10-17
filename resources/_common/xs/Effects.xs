@@ -968,6 +968,7 @@ void EffectFunction10003(int playerId = -1)
     CavalryGenerateGoldFromBuilding(cScoutCavalryClass);
     CavalryGenerateGoldFromBuilding(cCavalryClass);
     xsResetTaskAmount();
+    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 10);
 }
 
 
@@ -1091,30 +1092,27 @@ void EffectFunction10006(int playerId = -1)
 }
 
 
-// 10007 - Frontline Outpost
+// 10007 - 前哨
 void EffectFunction10007(int playerId = -1)
 {
-    int WoodenFortressId = 2510;
-
-    xsEffectAmount(cAddAttribute, WoodenFortressId, cCombatAbility, 32, playerId);
-
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 1.1);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 8);
+    xsTaskAmount(cTaskAttrWorkRange, 9);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrSearchWaitTime, 5);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 7);
 
-    xsTask(WoodenFortressId, cTaskTypeAura, cArcherClass, playerId);
-    xsTask(WoodenFortressId, cTaskTypeAura, cInfantryClass, playerId);
-    xsTask(WoodenFortressId, cTaskTypeAura, cCavalryClass, playerId);
-    xsTask(WoodenFortressId, cTaskTypeAura, cConquistadorClass, playerId);
-    xsTask(WoodenFortressId, cTaskTypeAura, cPetardClass, playerId);
-    xsTask(WoodenFortressId, cTaskTypeAura, cCavalryArcherClass, playerId);
-    xsTask(WoodenFortressId, cTaskTypeAura, cHandCannoneerClass, playerId);
-    xsTask(WoodenFortressId, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cConquistadorClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cPetardClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cHandCannoneerClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cScoutCavalryClass, playerId);
     xsResetTaskAmount();
+    LaunchAura(playerId, WoodenFortressID);
 }
 
 
@@ -1147,7 +1145,7 @@ void EffectFunction10008(int playerId = -1)
 }
 
 
-// 10009 - Strong Fortress
+// 10009 - 坚固防御
 void EffectFunction10009(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -1812,15 +1810,6 @@ void TimerEvent(int Time = 0, int playerId = -1)
     HospitallerKnight(Time, playerId);
     Shrine(Time, playerId);
     SetAttribute(playerId, 4050, cRegenerationHpPercent, -0.5);
-    if (Time > 0)
-        return;
-    int Units = NewArrayInt();
-    xsChatData("Player Unit Count: ");
-    Units = xsGetPlayerUnitIds(playerId, cTreeClass, Units);
-    xsChatData("Player " + playerId + " Trees: " + xsArrayGetSize(Units));
-    Units = xsGetPlayerUnitIds(playerId, cGoldMine, Units);
-    xsChatData("GoldMine " + playerId + " GoldMine: " + xsArrayGetSize(Units));
-    RecycleArrayInt(Units);
 }
 
 
