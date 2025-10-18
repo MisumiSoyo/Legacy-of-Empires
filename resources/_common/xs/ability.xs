@@ -71,16 +71,22 @@ void KillEffect(int KillerPlayer = -1, int UnitID = -1, int TargetPlayer = -1, i
     switch (KillerCiv)
     {
         case cAztecs:
+        {
             AztecsKillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
+            break;
+        }
         case cKhitans:
+        {
             KhitansKillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
+            break;
+        }
         default:
             break;
     }
 }
 
 
-//  阿萨辛刺客, 冲锋技能, 攻击 1 次即死亡
+//  阿萨辛, 冲锋技能, 攻击 1 次即死亡
 void AssassinInit(int playerId = -1)
 {
     xsResetTaskAmount();

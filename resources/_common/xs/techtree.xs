@@ -12,6 +12,7 @@ void EffectFunction10001(int playerId = -1)
         {
             //  启用手推炮
             xsEffectAmount(cModifyTech, 188, cAttrSetState, cAttributeEnable, playerId);
+            break;
         }
         case cChinese:
         {
@@ -20,11 +21,13 @@ void EffectFunction10001(int playerId = -1)
             xsEffectAmount(cModifyTech, 85, cAttrSetState, cAttributeEnable, playerId); //  启用火枪手
             xsEffectAmount(cModifyTech, 188, cAttrSetState, cAttributeEnable, playerId);    //  启用手推炮
             xsEffectAmount(cModifyTech, 376, cAttrSetState, cAttributeEnable, playerId);    //  启用精锐炮舰
+            break;
         }
         case cByzantines:
         {
             xsEffectAmount(cModifyTech, 50, cAttrSetState, cAttributeEnable, playerId); //启用石匠
             xsEffectAmount(cModifyTech, 51, cAttrSetState, cAttributeEnable, playerId); //启用建筑学
+            break;
         }
         case cTurks:
         {
@@ -34,21 +37,35 @@ void EffectFunction10001(int playerId = -1)
             //  精锐草原枪兵和重装骆驼兵 -33% 升级费用
             xsEffectAmount(cModifyTech, 715, cAttrMulAllCosts, 0.666666, playerId);
             xsEffectAmount(cModifyTech, 236, cAttrMulAllCosts, 0.666666, playerId);
+            break;
         }
         case cHuns:
+        {
             xsEffectAmount(cModifyTech, 714, cAttrSetState, cAttributeEnable, playerId);    //启用草原枪兵
+            break;
+        }
         case cMagyars:
         {
             //  启用草原枪兵
             xsEffectAmount(cModifyTech, 714, cAttrSetState, cAttributeEnable, playerId);
             xsEffectAmount(cModifyTech, 715, cAttrSetState, cAttributeEnable, playerId);
+            break;
         }
         case cBurmese:
+        {
             xsEffectAmount(cModifyTech, 85, cAttrSetState, cAttributeEnable, playerId); //启用火枪手
+            break;
+        }
         case cBulgarians:
+        {
             xsEffectAmount(cModifyTech, 264, cAttrSetState, cAttributeEnable, playerId);    //启用冠军剑士
+            break;
+        }
         case cCumans:
+        {
             xsEffectAmount(cModifyTech, 39, cAttrSetState, cAttributeEnable, playerId); //  启用畜牧
+            break;
+        }
         default:
         {
           break;
@@ -65,13 +82,17 @@ void EffectFunction10002(int playerId = -1)
     switch (playerCiv)
     {
         case cGoths:
+        {
             xsEffectAmount(cDisableTech, 127, 0, 0, playerId);  //禁用瞭望箭塔
+            break;
+        }
         case cJapanese:
         {
             xsEffectAmount(cDisableTech, 85, 0, 0, playerId);   //禁用火枪手
             xsEffectAmount(cDisableTech, 100, 0, 0, playerId);
             xsEffectAmount(cDisableTech, 151, 0, 0, playerId);
             xsEffectAmount(cDisableTech, 237, 0, 0, playerId);
+            break;
         }
         case cChinese:
         {
@@ -80,12 +101,14 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cMulAttribute, cTradeCartClass, cTrainTime, 0.66666666, playerId);
             //  中国文明加成, 科技折扣
             xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.05, playerId);
+            break;
         }
         case cByzantines:
         {
             //  拜占庭文明加成, 异教免费升级
             xsEffectAmount(cModifyTech, 439, cAttrMulAllCosts, 0, playerId);
             xsEffectAmount(cModifyTech, 439, cAttrSetTime, 0, playerId);
+            break;
         }
         case cPersians:
         {
@@ -96,6 +119,7 @@ void EffectFunction10002(int playerId = -1)
             SetTechAuto(playerId, 23);
             SetTechAuto(playerId, 17);
             SetTechAuto(playerId, 15);
+            break;
         }
         case cSaracens:
         {
@@ -104,6 +128,7 @@ void EffectFunction10002(int playerId = -1)
             //  萨拉森文明加成 + 骆驼长矛骑兵
             xsEffectAmount(cMulAttribute, CamelLancerID, cHitpoints, 1.25, playerId);
             xsEffectAmount(cMulAttribute, EliteCamelLancerID, cHitpoints, 1.25, playerId);
+            break;
         }
         case cTurks:
         {
@@ -116,11 +141,13 @@ void EffectFunction10002(int playerId = -1)
         case cVikings:
         {
             xsEffectAmount(cDisableTech, 127, 0, 0, playerId);
+            break;
         }
         case cMongols:
         {
             //  蒙古文明加成, 骑兵攻击建筑产生黄金
             SetResource(playerId, cAttributeMaintenance, 10003);
+            break;
         }
         case cCelts:
         {
@@ -129,6 +156,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cAddAttribute, cInfantryClass, cMinConversionTimeMod, 1, playerId);
             xsEffectAmount(cAddAttribute, cCavalryClass, cMaxConversionTimeMod, 1, playerId);
             xsEffectAmount(cAddAttribute, cCavalryClass, cMinConversionTimeMod, 1, playerId);
+            break;
         }
         case cSpanish:
         {
@@ -138,6 +166,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 599, cAttrSetHotkey, 18022, playerId);
             //  西班牙文明加成, 标枪骑兵升级食物费用 -50%
             xsEffectAmount(cModifyTech, 599, cAttrMulFoodCost, 0.5, playerId);
+            break;
         }
         case cAztecs:
         {
@@ -145,6 +174,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cDisableTech, 35, 0, 0, playerId);
             //  小艇
             xsEffectAmount(cEnableObject, LembosID, 1, 0, playerId);
+            break;
         }
         case cMayans:
         {
@@ -163,9 +193,13 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cMulAttribute, 50, cWoodCost, 0.4, playerId);
             //  小艇
             xsEffectAmount(cEnableObject, LembosID, 1, 0, playerId);
+            break;
         }
         case cHuns:
+        {
             xsEffectAmount(cDisableTech, 127, 0, 0, playerId);
+            break;
+        }
         case cIndians:
         {
             //  印度斯坦文明加成, 大学科技免费, 但研究速度 -50%
@@ -195,6 +229,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 140, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, 63, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, 608, cAttrMulTime, 2, playerId);
+            break;
         }
         case cIncas:
         {
@@ -217,6 +252,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cMulAttribute, 150, cTrainTime, 0.5, playerId);
             //  小艇
             xsEffectAmount(cEnableObject, LembosID, 1, 0, playerId);
+            break;
         }
         case cMagyars:
         {
@@ -249,6 +285,7 @@ void EffectFunction10002(int playerId = -1)
             FasterCastleUnits(playerId, 569, 32, 18039);
             FasterCastleUnits(playerId, 1370, 33, 18258);
             FasterCastleUnits(playerId, 1372, 33, 18258);
+            break;
         }
         case cPortuguese:
         {
@@ -259,26 +296,31 @@ void EffectFunction10002(int playerId = -1)
             //  葡萄牙文明加成, 标枪骑兵 +2 射手护甲
             xsEffectAmount(cAddAttribute, 1010, cArmor, 15 * 256 + 2, playerId);
             xsEffectAmount(cAddAttribute, 1012, cArmor, 15 * 256 + 2, playerId);
+            break;
         }
         case cEthiopians:
         {
             //  埃塞俄比亚文明加成, 长矛兵和弯刀勇士破甲
             SetAttribute(playerId, cAttributeMaintenance, 10014);
+            break;
         }
         case cMalians:
         {
             //  马里文明加成, 火枪手 +66% 训练速度
             xsEffectAmount(cMulAttribute, cHandCannoneerClass, cTrainTime, 0.6, playerId);
+            break;
         }
         case cKhmer:
         {
             //  高棉文明加成, 僧侣加成象兵
             SetResource(playerId, cAttributeMaintenance, 10012);
+            break;
         }
         case cBurmese:
         {
             //  缅甸启用火枪手
             EnableTech(playerId, 85);
+            break;
         }
         case cVietnamese:
         {
@@ -292,11 +334,13 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 3056, cAttrSetWoodCost, 0, playerId);
             xsEffectAmount(cModifyTech, 3057, cAttrMulTime, 0.5, playerId);
             xsEffectAmount(cModifyTech, 3057, cAttrSetWoodCost, 0, playerId);
+            break;
         }
         case cBulgarians:
         {
             //  保加利亚文明加成 + 军事训练
             xsEffectAmount(cModifyTech, 1810, cAttrMulFoodCost, 0.5, playerId);
+            break;
         }
         case cCumans:
         {
@@ -329,6 +373,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModResource, cAttributeHunterFoodProductivity, 0, 41, playerId);
             xsEffectAmount(cMulResource, cAttributeHuntingProductivity, 0, 0.0000000000000001, playerId);
             xsEffectAmount(cModResource, cAttributeMaintenance, 0, 10008, playerId);
+            break;
         }
         case cLithuanians:
         {
@@ -339,6 +384,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 98, cAttrMulAllCosts, 0.5, playerId);
             xsEffectAmount(cModifyTech, 655, cAttrMulAllCosts, 0.5, playerId);
             xsEffectAmount(cModifyTech, 599, cAttrMulAllCosts, 0.5, playerId);
+            break;
         }
         case cBurgundians:
         {
@@ -351,6 +397,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 3055, cAttrMulFoodCost, 0.66666667, playerId);
             xsEffectAmount(cModifyTech, 3056, cAttrMulFoodCost, 0.66666667, playerId);
             xsEffectAmount(cModifyTech, 3057, cAttrMulFoodCost, 0.66666667, playerId);
+            break;
         }
         case cGurjaras:
         {
@@ -359,18 +406,21 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cAddAttribute, 31, cAmountFirstStorage, 10, playerId);
             xsEffectAmount(cAddAttribute, 32, cAmountFirstStorage, 10, playerId);
             xsEffectAmount(cAddAttribute, 104, cAmountFirstStorage, 10, playerId);
+            break;
         }
         case cRomans:
         {
             //  罗马文明加成, 城墙和城门 +100% 建造速度
             xsEffectAmount(cMulAttribute, cWallClass, cTrainTime, 0.5, playerId);
             xsEffectAmount(cMulAttribute, cGateClass, cTrainTime, 0.5, playerId);
+            break;
         }
         case cGeorgians:
         {
             //  格鲁吉亚文明加成, 村民 +100% 修理速度
             xsEffectAmount(cMulAttribute, 156, cWorkRate, 2, playerId);
             xsEffectAmount(cMulAttribute, 222, cWorkRate, 2, playerId);
+            break;
         }
         case cShu:
         {
@@ -379,22 +429,26 @@ void EffectFunction10002(int playerId = -1)
             //  蜀文明加成, 步兵从农田掠夺食物
             xsEffectAmount(cModResource, cAttributeInfantryLootFarmFoodProductivity, 0, 25, playerId);
             xsEffectAmount(cModResource, cAttributeMaintenance, 0, 10010, playerId);
+            break;
         }
         case cWu:
         {
             //  启用坞堡
             SetTechAuto(playerId, 3016);
+            break;
         }
         case cWei:
         {
             //  启用坞堡
             SetTechAuto(playerId, 3016);
+            break;
         }
         case cJurchens:
         {
             //  女真文明加成, TC产鹿
             SetAttribute(playerId, 890, cDeadUnitId, InvisibleDeerSpawnerID);
             SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.3333333);
+            break;
         }
         case cKhitans:
         {
@@ -402,6 +456,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 3055, cAttrSetState, cAttributeDisable, playerId);  //禁用施肥
             xsEffectAmount(cModifyTech, 3056, cAttrSetState, cAttributeDisable, playerId);  //禁用育种
             xsEffectAmount(cDisableTech, 3057, 0, 0, playerId); //禁用经济作物
+            break;
         }
         default:
             break;
@@ -465,6 +520,7 @@ void EffectFunction10024(int playerId = -1)
             //  哥特文明加成, 封建和城堡时代也增加人口上限和人口空间
             xsEffectAmount(cModResource, cAttributePopulationCap, 1, 10, playerId);
             xsEffectAmount(cModResource, cAttributeUnitLimit, 1, 10, playerId);
+            break;
         }
         case cTeutons:
         {
@@ -478,16 +534,19 @@ void EffectFunction10024(int playerId = -1)
             xsEffectAmount(cAddAttribute, 1155, cMaxRange, 1, playerId);
             xsEffectAmount(cAddAttribute, 1155, cLineOfSight, 1, playerId);
             xsEffectAmount(cAddAttribute, 1155, cSearchRadius, 1, playerId);
+            break;
         }
         case cJapanese:
         {
             //  启用弓足轻
             xsEffectAmount(cEnableObject, YumiAshigaruID, 1, 0, playerId);
+            break;
         }
         case cChinese:
         {
             //  中国文明加成, 科技折扣
             xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.9, playerId);
+            break;
         }
         case cByzantines:
         {
@@ -497,6 +556,7 @@ void EffectFunction10024(int playerId = -1)
             MulAttribute(playerId, cGateClass, cHitpoints, 1.15 / 1.19999);
             MulAttribute(playerId, cFarmClass, cHitpoints, 1.15 / 1.19999);
             MulAttribute(playerId, cTowerClass, cHitpoints, 1.15 / 1.19999);
+            break;
         }
         case cPersians:
         {
@@ -504,59 +564,75 @@ void EffectFunction10024(int playerId = -1)
             xsEffectAmount(cEnableObject, ParthianCavalryArcherID, 1, 0, playerId);
             xsEffectAmount(cSetAttribute, InvisiblePCAID, cRegenerationHpPercent, -30, playerId);
             xsEffectAmount(cSetAttribute, InvisibleEPCAID, cRegenerationHpPercent, -30, playerId);
+            break;
         }
         case cVikings:
+        {
             xsEffectAmount(cEnableObject, WoodenFortressID, 1, 0, playerId);    //木制要塞
+            break;
+        }
         case cSpanish:
         {
             //  西班牙文明加成, 标枪骑兵和精锐标枪骑兵提前一个时代
             ForceResearchTech(playerId, 601);
+            break;
         }
         case cAztecs:
         {
             //  启用圣坛
             xsEffectAmount(cSetAttribute, ShrineID, cAvailableFlag, 1, playerId);
             xsEffectAmount(cSetAttribute, ShrineID, cDisabledFlag, 4, playerId);
+            break;
         }
         case cMayans:
         {
             //  启用圣坛
             xsEffectAmount(cSetAttribute, ShrineID, cAvailableFlag, 1, playerId);
             xsEffectAmount(cSetAttribute, ShrineID, cDisabledFlag, 4, playerId);
+            break;
         }
         case cHuns:
         {
             xsEffectAmount(cEnableObject, EarlyCavalryArcherID, 1, 0, playerId);    //  早期骑射手
             xsEffectAmount(cEnableObject, WoodenFortressID, 1, 0, playerId);    //木制要塞
+            break;
         }
         case cIncas:
         {
             //  启用圣坛
             xsEffectAmount(cSetAttribute, ShrineID, cAvailableFlag, 1, playerId);
             xsEffectAmount(cSetAttribute, ShrineID, cDisabledFlag, 4, playerId);
+            break;
         }
         case cBurgundians:
+        {
             xsEffectAmount(cEnableObject, 38, 1, 0, playerId);  //  启用骑士
+            break;
+        }
         case cPoles:
         {
             //  波兰文明加成, 轻骑兵可提前一个时代升级
             ForceEnableTech(playerId, 254);
+            break;
         }
         case cRomans:
         {
             //  罗马文明加成, 封建修道院和僧侣
             xsEffectAmount(cEnableObject, 104, 1, 0, playerId);
             xsEffectAmount(cEnableObject, 125, 1, 0, playerId);
+            break;
         }
         case cWu:
         {
             //  吴文明加成, 坞堡产出黄金
             xsEffectAmount(cModResource, cAttributeWubaoGoldProductivity, 0, 10, playerId);
+            break;
         }
         case cWei:
         {
             //  魏文明加成, 坞堡建造上限增加
             xsEffectAmount(cAddAttribute, WubaoID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cJurchens:
         {
@@ -564,6 +640,7 @@ void EffectFunction10024(int playerId = -1)
             xsEffectAmount(cEnableObject, ConscriptedCavalryID, 1, 0, playerId);
             //  女真文明加成, TC产鹿
             SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.4);
+            break;
         }
         default:
             break;
@@ -587,12 +664,14 @@ void EffectFunction10025(int playerId = -1)
         {
             //  启用骑马步兵
             xsEffectAmount(cEnableObject, HobelarID, 1, 0, playerId);
+            break;
         }
         case cGoths:
         {
             //  哥特文明加成, 封建和城堡时代也增加人口上限和人口空间
             xsEffectAmount(cModResource, cAttributePopulationCap, 1, 5, playerId);
             xsEffectAmount(cModResource, cAttributeUnitLimit, 1, 5, playerId);
+            break;
         }
         case cTeutons:
         {
@@ -610,11 +689,13 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cEnableObject, CrusaderKnightID, 1, 0, playerId);
             //  条顿文明加成 + 十字军骑士
             xsEffectAmount(cAddAttribute, CrusaderKnightID, cArmor, 4 * 256 + 1, playerId);
+            break;
         }
         case cJapanese:
         {
             //  启用僧兵
             xsEffectAmount(cEnableObject, SoheiID1, 1, 0, playerId);
+            break;
         }
         case cChinese:
         {
@@ -622,6 +703,7 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.85, playerId);
             //  启用猛火油柜
             xsEffectAmount(cEnableObject, FlameThrowerID, 1, 0, playerId);
+            break;
         }
         case cByzantines:
         {
@@ -633,19 +715,25 @@ void EffectFunction10025(int playerId = -1)
             MulAttribute(playerId, cGateClass, cHitpoints, 1.2 / 1.15 / 1.0833);
             MulAttribute(playerId, cFarmClass, cHitpoints, 1.2 / 1.15 / 1.0833);
             MulAttribute(playerId, cTowerClass, cHitpoints, 1.2 / 1.15 / 1.0833);
+            break;
         }
         case cPersians:
+        {
             xsEffectAmount(cEnableObject, AssassinID, 1, 0, playerId);  //  启用阿萨辛刺客
+            break;
+        }
         case cSaracens:
         {
             xsEffectAmount(cEnableObject, AssassinID, 1, 0, playerId);  //  启用阿萨辛刺客
             //  启用骆驼长矛骑兵
             xsEffectAmount(cEnableObject, CamelLancerID, 1, 0, playerId);
+            break;
         }
         case cTurks:
         {
             //  启用西帕希骑兵
             xsEffectAmount(cEnableObject, SipahiID, 1, 0, playerId);
+            break;
         }
         case cSpanish:
         {
@@ -653,6 +741,7 @@ void EffectFunction10025(int playerId = -1)
             ForceEnableTech(playerId, 599);
             //  西班牙文明加成, 马尼拉大帆船
             xsEffectAmount(cUpgradeUnit, 17, ManilaGalleoID, -1, playerId);
+            break;
         }
         case cAztecs:
         {
@@ -662,14 +751,19 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cMulAttribute, 492, cMovementSpeed, 1.05, playerId);
             //  圣坛可建造数 +1
             xsEffectAmount(cAddAttribute, ShrineID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cMayans:
         {
             //  圣坛可建造数 +1
             xsEffectAmount(cAddAttribute, ShrineID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cHuns:
+        {
             xsEffectAmount(cUpgradeUnit, EarlyCavalryArcherID, 39, -1, playerId);   //  升级为骑射手
+            break;
+        }
         case cItalians:
         {
             //  意大利文明加成, 可以购买圣物
@@ -678,11 +772,13 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cModResource, cAttributeRelicPurchaseLimit, 0, 2, playerId);
             //  启用医院骑士
             SetTechAuto(playerId, 3038);
+            break;
         }
         case cIncas:
         {
             //  圣坛可建造数 +1
             xsEffectAmount(cAddAttribute, ShrineID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cSlavs:
         {
@@ -695,32 +791,38 @@ void EffectFunction10025(int playerId = -1)
             //  斯拉夫文明加成, 攻城武器厂在城堡/帝王时代 +25/50% 工作效率
             xsEffectAmount(cMulAttribute, 49, cWorkRate, 1.25, playerId);
             xsEffectAmount(cMulAttribute, 150, cWorkRate, 1.25, playerId);
+            break;
         }
         case cEthiopians:
         {
             //  埃塞俄比亚文明加成的食物和黄金提升
             xsEffectAmount(cModResource, cAttributeFood, 1, 100, playerId);
             xsEffectAmount(cModResource, cAttributeGold, 1, 100, playerId);
+            break;
         }
         case cMalians:
         {
             //  启用索法骑手
             xsEffectAmount(cEnableObject, SofaID, 1, 0, playerId);
+            break;
         }
         case cBerbers:
         {
             //  柏柏尔村民在城堡/帝王时代移动速度加成提高
             xsEffectAmount(cMulAttribute, cVillagerClass, cMovementSpeed, 1.045454545, playerId);
+            break;
         }
         case cVietnamese:
         {
             //  启用丛林斥候
             xsEffectAmount(cEnableObject, RungScoutID, 1, 0, playerId);
+            break;
         }
         case cTatars:
         {
             //  鞑靼文明加成, 骑射手远程护甲增加
             xsEffectAmount(cAddAttribute, cCavalryArcherClass, cArmor, 3 * 256 + 1, playerId);
+            break;
         }
         case cCumans:
         {
@@ -729,16 +831,19 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cMulAttribute, cCavalryClass, cMovementSpeed, 1.01904762, playerId);
             xsEffectAmount(cMulAttribute, cCavalryArcherClass, cMovementSpeed, 1.01904762, playerId);
             xsEffectAmount(cMulAttribute, cConquistadorClass, cMovementSpeed, 1.01904762, playerId);
+            break;
         }
         case cSicilians:
         {
             //  启用医院骑士
             SetTechAuto(playerId, 3038);
+            break;
         }
         case cBohemians:
         {
             //  启用战车弓兵
             xsEffectAmount(cEnableObject, ChariotArcherID, 1, 0, playerId);
+            break;
         }
         case cDravidians:
         {
@@ -748,26 +853,31 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cAddAttribute, cMonkClass, cMaxRange, 1, playerId);
             xsEffectAmount(cAddAttribute, cMonkClass, cLineOfSight, 1, playerId);
             xsEffectAmount(cAddAttribute, cMonkClass, cSearchRadius, 1, playerId);
+            break;
         }
         case cGeorgians:
         {
             //  启用赫雷苏维季战士
             xsEffectAmount(cEnableObject, KhevsuretiWarriorID, 1, 0, playerId);
+            break;
         }
         case cWu:
         {
             //  吴文明加成, 坞堡产出黄金
             xsEffectAmount(cModResource, cAttributeWubaoGoldProductivity, 0, 15, playerId);
+            break;
         }
         case cWei:
         {
             //  魏文明加成, 坞堡建造上限增加
             xsEffectAmount(cAddAttribute, WubaoID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cJurchens:
         {
             //  女真文明加成, TC产鹿
             SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.5);
+            break;
         }
         default:
             break;
@@ -808,12 +918,14 @@ void EffectFunction10026(int playerId = -1)
         {
             //  启用瑞士枪兵
             xsEffectAmount(cEnableObject, SwissLancerID, 1, 0, playerId);
+            break;
         }
         case cGoths:
         {
             //  哥特文明加成, 封建和城堡时代也增加人口上限和人口空间
             xsEffectAmount(cModResource, cAttributePopulationCap, 1, 5, playerId);
             xsEffectAmount(cModResource, cAttributeUnitLimit, 1, -5, playerId);
+            break;
         }
         case cTeutons:
         {
@@ -829,11 +941,13 @@ void EffectFunction10026(int playerId = -1)
             xsEffectAmount(cAddAttribute, 1155, cSearchRadius, 1, playerId);
             //  条顿文明加成 + 十字军骑士
             xsEffectAmount(cAddAttribute, CrusaderKnightID, cArmor, 4 * 256 + 1, playerId);
+            break;
         }
         case cChinese:
         {
             //  中国文明加成, 科技折扣
             xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.8, playerId);
+            break;
         }
         case cByzantines:
         {
@@ -843,6 +957,7 @@ void EffectFunction10026(int playerId = -1)
             MulAttribute(playerId, cGateClass, cHitpoints, 1.25 / 1.2 / 1.0769);
             MulAttribute(playerId, cFarmClass, cHitpoints, 1.25 / 1.2 / 1.0769);
             MulAttribute(playerId, cTowerClass, cHitpoints, 1.25 / 1.2 / 1.0769);
+            break;
         }
         case cSpanish:
         {
@@ -851,6 +966,7 @@ void EffectFunction10026(int playerId = -1)
             xsEffectAmount(cAddAttribute, 17, cAttack, 3 * 256 + 1, playerId);
             xsEffectAmount(cAddAttribute, 17, cAttack, 16 * 256 + 1, playerId);
             xsEffectAmount(cAddAttribute, 17, cArmor, 16 * 256 + 1, playerId);
+            break;
         }
         case cAztecs:
         {
@@ -860,21 +976,25 @@ void EffectFunction10026(int playerId = -1)
             xsEffectAmount(cMulAttribute, 492, cMovementSpeed, 1.04761905, playerId);
             //  圣坛可建造数 +1
             xsEffectAmount(cAddAttribute, ShrineID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cMayans:
         {
             //  圣坛可建造数 +1
             xsEffectAmount(cAddAttribute, ShrineID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cItalians:
         {
             //  意大利文明加成, 可以购买圣物
             xsEffectAmount(cModResource, cAttributeRelicPurchaseLimit, 1, 2, playerId);
+            break;
         }
         case cIncas:
         {
             //  圣坛可建造数 +1
             xsEffectAmount(cAddAttribute, ShrineID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cSlavs:
         {
@@ -887,22 +1007,26 @@ void EffectFunction10026(int playerId = -1)
             //  斯拉夫文明加成, 攻城武器厂在城堡/帝王时代 +25/50% 工作效率
             xsEffectAmount(cMulAttribute, 49, cWorkRate, 1.2, playerId);
             xsEffectAmount(cMulAttribute, 150, cWorkRate, 1.2, playerId);
+            break;
         }
         case cEthiopians:
         {
             //  埃塞俄比亚文明加成的食物和黄金提升
             xsEffectAmount(cModResource, cAttributeFood, 1, 200, playerId);
             xsEffectAmount(cModResource, cAttributeGold, 1, 200, playerId);
+            break;
         }
         case cBerbers:
         {
             //  柏柏尔村民在城堡/帝王时代移动速度加成提高
             xsEffectAmount(cMulAttribute, cVillagerClass, cMovementSpeed, 1.0434783, playerId);
+            break;
         }
         case cTatars:
         {
             //  鞑靼文明加成, 骑射手远程护甲增加
             xsEffectAmount(cAddAttribute, cCavalryArcherClass, cArmor, 3 * 256 + 1, playerId);
+            break;
         }
         case cCumans:
         {
@@ -911,6 +1035,7 @@ void EffectFunction10026(int playerId = -1)
             xsEffectAmount(cMulAttribute, cCavalryClass, cMovementSpeed, 1.01869159, playerId);
             xsEffectAmount(cMulAttribute, cCavalryArcherClass, cMovementSpeed, 1.01869159, playerId);
             xsEffectAmount(cMulAttribute, cConquistadorClass, cMovementSpeed, 1.01869159, playerId);
+            break;
         }
         case cDravidians:
         {
@@ -920,21 +1045,25 @@ void EffectFunction10026(int playerId = -1)
             xsEffectAmount(cAddAttribute, cMonkClass, cMaxRange, 1, playerId);
             xsEffectAmount(cAddAttribute, cMonkClass, cLineOfSight, 1, playerId);
             xsEffectAmount(cAddAttribute, cMonkClass, cSearchRadius, 1, playerId);
+            break;
         }
         case cWu:
         {
             //  吴文明加成, 坞堡产出黄金
             xsEffectAmount(cModResource, cAttributeWubaoGoldProductivity, 0, 20, playerId);
+            break;
         }
         case cWei:
         {
             //  魏文明加成, 坞堡建造上限增加
             xsEffectAmount(cAddAttribute, WubaoID, cAvailableFlag, 1, playerId);
+            break;
         }
         case cJurchens:
         {
             //  女真文明加成, TC产鹿
             SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.66666666667);
+            break;
         }
         default:
             break;

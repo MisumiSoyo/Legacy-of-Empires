@@ -1797,19 +1797,40 @@ void TimerEvent(int Time = 0, int playerId = -1)
     switch (playerCiv)
     {
         case cFranks:
+        {
             Franks(Time, playerId);
+            break;
+        }
         case cPersians:
+        {
             Persians(Time, playerId);
+            break;
+        }
         case cAztecs:
+        {
             Aztecs(Time, playerId);
+            break;
+        }
         case cMayans:
+        {
             Mayans(Time, playerId);
+            break;
+        }
         case cMagyars:
+        {
             Magyars(Time, playerId);
+            break;
+        }
         case cTatars:
+        {
             Tatars(Time, playerId);
+            break;
+        }
         case cPoles:
+        {
             Poles(Time, playerId);
+            break;
+        }
         default:
         {
             break;
