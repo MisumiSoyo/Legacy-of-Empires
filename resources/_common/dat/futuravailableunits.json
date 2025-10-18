@@ -2397,6 +2397,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Hobelar",
+                        "RequiredAge": 4,
+                        "ID": 3037
                     }
                 ],
                 "Units": [
@@ -35023,6 +35028,11 @@
                         "ID": 569,
                         "Name": "Paladin",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Crusader Knight",
+                        "RequiredAge": 3,
+                        "ID": 4041
                     }
                 ]
             },

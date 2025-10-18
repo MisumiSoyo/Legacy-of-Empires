@@ -340,6 +340,7 @@
             "note": "精锐骑马步兵",
             "civilizations": "Britons",
             "tech_id": 3037,
+            "building_id": 101,
             "Name": "Elite Hobelar",
             "RequiredAge": 4
         },
@@ -354,6 +355,7 @@
             "note": "十字军骑士",
             "civilizations": "Teutons",
             "unit_id": 4041,
+            "building_id": 101,
             "Name": "Crusader Knight",
             "RequiredAge": 3
         },

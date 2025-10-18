@@ -49,10 +49,6 @@ void EffectFunction10001(int playerId = -1)
             xsEffectAmount(cModifyTech, 264, cAttrSetState, cAttributeEnable, playerId);    //启用冠军剑士
         case cCumans:
             xsEffectAmount(cModifyTech, 39, cAttrSetState, cAttributeEnable, playerId); //  启用畜牧
-        case cLithuanians:
-            xsEffectAmount(cModifyTech, 428, cAttrSetState, cAttributeEnable, playerId);    //启用翼骑兵
-        case cPoles:
-            xsEffectAmount(cModifyTech, 428, cAttrSetState, cAttributeEnable, playerId);    //启用翼骑兵
         default:
         {
           break;
@@ -356,14 +352,6 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 3056, cAttrMulFoodCost, 0.66666667, playerId);
             xsEffectAmount(cModifyTech, 3057, cAttrMulFoodCost, 0.66666667, playerId);
         }
-        case cPoles:
-        {
-            //  波兰文明加成, 斥候骑兵系 -50% 升级食物费用, 现在适用于翼骑兵
-            xsEffectAmount(cModifyTech, 428, cAttrMulFoodCost, 0.5, playerId);
-            //  波兰文明加成, 经济作物免费升级
-            xsEffectAmount(cModifyTech, 1545, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 1545, cAttrSetTime, 0, playerId);
-        }
         case cGurjaras:
         {
             //  瞿折罗文明加成, 修道院提供人口空间
@@ -549,6 +537,11 @@ void EffectFunction10024(int playerId = -1)
         }
         case cBurgundians:
             xsEffectAmount(cEnableObject, 38, 1, 0, playerId);  //  启用骑士
+        case cPoles:
+        {
+            //  波兰文明加成, 轻骑兵可提前一个时代升级
+            ForceEnableTech(playerId, 254);
+        }
         case cRomans:
         {
             //  罗马文明加成, 封建修道院和僧侣

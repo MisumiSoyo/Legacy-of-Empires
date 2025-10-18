@@ -1259,19 +1259,28 @@ void EffectFunction10012(int playerId = -1)
 }
 
 
-// 10013 - Winged Charge
+// 10013 - 翼骑兵冲锋
 void EffectFunction10013(int playerId = -1)
 {
-    xsEffectAmount(cSetAttribute, cCavalryClass, cSpecialAbility, 3, playerId);
-
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 2);
     xsTaskAmount(cTaskAttrWorkValue2, 7);
     xsTaskAmount(cTaskAttrWorkRange, 1.25);
     xsTaskAmount(cTaskAttrWorkFlag2, 2001);
-
     xsTask(cCavalryClass, cTaskTypeChargeAttack, -1, playerId);
+    xsTask(cScoutCavalryClass, cTaskTypeChargeAttack, -1, playerId);
     xsResetTaskAmount();
+
+    SetAttribute(playerId, cCavalryClass, cSpecialAbility, 3);
+    SetAttribute(playerId, cCavalryClass, cMaxCharge, 6);
+    SetAttribute(playerId, cCavalryClass, cRechargeRate, 0.5);
+    SetAttribute(playerId, cCavalryClass, cChargeEvent, 1);
+    SetAttribute(playerId, cCavalryClass, cChargeType, 1);
+    SetAttribute(playerId, cScoutCavalryClass, cSpecialAbility, 3);
+    SetAttribute(playerId, cScoutCavalryClass, cMaxCharge, 6);
+    SetAttribute(playerId, cScoutCavalryClass, cRechargeRate, 0.5);
+    SetAttribute(playerId, cScoutCavalryClass, cChargeEvent, 1);
+    SetAttribute(playerId, cScoutCavalryClass, cChargeType, 1);
 }
 
 
@@ -1376,7 +1385,7 @@ void EffectFunction10017(int playerId = -1)
     int FemaleFarmerId = 259;
 
     xsEffectAmount(cMulResource, cAttributeFoodBonus, 0, 0.75, playerId);
-    xsEffectAmount(cModResource, cAttributeGoldFarmingProductivity, 1, 7.95, playerId);
+    xsEffectAmount(cModResource, cAttributeGoldFarmingProductivity, 1, 10.6, playerId);
     xsEffectAmount(cAddAttribute, cVillagerClass, cHitpoints, -15, playerId);
 
     xsResetTaskAmount();
