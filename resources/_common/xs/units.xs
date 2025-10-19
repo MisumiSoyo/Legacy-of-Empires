@@ -89,7 +89,7 @@ bool isTownCenter(int ObjectID = -1)
 
 
 //  判断单位是否在某一类单位的范围内
-bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, int Range = 0)
+bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
     int TempArray = NewArrayInt();

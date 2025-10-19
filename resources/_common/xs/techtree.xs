@@ -11,29 +11,29 @@ void EffectFunction10001(int playerId = -1)
         case cJapanese:
         {
             //  启用手推炮
-            xsEffectAmount(cModifyTech, 188, cAttrSetState, cAttributeEnable, playerId);
+            EnableTech(playerId, 188);
             break;
         }
         case cChinese:
         {
-            xsEffectAmount(cModifyTech, 12, cAttrSetState, cAttributeEnable, playerId); //  启用轮作
-            xsEffectAmount(cModifyTech, 37, cAttrSetState, cAttributeEnable, playerId); //  启用炮舰
-            xsEffectAmount(cModifyTech, 85, cAttrSetState, cAttributeEnable, playerId); //  启用火枪手
-            xsEffectAmount(cModifyTech, 188, cAttrSetState, cAttributeEnable, playerId);    //  启用手推炮
-            xsEffectAmount(cModifyTech, 376, cAttrSetState, cAttributeEnable, playerId);    //  启用精锐炮舰
+            EnableTech(playerId, 12);   //  启用轮作
+            EnableTech(playerId, 37);   //  启用炮舰
+            EnableTech(playerId, 85);   //  启用火枪手
+            EnableTech(playerId, 188);  //  启用手推炮
+            EnableTech(playerId, 376);  //  启用精锐炮舰
             break;
         }
         case cByzantines:
         {
-            xsEffectAmount(cModifyTech, 50, cAttrSetState, cAttributeEnable, playerId); //启用石匠
-            xsEffectAmount(cModifyTech, 51, cAttrSetState, cAttributeEnable, playerId); //启用建筑学
+            EnableTech(playerId, 50); //启用石匠
+            EnableTech(playerId, 51); //启用建筑学
             break;
         }
         case cTurks:
         {
             //  启用草原枪兵
-            xsEffectAmount(cModifyTech, 714, cAttrSetState, cAttributeEnable, playerId);
-            xsEffectAmount(cModifyTech, 715, cAttrSetState, cAttributeEnable, playerId);
+            EnableTech(playerId, 714);
+            EnableTech(playerId, 715);
             //  精锐草原枪兵和重装骆驼兵 -33% 升级费用
             xsEffectAmount(cModifyTech, 715, cAttrMulAllCosts, 0.666666, playerId);
             xsEffectAmount(cModifyTech, 236, cAttrMulAllCosts, 0.666666, playerId);
@@ -41,29 +41,29 @@ void EffectFunction10001(int playerId = -1)
         }
         case cHuns:
         {
-            xsEffectAmount(cModifyTech, 714, cAttrSetState, cAttributeEnable, playerId);    //启用草原枪兵
+            EnableTech(playerId, 714);    //启用草原枪兵
             break;
         }
         case cMagyars:
         {
             //  启用草原枪兵
-            xsEffectAmount(cModifyTech, 714, cAttrSetState, cAttributeEnable, playerId);
-            xsEffectAmount(cModifyTech, 715, cAttrSetState, cAttributeEnable, playerId);
+            EnableTech(playerId, 714);
+            EnableTech(playerId, 715);
             break;
         }
         case cBurmese:
         {
-            xsEffectAmount(cModifyTech, 85, cAttrSetState, cAttributeEnable, playerId); //启用火枪手
+            EnableTech(playerId, 85); //启用火枪手
             break;
         }
         case cBulgarians:
         {
-            xsEffectAmount(cModifyTech, 264, cAttrSetState, cAttributeEnable, playerId);    //启用冠军剑士
+            EnableTech(playerId, 264);    //启用冠军剑士
             break;
         }
         case cCumans:
         {
-            xsEffectAmount(cModifyTech, 39, cAttrSetState, cAttributeEnable, playerId); //  启用畜牧
+            EnableTech(playerId, 39); //  启用畜牧
             break;
         }
         default:
@@ -83,24 +83,24 @@ void EffectFunction10002(int playerId = -1)
     {
         case cGoths:
         {
-            xsEffectAmount(cDisableTech, 127, 0, 0, playerId);  //禁用瞭望箭塔
+            DisableTech(playerId, 127);
             break;
         }
         case cJapanese:
         {
-            xsEffectAmount(cDisableTech, 85, 0, 0, playerId);   //禁用火枪手
-            xsEffectAmount(cDisableTech, 100, 0, 0, playerId);
-            xsEffectAmount(cDisableTech, 151, 0, 0, playerId);
-            xsEffectAmount(cDisableTech, 237, 0, 0, playerId);
+            DisableTech(playerId, 85);   //禁用火枪手
+            DisableTech(playerId, 100);
+            DisableTech(playerId, 151);
+            DisableTech(playerId, 237);
             break;
         }
         case cChinese:
         {
             //  中国文明加成, 贸易单位 +50% 训练速度
-            xsEffectAmount(cMulAttribute, cTradeBoatClass, cTrainTime, 0.66666666, playerId);
-            xsEffectAmount(cMulAttribute, cTradeCartClass, cTrainTime, 0.66666666, playerId);
+            MulAttribute(playerId, cTradeBoatClass, cTrainTime, 2.0 / 3);
+            MulAttribute(playerId, cTradeCartClass, cTrainTime, 2.0 / 3);
             //  中国文明加成, 科技折扣
-            xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.05, playerId);
+            SetResource(playerId, cAttributeResearchCostMod, 0.95);
             break;
         }
         case cByzantines:
@@ -112,8 +112,8 @@ void EffectFunction10002(int playerId = -1)
         }
         case cPersians:
         {
-            xsEffectAmount(cDisableTech, 192, 0, 0, playerId);
-            xsEffectAmount(cDisableTech, 218, 0, 0, playerId);
+            DisableTech(playerId, 192);
+            DisableTech(playerId, 218);
             //  波斯文明加成, 市场科技免费升级
             SetTechAuto(playerId, 48);
             SetTechAuto(playerId, 23);
@@ -123,11 +123,11 @@ void EffectFunction10002(int playerId = -1)
         }
         case cSaracens:
         {
-            xsEffectAmount(cDisableTech, 235, 0, 0, playerId);
-            xsEffectAmount(cDisableTech, 236, 0, 0, playerId);
+            DisableTech(playerId, 235);
+            DisableTech(playerId, 236);
             //  萨拉森文明加成 + 骆驼长矛骑兵
-            xsEffectAmount(cMulAttribute, CamelLancerID, cHitpoints, 1.25, playerId);
-            xsEffectAmount(cMulAttribute, EliteCamelLancerID, cHitpoints, 1.25, playerId);
+            MulAttribute(playerId, CamelLancerID, cHitpoints, 1.25);
+            MulAttribute(playerId, EliteCamelLancerID, cHitpoints, 1.25);
             break;
         }
         case cTurks:
@@ -198,6 +198,14 @@ void EffectFunction10002(int playerId = -1)
         case cHuns:
         {
             xsEffectAmount(cDisableTech, 127, 0, 0, playerId);
+            break;
+        }
+        case cKoreans:
+        {
+            //  高丽文明加成, 脚踏起重机、近射孔、射箭槽 -50% 研究费用
+            xsEffectAmount(cModifyTech, 54, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, 322, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, 608, cAttrMulAllCosts, 0.5, playerId);
             break;
         }
         case cIndians:
@@ -294,8 +302,8 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 599, cAttrSetButton, 26, playerId);
             xsEffectAmount(cModifyTech, 599, cAttrSetHotkey, 18022, playerId);
             //  葡萄牙文明加成, 标枪骑兵 +2 射手护甲
-            xsEffectAmount(cAddAttribute, 1010, cArmor, 15 * 256 + 2, playerId);
-            xsEffectAmount(cAddAttribute, 1012, cArmor, 15 * 256 + 2, playerId);
+            ModAttack(playerId, 1010, cDamageClassArchers, 2);
+            ModAttack(playerId, 1012, cDamageClassArchers, 2);
             break;
         }
         case cEthiopians:
@@ -324,7 +332,7 @@ void EffectFunction10002(int playerId = -1)
         }
         case cVietnamese:
         {
-            xsEffectAmount(cDisableTech, 218, 0, 0, playerId);  //  禁用重装骑射手
+            DisableTech(playerId, 218);  //  禁用重装骑射手
             //  越南文明加成 + 园艺学, 施肥, 育种, 经济作物
             xsEffectAmount(cModifyTech, 3054, cAttrMulTime, 0.5, playerId);
             xsEffectAmount(cModifyTech, 3054, cAttrSetWoodCost, 0, playerId);
@@ -345,8 +353,8 @@ void EffectFunction10002(int playerId = -1)
         case cCumans:
         {
             //  禁用原有的库曼城堡时代和帝王时代移动速度科技
-            xsEffectAmount(cDisableTech, 727, 0, 0, playerId);
-            xsEffectAmount(cDisableTech, 728, 0, 0, playerId);
+            DisableTech(playerId, 727);
+            DisableTech(playerId, 728);
             //  库曼文明加成, 骑兵相关科技 +200% 研究速度
             xsEffectAmount(cModifyTech, 80, cAttrMulTime, 0.333333, playerId);
             xsEffectAmount(cModifyTech, 81, cAttrMulTime, 0.333333, playerId);
@@ -388,10 +396,6 @@ void EffectFunction10002(int playerId = -1)
         }
         case cBurgundians:
         {
-            //xsEffectAmount(cDisableTech, 316, 0, 0, playerId);
-            //xsEffectAmount(cDisableTech, 319, 0, 0, playerId);
-            //xsEffectAmount(cDisableTech, 233, 0, 0, playerId);
-            //xsEffectAmount(cDisableTech, 230, 0, 0, playerId);
             //  勃艮第文明加成 + 园艺学, 施肥, 育种, 经济作物
             xsEffectAmount(cModifyTech, 3054, cAttrMulFoodCost, 0.66666667, playerId);
             xsEffectAmount(cModifyTech, 3055, cAttrMulFoodCost, 0.66666667, playerId);
@@ -504,6 +508,9 @@ void EffectFunction10002(int playerId = -1)
         xsEffectAmount(cModifyTech, 3059, cAttrSetName, 500078, playerId);
         xsEffectAmount(cModifyTech, 3059, cAttrSetDescription, 521078, playerId);
     }
+    //  维京狂战士基础生命回复改为0
+    ModAttribute(playerId, 692, cRegenerationRate, -40);
+    ModAttribute(playerId, 694, cRegenerationRate, -40);
 }
 
 
@@ -545,7 +552,7 @@ void EffectFunction10024(int playerId = -1)
         case cChinese:
         {
             //  中国文明加成, 科技折扣
-            xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.9, playerId);
+            SetResource(playerId, cAttributeResearchCostMod, 0.9);
             break;
         }
         case cByzantines:
@@ -700,7 +707,7 @@ void EffectFunction10025(int playerId = -1)
         case cChinese:
         {
             //  中国文明加成, 科技折扣
-            xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.85, playerId);
+            SetResource(playerId, cAttributeResearchCostMod, 0.85);
             //  启用猛火油柜
             xsEffectAmount(cEnableObject, FlameThrowerID, 1, 0, playerId);
             break;
@@ -917,7 +924,7 @@ void EffectFunction10026(int playerId = -1)
         case cFranks:
         {
             //  启用瑞士枪兵
-            xsEffectAmount(cEnableObject, SwissLancerID, 1, 0, playerId);
+            EnableObject(playerId, SwissLancerID);
             break;
         }
         case cGoths:
@@ -946,7 +953,7 @@ void EffectFunction10026(int playerId = -1)
         case cChinese:
         {
             //  中国文明加成, 科技折扣
-            xsEffectAmount(cModResource, cAttributeResearchCostMod, 0, 0.8, playerId);
+            SetResource(playerId, cAttributeResearchCostMod, 0.8);
             break;
         }
         case cByzantines:

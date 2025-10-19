@@ -1111,6 +1111,18 @@ void EffectFunction10007(int playerId = -1)
     xsTask(WoodenFortressID, cTaskTypeAura, cCavalryArcherClass, playerId);
     xsTask(WoodenFortressID, cTaskTypeAura, cHandCannoneerClass, playerId);
     xsTask(WoodenFortressID, cTaskTypeAura, cScoutCavalryClass, playerId);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 30);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000006);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(WoodenFortressID, cTaskTypeAura, cArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cConquistadorClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cPetardClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cHandCannoneerClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cScoutCavalryClass, playerId);
     xsResetTaskAmount();
     LaunchAura(playerId, WoodenFortressID);
 }
@@ -1554,6 +1566,7 @@ void EffectFunction10038(int playerId = -1)
     MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.2);
     MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.2);
     MulAttribute(playerId, cFarmClass, cWorkRate, 1.2);
+    MulAttribute(playerId, ShrineID, cMaxCharge, 1.0 / 1.2);
     xsArraySetInt(FloatingGardenTime, playerId, 179);
 }
 
@@ -1704,6 +1717,7 @@ void Aztecs(int Time = 0, int playerId = -1)
         MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.0 / 1.2);
         MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.0 / 1.2);
         MulAttribute(playerId, cFarmClass, cWorkRate, 1.0 / 1.2);
+        MulAttribute(playerId, ShrineID, cMaxCharge, 1.2);
     }
 }
 
