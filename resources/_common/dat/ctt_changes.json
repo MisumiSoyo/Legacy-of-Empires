@@ -891,9 +891,9 @@
         },
         {
             "action": "add",
-            "civ_id": "CHINESE",
+            "civ_id": ["CHINESE", "BYZANTINES"],
             "Age ID": 3,
-            "Building ID": 39,
+            "Building ID": 49,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800035,
             "Link ID": -1,
@@ -908,6 +908,14 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Unit"
+        },
+        {
+            "action": "modify",
+            "civ_id": "BYZANTINES",
+            "Node ID": 4047,
+            "Use Type": "Unit",
+            "Help String ID": 800042,
+            "Name String ID": 700042
         },
         {
             "action": "add",

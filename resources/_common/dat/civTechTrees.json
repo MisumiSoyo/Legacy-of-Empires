@@ -30842,7 +30842,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 39,
+                    "Building ID": 49,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 800035,
                     "Link ID": -1,
@@ -36154,6 +36154,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 49,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800042,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Flame Thrower",
+                    "Name String ID": 700042,
+                    "Node ID": 4047,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 144,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
                 },
                 {
                     "Age ID": 2,

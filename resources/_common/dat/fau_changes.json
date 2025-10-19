@@ -400,10 +400,10 @@
             "RequiredAge": 4
         },
         {
-            "note": "猛火油柜",
-            "civilizations": "Chinese",
+            "note": "猛火油柜/喷火车",
+            "civilizations": ["Chinese", "Byzantines"],
             "unit_id": 4047,
-            "building_id": 39,
+            "building_id": 49,
             "Name": "Flame Thrower",
             "RequiredAge": 3
         },
@@ -897,7 +897,7 @@
             "note": "中国启用手推炮",
             "civilizations": "Chinese",
             "unit_id": 36,
-            "building_id": 39,
+            "building_id": 49,
             "Name": "Bombard Cannon",
             "RequiredAge": 4
         },

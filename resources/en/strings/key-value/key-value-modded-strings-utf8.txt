@@ -75,7 +75,7 @@
 
 120154 "Infantry civilization \n\n• Fishing Ships +100% HP, +2 pierce armor, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50% \n• Infantry -25% reload time starting in Feudal Age \n• Cavalry Archer class units +2 damage vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\nSamurai (Infantry better combats with other unique units)\nYumi Ashigaru (Japanese unique archer)\nHandcannon Ashigaru (Hand cannoneers that counters cavalries)\nSohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2) \n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Hongan Ikki (Make the weaker version of Sohei available at Town Centers)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 
-120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -50 wood, -200 food \n• Technologies cost -5%/-10%/-15% at Feudal/Castle/Imperial Age \n• Town Centers support 15 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Caslte/Imperial Age\n\n<b>Unique Unit:<b>\nChu Ko Nu (archer with multiple arrows)\nFire Lancer Cavalry (cavalry with gunpowder)\nFlame Thrower (Siege weapon that can throw flame)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets (-15% accuracy, but +0.3 blast range with 100% blast damage))\n• Political Reform (Farms cost 30 food instead of wood and don't need time to build)\n• Jimi (You can train elite versions of Mangudais, Rattan Archers, Tarkans, War Wagons, Liao Daos and Iron Pagodas at Castle)\n\n<b>Team bonus: <b>\nFarm +10% food"
+120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -50 wood, -200 food \n• Technologies cost -5%/-10%/-15% at Feudal/Castle/Imperial Age \n• Town Centers support 15 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Caslte/Imperial Age\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows)\nFire Lancer Cavalry (cavalry with gunpowder)\n• Flame Thrower (Siege weapon that can throw flame)\n• Flame Thrower (Siege weapon that can throw flame)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets (-15% accuracy, but +0.3 blast range with 100% blast damage))\n• Political Reform (Farms cost 30 food instead of wood and don't need time to build)\n• Jimi (You can train elite versions of Mangudais, Rattan Archers, Tarkans, War Wagons, Liao Daos and Iron Pagodas at Castle)\n\n<b>Team bonus: <b>\nFarm +10% food"
 
 120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age \n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost \n• Fire Ships and Dromons -16.67% reload time \n• Advance to Imperial Age -33% costs \n• Town Watch and Townb Patrol free\n• Heresy free\n\n<b>Unique Unit:<b> \nCataphract (Cavalry better combats with infantries)\nVarangian (Infantries that gain gold from killing units) \n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Galley-Line +1 max range, Bombard Towers cause 5 blast damage in 0.5 radius) \n• Logistica (Cataphract causes 5 blast damage in 0.5 radius) \n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 
@@ -478,6 +478,7 @@
 700039 "Streltsy"
 700040 "Khevsureti Warrior"
 700041 "Elite Khevsureti Warrior"
+700042 "Flame Thrower"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -521,6 +522,7 @@
 701039 "Create Streltsy"
 701040 "Create Khevsureti Warrior"
 701041 "Create Khevsureti Warrior"
+701042 "Create Flame Thrower"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\n<i><GREY>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit; Training time: 20; Moving speed: 1.00; Reload time: 2.5; Attack delay: 0.35; Accuracy: 75%; Dispersion radius: 0.33; LOS: 9; Search radius: 9. \nAttack Bonus: +8 vs Cavalry, +5 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -591,7 +593,7 @@
 
 721034 "Create <b>Sofa<b> (<cost>)\nMalians' unique cavalry. Resistant to conversion. Have attack bonus vs pikemen, skirmishers and light cavalries.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable);  creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +8 vs Pikeman, +4 vs Skirmisher, +6 vs Light Cavalry."
 
-721035 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon; Training time: 31; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +8 vs Stone Defensive Buildings."
+721035 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +8 vs Stone Defensive Buildings."
 
 721036 "Create <b>Taborite Warrior<b> (<cost>)\nBohemians' unique infantry. Can generate 7.5 food, 6 wood and 3 gold per minute.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 15; Moving speed: 1.00; Reload time: 2; LOS: 5; Search radius: 5.\nAttack Bonus: +3 vs Standard Buildings, +4 vs Shock Infantry, +6 vs Cavalry, +5 vs Camel"
 
@@ -604,6 +606,8 @@
 721040 "Create <b>Khevsureti Warrior<b> (<cost>)\nGeorgian unique infantry. Strong vs siege weapons.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 24; Moving speed: 1.1; Reload time: 2; LOS: 6; Search radius: 5.\nAttack Bonus: +7 vs Siege Weapon, +7 vs Ram/Siege Tower/Trebuchet\nArmor Bonus: -7 damage received from Siege Weapons"
 
 721041 "Create <b>Elite Khevsureti Warrior<b> (<cost>)\nGeorgian unique infantry. Strong vs siege weapons.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 21; Moving speed: 1.1; Reload time: 2; LOS: 6; Search radius: 5.\nAttack Bonus: +10 vs Siege Weapon, +10 vs Ram/Siege Tower/Trebuchet\nArmor Bonus: -10 damage received from Siege Weapons"
+
+721042 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +8 vs Stone Defensive Buildings."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy foot archers' reload time by 0.5."

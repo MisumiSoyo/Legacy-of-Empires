@@ -709,7 +709,7 @@ void EffectFunction10025(int playerId = -1)
             //  中国文明加成, 科技折扣
             SetResource(playerId, cAttributeResearchCostMod, 0.85);
             //  启用猛火油柜
-            xsEffectAmount(cEnableObject, FlameThrowerID, 1, 0, playerId);
+            EnableObject(playerId, FlameThrowerID);
             break;
         }
         case cByzantines:
@@ -722,6 +722,10 @@ void EffectFunction10025(int playerId = -1)
             MulAttribute(playerId, cGateClass, cHitpoints, 1.2 / 1.15 / 1.0833);
             MulAttribute(playerId, cFarmClass, cHitpoints, 1.2 / 1.15 / 1.0833);
             MulAttribute(playerId, cTowerClass, cHitpoints, 1.2 / 1.15 / 1.0833);
+            //  启用喷火车
+            EnableObject(playerId, FlameThrowerID);
+            SetAttribute(playerId, FlameThrowerID, cNameId, 700042);
+            SetAttribute(playerId, FlameThrowerID, cDescriptionId, 701042);
             break;
         }
         case cPersians:

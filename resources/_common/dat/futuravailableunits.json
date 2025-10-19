@@ -6758,6 +6758,11 @@
                         "ID": 36,
                         "Name": "Bombard Cannon",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Flame Thrower",
+                        "RequiredAge": 3,
+                        "ID": 4047
                     }
                 ]
             },
@@ -8884,6 +8889,16 @@
                         "ID": 1105,
                         "Name": "Siege Tower",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Flame Thrower",
+                        "RequiredAge": 3,
+                        "ID": 4047
+                    },
+                    {
+                        "Name": "Bombard Cannon",
+                        "RequiredAge": 4,
+                        "ID": 36
                     }
                 ]
             },
