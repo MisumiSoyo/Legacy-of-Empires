@@ -418,12 +418,13 @@ void Shrine(int Time = 0, int playerId = 0)
     if (SpawnProgress >= xsGetObjectAttribute(playerId, ShrineID, cMaxCharge))
     {
         ArrayIncInt(ShrineSpawnCount, playerId, 1);
+        //  初始拥有 50% 充能
         if (xsArrayGetInt(ShrineSpawnCount, playerId) > 1)
             SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
+        else
+            SetObjectCharge(playerId, ShrineID, xsGetObjectAttribute(playerId, ShrineID, cMaxCharge) / 2);
         SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
     }
-    //for (i = 0; < xsArrayGetSize(ShrineArray))
-    //    xsSetUnitCharge(xsArrayGetInt(ShrineArray, i), SpawnProgress);
     SetObjectCharge(playerId, ShrineID, SpawnProgress);
     RecycleArrayInt(ShrineArray);
 }
