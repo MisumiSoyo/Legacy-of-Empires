@@ -88,6 +88,12 @@ bool isTownCenter(int ObjectID = -1)
 }
 
 
+bool isDock(int ObjectID = -1)
+{
+    return ((ObjectID == 45) || (ObjectID == 47) || (ObjectID == 51) || (ObjectID == 133));
+}
+
+
 //  判断单位是否在某一类单位的范围内
 bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
 {
@@ -195,6 +201,15 @@ bool isBuildingUnit(int UnitID = -1)
 }
 
 
+//  判断是否为资源类型
+bool isResourceClass(int ClassID = -1)
+{
+    return ((ClassID == cSeaFishClass) || (ClassID == cForageBushClass) || (ClassID == cStoneMineClass) || (ClassID == cPreyAnimalClass)
+            || (ClassID == cPredatorAnimalClass) || (ClassID == cTreeClass) || (ClassID == cTreeStumpClass) || (ClassID == cGoldMine)
+            || (ClassID == cShoreFish) || (ClassID == cResourcePileClass) || (ClassID == cOreMineClass) || (ClassID == cGoldFishClass));
+}
+
+
 //  判断是否为可操作的类型 (军事单位, 经济单位或建筑)
 bool isClassOperable(int ClassID = -1)
 {
@@ -216,7 +231,7 @@ bool isUnitOperable(int UnitID = -1)
 }
 
 
-//  获取玩家所有单位的ID
+//  获取玩家所有单位的ID, 只考虑可操作类型
 int PlayerAllUnits(int playerId = -1, bool includeBuilding = false, int ArrayID = -1, bool includeFarm = False)
 {
     int i = 0;

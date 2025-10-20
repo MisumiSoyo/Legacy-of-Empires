@@ -379,7 +379,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 1628, cAttrMulTime, 0.333333, playerId);
             //  库曼文明加成, 猎人不需要提交食物
             SetResource(playerId, cAttributeHunterFoodProductivity, 41);
-            cMulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
+            MulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
             SetResource(playerId, cAttributeMaintenance, 10008);
             break;
         }
@@ -476,7 +476,7 @@ void EffectFunction10002(int playerId = -1)
     SetAttribute(playerId, 775, cTrainButton, 22);
     SetAttribute(playerId, 775, cHotkeyId, 16078);
     //  圣物产出黄金 30 → 45 / 分钟
-    cMulResource(playerId, cAttributeRelicRate, 1.5);
+    MulResource(playerId, cAttributeRelicRate, 1.5);
     //  瓦兰吉卫队黄金产率设置
     SetResource(playerId, cAttributeVarangianLootProductivity, 1);
     //  祭司战士
@@ -838,7 +838,7 @@ void EffectFunction10025(int playerId = -1)
         case cTatars:
         {
             //  鞑靼文明加成, 骑射手远程护甲增加
-            xsEffectAmount(cAddAttribute, cCavalryArcherClass, cArmor, 3 * 256 + 1, playerId);
+            ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
             break;
         }
         case cCumans:

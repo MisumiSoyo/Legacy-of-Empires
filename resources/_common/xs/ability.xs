@@ -564,6 +564,18 @@ float PersianBuildingGold(int playerId = -1, int UnitID = -1)
 }
 
 
+//  马来城镇中心和船坞根据周围资源产生资源
+void MalayTCandDockAbility(int playerId = -1, int UnitID = -1)
+{
+    int GaiaResourceIDs = NewArrayInt();
+    int TempArray = NewArrayInt();
+    int i = 0;
+    for (i = 900; <= 964)
+    {
+    }
+}
+
+
 //  接口, 赋予单位独特能力
 void AbilityApplier()
 {
