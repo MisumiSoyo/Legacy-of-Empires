@@ -111,6 +111,23 @@ bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Rang
 }
 
 
+//  判断位置是否在某一类单位的范围内
+bool isPosInRange(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int ObjectID = -1, float Range = 0.0)
+{
+    int i = 0;
+    int TempArray = NewArrayInt();
+    TempArray = xsGetPlayerUnitIds(playerId, ObjectID, TempArray);
+    for (i = 0; <xsArrayGetSize(TempArray))
+        if (Distance(Pos, xsGetUnitPosition(xsArrayGetInt(TempArray, i))) <= Range)
+        {
+            RecycleArrayInt(TempArray);
+            return (true);
+        }
+    RecycleArrayInt(TempArray);
+    return (false);
+}
+
+
 //  类似功能, 但是判断的是矩形范围
 bool isInRangeMatrix(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
 {
@@ -122,6 +139,25 @@ bool isInRangeMatrix(int playerId = -1, int UnitID = -1, int ObjectID = -1, floa
         vector UnitPos = xsGetUnitPosition(UnitID);
         vector TempUnitPos = xsGetUnitPosition(xsArrayGetInt(TempArray, i));
         if ((DistanceX(UnitPos, TempUnitPos) <= Range) && (DistanceY(UnitPos, TempUnitPos) <= Range))
+        {
+            RecycleArrayInt(TempArray);
+            return (true);
+        }
+    }
+    RecycleArrayInt(TempArray);
+    return (false);
+}
+
+
+bool isPosInRangeMatrix(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int ObjectID = -1, float Range = 0.0)
+{
+    int i = 0;
+    int TempArray = NewArrayInt();
+    TempArray = xsGetPlayerUnitIds(playerId, ObjectID, TempArray);
+    for (i = 0; < xsArrayGetSize(TempArray))
+    {
+        vector TempUnitPos = xsGetUnitPosition(xsArrayGetInt(TempArray, i));
+        if ((DistanceX(Pos, TempUnitPos) <= Range) && (DistanceY(Pos, TempUnitPos) <= Range))
         {
             RecycleArrayInt(TempArray);
             return (true);

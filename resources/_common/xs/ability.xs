@@ -573,13 +573,13 @@ float MalayResourceOutRate(int ResourceID = -1)
     switch (ResourceID)
     {
         case cAttributeFood:
-            return (0.05);
+            return (1.0 / 75);
         case cAttributeGold:
-            return (0.005);
+            return (1.0 / 320);
         case cAttributeStone:
-            return (0.005);
+            return (1.0 / 320);
         case cAttributeBerries:
-            return (0.05);
+            return (1.0 / 75);
         default:
             return (0.0);
     }
@@ -590,40 +590,32 @@ float MalayResourceOutRate(int ResourceID = -1)
 //  马来城镇中心和船坞根据周围资源产生资源, 由于太卡了, 所以不考虑木材
 void MalayTCandDockAbility(int playerId = -1, int UnitID = -1)
 {
-    int TempArray = NewArrayInt();
     int i = 0;
     vector UnitPos = xsGetUnitPosition(UnitID);
-    //xsChatData("UnitPos = " + UnitPos);
-    for (i = 900; <= 964)
-        if (isResourceClass(i) && (i != cTreeClass))
+    for (i = 0; < xsArrayGetSize(GaiaResIDs))
+    {
+        int ResourceUnitID = xsArrayGetInt(GaiaResIDs, i);
+        vector ResourceUnitPos = xsGetUnitPosition(ResourceUnitID);
+        if ((DistanceX(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange) || (DistanceY(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange))
+            continue;
+        if (MatrixFindInt(RecordedResourceIDs, playerId, ResourceUnitID) == -1)
         {
-            TempArray = xsGetPlayerUnitIds(0, i, TempArray);
-            int j = 0;
-            for (j = 0; < xsArrayGetSize(TempArray))
-            {
-                int ResourceUnitID = xsArrayGetInt(TempArray, j);
-                vector ResourceUnitPos = xsGetUnitPosition(ResourceUnitID);
-                if ((DistanceX(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange) || (DistanceY(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange))
-                    continue;
-                if (MatrixFindInt(RecordedResourceIDs, playerId, ResourceUnitID) == -1)
-                {
-                    MatrixAppendInt(RecordedResourceIDs, playerId, ResourceUnitID);
-                    //  枚举肉木金石四种资源, 找到资源类型
-                    int k = 0;
-                    int ResourceHeldType = 0;
-                    for (k = 0; <= 3)
-                        if (xsGetUnitAttributeHeld(ResourceUnitID, k) > 0.0)
-                            ResourceHeldType = k;
-                    if (xsGetUnitAttributeHeld(ResourceUnitID, cAttributeBerries) > 0.0)
-                        ResourceHeldType = cAttributeBerries;
-                    float ResourceHeld = xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceUnitID), cAmountFirstStorage);
-                    MatrixIncFloat(RecordedResourceNum, playerId, ResourceHeldType, ResourceHeld * MalayResourceOutRate(ResourceHeldType));
-                    //xsChatData("ResID = " + ResourceUnitID + " Type = " + ResourceHeldType + " inc = " + ResourceHeld * MalayResourceOutRate(ResourceHeldType));
-                    MatrixAppendInt(RecordedResourceType, playerId, ResourceHeldType);
-                }
-            }
+            MatrixAppendInt(RecordedResourceIDs, playerId, ResourceUnitID);
+            //  枚举肉木金石四种资源, 找到资源类型
+            int k = 0;
+            int ResourceHeldType = 0;
+            for (k = 0; <= 3)
+                if (xsGetUnitAttributeHeld(ResourceUnitID, k) > 0.0)
+                    ResourceHeldType = k;
+            if (xsGetUnitAttributeHeld(ResourceUnitID, cAttributeBerries) > 0.0)
+                ResourceHeldType = cAttributeBerries;
+            float ResourceHeld = xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceUnitID), cAmountFirstStorage);
+            MatrixIncFloat(RecordedResourceNum, playerId, ResourceHeldType, ResourceHeld * MalayResourceOutRate(ResourceHeldType));
+            MatrixAppendInt(RecordedResourceType, playerId, ResourceHeldType);
+            MatrixAppendFloat(RecordedResourceStorage, playerId, ResourceHeld);
+            MatrixAppendInt(RecordedResourceOwner, playerId, UnitID);
         }
-    RecycleArrayInt(TempArray);
+    }
 }
 
 
