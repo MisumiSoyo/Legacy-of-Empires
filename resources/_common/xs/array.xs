@@ -591,6 +591,13 @@ void MatrixPopBackFloat(int MatrixID = -1, int row = -1)
 }
 
 
+//  获取矩阵指定行的长度
+int MatrixRowLength(int MatrixID = -1, int row = -1)
+{
+    return (xsArrayGetSize(xsArrayGetInt(MatrixID, row)));
+}
+
+
 //  合并数组
 int MergeArrayInt(int ArrayID1 = -1, int ArrayID2 = -1)
 {

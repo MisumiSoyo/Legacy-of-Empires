@@ -928,6 +928,7 @@ extern const int InvisibleDeerSpawnerID = 4052;
 
 extern const int HospitallerKnightMaxCharge = 300; //   医院骑士技能充能
 extern const float ShrineMaxCharge = 1200.0;    //  圣坛最大充能
+extern const float MalayTCandDockAbilityRange = 9; //  马来城镇中心和船坞产生资源的计算范围
 
 
 //  全局数组
@@ -945,7 +946,8 @@ extern int ShrineSpawnCount = 0;    //  圣坛生产次数
 
 //  全局矩阵
 extern int RecordedResourceIDs = 0; //  已经统计的地图资源单位ID
-extern int RecordedResourceNum = 0; //  已经统计的地图资源单位资源值
+extern int RecordedResourceType = 0;    //  已经统计的地图资源单位的资源类型
+extern int RecordedResourceNum = 0; //  已经统计的地图资源值总计
 extern int RecordedTCandDockIDs = 0;    //  已经统计的城镇中心和船坞单位ID
 
 
@@ -1440,14 +1442,14 @@ void EffectFunction10018(int playerId = -1)
 //  10020 - 医院骑士技能开启
 void EffectFunction10020(int playerId = -1)
 {
-    //检测, 由于定时器有时间间隔, 防止延迟导致重复施放技能
+    //  检测, 由于定时器有时间间隔, 防止延迟导致重复施放技能
     if (xsPlayerAttribute(playerId, cAttributeHospitallerKnightCharge) == 0.0)
         return;
 
-    //技能条不满，无法施放
+    //  技能条不满，无法施放
     if (xsPlayerAttribute(playerId, cAttributeHospitallerKnightCharge) < HospitallerKnightMaxCharge - 1)
         return;
-    //清空技能条
+    //  清空技能条
     xsEffectAmount(cModResource, cAttributeHospitallerKnightCharge, 0, 0.0, playerId);
     int HospitallerKnightArray = NewArrayInt();
     HospitallerKnightArray = xsGetPlayerUnitIds(playerId, HospitallerKnightID, HospitallerKnightArray);
@@ -1767,6 +1769,40 @@ void Magyars(int Time = 0, int playerId = -1)
 void Malay(int Time = 0, int playerId = -1)
 {
     int i = 0;
+
+    //  检测当前已经记录的资源是否因城镇中心或船坞被摧毁而不在计算范围之内, 如果是则清除
+    while (i < MatrixRowLength(RecordedResourceIDs, playerId))
+    {
+        int ResourceUnitID = MatrixGetInt(RecordedResourceIDs, playerId, i);
+        if (isInRangeMatrix(playerId, ResourceUnitID, 109, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 71, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 141, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 142, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 45, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 47, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 51, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 153, MalayTCandDockAbilityRange)
+            || isInRangeMatrix(playerId, ResourceUnitID, 1189, MalayTCandDockAbilityRange))
+            i++;
+        else
+        {
+            if (xsDoesUnitExist(ResourceUnitID) == false)   //  资源已经被采尽, 则永久产生
+            {
+                i++;
+                continue;
+            }
+            int ResourceType = MatrixGetInt(RecordedResourceType, playerId, i);
+            MatrixIncFloat(RecordedResourceNum, playerId, ResourceType, 0.0 - xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceUnitID), cAmountFirstStorage)
+                                                          * MalayResourceOutRate(ResourceType));
+            //xsChatData("ResID = " + ResourceUnitID + " Type = " + ResourceType + " dec = " +  xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceUnitID), cAmountFirstStorage)
+                                                          * MalayResourceOutRate(MatrixGetInt(RecordedResourceType, playerId, i)));
+            MatrixRemoveInt(RecordedResourceIDs, playerId, i);
+            MatrixRemoveInt(RecordedResourceType, playerId, i);
+            int k = 0;
+        }
+    }
+
+    //  检测新建成的城镇中心和船坞
     int BuildingIDs = NewArrayInt();
     BuildingIDs = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingIDs);
     for (i = 0; < xsArrayGetSize(BuildingIDs))
@@ -1774,9 +1810,42 @@ void Malay(int Time = 0, int playerId = -1)
         int UnitID = xsArrayGetInt(BuildingIDs, i);
         int ObjectID = xsGetUnitObjectId(UnitID);
         if ((isTownCenter(ObjectID) || isDock(ObjectID)) && (MatrixFindInt(RecordedTCandDockIDs, playerId, UnitID) == -1))   //  新建成的城镇中心或船坞
+        {
             MalayTCandDockAbility(playerId, UnitID);
+            MatrixAppendInt(RecordedTCandDockIDs, playerId, UnitID);
+        }
     }
     RecycleArrayInt(BuildingIDs);
+
+    //  增加资源, 在封建时代/城堡时代/帝王时代资源获取速度 +25/50/100%
+    int CurrentAge = xsPlayerAttribute(playerId, cAttributeCurrentAge);
+    float CurrentResBonus = 0.0;
+    switch (CurrentAge)
+    {
+        case 1:
+        {
+            CurrentResBonus = 0.25;
+            break;
+        }
+        case 2:
+        {
+            CurrentResBonus = 0.5;
+            break;
+        }
+        case 3:
+        {
+            CurrentResBonus = 1;
+            break;
+        }
+        default:
+            break;
+    }
+    for (i = 0; <= 3)
+    {
+        ModResource(playerId, i, MatrixGetFloat(RecordedResourceNum, playerId, i) / 60 * (1.0 + CurrentResBonus));
+        //xsChatData("Time = " + Time + "RRN " + i + " = " + MatrixGetFloat(RecordedResourceNum, playerId, i));
+    }
+    ModResource(playerId, cAttributeFood, MatrixGetFloat(RecordedResourceNum, playerId, 16) / 60 * (1.0 + CurrentResBonus));
 }
 
 
@@ -1824,6 +1893,7 @@ void Init()
     MercenaryContractNum = NewArrayInt(xsGetNumPlayers() + 1, 0);
     ShrineSpawnCount = NewArrayInt(xsGetNumPlayers() + 1, 0);
     RecordedResourceIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
+    RecordedResourceType = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
     RecordedResourceNum = NewMatrixFloat(xsGetNumPlayers() + 1, 600, 0.0);
     RecordedTCandDockIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
 }
@@ -1859,6 +1929,11 @@ void TimerEvent(int Time = 0, int playerId = -1)
         case cMagyars:
         {
             Magyars(Time, playerId);
+            break;
+        }
+        case cMalay:
+        {
+            Malay(Time, playerId);
             break;
         }
         case cTatars:

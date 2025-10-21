@@ -569,35 +569,111 @@ float MalayResourceOutRate(int ResourceID = -1)
 {
     if (ResourceID == -1)
         return (0.0);
+
     switch (ResourceID)
     {
+        case cAttributeFood:
+            return (0.05);
+        case cAttributeGold:
+            return (0.005);
+        case cAttributeStone:
+            return (0.005);
+        case cAttributeBerries:
+            return (0.05);
         default:
-            return (0.01);
+            return (0.0);
     }
-    return (0.01);
+    return (0.0);
 }
 
 
-//  马来城镇中心和船坞根据周围资源产生资源
+//  马来城镇中心和船坞根据周围资源产生资源, 由于太卡了, 所以不考虑木材
 void MalayTCandDockAbility(int playerId = -1, int UnitID = -1)
 {
     int TempArray = NewArrayInt();
     int i = 0;
+    vector UnitPos = xsGetUnitPosition(UnitID);
+    //xsChatData("UnitPos = " + UnitPos);
     for (i = 900; <= 964)
-        if (isResourceClass(i))
+        if (isResourceClass(i) && (i != cTreeClass))
         {
-            TempArray = xsGetPlayerUnitIds(playerId, i, TempArray);
+            TempArray = xsGetPlayerUnitIds(0, i, TempArray);
             int j = 0;
             for (j = 0; < xsArrayGetSize(TempArray))
             {
                 int ResourceUnitID = xsArrayGetInt(TempArray, j);
+                vector ResourceUnitPos = xsGetUnitPosition(ResourceUnitID);
+                if ((DistanceX(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange) || (DistanceY(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange))
+                    continue;
                 if (MatrixFindInt(RecordedResourceIDs, playerId, ResourceUnitID) == -1)
                 {
-                    ArrayAppendInt(xsArrayGetInt(RecordedResourceIDs, playerId), ResourceUnitID);
-                    //MatrixIncInt()
+                    MatrixAppendInt(RecordedResourceIDs, playerId, ResourceUnitID);
+                    //  枚举肉木金石四种资源, 找到资源类型
+                    int k = 0;
+                    int ResourceHeldType = 0;
+                    for (k = 0; <= 3)
+                        if (xsGetUnitAttributeHeld(ResourceUnitID, k) > 0.0)
+                            ResourceHeldType = k;
+                    if (xsGetUnitAttributeHeld(ResourceUnitID, cAttributeBerries) > 0.0)
+                        ResourceHeldType = cAttributeBerries;
+                    float ResourceHeld = xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceUnitID), cAmountFirstStorage);
+                    MatrixIncFloat(RecordedResourceNum, playerId, ResourceHeldType, ResourceHeld * MalayResourceOutRate(ResourceHeldType));
+                    //xsChatData("ResID = " + ResourceUnitID + " Type = " + ResourceHeldType + " inc = " + ResourceHeld * MalayResourceOutRate(ResourceHeldType));
+                    MatrixAppendInt(RecordedResourceType, playerId, ResourceHeldType);
                 }
             }
         }
+    RecycleArrayInt(TempArray);
+}
+
+
+//  为马来的城镇中心和船坞添加范围显示
+void MalayTCandDockInit(int playerId = -1)
+{
+    if (xsGetPlayerCivilization(playerId) != cMalay)
+        return;
+    int i = 0;
+    for (i = 900; <= 964)
+    {
+        xsRemoveTask(109, cTaskTypeAura, i, playerId);
+        xsRemoveTask(71, cTaskTypeAura, i, playerId);
+        xsRemoveTask(141, cTaskTypeAura, i, playerId);
+        xsRemoveTask(142, cTaskTypeAura, i, playerId);
+    }
+    xsRemoveTask(109, cTaskTypeAura, -1, playerId);
+    xsRemoveTask(71, cTaskTypeAura, -1, playerId);
+    xsRemoveTask(141, cTaskTypeAura, -1, playerId);
+    xsRemoveTask(142, cTaskTypeAura, -1, playerId);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrWorkRange, MalayTCandDockAbilityRange - 2);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000001);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 4);
+
+    xsTask(109, cTaskTypeAura, cForageBushClass, playerId);
+    xsTask(71, cTaskTypeAura, cForageBushClass, playerId);
+    xsTask(141, cTaskTypeAura, cForageBushClass, playerId);
+    xsTask(142, cTaskTypeAura, cForageBushClass, playerId);
+
+    xsTaskAmount(cTaskAttrWorkRange, MalayTCandDockAbilityRange - 2);
+    xsTask(45, cTaskTypeAura, cForageBushClass, playerId);
+    xsTask(47, cTaskTypeAura, cForageBushClass, playerId);
+    xsTask(51, cTaskTypeAura, cForageBushClass, playerId);
+    xsTask(133, cTaskTypeAura, cForageBushClass, playerId);
+    xsTask(1189, cTaskTypeAura, cForageBushClass, playerId);
+    xsResetTaskAmount();
+
+    LaunchAura(playerId, 109);
+    LaunchAura(playerId, 71);
+    LaunchAura(playerId, 141);
+    LaunchAura(playerId, 142);
+    LaunchAura(playerId, 45);
+    LaunchAura(playerId, 47);
+    LaunchAura(playerId, 51);
+    LaunchAura(playerId, 133);
+    LaunchAura(playerId, 1189);
 }
 
 
@@ -615,5 +691,6 @@ void AbilityApplier()
         HospitallerKnightInit(i);
         TCSpawnedDeerInit(i);
         ShrineInit(i);
+        MalayTCandDockInit(i);
     }
 }
