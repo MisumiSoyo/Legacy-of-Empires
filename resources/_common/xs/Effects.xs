@@ -941,6 +941,9 @@ extern int FloatingGardenTime = 0;  //  浮动园地剩余时长
 extern int YumKaaxBlessingTime = 0; //  玉米神祝福剩余时长
 extern int MercenaryContractNum = 0;   //  意大利雇佣兵合同招募数
 extern int ShrineSpawnCount = 0;    //  圣坛生产次数
+
+
+//  全局矩阵
 extern int RecordedResourceIDs = 0; //  已经统计的地图资源单位ID
 extern int RecordedResourceNum = 0; //  已经统计的地图资源单位资源值
 extern int RecordedTCandDockIDs = 0;    //  已经统计的城镇中心和船坞单位ID
@@ -1760,7 +1763,7 @@ void Magyars(int Time = 0, int playerId = -1)
 }
 
 
-//  马来
+//  马来, 城镇中心和船坞根据周围资源产生资源
 void Malay(int Time = 0, int playerId = -1)
 {
     int i = 0;
@@ -1770,9 +1773,10 @@ void Malay(int Time = 0, int playerId = -1)
     {
         int UnitID = xsArrayGetInt(BuildingIDs, i);
         int ObjectID = xsGetUnitObjectId(UnitID);
-        if ((isTownCenter(ObjectID) || isDock(ObjectID)) && (ArrayFindInt(RecordedTCandDockIDs, UnitID) == -1))   //  新建成的城镇中心或船坞
+        if ((isTownCenter(ObjectID) || isDock(ObjectID)) && (MatrixFindInt(RecordedTCandDockIDs, playerId, UnitID) == -1))   //  新建成的城镇中心或船坞
             MalayTCandDockAbility(playerId, UnitID);
     }
+    RecycleArrayInt(BuildingIDs);
 }
 
 
@@ -1819,9 +1823,9 @@ void Init()
     YumKaaxBlessingTime = NewArrayInt(xsGetNumPlayers() + 1, -1);
     MercenaryContractNum = NewArrayInt(xsGetNumPlayers() + 1, 0);
     ShrineSpawnCount = NewArrayInt(xsGetNumPlayers() + 1, 0);
-    RecordedResourceIDs = NewArrayInt(xsGetNumPlayers() + 1, 0);
-    RecordedResourceNum = NewArrayInt(xsGetNumPlayers() + 1, 0);
-    RecordedTCandDockIDs = NewArrayInt(xsGetNumPlayers() + 1, 0);
+    RecordedResourceIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
+    RecordedResourceNum = NewMatrixFloat(xsGetNumPlayers() + 1, 600, 0.0);
+    RecordedTCandDockIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
 }
 
 
