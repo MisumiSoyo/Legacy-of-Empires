@@ -24584,6 +24584,10 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 75
                     }
                 ]
             },

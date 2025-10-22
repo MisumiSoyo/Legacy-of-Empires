@@ -51,6 +51,11 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, 715);
             break;
         }
+        case cMalians:
+        {
+            //  启用鼓风炉
+            EnableTech(playerId, 75);
+        }
         case cBurmese:
         {
             EnableTech(playerId, 85); //启用火枪手

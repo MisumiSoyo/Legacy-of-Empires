@@ -1075,6 +1075,13 @@
             "tech_id": 3135,
             "building_id": 209,
             "RequiredAge": 3
+        },
+        {
+            "note": "马里启用鼓风炉",
+            "civilizations": "Malians",
+            "tech_id": 75,
+            "building_id": 103,
+            "RequiredAge": 4
         }
     ]
 }

@@ -1,4 +1,5 @@
 8063 "Upgrade to Keep. (+750 HP, +1 attack, -20% reload time, +1/1P armor, +1 damage vs Ships and Fishing Ships, secondary arrows +1 base attack, +1 damage vs Ships and Fishing Ships)"
+8255 "Research Farimba (Cavalry +4 attack)"
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
 8318 "Research Logistica (Cataphracts and Varangians deal trample damage; Cataphracts +6 attack vs Infantry)"
 8342 "Research Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)"
@@ -45,6 +46,8 @@
 28063 "Upgrade to <b>Keep<b> (<cost>) (time: 75) \nUpgrades Guard Towers and lets you build Keeps, which are stronger and have more attack strength, range, and armor.\n+750 HP, +1 attack, -20% reload time, +1/1P armor, +1 damage vs Ships and Fishing Ships, secondary arrows +1 base attack, +1 damage vs Ships and Fishing Ships."
 
 28217 "Upgrade to <b>Two-Handed Swordsman<b> (<cost>) (time: 51) \nUpgrades your Long Swordsmen and lets you create Two-Handed Swordsmen, which are stronger.\n+3 attack, +1 LOS, +2 damage vs Eagle Warriors, +1 damage vs Buildings."
+
+28255 "Research <b>Farimba<b> (<cost>)\nCavalry +4 attack."
 
 28260 "Upgrade to <b>Champion<b> (<cost>) (time: 70) \nUpgrades your Two-Handed Swordsmen and lets you create Champions, which are stronger and equipped with armor.\n+10 HP, +1 attack, +1 search radius."
 
@@ -115,7 +118,7 @@
 
 120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n• Spearman line and Shotel Warrior's attack can break 1 melee/pierce armor of enemy land units (except siege weapons)\n\n<b>Unique Unit:<b> \nShotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Scout, Cavalry and Cavalry Archer class units) \n• Torsion Engines (Siege Workshop units +0.45 blast radius, +0.05 extra for Rams, increase the projectile width to 0.4 for Scorpions) \n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 
-120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/\nCastle/Imperial Age\n\n<b>Unique Unit:<b> \nGbeto (Infantry), Sofa (Cavalry)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +5 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
+120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/\nCastle/Imperial Age\n\n<b>Unique Unit:<b> \nGbeto (Infantry), Sofa (Cavalry)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
 
 120176 "Cavalry and Naval civilization \n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age \n• All ships +10% moving speed \n\n<b>Unique Unit : <b>\nCamel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate) \n• Maghrabi Camels (Camel units have regeneration of 1 HP/sec) \n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age, Spanish, Portuguese and Berbers' Elite Genitours upgrade -50% cost"
 
@@ -139,7 +142,7 @@
 
 120186 "Infantry civilization \n\n• Start with +100 stone (received when the first TC is built up in Nomad mode) \n• Castles, Tower class, Wall class and Gate class buildings -40% building time, Town Centers -50% building time \n• Land military units (except siege weapons) receive -33% bonus damage \n• Farm upgrades provide +100% additional food \n• Can build Donjon, but cannot build Towers \n\n<b>Unique Unit:<b> \n• Serjeant (infantry can build Donjons)\nHospitaller Knight (cavalry that can charge and strengthen allies)\n\n<b>Unique Techs:<b> \n• First Crusade (Each Town Center (maximum 5) spawns a one-time batch of 5 Serjeants); All units +4 min/+4 max conversion time \n• Hauberk (Knight-Line units +1/+2P armor)\n• Scutage (Gain 250 gold, and each military unit +10)\n\n<b>Team Bonus:<b> \nTransport ships -50% cost, +5 LOS"
 
-120187 "Cavalry civilization \n\n• Villagers regenerate 10/15/20 HPs per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill \n• Stone Miners generate 0.33 gold per stone\n• Bloodlines and Scout-line upgrades -50% food cost, Light Cavalry can be upgraded an age in advance\n\n<b>Unique Units:<b> \nObuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry)\n\n<b>Unique Techs:<b> \n• Szlachta Privileges (Knight-line -60% gold cost) \n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 75% of the stone production)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b> \nScout-Line units +1 attack vs Archers"
+120187 "Cavalry civilization \n\n• Villagers regenerate 10/15/20 HPs per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill \n• Stone Miners generate 0.33 gold per stone\n• Bloodlines and Scout-line upgrades -50% food cost, Light Cavalry can be upgraded an age in advance\n\n<b>Unique Units:<b> \nObuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry)\n\n<b>Unique Techs:<b> \n• Szlachta Privileges (Knight-line -60% gold cost) \n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b> \nScout-Line units +1 attack vs Archers"
 
 120188 "Gunpowder and Monk civilization \n\n• Blacksmiths and Universities -100 wood cost \n• Chemistry and Hand Cannoneer available in Castle Age \n• Spearman-line +25% bonus damage \n• Fervor and Sanctity affect Villagers \n• Mining Camp technologies free \n\n<b>Unique Units:<b> \nHussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Chariot Archer (cavalry archer), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b> \n• Wagenburg Tactics (Gunpowder units move 15% faster) \n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food)\n• Taborites (Transform current villagers to Taborite Warriors, and Taborite Warriors can be trained at Town Center)\n\n<b>Team Bonus:<b> \nMarkets +50% work rate"
 
@@ -339,7 +342,7 @@
 501082 "Research Die Goldene Bulle (Monks and Crusader Knights +5 Monk armor, +45 HP regeneration per minute)"
 501083 "Research Apostle (Monks and Warrior Priests can generate 60/45 gold per minute)"
 501084 "Research Hesychast (Monks +150% heal range and heal rate)"
-501085 "Research Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 75% of the stone production)"
+501085 "Research Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)"
 501086 "Research Jinete Tactics (Genitours +2 max range)"
 501087 "Research Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)"
 
@@ -428,7 +431,7 @@
 521082 "Research <b>Die Goldene Bulle<b> (<cost>) (Time: 60)\nMonks and Crusader Knights +5 Monk armor, +45 HP regeneration per minute."
 521083 "Research <b>Apostle<b> (<cost>) (Time: 45)\nMonks and Warrior Priests can generate 60/45 gold per minute."
 521084 "Research <b>Hesychast<b> (<cost>) (Time: 45)\nMonks +150% heal range and heal rate."
-521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>) (Time: 45)\nMined and future-mined stone mines will produce an additional food output equivalent to 75% of the stone production."
+521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>) (Time: 45)\nMined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production."
 521086 "Research <b>Jinete Tactics<b> (<cost>) (Time: 60)\nGenitours +2 max range."
 521087 "Research <b>Explorer<b> (<cost>) (Time: 45)\nYou can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on."
 

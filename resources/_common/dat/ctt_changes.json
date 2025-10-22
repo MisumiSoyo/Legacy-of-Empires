@@ -2422,6 +2422,13 @@
             "Use Type": "Tech",
             "position": "before",
             "target_id": 3134
+        },
+        {
+            "action": "modify",
+            "civ_id": "MALIANS",
+            "Node ID": 75,
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }
