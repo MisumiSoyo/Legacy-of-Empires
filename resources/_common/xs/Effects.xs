@@ -886,6 +886,7 @@ extern const int cAttributeMagyarsSteppeLancerAttackBonus = 412;    //  马扎�
 extern const int cAttributeVikingRaiderKills = 413; //  维京掠夺者击杀数
 extern const int cAttributeApostleProductivity = 414;   //  使徒黄金产出速率
 extern const int cAttributePolesFoodObtained = 415; //  维利奇卡盐矿已经奖励的食物数
+extern const int cAttributeSpanishExplorerGoldCalced = 416; //  西班牙探险家已经计算的黄金数
 
 
 //  单位ID定义
@@ -928,7 +929,7 @@ extern const int InvisibleDeerSpawnerID = 4052;
 
 extern const int HospitallerKnightMaxCharge = 300; //   医院骑士技能充能
 extern const float ShrineMaxCharge = 1200.0;    //  圣坛最大充能
-extern const float MalayTCandDockAbilityRange = 9; //  马来城镇中心和船坞产生资源的计算范围
+extern const float MalayTCandDockAbilityRange = 11; //  马来城镇中心和船坞产生资源的计算范围
 
 
 //  全局数组
@@ -942,6 +943,12 @@ extern int FloatingGardenTime = 0;  //  浮动园地剩余时长
 extern int YumKaaxBlessingTime = 0; //  玉米神祝福剩余时长
 extern int MercenaryContractNum = 0;   //  意大利雇佣兵合同招募数
 extern int ShrineSpawnCount = 0;    //  圣坛生产次数
+extern int GaiaResIDs = 0;  //  Gaia资源单位ID值
+extern int GaiaResClass = 0;    //  Gaia资源单位种属
+extern int GaiaResPos = 0;  //  Gaia资源单位坐标
+extern int GaiaResNum = 0;  //  Gaia资源单位初始资源值
+extern int GaiaResType = 0; //  Gaia单位的资源种类
+extern int MalayResIsCount = 0; //  马来使用, 标记资源是否已被计算
 
 
 //  全局矩阵
@@ -950,9 +957,11 @@ extern int RecordedResourceType = 0;    //  已经统计的地图资源单位的
 extern int RecordedResourceStorage = 0; //  已经统计的地图资源单位的资源数
 extern int RecordedResourceOwner = 0; //  已经统计的地图资源所属计算的建筑
 extern int RecordedResourceNum = 0; //  已经统计的地图资源值总计
+extern int RecordedGaiaResID = 0;   //  已经统计的地图资源单位在Gaia资源单位ID数组中的序号
 extern int RecordedTCandDockIDs = 0;    //  已经统计的城镇中心和船坞单位ID
-extern int GaiaResIDs = 0;  //  Gaia资源单位ID值
-extern int GaiaResClass = 0;    //  Gaia资源单位种属
+
+
+extern int Cnt = 0;
 
 
 //  引用文件
@@ -1673,7 +1682,8 @@ void Persians(int Time = 0, int playerId = -1)
     int CastleArray = NewArrayInt();
     CastleArray = xsGetPlayerUnitIds(playerId, CastleID, CastleArray);
     int i = 0;
-    for (i = 0; <xsArrayGetSize(BuildingArray))
+    int BuildingArraySize = xsArrayGetSize(BuildingArray);
+    for (i = 0; < BuildingArraySize)
     {
         //判断是否在城堡覆盖范围内
         int BuildingID = xsArrayGetInt(BuildingArray, i);
@@ -1712,6 +1722,22 @@ void Persians(int Time = 0, int playerId = -1)
         xsResetTaskAmount();
         LaunchAura(playerId, CastleID);
     }
+}
+
+
+//  西班牙独特科技, 探险家
+void Spanish(int Time = 0, int playerId = -1)
+{
+    static float ExplorerGoldRate = 0.015;
+    int i = 0;
+    float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
+    float CurrentGold = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if (i != playerId)
+            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
+    if (isResearched(playerId, 3135))
+        ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
+    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
 }
 
 
@@ -1769,63 +1795,47 @@ void Magyars(int Time = 0, int playerId = -1)
 }
 
 
-//  马来, 城镇中心和船坞根据周围资源产生资源
+//  马来,最早的城镇中心根据周围资源产生资源
 void Malay(int Time = 0, int playerId = -1)
 {
     int i = 0;
 
-    //  检测当前已经记录的资源是否因城镇中心或船坞被摧毁而不在计算范围之内, 如果是则清除
-    //  如果多个城镇中心或船坞覆盖一个资源, 而最初那个被摧毁, 将发生错误。这个问题准备在之后解决
-    while (i < MatrixRowLength(RecordedResourceIDs, playerId))
-    {
-        int ResourceUnitID = MatrixGetInt(RecordedResourceIDs, playerId, i);
-        if (xsDoesUnitExist(MatrixGetInt(RecordedResourceOwner, playerId, i)))
-            i++;
-        else
-        {
-            int ResourceType = MatrixGetInt(RecordedResourceType, playerId, i);
-            MatrixIncFloat(RecordedResourceNum, playerId, ResourceType, 0.0 - MatrixGetFloat(RecordedResourceStorage, playerId, i)
-                                                          * MalayResourceOutRate(ResourceType));
-            MatrixRemoveInt(RecordedResourceIDs, playerId, i);
-            MatrixRemoveInt(RecordedResourceType, playerId, i);
-            MatrixRemoveFloat(RecordedResourceStorage, playerId, i);
-            MatrixRemoveInt(RecordedResourceOwner, playerId, i);
-        }
-    }
+    //  检测城镇中心, 取第一个检测
+    for (i = 0; <= 16)
+        MatrixSetFloat(RecordedResourceNum, playerId, i, 0.0);
 
-    //  检测新建成的城镇中心和船坞
     int BuildingIDs = NewArrayInt();
     BuildingIDs = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingIDs);
     for (i = 0; < xsArrayGetSize(BuildingIDs))
     {
         int UnitID = xsArrayGetInt(BuildingIDs, i);
         int ObjectID = xsGetUnitObjectId(UnitID);
-        if ((isTownCenter(ObjectID) || isDock(ObjectID)) && (MatrixFindInt(RecordedTCandDockIDs, playerId, UnitID) == -1))   //  新建成的城镇中心或船坞
+        if (isTownCenter(ObjectID))
         {
             MalayTCandDockAbility(playerId, UnitID);
-            MatrixAppendInt(RecordedTCandDockIDs, playerId, UnitID);
+            break;
         }
     }
     RecycleArrayInt(BuildingIDs);
 
-    //  增加资源, 在封建时代/城堡时代/帝王时代资源获取速度 +25/25/50%
+    //  增加资源, 在封建时代/城堡时代/帝王时代资源获取速度 +50/100/200%
     int CurrentAge = xsPlayerAttribute(playerId, cAttributeCurrentAge);
     float CurrentResBonus = 0.0;
     switch (CurrentAge)
     {
         case 1:
         {
-            CurrentResBonus = 0.25;
+            CurrentResBonus = 0.5;
             break;
         }
         case 2:
         {
-            CurrentResBonus = 0.25;
+            CurrentResBonus = 1.0;
             break;
         }
         case 3:
         {
-            CurrentResBonus = 0.5;
+            CurrentResBonus = 2.0;
             break;
         }
         default:
@@ -1833,9 +1843,9 @@ void Malay(int Time = 0, int playerId = -1)
     }
     for (i = 0; <= 3)
     {
-        ModResource(playerId, i, MatrixGetFloat(RecordedResourceNum, playerId, i) / 60 * (1.0 + CurrentResBonus));
+        ModResource(playerId, i, MatrixGetFloat(RecordedResourceNum, playerId, i) * MalayResourceOutRate(i) / 60 * (1.0 + CurrentResBonus));
     }
-    ModResource(playerId, cAttributeFood, MatrixGetFloat(RecordedResourceNum, playerId, 16) / 60 * (1.0 + CurrentResBonus));
+    ModResource(playerId, cAttributeFood, MatrixGetFloat(RecordedResourceNum, playerId, 16) * MalayResourceOutRate(cAttributeFood) / 60 * (1.0 + CurrentResBonus));
 }
 
 
@@ -1870,10 +1880,12 @@ void Poles(int Time = -1, int playerId = -1)
 }
 
 
-void GetGaiaResIDs()
+void GetGaiaRes()
 {
     GaiaResIDs = NewArrayInt(0, 0);
     GaiaResClass = NewArrayInt(0, 0);
+    GaiaResType = NewArrayInt(0, 0);
+    GaiaResNum = NewArrayFloat(0, 0.0);
     int i = 0;
     int TempArray = 0;
     for (i = 900; <= 964)
@@ -1883,10 +1895,26 @@ void GetGaiaResIDs()
             int j = 0;
             for (j = 0; < xsArrayGetSize(TempArray))
             {
-                ArrayAppendInt(GaiaResIDs, xsArrayGetInt(TempArray, j));
+                int ResourceID = xsArrayGetInt(TempArray, j);
+                ArrayAppendInt(GaiaResIDs, ResourceID);
                 ArrayAppendInt(GaiaResClass, i);
+                //  枚举肉木金石四种资源, 找到资源类型
+                int k = 0;
+                int ResourceHeldType = 0;
+                for (k = 0; <= 3)
+                    if (xsGetUnitAttributeHeld(ResourceID, k) > 0.0)
+                        ResourceHeldType = k;
+                if (xsGetUnitAttributeHeld(ResourceID, cAttributeBerries) > 0.0)
+                    ResourceHeldType = cAttributeBerries;
+                float ResourceHeld = xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceID), cAmountFirstStorage);
+                ArrayAppendInt(GaiaResType, ResourceHeldType);
+                ArrayAppendFloat(GaiaResNum, ResourceHeld);
             }
         }
+    int size = xsArrayGetSize(GaiaResIDs);
+    GaiaResPos = xsArrayCreateVector(size, vector(-1.0, -1.0, -1.0));
+    for (i = 0; < size)
+        xsArraySetVector(GaiaResPos, i, xsGetUnitPosition(xsArrayGetInt(GaiaResIDs, i)));
     RecycleArrayInt(TempArray);
 }
 
@@ -1907,9 +1935,10 @@ void Init()
     RecordedResourceType = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
     RecordedResourceStorage = NewMatrixFloat(xsGetNumPlayers() + 1, 0, 0.0);
     RecordedResourceOwner = NewMatrixInt(xsGetNumPlayers() + 1, 0);
+    RecordedGaiaResID = NewMatrixInt(xsGetNumPlayers() + 1, 0);
     RecordedResourceNum = NewMatrixFloat(xsGetNumPlayers() + 1, 600, 0.0);
     RecordedTCandDockIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
-    GetGaiaResIDs();
+    GetGaiaRes();
 }
 
 
@@ -1928,6 +1957,11 @@ void TimerEvent(int Time = 0, int playerId = -1)
         case cPersians:
         {
             Persians(Time, playerId);
+            break;
+        }
+        case cSpanish:
+        {
+            Spanish(Time, playerId);
             break;
         }
         case cAztecs:

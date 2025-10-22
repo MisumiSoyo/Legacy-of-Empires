@@ -382,11 +382,6 @@ void HospitallerKnight(int Time = 0, int playerId = -1)
     for (i = 0; < xsArrayGetSize(HospitallerKnightArray))
         xsSetUnitCharge(xsArrayGetInt(HospitallerKnightArray, i), CurrentCharge);
 
-    int EliteHospitallerKnightArray = NewArrayInt();
-    EliteHospitallerKnightArray = xsGetPlayerUnitIds(playerId, EliteHospitallerKnightID, EliteHospitallerKnightArray);
-    for (i = 0; < xsArrayGetSize(EliteHospitallerKnightArray))
-        xsSetUnitCharge(xsArrayGetInt(EliteHospitallerKnightArray, i), CurrentCharge);
-
     if (RemainingTime > 0)
     {
         RemainingTime --;
@@ -396,7 +391,6 @@ void HospitallerKnight(int Time = 0, int playerId = -1)
     }
 
     RecycleArrayInt(HospitallerKnightArray);
-    RecycleArrayInt(EliteHospitallerKnightArray);
 }
 
 
@@ -573,13 +567,13 @@ float MalayResourceOutRate(int ResourceID = -1)
     switch (ResourceID)
     {
         case cAttributeFood:
-            return (1.0 / 75);
+            return (1.0 / 450);
         case cAttributeGold:
-            return (1.0 / 320);
+            return (1.0 / 1600);
         case cAttributeStone:
-            return (1.0 / 320);
+            return (1.0 / 640);
         case cAttributeBerries:
-            return (1.0 / 75);
+            return (1.0 / 450);
         default:
             return (0.0);
     }
@@ -587,7 +581,7 @@ float MalayResourceOutRate(int ResourceID = -1)
 }
 
 
-//  马来城镇中心和船坞根据周围资源产生资源, 由于太卡了, 所以不考虑木材
+//  马来第一个城镇中心根据周围资源产生资源, 由于太卡了, 所以不考虑木材
 void MalayTCandDockAbility(int playerId = -1, int UnitID = -1)
 {
     int i = 0;
@@ -595,26 +589,13 @@ void MalayTCandDockAbility(int playerId = -1, int UnitID = -1)
     for (i = 0; < xsArrayGetSize(GaiaResIDs))
     {
         int ResourceUnitID = xsArrayGetInt(GaiaResIDs, i);
-        vector ResourceUnitPos = xsGetUnitPosition(ResourceUnitID);
+        vector ResourceUnitPos = xsArrayGetVector(GaiaResPos, i);
         if ((DistanceX(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange) || (DistanceY(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange))
             continue;
-        if (MatrixFindInt(RecordedResourceIDs, playerId, ResourceUnitID) == -1)
-        {
-            MatrixAppendInt(RecordedResourceIDs, playerId, ResourceUnitID);
-            //  枚举肉木金石四种资源, 找到资源类型
-            int k = 0;
-            int ResourceHeldType = 0;
-            for (k = 0; <= 3)
-                if (xsGetUnitAttributeHeld(ResourceUnitID, k) > 0.0)
-                    ResourceHeldType = k;
-            if (xsGetUnitAttributeHeld(ResourceUnitID, cAttributeBerries) > 0.0)
-                ResourceHeldType = cAttributeBerries;
-            float ResourceHeld = xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceUnitID), cAmountFirstStorage);
-            MatrixIncFloat(RecordedResourceNum, playerId, ResourceHeldType, ResourceHeld * MalayResourceOutRate(ResourceHeldType));
-            MatrixAppendInt(RecordedResourceType, playerId, ResourceHeldType);
-            MatrixAppendFloat(RecordedResourceStorage, playerId, ResourceHeld);
-            MatrixAppendInt(RecordedResourceOwner, playerId, UnitID);
-        }
+        int ResourceHeldType = xsArrayGetInt(GaiaResType, i);
+        float ResourceHeld = xsArrayGetFloat(GaiaResNum, i);
+        MatrixIncFloat(RecordedResourceNum, playerId, ResourceHeldType, ResourceHeld);
+        xsArraySetInt(MalayResIsCount, i, 1);
     }
 }
 

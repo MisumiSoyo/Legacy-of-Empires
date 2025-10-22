@@ -33270,6 +33270,10 @@
                         "Name": "Jinete Tactics",
                         "RequiredAge": 4,
                         "ID": 3134
+                    },
+                    {
+                        "RequiredAge": 3,
+                        "ID": 3135
                     }
                 ]
             },

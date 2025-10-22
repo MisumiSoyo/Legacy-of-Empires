@@ -162,43 +162,61 @@ void ArrayInsertVector(int ArrayID = -1, int index = 0, vector value = vector(-1
 
 
 //  删除数组中指定位置的元素
-void ArrayRemoveInt(int ArrayID = -1, int index = 0)
+void ArrayRemoveInt(int ArrayID = -1, int index = 0, bool KeepOrder = true)
 {
-    if (xsArrayGetSize(ArrayID) == 1)
+    int ArraySize = xsArrayGetSize(ArrayID);
+    if (ArraySize == 1)
     {
         xsArrayResizeInt(ArrayID, 0);
         return;
     }
-    int i = 0;
-    for (i = index; < xsArrayGetSize(ArrayID) - 1)
-        xsArraySetInt(ArrayID, i, xsArrayGetInt(ArrayID, i + 1));
-    xsArrayResizeInt(ArrayID, xsArrayGetSize(ArrayID) - 1);
+    if (KeepOrder)
+    {
+        int i = 0;
+        for (i = index; < ArraySize - 1)
+            xsArraySetInt(ArrayID, i, xsArrayGetInt(ArrayID, i + 1));
+    }
+    else
+        xsArraySetInt(ArrayID, index, xsArrayGetInt(ArrayID, ArraySize - 1));
+    xsArrayResizeInt(ArrayID, ArraySize - 1);
 }
 
-void ArrayRemoveFloat(int ArrayID = -1, int index = 0)
+void ArrayRemoveFloat(int ArrayID = -1, int index = 0, bool KeepOrder = true)
 {
-    if (xsArrayGetSize(ArrayID) == 1)
+    int ArraySize = xsArrayGetSize(ArrayID);
+    if (ArraySize == 1)
     {
         xsArrayResizeFloat(ArrayID, 0);
         return;
     }
-    int i = 0;
-    for (i = index; < xsArrayGetSize(ArrayID) - 1)
-        xsArraySetFloat(ArrayID, i, xsArrayGetFloat(ArrayID, i + 1));
-    xsArrayResizeFloat(ArrayID, xsArrayGetSize(ArrayID) - 1);
+    if (KeepOrder)
+    {
+        int i = 0;
+        for (i = index; < ArraySize - 1)
+            xsArraySetFloat(ArrayID, i, xsArrayGetFloat(ArrayID, i + 1));
+    }
+    else
+        xsArraySetFloat(ArrayID, index, xsArrayGetFloat(ArrayID, ArraySize - 1));
+    xsArrayResizeFloat(ArrayID, ArraySize - 1);
 }
 
-void ArrayRemoveVector(int ArrayID = -1, int index = 0)
+void ArrayRemoveVector(int ArrayID = -1, int index = 0, bool KeepOrder = true)
 {
-    if (xsArrayGetSize(ArrayID) == 1)
+    int ArraySize = xsArrayGetSize(ArrayID);
+    if (ArraySize == 1)
     {
         xsArrayResizeVector(ArrayID, 0);
         return;
     }
-    int i = 0;
-    for (i = index; < xsArrayGetSize(ArrayID) - 1)
-        xsArraySetVector(ArrayID, i, xsArrayGetVector(ArrayID, i + 1));
-    xsArrayResizeVector(ArrayID, xsArrayGetSize(ArrayID) - 1);
+    if (KeepOrder)
+    {
+        int i = 0;
+        for (i = index; < ArraySize - 1)
+            xsArraySetVector(ArrayID, i, xsArrayGetVector(ArrayID, i + 1));
+    }
+    else
+        xsArraySetVector(ArrayID, index, xsArrayGetVector(ArrayID, ArraySize - 1));
+    xsArrayResizeVector(ArrayID, ArraySize - 1);
 }
 
 //  在数组头部添加元素
@@ -757,9 +775,9 @@ void MatrixAppendVector(int MatrixID = -1, int row = -1, vector value = vector(-
 
 
 //  在矩阵中删除一个元素
-void MatrixRemoveInt(int MatrixID = -1, int row = -1, int column = -1)
+void MatrixRemoveInt(int MatrixID = -1, int row = -1, int column = -1, bool KeepOrder = true)
 {
-    ArrayRemoveInt(xsArrayGetInt(MatrixID, row), column);
+    ArrayRemoveInt(xsArrayGetInt(MatrixID, row), column, KeepOrder);
 }
 
 void MatrixRemoveFloat(int MatrixID = -1, int row = -1, int column = -1)

@@ -2301,7 +2301,7 @@
             "Building ID": 209,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600086,
-            "Link ID": -1,
+            "Link ID": 3135,
             "Link Node Type": "BuildingTech",
             "Name": "Jinete Tactics",
             "Name String ID": 500086,
@@ -2400,6 +2400,28 @@
             "Node ID": [3054, 3055, 3056, 3057],
             "Use Type": "Tech",
             "Building ID": 1734
+        },
+        {
+            "action": "add",
+            "civ_id": "SPANISH",
+            "Age ID": 3,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600087,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Explorer",
+            "Name String ID": 500087,
+            "Node ID": 3135,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech",
+            "position": "before",
+            "target_id": 3134
         }
     ]
 }

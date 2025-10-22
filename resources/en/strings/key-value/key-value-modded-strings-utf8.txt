@@ -91,7 +91,7 @@
 
 120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight \n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b> \n• Woad Raider (High moving speed infantry)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30HP/min regeneration for infantry class units within 7 tile range) \n• Furor Celtica (Siege Weapons +40% HP) \n• Siege Technique (Rams +400 melee attack, +20% attack bonus vs buildings)\n\n<b>Team bonus: <b>\nSiege Workshop work rate +20%"
 
-120163 "Gunpowder and Monk civilization \n\n• Builders +30% work rate (not applied on the first TC in Nomad mode) \n• Blacksmith upgrades don't cost gold \n• Cannon Galleons projectile speed increases to 7 and enables Ballistics effect \n• Gunpowder units +18% attack speed\n• Gain 20 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\nConquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range) \n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Genitours +2 max range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
+120163 "Gunpowder and Monk civilization \n\n• Builders +30% work rate (not applied on the first TC in Nomad mode) \n• Blacksmith upgrades don't cost gold \n• Cannon Galleons projectile speed increases to 7 and enables Ballistics effect \n• Gunpowder units +18% attack speed\n• Gain 20 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\nConquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range) \n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)\n• Jinete Tactics (Genitours +2 max range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 
 120164 "Infantry and Monk civilization \n\n• Villagers +3 carry capacity\n• Military units' train speed and Shrine's productivity +15%\n• +5 Monk hit points for each Monastery technology \n• Start with +50 gold (receive when first TC is built up in Nomad mode)\n• Archer line +5/10% movement speed at Castle/Imperial Age\n\n<b>Unique Unit:<b> \nJaguar Warrior (Infantry better combats with infantries) \n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range) \n• Garland Wars (Infantries +4 attack)\n• Floating Garden (Economic units and all buildings +20% work rate, lasting for 3 minutes)\n• Ixitpla (Castle will produce one Jaguar Warrior for every 7 enemy land units killed)\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
 
@@ -121,7 +121,7 @@
 
 120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \nBallista Elephant (Scorpion on elephant) \n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
 
-120178 "Naval civilization \n\n• Advancing to the next age -40% time \n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n\n<b>Unique Unit:<b> \nKarambit Warrior (Infantry uses only half of population) \n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
+120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• The earliest built town center continuously produces food, gold, and stone based on the surrounding resources. The production will not decrease, and will increase with age\n\n<b>Unique Unit:<b> \nKarambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
 
 120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\nArambai (High attack, low accuray cavalry archer) \n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 
@@ -252,6 +252,7 @@
 500084 "Hesychast"
 500085 "Kopalnia Soli Wieliczka"
 500086 "Jinete Tactics"
+500087 "Explorer"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -340,6 +341,7 @@
 501084 "Research Hesychast (Monks +150% heal range and heal rate)"
 501085 "Research Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 75% of the stone production)"
 501086 "Research Jinete Tactics (Genitours +2 max range)"
+501087 "Research Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (Time: 30) Fish ships and Transport ships +25%Movement Speed"
@@ -428,6 +430,7 @@
 521084 "Research <b>Hesychast<b> (<cost>) (Time: 45)\nMonks +150% heal range and heal rate."
 521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>) (Time: 45)\nMined and future-mined stone mines will produce an additional food output equivalent to 75% of the stone production."
 521086 "Research <b>Jinete Tactics<b> (<cost>) (Time: 60)\nGenitours +2 max range."
+521087 "Research <b>Explorer<b> (<cost>) (Time: 45)\nYou can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
