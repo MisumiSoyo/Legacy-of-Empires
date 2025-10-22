@@ -38262,6 +38262,36 @@
                 },
                 {
                     "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 107039,
+                    "Link ID": 435,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Husbandry",
+                    "Name String ID": 17039,
+                    "Node ID": 39,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 10,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
                     "Building ID": 49,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105094,
@@ -131362,7 +131392,7 @@
                         "None"
                     ],
                     "Trigger Tech ID": 222,
-                    "Use Type": "Tech"
+                    "Use Type": "Unit"
                 },
                 {
                     "Age ID": 3,
@@ -132544,7 +132574,7 @@
                     "Name": "Blast Furnace",
                     "Name String ID": 17075,
                     "Node ID": 75,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 21,
                     "Prerequisite IDs": [
@@ -172926,7 +172956,7 @@
                         "None"
                     ],
                     "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
+                    "Use Type": "Unit"
                 },
                 {
                     "Age ID": 4,
@@ -173688,7 +173718,7 @@
                     "Name": "Husbandry",
                     "Name String ID": 17039,
                     "Node ID": 39,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 10,
                     "Prerequisite IDs": [

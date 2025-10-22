@@ -47,7 +47,7 @@
 
 28217 "Upgrade to <b>Two-Handed Swordsman<b> (<cost>) (time: 51) \nUpgrades your Long Swordsmen and lets you create Two-Handed Swordsmen, which are stronger.\n+3 attack, +1 LOS, +2 damage vs Eagle Warriors, +1 damage vs Buildings."
 
-28255 "Research <b>Farimba<b> (<cost>)\nCavalry +4 attack."
+28255 "Research <b>Farimba<b> (<cost>) (Time: 40)\nCavalry +4 attack."
 
 28260 "Upgrade to <b>Champion<b> (<cost>) (time: 70) \nUpgrades your Two-Handed Swordsmen and lets you create Champions, which are stronger and equipped with armor.\n+10 HP, +1 attack, +1 search radius."
 
