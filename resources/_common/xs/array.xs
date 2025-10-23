@@ -485,19 +485,16 @@ int NewArrayVector(int size = 0, vector defaultValue = vector(-1.0, -1.0, -1.0))
 //  RecycleArrayInt()函数将数组加入待回收的队列中
 void RecycleArrayInt(int ArrayID = -1)
 {
-    xsArrayResizeInt(ArrayID, 0);
     ArrayAppendInt(RecycleArraysInt, ArrayID);
 }
 
 void RecycleArrayFloat(int ArrayID = -1)
 {
-    xsArrayResizeFloat(ArrayID, 0);
     ArrayAppendInt(RecycleArraysFloat, ArrayID);
 }
 
 void RecycleArrayVector(int ArrayID = -1)
 {
-    xsArrayResizeVector(ArrayID, 0);
     ArrayAppendInt(RecycleArraysVector, ArrayID);
 }
 

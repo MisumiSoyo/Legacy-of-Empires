@@ -2429,6 +2429,26 @@
             "Node ID": 75,
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "action": "add",
+            "civ_id": "PORTUGUESE",
+            "Age ID": 4,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600088,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Sagres School",
+            "Name String ID": 500088,
+            "Node ID": 3137,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }

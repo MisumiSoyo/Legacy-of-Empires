@@ -601,15 +601,28 @@ int GarrisonUnitCount(int playerId = -1, int UnitID = -1, int ObjectID = -1)
 //  统计驻扎在ObjectID1中的ObjectID2的单位总数
 int GarrisonObjectCount(int playerId = -1, int ObjectID1 = -1, int ObjectID2 = -1)
 {
-    int UnitIDs = NewArrayInt();
-    UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID1, UnitIDs);
+    int UnitIDs1 = NewArrayInt();
+    int UnitIDs2 = NewArrayInt();
+    UnitIDs1 = xsGetPlayerUnitIds(playerId, ObjectID1, UnitIDs1);
+    UnitIDs2 = xsGetPlayerUnitIds(playerId, ObjectID2, UnitIDs2);
+    int UnitCount1 = xsArrayGetSize(UnitIDs1);
+    int UnitCount2 = xsArrayGetSize(UnitIDs2);
     int Result = 0;
     int i = 0;
-    for (i = 0; < xsArrayGetSize(UnitIDs))
+    int j = 0;
+    for (j = 0; < UnitCount2)
     {
-        int UnitID = xsArrayGetInt(UnitIDs, i);
-        Result = Result + GarrisonUnitCount(playerId, UnitID, ObjectID2);
+        bool flag = false;
+        for (i = 0; < UnitCount1)
+            if (xsGetUnitPosition(xsArrayGetInt(UnitIDs1, i)) == xsGetUnitPosition(xsArrayGetInt(UnitIDs2, j)))
+            {
+                flag = true;
+                break;
+            }
+        if (flag)
+            Result ++;
     }
-    RecycleArrayInt(UnitIDs);
+    RecycleArrayInt(UnitIDs1);
+    RecycleArrayInt(UnitIDs2);
     return (Result);
 }

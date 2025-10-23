@@ -664,6 +664,6 @@ void AbilityApplier()
         HospitallerKnightInit(i);
         TCSpawnedDeerInit(i);
         ShrineInit(i);
-        MalayTCandDockInit(i);
+        //MalayTCandDockInit(i);
     }
 }

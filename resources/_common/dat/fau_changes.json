@@ -1082,6 +1082,13 @@
             "tech_id": 75,
             "building_id": 103,
             "RequiredAge": 4
+        },
+        {
+            "note": "萨格里什学校",
+            "civilizations": "Portuguese",
+            "tech_id": 3137,
+            "building_id": 209,
+            "RequiredAge": 4
         }
     ]
 }

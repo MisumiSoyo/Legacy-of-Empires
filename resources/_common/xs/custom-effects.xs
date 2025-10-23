@@ -89,7 +89,6 @@ extern int MalayResIsCount = 0; //  马来使用, 标记资源是否已被计算
 extern int RecordedResourceIDs = 0; //  已经统计的地图资源单位ID
 extern int RecordedResourceType = 0;    //  已经统计的地图资源单位的资源类型
 extern int RecordedResourceStorage = 0; //  已经统计的地图资源单位的资源数
-extern int RecordedResourceOwner = 0; //  已经统计的地图资源所属计算的建筑
 extern int RecordedResourceNum = 0; //  已经统计的地图资源值总计
 extern int RecordedGaiaResID = 0;   //  已经统计的地图资源单位在Gaia资源单位ID数组中的序号
 extern int RecordedTCandDockIDs = 0;    //  已经统计的城镇中心和船坞单位ID
@@ -929,28 +928,66 @@ void Magyars(int Time = 0, int playerId = -1)
 }
 
 
-//  马来, 最早的城镇中心根据周围资源产生资源; 香料贸易效果
+//  马来, 城镇中心根据周围资源产生资源。由于太卡, 暂时弃用
 void Malay(int Time = 0, int playerId = -1)
 {
     int i = 0;
+    int j = 0;
+    bool flag = false;
 
-    //  检测城镇中心, 取第一个检测
-    for (i = 0; <= 16)
+    //  检测城镇中心
+    for (i = 0; <= 3)
         MatrixSetFloat(RecordedResourceNum, playerId, i, 0.0);
 
-    int BuildingIDs = NewArrayInt();
-    BuildingIDs = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingIDs);
-    for (i = 0; < xsArrayGetSize(BuildingIDs))
+    int UnitIDs = NewArrayInt();
+    int TCArray = NewArrayInt();
+    int TempArray = NewArrayInt();
+    int GaiaResSize = xsArrayGetSize(GaiaResIDs);
+    int TCIDs = NewArrayInt(1000, -1);
+    ArrayAppendInt(TCIDs, 109);
+    int TCCount = 0;
+    for (i = 0; < xsArrayGetSize(TCIDs))
     {
-        int UnitID = xsArrayGetInt(BuildingIDs, i);
-        int ObjectID = xsGetUnitObjectId(UnitID);
-        if (isTownCenter(ObjectID))
+        TempArray = xsGetPlayerUnitIds(playerId, xsArrayGetInt(TCIDs, i), TempArray);
+        for (j = 0; < xsArrayGetSize(TempArray))
         {
-            MalayTCandDockAbility(playerId, UnitID);
-            break;
+            xsArraySetInt(TCArray, TCCount, xsArrayGetInt(TempArray, j));
+            TCCount ++;
         }
     }
-    RecycleArrayInt(BuildingIDs);
+    for (i = 0; < GaiaResSize)
+    {
+        flag = false;
+        vector ResPos = xsArrayGetVector(GaiaResPos, i);
+        for (j = 0; < TCCount)
+        {
+            vector UnitPos = xsGetUnitPosition(xsArrayGetInt(TCArray, j));
+            if ((DistanceX(ResPos, UnitPos) <= MalayTCandDockAbilityRange) && (DistanceY(ResPos, UnitPos) <= MalayTCandDockAbilityRange))
+            {
+                flag = true;
+                break;
+            }
+        }
+        if (flag)
+            MatrixIncFloat(RecordedResourceNum, playerId, xsArrayGetInt(GaiaResType, i), xsArrayGetFloat(GaiaResNum, i));
+    }
+    RecycleArrayInt(TempArray);
+    RecycleArrayInt(TCArray);
+    RecycleArrayInt(TCIDs);
+    //int BuildingIDs = NewArrayInt();
+    //for (i = 0;)
+    //BuildingIDs = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingIDs);
+    //for (i = 0; < xsArrayGetSize(BuildingIDs))
+    //{
+    //    int UnitID = xsArrayGetInt(BuildingIDs, i);
+    //    int ObjectID = xsGetUnitObjectId(UnitID);
+    //    if (isTownCenter(ObjectID))
+    //    {
+    //        MalayTCandDockAbility(playerId, UnitID);
+    //        break;
+    //    }
+    //}
+    //RecycleArrayInt(BuildingIDs);
 
     //  增加资源, 在封建时代/城堡时代/帝王时代资源获取速度 +50/100/200%
     int CurrentAge = xsPlayerAttribute(playerId, cAttributeCurrentAge);
@@ -1068,11 +1105,10 @@ void Init()
     RecordedResourceIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
     RecordedResourceType = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
     RecordedResourceStorage = NewMatrixFloat(xsGetNumPlayers() + 1, 0, 0.0);
-    RecordedResourceOwner = NewMatrixInt(xsGetNumPlayers() + 1, 0);
     RecordedGaiaResID = NewMatrixInt(xsGetNumPlayers() + 1, 0);
     RecordedResourceNum = NewMatrixFloat(xsGetNumPlayers() + 1, 600, 0.0);
     RecordedTCandDockIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
-    GetGaiaRes();
+    //GetGaiaRes();
 }
 
 
@@ -1113,11 +1149,11 @@ void TimerEvent(int Time = 0, int playerId = -1)
             Magyars(Time, playerId);
             break;
         }
-        case cMalay:
-        {
-            Malay(Time, playerId);
-            break;
-        }
+        //case cMalay:
+        //{
+        //    Malay(Time, playerId);
+        //    break;
+        //}
         case cTatars:
         {
             Tatars(Time, playerId);

@@ -112,9 +112,9 @@
 
 120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 2 garrisoned relics give +1 attack to Steppe Lancers (maximum +2)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n\n<b>Unique Unit:<b> \nMagyar Huszar (Light cavalry better combats with siege weapons) \n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food) \n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 
-120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate \n• Supplies and Gambesons free \n• Siege Workshop -15% cost \n• Monk class units +20% moving speed \n•  Knight-line units and Boyars +2/+4 attack vs buildings in Castle/Imperial Age\n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \nBoyar (Heavy armored cavalry) \nStreltsy (Hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood) \n• Druzhina (Non-ranged Infantry units make 5 blast damage in 0.5 radius)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
+120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate\n• Supplies and Gambesons free\n• Siege Workshop units -15% cost\n• Monk class units +20% moving speed \n• Knight-line units and Boyars +2/+4 attack vs buildings in Castle/Imperial Age\n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \nBoyar (Heavy armored cavalry) \nStreltsy (Hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood) \n• Druzhina (Infantry units make blast damage)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
 
-120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost \n• Foragers generate 0.33 wood per meat \n• All ships +10% HP \n• Can build Feitoria in Imperial Age\n• Genitours +2 Archer armor\n\n<b>Unique Units:<b> \nOrgan Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack) \n\n<b>Unique Techs: <b>\n•Carrack (All ships +1/1P armor) \n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect) \n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
+120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost \n• Foragers generate 0.33 wood per meat \n• All ships +10% HP \n• Can build Feitoria in Imperial Age\n• Genitours +2 Archer armor\n\n<b>Unique Units:<b> \nOrgan Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack) \n\n<b>Unique Techs: <b>\n•Carrack (All ships +1/1P armor)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Sagres School (Docks +80% work rate)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 
 120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n• Spearman line and Shotel Warrior's attack can break 1 melee/pierce armor of enemy land units (except siege weapons)\n\n<b>Unique Unit:<b> \nShotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Scout, Cavalry and Cavalry Archer class units) \n• Torsion Engines (Siege Workshop units +0.45 blast radius, +0.05 extra for Rams, increase the projectile width to 0.4 for Scorpions) \n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 
@@ -124,7 +124,7 @@
 
 120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \nBallista Elephant (Scorpion on elephant) \n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
 
-120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• The earliest built town center continuously produces food, gold, and stone based on the surrounding resources. The production will not decrease, and will increase with age\n\n<b>Unique Unit:<b> \nKarambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
+120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n\n<b>Unique Unit:<b> \nKarambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
 
 120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\nArambai (High attack, low accuray cavalry archer) \n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 
@@ -256,6 +256,7 @@
 500085 "Kopalnia Soli Wieliczka"
 500086 "Jinete Tactics"
 500087 "Explorer"
+500088 "Sagres School"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -345,6 +346,7 @@
 501085 "Research Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)"
 501086 "Research Jinete Tactics (Genitours +2 max range)"
 501087 "Research Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)"
+501088 "Research Sagres School (Docks +80% work rate)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (Time: 30) Fish ships and Transport ships +25%Movement Speed"
@@ -434,6 +436,7 @@
 521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>) (Time: 45)\nMined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production."
 521086 "Research <b>Jinete Tactics<b> (<cost>) (Time: 60)\nGenitours +2 max range."
 521087 "Research <b>Explorer<b> (<cost>) (Time: 45)\nYou can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on."
+521088 "Research <b>Sagres School<b> (<cost>) (Time: 60)\nDocks +80% work rate."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
