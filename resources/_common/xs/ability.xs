@@ -7,7 +7,8 @@ include "units.xs";
 
 void RecordKiller()
 {
-    KilledUnits = NewArrayInt();
+    //  为了避免频繁的resize导致卡顿, 先开好足够大小的数组
+    KilledUnits = NewArrayInt(9999);
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);

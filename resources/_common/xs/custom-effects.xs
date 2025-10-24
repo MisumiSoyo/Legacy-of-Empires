@@ -95,6 +95,7 @@ extern int RecordedTCandDockIDs = 0;    //  已经统计的城镇中心和船坞
 
 
 extern int Cnt = 0;
+extern int KilledUnitsCount = 0;    //  已被记录的被击杀单位数量
 
 
 //  引用文件
@@ -643,13 +644,14 @@ void EffectFunction10022(int playerId = -1)
         int TargetUnitID = xsGetUnitTargetUnitId(UnitID);
         if (xsDoesUnitExist(TargetUnitID) && (xsGetUnitHitpoints(TargetUnitID) > 0))    //  目标存活
             continue;
-        if (ArrayFindInt(KilledUnits, TargetUnitID) != -1)
+        if (ArrayFindInt(KilledUnits, TargetUnitID, 0, KilledUnitsCount) != -1)
             continue;
         int KillerPlayer = playerId;
         
         int TargetPlayer = xsGetUnitOwner(TargetUnitID);
         KillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
-        ArrayAppendInt(KilledUnits, TargetUnitID);
+        xsArraySetInt(KilledUnits, KilledUnitsCount, TargetUnitID);
+        KilledUnitsCount ++;
         break;
     }
     RecycleArrayInt(playerUnits);

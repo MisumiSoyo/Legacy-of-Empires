@@ -1,5 +1,7 @@
 //  定义数组相关操作, 以及矩阵, 即二维数组
 //  目前Vector相关操作似乎存在问题, 暂时谨慎使用
+//  ArrayAppendInt()函数会频繁使用xsArrayResizeInt(), 时间复杂度较高, 建议在需要优化性能时预先开好数组并手动管理数组元素个数, 而不是使用ArrayAppendInt()
+//  Float和Vector同理
 
 
 include "math.xs";
@@ -83,10 +85,16 @@ void ArraySwapValueVector(int ArrayID = -1, int p = -1, int q = -1)
 
 
 //查找元素, 返回其在数组中的下标, 找不到返回 -1
-int ArrayFindInt(int ArrayID = -1, int target = -1)
+int ArrayFindInt(int ArrayID = -1, int target = -1, int start = -1, int end = -1)
 {
     int i = 0;
-    for (i = 0; < xsArrayGetSize(ArrayID))
+    int l = start;
+    int r = end;
+    if (l == -1)
+        l = 0;
+    if (r == -1)
+        r = xsArrayGetSize(ArrayID);
+    for (i = l; < r)
         if (target == xsArrayGetInt(ArrayID, i))
             return (i);
     return (0-1);
