@@ -36394,6 +36394,66 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 2,
+                    "Building ID": 109,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600090,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Recruit Mercenary",
+                    "Name String ID": 500090,
+                    "Node ID": 3139,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600091,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Polutaswarf",
+                    "Name String ID": 500091,
+                    "Node ID": 3140,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 33,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -99952,6 +100012,96 @@
             "civ_techs_units": [
                 {
                     "Age ID": 2,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800045,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Mansabdar",
+                    "Name String ID": 700045,
+                    "Node ID": 4058,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 399,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800046,
+                    "Link ID": 4058,
+                    "Link Node Type": "RegionalUnit",
+                    "Name": "Veteran Mansabdar",
+                    "Name String ID": 700046,
+                    "Node ID": 4059,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 399,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3147,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800047,
+                    "Link ID": 4059,
+                    "Link Node Type": "RegionalUnit",
+                    "Name": "Elite Mansabdar",
+                    "Name String ID": 700047,
+                    "Node ID": 4060,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 399,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3148,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 2,
                     "Building ID": 87,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105083,
@@ -100579,96 +100729,6 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105326,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Scout Cavalry",
-                    "Name String ID": 14326,
-                    "Node ID": 448,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Unit",
-                    "Picture Index": 64,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105444,
-                    "Link ID": 448,
-                    "Link Node Type": "Unit",
-                    "Name": "Light Cavalry",
-                    "Name String ID": 14444,
-                    "Node ID": 546,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 91,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 254,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105661,
-                    "Link ID": 546,
-                    "Link Node Type": "UnitUpgrade",
-                    "Name": "Hussar",
-                    "Name String ID": 14661,
-                    "Node ID": 441,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 103,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 428,
-                    "Use Type": "Unit"
                 },
                 {
                     "Age ID": 3,
@@ -126800,6 +126860,66 @@
                     "Use Type": "Unit"
                 },
                 {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 105167,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Battle Elephant",
+                    "Name String ID": 14167,
+                    "Node ID": 1132,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 228,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 630,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 105168,
+                    "Link ID": 1132,
+                    "Link Node Type": "RegionalUnit",
+                    "Name": "Elite Battle Elephant",
+                    "Name String ID": 14168,
+                    "Node ID": 1134,
+                    "Node Status": "NotAvailable",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 246,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 631,
+                    "Use Type": "Unit"
+                },
+                {
                     "Age ID": 2,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
@@ -152327,6 +152447,66 @@
                     "Use Type": "Unit"
                 },
                 {
+                    "Age ID": 3,
+                    "Building ID": 12,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800043,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Toungoo Warrior",
+                    "Name String ID": 700043,
+                    "Node ID": 4055,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 234,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 12,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800044,
+                    "Link ID": 4055,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Elite Toungoo Warrior",
+                    "Name String ID": 700044,
+                    "Node ID": 4057,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 234,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
                     "Age ID": 2,
                     "Building ID": 12,
                     "Draw Node Type": "UnitTech",
@@ -156031,6 +156211,66 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600094,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Heavy Spear",
+                    "Name String ID": 500094,
+                    "Node ID": 3145,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 33,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600093,
+                    "Link ID": 3145,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Abhara Elephant",
+                    "Name String ID": 500093,
+                    "Node ID": 3144,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 107,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -177083,6 +177323,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600089,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Siha Bow Limbs",
+                    "Name String ID": 500089,
+                    "Node ID": 3138,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 33,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -209177,6 +209447,96 @@
             "civ_techs_units": [
                 {
                     "Age ID": 2,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800045,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Mansabdar",
+                    "Name String ID": 700045,
+                    "Node ID": 4058,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 399,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800046,
+                    "Link ID": 4058,
+                    "Link Node Type": "RegionalUnit",
+                    "Name": "Veteran Mansabdar",
+                    "Name String ID": 700046,
+                    "Node ID": 4059,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 399,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3147,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800047,
+                    "Link ID": 4059,
+                    "Link Node Type": "RegionalUnit",
+                    "Name": "Elite Mansabdar",
+                    "Name String ID": 700047,
+                    "Node ID": 4060,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 399,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3148,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 2,
                     "Building ID": 87,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105083,
@@ -209864,96 +210224,6 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105326,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Scout Cavalry",
-                    "Name String ID": 14326,
-                    "Node ID": 448,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Unit",
-                    "Picture Index": 64,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105444,
-                    "Link ID": 448,
-                    "Link Node Type": "Unit",
-                    "Name": "Light Cavalry",
-                    "Name String ID": 14444,
-                    "Node ID": 546,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 91,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 254,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105661,
-                    "Link ID": 546,
-                    "Link Node Type": "UnitUpgrade",
-                    "Name": "Hussar",
-                    "Name String ID": 14661,
-                    "Node ID": 441,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 103,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 428,
-                    "Use Type": "Unit"
                 },
                 {
                     "Age ID": 3,

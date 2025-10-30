@@ -8,7 +8,8 @@ include "units.xs";
 void RecordKiller()
 {
     //  为了避免频繁的resize导致卡顿, 先开好足够大小的数组
-    KilledUnits = NewArrayInt(9999);
+    KilledUnits = xsArrayCreateInt(10000, 0, "KilledUnits");
+    KilledUnitsCount = 0;
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);
@@ -29,14 +30,14 @@ void AztecsKillEffect(int KillerPlayer = -1, int UnitID = -1, int TargetPlayer =
     int JaguarWarriorID = 725;
     if (xsGetTechState(3094, KillerPlayer) != cTechStateDone)
         return;
-    int CurrentKill = xsArrayGetInt(AztecsKillCount, KillerPlayer) + 1;
+    int CurrentKill = xsPlayerAttribute(KillerPlayer, cAttributeAztecsKillCount) + 1;
     if (CurrentKill == KillsRequired)
     {
         xsEffectAmount(cModResource, cAttributeSpawnCap, 0, 1, KillerPlayer);
         xsEffectAmount(cSpawnUnit, JaguarWarriorID, CastleID, 1, KillerPlayer);
         CurrentKill = 0;
     }
-    xsArraySetInt(AztecsKillCount, KillerPlayer, CurrentKill);
+    SetResource(KillerPlayer, cAttributeAztecsKillCount, CurrentKill);
 }
 
 
@@ -349,7 +350,7 @@ void HospitallerKnightAbility(int playerId = -1)
 
     xsResetTaskAmount();
     LaunchAura(playerId, HospitallerKnightID);
-    xsArraySetInt(HospitallerKnightAbilityTime, playerId, AbilityDuration);
+    SetResource(playerId, cAttributeHospitallerKnightAbilityTime, AbilityDuration);
     xsEffectAmount(cSetAttribute, HospitallerKnightID, cInvulnerabilityLevel, -1, playerId);
     xsSetPlayerAttribute(playerId, cAttributeHospitallerKnightChargeRate, 0.000000000001);  //  技能期间不能充能; 忘记为0时会不会按1计算了, 先置为极小值
 }
@@ -369,7 +370,7 @@ void HospitallerKnight(int Time = 0, int playerId = -1)
 {
     //  医院骑士充能, 技能所需充能为 HospitallerKnightMaxCharge 指定的值
     float CurrentCharge = xsPlayerAttribute(playerId, cAttributeHospitallerKnightCharge);   //  当前充能
-    int RemainingTime = xsArrayGetInt(HospitallerKnightAbilityTime, playerId);  //  技能剩余持续时间
+    int RemainingTime = xsPlayerAttribute(playerId, cAttributeHospitallerKnightAbilityTime);  //  技能剩余持续时间
 
     if (CurrentCharge > HospitallerKnightMaxCharge)
     {
@@ -377,21 +378,15 @@ void HospitallerKnight(int Time = 0, int playerId = -1)
         xsEffectAmount(cModResource, cAttributeHospitallerKnightCharge, 0, HospitallerKnightMaxCharge, playerId);
     }
 
-    int HospitallerKnightArray = NewArrayInt();
-    HospitallerKnightArray = xsGetPlayerUnitIds(playerId, HospitallerKnightID, HospitallerKnightArray);
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(HospitallerKnightArray))
-        xsSetUnitCharge(xsArrayGetInt(HospitallerKnightArray, i), CurrentCharge);
+    SetObjectCharge(playerId, HospitallerKnightID, CurrentCharge);
 
     if (RemainingTime > 0)
     {
         RemainingTime --;
         if (RemainingTime == 0)
             HospitallerKnightAbilityEnd(playerId);
-        xsArraySetInt(HospitallerKnightAbilityTime, playerId, RemainingTime);
+        SetResource(playerId, cAttributeHospitallerKnightAbilityTime, RemainingTime);
     }
-
-    RecycleArrayInt(HospitallerKnightArray);
 }
 
 
@@ -399,29 +394,32 @@ void HospitallerKnight(int Time = 0, int playerId = -1)
 void Shrine(int Time = 0, int playerId = 0)
 {
     int i = 0;
-    int ShrineArray = NewArrayInt();
-    ShrineArray = xsGetPlayerUnitIds(playerId, ShrineID, ShrineArray);
+    static int ShrineArray = 0;
+    if (ShrineArray == 0)
+        ShrineArray = xsGetPlayerUnitIds(playerId, ShrineID);
+    else
+        ShrineArray = xsGetPlayerUnitIds(playerId, ShrineID, ShrineArray);
     if (xsArrayGetSize(ShrineArray) == 0)
-    {
-        RecycleArrayInt(ShrineArray);
         return;
-    }
 
     int SpawnProgress = xsGetUnitCharge(xsArrayGetInt(ShrineArray, 0));
     int SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
+    int SpawnCount = xsPlayerAttribute(playerId, cAttributeShrineSpawnCount);
 
     if (SpawnProgress >= xsGetObjectAttribute(playerId, ShrineID, cMaxCharge))
     {
-        ArrayIncInt(ShrineSpawnCount, playerId, 1);
+        SpawnCount ++;
         //  初始拥有 50% 充能
-        if (xsArrayGetInt(ShrineSpawnCount, playerId) > 1)
+        if (SpawnCount > 1)
+        {
             SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
+            SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
+        }
         else
-            SetObjectCharge(playerId, ShrineID, xsGetObjectAttribute(playerId, ShrineID, cMaxCharge) / 2);
-        SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
+            SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge) / 2;
+        SetResource(playerId, cAttributeShrineSpawnCount, SpawnCount);
     }
     SetObjectCharge(playerId, ShrineID, SpawnProgress);
-    RecycleArrayInt(ShrineArray);
 }
 
 
@@ -548,106 +546,234 @@ float PersianBuildingGold(int playerId = -1, int UnitID = -1)
 
     if (isCastle(ObjectID))
         return (0);
-    //处理城镇中心，排除附加建筑
+    //  处理城镇中心，排除附加建筑
     if (xsGetObjectAttribute(playerId, ObjectID, cNameId) == 5164)
         if (isTownCenter(ObjectID) == false)
             return (0);
     
-    //每分钟产生黄金数 = 建筑木材费用/20+建筑黄金费用/10+建筑石料费用/5
+    //  每分钟产生黄金数 = 建筑木材费用/20+建筑黄金费用/10+建筑石料费用/5
     return (xsGetObjectAttribute(playerId, ObjectID, cWoodCost) / 20 + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) / 10
             + xsGetObjectAttribute(playerId, ObjectID, cStoneCost) / 5);
 }
 
 
-//  马来城镇中心和船坞产生资源的计算方式, 返回每分钟产生的资源比例, 实际产出等于资源比例*地图资源值
-float MalayResourceOutRate(int ResourceID = -1)
+//  马来战船可以产生食物
+void MalayShipInit(int playerId = -1)
 {
-    if (ResourceID == -1)
-        return (0.0);
-
-    switch (ResourceID)
-    {
-        case cAttributeFood:
-            return (1.0 / 450);
-        case cAttributeGold:
-            return (1.0 / 1600);
-        case cAttributeStone:
-            return (1.0 / 640);
-        case cAttributeBerries:
-            return (1.0 / 450);
-        default:
-            return (0.0);
-    }
-    return (0.0);
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrWorkValue1, 8.0 / 60);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeWarShipFoodProductivity);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(cWarshipClass, cTaskTypeGenerateResources, -1, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeWarShipFoodProductivity, 1);
 }
 
 
-//  马来第一个城镇中心根据周围资源产生资源, 由于太卡了, 所以不考虑木材
-void MalayTCandDockAbility(int playerId = -1, int UnitID = -1)
+int RecruitUnit(int index = 0)
+{
+    switch (index)
+    {
+        case 0:
+            return (1225);  //  龙骑兵
+        case 1:
+            return (1655);  //  马上轻装兵
+        case 2:
+            return (755);  //   答剌罕骑兵
+        case 3:
+            return (41);  //    近卫军
+        case 4:
+            return (1231);  //  钦察
+        case 5:
+            return (1007);  //  骆驼射手
+        case 6:
+            return (1803);  //  莫纳斯帕
+        case 7:
+            return (281);  //   掷斧兵
+        case 8:
+            return (239);  //   战象
+        case 9:
+            return (771);  //   西班牙征服者
+        case 10:
+            return (1658);  //  萨金特卫兵
+        case 11:
+            return (1228);  //  怯薛
+    }
+    return (-1);
+}
+
+
+int RecruitEliteUnit(int index = 0)
+{
+    switch (index)
+    {
+        case 0:
+            return (1227);  //  龙骑兵
+        case 1:
+            return (1657);  //  马上轻装兵
+        case 2:
+            return (757);  //   答剌罕骑兵
+        case 3:
+            return (555);  //    近卫军
+        case 4:
+            return (1233);  //  钦察
+        case 5:
+            return (1009);  //  骆驼射手
+        case 6:
+            return (1805);  //  莫纳斯帕
+        case 7:
+            return (531);  //   掷斧兵
+        case 8:
+            return (558);  //   战象
+        case 9:
+            return (773);  //   西班牙征服者
+        case 10:
+            return (1659);  //  萨金特卫兵
+        case 11:
+            return (1230);  //  怯薛
+    }
+    return (-1);
+}
+
+
+//  10048 - 招募佣兵
+void EffectFunction10048(int playerId = -1)
+{    
+    int AgeID = xsPlayerAttribute(playerId, cAttributeCurrentAge);
+
+    int temp = xsGetRandomNumberLH(0, 100);
+    float RecruitValue = 350.0;
+    if (temp >= 30)
+        RecruitValue = 400.0;
+    if (temp >= 60)
+        RecruitValue = 450.0;
+    if (temp >= 80)
+        RecruitValue = 550.0;
+    if (temp >= 92)
+        RecruitValue = 650.0;
+    if (AgeID == 2)
+        RecruitValue = RecruitValue * 475.0 / 400;
+    if (AgeID == 3)
+        RecruitValue = RecruitValue * 550.0 / 400;
+
+    temp = xsGetRandomNumberLH(0, 12);
+    int RecruitUnitID = RecruitUnit(temp);
+    if (AgeID == 3)
+        RecruitUnitID = RecruitEliteUnit(temp);
+    int SpawnNum = RecruitValue / (xsGetObjectAttribute(playerId, RecruitUnitID, cFoodCost) + xsGetObjectAttribute(playerId, RecruitUnitID, cWoodCost)
+                                   + xsGetObjectAttribute(playerId, RecruitUnitID, cGoldCost));
+    SpawnUnit(playerId, RecruitUnitID, 109, SpawnNum, 1);
+    xsChatData("RecruitUnitID = " + RecruitUnitID + ", SpawnNum = " + SpawnNum);
+}
+
+
+void BengalisCavalryVSSkirmisher(int playerId = -1)
 {
     int i = 0;
-    vector UnitPos = xsGetUnitPosition(UnitID);
-    for (i = 0; < xsArrayGetSize(GaiaResIDs))
-    {
-        int ResourceUnitID = xsArrayGetInt(GaiaResIDs, i);
-        vector ResourceUnitPos = xsArrayGetVector(GaiaResPos, i);
-        if ((DistanceX(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange) || (DistanceY(UnitPos, ResourceUnitPos) > MalayTCandDockAbilityRange))
-            continue;
-        int ResourceHeldType = xsArrayGetInt(GaiaResType, i);
-        float ResourceHeld = xsArrayGetFloat(GaiaResNum, i);
-        MatrixIncFloat(RecordedResourceNum, playerId, ResourceHeldType, ResourceHeld);
-        xsArraySetInt(MalayResIsCount, i, 1);
-    }
+    for (i = 0; <= TotalObjects)
+        if ((i < 900) || (i > 964))
+        {
+            int ClassID = xsGetObjectClass(playerId, i);
+            if ((ClassID == cScoutCavalryClass) || (ClassID == cCavalryClass))
+                ModAttack(playerId, i, cDamageClassSkirmishers, xsGetObjectAttribute(playerId, i, cAttack, cDamageClassMelee) / 2);
+        }
 }
 
 
-//  为马来的城镇中心和船坞添加范围显示
-void MalayTCandDockInit(int playerId = -1)
+//  孟加拉, 消耗圣物获取加成, 僧侣 +2 近战护甲/3 远程护甲
+void EffectFunction10049(int playerId = -1)
 {
-    if (xsGetPlayerCivilization(playerId) != cMalay)
+    if (ConsumeRelic(playerId) == false)
         return;
-    int i = 0;
-    for (i = 900; <= 964)
-    {
-        xsRemoveTask(109, cTaskTypeAura, i, playerId);
-        xsRemoveTask(71, cTaskTypeAura, i, playerId);
-        xsRemoveTask(141, cTaskTypeAura, i, playerId);
-        xsRemoveTask(142, cTaskTypeAura, i, playerId);
-    }
-    xsRemoveTask(109, cTaskTypeAura, -1, playerId);
-    xsRemoveTask(71, cTaskTypeAura, -1, playerId);
-    xsRemoveTask(141, cTaskTypeAura, -1, playerId);
-    xsRemoveTask(142, cTaskTypeAura, -1, playerId);
+    ModArmor(playerId, cMonkClass, cDamageClassMelee, 2);
+    ModArmor(playerId, cMonkClass, cDamageClassPierce, 3);
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 2);
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 3);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
 
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 0);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, MalayTCandDockAbilityRange - 2);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000001);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 4);
 
-    xsTask(109, cTaskTypeAura, cForageBushClass, playerId);
-    xsTask(71, cTaskTypeAura, cForageBushClass, playerId);
-    xsTask(141, cTaskTypeAura, cForageBushClass, playerId);
-    xsTask(142, cTaskTypeAura, cForageBushClass, playerId);
+//  由于目前是通过将斥候骑兵升级为曼沙布达尔骑兵来替代, 所以对曼沙布达尔骑兵加成时要同时适用于斥候骑兵
+//  孟加拉, 消耗圣物获取加成, 曼沙布达尔骑兵 +2 攻击力
+void EffectFunction10050(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
+    ModAttack(playerId, VeteranMansabdarID, cDamageClassMelee, 2);
+    ModAttack(playerId, EliteMansabdarID, cDamageClassMelee, 2);
+    ModAttack(playerId, 448, cDamageClassMelee, 2);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
 
-    xsTaskAmount(cTaskAttrWorkRange, MalayTCandDockAbilityRange - 2);
-    xsTask(45, cTaskTypeAura, cForageBushClass, playerId);
-    xsTask(47, cTaskTypeAura, cForageBushClass, playerId);
-    xsTask(51, cTaskTypeAura, cForageBushClass, playerId);
-    xsTask(133, cTaskTypeAura, cForageBushClass, playerId);
-    xsTask(1189, cTaskTypeAura, cForageBushClass, playerId);
-    xsResetTaskAmount();
 
-    LaunchAura(playerId, 109);
-    LaunchAura(playerId, 71);
-    LaunchAura(playerId, 141);
-    LaunchAura(playerId, 142);
-    LaunchAura(playerId, 45);
-    LaunchAura(playerId, 47);
-    LaunchAura(playerId, 51);
-    LaunchAura(playerId, 133);
-    LaunchAura(playerId, 1189);
+//  孟加拉, 消耗圣物获取加成, 战车 +1 远程护甲, 并且免疫对射手加成
+void EffectFunction10051(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    ModArmor(playerId, 1738, cDamageClassPierce, 1);
+    SetArmor(playerId, 1738, cDamageClassArchers, 254);
+    ModArmor(playerId, 1740, cDamageClassPierce, 1);
+    SetArmor(playerId, 1740, cDamageClassArchers, 254);
+    ModArmor(playerId, 1759, cDamageClassPierce, 1);
+    SetArmor(playerId, 1759, cDamageClassArchers, 254);
+    ModArmor(playerId, 1761, cDamageClassPierce, 1);
+    SetArmor(playerId, 1761, cDamageClassArchers, 254);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
+
+
+//  孟加拉, 消耗圣物获取加成, 团队贸易 +10% 额外木材和食物产出
+void EffectFunction10052(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    ModAllyResource(playerId, cAttributeTradeFoodPercent, 10);
+    ModAllyResource(playerId, cAttributeTradeWoodPercent, 10);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
+
+
+//  孟加拉, 消耗圣物获取加成, 步兵 +15% 攻击速度, +1 近战护甲/远程护甲
+void EffectFunction10053(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    MulAttribute(playerId, cInfantryClass, cAttackReloadTime, 1.0 / 1.15);
+    ModArmor(playerId, cInfantryClass, cDamageClassMelee, 1);
+    ModArmor(playerId, cInfantryClass, cDamageClassPierce, 1);
+}
+
+
+//  孟加拉, 消耗圣物获取加成, 舰船每分钟回复的生命值 +15
+void EffectFunction10054(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    ModAttribute(playerId, cTradeBoatClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cFishingBoatClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cWarshipClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cBoardingShipClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cTransportShipClass, cRegenerationRate, 15);
+}
+
+
+//  孟加拉, 消耗圣物获取加成, 当前每个城镇中心和修道院立即产生 1 个战车, 战车木材费用 -10
+void EffectFunction10055(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    SpawnUnit(playerId, 1738, 109, 1, 32767);
+    SpawnUnit(playerId, 1738, 104, 1, 32767);
+    ModAttribute(playerId, 1738, cWoodCost, -10);
+    ModAttribute(playerId, 1740, cWoodCost, -10);
+    ModAttribute(playerId, 1759, cWoodCost, -10);
+    ModAttribute(playerId, 1761, cWoodCost, -10);
 }
 
 
@@ -665,6 +791,5 @@ void AbilityApplier()
         HospitallerKnightInit(i);
         TCSpawnedDeerInit(i);
         ShrineInit(i);
-        //MalayTCandDockInit(i);
     }
 }

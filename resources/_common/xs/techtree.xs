@@ -241,6 +241,8 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 140, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, 63, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, 608, cAttrMulTime, 2, playerId);
+            //  曼沙布达尔骑兵替代轻骑兵
+            SetTechAuto(playerId, 3146);
             break;
         }
         case cIncas:
@@ -311,12 +313,6 @@ void EffectFunction10002(int playerId = -1)
             ModAttack(playerId, 1012, cDamageClassArchers, 2);
             break;
         }
-        case cEthiopians:
-        {
-            //  埃塞俄比亚文明加成, 长矛兵和弯刀勇士破甲
-            SetAttribute(playerId, cAttributeMaintenance, 10014);
-            break;
-        }
         case cMalians:
         {
             //  马里文明加成, 火枪手 +66% 训练速度
@@ -327,6 +323,12 @@ void EffectFunction10002(int playerId = -1)
         {
             //  高棉文明加成, 僧侣加成象兵
             SetResource(playerId, cAttributeMaintenance, 10012);
+            break;
+        }
+        case cMalay:
+        {
+            //  马来文明加成, 战船可以产生食物
+            MalayShipInit(playerId);
             break;
         }
         case cBurmese:
@@ -406,6 +408,20 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 3055, cAttrMulFoodCost, 0.66666667, playerId);
             xsEffectAmount(cModifyTech, 3056, cAttrMulFoodCost, 0.66666667, playerId);
             xsEffectAmount(cModifyTech, 3057, cAttrMulFoodCost, 0.66666667, playerId);
+            break;
+        }
+        case cDravidians:
+        {
+            //  达罗毗荼文明加成, 纵火, 护卫和软甲可提前一个时代研究
+            ForceEnableTech(playerId, 602);
+        }
+        case cBengalis:
+        {
+            //  孟加拉原文明加成 骑兵 +2 攻击 vs 掷矛手 → 骑兵 +50% 基础攻击 vs 掷矛手
+            ModAttack(playerId, cScoutCavalryClass, cDamageClassSkirmishers, -2);
+            ModAttack(playerId, cCavalryClass, cDamageClassSkirmishers, -2);
+            //  曼沙布达尔骑兵替代轻骑兵
+            SetTechAuto(playerId, 3146);
             break;
         }
         case cGurjaras:
@@ -523,8 +539,19 @@ void EffectFunction10002(int playerId = -1)
 //  10024 - 封建时代效果
 void EffectFunction10024(int playerId = -1)
 {
-    int playerCiv = xsGetPlayerCivilization(playerId);
+    //  骑士属性
+    ModAttribute(playerId, 38, cHitpoints, -20);
+    ModAttack(playerId, 38, cDamageClassMelee, -2);
+    MulAttribute(playerId, 38, cTrainTime, 4.0 / 3);
+    //  曼沙布达尔骑兵升级
+    ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
+    ModAttribute(playerId, MansabdarID, cShownAttack, 2);
+    ModAttack(playerId, MansabdarID, cDamageClassSkirmishers, 1);
+    ModAttribute(playerId, MansabdarID, cLineOfSight, 2);
+    ModAttribute(playerId, MansabdarID, cSearchRadius, 2);
+    ModAttribute(playerId, MansabdarID, cMovementSpeed, 0.3);
 
+    int playerCiv = xsGetPlayerCivilization(playerId);
     switch (playerCiv)
     {
         case cGoths:
@@ -570,6 +597,9 @@ void EffectFunction10024(int playerId = -1)
             MulAttribute(playerId, cGateClass, cHitpoints, 1.15 / 1.19999);
             MulAttribute(playerId, cFarmClass, cHitpoints, 1.15 / 1.19999);
             MulAttribute(playerId, cTowerClass, cHitpoints, 1.15 / 1.19999);
+            //  招募佣兵
+            SetTechStack(playerId, 3139, 32767);
+            SetResource(playerId, cAttributeRecruitMercenaryCost, 60);
             break;
         }
         case cPersians:
@@ -632,6 +662,18 @@ void EffectFunction10024(int playerId = -1)
             ForceEnableTech(playerId, 254);
             break;
         }
+        case cDravidians:
+        {
+            //  达罗毗荼文明加成, 纵火, 护卫和软甲可提前一个时代研究
+            ForceEnableTech(playerId, 215);
+            ForceEnableTech(playerId, 875);
+        }
+        case cBengalis:
+        {
+            //  孟加拉原文明加成 骑兵 +2 攻击 vs 掷矛手 → 骑兵 +50% 基础攻击 vs 掷矛手
+            BengalisCavalryVSSkirmisher(playerId);
+            xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
+        }
         case cRomans:
         {
             //  罗马文明加成, 封建修道院和僧侣
@@ -662,11 +704,6 @@ void EffectFunction10024(int playerId = -1)
         default:
             break;
     }
-
-    //  骑士属性
-    ModAttribute(playerId, 38, cHitpoints, -20);
-    ModAttack(playerId, 38, cDamageClassMelee, -2);
-    MulAttribute(playerId, 38, cTrainTime, 4.0 / 3);
 }
 
 
@@ -833,6 +870,11 @@ void EffectFunction10025(int playerId = -1)
             //  柏柏尔村民在城堡/帝王时代移动速度加成提高
             MulAttribute(playerId, cVillagerClass, cMovementSpeed, 1.15 / 1.1);
             break;
+        }
+        case cBurmese:
+        {
+            //  启用东吁勇士
+            EnableObject(playerId, ToungooWarriorID);
         }
         case cVietnamese:
         {

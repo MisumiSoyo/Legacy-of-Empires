@@ -1046,6 +1046,7 @@
             "civilizations": "Spanish",
             "unit_id" : 1010,
             "building_id": 87,
+            "Name": "Genitour",
             "RequiredAge": 2
         },
         {
@@ -1053,6 +1054,7 @@
             "civilizations": "Portuguese",
             "unit_id" : 1010,
             "building_id": 87,
+            "Name": "Genitour",
             "RequiredAge": 3
         },
         {
@@ -1060,6 +1062,7 @@
             "civilizations": "Spanish",
             "tech_id" : 599,
             "building_id": 87,
+            "Name": "Elite Genitour",
             "RequiredAge": 3
         },
         {
@@ -1067,6 +1070,7 @@
             "civilizations": "Portuguese",
             "tech_id": 599,
             "building_id": 87,
+            "Name": "Elite Genitour",
             "RequiredAge": 4
         },
         {
@@ -1074,6 +1078,7 @@
             "civilizations": "Spanish",
             "tech_id": 3135,
             "building_id": 209,
+            "Name": "Explorer",
             "RequiredAge": 3
         },
         {
@@ -1088,6 +1093,109 @@
             "civilizations": "Portuguese",
             "tech_id": 3137,
             "building_id": 209,
+            "Name": "Sagres School",
+            "RequiredAge": 4
+        },
+        {
+            "note": "西哈弓臂",
+            "civilizations": "Siha Bow Limbs",
+            "tech_id": 3138,
+            "building_id": 209,
+            "Name": "Siha Bow Limbs",
+            "RequiredAge": 3
+        },
+        {
+            "note": "拜占庭招募雇佣军",
+            "civilizations": "Byzantines",
+            "tech_id": 3139,
+            "building_id": 109,
+            "RequiredAge": 2
+        },
+        {
+            "note": "宫殿掠夺",
+            "civilizations": "Byzantines",
+            "tech_id": 3140,
+            "building_id": 209,
+            "Name": "Polutaswarf",
+            "RequiredAge": 3
+        },
+        {
+            "note": "东吁勇士",
+            "civilizations": "Burmese",
+            "unit_id": 4055,
+            "building_id": 12,
+            "Name": "Toungoo Warrior",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐东吁勇士",
+            "civilizations": "Burmese",
+            "tech_id": 3141,
+            "building_id": 12,
+            "Name": "Elite Toungoo Warrior",
+            "RequiredAge": 4
+        },
+        {
+            "note": "埃塞俄比亚启用象兵",
+            "civilizations": "Ethiopians",
+            "unit_id": 1132,
+            "building_id": 101,
+            "Name": "Battle Elephant",
+            "RequiredAge": 3
+        },
+        {
+            "note": "阿伯哈拉战象",
+            "civilizations": "Ethiopians",
+            "tech_id": 3144,
+            "building_id": 209,
+            "Name": "Abhara Elephant",
+            "RequiredAge": 4
+        },
+        {
+            "note": "重型长矛",
+            "civilizations": "Ethiopians",
+            "tech_id": 3145,
+            "building_id": 209,
+            "Name": "Heavy Spear",
+            "RequiredAge": 3
+        },
+        {
+            "note": "印度斯坦和孟加拉移除轻骑兵和翼骑兵",
+            "civilizations": ["Indians", "Bengalis"],
+            "unit_id": [441, 448, 546],
+            "building_id": 101,
+            "type": "delete"
+        }
+        ,
+        {
+            "note": "印度斯坦和孟加拉移除轻骑兵和翼骑兵",
+            "civilizations": ["Indians", "Bengalis"],
+            "tech_id": [254, 428],
+            "building_id": 101,
+            "type": "delete"
+        },
+        {
+            "note": "曼沙布达尔骑兵",
+            "civilizations": ["Indians", "Bengalis"],
+            "unit_id": 4058,
+            "building_id": 101,
+            "Name": "Mansabdar",
+            "RequiredAge": 2
+        },
+        {
+            "note": "老练曼沙布达尔骑兵",
+            "civilizations": ["Indians", "Bengalis"],
+            "tech_id": 3147,
+            "building_id": 101,
+            "Name": "Veteran Mansabdar",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐曼沙布达尔骑兵",
+            "civilizations": ["Indians", "Bengalis"],
+            "tech_id": 3148,
+            "building_id": 101,
+            "Name": "Elite Mansabdar",
             "RequiredAge": 4
         }
     ]

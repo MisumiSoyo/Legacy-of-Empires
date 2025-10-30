@@ -1,10 +1,11 @@
 8063 "Upgrade to Keep. (+750 HP, +1 attack, -20% reload time, +1/1P armor, +1 damage vs Ships and Fishing Ships, secondary arrows +1 base attack, +1 damage vs Ships and Fishing Ships)"
 8255 "Research Farimba (Cavalry +4 attack)"
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
-8318 "Research Logistica (Cataphracts and Varangians deal trample damage; Cataphracts +6 attack vs Infantry)"
+8298 "Research Paper Money (Lumberjacks generate 1 extra gold for every 26 wood gathered)"
+8318 "Research Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)"
 8342 "Research Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)"
 8428 "Research Atheism (Relic and Wonder games +100 years; Enemy relics -50% incoming golds and foods; Tarkans +5 attack vs monks, +200 attack vs monastery and fortified church, can pick up and destroy relics to upgrade to Chanyu)"
-8429 "Research Garland Wars (Infantries +4 attack)"
+8473 "Research Tuntian (Each military unit produces 3 food per minute)"
 
 
 12439 "Cavalry Attack"
@@ -17,25 +18,19 @@
 
 26081 "Create <b>Long Swordsman<b> (<cost>) \nAll-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.\n<GREY><i> Upgrades: attack, armor (Blacksmith); cost, speed, to Two-Handed Swordsman 200F, 100G (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry; Training time: 21; Moving speed: 0.96; Reload time: 2; LOS: 4; Search radius: 4. \nAttack Bonus: +6 vs Eagle Warriors, +3 vs Buildings."
 
-26137 "Create <b>Genitour<b> (<cost>) \nMounted skirmisher. Strong vs. archers. Weak vs. units at close range.\n<GREY><i> Upgrades: speed, hit points (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor, to Elite Genitour 500F, 450W (Archery Range); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Skirmisher; Training time: 25; Moving speed: 1.35; Reload time: 3; Attack delay: 0.5; Projectile speed: 7; Accuracy: 90%; Dispersion radius: 0.33; Min range: 1; LOS: 5; Search radius: 5. \nAttack Bonus: +4 vs Archer, +3 vs Pikeman.\nArmor Bonus: +1 Cavalry Archer armor. \nAfter Maya researched Hul'che Javelineers, secondary arrows: 1; secondary arrow attack: 1; secondary arrow accuracy: 85%; secondary arrow projectile speed: 7."
+26137 "Create <b>Genitour<b> (<cost>) \nMounted skirmisher. Strong vs archers. Weak vs units at close range.\n<GREY><i> Upgrades: speed, hit points (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor, to Elite Genitour 500F, 450W (Archery Range); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Skirmisher; Training time: 25; Moving speed: 1.35; Reload time: 3; Attack delay: 0.5; Projectile speed: 7; Accuracy: 90%; Dispersion radius: 0.33; Min range: 1; LOS: 5; Search radius: 5. \nAttack Bonus: +4 vs Archer, +3 vs Pikeman.\nArmor Bonus: +1 Cavalry Archer armor. \nAfter Maya researched Hul'che Javelineers, secondary arrows: 1; secondary arrow attack: 1; secondary arrow accuracy: 85%; secondary arrow projectile speed: 7."
 
 26139 "Create <b>Elite Genitour<b> (<cost>) \nMounted skirmisher. Strong vs. archers. Weak vs. units at close range.\n<GREY><i> Upgrades: speed, hit points (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Skirmisher; Training time: 23; Moving speed: 1.35; Reload time: 3; Attack delay: 0.5; Projectile speed: 7; Accuracy: 90%; Dispersion radius: 0.33; Min range: 1; LOS: 6; Search radius: 6. \nAttack Bonus: +5 vs Archer, +2 vs Cavalry Archers, +3 vs Pikeman.\n Armor Bonus: +1 Cavalry Archer armor. \nAfter Maya researched Hul'che Javelineers, secondary arrows: 1; secondary arrow attack: 1; secondary arrow accuracy: 85%; secondary arrow projectile speed: 7."
-
-26155 "Build <b>Keep<b> (<cost>) \nTower with a ranged attack. Units can garrison inside for protection. Archers and Villagers shoot additional projectiles. Strong vs. archers. Weak vs.units at close range, especially Rams.<i> Upgrades: line of sight (Town Center); attack, range (Blacksmith); attack, hit points, armor, Ship attack (University).<i> \n<hp> <attack> <armor> <piercearmor> <range> <garrison>\nClass: tower; Tags: Building, Defensive Building; Build Time: 80; Reload time: 1.6; Projectile speed: 7; Accuracy: 100%; Min range: 1; LOS: 10; Search radius: 10. \nAttack Bonus: +2 vs Pikeman, +10 vs Ships, +10 vs Fishing Ships, +1 vs Camels; Secondary arrows amount: 0-4; Secondary arrow base attack: 8; Secondary arrow attack bonus: +10 vs Ships, +10 vs Fishing Ships; +5 vs Defensive Building, +1 vs Camels."
 
 26159 "Build <b>Feitoria<b> (<cost>) \nEconomic building. Generates resources without the need for villagers. Unique building of the Portuguese. Requires 20 population. Resources generated per second: 1.6 food, 0.7 wood, 1.0 gold, 0.3 stone.<i> Upgrades: line of sight (Town Center); hit points, armor (University).<i> \n<hp> <attack> <armor> <piercearmor> <range> <garrison>.<hp>\nClass: Building; Tags: Building; Build Time: 120; LOS: 6; Search radius: 6."
 
 26326 "Create <b>Scout Cavalry<b> (<cost>)\nFast cavalry for scouting and raiding. Resistant to conversion (+2 conversion resistance, +3/+1 min/max conversion time). Strong vs Monks. Weak vs Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); speed, to Light Cavalry 150F, 50G (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Scout cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.2; Reload time: 2; LOS: 4; Search radius: 4. \nAttack Bonus: +6 vs Monk.\n\nAfter Feudal Age gets: +2 attack, +2 LOS/search radius, +0.35 moving speed"
-
-26411 "Create <b>Two-Handed Swordsman<b> (<cost>) \nAll-purpose infantry unit. Strong vs. buildings and infantry. Weak vs. archers at long range.\n<GREY><i> Upgrades: attack, armor (Blacksmith); cost, speed, to Champion 650F, 350G (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry; Training time: 21; Moving speed: 0.96; Reload time: 2; LOS: 5; Search radius: 4. \nAttack Bonus: +8 vs Eagle Warriors, +4 vs Buildings."
 
 26444 "Create <b>Light Cavalry<b> (<cost>)\nFast cavalry for scouting and raiding. Resistant to conversion (+2 conversion resistance, +3/+1 min/max conversion time). Strong vs Monks. Weak vs Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points, to Hussar 500F, 600G (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +10 vs Monk.\n\nBefore Feudal Age gets: -2 LOS/search radius"
 
 26574 "Create <b>Berserk<b> (<cost>) \nViking unique infantry unit. Can heal 6 HP when attacking and decrease base reload time by 10% for 6 seconds.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed, to Elite Berserk 1075F, 475G (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>.<hp>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 14; Moving speed: 1.05; Reload time: 2; LOS: 3; Search radius: 3.\nAttack Bonus: +2 vs Eagle Warriors, +2 vs Standard Buildings."
 
 26576 "Create <b>Elite Berserk<b> (<cost>) Viking unique infantry unit. Can heal 8 HP when attacking and decrease base reload time by 10% for 6 seconds.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 12; Moving speed: 1.05; Reload time: 1.9; LOS: 5; Search radius: 3.\nAttack Bonus: +3 vs Eagle Warriors, +3 vs Standard Buildings."
-
-26581 "Build <b>Folwark<b> (<cost>) \nUnique building of the Poles. Used to deposit food and research farming technologies. Immediately collects 10% of food from nearby newly constucted farms. Provides 5 population. Build near forage bushes or other source of food to gather food faster.<i> Upgrades: line of sight (Town Center); hit points, armor (University); more resistant to Monks (Monastery).<i> \n<hp> <attack> <armor> <piercearmor> <range> <garrison>\nClass: Building; Tags: All Buildings, Standard Buildings, Economic Buildings; Building time: 40; LOS: 6; Search radius: 6."
 
 26661 "Create <b>Hussar<b> (<cost>)\nFast cavalry for scouting and raiding. Resistant to conversion (+2 conversion resistance, +3/+1 min/max conversion time). Strong vs Monks. Weak vs Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.5; Reload time: 1.9; LOS: 6; Search radius: 6. \nAttack Bonus: +12 vs Monk.\n\nBefore Feudal Age gets: -2 LOS/search radius."
 
@@ -45,27 +40,21 @@
 
 28063 "Upgrade to <b>Keep<b> (<cost>) (time: 75) \nUpgrades Guard Towers and lets you build Keeps, which are stronger and have more attack strength, range, and armor.\n+750 HP, +1 attack, -20% reload time, +1/1P armor, +1 damage vs Ships and Fishing Ships, secondary arrows +1 base attack, +1 damage vs Ships and Fishing Ships."
 
-28217 "Upgrade to <b>Two-Handed Swordsman<b> (<cost>) (time: 51) \nUpgrades your Long Swordsmen and lets you create Two-Handed Swordsmen, which are stronger.\n+3 attack, +1 LOS, +2 damage vs Eagle Warriors, +1 damage vs Buildings."
-
 28255 "Research <b>Farimba<b> (<cost>) (Time: 40)\nCavalry +4 attack."
-
-28260 "Upgrade to <b>Champion<b> (<cost>) (time: 70) \nUpgrades your Two-Handed Swordsmen and lets you create Champions, which are stronger and equipped with armor.\n+10 HP, +1 attack, +1 search radius."
-
-28261 "Upgrade to <b>Light Cavalry<b> (<cost>) (time: 45) \nUpgrades your Scout Cavalry and lets you create Light Cavalry, which are stronger.\n+15 HP, +2 attack, +4 damage vs Monk class, but -0.05 moving speed."
 
 28282 "Research <b>Town Patrol<b> (<cost>) (time: 40)\nBuilding class, Tower class units +4 LOS. Town Center +2 arrows/max arrows."
 
-28298 "Research <b>Paper Money<b> (<cost>) (time: 60) \nLumberjacks generate 1.8 gold per minute."
+28298 "Research <b>Paper Money<b> (<cost>) (time: 60) \nLumberjacks generate 1 extra gold for every 26 wood gathered."
 
-28318 "Research <b>Logistica<b> (<cost>)\nCataphracts and Varangians deal trample damage; Cataphracts +6 attack vs Infantry."
+28318 "Research <b>Logistica<b> (<cost>)\nCataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry."
 
 28342 "Research <b>Burgundian Vineyards<b> (<cost>) (time: 45)\nFarmers generate 1 gold per 25 sec in addition to food."
 
 28428 "Research <b>Atheism<b> (<cost>) (time: 60) \nRelic and Wonder victories take +100 years to complete; Enemy relics -50% incoming golds and foods. Tarkans +5 attack vs monks, +200 attack vs monastery and fortified church, can pick up and destroy relics to upgrade to Chanyu."
 
-28429 "Research <b>Garland Wars<b> (<cost>) (time: 60) \nInfantries +4 attack; For every 10 Eagle Warriors or Jaguars killed, an additional Jaguar will be spawned when being created."
-
 28446 "Upgrade to <b>Legionary<b> (<cost>) (time: 80)\nUpgrades your Long Swordsmen and lets you create Legionaries, which are stronger and better armored. \n+15 HP, +3 attack, +1/+1P armor, +4 damage vs. infantries, +2 extra vs. Eagle Warriors, +1 damage vs. bulidings."
+
+28473 "Research <b>Tuntian<b> (<cost>) (Time: 40)\nEach military unit produces 3 food per minute."
 
 
 120150 "Foot Archer civilization \n\n• Town Centers cost -50% wood in Castle Age\n• Archers (excepts Skirmishers) +1/+2 max range/LOS/search radius at Castle/Imperial Age\n• Shepherds work rate +25%\n• Military units around towers +10% attack speed\n\n<b>Unique Unit : <b>\nLongbowman (archer with high max range)\n• Hobelar (cavalry that doesn't be countered by infantry)\n\n<b>Unique Techs: <b>\n• Yeomen (Archer class units +1 max range/LOS/search radius; Watch Tower-Line (all arrows), Sea Tower, Donjon, Bombard Tower +2 attack)\n• Castle Network (Military units around towers, town centers and castles +10% attack speed)\n• Warwolf (Trebuchets have blast damage)\n• Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
@@ -80,7 +69,7 @@
 
 120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -50 wood, -200 food \n• Technologies cost -5%/-10%/-15% at Feudal/Castle/Imperial Age \n• Town Centers support 15 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Caslte/Imperial Age\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows)\nFire Lancer Cavalry (cavalry with gunpowder)\n• Flame Thrower (Siege weapon that can throw flame)\n• Flame Thrower (Siege weapon that can throw flame)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets (-15% accuracy, but +0.3 blast range with 100% blast damage))\n• Political Reform (Farms cost 30 food instead of wood and don't need time to build)\n• Jimi (You can train elite versions of Mangudais, Rattan Archers, Tarkans, War Wagons, Liao Daos and Iron Pagodas at Castle)\n\n<b>Team bonus: <b>\nFarm +10% food"
 
-120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age \n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost \n• Fire Ships and Dromons -16.67% reload time \n• Advance to Imperial Age -33% costs \n• Town Watch and Townb Patrol free\n• Heresy free\n\n<b>Unique Unit:<b> \nCataphract (Cavalry better combats with infantries)\nVarangian (Infantries that gain gold from killing units) \n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Galley-Line +1 max range, Bombard Towers cause 5 blast damage in 0.5 radius) \n• Logistica (Cataphract causes 5 blast damage in 0.5 radius) \n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
+120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age \n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost \n• Fire Ships and Dromons -16.67% reload time \n• Advance to Imperial Age -33% costs \n• Town Watch and Townb Patrol free\n• Heresy free\n• Can recruit random mercenaries at Town Center since Feudal Age\n\n<b>Unique Unit:<b> \n• Cataphract (Cavalry better combats with infantries)\n• Varangian (Infantries that gain gold from killing units) \n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Galley-Line +1 max range, Bombard Towers cause 5 blast damage in 0.5 radius) \n• Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)\n• Polutasvarf (The accumulation rate of mercenary recruitment opportunities increases by 25%, and the gold obtained by Varangians and Keshiks increases by 33%)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 
 120157 "Cavalry civilization \n\n• Start with +50 wood and food (received when the first TC is built up in Nomad mode) \n• Town Center, Dock +100% HP, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Can build Caravanserai in Imperial Age\n• Market technologies free\n• Castle can collect taxes from surrounding buildings\n\n<b>Unique Unit:<b> \n• War Elephant (low-speed heary cavalry)\n• Savar (heavy cavalry replaces Paladin and better combat vs archers)\n• Parthian Cavalry Archer (Cavalry archers that can attack when moving)\n• Assassin (Infantry)\n\n<b>Unique Techs: <b>\n• Kamandaran (Archer-Line cost no gold, but +35 wood cost) \n• Citadels (Castles fire Bullets [+4 attack, +3 vs Rams, +3 vs Infantry], receive -25% bonus damage) \n\n<b>Team bonus: <b>\nKnight-Line units +2 damage vs archers"
 
@@ -116,7 +105,7 @@
 
 120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost \n• Foragers generate 0.33 wood per meat \n• All ships +10% HP \n• Can build Feitoria in Imperial Age\n• Genitours +2 Archer armor\n\n<b>Unique Units:<b> \nOrgan Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack) \n\n<b>Unique Techs: <b>\n•Carrack (All ships +1/1P armor)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Sagres School (Docks +80% work rate)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 
-120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n• Spearman line and Shotel Warrior's attack can break 1 melee/pierce armor of enemy land units (except siege weapons)\n\n<b>Unique Unit:<b> \nShotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Scout, Cavalry and Cavalry Archer class units) \n• Torsion Engines (Siege Workshop units +0.45 blast radius, +0.05 extra for Rams, increase the projectile width to 0.4 for Scorpions) \n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
+120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n\n<b>Unique Unit:<b> \nShotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 
 120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/\nCastle/Imperial Age\n\n<b>Unique Unit:<b> \nGbeto (Infantry), Sofa (Cavalry)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
 
@@ -124,9 +113,9 @@
 
 120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \nBallista Elephant (Scorpion on elephant) \n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
 
-120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n\n<b>Unique Unit:<b> \nKarambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
+120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Warships can produce 8 food per minute\n\n<b>Unique Unit:<b> \nKarambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
 
-120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\nArambai (High attack, low accuray cavalry archer) \n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
+120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer)\n• Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 
 120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n• Battle Elephant line +25% blast damage\n\n<b>Unique Units:<b> \nRattan Archer (archer better combats with archers) \nImperial Skirmisher (skirmisher)\nRung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1.8 gold per minute)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed)\n• Elephant Formation (Battle Elephants +150% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 
@@ -134,7 +123,7 @@
 
 120182 "Cavalry Archer civilization \n\n• Herdables + 57% food \n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Cavalry Archer class +1/2 pierce armor at Castle/Imperial Age\n\n<b>Unique Unit:<b> \nKeshik (Cavalry which can produce gold when attacking), Flaming Camel (Petards better combats with cavalries and buildings) \n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Cavalry +1 attack, +1 pierce armor, +4 attack vs Standard Buildings, and Keshik +200% gold productivity, lasting for 90 seconds)\n• Khan's Conscription (Conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 
-120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Archery Ranges and Stables -75 wood cost\n• Cavalrys +5/7/9% moving speed in Feudal/Castle/Imperial Age\n• Cavalry technologies research 200% faster\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \nKipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time) \n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle) \n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
+120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Archery Ranges and Stables -75 wood cost\n• Cavalrys +5/7/9% moving speed in Feudal/Castle/Imperial Age\n• Cavalry technologies research 200% faster\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \nKipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Siha Bow Limbs (Cavalry archers +1 secondary projectile)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 
 120184 "Cavalry and Monk civilization \n\n• Receive 100 food when a Town Center is built up (including the starting one) \n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrade -50% cost, +100% research speed\n\n<b>Unique Unit : <b>\nLeitis (Cavalry which ignores armor when attacking) \n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range) \n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
 
@@ -146,9 +135,9 @@
 
 120188 "Gunpowder and Monk civilization \n\n• Blacksmiths and Universities -100 wood cost \n• Chemistry and Hand Cannoneer available in Castle Age \n• Spearman-line +25% bonus damage \n• Fervor and Sanctity affect Villagers \n• Mining Camp technologies free \n\n<b>Unique Units:<b> \nHussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Chariot Archer (cavalry archer), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b> \n• Wagenburg Tactics (Gunpowder units move 15% faster) \n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food)\n• Taborites (Transform current villagers to Taborite Warriors, and Taborite Warriors can be trained at Town Center)\n\n<b>Team Bonus:<b> \nMarkets +50% work rate"
 
-120189 "Infantry and Naval civilization\n\n• Receive +200/350/500 wood when advancing to Feudal/Castle/Imperial Age\n• Fishermen and Fishing Ships +15 carry capacity\n• Barracks technologies -50% cost%\n• All siege weapons -33% wood cost\n• Skirmishers, Genitours and Elephant Archers -20% reload time\n• Monks +1/2 max conversion range at Castle/Imperial Age\n\n<b>Unique Units:<b>\nUrumi Swordsman (infantry can charge and deal blast damage), Thirisadai (Heavy armored warship with multiple arrows)\n\n<b>Unique Techs:<b>\n• Medical Corps (All Elephants regenerate 30 HP per minute)\n• Wootz Steel (Infantry and cavalry attacks ignore armor)\n\n<b>Team Bonus:<b>\nDocks provide +5 population room"
+120189 "Infantry and Naval civilization\n\n• Receive +200/350/500 wood when advancing to Feudal/Castle/Imperial Age\n• Fishermen and Fishing Ships +15 carry capacity\n• Barracks technologies -50% cost%\n• Siege weapons -33% wood cost\n• Skirmishers, Genitours and Elephant Archers -20% reload time\n• Monks +1/2 max conversion range at Castle/Imperial Age\n• Arson, Squires and Gambesons can be researched an age in advance\n\n<b>Unique Units:<b>\nUrumi Swordsman (Infantry that can charge and deal blast damage)\n• Thirisadai (Heavy armored warship with multiple arrows)\n\n<b>Unique Techs:<b>\n• Medical Corps (All Elephants regenerate 30 HP per minute)\n• Wootz Steel (Infantry and cavalry attacks ignore armor)\n\n<b>Team Bonus:<b>\nDocks provide +5 population room"
 
-120190 "Elephant and Naval civilization\n\n• All Elephants receive -25% bonus damage, +3/+1 min/max conversion time\n• Each Town Center spawn 2 Villagers when next Age is reached\n• Scouts and Cavalry class units +2 damage vs Skirmishers \n• All Ships regenerate 15 HP per minute\n• Monks +3/+3P armor\n• Monastery technologies research 300% faster\n\n<b>Unique Unit:<b>\nRatha (Cavalry can switch between melee and shooting mode)\n\n<b>Unique Techs:<b>\n• Paiks (Rathas and all elephants -16.67% reload time)\n• Mahayana (Villagers and Monks -10% population space)\n\n<b>Team Bonus:<b>\nTrade units yield 10% food in addition to gold"
+120190 "Elephant and Naval civilization\n\n• All Elephants receive -25% bonus damage, +3/+1 min/max conversion time\n• Each Town Center spawn 2 Villagers when next Age is reached\n• Cavalries +50% bases attack vs Skirmishers\n• All Ships regenerate 15 HP per minute\n• Monks +3/+3P armor\n• Can consume relics to get permanent bonus\n\n<b>Unique Unit:<b>\nRatha (Cavalry can switch between melee and shooting mode)\n\n<b>Unique Techs:<b>\n• Paiks (Rathas and all elephants -16.67% reload time)\n• Mahayana (Villagers and Monks -10% population space)\n\n<b>Team Bonus:<b>\nTrade units yield 10% food in addition to gold"
 
 120191 "Cavalry and Camel civilization\n\n• Start with 2 Forage Bushes\n• Can garrison Mills with livestocks, generates 15*ln(total_garrisoned_animal_food/200+1) food per minute\n• Cavalry class, Scout class, Cavalry Archer class and Special Cavalry Archer class units +20%/+30%/+40% bonus damage in Feudal/Castle/Imperial Age\n• Can garrison Docks with Fishing Ships\n• Monastery provides +10 population room\n\n<b>Unique Units:<b>\nChakram Thrower (infantry deals penetrate damage), Shrivamsha Rider (cavalry can dodge projectiles), Camel Scout (light camel rider)\n\n<b>Unique Techs:<b>\n• Kshatriyas (Infantries, cavalries, archers, cavalry archers and Petards -25% food cost)\n• Frontier Guards (Camel Scout-Line units and Elephant Archers +4 melee armor)\n• Desert Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)\n\n<b>Team Bonus:<b>\nAll Camel and Elephants -20% training time"
 
@@ -257,6 +246,20 @@
 500086 "Jinete Tactics"
 500087 "Explorer"
 500088 "Sagres School"
+500089 "Siha Bow Limbs"
+500090 "Recruit Mercenaries"
+500091 "Polutasvarf"
+500092 "Elite Toungoo Warrior"
+500093 "Abhara Elephant"
+500094 "Heavy Spear"
+500095 "Veteran Mansabdar"
+500096 "Elite Mansabdar"
+500097 "Monk Armor"
+500098 "Mansabdar Attack"
+500099 "Ratha Armor"
+500100 "Resource from Trade"
+500101 "Infantry Bonus"
+500102 "Navy Bonus"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -347,6 +350,20 @@
 501086 "Research Jinete Tactics (Genitours +2 max range)"
 501087 "Research Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)"
 501088 "Research Sagres School (Docks +80% work rate)"
+501089 "Research Siha Bow Limbs (Cavalry archers +1 secondary projectile)"
+501090 "Recruit a mercenary squad."
+501091 "Research Polutasvarf (The accumulation rate of mercenary recruitment opportunities increases by 25%, and the gold obtained by Varangians and Keshiks increases by 33%)"
+501092 "Upgrade to Elite Toungoo Warrior"
+501093 "Research Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)"
+501094 "Research Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)"
+501095 "Upgrade to Veteran Mansabdar"
+501096 "Upgrade to Elite Mansabdar"
+501097 "Monk +2 melee/3 pierce armor"
+501098 "Mansabdars +2 attack"
+501099 "Ratha is immune to additional damage against Archers"
+501100 "Your team +10% wood and food produced from trade"
+501101 "Infantry +15% attack speed, +1 melee/pierce armor"
+501102 "Ships + 15 HP regeneration per minute"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (Time: 30) Fish ships and Transport ships +25%Movement Speed"
@@ -437,6 +454,20 @@
 521086 "Research <b>Jinete Tactics<b> (<cost>) (Time: 60)\nGenitours +2 max range."
 521087 "Research <b>Explorer<b> (<cost>) (Time: 45)\nYou can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on."
 521088 "Research <b>Sagres School<b> (<cost>) (Time: 60)\nDocks +80% work rate."
+521089 "Research <b>Siha Bow Limbs<b> (<cost>) (Time: 45)\nCavalry archers +1 secondary projectile."
+521090 "Recruit a mercenary squad (<cost>) (Time: 10), with values and troop types determined by your luck. You can accumulate 1 recruitment opportunity every 60 seconds."
+521091 "Research <b>Polutasvarf<b> (<cost>) (Time: 45)\nThe accumulation rate of mercenary recruitment opportunities increases by 25%, and the gold obtained by Varangians and Keshiks increases by 33%."
+521092 "Upgrade to <b>Elite Toungoo Warrior<b> (<cost>) (time: 45)\nUpgrades your Toungoo Warriors and lets you create Elite Toungoo Warriors."
+521093 "Research <b>Abhara Elephant<b> (<cost>) (Time: 60)\nBattle Elephants don't cost good to train, and +25 food cost."
+521094 "Research <b>Heavy Spear<b> (<cost>) (Time: 45)\nSpearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units."
+521095 "Upgrade to <b>Veteran Mansabdar<b> (<cost>) (time: 30)\nUpgrades your Mansabdars and lets you create Veteran Mansabdars."
+521096 "Upgrade to <b>Elite Mansabdar<b> (<cost>) (time: 60)\nUpgrades your Veteran Mansabdars and lets you create Elite Mansabdars."
+521097 "(Cost: 1 relic) Monk +2 melee/3 pierce armor."
+521098 "(Cost: 1 relic) Mansabdars +2 attack."
+521099 "(Cost: 1 relic) Ratha is immune to additional damage against Archers."
+521100 "(Cost: 1 relic) Your team +10% wood and food produced from trade."
+521101 "(Cost: 1 relic) Infantry +15% attack speed, +1 melee/pierce armor."
+521102 "(Cost: 1 relic) Ships + 15 HP regeneration per minute."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -488,6 +519,11 @@
 700040 "Khevsureti Warrior"
 700041 "Elite Khevsureti Warrior"
 700042 "Flame Thrower"
+700043 "Toungoo Warrior"
+700044 "Elite Toungoo Warrior"
+700045 "Mansabdar"
+700046 "Veteran Mansabdar"
+700047 "Elite Mansabdar"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -532,6 +568,11 @@
 701040 "Create Khevsureti Warrior"
 701041 "Create Khevsureti Warrior"
 701042 "Create Flame Thrower"
+701043 "Create Toungoo Warrior"
+701044 "Create Elite Toungoo Warrior"
+701045 "Create Mansabdar"
+701046 "Create Veteran Mansabdar"
+701047 "Create Elite Mansabdar"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\n<i><GREY>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit; Training time: 20; Moving speed: 1.00; Reload time: 2.5; Attack delay: 0.35; Accuracy: 75%; Dispersion radius: 0.33; LOS: 9; Search radius: 9. \nAttack Bonus: +8 vs Cavalry, +5 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -617,6 +658,16 @@
 721041 "Create <b>Elite Khevsureti Warrior<b> (<cost>)\nGeorgian unique infantry. Strong vs siege weapons.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 21; Moving speed: 1.1; Reload time: 2; LOS: 6; Search radius: 5.\nAttack Bonus: +10 vs Siege Weapon, +20 vs Ram/Siege Tower/Trebuchet\nArmor Bonus: -10 damage received from Siege Weapons"
 
 721042 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +8 vs Stone Defensive Buildings."
+
+721043 "Create <b>Toungoo Warrior<b> (<cost>)\nBurmese unique infantry. Can deal damage to enemies around when killed.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Shock Infantry, Unique Unit; Training time: 34; Moving speed: 1.3; Reload time: 2; LOS: 8; Search radius: 6.\nAttack Bonus: +3 vs Shock Infantry, +2 vs Standard Buildings"
+
+721044 "Create <b>Elite Toungoo Warrior<b> (<cost>)\nBurmese unique infantry. Can deal damage to enemies around when killed.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Shock Infantry, Unique Unit; Training time: 27; Moving speed: 1.35; Reload time: 2; LOS: 8; Search radius: 6.\nAttack Bonus: +4 vs Shock Infantry, +4 vs Standard Buildings"
+
+721045 "Create <b>Mansabdar<b> (<cost>)\nLight cavalry. Strong vs skirmishers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.25; Reload time: 2; LOS: 4; Search radius: 4. \nAttack Bonus: +6 vs Monk\n\n<GREY>After Feudal Age gets: +2 attack, +4 attack vs Skirmisher, +0.3 movement speed, +2 LOS/Search Radius"
+
+721046 "Create <b>Veteran Mansabdar<b> (<cost>)\nLight cavalry. Strong vs skirmishers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +10 vs Monk, +6 vs Skirmisher"
+
+721047 "Create <b>Elite Mansabdar<b> (<cost>)\nLight cavalry. Strong vs skirmishers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.45; Reload time: 2; LOS: 7; Search radius: 7. \nAttack Bonus: +15 vs Monk, +12 vs Skirmisher"
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy foot archers' reload time by 0.5."

@@ -5481,6 +5481,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Elite Toungoo Warrior",
+                        "RequiredAge": 4,
+                        "ID": 3141
                     }
                 ],
                 "Units": [
@@ -5523,6 +5528,11 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Toungoo Warrior",
+                        "RequiredAge": 3,
+                        "ID": 4055
                     }
                 ]
             },
@@ -7041,6 +7051,11 @@
                         "Name": "Architecture",
                         "RequiredAge": 4,
                         "ID": 51
+                    },
+                    {
+                        "Name": "Polutaswarf",
+                        "RequiredAge": 3,
+                        "ID": 3140
                     }
                 ]
             },
@@ -7259,6 +7274,10 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3078
+                    },
+                    {
+                        "RequiredAge": 2,
+                        "ID": 3139
                     }
                 ],
                 "Units": [
@@ -10927,6 +10946,11 @@
                         "ID": 330,
                         "Name": "Heavy Camel Rider",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Battle Elephant",
+                        "RequiredAge": 3,
+                        "ID": 1132
                     }
                 ]
             },
@@ -11270,6 +11294,16 @@
                         "ID": 322,
                         "Name": "Murder Holes",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Abhara Elephant",
+                        "RequiredAge": 4,
+                        "ID": 3144
+                    },
+                    {
+                        "Name": "Heavy Spear",
+                        "RequiredAge": 3,
+                        "ID": 3145
                     }
                 ]
             },
@@ -15940,16 +15974,6 @@
                 "Name": "Stable",
                 "Techs": [
                     {
-                        "ID": 254,
-                        "Name": "Light Cavalry",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 428,
-                        "Name": "Hussar",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
@@ -15968,25 +15992,19 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Veteran Mansabdar",
+                        "RequiredAge": 3,
+                        "ID": 3147
+                    },
+                    {
+                        "Name": "Elite Mansabdar",
+                        "RequiredAge": 4,
+                        "ID": 3148
                     }
                 ],
                 "Units": [
-                    {
-                        "ID": 448,
-                        "Name": "Scout Cavalry",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 546,
-                        "Name": "Light Cavalry",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 441,
-                        "Name": "Hussar",
-                        "RequiredAge": 4,
-                        "RequiredUnitID": 546
-                    },
                     {
                         "ID": 329,
                         "Name": "Camel Rider",
@@ -16002,6 +16020,11 @@
                         "Name": "Imperial Camel Rider",
                         "RequiredAge": 4,
                         "RequiredUnitID": 236
+                    },
+                    {
+                        "Name": "Mansabdar",
+                        "RequiredAge": 2,
+                        "ID": 4058
                     }
                 ]
             },
@@ -28464,6 +28487,7 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Elite Genitour",
                         "RequiredAge": 4,
                         "ID": 599
                     }
@@ -28505,6 +28529,7 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Genitour",
                         "RequiredAge": 3,
                         "ID": 1010
                     }
@@ -29007,6 +29032,7 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Sagres School",
                         "RequiredAge": 4,
                         "ID": 3137
                     }
@@ -32710,6 +32736,7 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Elite Genitour",
                         "RequiredAge": 3,
                         "ID": 599
                     }
@@ -32746,6 +32773,7 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Genitour",
                         "RequiredAge": 2,
                         "ID": 1010
                     }
@@ -33280,6 +33308,7 @@
                         "ID": 3134
                     },
                     {
+                        "Name": "Explorer",
                         "RequiredAge": 3,
                         "ID": 3135
                     }
@@ -42324,11 +42353,6 @@
                 "Name": "Stable",
                 "Techs": [
                     {
-                        "ID": 254,
-                        "Name": "Light Cavalry",
-                        "RequiredAge": 3
-                    },
-                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
@@ -42347,19 +42371,19 @@
                         "ID": 631,
                         "Name": "Elite Battle Elephant",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Veteran Mansabdar",
+                        "RequiredAge": 3,
+                        "ID": 3147
+                    },
+                    {
+                        "Name": "Elite Mansabdar",
+                        "RequiredAge": 4,
+                        "ID": 3148
                     }
                 ],
                 "Units": [
-                    {
-                        "ID": 448,
-                        "Name": "Scout Cavalry",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 546,
-                        "Name": "Light Cavalry",
-                        "RequiredAge": 3
-                    },
                     {
                         "ID": 1132,
                         "Name": "Battle Elephant",
@@ -42369,6 +42393,11 @@
                         "ID": 1134,
                         "Name": "Elite Battle Elephant",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Mansabdar",
+                        "RequiredAge": 2,
+                        "ID": 4058
                     }
                 ]
             },

@@ -98,15 +98,10 @@ bool isDock(int ObjectID = -1)
 bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
-    int TempArray = NewArrayInt();
-    TempArray = xsGetPlayerUnitIds(playerId, ObjectID, TempArray);
+    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
     for (i = 0; <xsArrayGetSize(TempArray))
         if (Distance(xsGetUnitPosition(UnitID), xsGetUnitPosition(xsArrayGetInt(TempArray, i))) <= Range)
-        {
-            RecycleArrayInt(TempArray);
             return (true);
-        }
-    RecycleArrayInt(TempArray);
     return (false);
 }
 
@@ -115,15 +110,10 @@ bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Rang
 bool isPosInRange(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
-    int TempArray = NewArrayInt();
-    TempArray = xsGetPlayerUnitIds(playerId, ObjectID, TempArray);
+    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
     for (i = 0; <xsArrayGetSize(TempArray))
         if (Distance(Pos, xsGetUnitPosition(xsArrayGetInt(TempArray, i))) <= Range)
-        {
-            RecycleArrayInt(TempArray);
             return (true);
-        }
-    RecycleArrayInt(TempArray);
     return (false);
 }
 
@@ -132,19 +122,14 @@ bool isPosInRange(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int 
 bool isInRangeMatrix(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
-    int TempArray = NewArrayInt();
-    TempArray = xsGetPlayerUnitIds(playerId, ObjectID, TempArray);
+    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
     for (i = 0; <xsArrayGetSize(TempArray))
     {
         vector UnitPos = xsGetUnitPosition(UnitID);
         vector TempUnitPos = xsGetUnitPosition(xsArrayGetInt(TempArray, i));
         if ((DistanceX(UnitPos, TempUnitPos) <= Range) && (DistanceY(UnitPos, TempUnitPos) <= Range))
-        {
-            RecycleArrayInt(TempArray);
             return (true);
-        }
     }
-    RecycleArrayInt(TempArray);
     return (false);
 }
 
@@ -152,18 +137,13 @@ bool isInRangeMatrix(int playerId = -1, int UnitID = -1, int ObjectID = -1, floa
 bool isPosInRangeMatrix(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
-    int TempArray = NewArrayInt();
-    TempArray = xsGetPlayerUnitIds(playerId, ObjectID, TempArray);
+    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
     for (i = 0; < xsArrayGetSize(TempArray))
     {
         vector TempUnitPos = xsGetUnitPosition(xsArrayGetInt(TempArray, i));
         if ((DistanceX(Pos, TempUnitPos) <= Range) && (DistanceY(Pos, TempUnitPos) <= Range))
-        {
-            RecycleArrayInt(TempArray);
             return (true);
-        }
     }
-    RecycleArrayInt(TempArray);
     return (false);
 }
 
@@ -317,248 +297,6 @@ int PlayerAllUnits(int playerId = -1, bool includeBuilding = false, int ArrayID 
 }
 
 
-//为单位启动光环, isSelf为true时光环加成自身, 不能使用于类
-void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 32);
-    if (isSelf)
-        ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 64);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-
-//为单位关闭光环
-void RemoveAura(int playerId = -1, int ObjectID = -1)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 96);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-//  为单位启动毒刺效果
-void LaunchStinger(int playerId = -1, int ObjectID = -1)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 128);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-
-//  为单位关闭毒刺效果
-void RemoveStringer(int playerId = -1, int ObjectID = -1)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 128);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-
-//  判断科技是否已经研究完成
-bool isResearched(int playerId = -1, int TechID = -1)
-{
-    return (xsGetTechState(TechID, playerId) == cTechStateDone);
-}
-
-
-//  启用单位
-void EnableObject(int playerId = -1, int ObjectID = -1)
-{
-    xsEffectAmount(cEnableObject, ObjectID, 1, 0, playerId);
-}
-
-
-//  禁用单位
-void DisableObject(int playerId = -1, int ObjectID = -1)
-{
-    xsEffectAmount(cEnableObject, ObjectID, 0, 0, playerId);
-}
-
-
-//  设置科技费用和研究时间均为0, 用于将一些科技变为自动研究, 例如为多个文明解锁一个单位的科技
-void SetTechAuto(int playerId = -1, int TechID = -1)
-{
-    xsEffectAmount(cModifyTech, TechID, cAttrSetTime, 0, playerId);
-    xsEffectAmount(cModifyTech, TechID, cAttrMulAllCosts, 0, playerId);
-}
-
-
-//  启用科技
-void EnableTech(int playerId = -1, int TechID = -1)
-{
-    xsEffectAmount(cModifyTech, TechID, cAttrSetState, cAttributeEnable, playerId);
-}
-
-
-//  禁用科技
-void DisableTech(int playerId = -1, int TechID = -1)
-{
-    xsEffectAmount(cDisableTech, TechID, 0, 0, playerId);
-}
-
-
-//  强制启用科技
-void ForceEnableTech(int playerId = -1, int TechID = -1)
-{
-    xsEffectAmount(cModifyTech, TechID, cAttrSetState, cAttributeForce, playerId);
-}
-
-
-//  强制研究科技
-void ForceResearchTech(int playerId = -1, int TechID = -1)
-{
-    if (isResearched(playerId, TechID) == false)
-        xsEffectAmount(cModifyTech, TechID, cAttrSetState, cAttributeResearch, playerId);
-}
-
-
-//  启用科技堆叠并设置上限
-void SetTechStack(int playerId = -1, int TechID = -1, int ResearchCap = 1)
-{
-    xsEffectAmount(cModifyTech, TechID, cAttrSetStacking, 1, playerId);
-    xsEffectAmount(cModifyTech, TechID, cAttrSetStackingResearchCap, ResearchCap, playerId);
-}
-
-
-//  为单位设置属性
-void SetAttribute(int playerId = -1, int ObjectID = -1, int AttributeID = -1, float value = -1)
-{
-    xsEffectAmount(cSetAttribute, ObjectID, AttributeID, value, playerId);
-}
-
-
-//  为单位修改属性
-void ModAttribute(int playerId = -1, int ObjectID = -1, int AttributeID = -1, float value = -1)
-{
-    xsEffectAmount(cAddAttribute, ObjectID, AttributeID, value, playerId);
-}
-
-
-//  为单位倍乘属性
-void MulAttribute(int playerId = -1, int ObjectID = -1, int AttributeID = -1, float value = -1)
-{
-    xsEffectAmount(cMulAttribute, ObjectID, AttributeID, value, playerId);
-}
-
-
-//  为单位设置攻击力
-void SetAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int value = -1)
-{
-    if  (value > 0)
-        xsEffectAmount(cSetAttribute, ObjectID, cAttack, DamageClass * 256 + value, playerId);
-    else
-        xsEffectAmount(cSetAttribute, ObjectID, cAttack, 0 - DamageClass * 256 + value, playerId);
-}
-
-
-//  为单位设置护甲
-void SetArmor(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int value = -1)
-{
-    if  (value > 0)
-        xsEffectAmount(cSetAttribute, ObjectID, cArmor, DamageClass * 256 + value, playerId);
-    else
-        xsEffectAmount(cSetAttribute, ObjectID, cArmor, 0 - DamageClass * 256 + value, playerId);
-}
-
-
-//  为单位修改攻击力
-void ModAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int value = -1)
-{
-    if  (value > 0)
-        xsEffectAmount(cAddAttribute, ObjectID, cAttack, DamageClass * 256 + value, playerId);
-    else
-        xsEffectAmount(cAddAttribute, ObjectID, cAttack, 0 - DamageClass * 256 + value, playerId);
-}
-
-
-//  为单位修改护甲
-void ModArmor(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int value = -1)
-{
-    if  (value > 0)
-        xsEffectAmount(cAddAttribute, ObjectID, cArmor, DamageClass * 256 + value, playerId);
-    else
-        xsEffectAmount(cAddAttribute, ObjectID, cArmor, 0 - DamageClass * 256 + value, playerId);
-}
-
-
-//  设置资源
-void SetResource(int playerId = -1, int ResourceID = -1, float value = 0.0)
-{
-    xsEffectAmount(cModResource, ResourceID, 0, value, playerId);
-}
-
-
-//  修改资源
-void ModResource(int playerId = -1, int ResourceID = -1, float value = 0.0)
-{
-    xsEffectAmount(cModResource, ResourceID, 1, value, playerId);
-}
-
-
-//  倍乘资源
-void MulResource(int playerId = -1, int ResourceID = -1, float value = 0.0)
-{
-    xsEffectAmount(cMulResource, ResourceID, 0, value, playerId);
-}
-
-
-//  生成单位
-void SpawnUnit(int playerId = -1, int SpawnUnitID = -1, int SpawnBuidingID = -1, int SpawnNum = -1, int SpawnBuildingCap = 1, bool isInside = false)
-{
-    xsEffectAmount(cModResource, cAttributeSpawnCap, 0, SpawnBuildingCap, playerId);
-    if (isInside)
-        xsEffectAmount(cModResource, cAttributeSpawnStayInside, 0, 1, playerId);
-    xsEffectAmount(cSpawnUnit, SpawnUnitID, SpawnBuidingID, SpawnNum, playerId);
-    xsEffectAmount(cModResource, cAttributeSpawnStayInside, 0, 0, playerId);
-}
-
-
-//  批量设置单位充能
-void SetObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
-{
-    int UnitIDs = NewArrayInt();
-    UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(UnitIDs))
-        xsSetUnitCharge(xsArrayGetInt(UnitIDs, i), value);
-    RecycleArrayInt(UnitIDs);
-}
-
-
-//  批量修改单位充能
-void ModObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
-{
-    int UnitIDs = NewArrayInt();
-    UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
-    int i = 0;
-    float MaxCharge = xsGetObjectAttribute(playerId, ObjectID, cMaxCharge);
-    for (i = 0; < xsArrayGetSize(UnitIDs))
-    {
-        int UnitID = xsArrayGetInt(UnitIDs, i);
-        float ChargeValue = maxFloat(minFloat(xsGetUnitCharge(UnitID) + value, MaxCharge), 0);
-        xsSetUnitCharge(UnitID, ChargeValue);
-    }
-    RecycleArrayInt(UnitIDs);
-}
-
-
-//  批量倍乘单位充能
-void MulObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
-{
-    int UnitIDs = NewArrayInt();
-    UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
-    int i = 0;
-    float MaxCharge = xsGetObjectAttribute(playerId, ObjectID, cMaxCharge);
-    for (i = 0; < xsArrayGetSize(UnitIDs))
-    {
-        int UnitID = xsArrayGetInt(UnitIDs, i);
-        float ChargeValue = maxFloat(minFloat(xsGetUnitCharge(UnitID) * value, MaxCharge), 0);
-        xsSetUnitCharge(UnitID, ChargeValue);
-    }
-    RecycleArrayInt(UnitIDs);
-}
-
-
 //  判断单位是否驻扎
 //  单位驻扎之后，它的坐标就会变成驻扎目标的坐标，直到解除驻扎。但是，如果驻扎目标移动的话，它的坐标并不会随着被驻扎的单位移动而改变
 //  考虑到建筑物一般不移动，简单地比较坐标是否相等从而判断单位是否驻扎到建筑物还是可行的，除了TC这种里面能走人的建筑
@@ -572,19 +310,21 @@ bool isGarrison(int UnitID1 = -1, int UnitID2 = -1)
 //  这个函数还没有被使用以验证其正确性
 int GarrisonUnitIDs(int playerId = -1, int UnitID = -1, int ObjectID = -1, int ArrayID = -1)
 {
-    int UnitIDs = NewArrayInt();
+    static int UnitIDs = 0;
     int ResultArray = ArrayID;
     if (ResultArray == -1)
-        ResultArray = NewArrayInt();
+        ResultArray = xsArrayCreateInt(0, 0);
     else
         xsArrayResizeInt(ResultArray, 0);
 
     int i = 0;
-    UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    if (UnitIDs == 0)
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    else
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
     for (u = 0; < xsArrayGetSize(UnitIDs))
         if (isGarrison(UnitID, xsArrayGetInt(UnitIDs, i)))
             ArrayAppendInt(ResultArray, xsArrayGetInt(UnitIDs, i));
-    RecycleArrayInt(UnitIDs);
     return (ResultArray);
 }
 
@@ -593,7 +333,6 @@ int GarrisonUnitCount(int playerId = -1, int UnitID = -1, int ObjectID = -1)
 {
     int UnitIDs = GarrisonUnitIDs(playerId, UnitID, ObjectID);
     int Result = xsArrayGetSize(UnitIDs);
-    RecycleArrayInt(UnitIDs);
     return (Result);
 }
 
@@ -601,10 +340,16 @@ int GarrisonUnitCount(int playerId = -1, int UnitID = -1, int ObjectID = -1)
 //  统计驻扎在ObjectID1中的ObjectID2的单位总数
 int GarrisonObjectCount(int playerId = -1, int ObjectID1 = -1, int ObjectID2 = -1)
 {
-    int UnitIDs1 = NewArrayInt();
-    int UnitIDs2 = NewArrayInt();
-    UnitIDs1 = xsGetPlayerUnitIds(playerId, ObjectID1, UnitIDs1);
-    UnitIDs2 = xsGetPlayerUnitIds(playerId, ObjectID2, UnitIDs2);
+    static int UnitIDs1 = 0;
+    if (UnitIDs1 == 0) 
+        UnitIDs1 = xsGetPlayerUnitIds(playerId, ObjectID1);
+    else
+        UnitIDs1 = xsGetPlayerUnitIds(playerId, ObjectID1, UnitIDs1);
+    static int UnitIDs2 = 0;
+    if (UnitIDs2 == 0) 
+        UnitIDs2 = xsGetPlayerUnitIds(playerId, ObjectID2);
+    else
+        UnitIDs2 = xsGetPlayerUnitIds(playerId, ObjectID2, UnitIDs2);
     int UnitCount1 = xsArrayGetSize(UnitIDs1);
     int UnitCount2 = xsArrayGetSize(UnitIDs2);
     int Result = 0;
@@ -622,7 +367,39 @@ int GarrisonObjectCount(int playerId = -1, int ObjectID1 = -1, int ObjectID2 = -
         if (flag)
             Result ++;
     }
-    RecycleArrayInt(UnitIDs1);
-    RecycleArrayInt(UnitIDs2);
     return (Result);
+}
+
+
+//  消耗一个圣物
+//  即使被玩家获取, 圣物也是属于Gaia的
+bool ConsumeRelic(int playerId = -1)
+{
+    static int RelicList = 0;
+    if (RelicList == 0)
+        RelicList = xsGetPlayerUnitIds(0, cRelicClass);
+    else
+        RelicList = xsGetPlayerUnitIds(0, cRelicClass, RelicList);
+    static int PlayerBuildings = 0;
+    if (PlayerBuildings == 0)
+        PlayerBuildings = xsGetPlayerUnitIds(playerId, cBuildingClass);
+    else
+        PlayerBuildings = xsGetPlayerUnitIds(playerId, cBuildingClass, PlayerBuildings);
+    int i = 0;
+    int j = 0;
+    for (i = 0; < xsArrayGetSize(RelicList))
+    {
+        int RelicUnitID = xsArrayGetInt(RelicList, i);
+        vector RelicUnitPos = xsGetUnitPosition(RelicUnitID);
+        for (j = 0; < xsArrayGetSize(PlayerBuildings))
+        {
+            int BuildingID = xsArrayGetInt(PlayerBuildings, j);
+            if (isMonastery(xsGetUnitObjectId(BuildingID)) && (RelicUnitPos == xsGetUnitPosition(BuildingID)))
+            {
+                xsSetUnitHitpoints(RelicUnitID, 0);
+                return (true);
+            }
+        }
+    }
+    return (false);
 }

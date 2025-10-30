@@ -16,14 +16,26 @@ extern const int cAttributeTaboriteWarriorProductivity = 398;   //  塔博尔战
 extern const int cAttributeHospitallerKnightCharge = 409;   //  医院骑士充能
 extern const int cAttributeHospitallerKnightChargeRate = 410;   //  医院骑士充能效率
 extern const int cAttributeShrineSpawnUnitID = 411; //  圣坛生产的单位ID
-extern const int cAttributeMagyarsSteppeLancerAttackBonus = 412;    //  马扎尔圣物加成的攻击力
+extern const int cAttributeMagyarRelicAttackBonus = 412;    //  马扎尔圣物加成的攻击力
 extern const int cAttributeVikingRaiderKills = 413; //  维京掠夺者击杀数
 extern const int cAttributeApostleProductivity = 414;   //  使徒黄金产出速率
 extern const int cAttributePolesFoodObtained = 415; //  维利奇卡盐矿已经奖励的食物数
 extern const int cAttributeSpanishExplorerGoldCalced = 416; //  西班牙探险家已经计算的黄金数
+extern const int cAttributeWarShipFoodProductivity = 417; //  马来战船产生食物的速率
+extern const int cAttributeRecruitMercenaryCost = 418;  //  招募佣兵所需积累的资源, 每过一段时间获得1次招募机会
+extern const int cAttributeCurrentTime = 419;   //  当前时间 +1
+extern const int cAttributeTechEffectTime = 420;    //  科技效果剩余的持续时间
+extern const int cAttributeFrankLoan = 421; //  法兰克放贷数额
+extern const int cAttributeAztecsKillCount = 422;   //  阿兹特克独特科技的击杀数统计
+extern const int cAttributeHospitallerKnightAbilityTime = 423;  //  医院骑士技能剩余持续时间
+extern const int cAttributeShrineSpawnCount = 424;  //  圣坛已生产单位的次数
+extern const int cAttributeCondottieroMercenaryNum = 434;   //  意大利佣兵生成数量
+extern const int cAttributeTeam = 435;   //  队伍编号
+extern const int cAttributeRelicCount = 436;    //  圣物计数
 
 
 //  单位ID定义
+extern const int TotalObjects = 4060;
 extern const int AssassinID = 4001;
 extern const int StreltsyID = 4002;
 extern const int KhevsuretiWarriorID = 4003;
@@ -59,42 +71,19 @@ extern const int FlameThrowerID = 4047;
 extern const int TaboriteWarriorID = 4048;
 extern const int ShrineID = 4049;
 extern const int InvisibleDeerSpawnerID = 4052;
+extern const int ToungooWarriorID = 4055;
+extern const int MansabdarID = 4058;
+extern const int VeteranMansabdarID = 4059;
+extern const int EliteMansabdarID = 4060;
 
 
 extern const int HospitallerKnightMaxCharge = 300; //   医院骑士技能充能
 extern const float ShrineMaxCharge = 1200.0;    //  圣坛最大充能
-extern const float MalayTCandDockAbilityRange = 11; //  马来城镇中心和船坞产生资源的计算范围
 
 
 //  全局数组
-extern int HospitallerKnightAbilityTime = 0;    //医院骑士技能计时
 extern int KilledUnits = 0; //  已被击杀的单位
-extern int AztecsKillCount = 0; //  阿兹特克独特科技的击杀数统计
-extern int FrankLoan = 0;  //  法兰克借贷每分钟返还的黄金数
-extern int FrankLoanTime = 0;   //  法兰克借贷剩余时长
-extern int RaideHornTime = 0;   //  掠夺号角剩余时长
-extern int FloatingGardenTime = 0;  //  浮动园地剩余时长
-extern int YumKaaxBlessingTime = 0; //  玉米神祝福剩余时长
-extern int MercenaryContractNum = 0;   //  意大利雇佣兵合同招募数
-extern int ShrineSpawnCount = 0;    //  圣坛生产次数
-extern int GaiaResIDs = 0;  //  Gaia资源单位ID值
-extern int GaiaResClass = 0;    //  Gaia资源单位种属
-extern int GaiaResPos = 0;  //  Gaia资源单位坐标
-extern int GaiaResNum = 0;  //  Gaia资源单位初始资源值
-extern int GaiaResType = 0; //  Gaia单位的资源种类
-extern int MalayResIsCount = 0; //  马来使用, 标记资源是否已被计算
 
-
-//  全局矩阵
-extern int RecordedResourceIDs = 0; //  已经统计的地图资源单位ID
-extern int RecordedResourceType = 0;    //  已经统计的地图资源单位的资源类型
-extern int RecordedResourceStorage = 0; //  已经统计的地图资源单位的资源数
-extern int RecordedResourceNum = 0; //  已经统计的地图资源值总计
-extern int RecordedGaiaResID = 0;   //  已经统计的地图资源单位在Gaia资源单位ID数组中的序号
-extern int RecordedTCandDockIDs = 0;    //  已经统计的城镇中心和船坞单位ID
-
-
-extern int Cnt = 0;
 extern int KilledUnitsCount = 0;    //  已被记录的被击杀单位数量
 
 
@@ -204,8 +193,8 @@ void EffectFunction10005(int playerId = -1)
 
 
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrProductivityResource, 397);
-    xsTaskAmount(cTaskAttrResourceOut, 3);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeGoldFishingProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
@@ -451,40 +440,50 @@ void EffectFunction10013(int playerId = -1)
 }
 
 
-// Ethiopians Civ Bonus Adder
-void EthiopiansCivBonus(int ClassTarget = -1, int playerId = -1)
+
+//  重型长矛效果
+void HeavySpear(int ClassTarget = -1, int playerId = -1)
 {
+    xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, -1);
     xsTaskAmount(cTaskAttrWorkValue2, 3);
     xsTaskAmount(cTaskAttrWorkRange, 1);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 116);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 116.000001);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-
     xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
-    xsRemoveTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
-    xsRemoveTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
-    xsRemoveTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
-    xsRemoveTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
-    xsRemoveTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 117.000001);
+    xsTaskAmount(cTaskAttrWorkValue1, -1);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+    xsResetTaskAmount();
+    LaunchStinger(playerId, ClassTarget);
 }
 
 
-// 10014 - Ethiopians Civ Bonus Applier
+// 10014 - 重型长矛
 void EffectFunction10014(int playerId = -1)
 {
     int SpearmanId = 93;
     int PikemanId = 358;
     int HalberdierId = 359;
-    int ShotelWarriorId = 1016;
-    int EliteShotelWarriorId = 1018;
 
-    xsResetTaskAmount();
-    EthiopiansCivBonus(SpearmanId, playerId);
-    EthiopiansCivBonus(PikemanId, playerId);
-    EthiopiansCivBonus(HalberdierId, playerId);
-    EthiopiansCivBonus(ShotelWarriorId, playerId);
-    EthiopiansCivBonus(EliteShotelWarriorId, playerId);
-    xsResetTaskAmount();
+    HeavySpear(SpearmanId, playerId);
+    HeavySpear(PikemanId, playerId);
+    HeavySpear(HalberdierId, playerId);
+    HeavySpear(cScoutCavalryClass, playerId);
+    HeavySpear(cCavalryClass, playerId);
 }
 
 
@@ -598,18 +597,7 @@ void EffectFunction10020(int playerId = -1)
         return;
     //  清空技能条
     xsEffectAmount(cModResource, cAttributeHospitallerKnightCharge, 0, 0.0, playerId);
-    int HospitallerKnightArray = NewArrayInt();
-    HospitallerKnightArray = xsGetPlayerUnitIds(playerId, HospitallerKnightID, HospitallerKnightArray);
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(HospitallerKnightArray))
-        xsSetUnitCharge(xsArrayGetInt(HospitallerKnightArray, i), 0.0);
-    RecycleArrayInt(HospitallerKnightArray);
-
-    int EliteHospitallerKnightArray = NewArrayInt();
-    EliteHospitallerKnightArray = xsGetPlayerUnitIds(playerId, EliteHospitallerKnightID, EliteHospitallerKnightArray);
-    for (i = 0; < xsArrayGetSize(EliteHospitallerKnightArray))
-        xsSetUnitCharge(xsArrayGetInt(EliteHospitallerKnightArray, i), 0.0);
-    RecycleArrayInt(EliteHospitallerKnightArray);
+    SetObjectCharge(playerId, HospitallerKnightID, 0.0);
 
     HospitallerKnightAbility(playerId);
 }
@@ -635,26 +623,33 @@ void EffectFunction10021(int playerId = -1)
 //  10022 - 单位击杀触发的效果
 void EffectFunction10022(int playerId = -1)
 {
-    int playerUnits = PlayerAllUnits(playerId, true);
-
+    int playerUnits = 0;
     int i = 0;
-    for (i = 0; < xsArrayGetSize(playerUnits))
-    {
-        int UnitID = xsArrayGetInt(playerUnits, i);
-        int TargetUnitID = xsGetUnitTargetUnitId(UnitID);
-        if (xsDoesUnitExist(TargetUnitID) && (xsGetUnitHitpoints(TargetUnitID) > 0))    //  目标存活
-            continue;
-        if (ArrayFindInt(KilledUnits, TargetUnitID, 0, KilledUnitsCount) != -1)
-            continue;
-        int KillerPlayer = playerId;
+    int j = 0;
+    for (j = 900; <= 964)
+        if (isClassOperable(j))
+        {
+            playerUnits = xsGetPlayerUnitIds(playerId, j);
+            for (i = 0; < xsArrayGetSize(playerUnits))
+            {
+                int UnitID = xsArrayGetInt(playerUnits, i);
+                int TargetUnitID = xsGetUnitTargetUnitId(UnitID);
+                if (TargetUnitID == -1)
+                    continue;
+                if (xsDoesUnitExist(TargetUnitID) && (xsGetUnitHitpoints(TargetUnitID) > 0))    //  目标存活
+                    continue;
+                if (ArrayFindInt(KilledUnits, TargetUnitID, 0, KilledUnitsCount) != -1)
+                    continue;
+                int KillerPlayer = playerId;
         
-        int TargetPlayer = xsGetUnitOwner(TargetUnitID);
-        KillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
-        xsArraySetInt(KilledUnits, KilledUnitsCount, TargetUnitID);
-        KilledUnitsCount ++;
-        break;
-    }
-    RecycleArrayInt(playerUnits);
+                int TargetPlayer = xsGetUnitOwner(TargetUnitID);
+                KillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
+                xsArraySetInt(KilledUnits, KilledUnitsCount, TargetUnitID);
+                KilledUnitsCount ++;
+                //xsChatData("Killed Unit" + TargetUnitID);
+                break;
+            }
+        }
 }
 
 
@@ -678,24 +673,24 @@ void EffectFunction10023(int playerId = -1)
 //  10027 - 法兰克放贷 (500黄金)
 void EffectFunction10027(int playerId = -1)
 {
-    xsArraySetInt(FrankLoanTime, playerId, 239);
-    xsArraySetInt(FrankLoan, playerId, 187.5);
+    SetResource(playerId, cAttributeTechEffectTime, 239);
+    SetResource(playerId, cAttributeFrankLoan, 187.5);
 }
 
 
 //  10028 - 法兰克放贷 (1000黄金)
 void EffectFunction10028(int playerId = -1)
 {
-    xsArraySetInt(FrankLoanTime, playerId, 359);
-    xsArraySetInt(FrankLoan, playerId, 300);
+    SetResource(playerId, cAttributeTechEffectTime, 359);
+    SetResource(playerId, cAttributeFrankLoan, 300);
 }
 
 
 //  10029 - 法兰克放贷 (2000黄金)
 void EffectFunction10029(int playerId = -1)
 {
-    xsArraySetInt(FrankLoanTime, playerId, 479);
-    xsArraySetInt(FrankLoan, playerId, 500);
+    SetResource(playerId, cAttributeTechEffectTime, 479);
+    SetResource(playerId, cAttributeFrankLoan, 500);
 }
 
 
@@ -709,7 +704,7 @@ void EffectFunction10037(int playerId = -1)
     ModAttack(playerId, cCavalryClass, 21, 4);
     ModAttack(playerId, cScoutCavalryClass, 21, 4);
     MulResource(playerId, 213, 4);
-    xsArraySetInt(RaideHornTime, playerId, 179);
+    SetResource(playerId, cAttributeTechEffectTime, 179);
 }
 
 
@@ -723,7 +718,7 @@ void EffectFunction10038(int playerId = -1)
     MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.2);
     MulAttribute(playerId, cFarmClass, cWorkRate, 1.2);
     MulAttribute(playerId, ShrineID, cMaxCharge, 1.0 / 1.2);
-    xsArraySetInt(FloatingGardenTime, playerId, 179);
+    SetResource(playerId, cAttributeTechEffectTime, 179);
 }
 
 
@@ -735,30 +730,22 @@ void EffectFunction10039(int playerId = -1)
     MulAttribute(playerId, 259, cWorkRate, 1000);
     MulAttribute(playerId, 259, cCarryCapacity, 100);
     MulAttribute(playerId, 50, cWorkRate, 10000);
-    xsArraySetInt(YumKaaxBlessingTime, playerId, 8);
+    SetResource(playerId, cAttributeTechEffectTime, 8);
 }
 
 
 //  10040 - 意大利佣兵合同
 void EffectFunction10040(int playerId = -1)
 {
-    xsArraySetInt(MercenaryContractNum, playerId, 5);
-    SpawnUnit(playerId, 4050, 209, 1);
-    SetResource(playerId, cAttributeMaintenance, 1042);
+    SetResource(playerId, cAttributeCondottieroMercenaryNum, 5);
+    SetResource(playerId, cAttributeTechEffectTime, 1);
 }
 
 
 //  10041 - 意大利高级佣兵合同
 void EffectFunction10041(int playerId = -1)
 {
-    xsArraySetInt(MercenaryContractNum, playerId, 10);
-}
-
-
-//  10042 - 意大利佣兵合同生成单位
-void EffectFunction10042(int playerId = -1)
-{
-    SpawnUnit(playerId, 882, 109, xsArrayGetInt(MercenaryContractNum, playerId));
+    ModResource(playerId, cAttributeCondottieroMercenaryNum, 5);
 }
 
 
@@ -794,13 +781,28 @@ void EffectFunction10047(int playerId = -1)
 //  法兰克, 计算借贷返利
 void Franks(int Time = 0, int playerId = -1)
 {
-    if (xsArrayGetInt(FrankLoanTime, playerId) >= 0)
+    int FrankLoanTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
+    if (FrankLoanTime > 0)
     {
-        if (xsArrayGetInt(FrankLoanTime, playerId) % 60 == 0)
-            xsEffectAmount(cModResource, cAttributeGold, 1, xsArrayGetInt(FrankLoan, playerId), playerId);
-        xsArraySetInt(FrankLoanTime, playerId, xsArrayGetInt(FrankLoanTime, playerId) - 1);
-        if (xsArrayGetInt(FrankLoanTime, playerId) < 0)
+        if (FrankLoanTime % 60 == 0)
+            xsEffectAmount(cModResource, cAttributeGold, 1, xsPlayerAttribute(playerId, cAttributeFrankLoan), playerId);
+        FrankLoanTime --;
+        if (FrankLoanTime == 0)
             xsEffectAmount(cModResource, cAttributeLoanLimit, 1, 1, playerId);
+        SetResource(playerId, cAttributeTechEffectTime, FrankLoanTime);
+    }
+}
+
+
+//  拜占庭, 招募雇佣兵
+void Byzantines(int Time = 0, int playerId = -1)
+{
+    if (xsPlayerAttribute(playerId, cAttributeCurrentAge) >= 1)
+    {
+        float ProgressInc = 1.0;
+        if (isResearched(playerId, 3140))
+            ProgressInc = ProgressInc * 1.25;
+        ModResource(playerId, cAttributeRecruitMercenaryCost, ProgressInc);
     }
 }
 
@@ -879,10 +881,11 @@ void Spanish(int Time = 0, int playerId = -1)
 //  阿兹特克独特科技, 浮动园地
 void Aztecs(int Time = 0, int playerId = -1)
 {
-    if (xsArrayGetInt(FloatingGardenTime, playerId) < 0)
+    int FloatingGardenTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
+    if (FloatingGardenTime == 0)
         return;
-    ArrayIncInt(FloatingGardenTime, playerId, -1);
-    if (xsArrayGetInt(FloatingGardenTime, playerId) == -1)
+    FloatingGardenTime --;
+    if (FloatingGardenTime == 0)
     {
         MulAttribute(playerId, cTradeBoatClass, cWorkRate, 1.0 / 1.2);
         MulAttribute(playerId, cBuildingClass, cWorkRate, 1.0 / 1.2);
@@ -892,16 +895,18 @@ void Aztecs(int Time = 0, int playerId = -1)
         MulAttribute(playerId, cFarmClass, cWorkRate, 1.0 / 1.2);
         MulAttribute(playerId, ShrineID, cMaxCharge, 1.2);
     }
+    SetResource(playerId, cAttributeTechEffectTime, FloatingGardenTime);
 }
 
 
 //  玛雅独特科技, 玉米神祝福
 void Mayans(int Time = 0, int playerId = -1)
 {
-    if (xsArrayGetInt(YumKaaxBlessingTime, playerId) < 0)
+    int YumKaaxBlessingTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
+    if (YumKaaxBlessingTime == 0)
         return;
-    ArrayIncInt(YumKaaxBlessingTime, playerId, -1);
-    if (xsArrayGetInt(YumKaaxBlessingTime, playerId) == -1)
+    YumKaaxBlessingTime --;
+    if (YumKaaxBlessingTime == 0)
     {
         MulAttribute(playerId, 214, cWorkRate, 1.0 / 1000);
         MulAttribute(playerId, 214, cCarryCapacity, 1.0 / 100);
@@ -909,6 +914,23 @@ void Mayans(int Time = 0, int playerId = -1)
         MulAttribute(playerId, 259, cCarryCapacity, 1.0 / 100);
         MulAttribute(playerId, 50, cWorkRate, 1.0 / 10000);
     }
+    SetResource(playerId, cAttributeTechEffectTime, YumKaaxBlessingTime);
+}
+
+
+//  意大利, 佣兵合同
+void Italians(int Time = 0, int playerId = -1)
+{
+    if (isResearched(playerId, 3114) == false)
+        return;
+    int MercenaryContractTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
+    MercenaryContractTime --;
+    if (MercenaryContractTime == 0)
+    {
+        SpawnUnit(playerId, 882, 109, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
+        MercenaryContractTime = 120;
+    }
+    SetResource(playerId, cAttributeTechEffectTime, MercenaryContractTime);
 }
 
 
@@ -917,118 +939,25 @@ void Magyars(int Time = 0, int playerId = -1)
 {
     int SteppeLancerID = 1370;
     int EliteSteppeLancerID = 1372;
-    int AttackBonus = xsPlayerAttribute(playerId, cAttributeMagyarsSteppeLancerAttackBonus);
+    int AttackBonus = xsPlayerAttribute(playerId, cAttributeMagyarRelicAttackBonus);
     //草原枪兵攻击加成
     int RelicCaptured = xsPlayerAttribute(playerId, cAttributeRelics);
     int CurrentAttackBonus = minInt(RelicCaptured / 2, 2);
 
-    xsEffectAmount(cAddAttribute, SteppeLancerID, cAttack, -4*256-AttackBonus, playerId);
-    xsEffectAmount(cAddAttribute, EliteSteppeLancerID, cAttack, -4*256-AttackBonus, playerId);
-    xsEffectAmount(cAddAttribute, SteppeLancerID, cAttack, 4*256+CurrentAttackBonus, playerId);
-    xsEffectAmount(cAddAttribute, EliteSteppeLancerID, cAttack, 4*256+CurrentAttackBonus, playerId);
-    SetResource(playerId, cAttributeMagyarsSteppeLancerAttackBonus, CurrentAttackBonus);
-}
-
-
-//  马来, 城镇中心根据周围资源产生资源。由于太卡, 暂时弃用
-void Malay(int Time = 0, int playerId = -1)
-{
-    int i = 0;
-    int j = 0;
-    bool flag = false;
-
-    //  检测城镇中心
-    for (i = 0; <= 3)
-        MatrixSetFloat(RecordedResourceNum, playerId, i, 0.0);
-
-    int UnitIDs = NewArrayInt();
-    int TCArray = NewArrayInt();
-    int TempArray = NewArrayInt();
-    int GaiaResSize = xsArrayGetSize(GaiaResIDs);
-    int TCIDs = NewArrayInt(1000, -1);
-    ArrayAppendInt(TCIDs, 109);
-    int TCCount = 0;
-    for (i = 0; < xsArrayGetSize(TCIDs))
-    {
-        TempArray = xsGetPlayerUnitIds(playerId, xsArrayGetInt(TCIDs, i), TempArray);
-        for (j = 0; < xsArrayGetSize(TempArray))
-        {
-            xsArraySetInt(TCArray, TCCount, xsArrayGetInt(TempArray, j));
-            TCCount ++;
-        }
-    }
-    for (i = 0; < GaiaResSize)
-    {
-        flag = false;
-        vector ResPos = xsArrayGetVector(GaiaResPos, i);
-        for (j = 0; < TCCount)
-        {
-            vector UnitPos = xsGetUnitPosition(xsArrayGetInt(TCArray, j));
-            if ((DistanceX(ResPos, UnitPos) <= MalayTCandDockAbilityRange) && (DistanceY(ResPos, UnitPos) <= MalayTCandDockAbilityRange))
-            {
-                flag = true;
-                break;
-            }
-        }
-        if (flag)
-            MatrixIncFloat(RecordedResourceNum, playerId, xsArrayGetInt(GaiaResType, i), xsArrayGetFloat(GaiaResNum, i));
-    }
-    RecycleArrayInt(TempArray);
-    RecycleArrayInt(TCArray);
-    RecycleArrayInt(TCIDs);
-    //int BuildingIDs = NewArrayInt();
-    //for (i = 0;)
-    //BuildingIDs = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingIDs);
-    //for (i = 0; < xsArrayGetSize(BuildingIDs))
-    //{
-    //    int UnitID = xsArrayGetInt(BuildingIDs, i);
-    //    int ObjectID = xsGetUnitObjectId(UnitID);
-    //    if (isTownCenter(ObjectID))
-    //    {
-    //        MalayTCandDockAbility(playerId, UnitID);
-    //        break;
-    //    }
-    //}
-    //RecycleArrayInt(BuildingIDs);
-
-    //  增加资源, 在封建时代/城堡时代/帝王时代资源获取速度 +50/100/200%
-    int CurrentAge = xsPlayerAttribute(playerId, cAttributeCurrentAge);
-    float CurrentResBonus = 0.0;
-    switch (CurrentAge)
-    {
-        case 1:
-        {
-            CurrentResBonus = 0.5;
-            break;
-        }
-        case 2:
-        {
-            CurrentResBonus = 1.0;
-            break;
-        }
-        case 3:
-        {
-            CurrentResBonus = 2.0;
-            break;
-        }
-        default:
-            break;
-    }
-    for (i = 0; <= 3)
-    {
-        ModResource(playerId, i, MatrixGetFloat(RecordedResourceNum, playerId, i) * MalayResourceOutRate(i) / 60 * (1.0 + CurrentResBonus));
-    }
-    ModResource(playerId, cAttributeFood, MatrixGetFloat(RecordedResourceNum, playerId, 16) * MalayResourceOutRate(cAttributeFood) / 60 * (1.0 + CurrentResBonus));
+    ModAttack(playerId, SteppeLancerID, cDamageClassMelee, CurrentAttackBonus - AttackBonus);
+    ModAttack(playerId, EliteSteppeLancerID, cDamageClassMelee, CurrentAttackBonus - AttackBonus);
+    SetResource(playerId, cAttributeMagyarRelicAttackBonus, CurrentAttackBonus);
 }
 
 
 //  鞑靼独特科技, 掠夺号角
 void Tatars(int Time = 0, int playerId = -1)
 {
-    if (xsArrayGetInt(RaideHornTime, playerId) < 0)
+    int RaideHornTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
+    if (RaideHornTime == 0)
         return;
-    ArrayIncInt(RaideHornTime, playerId, -1);
-    if (xsArrayGetInt(RaideHornTime, playerId) == -1)
+    RaideHornTime --;
+    if (RaideHornTime == 0)
     {
         ModAttack(playerId, cCavalryClass, 4, -1);
         ModAttack(playerId, cScoutCavalryClass, 4, -1);
@@ -1038,6 +967,7 @@ void Tatars(int Time = 0, int playerId = -1)
         ModAttack(playerId, cScoutCavalryClass, 21, -4);
         MulResource(playerId, 213, 0.25);
     }
+    SetResource(playerId, cAttributeTechEffectTime, RaideHornTime);
 }
 
 
@@ -1053,64 +983,27 @@ void Poles(int Time = -1, int playerId = -1)
 }
 
 
-void GetGaiaRes()
+void Bengalis(int Time = -1, int playerId = -1)
 {
-    GaiaResIDs = NewArrayInt(0, 0);
-    GaiaResClass = NewArrayInt(0, 0);
-    GaiaResType = NewArrayInt(0, 0);
-    GaiaResNum = NewArrayFloat(0, 0.0);
-    int i = 0;
-    int TempArray = 0;
-    for (i = 900; <= 964)
-        if (isResourceClass(i) && (i != cTreeClass))
-        {
-            TempArray = xsGetPlayerUnitIds(0, i, TempArray);
-            int j = 0;
-            for (j = 0; < xsArrayGetSize(TempArray))
-            {
-                int ResourceID = xsArrayGetInt(TempArray, j);
-                ArrayAppendInt(GaiaResIDs, ResourceID);
-                ArrayAppendInt(GaiaResClass, i);
-                //  枚举肉木金石四种资源, 找到资源类型
-                int k = 0;
-                int ResourceHeldType = 0;
-                for (k = 0; <= 3)
-                    if (xsGetUnitAttributeHeld(ResourceID, k) > 0.0)
-                        ResourceHeldType = k;
-                if (xsGetUnitAttributeHeld(ResourceID, cAttributeBerries) > 0.0)
-                    ResourceHeldType = cAttributeBerries;
-                float ResourceHeld = xsGetObjectAttribute(0, xsGetUnitObjectId(ResourceID), cAmountFirstStorage);
-                ArrayAppendInt(GaiaResType, ResourceHeldType);
-                ArrayAppendFloat(GaiaResNum, ResourceHeld);
-            }
-        }
-    int size = xsArrayGetSize(GaiaResIDs);
-    GaiaResPos = xsArrayCreateVector(size, vector(-1.0, -1.0, -1.0));
-    for (i = 0; < size)
-        xsArraySetVector(GaiaResPos, i, xsGetUnitPosition(xsArrayGetInt(GaiaResIDs, i)));
-    RecycleArrayInt(TempArray);
 }
 
 
 //  初始化
 void Init()
 {
-    AztecsKillCount = NewArrayInt(9, 0);
-    HospitallerKnightAbilityTime = NewArrayInt(xsGetNumPlayers() + 1, 0);
-    FrankLoan = NewArrayInt(xsGetNumPlayers() + 1, 0);
-    FrankLoanTime = NewArrayInt(xsGetNumPlayers() + 1, -1);
-    RaideHornTime = NewArrayInt(xsGetNumPlayers() + 1, -1);
-    FloatingGardenTime = NewArrayInt(xsGetNumPlayers() + 1, -1);
-    YumKaaxBlessingTime = NewArrayInt(xsGetNumPlayers() + 1, -1);
-    MercenaryContractNum = NewArrayInt(xsGetNumPlayers() + 1, 0);
-    ShrineSpawnCount = NewArrayInt(xsGetNumPlayers() + 1, 0);
-    RecordedResourceIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
-    RecordedResourceType = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
-    RecordedResourceStorage = NewMatrixFloat(xsGetNumPlayers() + 1, 0, 0.0);
-    RecordedGaiaResID = NewMatrixInt(xsGetNumPlayers() + 1, 0);
-    RecordedResourceNum = NewMatrixFloat(xsGetNumPlayers() + 1, 600, 0.0);
-    RecordedTCandDockIDs = NewMatrixInt(xsGetNumPlayers() + 1, 0, 0);
-    //GetGaiaRes();
+    //  获取玩家阵营
+    int TeamNum = 0;
+    int i = 0;
+    int j = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if (xsPlayerAttribute(i, cAttributeTeam) == 0)
+        {
+            TeamNum ++;
+            xsResearchTechnology(3149, true, false, i);
+            for (j = 0; <= xsGetNumPlayers())
+                if (xsPlayerAttribute(j, cAttributeTeam) == 10)
+                    SetResource(j, cAttributeTeam, TeamNum);
+        }
 }
 
 
@@ -1119,11 +1012,18 @@ void TimerEvent(int Time = 0, int playerId = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
 
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+
     switch (playerCiv)
     {
         case cFranks:
         {
             Franks(Time, playerId);
+            break;
+        }
+        case cByzantines:
+        {
+            Byzantines(Time, playerId);
             break;
         }
         case cPersians:
@@ -1146,16 +1046,16 @@ void TimerEvent(int Time = 0, int playerId = -1)
             Mayans(Time, playerId);
             break;
         }
+        case cItalians:
+        {
+            Italians(Time, playerId);
+            break;
+        }
         case cMagyars:
         {
             Magyars(Time, playerId);
             break;
         }
-        //case cMalay:
-        //{
-        //    Malay(Time, playerId);
-        //    break;
-        //}
         case cTatars:
         {
             Tatars(Time, playerId);
@@ -1166,6 +1066,11 @@ void TimerEvent(int Time = 0, int playerId = -1)
             Poles(Time, playerId);
             break;
         }
+        case cBengalis:
+        {
+            Bengalis(Time, playerId);
+            break;
+        }
         default:
         {
             break;
@@ -1174,38 +1079,11 @@ void TimerEvent(int Time = 0, int playerId = -1)
 
     HospitallerKnight(Time, playerId);
     Shrine(Time, playerId);
-    SetAttribute(playerId, 4050, cRegenerationHpPercent, -0.5);
 }
 
 
 void Test(int Time = 0)
 {
-    int UnitIDs = 0;
-    int i = 0;
-    int j = 0;
-    int TempArray = 0;
-    for (i = 0; <= xsGetNumPlayers())
-    {
-        UnitIDs = PlayerAllUnits(i, true, -1, true);
-        for (j = 0; < xsArrayGetSize(UnitIDs))
-        {
-            TempArray = NewArrayInt();
-            int UnitID = xsArrayGetInt(UnitIDs, j);
-            int AttrsHeld = xsGetUnitAttributeTypesHeld(UnitID);
-            bool flag = false;
-            for (k = 0; < xsArrayGetSize(AttrsHeld))
-            {
-                int temp = xsGetUnitAttributeHeld(UnitID, xsArrayGetInt(AttrsHeld, k));
-                if (temp >= 1)
-                    flag = true;
-                ArrayAppendInt(TempArray, temp);
-            }
-            if (flag)
-                xsChatData("Time = " + Time + " UnitID = " + UnitID + " " + xsGetUnitName(UnitID) + " AttrHeld: " + ArrayToStringInt(AttrsHeld) + ", " + ArrayToStringInt(TempArray));
-            RecycleArrayInt(TempArray);
-            RecycleArrayInt(AttrsHeld);
-        }
-    }
 }
 
 
@@ -1214,12 +1092,11 @@ rule Timer
     active
     highFrequency
 {
-    static int LastUpdateTime = -1;
+    int LastUpdateTime = xsPlayerAttribute(0, cAttributeCurrentTime) ;
     int CurrentTime = xsGetGameTime();
 
-    while (LastUpdateTime < CurrentTime)
+    while (LastUpdateTime <= CurrentTime)
     {
-        LastUpdateTime = LastUpdateTime +1;
         if (LastUpdateTime == 0)
         {
             ArrayRecycleInit();
@@ -1229,6 +1106,7 @@ rule Timer
         int i = 0;
         for (i = 0; <= xsGetNumPlayers())
             TimerEvent(LastUpdateTime, i);
-        //Test(LastUpdateTime);
+        LastUpdateTime = LastUpdateTime + 1;
+        ModResource(0, cAttributeCurrentTime, 1);
     }
 }
