@@ -762,7 +762,7 @@ void EffectFunction10054(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 当前每个城镇中心和修道院立即产生 1 个战车, 战车木材费用 -10
+//  孟加拉, 消耗圣物获取加成, 当前每个城镇中心和修道院立即产生 1 个战车, 战车 -15 木材费用
 void EffectFunction10055(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -770,10 +770,23 @@ void EffectFunction10055(int playerId = -1)
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
     SpawnUnit(playerId, 1738, 109, 1, 32767);
     SpawnUnit(playerId, 1738, 104, 1, 32767);
-    ModAttribute(playerId, 1738, cWoodCost, -10);
-    ModAttribute(playerId, 1740, cWoodCost, -10);
-    ModAttribute(playerId, 1759, cWoodCost, -10);
-    ModAttribute(playerId, 1761, cWoodCost, -10);
+    ModAttribute(playerId, 1738, cWoodCost, -15);
+    ModAttribute(playerId, 1740, cWoodCost, -15);
+    ModAttribute(playerId, 1759, cWoodCost, -15);
+    ModAttribute(playerId, 1761, cWoodCost, -15);
+}
+
+
+//  孟加拉, 消耗圣物获取加成, 骑象射手 +1 攻击力, 对枪兵再 +4
+void EffectFunction10056(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    ModAttack(playerId, 873, cDamageClassPierce, 1);
+    ModAttack(playerId, 875, cDamageClassPierce, 1);
+    ModAttack(playerId, 873, cDamageClassSpearmen, 4);
+    ModAttack(playerId, 875, cDamageClassSpearmen, 4);
 }
 
 

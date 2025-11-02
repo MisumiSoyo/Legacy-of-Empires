@@ -355,6 +355,8 @@ void EffectFunction10002(int playerId = -1)
         {
             //  保加利亚文明加成 + 军事训练
             xsEffectAmount(cModifyTech, 1810, cAttrMulFoodCost, 0.5, playerId);
+            //  启用冠军剑士
+            EnableTech(playerId, 264);
             break;
         }
         case cCumans:
@@ -420,6 +422,7 @@ void EffectFunction10002(int playerId = -1)
             //  孟加拉原文明加成 骑兵 +2 攻击 vs 掷矛手 → 骑兵 +50% 基础攻击 vs 掷矛手
             ModAttack(playerId, cScoutCavalryClass, cDamageClassSkirmishers, -2);
             ModAttack(playerId, cCavalryClass, cDamageClassSkirmishers, -2);
+            BengalisCavalryVSSkirmisher(playerId);
             //  曼沙布达尔骑兵替代轻骑兵
             SetTechAuto(playerId, 3146);
             break;
@@ -545,8 +548,8 @@ void EffectFunction10024(int playerId = -1)
     MulAttribute(playerId, 38, cTrainTime, 4.0 / 3);
     //  曼沙布达尔骑兵升级
     ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
-    ModAttribute(playerId, MansabdarID, cShownAttack, 2);
     ModAttack(playerId, MansabdarID, cDamageClassSkirmishers, 1);
+    ModAttribute(playerId, MansabdarID, cShownAttack, 2);
     ModAttribute(playerId, MansabdarID, cLineOfSight, 2);
     ModAttribute(playerId, MansabdarID, cSearchRadius, 2);
     ModAttribute(playerId, MansabdarID, cMovementSpeed, 0.3);
@@ -643,6 +646,11 @@ void EffectFunction10024(int playerId = -1)
             EnableObject(playerId, WoodenFortressID); 
             break;
         }
+        case cIndians:
+        {
+            //  曼沙布达尔骑兵替代轻骑兵
+            xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
+        }
         case cIncas:
         {
             //  启用圣坛
@@ -670,8 +678,7 @@ void EffectFunction10024(int playerId = -1)
         }
         case cBengalis:
         {
-            //  孟加拉原文明加成 骑兵 +2 攻击 vs 掷矛手 → 骑兵 +50% 基础攻击 vs 掷矛手
-            BengalisCavalryVSSkirmisher(playerId);
+            //  曼沙布达尔骑兵替代轻骑兵
             xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
         }
         case cRomans:

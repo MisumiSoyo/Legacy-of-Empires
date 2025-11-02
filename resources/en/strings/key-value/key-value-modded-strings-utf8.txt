@@ -97,7 +97,7 @@
 
 120169 "Camel and Gunpowder civilization \n\n• Villagers -8%/-13%/-18%/-23% cost at Dark/Feudal/Castle/Imperial Age \n• Camel Rider-Line units -16.67% reload time \n• Gunpowder units +1/+1P armor\n• Can build Caravanserai in Imperial Age\n• University technologies are free, but researched 50% slower\n\n<b>Unique Units:<b> \nGhulam (Infantry can deal spear damages), Imperial Camel (High-level Camel rider) \n\n<b>Unique Techs: <b>\n• Grand Trunk Road (All gold incomes +10% rate, trading fee reduced to 10%) \n• Shatagni (Hand cannon +2 max range) \n\n<b>Team bonus: <b>\nAll Camels, Scout Cavalry-Line units, Magyar Huszars, Steppe Lancers and Shrivamsha Riders +2 damage vs Buildings"
 
-120170 "Infantry civilization \n\n• Military units -10%/25%/20%/25% food cost in Dark/Feudal/Castle/Imperial Age \n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age) \n• Barracks, Archery Ranges, Stables, Siege Workshop build 100% faster\n• Houses support 10 population \n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +2 LOS\n\n<b>Unique Units:<b> \nKamayuk (Infantry better combats with cavalries), Slingers (archer better combats with infantries) \n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack) \n• Fabric Shields (Kamayuks, Slingers , Eagle Warriors +1/2P armor)\n• Couriers (Slingers, Eagle Warriors and Kamayuks +15% movement speed)\n• Quipu (Shrines +2 construction limit and can train Xolotl Warriors)\n\n<b>Team bonus: <b>\nStart with a free Llama"
+120170 "Infantry civilization \n\n• Military units -10%/25%/20%/25% food cost in Dark/Feudal/Castle/Imperial Age \n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age) \n• Barracks, Archery Ranges, Stables, Siege Workshop build 100% faster\n• Houses support 10 population \n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +2 LOS\n\n<b>Unique Units:<b> \nKamayuk (Infantry better combats with cavalries), Slingers (archer better combats with infantries) \n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack) \n• Fabric Shields (Kamayuks, Slingers , Eagle Warriors +1/2P armor)\n• Couriers (Slingers, Eagle Warriors, Kamayuks and Xolotl Warriors +15% movement speed)\n• Quipu (Shrines +2 construction limit and can train Xolotl Warriors)\n\n<b>Team bonus: <b>\nStart with a free Llama"
 
 120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 2 garrisoned relics give +1 attack to Steppe Lancers (maximum +2)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n\n<b>Unique Unit:<b> \nMagyar Huszar (Light cavalry better combats with siege weapons) \n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food) \n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 
@@ -260,6 +260,8 @@
 500100 "Resource from Trade"
 500101 "Infantry Bonus"
 500102 "Navy Bonus"
+500103 "Spawn Ratha"
+500104 "Elephant Archer Bonus"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -364,6 +366,8 @@
 501100 "Your team +10% wood and food produced from trade"
 501101 "Infantry +15% attack speed, +1 melee/pierce armor"
 501102 "Ships + 15 HP regeneration per minute"
+501103 "Spawn 1 Ratha from each town center and monastery; Ratha -15 wood cost"
+501104 "Elephant Archers +1 attack, +4 attack vs Spearman"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (Time: 30) Fish ships and Transport ships +25%Movement Speed"
@@ -462,12 +466,14 @@
 521094 "Research <b>Heavy Spear<b> (<cost>) (Time: 45)\nSpearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units."
 521095 "Upgrade to <b>Veteran Mansabdar<b> (<cost>) (time: 30)\nUpgrades your Mansabdars and lets you create Veteran Mansabdars."
 521096 "Upgrade to <b>Elite Mansabdar<b> (<cost>) (time: 60)\nUpgrades your Veteran Mansabdars and lets you create Elite Mansabdars."
-521097 "(Cost: 1 relic) Monk +2 melee/3 pierce armor."
-521098 "(Cost: 1 relic) Mansabdars +2 attack."
-521099 "(Cost: 1 relic) Ratha is immune to additional damage against Archers."
-521100 "(Cost: 1 relic) Your team +10% wood and food produced from trade."
-521101 "(Cost: 1 relic) Infantry +15% attack speed, +1 melee/pierce armor."
-521102 "(Cost: 1 relic) Ships + 15 HP regeneration per minute."
+521097 "(Cost: 1 relic)\nMonk +2 melee/3 pierce armor."
+521098 "(Cost: 1 relic)\nMansabdars +2 attack."
+521099 "(Cost: 1 relic)\nRatha is immune to additional damage against Archers."
+521100 "(Cost: 1 relic)\nYour team +10% wood and food produced from trade."
+521101 "(Cost: 1 relic)\nInfantry +15% attack speed, +1 melee/pierce armor."
+521102 "(Cost: 1 relic)\nShips + 15 HP regeneration per minute."
+521103 "(Cost: 1 relic)\nSpawn 1 Ratha from each town center and monastery; Ratha -15 wood cost."
+521104 "(Cost: 1 relic)\nElephant Archers +1 attack, +4 attack vs Spearman."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -663,11 +669,11 @@
 
 721044 "Create <b>Elite Toungoo Warrior<b> (<cost>)\nBurmese unique infantry. Can deal damage to enemies around when killed.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Shock Infantry, Unique Unit; Training time: 27; Moving speed: 1.35; Reload time: 2; LOS: 8; Search radius: 6.\nAttack Bonus: +4 vs Shock Infantry, +4 vs Standard Buildings"
 
-721045 "Create <b>Mansabdar<b> (<cost>)\nLight cavalry. Strong vs skirmishers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.25; Reload time: 2; LOS: 4; Search radius: 4. \nAttack Bonus: +6 vs Monk\n\n<GREY>After Feudal Age gets: +2 attack, +4 attack vs Skirmisher, +0.3 movement speed, +2 LOS/Search Radius"
+721045 "Create <b>Mansabdar<b> (<cost>)\nLight cavalry.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.25; Reload time: 2; LOS: 4; Search radius: 4. \nAttack Bonus: +6 vs Monk\n\n<GREY>After Feudal Age gets: +2 attack, +0.3 movement speed, +2 LOS/Search Radius"
 
-721046 "Create <b>Veteran Mansabdar<b> (<cost>)\nLight cavalry. Strong vs skirmishers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +10 vs Monk, +6 vs Skirmisher"
+721046 "Create <b>Veteran Mansabdar<b> (<cost>)\nLight cavalry.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +10 vs Monk"
 
-721047 "Create <b>Elite Mansabdar<b> (<cost>)\nLight cavalry. Strong vs skirmishers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.45; Reload time: 2; LOS: 7; Search radius: 7. \nAttack Bonus: +15 vs Monk, +12 vs Skirmisher"
+721047 "Create <b>Elite Mansabdar<b> (<cost>)\nLight cavalry.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.45; Reload time: 2; LOS: 7; Search radius: 7. \nAttack Bonus: +15 vs Monk"
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy foot archers' reload time by 0.5."

@@ -1197,6 +1197,78 @@
             "building_id": 101,
             "Name": "Elite Mansabdar",
             "RequiredAge": 4
+        },
+        {
+            "note": "孟加拉僧侣护甲",
+            "civilizations": "Bengalis",
+            "tech_id": 3150,
+            "building_id": 104,
+            "Name": "Monk Armor",
+            "RequiredAge": 3
+        },
+        {
+            "note": "孟加拉曼沙布达尔攻击力",
+            "civilizations": "Bengalis",
+            "tech_id": 3151,
+            "building_id": 104,
+            "Name": "Mansabdar Attack",
+            "RequiredAge": 3
+        },
+        {
+            "note": "孟加拉战车护甲",
+            "civilizations": "Bengalis",
+            "tech_id": 3152,
+            "building_id": 104,
+            "Name": "Ratha Armor",
+            "RequiredAge": 3
+        },
+        {
+            "note": "孟加拉贸易获取木材和食物",
+            "civilizations": "Bengalis",
+            "tech_id": 3153,
+            "building_id": 104,
+            "Name": "Wood and Food from Trade",
+            "RequiredAge": 3
+        },
+        {
+            "note": "孟加拉步兵强化",
+            "civilizations": "Bengalis",
+            "tech_id": 3154,
+            "building_id": 104,
+            "Name": "Infantry Bonus",
+            "RequiredAge": 3
+        },
+        {
+            "note": "孟加拉海军强化",
+            "civilizations": "Bengalis",
+            "tech_id": 3155,
+            "building_id": 104,
+            "Name": "Navy Bonus",
+            "RequiredAge": 3
+        },
+        {
+            "note": "孟加拉召唤战车",
+            "civilizations": "Bengalis",
+            "tech_id": 3156,
+            "building_id": 104,
+            "Name": "Spawn Ratha",
+            "RequiredAge": 3
+        },
+        {
+            "note": "孟加拉骑象射手强化",
+            "civilizations": "Bengalis",
+            "tech_id": 3157,
+            "building_id": 104,
+            "Name": "Elephant Archer Attack",
+            "RequiredAge": 3
+        },
+        {
+            "note": "保加利亚启用冠军剑士",
+            "civilizations": "Bulgarians",
+            "tech_id": 264,
+            "building_id": 12,
+            "Name": "Champion",
+            "RequiredAge": 4
         }
     ]
 }

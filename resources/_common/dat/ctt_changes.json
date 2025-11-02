@@ -2,6 +2,7 @@
     "changes":
     [
         {
+            "note": "阿萨辛",
             "action": "add",
             "civ_id": ["PERSIANS", "SARACENS"],
             "Age ID": 3,
@@ -24,6 +25,7 @@
             "target_id": 359
         },
         {
+            "note": "射击军",
             "action": "add",
             "civ_id": "SLAVS",
             "Age ID": 4,
@@ -2709,6 +2711,76 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4059
+        },
+        {
+            "note": "达罗毗荼纵火提前一个时代",
+            "action": "modify",
+            "civ_id": "DRAVIDIANS",
+            "Node ID": 602,
+            "Use Type": "Tech",
+            "Age ID": 1
+        },
+        {
+            "note": "达罗毗荼护卫和软甲提前一个时代",
+            "action": "modify",
+            "civ_id": "DRAVIDIANS",
+            "Node ID": [215, 875],
+            "Use Type": "Tech",
+            "Age ID": 2
+        },
+        {
+            "note": "保加利亚启用冠军剑士",
+            "action": "modify",
+            "civ_id": "BULGARIANS",
+            "Node ID": 567,
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "马扎尔, 土耳其, 匈奴获得草原枪兵",
+            "action": "add",
+            "civ_id": ["HUNS", "TURKS", "MAGYARS"],
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105009,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Steppe Lancer",
+            "Name String ID": 14009,
+            "Node ID": 1370,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 273,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 569
+        },
+        {
+            "note": "马扎尔, 土耳其, 匈奴获得精锐草原枪兵",
+            "action": "add",
+            "civ_id": ["HUNS", "TURKS", "MAGYARS"],
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105010,
+            "Link ID": 1370,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Elite Steppe Lancer",
+            "Name String ID": 14010,
+            "Node ID": 1372,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 274,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 715,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1370
         }
     ]
 }

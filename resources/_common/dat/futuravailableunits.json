@@ -4436,6 +4436,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Champion",
+                        "RequiredAge": 4,
+                        "ID": 264
                     }
                 ],
                 "Units": [
@@ -42898,6 +42903,46 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3059
+                    },
+                    {
+                        "Name": "Monk Armor",
+                        "RequiredAge": 3,
+                        "ID": 3150
+                    },
+                    {
+                        "Name": "Mansabdar Attack",
+                        "RequiredAge": 3,
+                        "ID": 3151
+                    },
+                    {
+                        "Name": "Ratha Armor",
+                        "RequiredAge": 3,
+                        "ID": 3152
+                    },
+                    {
+                        "Name": "Wood and Food from Trade",
+                        "RequiredAge": 3,
+                        "ID": 3153
+                    },
+                    {
+                        "Name": "Infantry Bonus",
+                        "RequiredAge": 3,
+                        "ID": 3154
+                    },
+                    {
+                        "Name": "Navy Bonus",
+                        "RequiredAge": 3,
+                        "ID": 3155
+                    },
+                    {
+                        "Name": "Spawn Ratha",
+                        "RequiredAge": 3,
+                        "ID": 3156
+                    },
+                    {
+                        "Name": "Elephant Archer Attack",
+                        "RequiredAge": 3,
+                        "ID": 3157
                     }
                 ],
                 "Units": [

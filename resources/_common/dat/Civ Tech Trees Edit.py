@@ -33,7 +33,7 @@ def apply_changes(original_file, changes_file, output_file):
                     continue
 
                 if action == "add":
-                    new_item = {key: value for key, value in change.items() if key not in ["action", "civ_id", "position", "target_id"]}
+                    new_item = {key: value for key, value in change.items() if key not in ["action", "civ_id", "position", "target_id", "note"]}
                     insert_position = len(target_list)
                     position = change.get("position", "last").lower()
                     target_id = change.get("target_id", None)
@@ -52,9 +52,9 @@ def apply_changes(original_file, changes_file, output_file):
                     node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
                     for node_id in node_ids:
                         for item in target_list:
-                            if item["Node ID"] == node_id and item.get("Use Type") == use_type:
+                            if item["Node ID"] == node_id and (item.get("Use Type") == use_type or (item.get("Use Type") == "Building" and use_type == "Unit")):
                                 for key, value in change.items():
-                                    if key not in ["action", "civ_id", "Node ID"]:
+                                    if key not in ["action", "civ_id", "Node ID", "note"]:
                                         item[key] = value
                                 break
                             elif item["Node ID"] == node_id and item.get("Use Type") != use_type:
@@ -63,7 +63,7 @@ def apply_changes(original_file, changes_file, output_file):
                     node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
                     target_list[:] = [
                         item for item in target_list
-                        if item["Node ID"] not in node_ids or (item.get("Use Type") != use_type)
+                        if item["Node ID"] not in node_ids or (item.get("Use Type") != use_type) and not (item.get("Use Type") == "Building" and use_type == "Unit")
                     ]
                     for node_id in node_ids:
                         if not any(item["Node ID"] == node_id and item.get("Use Type") == use_type for item in target_list):
@@ -77,3 +77,13 @@ apply_changes(
     changes_file="ctt_changes.json",
     output_file="civTechTrees.json"
 )
+
+
+#   目前支持add操作, modify操作和delete操作
+#   civ_id可以为一个值, 也可以为列表, 为"all"则指定所有文明
+#   modify和delete操作中, Node ID也可以为列表。不过目前不支持对多种Use Type的对象进行操作
+#   Node ID和Use Type用于唯一确定要操作的对象
+#   此外, add操作需要给出全部属性; modify操作只需给出修改的属性; delete操作则无需给出
+#   position属性用于指定add操作插入的位置, 有first, last, before, after选项
+#   默认为after。target_id用于指定before和after选项的目标单位
+#   note键用于编写json文件时做注释, 不会被添加到目标文件中
