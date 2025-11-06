@@ -6,18 +6,7 @@ include "array.xs";
 
 bool isHouse(int ObjectID = -1)
 {
-    int HouseIDs = NewArrayInt(6);
-    xsArraySetInt(HouseIDs, 0, 70);
-    xsArraySetInt(HouseIDs, 1, 463);
-    xsArraySetInt(HouseIDs, 2, 464);
-    xsArraySetInt(HouseIDs, 3, 465);
-    xsArraySetInt(HouseIDs, 4, 191);
-    xsArraySetInt(HouseIDs, 5, 192);
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(HouseIDs))
-        if (ObjectID == xsArrayGetInt(HouseIDs, i))
-            return (true);
-    return (false);
+    return ((ObjectID == 70) || (ObjectID == 463) || (ObjectID == 464) || (ObjectID == 465) || (ObjectID == 191) || (ObjectID == 192));
 }
 
 
@@ -30,7 +19,7 @@ bool isCastle(int ObjectID = -1)
 
 bool isBarrack(int ObjectID = -1)
 {
-    return ((ObjectID == 12) || (ObjectID != 20) || (ObjectID != 132) || (ObjectID != 498));
+    return ((ObjectID == 12) || (ObjectID == 20) || (ObjectID == 132) || (ObjectID == 498));
 }
 
 
@@ -238,6 +227,27 @@ bool isBuildingUnit(int UnitID = -1)
 }
 
 
+//  判断是否为动物类型
+bool isAnimalClass(int ClassID = -1)
+{
+    return ((ClassID == cBuildingClass) || (ClassID == cWallClass) || (ClassID == cGateClass) || (ClassID == cTowerClass) || (ClassID == cFarmClass));
+}
+
+
+//  判断单位是否为动物
+bool isAnimalObject(int ObjectID = -1)
+{
+    return (isAnimalClass(xsGetObjectClass(ObjectID)));
+}
+
+
+//  判断地图单位是否为动物
+bool isAnimalUnit(int UnitID = -1)
+{
+    return (isAnimalClass(xsGetUnitClass(UnitID)));
+}
+
+
 //  判断是否为资源类型
 bool isResourceClass(int ClassID = -1)
 {
@@ -250,7 +260,7 @@ bool isResourceClass(int ClassID = -1)
 //  判断是否为可操作的类型 (军事单位, 经济单位或建筑)
 bool isClassOperable(int ClassID = -1)
 {
-    return(isMilitaryClass(ClassID) || isEconomicClass(ClassID) || isBuildingClass(ClassID));
+    return(isMilitaryClass(ClassID) || isEconomicClass(ClassID) || isBuildingClass(ClassID) || (ClassID == cKingClass));
 }
 
 

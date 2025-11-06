@@ -2,6 +2,52 @@
     "changes":
     [
         {
+            "note": "马扎尔, 土耳其, 匈奴获得草原枪兵",
+            "action": "add",
+            "civ_id": ["HUNS", "TURKS", "MAGYARS"],
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105009,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Steppe Lancer",
+            "Name String ID": 14009,
+            "Node ID": 1370,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 273,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 569
+        },
+        {
+            "note": "马扎尔, 土耳其, 匈奴获得精锐草原枪兵",
+            "action": "add",
+            "civ_id": ["HUNS", "TURKS", "MAGYARS"],
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105010,
+            "Link ID": 1370,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Elite Steppe Lancer",
+            "Name String ID": 14010,
+            "Node ID": 1372,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 274,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 715,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1370
+        },
+        {
             "note": "阿萨辛",
             "action": "add",
             "civ_id": ["PERSIANS", "SARACENS"],
@@ -120,6 +166,7 @@
             "target_id": 6
         },
         {
+            "note": "弓足轻",
             "action": "add",
             "civ_id": "JAPANESE",
             "Age ID": 2,
@@ -142,6 +189,7 @@
             "target_id": 4
         },
         {
+            "note": "老练弓足轻",
             "action": "add",
             "civ_id": "JAPANESE",
             "Age ID": 3,
@@ -164,6 +212,7 @@
             "target_id": 4006
         },
         {
+            "note": "精锐弓足轻",
             "action": "add",
             "civ_id": "JAPANESE",
             "Age ID": 4,
@@ -186,6 +235,7 @@
             "target_id": 4007
         },
         {
+            "note": "日本移除步弓手系和火枪手",
             "action": "delete",
             "civ_id": "JAPANESE",
             "Node ID": [4, 5, 24, 492],
@@ -216,6 +266,7 @@
             "target_id": 236
         },
         {
+            "note": "哥特, 维京, 匈奴禁用箭塔系",
             "action": "modify",
             "civ_id": ["GOTHS", "VIKINGS", "HUNS"],
             "Node ID": [79, 234, 235],
@@ -223,6 +274,7 @@
             "Node Status": "NotAvailable"
         },
         {
+            "note": "马尼拉大帆船",
             "action": "add",
             "civ_id": "SPANISH",
             "Age ID": 3,
@@ -243,6 +295,7 @@
             "Use Type": "Unit"
         },
         {
+            "note": "瓦兰吉卫队",
             "action": "add",
             "civ_id": "BYZANTINES",
             "Age ID": 3,
@@ -265,6 +318,7 @@
             "target_id": 359
         },
         {
+            "note": "精锐瓦兰吉卫队",
             "action": "add",
             "civ_id": "BYZANTINES",
             "Age ID": 4,
@@ -287,6 +341,7 @@
             "target_id": 4011
         },
         {
+            "note": "西帕希骑兵",
             "action": "add",
             "civ_id": "TURKS",
             "Age ID": 3,
@@ -331,12 +386,14 @@
             "target_id": 4014
         },
         {
+            "note": "土耳其, 蒙古, 鞑靼移除骑士系",
             "action": "delete",
-            "civ_id": "TURKS",
+            "civ_id": ["TURKS", "MONGOLS", "TATARS"],
             "Node ID": [38, 283, 569],
             "Use Type": "Unit"
         },
         {
+            "note": "坞堡",
             "action": "add",
             "civ_id": ["SHU", "WU", "WEI"],
             "Age ID": 2,
@@ -361,6 +418,7 @@
             "target_id": 209
         },
         {
+            "note": "士族制",
             "action": "add",
             "civ_id": ["SHU", "WU", "WEI"],
             "Age ID": 3,
@@ -381,6 +439,7 @@
             "Use Type": "Tech"
         },
         {
+            "note": "雇佣军",
             "action": "add",
             "civ_id": ["SHU", "WU", "WEI"],
             "Age ID": 3,
@@ -401,6 +460,7 @@
             "Use Type": "Tech"
         },
         {
+            "note": "坚固防御",
             "action": "add",
             "civ_id": ["SHU", "WU", "WEI"],
             "Age ID": 3,
@@ -421,6 +481,7 @@
             "Use Type": "Tech"
         },
         {
+            "note": "安息骑射手",
             "action": "add",
             "civ_id": "PERSIANS",
             "Age ID": 2,
@@ -443,6 +504,7 @@
             "target_id": 5
         },
         {
+            "note": "精锐安息骑射手",
             "action": "add",
             "civ_id": "PERSIANS",
             "Age ID": 3,
@@ -465,12 +527,14 @@
             "target_id": 4020
         },
         {
+            "note": "波斯移除骑射手系",
             "action": "delete",
             "civ_id": "PERSIANS",
             "Node ID": [39, 474],
             "Use Type": "Unit"
         },
         {
+            "note": "单于",
             "action": "add",
             "civ_id": "HUNS",
             "Age ID": 4,
@@ -1527,6 +1591,26 @@
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "action": "add",
+            "civ_id": "BOHEMIANS",
+            "Age ID": 4,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600105,
+            "Link ID": 3085,
+            "Link Node Type": "BuildingTech",
+            "Name": "Pistala",
+            "Name String ID": 500105,
+            "Node ID": 3161,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
@@ -2601,8 +2685,9 @@
             "target_id": 1132
         },
         {
+            "note": "重型长矛",
             "action": "add",
-            "civ_id": "BURMESE",
+            "civ_id": "ETHIOPIANS",
             "Age ID": 3,
             "Building ID": 209,
             "Draw Node Type": "UnitTech",
@@ -2621,8 +2706,9 @@
             "Use Type": "Tech"
         },
         {
+            "note": "阿伯哈拉战象",
             "action": "add",
-            "civ_id": "BURMESE",
+            "civ_id": "ETHIOPIANS",
             "Age ID": 4,
             "Building ID": 209,
             "Draw Node Type": "UnitTech",
@@ -2648,6 +2734,7 @@
             "Use Type": "Unit"
         },
         {
+            "note": "曼沙布达尔骑兵",
             "action": "add",
             "civ_id": ["INDIANS", "BENGALIS"],
             "Age ID": 2,
@@ -2669,6 +2756,7 @@
             "position": "first"
         },
         {
+            "note": "老练曼沙布达尔骑兵",
             "action": "add",
             "civ_id": ["INDIANS", "BENGALIS"],
             "Age ID": 3,
@@ -2691,6 +2779,7 @@
             "target_id": 4058
         },
         {
+            "note": "精锐曼沙布达尔骑兵",
             "action": "add",
             "civ_id": ["INDIANS", "BENGALIS"],
             "Age ID": 4,
@@ -2737,50 +2826,160 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "马扎尔, 土耳其, 匈奴获得草原枪兵",
+            "note": "匈奴禁用精锐草原枪兵",
+            "action": "modify",
+            "civ_id": "HUNS",
+            "Node ID": 1372,
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable"
+        },
+        {
+            "note": "罗马修道院提前一个时代",
+            "action": "modify",
+            "civ_id": "ROMANS",
+            "Node ID": 104,
+            "Use Type": "Building",
+            "Age ID": 2
+        },
+        {
+            "note": "罗马僧侣提前一个时代",
+            "action": "modify",
+            "civ_id": "ROMANS",
+            "Node ID": 125,
+            "Use Type": "Unit",
+            "Age ID": 2
+        },
+        {
+            "note": "鞑靼移除原有怯薛",
+            "action": "delete",
+            "civ_id": "TATARS",
+            "Node ID": [1228, 1230],
+            "Use Type": "Unit"
+        },
+        {
+            "note": "蒙古, 鞑靼新增怯薛",
             "action": "add",
-            "civ_id": ["HUNS", "TURKS", "MAGYARS"],
+            "civ_id": ["MONGOLS", "TATARS"],
             "Age ID": 3,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 105009,
+            "Help String ID": 105313,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Steppe Lancer",
-            "Name String ID": 14009,
-            "Node ID": 1370,
+            "Name": "Keshik",
+            "Name String ID": 5313,
+            "Node ID": 1228,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "RegionalUnit",
-            "Picture Index": 273,
+            "Node Type": "UniqueUnit",
+            "Picture Index": 251,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Unit",
             "position": "after",
-            "target_id": 569
+            "target_id": 441
         },
         {
-            "note": "马扎尔, 土耳其, 匈奴获得精锐草原枪兵",
+            "note": "蒙古, 鞑靼新增精锐怯薛",
             "action": "add",
-            "civ_id": ["HUNS", "TURKS", "MAGYARS"],
+            "civ_id": ["MONGOLS", "TATARS"],
             "Age ID": 4,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 105010,
-            "Link ID": 1370,
-            "Link Node Type": "RegionalUnit",
-            "Name": "Elite Steppe Lancer",
-            "Name String ID": 14010,
-            "Node ID": 1372,
+            "Help String ID": 105314,
+            "Link ID": 1228,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Keshik",
+            "Name String ID": 5314,
+            "Node ID": 1230,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "RegionalUnit",
-            "Picture Index": 274,
+            "Node Type": "UniqueUnit",
+            "Picture Index": 507,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": 715,
+            "Trigger Tech ID": 680,
             "Use Type": "Unit",
             "position": "after",
-            "target_id": 1370
+            "target_id": 1228
+        },
+        {
+            "note": "可汗",
+            "action": "add",
+            "civ_id": ["TATARS"],
+            "Age ID": 3,
+            "Building ID": 82,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800048,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Khan",
+            "Name String ID": 700048,
+            "Node ID": 4050,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 256,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "before",
+            "target_id": 440
+        },
+        {
+            "note": "鞑靼巨型投石机科技树位置修正",
+            "action": "modify",
+            "civ_id": "TATARS",
+            "Node ID": 331,
+            "Use Type": "Unit",
+            "Link ID": 440
+        },
+        {
+            "note": "鞑靼金冠帖木儿攻城术科技树位置修正",
+            "action": "modify",
+            "civ_id": "TATARS",
+            "Node ID": 688,
+            "Use Type": "Tech",
+            "Link ID": 687
+        },
+        {
+            "note": "蒙古黑暗时代可建造马厩",
+            "action": "modify",
+            "civ_id": "MONGOLS",
+            "Node ID": 101,
+            "Use Type": "Building",
+            "Age ID": 1
+        },
+        {
+            "note": "蒙古黑暗时代斥候骑兵",
+            "action": "modify",
+            "civ_id": "MONGOLS",
+            "Node ID": 448,
+            "Use Type": "Unit",
+            "Age ID": 1
+        },
+        {
+            "note": "蒙古封建时代怯薛",
+            "action": "modify",
+            "civ_id": "MONGOLS",
+            "Node ID": 1228,
+            "Use Type": "Unit",
+            "Age ID": 2
+        },
+        {
+            "note": "蒙古城堡时代精锐怯薛",
+            "action": "modify",
+            "civ_id": "MONGOLS",
+            "Node ID": 1230,
+            "Use Type": "Unit",
+            "Age ID": 3
+        },
+        {
+            "note": "勃艮第封建时代可训练骑士",
+            "action": "modify",
+            "civ_id": "BURGUNDIANS",
+            "Node ID": 38,
+            "Use Type": "Unit",
+            "Age ID": 2
         }
     ]
 }

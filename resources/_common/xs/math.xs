@@ -305,6 +305,46 @@ void ModArmor(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int va
 }
 
 
+//  为单位倍乘攻击力
+void MulAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float value = -1)
+{
+    if (DamageClass == -1)
+    {
+        int i = 0;
+        for (i = 0; <= TotalAttackForm)
+            if (value > 0)
+                xsEffectAmount(cMulAttribute, ObjectID, cAttack, value * 100 + i * 256, playerId);
+            else
+                xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - i * 256 + value * 100, playerId);
+        return;
+    }
+    if (value > 0)
+        xsEffectAmount(cMulAttribute, ObjectID, cAttack, value * 100 + DamageClass * 256, playerId);
+    else
+        xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - i * 256 + DamageClass * 100, playerId);
+}
+
+
+//  为单位倍乘护甲
+void MulArmor(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float value = -1)
+{
+    if (DamageClass == -1)
+    {
+        int i = 0;
+        for (i = 0; <= TotalAttackForm)
+            if (value > 0)
+                xsEffectAmount(cMulAttribute, ObjectID, cArmor, value * 100 + i * 256, playerId);
+            else
+                xsEffectAmount(cMulAttribute, ObjectID, cArmor, 0.0 - i * 256 + value * 100, playerId);
+        return;
+    }
+    if (value > 0)
+        xsEffectAmount(cMulAttribute, ObjectID, cArmor, value * 100 + DamageClass * 256, playerId);
+    else
+        xsEffectAmount(cMulAttribute, ObjectID, cArmor, 0.0 - i * 256 + DamageClass * 100, playerId);
+}
+
+
 //  设置资源
 void SetResource(int playerId = -1, int ResourceID = -1, float value = 0.0)
 {

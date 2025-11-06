@@ -168,7 +168,7 @@ void BerserkInit(int playerId = -1)
 
     xsTaskAmount(cTaskAttrWorkValue1, -0.1);
     xsTaskAmount(cTaskAttrWorkValue2, 6);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 10);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 10.000001);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTask(BerserkID, cTaskTypeStinger, -1, playerId);
     xsTaskAmount(cTaskAttrWorkValue1, 0.1);
@@ -664,7 +664,6 @@ void EffectFunction10048(int playerId = -1)
     int SpawnNum = RecruitValue / (xsGetObjectAttribute(playerId, RecruitUnitID, cFoodCost) + xsGetObjectAttribute(playerId, RecruitUnitID, cWoodCost)
                                    + xsGetObjectAttribute(playerId, RecruitUnitID, cGoldCost));
     SpawnUnit(playerId, RecruitUnitID, 109, SpawnNum, 1);
-    xsChatData("RecruitUnitID = " + RecruitUnitID + ", SpawnNum = " + SpawnNum);
 }
 
 
@@ -681,7 +680,7 @@ void BengalisCavalryVSSkirmisher(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 僧侣 +2 近战护甲/3 远程护甲
+//  孟加拉, 消耗圣物获取加成, 僧侣 +2 近战护甲/3 远程护甲, +15 生命值
 void EffectFunction10049(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -690,6 +689,8 @@ void EffectFunction10049(int playerId = -1)
     ModArmor(playerId, cMonkClass, cDamageClassPierce, 3);
     ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 2);
     ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 3);
+    ModAttribute(playerId, cMonkClass, cHitpoints, 15);
+    ModAttribute(playerId, cMonkWithRelicClass, cHitpoints, 15);
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 }
 
@@ -762,7 +763,7 @@ void EffectFunction10054(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 当前每个城镇中心和修道院立即产生 1 个战车, 战车 -15 木材费用
+//  孟加拉, 消耗圣物获取加成, 当前每个城镇中心, 城堡和修道院立即产生 1 个战车, 战车 -15 木材费用
 void EffectFunction10055(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -770,6 +771,7 @@ void EffectFunction10055(int playerId = -1)
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
     SpawnUnit(playerId, 1738, 109, 1, 32767);
     SpawnUnit(playerId, 1738, 104, 1, 32767);
+    SpawnUnit(playerId, 1738, 82, 1, 32767);
     ModAttribute(playerId, 1738, cWoodCost, -15);
     ModAttribute(playerId, 1740, cWoodCost, -15);
     ModAttribute(playerId, 1759, cWoodCost, -15);
@@ -790,19 +792,170 @@ void EffectFunction10056(int playerId = -1)
 }
 
 
+//  赋予怯薛攻击回复生命值的能力
+void KeshikInit(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrWorkValue1, 2.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+
+    xsTask(KeshikID, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 4.0 * 60);
+    xsTask(EliteKeshikID, cTaskTypeStinger, -1, playerId);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 0 - 2.0 * 60);
+    xsTask(KeshikID, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cWallClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cFarmClass, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0 - 4.0 * 60);
+    xsTask(EliteKeshikID, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(EliteKeshikID, cTaskTypeStinger, cWallClass, playerId);
+    xsTask(EliteKeshikID, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(EliteKeshikID, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(EliteKeshikID, cTaskTypeStinger, cFarmClass, playerId);
+    xsResetTaskAmount();
+    LaunchStinger(playerId, KeshikID);
+    LaunchStinger(playerId, EliteKeshikID);
+    SetResource(playerId, 213, 0);
+}
+
+
+void KeshikStingerCastleAgeUpgrade(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrWorkValue1, 3.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+
+    xsTask(KeshikID, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0 - 3.0 * 60);
+    xsTask(KeshikID, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cWallClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(KeshikID, cTaskTypeStinger, cFarmClass, playerId);
+    xsResetTaskAmount();
+}
+
+
+//  波希米亚, 单位附加伤害改动
+void MulBarrackUnitBonusDamage(int playerId = -1, float value = 0.0)
+{
+    MulAttack(playerId, 74, -1, value);
+    MulAttack(playerId, 75, -1, value);
+    MulAttack(playerId, 77, -1, value);
+    MulAttack(playerId, 473, -1, value);
+    MulAttack(playerId, 567, -1, value);
+    MulAttack(playerId, 93, -1, value);
+    MulAttack(playerId, 358, -1, value);
+    MulAttack(playerId, 359, -1, value);
+    MulAttack(playerId, 892, -1, value);
+    MulAttack(playerId, 1786, -1, value);
+    MulAttack(playerId, 1787, -1, value);
+    MulAttack(playerId, 1788, -1, value);
+    MulAttack(playerId, 882, -1, value);
+    MulAttack(playerId, RungScoutID, -1, value);
+    MulAttack(playerId, InvisibleRungScoutID, -1, value);
+    MulAttack(playerId, EliteRungScoutID, -1, value);
+    MulAttack(playerId, InvisibleEliteRungScoutID, -1, value);
+    MulAttack(playerId, 74, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 75, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 77, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 473, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 567, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 93, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 358, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 359, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 892, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 1786, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 1787, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 1788, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, 882, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, RungScoutID, 1.0 / value);
+    MulAttack(playerId, InvisibleRungScoutID, 1.0 / value);
+    MulAttack(playerId, EliteRungScoutID, 1.0 / value);
+    MulAttack(playerId, InvisibleEliteRungScoutID, 1.0 / value);
+}
+
+
+//  设置新攻击类型的攻击力
+void SetNewAttackForms(int playerId = -1)
+{
+    SetAttack(playerId, cSiegeWeaponClass, cDamageClassSiegeWeaponAttack, -10);
+    SetAttack(playerId, cPackedUnitClass, cDamageClassSiegeWeaponAttack, -10);
+    SetAttack(playerId, cUnpackedSiegeUnitClass, cDamageClassSiegeWeaponAttack, -10);
+    SetAttack(playerId, cScorpionClass, cDamageClassSiegeWeaponAttack, -10);
+}
+
+
+//  可汗击杀升级效果和技能光环
+void KhanInit(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrWorkFlag2, 30);
+    xsTaskAmount(cTaskAttrCarryCheck, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000001);
+    xsTaskAmount(cTaskAttrGatherType, 5);
+
+    int i = 0;
+    for (i = 900; <= 964)
+        if (isClassOperable(i) && (isBuildingClass(i) == false))
+            xsTask(KhanID, cTaskTypeLoot, i, playerId);
+    xsResetTaskAmount();
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 10.000002);
+    xsTaskAmount(cTaskAttrWorkRange, 8);
+    xsTaskAmount(cTaskAttrWorkValue1, 1.0 - 1.0 / 1.25);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 47);
+
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+            xsTask(KhanID, cTaskTypeAura, i, playerId);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5.000001);
+    xsTaskAmount(cTaskAttrWorkValue1, 1.15);
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+            xsTask(KhanID, cTaskTypeAura, i, playerId);
+    xsResetTaskAmount();
+    SetAttribute(playerId, KhanID, cMaxCharge, 1);
+    SetAttribute(playerId, KhanID, cRechargeRate, 1.0 / 120);
+    SetAttribute(playerId, KhanID, cChargeEvent, 15);
+    SetAttribute(playerId, KhanID, cChargeType, -3);
+}
+
+
 //  接口, 赋予单位独特能力
 void AbilityApplier()
 {
+    static bool run = false;
+    if (run)
+        return;
+    run = true;
     RecordKiller();
 
     int i = 0;
-    for (i = 0; <= xsGetNumPlayers())
+    for (i = -1; <= 0)
     {
+        SetNewAttackForms(i);
         AssassinInit(i);
         BerserkInit(i);
         VikingRaiderInit(i);
         HospitallerKnightInit(i);
         TCSpawnedDeerInit(i);
         ShrineInit(i);
+        KeshikInit(i);
+        KhanInit(i);
     }
 }

@@ -82,6 +82,8 @@ void EffectFunction10001(int playerId = -1)
 // 10002 - 科技树调整(启用/禁用单位, 禁用/修改科技, 黑暗时代起生效)
 void EffectFunction10002(int playerId = -1)
 {
+    AbilityApplier();
+
     int playerCiv = xsGetPlayerCivilization(playerId);
 
     switch (playerCiv)
@@ -151,6 +153,13 @@ void EffectFunction10002(int playerId = -1)
         {
             //  蒙古文明加成, 骑兵攻击建筑产生黄金
             SetResource(playerId, cAttributeMaintenance, 10003);
+            //  蒙古文明加成, 黑暗时代无需前置兵营即可建造马厩, 并且可以训练斥候骑兵
+            ForceResearchTech(playerId, 25);
+            ForceResearchTech(playerId, 204);
+            //  蒙古移除骑士系, 封建时代起获得怯薛, 精锐怯薛可于城堡时代升级, 并且升级费用 -33%
+            DisableTech(playerId, 166);
+            DisableTech(playerId, 209);
+            xsEffectAmount(cModifyTech, 680, cAttrMulAllCosts, 2.0 / 3, playerId);
             break;
         }
         case cCelts:
@@ -359,6 +368,16 @@ void EffectFunction10002(int playerId = -1)
             EnableTech(playerId, 264);
             break;
         }
+        case cTatars:
+        {
+            //  鞑靼移除骑士系
+            DisableTech(playerId, 166);
+            DisableTech(playerId, 209);
+            //  鞑靼文明加成, 怯薛攻击单位产生黄金
+            SetResource(playerId, 213, 100);
+            //  鞑靼文明加成, 怯薛可在城堡以 80 黄金的费用快速训练
+            break;
+        }
         case cCumans:
         {
             //  禁用原有的库曼城堡时代和帝王时代移动速度科技
@@ -412,10 +431,17 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 3057, cAttrMulFoodCost, 0.66666667, playerId);
             break;
         }
+        case cBohemians:
+        {
+            //  波希米亚文明加成的基础攻击加成 25% → 15%
+            SetResource(playerId, cAttributeMaintenance, 10057);
+            break;
+        }
         case cDravidians:
         {
             //  达罗毗荼文明加成, 纵火, 护卫和软甲可提前一个时代研究
             ForceEnableTech(playerId, 602);
+            break;
         }
         case cBengalis:
         {
@@ -533,9 +559,13 @@ void EffectFunction10002(int playerId = -1)
         xsEffectAmount(cModifyTech, 3059, cAttrSetName, 500078, playerId);
         xsEffectAmount(cModifyTech, 3059, cAttrSetDescription, 521078, playerId);
     }
-    //  维京狂战士基础生命回复改为0
+    //  维京狂战士基础生命回复改为 0
     ModAttribute(playerId, 692, cRegenerationRate, -40);
     ModAttribute(playerId, 694, cRegenerationRate, -40);
+    //  城堡时代前, 怯薛 -25 生命值, -2 攻击力
+    ModAttribute(playerId, KeshikID, cHitpoints, -25);
+    ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
+    ModAttribute(playerId, KeshikID, cShownAttack, -2);
 }
 
 
@@ -617,6 +647,12 @@ void EffectFunction10024(int playerId = -1)
         {
             //  木制要塞
             EnableObject(playerId, WoodenFortressID); 
+            break;
+        }
+        case cMongols:
+        {
+            //  蒙古封建时代起可生产怯薛
+            ForceResearchTech(playerId, 679);
             break;
         }
         case cSpanish:
@@ -800,6 +836,12 @@ void EffectFunction10025(int playerId = -1)
             EnableObject(playerId, SipahiID);
             break;
         }
+        case cMongols:
+        {
+            //  蒙古文明加成, 精锐怯薛可于城堡时代升级
+            ForceEnableTech(playerId, 680);
+            break;
+        }
         case cSpanish:
         {
             //  西班牙文明加成, 标枪骑兵和精锐标枪骑兵提前一个时代
@@ -864,6 +906,8 @@ void EffectFunction10025(int playerId = -1)
             //  埃塞俄比亚文明加成的食物和黄金提升
             ModResource(playerId, cAttributeFood, 100);
             ModResource(playerId, cAttributeGold, 100);
+            //  启用象兵
+            ForceResearchTech(playerId, 630);
             break;
         }
         case cMalians:
@@ -971,6 +1015,11 @@ void EffectFunction10025(int playerId = -1)
     ModAttribute(playerId, 38, cHitpoints, 20);
     ModAttack(playerId, 38, cDamageClassMelee, 2);
     MulAttribute(playerId, 38, cTrainTime, 0.75);
+    //  城堡时代, 怯薛 +25 生命值, +2 攻击力, +1 每次攻击回复的生命值
+    ModAttribute(playerId, KeshikID, cHitpoints, 25);
+    ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
+    ModAttribute(playerId, KeshikID, cShownAttack, 2);
+    KeshikStingerCastleAgeUpgrade(playerId);
 }
 
 
@@ -1151,4 +1200,6 @@ void EffectFunction10026(int playerId = -1)
     ModAttack(playerId, ConscriptedCavalryID, cDamageClassMelee, 2);
     //  战车弓兵升级, 启用光环
     LaunchAura(playerId, ChariotArcherID);
+    //  可汗升级
+    ModAttack(playerId, KhanID, cDamageClassPierce, 2);
 }

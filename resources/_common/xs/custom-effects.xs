@@ -44,6 +44,7 @@ extern const int WoodenFortressID = 4009;
 extern const int ManilaGalleoID = 4010;
 extern const int VarangianID = 4011;
 extern const int SipahiID = 4014;
+extern const int EliteSipahiID = 4015;
 extern const int WubaoID = 4016;
 extern const int EarlyCavalryArcherID = 4017;
 extern const int ParthianCavalryArcherID = 4020;
@@ -52,6 +53,9 @@ extern const int InvisibleEPCAID = 4023;
 extern const int ChanyuID = 4024;
 extern const int ChariotArcherID = 4025;
 extern const int RungScoutID = 4027;
+extern const int InvisibleRungScoutID = 4028;
+extern const int EliteRungScoutID = 4029;
+extern const int InvisibleEliteRungScoutID = 4030;
 extern const int SwissLancerID = 4031;
 extern const int LembosID = 4032;
 extern const int ConscriptedCavalryID = 4033;
@@ -70,11 +74,24 @@ extern const int EliteSofaID = 4046;
 extern const int FlameThrowerID = 4047;
 extern const int TaboriteWarriorID = 4048;
 extern const int ShrineID = 4049;
+extern const int KhanID = 4050;
 extern const int InvisibleDeerSpawnerID = 4052;
 extern const int ToungooWarriorID = 4055;
+extern const int EliteToungooWarriorID = 4057;
 extern const int MansabdarID = 4058;
 extern const int VeteranMansabdarID = 4059;
 extern const int EliteMansabdarID = 4060;
+
+
+//  攻击类型定义
+extern const int TotalAttackForm = 105;
+extern const int cDamageClassMonastery = 101;
+extern const int cDamageClassSiegeWeaponAttack = 104;
+extern const int cDamageClassLightCavalry = 105;
+
+
+extern const int KeshikID = 1228;
+extern const int EliteKeshikID = 1230;
 
 
 extern const int HospitallerKnightMaxCharge = 300; //   医院骑士技能充能
@@ -755,12 +772,12 @@ void EffectFunction10046(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeApostleProductivity);
-    xsTaskAmount(cTaskAttrWorkValue1, 60.0 / 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 45.0 / 60);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000004);
     xsTask(cMonkClass, cTaskTypeGenerateResources, -1, playerId);
     xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 45.0 / 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 35.0 / 60);
     xsTask(1811, cTaskTypeGenerateResources, -1, playerId);
     xsTask(1831, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
@@ -775,6 +792,34 @@ void EffectFunction10047(int playerId = -1)
     float StoneTotal = xsPlayerAttribute(playerId, cAttributeStoneTotal);
     ModResource(playerId, cAttributeFood, 0.8 * StoneTotal);
     SetResource(playerId, cAttributePolesFoodObtained, 0.8 * StoneTotal);
+}
+
+
+//  10057 - 波希米亚, 基础攻击加成 25% → 15%
+void EffectFunction10057(int playerId = -1)
+{
+    MulBarrackUnitBonusDamage(playerId, 1.15 / 1.25);
+}
+
+
+//  10058 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +15% 附加伤害
+void EffectFunction10058(int playerId = -1)
+{
+    MulBarrackUnitBonusDamage(playerId, 1.3 / 1.15);
+}
+
+
+//  10059 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +15% 附加伤害
+void EffectFunction10059(int playerId = -1)
+{
+    MulBarrackUnitBonusDamage(playerId, 1.45 / 1.3);
+}
+
+
+//  10060 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +15% 附加伤害
+void EffectFunction10060(int playerId = -1)
+{
+    MulBarrackUnitBonusDamage(playerId, 1.6 / 1.45);
 }
 
 
@@ -794,7 +839,7 @@ void Franks(int Time = 0, int playerId = -1)
 }
 
 
-//  拜占庭, 招募雇佣兵
+//  拜占庭, 招募雇佣兵机会次数计算
 void Byzantines(int Time = 0, int playerId = -1)
 {
     if (xsPlayerAttribute(playerId, cAttributeCurrentAge) >= 1)
@@ -814,10 +859,16 @@ void Persians(int Time = 0, int playerId = -1)
     int AuraRange = 10;
 
     float TotalGold = 0.0;
-    int BuildingArray = NewArrayInt();
-    BuildingArray = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingArray);
-    int CastleArray = NewArrayInt();
-    CastleArray = xsGetPlayerUnitIds(playerId, CastleID, CastleArray);
+    static int BuildingArray = 0;
+    if (BuildingArray == 0)
+        BuildingArray = xsGetPlayerUnitIds(playerId, cBuildingClass);
+    else
+        BuildingArray = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingArray);
+    static int CastleArray = 0;
+    if (CastleArray == 0)
+        CastleArray = xsGetPlayerUnitIds(playerId, CastleID);
+    else
+        CastleArray = xsGetPlayerUnitIds(playerId, CastleID, CastleArray);
     int i = 0;
     int BuildingArraySize = xsArrayGetSize(BuildingArray);
     for (i = 0; < BuildingArraySize)
@@ -1101,7 +1152,6 @@ rule Timer
         {
             ArrayRecycleInit();
             Init();
-            AbilityApplier();
         }
         int i = 0;
         for (i = 0; <= xsGetNumPlayers())

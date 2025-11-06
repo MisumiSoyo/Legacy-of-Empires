@@ -15,6 +15,10 @@ def apply_changes(original_file, changes_file, output_file):
         civ_ids = change["civ_id"] if isinstance(change["civ_id"], list) else [change["civ_id"]]
         use_type = change.get("Use Type", "")
 
+        if action == "deleteciv":
+            modified_data["civs"] = [civ for civ in modified_data["civs"] if civ["civ_id"] not in civ_ids]
+            continue
+
         for civ_id in civ_ids:
             target_civs = []
             if civ_id == "all":

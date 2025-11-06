@@ -48564,6 +48564,66 @@
                     "Age ID": 3,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
+                    "Help String ID": 105009,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Steppe Lancer",
+                    "Name String ID": 14009,
+                    "Node ID": 1370,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 273,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 105010,
+                    "Link ID": 1370,
+                    "Link Node Type": "RegionalUnit",
+                    "Name": "Elite Steppe Lancer",
+                    "Name String ID": 14010,
+                    "Node ID": 1372,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 274,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 715,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
                     "Help String ID": 105416,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
@@ -52011,66 +52071,6 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105009,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Steppe Lancer",
-                    "Name String ID": 14009,
-                    "Node ID": 1370,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "RegionalUnit",
-                    "Picture Index": 273,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105010,
-                    "Link ID": 1370,
-                    "Link Node Type": "RegionalUnit",
-                    "Name": "Elite Steppe Lancer",
-                    "Name String ID": 14010,
-                    "Node ID": 1372,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "RegionalUnit",
-                    "Picture Index": 274,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 715,
-                    "Use Type": "Unit"
                 }
             ]
         },
@@ -57399,7 +57399,7 @@
                     "Use Type": "Building"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 1,
                     "Building ID": 101,
                     "Building in new column": true,
                     "Building upgraded from ID": -1,
@@ -58863,7 +58863,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 1,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105326,
@@ -58953,18 +58953,18 @@
                     "Use Type": "Unit"
                 },
                 {
-                    "Age ID": 3,
+                    "Age ID": 2,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105068,
+                    "Help String ID": 105313,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Knight",
-                    "Name String ID": 14068,
-                    "Node ID": 38,
+                    "Name": "Keshik",
+                    "Name String ID": 5313,
+                    "Node ID": 1228,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "Unit",
-                    "Picture Index": 1,
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 251,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -58983,18 +58983,18 @@
                     "Use Type": "Unit"
                 },
                 {
-                    "Age ID": 4,
+                    "Age ID": 3,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105070,
-                    "Link ID": 38,
-                    "Link Node Type": "Unit",
-                    "Name": "Cavalier",
-                    "Name String ID": 14070,
-                    "Node ID": 283,
+                    "Help String ID": 105314,
+                    "Link ID": 1228,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Elite Keshik",
+                    "Name String ID": 5314,
+                    "Node ID": 1230,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 49,
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 507,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -59009,37 +59009,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": 209,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105471,
-                    "Link ID": 283,
-                    "Link Node Type": "UnitUpgrade",
-                    "Name": "Paladin",
-                    "Name String ID": 14471,
-                    "Node ID": 569,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 2,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 265,
+                    "Trigger Tech ID": 680,
                     "Use Type": "Unit"
                 },
                 {
@@ -85123,7 +85093,7 @@
                     "Name": "Elite Steppe Lancer",
                     "Name String ID": 14010,
                     "Node ID": 1372,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "RegionalUnit",
                     "Picture Index": 274,
                     "Prerequisite IDs": [
@@ -130400,6 +130370,66 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600094,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Heavy Spear",
+                    "Name String ID": 500094,
+                    "Node ID": 3145,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 33,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600093,
+                    "Link ID": 3145,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Abhara Elephant",
+                    "Name String ID": 500093,
+                    "Node ID": 3144,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -156347,66 +156377,6 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 209,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600094,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Heavy Spear",
-                    "Name String ID": 500094,
-                    "Node ID": 3145,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 33,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 209,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600093,
-                    "Link ID": 3145,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Abhara Elephant",
-                    "Name String ID": 500093,
-                    "Node ID": 3144,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 107,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
                 }
             ]
         },
@@ -168577,15 +168547,15 @@
                     "Age ID": 3,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105068,
+                    "Help String ID": 105313,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Knight",
-                    "Name String ID": 14068,
-                    "Node ID": 38,
+                    "Name": "Keshik",
+                    "Name String ID": 5313,
+                    "Node ID": 1228,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "Unit",
-                    "Picture Index": 1,
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 251,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -168607,15 +168577,15 @@
                     "Age ID": 4,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105070,
-                    "Link ID": 38,
-                    "Link Node Type": "Unit",
-                    "Name": "Cavalier",
-                    "Name String ID": 14070,
-                    "Node ID": 283,
+                    "Help String ID": 105314,
+                    "Link ID": 1228,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Elite Keshik",
+                    "Name String ID": 5314,
+                    "Node ID": 1230,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 49,
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 507,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -168630,37 +168600,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": 209,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105471,
-                    "Link ID": 283,
-                    "Link Node Type": "UnitUpgrade",
-                    "Name": "Paladin",
-                    "Name String ID": 14471,
-                    "Node ID": 569,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 2,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 265,
+                    "Trigger Tech ID": 680,
                     "Use Type": "Unit"
                 },
                 {
@@ -170589,15 +170529,15 @@
                     "Age ID": 3,
                     "Building ID": 82,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105313,
+                    "Help String ID": 800048,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Keshik",
-                    "Name String ID": 14313,
-                    "Node ID": 1228,
+                    "Name": "Khan",
+                    "Name String ID": 700048,
+                    "Node ID": 4050,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "UniqueUnit",
-                    "Picture Index": 251,
+                    "Picture Index": 256,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -170613,36 +170553,6 @@
                         "None"
                     ],
                     "Trigger Tech ID": -1,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 82,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105314,
-                    "Link ID": 1228,
-                    "Link Node Type": "UniqueUnit",
-                    "Name": "Elite Keshik",
-                    "Name String ID": 14314,
-                    "Node ID": 1230,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "UniqueUnit",
-                    "Picture Index": 507,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 680,
                     "Use Type": "Unit"
                 },
                 {
@@ -170710,7 +170620,7 @@
                     "Building ID": 82,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105381,
-                    "Link ID": -1,
+                    "Link ID": 440,
                     "Link Node Type": "BuildingTech",
                     "Name": "Trebuchet (Packed)",
                     "Name String ID": 14381,
@@ -170740,7 +170650,7 @@
                     "Building ID": 82,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 107310,
-                    "Link ID": -1,
+                    "Link ID": 687,
                     "Link Node Type": "BuildingTech",
                     "Name": "Timurid Siegecraft",
                     "Name String ID": 17310,
@@ -184249,7 +184159,7 @@
                     "Use Type": "Unit"
                 },
                 {
-                    "Age ID": 3,
+                    "Age ID": 2,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105068,
@@ -203376,6 +203286,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600105,
+                    "Link ID": 3085,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Pistala",
+                    "Name String ID": 500105,
+                    "Node ID": 3161,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -219874,7 +219814,7 @@
                     "Use Type": "Building"
                 },
                 {
-                    "Age ID": 3,
+                    "Age ID": 2,
                     "Building ID": 104,
                     "Building in new column": true,
                     "Building upgraded from ID": -1,
@@ -223078,7 +223018,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 3,
+                    "Age ID": 2,
                     "Building ID": 104,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105099,

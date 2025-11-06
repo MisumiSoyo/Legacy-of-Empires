@@ -22394,6 +22394,11 @@
                         "Name": "Steppe Lancer",
                         "RequiredAge": 3,
                         "ID": 1370
+                    },
+                    {
+                        "Name": "Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 1372
                     }
                 ]
             },
@@ -26505,14 +26510,14 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4,
+                        "ID": 680
+                    },
+                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
-                    },
-                    {
-                        "ID": 209,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 236,
@@ -26548,14 +26553,14 @@
                         "RequiredUnitID": 546
                     },
                     {
-                        "ID": 38,
-                        "Name": "Knight",
-                        "RequiredAge": 3
+                        "Name": "Keshik",
+                        "RequiredAge": 3,
+                        "ID": 1228
                     },
                     {
-                        "ID": 283,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4,
+                        "ID": 1230
                     },
                     {
                         "ID": 329,
@@ -33997,14 +34002,14 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4,
+                        "ID": 680
+                    },
+                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
-                    },
-                    {
-                        "ID": 209,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 236,
@@ -34040,14 +34045,14 @@
                         "RequiredUnitID": 546
                     },
                     {
-                        "ID": 38,
-                        "Name": "Knight",
-                        "RequiredAge": 3
+                        "Name": "Keshik",
+                        "RequiredAge": 3,
+                        "ID": 1228
                     },
                     {
-                        "ID": 283,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4,
+                        "ID": 1230
                     },
                     {
                         "ID": 329,
@@ -34480,11 +34485,6 @@
                 "Name": "Castle",
                 "Techs": [
                     {
-                        "ID": 680,
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 687,
                         "Name": "Silk Armor",
                         "RequiredAge": 3
@@ -34512,16 +34512,6 @@
                 ],
                 "Units": [
                     {
-                        "ID": 1228,
-                        "Name": "Keshik",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 1230,
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 440,
                         "Name": "Petard",
                         "RequiredAge": 3
@@ -34530,6 +34520,11 @@
                         "ID": 331,
                         "Name": "Trebuchet (Packed)",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Khan",
+                        "RequiredAge": 3,
+                        "ID": 4050
                     }
                 ]
             },
@@ -36174,6 +36169,11 @@
                         "Name": "Steppe Lancer",
                         "RequiredAge": 3,
                         "ID": 1370
+                    },
+                    {
+                        "Name": "Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 1372
                     }
                 ]
             },
@@ -40674,6 +40674,11 @@
                         "Name": "Taborites",
                         "RequiredAge": 3,
                         "ID": 3085
+                    },
+                    {
+                        "Name": "Pistala",
+                        "RequiredAge": 4,
+                        "ID": 3161
                     }
                 ]
             },

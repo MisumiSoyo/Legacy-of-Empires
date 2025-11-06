@@ -479,12 +479,27 @@
             "RequiredAge": 3
         },
         {
+            "note": "马扎尔, 土耳其和匈奴启用精锐草原枪兵",
+            "civilizations": ["Turks", "Huns", "Magyars"],
+            "unit_id": 1372,
+            "building_id": 101,
+            "Name": "Steppe Lancer",
+            "RequiredAge": 4
+        },
+        {
             "note": "马扎尔和土耳其启用精锐草原枪兵",
             "civilizations": ["Turks", "Magyars"],
             "tech_id": 715,
             "building_id": 101,
             "Name": "Elite Steppe Lancer",
             "RequiredAge": 4
+        },
+        {
+            "note": "匈奴禁用精锐草原枪兵",
+            "civilizations": "Huns",
+            "unit_id": 1372,
+            "building_id": 101,
+            "type": "delete"
         },
         {
             "note": "互市",
@@ -1268,6 +1283,76 @@
             "tech_id": 264,
             "building_id": 12,
             "Name": "Champion",
+            "RequiredAge": 4
+        },
+        {
+            "note": "鞑靼移除原有怯薛",
+            "civilizations": "Tatars",
+            "unit_id": [1228, 1230],
+            "type": "delete"
+        },
+        {
+            "note": "鞑靼移除原有精锐怯薛科技",
+            "civilizations": "Tatars",
+            "tech_id": 680,
+            "type": "delete"
+        },
+        {
+            "note": "蒙古, 鞑靼获得怯薛",
+            "civilizations": ["Mongols", "Tatars"],
+            "unit_id": 1228,
+            "building_id": 101,
+            "Name": "Keshik",
+            "RequiredAge": 3,
+            "position": "after",
+            "target_id": 441
+        },
+        {
+            "note": "蒙古, 鞑靼获得精锐怯薛",
+            "civilizations": ["Mongols", "Tatars"],
+            "unit_id": 1230,
+            "building_id": 101,
+            "Name": "Elite Keshik",
+            "RequiredAge": 4,
+            "position": "after",
+            "target_id": 1228
+        },
+        {
+            "note": "蒙古, 鞑靼获得精锐怯薛科技",
+            "civilizations": ["Mongols", "Tatars"],
+            "tech_id": 680,
+            "building_id": 101,
+            "Name": "Elite Keshik",
+            "RequiredAge": 4,
+            "position": "after",
+            "target_id": 428
+        },
+        {
+            "note": "蒙古, 鞑靼移除骑士系",
+            "civilizations": ["Mongols", "Tatars"],
+            "unit_id": [38, 283, 569],
+            "type": "delete"
+        },
+        {
+            "note": "蒙古, 鞑靼移除骑士系科技",
+            "civilizations": ["Mongols", "Tatars"],
+            "tech_id": [209, 265],
+            "type": "delete"
+        },
+        {
+            "note": "可汗",
+            "civilizations": "Tatars",
+            "unit_id": 4050,
+            "building_id": 82,
+            "Name": "Khan",
+            "RequiredAge": 3
+        },
+        {
+            "note": "手炮",
+            "civilizations": "Bohemians",
+            "tech_id": 3161,
+            "building_id": 209,
+            "Name": "Pistala",
             "RequiredAge": 4
         }
     ]
