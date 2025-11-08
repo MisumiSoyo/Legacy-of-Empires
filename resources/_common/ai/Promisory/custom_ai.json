@@ -1,0 +1,28 @@
+{
+  "mappings": [
+    {"original": "hand-cannoneer", "new": "streltsy"},
+    {"original": "hand-cannoneer", "new": "handcannon-ashigaru"},
+    {"original": "archer-line", "new": "yumi-ashigaru"},
+    {"original": "watch-tower", "new": "wooden-fortress"},
+    {"original": "knight-line", "new": "sipahi"},
+    {"original": "ri-cavalier", "new": "ri-elite-sipahi"},
+    {"original": "cavalry-archer-line", "new": "early-cavalry-archer"},
+    {"original": "ri-paladin", "new": "ri-fire-lancer-cavalry"},
+    {"original": "cavalry-archer-line", "new": "parthian-cavalry-archer"},
+    {"original": "ri-heavy-cavalry-archer", "new": "ri-elite-parthian-cavalry-archer"},
+    {"original": "war-galley", "new": "lembos"},
+    {"original": "camel-rider", "new": "camel-lancer"},
+    {"original": "ri-heavy-camel-rider", "new": "ri-elite-camel-lancer"},
+    {"original": "scout-cavalry-line", "new": "mansabdar"},
+    {"original": "knight-line", "new": "mansabdar"},
+    {"original": "ri-light-cavalry", "new": "ri-veteran-mansabdar"},
+    {"original": "ri-hussar", "new": "ri-elite-mansabdar"},
+    {"original": "ri-horse-collar", "new": "ri-horticulture"},
+    {"original": "ri-heavy-plow", "new": "ri-fertilization"},
+    {"original": "ri-crop-rotation", "new": "ri-breeding"},
+    {"original": "ri-burgundian-vineyards", "new": "ri-cash-crop"}
+  ],
+  "source_directory": "E:/Programs/steamapps/common/AoE2DE/resources/_common/ai/Promisory",
+  "ignore_files": "finaling.per",
+  "output_file": "LOERules.per"
+}

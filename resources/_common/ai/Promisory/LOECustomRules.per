@@ -1,0 +1,182 @@
+; ===========================================================
+;   自定义的AI代码
+; ===========================================================
+
+
+; ===================== 坞堡 =====================
+(defrule
+    (can-build wubao)
+=>
+    (build wubao)
+)
+
+
+; ===================== 士族制 =====================
+(defrule
+    (can-research ri-gentry)
+    (not(can-build wubao))
+=>
+    (research ri-gentry)
+)
+
+
+; ===================== 雇佣军 =====================
+(defrule
+	(can-research ri-mercenary)
+    (goal milunits yes)
+	(or	(up-enemy-units-in-town >= 10)
+		(or	(and(players-unit-count focus-player >= 15)
+				(unit-count-total <= 5))
+			(and(players-unit-count focus-player >= 30)
+				(unit-count-total <= 15))))
+=>
+	(research ri-mercenary)
+)
+
+
+; ===================== 坚固防御 =====================
+(defrule
+    (can-research ri-strong-fortress)
+    (or (and(and(food-amount <= 600)
+                (gold-amount <= 500))
+            (current-age == castle-age))
+        (current-age >= imperial-age))
+=>
+    (research ri-strong-fortress)
+)
+
+
+; ===================== 赫雷苏维季战士 =====================
+;   在敌方攻城武器较多时, 训练赫雷苏维季战士
+(defrule
+    (can-train khevsureti-warrior)
+    (goal milunits yes)
+    (or (or (players-unit-type-count focus-player battering-ram-line >= 4)
+            (or (players-unit-type-count focus-player mangonel-line >= 4)
+                (players-unit-type-count focus-player scorpion-line >= 5)))
+        (players-unit-type-count focus-player bombard-cannon-line >= 4))
+=>
+    (train khevsureti-warrior)
+)
+
+(defrule
+    (can-research ri-elite-khevsureti-warrior)
+    (or (players-unit-type-count focus-player battering-ram-line >= 4)
+        (or (players-unit-type-count focus-player mangonel-line >= 4)
+            (or (players-unit-type-count focus-player scorpion-line >= 5)
+                (or (players-unit-type-count focus-player bombard-cannon-line >= 4)
+                    (unit-type-count khevsureti-warrior >= 8)))))
+=>
+    (research ri-elite-khevsureti-warrior)
+)
+
+
+; ===================== 瓦兰吉卫队 =====================
+;   优先在敌方弓箭手较少时, 训练瓦兰吉卫队
+(defrule
+    (can-train varangian)
+    (goal milunits yes)
+    (or (or (and(players-unit-type-count focus-player archer-line <= 10)
+            (players-unit-type-count focus-player cavalry-archer-line <= 9))
+            (or (players-unit-type-count focus-player spearman-line >= 8)
+                (players-unit-type-count focus-player skirmisher-line >= 8)))
+        (players-unit-type-count focus-player scout-cavalry-line >= 8))
+=>
+    (train varangian)
+)
+
+(defrule
+    (can-research ri-elite-varangian)
+    (goal milunits yes)
+    (or (or (and(players-unit-type-count focus-player archer-line <= 10)
+            (players-unit-type-count focus-player cavalry-archer-line <= 9))
+            (or (players-unit-type-count focus-player spearman-line >= 8)
+                (or (players-unit-type-count focus-player skirmisher-line >= 8)
+                    (players-unit-type-count focus-player scout-cavalry-line >= 8))))
+        (unit-type-count varangian >= 8))
+=>
+    (research ri-elite-varangian)
+)
+
+
+; ===================== 西帕希骑兵 =====================
+;   在敌方弓箭手较多时, 训练西帕希骑兵
+(defrule
+    (can-train sipahi)
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player archer-line >= 8)
+        (or (players-unit-type-count focus-player skirmisher-line >= 8)
+            (players-unit-type-count focus-player cavalry-archer-line >= 8)))
+=>
+    (train sipahi)
+)
+
+(defrule
+    (can-research ri-elite-sipahi)
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player archer-line >= 10)
+        (or (players-unit-type-count focus-player skirmisher-line >= 10)
+            (or (players-unit-type-count focus-player cavalry-archer-line >= 10)
+                (unit-type-count sipahi >= 9))))
+=>
+    (research ri-elite-sipahi)
+)
+
+
+; ===================== 丛林斥候 =====================
+;   训练丛林斥候以对抗垃圾兵
+(defrule 
+    (can-train rung-scout)
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player skirmisher-line >= 7)
+        (players-unit-type-count focus-player spearman-line >= 7))
+=>
+    (train rung-scout)
+)
+
+;   训练丛林斥候以对抗弓箭手, 前提是研究了步兵护甲科技
+(defrule 
+    (can-train rung-scout)
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player archer-line >= 7)
+        (players-unit-type-count focus-player cavalry-archer-line >= 7))
+    (research-completed ri-chain-mail)
+=>
+    (train rung-scout)
+)
+
+(defrule
+    (can-research ri-elite-rung-scout)
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player skirmisher-line >= 7)
+        (or (players-unit-type-count focus-player spearman-line >= 7)
+            (unit-type-count rung-scout >= 9)))
+=>
+    (research ri-elite-rung-scout)
+)
+
+
+; ===================== 索法骑手 =====================
+;   训练索法骑手以对抗垃圾兵
+(defrule 
+    (can-train sofa)
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player skirmisher-line >= 4)
+        (or (players-unit-type-count focus-player spearman-line >= 4)
+            (or (players-unit-type-count focus-player scout-cavalry-line >= 4)
+                (players-unit-type-count focus-player magyar-huszar >= 4))))
+=>
+    (train sofa)
+)
+
+(defrule
+    (can-research ri-elite-sofa)
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player skirmisher-line >= 6)
+        (or (players-unit-type-count focus-player spearman-line >= 6)
+            (or (players-unit-type-count focus-player scout-cavalry-line >= 6)
+                (or (players-unit-type-count focus-player magyar-huszar >= 6)
+                    (unit-type-count sofa >= 9)))))
+=>
+    (research ri-elite-sofa)
+)

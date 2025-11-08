@@ -1,0 +1,446 @@
+; ===============================================
+; 自动生成的AI文件
+; 源文件目录: E:/Programs/steamapps/common/AoE2DE/resources/_common/ai/Promisory
+; 忽略文件: f, i, n, a, l, i, n, g, ., p, e, r
+; 生成时间: Windows系统
+; 注意: 此文件仅包含针对新单位的训练/建造/研究规则
+; ===============================================
+
+; ===================== wooden-fortress =====================
+
+; 映射: watch-tower -> wooden-fortress (来自 buildings.per)
+(defrule
+	(goal strategy sling)
+	(building-type-count-total wooden-fortress < 2)
+	(building-type-count-total wooden-fortress > 0)
+	(building-type-count-total mining-camp > 1)
+	(can-build wooden-fortress)
+	(up-can-build-line 0 temporary-point-x c: wooden-fortress)
+=>
+	(build wooden-fortress)
+);End jump (2)
+
+
+; 映射: watch-tower -> wooden-fortress (来自 buildings.per)
+(defrule
+	(goal strategy sling)
+	(building-type-count wooden-fortress >= 2)
+	(building-type-count-total wooden-fortress < 5)
+	(can-build wooden-fortress)
+	(building-type-count-total town-center > 0)
+=>
+	(build wooden-fortress)
+	(up-assign-builders c: wooden-fortress c: 1)
+)
+
+
+; ===================== ri-horticulture =====================
+
+;=============================================================
+;	(chat-local-to-self text-researching-horse-collar); "Researching horse-collar."
+; 映射: ri-horse-collar -> ri-horticulture (来自 escrow.per)
+(defrule
+	(up-compare-flag escrow-flag2 == 4)
+	(can-research-with-escrow ri-horticulture)
+=>
+	(research ri-horticulture))
+
+
+; 映射: ri-horse-collar -> ri-horticulture (来自 researches.per)
+(defrule
+	(or(and(food-amount < 450)
+	(building-type-count-total pasture > 10))
+	(or(strategic-number sn-current-age >= fcastlea)
+	(current-age == castle-age)))
+	(can-research ri-horticulture)
+	(research-completed ri-double-bit-axe)
+=>
+	(research ri-horticulture)
+)
+
+
+; ===================== ri-fertilization =====================
+
+;	(chat-local-to-self text-researching-heavy-plow); "Researching heavy-plow."
+; 映射: ri-heavy-plow -> ri-fertilization (来自 escrow.per)
+(defrule
+	(up-compare-flag escrow-flag2 == 8)
+	(can-research-with-escrow ri-fertilization)
+=>
+	(research ri-fertilization))
+
+
+; 映射: ri-heavy-plow -> ri-fertilization (来自 researches.per)
+(defrule
+	(building-type-count-total town-center > 2)
+	(research-completed ri-bow-saw)
+	(can-research ri-fertilization)
+	(or(game-time > 2400)
+	(strategic-number sn-military-superiority >= 0))
+=>
+	(research ri-fertilization)
+)
+
+
+; ===================== ri-elite-sipahi =====================
+
+;=============================================================
+; 映射: ri-cavalier -> ri-elite-sipahi (来自 escrow.per)
+(defrule
+	(up-compare-flag escrow-flag == 16384)
+	(can-research-with-escrow ri-elite-sipahi)
+=>
+	(research ri-elite-sipahi))
+
+
+; 映射: ri-cavalier -> ri-elite-sipahi (来自 researches.per)
+(defrule
+	(current-age == imperial-age)
+	(unit-type-count-total knight-line > 2)
+	(can-research ri-elite-sipahi)
+	(or(unit-type-count-total archer-line < 10)
+	(and(up-research-status c: ri-arbalest != 1)
+	(up-research-status c: ri-bracer != 1)));prioritise arb/bracer if relevant
+=>
+	(research ri-elite-sipahi)
+)
+
+
+; 映射: ri-cavalier -> ri-elite-sipahi (来自 researches.per)
+(defrule
+	(current-age == imperial-age)
+	(food-amount > 1500)
+	(gold-amount > 1000)
+	(wood-amount > 1500)
+	(current-age-time  > 300)
+	(population > eighty-pop)
+	(can-research ri-elite-sipahi)
+=>
+	(research ri-elite-sipahi)
+)
+
+
+; 映射: ri-cavalier -> ri-elite-sipahi (来自 researches.per)
+(defrule
+	(research-completed ri-onager)
+	(can-research ri-elite-sipahi)
+=>
+	(research ri-elite-sipahi)
+)
+
+
+;=============================================================
+; Cavalry upgrades
+;=============================================================
+; 映射: ri-cavalier -> ri-elite-sipahi (来自 researches.per)
+(defrule
+(or	(unit-type-count-total knight-line >= 20); 18
+(or	(strategic-number sn-current-age <= castlea)
+	(goal palagoal yes)))
+(or	(strategic-number sn-current-age >= cimperial)
+(or	(goal trainknight yes)
+	(unit-type-count-total knight-line >= 2)))
+	(can-research ri-elite-sipahi)
+=>
+	(research ri-elite-sipahi))
+
+
+; ===================== ri-fire-lancer-cavalry =====================
+
+; 映射: ri-paladin -> ri-fire-lancer-cavalry (来自 escrow.per)
+(defrule
+	(up-compare-flag escrow-flag == 32768)
+	(can-research-with-escrow ri-fire-lancer-cavalry)
+=>
+	(research ri-fire-lancer-cavalry)
+	(set-goal researchplan yes))
+
+
+;=============================================================
+; 映射: ri-paladin -> ri-fire-lancer-cavalry (来自 researches.per)
+(defrule
+(or	(and	(unit-type-count-total knight-line >= 20)
+		(up-research-status c: ri-bloodlines >= research-available))
+	(goal palagoal yes))
+	(can-research ri-fire-lancer-cavalry)
+=>
+	(research ri-fire-lancer-cavalry)
+	(set-goal researchplan yes))
+
+
+; ===================== ri-veteran-mansabdar =====================
+
+;=============================================================
+; 映射: ri-light-cavalry -> ri-veteran-mansabdar (来自 escrow.per)
+(defrule
+	(up-compare-flag escrow-flag == 65536)
+	(can-research-with-escrow ri-veteran-mansabdar)
+=>
+	(research ri-veteran-mansabdar))
+
+
+;=============================================================
+; 映射: ri-light-cavalry -> ri-veteran-mansabdar (来自 researches.per)
+(defrule
+(or	(and	(goal trainhussar yes)
+		(strategic-number sn-current-age >= imperial))
+(or	(unit-type-count-total scout-cavalry-line >= 3)
+	(cc-players-unit-type-count 0 gold-mine < 8)))
+	(can-research ri-veteran-mansabdar)
+=>
+	(research ri-veteran-mansabdar))
+
+
+; ===================== ri-elite-mansabdar =====================
+
+; 映射: ri-hussar -> ri-elite-mansabdar (来自 escrow.per)
+(defrule
+	(up-compare-flag escrow-flag == 131072)
+	(can-research-with-escrow ri-elite-mansabdar)
+=>
+	(research ri-elite-mansabdar))
+
+
+;=============================================================
+; 映射: ri-hussar -> ri-elite-mansabdar (来自 researches.per)
+(defrule
+(or	(unit-type-count-total scout-cavalry-line >= 3)
+(or	(goal trainhussar yes)
+(or	(up-research-status c: ri-lechitic-legacy >= research-available); pending
+	(cc-players-unit-type-count 0 gold-mine < 8))))
+	(can-research ri-elite-mansabdar)
+=>
+	(research ri-elite-mansabdar))
+
+
+; ===================== ri-elite-parthian-cavalry-archer =====================
+
+;=============================================================
+; 映射: ri-heavy-cavalry-archer -> ri-elite-parthian-cavalry-archer (来自 escrow.per)
+(defrule
+	(up-compare-flag escrow-flag == 4194304)
+	(can-research-with-escrow ri-elite-parthian-cavalry-archer)
+=>
+	(research ri-elite-parthian-cavalry-archer))
+
+
+;=============================================================
+; 映射: ri-heavy-cavalry-archer -> ri-elite-parthian-cavalry-archer (来自 researches.per)
+(defrule
+(or	(goal strategy ca-rush)
+(or	(goal cavagoal yes)
+	(unit-type-count-total cavalry-archer-line >= 5)))
+	(can-research ri-elite-parthian-cavalry-archer)
+=>
+	(research ri-elite-parthian-cavalry-archer))
+
+
+; 映射: ri-heavy-cavalry-archer -> ri-elite-parthian-cavalry-archer (来自 researches.per)
+(defrule
+	(civ-selected khitans)
+	(current-age >= castle-age)
+	(research-completed ri-bodkin-arrow)
+	(unit-type-count-total cavalry-archer-line > 4)
+	(can-research ri-elite-parthian-cavalry-archer)
+=>
+	(research ri-elite-parthian-cavalry-archer)
+)
+
+
+; ===================== ri-cash-crop =====================
+
+; 映射: ri-burgundian-vineyards -> ri-cash-crop (来自 researches.per)
+(defrule
+	(up-compare-goal excessFood >= 700)
+(or	(commodity-selling-price food < 50)
+(or	(building-type-count-total market <= 0)
+	(up-compare-goal excessFood >= 1000)))
+(or	(up-compare-goal excessGold < 500)
+(or	(strategic-number sn-food-gatherer-percentage >= 50)
+	(up-compare-goal excessFood >= 2200)))
+	(can-research ri-cash-crop)
+=>
+	(research ri-cash-crop))
+
+
+; 映射: ri-burgundian-vineyards -> ri-cash-crop (来自 researches.per)
+(defrule
+(or	(up-compare-goal excessFood >= 1400)
+(or	(up-compare-goal custom-civ-pop >= up-max-civ)
+(or	(population >= max-civ-pop)
+(or	(up-compare-goal tradeunits <= 3)
+	(unit-type-count villager-farmer >= 30)))))
+	(can-research ri-cash-crop)
+=>
+	(research ri-cash-crop))
+
+
+; ===================== ri-breeding =====================
+
+; 映射: ri-crop-rotation -> ri-breeding (来自 researches.per)
+(defrule
+	(can-research ri-breeding)
+	(current-age-time > 600)
+=>
+	(research ri-breeding)
+)
+
+
+; ===================== sipahi =====================
+
+; 映射: knight-line -> sipahi (来自 units.per)
+(defrule
+	(food-amount > 110)
+	(or(unit-type-count-total sipahi < 7)
+	(up-research-status c: ri-scale-barding >= research-pending))
+	(or(unit-type-count-total sipahi < 10)
+	(up-research-status c: ri-chain-barding >= research-pending))
+	(unit-type-count-total sipahi < 30)
+	(current-age-time < 900)
+	(current-age == castle-age)
+	(or(players-tribute-memory any-ally food > 300)
+	(up-allied-goal focus-player strategy == sling))
+=>
+	(set-goal trainknight yes)
+	(train sipahi)
+	)
+
+
+; 映射: knight-line -> sipahi (来自 units.per)
+(defrule
+	(goal trainknight yes)
+(nand	(goal temporary-goal3 1579190)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train sipahi)
+=>
+	(train sipahi))
+
+
+; ===================== mansabdar =====================
+
+; 映射: knight-line -> mansabdar (来自 units.per)
+(defrule
+	(food-amount > 110)
+	(or(unit-type-count-total mansabdar < 7)
+	(up-research-status c: ri-scale-barding >= research-pending))
+	(or(unit-type-count-total mansabdar < 10)
+	(up-research-status c: ri-chain-barding >= research-pending))
+	(unit-type-count-total mansabdar < 30)
+	(current-age-time < 900)
+	(current-age == castle-age)
+	(or(players-tribute-memory any-ally food > 300)
+	(up-allied-goal focus-player strategy == sling))
+=>
+	(set-goal trainknight yes)
+	(train mansabdar)
+	)
+
+
+; 映射: knight-line -> mansabdar (来自 units.per)
+(defrule
+	(goal trainknight yes)
+(nand	(goal temporary-goal3 1579190)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train mansabdar)
+=>
+	(train mansabdar))
+
+
+; 映射: scout-cavalry-line -> mansabdar (来自 units.per)
+(defrule
+	(goal trainhussar yes)
+(nand	(goal temporary-goal3 1579204)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train mansabdar)
+=>
+	(train mansabdar))
+
+
+; ===================== streltsy =====================
+
+; 映射: hand-cannoneer -> streltsy (来自 units.per)
+(defrule
+    (goal trainhandcannon yes)
+    (not(unit-available streltsy))
+    (unit-available grenadier)
+=>
+    (train grenadier)
+)
+
+
+; 映射: hand-cannoneer -> streltsy (来自 units.per)
+(defrule
+	(goal trainhandcannon yes)
+(nand	(goal temporary-goal3 1579192)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train streltsy)
+=>
+	(train streltsy))
+
+
+; ===================== handcannon-ashigaru =====================
+
+; 映射: hand-cannoneer -> handcannon-ashigaru (来自 units.per)
+(defrule
+    (goal trainhandcannon yes)
+    (not(unit-available handcannon-ashigaru))
+    (unit-available grenadier)
+=>
+    (train grenadier)
+)
+
+
+; 映射: hand-cannoneer -> handcannon-ashigaru (来自 units.per)
+(defrule
+	(goal trainhandcannon yes)
+(nand	(goal temporary-goal3 1579192)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train handcannon-ashigaru)
+=>
+	(train handcannon-ashigaru))
+
+
+; ===================== yumi-ashigaru =====================
+
+; 映射: archer-line -> yumi-ashigaru (来自 units.per)
+(defrule
+	(goal trainarcher yes)
+(nand	(goal temporary-goal3 1579193)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train yumi-ashigaru)
+=>
+	(train yumi-ashigaru))
+
+
+; ===================== early-cavalry-archer =====================
+
+; 映射: cavalry-archer-line -> early-cavalry-archer (来自 units.per)
+(defrule
+	(goal traincavarcher yes)
+(nand	(goal temporary-goal3 1579194)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train early-cavalry-archer)
+=>
+	(train early-cavalry-archer))
+
+
+; ===================== parthian-cavalry-archer =====================
+
+; 映射: cavalry-archer-line -> parthian-cavalry-archer (来自 units.per)
+(defrule
+	(goal traincavarcher yes)
+(nand	(goal temporary-goal3 1579194)
+	(up-compare-goal local-total >= 1))
+	(goal siegereq yes)
+	(can-train parthian-cavalry-archer)
+=>
+	(train parthian-cavalry-archer))
+
+
