@@ -26,12 +26,15 @@ extern const int cAttributeRecruitMercenaryCost = 418;  //  招募佣兵所需�
 extern const int cAttributeCurrentTime = 419;   //  当前时间 +1
 extern const int cAttributeTechEffectTime = 420;    //  科技效果剩余的持续时间
 extern const int cAttributeFrankLoan = 421; //  法兰克放贷数额
-extern const int cAttributeAztecsKillCount = 422;   //  阿兹特克独特科技的击杀数统计
+extern const int cAttributeIxipltaKillCount = 422;   //  阿兹特克独特科技的击杀数统计
 extern const int cAttributeHospitallerKnightAbilityTime = 423;  //  医院骑士技能剩余持续时间
 extern const int cAttributeShrineSpawnCount = 424;  //  圣坛已生产单位的次数
 extern const int cAttributeCondottieroMercenaryNum = 434;   //  意大利佣兵生成数量
 extern const int cAttributeTeam = 435;   //  队伍编号
 extern const int cAttributeRelicCount = 436;    //  圣物计数
+extern const int cAttributeGothsVillagerBonus = 437;    //  哥特文明加成已经奖励的村民数
+extern const int cAttributeSoheiProgress = 438; //  日本僧兵产生进度
+extern const int cAttributeDacaoguCalcedValue = 439;    //  契丹打草谷已经计算的摧毁价值数
 
 
 //  单位ID定义
@@ -58,7 +61,7 @@ extern const int EliteRungScoutID = 4029;
 extern const int InvisibleEliteRungScoutID = 4030;
 extern const int SwissLancerID = 4031;
 extern const int LembosID = 4032;
-extern const int ConscriptedCavalryID = 4033;
+extern const int ConscriptedArmyID = 4033;
 extern const int CamelLancerID = 4034;
 extern const int EliteCamelLancerID = 4035;
 extern const int HobelarID = 4036;
@@ -66,8 +69,7 @@ extern const int EliteHobelarID = 4037;
 extern const int HospitallerKnightID = 4038;
 extern const int EliteHospitallerKnightID = 4039;
 extern const int CrusaderKnightID = 4041;
-extern const int SoheiID1 = 4042;
-extern const int SoheiID2 = 4043;
+extern const int SoheiID = 4042;
 extern const int VikingRaiderID = 4044;
 extern const int SofaID = 4045;
 extern const int EliteSofaID = 4046;
@@ -75,12 +77,22 @@ extern const int FlameThrowerID = 4047;
 extern const int TaboriteWarriorID = 4048;
 extern const int ShrineID = 4049;
 extern const int KhanID = 4050;
+extern const int ExtraConscriptedArmyID = 4051;
 extern const int InvisibleDeerSpawnerID = 4052;
+extern const int SpawnedDeerID = 4054;
 extern const int ToungooWarriorID = 4055;
 extern const int EliteToungooWarriorID = 4057;
 extern const int MansabdarID = 4058;
 extern const int VeteranMansabdarID = 4059;
 extern const int EliteMansabdarID = 4060;
+
+
+extern const int MonaspaID = 1803;
+extern const int EliteMonaspaID = 1805;
+extern const int LiaoDaoID = 1920;
+extern const int EliteLiaoDaoID = 1922;
+extern const int WhiteFeatherGuardID = 1959;
+extern const int EliteWhiteFeatherGuardID = 1961;
 
 
 //  攻击类型定义
@@ -90,12 +102,14 @@ extern const int cDamageClassSiegeWeaponAttack = 104;
 extern const int cDamageClassLightCavalry = 105;
 
 
+extern const int CastleID = 82;
 extern const int KeshikID = 1228;
 extern const int EliteKeshikID = 1230;
 
 
 extern const int HospitallerKnightMaxCharge = 300; //   医院骑士技能充能
 extern const float ShrineMaxCharge = 1200.0;    //  圣坛最大充能
+extern const int SatrapAuraRange = 10;  //  波斯总督光环范围
 
 
 //  全局数组
@@ -536,7 +550,6 @@ void CastleNetworkEffect(int ClassTarget = -1, int playerId = -1)
 // 10016 - Castle Network 城堡网络
 void EffectFunction10016(int playerId = -1)
 {
-    int CastleID = 82;
     int TownCenterID1 = 109;
     int TownCenterID2 = 71;
     int TownCenterID3 = 141;
@@ -637,39 +650,6 @@ void EffectFunction10021(int playerId = -1)
 }
 
 
-//  10022 - 单位击杀触发的效果
-void EffectFunction10022(int playerId = -1)
-{
-    int playerUnits = 0;
-    int i = 0;
-    int j = 0;
-    for (j = 900; <= 964)
-        if (isClassOperable(j))
-        {
-            playerUnits = xsGetPlayerUnitIds(playerId, j);
-            for (i = 0; < xsArrayGetSize(playerUnits))
-            {
-                int UnitID = xsArrayGetInt(playerUnits, i);
-                int TargetUnitID = xsGetUnitTargetUnitId(UnitID);
-                if (TargetUnitID == -1)
-                    continue;
-                if (xsDoesUnitExist(TargetUnitID) && (xsGetUnitHitpoints(TargetUnitID) > 0))    //  目标存活
-                    continue;
-                if (ArrayFindInt(KilledUnits, TargetUnitID, 0, KilledUnitsCount) != -1)
-                    continue;
-                int KillerPlayer = playerId;
-        
-                int TargetPlayer = xsGetUnitOwner(TargetUnitID);
-                KillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
-                xsArraySetInt(KilledUnits, KilledUnitsCount, TargetUnitID);
-                KilledUnitsCount ++;
-                //xsChatData("Killed Unit" + TargetUnitID);
-                break;
-            }
-        }
-}
-
-
 //  10023 - 柏柏尔团队加成
 void EffectFunction10023(int playerId = -1)
 {
@@ -766,6 +746,24 @@ void EffectFunction10041(int playerId = -1)
 }
 
 
+//  10042 - 总督
+void EffectFunction10042(int playerId = -1)
+{
+    
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.25);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrWorkRange, SatrapAuraRange - 2);    //城堡碰撞半径为2
+    xsTaskAmount(cTaskAttrSearchWaitTime, 13.000001);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 5);
+    xsTask(CastleID, cTaskTypeAura, 12, playerId);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTask(CastleID, cTaskTypeAura, cBuildingClass, playerId);
+    xsResetTaskAmount();
+    LaunchAura(playerId, CastleID);
+}
+
+
 //  10046 - 使徒
 void EffectFunction10046(int playerId = -1)
 {
@@ -823,6 +821,171 @@ void EffectFunction10060(int playerId = -1)
 }
 
 
+//  苏丹王效果应用于大象单位
+void SultansApplier(int playerId = -1, int ClassTarget = -1)
+{
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 9.0 * 60);
+    xsTask(cInfantryClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cCavalryClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cScoutCavalryClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 6.0 * 60);
+    xsTask(cArcherClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cCavalryArcherClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cConquistadorClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cHandCannoneerClass, cTaskTypeStinger, ClassTarget, playerId);
+}
+
+
+//  10065 - 苏丹王
+void EffectFunction10065(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000009);
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+    SultansApplier(playerId, 239);
+    SultansApplier(playerId, 558);
+    SultansApplier(playerId, 873);
+    SultansApplier(playerId, 875);
+    SultansApplier(playerId, 1071);
+    SultansApplier(playerId, 1120);
+    SultansApplier(playerId, 1122);
+    SultansApplier(playerId, 1132);
+    SultansApplier(playerId, 1134);
+    SultansApplier(playerId, 1744);
+    SultansApplier(playerId, 1746);
+    xsResetTaskAmount();
+
+    LaunchStinger(playerId, cInfantryClass);
+    LaunchStinger(playerId, cCavalryClass);
+    LaunchStinger(playerId, cScoutCavalryClass);
+    LaunchStinger(playerId, cArcherClass);
+    LaunchStinger(playerId, cCavalryArcherClass);
+    LaunchStinger(playerId, cConquistadorClass);
+    LaunchStinger(playerId, cHandCannoneerClass);
+    ModAttribute(playerId, LiaoDaoID, cCombatAbility, -128);
+    ModAttribute(playerId, EliteLiaoDaoID, cCombatAbility, -128);
+    ModAttribute(playerId, WhiteFeatherGuardID, cCombatAbility, -128);
+    ModAttribute(playerId, EliteWhiteFeatherGuardID, cCombatAbility, -128);
+}
+
+
+//  10066 - 祭祀仪式
+void EffectFunction10066(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceIn, 3157);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000001);
+    int i = 0;
+    int j = 0;
+    for (i = 900; <= 964)
+        if (isClassOperable(i))
+            for (j = 900; <= 964)
+                if (isLandMilitaryClass(j))
+                    xsTask(i, cTaskTypeLoot, j, playerId);
+    xsResetTaskAmount();
+}
+
+
+//  10067 - 祭祀仪式击杀触发的效果
+void EffectFunction10067(int playerId = -1)
+{
+    int KillCount = xsPlayerAttribute(playerId, cAttributeIxipltaKillCount) + 1;
+    int SpawnJaguarNum = KillCount / 7;
+    if (SpawnJaguarNum > 0)
+        SpawnUnit(playerId, 725, 82, SpawnJaguarNum, 1);
+    SetResource(playerId, cAttributeIxipltaKillCount, KillCount - SpawnJaguarNum * 7);
+}
+
+
+//  10068 - 打草谷
+void EffectFunction10068(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceIn, 3158);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000002);
+    int i = 0;
+    int j = 0;
+    for (i = 900; <= 964)
+        if (isLandMilitaryClass(i))
+            for (j = 900; <= 964)
+                if (isClassOperable(j))
+                    xsTask(i, cTaskTypeLoot, j, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeDacaoguCalcedValue, xsPlayerAttribute(playerId, cAttributeTotalValueOfKills) - xsPlayerAttribute(playerId, cAttributeTotalValueOfRazings));
+}
+
+
+//  10069 - 打草谷击杀触发的效果
+void EffectFunction10069(int playerId = -1)
+{
+    float CalcedValue = xsPlayerAttribute(playerId, cAttributeDacaoguCalcedValue);
+    float TotalValue = xsPlayerAttribute(playerId, cAttributeTotalValueOfKills) - xsPlayerAttribute(playerId, cAttributeTotalValueOfRazings);
+    ModResource(playerId, cAttributeFood, (TotalValue - CalcedValue) * 0.1);
+    ModResource(playerId, cAttributeGold, (TotalValue - CalcedValue) * 0.04);
+    SetResource(playerId, cAttributeDacaoguCalcedValue, TotalValue);
+}
+
+
+//  10070 - 物力钱
+void EffectFunction10070(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, ExtraConscriptedArmyID);
+    xsTaskAmount(cTaskAttrWorkValue2, 3);
+    xsTask(ConscriptedArmyID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000003);
+    xsTask(1908, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(1910, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();   
+}
+
+
+//  10071 - 敕令骑士, 骑兵根据周围军事单位数量获得生命值和生命回复
+void EffectFunction10071(int playerId = -1)
+{
+    int i = 0;
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000001);
+    xsTaskAmount(cTaskAttrWorkRange, 7);
+    xsTaskAmount(cTaskAttrWorkValue2, 20);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTaskAmount(cTaskAttrWorkValue1, 30);
+    xsTaskAmount(cTaskAttrAutoSearch, 0);
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+        {
+            xsTask(cCavalryClass, cTaskTypeAura, i, playerId);
+            xsTask(cScoutCavalryClass, cTaskTypeAura, i, playerId);
+            if  (i == 900)
+                xsTaskAmount(cTaskAttrAutoSearch, 1);
+        }
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000001);
+    xsTaskAmount(cTaskAttrWorkValue1, 60);
+    xsTaskAmount(cTaskAttrAutoSearch, 0);
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+        {
+            xsTask(cCavalryClass, cTaskTypeAura, i, playerId);
+            xsTask(cScoutCavalryClass, cTaskTypeAura, i, playerId);
+            if  (i == 900)
+                xsTaskAmount(cTaskAttrAutoSearch, 1);
+        }
+    xsResetTaskAmount();
+    LaunchAura(playerId, cCavalryClass, true);
+    LaunchAura(playerId, cScoutCavalryClass, true);
+    ModAttribute(playerId, MonaspaID, cCombatAbility, -96);
+    ModAttribute(playerId, EliteMonaspaID, cCombatAbility, -96);
+}
+
+
 //  法兰克, 计算借贷返利
 void Franks(int Time = 0, int playerId = -1)
 {
@@ -836,6 +999,37 @@ void Franks(int Time = 0, int playerId = -1)
             xsEffectAmount(cModResource, cAttributeLoanLimit, 1, 1, playerId);
         SetResource(playerId, cAttributeTechEffectTime, FrankLoanTime);
     }
+}
+
+
+//  哥特, 每击杀 3 名敌人, 获得 1 名村民, 最多 20 名
+void Goths(int Time = 0, int playerId = -1)
+{
+    int CalcedBonus = xsPlayerAttribute(playerId, cAttributeGothsVillagerBonus);
+    if (CalcedBonus >= 20)
+        return;
+    int Bonus = xsPlayerAttribute(playerId, cAttributeKills) / 3;
+    if (CalcedBonus < Bonus)
+    {
+        if (Bonus % 3 == 0)
+            SpawnUnit(playerId, 83, 109, Bonus - CalcedBonus, 1);
+        else
+            SpawnUnit(playerId, 293, 109, Bonus - CalcedBonus, 1);
+    }
+    SetResource(playerId, cAttributeGothsVillagerBonus, Bonus);
+}
+
+
+//  日本, 研究一向一揆后, 圣物不产生黄金, 而是每 75 秒产出 1 名僧兵
+void Japanese(int Time = 0, int playerId = -1)
+{
+    if (isResearched(playerId, 3068) == false)
+        return;
+    float SoheiProgress = xsPlayerAttribute(playerId, cAttributeSoheiProgress);
+    SoheiProgress = SoheiProgress + xsPlayerAttribute(playerId, cAttributeRelics) / 75.0;
+    int SoheiSpawnNum = minInt(SoheiProgress, 0 + xsPlayerAttribute(playerId, cAttributePopulationCap));
+    SpawnUnit(playerId, SoheiID, 104, SoheiSpawnNum, 1);
+    SetResource(playerId, cAttributeSoheiProgress, SoheiProgress - SoheiSpawnNum);
 }
 
 
@@ -855,9 +1049,8 @@ void Byzantines(int Time = 0, int playerId = -1)
 //  波斯文明加成, 城堡从周围建筑收取黄金
 void Persians(int Time = 0, int playerId = -1)
 {
-    int CastleID = 82;
-    int AuraRange = 10;
-
+    if (isResearched(playerId, 3174) == false)
+        return;
     float TotalGold = 0.0;
     static int BuildingArray = 0;
     if (BuildingArray == 0)
@@ -880,10 +1073,10 @@ void Persians(int Time = 0, int playerId = -1)
         vector BuildingPosition = xsGetUnitPosition(BuildingID);
         int j = 0;
         bool flag = false;
-        for (j = 0; <xsArrayGetSize(CastleArray))
+        for (j = 0; < xsArrayGetSize(CastleArray))
         {
             vector CastlePosition = xsGetUnitPosition(xsArrayGetInt(CastleArray, j));
-            if ((DistanceX(BuildingPosition, CastlePosition) <= AuraRange) && (DistanceY(BuildingPosition, CastlePosition) <= AuraRange))
+            if ((DistanceX(BuildingPosition, CastlePosition) <= SatrapAuraRange) && (DistanceY(BuildingPosition, CastlePosition) <= SatrapAuraRange))
             {
                 flag = true;
                 break;
@@ -893,23 +1086,6 @@ void Persians(int Time = 0, int playerId = -1)
             TotalGold = TotalGold + 1.0 * PersianBuildingGold(playerId, BuildingID) / 60;
     }
     xsEffectAmount(cModResource, cAttributeGold, 1, TotalGold, playerId);
-    //xsChatData("Persians TotalGold =" + TotalGold + "BuildingArraySize = " + xsArrayGetSize(BuildingArray));
-    RecycleArrayInt(BuildingArray);
-    RecycleArrayInt(CastleArray);
-
-    //为城堡添加范围指示器
-    if (Time == 0)
-    {
-        xsResetTaskAmount();
-        xsTaskAmount(cTaskAttrWorkValue1, 0);
-        xsTaskAmount(cTaskAttrWorkValue2, 1);
-        xsTaskAmount(cTaskAttrWorkRange, AuraRange - 2);    //城堡碰撞半径为2
-        xsTaskAmount(cTaskAttrSearchWaitTime, 1);
-        xsTaskAmount(cTaskAttrCombatLevelFlag, 4);
-        xsTask(CastleID, cTaskTypeAura, cBuildingClass, playerId);
-        xsResetTaskAmount();
-        LaunchAura(playerId, CastleID);
-    }
 }
 
 
@@ -933,20 +1109,21 @@ void Spanish(int Time = 0, int playerId = -1)
 void Aztecs(int Time = 0, int playerId = -1)
 {
     int FloatingGardenTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
-    if (FloatingGardenTime == 0)
-        return;
-    FloatingGardenTime --;
-    if (FloatingGardenTime == 0)
+    if (FloatingGardenTime > 0)
     {
-        MulAttribute(playerId, cTradeBoatClass, cWorkRate, 1.0 / 1.2);
-        MulAttribute(playerId, cBuildingClass, cWorkRate, 1.0 / 1.2);
-        MulAttribute(playerId, cVillagerClass, cWorkRate, 1.0 / 1.2);
-        MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.0 / 1.2);
-        MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.0 / 1.2);
-        MulAttribute(playerId, cFarmClass, cWorkRate, 1.0 / 1.2);
-        MulAttribute(playerId, ShrineID, cMaxCharge, 1.2);
+        FloatingGardenTime --;
+        if (FloatingGardenTime == 0)
+        {
+            MulAttribute(playerId, cTradeBoatClass, cWorkRate, 1.0 / 1.2);
+            MulAttribute(playerId, cBuildingClass, cWorkRate, 1.0 / 1.2);
+            MulAttribute(playerId, cVillagerClass, cWorkRate, 1.0 / 1.2);
+            MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.0 / 1.2);
+            MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.0 / 1.2);
+            MulAttribute(playerId, cFarmClass, cWorkRate, 1.0 / 1.2);
+            MulAttribute(playerId, ShrineID, cMaxCharge, 1.2);
+        }
+        SetResource(playerId, cAttributeTechEffectTime, FloatingGardenTime);
     }
-    SetResource(playerId, cAttributeTechEffectTime, FloatingGardenTime);
 }
 
 
@@ -978,8 +1155,13 @@ void Italians(int Time = 0, int playerId = -1)
     MercenaryContractTime --;
     if (MercenaryContractTime == 0)
     {
-        SpawnUnit(playerId, 882, 109, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
-        MercenaryContractTime = 120;
+        if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)  //  判断是否还有人口空间
+        {
+            SpawnUnit(playerId, 882, 109, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
+            MercenaryContractTime = 120;
+        }
+        else
+            MercenaryContractTime = 1;
     }
     SetResource(playerId, cAttributeTechEffectTime, MercenaryContractTime);
 }
@@ -1072,6 +1254,16 @@ void TimerEvent(int Time = 0, int playerId = -1)
             Franks(Time, playerId);
             break;
         }
+        case cGoths:
+        {
+            Goths(Time, playerId);
+            break;
+        }
+        case cJapanese:
+        {
+            Japanese(Time, playerId);
+            break;
+        }
         case cByzantines:
         {
             Byzantines(Time, playerId);
@@ -1130,6 +1322,16 @@ void TimerEvent(int Time = 0, int playerId = -1)
 
     HospitallerKnight(Time, playerId);
     Shrine(Time, playerId);
+    if (false)
+    {
+        SetResource(playerId, 70, 2);
+        SetResource(playerId, 71, 2);
+        PrintMessage("(x,y) = (" + xsPlayerAttribute(playerId, 70) + ", " + xsPlayerAttribute(playerId, 71) + ")");
+        int Markets = xsGetPlayerUnitIds(2, 84);
+        int MarketID = xsArrayGetInt(Markets, 0);
+        vector MarketPos = xsGetUnitPosition(MarketID);
+        PrintMessage("Market Pos = (" + xsVectorGetX(MarketPos) + ", " + xsVectorGetY(MarketPos) + ")");
+    }
 }
 
 
@@ -1149,10 +1351,7 @@ rule Timer
     while (LastUpdateTime <= CurrentTime)
     {
         if (LastUpdateTime == 0)
-        {
-            ArrayRecycleInit();
             Init();
-        }
         int i = 0;
         for (i = 0; <= xsGetNumPlayers())
             TimerEvent(LastUpdateTime, i);

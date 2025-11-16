@@ -287,44 +287,12 @@
             "type": "delete"
         },
         {
-            "note": "签军骑兵",
+            "note": "签军",
             "civilizations": "Jurchens",
             "unit_id": 4033,
-            "Name": "Conscripted Cavalry",
+            "Name": "Conscripted Army",
             "building_id": 109,
             "RequiredAge": 2
-        },
-        {
-            "note": "骆驼长矛骑兵",
-            "civilizations": "Saracens",
-            "unit_id": 4034,
-            "Name": "Camel Lancer",
-            "building_id": 101,
-            "RequiredAge": 3,
-            "position": "after",
-            "target_id": 569
-        },
-        {
-            "note": "精锐骆驼长矛骑兵",
-            "civilizations": "Saracens",
-            "tech_id": 3036,
-            "Name": "Elite Camel Lancer",
-            "building_id": 101,
-            "RequiredAge": 4
-        },
-        {
-            "note": "萨拉森禁用骆驼兵",
-            "civilizations": "Saracens",
-            "unit_id": [329, 330],
-            "building_id": 101,
-            "type": "delete"
-        },
-        {
-            "note": "萨拉森禁用重装骆驼兵",
-            "civilizations": "Saracens",
-            "tech_id" : 236,
-            "building_id": 101,
-            "type": "delete"
         },
         {
             "note": "骑马步兵",
@@ -348,6 +316,7 @@
             "note": "医院骑士",
             "civilizations": "Hospitaller Knight",
             "unit_id": 4038,
+            "building_id": 101,
             "Name": "Hospitaller Knight",
             "RequiredAge": 3
         },
@@ -364,14 +333,6 @@
             "civilizations": "Japanese",
             "unit_id": 4042,
             "building_id": 104,
-            "Name": "Sohei",
-            "RequiredAge": 3
-        },
-        {
-            "note": "僧兵",
-            "civilizations": "Japanese",
-            "unit_id": 4043,
-            "building_id": 109,
             "Name": "Sohei",
             "RequiredAge": 3
         },
@@ -472,7 +433,7 @@
         },
         {
             "note": "马扎尔, 土耳其和匈奴启用草原枪兵",
-            "civilizations": ["Turks", "Huns", "Magyars"],
+            "civilizations": ["Turks", "Huns", "Magyar"],
             "unit_id": 1370,
             "building_id": 101,
             "Name": "Steppe Lancer",
@@ -480,7 +441,7 @@
         },
         {
             "note": "马扎尔, 土耳其和匈奴启用精锐草原枪兵",
-            "civilizations": ["Turks", "Huns", "Magyars"],
+            "civilizations": ["Turks", "Huns", "Magyar"],
             "unit_id": 1372,
             "building_id": 101,
             "Name": "Steppe Lancer",
@@ -488,7 +449,7 @@
         },
         {
             "note": "马扎尔和土耳其启用精锐草原枪兵",
-            "civilizations": ["Turks", "Magyars"],
+            "civilizations": ["Turks", "Magyar"],
             "tech_id": 715,
             "building_id": 101,
             "Name": "Elite Steppe Lancer",
@@ -558,7 +519,7 @@
             "RequiredAge": 3
         },
         {
-            "note": "本愿寺一揆",
+            "note": "一向一揆",
             "civilizations": "Japanese",
             "tech_id": 3068,
             "building_id": 209,
@@ -909,8 +870,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用手推炮",
-            "civilizations": "Chinese",
+            "note": "中国, 日本启用手推炮",
+            "civilizations": ["Chinese", "Japanese"],
             "unit_id": 36,
             "building_id": 49,
             "Name": "Bombard Cannon",
@@ -1353,6 +1314,86 @@
             "tech_id": 3161,
             "building_id": 209,
             "Name": "Pistala",
+            "RequiredAge": 4
+        },
+        {
+            "note": "猛安谋克",
+            "civilizations": "Jurchens",
+            "tech_id": 3162,
+            "building_id": 209,
+            "Name": "Meng'an Mouke",
+            "RequiredAge": 3
+        },
+        {
+            "note": "物力钱",
+            "civilizations": "Jurchens",
+            "tech_id": 3171,
+            "building_id": 209,
+            "Name": "Property Tax",
+            "RequiredAge": 4
+        },
+        {
+            "note": "马扎尔启用火枪手",
+            "civilizations": "Magyar",
+            "unit_id": 5,
+            "building_id": 87,
+            "Name": "Hand Cannoneer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "坎达操练",
+            "civilizations": "Indians",
+            "tech_id": 3168,
+            "building_id": 209,
+            "Name": "Khanda Drills",
+            "RequiredAge": 3
+        },
+        {
+            "note": "苏丹王",
+            "civilizations": "Indians",
+            "tech_id": 3169,
+            "building_id": 209,
+            "Name": "Sultans",
+            "RequiredAge": 4
+        },
+        {
+            "note": "日本长枪骑兵",
+            "civilizations": "Japanese",
+            "tech_id": 3170,
+            "building_id": 209,
+            "Name": "Yari Cavalry",
+            "RequiredAge": 4
+        },
+        {
+            "note": "法兰克获得护腕",
+            "civilizations": "Franks",
+            "tech_id": 201,
+            "building_id": 103,
+            "Name": "Bracer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "敕令骑士",
+            "civilizations": "Franks",
+            "tech_id": 3172,
+            "building_id": 209,
+            "Name": "Gendarmes d'ordonnance",
+            "RequiredAge": 4
+        },
+        {
+            "note": "总督",
+            "civilizations": "Persians",
+            "tech_id": 3174,
+            "building_id": 209,
+            "Name": "Satrap",
+            "RequiredAge": 3
+        },
+        {
+            "note": "骆驼长矛骑兵",
+            "civilizations": "Persians",
+            "tech_id": 3173,
+            "building_id": 209,
+            "Name": "Camel Lancer",
             "RequiredAge": 4
         }
     ]

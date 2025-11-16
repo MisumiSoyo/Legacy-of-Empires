@@ -12156,6 +12156,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Bracer",
+                        "RequiredAge": 4,
+                        "ID": 201
                     }
                 ]
             },
@@ -12356,6 +12361,11 @@
                         "Name": "Pavise",
                         "RequiredAge": 3,
                         "ID": 3064
+                    },
+                    {
+                        "Name": "Gendarmes d'ordonnance",
+                        "RequiredAge": 4,
+                        "ID": 3172
                     }
                 ]
             },
@@ -16333,6 +16343,16 @@
                         "ID": 322,
                         "Name": "Murder Holes",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Khanda Drills",
+                        "RequiredAge": 3,
+                        "ID": 3168
+                    },
+                    {
+                        "Name": "Sultans",
+                        "RequiredAge": 4,
+                        "ID": 3169
                     }
                 ]
             },
@@ -18177,6 +18197,11 @@
                         "ID": 1105,
                         "Name": "Siege Tower",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bombard Cannon",
+                        "RequiredAge": 4,
+                        "ID": 36
                     }
                 ]
             },
@@ -18463,6 +18488,11 @@
                         "Name": "Hongan Ikki",
                         "RequiredAge": 3,
                         "ID": 3068
+                    },
+                    {
+                        "Name": "Yari Cavalry",
+                        "RequiredAge": 4,
+                        "ID": 3170
                     }
                 ]
             },
@@ -18693,11 +18723,6 @@
                         "ID": 83,
                         "Name": "Villager (Male)",
                         "RequiredAge": 1
-                    },
-                    {
-                        "Name": "Sohei",
-                        "RequiredAge": 3,
-                        "ID": 4043
                     }
                 ]
             },
@@ -22351,11 +22376,6 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Elite Steppe Lancer",
-                        "RequiredAge": 4,
-                        "ID": 715
                     }
                 ],
                 "Units": [
@@ -22389,16 +22409,6 @@
                         "ID": 569,
                         "Name": "Paladin",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Steppe Lancer",
-                        "RequiredAge": 3,
-                        "ID": 1370
-                    },
-                    {
-                        "Name": "Steppe Lancer",
-                        "RequiredAge": 4,
-                        "ID": 1372
                     }
                 ]
             },
@@ -27967,6 +27977,16 @@
                         "ID": 322,
                         "Name": "Murder Holes",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Satrap",
+                        "RequiredAge": 3,
+                        "ID": 3174
+                    },
+                    {
+                        "Name": "Camel Lancer",
+                        "RequiredAge": 4,
+                        "ID": 3173
                     }
                 ]
             },
@@ -29742,14 +29762,14 @@
                         "RequiredAge": 2
                     },
                     {
+                        "ID": 236,
+                        "Name": "Heavy Camel Rider",
+                        "RequiredAge": 4
+                    },
+                    {
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Elite Camel Lancer",
-                        "RequiredAge": 4,
-                        "ID": 3036
                     }
                 ],
                 "Units": [
@@ -29775,9 +29795,14 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Camel Lancer",
-                        "RequiredAge": 3,
-                        "ID": 4034
+                        "ID": 329,
+                        "Name": "Camel Rider",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "ID": 330,
+                        "Name": "Heavy Camel Rider",
+                        "RequiredAge": 4
                     }
                 ]
             },
@@ -50926,6 +50951,16 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Meng'an Mouke",
+                        "RequiredAge": 3,
+                        "ID": 3162
+                    },
+                    {
+                        "Name": "Property Tax",
+                        "RequiredAge": 4,
+                        "ID": 3171
                     }
                 ]
             },
@@ -51143,7 +51178,7 @@
                         "RequiredAge": 1
                     },
                     {
-                        "Name": "Conscripted Cavalry",
+                        "Name": "Conscripted Army",
                         "RequiredAge": 2,
                         "ID": 4033
                     }

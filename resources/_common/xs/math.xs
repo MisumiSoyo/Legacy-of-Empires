@@ -141,43 +141,6 @@ bool isEnemy(int player1 = -1, int player2 = -1)
 }
 
 
-//为单位启动光环, isSelf为true时光环加成自身, 不能使用于类
-void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 32);
-    if (isSelf)
-        ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 64);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-
-//为单位关闭光环
-void RemoveAura(int playerId = -1, int ObjectID = -1)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 96);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-//  为单位启动毒刺效果
-void LaunchStinger(int playerId = -1, int ObjectID = -1)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 128);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-
-//  为单位关闭毒刺效果
-void RemoveStringer(int playerId = -1, int ObjectID = -1)
-{
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 128);
-    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
-}
-
-
 //  判断科技是否已经研究完成
 bool isResearched(int playerId = -1, int TechID = -1)
 {
@@ -444,4 +407,65 @@ void MulObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
         float ChargeValue = maxFloat(minFloat(xsGetUnitCharge(UnitID) * value, MaxCharge), 0);
         xsSetUnitCharge(UnitID, ChargeValue);
     }
+}
+
+
+//为单位启动光环, isSelf为true时光环加成自身, 如果使用于种属, 无法判断是否对已经启用光环的单位错误执行, 需要附加处理
+void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
+{
+    if ((ObjectID >= 900) && (ObjectID <= 964))
+    {
+        ModAttribute(playerId, ObjectID, cCombatAbility, 32);
+        if (isSelf)
+            ModAttribute(playerId, ObjectID, cCombatAbility, 64);
+        return;
+    }
+    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 32);
+    if (isSelf)
+        ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 64);
+    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
+}
+
+
+//为单位关闭光环
+void RemoveAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
+{
+    if ((ObjectID >= 900) && (ObjectID <= 964))
+    {
+        ModAttribute(playerId, ObjectID, cCombatAbility, -32);
+        if (isSelf)
+            ModAttribute(playerId, ObjectID, cCombatAbility, -64);
+        return;
+    }
+    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 96);
+    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
+}
+
+//  为单位启动毒刺效果
+void LaunchStinger(int playerId = -1, int ObjectID = -1)
+{
+    if ((ObjectID >= 900) && (ObjectID <= 964))
+    {
+        ModAttribute(playerId, ObjectID, cCombatAbility, 128);
+        return;
+    }
+    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 128);
+    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
+}
+
+
+//  为单位关闭毒刺效果
+void RemoveStringer(int playerId = -1, int ObjectID = -1)
+{
+    if ((ObjectID >= 900) && (ObjectID <= 964))
+    {
+        ModAttribute(playerId, ObjectID, cCombatAbility, -128);
+        return;
+    }
+    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 128);
+    xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
 }

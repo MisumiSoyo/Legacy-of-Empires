@@ -2,10 +2,6 @@
 (load "Promisory\finalingConstants")
 (load "Promisory\customConstants")
 
-(load "Promisory\LOEConstants")
-(load "Promisory\LOERules")
-(load "Promisory\LOECustomRules")
-
 #load-if-not-defined BATTLE-ROYALE
 (load "Promisory\init")
 (load "Promisory\threats")
@@ -36,5 +32,9 @@
 (load "Promisory\finaling")
 #end-if
 (load "Promisory\event")
+
+(load "Promisory\LOEConstants")
+(load "Promisory\LOERules")
+(load "Promisory\LOECustomRules")
 
 (include "ailib/Geometry.xs")

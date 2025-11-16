@@ -8,6 +8,12 @@ void EffectFunction10001(int playerId = -1)
 
     switch (playerCiv)
     {
+        case cFranks:
+        {
+            //  获得护腕
+            EnableTech(playerId, 201);
+            break;
+        }
         case cJapanese:
         {
             //  启用手推炮
@@ -49,6 +55,8 @@ void EffectFunction10001(int playerId = -1)
             //  启用草原枪兵
             EnableTech(playerId, 714);
             EnableTech(playerId, 715);
+            //  启用火枪手
+            EnableTech(playerId, 85);
             break;
         }
         case cMalians:
@@ -501,7 +509,7 @@ void EffectFunction10002(int playerId = -1)
         {
             //  女真文明加成, TC产鹿
             SetAttribute(playerId, 890, cDeadUnitId, InvisibleDeerSpawnerID);
-            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.3333333);
+            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, 0.0 - 60.0 / 325);
             break;
         }
         case cKhitans:
@@ -562,8 +570,8 @@ void EffectFunction10002(int playerId = -1)
     //  维京狂战士基础生命回复改为 0
     ModAttribute(playerId, 692, cRegenerationRate, -40);
     ModAttribute(playerId, 694, cRegenerationRate, -40);
-    //  城堡时代前, 怯薛 -25 生命值, -2 攻击力
-    ModAttribute(playerId, KeshikID, cHitpoints, -25);
+    //  城堡时代前, 怯薛 -20 生命值, -2 攻击力
+    ModAttribute(playerId, KeshikID, cHitpoints, -20);
     ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
     ModAttribute(playerId, KeshikID, cShownAttack, -2);
 }
@@ -575,6 +583,7 @@ void EffectFunction10024(int playerId = -1)
     //  骑士属性
     ModAttribute(playerId, 38, cHitpoints, -20);
     ModAttack(playerId, 38, cDamageClassMelee, -2);
+    ModAttribute(playerId, 38, cShownAttack, -2);
     MulAttribute(playerId, 38, cTrainTime, 4.0 / 3);
     //  曼沙布达尔骑兵升级
     ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
@@ -738,10 +747,10 @@ void EffectFunction10024(int playerId = -1)
         }
         case cJurchens:
         {
-            //  启用签军骑兵
-            EnableObject(playerId, ConscriptedCavalryID);
+            //  启用签军
+            EnableObject(playerId, ConscriptedArmyID);
             //  女真文明加成, TC产鹿
-            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.4);
+            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, 0.0 - 60.0 / 275);
             break;
         }
         default:
@@ -788,12 +797,6 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cAddAttribute, CrusaderKnightID, cArmor, 4 * 256 + 1, playerId);
             break;
         }
-        case cJapanese:
-        {
-            //  启用僧兵
-            xsEffectAmount(cEnableObject, SoheiID1, 1, 0, playerId);
-            break;
-        }
         case cChinese:
         {
             //  中国文明加成, 科技折扣
@@ -826,8 +829,6 @@ void EffectFunction10025(int playerId = -1)
         case cSaracens:
         {
             EnableObject(playerId, AssassinID); //  启用阿萨辛
-            //  启用骆驼长矛骑兵
-            EnableObject(playerId, CamelLancerID);
             break;
         }
         case cTurks:
@@ -985,13 +986,13 @@ void EffectFunction10025(int playerId = -1)
         case cWei:
         {
             //  魏文明加成, 坞堡建造上限增加
-            SetAttribute(playerId, WubaoID, cAvailableFlag, 1);
+            ModAttribute(playerId, WubaoID, cAvailableFlag, 1);
             break;
         }
         case cJurchens:
         {
             //  女真文明加成, TC产鹿
-            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.5);
+            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, 0.0 - 60.0 / 225);
             break;
         }
         default:
@@ -1002,24 +1003,25 @@ void EffectFunction10025(int playerId = -1)
     MulAttribute(playerId, WoodenFortressID, cHitpoints, 4.0 / 3);
     ModAttack(playerId, WoodenFortressID, cDamageClassPierce, 1);
     //  坞堡升级
-    ModAttribute(playerId, WubaoID, cHitpoints, 500);
+    ModAttribute(playerId, WubaoID, cHitpoints, 300);
     //  小艇升级
     ModAttribute(playerId, LembosID, cHitpoints, 15);
     ModAttack(playerId, LembosID, cDamageClassPierce, 1);
     ModAttack(playerId, LembosID, cDamageClassShips, 1);
     ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
-    //  签军骑兵升级
-    ModAttribute(playerId, ConscriptedCavalryID, cHitpoints, 15);
-    ModAttack(playerId, ConscriptedCavalryID, cDamageClassMelee, 2);
     //  骑士属性
     ModAttribute(playerId, 38, cHitpoints, 20);
     ModAttack(playerId, 38, cDamageClassMelee, 2);
+    ModAttribute(playerId, 38, cShownAttack, 2);
     MulAttribute(playerId, 38, cTrainTime, 0.75);
-    //  城堡时代, 怯薛 +25 生命值, +2 攻击力, +1 每次攻击回复的生命值
-    ModAttribute(playerId, KeshikID, cHitpoints, 25);
+    //  城堡时代, 怯薛 +20 生命值, +2 攻击力, +1 每次攻击回复的生命值
+    ModAttribute(playerId, KeshikID, cHitpoints, 20);
     ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
     ModAttribute(playerId, KeshikID, cShownAttack, 2);
     KeshikStingerCastleAgeUpgrade(playerId);
+    //  签军升级
+    ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
+    ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);
 }
 
 
@@ -1089,12 +1091,6 @@ void EffectFunction10026(int playerId = -1)
         {
             //  圣坛可建造数 +1
             ModAttribute(playerId, ShrineID, cAvailableFlag, 1);
-            break;
-        }
-        case cItalians:
-        {
-            //  意大利文明加成, 可以购买圣物
-            ModResource(playerId, cAttributeRelicPurchaseLimit, 2);
             break;
         }
         case cIncas:
@@ -1169,7 +1165,7 @@ void EffectFunction10026(int playerId = -1)
         case cJurchens:
         {
             //  女真文明加成, TC产鹿
-            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, -0.66666666667);
+            SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, 0.0 - 60.0 / 175);
             break;
         }
         default:
@@ -1184,7 +1180,7 @@ void EffectFunction10026(int playerId = -1)
     MulAttribute(playerId, WoodenFortressID, cHitpoints, 1.25);
     ModAttack(playerId, WoodenFortressID, cDamageClassPierce, 1);
     //  坞堡升级
-    ModAttribute(playerId, WubaoID, cHitpoints, 500);
+    ModAttribute(playerId, WubaoID, cHitpoints, 300);
     //  马尼拉大帆船升级
     ModAttribute(playerId, ManilaGalleoID, cHitpoints, 20);
     ModAttack(playerId, ManilaGalleoID, cDamageClassPierce, 1);
@@ -1195,11 +1191,73 @@ void EffectFunction10026(int playerId = -1)
     ModAttack(playerId, LembosID, cDamageClassPierce, 1);
     ModAttack(playerId, LembosID, cDamageClassShips, 1);
     ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
-    //  签军骑兵升级
-    ModAttribute(playerId, ConscriptedCavalryID, cHitpoints, 15);
-    ModAttack(playerId, ConscriptedCavalryID, cDamageClassMelee, 2);
     //  战车弓兵升级, 启用光环
     LaunchAura(playerId, ChariotArcherID);
     //  可汗升级
     ModAttack(playerId, KhanID, cDamageClassPierce, 2);
+    //  签军升级
+    ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
+    ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);
+}
+
+
+//  封建时代开局效果
+void EffectFunction10061(int playerId = -1)
+{
+}
+
+
+//  城堡时代开局效果
+void EffectFunction10062(int playerId = -1)
+{
+}
+
+
+//  帝王时代开局效果
+void EffectFunction10063(int playerId = -1)
+{
+    int playerCiv = xsGetPlayerCivilization(playerId);
+
+    switch (playerCiv)
+    {
+        case cIndians:
+        {
+            //  设置老练曼沙布达尔自动研究
+            ForceResearchTech(playerId, 3147);
+            break;
+        }
+        case cBengalis:
+        {
+            //  设置老练曼沙布达尔自动研究
+            ForceResearchTech(playerId, 3147);
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+
+//  后帝王时代开局效果
+void EffectFunction10064(int playerId = -1)
+{
+    int playerCiv = xsGetPlayerCivilization(playerId);
+
+    switch (playerCiv)
+    {
+        case cIndians:
+        {
+            //  设置精锐曼沙布达尔自动研究
+            ForceResearchTech(playerId, 3148);
+            break;
+        }
+        case cBengalis:
+        {
+            //  设置精锐曼沙布达尔自动研究
+            ForceResearchTech(playerId, 3148);
+            break;
+        }
+        default:
+            break;
+    }
 }

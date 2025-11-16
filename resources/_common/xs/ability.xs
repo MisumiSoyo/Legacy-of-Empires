@@ -5,89 +5,6 @@
 include "units.xs";
 
 
-void RecordKiller()
-{
-    //  为了避免频繁的resize导致卡顿, 先开好足够大小的数组
-    KilledUnits = xsArrayCreateInt(10000, 0, "KilledUnits");
-    KilledUnitsCount = 0;
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrResourceIn, 3084);
-    int i = 0;
-    int j = 0;
-    for (i = 0; <= xsGetNumPlayers())
-        for (j = 900; <= 964)
-            if (isClassOperable(j))	//这一步是判断种属是否可操作。当然也可以获取所有种属的单位，但我不确定会不会产生意料之外的问题
-                xsTask(j, cTaskTypeLoot, -1, i);
-}
-
-
-void AztecsKillEffect(int KillerPlayer = -1, int UnitID = -1, int TargetPlayer = -1, int TargetUnitID = -1)
-{
-    int CastleID = 82;
-    int KillsRequired = 7;
-    int JaguarWarriorID = 725;
-    if (xsGetTechState(3094, KillerPlayer) != cTechStateDone)
-        return;
-    int CurrentKill = xsPlayerAttribute(KillerPlayer, cAttributeAztecsKillCount) + 1;
-    if (CurrentKill == KillsRequired)
-    {
-        xsEffectAmount(cModResource, cAttributeSpawnCap, 0, 1, KillerPlayer);
-        xsEffectAmount(cSpawnUnit, JaguarWarriorID, CastleID, 1, KillerPlayer);
-        CurrentKill = 0;
-    }
-    SetResource(KillerPlayer, cAttributeAztecsKillCount, CurrentKill);
-}
-
-
-//  契丹金冠效果, 陆地军事单位可获取相当于击杀的敌方单位(除建筑) 12.5% 训练费用的资源
-void KhitansKillEffect(int KillerPlayer = -1, int UnitID = -1, int TargetPlayer = -1, int TargetUnitID = -1)
-{
-    float LootPercent = 0.125;
-
-    if (xsGetTechState(3093, KillerPlayer) != cTechStateDone)
-        return;
-    if ((isLandMilitaryUnit(UnitID) == false) || isBuildingUnit(TargetUnitID))
-        return;
-
-    int TargetObjectID = xsGetUnitObjectId(TargetUnitID);
-    float TargetFoodCost = xsGetObjectAttribute(TargetPlayer, TargetObjectID, cFoodCost);
-    float TargetWoodCost = xsGetObjectAttribute(TargetPlayer, TargetObjectID, cWoodCost);
-    float TargetGoldCost = xsGetObjectAttribute(TargetPlayer, TargetObjectID, cGoldCost);
-    float TargetStoneCost = xsGetObjectAttribute(TargetPlayer, TargetObjectID, cStoneCost);
-
-    xsEffectAmount(cModResource, cAttributeFood, 1, TargetFoodCost * LootPercent, KillerPlayer);
-    xsEffectAmount(cModResource, cAttributeWood, 1, TargetWoodCost * LootPercent, KillerPlayer);
-    xsEffectAmount(cModResource, cAttributeGold, 1, TargetGoldCost * LootPercent, KillerPlayer);
-    xsEffectAmount(cModResource, cAttributeStone, 1, TargetStoneCost * LootPercent, KillerPlayer);
-}
-
-
-//  击杀效果
-void KillEffect(int KillerPlayer = -1, int UnitID = -1, int TargetPlayer = -1, int TargetUnitID = -1)
-{
-    //xsChatData("KillerPlayer = " + KillerPlayer + " UnitID = " + UnitID + " TargetPlayer = " + TargetPlayer + " TargetUnitID = " + TargetUnitID);
-    int KillerCiv = xsGetPlayerCivilization(KillerPlayer);
-    int TargetCiv = xsGetPlayerCivilization(TargetPlayer);
-    switch (KillerCiv)
-    {
-        case cAztecs:
-        {
-            AztecsKillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
-            break;
-        }
-        case cKhitans:
-        {
-            KhitansKillEffect(KillerPlayer, UnitID, TargetPlayer, TargetUnitID);
-            break;
-        }
-        default:
-            break;
-    }
-}
-
-
 //  阿萨辛, 冲锋技能, 攻击 1 次即死亡
 void AssassinInit(int playerId = -1)
 {
@@ -402,7 +319,7 @@ void Shrine(int Time = 0, int playerId = 0)
     if (xsArrayGetSize(ShrineArray) == 0)
         return;
 
-    int SpawnProgress = xsGetUnitCharge(xsArrayGetInt(ShrineArray, 0));
+    float SpawnProgress = xsGetUnitCharge(xsArrayGetInt(ShrineArray, 0));
     int SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
     int SpawnCount = xsPlayerAttribute(playerId, cAttributeShrineSpawnCount);
 
@@ -412,8 +329,11 @@ void Shrine(int Time = 0, int playerId = 0)
         //  初始拥有 50% 充能
         if (SpawnCount > 1)
         {
-            SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
-            SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
+            if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)   //  需要人口空间
+            {
+                SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
+                SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
+            }
         }
         else
             SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge) / 2;
@@ -943,7 +863,6 @@ void AbilityApplier()
     if (run)
         return;
     run = true;
-    RecordKiller();
 
     int i = 0;
     for (i = -1; <= 0)

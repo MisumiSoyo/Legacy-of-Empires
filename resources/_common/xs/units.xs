@@ -12,8 +12,7 @@ bool isHouse(int ObjectID = -1)
 
 bool isCastle(int ObjectID = -1)
 {
-    int CastleID = 82;
-    return (ObjectID == CastleID);
+    return (ObjectID == 82);
 }
 
 
@@ -275,35 +274,6 @@ bool isObjectOperable(int ObjectID = -1)
 bool isUnitOperable(int UnitID = -1)
 {
     return (isClassOperable(xsGetUnitClass(UnitID)));
-}
-
-
-//  获取玩家所有单位的ID, 只考虑可操作类型
-int PlayerAllUnits(int playerId = -1, bool includeBuilding = false, int ArrayID = -1, bool includeFarm = False)
-{
-    int i = 0;
-    int ResultArray = 0;
-    if (ArrayID == -1)
-        ResultArray = NewArrayInt();
-    else
-    {
-        ResultArray = ArrayID;
-        xsArrayResizeInt(ResultArray, 0);
-    }
-    int TempArray = NewArrayInt();
-
-    for (i = 900; <= 964)
-        if (isClassOperable(i) || (includeFarm && (i == cFarmClass)))
-        {
-            if (isBuildingClass(i) && (includeBuilding == false))
-                continue;
-            TempArray = xsGetPlayerUnitIds(playerId, i, TempArray);
-            int TempResult = ResultArray;
-            ResultArray = MergeArrayInt(ResultArray, TempArray);
-            RecycleArrayInt(TempResult);
-        }
-    RecycleArrayInt(TempArray);
-    return (ResultArray);
 }
 
 

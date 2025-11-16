@@ -414,125 +414,32 @@ void QuickSortInt(int ArrayID = -1, int left = 0, int right = -1)
 }
 
 
-//  等待回收的数组id
-extern int RecycleArraysInt = 0;
-extern int RecycleArraysFloat = 0;
-extern int RecycleArraysVector = 0;
-
-
-//  数组复用机制
-
-//  ArrayRecycleInit()函数初始化待回收数组队列
-void ArrayRecycleInit()
-{
-    RecycleArraysInt = xsArrayCreateInt(0, 0);
-    RecycleArraysFloat = xsArrayCreateInt(0, 0);
-    RecycleArraysVector = xsArrayCreateInt(0, 0);
-}
-
-
-//  创建新数组: NewArrayInt()函数维护一个队列, 该队列存储已被丢弃的数组id, 当创建时进行复用
-int NewArrayInt(int size = 0, int defaultValue = 0)
-{
-    int NewArrayID = 0;
-    int i = 0;
-
-    if (xsArrayGetSize(RecycleArraysInt) > 0)  //有待回收的数组id可用
-    {
-        NewArrayID = ArrayFrontInt(RecycleArraysInt);
-        ArrayPopFrontInt(RecycleArraysInt);
-        xsArrayResizeInt(NewArrayID, size);
-        for (i = 0; < size)
-            xsArraySetInt(NewArrayID, i, defaultValue);
-        return (NewArrayID);
-    }
-    //没有待回收的数组id可用
-    NewArrayID = xsArrayCreateInt(size, defaultValue);
-    return (NewArrayID);
-}
-
-int NewArrayFloat(int size = 0, float defaultValue = 0.0)
-{
-    int NewArrayID = 0;
-    int i = 0;
-
-    if (xsArrayGetSize(RecycleArraysFloat) > 0)  //有待回收的数组id可用
-    {
-        NewArrayID = ArrayFrontInt(RecycleArraysFloat);
-        ArrayPopFrontInt(RecycleArraysFloat);
-        xsArrayResizeFloat(NewArrayID, size);
-        for (i = 0; < size)
-            xsArraySetFloat(NewArrayID, i, defaultValue);
-        return (NewArrayID);
-    }
-    //没有待回收的数组id可用
-    NewArrayID = xsArrayCreateFloat(size, defaultValue);
-    return (NewArrayID);
-}
-
-int NewArrayVector(int size = 0, vector defaultValue = vector(-1.0, -1.0, -1.0))
-{
-    int NewArrayID = 0;
-    int i = 0;
-
-    if (xsArrayGetSize(RecycleArraysVector) > 0)  //有待回收的数组id可用
-    {
-        NewArrayID = ArrayFrontInt(RecycleArraysVector);
-        ArrayPopFrontInt(RecycleArraysVector);
-        xsArrayResizeVector(NewArrayID, size);
-        for (i = 0; < size)
-            xsArraySetVector(NewArrayID, i, defaultValue);
-        return (NewArrayID);
-    }
-    //没有待回收的数组id可用
-    NewArrayID = xsArrayCreateVector(size, defaultValue);
-    return (NewArrayID);
-}
-
-
-//  RecycleArrayInt()函数将数组加入待回收的队列中
-void RecycleArrayInt(int ArrayID = -1)
-{
-    ArrayAppendInt(RecycleArraysInt, ArrayID);
-}
-
-void RecycleArrayFloat(int ArrayID = -1)
-{
-    ArrayAppendInt(RecycleArraysFloat, ArrayID);
-}
-
-void RecycleArrayVector(int ArrayID = -1)
-{
-    ArrayAppendInt(RecycleArraysVector, ArrayID);
-}
-
-
 //  二维数组的实现, 称为矩阵
 //  创建新矩阵
 int NewMatrixInt(int sizea = 0, int sizeb = 0, int defaultValue = 0)
 {
-    int NewMatrixID = NewArrayInt(sizea, 0);
+    int NewMatrixID = xsArrayCreateInt(sizea, 0);
     int i = 0;
     for (i = 0; < sizea)
-        xsArraySetInt(NewMatrixID, i, NewArrayInt(sizeb, defaultValue));
+        xsArraySetInt(NewMatrixID, i, xsArrayCreateInt(sizeb, defaultValue));
     return (NewMatrixID);
 }
 
 int NewMatrixFloat(int sizea = 0, int sizeb = 0, float defaultValue = 0.0)
 {
-    int NewMatrixID = NewArrayInt(sizea, 0);
+    int NewMatrixID = xsArrayCreateInt(sizea, 0);
     int i = 0;
     for (i = 0; < sizea)
-        xsArraySetInt(NewMatrixID, i, NewArrayFloat(sizeb, defaultValue));
+        xsArraySetInt(NewMatrixID, i, xsArrayCreateFloat(sizeb, defaultValue));
     return (NewMatrixID);
 }
 
 int NewMatrixVector(int sizea = 0, int sizeb = 0, vector defaultValue = vector(-1.0, -1.0, -1.0))
 {
-    int NewMatrixID = NewArrayInt(sizea, 0);
+    int NewMatrixID =xsArrayCreateInt(sizea, 0);
     int i = 0;
     for (i = 0; < sizea)
-        xsArraySetInt(NewMatrixID, i, NewArrayVector(sizeb, defaultValue));
+        xsArraySetInt(NewMatrixID, i, xsArrayCreateVector(sizeb, defaultValue));
     return (NewMatrixID);
 }
 
@@ -575,7 +482,7 @@ void MatrixSetVector(int MatrixID = -1, int indexa = 0, int indexb = 0, vector v
 void MatrixAppendRowInt(int MatrixID = -1, int ArrayID = -1)
 {
     if (ArrayID == -1)
-        ArrayAppendInt(MatrixID, NewArrayInt());
+        ArrayAppendInt(MatrixID, xsArrayCreateInt());
     else
         ArrayAppendInt(MatrixID, ArrayID);
 }
@@ -583,7 +490,7 @@ void MatrixAppendRowInt(int MatrixID = -1, int ArrayID = -1)
 void MatrixAppendRowFloat(int MatrixID = -1, int ArrayID = -1)
 {
     if (ArrayID == -1)
-        ArrayAppendInt(MatrixID, NewArrayFloat());
+        ArrayAppendInt(MatrixID, xsArrayCreateFloat());
     else
         ArrayAppendInt(MatrixID, ArrayID);
 }
@@ -591,7 +498,7 @@ void MatrixAppendRowFloat(int MatrixID = -1, int ArrayID = -1)
 void MatrixAppendRowVector(int MatrixID = -1, int ArrayID = -1)
 {
     if (ArrayID == -1)
-        ArrayAppendInt(MatrixID, NewArrayVector());
+        ArrayAppendInt(MatrixID, xsArrayCreateVector());
     else
         ArrayAppendInt(MatrixID, ArrayID);
 }
@@ -600,19 +507,16 @@ void MatrixAppendRowVector(int MatrixID = -1, int ArrayID = -1)
 //  在矩阵中删除一行, 并且这个数组会被回收
 void MatrixRemoveRowInt(int MatrixID = -1, int index = 0)
 {
-    RecycleArrayInt(xsArrayGetInt(MatrixID, index));
     ArrayRemoveInt(MatrixID, index);
 }
 
 void MatrixRemoveRowFloat(int MatrixID = -1, int index = 0)
 {
-    RecycleArrayFloat(xsArrayGetInt(MatrixID, index));
     ArrayRemoveInt(MatrixID, index);
 }
 
 void MatrixRemoveRowVector(int MatrixID = -1, int index = 0)
 {
-    RecycleArrayVector(xsArrayGetInt(MatrixID, index));
     ArrayRemoveInt(MatrixID, index);
 }
 
@@ -631,32 +535,6 @@ void MatrixInsertRowFloat(int MatrixID = -1, int index = 0, int ArrayID = -1)
 void MatrixInsertRowVector(int MatrixID = -1, int index = 0, int ArrayID = -1)
 {
     ArrayInsertInt(MatrixID, index, ArrayID);
-}
-
-
-//  回收矩阵的空间
-void RecycleMatrixInt(int MatrixID = -1)
-{
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(MatrixID))
-        RecycleArrayInt(xsArrayGetInt(MatrixID, i));
-    RecycleArrayInt(MatrixID);
-}
-
-void RecycleMatrixFloat(int MatrixID = -1)
-{
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(MatrixID))
-        RecycleArrayFloat(xsArrayGetInt(MatrixID, i));
-    RecycleArrayInt(MatrixID);
-}
-
-void RecycleMatrixVector(int MatrixID = -1)
-{
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(MatrixID))
-        RecycleArrayVector(xsArrayGetInt(MatrixID, i));
-    RecycleArrayInt(MatrixID);
 }
 
 
@@ -842,11 +720,13 @@ int MergeArrayInt(int ArrayID1 = -1, int ArrayID2 = -1)
 {
     int i = 0;
     int ResultArray = 0;
-    ResultArray = NewArrayInt();
-    for (i = 0; < xsArrayGetSize(ArrayID1))
-        ArrayAppendInt(ResultArray, xsArrayGetInt(ArrayID1, i));
-    for (i = 0; < xsArrayGetSize(ArrayID2))
-        ArrayAppendInt(ResultArray, xsArrayGetInt(ArrayID2, i));
+    int size1 = xsArrayGetSize(ArrayID1);
+    int size2 = xsArrayGetSize(ArrayID2);
+    ResultArray = xsArrayCreateInt(size1 + size2, 0);
+    for (i = 0; < size1)
+        xsArraySetInt(ResultArray, i, xsArrayGetInt(ArrayID1, i));
+    for (i = 0; < size2)
+        xsArraySetInt(ResultArray, i + size1, xsArrayGetInt(ArrayID2, i));
     return (ResultArray);
 }
 
@@ -854,11 +734,13 @@ int MergeArrayFloat(int ArrayID1 = -1, int ArrayID2 = -1)
 {
     int i = 0;
     int ResultArray = 0;
-    ResultArray = NewArrayFloat();
-    for (i = 0; < xsArrayGetSize(ArrayID1))
-        ArrayAppendFloat(ResultArray, xsArrayGetFloat(ArrayID1, i));
-    for (i = 0; < xsArrayGetSize(ArrayID2))
-        ArrayAppendFloat(ResultArray, xsArrayGetFloat(ArrayID2, i));
+    int size1 = xsArrayGetSize(ArrayID1);
+    int size2 = xsArrayGetSize(ArrayID2);
+    ResultArray = xsArrayCreateFloat(size1 + size2, 0.0);
+    for (i = 0; < size1)
+        xsArraySetFloat(ResultArray, i, xsArrayGetFloat(ArrayID1, i));
+    for (i = 0; < size2)
+        xsArraySetFloat(ResultArray, i + size1, xsArrayGetFloat(ArrayID2, i));
     return (ResultArray);
 }
 
@@ -866,10 +748,12 @@ int MergeArrayVector(int ArrayID1 = -1, int ArrayID2 = -1)
 {
     int i = 0;
     int ResultArray = 0;
-    ResultArray = NewArrayVector();
-    for (i = 0; < xsArrayGetSize(ArrayID1))
-        ArrayAppendVector(ResultArray, xsArrayGetVector(ArrayID1, i));
-    for (i = 0; < xsArrayGetSize(ArrayID2))
-        ArrayAppendVector(ResultArray, xsArrayGetVector(ArrayID2, i));
+    int size1 = xsArrayGetSize(ArrayID1);
+    int size2 = xsArrayGetSize(ArrayID2);
+    ResultArray = xsArrayCreateVector(size1 + size2);
+    for (i = 0; < size1)
+        xsArraySetVector(ResultArray, i, xsArrayGetVector(ArrayID1, i));
+    for (i = 0; < size2)
+        xsArraySetVector(ResultArray, i + size1, xsArrayGetVector(ArrayID2, i));
     return (ResultArray);
 }
