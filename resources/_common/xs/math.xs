@@ -458,7 +458,7 @@ void LaunchStinger(int playerId = -1, int ObjectID = -1)
 
 
 //  为单位关闭毒刺效果
-void RemoveStringer(int playerId = -1, int ObjectID = -1)
+void RemoveStinger(int playerId = -1, int ObjectID = -1)
 {
     if ((ObjectID >= 900) && (ObjectID <= 964))
     {
@@ -468,4 +468,31 @@ void RemoveStringer(int playerId = -1, int ObjectID = -1)
     int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
     ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 128);
     xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
+}
+
+
+//  计算单位总价
+float ObjectTotalCost(int playerId = -1, int ObjectID = -1)
+{
+    return (xsGetObjectAttribute(playerId, ObjectID, cFoodCost) + xsGetObjectAttribute(playerId, ObjectID, cWoodCost)
+            + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) + xsGetObjectAttribute(playerId, ObjectID, cStoneCost));
+}
+
+
+//  计算四舍五入
+float round(float number = 0.0)
+{
+    float IntegerPart = floor(number);
+    if (number - IntegerPart >= 0.5)
+        return (IntegerPart + 1);
+    return (IntegerPart);
+}
+
+
+int roundToInt(float number = 0.0)
+{
+    int IntegerPart = floor(number);
+    if (number - IntegerPart >= 0.5)
+        return (IntegerPart + 1);
+    return (IntegerPart);
 }

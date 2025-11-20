@@ -904,7 +904,7 @@
 
 
 ; ===================== 金玺诏书 =====================
-;   僧侣或十字军骑士数量多时研发
+;   僧侣, 条顿骑士或十字军骑士数量多时研发
 #load-if-defined TEUTONIC-CIV
 (defrule
     (can-research ri-die-goldene-bulle)
@@ -913,6 +913,15 @@
 =>
     (research ri-die-goldene-bulle)
 )
+
+; ===================== 骑士册封 =====================
+;   资源充足时研发
+(defrule
+    (can-research ri-accolade)
+=>
+    (research ri-accolade)
+)
+
 #end-if
 
 

@@ -20661,7 +20661,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 4,
+                    "Age ID": 3,
                     "Building ID": 209,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600082,
@@ -20670,6 +20670,36 @@
                     "Name": "Die Goldene Bulle",
                     "Name String ID": 500082,
                     "Node ID": 3130,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 33,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600114,
+                    "Link ID": 3130,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Die Goldene Bulle",
+                    "Name String ID": 500114,
+                    "Node ID": 3175,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
@@ -27398,7 +27428,7 @@
                     "Name": "Gambesons",
                     "Name String ID": 17450,
                     "Node ID": 875,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 116,
                     "Prerequisite IDs": [
@@ -27518,7 +27548,7 @@
                     "Name": "Hussar",
                     "Name String ID": 14661,
                     "Node ID": 441,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -27604,7 +27634,7 @@
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 800014,
                     "Link ID": 283,
-                    "Link Node Type": "Unit",
+                    "Link Node Type": "UnitUpgrade",
                     "Name": "Fire Lancer Cavalry",
                     "Name String ID": 700014,
                     "Node ID": 4018,
@@ -27625,7 +27655,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": -1,
+                    "Trigger Tech ID": 3026,
                     "Use Type": "Unit"
                 },
                 {
@@ -28028,7 +28058,7 @@
                     "Name": "Bombard Cannon",
                     "Name String ID": 14093,
                     "Node ID": 36,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Unit",
                     "Picture Index": 30,
                     "Prerequisite IDs": [
@@ -29290,7 +29320,7 @@
                     "Name": "Siege Engineers",
                     "Name String ID": 17378,
                     "Node ID": 377,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 101,
                     "Prerequisite IDs": [
@@ -29470,7 +29500,7 @@
                     "Name": "Treadmill Crane",
                     "Name String ID": 17054,
                     "Node ID": 54,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 60,
                     "Prerequisite IDs": [
@@ -29680,7 +29710,7 @@
                     "Name": "Hoardings",
                     "Name String ID": 17376,
                     "Node ID": 379,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -30760,7 +30790,7 @@
                     "Name": "Guilds",
                     "Name String ID": 17015,
                     "Node ID": 15,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 58,
                     "Prerequisite IDs": [
@@ -36426,7 +36456,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 3,
                     "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600090,
@@ -36438,6 +36468,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 109,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600116,
+                    "Link ID": 3139,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Elite Mercenary",
+                    "Name String ID": 500116,
+                    "Node ID": 3177,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 107,
                     "Prerequisite IDs": [
                         0,
                         0,

@@ -28,11 +28,11 @@ void AssassinInit(int playerId = -1)
     xsTask(AssassinID, cTaskTypeStinger, cGateClass, playerId);
     xsTask(AssassinID, cTaskTypeStinger, cFarmClass, playerId);
     xsTask(AssassinID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, -15);
+    xsTaskAmount(cTaskAttrWorkValue1, -20);
     xsTaskAmount(cTaskAttrSearchWaitTime, 120.00002);
     xsTaskAmount(cTaskAttrWorkRange, 1);
     xsTask(AssassinID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 15);
+    xsTaskAmount(cTaskAttrWorkValue1, 20);
     xsTask(AssassinID, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(AssassinID, cTaskTypeStinger, cWallClass, playerId);
     xsTask(AssassinID, cTaskTypeStinger, cGateClass, playerId);
@@ -519,39 +519,8 @@ int RecruitUnit(int index = 0)
             return (1658);  //  萨金特卫兵
         case 11:
             return (1228);  //  怯薛
-    }
-    return (-1);
-}
-
-
-int RecruitEliteUnit(int index = 0)
-{
-    switch (index)
-    {
-        case 0:
-            return (1227);  //  龙骑兵
-        case 1:
-            return (1657);  //  马上轻装兵
-        case 2:
-            return (757);  //   答剌罕骑兵
-        case 3:
-            return (555);  //    近卫军
-        case 4:
-            return (1233);  //  钦察
-        case 5:
-            return (1009);  //  骆驼射手
-        case 6:
-            return (1805);  //  莫纳斯帕
-        case 7:
-            return (531);  //   掷斧兵
-        case 8:
-            return (558);  //   战象
-        case 9:
-            return (773);  //   西班牙征服者
-        case 10:
-            return (1659);  //  萨金特卫兵
-        case 11:
-            return (1230);  //  怯薛
+        default:
+            return (-1);
     }
     return (-1);
 }
@@ -563,26 +532,26 @@ void EffectFunction10048(int playerId = -1)
     int AgeID = xsPlayerAttribute(playerId, cAttributeCurrentAge);
 
     int temp = xsGetRandomNumberLH(0, 100);
-    float RecruitValue = 350.0;
-    if (temp >= 30)
-        RecruitValue = 400.0;
-    if (temp >= 60)
-        RecruitValue = 450.0;
-    if (temp >= 80)
-        RecruitValue = 550.0;
-    if (temp >= 92)
-        RecruitValue = 650.0;
-    if (AgeID == 2)
-        RecruitValue = RecruitValue * 475.0 / 400;
-    if (AgeID == 3)
-        RecruitValue = RecruitValue * 550.0 / 400;
+    float RecruitValue = 0;
+    if (temp <= 30)
+        RecruitValue = xsGetRandomNumberMax(25) + 400;
+    else
+        if (temp <= 60)
+            RecruitValue = xsGetRandomNumberMax(50) + 425;
+        else
+            if (temp <= 80)
+                RecruitValue = xsGetRandomNumberMax(50) + 475;
+            else
+                if (temp <= 92)
+                    RecruitValue = xsGetRandomNumberMax(50) + 525;
+                else
+                    RecruitValue = xsGetRandomNumberMax(50) + 575;
 
     temp = xsGetRandomNumberLH(0, 12);
     int RecruitUnitID = RecruitUnit(temp);
-    if (AgeID == 3)
-        RecruitUnitID = RecruitEliteUnit(temp);
-    int SpawnNum = RecruitValue / (xsGetObjectAttribute(playerId, RecruitUnitID, cFoodCost) + xsGetObjectAttribute(playerId, RecruitUnitID, cWoodCost)
-                                   + xsGetObjectAttribute(playerId, RecruitUnitID, cGoldCost));
+    if (temp == 11) //  怯薛
+        RecruitValue = RecruitValue * 4.0 / 3;
+    int SpawnNum = roundToInt(RecruitValue / ObjectTotalCost(playerId, RecruitUnitID));
     SpawnUnit(playerId, RecruitUnitID, 109, SpawnNum, 1);
 }
 
@@ -776,11 +745,14 @@ void MulBarrackUnitBonusDamage(int playerId = -1, float value = 0.0)
     MulAttack(playerId, 93, -1, value);
     MulAttack(playerId, 358, -1, value);
     MulAttack(playerId, 359, -1, value);
+    MulAttack(playerId, EagleScoutID, -1, value);
+    MulAttack(playerId, EagleWarriorID, -1, value);
+    MulAttack(playerId, EliteEagleWarriorID, -1, value);
     MulAttack(playerId, 892, -1, value);
     MulAttack(playerId, 1786, -1, value);
     MulAttack(playerId, 1787, -1, value);
     MulAttack(playerId, 1788, -1, value);
-    MulAttack(playerId, 882, -1, value);
+    MulAttack(playerId, CondottieroID, -1, value);
     MulAttack(playerId, RungScoutID, -1, value);
     MulAttack(playerId, InvisibleRungScoutID, -1, value);
     MulAttack(playerId, EliteRungScoutID, -1, value);
@@ -793,11 +765,14 @@ void MulBarrackUnitBonusDamage(int playerId = -1, float value = 0.0)
     MulAttack(playerId, 93, cDamageClassMelee, 1.0 / value);
     MulAttack(playerId, 358, cDamageClassMelee, 1.0 / value);
     MulAttack(playerId, 359, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, EagleScoutID, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, EagleWarriorID, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, EliteEagleWarriorID, cDamageClassMelee, 1.0 / value);
     MulAttack(playerId, 892, cDamageClassMelee, 1.0 / value);
     MulAttack(playerId, 1786, cDamageClassMelee, 1.0 / value);
     MulAttack(playerId, 1787, cDamageClassMelee, 1.0 / value);
     MulAttack(playerId, 1788, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 882, cDamageClassMelee, 1.0 / value);
+    MulAttack(playerId, CondottieroID, cDamageClassMelee, 1.0 / value);
     MulAttack(playerId, RungScoutID, 1.0 / value);
     MulAttack(playerId, InvisibleRungScoutID, 1.0 / value);
     MulAttack(playerId, EliteRungScoutID, 1.0 / value);
@@ -853,6 +828,61 @@ void KhanInit(int playerId = -1)
     SetAttribute(playerId, KhanID, cRechargeRate, 1.0 / 120);
     SetAttribute(playerId, KhanID, cChargeEvent, 15);
     SetAttribute(playerId, KhanID, cChargeType, -3);
+}
+
+
+//  苏丹王效果应用于大象单位
+void SultansApplier(int playerId = -1, int ClassTarget = -1)
+{
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 9.0 * 60);
+    xsTask(cInfantryClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cCavalryClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cScoutCavalryClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 6.0 * 60);
+    xsTask(cArcherClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cCavalryArcherClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cConquistadorClass, cTaskTypeStinger, ClassTarget, playerId);
+    xsTask(cHandCannoneerClass, cTaskTypeStinger, ClassTarget, playerId);
+}
+
+
+//  蒙古和平效果
+void PaxMongoliaApplier(int playerId = -1, int ClassTarget = -1)
+{
+    xsTaskAmount(cTaskAttrWorkValue1, 2.0 * 60);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0 - 2.0 * 60);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    LaunchStinger(playerId, ClassTarget);
+}
+
+
+void TributarySystemApplier(int playerId = -1, int ObjectTarget = -1, int TrainButtonID = -1, int HotKeyID = -1)
+{
+    EnableObject(playerId, ObjectTarget);
+    SetAttribute(playerId, ObjectTarget, cTrainButton, TrainButtonID);
+    SetAttribute(playerId, ObjectTarget, cHotkeyId, HotKeyID);
+}
+
+
+
+//  朝贡体系
+void EffectFunction10022(int playerId = -1)
+{
+    TributarySystemApplier(playerId, EliteMangudaiID, 21, 16079);
+    TributarySystemApplier(playerId, EliteRattanArcherID, 22, 16068);
+    TributarySystemApplier(playerId, EliteTarkanID, 23, 16085);
+    TributarySystemApplier(playerId, EliteWarWagonID, 26, 18022);
+    TributarySystemApplier(playerId, EliteLiaoDaoID, 27, 18045);
+    TributarySystemApplier(playerId, EliteIronPagodaID, 28, 18008);
+    MulAttribute(playerId, EliteMangudaiID, cAttackReloadTime, 1.0 / 1.125);
+    MulAttribute(playerId, EliteWarWagonID, cWoodCost, 0.75);
+    ModAttribute(playerId, EliteLiaoDaoID, cDamageReflection, 0.125);
+    MulAttribute(playerId, EliteIronPagodaID, cAttackReloadTime, 1.0 / 1.1);
 }
 
 

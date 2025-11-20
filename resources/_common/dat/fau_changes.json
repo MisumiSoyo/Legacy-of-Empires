@@ -975,6 +975,14 @@
             "tech_id": 3130,
             "building_id": 209,
             "Name": "Die Goldene Bulle",
+            "RequiredAge": 3
+        },
+        {
+            "note": "骑士册封",
+            "civilizations": "Teutons",
+            "tech_id": 3175,
+            "building_id": 209,
+            "Name": "Accolade",
             "RequiredAge": 4
         },
         {
@@ -1085,7 +1093,16 @@
             "civilizations": "Byzantines",
             "tech_id": 3139,
             "building_id": 109,
-            "RequiredAge": 2
+            "Name": "Recruit Mercenary",
+            "RequiredAge": 3
+        },
+        {
+            "note": "拜占庭精锐雇佣军",
+            "civilizations": "Byzantines",
+            "tech_id": 3177,
+            "building_id": 109,
+            "Name": "Elite Mercenary",
+            "RequiredAge": 4
         },
         {
             "note": "宫殿掠夺",
@@ -1395,6 +1412,70 @@
             "building_id": 209,
             "Name": "Camel Lancer",
             "RequiredAge": 4
+        },
+        {
+            "note": "中国启用软甲",
+            "civilizations": "Chinese",
+            "tech_id": 875,
+            "building_id": 12,
+            "Name": "Gambesons",
+            "RequiredAge": 3
+        },
+        {
+            "note": "中国启用围墙",
+            "civilizations": "Chinese",
+            "tech_id": 379,
+            "building_id": 82,
+            "Name": "Hoardings",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用翼骑兵",
+            "civilizations": "Chinese",
+            "tech_id": 428,
+            "building_id": 101,
+            "Name": "Hussar",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用翼骑兵",
+            "civilizations": "Chinese",
+            "unit_id": 441,
+            "building_id": 101,
+            "Name": "Hussar",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用手推炮",
+            "civilizations": "Chinese",
+            "unit_id": 36,
+            "building_id": 49,
+            "Name": "Bombard Cannon",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用脚踏起重机",
+            "civilizations": "Chinese",
+            "tech_id": 54,
+            "building_id": 209,
+            "Name": "Treadmill Crane",
+            "RequiredAge": 3
+        },
+        {
+            "note": "中国启用行会",
+            "civilizations": "Chinese",
+            "tech_id": 15,
+            "building_id": 84,
+            "Name": "Guilds",
+            "RequiredAge": 3
+        },
+        {
+            "note": "中国启用攻城技师",
+            "civilizations": "Chinese",
+            "tech_id": 377,
+            "building_id": 209,
+            "Name": "Siege Engineers",
+            "RequiredAge": 3
         }
     ]
 }

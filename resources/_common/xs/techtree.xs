@@ -27,6 +27,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, 85);   //  启用火枪手
             EnableTech(playerId, 188);  //  启用手推炮
             EnableTech(playerId, 376);  //  启用精锐炮舰
+            EnableTech(playerId, 875);  //  启用软甲
+            EnableTech(playerId, 379);  //  启用围墙
+            EnableTech(playerId, 428);  //  启用翼骑兵
             break;
         }
         case cByzantines:
@@ -66,12 +69,12 @@ void EffectFunction10001(int playerId = -1)
         }
         case cBurmese:
         {
-            EnableTech(playerId, 85); //启用火枪手
+            EnableTech(playerId, 85); //    启用火枪手
             break;
         }
         case cBulgarians:
         {
-            EnableTech(playerId, 264);    //启用冠军剑士
+            EnableTech(playerId, 264);    //    启用冠军剑士
             break;
         }
         case cCumans:
@@ -115,7 +118,9 @@ void EffectFunction10002(int playerId = -1)
             MulAttribute(playerId, cTradeBoatClass, cTrainTime, 2.0 / 3);
             MulAttribute(playerId, cTradeCartClass, cTrainTime, 2.0 / 3);
             //  中国文明加成, 科技折扣
-            SetResource(playerId, cAttributeResearchCostMod, 0.95);
+            SetResource(playerId, cAttributeResearchCostMod, 0.9);
+            //  中国开局不再减少 50 木材
+            ModResource(playerId, cAttributeStartingWood, 50);
             break;
         }
         case cByzantines:
@@ -164,10 +169,9 @@ void EffectFunction10002(int playerId = -1)
             //  蒙古文明加成, 黑暗时代无需前置兵营即可建造马厩, 并且可以训练斥候骑兵
             ForceResearchTech(playerId, 25);
             ForceResearchTech(playerId, 204);
-            //  蒙古移除骑士系, 封建时代起获得怯薛, 精锐怯薛可于城堡时代升级, 并且升级费用 -33%
+            //  蒙古移除骑士系, 封建时代起获得怯薛, 精锐怯薛可于城堡时代升级
             DisableTech(playerId, 166);
             DisableTech(playerId, 209);
-            xsEffectAmount(cModifyTech, 680, cAttrMulAllCosts, 2.0 / 3, playerId);
             break;
         }
         case cCelts:
@@ -382,8 +386,7 @@ void EffectFunction10002(int playerId = -1)
             DisableTech(playerId, 166);
             DisableTech(playerId, 209);
             //  鞑靼文明加成, 怯薛攻击单位产生黄金
-            SetResource(playerId, 213, 100);
-            //  鞑靼文明加成, 怯薛可在城堡以 80 黄金的费用快速训练
+            SetResource(playerId, 213, 75);            
             break;
         }
         case cCumans:
@@ -628,7 +631,7 @@ void EffectFunction10024(int playerId = -1)
         case cChinese:
         {
             //  中国文明加成, 科技折扣
-            SetResource(playerId, cAttributeResearchCostMod, 0.9);
+            SetResource(playerId, cAttributeResearchCostMod, 0.85);
             break;
         }
         case cByzantines:
@@ -639,9 +642,6 @@ void EffectFunction10024(int playerId = -1)
             MulAttribute(playerId, cGateClass, cHitpoints, 1.15 / 1.19999);
             MulAttribute(playerId, cFarmClass, cHitpoints, 1.15 / 1.19999);
             MulAttribute(playerId, cTowerClass, cHitpoints, 1.15 / 1.19999);
-            //  招募佣兵
-            SetTechStack(playerId, 3139, 32767);
-            SetResource(playerId, cAttributeRecruitMercenaryCost, 60);
             break;
         }
         case cPersians:
@@ -695,6 +695,7 @@ void EffectFunction10024(int playerId = -1)
         {
             //  曼沙布达尔骑兵替代轻骑兵
             xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
+            break;
         }
         case cIncas:
         {
@@ -720,11 +721,13 @@ void EffectFunction10024(int playerId = -1)
             //  达罗毗荼文明加成, 纵火, 护卫和软甲可提前一个时代研究
             ForceEnableTech(playerId, 215);
             ForceEnableTech(playerId, 875);
+            break;
         }
         case cBengalis:
         {
             //  曼沙布达尔骑兵替代轻骑兵
             xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
+            break;
         }
         case cRomans:
         {
@@ -800,7 +803,7 @@ void EffectFunction10025(int playerId = -1)
         case cChinese:
         {
             //  中国文明加成, 科技折扣
-            SetResource(playerId, cAttributeResearchCostMod, 0.85);
+            SetResource(playerId, cAttributeResearchCostMod, 0.8);
             //  启用猛火油柜
             EnableObject(playerId, FlameThrowerID);
             break;
@@ -810,15 +813,18 @@ void EffectFunction10025(int playerId = -1)
             //  启用瓦兰吉卫队
             xsEffectAmount(cEnableObject, VarangianID, 1, 0, playerId);
             //  拜占庭建筑生命值加成调整
-            MulAttribute(playerId, cBuildingClass, cHitpoints, 1.2 / 1.15 / 1.0833);
-            MulAttribute(playerId, cWallClass, cHitpoints, 1.2 / 1.15 / 1.0833);
-            MulAttribute(playerId, cGateClass, cHitpoints, 1.2 / 1.15 / 1.0833);
-            MulAttribute(playerId, cFarmClass, cHitpoints, 1.2 / 1.15 / 1.0833);
-            MulAttribute(playerId, cTowerClass, cHitpoints, 1.2 / 1.15 / 1.0833);
+            MulAttribute(playerId, cBuildingClass, cHitpoints, 1.2 / 1.25);
+            MulAttribute(playerId, cWallClass, cHitpoints, 1.2 / 1.25);
+            MulAttribute(playerId, cGateClass, cHitpoints, 1.2 / 1.25);
+            MulAttribute(playerId, cFarmClass, cHitpoints, 1.2 / 1.25);
+            MulAttribute(playerId, cTowerClass, cHitpoints, 1.2 / 1.25);
             //  启用喷火车
             EnableObject(playerId, FlameThrowerID);
             SetAttribute(playerId, FlameThrowerID, cNameId, 700042);
             SetAttribute(playerId, FlameThrowerID, cDescriptionId, 701042);
+            //  招募佣兵
+            SetTechStack(playerId, 3139, 32767);
+            SetResource(playerId, cAttributeRecruitMercenaryCost, 75);
             break;
         }
         case cPersians:
@@ -927,6 +933,7 @@ void EffectFunction10025(int playerId = -1)
         {
             //  启用东吁勇士
             EnableObject(playerId, ToungooWarriorID);
+            break;
         }
         case cVietnamese:
         {
@@ -938,6 +945,9 @@ void EffectFunction10025(int playerId = -1)
         {
             //  鞑靼文明加成, 骑射手远程护甲增加
             ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
+            //  启用可汗
+            SetAttribute(playerId, KhanID, cAvailableFlag, 1);
+            SetAttribute(playerId, KhanID, cDisabledFlag, 4);
             break;
         }
         case cCumans:
@@ -999,9 +1009,6 @@ void EffectFunction10025(int playerId = -1)
             break;
     }
 
-    //  木制要塞升级
-    MulAttribute(playerId, WoodenFortressID, cHitpoints, 4.0 / 3);
-    ModAttack(playerId, WoodenFortressID, cDamageClassPierce, 1);
     //  坞堡升级
     ModAttribute(playerId, WubaoID, cHitpoints, 300);
     //  小艇升级
@@ -1064,7 +1071,7 @@ void EffectFunction10026(int playerId = -1)
         case cChinese:
         {
             //  中国文明加成, 科技折扣
-            SetResource(playerId, cAttributeResearchCostMod, 0.8);
+            SetResource(playerId, cAttributeResearchCostMod, 0.75);
             break;
         }
         case cByzantines:
@@ -1176,9 +1183,6 @@ void EffectFunction10026(int playerId = -1)
     ModAttribute(playerId, AssassinID, cHitpoints, 15);
     ModAttack(playerId, AssassinID, cDamageClassMelee, 15);
     ModAttribute(playerId, AssassinID, cShownAttack, 15);
-    //  木制要塞升级
-    MulAttribute(playerId, WoodenFortressID, cHitpoints, 1.25);
-    ModAttack(playerId, WoodenFortressID, cDamageClassPierce, 1);
     //  坞堡升级
     ModAttribute(playerId, WubaoID, cHitpoints, 300);
     //  马尼拉大帆船升级

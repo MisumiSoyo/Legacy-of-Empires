@@ -863,4 +863,5 @@ void EffectFunction1004(int playerId = -1)
 }
 
 
+include "custom-constants.xs";
 include "custom-effects.xs";

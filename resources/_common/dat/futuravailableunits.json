@@ -7281,8 +7281,14 @@
                         "ID": 3078
                     },
                     {
-                        "RequiredAge": 2,
+                        "Name": "Recruit Mercenary",
+                        "RequiredAge": 3,
                         "ID": 3139
+                    },
+                    {
+                        "Name": "Elite Mercenary",
+                        "RequiredAge": 4,
+                        "ID": 3177
                     }
                 ],
                 "Units": [
@@ -8740,6 +8746,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Gambesons",
+                        "RequiredAge": 3,
+                        "ID": 875
                     }
                 ],
                 "Units": [
@@ -8823,6 +8834,11 @@
                         "Name": "Fire Lancer Cavalry",
                         "RequiredAge": 4,
                         "ID": 3026
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 428
                     }
                 ],
                 "Units": [
@@ -8845,6 +8861,11 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 441
                     }
                 ]
             },
@@ -9225,6 +9246,16 @@
                         "Name": "Political Reform",
                         "RequiredAge": 3,
                         "ID": 3096
+                    },
+                    {
+                        "Name": "Treadmill Crane",
+                        "RequiredAge": 3,
+                        "ID": 54
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 3,
+                        "ID": 377
                     }
                 ]
             },
@@ -9311,6 +9342,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hoardings",
+                        "RequiredAge": 4,
+                        "ID": 379
                     }
                 ],
                 "Units": [
@@ -9524,6 +9560,11 @@
                         "ID": 48,
                         "Name": "Caravan",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Guilds",
+                        "RequiredAge": 3,
+                        "ID": 15
                     }
                 ],
                 "Units": [
@@ -35468,8 +35509,13 @@
                     },
                     {
                         "Name": "Die Goldene Bulle",
-                        "RequiredAge": 4,
+                        "RequiredAge": 3,
                         "ID": 3130
+                    },
+                    {
+                        "Name": "Accolade",
+                        "RequiredAge": 4,
+                        "ID": 3175
                     }
                 ]
             },
