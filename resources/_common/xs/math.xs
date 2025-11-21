@@ -258,6 +258,20 @@ void ModAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int v
 }
 
 
+//  为单位修改攻击加成
+void ModAttackBonus(int playerId = -1, int ObjectID = -1, float value = -1, bool ignoreNone = false)
+{
+    int i = 0;
+    for (i = 0; < TotalAttackForms)
+        if ((i != 3) && (i != 4) && (i != 39))
+            if ((ignoreNone == false) || (xsGetObjectAttribute(playerId, ObjectID, cAttack, i)) > 0)
+                if (value > 0)
+                    xsEffectAmount(cAddAttribute, ObjectID, cAttack, value + i * 256, playerId);
+                else
+                    xsEffectAmount(cAddAttribute, ObjectID, cAttack, value - i * 256, playerId);
+}
+
+
 //  为单位修改护甲
 void ModArmor(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int value = -1)
 {
@@ -274,11 +288,12 @@ void MulAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float
     if (DamageClass == -1)
     {
         int i = 0;
-        for (i = 0; <= TotalAttackForm)
-            if (value > 0)
-                xsEffectAmount(cMulAttribute, ObjectID, cAttack, value * 100 + i * 256, playerId);
-            else
-                xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - i * 256 + value * 100, playerId);
+        for (i = 0; < TotalAttackForms)
+            if (i != 39)
+                if (value > 0)
+                    xsEffectAmount(cMulAttribute, ObjectID, cAttack, value * 100 + i * 256, playerId);
+                else
+                    xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - i * 256 + value * 100, playerId);
         return;
     }
     if (value > 0)
@@ -288,13 +303,26 @@ void MulAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float
 }
 
 
+//  为单位倍乘攻击加成
+void MulAttackBonus(int playerId = -1, int ObjectID = -1, float value = -1)
+{
+    int i = 0;
+    for (i = 0; < TotalAttackForms)
+        if ((i != 3) && (i != 4) && (i != 39))
+            if (value > 0)
+                xsEffectAmount(cMulAttribute, ObjectID, cAttack, value * 100 + i * 256, playerId);
+            else
+                xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - i * 256 + value * 100, playerId);
+}
+
+
 //  为单位倍乘护甲
 void MulArmor(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float value = -1)
 {
     if (DamageClass == -1)
     {
         int i = 0;
-        for (i = 0; <= TotalAttackForm)
+        for (i = 0; < TotalAttackForms)
             if (value > 0)
                 xsEffectAmount(cMulAttribute, ObjectID, cArmor, value * 100 + i * 256, playerId);
             else

@@ -3,16 +3,16 @@ include "techtree.xs";
 
 
 
-// Effect of Mongols Civ Bonus
+//  Effect of Mongols Civ Bonus
 void CavalryGenerateGoldFromBuilding(int ClassTarget = -1, int playerId = -1)
 {
-  xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-  xsTaskAmount(cTaskAttrResourceOut, 3);
-  xsTaskAmount(cTaskAttrProductivityResource, cAttributeCavalryLootBuildingGoldProductivity);
-  xsTaskAmount(cTaskAttrUnusedResource, 3);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrResourceOut, 3);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeCavalryLootBuildingGoldProductivity);
+    xsTaskAmount(cTaskAttrUnusedResource, 3);
 
-  xsTask(ClassTarget, cTaskTypeGenerateResources, cBuildingClass, playerId);
-  xsTask(ClassTarget, cTaskTypeGenerateResources, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeGenerateResources, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeGenerateResources, cTowerClass, playerId);
 }
 
 
@@ -23,11 +23,11 @@ void EffectFunction10003(int playerId = -1)
     CavalryGenerateGoldFromBuilding(cScoutCavalryClass);
     CavalryGenerateGoldFromBuilding(cCavalryClass);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 10);
+    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 25);
 }
 
 
-//Frozen Sea Dominance Aura Adder
+//  Frozen Sea Dominance Aura Adder
 void FrozenSeaDominanceAura(int ClassTarget = -1, int playerId = -1)
 {
     xsTaskAmount(cTaskAttrWorkValue1, 0.047619);
@@ -676,34 +676,6 @@ void EffectFunction10047(int playerId = -1)
 }
 
 
-//  10057 - 波希米亚, 基础攻击加成 25% → 15%
-void EffectFunction10057(int playerId = -1)
-{
-    MulBarrackUnitBonusDamage(playerId, 1.15 / 1.25);
-}
-
-
-//  10058 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +15% 附加伤害
-void EffectFunction10058(int playerId = -1)
-{
-    MulBarrackUnitBonusDamage(playerId, 1.3 / 1.15);
-}
-
-
-//  10059 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +15% 附加伤害
-void EffectFunction10059(int playerId = -1)
-{
-    MulBarrackUnitBonusDamage(playerId, 1.45 / 1.3);
-}
-
-
-//  10060 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +15% 附加伤害
-void EffectFunction10060(int playerId = -1)
-{
-    MulBarrackUnitBonusDamage(playerId, 1.6 / 1.45);
-}
-
-
 //  10065 - 苏丹王
 void EffectFunction10065(int playerId = -1)
 {
@@ -897,33 +869,15 @@ void EffectFunction10073(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
-    PaxMongoliaApplier(playerId, MilitiaID);
-    PaxMongoliaApplier(playerId, ManAtArmID);
-    PaxMongoliaApplier(playerId, LongSwordmanID);
-    PaxMongoliaApplier(playerId, TwoHandedSwordmanID);
-    PaxMongoliaApplier(playerId, ChampionID);
-    PaxMongoliaApplier(playerId, SpearmanID);
-    PaxMongoliaApplier(playerId, PikemanID);
-    PaxMongoliaApplier(playerId, HalberdierID);
-    PaxMongoliaApplier(playerId, FireLancerID);
-    PaxMongoliaApplier(playerId, EliteFireLancerID);
-    PaxMongoliaApplier(playerId, CondottieroID);
-    PaxMongoliaApplier(playerId, HeavyPikemanID);
-    PaxMongoliaApplier(playerId, EagleScoutID);
-    PaxMongoliaApplier(playerId, EagleWarriorID);
-    PaxMongoliaApplier(playerId, EliteEagleWarriorID);
-    PaxMongoliaApplier(playerId, ArcherID);
-    PaxMongoliaApplier(playerId, CrossbowmanID);
-    PaxMongoliaApplier(playerId, ArbalesterID);
-    PaxMongoliaApplier(playerId, SkirmisherID);
-    PaxMongoliaApplier(playerId, EliteSkirmisherID);
-    PaxMongoliaApplier(playerId, ImperialSkirmisherID);
-    PaxMongoliaApplier(playerId, CavalryArcherID);
-    PaxMongoliaApplier(playerId, HeavyCavalryArcherID);
-    PaxMongoliaApplier(playerId, EarlyCavalryArcherID);
-    PaxMongoliaApplier(playerId, HandCannoneerID);
-    PaxMongoliaApplier(playerId, GenitourID);
-    PaxMongoliaApplier(playerId, EliteGenitourID);
+    int i = 0;
+    int TrainLocation = 0;
+    for (i = 0; < TotalObjects)
+        if ((i < 900) || (i > 964))
+        {
+            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
+            if ((TrainLocation == 12) || (TrainLocation == 87))
+                PaxMongoliaApplier(playerId, i);
+        }
     
     xsResetTaskAmount();
 }

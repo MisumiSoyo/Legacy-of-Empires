@@ -39,10 +39,12 @@ extern const int cAttributeChineseTCCount = 440;    //  中国城镇中心数量
 
 
 //  单位ID定义
-extern const int TotalObjects = 4060;
+extern const int TotalObjects = 4061;
 extern const int AssassinID = 4001;
 extern const int StreltsyID = 4002;
 extern const int KhevsuretiWarriorID = 4003;
+extern const int EliteKhevsuretiWarriorID = 4004;
+extern const int HandcannonAshigaruID = 4005;
 extern const int YumiAshigaruID = 4006;
 extern const int VeteranYumiAshigaruID = 4007;
 extern const int EliteYumiAshigaruID = 4008;
@@ -55,6 +57,7 @@ extern const int EliteSipahiID = 4015;
 extern const int WubaoID = 4016;
 extern const int EarlyCavalryArcherID = 4017;
 extern const int ParthianCavalryArcherID = 4020;
+extern const int EliteParthianCavalryArcherID = 4021;
 extern const int InvisiblePCAID = 4022;
 extern const int InvisibleEPCAID = 4023;
 extern const int ChanyuID = 4024;
@@ -103,7 +106,7 @@ extern const int KnightID = 38;
 extern const int CavalryArcherID = 39;
 extern const int CastleID = 82;
 extern const int MilitiaID = 74;
-extern const int ManAtArmID = 75;
+extern const int ManAtArmsID = 75;
 extern const int LongSwordmanID = 77;
 extern const int SpearmanID = 93;
 extern const int ImperialCamelRiderID = 207;
@@ -175,7 +178,7 @@ extern const int EliteWhiteFeatherGuardID = 1961;
 
 
 //  攻击类型定义
-extern const int TotalAttackForm = 105;
+extern const int TotalAttackForms = 106;
 extern const int cDamageClassMonastery = 101;
 extern const int cDamageClassSiegeWeaponAttack = 104;
 extern const int cDamageClassLightCavalry = 105;

@@ -444,8 +444,8 @@ void EffectFunction10002(int playerId = -1)
         }
         case cBohemians:
         {
-            //  波希米亚文明加成的基础攻击加成 25% → 15%
-            SetResource(playerId, cAttributeMaintenance, 10057);
+            //  波希米亚靶场单位也能享受攻击加成
+            MulArcheryRangeUnitAttackBonus(playerId, 1.25);
             break;
         }
         case cDravidians:

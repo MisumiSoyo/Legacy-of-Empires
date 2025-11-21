@@ -559,7 +559,7 @@ void EffectFunction10048(int playerId = -1)
 void BengalisCavalryVSSkirmisher(int playerId = -1)
 {
     int i = 0;
-    for (i = 0; <= TotalObjects)
+    for (i = 0; < TotalObjects)
         if ((i < 900) || (i > 964))
         {
             int ClassID = xsGetObjectClass(playerId, i);
@@ -734,49 +734,89 @@ void KeshikStingerCastleAgeUpgrade(int playerId = -1)
 }
 
 
-//  波希米亚, 单位附加伤害改动
-void MulBarrackUnitBonusDamage(int playerId = -1, float value = 0.0)
+//  波希米亚, 兵营单位附加伤害改动
+void ModBarrackUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = false)
 {
-    MulAttack(playerId, 74, -1, value);
-    MulAttack(playerId, 75, -1, value);
-    MulAttack(playerId, 77, -1, value);
-    MulAttack(playerId, 473, -1, value);
-    MulAttack(playerId, 567, -1, value);
-    MulAttack(playerId, 93, -1, value);
-    MulAttack(playerId, 358, -1, value);
-    MulAttack(playerId, 359, -1, value);
-    MulAttack(playerId, EagleScoutID, -1, value);
-    MulAttack(playerId, EagleWarriorID, -1, value);
-    MulAttack(playerId, EliteEagleWarriorID, -1, value);
-    MulAttack(playerId, 892, -1, value);
-    MulAttack(playerId, 1786, -1, value);
-    MulAttack(playerId, 1787, -1, value);
-    MulAttack(playerId, 1788, -1, value);
-    MulAttack(playerId, CondottieroID, -1, value);
-    MulAttack(playerId, RungScoutID, -1, value);
-    MulAttack(playerId, InvisibleRungScoutID, -1, value);
-    MulAttack(playerId, EliteRungScoutID, -1, value);
-    MulAttack(playerId, InvisibleEliteRungScoutID, -1, value);
-    MulAttack(playerId, 74, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 75, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 77, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 473, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 567, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 93, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 358, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 359, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, EagleScoutID, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, EagleWarriorID, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, EliteEagleWarriorID, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 892, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 1786, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 1787, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, 1788, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, CondottieroID, cDamageClassMelee, 1.0 / value);
-    MulAttack(playerId, RungScoutID, 1.0 / value);
-    MulAttack(playerId, InvisibleRungScoutID, 1.0 / value);
-    MulAttack(playerId, EliteRungScoutID, 1.0 / value);
-    MulAttack(playerId, InvisibleEliteRungScoutID, 1.0 / value);
+    int i = 0;
+    int TrainLocation = 0;
+    for (i = 0; < TotalObjects)
+        if ((i < 900) || (i > 964))
+        {
+            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
+            if (TrainLocation == 12)
+                ModAttackBonus(playerId, i, value, ignoreNone);
+        }
+}
+
+
+//  波希米亚, 靶场单位附加伤害改动
+void ModArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = false)
+{
+    int i = 0;
+    int TrainLocation = 0;
+    for (i = 0; < TotalObjects)
+        if ((i < 900) || (i > 964))
+        {
+            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
+            if (TrainLocation == 87)
+                ModAttackBonus(playerId, i, value, ignoreNone);
+        }
+}
+
+
+void MulArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = false)
+{
+    int i = 0;
+    int TrainLocation = 0;
+    for (i = 0; < TotalObjects)
+        if ((i < 900) || (i > 964))
+        {
+            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
+            if (TrainLocation == 87)
+                MulAttackBonus(playerId, i, value);
+        }
+}
+
+
+//  10058 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
+void EffectFunction10058(int playerId = -1)
+{
+    ModBarrackUnitAttackBonus(playerId, 1, true);
+}
+
+
+//  10059 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
+void EffectFunction10059(int playerId = -1)
+{
+    ModBarrackUnitAttackBonus(playerId, 1, true);
+}
+
+
+//  10060 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
+void EffectFunction10060(int playerId = -1)
+{
+    ModBarrackUnitAttackBonus(playerId, 1, true);
+}
+
+
+//  10074 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
+void EffectFunction10074(int playerId = -1)
+{
+    ModArcheryRangeUnitAttackBonus(playerId, 1, true);
+}
+
+
+//  10075 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
+void EffectFunction10075(int playerId = -1)
+{
+    ModArcheryRangeUnitAttackBonus(playerId, 1, true);
+}
+
+
+//  10076 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
+void EffectFunction10076(int playerId = -1)
+{
+    ModArcheryRangeUnitAttackBonus(playerId, 1, true);
 }
 
 
