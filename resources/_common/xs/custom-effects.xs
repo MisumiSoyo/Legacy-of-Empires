@@ -991,7 +991,7 @@ void Chinese(int Time = 0, int playerId = -1)
 //  拜占庭, 招募雇佣兵机会次数计算
 void Byzantines(int Time = 0, int playerId = -1)
 {
-    if (xsPlayerAttribute(playerId, cAttributeCurrentAge) >= 1)
+    if (xsPlayerAttribute(playerId, cAttributeCurrentAge) >= 2)
     {
         float ProgressInc = 1.0;
         if (isResearched(playerId, 3140))
