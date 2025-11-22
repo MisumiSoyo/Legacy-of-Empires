@@ -444,6 +444,11 @@ void EffectFunction10002(int playerId = -1)
         }
         case cBohemians:
         {
+            //  兵营其他单位享受加成
+            MulBarrackUnitAttackBonus(playerId, 1.25);
+            MulAttackBonus(playerId, SpearmanID, 0.8);
+            MulAttackBonus(playerId, PikemanID, 0.8);
+            MulAttackBonus(playerId, HalberdierID, 0.8);
             //  波希米亚靶场单位也能享受攻击加成
             MulArcheryRangeUnitAttackBonus(playerId, 1.25);
             break;

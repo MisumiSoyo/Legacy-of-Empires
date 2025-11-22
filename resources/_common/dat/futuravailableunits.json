@@ -26971,6 +26971,11 @@
                         "Name": "Mutual Trade",
                         "RequiredAge": 3,
                         "ID": 3061
+                    },
+                    {
+                        "Name": "Pax Mongolica",
+                        "RequiredAge": 4,
+                        "ID": 3176
                     }
                 ]
             },

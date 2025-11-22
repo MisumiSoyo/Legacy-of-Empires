@@ -154,156 +154,36 @@ void EffectFunction10019(int playerId = -1)
 }
 
 
-//  医院骑士, 攻击充能, 使用 151 产生资源效果
+//  医院骑士变身, 治疗周围友方单位, 并且暂时不会阵亡
 void HospitallerKnightInit(int playerId = -1)
-{
-    int HospitallerKnightAbilityBuildingID = 4040;
-
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 1);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeHospitallerKnightCharge);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeHospitallerKnightChargeRate);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
-
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cArcherClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cTradeBoatClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cVillagerClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cInfantryClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cCavalryClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cSiegeWeaponClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cMonkClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cTradeCartClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cTransportShipClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cFishingBoatClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cWarshipClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cConquistadorClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cPetardClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cCavalryArcherClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cMonkWithRelicClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cHandCannoneerClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cScoutCavalryClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cPackedUnitClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cUnpackedSiegeUnitClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cScorpionClass, playerId);
-
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cArcherClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cTradeBoatClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cVillagerClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cInfantryClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cCavalryClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cSiegeWeaponClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cMonkClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cTradeCartClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cTransportShipClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cFishingBoatClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cWarshipClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cConquistadorClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cPetardClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cCavalryArcherClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cMonkWithRelicClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cHandCannoneerClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cScoutCavalryClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cPackedUnitClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cUnpackedSiegeUnitClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cScorpionClass, playerId);
-
-    //对建筑充能效率为 1/3, 对墙, 门和农田充能效率为 1/5
-    xsTaskAmount(cTaskAttrWorkValue1, 0.333333);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cBuildingClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cTowerClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cBuildingClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cTowerClass, playerId);
-
-    xsTaskAmount(cTaskAttrWorkValue1, 0.2);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cWallClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cGateClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cWallClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cGateClass, playerId);
-    xsTask(EliteHospitallerKnightID, cTaskTypeGenerateResources, cFarmClass, playerId);
-
-    xsResetTaskAmount();
-
-    //设置充能, 事件 -5 建造隐藏建筑
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cMaxCharge, HospitallerKnightMaxCharge, playerId);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cChargeType, -5, playerId);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cTraitPiece, HospitallerKnightAbilityBuildingID, playerId);
-    xsEffectAmount(cModResource, cAttributeHospitallerKnightChargeRate, 0, 1, playerId);
-    xsEffectAmount(cSetAttribute, EliteHospitallerKnightID, cMaxCharge, HospitallerKnightMaxCharge, playerId);
-    xsEffectAmount(cSetAttribute, EliteHospitallerKnightID, cChargeType, -5, playerId);
-    xsEffectAmount(cSetAttribute, EliteHospitallerKnightID, cTraitPiece, HospitallerKnightAbilityBuildingID, playerId);
-}
-
-
-//  医院骑士团技能效果, 治疗周围友方单位, 并且暂时不会阵亡
-void HospitallerKnightAbility(int playerId = -1)
 { 
     int AbilityDuration = 25;
-    int AbilityRange = 6;
     int HealRate = 240;
 
-    if (xsGetTechState(3039, playerId) == cTechStateDone)
-        HealRate = 300;
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, HealRate);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, AbilityRange);
+    xsTaskAmount(cTaskAttrWorkRange, 4);
     xsTaskAmount(cTaskAttrOwnerType, 4);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
     xsTaskAmount(cTaskAttrSearchWaitTime, 109.00001);
 
-    xsTask(HospitallerKnightID, cTaskTypeAura, cArcherClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cVillagerClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cInfantryClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cCavalryClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cMonkClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cTradeCartClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cConquistadorClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cPetardClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cCavalryArcherClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cMonkWithRelicClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cHandCannoneerClass, playerId);
-    xsTask(HospitallerKnightID, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cArcherClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cVillagerClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cMonkClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cTradeCartClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cConquistadorClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cPetardClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cCavalryArcherClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cHandCannoneerClass, playerId);
+    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cScoutCavalryClass, playerId);
 
     xsResetTaskAmount();
-    LaunchAura(playerId, HospitallerKnightID);
-    SetResource(playerId, cAttributeHospitallerKnightAbilityTime, AbilityDuration);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cInvulnerabilityLevel, -1, playerId);
-    xsSetPlayerAttribute(playerId, cAttributeHospitallerKnightChargeRate, 0.000000000001);  //  技能期间不能充能; 忘记为0时会不会按1计算了, 先置为极小值
-}
-
-
-//  医院骑士技能结束处理
-void HospitallerKnightAbilityEnd(int playerId = -1)
-{
-    RemoveAura(playerId, HospitallerKnightID);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cInvulnerabilityLevel, 0, playerId);
-    xsSetPlayerAttribute(playerId, cAttributeHospitallerKnightChargeRate, 1);
-}
-
-
-//  医院骑士充能, 开启技能期间可治疗周围友军, 并且免于阵亡
-void HospitallerKnight(int Time = 0, int playerId = -1)
-{
-    //  医院骑士充能, 技能所需充能为 HospitallerKnightMaxCharge 指定的值
-    float CurrentCharge = xsPlayerAttribute(playerId, cAttributeHospitallerKnightCharge);   //  当前充能
-    int RemainingTime = xsPlayerAttribute(playerId, cAttributeHospitallerKnightAbilityTime);  //  技能剩余持续时间
-
-    if (CurrentCharge > HospitallerKnightMaxCharge)
-    {
-        CurrentCharge = HospitallerKnightMaxCharge;
-        xsEffectAmount(cModResource, cAttributeHospitallerKnightCharge, 0, HospitallerKnightMaxCharge, playerId);
-    }
-
-    SetObjectCharge(playerId, HospitallerKnightID, CurrentCharge);
-
-    if (RemainingTime > 0)
-    {
-        RemainingTime --;
-        if (RemainingTime == 0)
-            HospitallerKnightAbilityEnd(playerId);
-        SetResource(playerId, cAttributeHospitallerKnightAbilityTime, RemainingTime);
-    }
+    LaunchAura(playerId, HospitallerKnightAbilityID);
+    SetAttribute(playerId, HospitallerKnightAbilityID, cInvulnerabilityLevel, 1);
 }
 
 
@@ -311,101 +191,91 @@ void HospitallerKnight(int Time = 0, int playerId = -1)
 void Shrine(int Time = 0, int playerId = 0)
 {
     int i = 0;
-    static int ShrineArray = 0;
-    if (ShrineArray == 0)
-        ShrineArray = xsGetPlayerUnitIds(playerId, ShrineID);
-    else
-        ShrineArray = xsGetPlayerUnitIds(playerId, ShrineID, ShrineArray);
-    if (xsArrayGetSize(ShrineArray) == 0)
+    if (xsGetObjectCount(playerId, ShrineID) == 0)
         return;
 
-    float SpawnProgress = xsGetUnitCharge(xsArrayGetInt(ShrineArray, 0));
+    float SpawnProgress = xsPlayerAttribute(playerId, cAttributeShrineSpawnProgress) + xsPlayerAttribute(playerId, cAttributeShrineSpawnRate);
     int SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
     int SpawnCount = xsPlayerAttribute(playerId, cAttributeShrineSpawnCount);
 
     if (SpawnProgress >= xsGetObjectAttribute(playerId, ShrineID, cMaxCharge))
     {
         SpawnCount ++;
-        //  初始拥有 50% 充能
-        if (SpawnCount > 1)
+        if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)   //  需要人口空间
         {
-            if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)   //  需要人口空间
-            {
-                SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
-                SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
-            }
+            SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
+            SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
         }
-        else
-            SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge) / 2;
         SetResource(playerId, cAttributeShrineSpawnCount, SpawnCount);
     }
-    SetObjectCharge(playerId, ShrineID, SpawnProgress);
+    SpawnProgress = minFloat(SpawnProgress, xsGetObjectAttribute(playerId, ShrineID, cMaxCharge));
+    SetResource(playerId, cAttributeShrineSpawnProgress, SpawnProgress);
 }
 
 
 void EffectFunction10030(int playerId = -1)  //  切换到训练民兵系
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 74, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 90, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
 }
 
 void EffectFunction10031(int playerId = -1)  //  切换到训练长矛兵系
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 93, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 72, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 72);
 }
 
 void EffectFunction10032(int playerId = -1)  //  切换到训练鹰斥候系
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 751, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 100, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 100);
 }
 
 void EffectFunction10033(int playerId = -1)  //  切换到训练步弓手系
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 4, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 100, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 100);
 }
 
 void EffectFunction10034(int playerId = -1)  //  切换到训练掷矛手系
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 7, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 72, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 72);
 }
 
 
 void EffectFunction10035(int playerId = -1)  //  切换到训练投石手
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 185, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 110, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 110);
 }
 
 
 void EffectFunction10036(int playerId = -1)  //  切换到训练印加枪兵长
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 879, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 120, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
 }
 
 
 void EffectFunction10043(int playerId = -1)  //  切换到训练豹勇士
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 725, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 120, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
 }
 
 
 void EffectFunction10044(int playerId = -1)  //  切换到训练羽箭手
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 763, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 120, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
 }
 
 
 void EffectFunction10045(int playerId = -1)  //  切换到训练索洛托勇士
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 1570, playerId);
-    xsEffectAmount(cSetAttribute, ShrineID, cRechargeRate, ShrineMaxCharge / 90, playerId);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
 }
 
 
@@ -436,13 +306,14 @@ void ShrineInit(int playerId = -1)
             xsEffectAmount(cModifyTech, i, cAttrSetStackingResearchCap, 32767, playerId);
         }
     SetResource(playerId, cAttributeShrineSpawnUnitID, 74);
-    SetAttribute(playerId, ShrineID, cRechargeRate, ShrineMaxCharge / 90);
+    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
     SetAttribute(playerId, ShrineID, cMaxCharge, ShrineMaxCharge);
     //  阿兹特克文明加成, 圣坛 +15% 生产速度
     if (xsGetPlayerCivilization(playerId) == cAztecs)
     {
         MulAttribute(playerId, ShrineID, cMaxCharge, 1.0 / 1.15);
     }
+     SetResource(playerId, cAttributeShrineSpawnProgress, xsGetObjectAttribute(playerId, ShrineID, cMaxCharge) * 2.0 / 3);
 }
 
 
@@ -687,21 +558,22 @@ void KeshikInit(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
     xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrWorkValue1, 2.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 3.0 * 60);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrResourceIn, cAttributeKeshikStingerRate);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
     xsTask(KeshikID, cTaskTypeStinger, -1, playerId);
     xsTaskAmount(cTaskAttrWorkValue1, 4.0 * 60);
     xsTask(EliteKeshikID, cTaskTypeStinger, -1, playerId);
 
-    xsTaskAmount(cTaskAttrWorkValue1, 0 - 2.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 3.0 * 60);
     xsTask(KeshikID, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(KeshikID, cTaskTypeStinger, cWallClass, playerId);
     xsTask(KeshikID, cTaskTypeStinger, cGateClass, playerId);
     xsTask(KeshikID, cTaskTypeStinger, cTowerClass, playerId);
     xsTask(KeshikID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0 - 4.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 4.0 * 60);
     xsTask(EliteKeshikID, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(EliteKeshikID, cTaskTypeStinger, cWallClass, playerId);
     xsTask(EliteKeshikID, cTaskTypeStinger, cGateClass, playerId);
@@ -711,31 +583,18 @@ void KeshikInit(int playerId = -1)
     LaunchStinger(playerId, KeshikID);
     LaunchStinger(playerId, EliteKeshikID);
     SetResource(playerId, 213, 0);
+    SetResource(playerId, cAttributeKeshikStingerRate, 0.5);
 }
 
 
 void KeshikStingerCastleAgeUpgrade(int playerId = -1)
 {
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrWorkValue1, 3.0 * 60);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrOwnerType, 0);
-
-    xsTask(KeshikID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0 - 3.0 * 60);
-    xsTask(KeshikID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cFarmClass, playerId);
-    xsResetTaskAmount();
+    SetResource(playerId, cAttributeKeshikStingerRate, 1);
 }
 
 
 //  波希米亚, 兵营单位附加伤害改动
-void ModBarrackUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = false)
+void ModBarrackUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = true)
 {
     int i = 0;
     int TrainLocation = 0;
@@ -749,8 +608,22 @@ void ModBarrackUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignore
 }
 
 
+void MulBarrackUnitAttackBonus(int playerId = -1, float value = 0.0)
+{
+    int i = 0;
+    int TrainLocation = 0;
+    for (i = 0; < TotalObjects)
+        if ((i < 900) || (i > 964))
+        {
+            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
+            if (TrainLocation == 12)
+                MulAttackBonus(playerId, i, value);
+        }
+}
+
+
 //  波希米亚, 靶场单位附加伤害改动
-void ModArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = false)
+void ModArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = true)
 {
     int i = 0;
     int TrainLocation = 0;
@@ -764,7 +637,7 @@ void ModArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool i
 }
 
 
-void MulArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = false)
+void MulArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0)
 {
     int i = 0;
     int TrainLocation = 0;
@@ -781,42 +654,42 @@ void MulArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool i
 //  10058 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
 void EffectFunction10058(int playerId = -1)
 {
-    ModBarrackUnitAttackBonus(playerId, 1, true);
+    ModBarrackUnitAttackBonus(playerId, 1);
 }
 
 
 //  10059 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
 void EffectFunction10059(int playerId = -1)
 {
-    ModBarrackUnitAttackBonus(playerId, 1, true);
+    ModBarrackUnitAttackBonus(playerId, 1);
 }
 
 
 //  10060 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
 void EffectFunction10060(int playerId = -1)
 {
-    ModBarrackUnitAttackBonus(playerId, 1, true);
+    ModBarrackUnitAttackBonus(playerId, 1);
 }
 
 
 //  10074 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
 void EffectFunction10074(int playerId = -1)
 {
-    ModArcheryRangeUnitAttackBonus(playerId, 1, true);
+    ModArcheryRangeUnitAttackBonus(playerId, 1);
 }
 
 
 //  10075 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
 void EffectFunction10075(int playerId = -1)
 {
-    ModArcheryRangeUnitAttackBonus(playerId, 1, true);
+    ModArcheryRangeUnitAttackBonus(playerId, 1);
 }
 
 
 //  10076 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
 void EffectFunction10076(int playerId = -1)
 {
-    ModArcheryRangeUnitAttackBonus(playerId, 1, true);
+    ModArcheryRangeUnitAttackBonus(playerId, 1);
 }
 
 
@@ -887,11 +760,15 @@ void SultansApplier(int playerId = -1, int ClassTarget = -1)
 
 
 //  蒙古和平效果
-void PaxMongoliaApplier(int playerId = -1, int ClassTarget = -1)
+void PaxMongolicaApplier(int playerId = -1, int ClassTarget = -1)
 {
     xsTaskAmount(cTaskAttrWorkValue1, 2.0 * 60);
+    if ((ClassTarget == KeshikID) || (ClassTarget == EliteKeshikID))
+        xsTaskAmount(cTaskAttrWorkValue1, 1.0 * 60);
     xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0 - 2.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 2.0 * 60);
+    if ((ClassTarget == KeshikID) || (ClassTarget == EliteKeshikID))
+        xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 1.0 * 60);
     xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
     xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);

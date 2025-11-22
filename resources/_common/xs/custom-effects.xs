@@ -495,41 +495,6 @@ void EffectFunction10018(int playerId = -1)
 }
 
 
-//  10020 - 医院骑士技能开启
-void EffectFunction10020(int playerId = -1)
-{
-    //  检测, 由于定时器有时间间隔, 防止延迟导致重复施放技能
-    if (xsPlayerAttribute(playerId, cAttributeHospitallerKnightCharge) == 0.0)
-        return;
-
-    //  技能条不满，无法施放
-    if (xsPlayerAttribute(playerId, cAttributeHospitallerKnightCharge) < HospitallerKnightMaxCharge - 1)
-        return;
-    //  清空技能条
-    xsEffectAmount(cModResource, cAttributeHospitallerKnightCharge, 0, 0.0, playerId);
-    SetObjectCharge(playerId, HospitallerKnightID, 0.0);
-
-    HospitallerKnightAbility(playerId);
-}
-
-
-//  10021 - 精锐医院骑士
-void EffectFunction10021(int playerId = -1)
-{
-    xsEffectAmount(cAddAttribute, HospitallerKnightID, cHitpoints, 30, playerId);
-    xsEffectAmount(cAddAttribute, HospitallerKnightID, cArmor, 3*256 + 1, playerId);
-    xsEffectAmount(cAddAttribute, HospitallerKnightID, cArmor, 4*256 + 1, playerId);
-    xsEffectAmount(cAddAttribute, HospitallerKnightID, cAttack, 4*256 + 3, playerId);
-    xsEffectAmount(cAddAttribute, HospitallerKnightID, cShownAttack, 3, playerId);
-    xsEffectAmount(cAddAttribute, HospitallerKnightID, cShownMeleeArmor, 1, playerId);
-    xsEffectAmount(cAddAttribute, HospitallerKnightID, cShownPierceArmor, 1, playerId);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cNameId, 700030, playerId);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cDescriptionId, 701030, playerId);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cShortTooltipId, 600005, playerId);
-    xsEffectAmount(cSetAttribute, HospitallerKnightID, cExtendedTooltipId, 600005, playerId);
-}
-
-
 //  10023 - 柏柏尔团队加成
 void EffectFunction10023(int playerId = -1)
 {
@@ -631,9 +596,9 @@ void EffectFunction10042(int playerId = -1)
 {
     
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 0.25);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.33);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, SatrapAuraRange - 2);    //城堡碰撞半径为2
+    xsTaskAmount(cTaskAttrWorkRange, SatrapAuraRange);
     xsTaskAmount(cTaskAttrSearchWaitTime, 13.000001);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 5);
     xsTask(CastleID, cTaskTypeAura, 12, playerId);
@@ -641,6 +606,8 @@ void EffectFunction10042(int playerId = -1)
     xsTask(CastleID, cTaskTypeAura, cBuildingClass, playerId);
     xsResetTaskAmount();
     LaunchAura(playerId, CastleID);
+
+    ModResource(playerId, 521, 1.5);
 }
 
 
@@ -864,7 +831,7 @@ void EffectFunction10072(int playerId = -1)
 void EffectFunction10073(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.001);
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrOwnerType, 0);
@@ -875,8 +842,8 @@ void EffectFunction10073(int playerId = -1)
         if ((i < 900) || (i > 964))
         {
             TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
-            if ((TrainLocation == 12) || (TrainLocation == 87))
-                PaxMongoliaApplier(playerId, i);
+            if ((TrainLocation == 12) || (TrainLocation == 87) || (i == KeshikID) || (i == EliteKeshikID))
+                PaxMongolicaApplier(playerId, i);
         }
     
     xsResetTaskAmount();
@@ -955,49 +922,6 @@ void Byzantines(int Time = 0, int playerId = -1)
 }
 
 
-//  波斯文明加成, 城堡从周围建筑收取黄金
-void Persians(int Time = 0, int playerId = -1)
-{
-    if (isResearched(playerId, 3174) == false)
-        return;
-    float TotalGold = 0.0;
-    static int BuildingArray = 0;
-    if (BuildingArray == 0)
-        BuildingArray = xsGetPlayerUnitIds(playerId, cBuildingClass);
-    else
-        BuildingArray = xsGetPlayerUnitIds(playerId, cBuildingClass, BuildingArray);
-    static int CastleArray = 0;
-    if (CastleArray == 0)
-        CastleArray = xsGetPlayerUnitIds(playerId, CastleID);
-    else
-        CastleArray = xsGetPlayerUnitIds(playerId, CastleID, CastleArray);
-    int i = 0;
-    int BuildingArraySize = xsArrayGetSize(BuildingArray);
-    for (i = 0; < BuildingArraySize)
-    {
-        //判断是否在城堡覆盖范围内
-        int BuildingID = xsArrayGetInt(BuildingArray, i);
-        if (BuildingID == -1)
-            break;
-        vector BuildingPosition = xsGetUnitPosition(BuildingID);
-        int j = 0;
-        bool flag = false;
-        for (j = 0; < xsArrayGetSize(CastleArray))
-        {
-            vector CastlePosition = xsGetUnitPosition(xsArrayGetInt(CastleArray, j));
-            if ((DistanceX(BuildingPosition, CastlePosition) <= SatrapAuraRange) && (DistanceY(BuildingPosition, CastlePosition) <= SatrapAuraRange))
-            {
-                flag = true;
-                break;
-            }
-        }
-        if (flag)
-            TotalGold = TotalGold + 1.0 * PersianBuildingGold(playerId, BuildingID) / 60;
-    }
-    xsEffectAmount(cModResource, cAttributeGold, 1, TotalGold, playerId);
-}
-
-
 //  西班牙独特科技, 探险家
 void Spanish(int Time = 0, int playerId = -1)
 {
@@ -1073,20 +997,6 @@ void Italians(int Time = 0, int playerId = -1)
             MercenaryContractTime = 1;
     }
     SetResource(playerId, cAttributeTechEffectTime, MercenaryContractTime);
-}
-
-
-//  马扎尔文明加成, 圣物加成草原枪兵攻击力
-void Magyars(int Time = 0, int playerId = -1)
-{
-    int AttackBonus = xsPlayerAttribute(playerId, cAttributeMagyarRelicAttackBonus);
-    //草原枪兵攻击加成
-    int RelicCaptured = xsPlayerAttribute(playerId, cAttributeRelics);
-    int CurrentAttackBonus = minInt(RelicCaptured / 2, 2);
-
-    ModAttack(playerId, SteppeLancerID, cDamageClassMelee, CurrentAttackBonus - AttackBonus);
-    ModAttack(playerId, EliteSteppeLancerID, cDamageClassMelee, CurrentAttackBonus - AttackBonus);
-    SetResource(playerId, cAttributeMagyarRelicAttackBonus, CurrentAttackBonus);
 }
 
 
@@ -1181,11 +1091,6 @@ void TimerEvent(int Time = 0, int playerId = -1)
             Byzantines(Time, playerId);
             break;
         }
-        case cPersians:
-        {
-            Persians(Time, playerId);
-            break;
-        }
         case cSpanish:
         {
             Spanish(Time, playerId);
@@ -1204,11 +1109,6 @@ void TimerEvent(int Time = 0, int playerId = -1)
         case cItalians:
         {
             Italians(Time, playerId);
-            break;
-        }
-        case cMagyars:
-        {
-            Magyars(Time, playerId);
             break;
         }
         case cTatars:
@@ -1232,7 +1132,6 @@ void TimerEvent(int Time = 0, int playerId = -1)
         }
     }
 
-    HospitallerKnight(Time, playerId);
     Shrine(Time, playerId);
 }
 
@@ -1245,9 +1144,10 @@ void Test(int Time = 0)
 // 定时器
 rule Timer
     active
-    highFrequency
+    minInterval 1
+    maxInterval 1
 {
-    int LastUpdateTime = xsPlayerAttribute(0, cAttributeCurrentTime) ;
+    int LastUpdateTime = xsPlayerAttribute(0, cAttributeCurrentTime);
     int CurrentTime = xsGetGameTime();
 
     while (LastUpdateTime <= CurrentTime)

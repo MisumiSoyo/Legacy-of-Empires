@@ -36,6 +36,9 @@ extern const int cAttributeGothsVillagerBonus = 437;    //  哥特文明加成�
 extern const int cAttributeSoheiProgress = 438; //  日本僧兵产生进度
 extern const int cAttributeDacaoguCalcedValue = 439;    //  契丹打草谷已经计算的摧毁价值数
 extern const int cAttributeChineseTCCount = 440;    //  中国城镇中心数量
+extern const int cAttributeKeshikStingerRate = 441; //  怯薛攻击回复速率
+extern const int cAttributeShrineSpawnProgress = 442;   //  圣坛充能
+extern const int cAttributeShrineSpawnRate = 443;   //  圣坛充能效率 
 
 
 //  单位ID定义
@@ -74,7 +77,7 @@ extern const int EliteCamelLancerID = 4035;
 extern const int HobelarID = 4036;
 extern const int EliteHobelarID = 4037;
 extern const int HospitallerKnightID = 4038;
-extern const int EliteHospitallerKnightID = 4039;
+extern const int HospitallerKnightAbilityID = 4039;
 extern const int CrusaderKnightID = 4041;
 extern const int SoheiID = 4042;
 extern const int VikingRaiderID = 4044;

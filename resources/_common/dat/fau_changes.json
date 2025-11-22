@@ -1476,6 +1476,14 @@
             "building_id": 209,
             "Name": "Siege Engineers",
             "RequiredAge": 3
+        },
+        {
+            "note": "蒙古和平",
+            "civilizations": "Mongols",
+            "tech_id": 3176,
+            "building_id": 209,
+            "Name": "Pax Mongolica",
+            "RequiredAge": 4
         }
     ]
 }

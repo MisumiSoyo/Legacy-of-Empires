@@ -259,7 +259,7 @@ void ModAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int v
 
 
 //  为单位修改攻击加成
-void ModAttackBonus(int playerId = -1, int ObjectID = -1, float value = -1, bool ignoreNone = false)
+void ModAttackBonus(int playerId = -1, int ObjectID = -1, float value = -1, bool ignoreNone = true)
 {
     int i = 0;
     for (i = 0; < TotalAttackForms)
@@ -401,7 +401,11 @@ void SpawnUnit(int playerId = -1, int SpawnUnitID = -1, int SpawnBuidingID = -1,
 //  批量设置单位充能
 void SetObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
 {
-    int UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    static int UnitIDs = -1;
+    if (UnitIDs == -1)
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    else
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
     int i = 0;
     for (i = 0; < xsArrayGetSize(UnitIDs))
         xsSetUnitCharge(xsArrayGetInt(UnitIDs, i), value);
@@ -411,7 +415,11 @@ void SetObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
 //  批量修改单位充能
 void ModObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
 {
-    int UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    static int UnitIDs = -1;
+    if (UnitIDs == -1)
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    else
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
     int i = 0;
     float MaxCharge = xsGetObjectAttribute(playerId, ObjectID, cMaxCharge);
     for (i = 0; < xsArrayGetSize(UnitIDs))
@@ -426,7 +434,11 @@ void ModObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
 //  批量倍乘单位充能
 void MulObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
 {
-    int UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    static int UnitIDs = -1;
+    if (UnitIDs == -1)
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
+    else
+        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
     int i = 0;
     float MaxCharge = xsGetObjectAttribute(playerId, ObjectID, cMaxCharge);
     for (i = 0; < xsArrayGetSize(UnitIDs))
