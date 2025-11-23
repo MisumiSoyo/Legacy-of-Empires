@@ -102,6 +102,8 @@ extern const int MercenaryContractBuildingID = 4063;
 extern const int MercenaryContractEffectBuildingID = 4064;
 extern const int FloatingGardenBuildingID = 4065;
 extern const int FloatingGardenEndBuildingID = 4066;
+extern const int RaideHornBuildingID = 4067;
+extern const int RaideHornEndBuildingID = 4068;
 
 
 extern const int ArcherID = 4;

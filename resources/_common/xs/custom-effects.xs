@@ -524,7 +524,7 @@ void EffectFunction10029(int playerId = -1)
 }
 
 
-//  10037 - Raide horn
+//  10037 - Raide Horn
 void EffectFunction10037(int playerId = -1)
 {
     ModAttack(playerId, cCavalryClass, 4, 1);
@@ -534,7 +534,22 @@ void EffectFunction10037(int playerId = -1)
     ModAttack(playerId, cCavalryClass, 21, 4);
     ModAttack(playerId, cScoutCavalryClass, 21, 4);
     MulResource(playerId, 213, 4);
-    SetResource(playerId, cAttributeTechEffectTime, 179);
+    SetAttribute(playerId, RaideHornBuildingID, cRegenerationHpPercent, 0.0 - 2.0 / 3);
+    SetAttribute(playerId, RaideHornBuildingID, cDeadUnitId, RaideHornEndBuildingID);
+    SpawnUnit(playerId, RaideHornBuildingID, UniversityID, 1, 1);
+}
+
+
+//  10077 - Raide Horn End Effect
+void EffectFunction10077(int playerId = -1)
+{
+    ModAttack(playerId, cCavalryClass, 4, -1);
+    ModAttack(playerId, cScoutCavalryClass, 4, -1);
+    ModArmor(playerId, cCavalryClass, 3, -1);
+    ModArmor(playerId, cScoutCavalryClass, 3, -1);
+    ModAttack(playerId, cCavalryClass, 21, -4);
+    ModAttack(playerId, cScoutCavalryClass, 21, -4);
+    MulResource(playerId, 213, 0.25);
 }
 
 
@@ -967,27 +982,6 @@ void Spanish(int Time = 0, int playerId = -1)
 }
 
 
-//  Tatars, Raide Horn
-void Tatars(int Time = 0, int playerId = -1)
-{
-    int RaideHornTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
-    if (RaideHornTime == 0)
-        return;
-    RaideHornTime --;
-    if (RaideHornTime == 0)
-    {
-        ModAttack(playerId, cCavalryClass, 4, -1);
-        ModAttack(playerId, cScoutCavalryClass, 4, -1);
-        ModArmor(playerId, cCavalryClass, 3, -1);
-        ModArmor(playerId, cScoutCavalryClass, 3, -1);
-        ModAttack(playerId, cCavalryClass, 21, -4);
-        ModAttack(playerId, cScoutCavalryClass, 21, -4);
-        MulResource(playerId, 213, 0.25);
-    }
-    SetResource(playerId, cAttributeTechEffectTime, RaideHornTime);
-}
-
-
 //  Initialization
 void Init()
 {
@@ -1044,11 +1038,6 @@ void TimerEvent(int Time = 0, int playerId = -1)
         case cSpanish:
         {
             Spanish(Time, playerId);
-            break;
-        }
-        case cTatars:
-        {
-            Tatars(Time, playerId);
             break;
         }
         default:
