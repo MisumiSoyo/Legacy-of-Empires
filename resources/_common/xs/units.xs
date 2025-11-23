@@ -1,4 +1,4 @@
-//  units.xs中定义了单位相关的函数
+//  Functions related to units
 
 
 include "array.xs";
@@ -82,7 +82,6 @@ bool isDock(int ObjectID = -1)
 }
 
 
-//  判断单位是否在某一类单位的范围内
 bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
@@ -94,7 +93,6 @@ bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Rang
 }
 
 
-//  判断位置是否在某一类单位的范围内
 bool isPosInRange(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
@@ -106,7 +104,6 @@ bool isPosInRange(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int 
 }
 
 
-//  类似功能, 但是判断的是矩形范围
 bool isInRangeMatrix(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
 {
     int i = 0;
@@ -137,7 +134,6 @@ bool isPosInRangeMatrix(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0)
 
 
 
-//  判断是否为陆地军事单位类型
 bool isLandMilitaryClass(int ClassID = -1)
 {
     return ((ClassID == cArcherClass) || (ClassID == cInfantryClass) || (ClassID == cCavalryClass) || (ClassID == cSiegeWeaponClass) || (ClassID == cMonkClass)
@@ -147,21 +143,18 @@ bool isLandMilitaryClass(int ClassID = -1)
 }
 
 
-//  判断单位是否为陆地军事单位
 bool isLandMilitaryObject(int ObjectID = -1)
 {
     return (isLandMilitaryClass(xsGetObjectClass(ObjectID)));
 }
 
 
-//  判断地图单位是否为陆地军事单位
 bool isLandMilitaryUnit(int UnitID = -1)
 {
     return (isLandMilitaryClass(xsGetUnitClass(UnitID)));
 }
 
 
-//  判断是否为军事单位类型
 bool isMilitaryClass(int ClassID = -1)
 {
     return ((ClassID == cArcherClass) || (ClassID == cInfantryClass) || (ClassID == cCavalryClass) || (ClassID == cSiegeWeaponClass) || (ClassID == cMonkClass) || (ClassID == cTransportShipClass) || (ClassID == cWarshipClass)
@@ -170,84 +163,72 @@ bool isMilitaryClass(int ClassID = -1)
 }
 
 
-//  判断单位是否为军事单位
 bool isMilitaryObject(int ObjectID = -1)
 {
     return (isMilitaryClass(xsGetObjectClass(ObjectID)));
 }
 
 
-//  判断地图单位是否为军事单位
 bool isMilitaryUnit(int UnitID = -1)
 {
     return (isMilitaryClass(xsGetUnitClass(UnitID)));
 }
 
 
-//  判断是否为经济单位类型
 bool isEconomicClass(int ClassID = -1)
 {
     return ((ClassID == cTradeBoatClass) || (ClassID == cVillagerClass) || (ClassID == cTradeCartClass) || (ClassID == cFishingBoatClass));
 }
 
 
-//  判断单位是否为经济单位
 bool isEconomicObject(int ObjectID = -1)
 {
     return (isEconomicClass(xsGetObjectClass(ObjectID)));
 }
 
 
-//  判断地图单位是否为经济单位
 bool isEconomicUnit(int UnitID = -1)
 {
     return (isEconomicClass(xsGetUnitClass(UnitID)));
 }
 
 
-//  判断是否为建筑类型
 bool isBuildingClass(int ClassID = -1)
 {
     return ((ClassID == cBuildingClass) || (ClassID == cWallClass) || (ClassID == cGateClass) || (ClassID == cTowerClass) || (ClassID == cFarmClass));
 }
 
 
-//  判断单位是否为建筑
 bool isBuildingObject(int ObjectID = -1)
 {
     return (isBuildingClass(xsGetObjectClass(ObjectID)));
 }
 
 
-//  判断地图单位是否为建筑
 bool isBuildingUnit(int UnitID = -1)
 {
     return (isBuildingClass(xsGetUnitClass(UnitID)));
 }
 
 
-//  判断是否为动物类型
 bool isAnimalClass(int ClassID = -1)
 {
     return ((ClassID == cBuildingClass) || (ClassID == cWallClass) || (ClassID == cGateClass) || (ClassID == cTowerClass) || (ClassID == cFarmClass));
 }
 
 
-//  判断单位是否为动物
 bool isAnimalObject(int ObjectID = -1)
 {
     return (isAnimalClass(xsGetObjectClass(ObjectID)));
 }
 
 
-//  判断地图单位是否为动物
 bool isAnimalUnit(int UnitID = -1)
 {
     return (isAnimalClass(xsGetUnitClass(UnitID)));
 }
 
 
-//  判断是否为资源类型
 bool isResourceClass(int ClassID = -1)
 {
     return ((ClassID == cSeaFishClass) || (ClassID == cForageBushClass) || (ClassID == cStoneMineClass) || (ClassID == cPreyAnimalClass)
@@ -256,38 +237,30 @@ bool isResourceClass(int ClassID = -1)
 }
 
 
-//  判断是否为可操作的类型 (军事单位, 经济单位或建筑)
 bool isClassOperable(int ClassID = -1)
 {
     return(isMilitaryClass(ClassID) || isEconomicClass(ClassID) || isBuildingClass(ClassID) || (ClassID == cKingClass));
 }
 
 
-//  判断单位是否为可操作的类型
 bool isObjectOperable(int ObjectID = -1)
 {
     return (isClassOperable(xsGetObjectClass(ObjectID)));
 }
 
 
-//  判断地图单位是否为可操作的类型
 bool isUnitOperable(int UnitID = -1)
 {
     return (isClassOperable(xsGetUnitClass(UnitID)));
 }
 
 
-//  判断单位是否驻扎
-//  单位驻扎之后，它的坐标就会变成驻扎目标的坐标，直到解除驻扎。但是，如果驻扎目标移动的话，它的坐标并不会随着被驻扎的单位移动而改变
-//  考虑到建筑物一般不移动，简单地比较坐标是否相等从而判断单位是否驻扎到建筑物还是可行的，除了TC这种里面能走人的建筑
 bool isGarrison(int UnitID1 = -1, int UnitID2 = -1)
 {
     return (xsGetUnitPosition(UnitID1) == xsGetUnitPosition(UnitID2));
 }
 
 
-//  统计指定玩家驻扎在指定单位中的指定单位
-//  这个函数还没有被使用以验证其正确性
 int GarrisonUnitIDs(int playerId = -1, int UnitID = -1, int ObjectID = -1, int ArrayID = -1)
 {
     static int UnitIDs = 0;
@@ -317,7 +290,6 @@ int GarrisonUnitCount(int playerId = -1, int UnitID = -1, int ObjectID = -1)
 }
 
 
-//  统计驻扎在ObjectID1中的ObjectID2的单位总数
 int GarrisonObjectCount(int playerId = -1, int ObjectID1 = -1, int ObjectID2 = -1)
 {
     static int UnitIDs1 = 0;
@@ -351,8 +323,8 @@ int GarrisonObjectCount(int playerId = -1, int ObjectID1 = -1, int ObjectID2 = -
 }
 
 
-//  消耗一个圣物
-//  即使被玩家获取, 圣物也是属于Gaia的
+//  Consume a relic
+//  Relics always belong to Gaia even captured by players
 bool ConsumeRelic(int playerId = -1)
 {
     static int RelicList = 0;

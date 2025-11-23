@@ -1,6 +1,4 @@
-//  引用文件
 include "techtree.xs";
-
 
 
 //  Effect of Mongols Civ Bonus
@@ -88,7 +86,7 @@ void EffectFunction10005(int playerId = -1)
     xsEffectAmount(cModResource, cAttributeFishTrapProductivity, 0, 0.5, playerId);
     xsEffectAmount(cModResource, cAttributeGoldFishingProductivity, 1, 1, playerId);
 
-    //重写渔船采集养鱼场的任务
+    //  Reset Fishing Ships' tasks
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrResourceIn, cAttributeFish);
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeFishTrapProductivity);
@@ -147,7 +145,7 @@ void EffectFunction10006(int playerId = -1)
 }
 
 
-// 10007 - 前哨
+// 10007 - Frontline Outpost
 void EffectFunction10007(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -212,7 +210,7 @@ void EffectFunction10008(int playerId = -1)
 }
 
 
-// 10009 - 坚固防御
+// 10009 - Strong Fortress
 void EffectFunction10009(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -264,21 +262,18 @@ void EffectFunction10009(int playerId = -1)
 // 10010 - C-Bonus, infantry generates gold from attacking farms
 void EffectFunction10010(int playerId = -1)
 {
-    int FarmId = 50;
-    int RiceFarmId = 1187;
-
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeInfantryLootFarmFoodProductivity);
     xsTaskAmount(cTaskAttrResourceOut, 0);
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
 
-    xsTask(cInfantryClass, cTaskTypeGenerateResources, FarmId, playerId);
-    xsTask(cInfantryClass, cTaskTypeGenerateResources, RiceFarmId, playerId);
+    xsTask(cInfantryClass, cTaskTypeGenerateResources, FarmID, playerId);
+    xsTask(cInfantryClass, cTaskTypeGenerateResources, RiceFarmID, playerId);
     xsResetTaskAmount();
 }
 
 
-// 10011 - 阿奴律陀运河
+// 10011 - Anawrahta Canals
 void EffectFunction10011(int playerId = -1)
 {
     int FarmId = 50;
@@ -352,8 +347,8 @@ void EffectFunction10013(int playerId = -1)
 
 
 
-//  重型长矛效果
-void HeavySpear(int ClassTarget = -1, int playerId = -1)
+//  Heavy Spear Applier
+void HeavySpearApplier(int ClassTarget = -1, int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, -1);
@@ -383,22 +378,18 @@ void HeavySpear(int ClassTarget = -1, int playerId = -1)
 }
 
 
-// 10014 - 重型长矛
+//  10014 - Heavy Spear
 void EffectFunction10014(int playerId = -1)
 {
-    int SpearmanId = 93;
-    int PikemanId = 358;
-    int HalberdierId = 359;
-
-    HeavySpear(SpearmanId, playerId);
-    HeavySpear(PikemanId, playerId);
-    HeavySpear(HalberdierId, playerId);
-    HeavySpear(cScoutCavalryClass, playerId);
-    HeavySpear(cCavalryClass, playerId);
+    HeavySpearApplier(SpearmanID, playerId);
+    HeavySpearApplier(PikemanID, playerId);
+    HeavySpearApplier(HalberdierID, playerId);
+    HeavySpearApplier(cScoutCavalryClass, playerId);
+    HeavySpearApplier(cCavalryClass, playerId);
 }
 
 
-// 10015 - Desert Guard
+//  10015 - Desert Guard
 void EffectFunction10015(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -412,7 +403,7 @@ void EffectFunction10015(int playerId = -1)
 }
 
 
-// Castle Network Adder
+//  Castle Network Adder
 void CastleNetworkEffect(int ClassTarget = -1, int playerId = -1)
 {
     xsEffectAmount(cAddAttribute, ClassTarget, cCombatAbility, 32, playerId);
@@ -427,7 +418,7 @@ void CastleNetworkEffect(int ClassTarget = -1, int playerId = -1)
     xsTask(ClassTarget, cTaskTypeAura, cScorpionClass, playerId);
 }
 
-// 10016 - Castle Network 城堡网络
+// 10016 - Castle Network
 void EffectFunction10016(int playerId = -1)
 {
     int TownCenterID1 = 109;
@@ -454,12 +445,9 @@ void EffectFunction10016(int playerId = -1)
 }
 
 
-// 10017 - Enclosure 圈地
+// 10017 - Enclosure
 void EffectFunction10017(int playerId = -1)
 {
-    int MaleFarmerId = 214;
-    int FemaleFarmerId = 259;
-
     xsEffectAmount(cMulResource, cAttributeFoodBonus, 0, 0.75, playerId);
     xsEffectAmount(cModResource, cAttributeGoldFarmingProductivity, 1, 10.6, playerId);
     xsEffectAmount(cAddAttribute, cVillagerClass, cHitpoints, -15, playerId);
@@ -470,8 +458,8 @@ void EffectFunction10017(int playerId = -1)
     xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
 
-    xsTask(MaleFarmerId, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTask(FemaleFarmerId, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsResetTaskAmount();
 }
 
@@ -495,7 +483,7 @@ void EffectFunction10018(int playerId = -1)
 }
 
 
-//  10023 - 柏柏尔团队加成
+//  10023 - Berbers Team Bonus
 void EffectFunction10023(int playerId = -1)
 {
     xsEffectAmount(cModifyTech, 601, cAttrSetFoodCost, 0, playerId);
@@ -512,7 +500,7 @@ void EffectFunction10023(int playerId = -1)
 }
 
 
-//  10027 - 法兰克放贷 (500黄金)
+//  10027 - Frank Loan (500 gold)
 void EffectFunction10027(int playerId = -1)
 {
     SetResource(playerId, cAttributeTechEffectTime, 239);
@@ -520,7 +508,7 @@ void EffectFunction10027(int playerId = -1)
 }
 
 
-//  10028 - 法兰克放贷 (1000黄金)
+//  10028 - Frank Loan (1000 gold)
 void EffectFunction10028(int playerId = -1)
 {
     SetResource(playerId, cAttributeTechEffectTime, 359);
@@ -528,7 +516,7 @@ void EffectFunction10028(int playerId = -1)
 }
 
 
-//  10029 - 法兰克放贷 (2000黄金)
+//  10029 - Frank Loan (2000 gold)
 void EffectFunction10029(int playerId = -1)
 {
     SetResource(playerId, cAttributeTechEffectTime, 479);
@@ -536,7 +524,7 @@ void EffectFunction10029(int playerId = -1)
 }
 
 
-//  10037 - 掠夺号角
+//  10037 - Raide horn
 void EffectFunction10037(int playerId = -1)
 {
     ModAttack(playerId, cCavalryClass, 4, 1);
@@ -550,7 +538,7 @@ void EffectFunction10037(int playerId = -1)
 }
 
 
-//  10038 - 浮动园地
+//  10038 - Floating Garden
 void EffectFunction10038(int playerId = -1)
 {
     MulAttribute(playerId, cTradeBoatClass, cWorkRate, 1.2);
@@ -560,11 +548,26 @@ void EffectFunction10038(int playerId = -1)
     MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.2);
     MulAttribute(playerId, cFarmClass, cWorkRate, 1.2);
     MulAttribute(playerId, ShrineID, cMaxCharge, 1.0 / 1.2);
-    SetResource(playerId, cAttributeTechEffectTime, 179);
+    SetAttribute(playerId, FloatingGardenBuildingID, cRegenerationHpPercent, 0.0 - 1.0 / 3);
+    SetAttribute(playerId, FloatingGardenBuildingID, cDeadUnitId, FloatingGardenEndBuildingID);
+    SpawnUnit(playerId, FloatingGardenBuildingID, UniversityID, 1, 1);
 }
 
 
-//  10039 - 玉米神祝福
+//  10021 - Floating Garden End Effect
+void EffectFunction10021(int playerId = -1)
+{
+    MulAttribute(playerId, cTradeBoatClass, cWorkRate, 1.0 / 1.2);
+    MulAttribute(playerId, cBuildingClass, cWorkRate, 1.0 / 1.2);
+    MulAttribute(playerId, cVillagerClass, cWorkRate, 1.0 / 1.2);
+    MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.0 / 1.2);
+    MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.0 / 1.2);
+    MulAttribute(playerId, cFarmClass, cWorkRate, 1.0 / 1.2);
+    MulAttribute(playerId, ShrineID, cMaxCharge, 1.2);
+}
+
+
+//  10039 - Yum Kaax's Blessing
 void EffectFunction10039(int playerId = -1)
 {
     MulAttribute(playerId, 214, cWorkRate, 1000);
@@ -572,26 +575,42 @@ void EffectFunction10039(int playerId = -1)
     MulAttribute(playerId, 259, cWorkRate, 1000);
     MulAttribute(playerId, 259, cCarryCapacity, 100);
     MulAttribute(playerId, 50, cWorkRate, 10000);
-    SetResource(playerId, cAttributeTechEffectTime, 8);
+    SetAttribute(playerId, YumKaaxsBlessingBuildingID, cRegenerationHpPercent, -6);
+    SetAttribute(playerId, YumKaaxsBlessingBuildingID, cDeadUnitId, YumKaaxsBlessingEndBuildingID);
+    SpawnUnit(playerId, YumKaaxsBlessingBuildingID, UniversityID, 1, 1);
 }
 
 
-//  10040 - 意大利佣兵合同
+//  10020 - Yum Kaax's Blessing End Effect
+void EffectFunction10020(int playerId = -1)
+{
+    MulAttribute(playerId, 214, cWorkRate, 1.0 / 1000);
+    MulAttribute(playerId, 214, cCarryCapacity, 1.0 / 100);
+    MulAttribute(playerId, 259, cWorkRate, 1.0 / 1000);
+    MulAttribute(playerId, 259, cCarryCapacity, 1.0 / 100);
+    MulAttribute(playerId, 50, cWorkRate, 1.0 / 10000);
+}
+
+
+//  10040 - Mercenary Contract
 void EffectFunction10040(int playerId = -1)
 {
+    SpawnUnit(playerId, CondottieroID, TownCenterID, 5, 1);
     SetResource(playerId, cAttributeCondottieroMercenaryNum, 5);
-    SetResource(playerId, cAttributeTechEffectTime, 1);
+    SetAttribute(playerId, MercenaryContractBuildingID, cDeadUnitId, MercenaryContractBuildingID);
+    SetAttribute(playerId, MercenaryContractBuildingID, cBloodUnitId, MercenaryContractEffectBuildingID);
+    SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
 }
 
 
-//  10041 - 意大利高级佣兵合同
+//  10041 - Italians, Mercenary Contract spawn Condottieros
 void EffectFunction10041(int playerId = -1)
 {
-    ModResource(playerId, cAttributeCondottieroMercenaryNum, 5);
+    SpawnUnit(playerId, CondottieroID, TownCenterID, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
 }
 
 
-//  10042 - 总督
+//  10042 - Satrap
 void EffectFunction10042(int playerId = -1)
 {
     
@@ -611,7 +630,7 @@ void EffectFunction10042(int playerId = -1)
 }
 
 
-//  10046 - 使徒
+//  10046 - Apostle
 void EffectFunction10046(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -634,16 +653,26 @@ void EffectFunction10046(int playerId = -1)
 }
 
 
-//  10047 - 维利奇卡盐矿
+//  10047 - Kopalnia Soli Wieliczka
 void EffectFunction10047(int playerId = -1)
 {
     float StoneTotal = xsPlayerAttribute(playerId, cAttributeStoneTotal);
     ModResource(playerId, cAttributeFood, 0.8 * StoneTotal);
-    SetResource(playerId, cAttributePolesFoodObtained, 0.8 * StoneTotal);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeStoneMinerFoodProductivity);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000004);
+    xsTask(MaleStoneMinerID, cTaskTypeGenerateResources, cStoneMineClass, playerId);
+    xsTask(FemaleStoneMinerID, cTaskTypeGenerateResources, cStoneMineClass, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeStoneMinerFoodProductivity, 28.8);
 }
 
 
-//  10065 - 苏丹王
+//  10065 - Sultans
 void EffectFunction10065(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -678,7 +707,7 @@ void EffectFunction10065(int playerId = -1)
 }
 
 
-//  10066 - 祭祀仪式
+//  10066 - Ixiptla
 void EffectFunction10066(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -697,7 +726,7 @@ void EffectFunction10066(int playerId = -1)
 }
 
 
-//  10067 - 祭祀仪式击杀触发的效果
+//  10067 - Ixiptla Kill Effect
 void EffectFunction10067(int playerId = -1)
 {
     int KillCount = xsPlayerAttribute(playerId, cAttributeIxipltaKillCount) + 1;
@@ -708,7 +737,7 @@ void EffectFunction10067(int playerId = -1)
 }
 
 
-//  10068 - 打草谷
+//  10068 - Dacaogu
 void EffectFunction10068(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -728,7 +757,7 @@ void EffectFunction10068(int playerId = -1)
 }
 
 
-//  10069 - 打草谷击杀触发的效果
+//  10069 - Dacaogu Kill Effect
 void EffectFunction10069(int playerId = -1)
 {
     float CalcedValue = xsPlayerAttribute(playerId, cAttributeDacaoguCalcedValue);
@@ -739,7 +768,7 @@ void EffectFunction10069(int playerId = -1)
 }
 
 
-//  10070 - 物力钱
+//  10070 - Property Tax
 void EffectFunction10070(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -754,7 +783,7 @@ void EffectFunction10070(int playerId = -1)
 }
 
 
-//  10071 - 敕令骑士, 骑兵根据周围军事单位数量获得生命值和生命回复
+//  10071 - Gendarmes d'ordonnance
 void EffectFunction10071(int playerId = -1)
 {
     int i = 0;
@@ -793,7 +822,7 @@ void EffectFunction10071(int playerId = -1)
 }
 
 
-//  10072 - 骑士册封
+//  10072 - Accolade
 void EffectFunction10072(int playerId = -1)
 {
     int i = 0;
@@ -827,7 +856,7 @@ void EffectFunction10072(int playerId = -1)
 }
 
 
-//  10073 - 蒙古和平
+//  10073 - Pax Mongolica
 void EffectFunction10073(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -850,7 +879,7 @@ void EffectFunction10073(int playerId = -1)
 }
 
 
-//  法兰克, 计算借贷返利
+//  Franks, loan
 void Franks(int Time = 0, int playerId = -1)
 {
     int FrankLoanTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
@@ -866,7 +895,7 @@ void Franks(int Time = 0, int playerId = -1)
 }
 
 
-//  哥特, 每击杀 3 名敌人, 获得 1 名村民, 最多 20 名
+//  Goths, obtain 1 villager from every three killed enemies
 void Goths(int Time = 0, int playerId = -1)
 {
     int CalcedBonus = xsPlayerAttribute(playerId, cAttributeGothsVillagerBonus);
@@ -884,7 +913,7 @@ void Goths(int Time = 0, int playerId = -1)
 }
 
 
-//  日本, 研究一向一揆后, 圣物不产生黄金, 而是每 75 秒产出 1 名僧兵
+//  Japanese, Ikko-Ikki
 void Japanese(int Time = 0, int playerId = -1)
 {
     if (isResearched(playerId, 3068) == false)
@@ -897,7 +926,7 @@ void Japanese(int Time = 0, int playerId = -1)
 }
 
 
-//  中国, 城镇中心提供 +5 人口上限 (最多 50)
+//  Chinese, TC provides +5 population capacity (maximum +50)
 void Chinese(int Time = 0, int playerId = -1)
 {
     int TCCount = xsGetObjectCount(playerId, 109);
@@ -909,7 +938,7 @@ void Chinese(int Time = 0, int playerId = -1)
 }
 
 
-//  拜占庭, 招募雇佣兵机会次数计算
+//  Byzantines, recruit units
 void Byzantines(int Time = 0, int playerId = -1)
 {
     if (xsPlayerAttribute(playerId, cAttributeCurrentAge) >= 2)
@@ -922,7 +951,7 @@ void Byzantines(int Time = 0, int playerId = -1)
 }
 
 
-//  西班牙独特科技, 探险家
+//  Spanish, Explorer
 void Spanish(int Time = 0, int playerId = -1)
 {
     static float ExplorerGoldRate = 0.015;
@@ -938,69 +967,7 @@ void Spanish(int Time = 0, int playerId = -1)
 }
 
 
-//  阿兹特克独特科技, 浮动园地
-void Aztecs(int Time = 0, int playerId = -1)
-{
-    int FloatingGardenTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
-    if (FloatingGardenTime > 0)
-    {
-        FloatingGardenTime --;
-        if (FloatingGardenTime == 0)
-        {
-            MulAttribute(playerId, cTradeBoatClass, cWorkRate, 1.0 / 1.2);
-            MulAttribute(playerId, cBuildingClass, cWorkRate, 1.0 / 1.2);
-            MulAttribute(playerId, cVillagerClass, cWorkRate, 1.0 / 1.2);
-            MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.0 / 1.2);
-            MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.0 / 1.2);
-            MulAttribute(playerId, cFarmClass, cWorkRate, 1.0 / 1.2);
-            MulAttribute(playerId, ShrineID, cMaxCharge, 1.2);
-        }
-        SetResource(playerId, cAttributeTechEffectTime, FloatingGardenTime);
-    }
-}
-
-
-//  玛雅独特科技, 玉米神祝福
-void Mayans(int Time = 0, int playerId = -1)
-{
-    int YumKaaxBlessingTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
-    if (YumKaaxBlessingTime == 0)
-        return;
-    YumKaaxBlessingTime --;
-    if (YumKaaxBlessingTime == 0)
-    {
-        MulAttribute(playerId, 214, cWorkRate, 1.0 / 1000);
-        MulAttribute(playerId, 214, cCarryCapacity, 1.0 / 100);
-        MulAttribute(playerId, 259, cWorkRate, 1.0 / 1000);
-        MulAttribute(playerId, 259, cCarryCapacity, 1.0 / 100);
-        MulAttribute(playerId, 50, cWorkRate, 1.0 / 10000);
-    }
-    SetResource(playerId, cAttributeTechEffectTime, YumKaaxBlessingTime);
-}
-
-
-//  意大利, 佣兵合同
-void Italians(int Time = 0, int playerId = -1)
-{
-    if (isResearched(playerId, 3114) == false)
-        return;
-    int MercenaryContractTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
-    MercenaryContractTime --;
-    if (MercenaryContractTime == 0)
-    {
-        if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)  //  判断是否还有人口空间
-        {
-            SpawnUnit(playerId, 882, 109, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
-            MercenaryContractTime = 120;
-        }
-        else
-            MercenaryContractTime = 1;
-    }
-    SetResource(playerId, cAttributeTechEffectTime, MercenaryContractTime);
-}
-
-
-//  鞑靼独特科技, 掠夺号角
+//  Tatars, Raide Horn
 void Tatars(int Time = 0, int playerId = -1)
 {
     int RaideHornTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
@@ -1021,27 +988,10 @@ void Tatars(int Time = 0, int playerId = -1)
 }
 
 
-//  波兰独特科技, 维利奇卡盐矿
-void Poles(int Time = -1, int playerId = -1)
-{
-    if (isResearched(playerId, 3133) == false)
-        return;
-    float FoodObtained = xsPlayerAttribute(playerId, cAttributePolesFoodObtained);
-    float CurrentFoodBonus = xsPlayerAttribute(playerId, cAttributeStoneTotal) * 0.8;
-    ModResource(playerId, cAttributeFood, CurrentFoodBonus - FoodObtained);
-    SetResource(playerId, cAttributePolesFoodObtained, CurrentFoodBonus);
-}
-
-
-void Bengalis(int Time = -1, int playerId = -1)
-{
-}
-
-
-//  初始化
+//  Initialization
 void Init()
 {
-    //  获取玩家阵营
+    //  Get Players' Team IDs
     int TeamNum = 0;
     int i = 0;
     int j = 0;
@@ -1057,7 +1007,7 @@ void Init()
 }
 
 
-// Timer Event 定时器事件
+// Timer Event
 void TimerEvent(int Time = 0, int playerId = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -1096,34 +1046,9 @@ void TimerEvent(int Time = 0, int playerId = -1)
             Spanish(Time, playerId);
             break;
         }
-        case cAztecs:
-        {
-            Aztecs(Time, playerId);
-            break;
-        }
-        case cMayans:
-        {
-            Mayans(Time, playerId);
-            break;
-        }
-        case cItalians:
-        {
-            Italians(Time, playerId);
-            break;
-        }
         case cTatars:
         {
             Tatars(Time, playerId);
-            break;
-        }
-        case cPoles:
-        {
-            Poles(Time, playerId);
-            break;
-        }
-        case cBengalis:
-        {
-            Bengalis(Time, playerId);
             break;
         }
         default:
@@ -1141,7 +1066,6 @@ void Test(int Time = 0)
 }
 
 
-// 定时器
 rule Timer
     active
     minInterval 1

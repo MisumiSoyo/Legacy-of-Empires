@@ -1,7 +1,4 @@
-//  定义数组相关操作, 以及矩阵, 即二维数组
-//  目前Vector相关操作似乎存在问题, 暂时谨慎使用
-//  ArrayAppendInt()函数会频繁使用xsArrayResizeInt(), 时间复杂度较高, 建议在需要优化性能时预先开好数组并手动管理数组元素个数, 而不是使用ArrayAppendInt()
-//  Float和Vector同理
+//  vector arrays can't be correctly resized
 
 
 include "math.xs";
@@ -52,7 +49,6 @@ string ArrayToStringVector(int ArrayID = -1)
 }
 
 
-//交换数组中两个元素
 void ArraySwapValueInt(int ArrayID = -1, int p = -1, int q = -1)
 {
     if ((p != -1) && (q != -1))
@@ -84,7 +80,6 @@ void ArraySwapValueVector(int ArrayID = -1, int p = -1, int q = -1)
 }
 
 
-//查找元素, 返回其在数组中的下标, 找不到返回 -1
 int ArrayFindInt(int ArrayID = -1, int target = -1, int start = -1, int end = -1)
 {
     int i = 0;
@@ -119,7 +114,6 @@ int ArrayFindVector(int ArrayID = -1, vector target = vector(-1.0, -1.0, -1.0))
 }
 
 
-//二分查找元素，必须是已从小到大排序的数组
 int ArrayFindIntBS(int ArrayID = -1, int target = -1)
 {
     int l = 0;
@@ -140,7 +134,6 @@ int ArrayFindIntBS(int ArrayID = -1, int target = -1)
 }
 
 
-//  在数组中指定位置插入元素
 void ArrayInsertInt(int ArrayID = -1, int index = 0, int value = 0)
 {
     int i = 0;
@@ -169,7 +162,6 @@ void ArrayInsertVector(int ArrayID = -1, int index = 0, vector value = vector(-1
 }
 
 
-//  删除数组中指定位置的元素
 void ArrayRemoveInt(int ArrayID = -1, int index = 0, bool KeepOrder = true)
 {
     int ArraySize = xsArrayGetSize(ArrayID);
@@ -227,7 +219,7 @@ void ArrayRemoveVector(int ArrayID = -1, int index = 0, bool KeepOrder = true)
     xsArrayResizeVector(ArrayID, ArraySize - 1);
 }
 
-//  在数组头部添加元素
+
 void ArrayPushFrontInt(int ArrayID = -1, int value = 0)
 {
     if (xsArrayGetSize(ArrayID) == 0)
@@ -261,7 +253,7 @@ void ArrayPushFrontVector(int ArrayID = -1, vector value = vector(-1.0, -1.0, -1
     ArrayInsertVector(ArrayID, 0, value);
 }
 
-//  在数组末尾添加元素
+
 void ArrayAppendInt(int ArrayID = -1, int value = 0)
 {
     xsArrayResizeInt(ArrayID, xsArrayGetSize(ArrayID) + 1);
@@ -295,7 +287,7 @@ void ArrayPushBackVector(int ArrayID = -1, vector value = vector(-1.0, -1.0, -1.
     ArrayAppendVector(ArrayID, value);
 }
 
-//  删除数组头部元素
+
 void ArrayPopFrontInt(int ArrayID = -1)
 {
     ArrayRemoveInt(ArrayID, 0);
@@ -311,7 +303,7 @@ void ArrayPopFrontVector(int ArrayID = -1)
     ArrayRemoveVector(ArrayID, 0);
 }
 
-//  删除数组末尾元素
+
 void ArrayPopBackInt(int ArrayID = -1)
 {
     xsArrayResizeInt(ArrayID, xsArrayGetSize(ArrayID) - 1);
@@ -359,7 +351,7 @@ vector ArrayEndVector(int ArrayID = -1)
     return (xsArrayGetVector(ArrayID, xsArrayGetSize(ArrayID) - 1));
 }
 
-//  对数组的指定元素进行增加
+
 void ArrayIncInt(int ArrayID = -1, int index = 0, int value = -1)
 {
     xsArraySetInt(ArrayID, index, xsArrayGetInt(ArrayID, index) + value);
@@ -371,7 +363,7 @@ void ArrayIncFloat(int ArrayID = -1, int index = 0, float value = -1.0)
 }
 
 
-//  对数组的指定元素进行倍乘
+
 void ArrayMulInt(int ArrayID = -1, int index = 0, int value = -1)
 {
     xsArraySetInt(ArrayID, index, xsArrayGetInt(ArrayID, index) * value);
@@ -383,7 +375,6 @@ void ArrayMulFloat(int ArrayID = -1, int index = 0, float value = -1.0)
 }
 
 
-//快速排序
 void QuickSortInt(int ArrayID = -1, int left = 0, int right = -1)
 {
     int i = left;
@@ -414,8 +405,6 @@ void QuickSortInt(int ArrayID = -1, int left = 0, int right = -1)
 }
 
 
-//  二维数组的实现, 称为矩阵
-//  创建新矩阵
 int NewMatrixInt(int sizea = 0, int sizeb = 0, int defaultValue = 0)
 {
     int NewMatrixID = xsArrayCreateInt(sizea, 0);
@@ -444,7 +433,6 @@ int NewMatrixVector(int sizea = 0, int sizeb = 0, vector defaultValue = vector(-
 }
 
 
-//  获取矩阵中的元素
 int MatrixGetInt(int MatrixID = -1, int indexa = 0, int indexb = 0)
 {
     return (xsArrayGetInt(xsArrayGetInt(MatrixID, indexa), indexb));
@@ -461,7 +449,6 @@ vector MatrixGetVector(int MatrixID = -1, int indexa = 0, int indexb = 0)
 }
 
 
-//  修改矩阵中的元素
 void MatrixSetInt(int MatrixID = -1, int indexa = 0, int indexb = 0, int value = 0)
 {
     xsArraySetInt(xsArrayGetInt(MatrixID, indexa), indexb, value);
@@ -478,7 +465,6 @@ void MatrixSetVector(int MatrixID = -1, int indexa = 0, int indexb = 0, vector v
 }
 
 
-//  在矩阵末尾增加一行
 void MatrixAppendRowInt(int MatrixID = -1, int ArrayID = -1)
 {
     if (ArrayID == -1)
@@ -504,7 +490,6 @@ void MatrixAppendRowVector(int MatrixID = -1, int ArrayID = -1)
 }
 
 
-//  在矩阵中删除一行, 并且这个数组会被回收
 void MatrixRemoveRowInt(int MatrixID = -1, int index = 0)
 {
     ArrayRemoveInt(MatrixID, index);
@@ -521,7 +506,6 @@ void MatrixRemoveRowVector(int MatrixID = -1, int index = 0)
 }
 
 
-//  在矩阵中插入一行
 void MatrixInsertRowInt(int MatrixID = -1, int index = 0, int ArrayID = -1)
 {
     ArrayInsertInt(MatrixID, index, ArrayID);
@@ -538,7 +522,6 @@ void MatrixInsertRowVector(int MatrixID = -1, int index = 0, int ArrayID = -1)
 }
 
 
-//  矩阵转换为字符串
 string MatrixToStringInt(int MatrixID = -1)
 {
     string result = "[";
@@ -582,7 +565,6 @@ string MatrixToStringVector(int MatrixID = -1)
 }
 
 
-//  在矩阵中的某一行查找元素
 int MatrixFindInt(int MatrixID = -1, int row = -1, int value = -1)
 {
     return (ArrayFindInt(xsArrayGetInt(MatrixID, row), value));
@@ -599,7 +581,6 @@ int MatrixFindVector(int MatrixID = -1, int row = -1, vector value = vector(-1.0
 }
 
 
-//  对矩阵的指定元素进行增加
 void MatrixIncInt(int MatrixID = -1, int row = -1, int column = -1 , int value = -1)
 {
     ArrayIncInt(xsArrayGetInt(MatrixID, row), column, value);
@@ -611,7 +592,6 @@ void MatrixIncFloat(int MatrixID = -1, int row = -1, int column = -1 , float val
 }
 
 
-//  对矩阵的指定元素进行倍乘
 void MatrixMulInt(int MatrixID = -1, int row = -1, int column = -1 , int value = -1)
 {
     ArrayMulInt(xsArrayGetInt(MatrixID, row), column, value);
@@ -623,7 +603,6 @@ void MatrixMulFloat(int MatrixID = -1, int row = -1, int column = -1 , float val
 }
 
 
-//  在矩阵中插入一个元素
 void MatrixInsertInt(int MatrixID = -1, int row = -1, int column = -1, int value = -1)
 {
     ArrayInsertInt(xsArrayGetInt(MatrixID, row), column, value);
@@ -640,7 +619,6 @@ void MatrixInsertVector(int MatrixID = -1, int row = -1, int column = -1, vector
 }
 
 
-//  在矩阵中添加一个元素
 void MatrixAppendInt(int MatrixID = -1, int row = -1, int value = -1)
 {
     ArrayAppendInt(xsArrayGetInt(MatrixID, row), value);
@@ -657,7 +635,6 @@ void MatrixAppendVector(int MatrixID = -1, int row = -1, vector value = vector(-
 }
 
 
-//  在矩阵中删除一个元素
 void MatrixRemoveInt(int MatrixID = -1, int row = -1, int column = -1, bool KeepOrder = true)
 {
     ArrayRemoveInt(xsArrayGetInt(MatrixID, row), column, KeepOrder);
@@ -674,7 +651,6 @@ void MatrixRemoveVector(int MatrixID = -1, int row = -1, int column = -1)
 }
 
 
-//  删除矩阵指定行的头部元素
 void MatrixPopFrontInt(int MatrixID = -1, int row = -1)
 {
     ArrayPopFrontInt(xsArrayGetInt(MatrixID, row));
@@ -691,7 +667,6 @@ void MatrixPopFrontVector(int MatrixID = -1, int row = -1)
 }
 
 
-//  删除矩阵指定行的末尾元素
 void MatrixPopBackInt(int MatrixID = -1, int row = -1)
 {
     ArrayPopBackInt(xsArrayGetInt(MatrixID, row));
@@ -708,14 +683,12 @@ void MatrixPopBackVector(int MatrixID = -1, int row = -1)
 }
 
 
-//  获取矩阵指定行的长度
 int MatrixRowLength(int MatrixID = -1, int row = -1)
 {
     return (xsArrayGetSize(xsArrayGetInt(MatrixID, row)));
 }
 
 
-//  合并数组
 int MergeArrayInt(int ArrayID1 = -1, int ArrayID2 = -1)
 {
     int i = 0;

@@ -1,11 +1,11 @@
-//  ability.xs用于设置单位的独特能力
-//  AbilityApplier()是接口，完成单位能力的设置
+//  ability.xs is to endow units with abilities
+//  AbilityApplier() is the interface
 
 
 include "units.xs";
 
 
-//  阿萨辛, 冲锋技能, 攻击 1 次即死亡
+//  Assasins' Ability
 void AssassinInit(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -41,7 +41,7 @@ void AssassinInit(int playerId = -1)
     xsResetTaskAmount();
     LaunchStinger(playerId, AssassinID);
 
-    //  当前游戏bug, 如果本次攻击击杀了目标, 则157效果不触发, 因此使用154做特殊处理
+    //  since current bugs existing in game, units would never trigger task 157 when their attacks kill target enemies
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.00003);
     xsTaskAmount(cTaskAttrGatherType, -100);
@@ -56,12 +56,9 @@ void AssassinInit(int playerId = -1)
 }
 
 
-//  维京狂战士, 攻击回复 8 生命值, -10% 基础攻击间隔
+//  Berserks regenerate HP and increase attack speed when attacking
 void BerserkInit(int playerId = -1)
 {
-    int BerserkID = 692;
-    int EliteBerserkID = 694;
-
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);
@@ -110,8 +107,7 @@ void BerserkInit(int playerId = -1)
 
 
 
-//  维京掠夺者, 每 30 总击杀提供 10% 攻击速度加成, 最多 50%
-//  给予task 154, 当击杀时触发效果
+//  Viking Raider Task
 void VikingRaiderInit(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -141,7 +137,7 @@ void VikingRaiderInit(int playerId = -1)
 }
 
 
-// 10019 - 维京掠夺者击杀奖励效果
+// 10019 - Viking Raider Kill Effect
 void EffectFunction10019(int playerId = -1)
 {
     int VikingRaiderKillCount = xsPlayerAttribute(playerId, cAttributeVikingRaiderKills);
@@ -154,7 +150,7 @@ void EffectFunction10019(int playerId = -1)
 }
 
 
-//  医院骑士变身, 治疗周围友方单位, 并且暂时不会阵亡
+//  Hospitaller Knight Ability
 void HospitallerKnightInit(int playerId = -1)
 { 
     int AbilityDuration = 25;
@@ -213,79 +209,78 @@ void Shrine(int Time = 0, int playerId = 0)
 }
 
 
-void EffectFunction10030(int playerId = -1)  //  切换到训练民兵系
+void EffectFunction10030(int playerId = -1)  //  Switch to training Militia
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 74, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
 }
 
-void EffectFunction10031(int playerId = -1)  //  切换到训练长矛兵系
+void EffectFunction10031(int playerId = -1)  //  Switch to training Spearman
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 93, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 72);
 }
 
-void EffectFunction10032(int playerId = -1)  //  切换到训练鹰斥候系
+void EffectFunction10032(int playerId = -1)  //  Switch to training Eagle Scout
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 751, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 100);
 }
 
-void EffectFunction10033(int playerId = -1)  //  切换到训练步弓手系
+void EffectFunction10033(int playerId = -1)  //  Switch to training Archer
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 4, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 100);
 }
 
-void EffectFunction10034(int playerId = -1)  //  切换到训练掷矛手系
+void EffectFunction10034(int playerId = -1)  //  Switch to training Skirmisher
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 7, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 72);
 }
 
 
-void EffectFunction10035(int playerId = -1)  //  切换到训练投石手
+void EffectFunction10035(int playerId = -1)  //  Switch to training Slinger
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 185, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 110);
 }
 
 
-void EffectFunction10036(int playerId = -1)  //  切换到训练印加枪兵长
+void EffectFunction10036(int playerId = -1)  //  Switch to training Kamayuk
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 879, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
 }
 
 
-void EffectFunction10043(int playerId = -1)  //  切换到训练豹勇士
+void EffectFunction10043(int playerId = -1)  //  Switch to training Jaguar Warrior
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 725, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
 }
 
 
-void EffectFunction10044(int playerId = -1)  //  切换到训练羽箭手
+void EffectFunction10044(int playerId = -1)  //  Switch to training Plumed Archer
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 763, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
 }
 
 
-void EffectFunction10045(int playerId = -1)  //  切换到训练索洛托勇士
+void EffectFunction10045(int playerId = -1)  //  Switch to training Xolotl
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 1570, playerId);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
 }
 
 
-//  女真TC产的鹿, 在城镇中心下会流血死亡, 防止重复体积导致无法移动
 void TCSpawnedDeerInit(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 120.0000005);
     xsTaskAmount(cTaskAttrWorkRange, 2);
-    xsTaskAmount(cTaskAttrWorkValue1, -4);  //  15秒内死亡
+    xsTaskAmount(cTaskAttrWorkValue1, -4);  //  die in 15 seconds
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTask(4054, cTaskTypeAura, 109, playerId);
@@ -308,7 +303,7 @@ void ShrineInit(int playerId = -1)
     SetResource(playerId, cAttributeShrineSpawnUnitID, 74);
     SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
     SetAttribute(playerId, ShrineID, cMaxCharge, ShrineMaxCharge);
-    //  阿兹特克文明加成, 圣坛 +15% 生产速度
+    //  Aztecs civ bonus
     if (xsGetPlayerCivilization(playerId) == cAztecs)
     {
         MulAttribute(playerId, ShrineID, cMaxCharge, 1.0 / 1.15);
@@ -317,7 +312,7 @@ void ShrineInit(int playerId = -1)
 }
 
 
-//  马扎尔文明加成, 可在城堡以 +75% 速度训练单位
+//  Magyars civ bonus
 void FasterCastleUnits(int playerId = -1, int ObjectID = -1, int TrainButtonID = -1, int HotKeyID = -1)
 {
     SetAttribute(playerId, ObjectID, cTrainLocationsTotalNum, 2);
@@ -330,25 +325,6 @@ void FasterCastleUnits(int playerId = -1, int ObjectID = -1, int TrainButtonID =
 }
 
 
-//  波斯文明加成每分钟建筑产生的黄金
-float PersianBuildingGold(int playerId = -1, int UnitID = -1)
-{
-    int ObjectID = xsGetUnitObjectId(UnitID);
-
-    if (isCastle(ObjectID))
-        return (0);
-    //  处理城镇中心，排除附加建筑
-    if (xsGetObjectAttribute(playerId, ObjectID, cNameId) == 5164)
-        if (isTownCenter(ObjectID) == false)
-            return (0);
-    
-    //  每分钟产生黄金数 = 建筑木材费用/20+建筑黄金费用/10+建筑石料费用/5
-    return (xsGetObjectAttribute(playerId, ObjectID, cWoodCost) / 20 + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) / 10
-            + xsGetObjectAttribute(playerId, ObjectID, cStoneCost) / 5);
-}
-
-
-//  马来战船可以产生食物
 void MalayShipInit(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -367,29 +343,29 @@ int RecruitUnit(int index = 0)
     switch (index)
     {
         case 0:
-            return (1225);  //  龙骑兵
+            return (KonnikID);
         case 1:
-            return (1655);  //  马上轻装兵
+            return (CoustillierID);
         case 2:
-            return (755);  //   答剌罕骑兵
+            return (TarkanID);
         case 3:
-            return (41);  //    近卫军
+            return (HuskarlID);
         case 4:
-            return (1231);  //  钦察
+            return (EliteKipchakID);
         case 5:
-            return (1007);  //  骆驼射手
+            return (CamelArcherID);
         case 6:
-            return (1803);  //  莫纳斯帕
+            return (MonaspaID);
         case 7:
-            return (281);  //   掷斧兵
+            return (ThrowingAxemanID);
         case 8:
-            return (239);  //   战象
+            return (WarElephantID);
         case 9:
-            return (771);  //   西班牙征服者
+            return (ConquistadorID);
         case 10:
-            return (1658);  //  萨金特卫兵
+            return (SerjeantID);
         case 11:
-            return (1228);  //  怯薛
+            return (KeshikID);
         default:
             return (-1);
     }
@@ -397,7 +373,7 @@ int RecruitUnit(int index = 0)
 }
 
 
-//  10048 - 招募佣兵
+//  10048 - Recruit Mercenary
 void EffectFunction10048(int playerId = -1)
 {    
     int AgeID = xsPlayerAttribute(playerId, cAttributeCurrentAge);
@@ -440,7 +416,6 @@ void BengalisCavalryVSSkirmisher(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 僧侣 +2 近战护甲/3 远程护甲, +15 生命值
 void EffectFunction10049(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -455,8 +430,6 @@ void EffectFunction10049(int playerId = -1)
 }
 
 
-//  由于目前是通过将斥候骑兵升级为曼沙布达尔骑兵来替代, 所以对曼沙布达尔骑兵加成时要同时适用于斥候骑兵
-//  孟加拉, 消耗圣物获取加成, 曼沙布达尔骑兵 +2 攻击力
 void EffectFunction10050(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -469,7 +442,6 @@ void EffectFunction10050(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 战车 +1 远程护甲, 并且免疫对射手加成
 void EffectFunction10051(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -486,7 +458,6 @@ void EffectFunction10051(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 团队贸易 +10% 额外木材和食物产出
 void EffectFunction10052(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -497,7 +468,6 @@ void EffectFunction10052(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 步兵 +15% 攻击速度, +1 近战护甲/远程护甲
 void EffectFunction10053(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -509,7 +479,6 @@ void EffectFunction10053(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 舰船每分钟回复的生命值 +15
 void EffectFunction10054(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -523,7 +492,6 @@ void EffectFunction10054(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 当前每个城镇中心, 城堡和修道院立即产生 1 个战车, 战车 -15 木材费用
 void EffectFunction10055(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -539,7 +507,6 @@ void EffectFunction10055(int playerId = -1)
 }
 
 
-//  孟加拉, 消耗圣物获取加成, 骑象射手 +1 攻击力, 对枪兵再 +4
 void EffectFunction10056(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
@@ -552,7 +519,6 @@ void EffectFunction10056(int playerId = -1)
 }
 
 
-//  赋予怯薛攻击回复生命值的能力
 void KeshikInit(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -593,7 +559,6 @@ void KeshikStingerCastleAgeUpgrade(int playerId = -1)
 }
 
 
-//  波希米亚, 兵营单位附加伤害改动
 void ModBarrackUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = true)
 {
     int i = 0;
@@ -622,7 +587,6 @@ void MulBarrackUnitAttackBonus(int playerId = -1, float value = 0.0)
 }
 
 
-//  波希米亚, 靶场单位附加伤害改动
 void ModArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = true)
 {
     int i = 0;
@@ -651,49 +615,42 @@ void MulArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0)
 }
 
 
-//  10058 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
 void EffectFunction10058(int playerId = -1)
 {
     ModBarrackUnitAttackBonus(playerId, 1);
 }
 
 
-//  10059 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
 void EffectFunction10059(int playerId = -1)
 {
     ModBarrackUnitAttackBonus(playerId, 1);
 }
 
 
-//  10060 - 波希米亚, 研究锻造, 铸铁, 鼓风炉可使兵营单位 +1 附加伤害
 void EffectFunction10060(int playerId = -1)
 {
     ModBarrackUnitAttackBonus(playerId, 1);
 }
 
 
-//  10074 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
 void EffectFunction10074(int playerId = -1)
 {
     ModArcheryRangeUnitAttackBonus(playerId, 1);
 }
 
 
-//  10075 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
 void EffectFunction10075(int playerId = -1)
 {
     ModArcheryRangeUnitAttackBonus(playerId, 1);
 }
 
 
-//  10076 - 波希米亚, 研究箭羽, 锥子箭, 护腕可使靶场单位 +1 附加伤害
 void EffectFunction10076(int playerId = -1)
 {
     ModArcheryRangeUnitAttackBonus(playerId, 1);
 }
 
 
-//  设置新攻击类型的攻击力
 void SetNewAttackForms(int playerId = -1)
 {
     SetAttack(playerId, cSiegeWeaponClass, cDamageClassSiegeWeaponAttack, -10);
@@ -703,7 +660,6 @@ void SetNewAttackForms(int playerId = -1)
 }
 
 
-//  可汗击杀升级效果和技能光环
 void KhanInit(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -744,7 +700,6 @@ void KhanInit(int playerId = -1)
 }
 
 
-//  苏丹王效果应用于大象单位
 void SultansApplier(int playerId = -1, int ClassTarget = -1)
 {
     xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 9.0 * 60);
@@ -759,7 +714,6 @@ void SultansApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
-//  蒙古和平效果
 void PaxMongolicaApplier(int playerId = -1, int ClassTarget = -1)
 {
     xsTaskAmount(cTaskAttrWorkValue1, 2.0 * 60);
@@ -787,7 +741,6 @@ void TributarySystemApplier(int playerId = -1, int ObjectTarget = -1, int TrainB
 
 
 
-//  朝贡体系
 void EffectFunction10022(int playerId = -1)
 {
     TributarySystemApplier(playerId, EliteMangudaiID, 21, 16079);
@@ -803,7 +756,7 @@ void EffectFunction10022(int playerId = -1)
 }
 
 
-//  接口, 赋予单位独特能力
+//  Interface
 void AbilityApplier()
 {
     static bool run = false;
