@@ -615,13 +615,20 @@ void EffectFunction10040(int playerId = -1)
     SetAttribute(playerId, MercenaryContractBuildingID, cDeadUnitId, MercenaryContractBuildingID);
     SetAttribute(playerId, MercenaryContractBuildingID, cBloodUnitId, MercenaryContractEffectBuildingID);
     SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
+    SpawnUnit(playerId, MercenaryContractBuildingID, UniversityID, 1, 1);
 }
 
 
 //  10041 - Italians, Mercenary Contract spawn Condottieros
 void EffectFunction10041(int playerId = -1)
 {
-    SpawnUnit(playerId, CondottieroID, TownCenterID, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
+    if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)
+    {
+        SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
+        SpawnUnit(playerId, CondottieroID, TownCenterID, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
+    }
+    else
+        SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -30);
 }
 
 
@@ -894,6 +901,21 @@ void EffectFunction10073(int playerId = -1)
 }
 
 
+//  Spanish, Explorer
+void EffectFunction10078(int playerId = -1)
+{
+    static float ExplorerGoldRate = 0.015;
+    int i = 0;
+    float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
+    float CurrentGold = 0;
+    for (i = 1; <= xsGetNumPlayers())
+        if (i != playerId)
+            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
+    ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
+    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
+}
+
+
 //  Franks, loan
 void Franks(int Time = 0, int playerId = -1)
 {
@@ -966,22 +988,6 @@ void Byzantines(int Time = 0, int playerId = -1)
 }
 
 
-//  Spanish, Explorer
-void Spanish(int Time = 0, int playerId = -1)
-{
-    static float ExplorerGoldRate = 0.015;
-    int i = 0;
-    float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
-    float CurrentGold = 0;
-    for (i = 0; <= xsGetNumPlayers())
-        if (i != playerId)
-            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
-    if (isResearched(playerId, 3135))
-        ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
-    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
-}
-
-
 //  Initialization
 void Init()
 {
@@ -1033,11 +1039,6 @@ void TimerEvent(int Time = 0, int playerId = -1)
         case cByzantines:
         {
             Byzantines(Time, playerId);
-            break;
-        }
-        case cSpanish:
-        {
-            Spanish(Time, playerId);
             break;
         }
         default:

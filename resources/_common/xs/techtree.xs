@@ -691,7 +691,7 @@ void EffectFunction10024(int playerId = -1)
         }
         case cBurgundians:
         {
-            EnableObject(playerId, knight);
+            EnableObject(playerId, KnightID);
             break;
         }
         case cPoles:
@@ -818,7 +818,7 @@ void EffectFunction10025(int playerId = -1)
         case cSpanish:
         {
             ForceEnableTech(playerId, 599);
-            xsEffectAmount(cUpgradeUnit, 17, ManilaGalleoID, -1, playerId);
+            xsEffectAmount(cUpgradeUnit, 17, ManilaGalleonID, -1, playerId);
             break;
         }
         case cAztecs:

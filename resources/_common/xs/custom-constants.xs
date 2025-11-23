@@ -1,44 +1,44 @@
 //  全局量定义
 
 //  资源定义
-extern const int cAttributeVarangianLootProductivity = 384; //  瓦兰吉卫队黄金产率
-extern const int cAttributeWubaoFoodWoodProductivity = 385; //  坞堡食物和木材产出速率
+extern const int cAttributeVarangianLootProductivity = 384;
+extern const int cAttributeWubaoFoodWoodProductivity = 385;
 extern const int cAttributeFishTrapProductivity = 387;
-extern const int cAttributeCavalryLootBuildingGoldProductivity = 389;   //  骑兵掠夺建筑黄金产率
-extern const int cAttributeInfantryLootFarmFoodProductivity = 390;  //  步兵掠夺农田产出食物速率
-extern const int cAttributeHunterFoodProductivity = 391;    //  猎人食物自动产率
-extern const int cAttributeFarmFoodGenerateProductivity = 392;  //  农田食物产出速率
-extern const int cAttributeWubaoGoldProductivity = 393; //  坞堡黄金产出速率
-extern const int cAttributeRelicPurchaseLimit = 394;    //  圣物可购买数
-extern const int cAttributeLoanLimit = 396; //  借贷可用数量
-extern const int cAttributeGoldFishingProductivity = 397;   //  捕鱼黄金产出速率
-extern const int cAttributeTaboriteWarriorProductivity = 398;   //  塔博尔战士资源产出速率
-extern const int cAttributeHospitallerKnightCharge = 409;   //  医院骑士充能
-extern const int cAttributeHospitallerKnightChargeRate = 410;   //  医院骑士充能效率
-extern const int cAttributeShrineSpawnUnitID = 411; //  圣坛生产的单位ID
-extern const int cAttributeMagyarRelicAttackBonus = 412;    //  马扎尔圣物加成的攻击力
-extern const int cAttributeVikingRaiderKills = 413; //  维京掠夺者击杀数
-extern const int cAttributeApostleProductivity = 414;   //  使徒黄金产出速率
-extern const int cAttributeStoneMinerFoodProductivity = 415;    //  石矿工产生食物的速率
-extern const int cAttributeSpanishExplorerGoldCalced = 416; //  西班牙探险家已经计算的黄金数
-extern const int cAttributeWarShipFoodProductivity = 417; //  马来战船产生食物的速率
-extern const int cAttributeRecruitMercenaryCost = 418;  //  招募佣兵所需积累的资源, 每过一段时间获得1次招募机会
-extern const int cAttributeCurrentTime = 419;   //  当前时间 +1
-extern const int cAttributeTechEffectTime = 420;    //  科技效果剩余的持续时间
-extern const int cAttributeFrankLoan = 421; //  法兰克放贷数额
-extern const int cAttributeIxipltaKillCount = 422;   //  阿兹特克独特科技的击杀数统计
-extern const int cAttributeHospitallerKnightAbilityTime = 423;  //  医院骑士技能剩余持续时间
-extern const int cAttributeShrineSpawnCount = 424;  //  圣坛已生产单位的次数
-extern const int cAttributeCondottieroMercenaryNum = 434;   //  意大利佣兵生成数量
-extern const int cAttributeTeam = 435;   //  队伍编号
-extern const int cAttributeRelicCount = 436;    //  圣物计数
-extern const int cAttributeGothsVillagerBonus = 437;    //  哥特文明加成已经奖励的村民数
-extern const int cAttributeSoheiProgress = 438; //  日本僧兵产生进度
-extern const int cAttributeDacaoguCalcedValue = 439;    //  契丹打草谷已经计算的摧毁价值数
-extern const int cAttributeChineseTCCount = 440;    //  中国城镇中心数量
-extern const int cAttributeKeshikStingerRate = 441; //  怯薛攻击回复速率
-extern const int cAttributeShrineSpawnProgress = 442;   //  圣坛充能
-extern const int cAttributeShrineSpawnRate = 443;   //  圣坛充能效率
+extern const int cAttributeCavalryLootBuildingGoldProductivity = 389;
+extern const int cAttributeInfantryLootFarmFoodProductivity = 390;
+extern const int cAttributeHunterFoodProductivity = 391;
+extern const int cAttributeFarmFoodGenerateProductivity = 392;
+extern const int cAttributeWubaoGoldProductivity = 393;
+extern const int cAttributeRelicPurchaseLimit = 394;
+extern const int cAttributeLoanLimit = 396;
+extern const int cAttributeGoldFishingProductivity = 397;
+extern const int cAttributeTaboriteWarriorProductivity = 398;
+extern const int cAttributeHospitallerKnightCharge = 409;
+extern const int cAttributeHospitallerKnightChargeRate = 410;
+extern const int cAttributeShrineSpawnUnitID = 411;
+extern const int cAttributeMagyarRelicAttackBonus = 412;
+extern const int cAttributeVikingRaiderKills = 413;
+extern const int cAttributeApostleProductivity = 414;
+extern const int cAttributeStoneMinerFoodProductivity = 415;
+extern const int cAttributeSpanishExplorerGoldCalced = 416;
+extern const int cAttributeWarShipFoodProductivity = 417;
+extern const int cAttributeRecruitMercenaryCost = 418;
+extern const int cAttributeCurrentTime = 419;
+extern const int cAttributeTechEffectTime = 420;
+extern const int cAttributeFrankLoan = 421;
+extern const int cAttributeIxipltaKillCount = 422;
+extern const int cAttributeHospitallerKnightAbilityTime = 423;
+extern const int cAttributeShrineSpawnCount = 424;
+extern const int cAttributeCondottieroMercenaryNum = 434;
+extern const int cAttributeTeam = 435;
+extern const int cAttributeRelicCount = 436;
+extern const int cAttributeGothsVillagerBonus = 437;
+extern const int cAttributeSoheiProgress = 438;
+extern const int cAttributeDacaoguCalcedValue = 439;
+extern const int cAttributeChineseTCCount = 440;
+extern const int cAttributeKeshikStingerRate = 441;
+extern const int cAttributeShrineSpawnProgress = 442;
+extern const int cAttributeShrineSpawnRate = 443;
 
 
 //  单位ID定义
@@ -229,7 +229,7 @@ extern const int cDamageClassSiegeWeaponAttack = 104;
 extern const int cDamageClassLightCavalry = 105;
 
 
-extern const int HospitallerKnightMaxCharge = 300; //   医院骑士技能充能
-extern const float ShrineMaxCharge = 1200.0;    //  圣坛最大充能
-extern const int SatrapAuraRange = 10;  //  波斯总督光环范围
+extern const int HospitallerKnightMaxCharge = 300;
+extern const float ShrineMaxCharge = 1200.0;
+extern const int SatrapAuraRange = 10;
 extern const int MalayTCAuraRange = 10;
