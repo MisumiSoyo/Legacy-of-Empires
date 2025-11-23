@@ -1,6 +1,27 @@
 include "ability.xs";
 
 
+//  Initialization
+void Init(int playerId = -1)
+{
+    //  Get Players' Team IDs
+    if (xsPlayerAttribute(playerId, cAttributeTeam) > 0)
+        return;
+    int TeamNum = 0;
+    int i = 0;
+    int j = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if (xsPlayerAttribute(i, cAttributeTeam) == 0)
+        {
+            TeamNum ++;
+            xsResearchTechnology(3149, true, false, i);
+            for (j = 0; <= xsGetNumPlayers())
+                if (xsPlayerAttribute(j, cAttributeTeam) == 10)
+                    SetResource(j, cAttributeTeam, TeamNum);
+        }
+}
+
+
 // 10001 - Tech Tree Adjustment (takes effect from feudal age)
 void EffectFunction10001(int playerId = -1)
 {
@@ -94,6 +115,7 @@ void EffectFunction10001(int playerId = -1)
 void EffectFunction10002(int playerId = -1)
 {
     AbilityApplier();
+    Init();
 
     int playerCiv = xsGetPlayerCivilization(playerId);
 

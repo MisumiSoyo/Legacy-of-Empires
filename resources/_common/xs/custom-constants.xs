@@ -39,6 +39,7 @@ extern const int cAttributeChineseTCCount = 440;
 extern const int cAttributeKeshikStingerRate = 441;
 extern const int cAttributeShrineSpawnProgress = 442;
 extern const int cAttributeShrineSpawnRate = 443;
+extern const int cAttributeTCTimerFlag = 444;
 
 
 //  单位ID定义
@@ -104,6 +105,10 @@ extern const int FloatingGardenBuildingID = 4065;
 extern const int FloatingGardenEndBuildingID = 4066;
 extern const int RaideHornBuildingID = 4067;
 extern const int RaideHornEndBuildingID = 4068;
+extern const int ExplorerBuildingID = 4069;
+extern const int ExplorerEffectBuildingID = 4070;
+extern const int TCTimerBuildingID = 4071;
+extern const int TCTimerEventBuildingID = 4072;
 
 
 extern const int ArcherID = 4;
@@ -119,6 +124,7 @@ extern const int CavalryArcherID = 39;
 extern const int HuskarlID = 41;
 extern const int SiegeWorkshopID = 49;
 extern const int FarmID = 50;
+extern const int TownCenter2ID = 71;
 extern const int MilitiaID = 74;
 extern const int CastleID = 82;
 extern const int ManAtArmsID = 75;
@@ -128,6 +134,8 @@ extern const int BlacksmithID = 103;
 extern const int MonasteryID = 104;
 extern const int TownCenterID = 109;
 extern const int MaleStoneMinerID = 124;
+extern const int TownCenter3ID = 141;
+extern const int TownCenter4ID = 142;
 extern const int SiegeWorkshop4ID = 150;
 extern const int ImperialCamelRiderID = 207;
 extern const int UniversityID = 209;

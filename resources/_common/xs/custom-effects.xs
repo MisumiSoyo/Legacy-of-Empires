@@ -901,6 +901,16 @@ void EffectFunction10073(int playerId = -1)
 }
 
 
+//  10079 - Spawn Timer Building
+void EffectFunction10079(int playerId = -1)
+{
+    SetAttribute(playerId, TCTimerBuildingID, cRegenerationHpPercent, -60);
+    if (xsGetObjectCount(playerId, TCTimerBuildingID) > 0)
+        return;
+    SpawnUnit(playerId, TCTimerBuildingID, 619, 1, 1);
+}
+
+
 //  Spanish, Explorer
 void EffectFunction10078(int playerId = -1)
 {
@@ -917,7 +927,7 @@ void EffectFunction10078(int playerId = -1)
 
 
 //  Franks, loan
-void Franks(int Time = 0, int playerId = -1)
+void Franks(int playerId = -1)
 {
     int FrankLoanTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
     if (FrankLoanTime > 0)
@@ -933,7 +943,7 @@ void Franks(int Time = 0, int playerId = -1)
 
 
 //  Goths, obtain 1 villager from every three killed enemies
-void Goths(int Time = 0, int playerId = -1)
+void Goths(int playerId = -1)
 {
     int CalcedBonus = xsPlayerAttribute(playerId, cAttributeGothsVillagerBonus);
     if (CalcedBonus >= 20)
@@ -951,7 +961,7 @@ void Goths(int Time = 0, int playerId = -1)
 
 
 //  Japanese, Ikko-Ikki
-void Japanese(int Time = 0, int playerId = -1)
+void Japanese(int playerId = -1)
 {
     if (isResearched(playerId, 3068) == false)
         return;
@@ -964,7 +974,7 @@ void Japanese(int Time = 0, int playerId = -1)
 
 
 //  Chinese, TC provides +5 population capacity (maximum +50)
-void Chinese(int Time = 0, int playerId = -1)
+void Chinese(int playerId = -1)
 {
     int TCCount = xsGetObjectCount(playerId, 109);
     int RecordedTCCount = xsPlayerAttribute(playerId, cAttributeChineseTCCount);
@@ -976,7 +986,7 @@ void Chinese(int Time = 0, int playerId = -1)
 
 
 //  Byzantines, recruit units
-void Byzantines(int Time = 0, int playerId = -1)
+void Byzantines(int playerId = -1)
 {
     if (xsPlayerAttribute(playerId, cAttributeCurrentAge) >= 2)
     {
@@ -988,27 +998,8 @@ void Byzantines(int Time = 0, int playerId = -1)
 }
 
 
-//  Initialization
-void Init()
-{
-    //  Get Players' Team IDs
-    int TeamNum = 0;
-    int i = 0;
-    int j = 0;
-    for (i = 0; <= xsGetNumPlayers())
-        if (xsPlayerAttribute(i, cAttributeTeam) == 0)
-        {
-            TeamNum ++;
-            xsResearchTechnology(3149, true, false, i);
-            for (j = 0; <= xsGetNumPlayers())
-                if (xsPlayerAttribute(j, cAttributeTeam) == 10)
-                    SetResource(j, cAttributeTeam, TeamNum);
-        }
-}
-
-
-// Timer Event
-void TimerEvent(int Time = 0, int playerId = -1)
+// 10000 - Timer Event
+void EffectFunction10000(int playerId = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
 
@@ -1016,29 +1007,29 @@ void TimerEvent(int Time = 0, int playerId = -1)
 
     switch (playerCiv)
     {
-        case cFranks:
-        {
-            Franks(Time, playerId);
-            break;
-        }
         case cGoths:
         {
-            Goths(Time, playerId);
+            Goths(playerId);
+            break;
+        }
+        case cFranks:
+        {
+            Franks(playerId);
             break;
         }
         case cJapanese:
         {
-            Japanese(Time, playerId);
+            Japanese(playerId);
             break;
         }
         case cChinese:
         {
-            Chinese(Time, playerId);
+            Chinese(playerId);
             break;
         }
         case cByzantines:
         {
-            Byzantines(Time, playerId);
+            Byzantines(playerId);
             break;
         }
         default:
@@ -1047,31 +1038,5 @@ void TimerEvent(int Time = 0, int playerId = -1)
         }
     }
 
-    Shrine(Time, playerId);
-}
-
-
-void Test(int Time = 0)
-{
-}
-
-
-rule Timer
-    active
-    minInterval 1
-    maxInterval 1
-{
-    int LastUpdateTime = xsPlayerAttribute(0, cAttributeCurrentTime);
-    int CurrentTime = xsGetGameTime();
-
-    while (LastUpdateTime <= CurrentTime)
-    {
-        if (LastUpdateTime == 0)
-            Init();
-        int i = 0;
-        for (i = 0; <= xsGetNumPlayers())
-            TimerEvent(LastUpdateTime, i);
-        LastUpdateTime = LastUpdateTime + 1;
-        ModResource(0, cAttributeCurrentTime, 1);
-    }
+    Shrine(playerId);
 }

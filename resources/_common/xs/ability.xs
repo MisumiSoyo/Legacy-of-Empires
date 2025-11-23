@@ -184,7 +184,7 @@ void HospitallerKnightInit(int playerId = -1)
 
 
 //  圣坛, 自动产出单位, 充能值到达 ShrineMaxCharge 时即产出单位。所有圣坛共享充能
-void Shrine(int Time = 0, int playerId = 0)
+void Shrine(int playerId = 0)
 {
     int i = 0;
     if (xsGetObjectCount(playerId, ShrineID) == 0)
@@ -741,6 +741,7 @@ void TributarySystemApplier(int playerId = -1, int ObjectTarget = -1, int TrainB
 
 
 
+//  10022 - Tributary System
 void EffectFunction10022(int playerId = -1)
 {
     TributarySystemApplier(playerId, EliteMangudaiID, 21, 16079);
@@ -756,6 +757,22 @@ void EffectFunction10022(int playerId = -1)
 }
 
 
+//  TC Annex - Timer building
+void TCTimerInit(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, TCTimerBuildingID);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeTCTimerFlag);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000006);
+    xsTask(TownCenterID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(TownCenter2ID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(TownCenter3ID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(TownCenter4ID, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
 //  Interface
 void AbilityApplier()
 {
@@ -768,6 +785,7 @@ void AbilityApplier()
     for (i = -1; <= 0)
     {
         SetNewAttackForms(i);
+        //TCTimerInit(i);
         AssassinInit(i);
         BerserkInit(i);
         VikingRaiderInit(i);
