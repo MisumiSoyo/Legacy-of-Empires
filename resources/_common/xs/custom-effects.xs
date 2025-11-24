@@ -854,20 +854,15 @@ void EffectFunction10072(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkFlag2, 5);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
 
-    for (i = 900; <= 964)
-        if (isMilitaryClass(i))
-            for (j = 900; <= 964)
-                if (isMilitaryClass(j))
-                {
-                    xsTaskAmount(cTaskAttrCarryCheck, 5);
-                    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000003);
-                    xsTaskAmount(cTaskAttrGatherType, 5);
-                    xsTask(i, cTaskTypeLoot, j, playerId);
-                    xsTaskAmount(cTaskAttrCarryCheck, 2);
-                    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000001);
-                    xsTaskAmount(cTaskAttrGatherType, 1);
-                    xsTask(i, cTaskTypeLoot, j, playerId);
-                }
+    xsTaskAmount(cTaskAttrCarryCheck, 5);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000003);
+    xsTaskAmount(cTaskAttrGatherType, 5);
+    AccoladeApplier(playerId);
+    xsTaskAmount(cTaskAttrCarryCheck, 2);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000001);
+    xsTaskAmount(cTaskAttrGatherType, 1);
+    AccoladeApplier(playerId);
+
     xsTaskAmount(cTaskAttrCarryCheck, 2);
     xsTaskAmount(cTaskAttrSearchWaitTime, 9.000001);
     xsTaskAmount(cTaskAttrGatherType, 0);
@@ -898,16 +893,6 @@ void EffectFunction10073(int playerId = -1)
         }
     
     xsResetTaskAmount();
-}
-
-
-//  10079 - Spawn Timer Building
-void EffectFunction10079(int playerId = -1)
-{
-    SetAttribute(playerId, TCTimerBuildingID, cRegenerationHpPercent, -60);
-    if (xsGetObjectCount(playerId, TCTimerBuildingID) > 0)
-        return;
-    SpawnUnit(playerId, TCTimerBuildingID, 619, 1, 1);
 }
 
 
@@ -999,7 +984,7 @@ void Byzantines(int playerId = -1)
 
 
 // 10000 - Timer Event
-void EffectFunction10000(int playerId = -1)
+void TimerEvent(int playerId = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
 
@@ -1039,4 +1024,16 @@ void EffectFunction10000(int playerId = -1)
     }
 
     Shrine(playerId);
+}
+
+
+rule Timer
+    active
+    minInterval 1
+    maxInterval 1
+{
+    int playernum = xsGetNumPlayers();
+    int i = 0;
+    for (i = 0; <= playernum)
+        TimerEvent(i);
 }

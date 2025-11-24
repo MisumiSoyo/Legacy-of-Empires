@@ -235,16 +235,34 @@ void ModAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, int v
 }
 
 
-void ModAttackBonus(int playerId = -1, int ObjectID = -1, float value = -1, bool ignoreNone = true)
+void ModAttackBonus(int playerId = -1, int ClassTarget = -1, float value = 0.0)
 {
-    int i = 0;
-    for (i = 0; < TotalAttackForms)
-        if ((i != 3) && (i != 4) && (i != 39))
-            if ((ignoreNone == false) || (xsGetObjectAttribute(playerId, ObjectID, cAttack, i)) > 0)
-                if (value > 0)
-                    xsEffectAmount(cAddAttribute, ObjectID, cAttack, value + i * 256, playerId);
-                else
-                    xsEffectAmount(cAddAttribute, ObjectID, cAttack, value - i * 256, playerId);
+    ModAttack(playerId, ClassTarget, cDamageClassInfantry, value);
+    ModAttack(playerId, ClassTarget, cDamageClassElephantUnits, value);
+    ModAttack(playerId, ClassTarget, cDamageClassCavalry, value);
+    ModAttack(playerId, ClassTarget, cDamageClassArchers, value);
+    ModAttack(playerId, ClassTarget, cDamageClassAllBuildings, value);
+    ModAttack(playerId, ClassTarget, cDamageClassStoneDefense, value);
+    ModAttack(playerId, ClassTarget, cDamageClassPredatorAnimals, value);
+    ModAttack(playerId, ClassTarget, cDamageClassShips, value);
+    ModAttack(playerId, ClassTarget, cDamageClassRams, value);
+    ModAttack(playerId, ClassTarget, cDamageClassUniqueUnits, value);
+    ModAttack(playerId, ClassTarget, cDamageClassSiegeWeapons, value);
+    ModAttack(playerId, ClassTarget, cDamageClassStandardBuildings, value);
+    ModAttack(playerId, ClassTarget, cDamageClassGunpowderUnits, value);
+    ModAttack(playerId, ClassTarget, cDamageClassMonks, value);
+    ModAttack(playerId, ClassTarget, cDamageClassCastles, value);
+    ModAttack(playerId, ClassTarget, cDamageClassSpearmen, value);
+    ModAttack(playerId, ClassTarget, cDamageClassCavalryArchers, value);
+    ModAttack(playerId, ClassTarget, cDamageClassShockInfantry, value);
+    ModAttack(playerId, ClassTarget, cDamageClassCamelUnits, value);
+    ModAttack(playerId, ClassTarget, cDamageClassFishingShips, value);
+    ModAttack(playerId, ClassTarget, cDamageClassMamelukes, value);
+    ModAttack(playerId, ClassTarget, cDamageClassHeroesAndKings, value);
+    ModAttack(playerId, ClassTarget, cDamageClassHeavySiege, value);
+    ModAttack(playerId, ClassTarget, cDamageClassSkirmishers, value);
+    ModAttack(playerId, ClassTarget, cDamageClassMonastery, value);
+    ModAttack(playerId, ClassTarget, cDamageClassLightCavalry, value);
 }
 
 
@@ -277,15 +295,34 @@ void MulAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float
 }
 
 
-void MulAttackBonus(int playerId = -1, int ObjectID = -1, float value = -1)
+void MulAttackBonus(int playerId = -1, int ClassTarget = -1, float value = 0.0)
 {
-    int i = 0;
-    for (i = 0; < TotalAttackForms)
-        if ((i != 3) && (i != 4) && (i != 39))
-            if (value > 0)
-                xsEffectAmount(cMulAttribute, ObjectID, cAttack, value * 100 + i * 256, playerId);
-            else
-                xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - i * 256 + value * 100, playerId);
+    MulAttack(playerId, ClassTarget, cDamageClassInfantry, value);
+    MulAttack(playerId, ClassTarget, cDamageClassElephantUnits, value);
+    MulAttack(playerId, ClassTarget, cDamageClassCavalry, value);
+    MulAttack(playerId, ClassTarget, cDamageClassArchers, value);
+    MulAttack(playerId, ClassTarget, cDamageClassAllBuildings, value);
+    MulAttack(playerId, ClassTarget, cDamageClassStoneDefense, value);
+    MulAttack(playerId, ClassTarget, cDamageClassPredatorAnimals, value);
+    MulAttack(playerId, ClassTarget, cDamageClassShips, value);
+    MulAttack(playerId, ClassTarget, cDamageClassRams, value);
+    MulAttack(playerId, ClassTarget, cDamageClassUniqueUnits, value);
+    MulAttack(playerId, ClassTarget, cDamageClassSiegeWeapons, value);
+    MulAttack(playerId, ClassTarget, cDamageClassStandardBuildings, value);
+    MulAttack(playerId, ClassTarget, cDamageClassGunpowderUnits, value);
+    MulAttack(playerId, ClassTarget, cDamageClassMonks, value);
+    MulAttack(playerId, ClassTarget, cDamageClassCastles, value);
+    MulAttack(playerId, ClassTarget, cDamageClassSpearmen, value);
+    MulAttack(playerId, ClassTarget, cDamageClassCavalryArchers, value);
+    MulAttack(playerId, ClassTarget, cDamageClassShockInfantry, value);
+    MulAttack(playerId, ClassTarget, cDamageClassCamelUnits, value);
+    MulAttack(playerId, ClassTarget, cDamageClassFishingShips, value);
+    MulAttack(playerId, ClassTarget, cDamageClassMamelukes, value);
+    MulAttack(playerId, ClassTarget, cDamageClassHeroesAndKings, value);
+    MulAttack(playerId, ClassTarget, cDamageClassHeavySiege, value);
+    MulAttack(playerId, ClassTarget, cDamageClassSkirmishers, value);
+    MulAttack(playerId, ClassTarget, cDamageClassMonastery, value);
+    MulAttack(playerId, ClassTarget, cDamageClassLightCavalry, value);
 }
 
 
@@ -493,4 +530,25 @@ int roundToInt(float number = 0.0)
     if (number - IntegerPart >= 0.5)
         return (IntegerPart + 1);
     return (IntegerPart);
+}
+
+
+void ApplyToAllMilitaryTargets(int playerId = -1, int ClassTarget = -1, int TaskType = -1)
+{
+    xsTask(ClassTarget, TaskType, cArcherClass, playerId);
+    xsTask(ClassTarget, TaskType, cInfantryClass, playerId);
+    xsTask(ClassTarget, TaskType, cCavalryClass, playerId);
+    xsTask(ClassTarget, TaskType, cSiegeWeaponClass, playerId);
+    xsTask(ClassTarget, TaskType, cMonkClass, playerId);
+    xsTask(ClassTarget, TaskType, cTransportShipClass, playerId);
+    xsTask(ClassTarget, TaskType, cWarshipClass, playerId);
+    xsTask(ClassTarget, TaskType, cConquistadorClass, playerId);
+    xsTask(ClassTarget, TaskType, cPetardClass, playerId);
+    xsTask(ClassTarget, TaskType, cCavalryArcherClass, playerId);
+    xsTask(ClassTarget, TaskType, cMonkWithRelicClass, playerId);
+    xsTask(ClassTarget, TaskType, cHandCannoneerClass, playerId);
+    xsTask(ClassTarget, TaskType, cScoutCavalryClass, playerId);
+    xsTask(ClassTarget, TaskType, cPackedUnitClass, playerId);
+    xsTask(ClassTarget, TaskType, cUnpackedSiegeUnitClass, playerId);
+    xsTask(ClassTarget, TaskType, cScorpionClass, playerId);
 }

@@ -559,95 +559,45 @@ void KeshikStingerCastleAgeUpgrade(int playerId = -1)
 }
 
 
-void ModBarrackUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = true)
-{
-    int i = 0;
-    int TrainLocation = 0;
-    for (i = 0; < TotalObjects)
-        if ((i < 900) || (i > 964))
-        {
-            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
-            if (TrainLocation == 12)
-                ModAttackBonus(playerId, i, value, ignoreNone);
-        }
-}
-
-
-void MulBarrackUnitAttackBonus(int playerId = -1, float value = 0.0)
-{
-    int i = 0;
-    int TrainLocation = 0;
-    for (i = 0; < TotalObjects)
-        if ((i < 900) || (i > 964))
-        {
-            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
-            if (TrainLocation == 12)
-                MulAttackBonus(playerId, i, value);
-        }
-}
-
-
-void ModArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0, bool ignoreNone = true)
-{
-    int i = 0;
-    int TrainLocation = 0;
-    for (i = 0; < TotalObjects)
-        if ((i < 900) || (i > 964))
-        {
-            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
-            if (TrainLocation == 87)
-                ModAttackBonus(playerId, i, value, ignoreNone);
-        }
-}
-
-
-void MulArcheryRangeUnitAttackBonus(int playerId = -1, float value = 0.0)
-{
-    int i = 0;
-    int TrainLocation = 0;
-    for (i = 0; < TotalObjects)
-        if ((i < 900) || (i > 964))
-        {
-            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
-            if (TrainLocation == 87)
-                MulAttackBonus(playerId, i, value);
-        }
-}
-
-
 void EffectFunction10058(int playerId = -1)
 {
-    ModBarrackUnitAttackBonus(playerId, 1);
+    ModAttackBonus(playerId, cInfantryClass, 1);
 }
 
 
 void EffectFunction10059(int playerId = -1)
 {
-    ModBarrackUnitAttackBonus(playerId, 1);
+    ModAttackBonus(playerId, cInfantryClass, 1);
 }
 
 
 void EffectFunction10060(int playerId = -1)
 {
-    ModBarrackUnitAttackBonus(playerId, 1);
+    ModAttackBonus(playerId, cInfantryClass, 1);
 }
 
 
 void EffectFunction10074(int playerId = -1)
 {
-    ModArcheryRangeUnitAttackBonus(playerId, 1);
+    ModAttackBonus(playerId, cArcherClass, 1);
+    ModAttackBonus(playerId, cCavalryArcherClass, 1);
+    ModAttackBonus(playerId, cHandCannoneerClass, 1);
 }
 
 
 void EffectFunction10075(int playerId = -1)
 {
-    ModArcheryRangeUnitAttackBonus(playerId, 1);
+    ModAttackBonus(playerId, cArcherClass, 1);
+    ModAttackBonus(playerId, cCavalryArcherClass, 1);
+    ModAttackBonus(playerId, cHandCannoneerClass, 1);
 }
 
 
 void EffectFunction10076(int playerId = -1)
 {
-    ModArcheryRangeUnitAttackBonus(playerId, 1);
+    ModAttackBonus(playerId, cArcherClass, 1);
+    ModAttackBonus(playerId, cCavalryArcherClass, 1);
+    ModAttackBonus(playerId, cHandCannoneerClass, 1);
 }
 
 
@@ -732,6 +682,26 @@ void PaxMongolicaApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
+void AccoladeApplier(int playerId = -1)
+{
+    ApplyToAllMilitaryTargets(playerId, cArcherClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cInfantryClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cCavalryClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cSiegeWeaponClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cMonkClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cTransportShipClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cWarshipClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cConquistadorClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cPetardClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cCavalryArcherClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cHandCannoneerClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cScoutCavalryClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cPackedUnitClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cUnpackedSiegeUnitClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cScorpionClass, cTaskTypeLoot);
+}
+
+
 void TributarySystemApplier(int playerId = -1, int ObjectTarget = -1, int TrainButtonID = -1, int HotKeyID = -1)
 {
     EnableObject(playerId, ObjectTarget);
@@ -757,22 +727,6 @@ void EffectFunction10022(int playerId = -1)
 }
 
 
-//  TC Annex - Timer building
-void TCTimerInit(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, TCTimerBuildingID);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeTCTimerFlag);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000006);
-    xsTask(TownCenterID, cTaskTypeExtraSpawn, -1, playerId);
-    xsTask(TownCenter2ID, cTaskTypeExtraSpawn, -1, playerId);
-    xsTask(TownCenter3ID, cTaskTypeExtraSpawn, -1, playerId);
-    xsTask(TownCenter4ID, cTaskTypeExtraSpawn, -1, playerId);
-    xsResetTaskAmount();
-}
-
-
 //  Interface
 void AbilityApplier()
 {
@@ -785,7 +739,6 @@ void AbilityApplier()
     for (i = -1; <= 0)
     {
         SetNewAttackForms(i);
-        //TCTimerInit(i);
         AssassinInit(i);
         BerserkInit(i);
         VikingRaiderInit(i);

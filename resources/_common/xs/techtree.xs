@@ -463,11 +463,13 @@ void EffectFunction10002(int playerId = -1)
         case cBohemians:
         {
             //  Bohemians civ bonus, Barrack and Archery Range units + attack bonus
-            MulBarrackUnitAttackBonus(playerId, 1.25);
+            MulAttackBonus(playerId, cInfantryClass, 1.25);
+            MulAttackBonus(playerId, cArcherClass, 1.25);
+            MulAttackBonus(playerId, cCavalryArcherClass, 1.25);
+            MulAttackBonus(playerId, cHandCannoneerClass, 1.25);
             MulAttackBonus(playerId, SpearmanID, 0.8);
             MulAttackBonus(playerId, PikemanID, 0.8);
             MulAttackBonus(playerId, HalberdierID, 0.8);
-            MulArcheryRangeUnitAttackBonus(playerId, 1.25);
             break;
         }
         case cDravidians:
