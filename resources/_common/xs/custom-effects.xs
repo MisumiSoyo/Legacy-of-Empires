@@ -562,7 +562,6 @@ void EffectFunction10038(int playerId = -1)
     MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.2);
     MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.2);
     MulAttribute(playerId, cFarmClass, cWorkRate, 1.2);
-    MulAttribute(playerId, ShrineID, cMaxCharge, 1.0 / 1.2);
     SetAttribute(playerId, FloatingGardenBuildingID, cRegenerationHpPercent, 0.0 - 1.0 / 3);
     SetAttribute(playerId, FloatingGardenBuildingID, cDeadUnitId, FloatingGardenEndBuildingID);
     SpawnUnit(playerId, FloatingGardenBuildingID, UniversityID, 1, 1);
@@ -945,19 +944,6 @@ void Goths(int playerId = -1)
 }
 
 
-//  Japanese, Ikko-Ikki
-void Japanese(int playerId = -1)
-{
-    if (isResearched(playerId, 3068) == false)
-        return;
-    float SoheiProgress = xsPlayerAttribute(playerId, cAttributeSoheiProgress);
-    SoheiProgress = SoheiProgress + xsPlayerAttribute(playerId, cAttributeRelics) / 75.0;
-    int SoheiSpawnNum = minInt(SoheiProgress, 0 + xsPlayerAttribute(playerId, cAttributePopulationCap));
-    SpawnUnit(playerId, SoheiID, 104, SoheiSpawnNum, 1);
-    SetResource(playerId, cAttributeSoheiProgress, SoheiProgress - SoheiSpawnNum);
-}
-
-
 //  Chinese, TC provides +5 population capacity (maximum +50)
 void Chinese(int playerId = -1)
 {
@@ -970,16 +956,13 @@ void Chinese(int playerId = -1)
 }
 
 
-//  Byzantines, recruit units
+//  Byzantines, print the amount of olive oil
 void Byzantines(int playerId = -1)
 {
-    if (xsPlayerAttribute(playerId, cAttributeCurrentAge) >= 2)
-    {
-        float ProgressInc = 1.0;
-        if (isResearched(playerId, 3140))
-            ProgressInc = ProgressInc * 1.25;
-        ModResource(playerId, cAttributeRecruitMercenaryCost, ProgressInc);
-    }
+    int OliveOil = xsPlayerAttribute(playerId, cAttributeOliveOil);
+    SetAttribute(playerId, BarrackID, cMaxRange, OliveOil);
+    SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
+    SetAttribute(playerId, StableID, cMaxRange, OliveOil);
 }
 
 
@@ -996,11 +979,6 @@ void EffectFunction10079(int playerId = -1)
 //  10000 - Timer Event
 void EffectFunction10000(int playerId = -1)
 {
-    //int CurrentTime = xsGetGameTime();
-    //if (CurrentTime < xsPlayerAttribute(playerId, cAttributeCurrentTime))
-    //    return;
-    //SetResource(playerId, cAttributeCurrentTime, CurrentTime + 1);
-
     int playerCiv = xsGetPlayerCivilization(playerId);
 
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
@@ -1015,11 +993,6 @@ void EffectFunction10000(int playerId = -1)
         case cFranks:
         {
             Franks(playerId);
-            break;
-        }
-        case cJapanese:
-        {
-            Japanese(playerId);
             break;
         }
         case cChinese:
@@ -1039,40 +1012,4 @@ void EffectFunction10000(int playerId = -1)
     }
 }
 
-
-rule Shrine
-    active
-    minInterval 1
-    maxInterval 1
-{
-    int playerId = 0;
-    int n = xsGetNumPlayers();
-    int SpawnUnitID = 0;
-    int LastSpawnTime = 0;
-    int SpawnTime = 0;
-    int SpawnCount = 0;
-    int Time = xsGetGameTime();
-
-    for (playerId = 0; <= n)
-    {
-        if (xsGetObjectCount(playerId, ShrineID) == 0)
-            continue;
-
-        SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
-        LastSpawnTime = xsPlayerAttribute(playerId, cAttributeShrineLastSpawnTime);
-        if (LastSpawnTime == 0)
-        {
-            LastSpawnTime = Time;
-            SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
-        }
-        SpawnTime = xsPlayerAttribute(playerId, cAttributeShrineSpawnTime);
-        SpawnCount = xsPlayerAttribute(playerId, cAttributeShrineSpawnCount);
-        if (Time - LastSpawnTime >= SpawnTime)
-        {
-            SpawnCount ++;
-            SpawnUnit(playerId, SpawnUnitID, ShrineID, 1, 1000);
-            SetResource(playerId, cAttributeShrineSpawnCount, SpawnCount);
-            SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
-        }
-    }
-}
+include "rules.xs";

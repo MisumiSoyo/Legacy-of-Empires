@@ -694,25 +694,37 @@ void EffectFunction10022(int playerId = -1)
 }
 
 
-//  Interface
-void AbilityApplier()
+void ByzantinesOliveOil(int playerId = -1)
 {
-    static bool run = false;
-    if (run)
-        return;
-    run = true;
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeOliveOilProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeOliveOil);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000005);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cSeaFishClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cForageBushClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cTreeClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cShoreFish, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cLivestockClass, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeOliveOilProductivity, 10);
+}
 
-    int i = 0;
-    for (i = -1; <= 0)
-    {
-        SetNewAttackForms(i);
-        AssassinInit(i);
-        BerserkInit(i);
-        VikingRaiderInit(i);
-        HospitallerKnightInit(i);
-        TCSpawnedDeerInit(i);
-        ShrineInit(i);
-        KeshikInit(i);
-        KhanInit(i);
-    }
+
+//  Interface
+void AbilityApplier(int playerId = -1)
+{
+    SetNewAttackForms(playerId);
+    AssassinInit(playerId);
+    BerserkInit(playerId);
+    VikingRaiderInit(playerId);
+    HospitallerKnightInit(playerId);
+    TCSpawnedDeerInit(playerId);
+    ShrineInit(playerId);
+    KeshikInit(playerId);
+    KhanInit(playerId);
 }

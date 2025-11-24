@@ -114,7 +114,7 @@ void EffectFunction10001(int playerId = -1)
 // 10002 - Tech Tree Adjustment (takes effect from dark age)
 void EffectFunction10002(int playerId = -1)
 {
-    AbilityApplier();
+    AbilityApplier(playerId);
     Init();
 
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -149,6 +149,8 @@ void EffectFunction10002(int playerId = -1)
         {
             //  Byzantines civ bonus, Free Heresy
             SetTechAuto(playerId, 439);
+            //  Olive Oil
+            ByzantinesOliveOil(playerId);
             break;
         }
         case cPersians:
@@ -814,8 +816,6 @@ void EffectFunction10025(int playerId = -1)
             EnableObject(playerId, FlameThrowerID);
             SetAttribute(playerId, FlameThrowerID, cNameId, 700042);
             SetAttribute(playerId, FlameThrowerID, cDescriptionId, 701042);
-            SetTechStack(playerId, 3139, 32767);
-            SetResource(playerId, cAttributeRecruitMercenaryCost, 75);
             break;
         }
         case cPersians:
