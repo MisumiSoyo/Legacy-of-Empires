@@ -183,95 +183,69 @@ void HospitallerKnightInit(int playerId = -1)
 }
 
 
-//  圣坛, 自动产出单位, 充能值到达 ShrineMaxCharge 时即产出单位。所有圣坛共享充能
-void Shrine(int playerId = 0)
-{
-    int i = 0;
-    if (xsGetObjectCount(playerId, ShrineID) == 0)
-        return;
-
-    float SpawnProgress = xsPlayerAttribute(playerId, cAttributeShrineSpawnProgress) + xsPlayerAttribute(playerId, cAttributeShrineSpawnRate);
-    int SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
-    int SpawnCount = xsPlayerAttribute(playerId, cAttributeShrineSpawnCount);
-
-    if (SpawnProgress >= xsGetObjectAttribute(playerId, ShrineID, cMaxCharge))
-    {
-        SpawnCount ++;
-        if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)   //  需要人口空间
-        {
-            SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
-            SpawnProgress = SpawnProgress - xsGetObjectAttribute(playerId, ShrineID, cMaxCharge);
-        }
-        SetResource(playerId, cAttributeShrineSpawnCount, SpawnCount);
-    }
-    SpawnProgress = minFloat(SpawnProgress, xsGetObjectAttribute(playerId, ShrineID, cMaxCharge));
-    SetResource(playerId, cAttributeShrineSpawnProgress, SpawnProgress);
-}
-
-
 void EffectFunction10030(int playerId = -1)  //  Switch to training Militia
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 74, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, MilitiaID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 45);
 }
 
 void EffectFunction10031(int playerId = -1)  //  Switch to training Spearman
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 93, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 72);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, SpearmanID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 36);
 }
 
 void EffectFunction10032(int playerId = -1)  //  Switch to training Eagle Scout
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 751, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 100);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, EagleScoutID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 50);
 }
 
 void EffectFunction10033(int playerId = -1)  //  Switch to training Archer
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 4, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 100);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, ArcherID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 50);
 }
 
 void EffectFunction10034(int playerId = -1)  //  Switch to training Skirmisher
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 7, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 72);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, SkirmisherID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 36);
 }
 
 
 void EffectFunction10035(int playerId = -1)  //  Switch to training Slinger
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 185, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 110);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, SlingerID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 55);
 }
 
 
 void EffectFunction10036(int playerId = -1)  //  Switch to training Kamayuk
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 879, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, KamayukID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 60);
 }
 
 
 void EffectFunction10043(int playerId = -1)  //  Switch to training Jaguar Warrior
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 725, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, JaguarWarriorID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 60);
 }
 
 
 void EffectFunction10044(int playerId = -1)  //  Switch to training Plumed Archer
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 763, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 120);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, PlumedArcherID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 60);
 }
 
 
 void EffectFunction10045(int playerId = -1)  //  Switch to training Xolotl
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, 1570, playerId);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, XolotlWarriorID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 45);
 }
 
 
@@ -300,15 +274,8 @@ void ShrineInit(int playerId = -1)
             xsEffectAmount(cModifyTech, i, cAttrSetStacking, 1, playerId);
             xsEffectAmount(cModifyTech, i, cAttrSetStackingResearchCap, 32767, playerId);
         }
-    SetResource(playerId, cAttributeShrineSpawnUnitID, 74);
-    SetResource(playerId, cAttributeShrineSpawnRate, ShrineMaxCharge / 90);
-    SetAttribute(playerId, ShrineID, cMaxCharge, ShrineMaxCharge);
-    //  Aztecs civ bonus
-    if (xsGetPlayerCivilization(playerId) == cAztecs)
-    {
-        MulAttribute(playerId, ShrineID, cMaxCharge, 1.0 / 1.15);
-    }
-     SetResource(playerId, cAttributeShrineSpawnProgress, xsGetObjectAttribute(playerId, ShrineID, cMaxCharge) * 2.0 / 3);
+    SetResource(playerId, cAttributeShrineSpawnUnitID, MilitiaID);
+    SetResource(playerId, cAttributeShrineSpawnTime, 45);
 }
 
 

@@ -983,9 +983,24 @@ void Byzantines(int playerId = -1)
 }
 
 
-// 10000 - Timer Event
-void TimerEvent(int playerId = -1)
+//  10079 - TC Spawn Timer Event
+void EffectFunction10079(int playerId = -1)
 {
+    if (xsPlayerAttribute(playerId, cAttributeTimerFlag) > 0)
+        return;
+    SetAttribute(playerId, TimerBuildingID, cRegenerationHpPercent, -67);
+    SpawnUnit(playerId, TimerBuildingID, 619, 1, 1);
+}
+
+
+//  10000 - Timer Event
+void EffectFunction10000(int playerId = -1)
+{
+    //int CurrentTime = xsGetGameTime();
+    //if (CurrentTime < xsPlayerAttribute(playerId, cAttributeCurrentTime))
+    //    return;
+    //SetResource(playerId, cAttributeCurrentTime, CurrentTime + 1);
+
     int playerCiv = xsGetPlayerCivilization(playerId);
 
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
@@ -1022,18 +1037,42 @@ void TimerEvent(int playerId = -1)
             break;
         }
     }
-
-    Shrine(playerId);
 }
 
 
-rule Timer
+rule Shrine
     active
     minInterval 1
     maxInterval 1
 {
-    int playernum = xsGetNumPlayers();
-    int i = 0;
-    for (i = 0; <= playernum)
-        TimerEvent(i);
+    int playerId = 0;
+    int n = xsGetNumPlayers();
+    int SpawnUnitID = 0;
+    int LastSpawnTime = 0;
+    int SpawnTime = 0;
+    int SpawnCount = 0;
+    int Time = xsGetGameTime();
+
+    for (playerId = 0; <= n)
+    {
+        if (xsGetObjectCount(playerId, ShrineID) == 0)
+            continue;
+
+        SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
+        LastSpawnTime = xsPlayerAttribute(playerId, cAttributeShrineLastSpawnTime);
+        if (LastSpawnTime == 0)
+        {
+            LastSpawnTime = Time;
+            SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
+        }
+        SpawnTime = xsPlayerAttribute(playerId, cAttributeShrineSpawnTime);
+        SpawnCount = xsPlayerAttribute(playerId, cAttributeShrineSpawnCount);
+        if (Time - LastSpawnTime >= SpawnTime)
+        {
+            SpawnCount ++;
+            SpawnUnit(playerId, SpawnUnitID, ShrineID, 1, 1000);
+            SetResource(playerId, cAttributeShrineSpawnCount, SpawnCount);
+            SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
+        }
+    }
 }
