@@ -816,6 +816,7 @@ void EffectFunction10025(int playerId = -1)
             EnableObject(playerId, FlameThrowerID);
             SetAttribute(playerId, FlameThrowerID, cNameId, 700042);
             SetAttribute(playerId, FlameThrowerID, cDescriptionId, 701042);
+            SetResource(playerId, cAttributeRecruitMercenaryCost, 1);
             break;
         }
         case cPersians:
@@ -999,6 +1000,14 @@ void EffectFunction10025(int playerId = -1)
     //  Conscripted Army Upgrade
     ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
     ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);
+
+    ModAttribute(playerId, MercenarySerjeantID, cHitpoints, 25);
+    ModAttack(playerId, MercenarySerjeantID, cDamageClassMelee, 3);
+    ModAttribute(playerId, MercenarySerjeantID, cShownAttack, 3);
+    ModArmor(playerId, MercenarySerjeantID, cDamageClassMelee, 2);
+    ModArmor(playerId, MercenarySerjeantID, cDamageClassPierce, 1);
+    ModAttribute(playerId, MercenarySerjeantID, cShownMeleeArmor, 2);
+    ModAttribute(playerId, MercenarySerjeantID, cShownPierceArmor, 1);
 }
 
 

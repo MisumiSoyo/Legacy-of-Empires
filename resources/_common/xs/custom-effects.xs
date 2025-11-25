@@ -62,8 +62,6 @@ void FrozenSeaDominanceAura(int ClassTarget = -1, int playerId = -1)
 // 10004 - Frozen Sea Dominance Aura Applier
 void EffectFunction10004(int playerId = -1)
 {
-    int LongBoatID = 250;
-    int EliteLongBoatID = 533;
     xsEffectAmount(cAddAttribute, LongBoatID, cCombatAbility, 32, playerId);
     xsEffectAmount(cAddAttribute, EliteLongBoatID, cCombatAbility, 32, playerId);
 
@@ -77,11 +75,6 @@ void EffectFunction10004(int playerId = -1)
 // 10005 - Stockfish Trade
 void EffectFunction10005(int playerId = -1)
 {
-    int FishermanMaleID = 56;
-    int FishermanFemaleID = 57;
-    int FishingShipID = 13;
-    int FishTrapID = 199;
-
     xsEffectAmount(cModResource, cAttributeFishingProductivity, 0, 0.5, playerId);
     xsEffectAmount(cModResource, cAttributeFishTrapProductivity, 0, 0.5, playerId);
     xsEffectAmount(cModResource, cAttributeGoldFishingProductivity, 1, 1, playerId);
@@ -116,12 +109,12 @@ void EffectFunction10005(int playerId = -1)
     xsTask(FishingShipID, cTaskTypeGenerateResources, cFarmClass, playerId);
 
     xsTaskAmount(cTaskAttrWorkValue1, 0.215);
-    xsTask(FishermanMaleID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
-    xsTask(FishermanMaleID, cTaskTypeGenerateResources, cShoreFish, playerId);
-    xsTask(FishermanMaleID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
-    xsTask(FishermanFemaleID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
-    xsTask(FishermanFemaleID, cTaskTypeGenerateResources, cShoreFish, playerId);
-    xsTask(FishermanFemaleID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
+    xsTask(MaleFishermanID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
+    xsTask(MaleFishermanID, cTaskTypeGenerateResources, cShoreFish, playerId);
+    xsTask(MaleFishermanID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
+    xsTask(FemaleFishermanID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
+    xsTask(FemaleFishermanID, cTaskTypeGenerateResources, cShoreFish, playerId);
+    xsTask(FemaleFishermanID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
     xsResetTaskAmount();
 }
 
@@ -129,7 +122,6 @@ void EffectFunction10005(int playerId = -1)
 // 10006 - Huns Atheism Adjustment, Tarkan Task Adder
 void EffectFunction10006(int playerId = -1)
 {
-    int RelicID = 285;
     int TarkanID1 = 755;
     int TarkanID2 = 886;
     int EliteTarkanID1 = 757;
@@ -204,8 +196,8 @@ void EffectFunction10008(int playerId = -1)
     int HunterFemaleID = 216;
 
     xsResetTaskAmount();
-    NoDropSiteHunters(HunterMaleID, playerId);
-    NoDropSiteHunters(HunterFemaleID, playerId);
+    NoDropSiteHunters(MaleHunterID, playerId);
+    NoDropSiteHunters(FemaleHunterID, playerId);
     xsResetTaskAmount();
 }
 
@@ -276,17 +268,14 @@ void EffectFunction10010(int playerId = -1)
 // 10011 - Anawrahta Canals
 void EffectFunction10011(int playerId = -1)
 {
-    int FarmId = 50;
-    int RiceFarmId = 1187;
-
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeFarmFoodGenerateProductivity);
     xsTaskAmount(cTaskAttrResourceOut, 0);
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
 
-    xsTask(FarmId, cTaskTypeGenerateResources, -1, playerId);
-    xsTask(RiceFarmId, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(FarmID, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(RiceFarmID, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
     xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 8, playerId);
 }
@@ -295,11 +284,8 @@ void EffectFunction10011(int playerId = -1)
 // 10012 - C-Bonus, monk strengthens elephants
 void EffectFunction10012(int playerId = -1)
 {
-    int BattleElephantId = 1132;
-    int EliteBattleElephantId = 1134;
-
-    xsEffectAmount(cAddAttribute, BattleElephantId, cCombatAbility, 96, playerId);
-    xsEffectAmount(cAddAttribute, EliteBattleElephantId, cCombatAbility, 96, playerId);
+    xsEffectAmount(cAddAttribute, BattleElephantID, cCombatAbility, 96, playerId);
+    xsEffectAmount(cAddAttribute, EliteBattleElephantID, cCombatAbility, 96, playerId);
 
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 0.130435);
@@ -310,13 +296,13 @@ void EffectFunction10012(int playerId = -1)
     xsTaskAmount(cTaskAttrSearchWaitTime, 10);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
 
-    xsTask(BattleElephantId, cTaskTypeAura, cMonkClass, playerId);
-    xsTask(EliteBattleElephantId, cTaskTypeAura, cMonkClass, playerId);
+    xsTask(BattleElephantID, cTaskTypeAura, cMonkClass, playerId);
+    xsTask(EliteBattleElephantID, cTaskTypeAura, cMonkClass, playerId);
 
     xsTaskAmount(cTaskAttrAutoSearch, 1);
 
-    xsTask(BattleElephantId, cTaskTypeAura, cMonkWithRelicClass, playerId);
-    xsTask(EliteBattleElephantId, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    xsTask(BattleElephantID, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    xsTask(EliteBattleElephantID, cTaskTypeAura, cMonkWithRelicClass, playerId);
     xsResetTaskAmount();
 }
 
@@ -467,8 +453,6 @@ void EffectFunction10017(int playerId = -1)
 // 10018 - Stockfish Trade + Gillnet
 void EffectFunction10018(int playerId = -1)
 {
-    int FishingShipID = 13;
-
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrProductivityResource, 397);
     xsTaskAmount(cTaskAttrResourceOut, 3);
@@ -963,6 +947,7 @@ void Byzantines(int playerId = -1)
     SetAttribute(playerId, BarrackID, cMaxRange, OliveOil);
     SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
     SetAttribute(playerId, StableID, cMaxRange, OliveOil);
+    SetAttribute(playerId, SiegeWorkshopID, cMaxRange, OliveOil);
 }
 
 
