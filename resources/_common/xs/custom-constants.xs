@@ -1,6 +1,6 @@
-//  全局量定义
+//  extern definition
 
-//  资源定义
+//  Resources
 extern const int cAttributeVarangianLootProductivity = 384;
 extern const int cAttributeWubaoFoodWoodProductivity = 385;
 extern const int cAttributeFishTrapProductivity = 387;
@@ -42,9 +42,10 @@ extern const int cAttributeShrineSpawnCount = 443;
 extern const int cAttributeTimerFlag = 444;
 extern const int cAttributeOliveOil = 445;
 extern const int cAttributeOliveOilProductivity = 446;
+extern const int cAttributeExclusiveTechFlag = 447;
 
 
-//  单位ID定义
+//  units' IDs
 extern const int TotalObjects = 4061;
 extern const int AssassinID = 4001;
 extern const int StreltsyID = 4002;
@@ -116,6 +117,10 @@ extern const int MercenaryEliteBerserkID = 4092;
 extern const int MercenarySerjeantID = 4107;
 extern const int MercenaryKeshikID = 4119;
 extern const int MercenaryEliteKeshikID = 4120;
+extern const int DonsoID = 4127;
+extern const int VeteranDonsoID = 4128;
+extern const int EliteDonsoID = 4129;
+extern const int ProjectileDonsoID = 4130;
 
 
 extern const int ArcherID = 4;
@@ -266,7 +271,7 @@ extern const int WhiteFeatherGuardID = 1959;
 extern const int EliteWhiteFeatherGuardID = 1961;
 
 
-//  攻击类型定义
+//  Attack Forms
 extern const int TotalAttackForms = 106;
 extern const int cDamageClassMonastery = 101;
 extern const int cDamageClassSiegeWeaponAttack = 104;

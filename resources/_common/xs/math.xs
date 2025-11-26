@@ -400,55 +400,6 @@ void SpawnUnit(int playerId = -1, int SpawnUnitID = -1, int SpawnBuidingID = -1,
 }
 
 
-void SetObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
-{
-    static int UnitIDs = -1;
-    if (UnitIDs == -1)
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
-    else
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
-    int i = 0;
-    for (i = 0; < xsArrayGetSize(UnitIDs))
-        xsSetUnitCharge(xsArrayGetInt(UnitIDs, i), value);
-}
-
-
-void ModObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
-{
-    static int UnitIDs = -1;
-    if (UnitIDs == -1)
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
-    else
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
-    int i = 0;
-    float MaxCharge = xsGetObjectAttribute(playerId, ObjectID, cMaxCharge);
-    for (i = 0; < xsArrayGetSize(UnitIDs))
-    {
-        int UnitID = xsArrayGetInt(UnitIDs, i);
-        float ChargeValue = maxFloat(minFloat(xsGetUnitCharge(UnitID) + value, MaxCharge), 0);
-        xsSetUnitCharge(UnitID, ChargeValue);
-    }
-}
-
-
-void MulObjectCharge(int playerId = -1, int ObjectID = -1, float value = 0.0)
-{
-    static int UnitIDs = -1;
-    if (UnitIDs == -1)
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
-    else
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
-    int i = 0;
-    float MaxCharge = xsGetObjectAttribute(playerId, ObjectID, cMaxCharge);
-    for (i = 0; < xsArrayGetSize(UnitIDs))
-    {
-        int UnitID = xsArrayGetInt(UnitIDs, i);
-        float ChargeValue = maxFloat(minFloat(xsGetUnitCharge(UnitID) * value, MaxCharge), 0);
-        xsSetUnitCharge(UnitID, ChargeValue);
-    }
-}
-
-
 //  Must carefully use this function for classes
 void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
 {

@@ -940,17 +940,6 @@ void Chinese(int playerId = -1)
 }
 
 
-//  Byzantines, print the amount of olive oil
-void Byzantines(int playerId = -1)
-{
-    int OliveOil = xsPlayerAttribute(playerId, cAttributeOliveOil);
-    SetAttribute(playerId, BarrackID, cMaxRange, OliveOil);
-    SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
-    SetAttribute(playerId, StableID, cMaxRange, OliveOil);
-    SetAttribute(playerId, SiegeWorkshopID, cMaxRange, OliveOil);
-}
-
-
 //  10079 - TC Spawn Timer Event
 void EffectFunction10079(int playerId = -1)
 {
@@ -983,11 +972,6 @@ void EffectFunction10000(int playerId = -1)
         case cChinese:
         {
             Chinese(playerId);
-            break;
-        }
-        case cByzantines:
-        {
-            Byzantines(playerId);
             break;
         }
         default:

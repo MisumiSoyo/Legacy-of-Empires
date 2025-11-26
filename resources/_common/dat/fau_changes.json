@@ -1089,14 +1089,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭招募雇佣军",
-            "civilizations": "Byzantines",
-            "tech_id": 3139,
-            "building_id": 109,
-            "Name": "Recruit Mercenary",
-            "RequiredAge": 3
-        },
-        {
             "note": "拜占庭精锐雇佣军",
             "civilizations": "Byzantines",
             "tech_id": 3177,
@@ -1484,6 +1476,38 @@
             "building_id": 209,
             "Name": "Pax Mongolica",
             "RequiredAge": 4
+        },
+        {
+            "note": "西欧/中欧雇佣兵合同",
+            "civilizations": "Byzantines",
+            "tech_id": 3194,
+            "building_id": 109,
+            "Name": "Western/Middle European Mercenary Contract",
+            "RequiredAge": 2
+        },
+        {
+            "note": "东欧雇佣兵合同",
+            "civilizations": "Byzantines",
+            "tech_id": 3195,
+            "building_id": 109,
+            "Name": "Eastern European Mercenary Contract",
+            "RequiredAge": 2
+        },
+        {
+            "note": "地中海雇佣兵合同",
+            "civilizations": "Byzantines",
+            "tech_id": 3196,
+            "building_id": 109,
+            "Name": "Mediterranean Mercenary Contract",
+            "RequiredAge": 2
+        },
+        {
+            "note": "丝绸之路雇佣兵合同",
+            "civilizations": "Byzantines",
+            "tech_id": 3197,
+            "building_id": 109,
+            "Name": "Silk Road Mercenary Contract",
+            "RequiredAge": 2
         }
     ]
 }

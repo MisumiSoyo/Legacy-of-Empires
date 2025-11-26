@@ -7289,6 +7289,26 @@
                         "Name": "Elite Mercenary",
                         "RequiredAge": 4,
                         "ID": 3177
+                    },
+                    {
+                        "Name": "Western/Middle European Mercenary Contract",
+                        "RequiredAge": 2,
+                        "ID": 3194
+                    },
+                    {
+                        "Name": "Eastern European Mercenary Contract",
+                        "RequiredAge": 2,
+                        "ID": 3195
+                    },
+                    {
+                        "Name": "Mediterranean Mercenary Contract",
+                        "RequiredAge": 2,
+                        "ID": 3196
+                    },
+                    {
+                        "Name": "Silk Road Mercenary Contract",
+                        "RequiredAge": 2,
+                        "ID": 3197
                     }
                 ],
                 "Units": [

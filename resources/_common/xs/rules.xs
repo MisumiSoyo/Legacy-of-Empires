@@ -67,3 +67,24 @@ rule Ikko_Ikki
             }
         }
 }
+
+
+//  print the amount of olive oil
+rule ByzantinesOliveOil
+    active
+    minInterval 1
+    maxInterval 1
+{
+    int playerId = 0;
+    int n = xsGetNumPlayers();
+    int OliveOil = 0;
+    for (playerId = 0; <= n)
+        if (xsGetPlayerCivilization(playerId) == cByzantines)
+        {
+            OliveOil = xsPlayerAttribute(playerId, cAttributeOliveOil);
+            SetAttribute(playerId, BarrackID, cMaxRange, OliveOil);
+            SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
+            SetAttribute(playerId, StableID, cMaxRange, OliveOil);
+            SetAttribute(playerId, SiegeWorkshopID, cMaxRange, OliveOil);
+        }
+}

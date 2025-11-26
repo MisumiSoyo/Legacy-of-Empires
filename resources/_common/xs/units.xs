@@ -82,58 +82,6 @@ bool isDock(int ObjectID = -1)
 }
 
 
-bool isInRange(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
-{
-    int i = 0;
-    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
-    for (i = 0; <xsArrayGetSize(TempArray))
-        if (Distance(xsGetUnitPosition(UnitID), xsGetUnitPosition(xsArrayGetInt(TempArray, i))) <= Range)
-            return (true);
-    return (false);
-}
-
-
-bool isPosInRange(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int ObjectID = -1, float Range = 0.0)
-{
-    int i = 0;
-    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
-    for (i = 0; <xsArrayGetSize(TempArray))
-        if (Distance(Pos, xsGetUnitPosition(xsArrayGetInt(TempArray, i))) <= Range)
-            return (true);
-    return (false);
-}
-
-
-bool isInRangeMatrix(int playerId = -1, int UnitID = -1, int ObjectID = -1, float Range = 0.0)
-{
-    int i = 0;
-    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
-    for (i = 0; <xsArrayGetSize(TempArray))
-    {
-        vector UnitPos = xsGetUnitPosition(UnitID);
-        vector TempUnitPos = xsGetUnitPosition(xsArrayGetInt(TempArray, i));
-        if ((DistanceX(UnitPos, TempUnitPos) <= Range) && (DistanceY(UnitPos, TempUnitPos) <= Range))
-            return (true);
-    }
-    return (false);
-}
-
-
-bool isPosInRangeMatrix(int playerId = -1, vector Pos = vector(-1.0, -1.0, -1.0), int ObjectID = -1, float Range = 0.0)
-{
-    int i = 0;
-    int TempArray = xsGetPlayerUnitIds(playerId, ObjectID);
-    for (i = 0; < xsArrayGetSize(TempArray))
-    {
-        vector TempUnitPos = xsGetUnitPosition(xsArrayGetInt(TempArray, i));
-        if ((DistanceX(Pos, TempUnitPos) <= Range) && (DistanceY(Pos, TempUnitPos) <= Range))
-            return (true);
-    }
-    return (false);
-}
-
-
-
 bool isLandMilitaryClass(int ClassID = -1)
 {
     return ((ClassID == cArcherClass) || (ClassID == cInfantryClass) || (ClassID == cCavalryClass) || (ClassID == cSiegeWeaponClass) || (ClassID == cMonkClass)
@@ -258,68 +206,6 @@ bool isUnitOperable(int UnitID = -1)
 bool isGarrison(int UnitID1 = -1, int UnitID2 = -1)
 {
     return (xsGetUnitPosition(UnitID1) == xsGetUnitPosition(UnitID2));
-}
-
-
-int GarrisonUnitIDs(int playerId = -1, int UnitID = -1, int ObjectID = -1, int ArrayID = -1)
-{
-    static int UnitIDs = 0;
-    int ResultArray = ArrayID;
-    if (ResultArray == -1)
-        ResultArray = xsArrayCreateInt(0, 0);
-    else
-        xsArrayResizeInt(ResultArray, 0);
-
-    int i = 0;
-    if (UnitIDs == 0)
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID);
-    else
-        UnitIDs = xsGetPlayerUnitIds(playerId, ObjectID, UnitIDs);
-    for (u = 0; < xsArrayGetSize(UnitIDs))
-        if (isGarrison(UnitID, xsArrayGetInt(UnitIDs, i)))
-            ArrayAppendInt(ResultArray, xsArrayGetInt(UnitIDs, i));
-    return (ResultArray);
-}
-
-
-int GarrisonUnitCount(int playerId = -1, int UnitID = -1, int ObjectID = -1)
-{
-    int UnitIDs = GarrisonUnitIDs(playerId, UnitID, ObjectID);
-    int Result = xsArrayGetSize(UnitIDs);
-    return (Result);
-}
-
-
-int GarrisonObjectCount(int playerId = -1, int ObjectID1 = -1, int ObjectID2 = -1)
-{
-    static int UnitIDs1 = 0;
-    if (UnitIDs1 == 0) 
-        UnitIDs1 = xsGetPlayerUnitIds(playerId, ObjectID1);
-    else
-        UnitIDs1 = xsGetPlayerUnitIds(playerId, ObjectID1, UnitIDs1);
-    static int UnitIDs2 = 0;
-    if (UnitIDs2 == 0) 
-        UnitIDs2 = xsGetPlayerUnitIds(playerId, ObjectID2);
-    else
-        UnitIDs2 = xsGetPlayerUnitIds(playerId, ObjectID2, UnitIDs2);
-    int UnitCount1 = xsArrayGetSize(UnitIDs1);
-    int UnitCount2 = xsArrayGetSize(UnitIDs2);
-    int Result = 0;
-    int i = 0;
-    int j = 0;
-    for (j = 0; < UnitCount2)
-    {
-        bool flag = false;
-        for (i = 0; < UnitCount1)
-            if (xsGetUnitPosition(xsArrayGetInt(UnitIDs1, i)) == xsGetUnitPosition(xsArrayGetInt(UnitIDs2, j)))
-            {
-                flag = true;
-                break;
-            }
-        if (flag)
-            Result ++;
-    }
-    return (Result);
 }
 
 

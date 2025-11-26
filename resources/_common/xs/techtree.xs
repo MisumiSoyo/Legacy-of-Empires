@@ -143,6 +143,7 @@ void EffectFunction10002(int playerId = -1)
             SetResource(playerId, cAttributeResearchCostMod, 0.9);
             //  Chinese +50 start wood
             ModResource(playerId, cAttributeStartingWood, 50);
+            SetResource(playerId, cAttributeExclusiveTechFlag, 1);
             break;
         }
         case cByzantines:
@@ -713,6 +714,12 @@ void EffectFunction10024(int playerId = -1)
             //  Enable Shrine
             SetAttribute(playerId, ShrineID, cAvailableFlag, 1);
             SetAttribute(playerId, ShrineID, cDisabledFlag, 4);
+            break;
+        }
+        case cMalians:
+        {
+            //  Enable Donso
+            EnableObject(playerId, )
             break;
         }
         case cBurgundians:
