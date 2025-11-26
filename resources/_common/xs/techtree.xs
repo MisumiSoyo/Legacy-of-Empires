@@ -87,6 +87,7 @@ void EffectFunction10001(int playerId = -1)
         {
             //  Enable Blast Furnace
             EnableTech(playerId, 75);
+            EnableTech(playerId, HalberdierTechID);
         }
         case cBurmese:
         {
@@ -151,7 +152,7 @@ void EffectFunction10002(int playerId = -1)
             //  Byzantines civ bonus, Free Heresy
             SetTechAuto(playerId, 439);
             //  Olive Oil
-            ByzantinesOliveOil(playerId);
+            ByzantinesOliveOilInit(playerId);
             break;
         }
         case cPersians:
@@ -361,6 +362,14 @@ void EffectFunction10002(int playerId = -1)
         {
             //  Malians civ bonus, Hand Cannoneers +66% training speed
             MulAttribute(playerId, cHandCannoneerClass, cTrainTime, 0.6);
+            xsEffectAmount(cModifyTech, PikemanTechID, cAttrSetName, 500121, playerId);
+            xsEffectAmount(cModifyTech, PikemanTechID, cAttrSetDescription, 521121, playerId);
+            xsEffectAmount(cModifyTech, PikemanTechID, cAttrSetTime, 30, playerId);
+            xsEffectAmount(cModifyTech, PikemanTechID, cAttrSetEffect, 3185, playerId);
+            xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetName, 500122, playerId);
+            xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetDescription, 521122, playerId);
+            xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetTime, 45, playerId);
+            xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetEffect, 3186, playerId);
             break;
         }
         case cKhmer:
@@ -719,7 +728,10 @@ void EffectFunction10024(int playerId = -1)
         case cMalians:
         {
             //  Enable Donso
-            EnableObject(playerId, )
+            ModArmor(playerId, DonsoID, cDamageClassPierce, 1);
+            ModArmor(playerId, VeteranDonsoID, cDamageClassPierce, 1);
+            ModArmor(playerId, EliteDonsoID, cDamageClassPierce, 1);
+            xsEffectAmount(cUpgradeUnit, SpearmanID, DonsoID, 0, playerId);
             break;
         }
         case cBurgundians:
@@ -911,6 +923,9 @@ void EffectFunction10025(int playerId = -1)
         {
             //  Enable Sofa
             EnableObject(playerId, SofaID);
+            ModArmor(playerId, DonsoID, cDamageClassPierce, 1);
+            ModArmor(playerId, VeteranDonsoID, cDamageClassPierce, 1);
+            ModArmor(playerId, EliteDonsoID, cDamageClassPierce, 1);
             break;
         }
         case cBerbers:
@@ -1099,6 +1114,13 @@ void EffectFunction10026(int playerId = -1)
         {
             ModResource(playerId, cAttributeFood, 200);
             ModResource(playerId, cAttributeGold, 200);
+            break;
+        }
+        case cMalians:
+        {
+            ModArmor(playerId, DonsoID, cDamageClassPierce, 1);
+            ModArmor(playerId, VeteranDonsoID, cDamageClassPierce, 1);
+            ModArmor(playerId, EliteDonsoID, cDamageClassPierce, 1);
             break;
         }
         case cBerbers:

@@ -271,6 +271,14 @@ extern const int WhiteFeatherGuardID = 1959;
 extern const int EliteWhiteFeatherGuardID = 1961;
 
 
+//  Tech IDs
+extern const int SpearmanTechID = 87;
+extern const int PikemanTechID = 197;
+extern const int LightCavalryTechID = 254;
+extern const int HussarTechID = 428;
+extern const int HalberdierTechID = 429;
+
+
 //  Attack Forms
 extern const int TotalAttackForms = 106;
 extern const int cDamageClassMonastery = 101;

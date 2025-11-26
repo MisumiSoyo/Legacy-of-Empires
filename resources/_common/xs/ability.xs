@@ -667,7 +667,7 @@ void EffectFunction10022(int playerId = -1)
 }
 
 
-void ByzantinesOliveOil(int playerId = -1)
+void ByzantinesOliveOilInit(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeOliveOilProductivity);
