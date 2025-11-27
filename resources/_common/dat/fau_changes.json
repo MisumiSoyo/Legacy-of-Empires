@@ -1038,22 +1038,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭精锐雇佣军",
-            "civilizations": "Byzantines",
-            "tech_id": 3177,
-            "building_id": 109,
-            "Name": "Elite Mercenary",
-            "RequiredAge": 4
-        },
-        {
-            "note": "宫殿掠夺",
-            "civilizations": "Byzantines",
-            "tech_id": 3140,
-            "building_id": 209,
-            "Name": "Polutaswarf",
-            "RequiredAge": 3
-        },
-        {
             "note": "东吁勇士",
             "civilizations": "Burmese",
             "unit_id": 4055,
@@ -1399,6 +1383,14 @@
             "building_id": 109,
             "Name": "Silk Road Mercenary Contract",
             "RequiredAge": 2
+        },
+        {
+            "note": "拜占庭精锐雇佣军",
+            "civilizations": "Byzantines",
+            "tech_id": 3177,
+            "building_id": 109,
+            "Name": "Elite Mercenary",
+            "RequiredAge": 4
         }
     ]
 }

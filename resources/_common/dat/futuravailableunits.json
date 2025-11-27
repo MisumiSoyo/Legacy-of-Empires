@@ -7056,11 +7056,6 @@
                         "Name": "Architecture",
                         "RequiredAge": 4,
                         "ID": 51
-                    },
-                    {
-                        "Name": "Polutaswarf",
-                        "RequiredAge": 3,
-                        "ID": 3140
                     }
                 ]
             },
@@ -7281,11 +7276,6 @@
                         "ID": 3078
                     },
                     {
-                        "Name": "Elite Mercenary",
-                        "RequiredAge": 4,
-                        "ID": 3177
-                    },
-                    {
                         "Name": "Western/Middle European Mercenary Contract",
                         "RequiredAge": 2,
                         "ID": 3194
@@ -7304,6 +7294,11 @@
                         "Name": "Silk Road Mercenary Contract",
                         "RequiredAge": 2,
                         "ID": 3197
+                    },
+                    {
+                        "Name": "Elite Mercenary",
+                        "RequiredAge": 4,
+                        "ID": 3177
                     }
                 ],
                 "Units": [

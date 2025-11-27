@@ -163,8 +163,6 @@ void EffectFunction10002(int playerId = -1)
         }
         case cByzantines:
         {
-            //  Byzantines civ bonus, Free Heresy
-            SetTechAuto(playerId, 439);
             //  Olive Oil
             ByzantinesOliveOilInit(playerId);
             break;
