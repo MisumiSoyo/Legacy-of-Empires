@@ -7281,11 +7281,6 @@
                         "ID": 3078
                     },
                     {
-                        "Name": "Recruit Mercenary",
-                        "RequiredAge": 3,
-                        "ID": 3139
-                    },
-                    {
                         "Name": "Elite Mercenary",
                         "RequiredAge": 4,
                         "ID": 3177
@@ -16050,6 +16045,16 @@
                 "Name": "Stable",
                 "Techs": [
                     {
+                        "ID": 254,
+                        "Name": "Light Cavalry",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "ID": 428,
+                        "Name": "Hussar",
+                        "RequiredAge": 4
+                    },
+                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
@@ -16068,19 +16073,19 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Veteran Mansabdar",
-                        "RequiredAge": 3,
-                        "ID": 3147
-                    },
-                    {
-                        "Name": "Elite Mansabdar",
-                        "RequiredAge": 4,
-                        "ID": 3148
                     }
                 ],
                 "Units": [
+                    {
+                        "ID": 448,
+                        "Name": "Scout Cavalry",
+                        "RequiredAge": 2
+                    },
+                    {
+                        "ID": 546,
+                        "Name": "Light Cavalry",
+                        "RequiredAge": 3
+                    },
                     {
                         "ID": 329,
                         "Name": "Camel Rider",
@@ -17997,6 +18002,16 @@
                 "Name": "Archery Range",
                 "Techs": [
                     {
+                        "ID": 100,
+                        "Name": "Crossbowman",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "ID": 237,
+                        "Name": "Arbalester",
+                        "RequiredAge": 4
+                    },
+                    {
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
@@ -18015,19 +18030,24 @@
                         "ID": 436,
                         "Name": "Parthian Tactics",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Veteran Yumi Ashigaru",
-                        "RequiredAge": 3,
-                        "ID": 3009
-                    },
-                    {
-                        "Name": "Elite Yumi Ashigaru",
-                        "RequiredAge": 4,
-                        "ID": 3010
                     }
                 ],
                 "Units": [
+                    {
+                        "ID": 4,
+                        "Name": "Archer",
+                        "RequiredAge": 2
+                    },
+                    {
+                        "ID": 24,
+                        "Name": "Crossbowman",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "ID": 492,
+                        "Name": "Arbalester",
+                        "RequiredAge": 4
+                    },
                     {
                         "ID": 7,
                         "Name": "Skirmisher",
@@ -18039,6 +18059,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "ID": 5,
+                        "Name": "Hand Cannoneer",
+                        "RequiredAge": 4
+                    },
+                    {
                         "ID": 39,
                         "Name": "Cavalry Archer",
                         "RequiredAge": 3
@@ -18047,16 +18072,6 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Handcannon Ashigaru",
-                        "RequiredAge": 4,
-                        "ID": 4005
-                    },
-                    {
-                        "Name": "Yumi Ashigaru",
-                        "RequiredAge": 2,
-                        "ID": 4006
                     }
                 ]
             },
@@ -26581,14 +26596,14 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4,
-                        "ID": 680
-                    },
-                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
+                    },
+                    {
+                        "ID": 209,
+                        "Name": "Cavalier",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 236,
@@ -26624,14 +26639,14 @@
                         "RequiredUnitID": 546
                     },
                     {
-                        "Name": "Keshik",
-                        "RequiredAge": 3,
-                        "ID": 1228
+                        "ID": 38,
+                        "Name": "Knight",
+                        "RequiredAge": 3
                     },
                     {
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4,
-                        "ID": 1230
+                        "ID": 283,
+                        "Name": "Cavalier",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 329,
@@ -34093,14 +34108,14 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4,
-                        "ID": 680
-                    },
-                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
+                    },
+                    {
+                        "ID": 209,
+                        "Name": "Cavalier",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 236,
@@ -34136,14 +34151,14 @@
                         "RequiredUnitID": 546
                     },
                     {
-                        "Name": "Keshik",
-                        "RequiredAge": 3,
-                        "ID": 1228
+                        "ID": 38,
+                        "Name": "Knight",
+                        "RequiredAge": 3
                     },
                     {
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4,
-                        "ID": 1230
+                        "ID": 283,
+                        "Name": "Cavalier",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 329,
@@ -36212,6 +36227,11 @@
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
+                    },
+                    {
+                        "ID": 209,
+                        "Name": "Cavalier",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 236,
@@ -42459,6 +42479,11 @@
                 "Name": "Stable",
                 "Techs": [
                     {
+                        "ID": 254,
+                        "Name": "Light Cavalry",
+                        "RequiredAge": 3
+                    },
+                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
@@ -42479,17 +42504,22 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Veteran Mansabdar",
-                        "RequiredAge": 3,
-                        "ID": 3147
-                    },
-                    {
                         "Name": "Elite Mansabdar",
                         "RequiredAge": 4,
-                        "ID": 3148
+                        "ID": 428
                     }
                 ],
                 "Units": [
+                    {
+                        "ID": 448,
+                        "Name": "Scout Cavalry",
+                        "RequiredAge": 2
+                    },
+                    {
+                        "ID": 546,
+                        "Name": "Light Cavalry",
+                        "RequiredAge": 3
+                    },
                     {
                         "ID": 1132,
                         "Name": "Battle Elephant",

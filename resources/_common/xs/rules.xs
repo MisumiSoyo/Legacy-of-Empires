@@ -6,8 +6,8 @@ rule Shrine
     int playerId = 0;
     int n = xsGetNumPlayers();
     int SpawnUnitID = 0;
-    int LastSpawnTime = 0;
-    int SpawnTime = 0;
+    float LastSpawnTime = 0.0;
+    float SpawnTime = 0.0;
     int SpawnCount = 0;
     int Time = xsGetGameTime();
 
@@ -18,7 +18,7 @@ rule Shrine
 
         SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
         LastSpawnTime = xsPlayerAttribute(playerId, cAttributeShrineLastSpawnTime);
-        if (LastSpawnTime == 0)
+        if (LastSpawnTime == 0.0)
         {
             LastSpawnTime = Time;
             SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
@@ -26,6 +26,8 @@ rule Shrine
         SpawnTime = xsPlayerAttribute(playerId, cAttributeShrineSpawnTime);
         if (xsGetObjectCount(playerId, FloatingGardenBuildingID) > 0)
             SpawnTime = SpawnTime / 1.2;
+        if (xsGetPlayerCivilization(playerId) == cAztecs)
+            SpawnTime = SpawnTime / 1.15;
         if (Time - LastSpawnTime >= SpawnTime)
         {
             SpawnUnit(playerId, SpawnUnitID, ShrineID, 1, 1000);

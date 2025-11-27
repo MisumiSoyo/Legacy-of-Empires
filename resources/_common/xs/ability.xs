@@ -127,6 +127,8 @@ void BerserkInit(int playerId = -1)
 
     LaunchStinger(playerId, BerserkID);
     LaunchStinger(playerId, EliteBerserkID);
+    LaunchStinger(playerId, MercenaryBerserkID);
+    LaunchStinger(playerId, MercenaryEliteBerserkID);
 }
 
 
@@ -363,7 +365,7 @@ void EffectFunction10050(int playerId = -1)
     ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
     ModAttack(playerId, VeteranMansabdarID, cDamageClassMelee, 2);
     ModAttack(playerId, EliteMansabdarID, cDamageClassMelee, 2);
-    ModAttack(playerId, 448, cDamageClassMelee, 2);
+    ModAttack(playerId, ScoutCavalryID, cDamageClassMelee, 2);
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 }
 
@@ -684,7 +686,47 @@ void ByzantinesOliveOilInit(int playerId = -1)
     xsTask(cVillagerClass, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsTask(cVillagerClass, cTaskTypeGenerateResources, cLivestockClass, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeOliveOilProductivity, 10);
+    SetResource(playerId, cAttributeOliveOilProductivity, 3);
+}
+
+
+void TangDynastyEffect(int playerId = -1)
+{
+    ModAttack(playerId, cInfantryClass, cDamageClassMelee, 2);
+    ModAttack(playerId, cCavalryClass, cDamageClassMelee, 2);
+    ModAttribute(playerId, cInfantryClass, cLineOfSight, 4);
+    ModAttribute(playerId, cCavalryClass, cLineOfSight, 4);
+}
+
+
+void TangDynastyReset(int playerId = -1)
+{
+    ModAttack(playerId, cInfantryClass, cDamageClassMelee, -2);
+    ModAttack(playerId, cCavalryClass, cDamageClassMelee, -2);
+    ModAttribute(playerId, cInfantryClass, cLineOfSight, -4);
+    ModAttribute(playerId, cCavalryClass, cLineOfSight, -4);
+}
+
+
+void SongDynastyEffect(int playerId = -1)
+{
+    ModAttribute(playerId, cTradeCartClass, cWoodCost, 0.8);
+    ModAttribute(playerId, cTradeCartClass, cGoldCost, 0.8);
+    ModAttribute(playerId, cTradeBoatClass, cWoodCost, 0.8);
+    ModAttribute(playerId, cTradeBoatClass, cGoldCost, 0.8);
+    ModResource(playerId, cAttributeResearchCostMod, -0.05);
+    ModResource(playerId, cAttributeResearchTimeMod, -0.2);
+}
+
+
+void SongDynastyReset(int playerId = -1)
+{
+    ModAttribute(playerId, cTradeCartClass, cWoodCost, 1.25);
+    ModAttribute(playerId, cTradeCartClass, cGoldCost, 1.25);
+    ModAttribute(playerId, cTradeBoatClass, cWoodCost, 1.25);
+    ModAttribute(playerId, cTradeBoatClass, cGoldCost, 1.25);
+    ModResource(playerId, cAttributeResearchCostMod, 0.05);
+    ModResource(playerId, cAttributeResearchTimeMod, 0.2);
 }
 
 

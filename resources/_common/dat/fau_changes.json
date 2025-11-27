@@ -34,50 +34,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "铁炮足轻",
-            "civilizations": "Japanese",
-            "unit_id": 4005,
-            "building_id": 87,
-            "Name": "Handcannon Ashigaru",
-            "RequiredAge": 4
-        },
-        {
-            "note": "弓足轻",
-            "civilizations": "Japanese",
-            "unit_id": 4006,
-            "building_id": 87,
-            "Name": "Yumi Ashigaru",
-            "RequiredAge": 2
-        },
-        {
-            "note": "老练弓足轻",
-            "civilizations": "Japanese",
-            "tech_id": 3009,
-            "building_id": 87,
-            "Name": "Veteran Yumi Ashigaru",
-            "RequiredAge": 3
-        },
-        {
-            "note": "精锐弓足轻",
-            "civilizations": "Japanese",
-            "tech_id": 3010,
-            "building_id": 87,
-            "Name": "Elite Yumi Ashigaru",
-            "RequiredAge": 4
-        },
-        {
-            "note": "日本移除步弓手系和火枪手",
-            "civilizations": "Japanese",
-            "unit_id": [4, 5, 24, 492],
-            "type": "delete"
-        },
-        {
-            "note": "日本移除弩手和劲弩手科技",
-            "civilizations": "Japanese",
-            "tech_id": [100, 237],
-            "type": "delete"
-        },
-        {
             "note": "木制要塞",
             "civilizations": ["Goths", "Vikings", "Huns"],
             "unit_id": 4009,
@@ -139,13 +95,6 @@
             "note": "土耳其移除重装骑士",
             "civilizations": "Turks",
             "unit_id": 283,
-            "building_id": 101,
-            "type": "delete"
-        },
-        {
-            "note": "土耳其移除重装骑士",
-            "civilizations": "Turks",
-            "tech_id": 209,
             "building_id": 101,
             "type": "delete"
         },
@@ -1147,15 +1096,7 @@
         {
             "note": "印度斯坦和孟加拉移除轻骑兵和翼骑兵",
             "civilizations": ["Indians", "Bengalis"],
-            "unit_id": [441, 448, 546],
-            "building_id": 101,
-            "type": "delete"
-        }
-        ,
-        {
-            "note": "印度斯坦和孟加拉移除轻骑兵和翼骑兵",
-            "civilizations": ["Indians", "Bengalis"],
-            "tech_id": [254, 428],
+            "unit_id": [441],
             "building_id": 101,
             "type": "delete"
         },
@@ -1168,17 +1109,9 @@
             "RequiredAge": 2
         },
         {
-            "note": "老练曼沙布达尔骑兵",
-            "civilizations": ["Indians", "Bengalis"],
-            "tech_id": 3147,
-            "building_id": 101,
-            "Name": "Veteran Mansabdar",
-            "RequiredAge": 3
-        },
-        {
             "note": "精锐曼沙布达尔骑兵",
-            "civilizations": ["Indians", "Bengalis"],
-            "tech_id": 3148,
+            "civilizations": ["Bengalis"],
+            "tech_id": 428,
             "building_id": 101,
             "Name": "Elite Mansabdar",
             "RequiredAge": 4
@@ -1265,48 +1198,6 @@
             "note": "鞑靼移除原有精锐怯薛科技",
             "civilizations": "Tatars",
             "tech_id": 680,
-            "type": "delete"
-        },
-        {
-            "note": "蒙古, 鞑靼获得怯薛",
-            "civilizations": ["Mongols", "Tatars"],
-            "unit_id": 1228,
-            "building_id": 101,
-            "Name": "Keshik",
-            "RequiredAge": 3,
-            "position": "after",
-            "target_id": 441
-        },
-        {
-            "note": "蒙古, 鞑靼获得精锐怯薛",
-            "civilizations": ["Mongols", "Tatars"],
-            "unit_id": 1230,
-            "building_id": 101,
-            "Name": "Elite Keshik",
-            "RequiredAge": 4,
-            "position": "after",
-            "target_id": 1228
-        },
-        {
-            "note": "蒙古, 鞑靼获得精锐怯薛科技",
-            "civilizations": ["Mongols", "Tatars"],
-            "tech_id": 680,
-            "building_id": 101,
-            "Name": "Elite Keshik",
-            "RequiredAge": 4,
-            "position": "after",
-            "target_id": 428
-        },
-        {
-            "note": "蒙古, 鞑靼移除骑士系",
-            "civilizations": ["Mongols", "Tatars"],
-            "unit_id": [38, 283, 569],
-            "type": "delete"
-        },
-        {
-            "note": "蒙古, 鞑靼移除骑士系科技",
-            "civilizations": ["Mongols", "Tatars"],
-            "tech_id": [209, 265],
             "type": "delete"
         },
         {

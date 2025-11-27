@@ -400,6 +400,12 @@ void SpawnUnit(int playerId = -1, int SpawnUnitID = -1, int SpawnBuidingID = -1,
 }
 
 
+void UpgradeUnit(int playerId = -1, int SourceObject = -1, int TargetObject = -1, int UpgradeMode = 0)
+{
+    xsEffectAmount(cUpgradeUnit, SourceObject, TargetObject, UpgradeMode, playerId);
+}
+
+
 //  Must carefully use this function for classes
 void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
 {

@@ -273,7 +273,12 @@ extern const int EliteWhiteFeatherGuardID = 1961;
 
 //  Tech IDs
 extern const int SpearmanTechID = 87;
+extern const int CrossbowmanTechID = 100;
+extern const int ArcherTechID = 151;
+extern const int KnightTechID = 166;
 extern const int PikemanTechID = 197;
+extern const int CavalierTechID = 209;
+extern const int ArbalesterTechID = 237;
 extern const int LightCavalryTechID = 254;
 extern const int HussarTechID = 428;
 extern const int HalberdierTechID = 429;

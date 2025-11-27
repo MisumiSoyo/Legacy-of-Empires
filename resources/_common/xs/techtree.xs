@@ -104,6 +104,10 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, 39);   //  Enable Husbandry
             break;
         }
+        case cBengalis:
+        {
+            EnableTech(playerId, HussarTechID);
+        }
         default:
         {
           break;
@@ -129,10 +133,20 @@ void EffectFunction10002(int playerId = -1)
         }
         case cJapanese:
         {
-            DisableTech(playerId, 85);  //  Disable Hand Cannoneer
-            DisableTech(playerId, 100); //  Disable Crossbowman
-            DisableTech(playerId, 151); //  Disable Archer
-            DisableTech(playerId, 237); //  Disable Arbalester
+            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetEffect, 3009, playerId);
+            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetFoodCost, 125, playerId);
+            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetGoldCost, 75, playerId);
+            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetTime, 30, playerId);
+            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetName, 500008, playerId);
+            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetDescription, 521008, playerId);
+            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetEffect, 3010, playerId);
+            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetFoodCost, 300, playerId);
+            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetGoldCost, 200, playerId);
+            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetTime, 45, playerId);
+            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetIcon, 105, playerId);
+            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetName, 500009, playerId);
+            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetDescription, 521009, playerId);
+            UpgradeUnit(playerId, ArcherID, YumiAshigaruID);
             break;
         }
         case cChinese:
@@ -175,7 +189,15 @@ void EffectFunction10002(int playerId = -1)
         }
         case cTurks:
         {
-            xsEffectAmount(cDisableTech, 166, 0, 0, playerId);
+            //  Knight line replaced by Sipahi
+            UpgradeUnit(playerId, KnightID, SipahiID);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3013, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 450, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 300, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetTime, 80, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetIcon, 105, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetName, 500011, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetDescription, 521011, playerId);
             //  Turks civ bonus, cannon galleon on land
             xsEffectAmount(cSetAttribute, CannonGalleonID, cTerrainTable, 0, playerId);
             xsEffectAmount(cSetAttribute, EliteCannonGalleonID, cTerrainTable, 0, playerId);
@@ -194,8 +216,14 @@ void EffectFunction10002(int playerId = -1)
             ForceResearchTech(playerId, 25);
             ForceResearchTech(playerId, 204);
             //  Mongols Knight line replaced by Keshiks
-            DisableTech(playerId, 166);
-            DisableTech(playerId, 209);
+            UpgradeUnit(playerId, KnightID, KeshikID);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3126, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 600, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 400, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetTime, 40, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetIcon, 105, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetName, 7304, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetDescription, 28304, playerId);
             break;
         }
         case cCelts:
@@ -286,8 +314,19 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, 140, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, 63, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, 608, cAttrMulTime, 2, playerId);
-            //  曼沙布达尔骑兵替代轻骑兵
-            SetTechAuto(playerId, 3146);
+            //  Scout Cavalry Line replaced by Mansabdars
+            UpgradeUnit(playerId, ScoutCavalryID, MansabdarID);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetEffect, 3134, playerId);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetTime, 30, playerId);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetName, 500095, playerId);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetDescription, 521095, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetEffect, 3135, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetFoodCost, 800, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetGoldCost, 500, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetIcon, 105, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetTime, 60, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetName, 500096, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetDescription, 521096, playerId);
             break;
         }
         case cIncas:
@@ -370,6 +409,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetDescription, 521122, playerId);
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetTime, 45, playerId);
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetEffect, 3186, playerId);
+            xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetIcon, 105, playerId);
             break;
         }
         case cKhmer:
@@ -413,10 +453,16 @@ void EffectFunction10002(int playerId = -1)
         case cTatars:
         {
             //  Tatars Knight line replaced by Keshiks
-            DisableTech(playerId, 166);
-            DisableTech(playerId, 209);
+            UpgradeUnit(playerId, KnightID, KeshikID);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3126, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 600, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 400, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetTime, 40, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetIcon, 105, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetName, 7304, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetDescription, 28304, playerId);
             //  Tatars civ bonus, Keshiks generate gold
-            SetResource(playerId, 213, 75);            
+            SetResource(playerId, 213, 75);
             break;
         }
         case cCumans:
@@ -496,8 +542,19 @@ void EffectFunction10002(int playerId = -1)
             ModAttack(playerId, cScoutCavalryClass, cDamageClassSkirmishers, -2);
             ModAttack(playerId, cCavalryClass, cDamageClassSkirmishers, -2);
             BengalisCavalryVSSkirmisher(playerId);
-            //  Bengalis Scout Cavalry line replaced by 
-            SetTechAuto(playerId, 3146);
+            //  Bengalis Scout Cavalry line replaced by Mansabdars
+            UpgradeUnit(playerId, ScoutCavalryID, MansabdarID);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetEffect, 3134, playerId);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetTime, 30, playerId);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetName, 500095, playerId);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetDescription, 521095, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetEffect, 3135, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetFoodCost, 800, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetGoldCost, 500, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetIcon, 105, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetTime, 60, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetName, 500096, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetDescription, 521096, playerId);
             break;
         }
         case cGurjaras:
@@ -604,6 +661,8 @@ void EffectFunction10002(int playerId = -1)
     //  Berserks Adjustment
     ModAttribute(playerId, BerserkID, cRegenerationRate, -40);
     ModAttribute(playerId, EliteBerserkID, cRegenerationRate, -40);
+    ModAttribute(playerId, MercenaryBerserkID, cRegenerationRate, -40);
+    ModAttribute(playerId, MercenaryEliteBerserkID, cRegenerationRate, -40);
     //  Keshik adjustment before Castle Age
     ModAttribute(playerId, KeshikID, cHitpoints, -20);
     ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
@@ -650,14 +709,9 @@ void EffectFunction10024(int playerId = -1)
             xsEffectAmount(cAddAttribute, 1155, cSearchRadius, 1, playerId);
             break;
         }
-        case cJapanese:
-        {
-            EnableObject(playerId, YumiAshigaruID);
-            break;
-        }
         case cChinese:
         {
-            SetResource(playerId, cAttributeResearchCostMod, 0.85);
+            ModResource(playerId, cAttributeResearchCostMod, -0.05);
             break;
         }
         case cByzantines:
@@ -684,7 +738,7 @@ void EffectFunction10024(int playerId = -1)
         case cMongols:
         {
             //  Mongols civ bonus, advanced Keshik
-            ForceResearchTech(playerId, 679);
+            ForceResearchTech(playerId, KnightTechID);
             break;
         }
         case cSpanish:
@@ -820,7 +874,7 @@ void EffectFunction10025(int playerId = -1)
         }
         case cChinese:
         {
-            SetResource(playerId, cAttributeResearchCostMod, 0.8);
+            ModResource(playerId, cAttributeResearchCostMod, -0.05);
             EnableObject(playerId, FlameThrowerID);
             break;
         }
@@ -836,6 +890,7 @@ void EffectFunction10025(int playerId = -1)
             SetAttribute(playerId, FlameThrowerID, cNameId, 700042);
             SetAttribute(playerId, FlameThrowerID, cDescriptionId, 701042);
             SetResource(playerId, cAttributeRecruitMercenaryCost, 1);
+            MulResource(playerId, cAttributeOliveOilProductivity, 2);
             break;
         }
         case cPersians:
@@ -848,15 +903,10 @@ void EffectFunction10025(int playerId = -1)
             EnableObject(playerId, AssassinID);
             break;
         }
-        case cTurks:
-        {
-            EnableObject(playerId, SipahiID);
-            break;
-        }
         case cMongols:
         {
             //  Mongols civ bonus, advanced Elite Keshik
-            ForceEnableTech(playerId, 680);
+            ForceEnableTech(playerId, CavalierTechID);
             break;
         }
         case cSpanish:
@@ -1067,7 +1117,7 @@ void EffectFunction10026(int playerId = -1)
         }
         case cChinese:
         {
-            SetResource(playerId, cAttributeResearchCostMod, 0.75);
+            ModResource(playerId, cAttributeResearchCostMod, -0.05);
             break;
         }
         case cByzantines:
@@ -1077,6 +1127,7 @@ void EffectFunction10026(int playerId = -1)
             MulAttribute(playerId, cGateClass, cHitpoints, 1.25 / 1.2 / 1.0769);
             MulAttribute(playerId, cFarmClass, cHitpoints, 1.25 / 1.2 / 1.0769);
             MulAttribute(playerId, cTowerClass, cHitpoints, 1.25 / 1.2 / 1.0769);
+            MulResource(playerId, cAttributeOliveOilProductivity, 2);
             break;
         }
         case cAztecs:
@@ -1213,17 +1264,9 @@ void EffectFunction10063(int playerId = -1)
 
     switch (playerCiv)
     {
-        case cIndians:
+        case cMongols:
         {
-            //  Automatically research Veteran Mansabdar
-            ForceResearchTech(playerId, 3147);
-            break;
-        }
-        case cBengalis:
-        {
-            //  Automatically research Veteran Mansabdar
-            ForceResearchTech(playerId, 3147);
-            break;
+            ForceResearchTech(playerId, CavalierTechID);
         }
         default:
             break;
@@ -1234,23 +1277,4 @@ void EffectFunction10063(int playerId = -1)
 //  Post Imperial Age start effect
 void EffectFunction10064(int playerId = -1)
 {
-    int playerCiv = xsGetPlayerCivilization(playerId);
-
-    switch (playerCiv)
-    {
-        case cIndians:
-        {
-            //  Automatically research Elite Mansabdar
-            ForceResearchTech(playerId, 3148);
-            break;
-        }
-        case cBengalis:
-        {
-            //  Automatically research Elite Mansabdar
-            ForceResearchTech(playerId, 3148);
-            break;
-        }
-        default:
-            break;
-    }
 }
