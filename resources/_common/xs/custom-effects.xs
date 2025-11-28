@@ -894,7 +894,7 @@ void EffectFunction10073(int playerId = -1)
 //  Spanish, Explorer
 void EffectFunction10078(int playerId = -1)
 {
-    static float ExplorerGoldRate = 0.015;
+    float ExplorerGoldRate = 0.015;
     int i = 0;
     float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
     float CurrentGold = 0;
@@ -902,6 +902,19 @@ void EffectFunction10078(int playerId = -1)
         if (i != playerId)
             CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
     ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
+    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
+}
+
+
+//  Explorer Init
+void EffectFunction10081(int playerId = -1)
+{
+    float ExplorerGoldRate = 0.015;
+    int i = 0;
+    float CurrentGold = 0.0;
+    for (i = 1; <= xsGetNumPlayers())
+        if (i != playerId)
+            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
     SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
 }
 

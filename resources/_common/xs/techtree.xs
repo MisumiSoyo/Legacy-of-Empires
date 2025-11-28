@@ -83,6 +83,11 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, 85);
             break;
         }
+        case cSlavs:
+        {
+            EnableTech(playerId, HandCannoneerTechID);
+            break;
+        }
         case cMalians:
         {
             //  Enable Blast Furnace
@@ -204,6 +209,7 @@ void EffectFunction10002(int playerId = -1)
         case cVikings:
         {
             DisableTech(playerId, 127);
+            EnableObject(playerId, VikingRaiderID);
             break;
         }
         case cMongols:
@@ -373,6 +379,7 @@ void EffectFunction10002(int playerId = -1)
             FasterCastleUnits(playerId, 1155, 27, 18045);
             FasterCastleUnits(playerId, 39, 28, 18008);
             FasterCastleUnits(playerId, 474, 28, 18008);
+            FasterCastleUnits(playerId, HandCannoneerID, 29, 18034);
             FasterCastleUnits(playerId, 448, 31, 18090);
             FasterCastleUnits(playerId, 546, 31, 18090);
             FasterCastleUnits(playerId, 441, 31, 18090);

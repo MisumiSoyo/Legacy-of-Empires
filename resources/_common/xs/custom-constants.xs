@@ -281,6 +281,7 @@ extern const int EliteWhiteFeatherGuardID = 1961;
 
 
 //  Tech IDs
+extern const int HandCannoneerTechID = 85;
 extern const int SpearmanTechID = 87;
 extern const int CrossbowmanTechID = 100;
 extern const int ArcherTechID = 151;
