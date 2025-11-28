@@ -188,7 +188,7 @@ void HospitallerKnightInit(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkRange, 4);
     xsTaskAmount(cTaskAttrOwnerType, 4);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.00001);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000002);
 
     xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cArcherClass, playerId);
     xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cVillagerClass, playerId);
@@ -447,23 +447,22 @@ void EffectFunction10056(int playerId = -1)
 }
 
 
-void KeshikInit(int playerId = -1)
+void KeshikStinger(int playerId = -1, float Rate = 0.0)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
     xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrWorkValue1, 3.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 3.0 * 60 * Rate);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrResourceIn, cAttributeKeshikStingerRate);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
     xsTask(KeshikID, cTaskTypeStinger, -1, playerId);
     xsTask(MercenaryKeshikID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 4.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 4.0 * 60 * Rate);
     xsTask(EliteKeshikID, cTaskTypeStinger, -1, playerId);
     xsTask(MercenaryEliteKeshikID, cTaskTypeStinger, -1, playerId);
 
-    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 3.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 3.0 * 60 * Rate);
     xsTask(KeshikID, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(KeshikID, cTaskTypeStinger, cWallClass, playerId);
     xsTask(KeshikID, cTaskTypeStinger, cGateClass, playerId);
@@ -474,7 +473,7 @@ void KeshikInit(int playerId = -1)
     xsTask(MercenaryKeshikID, cTaskTypeStinger, cGateClass, playerId);
     xsTask(MercenaryKeshikID, cTaskTypeStinger, cTowerClass, playerId);
     xsTask(MercenaryKeshikID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 4.0 * 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 4.0 * 60 * Rate);
     xsTask(EliteKeshikID, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(EliteKeshikID, cTaskTypeStinger, cWallClass, playerId);
     xsTask(EliteKeshikID, cTaskTypeStinger, cGateClass, playerId);
@@ -490,14 +489,12 @@ void KeshikInit(int playerId = -1)
     LaunchStinger(playerId, EliteKeshikID);
     LaunchStinger(playerId, MercenaryKeshikID);
     LaunchStinger(playerId, MercenaryEliteKeshikID);
+    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
+        if (isResearched(playerId, CavalierTechID))
+            UpgradeUnit(playerId, KnightID, EliteKeshikID);
+        else
+            UpgradeUnit(playerId, KnightID, KeshikID);
     SetResource(playerId, 213, 0);
-    SetResource(playerId, cAttributeKeshikStingerRate, 0.5);
-}
-
-
-void KeshikStingerCastleAgeUpgrade(int playerId = -1)
-{
-    SetResource(playerId, cAttributeKeshikStingerRate, 1);
 }
 
 
@@ -690,6 +687,47 @@ void ByzantinesOliveOilInit(int playerId = -1)
 }
 
 
+void PoisoningApplier(int playerId = -1, int ClassTarget = -1)
+{
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000003);
+    xsTaskAmount(cTaskAttrWorkValue1, -90);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 90);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5.000002);
+    xsTaskAmount(cTaskAttrWorkValue1, -0.08);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.08);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+
+    LaunchStinger(playerId, ClassTarget);
+}
+
+
+void AnarchyTarkanAdjustment(int playerId = -1)
+{
+    SetAttribute(playerId, Tarkan2ID, cTrainLocationsEntryMod, 1);
+    SetAttribute(playerId, Tarkan2ID, cTrainButton, 3);
+    SetAttribute(playerId, Tarkan2ID, cHotkeyId, 16085);
+    SetAttribute(playerId, Tarkan2ID, cTrainLocationsEntryMod, 0);
+    SetAttribute(playerId, EliteTarkan2ID, cTrainLocationsEntryMod, 1);
+    SetAttribute(playerId, EliteTarkan2ID, cTrainButton, 3);
+    SetAttribute(playerId, EliteTarkan2ID, cHotkeyId, 16085);
+    SetAttribute(playerId, EliteTarkan2ID, cTrainLocationsEntryMod, 0);
+}
+
+
 void TangDynastyEffect(int playerId = -1)
 {
     ModAttack(playerId, cInfantryClass, cDamageClassMelee, 2);
@@ -740,6 +778,6 @@ void AbilityApplier(int playerId = -1)
     HospitallerKnightInit(playerId);
     TCSpawnedDeerInit(playerId);
     ShrineInit(playerId);
-    KeshikInit(playerId);
+    KeshikStinger(playerId, 0.5);
     KhanInit(playerId);
 }

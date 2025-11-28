@@ -860,22 +860,34 @@ void EffectFunction10072(int playerId = -1)
 void EffectFunction10073(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.001);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000007);
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
-    int i = 0;
-    int TrainLocation = 0;
-    for (i = 0; < TotalObjects)
-        if ((i < 900) || (i > 964))
-        {
-            TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
-            if ((TrainLocation == 12) || (TrainLocation == 87) || (i == KeshikID) || (i == EliteKeshikID))
-                PaxMongolicaApplier(playerId, i);
-        }
+    PaxMongolicaApplier(playerId, MilitiaID);
+    PaxMongolicaApplier(playerId, ManAtArmsID);
+    PaxMongolicaApplier(playerId, LongSwordmanID);
+    PaxMongolicaApplier(playerId, TwoHandedSwordmanID);
+    PaxMongolicaApplier(playerId, ChampionID);
+    PaxMongolicaApplier(playerId, SpearmanID);
+    PaxMongolicaApplier(playerId, PikemanID);
+    PaxMongolicaApplier(playerId, HalberdierID);
+    PaxMongolicaApplier(playerId, ArcherID);
+    PaxMongolicaApplier(playerId, CrossbowmanID);
+    PaxMongolicaApplier(playerId, ArbalesterID);
+    PaxMongolicaApplier(playerId, SkirmisherID);
+    PaxMongolicaApplier(playerId, EliteSkirmisherID);
+    PaxMongolicaApplier(playerId, ImperialSkirmisherID);
+    PaxMongolicaApplier(playerId, EarlyCavalryArcherID);
+    PaxMongolicaApplier(playerId, CavalryArcherID);
+    PaxMongolicaApplier(playerId, HeavyCavalryArcherID);
+    PaxMongolicaApplier(playerId, HandCannoneerID);
+    PaxMongolicaApplier(playerId, GenitourID);
+    PaxMongolicaApplier(playerId, EliteGenitourID);
     
     xsResetTaskAmount();
+    KeshikStinger(playerId, 1.25);
 }
 
 
@@ -891,6 +903,23 @@ void EffectFunction10078(int playerId = -1)
             CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
     ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
     SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
+}
+
+
+//  10080 - Poisoning
+void EffectFunction10080(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrWorkValue2, 3);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+
+    PoisoningApplier(playerId, cArcherClass);
+    PoisoningApplier(playerId, cConquistadorClass);
+    PoisoningApplier(playerId, cCavalryArcherClass);
+    PoisoningApplier(playerId, cHandCannoneerClass);
+    PoisoningApplier(playerId, ProjectileDonsoID);
+    xsResetTaskAmount();
 }
 
 

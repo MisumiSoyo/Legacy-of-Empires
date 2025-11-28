@@ -408,6 +408,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetTime, 45, playerId);
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetEffect, 3186, playerId);
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetIcon, 105, playerId);
+            xsEffectAmount(cUpgradeUnit, SpearmanID, DonsoID, 0, playerId);
             break;
         }
         case cKhmer:
@@ -665,6 +666,8 @@ void EffectFunction10002(int playerId = -1)
     ModAttribute(playerId, KeshikID, cHitpoints, -20);
     ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
     ModAttribute(playerId, KeshikID, cShownAttack, -2);
+    //  Huns Anarchy Adjustment
+    AnarchyTarkanAdjustment(playerId);
 }
 
 
@@ -783,7 +786,6 @@ void EffectFunction10024(int playerId = -1)
             ModArmor(playerId, DonsoID, cDamageClassPierce, 1);
             ModArmor(playerId, VeteranDonsoID, cDamageClassPierce, 1);
             ModArmor(playerId, EliteDonsoID, cDamageClassPierce, 1);
-            xsEffectAmount(cUpgradeUnit, SpearmanID, DonsoID, 0, playerId);
             break;
         }
         case cBurgundians:
@@ -1066,7 +1068,7 @@ void EffectFunction10025(int playerId = -1)
     ModAttribute(playerId, KeshikID, cHitpoints, 20);
     ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
     ModAttribute(playerId, KeshikID, cShownAttack, 2);
-    KeshikStingerCastleAgeUpgrade(playerId);
+    KeshikStinger(playerId, 1.0);
     //  Conscripted Army Upgrade
     ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
     ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);

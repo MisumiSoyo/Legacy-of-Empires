@@ -123,6 +123,7 @@ extern const int EliteDonsoID = 4129;
 extern const int ProjectileDonsoID = 4130;
 
 
+//  Original Unit IDs
 extern const int ArcherID = 4;
 extern const int HandCannoneerID = 5;
 extern const int EliteSkirmisherID = 6;
@@ -175,12 +176,17 @@ extern const int CamelRiderID = 329;
 extern const int HeavyCamelRiderID = 330;
 extern const int PikemanID = 358;
 extern const int HalberdierID = 359;
+extern const int ProjectileARCID = 363;
+extern const int ProjectileCRSID = 365;
+extern const int ProjectileHCSID = 366;
+extern const int ProjectileGunpowderPrimaryID = 380;
 extern const int CannonGalleonID = 420;
 extern const int CappedRamID = 422;
 extern const int HussarID = 441;
 extern const int ScoutCavalryID = 448;
 extern const int TwoHandedSwordmanID = 473;
 extern const int HeavyCavalryArcherID = 474;
+extern const int ProjectileHARID = 477;
 extern const int ArbalesterID = 492;
 extern const int FireGalleyID = 529;
 extern const int EliteLongbowmanID = 530;
@@ -225,6 +231,8 @@ extern const int EliteBoyarID = 878;
 extern const int KamayukID = 879;
 extern const int EliteKamayukID = 881;
 extern const int CondottieroID = 882;
+extern const int Tarkan2ID = 886;
+extern const int EliteTarkan2ID = 887;
 extern const int HeavyPikemanID = 892;
 extern const int CamelArcherID = 1007;
 extern const int EliteCamelArcherID = 1009;
@@ -267,6 +275,7 @@ extern const int GrenadierID = 1911;
 extern const int LiaoDaoID = 1920;
 extern const int EliteLiaoDaoID = 1922;
 extern const int MountedTrebuchetID = 1923;
+extern const int ProjectileCrossbowmanSecondaryID = 1960;
 extern const int WhiteFeatherGuardID = 1959;
 extern const int EliteWhiteFeatherGuardID = 1961;
 

@@ -83,7 +83,7 @@
 
 120160 "Infantry and Naval civilization\n\n• War Ships cost -15%/-15%/-20% at Feudal/Castle/Imperial Age\n• Infantry +20% HP starting at Feudal Age\n• Wheelbarrow, Hand Cart free\n\n<b>Unique Units:<b>\n• Berserk (Infantry with regeneration), Longboat (War ship with multiple arrows), Viking Raiders (High speed infantry that can reduce enemy's work rate)\n\n<b>Unique Techs: <b>\n• Chieftains (Infantry +5 damage vs cavalries, +4 damage vs camels, gain 5 gold for each killed villager and 20 gold for monks and trade units.) \n• Bogsveigar (Archer-line and Longboats +1 attack)\n• Frozen Sea Dominance (Transport Ships +250% hit points; Your land military units near Longboats get +5% attack speed and regenerate 20 hit points per minute)\n• Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)\n\n<b>Team bonus: <b>\nDock cost -15%"
 
-120161 "Cavalry Archer civilization \n\n• Cavalry archers -20% reload time \n• Light Cavalry, Hussar, and Steppe Lancer +30% HP\n• Hunters +40% work rate\n• Cavalries can loot 0.25 gold per second when attacking buildings(except gates, walls and farms)\n• Keshik and Elite Keshik available an age in advance\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom) \n• Drill (Siege Workshop units +50% moving speed) \n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking)\n\n<b>Team bonus: <b>\nScout-Line +2 LOS"
+120161 "Cavalry Archer civilization \n\n• Cavalry archers -20% reload time \n• Light Cavalry, Hussar, and Steppe Lancer +30% HP\n• Hunters +40% work rate\n• Cavalries can loot 0.25 gold per second when attacking buildings(except gates, walls and farms)\n• Keshik and Elite Keshik available an age in advance\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom) \n• Drill (Siege Workshop units +50% moving speed) \n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +25% HP regeneration from attacking)\n\n<b>Team bonus: <b>\nScout-Line +2 LOS"
 
 120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight \n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP) \n• Siege Technique (Rams +400 melee attack, +20% attack bonus vs buildings)\n\n<b>Team bonus: <b>\nSiege Workshop work rate +20%"
 
@@ -111,7 +111,7 @@
 
 120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n\n<b>Unique Unit:<b> \n• Shotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 
-120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/\nCastle/Imperial Age\n\n<b>Unique Unit:<b> \n• Gbeto (High-speed infantry), Sofa (Cavalry that counters spearmen, skirmishers and light cavalries)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
+120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/\nCastle/Imperial Age\n\n<b>Unique Unit:<b> \n• Gbeto (High-speed infantry), Sofa (Cavalry that counters spearmen, skirmishers and light cavalries), Donsos (Infantry that can charge and throw spears)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n• Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable)\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
 
 120176 "Cavalry and Naval civilization \n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age \n• All ships +10% moving speed \n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate) \n• Maghrabi Camels (Camel units have regeneration of 1 HP/sec) \n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Elite Genitours upgrade -50% cost"
 
@@ -284,6 +284,7 @@
 500120 "Silk Road Mercenary Contract"
 500121 "Veteran Donso"
 500122 "Elite Donso"
+500123 "Poisoning"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -400,7 +401,7 @@
 501112 "Research Camel Lancer (Camel Riders +1 attack range)"
 501113 "Research Satrap (Castles can increase surrounding buildings' work rates by 33% and generate 30 gold per minute)"
 501114 "Research Accolade (Military units can gain 5 HP and (except Crusader Knights) 1 attack after killing enemy military units, up to 5 stacks)"
-501115 "Research Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking)"
+501115 "Research Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +25% HP regeneration from attacking)"
 501116 "Research Elite Mercenary (Upgrade your mercenaries to elite versions)"
 501117 "Research Western/Middle European Mercenary Contract (You can use olive oil to recruit Woad Raiders, Throwing Axemen, Huskarls, Teutonic Knights, Berserks, Longbowmen, Coustilliers and Tarkans)"
 501118 "Research Eastern European Mercenary Contract (You can use olive oil to recruit Obuches, Magyar Hussars, Boyars, Konniks, Leitis and Hussite Wagons)"
@@ -408,6 +409,7 @@
 501120 "Research Silk Road Mercenary Contract (You can use olive oil to recruit Gbetoes, Shotel Warriors, Kipchaks, Camel Archers, Mamelukes, War Elephants and Keshiks)"
 501121 "Upgrade to Veteran Donso"
 501122 "Upgrade to Elite Donso"
+501123 "Research Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -524,7 +526,7 @@
 521112 "Research <b>Camel Lancer<b> (<cost>) (time: 60)\nCamel Riders +1 attack range."
 521113 "Research <b>Satrap<b> (<cost>) (time: 45)\nCastles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute."
 521114 "Research <b>Accolade<b> (<cost>) (time: 60)\nMilitary units can gain 5 HP and (except Crusader Knights) 1 attack after killing enemy military units, up to 5 stacks."
-521115 "Research <b>Pax Mongolica<b> (<cost>) (time: 60)\nBarrack and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking."
+521115 "Research <b>Pax Mongolica<b> (<cost>) (time: 60)\nBarrack and Archery Range units can regenerate 2 HP from each attack; Keshik +25% HP regeneration from attacking."
 521116 "Research <b>Elite Mercenary<b> (<cost>) (time: 45)\nUpgrade your mercenaries to elite versions."
 521117 "Research <b>Western/Middle European Mercenary Contract<b> (<cost>)\nYou can use olive oil to recruit Woad Raiders, Throwing Axemen, Huskarls, Teutonic Knights, Berserks, Longbowmen, Coustilliers and Tarkans."
 521118 "Research <b>Eastern European Mercenary Contract<b> (<cost>)\nYou can use olive oil to recruit Obuches, Magyar Hussars, Boyars, Konniks, Leitis and Hussite Wagons."
@@ -532,6 +534,7 @@
 521120 "Research <b>Silk Road Mercenary Contract<b> (<cost>)\nYou can use olive oil to recruit Gbetoes, Shotel Warriors, Kipchaks, Camel Archers, Mamelukes, War Elephants and Keshiks."
 521121 "Upgrade to <b>Veteran Donso<b> (<cost>) (time: 30)\nUpgrades your Donsos and lets you create Veteran Donsos."
 521122 "Upgrade to <b>Veteran Donso<b> (<cost>) (time: 45)\nUpgrades your Veteran Donsos and lets you create Elite Donsos."
+521123 "Research <b>Poisoning<b> (<cost>) (time: 60)\nArchers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -715,7 +718,7 @@
 
 721034 "Create <b>Sofa<b> (<cost>)\nMalians' unique cavalry. Resistant to conversion. Have attack bonus vs pikemen, skirmishers and light cavalries.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable);  creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +8 vs Pikeman, +4 vs Skirmisher, +6 vs Light Cavalry."
 
-721035 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +8 vs Stone Defensive Buildings."
+721035 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
 
 721036 "Create <b>Taborite Warrior<b> (<cost>)\nBohemians' unique infantry. Can generate 7.5 food, 6 wood and 3 gold per minute.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 15; Moving speed: 1.00; Reload time: 2; LOS: 5; Search radius: 5.\nAttack Bonus: +3 vs Standard Buildings, +4 vs Shock Infantry, +6 vs Cavalry, +5 vs Camel"
 
@@ -729,7 +732,7 @@
 
 721041 "Create <b>Elite Khevsureti Warrior<b> (<cost>)\nGeorgian unique infantry. Strong vs siege weapons.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 21; Moving speed: 1.1; Reload time: 2; LOS: 6; Search radius: 5.\nAttack Bonus: +10 vs Siege Weapon, +20 vs Ram/Siege Tower/Trebuchet\nArmor Bonus: -10 damage received from Siege Weapons"
 
-721042 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +8 vs Stone Defensive Buildings."
+721042 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
 
 721043 "Create <b>Toungoo Warrior<b> (<cost>)\nBurmese unique infantry. Can deal damage to enemies around when killed.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Shock Infantry, Unique Unit; Training time: 34; Moving speed: 1.3; Reload time: 2; LOS: 8; Search radius: 6.\nAttack Bonus: +3 vs Shock Infantry, +2 vs Standard Buildings"
 
@@ -743,7 +746,11 @@
 
 721048 "Create <b>Khan<b> (<cost>)\nTatars unique cavalry archer. Only one can exist at a time. Can't be converted and can obtain 5 maximum HP when killing enemies (maximum 30 times). Can activate a skill that increases the attack speed of your nearby military units by +25% and their movement speed by +15%, lasting for 15 seconds, with a cooldown of 120 seconds.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Archer, Cavalry Archer; Training time: 40; Moving speed: 1.5; Reload time: 2; LOS: 9; Search radius: 6; Hit points regeneration: 60.\nAttack Bonus: +5 vs Spearmans\n\n<GREY>After Imperial Age gets: +2 attack"
 
-721049 "Create <b>Donso<b>\nMalians' unique spearman. Strong vs Cavalries. Can charge an spear throw every 60 seconds.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, attack (Barrack); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Infantry, Pikeman, Unique Unit; Moving speed: 1; Reload time: 2.5; LOS: 4; Search radius: 4.\n"
+721049 "Create <b>Donso<b>\nMalians' unique spearman. Strong vs Cavalries. Can charge an spear throw every 40 seconds.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, attack, to Veteran Donso (Barrack); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Infantry, Pikeman, Unique Unit; Moving speed: 1; Reload time: 2.5; LOS: 4; Search radius: 4.\nAttack Bonus: +10 vs Cavalry, +12 vs Elephant, +8 vs Camel, +7 vs All Ships, +1 vs Shock Infantry, +1 vs Standard Buildings.\n\nSpear Max Range: 4, Attack: 6, +6 vs Cavalry, +5 vs Elephant, +5 vs Camel, +4 vs Archer, +1 vs Cavalry Archer.\nThe attack of the spear is influenced by Blacksmith attack technologies."
+
+721050 "Create <b>Veteran Donso<b>\nMalians' unique spearman. Strong vs Cavalries. Can charge an spear throw every 40 seconds.\n<GREY><i>Upgrades: attack, armor, to Elite Donso (Blacksmith); speed, attack (Barrack); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Infantry, Pikeman, Unique Unit; Moving speed: 1; Reload time: 2.3; LOS: 4; Search radius: 4.\nAttack Bonus: +14 vs Cavalry, +14 vs Elephant, +12 vs Camel, +8 vs All Ships, +1 vs Shock Infantry, +1 vs Standard Buildings.\n\nSpear Max Range: 5, Attack: 8, +8 vs Cavalry, +8 vs Elephant, +7 vs Camel, +5 vs Archer, +1 vs Cavalry Archer.\nThe attack of the spear is influenced by Blacksmith attack technologies."
+
+721051 "Create <b>Elite Donso<b>\nMalians' unique spearman. Strong vs Cavalries. Can charge an spear throw every 40 seconds.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, attack (Barrack); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Infantry, Pikeman, Unique Unit; Moving speed: 1; Reload time: 2.3; LOS: 4; Search radius: 4.\nAttack Bonus: +21 vs Cavalry, +20 vs Elephant, +20 vs Camel, +9 vs All Ships, +1 vs Shock Infantry, +1 vs Standard Buildings.\n\nSpear Max Range: 6, Attack: 10, +11 vs Cavalry, +12 vs Elephant, +9 vs Camel, +6 vs Archer, +1 vs Cavalry Archer.\nThe attack of the spear is influenced by Blacksmith attack technologies."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy foot archers' reload time by 0.5."

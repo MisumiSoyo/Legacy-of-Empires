@@ -428,6 +428,14 @@
             "RequiredAge": 3
         },
         {
+            "note": "淬毒",
+            "civilizations": "Malians",
+            "tech_id": 3204,
+            "building_id": 209,
+            "Name": "Poisoning",
+            "RequiredAge": 4
+        },
+        {
             "note": "陶鲁斯伏击",
             "civilizations": "Armenians",
             "tech_id": 3063,
@@ -1390,6 +1398,14 @@
             "tech_id": 3177,
             "building_id": 109,
             "Name": "Elite Mercenary",
+            "RequiredAge": 4
+        },
+        {
+            "note": "马里精锐当佐兵",
+            "civilizations": "Malians",
+            "tech_id": 429,
+            "building_id": 12,
+            "Name": "Elite Donso",
             "RequiredAge": 4
         }
     ]

@@ -24448,6 +24448,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Elite Donso",
+                        "RequiredAge": 4,
+                        "ID": 429
                     }
                 ],
                 "Units": [
@@ -24892,6 +24897,11 @@
                         "Name": "Sahara Caravan Route",
                         "RequiredAge": 3,
                         "ID": 3062
+                    },
+                    {
+                        "Name": "Poisoning",
+                        "RequiredAge": 4,
+                        "ID": 3204
                     }
                 ]
             },
