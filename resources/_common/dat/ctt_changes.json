@@ -3477,6 +3477,14 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4128
+        },
+        {
+            "note": "蜀坞堡提前一个时代",
+            "action": "modify",
+            "civ_id": "SHU",
+            "Node ID": 4016,
+            "Use Type": "Building",
+            "Age ID": 1
         }
     ]
 }

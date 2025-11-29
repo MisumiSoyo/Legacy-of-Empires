@@ -588,8 +588,8 @@ void EffectFunction10002(int playerId = -1)
         }
         case cShu:
         {
-            //  Enable Wubao
-            SetTechAuto(playerId, 3016);
+            //  Shu civ bonus, advanced Wubao
+            ForceResearchTech(playerId, 3016);
             //  Shu civ bonus, infantries generate food from attacking farms
             SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
             SetResource(playerId, cAttributeMaintenance, 10010);
@@ -693,6 +693,8 @@ void EffectFunction10024(int playerId = -1)
     ModAttribute(playerId, MansabdarID, cLineOfSight, 2);
     ModAttribute(playerId, MansabdarID, cSearchRadius, 2);
     ModAttribute(playerId, MansabdarID, cMovementSpeed, 0.3);
+    //  Wubao Upgrade
+    ModAttribute(playerId, WubaoID, cHitpoints, 250);
 
     int playerCiv = xsGetPlayerCivilization(playerId);
     switch (playerCiv)
