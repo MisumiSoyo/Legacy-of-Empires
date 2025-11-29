@@ -28,7 +28,7 @@ void EffectFunction10003(int playerId = -1)
 //  Frozen Sea Dominance Aura Adder
 void FrozenSeaDominanceAura(int ClassTarget = -1, int playerId = -1)
 {
-    xsTaskAmount(cTaskAttrWorkValue1, 0.047619);
+    xsTaskAmount(cTaskAttrWorkValue1, 1.0 - 1.0 / 1.1);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrWorkRange, 10);
     xsTaskAmount(cTaskAttrSearchWaitTime, 10);
@@ -64,10 +64,12 @@ void EffectFunction10004(int playerId = -1)
 {
     xsEffectAmount(cAddAttribute, LongBoatID, cCombatAbility, 32, playerId);
     xsEffectAmount(cAddAttribute, EliteLongBoatID, cCombatAbility, 32, playerId);
+    LaunchAura(playerId, cTransportShipClass);
 
     xsResetTaskAmount();
     FrozenSeaDominanceAura(LongBoatID, playerId);
     FrozenSeaDominanceAura(EliteLongBoatID, playerId);
+    FrozenSeaDominanceAura(cTransportShipClass, playerId);
     xsResetTaskAmount();
 }
 
@@ -76,24 +78,9 @@ void EffectFunction10004(int playerId = -1)
 void EffectFunction10005(int playerId = -1)
 {
     xsEffectAmount(cModResource, cAttributeFishingProductivity, 0, 0.5, playerId);
-    xsEffectAmount(cModResource, cAttributeFishTrapProductivity, 0, 0.5, playerId);
     xsEffectAmount(cModResource, cAttributeGoldFishingProductivity, 1, 1, playerId);
 
     //  Reset Fishing Ships' tasks
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrResourceIn, cAttributeFish);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeFishTrapProductivity);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
-    xsTaskAmount(cTaskAttrWorkValue1, 1.25);
-    xsTaskAmount(cTaskAttrWorkValue2, 0);
-    xsTaskAmount(cTaskAttrWorkRange, 0.11);
-    xsTaskAmount(cTaskAttrProceedingGraphic, 1594);
-    xsTaskAmount(cTaskAttrAutoSearch, 1);
-    xsTaskAmount(cTaskAttrCarryCheck, 1);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
-    xsTask(FishingShipID, cTaskTypeGatherRebuild, FishTrapID, playerId);
-
-
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeGoldFishingProductivity);
     xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
@@ -453,17 +440,7 @@ void EffectFunction10017(int playerId = -1)
 // 10018 - Stockfish Trade + Gillnet
 void EffectFunction10018(int playerId = -1)
 {
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrProductivityResource, 397);
-    xsTaskAmount(cTaskAttrResourceOut, 3);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.294);
-    xsTask(FishingShipID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
-    xsTask(FishingShipID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.168);
-    xsTask(FishingShipID, cTaskTypeGenerateResources, cShoreFish, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.21);
-    xsTask(FishingShipID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsResetTaskAmount();
+    MulResource(playerId, cAttributeGoldFishingProductivity, 1.2);
 }
 
 

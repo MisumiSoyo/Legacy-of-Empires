@@ -95932,7 +95932,7 @@
                     "Link Node Type": "UniqueUnit",
                     "Name": "Elite Hospitaller Knight",
                     "Name String ID": 700030,
-                    "Node ID": 4039,
+                    "Node ID": 4131,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "UniqueUnit",
                     "Picture Index": 357,
@@ -95950,7 +95950,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": -1,
+                    "Trigger Tech ID": 3039,
                     "Use Type": "Unit"
                 },
                 {
@@ -189784,7 +189784,7 @@
                     "Link Node Type": "UniqueUnit",
                     "Name": "Elite Hospitaller Knight",
                     "Name String ID": 700030,
-                    "Node ID": 4039,
+                    "Node ID": 4131,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "UniqueUnit",
                     "Picture Index": 357,
@@ -189802,7 +189802,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": -1,
+                    "Trigger Tech ID": 3039,
                     "Use Type": "Unit"
                 },
                 {

@@ -732,6 +732,7 @@
             "Use Type": "Unit"
         },
         {
+            "note": "医院骑士",
             "action": "add",
             "civ_id": ["ITALIANS", "SICILIANS"],
             "Age ID": 3,
@@ -754,6 +755,7 @@
             "target_id": 569
         },
         {
+            "note": "精锐医院骑士",
             "action": "add",
             "civ_id": ["ITALIANS", "SICILIANS"],
             "Age ID": 4,
@@ -764,13 +766,13 @@
             "Link Node Type": "UniqueUnit",
             "Name": "Elite Hospitaller Knight",
             "Name String ID": 700030,
-            "Node ID": 4039,
+            "Node ID": 4131,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 357,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
+            "Trigger Tech ID": 3039,
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4038

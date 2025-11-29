@@ -17089,6 +17089,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Hospitaller Knight",
+                        "RequiredAge": 4,
+                        "ID": 3039
                     }
                 ],
                 "Units": [
@@ -17117,6 +17122,11 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hospitaller Knight",
+                        "RequiredAge": 3,
+                        "ID": 4038
                     }
                 ]
             },
@@ -30909,6 +30919,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Hospitaller Knight",
+                        "RequiredAge": 4,
+                        "ID": 3039
                     }
                 ],
                 "Units": [
@@ -30931,6 +30946,11 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hospitaller Knight",
+                        "RequiredAge": 3,
+                        "ID": 4038
                     }
                 ]
             },

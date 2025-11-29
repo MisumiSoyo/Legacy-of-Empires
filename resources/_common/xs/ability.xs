@@ -176,39 +176,6 @@ void EffectFunction10019(int playerId = -1)
 }
 
 
-//  Hospitaller Knight Ability
-void HospitallerKnightInit(int playerId = -1)
-{ 
-    int AbilityDuration = 25;
-    int HealRate = 240;
-
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, HealRate);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 4);
-    xsTaskAmount(cTaskAttrOwnerType, 4);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000002);
-
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cArcherClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cVillagerClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cInfantryClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cCavalryClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cMonkClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cTradeCartClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cConquistadorClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cPetardClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cCavalryArcherClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cMonkWithRelicClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cHandCannoneerClass, playerId);
-    xsTask(HospitallerKnightAbilityID, cTaskTypeAura, cScoutCavalryClass, playerId);
-
-    xsResetTaskAmount();
-    LaunchAura(playerId, HospitallerKnightAbilityID);
-    SetAttribute(playerId, HospitallerKnightAbilityID, cInvulnerabilityLevel, 1);
-}
-
-
 void EffectFunction10030(int playerId = -1)  //  Switch to training Militia
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, MilitiaID, playerId);
@@ -775,7 +742,6 @@ void AbilityApplier(int playerId = -1)
     AssassinInit(playerId);
     BerserkInit(playerId);
     VikingRaiderInit(playerId);
-    HospitallerKnightInit(playerId);
     TCSpawnedDeerInit(playerId);
     ShrineInit(playerId);
     KeshikStinger(playerId, 0.5);

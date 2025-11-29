@@ -263,11 +263,19 @@
         },
         {
             "note": "医院骑士",
-            "civilizations": "Hospitaller Knight",
+            "civilizations": ["Italians", "Sicilians"],
             "unit_id": 4038,
             "building_id": 101,
             "Name": "Hospitaller Knight",
             "RequiredAge": 3
+        },
+        {
+            "note": "精锐医院骑士",
+            "civilizations": ["Italians", "Sicilians"],
+            "tech_id": 3039,
+            "building_id": 101,
+            "Name": "Elite Hospitaller Knight",
+            "RequiredAge": 4
         },
         {
             "note": "十字军骑士",
