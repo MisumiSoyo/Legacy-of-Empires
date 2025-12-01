@@ -3487,6 +3487,48 @@
             "Node ID": 4016,
             "Use Type": "Building",
             "Age ID": 1
+        },
+        {
+            "note": "橄榄树林",
+            "action": "add",
+            "civ_id": "BYZANTINES",
+            "Age ID": 3,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600125,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Olive Grove",
+            "Name String ID": 500125,
+            "Node ID": 3208,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "note": "宫殿掠夺",
+            "action": "add",
+            "civ_id": "BYZANTINES",
+            "Age ID": 4,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600091,
+            "Link ID": 3208,
+            "Link Node Type": "BuildingTech",
+            "Name": "Polutasvarf",
+            "Name String ID": 500091,
+            "Node ID": 3140,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }

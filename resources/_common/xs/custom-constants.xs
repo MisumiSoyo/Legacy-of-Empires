@@ -132,6 +132,10 @@ extern const int HorticultureTechID = 3054;
 extern const int FertilizationTechID = 3055;
 extern const int BreedingTechID = 3056;
 extern const int CashCropTechID = 3057;
+extern const int WesternMiddleEuropeanMercenaryContractTechID = 3194;
+extern const int EasternEuropeanMercenaryContractTechID = 3195;
+extern const int MediterraneanMercenaryContractTechID = 3196;
+extern const int SilkRoadMercenaryContractTechID = 3197;
 
 
 //  Original Unit IDs

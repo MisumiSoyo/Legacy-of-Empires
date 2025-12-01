@@ -990,6 +990,64 @@ void EffectFunction10079(int playerId = -1)
 }
 
 
+//  10082 - Olive Grove
+void EffectFunction10082(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeOliveOilProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeOliveOil);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000005);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cSeaFishClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cForageBushClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cTreeClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cShoreFish, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(cVillagerClass, cTaskTypeGenerateResources, cLivestockClass, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeOliveOilProductivity, 10);
+    SetResource(playerId, cAttributeRecruitMercenaryCost, 1);
+}
+
+
+void PolutasvarfApplier(int playerId = -1, int ClassTarget = -1)
+{
+    xsTask(ClassTarget, cTaskTypeLoot, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeLoot, cTowerClass, playerId);
+}
+
+
+//  10083 - Polutasvarf
+void EffectFunction10083(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeOliveOil);
+    xsTaskAmount(cTaskAttrWorkValue1, 150);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000007);
+    PolutasvarfApplier(playerId, cArcherClass);
+    PolutasvarfApplier(playerId, cInfantryClass);
+    PolutasvarfApplier(playerId, cCavalryClass);
+    PolutasvarfApplier(playerId, cSiegeWeaponClass);
+    PolutasvarfApplier(playerId, cWarshipClass);
+    PolutasvarfApplier(playerId, cConquistadorClass);
+    PolutasvarfApplier(playerId, cPetardClass);
+    PolutasvarfApplier(playerId, cCavalryArcherClass);
+    PolutasvarfApplier(playerId, cHandCannoneerClass);
+    PolutasvarfApplier(playerId, cScoutCavalryClass);
+    PolutasvarfApplier(playerId, cPackedUnitClass);
+    PolutasvarfApplier(playerId, cUnpackedSiegeUnitClass);
+    PolutasvarfApplier(playerId, cScorpionClass);
+    PolutasvarfApplier(playerId, cLandMineClass);
+    xsResetTaskAmount();
+
+    MulResource(playerId, cAttributeVarangianLootProductivity, 1.33);
+}
+
+
 //  10000 - Timer Event
 void EffectFunction10000(int playerId = -1)
 {

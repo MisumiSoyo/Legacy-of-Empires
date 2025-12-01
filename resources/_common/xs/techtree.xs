@@ -166,12 +166,6 @@ void EffectFunction10002(int playerId = -1)
             SetResource(playerId, cAttributeExclusiveTechFlag, 1);
             break;
         }
-        case cByzantines:
-        {
-            //  Olive Oil
-            ByzantinesOliveOilInit(playerId);
-            break;
-        }
         case cPersians:
         {
             DisableTech(playerId, 192);
@@ -895,8 +889,6 @@ void EffectFunction10025(int playerId = -1)
             EnableObject(playerId, FlameThrowerID);
             SetAttribute(playerId, FlameThrowerID, cNameId, 700042);
             SetAttribute(playerId, FlameThrowerID, cDescriptionId, 701042);
-            SetResource(playerId, cAttributeRecruitMercenaryCost, 1);
-            MulResource(playerId, cAttributeOliveOilProductivity, 2);
             break;
         }
         case cPersians:

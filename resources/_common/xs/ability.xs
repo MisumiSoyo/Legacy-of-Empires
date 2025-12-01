@@ -633,27 +633,6 @@ void EffectFunction10022(int playerId = -1)
 }
 
 
-void ByzantinesOliveOilInit(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeOliveOilProductivity);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeOliveOil);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000005);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cSeaFishClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cForageBushClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cTreeClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cShoreFish, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cLivestockClass, playerId);
-    xsResetTaskAmount();
-    SetResource(playerId, cAttributeOliveOilProductivity, 3);
-}
-
-
 void PoisoningApplier(int playerId = -1, int ClassTarget = -1)
 {
     xsTaskAmount(cTaskAttrSearchWaitTime, 109.000003);
