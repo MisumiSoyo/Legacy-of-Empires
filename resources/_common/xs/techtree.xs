@@ -260,9 +260,6 @@ void EffectFunction10002(int playerId = -1)
         case cMayans:
         {
             //  Disable Mill Techs
-            DisableTech(playerId, 12);
-            DisableTech(playerId, 13);
-            DisableTech(playerId, 14);
             DisableTech(playerId, 35);
             DisableTech(playerId, 240);
             //  Mayans civ bonus, free masonry

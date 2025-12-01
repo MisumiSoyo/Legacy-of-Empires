@@ -43,6 +43,8 @@ extern const int cAttributeTimerFlag = 444;
 extern const int cAttributeOliveOil = 445;
 extern const int cAttributeOliveOilProductivity = 446;
 extern const int cAttributeExclusiveTechFlag = 447;
+extern const int cAttributeYumKaaxGoldProductivity = 448;
+extern const int cAttributeYumKaaxWoodProductivity = 449;
 
 
 //  units' IDs
@@ -82,7 +84,7 @@ extern const int EliteCamelLancerID = 4035;
 extern const int HobelarID = 4036;
 extern const int EliteHobelarID = 4037;
 extern const int HospitallerKnightID = 4038;
-extern const int HospitallerKnightAbilityID = 4039;
+extern const int HospitallerKnight2ID = 4039;
 extern const int CrusaderKnightID = 4041;
 extern const int SoheiID = 4042;
 extern const int VikingRaiderID = 4044;
@@ -121,6 +123,15 @@ extern const int DonsoID = 4127;
 extern const int VeteranDonsoID = 4128;
 extern const int EliteDonsoID = 4129;
 extern const int ProjectileDonsoID = 4130;
+extern const int EliteHospitallerKnightID = 4131;
+extern const int EliteHospitallerKnight2ID = 4132;
+
+
+//  Newly added tech IDs
+extern const int HorticultureTechID = 3054;
+extern const int FertilizationTechID = 3055;
+extern const int BreedingTechID = 3056;
+extern const int CashCropTechID = 3057;
 
 
 //  Original Unit IDs

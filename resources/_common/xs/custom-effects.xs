@@ -553,6 +553,24 @@ void EffectFunction10039(int playerId = -1)
     SetAttribute(playerId, YumKaaxsBlessingBuildingID, cRegenerationHpPercent, -6);
     SetAttribute(playerId, YumKaaxsBlessingBuildingID, cDeadUnitId, YumKaaxsBlessingEndBuildingID);
     SpawnUnit(playerId, YumKaaxsBlessingBuildingID, UniversityID, 1, 1);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeYumKaaxGoldProductivity);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000006);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeYumKaaxWoodProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000007);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsResetTaskAmount();
+
+    MulResource(playerId, cAttributeFoodBonus, 0.15);
+    SetResource(playerId, cAttributeYumKaaxGoldProductivity, 53.0 * 0.15 * 1000);
+    SetResource(playerId, cAttributeYumKaaxWoodProductivity, 53.0 * 0.15 * 1000);
 }
 
 
@@ -564,6 +582,9 @@ void EffectFunction10020(int playerId = -1)
     MulAttribute(playerId, 259, cWorkRate, 1.0 / 1000);
     MulAttribute(playerId, 259, cCarryCapacity, 1.0 / 100);
     MulAttribute(playerId, 50, cWorkRate, 1.0 / 10000);
+    MulResource(playerId, cAttributeFoodBonus, 1.0 / 0.15);
+    SetResource(playerId, cAttributeYumKaaxGoldProductivity, 0.0);
+    SetResource(playerId, cAttributeYumKaaxWoodProductivity, 0.0);
 }
 
 
