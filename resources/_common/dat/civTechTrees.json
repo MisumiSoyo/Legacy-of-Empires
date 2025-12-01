@@ -36634,6 +36634,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600091,
+                    "Link ID": 3208,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Polutasvarf",
+                    "Name String ID": 500091,
+                    "Node ID": 3140,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
