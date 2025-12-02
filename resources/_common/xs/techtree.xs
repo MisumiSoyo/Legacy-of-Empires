@@ -280,7 +280,7 @@ void EffectFunction10002(int playerId = -1)
         case cIndians:
         {
             //  Hindustanis civ bonus, university techs (except unique techs) free, +100% research time
-            xsEffectAmount(cModifyTech, ArsonTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, MasonryTechID, cAttrMulAllCosts, 0, playerId);
             xsEffectAmount(cModifyTech, ArchitectureTechID, cAttrMulAllCosts, 0, playerId);
             xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulAllCosts, 0, playerId);
             xsEffectAmount(cModifyTech, HeatedShotTechID, cAttrMulAllCosts, 0, playerId);
@@ -293,7 +293,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, GuardTowerTechID, cAttrMulAllCosts, 0, playerId);
             xsEffectAmount(cModifyTech, KeepTechID, cAttrMulAllCosts, 0, playerId);
             xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, ArsonTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, MasonryTechID, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, ArchitectureTechID, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, HeatedShotTechID, cAttrMulTime, 2, playerId);
