@@ -55,8 +55,8 @@ void EffectFunction10001(int playerId = -1)
         }
         case cByzantines:
         {
-            EnableTech(playerId, 50);   //  Enable Masonry
-            EnableTech(playerId, 51);   //  Enable Architecture
+            EnableTech(playerId, MasonryTechID);
+            EnableTech(playerId, ArchitectureTechID);
             break;
         }
         case cTurks:
@@ -133,7 +133,7 @@ void EffectFunction10002(int playerId = -1)
     {
         case cGoths:
         {
-            DisableTech(playerId, 127);
+            DisableTech(playerId, WatchTowerTechID);
             break;
         }
         case cJapanese:
@@ -202,7 +202,7 @@ void EffectFunction10002(int playerId = -1)
         }
         case cVikings:
         {
-            DisableTech(playerId, 127);
+            DisableTech(playerId, WatchTowerTechID);
             EnableObject(playerId, VikingRaiderID);
             break;
         }
@@ -236,17 +236,17 @@ void EffectFunction10002(int playerId = -1)
         case cSpanish:
         {
             //  Enable Genitour
-            SetTechAuto(playerId, 601);
-            xsEffectAmount(cModifyTech, 599, cAttrSetButton, 26, playerId);
-            xsEffectAmount(cModifyTech, 599, cAttrSetHotkey, 18022, playerId);
+            SetTechAuto(playerId, GenitourTechID);
+            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetButton, 26, playerId);
+            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetHotkey, 18022, playerId);
             //  Spanish civ bonus, Elite Genitour upgrade -50% food cost
-            xsEffectAmount(cModifyTech, 599, cAttrMulFoodCost, 0.5, playerId);
+            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulFoodCost, 0.5, playerId);
             break;
         }
         case cAztecs:
         {
-            DisableTech(playerId, 35);
-            DisableTech(playerId, 240);
+            DisableTech(playerId, GalleonTechID);
+            DisableTech(playerId, GalleyTechID);
             //  Enable Lembos
             EnableObject(playerId, LembosID);
             break;
@@ -254,61 +254,58 @@ void EffectFunction10002(int playerId = -1)
         case cMayans:
         {
             //  Disable Mill Techs
-            DisableTech(playerId, 35);
-            DisableTech(playerId, 240);
+            DisableTech(playerId, GalleonTechID);
+            DisableTech(playerId, GalleyTechID);
             //  Mayans civ bonus, free masonry
-            SetTechAuto(playerId, 50);
+            SetTechAuto(playerId, MasonryTechID);
             //  Mayans civ bonus, get food based on the number of researched techs
             SetResource(playerId, cAttributeTechnologyRewardEffect, 3121);
-            //  Mayans civ bonus, farm -60% cost, -50% production
-            xsEffectAmount(cModResource, cAttributeFarmFood, 1, -87.5, playerId);
-            MulAttribute(playerId, 50, cWoodCost, 0.4);
             //  Enable Lembos
             EnableObject(playerId, LembosID);
             break;
         }
         case cHuns:
         {
-            DisableTech(playerId, 127);
+            DisableTech(playerId, WatchTowerTechID);
             break;
         }
         case cKoreans:
         {
             //  Koreans civ bonus, Treadmill Crane, Murder Holes and Arrowslits -50% cost
-            xsEffectAmount(cModifyTech, 54, cAttrMulAllCosts, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 322, cAttrMulAllCosts, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 608, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, MurderHolesTechID, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulAllCosts, 0.5, playerId);
             break;
         }
         case cIndians:
         {
             //  Hindustanis civ bonus, university techs (except unique techs) free, +100% research time
-            xsEffectAmount(cModifyTech, 50, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 51, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 54, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 380, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 93, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 47, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 64, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 377, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 322, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 194, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 140, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 63, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 608, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, 50, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 51, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 54, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 380, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 93, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 47, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 64, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 377, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 322, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 194, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 140, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 63, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, 608, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, ArsonTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, ArchitectureTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, HeatedShotTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, BallisticsTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, ChemistryTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, BombardTowerTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, SiegeEngineersTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, MurderHolesTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, FortifiedWallTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, GuardTowerTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, KeepTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulAllCosts, 0, playerId);
+            xsEffectAmount(cModifyTech, ArsonTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, ArchitectureTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, HeatedShotTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, BallisticsTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, ChemistryTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, BombardTowerTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, SiegeEngineersTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, MurderHolesTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, FortifiedWallTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, GuardTowerTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, KeepTechID, cAttrMulTime, 2, playerId);
+            xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulTime, 2, playerId);
             //  Scout Cavalry Line replaced by Mansabdars
             UpgradeUnit(playerId, ScoutCavalryID, MansabdarID);
             xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetEffect, 3134, playerId);
@@ -326,11 +323,9 @@ void EffectFunction10002(int playerId = -1)
         }
         case cIncas:
         {
-            DisableTech(playerId, 35);
-            DisableTech(playerId, 240);
-            //  印加文明加成, 可蓄养动物视野 +2
+            DisableTech(playerId, GalleonTechID);
+            DisableTech(playerId, GalleyTechID);
             ModAttribute(playerId, cLivestockClass, cLineOfSight, 2);
-            //  印加文明加成, 兵营, 靶场, 马厩, 攻城武器厂 +100% 建造速度
             MulAttribute(playerId, 12, cTrainTime, 0.5);
             MulAttribute(playerId, 20, cTrainTime, 0.5);
             MulAttribute(playerId, 132, cTrainTime, 0.5);
@@ -350,7 +345,6 @@ void EffectFunction10002(int playerId = -1)
         }
         case cMagyars:
         {
-            //  马扎尔文明加成, 可在城堡以 +75% 速度训练单位
             FasterCastleUnits(playerId, 74, 21, 16079);
             FasterCastleUnits(playerId, 75, 21, 16079);
             FasterCastleUnits(playerId, 77, 21, 16079);
@@ -385,12 +379,12 @@ void EffectFunction10002(int playerId = -1)
         case cPortuguese:
         {
             //  Enable Genitour
-            SetTechAuto(playerId, 601);
-            xsEffectAmount(cModifyTech, 599, cAttrSetButton, 26, playerId);
-            xsEffectAmount(cModifyTech, 599, cAttrSetHotkey, 18022, playerId);
+            SetTechAuto(playerId, GenitourTechID);
+            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetButton, 26, playerId);
+            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetHotkey, 18022, playerId);
             //  Portuguese civ bonus, Genitour + 2 archer armor
-            ModAttack(playerId, 1010, cDamageClassArchers, 2);
-            ModAttack(playerId, 1012, cDamageClassArchers, 2);
+            ModAttack(playerId, GenitourID, cDamageClassArchers, 2);
+            ModAttack(playerId, EliteGenitourID, cDamageClassArchers, 2);
             break;
         }
         case cMalians:
@@ -424,27 +418,27 @@ void EffectFunction10002(int playerId = -1)
         case cBurmese:
         {
             //  Enable Hand Cannoneer
-            EnableTech(playerId, 85);
+            EnableTech(playerId, HandCannoneerTechID);
             break;
         }
         case cVietnamese:
         {
             DisableTech(playerId, 218);  //  Disable Heavy Cavalry Archer
             //  Vietnamese civ bonus + newly added economic techs
-            xsEffectAmount(cModifyTech, 3054, cAttrMulTime, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 3054, cAttrSetWoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 3055, cAttrMulTime, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 3055, cAttrSetWoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 3056, cAttrMulTime, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 3056, cAttrSetWoodCost, 0, playerId);
-            xsEffectAmount(cModifyTech, 3057, cAttrMulTime, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 3057, cAttrSetWoodCost, 0, playerId);
+            xsEffectAmount(cModifyTech, HorticultureTechID, cAttrMulTime, 0.5, playerId);
+            xsEffectAmount(cModifyTech, HorticultureTechID, cAttrSetWoodCost, 0, playerId);
+            xsEffectAmount(cModifyTech, FertilizationTechID, cAttrMulTime, 0.5, playerId);
+            xsEffectAmount(cModifyTech, FertilizationTechID, cAttrSetWoodCost, 0, playerId);
+            xsEffectAmount(cModifyTech, BreedingTechID, cAttrMulTime, 0.5, playerId);
+            xsEffectAmount(cModifyTech, BreedingTechID, cAttrSetWoodCost, 0, playerId);
+            xsEffectAmount(cModifyTech, CashCropTechID, cAttrMulTime, 0.5, playerId);
+            xsEffectAmount(cModifyTech, CashCropTechID, cAttrSetWoodCost, 0, playerId);
             break;
         }
         case cBulgarians:
         {
             //  Bulgarians civ bonus + Military Training
-            xsEffectAmount(cModifyTech, 3058, cAttrMulFoodCost, 0.5, playerId);
+            xsEffectAmount(cModifyTech, MilitaryTrainingTechID, cAttrMulFoodCost, 0.5, playerId);
             break;
         }
         case cTatars:
@@ -468,27 +462,26 @@ void EffectFunction10002(int playerId = -1)
             DisableTech(playerId, 727);
             DisableTech(playerId, 728);
             //  Cumans civ bonus, cavalry techs +200% research speed
-            xsEffectAmount(cModifyTech, 80, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 81, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 82, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 67, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 68, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 75, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 39, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 435, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 254, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 428, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 209, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 265, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 526, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 218, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 236, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 521, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 715, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 786, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 1033, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 1589, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, 1628, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, PlateBardingArmorTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, ScaleBardingArmorTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, ChainBardingArmorTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, ForgingTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, IronCastingTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, BlastFurnaceTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, HusbandryTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, BloodlinesTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, HussarTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, CavalierTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, PaladinTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, SavarTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, HeavyCamelTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, ImperialCamelTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, EliteSteppeLancerTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, WingedHussarTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, HeavyHeiKuangCavalryTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, EliteSipahiTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, FireLancerCavalryTechID, cAttrMulTime, 0.333333, playerId);
             //  Cumans civ bonus, hunters don't need to drop off food
             SetResource(playerId, cAttributeHunterFoodProductivity, 41);
             MulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
@@ -498,21 +491,21 @@ void EffectFunction10002(int playerId = -1)
         case cLithuanians:
         {
             //  Lithuanians civ bonus, Skirmishers and Genitours upgrade -50% cost, -50% research time
-            xsEffectAmount(cModifyTech, 98, cAttrMulTime, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 655, cAttrMulTime, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 599, cAttrMulTime, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 98, cAttrMulAllCosts, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 655, cAttrMulAllCosts, 0.5, playerId);
-            xsEffectAmount(cModifyTech, 599, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, EliteSkirmisherTechID, cAttrMulTime, 0.5, playerId);
+            xsEffectAmount(cModifyTech, ImperialSkirmisherTechID, cAttrMulTime, 0.5, playerId);
+            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulTime, 0.5, playerId);
+            xsEffectAmount(cModifyTech, EliteSkirmisherTechID, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, ImperialSkirmisherTechID, cAttrMulAllCosts, 0.5, playerId);
+            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulAllCosts, 0.5, playerId);
             break;
         }
         case cBurgundians:
         {
             //  Bugrundians civ bonus + newly added economic techs
-            xsEffectAmount(cModifyTech, 3054, cAttrMulFoodCost, 0.66666667, playerId);
-            xsEffectAmount(cModifyTech, 3055, cAttrMulFoodCost, 0.66666667, playerId);
-            xsEffectAmount(cModifyTech, 3056, cAttrMulFoodCost, 0.66666667, playerId);
-            xsEffectAmount(cModifyTech, 3057, cAttrMulFoodCost, 0.66666667, playerId);
+            xsEffectAmount(cModifyTech, HorticultureTechID, cAttrMulFoodCost, 0.66666667, playerId);
+            xsEffectAmount(cModifyTech, FertilizationTechID, cAttrMulFoodCost, 0.66666667, playerId);
+            xsEffectAmount(cModifyTech, BreedingTechID, cAttrMulFoodCost, 0.66666667, playerId);
+            xsEffectAmount(cModifyTech, CashCropTechID, cAttrMulFoodCost, 0.66666667, playerId);
             break;
         }
         case cBohemians:
@@ -530,7 +523,7 @@ void EffectFunction10002(int playerId = -1)
         case cDravidians:
         {
             //  Dravidians civ bonus, advanced Arson, Squires and Gambesons
-            ForceEnableTech(playerId, 602);
+            ForceEnableTech(playerId, ArsonTechID);
             break;
         }
         case cBengalis:
@@ -557,10 +550,10 @@ void EffectFunction10002(int playerId = -1)
         case cGurjaras:
         {
             //  Gurjaras civ bonus, Monastries +10 population headroom
-            ModAttribute(playerId, 30, cAmountFirstStorage, 10);
-            ModAttribute(playerId, 31, cAmountFirstStorage, 10);
-            ModAttribute(playerId, 32, cAmountFirstStorage, 10);
-            ModAttribute(playerId, 104, cAmountFirstStorage, 10);
+            ModAttribute(playerId, MonasteryID, cAmountFirstStorage, 10);
+            ModAttribute(playerId, Monastery2ID, cAmountFirstStorage, 10);
+            ModAttribute(playerId, Monastery3ID, cAmountFirstStorage, 10);
+            ModAttribute(playerId, Monastery4ID, cAmountFirstStorage, 10);
             break;
         }
         case cRomans:
@@ -573,14 +566,14 @@ void EffectFunction10002(int playerId = -1)
         case cGeorgians:
         {
             //  Georgians civ bonus, Repairers +100% work rate
-            MulAttribute(playerId, 156, cWorkRate, 2);
-            MulAttribute(playerId, 222, cWorkRate, 2);
+            MulAttribute(playerId, MaleRepairerID, cWorkRate, 2);
+            MulAttribute(playerId, FemaleRepairerID, cWorkRate, 2);
             break;
         }
         case cShu:
         {
             //  Shu civ bonus, advanced Wubao
-            ForceResearchTech(playerId, 3016);
+            ForceResearchTech(playerId, WubaoTechID);
             //  Shu civ bonus, infantries generate food from attacking farms
             SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
             SetResource(playerId, cAttributeMaintenance, 10010);
@@ -589,13 +582,13 @@ void EffectFunction10002(int playerId = -1)
         case cWu:
         {
             //  Enable Wubao
-            SetTechAuto(playerId, 3016);
+            SetTechAuto(playerId, WubaoTechID);
             break;
         }
         case cWei:
         {
             //  Enable Wubao
-            SetTechAuto(playerId, 3016);
+            SetTechAuto(playerId, WubaoTechID);
             break;
         }
         case cJurchens:
@@ -608,10 +601,10 @@ void EffectFunction10002(int playerId = -1)
         case cKhitans:
         {
             //  Disable newly added economic techs
-            DisableTech(playerId, 3054);
-            DisableTech(playerId, 3055);
-            DisableTech(playerId, 3056);
-            DisableTech(playerId, 3057);
+            DisableTech(playerId, HorticultureTechID);
+            DisableTech(playerId, FertilizationTechID);
+            DisableTech(playerId, BreedingTechID);
+            DisableTech(playerId, CashCropTechID);
             break;
         }
         default:
@@ -619,13 +612,13 @@ void EffectFunction10002(int playerId = -1)
     }
 
     //  Genitour Adjustment
-    SetAttribute(playerId, 1010, cTrainButton, 21);
-    SetAttribute(playerId, 1010, cHotkeyId, 16079);
-    SetAttribute(playerId, 1012, cTrainButton, 21);
-    SetAttribute(playerId, 1012, cHotkeyId, 16079);
+    SetAttribute(playerId, GenitourID, cTrainButton, 21);
+    SetAttribute(playerId, GenitourID, cHotkeyId, 16079);
+    SetAttribute(playerId, EliteGenitourID, cTrainButton, 21);
+    SetAttribute(playerId, EliteGenitourID, cHotkeyId, 16079);
     //  Missionary Adjustment
-    SetAttribute(playerId, 775, cTrainButton, 22);
-    SetAttribute(playerId, 775, cHotkeyId, 16078);
+    SetAttribute(playerId, MissionaryID, cTrainButton, 22);
+    SetAttribute(playerId, MissionaryID, cHotkeyId, 16078);
     //  Relic gold production, 30 → 45
     MulResource(playerId, cAttributeRelicRate, 1.5);
     //  Varangians Gold Productivity
@@ -641,19 +634,19 @@ void EffectFunction10002(int playerId = -1)
     //  Taborite Warrior Productivity
     SetResource(playerId, cAttributeTaboriteWarriorProductivity, 1);
     //  Lou Chuan Adjustment
-    SetAttribute(playerId, 1948, cTrainButton, 24);
-    SetAttribute(playerId, 1948, cHotkeyId, 16106);
+    SetAttribute(playerId, LouChuanID, cTrainButton, 24);
+    SetAttribute(playerId, LouChuanID, cHotkeyId, 16106);
     //  Legionary upgrade Adjustment
     xsEffectAmount(cModifyTech, 885, cAttrSetTime, 80, playerId);
     //  Feitoria Adjustment
-    SetAttribute(playerId, 1021, cAmountFirstStorage, -15);
-    SetAttribute(playerId, 1021, cAmountSecondStorage, 15);
-    SetAttribute(playerId, 1021, cAmountThirdStorage, 15);
+    SetAttribute(playerId, FeitoriaID, cAmountFirstStorage, -15);
+    SetAttribute(playerId, FeitoriaID, cAmountSecondStorage, 15);
+    SetAttribute(playerId, FeitoriaID, cAmountThirdStorage, 15);
     //  Some civs' Tithe descriptions adjustment
     if ((playerCiv == cChinese) || (playerCiv == cJapanese) || (playerCiv == cKoreans) || (playerCiv == cVietnamese) || (playerCiv == cBurmese))
     {
-        xsEffectAmount(cModifyTech, 3059, cAttrSetName, 500078, playerId);
-        xsEffectAmount(cModifyTech, 3059, cAttrSetDescription, 521078, playerId);
+        xsEffectAmount(cModifyTech, TitheTechID, cAttrSetName, 500078, playerId);
+        xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);
     }
     //  Berserks Adjustment
     ModAttribute(playerId, BerserkID, cRegenerationRate, -40);
@@ -673,10 +666,10 @@ void EffectFunction10002(int playerId = -1)
 void EffectFunction10024(int playerId = -1)
 {
     //  Knight Adjustment
-    ModAttribute(playerId, 38, cHitpoints, -20);
-    ModAttack(playerId, 38, cDamageClassMelee, -2);
-    ModAttribute(playerId, 38, cShownAttack, -2);
-    MulAttribute(playerId, 38, cTrainTime, 4.0 / 3);
+    ModAttribute(playerId, KnightID, cHitpoints, -20);
+    ModAttack(playerId, KnightID, cDamageClassMelee, -2);
+    ModAttribute(playerId, KnightID, cShownAttack, -2);
+    MulAttribute(playerId, KnightID, cTrainTime, 4.0 / 3);
     //  Mansabdar Upgrade
     ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
     ModAttack(playerId, MansabdarID, cDamageClassSkirmishers, 1);
@@ -699,15 +692,15 @@ void EffectFunction10024(int playerId = -1)
         }
         case cTeutons:
         {
-            xsEffectAmount(cAddAttribute, 7, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 7, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 7, cSearchRadius, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cSearchRadius, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cSearchRadius, 1, playerId);
+            ModAttribute(playerId, SkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, SkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, SkirmisherID, cSearchRadius, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cSearchRadius, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cSearchRadius, 1);
             break;
         }
         case cChinese:
@@ -796,25 +789,25 @@ void EffectFunction10024(int playerId = -1)
         case cPoles:
         {
             //  Poles civ bonus, advanced Light Cavalry
-            ForceEnableTech(playerId, 254);
+            ForceEnableTech(playerId, LightCavalryTechID);
             break;
         }
         case cDravidians:
         {
-            ForceEnableTech(playerId, 215);
-            ForceEnableTech(playerId, 875);
+            ForceEnableTech(playerId, SquiresTechID);
+            ForceEnableTech(playerId, GambesonsTechID);
             break;
         }
         case cBengalis:
         {
-            xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
+            xsEffectAmount(cUpgradeUnit, ScoutCavalryID, MansabdarID, 0, playerId);
             break;
         }
         case cRomans:
         {
             //  Romans civ bonus, Feudal Age Monastery and Monk
-            EnableObject(playerId, 104);
-            EnableObject(playerId, 125);
+            EnableObject(playerId, MonasteryID);
+            EnableObject(playerId, MonkID);
             break;
         }
         case cWu:
@@ -859,17 +852,17 @@ void EffectFunction10025(int playerId = -1)
         }
         case cTeutons:
         {
-            xsEffectAmount(cAddAttribute, 7, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 7, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 7, cSearchRadius, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cSearchRadius, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cSearchRadius, 1, playerId);
-            xsEffectAmount(cEnableObject, CrusaderKnightID, 1, 0, playerId);
-            xsEffectAmount(cAddAttribute, CrusaderKnightID, cArmor, 4 * 256 + 1, playerId);
+            ModAttribute(playerId, SkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, SkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, SkirmisherID, cSearchRadius, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cSearchRadius, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cSearchRadius, 1);
+            EnableObject(playerId, CrusaderKnightID);
+            ModArmor(playerId, CrusaderKnightID, cDamageClassMelee, 1);
             break;
         }
         case cChinese:
@@ -910,14 +903,14 @@ void EffectFunction10025(int playerId = -1)
         case cSpanish:
         {
             ForceEnableTech(playerId, 599);
-            xsEffectAmount(cUpgradeUnit, 17, ManilaGalleonID, -1, playerId);
+            xsEffectAmount(cUpgradeUnit, TradeBoatID, ManilaGalleonID, -1, playerId);
             break;
         }
         case cAztecs:
         {
-            MulAttribute(playerId, 4, cMovementSpeed, 1.05);
-            MulAttribute(playerId, 24, cMovementSpeed, 1.05);
-            MulAttribute(playerId, 492, cMovementSpeed, 1.05);
+            MulAttribute(playerId, ArcherID, cMovementSpeed, 1.05);
+            MulAttribute(playerId, CrossbowmanID, cMovementSpeed, 1.05);
+            MulAttribute(playerId, ArbalesterID, cMovementSpeed, 1.05);
             ModAttribute(playerId, ShrineID, cAvailableFlag, 1);
             break;
         }
@@ -934,11 +927,11 @@ void EffectFunction10025(int playerId = -1)
         case cItalians:
         {
             //  Italians civ bonus, purchase relics
-            xsEffectAmount(cModifyTech, 3099, cAttrSetStacking, 1, playerId);
-            xsEffectAmount(cModifyTech, 3099, cAttrSetStackingResearchCap, 4, playerId);
+            xsEffectAmount(cModifyTech, PurchaseRelicTechID, cAttrSetStacking, 1, playerId);
+            xsEffectAmount(cModifyTech, PurchaseRelicTechID, cAttrSetStackingResearchCap, 4, playerId);
             SetResource(playerId, cAttributeRelicPurchaseLimit, 2);
             //  Enable Hospitaller Knight
-            SetTechAuto(playerId, 3038);
+            SetTechAuto(playerId, HospitallerKnightTechID);
             break;
         }
         case cIncas:
@@ -1058,10 +1051,10 @@ void EffectFunction10025(int playerId = -1)
     ModAttack(playerId, LembosID, cDamageClassShips, 1);
     ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
     //  Knight Upgrade
-    ModAttribute(playerId, 38, cHitpoints, 20);
-    ModAttack(playerId, 38, cDamageClassMelee, 2);
-    ModAttribute(playerId, 38, cShownAttack, 2);
-    MulAttribute(playerId, 38, cTrainTime, 0.75);
+    ModAttribute(playerId, KnightID, cHitpoints, 20);
+    ModAttack(playerId, KnightID, cDamageClassMelee, 2);
+    ModAttribute(playerId, KnightID, cShownAttack, 2);
+    MulAttribute(playerId, KnightID, cTrainTime, 0.75);
     //  Kheshik Upgrade
     ModAttribute(playerId, KeshikID, cHitpoints, 20);
     ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
@@ -1101,15 +1094,15 @@ void EffectFunction10026(int playerId = -1)
         }
         case cTeutons:
         {
-            xsEffectAmount(cAddAttribute, 7, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 7, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 7, cSearchRadius, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 6, cSearchRadius, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cMaxRange, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cLineOfSight, 1, playerId);
-            xsEffectAmount(cAddAttribute, 1155, cSearchRadius, 1, playerId);
+            ModAttribute(playerId, SkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, SkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, SkirmisherID, cSearchRadius, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, EliteSkirmisherID, cSearchRadius, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cMaxRange, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cLineOfSight, 1);
+            ModAttribute(playerId, ImperialSkirmisherID, cSearchRadius, 1);
             ModArmor(playerId, CrusaderKnightID, cDamageClassMelee, 1);
             break;
         }
@@ -1130,9 +1123,9 @@ void EffectFunction10026(int playerId = -1)
         }
         case cAztecs:
         {
-            MulAttribute(playerId, 4, cMovementSpeed, 1.1 / 1.05);
-            MulAttribute(playerId, 24, cMovementSpeed, 1.1 / 1.05);
-            MulAttribute(playerId, 492, cMovementSpeed, 1.1 / 1.05);
+            MulAttribute(playerId, ArcherID, cMovementSpeed, 1.1 / 1.05);
+            MulAttribute(playerId, CrossbowmanID, cMovementSpeed, 1.1 / 1.05);
+            MulAttribute(playerId, ArbalesterID, cMovementSpeed, 1.1 / 1.05);
             ModAttribute(playerId, ShrineID, cAvailableFlag, 1);
             break;
         }

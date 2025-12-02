@@ -447,16 +447,16 @@ void EffectFunction10018(int playerId = -1)
 //  10023 - Berbers Team Bonus
 void EffectFunction10023(int playerId = -1)
 {
-    xsEffectAmount(cModifyTech, 601, cAttrSetFoodCost, 0, playerId);
-    xsEffectAmount(cModifyTech, 601, cAttrSetTime, 0, playerId);
-    xsEffectAmount(cModifyTech, 599, cAttrSetButton, 26, playerId);
-    xsEffectAmount(cModifyTech, 599, cAttrSetHotkey, 18022, playerId);
+    xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetFoodCost, 0, playerId);
+    xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetTime, 0, playerId);
+    xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetButton, 26, playerId);
+    xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetHotkey, 18022, playerId);
 
     int playerCiv = xsGetPlayerCivilization(playerId);
 
     if ((playerCiv == cSpanish) || (playerCiv == cBerbers) || (playerCiv == cPortuguese))
     {
-        xsEffectAmount(cModifyTech, 599, cAttrMulAllCosts, 0.5, playerId);
+        xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulAllCosts, 0.5, playerId);
     }
 }
 
