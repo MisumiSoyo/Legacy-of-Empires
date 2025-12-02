@@ -1431,6 +1431,46 @@
             "building_id": 209,
             "Name": "Polutasvarf",
             "RequiredAge": 4
+        },
+        {
+            "note": "立陶宛获得步兵钢甲",
+            "civilizations": "Lithuanians",
+            "tech_id": 77,
+            "building_id": 103,
+            "Name": "Plate Mail Armor",
+            "RequiredAge": 4
+        },
+        {
+            "note": "立陶宛获得钻井采金法",
+            "civilizations": "Lithuanians",
+            "tech_id": 182,
+            "building_id": 584,
+            "Name": "Stone Shaft Mining",
+            "RequiredAge": 3
+        },
+        {
+            "note": "立陶宛获得工兵",
+            "civilizations": "Lithuanians",
+            "tech_id": 321,
+            "building_id": 82,
+            "Name": "Sappers",
+            "RequiredAge": 4
+        },
+        {
+            "note": "钦察援军",
+            "civilizations": "Georgians",
+            "tech_id": 3212,
+            "building_id": 209,
+            "Name": "Kipchak Reinforcements",
+            "RequiredAge": 3
+        },
+        {
+            "note": "格鲁吉亚获得射手锁甲",
+            "civilizations": "Georgians",
+            "tech_id": 219,
+            "building_id": 103,
+            "Name": "Ring Archer Armor",
+            "RequiredAge": 4
         }
     ]
 }

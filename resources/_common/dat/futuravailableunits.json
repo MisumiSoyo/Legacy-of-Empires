@@ -21561,6 +21561,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Plate Mail Armor",
+                        "RequiredAge": 4,
+                        "ID": 77
                     }
                 ]
             },
@@ -21852,6 +21857,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -22027,6 +22037,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
@@ -46782,6 +46797,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
@@ -46962,6 +46982,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Kipchak Reinforcements",
+                        "RequiredAge": 3,
+                        "ID": 3212
                     }
                 ]
             },

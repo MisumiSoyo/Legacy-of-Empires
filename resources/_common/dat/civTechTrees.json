@@ -180353,7 +180353,7 @@
                     "Name": "Plate Mail Armor",
                     "Name String ID": 17077,
                     "Node ID": 77,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 64,
                     "Prerequisite IDs": [
@@ -181585,7 +181585,7 @@
                     "Name": "Sappers",
                     "Name String ID": 17322,
                     "Node ID": 321,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 5,
                     "Prerequisite IDs": [
@@ -182305,7 +182305,7 @@
                     "Name": "Gold Shaft Mining",
                     "Name String ID": 17180,
                     "Node ID": 182,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 62,
                     "Prerequisite IDs": [
@@ -232459,7 +232459,7 @@
                     "Name": "Ring Archer Armor",
                     "Name String ID": 17216,
                     "Node ID": 219,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 51,
                     "Prerequisite IDs": [
@@ -235374,6 +235374,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600126,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Kipchak Reinforcements",
+                    "Name String ID": 500126,
+                    "Node ID": 3212,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 33,
                     "Prerequisite IDs": [
                         0,
                         0,

@@ -43,14 +43,14 @@ void EffectFunction10001(int playerId = -1)
         }
         case cChinese:
         {
-            EnableTech(playerId, 12);   //  Enable Crop Rotation
-            EnableTech(playerId, 37);   //  Enable Cannon Galleon
-            EnableTech(playerId, 85);   //  Enable Hand Cannoneer
-            EnableTech(playerId, 188);  //  Enable Bombard Cannon
-            EnableTech(playerId, 376);  //  Enable Elite Cannon Galleon
-            EnableTech(playerId, 875);  //  Enable Gambesons
-            EnableTech(playerId, 379);  //  Enable Hoardings
-            EnableTech(playerId, 428);  //  Enable Hussar
+            EnableTech(playerId, CropRotationTechID);   //  Enable Crop Rotation
+            EnableTech(playerId, CannonGalleonTechID);   //  Enable Cannon Galleon
+            EnableTech(playerId, HandCannoneerTechID);   //  Enable Hand Cannoneer
+            EnableTech(playerId, BombardCannonTechID);  //  Enable Bombard Cannon
+            EnableTech(playerId, EliteCannonGalleonTechID);  //  Enable Elite Cannon Galleon
+            EnableTech(playerId, GambesonsTechID);  //  Enable Gambesons
+            EnableTech(playerId, HoardingsTechID);  //  Enable Hoardings
+            EnableTech(playerId, HussarTechID);  //  Enable Hussar
             break;
         }
         case cByzantines:
@@ -62,25 +62,25 @@ void EffectFunction10001(int playerId = -1)
         case cTurks:
         {
             //  Enable Steppe Lancer
-            EnableTech(playerId, 714);
-            EnableTech(playerId, 715);
+            EnableTech(playerId, SteppeLancerTechID);
+            EnableTech(playerId, EliteSteppeLancerTechID);
             //  Elite Steppe Lancer and Heavy Camel Rider upgrades -33% cost
-            xsEffectAmount(cModifyTech, 715, cAttrMulAllCosts, 0.666666, playerId);
-            xsEffectAmount(cModifyTech, 236, cAttrMulAllCosts, 0.666666, playerId);
+            xsEffectAmount(cModifyTech, EliteSteppeLancerTechID, cAttrMulAllCosts, 0.666666, playerId);
+            xsEffectAmount(cModifyTech, HeavyCamelTechID, cAttrMulAllCosts, 0.666666, playerId);
             break;
         }
         case cHuns:
         {
-            EnableTech(playerId, 714);  //  Enable Steppe Lancer
+            EnableTech(playerId, SteppeLancerTechID);
             break;
         }
         case cMagyars:
         {
             //  Enable Steppe Lancer
-            EnableTech(playerId, 714);
-            EnableTech(playerId, 715);
+            EnableTech(playerId, SteppeLancerTechID);
+            EnableTech(playerId, EliteSteppeLancerTechID);
             //  Enable Hand Cannoneer
-            EnableTech(playerId, 85);
+            EnableTech(playerId, HandCannoneerTechID);
             break;
         }
         case cSlavs:
@@ -90,28 +90,41 @@ void EffectFunction10001(int playerId = -1)
         }
         case cMalians:
         {
-            //  Enable Blast Furnace
-            EnableTech(playerId, 75);
+            EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, HalberdierTechID);
+            break;
         }
         case cBurmese:
         {
-            EnableTech(playerId, 85);   //  Enable Hand Cannoneer
+            EnableTech(playerId, HandCannoneerTechID);
             break;
         }
         case cBulgarians:
         {
-            EnableTech(playerId, 264);  //  Enable Champion
+            EnableTech(playerId, ChampionTechID);
             break;
         }
         case cCumans:
         {
-            EnableTech(playerId, 39);   //  Enable Husbandry
+            EnableTech(playerId, HusbandryTechID);
+            break;
+        }
+        case cLithuanians:
+        {
+            EnableTech(playerId, PlateMailArmorTechID);
+            EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, GoldShaftMiningTechID);
             break;
         }
         case cBengalis:
         {
             EnableTech(playerId, HussarTechID);
+            break;
+        }
+        case cGeorgians:
+        {
+            EnableTech(playerId, RingArcherArmorTechID);
+            break;
         }
         default:
         {
@@ -168,13 +181,13 @@ void EffectFunction10002(int playerId = -1)
         }
         case cPersians:
         {
-            DisableTech(playerId, 192);
-            DisableTech(playerId, 218);
+            DisableTech(playerId, CavalryArcherTechID);
+            DisableTech(playerId, HeavyCavalryArcherTechID);
             //  Persians civ bonus, free market techs
-            SetTechAuto(playerId, 48);
-            SetTechAuto(playerId, 23);
-            SetTechAuto(playerId, 17);
-            SetTechAuto(playerId, 15);
+            SetTechAuto(playerId, CaravanTechID);
+            SetTechAuto(playerId, CoinageTechID);
+            SetTechAuto(playerId, BankingTechID);
+            SetTechAuto(playerId, GuildsTechID);
             break;
         }
         case cSaracens:
@@ -211,8 +224,8 @@ void EffectFunction10002(int playerId = -1)
             //  Mongols civ bonus, cavalries generate gold from attacking buildings
             SetResource(playerId, cAttributeMaintenance, 10003);
             //  Mongols civ bonus, dark age Stable and Scout Cavalry without Barracks
-            ForceResearchTech(playerId, 25);
-            ForceResearchTech(playerId, 204);
+            ForceResearchTech(playerId, StableTechID);
+            ForceResearchTech(playerId, ScoutCavalryTechID);
             //  Mongols Knight line replaced by Keshiks
             UpgradeUnit(playerId, KnightID, KeshikID);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3126, playerId);
@@ -423,7 +436,7 @@ void EffectFunction10002(int playerId = -1)
         }
         case cVietnamese:
         {
-            DisableTech(playerId, 218);  //  Disable Heavy Cavalry Archer
+            DisableTech(playerId, HeavyCavalryArcherTechID);
             //  Vietnamese civ bonus + newly added economic techs
             xsEffectAmount(cModifyTech, HorticultureTechID, cAttrMulTime, 0.5, playerId);
             xsEffectAmount(cModifyTech, HorticultureTechID, cAttrSetWoodCost, 0, playerId);
@@ -810,6 +823,14 @@ void EffectFunction10024(int playerId = -1)
             EnableObject(playerId, MonkID);
             break;
         }
+        case cGeorgians:
+        {
+            ModAttribute(playerId, cCavalryClass, cRegenerationRate, 3);
+            ModAttribute(playerId, cScoutCavalryClass, cRegenerationRate, 3);
+            ModAttribute(playerId, cConquistadorClass, cRegenerationRate, 3);
+            ModAttribute(playerId, cCavalryArcherClass, cRegenerationRate, 3);
+            break;
+        }
         case cWu:
         {
             SetResource(playerId, cAttributeWubaoGoldProductivity, 10);
@@ -1022,6 +1043,10 @@ void EffectFunction10025(int playerId = -1)
         case cGeorgians:
         {
             EnableObject(playerId, KhevsuretiWarriorID);
+            ModAttribute(playerId, cCavalryClass, cRegenerationRate, -1);
+            ModAttribute(playerId, cScoutCavalryClass, cRegenerationRate, -1);
+            ModAttribute(playerId, cConquistadorClass, cRegenerationRate, -1);
+            ModAttribute(playerId, cCavalryArcherClass, cRegenerationRate, -1);
             break;
         }
         case cWu:
@@ -1189,6 +1214,14 @@ void EffectFunction10026(int playerId = -1)
             ModAttribute(playerId, cMonkClass, cMaxRange, 1);
             ModAttribute(playerId, cMonkClass, cLineOfSight, 1);
             ModAttribute(playerId, cMonkClass, cSearchRadius, 1);
+            break;
+        }
+        case cGeorgians:
+        {
+            ModAttribute(playerId, cCavalryClass, cRegenerationRate, -1);
+            ModAttribute(playerId, cScoutCavalryClass, cRegenerationRate, -1);
+            ModAttribute(playerId, cConquistadorClass, cRegenerationRate, -1);
+            ModAttribute(playerId, cCavalryArcherClass, cRegenerationRate, -1);
             break;
         }
         case cWu:

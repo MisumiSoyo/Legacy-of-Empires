@@ -3529,6 +3529,43 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "note": "立陶宛获得步兵钢甲, 钻井采金法, 工兵",
+            "action": "modify",
+            "civ_id": "LITHUANIANS",
+            "Node ID": [77, 182, 321],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "钦察援军",
+            "action": "add",
+            "civ_id": "GEORGIANS",
+            "Age ID": 3,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600126,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Kipchak Reinforcements",
+            "Name String ID": 500126,
+            "Node ID": 3212,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "note": "格鲁吉亚获得射手锁甲",
+            "action": "modify",
+            "civ_id": "GEORGIANS",
+            "Node ID": 219,
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

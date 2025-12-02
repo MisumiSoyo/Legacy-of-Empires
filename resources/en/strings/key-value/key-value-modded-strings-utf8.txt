@@ -127,7 +127,7 @@
 
 120182 "Cavalry Archer civilization \n\n• Herdables + 57% food \n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Cavalry Archers +1/2 pierce armor at Castle/Imperial Age\n• Keshiks can generate gold when attacking enemies (except buildings)\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (A strong cavalry archer)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Cavalry +1 attack, +1 pierce armor, +4 attack vs Standard Buildings, and Keshik +200% gold productivity, lasting for 90 seconds)\n• Khan's Conscription (Conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 
-120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Archery Ranges and Stables -75 wood cost\n• Cavalrys +5/7/9% moving speed in Feudal/Castle/Imperial Age\n• Cavalry technologies research 200% faster\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Siha Bow Limbs (Cavalry archers +1 secondary projectile)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
+120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Archery Ranges and Stables -75 wood cost\n• Cavalrys +5/7/9% moving speed in Feudal/Castle/Imperial Age\n• Cavalry technologies research 200% faster\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 
 120184 "Cavalry and Monk civilization \n\n• Receive 100 food when a Town Center is built up (including the starting one) \n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrade -50% cost, +100% research speed\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking) \n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range) \n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
 
@@ -149,7 +149,7 @@
 
 120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 2/5 gold per minute)\n• Taurus Ambush (Light Cavalry line and Knight line units receive -70% additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 
-120194 "Defensive and Cavalry civilization\n\n• Start with a Mule Cart (received when the first TC is built up in Nomad mode), and receive one when advancing age\n• Fortified Churches provide +10% work rate for Villagers within 8 squared tiles range\n• Units and buildings receive -15% damage when fighting from higher elevation\n• Cavalry regenerates 2/8/14 HP per minute in Feudal/Castle/Imperial Age\n• villagers +100% repair speed\n\n<b>Unique Unit:<b>\n• Monaspa (cavalry which becomes stronger when friendly units are nearby), Khevsureti Warrior (Infantry that counters siege weapons)\n\n<b>Unique Techs:<b>\n• Svan Towers (All towers, Castles, Kreposts and Town Centers +2 attack (for all arrows), Watch Tower-Line can deal 50% penetrate damage)\n• Aznauri Cavalry (All mounted units -15% population space)\n\n<b>Team Bonus:<b>\nBuildings -25% repairing cost"
+120194 "Defensive and Cavalry civilization\n\n• Start with a Mule Cart (received when the first TC is built up in Nomad mode), and receive one when advancing age\n• Fortified Churches provide +10% work rate for Villagers within 8 squared tiles range\n• Units and buildings receive -15% damage when fighting from higher elevation\n• Cavalry regenerates 5/10/15 HP per minute in Feudal/Castle/Imperial Age\n• villagers +100% repair speed\n\n<b>Unique Unit:<b>\n• Monaspa (cavalry which becomes stronger when friendly units are nearby), Khevsureti Warrior (Infantry that counters siege weapons)\n\n<b>Unique Techs:<b>\n• Svan Towers (All towers, Castles, Kreposts and Town Centers +2 attack (for all arrows), Watch Tower-Line can deal 50% penetrate damage)\n• Aznauri Cavalry (All mounted units -15% population space)\n• Kipchak Reinforcements (Cavalry archers +2 secondary projectiles)\n\n<b>Team Bonus:<b>\nBuildings -25% repairing cost"
 
 120198 "Archer and Siege civilization\n\n• Lumberjacks generate food in addition to wood\n• Archery Unit technologies at the Archery Range and Blacksmith cost -25%\n• Siege Weapons and Siege Warships move +10/15% faster in Castle/Imperial Age\n• Infantry can generate 0.25 food per second from attacking farms(only generate when attack action is being performed)\n• Wubao available at Dark Age\n\n<b>Unique Units:<b>\n• White Feather Guard (Infantry), War Chariot (Siege Weapon), Liu Bei (Hero)\n\n<b>Unique Techs:<b>\n• Coiled Serpent Array (Spearman-line and White Feather Guards gain additional HP when near each other)\n• Bolt Magazine (Archer-line, War Chariots and Lou Chuans fire additional projectiles)\n\n<b>Team Bonus:<b>\nFoot Archers +2 line of sight"
 
@@ -287,6 +287,7 @@
 500123 "Poisoning"
 500124 "Elite Hospitaller Knight"
 500125 "Olive Grove"
+500126 "Kipchak Reinforcements"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -377,7 +378,7 @@
 501086 "Research Jinete Tactics (Genitours +2 max range)"
 501087 "Research Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)"
 501088 "Research Sagres School (Docks +80% work rate)"
-501089 "Research Siha Bow Limbs (Cavalry archers +1 secondary projectile)"
+501089 "Research Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)"
 501090 "Recruit a mercenary squad."
 501091 "Research Polutasvarf (Military units can loot 150 olive oil from every destroyed building; Varangains +33% gold obtained from kills)"
 501092 "Upgrade to Elite Toungoo Warrior"
@@ -414,6 +415,7 @@
 501123 "Research Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable)"
 501124 "Upgrade to Elite Hospitaller Knight"
 501125 "Research Olive Grove (Villagers can generate olive oil to recruit mercenaries, and you can unlock a mercenary contract at Town Center and use olive oil to recruit mercenaries; The quantity of olive oil is temporarily displayed using the range of military buildings)"
+501126 "Research Kipchak Reinforcements (Cavalry archers +2 secondary projectiles)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -504,7 +506,7 @@
 521086 "Research <b>Jinete Tactics<b> (<cost>) (time: 60)\nGenitours +2 max range."
 521087 "Research <b>Explorer<b> (<cost>) (time: 45)\nYou can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on."
 521088 "Research <b>Sagres School<b> (<cost>) (time: 60)\nDocks +80% work rate."
-521089 "Research <b>Siha Bow Limbs<b> (<cost>) (time: 45)\nCavalry archers +1 secondary projectile."
+521089 "Research <b>Siha Bow Limbs<b> (<cost>) (time: 45)\nRanged soldiers remove attack delay and -15% gold cost."
 521090 "Recruit a mercenary squad (<cost>) (time: 15), with values and troop types determined by your luck. You can accumulate 1 recruitment opportunity every 90 seconds."
 521091 "Research <b>Polutasvarf<b> (<cost>) (time: 60)\nMilitary units can loot 150 olive oil from every destroyed building; Varangains +33% gold obtained from kills."
 521092 "Upgrade to <b>Elite Toungoo Warrior<b> (<cost>) (time: 45)\nUpgrades your Toungoo Warriors and lets you create Elite Toungoo Warriors."
@@ -541,6 +543,7 @@
 521123 "Research <b>Poisoning<b> (<cost>) (time: 60)\nArchers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable."
 521124 "Upgrade to <b>Elite Hospitaller Knight<b> (<cost>) (time: 60)\nUpgrades your Hospitaller Knights and lets you create Elite Hospitaller Knights."
 521125 "Research <b>Olive Grove<b> (<cost>) (time: 45)\nVillagers can generate olive oil to recruit mercenaries, and you can unlock a mercenary contract at Town Center and use olive oil to recruit mercenaries; The quantity of olive oil is temporarily displayed using the range of military buildings."
+521126 "Research <b>Kipchak Reinforcements<b> (<cost>) (time: 45)\nCavalry archers +2 secondary projectiles."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
