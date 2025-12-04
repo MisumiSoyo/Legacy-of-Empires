@@ -126,6 +126,13 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, RingArcherArmorTechID);
             break;
         }
+        case cKhitans:
+        {
+            EnableTech(playerId, GoldShaftMiningTechID);
+            EnableTech(playerId, TreadmillCraneTechID);
+            EnableTech(playerId, ShipwrightTechID);
+            break;
+        }
         default:
         {
           break;

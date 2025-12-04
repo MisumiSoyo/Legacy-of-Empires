@@ -1471,6 +1471,30 @@
             "building_id": 103,
             "Name": "Ring Archer Armor",
             "RequiredAge": 4
+        },
+        {
+            "note": "契丹获得钻井采金法",
+            "civilizations": "Khitans",
+            "tech_id": 182,
+            "building_id": 584,
+            "Name": "Gold Shaft Mining",
+            "RequiredAge": 3
+        },
+        {
+            "note": "契丹获得脚踏起重机",
+            "civilizations": "Khitans",
+            "tech_id": 54,
+            "building_id": 209,
+            "Name": "Treadmill Crane",
+            "RequiredAge": 3
+        },
+        {
+            "note": "契丹获得造船匠",
+            "civilizations": "Khitans",
+            "tech_id": 373,
+            "building_id": 45,
+            "Name": "Shipwright",
+            "RequiredAge": 4
         }
     ]
 }

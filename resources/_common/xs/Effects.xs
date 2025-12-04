@@ -371,7 +371,7 @@ void ChurchAura(int BuildingID = -1, int playerId = -1)
   xsEffectAmount(cAddAttribute, BuildingID, cCombatAbility, 32, playerId);
   xsTaskAmount(cTaskAttrWorkValue1, 0.1);
   xsTaskAmount(cTaskAttrWorkValue2, 1);
-  xsTaskAmount(cTaskAttrWorkRange, 8);
+  xsTaskAmount(cTaskAttrWorkRange, 9);
   xsTaskAmount(cTaskAttrGatheringSoundInt32, 13402);
   xsTaskAmount(cTaskAttrDepositSoundInt32, 13402);
   xsTaskAmount(cTaskAttrOwnerType, 1);

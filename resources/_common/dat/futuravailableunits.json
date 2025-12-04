@@ -4997,6 +4997,11 @@
                         "ID": 1255,
                         "Name": "Elite Konnik",
                         "RequiredAge": 4
+                    },
+                    {
+                        "ID": 440,
+                        "Name": "Petard",
+                        "RequiredAge": 3
                     }
                 ]
             },
@@ -52042,6 +52047,11 @@
                         "ID": 374,
                         "Name": "Careening",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Shipwright",
+                        "RequiredAge": 4,
+                        "ID": 373
                     }
                 ],
                 "Units": [
@@ -52164,6 +52174,11 @@
                         "Name": "Dacaogu",
                         "RequiredAge": 4,
                         "ID": 3093
+                    },
+                    {
+                        "Name": "Treadmill Crane",
+                        "RequiredAge": 3,
+                        "ID": 54
                     }
                 ]
             },
@@ -52410,6 +52425,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },

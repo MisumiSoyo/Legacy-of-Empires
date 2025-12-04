@@ -166052,6 +166052,36 @@
                 },
                 {
                     "Age ID": 3,
+                    "Building ID": 1251,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 105660,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Petard",
+                    "Name String ID": 14660,
+                    "Node ID": 440,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Unit",
+                    "Picture Index": 113,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
                     "Building ID": 104,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105099,
@@ -276039,7 +276069,7 @@
                     "Name": "Shipwright",
                     "Name String ID": 17377,
                     "Node ID": 373,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 97,
                     "Prerequisite IDs": [
@@ -277779,7 +277809,7 @@
                     "Name": "Gold Shaft Mining",
                     "Name String ID": 17180,
                     "Node ID": 182,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 62,
                     "Prerequisite IDs": [
