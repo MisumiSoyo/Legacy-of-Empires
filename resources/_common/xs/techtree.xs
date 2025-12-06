@@ -94,6 +94,19 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HalberdierTechID);
             break;
         }
+        case cBerbers:
+        {
+            EnableTech(playerId, HalberdierID);
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, ParthianTacticsTechID);
+            EnableTech(playerId, SappersTechID);
+            break;
+        }
+        case cKhmer:
+        {
+            EnableTech(playerId, TwoManSawTechID);
+            break;
+        }
         case cBurmese:
         {
             EnableTech(playerId, HandCannoneerTechID);
@@ -116,6 +129,13 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GoldShaftMiningTechID);
             break;
         }
+        case cSicilians:
+        {
+            EnableTech(playerId, ThumbRingTechID);
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, SappersTechID);
+            break;
+        }
         case cBengalis:
         {
             EnableTech(playerId, HussarTechID);
@@ -131,6 +151,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, TreadmillCraneTechID);
             EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, HerbalMedicineTechID);
             break;
         }
         default:

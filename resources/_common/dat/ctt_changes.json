@@ -3563,15 +3563,47 @@
             "note": "格鲁吉亚获得射手锁甲",
             "action": "modify",
             "civ_id": "GEORGIANS",
-            "Node ID": 219,
+            "Node ID": [219],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "契丹获得钻井采金法, 脚踏起重机, 造船匠",
+            "note": "契丹获得钻井采金法, 脚踏起重机, 造船匠, 草药",
             "action": "modify",
             "civ_id": "KHITANS",
-            "Node ID": [54, 182, 373],
+            "Node ID": [54, 182, 373, 441],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "西西里获得扳指, 双人锯, 工兵",
+            "action": "modify",
+            "civ_id": "SICILIANS",
+            "Node ID": [221, 321, 437],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "高棉获得双人锯",
+            "action": "modify",
+            "civ_id": "KHMER",
+            "Node ID": [221],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "柏柏尔获得长戟兵",
+            "action": "modify",
+            "civ_id": "BERBERS",
+            "Node ID": [359],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "柏柏尔获得双人锯, 帕提亚战术, 工兵",
+            "action": "modify",
+            "civ_id": "BERBERS",
+            "Node ID": [221, 321, 436],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         }

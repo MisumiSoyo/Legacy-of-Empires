@@ -1495,6 +1495,78 @@
             "building_id": 45,
             "Name": "Shipwright",
             "RequiredAge": 4
+        },
+        {
+            "note": "契丹获得草药",
+            "civilizations": "Khitans",
+            "tech_id": 441,
+            "building_id": 104,
+            "Name": "Herbal Medicine",
+            "RequiredAge": 3
+        },
+        {
+            "note": "西西里获得扳指",
+            "civilizations": "Sicilians",
+            "tech_id": 437,
+            "building_id": 87,
+            "Name": "Thumb Ring",
+            "RequiredAge": 3
+        },
+        {
+            "note": "西西里获得双人锯",
+            "civilizations": "Sicilians",
+            "tech_id": 221,
+            "building_id": 562,
+            "Name": "Two-Man Saw",
+            "RequiredAge": 4
+        },
+        {
+            "note": "西西里获得工兵",
+            "civilizations": "Sicilians",
+            "tech_id": 321,
+            "building_id": 82,
+            "Name": "Sappers",
+            "RequiredAge": 4
+        },
+        {
+            "note": "高棉获得双人锯",
+            "civilizations": "Khmer",
+            "tech_id": 221,
+            "building_id": 562,
+            "Name": "Two-Man Saw",
+            "RequiredAge": 4
+        },
+        {
+            "note": "柏柏尔获得长戟兵",
+            "civilizations": "Berbers",
+            "tech_id": 429,
+            "building_id": 12,
+            "Name": "Halberdier",
+            "RequiredAge": 4
+        },
+        {
+            "note": "柏柏尔获得双人锯",
+            "civilizations": "Berbers",
+            "tech_id": 221,
+            "building_id": 562,
+            "Name": "Two-Man Saw",
+            "RequiredAge": 4
+        },
+        {
+            "note": "柏柏尔获得帕提亚战术",
+            "civilizations": "Berbers",
+            "tech_id": 436,
+            "building_id": 87,
+            "Name": "Parthian Tactics",
+            "RequiredAge": 4
+        },
+        {
+            "note": "柏柏尔获得工兵",
+            "civilizations": "Berbers",
+            "tech_id": 321,
+            "building_id": 82,
+            "Name": "Sappers",
+            "RequiredAge": 4
         }
     ]
 }
