@@ -1567,6 +1567,44 @@
             "building_id": 82,
             "Name": "Sappers",
             "RequiredAge": 4
+        },
+        {
+            "note": "哥特获得骑兵钢甲",
+            "civilizations": "Goths",
+            "tech_id": 80,
+            "building_id": 103,
+            "Name": "Plate Barding Armor",
+            "RequiredAge": 4
+        },
+        {
+            "note": "哥特获得钻井采金法",
+            "civilizations": "Goths",
+            "tech_id": 182,
+            "building_id": 584,
+            "Name": "Gold Shaft Mining",
+            "RequiredAge": 3
+        },
+        {
+            "note": "哥特移除火枪手",
+            "civilizations": "Goths",
+            "unit_id": 5,
+            "building_id": 87,
+            "type": "delete"
+        },
+        {
+            "note": "哥特移除手推炮",
+            "civilizations": "Goths",
+            "unit_id": 36,
+            "building_id": 49,
+            "type": "delete"
+        },
+        {
+            "note": "哥特获得扳指",
+            "civilizations": "Goths",
+            "tech_id": 437,
+            "building_id": 87,
+            "Name": "Thumb Ring",
+            "RequiredAge": 3
         }
     ]
 }

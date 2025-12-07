@@ -11453,7 +11453,7 @@
                     "Name": "Hand Cannoneer",
                     "Name String ID": 14086,
                     "Node ID": 5,
-                    "Node Status": "ResearchRequired",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Unit",
                     "Picture Index": 22,
                     "Prerequisite IDs": [
@@ -11543,7 +11543,7 @@
                     "Name": "Thumb Ring",
                     "Name String ID": 17411,
                     "Node ID": 437,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 112,
                     "Prerequisite IDs": [
@@ -12503,7 +12503,7 @@
                     "Name": "Bombard Cannon",
                     "Name String ID": 14093,
                     "Node ID": 36,
-                    "Node Status": "ResearchRequired",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Unit",
                     "Picture Index": 30,
                     "Prerequisite IDs": [
@@ -12863,7 +12863,7 @@
                     "Name": "Plate Barding Armor",
                     "Name String ID": 17080,
                     "Node ID": 80,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 65,
                     "Prerequisite IDs": [
@@ -14935,7 +14935,7 @@
                     "Name": "Gold Shaft Mining",
                     "Name String ID": 17180,
                     "Node ID": 182,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 62,
                     "Prerequisite IDs": [
@@ -137349,7 +137349,7 @@
                     "Name": "Parthian Tactics",
                     "Name String ID": 17415,
                     "Node ID": 436,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 111,
                     "Prerequisite IDs": [
@@ -137589,7 +137589,7 @@
                     "Name": "Halberdier",
                     "Name String ID": 14409,
                     "Node ID": 359,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 104,
                     "Prerequisite IDs": [
@@ -139961,7 +139961,7 @@
                     "Name": "Sappers",
                     "Name String ID": 17322,
                     "Node ID": 321,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 5,
                     "Prerequisite IDs": [
@@ -140831,7 +140831,7 @@
                     "Name": "Two-Man Saw",
                     "Name String ID": 17231,
                     "Node ID": 221,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 81,
                     "Prerequisite IDs": [
@@ -145966,7 +145966,7 @@
                     "Name": "Two-Man Saw",
                     "Name String ID": 17231,
                     "Node ID": 221,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 81,
                     "Prerequisite IDs": [
@@ -189275,7 +189275,7 @@
                     "Name": "Thumb Ring",
                     "Name String ID": 17411,
                     "Node ID": 437,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 112,
                     "Prerequisite IDs": [
@@ -192937,7 +192937,7 @@
                     "Name": "Two-Man Saw",
                     "Name String ID": 17231,
                     "Node ID": 221,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 81,
                     "Prerequisite IDs": [
@@ -277359,7 +277359,7 @@
                     "Name": "Herbal Medicine",
                     "Name String ID": 17435,
                     "Node ID": 441,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 114,
                     "Prerequisite IDs": [

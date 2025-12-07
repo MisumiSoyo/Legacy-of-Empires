@@ -1165,6 +1165,11 @@
                         "ID": 437,
                         "Name": "Thumb Ring",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Parthian Tactics",
+                        "RequiredAge": 4,
+                        "ID": 436
                     }
                 ],
                 "Units": [
@@ -1255,6 +1260,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
                     }
                 ],
                 "Units": [
@@ -1807,6 +1817,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -1993,6 +2008,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     }
                 ]
             },
@@ -12915,6 +12935,11 @@
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
                     }
                 ],
                 "Units": [
@@ -12937,11 +12962,6 @@
                         "ID": 6,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 5,
-                        "Name": "Hand Cannoneer",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 39,
@@ -13154,11 +13174,6 @@
                         "ID": 1105,
                         "Name": "Siege Tower",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 36,
-                        "Name": "Bombard Cannon",
-                        "RequiredAge": 4
                     }
                 ]
             },
@@ -13235,6 +13250,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Plate Barding Armor",
+                        "RequiredAge": 4,
+                        "ID": 80
                     }
                 ]
             },
@@ -13641,6 +13661,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
@@ -19934,6 +19959,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     }
                 ]
             },
@@ -30796,6 +30826,11 @@
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
                     }
                 ],
                 "Units": [
@@ -31606,6 +31641,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     }
                 ]
             },
@@ -52339,6 +52379,11 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3059
+                    },
+                    {
+                        "Name": "Herbal Medicine",
+                        "RequiredAge": 3,
+                        "ID": 441
                     }
                 ],
                 "Units": [

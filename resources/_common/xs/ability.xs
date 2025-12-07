@@ -674,6 +674,12 @@ void AnarchyTarkanAdjustment(int playerId = -1)
 }
 
 
+void FoederatiArmyInit(int playerId = -1)
+{
+    
+}
+
+
 void TangDynastyEffect(int playerId = -1)
 {
     ModAttack(playerId, cInfantryClass, cDamageClassMelee, 2);

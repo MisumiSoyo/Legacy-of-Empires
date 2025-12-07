@@ -31,14 +31,19 @@ void EffectFunction10001(int playerId = -1)
     {
         case cFranks:
         {
-            //  Enable Bracer
-            EnableTech(playerId, 201);
+            EnableTech(playerId, BracerTechID);
+            break;
+        }
+        case cGoths:
+        {
+            EnableTech(playerId, PlateBardingArmorTechID);
+            EnableTech(playerId, GoldShaftMiningTechID);
+            EnableTech(playerId, ThumbRingTechID);
             break;
         }
         case cJapanese:
         {
-            //  Enable Bombard Cannon
-            EnableTech(playerId, 188);
+            EnableTech(playerId, BombardCannonTechID);
             break;
         }
         case cChinese:
@@ -175,6 +180,8 @@ void EffectFunction10002(int playerId = -1)
         case cGoths:
         {
             DisableTech(playerId, WatchTowerTechID);
+            DisableTech(playerId, HandCannoneerTechID);
+            DisableTech(playerId, BombardCannonTechID);
             break;
         }
         case cJapanese:

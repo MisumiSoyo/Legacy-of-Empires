@@ -3606,6 +3606,22 @@
             "Node ID": [221, 321, 436],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "哥特获得骑兵钢甲, 钻井采金法, 扳指",
+            "action": "modify",
+            "civ_id": "GOTHS",
+            "Node ID": [80, 182, 437],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "哥特移除火枪手, 手推炮",
+            "action": "modify",
+            "civ_id": "GOTHS",
+            "Node ID": [5, 36],
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable"
         }
     ]
 }
