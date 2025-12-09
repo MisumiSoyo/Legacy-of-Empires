@@ -676,7 +676,8 @@ void AnarchyTarkanAdjustment(int playerId = -1)
 
 void FoederatiArmyInit(int playerId = -1)
 {
-    
+    xsResetTaskAmount();
+    xsResetTaskAmount();
 }
 
 

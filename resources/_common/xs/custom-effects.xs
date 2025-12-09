@@ -1048,6 +1048,13 @@ void EffectFunction10083(int playerId = -1)
 }
 
 
+//  10084 - Foederati Army
+void EffectFunction10084(int playerId = -1)
+{
+    ModAllyResource(playerId, cAttributeFoederatiLimit, 5);
+}
+
+
 //  10000 - Timer Event
 void EffectFunction10000(int playerId = -1)
 {

@@ -126,6 +126,9 @@ extern const int EliteDonsoID = 4129;
 extern const int ProjectileDonsoID = 4130;
 extern const int EliteHospitallerKnightID = 4131;
 extern const int EliteHospitallerKnight2ID = 4132;
+extern const int FoederatiSwordmanID = 4133;
+extern const int FoederatiCavalryArcherID = 4134;
+extern const int FoederatiKnightID = 4135;
 
 
 //  Newly added tech IDs
