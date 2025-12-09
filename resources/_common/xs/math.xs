@@ -509,3 +509,28 @@ void ApplyToAllMilitaryTargets(int playerId = -1, int ClassTarget = -1, int Task
     xsTask(ClassTarget, TaskType, cUnpackedSiegeUnitClass, playerId);
     xsTask(ClassTarget, TaskType, cScorpionClass, playerId);
 }
+
+
+void ApplyToAllPlayerTargets(int playerId = -1, int ClassTarget = -1, int TaskType = -1)
+{
+    xsTask(ClassTarget, TaskType, cArcherClass, playerId);
+    xsTask(ClassTarget, TaskType, cTradeBoatClass, playerId);
+    xsTask(ClassTarget, TaskType, cVillagerClass, playerId);
+    xsTask(ClassTarget, TaskType, cInfantryClass, playerId);
+    xsTask(ClassTarget, TaskType, cCavalryClass, playerId);
+    xsTask(ClassTarget, TaskType, cSiegeWeaponClass, playerId);
+    xsTask(ClassTarget, TaskType, cMonkClass, playerId);
+    xsTask(ClassTarget, TaskType, cTransportShipClass, playerId);
+    xsTask(ClassTarget, TaskType, cFishingBoatClass, playerId);
+    xsTask(ClassTarget, TaskType, cWarshipClass, playerId);
+    xsTask(ClassTarget, TaskType, cConquistadorClass, playerId);
+    xsTask(ClassTarget, TaskType, cPetardClass, playerId);
+    xsTask(ClassTarget, TaskType, cCavalryArcherClass, playerId);
+    xsTask(ClassTarget, TaskType, cMonkWithRelicClass, playerId);
+    xsTask(ClassTarget, TaskType, cHandCannoneerClass, playerId);
+    xsTask(ClassTarget, TaskType, cScoutCavalryClass, playerId);
+    xsTask(ClassTarget, TaskType, cPackedUnitClass, playerId);
+    xsTask(ClassTarget, TaskType, cUnpackedSiegeUnitClass, playerId);
+    xsTask(ClassTarget, TaskType, cScorpionClass, playerId);
+    xsTask(ClassTarget, TaskType, cKingClass, playerId);
+}

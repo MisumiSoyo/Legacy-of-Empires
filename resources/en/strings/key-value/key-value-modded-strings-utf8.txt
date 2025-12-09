@@ -604,6 +604,9 @@
 700049 "Donso"
 700050 "Veteran Donso"
 700051 "Elite Donso"
+700052 "Foederati Swordman"
+700053 "Foederati Cavalry Archer"
+700054 "Foederati Knight"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -657,6 +660,9 @@
 701049 "Create Donso"
 701050 "Create Veteran Donso"
 701051 "Create Elite Donso"
+701052 "Create Foederati Swordman"
+701053 "Create Foederati Cavalry Archer"
+701054 "Create Foederati Knight"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\n<i><GREY>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit; Training time: 20; Moving speed: 0.96; Reload time: 2.75; Attack delay: 0.35; Accuracy: 75%; LOS: 9; Search radius: 9. \nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."

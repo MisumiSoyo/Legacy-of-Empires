@@ -3622,6 +3622,27 @@
             "Node ID": [5, 36],
             "Use Type": "Unit",
             "Node Status": "NotAvailable"
+        },
+        {
+            "note": "契约军团",
+            "action": "add",
+            "civ_id": "GOTHS",
+            "Age ID": 3,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600127,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Foederati Army",
+            "Name String ID": 500127,
+            "Node ID": 3214,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }

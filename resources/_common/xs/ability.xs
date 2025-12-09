@@ -677,7 +677,32 @@ void AnarchyTarkanAdjustment(int playerId = -1)
 void FoederatiArmyInit(int playerId = -1)
 {
     xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrResourceIn, FoederatiArmyKillEffectID);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000008);
+    ApplyToAllPlayerTargets(playerId, FoederatiSwordmanID, cTaskTypeLoot);
+    ApplyToAllPlayerTargets(playerId, FoederatiCavalryArcherID, cTaskTypeLoot);
+    ApplyToAllPlayerTargets(playerId, FoederatiKnightID, cTaskTypeLoot);
     xsResetTaskAmount();
+}
+
+
+//  10084 - Foederati Army Kill Effect
+void EffectFunction10084(int playerId = -1)
+{
+    int i = 0;
+    int n = xsGetNumPlayers();
+    int cnt = 0;
+    for (i = 0; <= n)
+        if (isAlly(i, playerId))
+            if (isResearched(i, FoederatiArmyTechID))
+                cnt ++;
+    for (i = 0; <= n)
+        if (isAlly(i, playerId))
+            if (isResearched(i, FoederatiArmyTechID))
+            {
+                ModResource(i, cAttributeFood, 5.0 / cnt);
+                ModResource(i, cAttributeGold, 5.0 / cnt);
+            }
 }
 
 
@@ -707,6 +732,8 @@ void SongDynastyEffect(int playerId = -1)
     ModAttribute(playerId, cTradeBoatClass, cGoldCost, 0.8);
     ModResource(playerId, cAttributeResearchCostMod, -0.05);
     ModResource(playerId, cAttributeResearchTimeMod, -0.2);
+    MulAttribute(playerId, cTradeCartClass, cTrainTime, 0.5);
+    MulAttribute(playerId, cTradeBoatClass, cTrainTime, 0.5);
 }
 
 
@@ -718,6 +745,8 @@ void SongDynastyReset(int playerId = -1)
     ModAttribute(playerId, cTradeBoatClass, cGoldCost, 1.25);
     ModResource(playerId, cAttributeResearchCostMod, 0.05);
     ModResource(playerId, cAttributeResearchTimeMod, 0.2);
+    MulAttribute(playerId, cTradeCartClass, cTrainTime, 2);
+    MulAttribute(playerId, cTradeBoatClass, cTrainTime, 2);
 }
 
 
@@ -732,4 +761,5 @@ void AbilityApplier(int playerId = -1)
     ShrineInit(playerId);
     KeshikStinger(playerId, 0.5);
     KhanInit(playerId);
+    FoederatiArmyInit(playerId);
 }

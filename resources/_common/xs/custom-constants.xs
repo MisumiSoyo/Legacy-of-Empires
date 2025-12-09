@@ -45,7 +45,6 @@ extern const int cAttributeOliveOilProductivity = 446;
 extern const int cAttributeExclusiveTechFlag = 447;
 extern const int cAttributeYumKaaxGoldProductivity = 448;
 extern const int cAttributeYumKaaxWoodProductivity = 449;
-extern const int cAttributeFoederatiLimit = 459;
 
 
 //  units' IDs
@@ -147,6 +146,11 @@ extern const int WesternMiddleEuropeanMercenaryContractTechID = 3194;
 extern const int EasternEuropeanMercenaryContractTechID = 3195;
 extern const int MediterraneanMercenaryContractTechID = 3196;
 extern const int SilkRoadMercenaryContractTechID = 3197;
+extern const int FoederatiArmyTechID = 3214;
+
+
+// Custom Effect IDs
+extern const int FoederatiArmyKillEffectID = 3221;
 
 
 //  Original Unit IDs

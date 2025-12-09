@@ -1605,6 +1605,13 @@
             "building_id": 87,
             "Name": "Thumb Ring",
             "RequiredAge": 3
+        },
+        {
+            "note": "契约军团",
+            "civilizations": "Goths",
+            "tech_id": 3214,
+            "building_id": 209,
+            "RequiredAge": 3
         }
     ]
 }
