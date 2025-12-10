@@ -700,8 +700,8 @@ void EffectFunction10084(int playerId = -1)
         if (isAlly(i, playerId))
             if (isResearched(i, FoederatiArmyTechID))
             {
-                ModResource(i, cAttributeFood, 5.0 / cnt);
-                ModResource(i, cAttributeGold, 5.0 / cnt);
+                ModResource(i, cAttributeFood, 7.0 / cnt);
+                ModResource(i, cAttributeGold, 7.0 / cnt);
             }
 }
 

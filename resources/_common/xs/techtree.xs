@@ -182,6 +182,7 @@ void EffectFunction10002(int playerId = -1)
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, HandCannoneerTechID);
             DisableTech(playerId, BombardCannonTechID);
+            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 1.0 / 0.85);
             break;
         }
         case cJapanese:
@@ -736,6 +737,7 @@ void EffectFunction10024(int playerId = -1)
             EnableObject(playerId, WoodenFortressID);
             ModResource(playerId, cAttributePopulationCap, 10);
             ModResource(playerId, cAttributeUnitLimit, 10);
+            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 0.85 / 0.8);
             break;
         }
         case cTeutons:
@@ -829,6 +831,14 @@ void EffectFunction10024(int playerId = -1)
             ModArmor(playerId, EliteDonsoID, cDamageClassPierce, 1);
             break;
         }
+        case cBulgarians:
+        {
+            ModAttack(playerId, cCavalryClass, cDamageClassCavalry, 1);
+            ModAttack(playerId, cScoutCavalryClass, cDamageClassCavalry, 1);
+            ModAttack(playerId, cCavalryClass, cDamageClassCamelUnits, 1);
+            ModAttack(playerId, cScoutCavalryClass, cDamageClassCamelUnits, 1);
+            break;
+        }
         case cBurgundians:
         {
             EnableObject(playerId, KnightID);
@@ -904,6 +914,7 @@ void EffectFunction10025(int playerId = -1)
         {
             ModResource(playerId, cAttributePopulationCap, 5);
             ModResource(playerId, cAttributeUnitLimit, 5);
+            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 0.8 / 0.75);
             break;
         }
         case cTeutons:
@@ -1040,6 +1051,14 @@ void EffectFunction10025(int playerId = -1)
             EnableObject(playerId, RungScoutID);
             break;
         }
+        case cBulgarians:
+        {
+            ModAttack(playerId, cCavalryClass, cDamageClassCavalry, 1);
+            ModAttack(playerId, cScoutCavalryClass, cDamageClassCavalry, 1);
+            ModAttack(playerId, cCavalryClass, cDamageClassCamelUnits, 1);
+            ModAttack(playerId, cScoutCavalryClass, cDamageClassCamelUnits, 1);
+            break;
+        }
         case cTatars:
         {
             ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
@@ -1150,6 +1169,7 @@ void EffectFunction10026(int playerId = -1)
         {
             ModResource(playerId, cAttributePopulationCap, 5);
             ModResource(playerId, cAttributeUnitLimit, -5);
+            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 0.75 / 0.7);
             break;
         }
         case cTeutons:
@@ -1230,6 +1250,14 @@ void EffectFunction10026(int playerId = -1)
             MulAttribute(playerId, cVillagerClass, cMovementSpeed, 1.2 / 1.15);
             break;
         }
+        case cBulgarians:
+        {
+            ModAttack(playerId, cCavalryClass, cDamageClassCavalry, 1);
+            ModAttack(playerId, cScoutCavalryClass, cDamageClassCavalry, 1);
+            ModAttack(playerId, cCavalryClass, cDamageClassCamelUnits, 1);
+            ModAttack(playerId, cScoutCavalryClass, cDamageClassCamelUnits, 1);
+            break;
+        }   
         case cTatars:
         {
             ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);

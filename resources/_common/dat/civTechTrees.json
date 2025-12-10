@@ -11537,6 +11537,36 @@
                     "Age ID": 3,
                     "Building ID": 87,
                     "Draw Node Type": "UnitTech",
+                    "Help String ID": 800053,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Foederati Cavalry Archer",
+                    "Name String ID": 700053,
+                    "Node ID": 4134,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 71,
+                    "Prerequisite IDs": [
+                        3214,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "Tech",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 87,
+                    "Draw Node Type": "UnitTech",
                     "Help String ID": 107411,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
@@ -11831,6 +11861,36 @@
                         "None"
                     ],
                     "Trigger Tech ID": 429,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 12,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800052,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Foederati Swordman",
+                    "Name String ID": 700052,
+                    "Node ID": 4133,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 72,
+                    "Prerequisite IDs": [
+                        3214,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "Tech",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
                     "Use Type": "Unit"
                 },
                 {
@@ -12161,6 +12221,36 @@
                         "None"
                     ],
                     "Trigger Tech ID": 265,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800054,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Foederati Knight",
+                    "Name String ID": 700054,
+                    "Node ID": 4135,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 49,
+                    "Prerequisite IDs": [
+                        3214,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "Tech",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
                     "Use Type": "Unit"
                 },
                 {
