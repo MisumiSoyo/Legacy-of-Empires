@@ -934,6 +934,113 @@ void EffectFunction10080(int playerId = -1)
 }
 
 
+//  10085 - Tang Dynasty
+void EffectFunction10085(int playerId = -1)
+{
+    ModAttack(playerId, cInfantryClass, cDamageClassMelee, 3);
+    ModAttack(playerId, cCavalryClass, cDamageClassMelee, 3);
+    ModAttack(playerId, cScoutCavalryClass, cDamageClassMelee, 3);
+    ModAttribute(playerId, cInfantryClass, cLineOfSight, 4);
+    ModAttribute(playerId, cCavalryClass, cLineOfSight, 4);
+    ModAttribute(playerId, cScoutCavalryClass, cLineOfSight, 4);
+    ModResource(playerId, cAttributePopulationCap, 25);
+    ModResource(playerId, cAttributeUnitLimit, 25);
+
+    DisableTech(playerId, SongDynastyTechID);
+    DisableTech(playerId, YuanDynastyTechID);
+    DisableTech(playerId, MingDynastyTechID);
+}
+
+
+//  10086 - Song Dynasty
+void EffectFunction10086(int playerId = -1)
+{
+    MulAttribute(playerId, cTradeBoatClass, cResourceCost, 0.8);
+    MulAttribute(playerId, cVillagerClass, cResourceCost, 0.8);
+    MulAttribute(playerId, cTradeCartClass, cResourceCost, 0.8);
+    MulAttribute(playerId, cTradeBoatClass, cTrainTime, 0.5);
+    MulAttribute(playerId, cTradeCartClass, cTrainTime, 0.5);
+    ModResource(playerId, cAttributeResearchCostMod, -0.05);
+    DisableTech(playerId, TangDynastyTechID);
+    DisableTech(playerId, YuanDynastyTechID);
+    DisableTech(playerId, MingDynastyTechID);
+}
+
+
+//  10087 - Yuan Dynasty
+void EffectFunction10087(int playerId = -1)
+{
+    MulAttribute(playerId, cArcherClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cVillagerClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cInfantryClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cCavalryClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cMonkClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cSiegeWeaponClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cMonkClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cConquistadorClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cPetardClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cCavalryArcherClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cMonkWithRelicClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cHandCannoneerClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cScoutCavalryClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cPackedUnitClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cUnpackedSiegeUnitClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cScorpionClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cLivestockClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cKingClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cControlledAnimalClass, cMovementSpeed, 1.05);
+
+    SetTechAuto(playerId, ManAtArmsTechID);
+    SetTechAuto(playerId, LongSwordmanTechID);
+    SetTechAuto(playerId, PikemanTechID);
+    SetTechAuto(playerId, CrossbowmanTechID);
+    SetTechAuto(playerId, EliteSkirmisherTechID);
+    SetTechAuto(playerId, LightCavalryTechID);
+    SetTechAuto(playerId, GalleonTechID);
+
+    if (isResearched(playerId, ScaleBardingArmorTechID) == false)
+        ForceResearchTech(playerId, ScaleBardingArmorTechID);
+    if (isResearched(playerId, ChainBardingArmorTechID) == false)
+        ForceResearchTech(playerId, ChainBardingArmorTechID);
+    if (isResearched(playerId, PlateBardingArmorTechID) == false)
+        ForceResearchTech(playerId, PlateBardingArmorTechID);
+
+    DisableTech(playerId, TangDynastyTechID);
+    DisableTech(playerId, SongDynastyTechID);
+    DisableTech(playerId, MingDynastyTechID);
+}
+
+
+//  10088 - Ming Dynasty
+void EffectFunction10088(int playerId = -1)
+{
+    EnableTech(playerId, GuanNingCavalryTechID);
+    if (isResearched(playerId, ChemistryTechID) == false)
+        ForceResearchTech(playerId, ChemistryTechID);
+
+    MulAttribute(playerId, cArcherClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cInfantryClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cCavalryClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cMonkClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cSiegeWeaponClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cMonkClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cWarshipClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cConquistadorClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cPetardClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cCavalryArcherClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cMonkWithRelicClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cHandCannoneerClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cScoutCavalryClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cPackedUnitClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cUnpackedSiegeUnitClass, cHitpoints, 1.10);
+    MulAttribute(playerId, cScorpionClass, cHitpoints, 1.10);
+
+    DisableTech(playerId, TangDynastyTechID);
+    DisableTech(playerId, SongDynastyTechID);
+    DisableTech(playerId, YuanDynastyTechID);
+}
+
+
 //  Franks, loan
 void Franks(int playerId = -1)
 {
@@ -965,18 +1072,6 @@ void Goths(int playerId = -1)
             SpawnUnit(playerId, 293, 109, Bonus - CalcedBonus, 1);
     }
     SetResource(playerId, cAttributeGothsVillagerBonus, Bonus);
-}
-
-
-//  Chinese, TC provides +5 population capacity (maximum +50)
-void Chinese(int playerId = -1)
-{
-    int TCCount = xsGetObjectCount(playerId, 109);
-    int RecordedTCCount = xsPlayerAttribute(playerId, cAttributeChineseTCCount);
-    if (TCCount > 10)
-        TCCount = 10;
-    ModResource(playerId, cAttributeUnitLimit, (TCCount - RecordedTCCount) * 5);
-    SetResource(playerId, cAttributeChineseTCCount, TCCount);
 }
 
 
@@ -1065,11 +1160,6 @@ void EffectFunction10000(int playerId = -1)
         case cFranks:
         {
             Franks(playerId);
-            break;
-        }
-        case cChinese:
-        {
-            Chinese(playerId);
             break;
         }
         default:

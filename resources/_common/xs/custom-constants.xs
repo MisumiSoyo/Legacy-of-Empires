@@ -65,7 +65,7 @@ extern const int SipahiID = 4014;
 extern const int EliteSipahiID = 4015;
 extern const int WubaoID = 4016;
 extern const int EarlyCavalryArcherID = 4017;
-extern const int FireLancerCavalryID = 4018;
+extern const int GuanNingCavalryID = 4018;
 extern const int ParthianCavalryArcherID = 4020;
 extern const int EliteParthianCavalryArcherID = 4021;
 extern const int InvisiblePCAID = 4022;
@@ -133,7 +133,7 @@ extern const int FoederatiKnightID = 4135;
 //  Newly added tech IDs
 extern const int EliteSipahiTechID = 3015;
 extern const int WubaoTechID = 3016;
-extern const int FireLancerCavalryTechID = 3026;
+extern const int GuanNingCavalryTechID = 3026;
 extern const int HospitallerKnightTechID = 3038;
 extern const int HorticultureTechID = 3054;
 extern const int FertilizationTechID = 3055;
@@ -147,6 +147,10 @@ extern const int EasternEuropeanMercenaryContractTechID = 3195;
 extern const int MediterraneanMercenaryContractTechID = 3196;
 extern const int SilkRoadMercenaryContractTechID = 3197;
 extern const int FoederatiArmyTechID = 3214;
+extern const int TangDynastyTechID = 3237;
+extern const int SongDynastyTechID = 3238;
+extern const int YuanDynastyTechID = 3239;
+extern const int MingDynastyTechID = 3240;
 
 
 // Custom Effect IDs

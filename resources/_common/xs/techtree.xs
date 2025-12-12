@@ -182,7 +182,7 @@ void EffectFunction10002(int playerId = -1)
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, HandCannoneerTechID);
             DisableTech(playerId, BombardCannonTechID);
-            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 1.0 / 0.85);
+            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 1.0 / 0.85);
             break;
         }
         case cJapanese:
@@ -205,14 +205,15 @@ void EffectFunction10002(int playerId = -1)
         }
         case cChinese:
         {
-            //  Chinese civ bonus, trade units +50% training speed
-            MulAttribute(playerId, cTradeBoatClass, cTrainTime, 2.0 / 3);
-            MulAttribute(playerId, cTradeCartClass, cTrainTime, 2.0 / 3);
             //  Chinese civ bonus, tech cost discount
-            SetResource(playerId, cAttributeResearchCostMod, 0.9);
+            SetResource(playerId, cAttributeResearchCostMod, 0.95);
+            DisableTech(playerId, 350);
+            DisableTech(playerId, 351);
+            DisableTech(playerId, 352);
             //  Chinese +50 start wood
             ModResource(playerId, cAttributeStartingWood, 50);
             SetResource(playerId, cAttributeExclusiveTechFlag, 1);
+            DisableTech(playerId, GuanNingCavalryTechID);
             break;
         }
         case cPersians:
@@ -530,7 +531,7 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, WingedHussarTechID, cAttrMulTime, 0.333333, playerId);
             xsEffectAmount(cModifyTech, HeavyHeiKuangCavalryTechID, cAttrMulTime, 0.333333, playerId);
             xsEffectAmount(cModifyTech, EliteSipahiTechID, cAttrMulTime, 0.333333, playerId);
-            xsEffectAmount(cModifyTech, FireLancerCavalryTechID, cAttrMulTime, 0.333333, playerId);
+            xsEffectAmount(cModifyTech, GuanNingCavalryTechID, cAttrMulTime, 0.333333, playerId);
             //  Cumans civ bonus, hunters don't need to drop off food
             SetResource(playerId, cAttributeHunterFoodProductivity, 41);
             MulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
@@ -737,7 +738,7 @@ void EffectFunction10024(int playerId = -1)
             EnableObject(playerId, WoodenFortressID);
             ModResource(playerId, cAttributePopulationCap, 10);
             ModResource(playerId, cAttributeUnitLimit, 10);
-            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 0.85 / 0.8);
+            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 0.85 / 0.8);
             break;
         }
         case cTeutons:
@@ -914,7 +915,7 @@ void EffectFunction10025(int playerId = -1)
         {
             ModResource(playerId, cAttributePopulationCap, 5);
             ModResource(playerId, cAttributeUnitLimit, 5);
-            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 0.8 / 0.75);
+            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 0.8 / 0.75);
             break;
         }
         case cTeutons:
@@ -1012,7 +1013,7 @@ void EffectFunction10025(int playerId = -1)
             ModAttack(playerId, CavalierID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, PaladinID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, SavarID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, FireLancerCavalryID, cDamageClassStandardBuildings, 2);
+            ModAttack(playerId, GuanNingCavalryID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, BoyarID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, EliteBoyarID, cDamageClassStandardBuildings, 2);
             xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.25, playerId);
@@ -1169,7 +1170,7 @@ void EffectFunction10026(int playerId = -1)
         {
             ModResource(playerId, cAttributePopulationCap, 5);
             ModResource(playerId, cAttributeUnitLimit, -5);
-            ModAttribute(playerId, FoederatiSwordmanID, cAttrMulAllCosts, 0.75 / 0.7);
+            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 0.75 / 0.7);
             break;
         }
         case cTeutons:
@@ -1225,7 +1226,7 @@ void EffectFunction10026(int playerId = -1)
             ModAttack(playerId, CavalierID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, PaladinID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, SavarID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, FireLancerCavalryID, cDamageClassStandardBuildings, 2);
+            ModAttack(playerId, GuanNingCavalryID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, BoyarID, cDamageClassStandardBuildings, 2);
             ModAttack(playerId, EliteBoyarID, cDamageClassStandardBuildings, 2);
             xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.2, playerId);

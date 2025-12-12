@@ -706,50 +706,6 @@ void EffectFunction10084(int playerId = -1)
 }
 
 
-void TangDynastyEffect(int playerId = -1)
-{
-    ModAttack(playerId, cInfantryClass, cDamageClassMelee, 2);
-    ModAttack(playerId, cCavalryClass, cDamageClassMelee, 2);
-    ModAttribute(playerId, cInfantryClass, cLineOfSight, 4);
-    ModAttribute(playerId, cCavalryClass, cLineOfSight, 4);
-}
-
-
-void TangDynastyReset(int playerId = -1)
-{
-    ModAttack(playerId, cInfantryClass, cDamageClassMelee, -2);
-    ModAttack(playerId, cCavalryClass, cDamageClassMelee, -2);
-    ModAttribute(playerId, cInfantryClass, cLineOfSight, -4);
-    ModAttribute(playerId, cCavalryClass, cLineOfSight, -4);
-}
-
-
-void SongDynastyEffect(int playerId = -1)
-{
-    ModAttribute(playerId, cTradeCartClass, cWoodCost, 0.8);
-    ModAttribute(playerId, cTradeCartClass, cGoldCost, 0.8);
-    ModAttribute(playerId, cTradeBoatClass, cWoodCost, 0.8);
-    ModAttribute(playerId, cTradeBoatClass, cGoldCost, 0.8);
-    ModResource(playerId, cAttributeResearchCostMod, -0.05);
-    ModResource(playerId, cAttributeResearchTimeMod, -0.2);
-    MulAttribute(playerId, cTradeCartClass, cTrainTime, 0.5);
-    MulAttribute(playerId, cTradeBoatClass, cTrainTime, 0.5);
-}
-
-
-void SongDynastyReset(int playerId = -1)
-{
-    ModAttribute(playerId, cTradeCartClass, cWoodCost, 1.25);
-    ModAttribute(playerId, cTradeCartClass, cGoldCost, 1.25);
-    ModAttribute(playerId, cTradeBoatClass, cWoodCost, 1.25);
-    ModAttribute(playerId, cTradeBoatClass, cGoldCost, 1.25);
-    ModResource(playerId, cAttributeResearchCostMod, 0.05);
-    ModResource(playerId, cAttributeResearchTimeMod, 0.2);
-    MulAttribute(playerId, cTradeCartClass, cTrainTime, 2);
-    MulAttribute(playerId, cTradeBoatClass, cTrainTime, 2);
-}
-
-
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

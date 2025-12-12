@@ -1,0 +1,213 @@
+{
+    "LinkedTechs": [
+        {
+            "NameId": 424001,
+            "Comment": "Satrapies",
+            "Local": true,
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1195,
+                1196,
+                1197
+            ]
+        },
+        {
+            "NameId": 424002,
+            "Comment": "Sparabaras/Reed Arrows",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1110,
+                1111
+            ]
+        },
+        {
+            "NameId": 424003,
+            "Comment": "Scythed Chariots/Karda",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1112,
+                1113
+            ]
+        },
+        {
+            "NameId": 424004,
+            "Comment": "Taxiarchs/Iphicratean",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1120,
+                1121
+            ]
+        },
+        {
+            "NameId": 424005,
+            "Comment": "Eispohora/Delian League",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1122,
+                1123
+            ]
+        },
+        {
+            "NameId": 424006,
+            "Comment": "Ephorate/Morai",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1223,
+                1224
+            ]
+        },
+        {
+            "NameId": 424007,
+            "Comment": "Helot Levies/Xyphos",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1130,
+                1132
+            ]
+        },
+        {
+            "NameId": 424008,
+            "Comment": "Krypteia/Peloponnesian League",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1131,
+                1133
+            ]
+        },
+        {
+            "NameId": 424009,
+            "Comment": "Athenian Governments",
+            "Type": "Toggleable",
+            "Techs": [
+                1202,
+                1203,
+                1204
+            ]
+        },
+        {
+            "NameId": 424010,
+            "Comment": "Merchant Trade Rates",
+            "Type": "Cycle",
+            "StartingTech": 1215,
+            "Instant": true,
+            "Techs": [
+                1215,
+                1216,
+                1217
+            ]
+        },
+        {
+            "NameId": 424011,
+            "Comment": "Antiquity Mode Merchant Trade Rates",
+            "Type": "Cycle",
+            "StartingTech": 1263,
+            "Instant": true,
+            "Techs": [
+                1263,
+                1264,
+                1265
+            ]
+        },
+        {
+            "NameId": 424012,
+            "Comment": "Barracks Recruitment Doctrines",
+            "Type": "Cycle",
+            "StartingTech": 1275,
+            "Instant": true,
+            "Techs": [
+                1275,
+                1276,
+                1277
+            ]
+        },
+        {
+            "NameId": 424013,
+            "Comment": "Archery Range Recruitment Doctrines",
+            "Type": "Cycle",
+            "Instant": true,
+            "StartingTech": 1278,
+            "Techs": [
+                1278,
+                1279,
+                1280
+            ]
+        },
+        {
+            "NameId": 424014,
+            "Comment": "Stable Recruitment Doctrines",
+            "Type": "Cycle",
+            "Instant": true,
+            "StartingTech": 1281,
+            "Techs": [
+                1281,
+                1282,
+                1283
+            ]
+        },
+        {
+            "NameId": 424015,
+            "Comment": "Veteran Chiliarchs/Ends of the World",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1284,
+                1285
+            ]
+        },
+        {
+            "NameId": 424016,
+            "Comment": "Pezhetairoi/Sarissophoroi",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1286,
+                1287
+            ]
+        },
+        {
+            "NameId": 424017,
+            "Comment": "Odomantian Raiders/Dii Plunderers",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1296,
+                1297
+            ]
+        },
+        {
+            "NameId": 424018,
+            "Comment": "Bessian Metalworking/Peltasts",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1298,
+                1299
+            ]
+        },
+        {
+            "NameId": 424019,
+            "Comment": "Vadhavadha/Leaf-Headed Shafts",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1307,
+                1308
+            ]
+        },
+        {
+            "NameId": 424020,
+            "Comment": "Vedic Teachings/Skandhavaras",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                1309,
+                1310
+            ]
+        },
+        {
+            "NameId": 424021,
+            "Comment": "Chinese Dynasties",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                3237,
+                3238,
+                3239,
+                3240
+            ]
+        }
+    ]
+}

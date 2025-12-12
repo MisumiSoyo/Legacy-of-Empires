@@ -660,14 +660,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "变法",
-            "civilizations": "Chinese",
-            "tech_id": 3096,
-            "building_id": 209,
-            "Name": "Political Reform",
-            "RequiredAge": 3
-        },
-        {
             "note": "东正教",
             "civilizations": "Slavs",
             "tech_id": 3097,
@@ -1618,6 +1610,34 @@
             "note": "契约军团",
             "civilizations": "Goths",
             "tech_id": 3214,
+            "building_id": 209,
+            "RequiredAge": 3
+        },
+        {
+            "note": "唐朝",
+            "civilizations": "Chinese",
+            "tech_id": 3237,
+            "building_id": 209,
+            "RequiredAge": 3
+        },
+        {
+            "note": "宋朝",
+            "civilizations": "Chinese",
+            "tech_id": 3238,
+            "building_id": 209,
+            "RequiredAge": 3
+        },
+        {
+            "note": "元朝",
+            "civilizations": "Chinese",
+            "tech_id": 3239,
+            "building_id": 209,
+            "RequiredAge": 3
+        },
+        {
+            "note": "明朝",
+            "civilizations": "Chinese",
+            "tech_id": 3240,
             "building_id": 209,
             "RequiredAge": 3
         }

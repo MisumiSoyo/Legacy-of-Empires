@@ -63,7 +63,7 @@
 
 120150 "Foot Archer civilization \n\n• Town Centers cost -50% wood in Castle Age\n• Archers (excepts Skirmishers) +1/+2 max range/LOS/search radius at Castle/Imperial Age\n• Shepherds work rate +25%\n• Military units around towers +10% attack speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Castle Network (Military units around towers, town centers and castles +10% attack speed)\n• Warwolf (Trebuchets have blast damage)\n• Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
 
-120151 "Cavalry civilization \n\n• Castles -15%/-25% cost in Castle/Imperial Age \n• Cavalry class, scout cavalry class, cavalry archer class units +20% hit points starting in Feudal Age\n• Farm upgrades free (Requires Mill) \n• Foragers +15% work rate\n• Can lend money for profit after researching Banking\n\n<b>Unique Unit : <b>\n• Throwing Axeman (Ranged infantry), Swiss Lancer (Infantry strong vs cavalries and monks)\n\n<b>Unique Techs: <b>\n• Bearded Axe (Throwing Axeman +2 max range)\n• Chivalry (Stables +40% work rate)\n• Pavise (Archer line and Hand Cannoneers +3 melee armor, receive -2 damage from cavalry units)\n• Gendarmes d'ordonnance (Cavalries gain additional 1 HP and 1 HP generation per minute from each nearby unit of yours (maximum 30 stacks))\n\n<b>Team bonus: <b>\nKnight-Line +2 LOS"
+120151 "Cavalry civilization \n\n• Castles -15%/-25% cost in Castle/Imperial Age\n• Cavalry class, scout cavalry class, cavalry archer class units +20% hit points starting in Feudal Age\n• Farm upgrades free (Requires Mill) \n• Foragers +15% work rate\n• Can lend money for profit after researching Banking\n\n<b>Unique Unit : <b>\n• Throwing Axeman (Ranged infantry), Swiss Lancer (Infantry strong vs cavalries and monks)\n\n<b>Unique Techs: <b>\n• Bearded Axe (Throwing Axeman +2 max range)\n• Chivalry (Stables +40% work rate)\n• Pavise (Archer line and Hand Cannoneers +3 melee armor, receive -2 damage from cavalry units)\n• Gendarmes d'ordonnance (Cavalries gain additional 1 HP and 1 HP generation per minute from each nearby unit of yours (maximum 30 stacks))\n\n<b>Team bonus: <b>\nKnight-Line +2 LOS"
 
 120152 "Infantry civilization \n\n• Infantry -15%/-20%/-25%/-30% cost at Dark/Feudal/Castle/Imperial Age\n• Infantry +1/+2/+3 attack vs buildings at Feudal/Castle/Imperial Age\n• Hunters carry +15 meat, last 25% longer\n• Loom research time reduced to 1 sec \n• +10/15/20 population headroom and capacity at Feudal/Castle/Imperial Age\n• Receive one villager (maximum 20) for every 3 enemies killed\n\n<b>Unique Unit:<b>\n• Huskarl (Infantry better combats with archers)\n\n<b>Unique Techs: <b>\n• Anarchy (create Huskarls at Barracks)\n• Perfusion (Barracks +100% work rate)\n• Foederati Army (Enable your team to train Foederati units; Receive 7 food and gold from killing enemies with Foederati units)\n\n<b>Team bonus: <b>\nBarracks +20% work rate"
 
@@ -71,7 +71,7 @@
 
 120154 "Infantry civilization \n\n• Fishing Ships +100% HP, +2 pierce armor, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50% \n• Infantry -25% reload time starting in Feudal Age \n• Cavalry Archer class units +2 damage vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Japanese unique archer), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2) \n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Monastery spawns Soheis with captured relics (1 Sohei every 75 seconds for each relic); relics no longer generate gold)\n• Yari Cavalry (Cavalries +9 attack vs Cavalry; Knight-line additionally +3 attack)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 
-120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -200 food\n• Technologies cost -10/15/20/25% at Dark/Feudal/Castle/Imperial Age \n• Town Centers support +10 population, +7 LOS, and +5 population capacity (maximum +50)\n• Fire Lancers and Fire ships +5%/+10% moving speed in Caslte/Imperial Age\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Fire Lancer Cavalry (cavalry with gunpowder), Flame Thrower (Siege weapon that can throw flame)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Political Reform (Farms cost 30 food instead of wood and don't need time to build)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
+120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -200 food\n• Technologies cost -5/10/15/20% at Dark/Feudal/Castle/Imperial Age \n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flame Thrower (Siege weapon that can throw flame)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom)\n• Song Dynasty (Villagers and trade units -20% cost; Trade units -50% train time; Reduce technology costs by 5%)\n• Yuan Dynasty (Land units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
 
 120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age\n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost \n• Fire Ships and Dromons -16.67% reload time \n• Advance to Imperial Age -33% costs\n• Town Watch and Townb Patrol free\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries), Varangian (Infantries that gain gold from killing units)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Galley-Line +1 max range, Bombard Towers cause 5 blast damage in 0.5 radius)\n• Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)\n• Olive Grove (Villagers can generate olive oil to recruit mercenaries, and you can unlock a mercenary contract at Town Center and use olive oil to recruit mercenaries; The quantity of olive oil is temporarily displayed using the range of military buildings)\n• Polutasvarf (Military units can loot 150 olive oil from every destroyed building; Varangains +33% gold obtained from kills)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 
@@ -176,7 +176,7 @@
 500012 "Gentry"
 500013 "Mercenary"
 500014 "Strong Fortress"
-500015 "Fire Lancer Cavalry"
+500015 "Guan Ning Cavalry"
 500016 "Elite Parthian Cavalry Archer"
 500017 "Elite Rung Scout"
 500018 "Elite Camel Lancer"
@@ -290,6 +290,10 @@
 500126 "Kipchak Reinforcements"
 500127 "Foederati Army"
 500128 "Hill Training"
+500129 "Tang Dynasty"
+500130 "Song Dynasty"
+500131 "Yuan Dynasty"
+500132 "Ming Dynasty"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -306,7 +310,7 @@
 501012 "Research Gentry (Maximum number of Wubao built +3)"
 501013 "Research Mercenary (Immediately produce 4 Archers and 4 Hei Guang Cavalries, with an additional 1 Archer and 1 Hei Guang Cavalry produced for each Wubao)"
 501014 "Research Strong Fortress (Within 8 tile distance of Wubao, your own land units +5% movement speed,+1 pierce armor)"
-501015 "Upgrade to Fire Lancer Cavalry"
+501015 "Upgrade to Guan Ning Cavalry"
 501016 "Upgrade to Elite Parthian Cavalry Archer"
 501017 "Upgrade to Elite Rung Scout"
 501018 "Upgrade to Elite Camel Lancer"
@@ -420,6 +424,10 @@
 501126 "Research Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks)"
 501127 "Research Foederati Army (Enable your team to train Foederati units; Receive 7 food and gold from killing enemies with Foederati units)"
 501128 "Research Hill Training (Knight-line units +35 HP regeneration per minute)"
+501129 "Enter Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom)"
+501130 "Enter Song Dynasty (Villagers and trade units -20% cost; Trade units -50% train time; Reduce technology costs by 5%)"
+501131 "Enter Yuan Dynasty (Land units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)"
+501132 "Enter Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guanning Cavalry; All military units +10% HP)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -436,7 +444,7 @@
 521012 "Research<b>Gentry<b> (<cost>) (time: 40)\nMaximum number of Wubao +3."
 521013 "Research<b>Mercenary<b> (<cost>) (time: 25)\nImmediately produce 4 Archers and 4 Hei Guang Cavalries, with an additional 1 Archer and 1 Hei Guang Cavalry produced for each Wubao."
 521014 "Research<b>Strong Fortress<b> (<cost>) (Time: 40)\nWithin 8 tile distance of Wubao, your own land units +5% movement speed,+1 pierce armor."
-521015 "Upgrade to <b>Fire Lancer Cavalry<b> (<cost>) (time: 90)\nUpgrades your Cavaliers and lets you create Fire Lancer Cavalries."
+521015 "Upgrade to <b>Guan Ning Cavalry<b> (<cost>) (time: 90)\nUpgrades your Cavaliers and lets you create Guan Ning Cavalries."
 521016 "Upgrade to <b>Elite Parthian Cavalry Archer<b> (<cost>) (time: 40)\nUpgrades your Parthian Cavalry Archers and lets you create Elite Parthian Cavalry Archers."
 521017 "Upgrade to <b>Elite Rung Scout<b> (<cost>) (time: 60)\nUpgrades your Rung Scouts and lets you create Elite Rung Scouts."
 521018 "Upgrade to <b>Elite Camel Lancer<b> (<cost>) (time: 60)\nUpgrades your Camel Lancers and lets you create Elite Camel Lancers."
@@ -550,6 +558,10 @@
 521126 "Research <b>Kipchak Reinforcements<b> (<cost>) (time: 45)\nUpgrade Cavalry Archers to Kipchaks."
 521127 "Research <b>Foederati Army<b> (<cost>) (time: 45)\nEnable your team to train Foederati units. Receive 7 food and gold from killing enemies with Foederati units.\n\n<GREY>If multiple players researched this technology, the rewards will be divided equally."
 521128 "Research <b>Hill Training<b> (<cost>) (time: 60)\nKnight-line units +35 HP regeneration per minute."
+521129 "Enter <b>Tang Dynasty<b> (<cost>) (time: 45)\nInfantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom)"
+521130 "Enter <b>Song Dynasty<b> (<cost>) (time: 45)\nVillagers and trade units -20% cost; Trade units -50% train time; Reduce technology costs by 5%)"
+521131 "Enter <b>Yuan Dynasty<b> (<cost>) (time: 45)\nLand units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)"
+521132 "Enter <b>Ming Dynasty<b> (<cost>) (time: 45)\nImmediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)"
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -572,7 +584,7 @@
 700011 "Hunting Wolf"
 700012 "Wubao"
 700013 "Early Cavalry Archer"
-700014 "Fire Lancer Cavalry"
+700014 "Guan Ning Cavalry"
 700015 "Parthian Cavalry Archer"
 700016 "Elite Parthian Cavalry Archer"
 700017 "Chanyu"
@@ -628,7 +640,7 @@
 701011 "Create Hunting Wolf"
 701012 "Build Wubao"
 701013 "Create Early Cavalry Archer"
-701014 "Create Fire Lancer Cavalry"
+701014 "Create Guan Ning Cavalry"
 701015 "Create Parthian Cavalry Archer"
 701016 "Create Elite Parthian Cavalry Archer"
 701017 "Create Chanyu"
@@ -697,7 +709,7 @@
 
 721013 "Create <b>Early Cavalry Archer<b> (<cost>)\nHuns unique mounted archer. Strong vs. slow units at long range. Weak vs. Elite Skirmishers and units at close range. Automacally upgrades to Cavalry Archer in Castle Age. \n<GREY><i> Upgrades: speed, hit points (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Priestesses (Temple).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry archer; Training time: 37; Moving speed: 1.35; Reload time: 2; Attack delay: 0.91; Projectile speed: 7; Accuracy: 50%; Dispersion factor: 0.33; LOS: 5; Search radius: 6. \nAttack Bonus: +2 vs Pikemen."
 
-721014 "Create <b>Fire Lancer Cavalry<b> (<cost>) \nPowerful all-purpose cavalry, can use firearm to attack enemy. Charge a pierce attack every 20 seconds, with a limit of 3. Strong vs infantry and archers. Weak vs Camel Riders, and Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points(Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.35; Reload time: 1.8; LOS: 5; Search radius: 4."
+721014 "Create <b>Guan Ning Cavalry<b> (<cost>) \nPowerful all-purpose cavalry, can use firearm to attack enemy. Charge a pierce attack every 20 seconds, with a limit of 3. Strong vs infantry and archers. Weak vs Camel Riders, and Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points(Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.35; Reload time: 1.8; LOS: 5; Search radius: 4."
 
 721015 "Create <b>Parthian Cavalry Archer<b> (<cost>)\nPersians' unique mounted archer. Can attack when moving. Strong vs. slow units at long range. Weak vs. Elite Skirmishers and units at close range.\n<GREY><i> Upgrades: speed, hit points, to Elite Parthian Cavalry Archer (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Priestesses (Temple).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry archer, Unique Unit; Training time: 37; Moving speed: 1.35; Reload time: 2; Attack delay: 0.25; Projectile speed: 7; Accuracy: 50%; Dispersion factor: 0.33; LOS: 5; Search radius: 6. \nAttack Bonus: +1 vs Infantry, +1 vs Cavalry, +1 vs Condottiero"
 

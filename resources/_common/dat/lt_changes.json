@@ -1,0 +1,9 @@
+[
+    {
+        "note": "中国, 选择进入一个朝代",
+        "action": "add",
+        "Comment": "Chinese Dynasties",
+        "Type": "MutuallyExclusive",
+        "Techs": [3237, 3238, 3239, 3240]
+    }
+]
