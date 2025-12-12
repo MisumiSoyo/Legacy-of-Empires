@@ -1445,7 +1445,7 @@
             "civilizations": "Lithuanians",
             "tech_id": 182,
             "building_id": 584,
-            "Name": "Stone Shaft Mining",
+            "Name": "Gold Shaft Mining",
             "RequiredAge": 3
         },
         {
@@ -1463,6 +1463,14 @@
             "building_id": 209,
             "Name": "Kipchak Reinforcements",
             "RequiredAge": 3
+        },
+        {
+            "note": "山地训练",
+            "civilizations": "Georgians",
+            "tech_id": 3236,
+            "building_id": 209,
+            "Name": "Hill Training",
+            "RequiredAge": 4
         },
         {
             "note": "格鲁吉亚获得射手锁甲",

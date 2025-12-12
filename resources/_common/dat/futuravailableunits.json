@@ -22078,7 +22078,7 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Stone Shaft Mining",
+                        "Name": "Gold Shaft Mining",
                         "RequiredAge": 3,
                         "ID": 182
                     }
@@ -47036,6 +47036,11 @@
                         "Name": "Kipchak Reinforcements",
                         "RequiredAge": 3,
                         "ID": 3212
+                    },
+                    {
+                        "Name": "Hill Training",
+                        "RequiredAge": 4,
+                        "ID": 3236
                     }
                 ]
             },
