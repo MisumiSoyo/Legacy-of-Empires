@@ -184879,7 +184879,7 @@
                     "Use Type": "Unit"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 3,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105068,
@@ -184978,7 +184978,7 @@
                     "Name": "Bloodlines",
                     "Name String ID": 17409,
                     "Node ID": 435,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 110,
                     "Prerequisite IDs": [
@@ -185398,7 +185398,7 @@
                     "Name": "Ring Archer Armor",
                     "Name String ID": 17216,
                     "Node ID": 219,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 51,
                     "Prerequisite IDs": [
@@ -186540,7 +186540,7 @@
                     "Name": "Siege Engineers",
                     "Name String ID": 17378,
                     "Node ID": 377,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 101,
                     "Prerequisite IDs": [

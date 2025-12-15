@@ -30,8 +30,10 @@ rule Shrine
             SpawnTime = SpawnTime / 1.15;
         if (Time - LastSpawnTime >= SpawnTime)
         {
+            if (xsPlayerAttribute(playerId, cAttributePopulationCap) <= 0.0)
+                continue;
             SpawnUnit(playerId, SpawnUnitID, ShrineID, 1, 1000);
-            ModResource(playerId, cAttributeShrineLastSpawnTime, SpawnTime);
+            SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
         }
     }
 }
@@ -48,10 +50,8 @@ rule Ikko_Ikki
     int Relics = 0;
     int Time = xsGetGameTime();
     for (playerId = 0; <= n)
-        if (xsGetPlayerCivilization(playerId) == cJapanese)
+        if (isResearched(playerId, IkkoIkkiTechID))
         {
-            if (isResearched(playerId, 3068) == false)
-                continue;
             LastSpawnTime = xsPlayerAttribute(playerId, cAttributeSoheiLastSpawnTime);
             if (LastSpawnTime == 0.0)
             {
@@ -60,11 +60,16 @@ rule Ikko_Ikki
             }
             Relics = xsPlayerAttribute(playerId, cAttributeRelics);
             if (Relics == 0)
+            {
+                SetResource(playerId, cAttributeSoheiLastSpawnTime, Time);
                 continue;
-            if (Time > (75.0 / Relics + LastSpawnTime))
+            }
+            if (xsPlayerAttribute(playerId, cAttributePopulationCap) <= 0.0)
+                continue;
+            if (Time > (66.0 / Relics + LastSpawnTime))
             {
                 SpawnUnit(playerId, SoheiID, MonasteryID, 1, 1);
-                LastSpawnTime = LastSpawnTime + 75.0 / Relics;
+                LastSpawnTime = LastSpawnTime + 66.0 / Relics;
                 SetResource(playerId, cAttributeSoheiLastSpawnTime, LastSpawnTime);
             }
         }
@@ -84,7 +89,7 @@ rule ByzantinesOliveOil
         if (xsGetPlayerCivilization(playerId) == cByzantines)
         {
             OliveOil = xsPlayerAttribute(playerId, cAttributeOliveOil);
-            SetAttribute(playerId, BarrackID, cMaxRange, OliveOil);
+            SetAttribute(playerId, BarracksID, cMaxRange, OliveOil);
             SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
             SetAttribute(playerId, StableID, cMaxRange, OliveOil);
             SetAttribute(playerId, SiegeWorkshopID, cMaxRange, OliveOil);

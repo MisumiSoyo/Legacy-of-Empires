@@ -390,7 +390,7 @@
         },
         {
             "note": "马扎尔, 土耳其和匈奴启用草原枪兵",
-            "civilizations": ["Turks", "Huns", "Magyar"],
+            "civilizations": ["Turks", "Huns", "Magyars"],
             "unit_id": 1370,
             "building_id": 101,
             "Name": "Steppe Lancer",
@@ -398,7 +398,7 @@
         },
         {
             "note": "马扎尔, 土耳其和匈奴启用精锐草原枪兵",
-            "civilizations": ["Turks", "Huns", "Magyar"],
+            "civilizations": ["Turks", "Huns", "Magyars"],
             "unit_id": 1372,
             "building_id": 101,
             "Name": "Steppe Lancer",
@@ -406,7 +406,7 @@
         },
         {
             "note": "马扎尔和土耳其启用精锐草原枪兵",
-            "civilizations": ["Turks", "Magyar"],
+            "civilizations": ["Turks", "Magyars"],
             "tech_id": 715,
             "building_id": 101,
             "Name": "Elite Steppe Lancer",
@@ -1226,7 +1226,7 @@
         },
         {
             "note": "马扎尔启用火枪手",
-            "civilizations": "Magyar",
+            "civilizations": "Magyars",
             "unit_id": 5,
             "building_id": 87,
             "Name": "Hand Cannoneer",
@@ -1658,7 +1658,32 @@
             "civilizations": "Goths",
             "tech_id": 602,
             "building_id": 12,
+            "Name": "Arson",
             "RequiredAge": 2
+        },
+        {
+            "note": "勃艮第获得血统",
+            "civilizations": "Burgundians",
+            "tech_id": 435,
+            "building_id": 101, 
+            "Name": "Bloodlines",
+            "RequiredAge": 2
+        },
+        {
+            "note": "勃艮第获得射手锁甲",
+            "civilizations": "Burgundians",
+            "tech_id": 219,
+            "building_id": 103,
+            "Name": "Ring Archer Armor",
+            "RequiredAge": 4
+        },
+        {
+            "note": "勃艮第获得攻城技师",
+            "civilizations": "Burgundians",
+            "tech_id": 377,
+            "building_id": 209,
+            "Name": "Siege Engineers",
+            "RequiredAge": 4
         }
     ]
 }

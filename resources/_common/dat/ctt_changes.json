@@ -3061,14 +3061,6 @@
             "Age ID": 3
         },
         {
-            "note": "勃艮第封建时代可训练骑士",
-            "action": "modify",
-            "civ_id": "BURGUNDIANS",
-            "Node ID": 38,
-            "Use Type": "Unit",
-            "Age ID": 2
-        },
-        {
             "note": "猛安谋克",
             "action": "add",
             "civ_id": "JURCHENS",
@@ -3820,6 +3812,14 @@
             "Node ID": 436,
             "Use Type": "Tech",
             "Link ID": 437
+        },
+        {
+            "note": "勃艮第获得血统, 射手锁甲, 攻城技师",
+            "action": "modify",
+            "civ_id": "BURGUNDIANS",
+            "Node ID": [219, 377, 435],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

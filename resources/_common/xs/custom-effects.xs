@@ -294,7 +294,7 @@ void EffectFunction10012(int playerId = -1)
 }
 
 
-// 10013 - 翼骑兵冲锋
+// 10013 - Winged Charge
 void EffectFunction10013(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -307,13 +307,13 @@ void EffectFunction10013(int playerId = -1)
     xsResetTaskAmount();
 
     SetAttribute(playerId, cCavalryClass, cSpecialAbility, 3);
-    SetAttribute(playerId, cCavalryClass, cMaxCharge, 6);
-    SetAttribute(playerId, cCavalryClass, cRechargeRate, 0.5);
+    SetAttribute(playerId, cCavalryClass, cMaxCharge, 2);
+    SetAttribute(playerId, cCavalryClass, cRechargeRate, 2.0 / 12);
     SetAttribute(playerId, cCavalryClass, cChargeEvent, 1);
     SetAttribute(playerId, cCavalryClass, cChargeType, 1);
     SetAttribute(playerId, cScoutCavalryClass, cSpecialAbility, 3);
-    SetAttribute(playerId, cScoutCavalryClass, cMaxCharge, 6);
-    SetAttribute(playerId, cScoutCavalryClass, cRechargeRate, 0.5);
+    SetAttribute(playerId, cScoutCavalryClass, cMaxCharge, 2);
+    SetAttribute(playerId, cScoutCavalryClass, cRechargeRate, 2.0 / 12);
     SetAttribute(playerId, cScoutCavalryClass, cChargeEvent, 1);
     SetAttribute(playerId, cScoutCavalryClass, cChargeType, 1);
 }

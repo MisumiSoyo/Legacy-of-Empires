@@ -3490,6 +3490,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bloodlines",
+                        "RequiredAge": 2,
+                        "ID": 435
                     }
                 ],
                 "Units": [
@@ -3658,6 +3663,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
@@ -3843,6 +3853,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
                     }
                 ]
             },
@@ -13032,6 +13047,7 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Arson",
                         "RequiredAge": 2,
                         "ID": 602
                     }
@@ -22424,6 +22440,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hand Cannoneer",
+                        "RequiredAge": 4,
+                        "ID": 5
                     }
                 ]
             },
@@ -22545,6 +22566,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 715
                     }
                 ],
                 "Units": [
@@ -22578,6 +22604,16 @@
                         "ID": 569,
                         "Name": "Paladin",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Steppe Lancer",
+                        "RequiredAge": 3,
+                        "ID": 1370
+                    },
+                    {
+                        "Name": "Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 1372
                     }
                 ]
             },
