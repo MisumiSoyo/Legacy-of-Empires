@@ -9298,18 +9298,22 @@
                         "ID": 377
                     },
                     {
+                        "Name": "Tang Dynasty",
                         "RequiredAge": 3,
                         "ID": 3237
                     },
                     {
+                        "Name": "Song Dynasty",
                         "RequiredAge": 3,
                         "ID": 3238
                     },
                     {
+                        "Name": "Yuan Dynasty",
                         "RequiredAge": 3,
                         "ID": 3239
                     },
                     {
+                        "Name": "Qing Dynasty",
                         "RequiredAge": 3,
                         "ID": 3240
                     }
@@ -13026,6 +13030,10 @@
                         "ID": 215,
                         "Name": "Squires",
                         "RequiredAge": 3
+                    },
+                    {
+                        "RequiredAge": 2,
+                        "ID": 602
                     }
                 ],
                 "Units": [
@@ -13433,8 +13441,13 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Foederati Army",
                         "RequiredAge": 3,
                         "ID": 3214
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 3241
                     }
                 ]
             },

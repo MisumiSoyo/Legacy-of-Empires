@@ -1611,13 +1611,22 @@
             "civilizations": "Goths",
             "tech_id": 3214,
             "building_id": 209,
+            "Name": "Foederati Army",
             "RequiredAge": 3
+        },
+        {
+            "note": "格鲁森尼骑兵",
+            "civilizations": "Goths",
+            "tech_id": 3241,
+            "building_id": 209,
+            "RequiredAge": 4
         },
         {
             "note": "唐朝",
             "civilizations": "Chinese",
             "tech_id": 3237,
             "building_id": 209,
+            "Name": "Tang Dynasty",
             "RequiredAge": 3
         },
         {
@@ -1625,6 +1634,7 @@
             "civilizations": "Chinese",
             "tech_id": 3238,
             "building_id": 209,
+            "Name": "Song Dynasty",
             "RequiredAge": 3
         },
         {
@@ -1632,6 +1642,7 @@
             "civilizations": "Chinese",
             "tech_id": 3239,
             "building_id": 209,
+            "Name": "Yuan Dynasty",
             "RequiredAge": 3
         },
         {
@@ -1639,7 +1650,15 @@
             "civilizations": "Chinese",
             "tech_id": 3240,
             "building_id": 209,
+            "Name": "Qing Dynasty",
             "RequiredAge": 3
+        },
+        {
+            "note": "哥特获得纵火",
+            "civilizations": "Goths",
+            "tech_id": 602,
+            "building_id": 12,
+            "RequiredAge": 2
         }
     ]
 }

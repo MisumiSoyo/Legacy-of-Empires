@@ -39,6 +39,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, PlateBardingArmorTechID);
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, ThumbRingTechID);
+            EnableTech(playerId, ArsonTechID);
             break;
         }
         case cJapanese:

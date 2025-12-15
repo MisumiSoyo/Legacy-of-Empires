@@ -2228,7 +2228,7 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "火长矛骑兵",
+            "note": "关宁铁骑",
             "action": "add",
             "civ_id": "CHINESE",
             "Age ID": 4,
@@ -2237,7 +2237,7 @@
             "Help String ID": 800014,
             "Link ID": 283,
             "Link Node Type": "UnitUpgrade",
-            "Name": "Fire Lancer Cavalry",
+            "Name": "Guan Ning Cavalry",
             "Name String ID": 700014,
             "Node ID": 4018,
             "Node Status": "ResearchedCompleted",
@@ -3687,10 +3687,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "哥特获得骑兵钢甲, 钻井采金法, 扳指",
+            "note": "哥特获得骑兵钢甲, 钻井采金法, 扳指, 纵火",
             "action": "modify",
             "civ_id": "GOTHS",
-            "Node ID": [80, 182, 437],
+            "Node ID": [80, 182, 437, 602],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -3718,6 +3718,27 @@
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "note": "格鲁森尼骑兵",
+            "action": "add",
+            "civ_id": "GOTHS",
+            "Age ID": 4,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600133,
+            "Link ID": 3214,
+            "Link Node Type": "BuildingTech",
+            "Name": "Greuthungi Cavalry",
+            "Name String ID": 500133,
+            "Node ID": 3241,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
@@ -3791,6 +3812,14 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 569
+        },
+        {
+            "note": "哥特帕提亚战术科技树位置调整",
+            "action": "modify",
+            "civ_id": "GOTHS",
+            "Node ID": 436,
+            "Use Type": "Tech",
+            "Link ID": 437
         }
     ]
 }

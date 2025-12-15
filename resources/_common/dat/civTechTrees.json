@@ -11598,7 +11598,7 @@
                     "Building ID": 87,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 107415,
-                    "Link ID": -1,
+                    "Link ID": 437,
                     "Link Node Type": "BuildingTech",
                     "Name": "Parthian Tactics",
                     "Name String ID": 17415,
@@ -11963,7 +11963,7 @@
                     "Name": "Arson",
                     "Name String ID": 17258,
                     "Node ID": 602,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 118,
                     "Prerequisite IDs": [
@@ -15658,6 +15658,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 33,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600133,
+                    "Link ID": 3214,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Greuthungi Cavalry",
+                    "Name String ID": 500133,
+                    "Node ID": 3241,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 107,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -27755,7 +27785,7 @@
                     "Help String ID": 800014,
                     "Link ID": 283,
                     "Link Node Type": "UnitUpgrade",
-                    "Name": "Fire Lancer Cavalry",
+                    "Name": "Guan Ning Cavalry",
                     "Name String ID": 700014,
                     "Node ID": 4018,
                     "Node Status": "ResearchedCompleted",
