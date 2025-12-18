@@ -1537,16 +1537,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔获得长戟兵",
-            "civilizations": "Berbers",
+            "note": "柏柏尔, 波兰获得长戟兵",
+            "civilizations": ["Berbers", "Poles"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔获得双人锯",
-            "civilizations": "Berbers",
+            "note": "柏柏尔, 波兰获得双人锯",
+            "civilizations": ["Berbers", "Poles"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -1577,8 +1577,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特获得钻井采金法",
-            "civilizations": "Goths",
+            "note": "哥特, 波兰获得钻井采金法",
+            "civilizations": ["Goths", "Poles"],
             "tech_id": 182,
             "building_id": 584,
             "Name": "Gold Shaft Mining",
@@ -1670,8 +1670,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "勃艮第获得射手锁甲",
-            "civilizations": "Burgundians",
+            "note": "波兰, 勃艮第获得射手锁甲",
+            "civilizations": ["Burgundians", "Poles"],
             "tech_id": 219,
             "building_id": 103,
             "Name": "Ring Archer Armor",
@@ -1684,6 +1684,51 @@
             "building_id": 209,
             "Name": "Siege Engineers",
             "RequiredAge": 4
+        },
+        {
+            "note": "马来, 越南, 高棉获得骑象射手",
+            "civilizations": ["Khmer", "Malay", "Vietnamese"],
+            "unit_id": 873,
+            "building_id": 87,
+            "Name": "Elephant Archer",
+            "RequiredAge": 3
+        },
+        {
+            "note": "马来, 越南, 高棉获得精锐骑象射手",
+            "civilizations": ["Khmer", "Malay", "Vietnamese"],
+            "unit_id": 875,
+            "building_id": 87,
+            "Name": "Elite Elephant Archer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "马来, 越南, 高棉获得精锐骑象射手",
+            "civilizations": ["Khmer", "Malay", "Vietnamese"],
+            "tech_id": 481,
+            "building_id": 87,
+            "Name": "Elite Elephant Archer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "马来, 越南, 高棉移除骑射手",
+            "civilizations": ["Khmer", "Malay", "Vietnamese"],
+            "unit_id": 39,
+            "building_id": 87,
+            "type": "delete"
+        },
+        {
+            "note": "马来, 越南, 高棉移除重装骑射手",
+            "civilizations": ["Khmer", "Malay", "Vietnamese"],
+            "unit_id": 474,
+            "building_id": 87,
+            "type": "delete"
+        },
+        {
+            "note": "马来, 越南, 高棉移除重装骑射手",
+            "civilizations": ["Khmer", "Malay", "Vietnamese"],
+            "tech_id": 218,
+            "building_id": 87,
+            "type": "delete"
         }
     ]
 }

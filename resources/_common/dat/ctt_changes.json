@@ -3820,6 +3820,75 @@
             "Node ID": [219, 377, 435],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "波兰获得钻井采金法, 射手锁甲, 双人锯",
+            "action": "modify",
+            "civ_id": "POLES",
+            "Node ID": [182, 219, 221],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "波兰获得长戟兵",
+            "action": "modify",
+            "civ_id": "POLES",
+            "Node ID": [359],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "马来, 越南, 高棉获得骑象射手",
+            "action": "add",
+            "civ_id": ["KHMER", "MALAY","VIETNAMESE"],
+            "Age ID": 3,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105682,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Elephant Archer",
+            "Name String ID": 14682,
+            "Node ID": 873,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 393,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 474
+        },
+        {
+            "note": "马来, 越南, 高棉获得精锐骑象射手",
+            "action": "add",
+            "civ_id": ["KHMER", "MALAY","VIETNAMESE"],
+            "Age ID": 4,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105684,
+            "Link ID": 873,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Elite Elephant Archer",
+            "Name String ID": 14684,
+            "Node ID": 875,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 93,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 481,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 873
+        },
+        {
+            "note": "马来, 越南, 高棉移除骑射手系",
+            "action": "delete",
+            "civ_id": ["KHMER", "MALAY", "VIETNAMESE"],
+            "Node ID": [39, 474],
+            "Use Type": "Unit"
         }
     ]
 }

@@ -321,12 +321,15 @@ void EffectFunction10002(int playerId = -1)
         {
             //  Khmer civ bonus, Monks strengthen Battle Elephants
             SetResource(playerId, cAttributeMaintenance, 10012);
+            DisableTech(playerId, CavalryArcherTechID);
+            DisableTech(playerId, HeavyCavalryArcherTechID);
             break;
         }
         case cMalay:
         {
             //  Malay civ bonus, warships generate food
             MalayShipInit(playerId);
+            DisableTech(playerId, CavalryArcherTechID);
             break;
         }
         case cBurmese:
@@ -337,6 +340,7 @@ void EffectFunction10002(int playerId = -1)
         }
         case cVietnamese:
         {
+            DisableTech(playerId, CavalryArcherTechID);
             DisableTech(playerId, HeavyCavalryArcherTechID);
             //  Vietnamese civ bonus + newly added economic techs
             xsEffectAmount(cModifyTech, HorticultureTechID, cAttrMulTime, 0.5, playerId);
@@ -655,6 +659,11 @@ void EffectFunction10024(int playerId = -1)
             EnableObject(playerId, WoodenFortressID); 
             break;
         }
+        case cItalians:
+        {
+            ModResource(playerId, cAttributeGoldGeneration, 15);
+            break;
+        }
         case cIndians:
         {
             xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
@@ -845,12 +854,9 @@ void EffectFunction10025(int playerId = -1)
         }
         case cItalians:
         {
-            //  Italians civ bonus, purchase relics
-            xsEffectAmount(cModifyTech, PurchaseRelicTechID, cAttrSetStacking, 1, playerId);
-            xsEffectAmount(cModifyTech, PurchaseRelicTechID, cAttrSetStackingResearchCap, 4, playerId);
-            SetResource(playerId, cAttributeRelicPurchaseLimit, 2);
             //  Enable Hospitaller Knight
             SetTechAuto(playerId, HospitallerKnightTechID);
+            ModResource(playerId, cAttributeGoldGeneration, 15);
             break;
         }
         case cIncas:
@@ -1051,6 +1057,11 @@ void EffectFunction10026(int playerId = -1)
         case cMayans:
         {
             ModAttribute(playerId, ShrineID, cAvailableFlag, 1);
+            break;
+        }
+        case cItalians:
+        {
+            ModResource(playerId, cAttributeGoldGeneration, 15);
             break;
         }
         case cIncas:

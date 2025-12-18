@@ -1020,20 +1020,53 @@ void EffectFunction10088(int playerId = -1)
 
     MulAttribute(playerId, cArcherClass, cHitpoints, 1.10);
     MulAttribute(playerId, cInfantryClass, cHitpoints, 1.10);
-    MulAttribute(playerId, cCavalryClass, cHitpoints, 1.10);
     MulAttribute(playerId, cMonkClass, cHitpoints, 1.10);
     MulAttribute(playerId, cSiegeWeaponClass, cHitpoints, 1.10);
     MulAttribute(playerId, cMonkClass, cHitpoints, 1.10);
     MulAttribute(playerId, cWarshipClass, cHitpoints, 1.10);
-    MulAttribute(playerId, cConquistadorClass, cHitpoints, 1.10);
     MulAttribute(playerId, cPetardClass, cHitpoints, 1.10);
-    MulAttribute(playerId, cCavalryArcherClass, cHitpoints, 1.10);
     MulAttribute(playerId, cMonkWithRelicClass, cHitpoints, 1.10);
     MulAttribute(playerId, cHandCannoneerClass, cHitpoints, 1.10);
-    MulAttribute(playerId, cScoutCavalryClass, cHitpoints, 1.10);
     MulAttribute(playerId, cPackedUnitClass, cHitpoints, 1.10);
     MulAttribute(playerId, cUnpackedSiegeUnitClass, cHitpoints, 1.10);
     MulAttribute(playerId, cScorpionClass, cHitpoints, 1.10);
+
+    if (isResearched(playerId, BloodlinesTechID))
+    {
+        ModAttribute(playerId, cCavalryClass, cHitpoints, -20);
+        ModAttribute(playerId, cConquistadorClass, cHitpoints, -20);
+        ModAttribute(playerId, cCavalryArcherClass, cHitpoints, -20);
+        ModAttribute(playerId, cScoutCavalryClass, cHitpoints, -20);
+        ModAttribute(playerId, MissionaryID, cHitpoints, -20);
+        ModAttribute(playerId, FlameCamelID, cHitpoints, -20);
+        ModAttribute(playerId, JadwigaID, cHitpoints, -20);
+        ModAttribute(playerId, TamarID, cHitpoints, -20);
+
+        MulAttribute(playerId, cCavalryClass, cHitpoints, 1.10);
+        MulAttribute(playerId, cConquistadorClass, cHitpoints, 1.10);
+        MulAttribute(playerId, cCavalryArcherClass, cHitpoints, 1.10);
+        MulAttribute(playerId, cScoutCavalryClass, cHitpoints, 1.10);
+        MulAttribute(playerId, MissionaryID, cHitpoints, 1.10);
+        MulAttribute(playerId, FlameCamelID, cHitpoints, 1.10);
+        MulAttribute(playerId, JadwigaID, cHitpoints, 1.10);
+        MulAttribute(playerId, TamarID, cHitpoints, 1.10);
+
+        ModAttribute(playerId, cCavalryClass, cHitpoints, 20);
+        ModAttribute(playerId, cConquistadorClass, cHitpoints, 20);
+        ModAttribute(playerId, cCavalryArcherClass, cHitpoints, 20);
+        ModAttribute(playerId, cScoutCavalryClass, cHitpoints, 20);
+        ModAttribute(playerId, MissionaryID, cHitpoints, 20);
+        ModAttribute(playerId, FlameCamelID, cHitpoints, 20);
+        ModAttribute(playerId, JadwigaID, cHitpoints, 20);
+        ModAttribute(playerId, TamarID, cHitpoints, 20);
+    }
+    else
+    {
+        MulAttribute(playerId, cCavalryClass, cHitpoints, 1.10);
+        MulAttribute(playerId, cConquistadorClass, cHitpoints, 1.10);
+        MulAttribute(playerId, cCavalryArcherClass, cHitpoints, 1.10);
+        MulAttribute(playerId, cScoutCavalryClass, cHitpoints, 1.10);
+    }
 
     DisableTech(playerId, TangDynastyTechID);
     DisableTech(playerId, SongDynastyTechID);
