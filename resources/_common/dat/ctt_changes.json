@@ -2359,9 +2359,9 @@
             "Use Type": "Tech"
         },
         {
-            "note": "马扎尔, 缅甸启用火枪手",
+            "note": "马扎尔, 缅甸, 波兰启用火枪手",
             "action": "modify",
-            "civ_id": ["MAGYAR", "BURMESE"],
+            "civ_id": ["MAGYAR", "BURMESE", "POLES"],
             "Node ID": 5,
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"

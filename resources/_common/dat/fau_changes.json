@@ -819,8 +819,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用火枪手",
-            "civilizations": "Chinese",
+            "note": "中国, 波兰获得火枪手",
+            "civilizations": ["Chinese", "Poles"],
             "unit_id": 5,
             "building_id": 87,
             "Name": "Hand Cannoneer",

@@ -19177,14 +19177,14 @@
                         "RequiredAge": 3
                     },
                     {
-                        "ID": 218,
-                        "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 436,
                         "Name": "Parthian Tactics",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Elite Elephant Archer",
+                        "RequiredAge": 4,
+                        "ID": 481
                     }
                 ],
                 "Units": [
@@ -19219,14 +19219,14 @@
                         "RequiredAge": 4
                     },
                     {
-                        "ID": 39,
-                        "Name": "Cavalry Archer",
-                        "RequiredAge": 3
+                        "Name": "Elephant Archer",
+                        "RequiredAge": 3,
+                        "ID": 873
                     },
                     {
-                        "ID": 474,
-                        "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "Name": "Elite Elephant Archer",
+                        "RequiredAge": 4,
+                        "ID": 875
                     }
                 ]
             },
@@ -23455,6 +23455,11 @@
                         "ID": 437,
                         "Name": "Thumb Ring",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Elephant Archer",
+                        "RequiredAge": 4,
+                        "ID": 481
                     }
                 ],
                 "Units": [
@@ -23484,9 +23489,14 @@
                         "RequiredAge": 3
                     },
                     {
-                        "ID": 39,
-                        "Name": "Cavalry Archer",
-                        "RequiredAge": 3
+                        "Name": "Elephant Archer",
+                        "RequiredAge": 3,
+                        "ID": 873
+                    },
+                    {
+                        "Name": "Elite Elephant Archer",
+                        "RequiredAge": 4,
+                        "ID": 875
                     }
                 ]
             },
@@ -37346,6 +37356,11 @@
                         "ID": 437,
                         "Name": "Thumb Ring",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Elephant Archer",
+                        "RequiredAge": 4,
+                        "ID": 481
                     }
                 ],
                 "Units": [
@@ -37380,9 +37395,14 @@
                         "RequiredAge": 4
                     },
                     {
-                        "ID": 39,
-                        "Name": "Cavalry Archer",
-                        "RequiredAge": 3
+                        "Name": "Elephant Archer",
+                        "RequiredAge": 3,
+                        "ID": 873
+                    },
+                    {
+                        "Name": "Elite Elephant Archer",
+                        "RequiredAge": 4,
+                        "ID": 875
                     }
                 ]
             },
@@ -39476,6 +39496,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hand Cannoneer",
+                        "RequiredAge": 4,
+                        "ID": 5
                     }
                 ]
             },
@@ -39519,6 +39544,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
                     }
                 ],
                 "Units": [
@@ -39753,6 +39783,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
@@ -40189,6 +40224,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
@@ -40205,6 +40245,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     }
                 ]
             },
