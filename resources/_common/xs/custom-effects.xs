@@ -1074,40 +1074,6 @@ void EffectFunction10088(int playerId = -1)
 }
 
 
-//  Franks, loan
-void Franks(int playerId = -1)
-{
-    int FrankLoanTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
-    if (FrankLoanTime > 0)
-    {
-        if (FrankLoanTime % 60 == 0)
-            xsEffectAmount(cModResource, cAttributeGold, 1, xsPlayerAttribute(playerId, cAttributeFrankLoan), playerId);
-        FrankLoanTime --;
-        if (FrankLoanTime == 0)
-            xsEffectAmount(cModResource, cAttributeLoanLimit, 1, 1, playerId);
-        SetResource(playerId, cAttributeTechEffectTime, FrankLoanTime);
-    }
-}
-
-
-//  Goths, obtain 1 villager from every three killed enemies
-void Goths(int playerId = -1)
-{
-    int CalcedBonus = xsPlayerAttribute(playerId, cAttributeGothsVillagerBonus);
-    if (CalcedBonus >= 20)
-        return;
-    int Bonus = xsPlayerAttribute(playerId, cAttributeKills) / 3;
-    if (CalcedBonus < Bonus)
-    {
-        if (Bonus % 3 == 0)
-            SpawnUnit(playerId, 83, 109, Bonus - CalcedBonus, 1);
-        else
-            SpawnUnit(playerId, 293, 109, Bonus - CalcedBonus, 1);
-    }
-    SetResource(playerId, cAttributeGothsVillagerBonus, Bonus);
-}
-
-
 //  10079 - TC Spawn Timer Event
 void EffectFunction10079(int playerId = -1)
 {
@@ -1175,31 +1141,5 @@ void EffectFunction10083(int playerId = -1)
     MulResource(playerId, cAttributeVarangianLootProductivity, 1.33);
 }
 
-
-//  10000 - Timer Event
-void EffectFunction10000(int playerId = -1)
-{
-    int playerCiv = xsGetPlayerCivilization(playerId);
-
-    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
-
-    switch (playerCiv)
-    {
-        case cGoths:
-        {
-            Goths(playerId);
-            break;
-        }
-        case cFranks:
-        {
-            Franks(playerId);
-            break;
-        }
-        default:
-        {
-            break;
-        }
-    }
-}
 
 include "rules.xs";

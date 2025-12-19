@@ -33,6 +33,7 @@ void EffectFunction10002(int playerId = -1)
 {
     AbilityApplier(playerId);
     Init();
+    SetResource(playerId, cAttributeLastRuleTime, -1);
 
     int playerCiv = xsGetPlayerCivilization(playerId);
 
