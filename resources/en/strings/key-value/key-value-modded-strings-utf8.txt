@@ -115,7 +115,7 @@
 
 120176 "Cavalry and Naval civilization \n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age \n• All ships +10% moving speed \n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate) \n• Maghrabi Camels (Camel units have regeneration of 1 HP/sec) \n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Elite Genitours upgrade -50% cost"
 
-120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant) \n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
+120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
 
 120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Warships can produce 8 food per minute\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
 
@@ -295,6 +295,7 @@
 500131 "Yuan Dynasty"
 500132 "Ming Dynasty"
 500133 "Greuthungi Cavalry"
+500134 "Elephant Archer"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -430,6 +431,7 @@
 501131 "Enter Yuan Dynasty (Land units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)"
 501132 "Enter Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guanning Cavalry; All military units +10% HP)"
 501133 "Research Greuthungi Cavalry (Knight-line units -50% food cost)"
+501134 "Upgrade to Elephant Archer"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -565,6 +567,7 @@
 521131 "Enter <b>Yuan Dynasty<b> (<cost>) (time: 45)\nLand units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)"
 521132 "Enter <b>Ming Dynasty<b> (<cost>) (time: 45)\nImmediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)"
 521133 "Research <b>Greuthungi Cavalry<b> (<cost>) (time: 60)\nKnight-line units -50% food cost."
+521134 "Upgrade to <b>Elephant Archer<b> (<cost>) (time: 30)\nUpgrades your Early Elephant Archer and lets you create Elephant Archers."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -628,6 +631,7 @@
 700052 "Foederati Swordman"
 700053 "Foederati Cavalry Archer"
 700054 "Foederati Knight"
+700055 "Early Elephant Archer"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -684,6 +688,7 @@
 701052 "Create Foederati Swordman"
 701053 "Create Foederati Cavalry Archer"
 701054 "Create Foederati Knight"
+701055 "Create Early Elephant Archer"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\n<i><GREY>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit; Training time: 20; Moving speed: 0.96; Reload time: 2.75; Attack delay: 0.35; Accuracy: 75%; LOS: 9; Search radius: 9. \nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -714,9 +719,9 @@
 
 721014 "Create <b>Guan Ning Cavalry<b> (<cost>) \nPowerful all-purpose cavalry, can use firearm to attack enemy. Charge a pierce attack every 20 seconds, with a limit of 3. Strong vs infantry and archers. Weak vs Camel Riders, and Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points(Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.35; Reload time: 1.8; LOS: 5; Search radius: 4."
 
-721015 "Create <b>Parthian Cavalry Archer<b> (<cost>)\nPersians' unique mounted archer. Can attack when moving. Strong vs. slow units at long range. Weak vs. Elite Skirmishers and units at close range.\n<GREY><i> Upgrades: speed, hit points, to Elite Parthian Cavalry Archer (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Priestesses (Temple).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry archer, Unique Unit; Training time: 37; Moving speed: 1.35; Reload time: 2; Attack delay: 0.25; Projectile speed: 7; Accuracy: 50%; Dispersion factor: 0.33; LOS: 5; Search radius: 6. \nAttack Bonus: +1 vs Infantry, +1 vs Cavalry, +1 vs Condottiero"
+721015 "Create <b>Parthian Cavalry Archer<b> (<cost>)\nPersians' unique mounted archer. Can attack when moving. Strong vs. slow units at long range. Weak vs. Elite Skirmishers and units at close range.\n<GREY><i> Upgrades: speed, hit points, to Elite Parthian Cavalry Archer (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Priestesses (Temple).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry archer, Unique Unit; Training time: 37; Moving speed: 1.35; Reload time: 2; Attack delay: 0.25; Projectile speed: 7; Accuracy: 50%; Dispersion factor: 0.33; LOS: 5; Search radius: 6. \nAttack Bonus: +1 vs Infantry, +1 vs Cavalry"
 
-721016 "Create <b>Elite Parthian Cavalry Archer<b> (<cost>)\nPersians' unique mounted archer. Can attack when moving. Strong vs slow units at long range. Weak vs Skirmishers and units at close range.\n<GREY><i> Upgrades: speed, hit points (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Priestesses (Temple).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry archer, Unique Unit; Training time: 30; Moving speed: 1.35; Reload time: 2; Attack delay: 0.25; Projectile speed: 7; Accuracy: 50%; Dispersion factor: 0.33; LOS: 5; Search radius: 6. \nAttack Bonus: +1 vs Infantry, +1 vs Cavalry, +1 vs Condottiero"
+721016 "Create <b>Elite Parthian Cavalry Archer<b> (<cost>)\nPersians' unique mounted archer. Can attack when moving. Strong vs slow units at long range. Weak vs Skirmishers and units at close range.\n<GREY><i> Upgrades: speed, hit points (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Priestesses (Temple).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry archer, Unique Unit; Training time: 30; Moving speed: 1.35; Reload time: 2; Attack delay: 0.25; Projectile speed: 7; Accuracy: 50%; Dispersion factor: 0.33; LOS: 5; Search radius: 6. \nAttack Bonus: +1 vs Infantry, +1 vs Cavalry"
 
 721017 "<b>Chanyu<b>\nHunnic unique cavalry unit with attack bonus vs buildings. Can only get through upgrade from Tarkan by picking up relics. Strong vs buildings and archers. Weak vs Pikemen and Camel Riders. Can't be converted.\n<i><GREY>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable);more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Hit points regeneration: 150; Moving speed: 1.4; Reload time: 1.7; LOS: 5; Search radius: 5. \nAttack Bonus: +24 vs Buildings, +12 vs Stone Defensive Buildings, +24 vs Walls and Gates, +28 vs Castle, +1000 vs Monks, +5000 vs Monastery\n\n<GREY>After Elite Tarkan researched get: +75 hit points, +4 attack, +1 pierce armor, +6 attack vs Buildings, +6 attack vs Walls & Gates"
 
@@ -793,6 +798,8 @@
 721053 "Create <b>Foederati Cavalry Archer<b>(<cost>)\nGoths unique cavalry archer. Can be trained by allies after researching Foederati Army.\n<i><GREY>Upgrades: creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Archer, Cavalry Archer; Training time: 35; Moving speed: 1.54; Reload time: 2; LOS: 5; Search radius: 5.\nAttack Bonus: +6 vs Pikemen, +4 vs Skirmisher.\n\n<GREY>Foederati units won't be affected by technologies in Barracks, Archery Ranges, Stables and Blacksmiths."
 
 721054 "Create <b>Foederati Knight<b>(<cost>)\nGoths unique cavalry. Can be trained by allies after researching Foederati Army.\n<i><GREY>Upgrades: creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 40; Moving speed: 1.49; Reload time: 1.8; LOS: 4; Search radius: 4.\nAttack Bonus: +4 vs Standard Buildings, +8 vs Cavalry, +4 vs Camel, +6 vs Elephants.\n\n<GREY>Foederati units won't be affected by technologies in Barracks, Archery Ranges, Stables and Blacksmiths."
+
+721055 "Create <b>Parthian Cavalry Archer<b> (<cost>)\nMounted archer unit. Strong vs archers and infantry. Weak vs Pikemen, Skirmishers, and Camel Riders.\n<GREY><i> Upgrades: speed, hit points, to Elite Parthian Cavalry Archer (Stable); attack, range, armor (Blacksmith); attack, accuracy (University); accuracy, armor (Archery Range); creation speed (Castle); more resistant to Priestesses (Temple).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry archer, Elephant; Training time: 32; Moving speed: 0.9; Reload time: 2; Attack delay: 0.39; Accuracy: 55%; LOS: 6; Search radius: 5. \nArmor Bonus: -4 Cavalry Archer Armor"
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy foot archers' reload time by 0.5."

@@ -128,6 +128,7 @@ extern const int EliteHospitallerKnight2ID = 4132;
 extern const int FoederatiSwordmanID = 4133;
 extern const int FoederatiCavalryArcherID = 4134;
 extern const int FoederatiKnightID = 4135;
+extern const int EralyElephantArcherID = 4136;
 
 
 //  Newly added tech IDs
@@ -412,6 +413,8 @@ extern const int ThumbRingTechID = 437;
 extern const int TheocracyTechID = 438;
 extern const int HeresyTechID = 439;
 extern const int HerbalMedicineTechID = 441;
+extern const int ElephantArcherTechID = 480;
+extern const int EliteElephantArcherTechID = 481;
 extern const int ImperialCamelTechID = 521;
 extern const int SavarTechID = 526;
 extern const int EliteGenitourTechID = 599;

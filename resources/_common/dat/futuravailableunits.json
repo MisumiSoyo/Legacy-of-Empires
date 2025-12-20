@@ -19182,9 +19182,15 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Elephant Archer",
+                        "RequiredAge": 3,
+                        "ID": 3242
+                    },
+                    {
                         "Name": "Elite Elephant Archer",
                         "RequiredAge": 4,
-                        "ID": 481
+                        "ID": 481,
+                        "RequiredTechID": 3242
                     }
                 ],
                 "Units": [

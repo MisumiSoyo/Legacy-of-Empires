@@ -142625,12 +142625,42 @@
                     "Use Type": "Unit"
                 },
                 {
+                    "Age ID": 2,
+                    "Building ID": 87,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800055,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Early Elephant Archer",
+                    "Name String ID": 700055,
+                    "Node ID": 4136,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 393,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
                     "Age ID": 3,
                     "Building ID": 87,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105682,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
+                    "Link ID": 4136,
+                    "Link Node Type": "UniqueUnit",
                     "Name": "Elephant Archer",
                     "Name String ID": 14682,
                     "Node ID": 873,
@@ -142651,7 +142681,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": -1,
+                    "Trigger Tech ID": 3242,
                     "Use Type": "Unit"
                 },
                 {

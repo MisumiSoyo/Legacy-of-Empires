@@ -3889,6 +3889,39 @@
             "civ_id": ["KHMER", "MALAY", "VIETNAMESE"],
             "Node ID": [39, 474],
             "Use Type": "Unit"
+        },
+        {
+            "note": "早期骑象射手",
+            "action": "add",
+            "civ_id": "KHMER",
+            "Age ID": 2,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800055,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Early Elephant Archer",
+            "Name String ID": 700055,
+            "Node ID": 4136,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 393,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "before",
+            "target_id": 873
+        },
+        {
+            "note": "高棉骑象射手调整",
+            "action": "modify",
+            "civ_id": "KHMER",
+            "Node ID": 873,
+            "Use Type": "Unit",
+            "Link Node Type": "UniqueUnit",
+            "Link ID": 4136,
+            "Trigger Tech ID": 3242
         }
     ]
 }

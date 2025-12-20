@@ -38,6 +38,10 @@ def main():
         
         # Determine operation type
         operation_type = change.get('type', '')
+        
+        # 定义需要排除的元数据字段
+        meta_fields = ['civilizations', 'note', 'type', 'building_id', 'unit_id', 'tech_id', 'position', 'target_id']
+        
         if operation_type == 'delete':
             if 'unit_id' in change:
                 # Unit delete operation
@@ -107,8 +111,106 @@ def main():
                 print("Error: Delete operation requires 'unit_id' or 'tech_id'.")
                 continue
         
+        elif operation_type == 'modify':
+            # 新增modify操作
+            if 'unit_id' in change:
+                # 修改单位属性
+                unit_id = change.get('unit_id')
+                building_ids = change.get('building_id')
+                
+                # 获取需要修改的属性（排除元数据字段）
+                modify_data = {k: v for k, v in change.items() if k not in meta_fields}
+                
+                if not modify_data:
+                    print("Error: Modify operation requires at least one attribute to modify.")
+                    continue
+                
+                found_count = 0
+                for civ in civs:
+                    if civ not in data:
+                        print(f"Warning: Civilization '{civ}' not found.")
+                        continue
+                    
+                    buildings = data[civ].get('Buildings', [])
+                    
+                    # Convert single building_id to list for consistent processing
+                    target_building_ids = None
+                    if building_ids is not None:
+                        if not isinstance(building_ids, list):
+                            target_building_ids = [building_ids]
+                        else:
+                            target_building_ids = building_ids
+                    
+                    # Search for the unit in buildings
+                    for building in buildings:
+                        if target_building_ids is not None and building.get('ID') not in target_building_ids:
+                            continue
+                        
+                        units = building.get('Units', [])
+                        for unit in units:
+                            if unit.get('ID') == unit_id:
+                                # Update existing unit with the provided modify_data
+                                for key, value in modify_data.items():
+                                    unit[key] = value
+                                found_count += 1
+                                print(f"Modified unit ID {unit_id} in building ID {building.get('ID')} of civilization '{civ}'. Changes: {list(modify_data.keys())}")
+                                break
+                
+                if found_count == 0:
+                    print(f"Warning: Unit ID {unit_id} not found in specified buildings of civilizations.")
+            
+            elif 'tech_id' in change:
+                # 修改科技属性
+                tech_id = change.get('tech_id')
+                building_ids = change.get('building_id')
+                
+                # 获取需要修改的属性（排除元数据字段）
+                modify_data = {k: v for k, v in change.items() if k not in meta_fields}
+                
+                if not modify_data:
+                    print("Error: Modify operation requires at least one attribute to modify.")
+                    continue
+                
+                found_count = 0
+                for civ in civs:
+                    if civ not in data:
+                        print(f"Warning: Civilization '{civ}' not found.")
+                        continue
+                    
+                    buildings = data[civ].get('Buildings', [])
+                    
+                    # Convert single building_id to list for consistent processing
+                    target_building_ids = None
+                    if building_ids is not None:
+                        if not isinstance(building_ids, list):
+                            target_building_ids = [building_ids]
+                        else:
+                            target_building_ids = building_ids
+                    
+                    # Search for the tech in buildings
+                    for building in buildings:
+                        if target_building_ids is not None and building.get('ID') not in target_building_ids:
+                            continue
+                        
+                        techs = building.get('Techs', [])
+                        for tech in techs:
+                            if tech.get('ID') == tech_id:
+                                # Update existing tech with the provided modify_data
+                                for key, value in modify_data.items():
+                                    tech[key] = value
+                                found_count += 1
+                                print(f"Modified tech ID {tech_id} in building ID {building.get('ID')} of civilization '{civ}'. Changes: {list(modify_data.keys())}")
+                                break
+                
+                if found_count == 0:
+                    print(f"Warning: Tech ID {tech_id} not found in specified buildings of civilizations.")
+            
+            else:
+                print("Error: Modify operation requires 'unit_id' or 'tech_id'.")
+                continue
+        
         elif 'unit_id' in change:
-            # Existing unit update/add logic
+            # Existing unit update/add logic (默认操作类型)
             unit_id = change.get('unit_id')
             building_ids = change.get('building_id')
             position = change.get('position', 'end')  # 新增位置参数，默认为 'end'
@@ -213,7 +315,7 @@ def main():
                             print(f"Warning: Unit ID {unit_id} already exists in building {building_id} of civilization '{civ}'.")
         
         elif 'tech_id' in change:
-            # Existing tech update/add logic
+            # Existing tech update/add logic (默认操作类型)
             tech_id = change.get('tech_id')
             building_ids = change.get('building_id')
             position = change.get('position', 'end')  # 新增位置参数，默认为 'end'

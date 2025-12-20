@@ -324,6 +324,20 @@ void EffectFunction10002(int playerId = -1)
             SetResource(playerId, cAttributeMaintenance, 10012);
             DisableTech(playerId, CavalryArcherTechID);
             DisableTech(playerId, HeavyCavalryArcherTechID);
+            //  Khmer civ bonus, Elephant Archers +10% movement speed
+            MulAttribute(playerId, ElephantArcherID, cMovementSpeed, 1.1);
+            MulAttribute(playerId, EliteElephantArcherID, cMovementSpeed, 1.1);
+            MulAttribute(playerId, EralyElephantArcherID, cMovementSpeed, 1.1);
+            //  Early Elehpant Archer
+            ModAttribute(playerId, ElephantArcherID, cHitpoints, -100);
+            SetAttribute(playerId, ElephantArcherID, cNameId, 700055);
+            SetAttribute(playerId, ElephantArcherID, cDescriptionId, 701055);
+            ModAttack(playerId, ElephantArcherID, cDamageClassPierce, -1);
+            ModArmor(playerId, ElephantArcherID, cDamageClassPierce, -1);
+            ModAttribute(playerId, ElephantArcherID, cShownAttack, -1);
+            ModAttribute(playerId, ElephantArcherID, cShownPierceArmor, -1);
+            ModAttribute(playerId, ElephantArcherID, cAccuracyPercent, -15);
+            DisableTech(playerId, EliteElephantArcherTechID);
             break;
         }
         case cMalay:
@@ -683,6 +697,11 @@ void EffectFunction10024(int playerId = -1)
             ModArmor(playerId, DonsoID, cDamageClassPierce, 1);
             ModArmor(playerId, VeteranDonsoID, cDamageClassPierce, 1);
             ModArmor(playerId, EliteDonsoID, cDamageClassPierce, 1);
+            break;
+        }
+        case cKhmer:
+        {
+            ForceResearchTech(playerId, ElephantArcherTechID);
             break;
         }
         case cBulgarians:

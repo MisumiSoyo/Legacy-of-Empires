@@ -1729,6 +1729,24 @@
             "tech_id": 218,
             "building_id": 87,
             "type": "delete"
+        },
+        {
+            "note": "高棉骑象射手升级",
+            "civilizations": "Khmer",
+            "tech_id": 3242,
+            "building_id": 87,
+            "Name": "Elephant Archer",
+            "RequiredAge": 3,
+            "position": "before",
+            "target_id": 481
+        },
+        {
+            "note": "高棉精锐骑象射手调整",
+            "civilizations": "Khmer",
+            "tech_id": 481,
+            "type": "modify",
+            "building_id": 87,
+            "RequiredTechID": 3242
         }
     ]
 }
