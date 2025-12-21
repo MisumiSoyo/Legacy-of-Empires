@@ -886,13 +886,6 @@ void EffectFunction10025(int playerId = -1)
         }
         case cSlavs:
         {
-            ModAttack(playerId, KnightID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, CavalierID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, PaladinID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, SavarID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, GuanNingCavalryID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, BoyarID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, EliteBoyarID, cDamageClassStandardBuildings, 2);
             xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.25, playerId);
             xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.25, playerId);
             break;
@@ -1091,13 +1084,6 @@ void EffectFunction10026(int playerId = -1)
         }
         case cSlavs:
         {
-            ModAttack(playerId, KnightID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, CavalierID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, PaladinID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, SavarID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, GuanNingCavalryID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, BoyarID, cDamageClassStandardBuildings, 2);
-            ModAttack(playerId, EliteBoyarID, cDamageClassStandardBuildings, 2);
             xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.2, playerId);
             xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.2, playerId);
             break;

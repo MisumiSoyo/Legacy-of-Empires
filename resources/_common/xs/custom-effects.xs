@@ -1142,4 +1142,17 @@ void EffectFunction10083(int playerId = -1)
 }
 
 
+//  10089 - Khazar Lancers
+void EffectFunction10089(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrWorkValue2, 2);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000005);
+    xsTaskAmount(cTaskAttrWorkValue1, -60);
+    xsResetTaskAmount();
+}
+
+
 include "rules.xs";

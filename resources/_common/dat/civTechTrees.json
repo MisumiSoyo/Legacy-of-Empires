@@ -120550,11 +120550,41 @@
                     "Use Type": "Tech"
                 },
                 {
+                    "Age ID": 3,
+                    "Building ID": 209,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600135,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Boyar's Fortitude",
+                    "Name String ID": 500135,
+                    "Node ID": 3243,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 33,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
                     "Age ID": 4,
                     "Building ID": 209,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600070,
-                    "Link ID": -1,
+                    "Link ID": 3243,
                     "Link Node Type": "BuildingTech",
                     "Name": "Orthodoxy",
                     "Name String ID": 500070,

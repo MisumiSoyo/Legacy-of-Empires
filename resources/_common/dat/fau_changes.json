@@ -1747,6 +1747,13 @@
             "type": "modify",
             "building_id": 87,
             "RequiredTechID": 3242
+        },
+        {
+            "note": "贵族铁骑的坚毅",
+            "civilizations": "Slavs",
+            "tech_id": 3243,
+            "building_id": 209,
+            "RequiredAge": 3
         }
     ]
 }

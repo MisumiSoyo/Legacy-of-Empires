@@ -105,7 +105,7 @@
 
 120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 2 garrisoned relics give +1 attack to Steppe Lancers (maximum +2)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n\n<b>Unique Unit:<b> \n• Magyar Huszar (Light cavalry better combats with siege weapons)\n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food) \n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 
-120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate\n• Supplies and Gambesons free\n• Siege Workshop units -15% cost\n• Monk class units +20% moving speed \n• Knight-line units and Boyars +2/+4 attack vs buildings in Castle/Imperial Age\n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood) \n• Druzhina (Infantry units make blast damage)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
+120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate\n• Supplies and Gambesons free\n• Siege Workshop units -15% cost\n• Monk class units +20% moving speed \n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood)\n• Druzhina (Infantry units make blast damage)\n• Boyar's Fortitude (Knight-line units and Boyars +5 attack vs buildings)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
 
 120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost \n• Foragers generate 0.33 wood per meat \n• All ships +10% HP \n• Can build Feitoria in Imperial Age\n• Genitours +2 Archer armor\n\n<b>Unique Units:<b> \n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Carrack (All ships +1/1P armor)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Sagres School (Docks +80% work rate)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 
@@ -296,6 +296,7 @@
 500132 "Ming Dynasty"
 500133 "Greuthungi Cavalry"
 500134 "Elephant Archer"
+500135 "Boyar's Fortitude"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -349,7 +350,7 @@
 501049 "Upgrade to Elite Sofa"
 501050 "Research Devsirme (Hand cannoneer class +10 attack vs Infantry)"
 501051 "Research Papal States (Monks regain their faith +50% faster after a successful conversion)"
-501052 "Research Town Defense (Town Center +10% hit points, +5 garrison capacity; Villager +100% garrison power)"
+501052 "Research Town Defense (Town Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power)"
 501053 "Research Scutage (Gain 250 gold, and each military unit +10)"
 501054 "Research Raide Horn (Cavalry +1 attack, +1 pierce armor, +4 attack vs Standard Buildings, and Keshik +200% gold productivity, lasting for 90 seconds)"
 501055 "Research Khan's Conscription (Conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)"
@@ -432,6 +433,7 @@
 501132 "Enter Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guanning Cavalry; All military units +10% HP)"
 501133 "Research Greuthungi Cavalry (Knight-line units -50% food cost)"
 501134 "Upgrade to Elephant Archer"
+501135 "Research Boyar's Fortitude (Knight-line units and Boyars +5 attack vs buildings)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -485,7 +487,7 @@
 521049 "Upgrade to <b>Elite Sofa<b> (<cost>) (time: 60)\nUpgrades your Sofas and lets you create Elite Sofas."
 521050 "Research <b>Devsirme<b> (<cost>) (time: 60)\nHand cannoneer class +10 attack vs Infantry."
 521051 "Research <b>Papal States<b> (<cost>) (time: 45)\nMonks regain their faith +50% faster after a successful conversion."
-521052 "Research <b>Town Defense<b> (<cost>) (time: 55)\nTown Center +10% hit points, +5 garrison capacity; Villager +100% garrison power."
+521052 "Research <b>Town Defense<b> (<cost>) (time: 55)\nTown Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power."
 521053 "Research <b>Scutage<b> (<cost>) (time: 45)\nGain 250 gold, and each military +10."
 521054 "Research <b>Raide Horn<b> (<cost>) (time: 30)\nCavalry +1 attack, +1 pierce armor, +4 attack vs Standard Buildings, and Keshik +200% gold productivity, lasting for 90 seconds."
 521055 "Research <b>Khan's Conscription<b> (<cost>) (time: 60)\nConscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription."
@@ -568,6 +570,7 @@
 521132 "Enter <b>Ming Dynasty<b> (<cost>) (time: 45)\nImmediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)"
 521133 "Research <b>Greuthungi Cavalry<b> (<cost>) (time: 60)\nKnight-line units -50% food cost."
 521134 "Upgrade to <b>Elephant Archer<b> (<cost>) (time: 30)\nUpgrades your Early Elephant Archer and lets you create Elephant Archers."
+521135 "Research <b>Boyar's Fortitude<b> (<cost>) (time: 45)\nKnight-line units and Boyars +5 attack vs buildings."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -761,7 +764,7 @@
 
 721035 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
 
-721036 "Create <b>Taborite Warrior<b> (<cost>)\nBohemians' unique infantry. Can generate 7.5 food, 6 wood and 3 gold per minute.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 15; Moving speed: 1.00; Reload time: 2; LOS: 5; Search radius: 5.\nAttack Bonus: +3 vs Standard Buildings, +4 vs Shock Infantry, +6 vs Cavalry, +5 vs Camel"
+721036 "Create <b>Taborite Warrior<b> (<cost>)\nBohemians' unique infantry. Can generate 9 food, 4.5 wood and 3 gold per minute.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 15; Moving speed: 1.00; Reload time: 2; LOS: 5; Search radius: 5.\nAttack Bonus: +3 vs Standard Buildings, +4 vs Shock Infantry, +6 vs Cavalry, +5 vs Camel"
 
 721037 "Create <b>Elite Sofa<b> (<cost>)\nMalians' unique cavalry. Resistant to conversion. Has an attack bonus vs pikemen, skirmishers and light cavalries.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +11 vs Pikeman, +9 vs Skirmisher, +11 vs Light Cavalry."
 
