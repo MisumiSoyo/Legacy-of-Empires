@@ -162,6 +162,8 @@ void EffectFunction10002(int playerId = -1)
         {
             DisableTech(playerId, GalleonTechID);
             DisableTech(playerId, GalleyTechID);
+            DisableTech(playerId, GoldShaftMiningTechID);
+            DisableTech(playerId, StoneShaftMiningTechID);
             //  Enable Lembos
             EnableObject(playerId, LembosID);
             break;
@@ -171,6 +173,8 @@ void EffectFunction10002(int playerId = -1)
             //  Disable Mill Techs
             DisableTech(playerId, GalleonTechID);
             DisableTech(playerId, GalleyTechID);
+            DisableTech(playerId, StoneShaftMiningTechID);
+            DisableTech(playerId, CropRotationTechID);
             //  Mayans civ bonus, free masonry
             SetTechAuto(playerId, MasonryTechID);
             //  Mayans civ bonus, get food based on the number of researched techs
@@ -240,6 +244,8 @@ void EffectFunction10002(int playerId = -1)
         {
             DisableTech(playerId, GalleonTechID);
             DisableTech(playerId, GalleyTechID);
+            DisableTech(playerId, GoldShaftMiningTechID);
+            DisableTech(playerId, StoneShaftMiningTechID);
             ModAttribute(playerId, cLivestockClass, cLineOfSight, 2);
             MulAttribute(playerId, 12, cTrainTime, 0.5);
             MulAttribute(playerId, 20, cTrainTime, 0.5);
@@ -327,7 +333,7 @@ void EffectFunction10002(int playerId = -1)
             //  Khmer civ bonus, Elephant Archers +10% movement speed
             MulAttribute(playerId, ElephantArcherID, cMovementSpeed, 1.1);
             MulAttribute(playerId, EliteElephantArcherID, cMovementSpeed, 1.1);
-            MulAttribute(playerId, EralyElephantArcherID, cMovementSpeed, 1.1);
+            MulAttribute(playerId, EarlyElephantArcherID, cMovementSpeed, 1.1);
             //  Early Elehpant Archer
             ModAttribute(playerId, ElephantArcherID, cHitpoints, -100);
             SetAttribute(playerId, ElephantArcherID, cNameId, 700055);
@@ -633,8 +639,6 @@ void EffectFunction10024(int playerId = -1)
         case cPersians:
         {
             EnableObject(playerId, ParthianCavalryArcherID);
-            SetAttribute(playerId, InvisiblePCAID, cRegenerationHpPercent, -30);
-            SetAttribute(playerId, InvisibleEPCAID, cRegenerationHpPercent, -30);
             break;
         }
         case cVikings:

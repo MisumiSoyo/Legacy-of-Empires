@@ -67,9 +67,8 @@ extern const int WubaoID = 4016;
 extern const int EarlyCavalryArcherID = 4017;
 extern const int GuanNingCavalryID = 4018;
 extern const int ParthianCavalryArcherID = 4020;
-extern const int EliteParthianCavalryArcherID = 4021;
-extern const int InvisiblePCAID = 4022;
-extern const int InvisibleEPCAID = 4023;
+extern const int VeteranParthianCavalryArcherID = 4021;
+extern const int EliteParthianCavalryArcherID = 4022;
 extern const int ChanyuID = 4024;
 extern const int ChariotArcherID = 4025;
 extern const int RungScoutID = 4027;
@@ -128,7 +127,7 @@ extern const int EliteHospitallerKnight2ID = 4132;
 extern const int FoederatiSwordmanID = 4133;
 extern const int FoederatiCavalryArcherID = 4134;
 extern const int FoederatiKnightID = 4135;
-extern const int EralyElephantArcherID = 4136;
+extern const int EarlyElephantArcherID = 4136;
 
 
 //  Newly added tech IDs

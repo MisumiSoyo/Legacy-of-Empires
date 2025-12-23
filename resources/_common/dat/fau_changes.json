@@ -154,12 +154,21 @@
             "RequiredAge": 2
         },
         {
+            "note": "老练安息骑射手",
+            "civilizations": "Persians",
+            "tech_id": 3244,
+            "building_id": 87,
+            "Name": "Veteran Parthian Cavalry Archer",
+            "RequiredAge": 3
+        },
+        {
             "note": "精锐安息骑射手",
             "civilizations": "Persians",
             "tech_id": 3027,
             "building_id": 87,
             "Name": "Elite Parthian Cavalry Archer",
-            "RequiredAge": 3
+            "RequiredAge": 4,
+            "RequiredTechID": 3244
         },
         {
             "note": "波斯移除骑射手系",
@@ -851,8 +860,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用轮作",
-            "civilizations": "Chinese",
+            "note": "中国, 波希米亚启用轮作",
+            "civilizations": ["Chinese", "Bohemians"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -1297,8 +1306,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国启用围墙",
-            "civilizations": "Chinese",
+            "note": "中国, 波希米亚启用围墙",
+            "civilizations": ["Chinese", "Bohemians"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1489,8 +1498,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "契丹获得造船匠",
-            "civilizations": "Khitans",
+            "note": "契丹, 波希米亚获得造船匠",
+            "civilizations": ["Bohemians", "Khitans"],
             "tech_id": 373,
             "building_id": 45,
             "Name": "Shipwright",
@@ -1599,8 +1608,8 @@
             "type": "delete"
         },
         {
-            "note": "哥特获得扳指",
-            "civilizations": "Goths",
+            "note": "哥特, 波希米亚获得扳指",
+            "civilizations": ["Goths", "Bohemians"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1670,8 +1679,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "波兰, 勃艮第获得射手锁甲",
-            "civilizations": ["Burgundians", "Poles"],
+            "note": "阿兹特克, 波兰, 勃艮第获得射手锁甲",
+            "civilizations": ["Aztecs", "Burgundians", "Poles"],
             "tech_id": 219,
             "building_id": 103,
             "Name": "Ring Archer Armor",
@@ -1753,6 +1762,29 @@
             "civilizations": "Slavs",
             "tech_id": 3243,
             "building_id": 209,
+            "Name": "Boyar's Fortitude",
+            "RequiredAge": 3
+        },
+        {
+            "note": "阿兹特克, 玛雅, 印加禁用钻井采金法, 钻井采石法",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "tech_id": [182, 279],
+            "building_id": 584,
+            "type": "delete"
+        },
+        {
+            "note": "玛雅禁用轮作",
+            "civilizations": "Mayans",
+            "tech_id": 12,
+            "building_id": 68,
+            "type": "delete"
+        },
+        {
+            "note": "波希米亚获得预热射击",
+            "civilizations": "Bohemians",
+            "tech_id": 380,
+            "building_id": 209,
+            "Name": "Heated Shot",
             "RequiredAge": 3
         }
     ]

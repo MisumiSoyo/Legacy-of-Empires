@@ -433,6 +433,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
@@ -848,19 +853,9 @@
                         "RequiredAge": 2
                     },
                     {
-                        "ID": 182,
-                        "Name": "Gold Shaft Mining",
-                        "RequiredAge": 3
-                    },
-                    {
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
-                    },
-                    {
-                        "ID": 279,
-                        "Name": "Stone Shaft Mining",
-                        "RequiredAge": 3
                     }
                 ]
             },
@@ -15667,19 +15662,9 @@
                         "RequiredAge": 2
                     },
                     {
-                        "ID": 182,
-                        "Name": "Gold Shaft Mining",
-                        "RequiredAge": 3
-                    },
-                    {
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
-                    },
-                    {
-                        "ID": 279,
-                        "Name": "Stone Shaft Mining",
-                        "RequiredAge": 3
                     }
                 ]
             },
@@ -26292,11 +26277,6 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
-                    },
-                    {
-                        "ID": 279,
-                        "Name": "Stone Shaft Mining",
-                        "RequiredAge": 3
                     }
                 ]
             },
@@ -26379,12 +26359,6 @@
                         "Name": "Heavy Plow",
                         "RequiredAge": 3,
                         "RequiredTechID": 14
-                    },
-                    {
-                        "ID": 12,
-                        "Name": "Crop Rotation",
-                        "RequiredAge": 4,
-                        "RequiredTechID": 13
                     },
                     {
                         "Name": "Horticulture",
@@ -27675,8 +27649,14 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Elite Parthian Cavalry Archer",
+                        "Name": "Veteran Parthian Cavalry Archer",
                         "RequiredAge": 3,
+                        "ID": 3244
+                    },
+                    {
+                        "Name": "Elite Parthian Cavalry Archer",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3244,
                         "ID": 3027
                     }
                 ],
@@ -32504,6 +32484,7 @@
                         "ID": 3097
                     },
                     {
+                        "Name": "Boyar's Fortitude",
                         "RequiredAge": 3,
                         "ID": 3243
                     }
@@ -40486,6 +40467,11 @@
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
                     }
                 ],
                 "Units": [
@@ -40856,6 +40842,11 @@
                         "ID": 374,
                         "Name": "Careening",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Shipwright",
+                        "RequiredAge": 4,
+                        "ID": 373
                     }
                 ],
                 "Units": [
@@ -41009,6 +41000,11 @@
                         "Name": "Pistala",
                         "RequiredAge": 4,
                         "ID": 3161
+                    },
+                    {
+                        "Name": "Heated Shot",
+                        "RequiredAge": 3,
+                        "ID": 380
                     }
                 ]
             },
@@ -41095,6 +41091,11 @@
                         "ID": 321,
                         "Name": "Sappers",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hoardings",
+                        "RequiredAge": 4,
+                        "ID": 379
                     }
                 ],
                 "Units": [
@@ -41382,6 +41383,11 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "ID": 12
                     }
                 ]
             }

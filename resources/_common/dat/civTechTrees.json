@@ -38057,9 +38057,39 @@
                     "Help String ID": 800016,
                     "Link ID": 4020,
                     "Link Node Type": "UniqueUnit",
-                    "Name": "Elite Parthian Cavalry Archer",
+                    "Name": "Veteran Parthian Cavalry Archer",
                     "Name String ID": 700016,
                     "Node ID": 4021,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 19,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3244,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 87,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800056,
+                    "Link ID": 4021,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Elite Parthian Cavalry Archer",
+                    "Name String ID": 700056,
+                    "Node ID": 4022,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "UniqueUnit",
                     "Picture Index": 19,
@@ -75419,7 +75449,7 @@
                     "Name": "Ring Archer Armor",
                     "Name String ID": 17216,
                     "Node ID": 219,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 51,
                     "Prerequisite IDs": [
@@ -77731,7 +77761,7 @@
                     "Name": "Gold Shaft Mining",
                     "Name String ID": 17180,
                     "Node ID": 182,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 62,
                     "Prerequisite IDs": [
@@ -77791,7 +77821,7 @@
                     "Name": "Stone Shaft Mining",
                     "Name String ID": 17277,
                     "Node ID": 279,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 88,
                     "Prerequisite IDs": [
@@ -83018,7 +83048,7 @@
                     "Name": "Stone Shaft Mining",
                     "Name String ID": 17277,
                     "Node ID": 279,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 88,
                     "Prerequisite IDs": [
@@ -83348,7 +83378,7 @@
                     "Name": "Crop Rotation",
                     "Name String ID": 17012,
                     "Node ID": 12,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 0,
                     "Prerequisite IDs": [
@@ -109389,7 +109419,7 @@
                     "Name": "Gold Shaft Mining",
                     "Name String ID": 17180,
                     "Node ID": 182,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 62,
                     "Prerequisite IDs": [
@@ -109449,7 +109479,7 @@
                     "Name": "Stone Shaft Mining",
                     "Name String ID": 17277,
                     "Node ID": 279,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 88,
                     "Prerequisite IDs": [
@@ -200055,7 +200085,7 @@
                     "Name": "Thumb Ring",
                     "Name String ID": 17411,
                     "Node ID": 437,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 112,
                     "Prerequisite IDs": [
@@ -201647,7 +201677,7 @@
                     "Name": "Shipwright",
                     "Name String ID": 17377,
                     "Node ID": 373,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 97,
                     "Prerequisite IDs": [
@@ -202307,7 +202337,7 @@
                     "Name": "Heated Shot",
                     "Name String ID": 17374,
                     "Node ID": 380,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 104,
                     "Prerequisite IDs": [
@@ -202607,7 +202637,7 @@
                     "Name": "Hoardings",
                     "Name String ID": 17376,
                     "Node ID": 379,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -203777,7 +203807,7 @@
                     "Name": "Crop Rotation",
                     "Name String ID": 17012,
                     "Node ID": 12,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
                     "Prerequisite IDs": [

@@ -504,7 +504,7 @@
             "target_id": 5
         },
         {
-            "note": "精锐安息骑射手",
+            "note": "老练安息骑射手",
             "action": "add",
             "civ_id": "PERSIANS",
             "Age ID": 3,
@@ -513,9 +513,32 @@
             "Help String ID": 800016,
             "Link ID": 4020,
             "Link Node Type": "UniqueUnit",
-            "Name": "Elite Parthian Cavalry Archer",
+            "Name": "Veteran Parthian Cavalry Archer",
             "Name String ID": 700016,
             "Node ID": 4021,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 19,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3244,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 4020
+        },
+        {
+            "note": "精锐安息骑射手",
+            "action": "add",
+            "civ_id": "PERSIANS",
+            "Age ID": 4,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800056,
+            "Link ID": 4021,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Parthian Cavalry Archer",
+            "Name String ID": 700056,
+            "Node ID": 4022,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 19,
@@ -524,7 +547,7 @@
             "Trigger Tech ID": 3027,
             "Use Type": "Unit",
             "position": "after",
-            "target_id": 4020
+            "target_id": 4021
         },
         {
             "note": "波斯移除骑射手系",
@@ -3944,6 +3967,38 @@
             "Link Node Type": "UniqueUnit",
             "Link ID": 4136,
             "Trigger Tech ID": 3242
+        },
+        {
+            "note": "阿兹特克, 玛雅, 印加禁用钻井采金法, 钻井采石法",
+            "action": "modify",
+            "civ_id": ["AZTECS", "MAYANS", "INCAS"],
+            "Node ID": [182, 279],
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable"
+        },
+        {
+            "note": "阿兹特克获得射手锁甲",
+            "action": "modify",
+            "civ_id": "AZTECS",
+            "Node ID": 219,
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "玛雅禁用轮作",
+            "action": "modify",
+            "civ_id": "MAYANS",
+            "Node ID": 12,
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable"
+        },
+        {
+            "note": "波希米亚获得扳指, 预热射击, 轮作, 造船匠, 围墙",
+            "action": "modify",
+            "civ_id": ["BOHEMIANS"],
+            "Node ID": [12, 373, 379, 380, 437],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }
