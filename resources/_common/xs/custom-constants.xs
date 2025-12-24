@@ -133,6 +133,9 @@ extern const int EarlyElephantArcherID = 4136;
 //  Newly added tech IDs
 extern const int EliteSipahiTechID = 3015;
 extern const int WubaoTechID = 3016;
+extern const int GentryTechID = 3022;
+extern const int MercenaryTechID = 3023;
+extern const int StrongFortressTechID = 3024;
 extern const int GuanNingCavalryTechID = 3026;
 extern const int HospitallerKnightTechID = 3038;
 extern const int HorticultureTechID = 3054;

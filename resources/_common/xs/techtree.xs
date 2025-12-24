@@ -355,8 +355,7 @@ void EffectFunction10002(int playerId = -1)
         }
         case cBurmese:
         {
-            //  Enable Hand Cannoneer
-            EnableTech(playerId, HandCannoneerTechID);
+            DisableTech(playerId, DryDockTechID);
             break;
         }
         case cVietnamese:
@@ -495,8 +494,9 @@ void EffectFunction10002(int playerId = -1)
         }
         case cShu:
         {
-            //  Shu civ bonus, advanced Wubao
-            ForceResearchTech(playerId, WubaoTechID);
+            SetTechAuto(playerId, WubaoTechID);
+            //  Shu civ bonus, Wubao -20% cost
+            MulAttribute(playerId, WubaoID, cResourceCost, 0.8);
             //  Shu civ bonus, infantries generate food from attacking farms
             SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
             SetResource(playerId, cAttributeMaintenance, 10010);
@@ -506,6 +506,10 @@ void EffectFunction10002(int playerId = -1)
         {
             //  Enable Wubao
             SetTechAuto(playerId, WubaoTechID);
+            //  Wu civ bonus, Wubao technologies -33% cost
+            xsEffectAmount(cModifyTech, GentryTechID, cAttrMulAllCosts, 0.67, playerId);
+            xsEffectAmount(cModifyTech, MercenaryTechID, cAttrMulAllCosts, 0.67, playerId);
+            xsEffectAmount(cModifyTech, StrongFortressTechID, cAttrMulAllCosts, 0.67, playerId);
             break;
         }
         case cWei:
@@ -722,11 +726,6 @@ void EffectFunction10024(int playerId = -1)
             MulAttribute(playerId, cCavalryClass, cMovementSpeed, 1.07 / 1.05);
             MulAttribute(playerId, cCavalryArcherClass, cMovementSpeed, 1.07 / 1.05);
             MulAttribute(playerId, cConquistadorClass, cMovementSpeed, 1.07 / 1.05);
-            break;
-        }
-        case cBurgundians:
-        {
-            EnableTech(playerId, BloodlinesTechID);
             break;
         }
         case cPoles:

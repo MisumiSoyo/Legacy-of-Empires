@@ -2257,10 +2257,10 @@
             "Use Type": "Tech"
         },
         {
-            "note": "中国启用轮作, 围墙, 软甲, 行会, 脚踏起重机, 攻城技师",
+            "note": "中国启用轮作, 围墙, 软甲, 行会, 脚踏起重机, 攻城技师, 帕提亚战术",
             "action": "modify",
             "civ_id": "CHINESE",
-            "Node ID": [12, 15, 54, 377, 379, 875],
+            "Node ID": [12, 15, 54, 377, 379, 436, 875],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -2767,7 +2767,7 @@
             "Picture Index": 234,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
+            "Trigger Tech ID": 3141,
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4055
@@ -3576,14 +3576,6 @@
             "target_id": 4128
         },
         {
-            "note": "蜀坞堡提前一个时代",
-            "action": "modify",
-            "civ_id": "SHU",
-            "Node ID": 4016,
-            "Use Type": "Building",
-            "Age ID": 1
-        },
-        {
             "note": "橄榄树林",
             "action": "add",
             "civ_id": "BYZANTINES",
@@ -3998,6 +3990,38 @@
             "civ_id": ["BOHEMIANS"],
             "Node ID": [12, 373, 379, 380, 437],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "缅甸获得扳指, 造船匠, 工兵, 围墙, 射箭槽",
+            "action": "modify",
+            "civ_id": "BURMESE",
+            "Node ID": [321, 373, 379, 437, 608],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "缅甸禁用干船坞",
+            "action": "modify",
+            "civ_id": "BURMESE",
+            "Node ID": 375,
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable"
+        },
+        {
+            "note": "条顿获得扳指, 钻井采金法, 建筑学, 脚踏起重机",
+            "action": "modify",
+            "civ_id": "TEUTONS",
+            "Node ID": [51, 54, 182, 437],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "条顿获得轻骑兵, 劲弩手",
+            "action": "modify",
+            "civ_id": "TEUTONS",
+            "Node ID": [492, 546],
+            "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         }
     ]

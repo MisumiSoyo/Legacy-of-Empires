@@ -5431,6 +5431,11 @@
                         "ID": 436,
                         "Name": "Parthian Tactics",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
                     }
                 ],
                 "Units": [
@@ -5838,11 +5843,6 @@
                         "ID": 374,
                         "Name": "Careening",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 375,
-                        "Name": "Dry Dock",
-                        "RequiredAge": 4
                     }
                 ],
                 "Units": [
@@ -5986,6 +5986,11 @@
                         "Name": "Anawrahta's Canals",
                         "RequiredAge": 3,
                         "ID": 3066
+                    },
+                    {
+                        "Name": "Arrowslits",
+                        "RequiredAge": 4,
+                        "ID": 608
                     }
                 ]
             },
@@ -6067,6 +6072,16 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hoardings",
+                        "RequiredAge": 4,
+                        "ID": 379
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -8706,6 +8721,11 @@
                         "ID": 437,
                         "Name": "Thumb Ring",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Parthian Tactics",
+                        "RequiredAge": 4,
+                        "ID": 436
                     }
                 ],
                 "Units": [
@@ -35180,6 +35200,16 @@
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -35212,6 +35242,11 @@
                         "ID": 39,
                         "Name": "Cavalry Archer",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -35328,6 +35363,11 @@
                         "ID": 265,
                         "Name": "Paladin",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Light Cavalry",
+                        "RequiredAge": 3,
+                        "ID": 254
                     }
                 ],
                 "Units": [
@@ -35355,6 +35395,11 @@
                         "Name": "Crusader Knight",
                         "RequiredAge": 3,
                         "ID": 4041
+                    },
+                    {
+                        "Name": "Light Cavalry",
+                        "RequiredAge": 3,
+                        "ID": 546
                     }
                 ]
             },
@@ -35708,6 +35753,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
+                    },
+                    {
                         "Name": "Die Goldene Bulle",
                         "RequiredAge": 3,
                         "ID": 3130
@@ -35716,6 +35766,11 @@
                         "Name": "Accolade",
                         "RequiredAge": 4,
                         "ID": 3175
+                    },
+                    {
+                        "Name": "Treadmill Crane",
+                        "RequiredAge": 3,
+                        "ID": 54
                     }
                 ]
             },
@@ -35982,6 +36037,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },

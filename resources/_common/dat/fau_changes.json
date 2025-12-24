@@ -876,8 +876,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭启用建筑学",
-            "civilizations": "Byzantines",
+            "note": "拜占庭, 条顿获得建筑学",
+            "civilizations": ["Teutons", "Byzantines"],
             "tech_id": 51,
             "building_id": 209,
             "Name": "Architecture",
@@ -1306,8 +1306,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 波希米亚启用围墙",
-            "civilizations": ["Chinese", "Bohemians"],
+            "note": "中国, 波希米亚, 缅甸启用围墙",
+            "civilizations": ["Chinese", "Burmese", "Bohemians"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1338,8 +1338,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用脚踏起重机",
-            "civilizations": "Chinese",
+            "note": "中国, 条顿获得脚踏起重机",
+            "civilizations": ["Teutons", "Chinese"],
             "tech_id": 54,
             "building_id": 209,
             "Name": "Treadmill Crane",
@@ -1450,8 +1450,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "立陶宛获得工兵",
-            "civilizations": "Lithuanians",
+            "note": "立陶宛, 缅甸获得工兵",
+            "civilizations": ["Burmese", "Lithuanians"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1562,8 +1562,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔获得帕提亚战术",
-            "civilizations": "Berbers",
+            "note": "柏柏尔, 中国获得帕提亚战术",
+            "civilizations": ["Chinese", "Berbers"],
             "tech_id": 436,
             "building_id": 87,
             "Name": "Parthian Tactics",
@@ -1586,8 +1586,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 波兰获得钻井采金法",
-            "civilizations": ["Goths", "Poles"],
+            "note": "哥特, 波兰, 条顿获得钻井采金法",
+            "civilizations": ["Goths", "Teutons", "Poles"],
             "tech_id": 182,
             "building_id": 584,
             "Name": "Gold Shaft Mining",
@@ -1608,8 +1608,8 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚获得扳指",
-            "civilizations": ["Goths", "Bohemians"],
+            "note": "哥特, 波希米亚, 缅甸, 条顿获得扳指",
+            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1786,6 +1786,53 @@
             "building_id": 209,
             "Name": "Heated Shot",
             "RequiredAge": 3
+        },
+        {
+            "note": "缅甸禁用干船坞",
+            "civilizations": "Burmese",
+            "tech_id": 375,
+            "building_id": 45,
+            "type": "delete"
+        },
+        {
+            "note": "缅甸获得射箭槽",
+            "civilizations": "Burmese",
+            "tech_id": 608,
+            "building_id": 209,
+            "Name": "Arrowslits",
+            "RequiredAge": 4
+        },
+        {
+            "note": "条顿获得轻骑兵",
+            "civilizations": "Teutons",
+            "tech_id": 254,
+            "building_id": 101,
+            "Name": "Light Cavalry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "条顿获得轻骑兵",
+            "civilizations": "Teutons",
+            "unit_id": 546,
+            "building_id": 101,
+            "Name": "Light Cavalry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "条顿获得劲弩手",
+            "civilizations": "Teutons",
+            "tech_id": 237,
+            "building_id": 87,
+            "Name": "Arbalester",
+            "RequiredAge": 4
+        },
+        {
+            "note": "条顿获得劲弩手",
+            "civilizations": "Teutons",
+            "unit_id": 492,
+            "building_id": 87,
+            "Name": "Arbalester",
+            "RequiredAge": 4
         }
     ]
 }

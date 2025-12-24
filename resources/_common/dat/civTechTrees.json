@@ -16678,7 +16678,7 @@
                     "Name": "Arbalester",
                     "Name String ID": 14418,
                     "Node ID": 492,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 90,
                     "Prerequisite IDs": [
@@ -16858,7 +16858,7 @@
                     "Name": "Thumb Ring",
                     "Name String ID": 17411,
                     "Node ID": 437,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 112,
                     "Prerequisite IDs": [
@@ -17278,7 +17278,7 @@
                     "Name": "Light Cavalry",
                     "Name String ID": 14444,
                     "Node ID": 546,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 91,
                     "Prerequisite IDs": [
@@ -18870,7 +18870,7 @@
                     "Name": "Architecture",
                     "Name String ID": 17051,
                     "Node ID": 51,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 14,
                     "Prerequisite IDs": [
@@ -19200,7 +19200,7 @@
                     "Name": "Treadmill Crane",
                     "Name String ID": 17054,
                     "Node ID": 54,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 60,
                     "Prerequisite IDs": [
@@ -20190,7 +20190,7 @@
                     "Name": "Gold Shaft Mining",
                     "Name String ID": 17180,
                     "Node ID": 182,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 62,
                     "Prerequisite IDs": [
@@ -27218,7 +27218,7 @@
                     "Name": "Parthian Tactics",
                     "Name String ID": 17415,
                     "Node ID": 436,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 111,
                     "Prerequisite IDs": [
@@ -153086,7 +153086,7 @@
                     "Name": "Thumb Ring",
                     "Name String ID": 17411,
                     "Node ID": 437,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 112,
                     "Prerequisite IDs": [
@@ -153433,7 +153433,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": -1,
+                    "Trigger Tech ID": 3141,
                     "Use Type": "Unit"
                 },
                 {
@@ -154738,7 +154738,7 @@
                     "Name": "Dry Dock",
                     "Name String ID": 17373,
                     "Node ID": 375,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 99,
                     "Prerequisite IDs": [
@@ -154768,7 +154768,7 @@
                     "Name": "Shipwright",
                     "Name String ID": 17377,
                     "Node ID": 373,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 97,
                     "Prerequisite IDs": [
@@ -155458,7 +155458,7 @@
                     "Name": "Arrowslits",
                     "Name String ID": 17278,
                     "Node ID": 608,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 119,
                     "Prerequisite IDs": [
@@ -155728,7 +155728,7 @@
                     "Name": "Hoardings",
                     "Name String ID": 17376,
                     "Node ID": 379,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -155788,7 +155788,7 @@
                     "Name": "Sappers",
                     "Name String ID": 17322,
                     "Node ID": 321,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 5,
                     "Prerequisite IDs": [
@@ -252046,7 +252046,7 @@
                     "Use Type": "Building"
                 },
                 {
-                    "Age ID": 1,
+                    "Age ID": 2,
                     "Building ID": 4016,
                     "Building in new column": true,
                     "Building upgraded from ID": -1,
