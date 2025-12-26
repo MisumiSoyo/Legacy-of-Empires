@@ -499,7 +499,7 @@ void EffectFunction10037(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
     ApplyToAllPlayerTargets(playerId, KeshikID, cTaskTypeGenerateResources);
     ApplyToAllPlayerTargets(playerId, EliteKeshikID, cTaskTypeGenerateResources);
-    if (xsGetPlayerCivilization(playerId) == cTatars)
+    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
         ApplyToAllPlayerTargets(playerId, KnightID, cTaskTypeGenerateResources);
     xsResetTaskAmount();
     SetResource(playerId, cAttributeCavalryAttackGoldProductivity, 75);
@@ -1175,3 +1175,12 @@ void EffectFunction10089(int playerId = -1)
 
 
 include "rules.xs";
+
+
+void main()
+{
+    xsChatData("Mod: Legacy of Empires");
+    xsChatData("Build: 73  2025.12.26");
+    xsChatData("Author: Misumi Soyo");
+    xsChatData("Author's QQ: 2072591548");
+}
