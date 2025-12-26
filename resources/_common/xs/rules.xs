@@ -104,6 +104,12 @@ void GothsVillager(int playerId = -1, int Time = 0)
 }
 
 
+void KhanLimit(int playerId = -1, int Time = -1)
+{
+    SetAttribute(playerId, KhanID, cAvailableFlag, xsPlayerAttribute(playerId, cAttributeCastle));
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -139,6 +145,7 @@ void TimerEvent(int playerId = -1, int Time = -1)
     }
 
     Shrine(playerId, Time);
+    KhanLimit(playerId, Time);
 }
 
 

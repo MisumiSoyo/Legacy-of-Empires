@@ -414,57 +414,6 @@ void EffectFunction10056(int playerId = -1)
 }
 
 
-void KeshikStinger(int playerId = -1, float Rate = 0.0)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrWorkValue1, 3.0 * 60 * Rate);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrOwnerType, 0);
-
-    xsTask(KeshikID, cTaskTypeStinger, -1, playerId);
-    xsTask(MercenaryKeshikID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 4.0 * 60 * Rate);
-    xsTask(EliteKeshikID, cTaskTypeStinger, -1, playerId);
-    xsTask(MercenaryEliteKeshikID, cTaskTypeStinger, -1, playerId);
-
-    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 3.0 * 60 * Rate);
-    xsTask(KeshikID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(KeshikID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(MercenaryKeshikID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(MercenaryKeshikID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(MercenaryKeshikID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(MercenaryKeshikID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(MercenaryKeshikID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 4.0 * 60 * Rate);
-    xsTask(EliteKeshikID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(EliteKeshikID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(EliteKeshikID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(EliteKeshikID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(EliteKeshikID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(MercenaryEliteKeshikID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(MercenaryEliteKeshikID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(MercenaryEliteKeshikID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(MercenaryEliteKeshikID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(MercenaryEliteKeshikID, cTaskTypeStinger, cFarmClass, playerId);
-    xsResetTaskAmount();
-    LaunchStinger(playerId, KeshikID);
-    LaunchStinger(playerId, EliteKeshikID);
-    LaunchStinger(playerId, MercenaryKeshikID);
-    LaunchStinger(playerId, MercenaryEliteKeshikID);
-    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
-        if (isResearched(playerId, CavalierTechID))
-            UpgradeUnit(playerId, KnightID, EliteKeshikID);
-        else
-            UpgradeUnit(playerId, KnightID, KeshikID);
-    SetResource(playerId, 213, 0);
-}
-
-
 void EffectFunction10058(int playerId = -1)
 {
     ModAttackBonus(playerId, cInfantryClass, 1);
@@ -715,7 +664,6 @@ void AbilityApplier(int playerId = -1)
     VikingRaiderInit(playerId);
     TCSpawnedDeerInit(playerId);
     ShrineInit(playerId);
-    KeshikStinger(playerId, 0.5);
     KhanInit(playerId);
     FoederatiArmyInit(playerId);
 }

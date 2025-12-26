@@ -860,8 +860,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚启用轮作",
-            "civilizations": ["Chinese", "Bohemians"],
+            "note": "中国, 波希米亚, 凯尔特启用轮作",
+            "civilizations": ["Chinese", "Celts", "Bohemians"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -1047,12 +1047,20 @@
             "RequiredAge": 4
         },
         {
+            "note": "可萨长矛骑兵",
+            "civilizations": "Cumans",
+            "tech_id": 3245,
+            "building_id": 209,
+            "Name": "Khazar Lancers",
+            "RequiredAge": 3
+        },
+        {
             "note": "西哈弓臂",
-            "civilizations": "Siha Bow Limbs",
+            "civilizations": "Cumans",
             "tech_id": 3138,
             "building_id": 209,
             "Name": "Siha Bow Limbs",
-            "RequiredAge": 3
+            "RequiredAge": 4
         },
         {
             "note": "东吁勇士",
@@ -1266,8 +1274,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "法兰克获得护腕",
-            "civilizations": "Franks",
+            "note": "法兰克, 凯尔特获得护腕",
+            "civilizations": ["Franks", "Celts"],
             "tech_id": 201,
             "building_id": 103,
             "Name": "Bracer",
@@ -1554,8 +1562,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰获得双人锯",
-            "civilizations": ["Berbers", "Poles"],
+            "note": "柏柏尔, 波兰, 凯尔特获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",

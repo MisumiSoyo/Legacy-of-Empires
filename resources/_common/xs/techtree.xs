@@ -34,8 +34,58 @@ void EffectFunction10002(int playerId = -1)
     AbilityApplier(playerId);
     Init();
     SetResource(playerId, cAttributeLastRuleTime, -1);
-
     int playerCiv = xsGetPlayerCivilization(playerId);
+
+    //  Genitour Adjustment
+    SetAttribute(playerId, GenitourID, cTrainButton, 21);
+    SetAttribute(playerId, GenitourID, cHotkeyId, 16079);
+    SetAttribute(playerId, EliteGenitourID, cTrainButton, 21);
+    SetAttribute(playerId, EliteGenitourID, cHotkeyId, 16079);
+    //  Missionary Adjustment
+    SetAttribute(playerId, MissionaryID, cTrainButton, 22);
+    SetAttribute(playerId, MissionaryID, cHotkeyId, 16078);
+    //  Relic gold production, 30 → 45
+    MulResource(playerId, cAttributeRelicRate, 1.5);
+    //  Varangians Gold Productivity
+    SetResource(playerId, cAttributeVarangianLootProductivity, 1);
+    //  WarriorPriest Adjustment
+    SetAttribute(playerId, WarriorPriestID, cTrainButton, 21);
+    SetAttribute(playerId, WarriorPriestID, cHotkeyId, 16079);
+    //  Wubao Food and Wood Productivity
+    SetResource(playerId, cAttributeWubaoFoodWoodProductivity, 1);
+    //  Condottiero Adjustment
+    SetAttribute(playerId, CondottieroID, cTrainButton, 21);
+    SetAttribute(playerId, CondottieroID, cHotkeyId, 16079);
+    //  Taborite Warrior Productivity
+    SetResource(playerId, cAttributeTaboriteWarriorProductivity, 1);
+    //  Lou Chuan Adjustment
+    SetAttribute(playerId, LouChuanID, cTrainButton, 24);
+    SetAttribute(playerId, LouChuanID, cHotkeyId, 16106);
+    //  Legionary upgrade Adjustment
+    xsEffectAmount(cModifyTech, 885, cAttrSetTime, 80, playerId);
+    //  Feitoria Adjustment
+    SetAttribute(playerId, FeitoriaID, cAmountFirstStorage, -15);
+    SetAttribute(playerId, FeitoriaID, cAmountSecondStorage, 15);
+    SetAttribute(playerId, FeitoriaID, cAmountThirdStorage, 15);
+    //  Some civs' Tithe descriptions adjustment
+    if ((playerCiv == cChinese) || (playerCiv == cJapanese) || (playerCiv == cKoreans) || (playerCiv == cVietnamese) || (playerCiv == cBurmese))
+    {
+        xsEffectAmount(cModifyTech, TitheTechID, cAttrSetName, 500078, playerId);
+        xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);
+    }
+    //  Berserks Adjustment
+    ModAttribute(playerId, BerserkID, cRegenerationRate, -40);
+    ModAttribute(playerId, EliteBerserkID, cRegenerationRate, -40);
+    ModAttribute(playerId, MercenaryBerserkID, cRegenerationRate, -40);
+    ModAttribute(playerId, MercenaryEliteBerserkID, cRegenerationRate, -40);
+    //  Keshik adjustment before Castle Age
+    ModAttribute(playerId, KeshikID, cHitpoints, -30);
+    ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
+    ModAttribute(playerId, KeshikID, cShownAttack, -2);
+    //  Huns Anarchy Adjustment
+    AnarchyTarkanAdjustment(playerId);
+    //  Khan
+    SetAttribute(playerId, KhanID, cDisabledFlag, 1);
 
     switch (playerCiv)
     {
@@ -390,8 +440,6 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetIcon, 105, playerId);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetName, 7304, playerId);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetDescription, 28304, playerId);
-            //  Tatars civ bonus, Keshiks generate gold
-            SetResource(playerId, 213, 75);
             break;
         }
         case cCumans:
@@ -537,55 +585,6 @@ void EffectFunction10002(int playerId = -1)
         default:
             break;
     }
-
-    //  Genitour Adjustment
-    SetAttribute(playerId, GenitourID, cTrainButton, 21);
-    SetAttribute(playerId, GenitourID, cHotkeyId, 16079);
-    SetAttribute(playerId, EliteGenitourID, cTrainButton, 21);
-    SetAttribute(playerId, EliteGenitourID, cHotkeyId, 16079);
-    //  Missionary Adjustment
-    SetAttribute(playerId, MissionaryID, cTrainButton, 22);
-    SetAttribute(playerId, MissionaryID, cHotkeyId, 16078);
-    //  Relic gold production, 30 → 45
-    MulResource(playerId, cAttributeRelicRate, 1.5);
-    //  Varangians Gold Productivity
-    SetResource(playerId, cAttributeVarangianLootProductivity, 1);
-    //  WarriorPriest Adjustment
-    SetAttribute(playerId, WarriorPriestID, cTrainButton, 21);
-    SetAttribute(playerId, WarriorPriestID, cHotkeyId, 16079);
-    //  Wubao Food and Wood Productivity
-    SetResource(playerId, cAttributeWubaoFoodWoodProductivity, 1);
-    //  Condottiero Adjustment
-    SetAttribute(playerId, CondottieroID, cTrainButton, 21);
-    SetAttribute(playerId, CondottieroID, cHotkeyId, 16079);
-    //  Taborite Warrior Productivity
-    SetResource(playerId, cAttributeTaboriteWarriorProductivity, 1);
-    //  Lou Chuan Adjustment
-    SetAttribute(playerId, LouChuanID, cTrainButton, 24);
-    SetAttribute(playerId, LouChuanID, cHotkeyId, 16106);
-    //  Legionary upgrade Adjustment
-    xsEffectAmount(cModifyTech, 885, cAttrSetTime, 80, playerId);
-    //  Feitoria Adjustment
-    SetAttribute(playerId, FeitoriaID, cAmountFirstStorage, -15);
-    SetAttribute(playerId, FeitoriaID, cAmountSecondStorage, 15);
-    SetAttribute(playerId, FeitoriaID, cAmountThirdStorage, 15);
-    //  Some civs' Tithe descriptions adjustment
-    if ((playerCiv == cChinese) || (playerCiv == cJapanese) || (playerCiv == cKoreans) || (playerCiv == cVietnamese) || (playerCiv == cBurmese))
-    {
-        xsEffectAmount(cModifyTech, TitheTechID, cAttrSetName, 500078, playerId);
-        xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);
-    }
-    //  Berserks Adjustment
-    ModAttribute(playerId, BerserkID, cRegenerationRate, -40);
-    ModAttribute(playerId, EliteBerserkID, cRegenerationRate, -40);
-    ModAttribute(playerId, MercenaryBerserkID, cRegenerationRate, -40);
-    ModAttribute(playerId, MercenaryEliteBerserkID, cRegenerationRate, -40);
-    //  Keshik adjustment before Castle Age
-    ModAttribute(playerId, KeshikID, cHitpoints, -20);
-    ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
-    ModAttribute(playerId, KeshikID, cShownAttack, -2);
-    //  Huns Anarchy Adjustment
-    AnarchyTarkanAdjustment(playerId);
 }
 
 
@@ -937,7 +936,6 @@ void EffectFunction10025(int playerId = -1)
         {
             ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
             //  Enable Khan
-            SetAttribute(playerId, KhanID, cAvailableFlag, 1);
             SetAttribute(playerId, KhanID, cDisabledFlag, 4);
             break;
         }
@@ -995,11 +993,12 @@ void EffectFunction10025(int playerId = -1)
     ModAttack(playerId, LembosID, cDamageClassPierce, 1);
     ModAttack(playerId, LembosID, cDamageClassShips, 1);
     ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
-    //  Kheshik Upgrade
-    ModAttribute(playerId, KeshikID, cHitpoints, 20);
+    //  Keshik Upgrade
+    ModAttribute(playerId, KeshikID, cHitpoints, 30);
     ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
     ModAttribute(playerId, KeshikID, cShownAttack, 2);
-    KeshikStinger(playerId, 1.0);
+    if ((xsGetPlayerCivilization(playerId) == cMongols) || ((xsGetPlayerCivilization(playerId) == cTatars)))
+        UpgradeUnit(playerId, KnightID, KeshikID);
     //  Conscripted Army Upgrade
     ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
     ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);

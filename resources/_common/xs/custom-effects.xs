@@ -488,29 +488,27 @@ void EffectFunction10029(int playerId = -1)
 //  10037 - Raide Horn
 void EffectFunction10037(int playerId = -1)
 {
-    ModAttack(playerId, cCavalryClass, 4, 1);
-    ModAttack(playerId, cScoutCavalryClass, 4, 1);
-    ModArmor(playerId, cCavalryClass, 3, 1);
-    ModArmor(playerId, cScoutCavalryClass, 3, 1);
-    ModAttack(playerId, cCavalryClass, 21, 4);
-    ModAttack(playerId, cScoutCavalryClass, 21, 4);
-    MulResource(playerId, 213, 4);
-    SetAttribute(playerId, RaideHornBuildingID, cRegenerationHpPercent, 0.0 - 2.0 / 3);
-    SetAttribute(playerId, RaideHornBuildingID, cDeadUnitId, RaideHornEndBuildingID);
-    SpawnUnit(playerId, RaideHornBuildingID, UniversityID, 1, 1);
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeCavalryAttackGoldProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01 / 3);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000006);
+
+    ApplyToAllPlayerTargets(playerId, cScoutCavalryClass, cTaskTypeGenerateResources);
+    ApplyToAllPlayerTargets(playerId, cCavalryClass, cTaskTypeGenerateResources);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    ApplyToAllPlayerTargets(playerId, KeshikID, cTaskTypeGenerateResources);
+    ApplyToAllPlayerTargets(playerId, EliteKeshikID, cTaskTypeGenerateResources);
+    if (xsGetPlayerCivilization(playerId) == cTatars)
+        ApplyToAllPlayerTargets(playerId, KnightID, cTaskTypeGenerateResources);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeCavalryAttackGoldProductivity, 75);
 }
 
 
 //  10077 - Raide Horn End Effect
 void EffectFunction10077(int playerId = -1)
 {
-    ModAttack(playerId, cCavalryClass, 4, -1);
-    ModAttack(playerId, cScoutCavalryClass, 4, -1);
-    ModArmor(playerId, cCavalryClass, 3, -1);
-    ModArmor(playerId, cScoutCavalryClass, 3, -1);
-    ModAttack(playerId, cCavalryClass, 21, -4);
-    ModAttack(playerId, cScoutCavalryClass, 21, -4);
-    MulResource(playerId, 213, 0.25);
 }
 
 
@@ -883,9 +881,15 @@ void EffectFunction10073(int playerId = -1)
     PaxMongolicaApplier(playerId, HandCannoneerID);
     PaxMongolicaApplier(playerId, GenitourID);
     PaxMongolicaApplier(playerId, EliteGenitourID);
+    PaxMongolicaApplier(playerId, KeshikID);
+    PaxMongolicaApplier(playerId, EliteKeshikID);
+    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
+        if (isResearched(playerId, CavalierTechID))
+            UpgradeUnit(playerId, KnightID, EliteKeshikID);
+        else
+            UpgradeUnit(playerId, KnightID, KeshikID);
     
     xsResetTaskAmount();
-    KeshikStinger(playerId, 1.25);
 }
 
 
@@ -1147,11 +1151,26 @@ void EffectFunction10089(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkRange, 1);
-    xsTaskAmount(cTaskAttrWorkValue2, 2);
+    xsTaskAmount(cTaskAttrWorkValue2, 3);
     xsTaskAmount(cTaskAttrOwnerType, 0);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000005);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000005);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
     xsTaskAmount(cTaskAttrWorkValue1, -60);
+    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
+    xsTaskAmount(cTaskAttrWorkValue1, -1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000002);
+    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
+    xsTaskAmount(cTaskAttrWorkValue1, -0.15);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5.000003);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
     xsResetTaskAmount();
+    LaunchStinger(playerId, SteppeLancerID);
+    LaunchStinger(playerId, EliteSteppeLancerID);
 }
 
 

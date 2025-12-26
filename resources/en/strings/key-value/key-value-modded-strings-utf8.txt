@@ -24,9 +24,9 @@
 
 26159 "Build <b>Feitoria<b> (<cost>) \nEconomic building. Generates resources without the need for villagers. Unique building of the Portuguese. Requires 20 population. Resources generated per second: 1.6 food, 0.7 wood, 1.0 gold, 0.3 stone.<i> Upgrades: line of sight (Town Center); hit points, armor (University).<i> \n<hp> <attack> <armor> <piercearmor> <range> <garrison>\nClass: Building; Tags: Building; Build Time: 120; LOS: 6; Search radius: 6."
 
-26313 "Create <b>Keshik<b> (<cost>) \nCavalry unit that can regenerate 3 HP from each attack towards enemy (except buildings).\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points, to Elite Keshik 600F, 400G (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 25; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4.\n\n<GREY>Before Castle Age: -20 HP, -2 attack, -50% HP regeneration from attacking."
+26313 "Create <b>Keshik<b> (<cost>) \nCavalry unit that can regenerate 3 HP from each attack towards enemy (except buildings).\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points, to Elite Keshik 600F, 400G (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 25; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4.\n\n<GREY>Before Castle Age: -30 HP, -2 attack."
 
-26314 "Create <b>Elite Keshik<b> (<cost>) \nCavalry unit that can regenerate 4 HP from each attack towards enemy (except buildings).\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 25; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4.\n\n<GREY>Before Castle Age: -50% HP regeneration from attacking."
+26314 "Create <b>Elite Keshik<b> (<cost>) \nCavalry unit that can regenerate 4 HP from each attack towards enemy (except buildings).\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 25; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4."
 
 26326 "Create <b>Scout Cavalry<b> (<cost>)\nFast cavalry for scouting and raiding. Resistant to conversion (+2 conversion resistance, +3/+1 min/max conversion time). Strong vs Monks. Weak vs Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); speed, to Light Cavalry 150F, 50G (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Scout cavalry; Tags: Cavalry, Light Cavalry; Training time: 30; Moving speed: 1.2; Reload time: 2; LOS: 4; Search radius: 4. \nAttack Bonus: +6 vs Monk.\n\nAfter Feudal Age gets: +2 attack, +2 LOS/search radius, +0.35 moving speed"
 
@@ -83,7 +83,7 @@
 
 120160 "Infantry and Naval civilization\n\n• War Ships cost -15%/-15%/-20% at Feudal/Castle/Imperial Age\n• Infantry +20% HP starting at Feudal Age\n• Wheelbarrow, Hand Cart free\n\n<b>Unique Units:<b>\n• Berserk (Infantry with regeneration), Longboat (War ship with multiple arrows), Viking Raiders (High speed infantry that can reduce enemy's work rate)\n\n<b>Unique Techs: <b>\n• Chieftains (Infantry +5 damage vs cavalries, +4 damage vs camels, gain 5 gold for each killed villager and 20 gold for monks and trade units.) \n• Bogsveigar (Archer-line and Longboats +1 attack)\n• Frozen Sea Dominance (Transport Ships +250% hit points; Your land military units near Transport Ships and Longboats get +10% attack speed and regenerate 20 HP per minute, except siege weapons and monks)\n• Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)\n\n<b>Team bonus: <b>\nDock cost -15%"
 
-120161 "Cavalry Archer civilization \n\n• Cavalry archers -20% reload time \n• Light Cavalry, Hussar, and Steppe Lancer +30% HP\n• Hunters +40% work rate\n• Cavalries can loot 0.25 gold per second when attacking buildings(except gates, walls and farms)\n• Keshik and Elite Keshik available an age in advance\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom) \n• Drill (Siege Workshop units +50% moving speed) \n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +25% HP regeneration from attacking)\n\n<b>Team bonus: <b>\nScout-Line +2 LOS"
+120161 "Cavalry Archer civilization \n\n• Cavalry archers -20% reload time \n• Light Cavalry, Hussar, and Steppe Lancer +30% HP\n• Hunters +40% work rate\n• Cavalries can loot 0.25 gold per second when attacking buildings(except gates, walls and farms)\n• Keshik and Elite Keshik available an age in advance\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom) \n• Drill (Siege Workshop units +50% moving speed) \n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking)\n\n<b>Team bonus: <b>\nScout-Line +2 LOS"
 
 120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight \n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP) \n• Siege Technique (Rams +400 melee attack, +20% attack bonus vs buildings)\n\n<b>Team bonus: <b>\nSiege Workshop work rate +20%"
 
@@ -125,9 +125,9 @@
 
 120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Can build Krepost\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead) \n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +150% heal range and heal rate)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 
-120182 "Cavalry Archer civilization \n\n• Herdables + 57% food \n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Cavalry Archers +1/2 pierce armor at Castle/Imperial Age\n• Keshiks can generate gold when attacking enemies (except buildings)\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (A strong cavalry archer)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Cavalry +1 attack, +1 pierce armor, +4 attack vs Standard Buildings, and Keshik +200% gold productivity, lasting for 90 seconds)\n• Khan's Conscription (Conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
+120182 "Cavalry Archer civilization \n\n• Herdables + 57% food \n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Cavalry Archers +1/2 pierce armor at Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Scout Cavalry-line/Camel Rider-line/Keshiks can generate 0.25/0.25/0.75 gold per second when attacking enemies (except buildings))\n• Khan's Conscription (Immediately conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 
-120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Barracks, Archery Ranges and Stables -75 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
+120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Barracks, Archery Ranges and Stables -75 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 
 120184 "Cavalry and Monk civilization \n\n• Receive 100 food when a Town Center is built up (including the starting one) \n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrade -50% cost, +100% research speed\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking) \n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range) \n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
 
@@ -298,6 +298,7 @@
 500134 "Elephant Archer"
 500135 "Boyar's Fortitude"
 500136 "Veteran Parthian Cavalry Archer"
+500137 "Khazar Lancers"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -353,8 +354,8 @@
 501051 "Research Papal States (Monks regain their faith +50% faster after a successful conversion)"
 501052 "Research Town Defense (Town Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power)"
 501053 "Research Scutage (Gain 250 gold, and each military unit +10)"
-501054 "Research Raide Horn (Cavalry +1 attack, +1 pierce armor, +4 attack vs Standard Buildings, and Keshik +200% gold productivity, lasting for 90 seconds)"
-501055 "Research Khan's Conscription (Conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)"
+501054 "Research Raide Horn (Scout Cavalry-line/Camel Rider-line/Keshiks can generate 0.25/0.25/0.75 gold per second when attacking enemies (except buildings))"
+501055 "Research Khan's Conscription (Immediately conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)"
 501056 "Research Whistling Arrow (Steppe Lancers -66% gold cost)"
 501057 "Research Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)"
 501058 "Research Suftaja (Spawn 8 trade carts, with each market +1)"
@@ -414,7 +415,7 @@
 501112 "Research Camel Lancer (Camel Riders +1 attack range)"
 501113 "Research Satrap (Castles can increase surrounding buildings' work rates by 33% and generate 30 gold per minute)"
 501114 "Research Accolade (Military units can gain 5 HP and (except Crusader Knights) 1 attack after killing enemy military units, up to 5 stacks)"
-501115 "Research Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +25% HP regeneration from attacking)"
+501115 "Research Pax Mongolica (Barrack and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking)"
 501116 "Research Elite Mercenary (Upgrade your mercenaries to elite versions)"
 501117 "Research Western/Middle European Mercenary Contract (You can use olive oil to recruit Woad Raiders, Throwing Axemen, Huskarls, Teutonic Knights, Berserks, Longbowmen, Coustilliers and Tarkans)"
 501118 "Research Eastern European Mercenary Contract (You can use olive oil to recruit Obuches, Magyar Hussars, Boyars, Konniks, Leitis and Hussite Wagons)"
@@ -436,6 +437,7 @@
 501134 "Upgrade to Elephant Archer"
 501135 "Research Boyar's Fortitude (Knight-line units and Boyars +5 attack vs buildings)"
 501136 "Upgrade to Veteran Parthian Cavalry Archer"
+501137 "Research Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -491,8 +493,8 @@
 521051 "Research <b>Papal States<b> (<cost>) (time: 45)\nMonks regain their faith +50% faster after a successful conversion."
 521052 "Research <b>Town Defense<b> (<cost>) (time: 55)\nTown Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power."
 521053 "Research <b>Scutage<b> (<cost>) (time: 45)\nGain 250 gold, and each military +10."
-521054 "Research <b>Raide Horn<b> (<cost>) (time: 30)\nCavalry +1 attack, +1 pierce armor, +4 attack vs Standard Buildings, and Keshik +200% gold productivity, lasting for 90 seconds."
-521055 "Research <b>Khan's Conscription<b> (<cost>) (time: 60)\nConscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription."
+521054 "Research <b>Raide Horn<b> (<cost>) (time: 30)\nScout Cavalry-line/Camel Rider-line/Keshiks can generate 0.25/0.25/0.75 gold per second when attacking enemies (except buildings)."
+521055 "Research <b>Khan's Conscription<b> (<cost>) (time: 60)\nImmediately conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription."
 521056 "Research <b>Whistling Arrow<b> (<cost>) (time: 60)\nSteppe Lancers -66% gold cost."
 521057 "Research <b>Stockfish Trade<b> (<cost>) (time: 60)\nFishermen and Fishing Ships -50% food production, but can generate equivalent gold."
 521058 "Research <b>Suftaja<b> (<cost>) (time: 45)\nSpawn 8 trade carts, with each market +1."
@@ -526,7 +528,7 @@
 521086 "Research <b>Jinete Tactics<b> (<cost>) (time: 60)\nGenitours +2 max range."
 521087 "Research <b>Explorer<b> (<cost>) (time: 45)\nYou can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on."
 521088 "Research <b>Sagres School<b> (<cost>) (time: 60)\nDocks +80% work rate."
-521089 "Research <b>Siha Bow Limbs<b> (<cost>) (time: 45)\nRanged soldiers remove attack delay and -15% gold cost."
+521089 "Research <b>Siha Bow Limbs<b> (<cost>) (time: 60)\nRanged soldiers remove attack delay and -15% gold cost."
 521090 "Recruit a mercenary squad (<cost>) (time: 15), with values and troop types determined by your luck. You can accumulate 1 recruitment opportunity every 90 seconds."
 521091 "Research <b>Polutasvarf<b> (<cost>) (time: 60)\nMilitary units can loot 150 olive oil from every destroyed building; Varangains +33% gold obtained from kills."
 521092 "Upgrade to <b>Elite Toungoo Warrior<b> (<cost>) (time: 45)\nUpgrades your Toungoo Warriors and lets you create Elite Toungoo Warriors."
@@ -552,7 +554,7 @@
 521112 "Research <b>Camel Lancer<b> (<cost>) (time: 60)\nCamel Riders +1 attack range."
 521113 "Research <b>Satrap<b> (<cost>) (time: 45)\nCastles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute."
 521114 "Research <b>Accolade<b> (<cost>) (time: 60)\nMilitary units can gain 5 HP and (except Crusader Knights) 1 attack after killing enemy military units, up to 5 stacks."
-521115 "Research <b>Pax Mongolica<b> (<cost>) (time: 60)\nBarrack and Archery Range units can regenerate 2 HP from each attack; Keshik +25% HP regeneration from attacking."
+521115 "Research <b>Pax Mongolica<b> (<cost>) (time: 60)\nBarrack and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking."
 521116 "Research <b>Elite Mercenary<b> (<cost>) (time: 45)\nUpgrade your mercenaries to elite versions."
 521117 "Research <b>Western/Middle European Mercenary Contract<b> (<cost>)\nYou can use olive oil to recruit Woad Raiders, Throwing Axemen, Huskarls, Teutonic Knights, Berserks, Longbowmen, Coustilliers and Tarkans."
 521118 "Research <b>Eastern European Mercenary Contract<b> (<cost>)\nYou can use olive oil to recruit Obuches, Magyar Hussars, Boyars, Konniks, Leitis and Hussite Wagons."
@@ -574,6 +576,7 @@
 521134 "Upgrade to <b>Elephant Archer<b> (<cost>) (time: 30)\nUpgrades your Early Elephant Archers and lets you create Elephant Archers."
 521135 "Research <b>Boyar's Fortitude<b> (<cost>) (time: 45)\nKnight-line units and Boyars +5 attack vs buildings."
 521136 "Upgrade to <b>Veteran Parthian Archer<b> (<cost>) (time: 25)\nUpgrades your Parthian Cavalry Archers and lets you create Veteran Parthian Cavalry Archers."
+521137 "Research <b>Khazar Lancers<b> (<cost>) (time: 45)\nSteppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

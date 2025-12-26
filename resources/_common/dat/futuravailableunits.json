@@ -8009,6 +8009,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Bracer",
+                        "RequiredAge": 4,
+                        "ID": 201
                     }
                 ]
             },
@@ -8466,6 +8471,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     }
                 ]
             },
@@ -8547,6 +8557,11 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "ID": 12
                     }
                 ]
             }
@@ -10368,6 +10383,16 @@
                         "ID": 322,
                         "Name": "Murder Holes",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Khazar Lancers",
+                        "RequiredAge": 3,
+                        "ID": 3245
+                    },
+                    {
+                        "Name": "Siha Bow Limbs",
+                        "RequiredAge": 4,
+                        "ID": 3138
                     }
                 ]
             },

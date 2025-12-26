@@ -45,6 +45,7 @@ extern const int cAttributeOliveOilProductivity = 446;
 extern const int cAttributeExclusiveTechFlag = 447;
 extern const int cAttributeYumKaaxGoldProductivity = 448;
 extern const int cAttributeYumKaaxWoodProductivity = 449;
+extern const int cAttributeCavalryAttackGoldProductivity = 459;
 
 
 //  units' IDs
