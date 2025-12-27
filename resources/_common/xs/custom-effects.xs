@@ -1180,7 +1180,7 @@ include "rules.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 73  2025.12.26");
+    xsChatData("Build: 74  2025.12.27");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Author's QQ: 2072591548");
 }
