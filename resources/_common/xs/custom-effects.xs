@@ -1,3 +1,4 @@
+include "math.xs";
 include "techtree.xs";
 
 
@@ -1174,13 +1175,13 @@ void EffectFunction10089(int playerId = -1)
 }
 
 
-include "rules.xs";
+include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 74  2025.12.27");
+    xsChatData("Build: 75  2025.12.29");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Author's QQ: 2072591548");
 }

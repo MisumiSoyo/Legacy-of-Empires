@@ -1,9 +1,6 @@
 //  Functions related to units
 
 
-include "array.xs";
-
-
 bool isHouse(int ObjectID = -1)
 {
     return ((ObjectID == 70) || (ObjectID == 463) || (ObjectID == 464) || (ObjectID == 465) || (ObjectID == 191) || (ObjectID == 192));

@@ -73,11 +73,6 @@ void EffectFunction10002(int playerId = -1)
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetName, 500078, playerId);
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);
     }
-    //  Berserks Adjustment
-    ModAttribute(playerId, BerserkID, cRegenerationRate, -40);
-    ModAttribute(playerId, EliteBerserkID, cRegenerationRate, -40);
-    ModAttribute(playerId, MercenaryBerserkID, cRegenerationRate, -40);
-    ModAttribute(playerId, MercenaryEliteBerserkID, cRegenerationRate, -40);
     //  Keshik adjustment before Castle Age
     ModAttribute(playerId, KeshikID, cHitpoints, -30);
     ModAttack(playerId, KeshikID, cDamageClassMelee, -2);

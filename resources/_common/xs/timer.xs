@@ -63,10 +63,10 @@ void ByzantinesOliveOil(int playerId = -1, int Time = -1)
 {
     int OliveOil = 0;
     OliveOil = xsPlayerAttribute(playerId, cAttributeOliveOil);
-    SetAttribute(playerId, BarracksID, cMaxRange, OliveOil);
-    SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
-    SetAttribute(playerId, StableID, cMaxRange, OliveOil);
-    SetAttribute(playerId, SiegeWorkshopID, cMaxRange, OliveOil);
+    SetAttribute(playerId, BarracksID, cShownRange, OliveOil);
+    SetAttribute(playerId, ArcheryRangeID, cShownRange, OliveOil);
+    SetAttribute(playerId, StableID, cShownRange, OliveOil);
+    SetAttribute(playerId, SiegeWorkshopID, cShownRange, OliveOil);
 }
 
 
@@ -149,18 +149,12 @@ void TimerEvent(int playerId = -1, int Time = -1)
 }
 
 
-rule TimerRule
-    active
-    minInterval 1
-    maxInterval 1
+void EffectFunction10000(int playerId = -1)
 {
-    int playerId = 0;
-    int n = xsGetNumPlayers();
     int Time = xsGetGameTime();
-    for (playerId = 0; <= n)
-        if (xsPlayerAttribute(playerId, cAttributeLastRuleTime) < Time)
-        {
-            TimerEvent(playerId, Time);
-            SetResource(playerId, cAttributeLastRuleTime, Time);
-        }
+    if (xsPlayerAttribute(playerId, cAttributeLastRuleTime) < Time)
+    {
+        TimerEvent(playerId, Time);
+        SetResource(playerId, cAttributeLastRuleTime, Time);
+    }
 }
