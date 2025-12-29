@@ -74,9 +74,9 @@ void EffectFunction10002(int playerId = -1)
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);
     }
     //  Keshik adjustment before Castle Age
-    ModAttribute(playerId, KeshikID, cHitpoints, -30);
-    ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
-    ModAttribute(playerId, KeshikID, cShownAttack, -2);
+    //  ModAttribute(playerId, KeshikID, cHitpoints, -30);
+    //    ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
+    //  ModAttribute(playerId, KeshikID, cShownAttack, -2);
     //  Huns Anarchy Adjustment
     AnarchyTarkanAdjustment(playerId);
     //  Khan
@@ -168,13 +168,7 @@ void EffectFunction10002(int playerId = -1)
         }
         case cMongols:
         {
-            //  Mongols civ bonus, cavalries generate gold from attacking buildings
-            SetResource(playerId, cAttributeMaintenance, 10003);
-            //  Mongols civ bonus, dark age Stable and Scout Cavalry without Barracks
-            ForceResearchTech(playerId, StableTechID);
-            ForceResearchTech(playerId, ScoutCavalryTechID);
             //  Mongols Knight line replaced by Keshiks
-            UpgradeUnit(playerId, KnightID, KeshikID);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3126, playerId);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 600, playerId);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 400, playerId);
@@ -427,7 +421,6 @@ void EffectFunction10002(int playerId = -1)
         case cTatars:
         {
             //  Tatars Knight line replaced by Keshiks
-            UpgradeUnit(playerId, KnightID, KeshikID);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3126, playerId);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 600, playerId);
             xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 400, playerId);
@@ -647,7 +640,7 @@ void EffectFunction10024(int playerId = -1)
         case cMongols:
         {
             //  Mongols civ bonus, advanced Keshik
-            ForceResearchTech(playerId, KnightTechID);
+            //  ForceResearchTech(playerId, KnightTechID);
             break;
         }
         case cSpanish:
@@ -842,7 +835,7 @@ void EffectFunction10025(int playerId = -1)
         case cMongols:
         {
             //  Mongols civ bonus, advanced Elite Keshik
-            ForceEnableTech(playerId, CavalierTechID);
+            //  ForceEnableTech(playerId, CavalierTechID);
             break;
         }
         case cSpanish:
@@ -989,11 +982,9 @@ void EffectFunction10025(int playerId = -1)
     ModAttack(playerId, LembosID, cDamageClassShips, 1);
     ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
     //  Keshik Upgrade
-    ModAttribute(playerId, KeshikID, cHitpoints, 30);
-    ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
-    ModAttribute(playerId, KeshikID, cShownAttack, 2);
-    if ((xsGetPlayerCivilization(playerId) == cMongols) || ((xsGetPlayerCivilization(playerId) == cTatars)))
-        UpgradeUnit(playerId, KnightID, KeshikID);
+    //  ModAttribute(playerId, KeshikID, cHitpoints, 30);
+    //  ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
+    //  ModAttribute(playerId, KeshikID, cShownAttack, 2);
     //  Conscripted Army Upgrade
     ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
     ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);
