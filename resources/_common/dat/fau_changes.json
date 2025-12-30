@@ -2,8 +2,8 @@
     "changes":
     [
         {
-            "note": "阿萨辛刺客",
-            "civilizations": "Saracens",
+            "note": "阿萨辛",
+            "civilizations": ["Saracens", "Persians"],
             "unit_id": 4001,
             "building_id": 12,
             "Name": "Assassin",
@@ -865,7 +865,8 @@
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
-            "RequiredAge": 4
+            "RequiredAge": 4,
+            "RequiredTechID": 13
         },
         {
             "note": "拜占庭启用石匠",

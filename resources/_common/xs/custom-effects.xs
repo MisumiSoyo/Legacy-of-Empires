@@ -1181,7 +1181,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 75  2025.12.29");
+    xsChatData("Build: 79  2025.12.30");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Author's QQ: 2072591548");
 }

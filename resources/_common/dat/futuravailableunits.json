@@ -8561,6 +8561,7 @@
                     {
                         "Name": "Crop Rotation",
                         "RequiredAge": 4,
+                        "RequiredTechID": 13,
                         "ID": 12
                     }
                 ]
@@ -9728,6 +9729,7 @@
                     {
                         "Name": "Crop Rotation",
                         "RequiredAge": 4,
+                        "RequiredTechID": 13,
                         "ID": 12
                     }
                 ]
@@ -27809,6 +27811,11 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Assassin",
+                        "RequiredAge": 3,
+                        "ID": 4001
                     }
                 ]
             },
@@ -41472,6 +41479,7 @@
                     {
                         "Name": "Crop Rotation",
                         "RequiredAge": 4,
+                        "RequiredTechID": 13,
                         "ID": 12
                     }
                 ]
