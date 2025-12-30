@@ -41,76 +41,9 @@ void EffectFunction10002(int playerId = -1)
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetName, 500078, playerId);
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);
     }
-    //  Khan
-    SetAttribute(playerId, KhanID, cDisabledFlag, 1);
 
     switch (playerCiv)
     {
-        case cChinese:
-        {
-            //  Chinese civ bonus, tech cost discount
-            SetResource(playerId, cAttributeResearchCostMod, 0.95);
-            DisableTech(playerId, 350);
-            DisableTech(playerId, 351);
-            DisableTech(playerId, 352);
-            //  Chinese +50 start wood
-            ModResource(playerId, cAttributeStartingWood, 50);
-            SetResource(playerId, cAttributeExclusiveTechFlag, 1);
-            DisableTech(playerId, GuanNingCavalryTechID);
-            break;
-        }
-        case cPersians:
-        {
-            DisableTech(playerId, CavalryArcherTechID);
-            DisableTech(playerId, HeavyCavalryArcherTechID);
-            //  Persians civ bonus, free market techs
-            SetTechAuto(playerId, CaravanTechID);
-            SetTechAuto(playerId, CoinageTechID);
-            SetTechAuto(playerId, BankingTechID);
-            SetTechAuto(playerId, GuildsTechID);
-            break;
-        }
-        case cSaracens:
-        {
-            //  Saracens civ bonus + camel lancer
-            MulAttribute(playerId, CamelLancerID, cHitpoints, 1.25);
-            MulAttribute(playerId, EliteCamelLancerID, cHitpoints, 1.25);
-            break;
-        }
-        case cTurks:
-        {
-            //  Knight line replaced by Sipahi
-            UpgradeUnit(playerId, KnightID, SipahiID);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3013, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 450, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 300, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetTime, 80, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetIcon, 105, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetName, 500011, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetDescription, 521011, playerId);
-            //  Turks civ bonus, cannon galleon on land
-            xsEffectAmount(cSetAttribute, CannonGalleonID, cTerrainTable, 0, playerId);
-            xsEffectAmount(cSetAttribute, EliteCannonGalleonID, cTerrainTable, 0, playerId);
-            //  Elite Steppe Lancer and Heavy Camel Rider upgrades -33% cost
-            xsEffectAmount(cModifyTech, EliteSteppeLancerTechID, cAttrMulAllCosts, 0.666666, playerId);
-            xsEffectAmount(cModifyTech, HeavyCamelTechID, cAttrMulAllCosts, 0.666666, playerId);
-            break;
-        }
-        case cVikings:
-        {
-            DisableTech(playerId, WatchTowerTechID);
-            EnableObject(playerId, VikingRaiderID);
-            break;
-        }
-        case cCelts:
-        {
-            //  Celts civ bonus, infantries and cavalries harder to be converted
-            xsEffectAmount(cAddAttribute, cInfantryClass, cMaxConversionTimeMod, 1, playerId);
-            xsEffectAmount(cAddAttribute, cInfantryClass, cMinConversionTimeMod, 1, playerId);
-            xsEffectAmount(cAddAttribute, cCavalryClass, cMaxConversionTimeMod, 1, playerId);
-            xsEffectAmount(cAddAttribute, cCavalryClass, cMinConversionTimeMod, 1, playerId);
-            break;
-        }
         case cSpanish:
         {
             //  Enable Genitour
@@ -119,36 +52,6 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetHotkey, 18022, playerId);
             //  Spanish civ bonus, Elite Genitour upgrade -50% food cost
             xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulFoodCost, 0.5, playerId);
-            break;
-        }
-        case cAztecs:
-        {
-            DisableTech(playerId, GalleonTechID);
-            DisableTech(playerId, GalleyTechID);
-            DisableTech(playerId, GoldShaftMiningTechID);
-            DisableTech(playerId, StoneShaftMiningTechID);
-            //  Enable Lembos
-            EnableObject(playerId, LembosID);
-            break;
-        }
-        case cMayans:
-        {
-            //  Disable Mill Techs
-            DisableTech(playerId, GalleonTechID);
-            DisableTech(playerId, GalleyTechID);
-            DisableTech(playerId, StoneShaftMiningTechID);
-            DisableTech(playerId, CropRotationTechID);
-            //  Mayans civ bonus, free masonry
-            SetTechAuto(playerId, MasonryTechID);
-            //  Mayans civ bonus, get food based on the number of researched techs
-            SetResource(playerId, cAttributeTechnologyRewardEffect, 3121);
-            //  Enable Lembos
-            EnableObject(playerId, LembosID);
-            break;
-        }
-        case cHuns:
-        {
-            DisableTech(playerId, WatchTowerTechID);
             break;
         }
         case cKoreans:
@@ -188,19 +91,6 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, GuardTowerTechID, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, KeepTechID, cAttrMulTime, 2, playerId);
             xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulTime, 2, playerId);
-            //  Scout Cavalry Line replaced by Mansabdars
-            UpgradeUnit(playerId, ScoutCavalryID, MansabdarID);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetEffect, 3134, playerId);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetTime, 30, playerId);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetName, 500095, playerId);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetDescription, 521095, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetEffect, 3135, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetFoodCost, 800, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetGoldCost, 500, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetIcon, 105, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetTime, 60, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetName, 500096, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetDescription, 521096, playerId);
             break;
         }
         case cIncas:
@@ -222,9 +112,6 @@ void EffectFunction10002(int playerId = -1)
             MulAttribute(playerId, 153, cTrainTime, 0.5);
             MulAttribute(playerId, 49, cTrainTime, 0.5);
             MulAttribute(playerId, 150, cTrainTime, 0.5);
-            //  小艇
-            EnableObject(playerId, LembosID);
-            xsEffectAmount(cEnableObject, LembosID, 1, 0, playerId);
             break;
         }
         case cMagyars:
@@ -402,19 +289,6 @@ void EffectFunction10002(int playerId = -1)
             ModAttack(playerId, cScoutCavalryClass, cDamageClassSkirmishers, -2);
             ModAttack(playerId, cCavalryClass, cDamageClassSkirmishers, -2);
             BengalisCavalryVSSkirmisher(playerId);
-            //  Bengalis Scout Cavalry line replaced by Mansabdars
-            UpgradeUnit(playerId, ScoutCavalryID, MansabdarID);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetEffect, 3134, playerId);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetTime, 30, playerId);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetName, 500095, playerId);
-            xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrSetDescription, 521095, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetEffect, 3135, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetFoodCost, 800, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetGoldCost, 500, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetIcon, 105, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetTime, 60, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetName, 500096, playerId);
-            xsEffectAmount(cModifyTech, HussarTechID, cAttrSetDescription, 521096, playerId);
             break;
         }
         case cGurjaras:
@@ -442,7 +316,6 @@ void EffectFunction10002(int playerId = -1)
         }
         case cShu:
         {
-            SetTechAuto(playerId, WubaoTechID);
             //  Shu civ bonus, Wubao -20% cost
             MulAttribute(playerId, WubaoID, cResourceCost, 0.8);
             //  Shu civ bonus, infantries generate food from attacking farms
@@ -452,18 +325,10 @@ void EffectFunction10002(int playerId = -1)
         }
         case cWu:
         {
-            //  Enable Wubao
-            SetTechAuto(playerId, WubaoTechID);
             //  Wu civ bonus, Wubao technologies -33% cost
             xsEffectAmount(cModifyTech, GentryTechID, cAttrMulAllCosts, 0.67, playerId);
             xsEffectAmount(cModifyTech, MercenaryTechID, cAttrMulAllCosts, 0.67, playerId);
             xsEffectAmount(cModifyTech, StrongFortressTechID, cAttrMulAllCosts, 0.67, playerId);
-            break;
-        }
-        case cWei:
-        {
-            //  Enable Wubao
-            SetTechAuto(playerId, WubaoTechID);
             break;
         }
         case cJurchens:
@@ -491,38 +356,9 @@ void EffectFunction10002(int playerId = -1)
 //  10024 - Feudal Age Effect
 void EffectFunction10024(int playerId = -1)
 {
-    //  Mansabdar Upgrade
-    ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
-    ModAttack(playerId, MansabdarID, cDamageClassSkirmishers, 1);
-    ModAttribute(playerId, MansabdarID, cShownAttack, 2);
-    ModAttribute(playerId, MansabdarID, cLineOfSight, 2);
-    ModAttribute(playerId, MansabdarID, cSearchRadius, 2);
-    ModAttribute(playerId, MansabdarID, cMovementSpeed, 0.3);
-    //  Wubao Upgrade
-    ModAttribute(playerId, WubaoID, cHitpoints, 250);
-
     int playerCiv = xsGetPlayerCivilization(playerId);
     switch (playerCiv)
     {
-        case cChinese:
-        {
-            ModResource(playerId, cAttributeResearchCostMod, -0.05);
-            break;
-        }
-        case cByzantines:
-        {
-            MulAttribute(playerId, cBuildingClass, cHitpoints, 1.15 / 1.19999);
-            MulAttribute(playerId, cWallClass, cHitpoints, 1.15 / 1.19999);
-            MulAttribute(playerId, cGateClass, cHitpoints, 1.15 / 1.19999);
-            MulAttribute(playerId, cFarmClass, cHitpoints, 1.15 / 1.19999);
-            MulAttribute(playerId, cTowerClass, cHitpoints, 1.15 / 1.19999);
-            break;
-        }
-        case cPersians:
-        {
-            EnableObject(playerId, ParthianCavalryArcherID);
-            break;
-        }
         case cMongols:
         {
             //  Mongols civ bonus, advanced Keshik
@@ -557,11 +393,6 @@ void EffectFunction10024(int playerId = -1)
         case cItalians:
         {
             ModResource(playerId, cAttributeGoldGeneration, 15);
-            break;
-        }
-        case cIndians:
-        {
-            xsEffectAmount(cUpgradeUnit, 448, MansabdarID, 0, playerId);
             break;
         }
         case cIncas:
@@ -612,11 +443,6 @@ void EffectFunction10024(int playerId = -1)
             ForceEnableTech(playerId, GambesonsTechID);
             break;
         }
-        case cBengalis:
-        {
-            xsEffectAmount(cUpgradeUnit, ScoutCavalryID, MansabdarID, 0, playerId);
-            break;
-        }
         case cRomans:
         {
             //  Romans civ bonus, Feudal Age Monastery and Monk
@@ -644,7 +470,6 @@ void EffectFunction10024(int playerId = -1)
         }
         case cJurchens:
         {
-            EnableObject(playerId, ConscriptedArmyID);
             SetAttribute(playerId, InvisibleDeerSpawnerID, cRegenerationHpPercent, 0.0 - 60.0 / 275);
             break;
         }
@@ -661,41 +486,6 @@ void EffectFunction10025(int playerId = -1)
 
     switch (playerCiv)
     {
-        case cTeutons:
-        {
-            EnableObject(playerId, CrusaderKnightID);
-            ModArmor(playerId, CrusaderKnightID, cDamageClassMelee, 1);
-            break;
-        }
-        case cChinese:
-        {
-            ModResource(playerId, cAttributeResearchCostMod, -0.05);
-            EnableObject(playerId, FlameThrowerID);
-            break;
-        }
-        case cByzantines:
-        {
-            EnableObject(playerId, VarangianID);
-            MulAttribute(playerId, cBuildingClass, cHitpoints, 1.2 / 1.25);
-            MulAttribute(playerId, cWallClass, cHitpoints, 1.2 / 1.25);
-            MulAttribute(playerId, cGateClass, cHitpoints, 1.2 / 1.25);
-            MulAttribute(playerId, cFarmClass, cHitpoints, 1.2 / 1.25);
-            MulAttribute(playerId, cTowerClass, cHitpoints, 1.2 / 1.25);
-            EnableObject(playerId, FlameThrowerID);
-            SetAttribute(playerId, FlameThrowerID, cNameId, 700042);
-            SetAttribute(playerId, FlameThrowerID, cDescriptionId, 701042);
-            break;
-        }
-        case cPersians:
-        {
-            EnableObject(playerId, AssassinID);
-            break;
-        }
-        case cSaracens:
-        {
-            EnableObject(playerId, AssassinID);
-            break;
-        }
         case cMongols:
         {
             //  Mongols civ bonus, advanced Elite Keshik
@@ -705,7 +495,6 @@ void EffectFunction10025(int playerId = -1)
         case cSpanish:
         {
             ForceEnableTech(playerId, 599);
-            xsEffectAmount(cUpgradeUnit, TradeBoatID, ManilaGalleonID, -1, playerId);
             break;
         }
         case cAztecs:
@@ -787,19 +576,12 @@ void EffectFunction10025(int playerId = -1)
         case cTatars:
         {
             ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
-            //  Enable Khan
-            SetAttribute(playerId, KhanID, cDisabledFlag, 4);
             break;
         }
         case cSicilians:
         {
             //  Enable Hospitaller Knight
             SetTechAuto(playerId, 3038);
-            break;
-        }
-        case cBohemians:
-        {
-            EnableObject(playerId, ChariotArcherID);
             break;
         }
         case cDravidians:
@@ -837,25 +619,6 @@ void EffectFunction10025(int playerId = -1)
         default:
             break;
     }
-
-    //  Wubao Upgrade
-    ModAttribute(playerId, WubaoID, cHitpoints, 300);
-    //  Lembos Upgrade
-    ModAttribute(playerId, LembosID, cHitpoints, 15);
-    ModAttack(playerId, LembosID, cDamageClassPierce, 1);
-    ModAttack(playerId, LembosID, cDamageClassShips, 1);
-    ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
-    //  Conscripted Army Upgrade
-    ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
-    ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);
-
-    ModAttribute(playerId, MercenarySerjeantID, cHitpoints, 25);
-    ModAttack(playerId, MercenarySerjeantID, cDamageClassMelee, 3);
-    ModAttribute(playerId, MercenarySerjeantID, cShownAttack, 3);
-    ModArmor(playerId, MercenarySerjeantID, cDamageClassMelee, 2);
-    ModArmor(playerId, MercenarySerjeantID, cDamageClassPierce, 1);
-    ModAttribute(playerId, MercenarySerjeantID, cShownMeleeArmor, 2);
-    ModAttribute(playerId, MercenarySerjeantID, cShownPierceArmor, 1);
 }
 
 
@@ -866,31 +629,6 @@ void EffectFunction10026(int playerId = -1)
 
     switch (playerCiv)
     {
-        case cFranks:
-        {
-            EnableObject(playerId, SwissLancerID);
-            break;
-        }
-        case cTeutons:
-        {
-            ModArmor(playerId, CrusaderKnightID, cDamageClassMelee, 1);
-            break;
-        }
-        case cChinese:
-        {
-            ModResource(playerId, cAttributeResearchCostMod, -0.05);
-            break;
-        }
-        case cByzantines:
-        {
-            MulAttribute(playerId, cBuildingClass, cHitpoints, 1.25 / 1.2 / 1.0769);
-            MulAttribute(playerId, cWallClass, cHitpoints, 1.25 / 1.2 / 1.0769);
-            MulAttribute(playerId, cGateClass, cHitpoints, 1.25 / 1.2 / 1.0769);
-            MulAttribute(playerId, cFarmClass, cHitpoints, 1.25 / 1.2 / 1.0769);
-            MulAttribute(playerId, cTowerClass, cHitpoints, 1.25 / 1.2 / 1.0769);
-            MulResource(playerId, cAttributeOliveOilProductivity, 2);
-            break;
-        }
         case cAztecs:
         {
             MulAttribute(playerId, ArcherID, cMovementSpeed, 1.1 / 1.05);
@@ -985,30 +723,6 @@ void EffectFunction10026(int playerId = -1)
         default:
             break;
     }
-
-    //  Assassin Upgrade
-    ModAttribute(playerId, AssassinID, cHitpoints, 15);
-    ModAttack(playerId, AssassinID, cDamageClassMelee, 15);
-    ModAttribute(playerId, AssassinID, cShownAttack, 15);
-    //  Wubao Upgrade
-    ModAttribute(playerId, WubaoID, cHitpoints, 300);
-    //  Manila Galleon Upgrade
-    ModAttribute(playerId, ManilaGalleonID, cHitpoints, 20);
-    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
-    ModAttack(playerId, ManilaGalleonID, cDamageClassShips, 1);
-    ModArmor(playerId, ManilaGalleonID, cDamageClassShips, 1);
-    //  Lembos Upgrade
-    ModAttribute(playerId, LembosID, cHitpoints, 15);
-    ModAttack(playerId, LembosID, cDamageClassPierce, 1);
-    ModAttack(playerId, LembosID, cDamageClassShips, 1);
-    ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
-    //  Chariot Archer Upgrade
-    LaunchAura(playerId, ChariotArcherID);
-    //  Khan Upgrade
-    ModAttack(playerId, KhanID, cDamageClassPierce, 2);
-    //  Conscripted Army upgrade
-    ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
-    ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);
 }
 
 

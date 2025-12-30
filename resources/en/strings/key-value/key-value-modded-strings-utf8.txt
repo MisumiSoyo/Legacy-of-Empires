@@ -63,7 +63,7 @@
 
 120150 "Foot Archer civilization \n\n• Town Centers cost -50% wood in Castle Age\n• Archers (excepts Skirmishers) +1/+2 max range/LOS/search radius at Castle/Imperial Age\n• Shepherds work rate +25%\n• Military units around towers +10% attack speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Castle Network (Military units around towers, town centers and castles +10% attack speed)\n• Warwolf (Trebuchets have blast damage)\n• Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
 
-120151 "Cavalry civilization \n\n• Castles -15%/-25% cost in Castle/Imperial Age\n• Cavalry class, scout cavalry class, cavalry archer class units +20% hit points starting in Feudal Age\n• Farm upgrades free (Requires Mill) \n• Foragers +15% work rate\n• Can lend money for profit after researching Banking\n\n<b>Unique Unit : <b>\n• Throwing Axeman (Ranged infantry), Swiss Lancer (Infantry strong vs cavalries and monks)\n\n<b>Unique Techs: <b>\n• Bearded Axe (Throwing Axeman +2 max range)\n• Chivalry (Stables +40% work rate)\n• Pavise (Archer line and Hand Cannoneers +3 melee armor, receive -2 damage from cavalry units)\n• Gendarmes d'ordonnance (Cavalries gain additional 1 HP and 1 HP generation per minute from each nearby unit of yours (maximum 30 stacks))\n\n<b>Team bonus: <b>\nKnight-Line +2 LOS"
+120151 "Cavalry civilization \n\n• Castles -15%/-25% cost in Castle/Imperial Age\n• Cavalry class, scout cavalry class, cavalry archer class units +20% hit points starting in Feudal Age\n• Farm upgrades free (Requires Mill) \n• Foragers +15% work rate\n• Can lend money for profit after researching Banking\n\n<b>Unique Unit : <b>\n• Throwing Axeman (Ranged infantry), Swiss Pikeman (Infantry strong vs cavalries and monks)\n\n<b>Unique Techs: <b>\n• Bearded Axe (Throwing Axeman +2 max range)\n• Chivalry (Stables +40% work rate)\n• Pavise (Archer line and Hand Cannoneers +3 melee armor, receive -2 damage from cavalry units)\n• Gendarmes d'ordonnance (Cavalries gain additional 1 HP and 1 HP generation per minute from each nearby unit of yours (maximum 30 stacks))\n\n<b>Team bonus: <b>\nKnight-Line +2 LOS"
 
 120152 "Infantry civilization \n\n• Infantry -15%/-20%/-25%/-30% cost at Dark/Feudal/Castle/Imperial Age\n• Infantry +1/+2/+3 attack vs buildings at Feudal/Castle/Imperial Age\n• Hunters carry +15 meat, last 25% longer\n• Loom research time reduced to 1 sec \n• +10/15/20 population headroom and capacity at Feudal/Castle/Imperial Age\n• Receive one villager (maximum 20) for every 3 enemies killed\n\n<b>Unique Unit:<b>\n• Huskarl (Infantry better combats with archers)\n\n<b>Unique Techs: <b>\n• Anarchy (create Huskarls at Barracks)\n• Perfusion (Barracks +100% work rate)\n• Foederati Army (Enable your team to train Foederati units; Receive 7 food and gold from killing enemies with Foederati units)\n• Greuthungi Cavalry (Knight-line units -50% food cost)\n\n<b>Team bonus: <b>\nBarracks +20% work rate"
 
@@ -71,7 +71,7 @@
 
 120154 "Infantry civilization \n\n• Fishing Ships +100% HP, +2 pierce armor, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50% \n• Infantry -25% reload time starting in Feudal Age \n• Cavalry Archer class units +2 attack vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Japanese unique archer), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2) \n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Monastery spawns Soheis with captured relics (1 Sohei every 66 seconds for each relic); relics no longer generate gold)\n• Yari Cavalry (Cavalries +9 attack vs Cavalry; Knight-line additionally +3 attack)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 
-120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -200 food\n• Technologies cost -5/10/15/20% at Dark/Feudal/Castle/Imperial Age \n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flame Thrower (Siege weapon that can throw flame)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom)\n• Song Dynasty (Villagers and trade units -20% cost; Trade units -50% train time; Reduce technology costs by 5%)\n• Yuan Dynasty (Land units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
+120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -200 food\n• Technologies cost -5/10/15/20% at Dark/Feudal/Castle/Imperial Age \n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flamethrower (Siege weapon that can throw flame)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom)\n• Song Dynasty (Villagers and trade units -20% cost; Trade units -50% train time; Reduce technology costs by 5%)\n• Yuan Dynasty (Land units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
 
 120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age\n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost \n• Fire Ships and Dromons -16.67% reload time \n• Advance to Imperial Age -33% costs\n• Town Watch and Townb Patrol free\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries), Varangian (Infantries that gain gold from killing units)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Galley-Line +1 max range, Bombard Towers cause 5 blast damage in 0.5 radius)\n• Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)\n• Olive Grove (Villagers can generate olive oil to recruit mercenaries, and you can unlock a mercenary contract at Town Center and use olive oil to recruit mercenaries; The quantity of olive oil is temporarily displayed using the range of military buildings)\n• Polutasvarf (Military units can loot 150 olive oil from every destroyed building; Varangains +33% gold obtained from kills)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 
@@ -606,7 +606,7 @@
 700018 "Chariot Crossbowman"
 700019 "Rung Scout"
 700020 "Elite Rung Scout"
-700021 "Swiss Lancer"
+700021 "Swiss Pikeman"
 700022 "Lembos"
 700023 "Conscripted Cavalry"
 700024 "Camel Lancer"
@@ -620,14 +620,14 @@
 700032 "Sohei"
 700033 "Viking Raiders"
 700034 "Sofa"
-700035 "Flame Thrower"
+700035 "Flamethrower"
 700036 "Taborite Warrior"
 700037 "Elite Sofa"
 700038 "Assassin"
 700039 "Streltsy"
 700040 "Khevsureti Warrior"
 700041 "Elite Khevsureti Warrior"
-700042 "Flame Thrower"
+700042 "Flamethrower"
 700043 "Toungoo Warrior"
 700044 "Elite Toungoo Warrior"
 700045 "Mansabdar"
@@ -664,7 +664,7 @@
 701018 "Create Chariot Crossbowman"
 701019 "Create Rung Scout"
 701020 "Create Elite Rung Scout"
-701021 "Create Swiss Lancer"
+701021 "Create Swiss Pikeman"
 701022 "Create Lembos"
 701023 "Create Conscripted Cavalry"
 701024 "Create Camel Lancer"
@@ -678,14 +678,14 @@
 701032 "Create Sohei"
 701033 "Create Viking Raiders"
 701034 "Create Sofa"
-701035 "Create Flame Thrower"
+701035 "Create Flamethrower"
 701036 "Create Taborite Warrior"
 701037 "Create Elite Sofa"
 701038 "Create Assassin"
 701039 "Create Streltsy"
 701040 "Create Khevsureti Warrior"
 701041 "Create Khevsureti Warrior"
-701042 "Create Flame Thrower"
+701042 "Create Flamethrower"
 701043 "Create Toungoo Warrior"
 701044 "Create Elite Toungoo Warrior"
 701045 "Create Mansabdar"
@@ -742,7 +742,7 @@
 
 721020 "Create <b>Elite Rung Scout<b> (<cost>)\nVietnamese unique infantry unit. Can become invisible for 10 seconds and gain 0.75 speed bonus temporarily every 60 second. Strong vs buildings and infantry. Weak vs archers at long range.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry; Training time: 21; Moving speed: 1.25; Reload time: 2; LOS: 5; Search radius: 5. \nAttack Bonus: +4 vs Shock Infantry, +6 vs Standard Buildings."
 
-721021 "Create <b>Swiss Lancer<b> (<cost>) \nFrench unique infantry unit. Can charge an +20 attack vs cavalries and monks every 30 second. Can resist conversion.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: None; Training time: 20; Moving speed: 1.00; Reload time: 2; LOS: 5; Search radius: 5. \nAttack Bonus: +12 vs Cavalry, +10 vs Camel, +20 vs Elephant, +2 vs Shock Infantry, +4 vs Standard Buildings, +10 vs Ship, +10 vs Fishing Ship, +6 vs Mamluk"
+721021 "Create <b>Swiss Pikeman<b> (<cost>) \nFrench unique infantry unit. Can charge an +20 attack vs cavalries and monks every 30 second. Can resist conversion.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: None; Training time: 20; Moving speed: 1.00; Reload time: 2; LOS: 5; Search radius: 5. \nAttack Bonus: +12 vs Cavalry, +10 vs Camel, +20 vs Elephant, +2 vs Shock Infantry, +4 vs Standard Buildings, +10 vs Ship, +10 vs Fishing Ship, +6 vs Mamluk"
 
 721022 "Create <b>Lembos<b> (<cost>) \nAmerican unique war Ship with ranged attack. Can automatically upgrade with age.\n<GREY><i>Upgrades: armor, speed, cost (Dock); attack, range (Blacksmith); attack, accuracy (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: War ship; Tags: Ship; Training time: 40; Moving speed: 1.60; Reload time: 3; Accuracy: 100%; Rotation time: 0.05; LOS: 6; Search radius: 6. \nAttack Bonus: +6 vs Ships, +6 vs Fishing Ships, +3 vs Rams/Trebuchet, +6 vs Buildings.\n<GREY>After Castle Age gets: +15 HP, +1 attack, +1 attack vs Ships, +1 attack vs Fishing Ships\nAfter Imperial Age gets: +15 HP, +1 attack, +1 attack vs Ships, +1 attack vs Fishing Ships"
 
@@ -770,7 +770,7 @@
 
 721034 "Create <b>Sofa<b> (<cost>)\nMalians' unique cavalry. Resistant to conversion. Have attack bonus vs pikemen, skirmishers and light cavalries.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable);  creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.5; Reload time: 2; LOS: 6; Search radius: 6. \nAttack Bonus: +8 vs Pikeman, +4 vs Skirmisher, +6 vs Light Cavalry."
 
-721035 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
+721035 "Create <b>Flamethrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
 
 721036 "Create <b>Taborite Warrior<b> (<cost>)\nBohemians' unique infantry. Can generate 9 food, 4.5 wood and 3 gold per minute.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 15; Moving speed: 1.00; Reload time: 2; LOS: 5; Search radius: 5.\nAttack Bonus: +3 vs Standard Buildings, +4 vs Shock Infantry, +6 vs Cavalry, +5 vs Camel"
 
@@ -784,7 +784,7 @@
 
 721041 "Create <b>Elite Khevsureti Warrior<b> (<cost>)\nGeorgian unique infantry. Strong vs siege weapons.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 21; Moving speed: 1.1; Reload time: 2; LOS: 6; Search radius: 5.\nAttack Bonus: +10 vs Siege Weapon, +20 vs Ram/Siege Tower/Trebuchet\nArmor Bonus: -10 damage received from Siege Weapons"
 
-721042 "Create <b>Flame Thrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
+721042 "Create <b>Flamethrower<b> (<cost>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\n<GREY><i>Upgrades: attack, range (University); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit; Training time: 40; Moving speed: 0.67; Reload time: 0.25; LOS: 7; Search radius: 7. \nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
 
 721043 "Create <b>Toungoo Warrior<b> (<cost>)\nBurmese unique infantry. Can deal damage to enemies around when killed.\n<i><GREY>Upgrades: speed, attack (Barrack); attack, armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Shock Infantry, Unique Unit; Training time: 34; Moving speed: 1.3; Reload time: 2; LOS: 8; Search radius: 6.\nAttack Bonus: +3 vs Shock Infantry, +2 vs Standard Buildings"
 
