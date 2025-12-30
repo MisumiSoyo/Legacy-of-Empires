@@ -33,83 +33,19 @@ void EffectFunction10002(int playerId = -1)
 {
     AbilityApplier(playerId);
     Init();
-    SetResource(playerId, cAttributeLastRuleTime, -1);
     int playerCiv = xsGetPlayerCivilization(playerId);
 
-    //  Genitour Adjustment
-    SetAttribute(playerId, GenitourID, cTrainButton, 21);
-    SetAttribute(playerId, GenitourID, cHotkeyId, 16079);
-    SetAttribute(playerId, EliteGenitourID, cTrainButton, 21);
-    SetAttribute(playerId, EliteGenitourID, cHotkeyId, 16079);
-    //  Missionary Adjustment
-    SetAttribute(playerId, MissionaryID, cTrainButton, 22);
-    SetAttribute(playerId, MissionaryID, cHotkeyId, 16078);
-    //  Relic gold production, 30 → 45
-    MulResource(playerId, cAttributeRelicRate, 1.5);
-    //  Varangians Gold Productivity
-    SetResource(playerId, cAttributeVarangianLootProductivity, 1);
-    //  WarriorPriest Adjustment
-    SetAttribute(playerId, WarriorPriestID, cTrainButton, 21);
-    SetAttribute(playerId, WarriorPriestID, cHotkeyId, 16079);
-    //  Wubao Food and Wood Productivity
-    SetResource(playerId, cAttributeWubaoFoodWoodProductivity, 1);
-    //  Condottiero Adjustment
-    SetAttribute(playerId, CondottieroID, cTrainButton, 21);
-    SetAttribute(playerId, CondottieroID, cHotkeyId, 16079);
-    //  Taborite Warrior Productivity
-    SetResource(playerId, cAttributeTaboriteWarriorProductivity, 1);
-    //  Lou Chuan Adjustment
-    SetAttribute(playerId, LouChuanID, cTrainButton, 24);
-    SetAttribute(playerId, LouChuanID, cHotkeyId, 16106);
-    //  Legionary upgrade Adjustment
-    xsEffectAmount(cModifyTech, 885, cAttrSetTime, 80, playerId);
-    //  Feitoria Adjustment
-    SetAttribute(playerId, FeitoriaID, cAmountFirstStorage, -15);
-    SetAttribute(playerId, FeitoriaID, cAmountSecondStorage, 15);
-    SetAttribute(playerId, FeitoriaID, cAmountThirdStorage, 15);
     //  Some civs' Tithe descriptions adjustment
     if ((playerCiv == cChinese) || (playerCiv == cJapanese) || (playerCiv == cKoreans) || (playerCiv == cVietnamese) || (playerCiv == cBurmese))
     {
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetName, 500078, playerId);
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);
     }
-    //  Keshik adjustment before Castle Age
-    //  ModAttribute(playerId, KeshikID, cHitpoints, -30);
-    //    ModAttack(playerId, KeshikID, cDamageClassMelee, -2);
-    //  ModAttribute(playerId, KeshikID, cShownAttack, -2);
-    //  Huns Anarchy Adjustment
-    AnarchyTarkanAdjustment(playerId);
     //  Khan
     SetAttribute(playerId, KhanID, cDisabledFlag, 1);
 
     switch (playerCiv)
     {
-        case cGoths:
-        {
-            DisableTech(playerId, WatchTowerTechID);
-            DisableTech(playerId, HandCannoneerTechID);
-            DisableTech(playerId, BombardCannonTechID);
-            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 1.0 / 0.85);
-            break;
-        }
-        case cJapanese:
-        {
-            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetEffect, 3009, playerId);
-            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetFoodCost, 125, playerId);
-            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetGoldCost, 75, playerId);
-            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetTime, 30, playerId);
-            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetName, 500008, playerId);
-            xsEffectAmount(cModifyTech, CrossbowmanTechID, cAttrSetDescription, 521008, playerId);
-            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetEffect, 3010, playerId);
-            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetFoodCost, 300, playerId);
-            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetGoldCost, 200, playerId);
-            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetTime, 45, playerId);
-            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetIcon, 105, playerId);
-            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetName, 500009, playerId);
-            xsEffectAmount(cModifyTech, ArbalesterTechID, cAttrSetDescription, 521009, playerId);
-            UpgradeUnit(playerId, ArcherID, YumiAshigaruID);
-            break;
-        }
         case cChinese:
         {
             //  Chinese civ bonus, tech cost discount
@@ -164,18 +100,6 @@ void EffectFunction10002(int playerId = -1)
         {
             DisableTech(playerId, WatchTowerTechID);
             EnableObject(playerId, VikingRaiderID);
-            break;
-        }
-        case cMongols:
-        {
-            //  Mongols Knight line replaced by Keshiks
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3126, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 600, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 400, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetTime, 40, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetIcon, 105, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetName, 7304, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetDescription, 28304, playerId);
             break;
         }
         case cCelts:
@@ -418,18 +342,6 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, MilitaryTrainingTechID, cAttrMulFoodCost, 0.5, playerId);
             break;
         }
-        case cTatars:
-        {
-            //  Tatars Knight line replaced by Keshiks
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetEffect, 3126, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetFoodCost, 600, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetGoldCost, 400, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetTime, 40, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetIcon, 105, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetName, 7304, playerId);
-            xsEffectAmount(cModifyTech, CavalierTechID, cAttrSetDescription, 28304, playerId);
-            break;
-        }
         case cCumans:
         {
             //  Disable former cavalry movement speed techs
@@ -592,27 +504,6 @@ void EffectFunction10024(int playerId = -1)
     int playerCiv = xsGetPlayerCivilization(playerId);
     switch (playerCiv)
     {
-        case cGoths:
-        {
-            EnableObject(playerId, WoodenFortressID);
-            ModResource(playerId, cAttributePopulationCap, 10);
-            ModResource(playerId, cAttributeUnitLimit, 10);
-            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 0.85 / 0.8);
-            break;
-        }
-        case cTeutons:
-        {
-            ModAttribute(playerId, SkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, SkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, SkirmisherID, cSearchRadius, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cSearchRadius, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cSearchRadius, 1);
-            break;
-        }
         case cChinese:
         {
             ModResource(playerId, cAttributeResearchCostMod, -0.05);
@@ -630,11 +521,6 @@ void EffectFunction10024(int playerId = -1)
         case cPersians:
         {
             EnableObject(playerId, ParthianCavalryArcherID);
-            break;
-        }
-        case cVikings:
-        {
-            EnableObject(playerId, WoodenFortressID); 
             break;
         }
         case cMongols:
@@ -666,7 +552,6 @@ void EffectFunction10024(int playerId = -1)
         case cHuns:
         {
             EnableObject(playerId, EarlyCavalryArcherID);
-            EnableObject(playerId, WoodenFortressID); 
             break;
         }
         case cItalians:
@@ -776,29 +661,8 @@ void EffectFunction10025(int playerId = -1)
 
     switch (playerCiv)
     {
-        case cBritons:
-        {
-            EnableObject(playerId, HobelarID);
-            break;
-        }
-        case cGoths:
-        {
-            ModResource(playerId, cAttributePopulationCap, 5);
-            ModResource(playerId, cAttributeUnitLimit, 5);
-            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 0.8 / 0.75);
-            break;
-        }
         case cTeutons:
         {
-            ModAttribute(playerId, SkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, SkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, SkirmisherID, cSearchRadius, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cSearchRadius, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cSearchRadius, 1);
             EnableObject(playerId, CrusaderKnightID);
             ModArmor(playerId, CrusaderKnightID, cDamageClassMelee, 1);
             break;
@@ -981,10 +845,6 @@ void EffectFunction10025(int playerId = -1)
     ModAttack(playerId, LembosID, cDamageClassPierce, 1);
     ModAttack(playerId, LembosID, cDamageClassShips, 1);
     ModAttack(playerId, LembosID, cDamageClassFishingShips, 1);
-    //  Keshik Upgrade
-    //  ModAttribute(playerId, KeshikID, cHitpoints, 30);
-    //  ModAttack(playerId, KeshikID, cDamageClassMelee, 2);
-    //  ModAttribute(playerId, KeshikID, cShownAttack, 2);
     //  Conscripted Army Upgrade
     ModAttribute(playerId, ConscriptedArmyID, cMovementSpeed, 0.1);
     ModAttribute(playerId, ExtraConscriptedArmyID, cMovementSpeed, 0.1);
@@ -1011,24 +871,8 @@ void EffectFunction10026(int playerId = -1)
             EnableObject(playerId, SwissLancerID);
             break;
         }
-        case cGoths:
-        {
-            ModResource(playerId, cAttributePopulationCap, 5);
-            ModResource(playerId, cAttributeUnitLimit, -5);
-            ModAttribute(playerId, FoederatiSwordmanID, cResourceCost, 0.75 / 0.7);
-            break;
-        }
         case cTeutons:
         {
-            ModAttribute(playerId, SkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, SkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, SkirmisherID, cSearchRadius, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, EliteSkirmisherID, cSearchRadius, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cMaxRange, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cLineOfSight, 1);
-            ModAttribute(playerId, ImperialSkirmisherID, cSearchRadius, 1);
             ModArmor(playerId, CrusaderKnightID, cDamageClassMelee, 1);
             break;
         }

@@ -610,7 +610,8 @@ void PoisoningApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
-void AnarchyTarkanAdjustment(int playerId = -1)
+//  10090 - Atheism Adjustment
+void EffectFunction10090(int playerId = -1)
 {
     SetAttribute(playerId, Tarkan2ID, cTrainLocationsEntryMod, 1);
     SetAttribute(playerId, Tarkan2ID, cTrainButton, 3);
