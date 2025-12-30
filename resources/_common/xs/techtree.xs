@@ -44,74 +44,12 @@ void EffectFunction10002(int playerId = -1)
 
     switch (playerCiv)
     {
-        case cSpanish:
-        {
-            //  Enable Genitour
-            SetTechAuto(playerId, GenitourTechID);
-            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetButton, 26, playerId);
-            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetHotkey, 18022, playerId);
-            //  Spanish civ bonus, Elite Genitour upgrade -50% food cost
-            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulFoodCost, 0.5, playerId);
-            break;
-        }
         case cKoreans:
         {
             //  Koreans civ bonus, Treadmill Crane, Murder Holes and Arrowslits -50% cost
             xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulAllCosts, 0.5, playerId);
             xsEffectAmount(cModifyTech, MurderHolesTechID, cAttrMulAllCosts, 0.5, playerId);
             xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulAllCosts, 0.5, playerId);
-            break;
-        }
-        case cIndians:
-        {
-            //  Hindustanis civ bonus, university techs (except unique techs) free, +100% research time
-            xsEffectAmount(cModifyTech, MasonryTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, ArchitectureTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, HeatedShotTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, BallisticsTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, ChemistryTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, BombardTowerTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, SiegeEngineersTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, MurderHolesTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, FortifiedWallTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, GuardTowerTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, KeepTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulAllCosts, 0, playerId);
-            xsEffectAmount(cModifyTech, MasonryTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, ArchitectureTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, HeatedShotTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, BallisticsTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, ChemistryTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, BombardTowerTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, SiegeEngineersTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, MurderHolesTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, FortifiedWallTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, GuardTowerTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, KeepTechID, cAttrMulTime, 2, playerId);
-            xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulTime, 2, playerId);
-            break;
-        }
-        case cIncas:
-        {
-            DisableTech(playerId, GalleonTechID);
-            DisableTech(playerId, GalleyTechID);
-            DisableTech(playerId, GoldShaftMiningTechID);
-            DisableTech(playerId, StoneShaftMiningTechID);
-            ModAttribute(playerId, cLivestockClass, cLineOfSight, 2);
-            MulAttribute(playerId, 12, cTrainTime, 0.5);
-            MulAttribute(playerId, 20, cTrainTime, 0.5);
-            MulAttribute(playerId, 132, cTrainTime, 0.5);
-            MulAttribute(playerId, 498, cTrainTime, 0.5);
-            MulAttribute(playerId, 10, cTrainTime, 0.5);
-            MulAttribute(playerId, 14, cTrainTime, 0.5);
-            MulAttribute(playerId, 87, cTrainTime, 0.5);
-            MulAttribute(playerId, 86, cTrainTime, 0.5);
-            MulAttribute(playerId, 101, cTrainTime, 0.5);
-            MulAttribute(playerId, 153, cTrainTime, 0.5);
-            MulAttribute(playerId, 49, cTrainTime, 0.5);
-            MulAttribute(playerId, 150, cTrainTime, 0.5);
             break;
         }
         case cMagyars:
@@ -147,17 +85,6 @@ void EffectFunction10002(int playerId = -1)
             FasterCastleUnits(playerId, 1372, 33, 18258);
             break;
         }
-        case cPortuguese:
-        {
-            //  Enable Genitour
-            SetTechAuto(playerId, GenitourTechID);
-            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetButton, 26, playerId);
-            xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrSetHotkey, 18022, playerId);
-            //  Portuguese civ bonus, Genitour + 2 archer armor
-            ModAttack(playerId, GenitourID, cDamageClassArchers, 2);
-            ModAttack(playerId, EliteGenitourID, cDamageClassArchers, 2);
-            break;
-        }
         case cMalians:
         {
             //  Malians civ bonus, Hand Cannoneers +66% training speed
@@ -172,40 +99,6 @@ void EffectFunction10002(int playerId = -1)
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetEffect, 3186, playerId);
             xsEffectAmount(cModifyTech, HalberdierTechID, cAttrSetIcon, 105, playerId);
             xsEffectAmount(cUpgradeUnit, SpearmanID, DonsoID, 0, playerId);
-            break;
-        }
-        case cKhmer:
-        {
-            //  Khmer civ bonus, Monks strengthen Battle Elephants
-            SetResource(playerId, cAttributeMaintenance, 10012);
-            DisableTech(playerId, CavalryArcherTechID);
-            DisableTech(playerId, HeavyCavalryArcherTechID);
-            //  Khmer civ bonus, Elephant Archers +10% movement speed
-            MulAttribute(playerId, ElephantArcherID, cMovementSpeed, 1.1);
-            MulAttribute(playerId, EliteElephantArcherID, cMovementSpeed, 1.1);
-            MulAttribute(playerId, EarlyElephantArcherID, cMovementSpeed, 1.1);
-            //  Early Elehpant Archer
-            ModAttribute(playerId, ElephantArcherID, cHitpoints, -100);
-            SetAttribute(playerId, ElephantArcherID, cNameId, 700055);
-            SetAttribute(playerId, ElephantArcherID, cDescriptionId, 701055);
-            ModAttack(playerId, ElephantArcherID, cDamageClassPierce, -1);
-            ModArmor(playerId, ElephantArcherID, cDamageClassPierce, -1);
-            ModAttribute(playerId, ElephantArcherID, cShownAttack, -1);
-            ModAttribute(playerId, ElephantArcherID, cShownPierceArmor, -1);
-            ModAttribute(playerId, ElephantArcherID, cAccuracyPercent, -15);
-            DisableTech(playerId, EliteElephantArcherTechID);
-            break;
-        }
-        case cMalay:
-        {
-            //  Malay civ bonus, warships generate food
-            MalayShipInit(playerId);
-            DisableTech(playerId, CavalryArcherTechID);
-            break;
-        }
-        case cBurmese:
-        {
-            DisableTech(playerId, DryDockTechID);
             break;
         }
         case cVietnamese:
@@ -408,11 +301,6 @@ void EffectFunction10024(int playerId = -1)
             ModArmor(playerId, DonsoID, cDamageClassPierce, 1);
             ModArmor(playerId, VeteranDonsoID, cDamageClassPierce, 1);
             ModArmor(playerId, EliteDonsoID, cDamageClassPierce, 1);
-            break;
-        }
-        case cKhmer:
-        {
-            ForceResearchTech(playerId, ElephantArcherTechID);
             break;
         }
         case cBulgarians:

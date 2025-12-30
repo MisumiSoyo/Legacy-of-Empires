@@ -285,7 +285,8 @@ void FasterCastleUnits(int playerId = -1, int ObjectID = -1, int TrainButtonID =
 }
 
 
-void MalayShipInit(int playerId = -1)
+//  Malay civ bonus, ships generate food
+void EffectFunction10091(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);

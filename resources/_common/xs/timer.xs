@@ -4,7 +4,7 @@ void Shrine(int playerId = -1, int Time = -1)
     float LastSpawnTime = 0.0;
     float SpawnTime = 0.0;
     int SpawnCount = 0;
-    if (xsGetObjectCount(playerId, ShrineID) == 0)
+    if (xsPlayerAttribute(playerId, cAttributeShrineCount) == 0)
         return;
 
     SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
@@ -63,10 +63,10 @@ void ByzantinesOliveOil(int playerId = -1, int Time = -1)
 {
     int OliveOil = 0;
     OliveOil = xsPlayerAttribute(playerId, cAttributeOliveOil);
-    SetAttribute(playerId, BarracksID, cShownRange, OliveOil);
-    SetAttribute(playerId, ArcheryRangeID, cShownRange, OliveOil);
-    SetAttribute(playerId, StableID, cShownRange, OliveOil);
-    SetAttribute(playerId, SiegeWorkshopID, cShownRange, OliveOil);
+    SetAttribute(playerId, BarracksID, cMaxRange, OliveOil);
+    SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
+    SetAttribute(playerId, StableID, cMaxRange, OliveOil);
+    SetAttribute(playerId, SiegeWorkshopID, cMaxRange, OliveOil);
 }
 
 
