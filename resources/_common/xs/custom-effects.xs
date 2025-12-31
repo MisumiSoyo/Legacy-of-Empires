@@ -187,6 +187,8 @@ void EffectFunction10008(int playerId = -1)
     NoDropSiteHunters(MaleHunterID, playerId);
     NoDropSiteHunters(FemaleHunterID, playerId);
     xsResetTaskAmount();
+    SetResource(playerId, cAttributeHunterFoodProductivity, 41);
+    MulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
 }
 
 
@@ -1172,6 +1174,41 @@ void EffectFunction10089(int playerId = -1)
     xsResetTaskAmount();
     LaunchStinger(playerId, SteppeLancerID);
     LaunchStinger(playerId, EliteSteppeLancerID);
+}
+
+
+//  10092 - C-Bonus, Faster Castle Units
+void EffectFunction10092(int playerId = -1)
+{
+    FasterCastleUnits(playerId, 74, 21, 16079);
+    FasterCastleUnits(playerId, 75, 21, 16079);
+    FasterCastleUnits(playerId, 77, 21, 16079);
+    FasterCastleUnits(playerId, 473, 21, 16079);
+    FasterCastleUnits(playerId, 567, 21, 16079);
+    FasterCastleUnits(playerId, 93, 22, 16068);
+    FasterCastleUnits(playerId, 358, 22, 16068);
+    FasterCastleUnits(playerId, 359, 22, 16068);
+    FasterCastleUnits(playerId, 882, 23, 16085);
+    FasterCastleUnits(playerId, 1010, 24, 16086);
+    FasterCastleUnits(playerId, 1012, 24, 16086);
+    FasterCastleUnits(playerId, 4, 26, 18022);
+    FasterCastleUnits(playerId, 24, 26, 18022);
+    FasterCastleUnits(playerId, 492, 26, 18022);
+    FasterCastleUnits(playerId, 7, 27, 18045);
+    FasterCastleUnits(playerId, 6, 27, 18045);
+    FasterCastleUnits(playerId, 1155, 27, 18045);
+    FasterCastleUnits(playerId, 39, 28, 18008);
+    FasterCastleUnits(playerId, 474, 28, 18008);
+    FasterCastleUnits(playerId, HandCannoneerID, 29, 18034);
+    FasterCastleUnits(playerId, 448, 31, 18090);
+    FasterCastleUnits(playerId, 546, 31, 18090);
+    FasterCastleUnits(playerId, 441, 31, 18090);
+    FasterCastleUnits(playerId, 1707, 31, 18090);
+    FasterCastleUnits(playerId, 38, 32, 18039);
+    FasterCastleUnits(playerId, 283, 32, 18039);
+    FasterCastleUnits(playerId, 569, 32, 18039);
+    FasterCastleUnits(playerId, 1370, 33, 18258);
+    FasterCastleUnits(playerId, 1372, 33, 18258);
 }
 
 
