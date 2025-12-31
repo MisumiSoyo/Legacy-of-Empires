@@ -1231,7 +1231,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 79  2025.12.30");
+    xsChatData("Build: 83  2025.12.31");
     xsChatData("Author: Misumi Soyo");
-    xsChatData("Author's QQ: 2072591548");
+    xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
