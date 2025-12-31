@@ -299,7 +299,8 @@ void EffectFunction10091(int playerId = -1)
 }
 
 
-void BengalisCavalryVSSkirmisher(int playerId = -1)
+//  10093 - C-Bonus, Cavalry +50% base attack vs skirmishers
+void EffectFunction10093(int playerId = -1)
 {
     int i = 0;
     for (i = 0; < TotalObjects)

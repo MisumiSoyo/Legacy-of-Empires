@@ -1212,6 +1212,19 @@ void EffectFunction10092(int playerId = -1)
 }
 
 
+//  10094 - C-Bonus, Barrack and Archery Range units + attack bonus
+void EffectFunction10094(int playerId = -1)
+{
+    MulAttackBonus(playerId, cInfantryClass, 1.25);
+    MulAttackBonus(playerId, cArcherClass, 1.25);
+    MulAttackBonus(playerId, cCavalryArcherClass, 1.25);
+    MulAttackBonus(playerId, cHandCannoneerClass, 1.25);
+    MulAttackBonus(playerId, SpearmanID, 0.8);
+    MulAttackBonus(playerId, PikemanID, 0.8);
+    MulAttackBonus(playerId, HalberdierID, 0.8);
+}
+
+
 include "timer.xs";
 
 
