@@ -110,6 +110,13 @@ void KhanLimit(int playerId = -1, int Time = -1)
 }
 
 
+void KoreansMineral(int playerId = -1, int Time = -1)
+{
+    float TotalMineCount = xsPlayerAttribute(playerId, cAttributeGoldTotal) + xsPlayerAttribute(playerId, cAttributeStoneTotal);
+    ModResource(playerId, cAttributeGold, minFloat(TotalMineCount/ 1980.0, 3.333333));
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -136,6 +143,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cByzantines:
         {
             ByzantinesOliveOil(playerId, Time);
+            break;
+        }
+        case cKoreans:
+        {
+            KoreansMineral(playerId, Time);
             break;
         }
         default:

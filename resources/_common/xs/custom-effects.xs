@@ -1086,7 +1086,7 @@ void EffectFunction10079(int playerId = -1)
 {
     if (xsPlayerAttribute(playerId, cAttributeTimerFlag) > 0)
         return;
-    SetAttribute(playerId, TimerBuildingID, cRegenerationHpPercent, -67);
+    SetAttribute(playerId, TimerBuildingID, cRegenerationHpPercent, -134);
     SpawnUnit(playerId, TimerBuildingID, 619, 1, 1);
 }
 
@@ -1231,7 +1231,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 83  2025.12.31");
+    xsChatData("Build: 85  2026.01.01");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

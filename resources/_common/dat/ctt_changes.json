@@ -386,9 +386,9 @@
             "target_id": 4014
         },
         {
-            "note": "土耳其, 蒙古, 鞑靼移除骑士系",
+            "note": "土耳其, 蒙古, 鞑靼, 高丽移除骑士系",
             "action": "delete",
-            "civ_id": ["TURKS", "MONGOLS", "TATARS"],
+            "civ_id": ["TURKS", "MONGOLS", "TATARS", "KOREANS"],
             "Node ID": [38, 283, 569],
             "Use Type": "Unit"
         },
@@ -4053,6 +4053,52 @@
             "Node ID": [12, 201, 221],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "高句丽重骑兵",
+            "action": "add",
+            "civ_id": "KOREANS",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800057,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Goguryeo Heavy Cavalry",
+            "Name String ID": 700057,
+            "Node ID": 4137,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 244,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 441
+        },
+        {
+            "note": "精锐高句丽重骑兵",
+            "action": "add",
+            "civ_id": "KOREANS",
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800058,
+            "Link ID": 4137,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Eilte Goguryeo Heavy Cavalry",
+            "Name String ID": 700058,
+            "Node ID": 4138,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 244,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3396,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 4137
         }
     ]
 }

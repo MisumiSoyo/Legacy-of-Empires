@@ -44,14 +44,6 @@ void EffectFunction10002(int playerId = -1)
 
     switch (playerCiv)
     {
-        case cKoreans:
-        {
-            //  Koreans civ bonus, Treadmill Crane, Murder Holes and Arrowslits -50% cost
-            xsEffectAmount(cModifyTech, TreadmillCraneTechID, cAttrMulAllCosts, 0.5, playerId);
-            xsEffectAmount(cModifyTech, MurderHolesTechID, cAttrMulAllCosts, 0.5, playerId);
-            xsEffectAmount(cModifyTech, ArrowslitsTechID, cAttrMulAllCosts, 0.5, playerId);
-            break;
-        }
         case cGurjaras:
         {
             //  Gurjaras civ bonus, Monastries +10 population headroom
