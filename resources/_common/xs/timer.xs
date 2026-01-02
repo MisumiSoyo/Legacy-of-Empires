@@ -29,35 +29,6 @@ void Shrine(int playerId = -1, int Time = -1)
 }
 
 
-void Ikko_Ikki(int playerId = -1, int Time = -1)
-{
-    float LastSpawnTime = 0.0;
-    int Relics = 0;
-    if (isResearched(playerId, IkkoIkkiTechID) == false)
-        return;
-    LastSpawnTime = xsPlayerAttribute(playerId, cAttributeSoheiLastSpawnTime);
-    if (LastSpawnTime == 0.0)
-    {
-        LastSpawnTime = Time;
-        SetResource(playerId, cAttributeSoheiLastSpawnTime, LastSpawnTime);
-    }
-    Relics = xsPlayerAttribute(playerId, cAttributeRelics);
-    if (Relics == 0)
-    {
-        SetResource(playerId, cAttributeSoheiLastSpawnTime, Time);
-        return;
-    }
-    if (xsPlayerAttribute(playerId, cAttributePopulationCap) <= 0.0)
-        return;
-    if (Time > (66.0 / Relics + LastSpawnTime))
-    {
-        SpawnUnit(playerId, SoheiID, MonasteryID, 1, 1);
-        LastSpawnTime = LastSpawnTime + 66.0 / Relics;
-        SetResource(playerId, cAttributeSoheiLastSpawnTime, LastSpawnTime);
-    }
-}
-
-
 //  print the amount of olive oil
 void ByzantinesOliveOil(int playerId = -1, int Time = -1)
 {
@@ -133,11 +104,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cGoths:
         {
             GothsVillager(playerId, Time);
-            break;
-        }
-        case cJapanese:
-        {
-            Ikko_Ikki(playerId, Time);
             break;
         }
         case cByzantines:
