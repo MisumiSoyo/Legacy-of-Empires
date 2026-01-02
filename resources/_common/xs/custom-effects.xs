@@ -962,9 +962,9 @@ void EffectFunction10085(int playerId = -1)
 //  10086 - Song Dynasty
 void EffectFunction10086(int playerId = -1)
 {
-    MulAttribute(playerId, cTradeBoatClass, cResourceCost, 0.8);
-    MulAttribute(playerId, cVillagerClass, cResourceCost, 0.8);
-    MulAttribute(playerId, cTradeCartClass, cResourceCost, 0.8);
+    MulAttribute(playerId, cTradeBoatClass, cResourceCost, 0.65);
+    MulAttribute(playerId, cVillagerClass, cResourceCost, 0.65);
+    MulAttribute(playerId, cTradeCartClass, cResourceCost, 0.65);
     MulAttribute(playerId, cTradeBoatClass, cTrainTime, 0.5);
     MulAttribute(playerId, cTradeCartClass, cTrainTime, 0.5);
     ModResource(playerId, cAttributeResearchCostMod, -0.05);
@@ -1231,7 +1231,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 85  2026.01.01");
+    xsChatData("Build: 86  2026.01.02");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
