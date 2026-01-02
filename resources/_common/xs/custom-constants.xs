@@ -85,7 +85,7 @@ extern const int EliteCamelLancerID = 4035;
 extern const int HobelarID = 4036;
 extern const int EliteHobelarID = 4037;
 extern const int HospitallerKnightID = 4038;
-extern const int HospitallerKnight2ID = 4039;
+extern const int EliteHospitallerKnightID = 4039;
 extern const int CrusaderKnightID = 4041;
 extern const int SoheiID = 4042;
 extern const int VikingRaiderID = 4044;
@@ -124,12 +124,14 @@ extern const int DonsoID = 4127;
 extern const int VeteranDonsoID = 4128;
 extern const int EliteDonsoID = 4129;
 extern const int ProjectileDonsoID = 4130;
-extern const int EliteHospitallerKnightID = 4131;
-extern const int EliteHospitallerKnight2ID = 4132;
 extern const int FoederatiSwordmanID = 4133;
 extern const int FoederatiCavalryArcherID = 4134;
 extern const int FoederatiKnightID = 4135;
 extern const int EarlyElephantArcherID = 4136;
+extern const int GoguryeoHeavyCavalryID = 4137;
+extern const int EliteGoguryeoHeavyCavalryID = 4138;
+extern const int Mehter1ID = 4139;
+extern const int Mheter2ID = 4140;
 
 
 //  Newly added tech IDs

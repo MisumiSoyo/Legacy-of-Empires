@@ -364,6 +364,7 @@
             "target_id": 441
         },
         {
+            "note": "精锐西帕希骑兵",
             "action": "add",
             "civ_id": "TURKS",
             "Age ID": 4,
@@ -789,7 +790,7 @@
             "Link Node Type": "UniqueUnit",
             "Name": "Elite Hospitaller Knight",
             "Name String ID": 700030,
-            "Node ID": 4131,
+            "Node ID": 4039,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 357,
@@ -4099,6 +4100,29 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4137
+        },
+        {
+            "note": "奥斯曼军乐队",
+            "action": "add",
+            "civ_id": "TURKS",
+            "Age ID": 2,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800059,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Mehter",
+            "Name String ID": 700059,
+            "Node ID": 4139,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 180,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1372
         }
     ]
 }
