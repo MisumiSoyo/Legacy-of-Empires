@@ -86,11 +86,6 @@ void EffectFunction10024(int playerId = -1)
     int playerCiv = xsGetPlayerCivilization(playerId);
     switch (playerCiv)
     {
-        case cHuns:
-        {
-            EnableObject(playerId, EarlyCavalryArcherID);
-            break;
-        }
         case cWu:
         {
             SetResource(playerId, cAttributeWubaoGoldProductivity, 10);
@@ -109,11 +104,6 @@ void EffectFunction10025(int playerId = -1)
 
     switch (playerCiv)
     {
-        case cHuns:
-        {
-            xsEffectAmount(cUpgradeUnit, EarlyCavalryArcherID, CavalryArcherID, -1, playerId);   //  upgrade to cavalry archer
-            break;
-        }
         case cSlavs:
         {
             xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.25, playerId);

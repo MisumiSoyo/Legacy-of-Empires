@@ -1033,8 +1033,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "马里启用鼓风炉",
-            "civilizations": "Malians",
+            "note": "马里, 高丽启用鼓风炉",
+            "civilizations": ["Koreans", "Malians"],
             "tech_id": 75,
             "building_id": 103,
             "RequiredAge": 4
@@ -1315,8 +1315,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 波希米亚, 缅甸启用围墙",
-            "civilizations": ["Chinese", "Burmese", "Bohemians"],
+            "note": "中国, 波希米亚, 缅甸, 高丽启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Burmese", "Bohemians"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1459,8 +1459,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "立陶宛, 缅甸获得工兵",
-            "civilizations": ["Burmese", "Lithuanians"],
+            "note": "立陶宛, 缅甸, 高丽获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",

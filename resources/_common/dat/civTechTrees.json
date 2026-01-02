@@ -85024,12 +85024,42 @@
                     "Use Type": "Unit"
                 },
                 {
+                    "Age ID": 2,
+                    "Building ID": 87,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800013,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Early Cavalry Archer",
+                    "Name String ID": 700013,
+                    "Node ID": 4017,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 19,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 192,
+                    "Use Type": "Unit"
+                },
+                {
                     "Age ID": 3,
                     "Building ID": 87,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105085,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
+                    "Link ID": 4017,
+                    "Link Node Type": "UniqueUnit",
                     "Name": "Cavalry Archer",
                     "Name String ID": 14085,
                     "Node ID": 39,
@@ -91668,7 +91698,7 @@
                     "Name": "Blast Furnace",
                     "Name String ID": 17075,
                     "Node ID": 75,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 21,
                     "Prerequisite IDs": [
@@ -93080,7 +93110,7 @@
                     "Name": "Hoardings",
                     "Name String ID": 17376,
                     "Node ID": 379,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -93140,7 +93170,7 @@
                     "Name": "Sappers",
                     "Name String ID": 17322,
                     "Node ID": 321,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 5,
                     "Prerequisite IDs": [

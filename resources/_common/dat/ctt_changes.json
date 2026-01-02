@@ -4123,6 +4123,46 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 1372
+        },
+        {
+            "note": "早期骑射手",
+            "action": "add",
+            "civ_id": "HUNS",
+            "Age ID": 2,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800013,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Early Cavalry Archer",
+            "Name String ID": 700013,
+            "Node ID": 4017,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 19,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 192,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 5
+        },
+        {
+            "note": "匈奴骑射手调整",
+            "action": "modify",
+            "civ_id": "HUNS",
+            "Node ID": 39,
+            "Use Type": "Unit",
+            "Link ID": 4017,
+            "Link Node Type": "UniqueUnit"
+        },
+        {
+            "note": "高丽获得鼓风炉, 工兵, 围墙",
+            "action": "modify",
+            "civ_id": "KOREANS",
+            "Node ID": [75, 321, 379],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }
