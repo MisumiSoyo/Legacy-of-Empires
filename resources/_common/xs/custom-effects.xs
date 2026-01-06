@@ -1225,6 +1225,19 @@ void EffectFunction10094(int playerId = -1)
 }
 
 
+//  10095, C-Bonus, extra food from trade units
+void EffectFunction10095(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, FoodBuilding1ID);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000007);
+    xsTask(cTradeBoatClass, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 

@@ -130,8 +130,8 @@ extern const int FoederatiKnightID = 4135;
 extern const int EarlyElephantArcherID = 4136;
 extern const int GoguryeoHeavyCavalryID = 4137;
 extern const int EliteGoguryeoHeavyCavalryID = 4138;
-extern const int Mehter1ID = 4139;
-extern const int Mheter2ID = 4140;
+extern const int MehterID = 4139;
+extern const int FoodBuilding1ID = 4140;
 
 
 //  Newly added tech IDs

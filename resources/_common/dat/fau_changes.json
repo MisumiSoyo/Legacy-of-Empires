@@ -1850,6 +1850,14 @@
             "building_id": 101,
             "Name": "Mehter",
             "RequiredAge": 2
+        },
+        {
+            "note": "虔信主义",
+            "civilizations": "Dravidians",
+            "tech_id": 3413,
+            "building_id": 209,
+            "Name": "Bhakti",
+            "RequiredAge": 4
         }
     ]
 }
