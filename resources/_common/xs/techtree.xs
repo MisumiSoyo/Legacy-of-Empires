@@ -115,13 +115,6 @@ void EffectFunction10025(int playerId = -1)
             ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
             break;
         }
-        case cDravidians:
-        {
-            ModAttribute(playerId, cMonkClass, cMaxRange, 1);
-            ModAttribute(playerId, cMonkClass, cLineOfSight, 1);
-            ModAttribute(playerId, cMonkClass, cSearchRadius, 1);
-            break;
-        }
         case cWu:
         {
             SetResource(playerId, cAttributeWubaoGoldProductivity, 15);
@@ -149,13 +142,6 @@ void EffectFunction10026(int playerId = -1)
         case cTatars:
         {
             ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
-            break;
-        }
-        case cDravidians:
-        {
-            ModAttribute(playerId, cMonkClass, cMaxRange, 1);
-            ModAttribute(playerId, cMonkClass, cLineOfSight, 1);
-            ModAttribute(playerId, cMonkClass, cSearchRadius, 1);
             break;
         }
         case cWu:
