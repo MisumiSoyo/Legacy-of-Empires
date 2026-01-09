@@ -21873,7 +21873,7 @@
                     "Name": "Skirmisher",
                     "Name String ID": 14088,
                     "Node ID": 7,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Unit",
                     "Picture Index": 20,
                     "Prerequisite IDs": [
@@ -21903,7 +21903,7 @@
                     "Name": "Elite Skirmisher",
                     "Name String ID": 14087,
                     "Node ID": 6,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 21,
                     "Prerequisite IDs": [
@@ -27728,7 +27728,7 @@
                     "Name": "Knight",
                     "Name String ID": 14068,
                     "Node ID": 38,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Unit",
                     "Picture Index": 1,
                     "Prerequisite IDs": [
@@ -27758,7 +27758,7 @@
                     "Name": "Cavalier",
                     "Name String ID": 14070,
                     "Node ID": 283,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 49,
                     "Prerequisite IDs": [
@@ -27782,9 +27782,99 @@
                     "Age ID": 4,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 800014,
+                    "Help String ID": 105471,
                     "Link ID": 283,
                     "Link Node Type": "UnitUpgrade",
+                    "Name": "Paladin",
+                    "Name String ID": 14471,
+                    "Node ID": 569,
+                    "Node Status": "NotAvailable",
+                    "Node Type": "UnitUpgrade",
+                    "Picture Index": 2,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 265,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 105599,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Hei Guang Cavalry",
+                    "Name String ID": 14599,
+                    "Node ID": 1944,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 429,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 105600,
+                    "Link ID": 1944,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Heavy Hei Guang Cavalry",
+                    "Name String ID": 14600,
+                    "Node ID": 1946,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "RegionalUnit",
+                    "Picture Index": 430,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 1033,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800014,
+                    "Link ID": 1946,
+                    "Link Node Type": "RegionalUnit",
                     "Name": "Guan Ning Cavalry",
                     "Name String ID": 700014,
                     "Node ID": 4018,
@@ -126295,7 +126385,7 @@
                     "Name": "Bombard Tower",
                     "Name String ID": 14156,
                     "Node ID": 236,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "BuildingNonTech",
                     "Picture Index": 42,
                     "Prerequisite IDs": [
@@ -128459,7 +128549,7 @@
                     "Name": "Plate Barding Armor",
                     "Name String ID": 17080,
                     "Node ID": 80,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 65,
                     "Prerequisite IDs": [
@@ -129271,7 +129361,7 @@
                     "Name": "Bombard Tower",
                     "Name String ID": 17320,
                     "Node ID": 64,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 47,
                     "Prerequisite IDs": [
@@ -129721,7 +129811,7 @@
                     "Name": "Hoardings",
                     "Name String ID": 17376,
                     "Node ID": 379,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -130891,7 +130981,7 @@
                     "Name": "Crop Rotation",
                     "Name String ID": 17012,
                     "Node ID": 12,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
                     "Prerequisite IDs": [

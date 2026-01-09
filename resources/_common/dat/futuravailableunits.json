@@ -8912,11 +8912,6 @@
                         "RequiredAge": 2
                     },
                     {
-                        "ID": 209,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
@@ -8930,6 +8925,11 @@
                         "Name": "Hussar",
                         "RequiredAge": 4,
                         "ID": 428
+                    },
+                    {
+                        "Name": "Heavy Hei Guang Cavalry",
+                        "RequiredAge": 3,
+                        "ID": 1033
                     }
                 ],
                 "Units": [
@@ -8944,19 +8944,19 @@
                         "RequiredAge": 3
                     },
                     {
-                        "ID": 38,
-                        "Name": "Knight",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 283,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
-                    },
-                    {
                         "Name": "Hussar",
                         "RequiredAge": 4,
                         "ID": 441
+                    },
+                    {
+                        "Name": "Hei Guang Cavalry",
+                        "RequiredAge": 3,
+                        "ID": 1944
+                    },
+                    {
+                        "Name": "Heavy Hei Guang Cavalry",
+                        "RequiredAge": 4,
+                        "ID": 1946
                     }
                 ]
             },
@@ -10880,6 +10880,11 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 236
                     }
                 ]
             },
@@ -11278,6 +11283,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Plate Barding Armor",
+                        "RequiredAge": 4,
+                        "ID": 80
                     }
                 ]
             },
@@ -11467,6 +11477,11 @@
                         "Name": "Heavy Spear",
                         "RequiredAge": 3,
                         "ID": 3145
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 64
                     }
                 ]
             },
@@ -11553,6 +11568,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hoardings",
+                        "RequiredAge": 4,
+                        "ID": 379
                     }
                 ],
                 "Units": [
@@ -11825,6 +11845,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -18133,11 +18159,6 @@
                         "RequiredAge": 4
                     },
                     {
-                        "ID": 98,
-                        "Name": "Elite Skirmisher",
-                        "RequiredAge": 3
-                    },
-                    {
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
@@ -18168,16 +18189,6 @@
                         "ID": 492,
                         "Name": "Arbalester",
                         "RequiredAge": 4
-                    },
-                    {
-                        "ID": 7,
-                        "Name": "Skirmisher",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 6,
-                        "Name": "Elite Skirmisher",
-                        "RequiredAge": 3
                     },
                     {
                         "ID": 5,

@@ -860,8 +860,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特启用轮作",
-            "civilizations": ["Chinese", "Celts", "Bohemians"],
+            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚启用轮作",
+            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -1315,8 +1315,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Burmese", "Bohemians"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1587,8 +1587,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特获得骑兵钢甲",
-            "civilizations": "Goths",
+            "note": "哥特, 埃塞俄比亚获得骑兵钢甲",
+            "civilizations": ["Goths", "Ethiopians"],
             "tech_id": 80,
             "building_id": 103,
             "Name": "Plate Barding Armor",
@@ -1858,6 +1858,70 @@
             "building_id": 209,
             "Name": "Bhakti",
             "RequiredAge": 4
+        },
+        {
+            "note": "埃塞俄比亚获得炮塔",
+            "civilizations": ["Ethiopians"],
+            "unit_id": 236,
+            "building_id": 118,
+            "Name": "Bombard Tower",
+            "RequiredAge": 4
+        },
+        {
+            "note": "埃塞俄比亚获得炮塔",
+            "civilizations": ["Ethiopians"],
+            "tech_id": 64,
+            "building_id": 209,
+            "Name": "Bombard Tower",
+            "RequiredAge": 4
+        },
+        {
+            "note": "日本失去掷矛手系",
+            "civilizations": ["Japanese"],
+            "unit_id": [6, 7],
+            "type": "delete"
+        },
+        {
+            "note": "日本失去精锐掷矛手",
+            "civilizations": ["Japanese"],
+            "tech_id": 98,
+            "type": "delete"
+        },
+        {
+            "note": "中国获得黑光铠骑兵",
+            "civilizations": ["Chinese"],
+            "unit_id": 1944,
+            "building_id": 101,
+            "Name": "Hei Guang Cavalry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "中国获得重装黑光铠骑兵",
+            "civilizations": ["Chinese"],
+            "unit_id": 1946,
+            "building_id": 101,
+            "Name": "Heavy Hei Guang Cavalry",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国获得重装黑光铠骑兵",
+            "civilizations": ["Chinese"],
+            "tech_id": 1033,
+            "building_id": 101,
+            "Name": "Heavy Hei Guang Cavalry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "中国失去骑士系",
+            "civilizations": ["Chinese"],
+            "unit_id": [38, 283],
+            "type": "delete"
+        },
+        {
+            "note": "中国失去重装骑士",
+            "civilizations": ["Chinese"],
+            "tech_id": 209,
+            "type": "delete"
         }
     ]
 }

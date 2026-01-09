@@ -235,7 +235,7 @@
             "target_id": 4007
         },
         {
-            "note": "日本移除步弓手系和火枪手",
+            "note": "日本移除步弓手系, 掷矛手系和火枪手",
             "action": "delete",
             "civ_id": "JAPANESE",
             "Node ID": [4, 5, 24, 492],
@@ -2274,33 +2274,12 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "关宁铁骑",
-            "action": "add",
+            "note": "中国失去骑士系",
+            "action": "modify",
             "civ_id": "CHINESE",
-            "Age ID": 4,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800014,
-            "Link ID": 283,
-            "Link Node Type": "UnitUpgrade",
-            "Name": "Guan Ning Cavalry",
-            "Name String ID": 700014,
-            "Node ID": 4018,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 49,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": 3026,
+            "Node ID": [38, 283],
             "Use Type": "Unit",
-            "position": "after",
-            "target_id": 283
-        },
-        {
-            "action": "delete",
-            "civ_id": "CHINESE",
-            "Node ID": 569,
-            "Use Type": "Unit"
+            "Node Status": "NotAvailable"
         },
         {
             "action": "modify",
@@ -3227,6 +3206,14 @@
             "Node ID": 36,
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "日本失去掷矛手系",
+            "action": "modify",
+            "civ_id": "JAPANESE",
+            "Node ID": [6, 7],
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable"
         },
         {
             "note": "总督",
@@ -4184,6 +4171,91 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "note": "埃塞俄比亚获得围墙, 轮作, 骑兵钢甲, 炮塔",
+            "action": "modify",
+            "civ_id": "ETHIOPIANS",
+            "Node ID": [12, 64, 80, 379],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "埃塞俄比亚获得炮塔",
+            "action": "modify",
+            "civ_id": "ETHIOPIANS",
+            "Node ID": 236,
+            "Use Type": "Building",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "黑光铠骑兵",
+            "action": "add",
+            "civ_id": "CHINESE",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105599,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Hei Guang Cavalry",
+            "Name String ID": 14599,
+            "Node ID": 1944,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 429,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 569
+        },
+        {
+            "note": "重装黑光铠骑兵",
+            "action": "add",
+            "civ_id": "CHINESE",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105600,
+            "Link ID": 1944,
+            "Link Node Type": "BuildingTech",
+            "Name": "Heavy Hei Guang Cavalry",
+            "Name String ID": 14600,
+            "Node ID": 1946,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 430,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 1033,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1944
+        },
+        {
+            "note": "关宁铁骑",
+            "action": "add",
+            "civ_id": "CHINESE",
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800014,
+            "Link ID": 1946,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Guan Ning Cavalry",
+            "Name String ID": 700014,
+            "Node ID": 4018,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 49,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3026,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1946
         }
     ]
 }

@@ -3,7 +3,7 @@ include "techtree.xs";
 
 
 //  Effect of Mongols Civ Bonus
-void CavalryGenerateGoldFromBuilding(int ClassTarget = -1, int playerId = -1)
+void GenerateGoldFromBuilding(int ClassTarget = -1, int playerId = -1)
 {
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
     xsTaskAmount(cTaskAttrResourceOut, 3);
@@ -15,14 +15,15 @@ void CavalryGenerateGoldFromBuilding(int ClassTarget = -1, int playerId = -1)
 }
 
 
-// 10003 - C-Bonus, Cavalry generate gold by attacking buildings
+// 10003 - C-Bonus, Infantry and Cavalry generate gold by attacking buildings
 void EffectFunction10003(int playerId = -1)
 {
     xsResetTaskAmount();
-    CavalryGenerateGoldFromBuilding(cScoutCavalryClass);
-    CavalryGenerateGoldFromBuilding(cCavalryClass);
+    GenerateGoldFromBuilding(cScoutCavalryClass);
+    GenerateGoldFromBuilding(cCavalryClass);
+    GenerateGoldFromBuilding(cInfantryClass);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 25);
+    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 33);
 }
 
 
@@ -1244,7 +1245,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 91  2026.01.09");
+    xsChatData("Build: 92  2026.01.09");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
