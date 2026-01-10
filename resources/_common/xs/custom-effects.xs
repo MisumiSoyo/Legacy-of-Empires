@@ -1219,7 +1219,7 @@ void EffectFunction10094(int playerId = -1)
 }
 
 
-//  10095, C-Bonus, extra food from trade units
+//  10095 - C-Bonus, extra food from trade units
 void EffectFunction10095(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -1232,13 +1232,39 @@ void EffectFunction10095(int playerId = -1)
 }
 
 
+//  10096 - C-Bonus, warships building
+void EffectFunction10096(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0.1);
+    xsTaskAmount(cTaskAttrBuildingPick, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
+    xsTaskAmount(cTaskAttrOwnerType, 4);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTask(cWarshipClass, cTaskTypeBuild, SeaTowerID, playerId);
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 12.5);
+    xsTaskAmount(cTaskAttrWorkRange, 0.1);
+    xsTaskAmount(cTaskAttrBuildingPick, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 4);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTask(cWarshipClass, cTaskTypeRepair, SeaTowerID, playerId);
+    xsResetTaskAmount();
+
+    SetAttribute(playerId, cWarshipClass, cTraits, 4);
+    SetAttribute(playerId, cWarshipClass, cTraitPiece, SeaTowerID);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 93  2026.01.10");
+    xsChatData("Build: 94  2026.01.10");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

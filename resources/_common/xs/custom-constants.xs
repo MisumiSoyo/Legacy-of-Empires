@@ -275,6 +275,7 @@ extern const int ElitePlumedArcherID = 765;
 extern const int ConquistadorID = 771;
 extern const int EliteConquistadorID = 773;
 extern const int MissionaryID = 775;
+extern const int SeaTowerID = 785;
 extern const int WarWagonID = 827;
 extern const int EliteWarWagonID = 829;
 extern const int ElephantArcherID = 873;
