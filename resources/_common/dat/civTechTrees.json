@@ -17392,39 +17392,9 @@
                     "Age ID": 4,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105471,
+                    "Help String ID": 800031,
                     "Link ID": 283,
                     "Link Node Type": "UnitUpgrade",
-                    "Name": "Paladin",
-                    "Name String ID": 14471,
-                    "Node ID": 569,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 2,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 265,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 800031,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
                     "Name": "Crusader Knight",
                     "Name String ID": 700031,
                     "Node ID": 4041,
@@ -17445,7 +17415,7 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": -1,
+                    "Trigger Tech ID": 3415,
                     "Use Type": "Unit"
                 },
                 {

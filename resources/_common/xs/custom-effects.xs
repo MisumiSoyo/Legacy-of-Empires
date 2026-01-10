@@ -845,13 +845,6 @@ void EffectFunction10072(int playerId = -1)
     xsTaskAmount(cTaskAttrSearchWaitTime, 9.000001);
     xsTaskAmount(cTaskAttrGatherType, 1);
     AccoladeApplier(playerId);
-
-    xsTaskAmount(cTaskAttrCarryCheck, 2);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000001);
-    xsTaskAmount(cTaskAttrGatherType, 0);
-    for (i = 900; <= 964)
-        if (isMilitaryClass(i))
-            xsTask(CrusaderKnightID, cTaskTypeLoot, i, playerId);
     xsResetTaskAmount();
 }
 
@@ -1245,7 +1238,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 92  2026.01.09");
+    xsChatData("Build: 93  2026.01.10");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

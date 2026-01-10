@@ -802,14 +802,15 @@
             "target_id": 4038
         },
         {
+            "note": "十字军骑士",
             "action": "add",
             "civ_id": "TEUTONS",
-            "Age ID": 3,
+            "Age ID": 4,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800031,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
+            "Link ID": 283,
+            "Link Node Type": "UnitUpgrade",
             "Name": "Crusader Knight",
             "Name String ID": 700031,
             "Node ID": 4041,
@@ -818,10 +819,17 @@
             "Picture Index": 377,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
+            "Trigger Tech ID": 3415,
             "Use Type": "Unit",
             "position": "after",
-            "target_id": 569
+            "target_id": 283
+        },
+        {
+            "note": "条顿, 十字军骑士替代游侠",
+            "action": "delete",
+            "civ_id": "TEUTONS",
+            "Node ID": 569,
+            "Use Type": "Unit"
         },
         {
             "note": "僧兵",

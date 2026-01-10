@@ -287,14 +287,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "十字军骑士",
-            "civilizations": "Teutons",
-            "unit_id": 4041,
-            "building_id": 101,
-            "Name": "Crusader Knight",
-            "RequiredAge": 3
-        },
-        {
             "note": "僧兵",
             "civilizations": "Japanese",
             "unit_id": 4042,

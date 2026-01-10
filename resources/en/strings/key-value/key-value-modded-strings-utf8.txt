@@ -67,7 +67,7 @@
 
 120152 "Infantry civilization \n\n• Infantry -15%/-20%/-25%/-30% cost at Dark/Feudal/Castle/Imperial Age\n• Infantry +1/+2/+3 attack vs buildings at Feudal/Castle/Imperial Age\n• Hunters carry +15 meat, last 25% longer\n• Loom research time reduced to 1 sec \n• +10/15/20 population headroom and capacity at Feudal/Castle/Imperial Age\n• Receive one villager (maximum 20) for every 3 enemies killed\n\n<b>Unique Unit:<b>\n• Huskarl (Infantry better combats with archers)\n\n<b>Unique Techs: <b>\n• Anarchy (create Huskarls at Barracks)\n• Perfusion (Barracks +100% work rate)\n• Foederati Army (Enable your team to train Foederati units; Receive 7 food and gold from killing enemies with Foederati units)\n• Greuthungi Cavalry (Knight-line units -50% food cost)\n\n<b>Team bonus: <b>\nBarracks +20% work rate"
 
-120153 "Infantry civilization \n\n• Monks +100% healing range \n• Towers +5 garrison capacity, +4 max arrows \n• Murder Holes, Herbal Medicine free \n• Farms -40% cost \n• Town Center +10 garrison capacity, +5 max arrows\n• Barrack and Stable units +1/2 melee armor at Castle/Imperial Age\n• Skirmisher line +1/2/3 max range in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Teutonic Knight (Heary armored infantry), Crusader Knight (Religious Cavalry with high attack speed)\n\n<b>Unique Techs: <b>\n• Ironclad (Siege weapons and Trebuchets +4 armor) \n• Crenellations (Castle +3 max range?LOS/search radius, infantries garrisoned in Towers, Kreposts and Castles can fire arrows)\n• Die Goldene Bulle (Monks, Crusader Knights and Teutonic Knights +25 HP regeneration per minute, -33% bonus damage received)\n• Accolade (Military units can gain 5 HP and (except Crusader Knights) 1 attack after killing enemy military units, up to 5 stacks)\n\n<b>Team bonus: <b>\nAll units +3 min/+1 max conversion time"
+120153 "Infantry civilization \n\n• Monks +100% healing range \n• Towers +5 garrison capacity, +4 max arrows \n• Murder Holes, Herbal Medicine free \n• Farms -40% cost \n• Town Center +10 garrison capacity, +5 max arrows\n• Barrack and Stable units +1/2 melee armor at Castle/Imperial Age\n• Skirmisher line +1/2/3 max range in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Teutonic Knight (Heavy armored infantry), Crusader Knight (Cavalry)\n\n<b>Unique Techs: <b>\n• Ironclad (Siege weapons and Trebuchets +4 armor) \n• Crenellations (Castle +3 max range?LOS/search radius, infantries garrisoned in Towers, Kreposts and Castles can fire arrows)\n• Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)\n• Accolade (Military units can gain 5 HP and 1 attack after killing enemy military units, up to 5 stacks)\n\n<b>Team bonus: <b>\nAll units +3 min/+1 max conversion time"
 
 120154 "Infantry civilization \n\n• Fishing Ships +100% HP, +2 pierce armor, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50% \n• Infantry -25% reload time starting in Feudal Age \n• Cavalry Archer class units +2 attack vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Japanese unique archer), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2) \n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Enable you to train Soheis, but villagers -7% work rate)\n• Yari Cavalry (Cavalries +9 attack vs Cavalry; Knight-line additionally +3 attack)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 
@@ -301,6 +301,7 @@
 500137 "Khazar Lancers"
 500138 "Elite Goguryeo Heavy Cavalry"
 500139 "Bhakti"
+500140 "Crusader Knight"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -384,7 +385,7 @@
 501079 "Switch to training Xolotl Warrior"
 501080 "Research Couriers (Slingers, Eagle Warriors and Kamayuks +15% movement speed)"
 501081 "Research Quipu (Shrines +2 construction limit and can train Xolotl Warriors)"
-501082 "Research Die Goldene Bulle (Monks, Crusader Knights and Teutonic Knights +25 HP regeneration per minute, -33% bonus damage received)"
+501082 "Research Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)"
 501083 "Research Apostle (Military units/monks can generate 2/5 gold per minute)"
 501084 "Research Hesychast (Monks +150% heal range and heal rate)"
 501085 "Research Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)"
@@ -442,6 +443,7 @@
 501137 "Research Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)"
 501138 "Upgrade to Elite Goguryeo Heavy Cavalry"
 501139 "Research Bhakti (Monks +3 conversion range)"
+501140 "Upgrade to Crusader Knight"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -525,7 +527,7 @@
 521079 "Switch to training Xolotl Warrior. Automatically spawn 1 Xolotl Warrior every 45 seconds."
 521080 "Research <b>Couriers<b> (<cost>) (time: 45)\nSlingers, Eagle Warriors and Kamayuks +15% movement speed."
 521081 "Research <b>Quipu<b> (<cost>) (time: 60)\nShrines +2 construction limit and can train Xolotl Warriors."
-521082 "Research <b>Die Goldene Bulle<b> (<cost>) (time: 45)\nMonks, Crusader Knights and Teutonic Knights +25 HP regeneration per minute, -33% bonus damage received."
+521082 "Research <b>Die Goldene Bulle<b> (<cost>) (time: 45)\nMonks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received."
 521083 "Research <b>Apostle<b> (<cost>) (time: 45)\nMilitary units/monks can generate 2/5 gold per minute."
 521084 "Research <b>Hesychast<b> (<cost>) (time: 45)\nMonks +150% heal range and heal rate."
 521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>) (time: 45)\nMined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production."
@@ -557,7 +559,7 @@
 521111 "Research <b>Gendarmes d'ordonnance<b> (<cost>) (time: 60)\nCavalries gain additional 1 HP and 1 HP generation per minute from each nearby unit of yours (maximum 30 stacks)."
 521112 "Research <b>Camel Lancer<b> (<cost>) (time: 60)\nCamel Riders +1 attack range."
 521113 "Research <b>Satrap<b> (<cost>) (time: 45)\nCastles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute."
-521114 "Research <b>Accolade<b> (<cost>) (time: 60)\nMilitary units can gain 5 HP and (except Crusader Knights) 1 attack after killing enemy military units, up to 5 stacks."
+521114 "Research <b>Accolade<b> (<cost>) (time: 60)\nMilitary units can gain 5 HP and 1 attack after killing enemy military units, up to 5 stacks."
 521115 "Research <b>Pax Mongolica<b> (<cost>) (time: 60)\nBarrack and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking."
 521116 "Research <b>Elite Mercenary<b> (<cost>) (time: 45)\nUpgrade your mercenaries to elite versions."
 521117 "Research <b>Western/Middle European Mercenary Contract<b> (<cost>)\nYou can use olive oil to recruit Woad Raiders, Throwing Axemen, Huskarls, Teutonic Knights, Berserks, Longbowmen, Coustilliers and Tarkans."
@@ -583,6 +585,7 @@
 521137 "Research <b>Khazar Lancers<b> (<cost>) (time: 45)\nSteppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second."
 521138 "Upgrade to <b>Elite Goguryeo Heavy Cavalry<b> (<cost>) (time: 60)\nUpgrades your Goguryeo Heavy Cavalry and lets you create Elite Goguryeo Heavy Cavalry."
 521139 "Research <b>Bhakti<b> (<cost>) (time: 60)\nMonks +3 conversion range."
+521140 "Upgrade to <b>Crusader Knight<b> (<cost>) (time: 170)\nUpgrades your Cavaliers and lets you create Crusader Knights."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -777,7 +780,7 @@
 
 721030 "Create <b>Elite Hospitaller Knight<b> (<cost>)\nItalian and Sicilians' unique cavalry. Can heal allies for 4 HP per second. Can't be converted.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 40; Moving speed: 1.3; Reload time: 1.8; LOS: 5; Search radius: 5."
 
-721031 "Create <b>Crusader Knight<b> (<cost>)\nTeutons unique religious cavalry that can't be converted. Can be strengthened by monastery technologies, and monastery technologies can increase its attack speed.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); speed, hit points, conversion ability (Monastery); creation speed (Castle).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Monk, Unique Unit; Training time: 34; Moving speed: 1.22; Reload time: 1.36; LOS: 5; Search radius: 5.\nAttack Bonus: +4 vs Standard Buildings"
+721031 "Create <b>Crusader Knight<b> (<cost>)\nTeutons unique heavy cavalry.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to monks (Monastery); creation speed (Castle).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.35; Reload time: 1.9; LOS: 5; Search radius: 4."
 
 721032 "Create <b>Sohei<b> (<cost>)\nJapanese unique religious infantry, can be created after researching Ikko-ikki. Countered by Hand Cannoneers. Can heal allies, but cannot pick up relics or convert enemy units. Each garrisoned relic will reduce Sohei's gold cost by 4. (maximum -20)\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, attack (Barrack); speed, hit points, more resistant to Monks (Monastery).<i><DEFAULT>\n<hp><attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Infantry, Monk, Unique Unit; Moving speed: 0.85; Reload time: 2; LOS: 3; Search radius: 3.\nArmor Bonus: +5 damage vs Infantry received from gunpowder units"
 

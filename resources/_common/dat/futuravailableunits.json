@@ -35449,11 +35449,6 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Crusader Knight",
-                        "RequiredAge": 3,
-                        "ID": 4041
-                    },
-                    {
                         "Name": "Light Cavalry",
                         "RequiredAge": 3,
                         "ID": 546
