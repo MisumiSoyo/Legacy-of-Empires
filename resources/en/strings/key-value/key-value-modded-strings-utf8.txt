@@ -133,7 +133,7 @@
 
 120185 "Cavalry civilization \n\n• Economic upgrades available one age earlier, and -33% food cost\n• Stable technologies -50% cost\n• Cavalier upgrade available in Castle Age \n• Gunpowder units +25% base and extra attack\n\n<b>Unique Units:<b> \n• Coustillier (cavalry with charged attack), Flemish Militia (infantry batter combats with cavalries)\n\n<b>Unique Techs:<b> \n• Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food) \n• Flemish Revolution (Upgrades all existing Villagers to Flemish Militia)\n\n<b>Team Bonus:<b>\nRelics generate 30 food per minute besides gold"
 
-120186 "Infantry civilization \n\n• Start with +100 stone (received when the first TC is built up in Nomad mode) \n• Castles, Tower class, Wall class and Gate class buildings -40% building time, Town Centers -50% building time \n• Land military units (except siege weapons) receive -33% bonus damage \n• Farm upgrades provide +100% additional food \n• Can build Donjon, but cannot build Towers \n\n<b>Unique Unit:<b> \n• Serjeant (infantry can build Donjons), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs:<b> \n• First Crusade (Each Town Center (maximum 5) spawns a one-time batch of 5 Serjeants); All units +4 min/+4 max conversion time \n• Hauberk (Knight-Line units +1/+2P armor)\n• Scutage (Gain 250 gold, and each military unit +10)\n\n<b>Team Bonus:<b> \nTransport ships -50% cost, +5 LOS"
+120186 "Infantry civilization \n\n• Start with +100 stone (received when the first TC is built up in Nomad mode) \n• Castles, Tower class, Wall class and Gate class buildings -40% building time, Town Centers -50% building time \n• Land military units (except siege weapons) receive -33% bonus damage \n• Farm upgrades provide +100% additional food \n• Can build Donjon, but cannot build Towers \n• Get 1.5 extra gold from each Spearman-line, Skirmisher-line and Genitour line unit trained\n\n<b>Unique Unit:<b> \n• Serjeant (infantry can build Donjons), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs:<b> \n• First Crusade (Each Town Center (maximum 5) spawns a one-time batch of 5 Serjeants); All units +4 min/+4 max conversion time \n• Hauberk (Knight-Line units +1/+2P armor)\n• Scutage (Gain 250 gold, and each military unit +10)\n\n<b>Team Bonus:<b> \nTransport ships -50% cost, +5 LOS"
 
 120187 "Cavalry civilization \n\n• Villagers regenerate 10/15/20 HPs per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill \n• Stone Miners generate 0.33 gold per stone\n• Bloodlines and Scout-line upgrades -50% food cost, Light Cavalry can be upgraded an age in advance\n\n<b>Unique Units:<b> \n• Obuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry)\n\n<b>Unique Techs:<b> \n• Szlachta Privileges (Knight-line -60% gold cost) \n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b> \nScout-Line units +1 attack vs Archers"
 
@@ -657,6 +657,8 @@
 700058 "Elite Goguryeo Heavy Cavalry"
 700059 "Mehter"
 700060 "Sohei with Relic"
+700061 "Mounted Samurai"
+700062 "Elite Mounted Samurai"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -718,6 +720,8 @@
 701057 "Create Goguryeo Heavy Cavalry"
 701058 "Create Elite Goguryeo Heavy Cavalry"
 701059 "Create Mehter"
+701061 "Create Mounted Samurai"
+701062 "Create Elite Mounted Samurai"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\n<i><GREY>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit; Training time: 20; Moving speed: 0.96; Reload time: 2.75; Attack delay: 0.35; Accuracy: 75%; LOS: 9; Search radius: 9. \nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -837,6 +841,10 @@
 721058 "Create <b>Elite Goguryeo Heavy Cavalry<b>(<cost>)\nKoreans' unique heavy cavalry. \n<i><GREY>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.3; Reload time: 1.9; LOS: 4; Search radius: 4."
 
 721059 "Create <b>Mehter<b>(<cost>)\nTurks unique cavalry. Can't attack. Nearby allies +1 melee/pierce armor, +10% movement speed. This effect can't be stacked.\n<i><GREY>Upgrades: armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 45; Moving speed: 1.4; LOS: 5; Search radius: 5.\n\n<GREY>After Castle Age gets: +20 HP.\nAfter Imperial Age gets: +30 HP."
+
+721061 "Create <b>Mounted Samurai<b>(<cost>)\nJapanese unique heavy cavalry. Strong vs unique units.\n<i><GREY>Upgrades: attack, armor (Blacksmith); speed, hit points, to Elite Goguryeo Heavy Cavalry (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.3; Reload time: 1.8; LOS: 4; Search radius: 4."
+
+721062 "Create <b>Elite Mounted Samurai<b>(<cost>)\nJapanese unique heavy cavalry. Strong vs unique units.\n<i><GREY>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.3; Reload time: 1.9; LOS: 4; Search radius: 4."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

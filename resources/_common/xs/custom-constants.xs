@@ -132,6 +132,8 @@ extern const int GoguryeoHeavyCavalryID = 4137;
 extern const int EliteGoguryeoHeavyCavalryID = 4138;
 extern const int MehterID = 4139;
 extern const int FoodBuilding1ID = 4140;
+extern const int SeaTower2ID = 4141;
+extern const int GoldBuilding1ID = 4142;
 
 
 //  Newly added tech IDs

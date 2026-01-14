@@ -1242,7 +1242,7 @@ void EffectFunction10096(int playerId = -1)
     xsTaskAmount(cTaskAttrSearchWaitTime, 3);
     xsTaskAmount(cTaskAttrOwnerType, 4);
     xsTaskAmount(cTaskAttrAutoSearch, 1);
-    xsTask(cWarshipClass, cTaskTypeBuild, SeaTowerID, playerId);
+    xsTask(cWarshipClass, cTaskTypeBuild, SeaTower2ID, playerId);
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 12.5);
     xsTaskAmount(cTaskAttrWorkRange, 0.1);
@@ -1250,11 +1250,33 @@ void EffectFunction10096(int playerId = -1)
     xsTaskAmount(cTaskAttrOwnerType, 4);
     xsTaskAmount(cTaskAttrSearchWaitTime, 3);
     xsTaskAmount(cTaskAttrAutoSearch, 1);
-    xsTask(cWarshipClass, cTaskTypeRepair, SeaTowerID, playerId);
+    xsTask(cWarshipClass, cTaskTypeRepair, SeaTower2ID, playerId);
     xsResetTaskAmount();
 
     SetAttribute(playerId, cWarshipClass, cTraits, 4);
-    SetAttribute(playerId, cWarshipClass, cTraitPiece, SeaTowerID);
+    SetAttribute(playerId, cWarshipClass, cTraitPiece, SeaTower2ID);
+}
+
+
+//  10097 - C-Bonus, extra gold from spearmen and skirmishers
+void EffectFunction10097(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, GoldBuilding1ID);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000008);
+    xsTask(SpearmanID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(PikemanID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(HalberdierID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(DonsoID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(VeteranDonsoID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(EliteDonsoID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(SkirmisherID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(EliteSkirmisherID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(ImperialSkirmisherID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(GenitourID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(EliteGenitourID, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
 }
 
 
@@ -1264,7 +1286,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 95  2026.01.11");
+    xsChatData("Build: 96  2026.01.14");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
