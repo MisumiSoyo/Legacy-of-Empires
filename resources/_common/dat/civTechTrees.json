@@ -210835,7 +210835,7 @@
                     "Name": "Thumb Ring",
                     "Name String ID": 17411,
                     "Node ID": 437,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 112,
                     "Prerequisite IDs": [
@@ -213387,7 +213387,7 @@
                     "Name": "Hoardings",
                     "Name String ID": 17376,
                     "Node ID": 379,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -213447,7 +213447,7 @@
                     "Name": "Sappers",
                     "Name String ID": 17322,
                     "Node ID": 321,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 5,
                     "Prerequisite IDs": [
@@ -214227,7 +214227,7 @@
                     "Name": "Stone Shaft Mining",
                     "Name String ID": 17277,
                     "Node ID": 279,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 88,
                     "Prerequisite IDs": [

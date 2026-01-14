@@ -1307,8 +1307,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1451,8 +1451,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "立陶宛, 缅甸, 高丽获得工兵",
-            "civilizations": ["Koreans", "Burmese", "Lithuanians"],
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1609,8 +1609,8 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿获得扳指",
-            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians"],
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉获得扳指",
+            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1914,6 +1914,14 @@
             "civilizations": ["Chinese"],
             "tech_id": 209,
             "type": "delete"
+        },
+        {
+            "note": "孟加拉获得钻井采石法",
+            "civilizations": ["Bengalis"],
+            "tech_id": 279,
+            "building_id": 584,
+            "Name": "Stone Shaft Mining",
+            "RequiredAge": 3
         }
     ]
 }
