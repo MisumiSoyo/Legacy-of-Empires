@@ -147,7 +147,7 @@
 
 120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n• Can build monastery and train monks at Feudal Age\n• Walls and Gates +100% build speed\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
 
-120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 2/5 gold per minute)\n• Taurus Ambush (Light Cavalry line and Knight line units receive -70% additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
+120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Light Cavalry line and Knight line units receive -70% additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 
 120194 "Defensive and Cavalry civilization\n\n• Start with a Mule Cart (received when the first TC is built up in Nomad mode), and receive one when advancing age\n• Fortified Churches provide +10% work rate for Villagers within 8 squared tiles range\n• Units and buildings receive -15% damage when fighting from higher elevation\n• Cavalry regenerates 5/10/15 HP per minute in Feudal/Castle/Imperial Age\n• villagers +100% repair speed\n\n<b>Unique Unit:<b>\n• Monaspa (cavalry which becomes stronger when friendly units are nearby), Khevsureti Warrior (Infantry that counters siege weapons)\n\n<b>Unique Techs:<b>\n• Svan Towers (All towers, Castles, Kreposts and Town Centers +2 attack (for all arrows), Watch Tower-Line can deal 50% penetrate damage)\n• Aznauri Cavalry (All mounted units -20% population space)\n• Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks)\n• Hill Training (Knight-line units +35 HP regeneration per minute)\n\n<b>Team Bonus:<b>\nBuildings -25% repairing cost"
 
@@ -303,6 +303,8 @@
 500139 "Bhakti"
 500140 "Crusader Knight"
 500141 "Elite Mounted Samurai"
+500142 "Veteran Celtic Hunter"
+500143 "Elite Celtic Hunter"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -387,7 +389,7 @@
 501080 "Research Couriers (Slingers, Eagle Warriors and Kamayuks +15% movement speed)"
 501081 "Research Quipu (Shrines +2 construction limit and can train Xolotl Warriors)"
 501082 "Research Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)"
-501083 "Research Apostle (Military units/monks can generate 2/5 gold per minute)"
+501083 "Research Apostle (Military units/monks can generate 3/6 gold per minute)"
 501084 "Research Hesychast (Monks +150% heal range and heal rate)"
 501085 "Research Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)"
 501086 "Research Jinete Tactics (Genitours +2 max range)"
@@ -446,6 +448,8 @@
 501139 "Research Bhakti (Monks +3 conversion range)"
 501140 "Upgrade to Crusader Knight"
 501141 "Upgrade to Elite Mounted Samurai"
+501142 "Upgrade to Veteran Celtic Hunter"
+501143 "Upgrade to Elite Celtic Hunter"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -530,7 +534,7 @@
 521080 "Research <b>Couriers<b> (<cost>) (time: 45)\nSlingers, Eagle Warriors and Kamayuks +15% movement speed."
 521081 "Research <b>Quipu<b> (<cost>) (time: 60)\nShrines +2 construction limit and can train Xolotl Warriors."
 521082 "Research <b>Die Goldene Bulle<b> (<cost>) (time: 45)\nMonks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received."
-521083 "Research <b>Apostle<b> (<cost>) (time: 45)\nMilitary units/monks can generate 2/5 gold per minute."
+521083 "Research <b>Apostle<b> (<cost>) (time: 45)\nMilitary units/monks can generate 3/6 gold per minute."
 521084 "Research <b>Hesychast<b> (<cost>) (time: 45)\nMonks +150% heal range and heal rate."
 521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>) (time: 45)\nMined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production."
 521086 "Research <b>Jinete Tactics<b> (<cost>) (time: 60)\nGenitours +2 max range."
@@ -589,6 +593,8 @@
 521139 "Research <b>Bhakti<b> (<cost>) (time: 60)\nMonks +3 conversion range."
 521140 "Upgrade to <b>Crusader Knight<b> (<cost>) (time: 170)\nUpgrades your Cavaliers and lets you create Crusader Knights."
 521141 "Upgrade to <b>Elite Mounted Samurai<b> (<cost>) (time: 60)\nUpgrades your Mounted Samurais and lets you create Elite Mounted Samurais."
+521142 "Upgrade to <b>Veteran Celtic Hunter<b> (<cost>) (time: 30)\nUpgrades your Celtic Hunters and lets you create Veteran Celtic Hunters."
+521143 "Upgrade to <b>Elite Celtic Hunter<b> (<cost>) (time: 60)\nUpgrades your Veteran Celtic Hunters and lets you create Elite Celtic Hunters."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -662,6 +668,9 @@
 700060 "Sohei with Relic"
 700061 "Mounted Samurai"
 700062 "Elite Mounted Samurai"
+700063 "Celtic Hunter"
+700064 "Veteran Celtic Hunter"
+700065 "Elite Celtic Hunter"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -725,6 +734,9 @@
 701059 "Create Mehter"
 701061 "Create Mounted Samurai"
 701062 "Create Elite Mounted Samurai"
+701063 "Create Celtic Hunter"
+701064 "Create Veteran Celtic Hunter"
+701065 "Create Elite Celtic Hunter"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\n<i><GREY>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit; Training time: 20; Moving speed: 0.96; Reload time: 2.75; Attack delay: 0.35; Accuracy: 75%; LOS: 9; Search radius: 9. \nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."

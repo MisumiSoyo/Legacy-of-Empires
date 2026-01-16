@@ -641,7 +641,7 @@ void EffectFunction10046(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeApostleProductivity);
-    xsTaskAmount(cTaskAttrWorkValue1, 2.0 / 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 3.0 / 60);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000004);
     
@@ -649,7 +649,7 @@ void EffectFunction10046(int playerId = -1)
     for (i = 900; <= 964)
         if (isMilitaryClass(i) && (i != cMonkClass) && (i != cMonkWithRelicClass))
             xsTask(i, cTaskTypeGenerateResources, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 5.0 / 60);
+    xsTaskAmount(cTaskAttrWorkValue1, 6.0 / 60);
     xsTask(cMonkClass, cTaskTypeGenerateResources, -1, playerId);
     xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
@@ -1286,7 +1286,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 97  2026.01.15");
+    xsChatData("Build: 99  2026.01.16");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
