@@ -110,11 +110,6 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.25, playerId);
             break;
         }
-        case cTatars:
-        {
-            ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
-            break;
-        }
         case cWu:
         {
             SetResource(playerId, cAttributeWubaoGoldProductivity, 15);
@@ -137,11 +132,6 @@ void EffectFunction10026(int playerId = -1)
         {
             xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.2, playerId);
             xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.2, playerId);
-            break;
-        }
-        case cTatars:
-        {
-            ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
             break;
         }
         case cWu:

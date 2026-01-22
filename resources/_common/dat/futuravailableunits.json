@@ -1160,11 +1160,6 @@
                         "ID": 437,
                         "Name": "Thumb Ring",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Parthian Tactics",
-                        "RequiredAge": 4,
-                        "ID": 436
                     }
                 ],
                 "Units": [
@@ -1726,6 +1721,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Adarga",
+                        "RequiredAge": 3,
+                        "ID": 3424
                     }
                 ]
             },
@@ -7669,6 +7669,16 @@
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -7701,6 +7711,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
