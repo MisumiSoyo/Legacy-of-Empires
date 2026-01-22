@@ -534,3 +534,37 @@ void ApplyToAllPlayerTargets(int playerId = -1, int ClassTarget = -1, int TaskTy
     xsTask(ClassTarget, TaskType, cScorpionClass, playerId);
     xsTask(ClassTarget, TaskType, cKingClass, playerId);
 }
+
+
+bool isInRange(int UnitID = -1, int ArrayID = -1, float Range = 0.0, bool isSquire = False)
+{
+    vector PosA = xsGetUnitPosition(UnitID);
+    int i = 0;
+    int ArraySize = xsArrayGetSize(ArrayID);
+    for (i = 0; < ArraySize)
+    {
+        vector PosB = xsGetUnitPosition(xsArrayGetInt(ArrayID, i));
+        if (isSquire)
+        {
+            if ((DistanceX(PosA, PosB) <= Range) && (DistanceY(PosA, PosB) <= Range))
+                return (true);
+        }
+        else
+            if (Distance(PosA, PosB) <= Range)
+                return (true);
+    }
+    return (false);
+}
+
+
+int InRangeCount(int playerId = -1, int CollectorUnitID = -1, int TargetPlayerId = -1, int ClassTarget = -1, float Range = 0.0, bool isSquire = False)
+{
+    int CollectorIDs = xsGetPlayerUnitIds(playerId, CollectorUnitID);
+    int UnitIDs = xsGetPlayerUnitIds(TargetPlayerId, ClassTarget);
+    int ans = 0;
+    int i = 0;
+    for (i = 0; < xsArrayGetSize(UnitIDs))
+        if (isInRange(xsArrayGetInt(UnitIDs, i), CollectorIDs, Range, isSquire))
+            ans = ans + 1;
+    return (ans);
+}

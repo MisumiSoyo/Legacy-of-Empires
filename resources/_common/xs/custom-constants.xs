@@ -448,4 +448,4 @@ extern const int cDamageClassLightCavalry = 105;
 extern const int HospitallerKnightMaxCharge = 300;
 extern const float ShrineMaxCharge = 1200.0;
 extern const int SatrapAuraRange = 10;
-extern const int MalayTCAuraRange = 10;
+extern const float MalayTCAuraRange = 10.0;

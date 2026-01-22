@@ -658,6 +658,27 @@ void EffectFunction10084(int playerId = -1)
 }
 
 
+//  10098 - Malay TC aura display
+void EffectFunction10098(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrWorkRange, MalayTCAuraRange);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3.000001);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 4);
+    xsTask(TownCenterID, cTaskTypeAura, cBuildingClass, playerId);
+    xsTask(TownCenter2ID, cTaskTypeAura, cBuildingClass, playerId);
+    xsTask(TownCenter3ID, cTaskTypeAura, cBuildingClass, playerId);
+    xsTask(TownCenter4ID, cTaskTypeAura, cBuildingClass, playerId);
+    xsResetTaskAmount();
+    LaunchAura(playerId, TownCenterID);
+    LaunchAura(playerId, TownCenter2ID);
+    LaunchAura(playerId, TownCenter3ID);
+    LaunchAura(playerId, TownCenter4ID);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
