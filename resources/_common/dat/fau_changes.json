@@ -1355,14 +1355,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国启用攻城技师",
-            "civilizations": "Chinese",
-            "tech_id": 377,
-            "building_id": 209,
-            "Name": "Siege Engineers",
-            "RequiredAge": 3
-        },
-        {
             "note": "蒙古和平",
             "civilizations": "Mongols",
             "tech_id": 3176,
@@ -1443,16 +1435,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "立陶宛获得钻井采金法",
-            "civilizations": "Lithuanians",
-            "tech_id": 182,
-            "building_id": 584,
-            "Name": "Gold Shaft Mining",
-            "RequiredAge": 3
-        },
-        {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉获得工兵",
-            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis"],
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1481,14 +1465,6 @@
             "building_id": 103,
             "Name": "Ring Archer Armor",
             "RequiredAge": 4
-        },
-        {
-            "note": "契丹获得钻井采金法",
-            "civilizations": "Khitans",
-            "tech_id": 182,
-            "building_id": 584,
-            "Name": "Gold Shaft Mining",
-            "RequiredAge": 3
         },
         {
             "note": "契丹获得脚踏起重机",
@@ -1531,14 +1507,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "西西里获得工兵",
-            "civilizations": "Sicilians",
-            "tech_id": 321,
-            "building_id": 82,
-            "Name": "Sappers",
-            "RequiredAge": 4
-        },
-        {
             "note": "高棉获得双人锯",
             "civilizations": "Khmer",
             "tech_id": 221,
@@ -1547,8 +1515,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰获得长戟兵",
-            "civilizations": ["Berbers", "Poles"],
+            "note": "柏柏尔, 波兰, 意大利获得长戟兵",
+            "civilizations": ["Berbers", "Poles", "Italians"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",
@@ -1571,14 +1539,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔获得工兵",
-            "civilizations": "Berbers",
-            "tech_id": 321,
-            "building_id": 82,
-            "Name": "Sappers",
-            "RequiredAge": 4
-        },
-        {
             "note": "哥特, 埃塞俄比亚获得骑兵钢甲",
             "civilizations": ["Goths", "Ethiopians"],
             "tech_id": 80,
@@ -1587,8 +1547,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 波兰, 条顿获得钻井采金法",
-            "civilizations": ["Goths", "Teutons", "Poles"],
+            "note": "哥特, 波兰, 条顿, 意大利, 契丹, 立陶宛获得钻井采金法",
+            "civilizations": ["Goths", "Teutons", "Poles", "Italians", "Khitans", "Lithuanians"],
             "tech_id": 182,
             "building_id": 584,
             "Name": "Gold Shaft Mining",
@@ -1688,8 +1648,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "勃艮第获得攻城技师",
-            "civilizations": "Burgundians",
+            "note": "勃艮第, 中国, 意大利获得攻城技师",
+            "civilizations": ["Burgundians", "Chinese", "Italians"],
             "tech_id": 377,
             "building_id": 209,
             "Name": "Siege Engineers",
@@ -1852,16 +1812,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "埃塞俄比亚获得炮塔",
-            "civilizations": ["Ethiopians"],
+            "note": "埃塞俄比亚, 意大利获得炮塔",
+            "civilizations": ["Ethiopians", "Italians"],
             "unit_id": 236,
             "building_id": 118,
             "Name": "Bombard Tower",
             "RequiredAge": 4
         },
         {
-            "note": "埃塞俄比亚获得炮塔",
-            "civilizations": ["Ethiopians"],
+            "note": "埃塞俄比亚, 意大利获得炮塔",
+            "civilizations": ["Ethiopians", "Italians"],
             "tech_id": 64,
             "building_id": 209,
             "Name": "Bombard Tower",

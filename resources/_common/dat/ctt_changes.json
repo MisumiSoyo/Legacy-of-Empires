@@ -4189,9 +4189,9 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "埃塞俄比亚获得炮塔",
+            "note": "埃塞俄比亚, 意大利获得炮塔",
             "action": "modify",
-            "civ_id": "ETHIOPIANS",
+            "civ_id": ["ETHIOPIANS", "ITALIANS"],
             "Node ID": 236,
             "Use Type": "Building",
             "Node Status": "ResearchedCompleted"
@@ -4414,6 +4414,22 @@
             "civ_id": "CELTS",
             "Node ID": [4, 24, 492],
             "Use Type": "Unit"
+        },
+        {
+            "note": "意大利获得工兵, 钻井采金法, 炮塔, 攻城技师",
+            "action": "modify",
+            "civ_id": "ITALIANS",
+            "Node ID": [64, 182, 321, 377],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "意大利获得长戟兵",
+            "action": "modify",
+            "civ_id": "ITALIANS",
+            "Node ID": [359],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

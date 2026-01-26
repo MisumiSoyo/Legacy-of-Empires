@@ -88,6 +88,15 @@ void KoreansMineral(int playerId = -1, int Time = -1)
 }
 
 
+void PolesFolwarkBonus(int playerId = -1, int Time = -1)
+{
+    int KillCount = xsPlayerAttribute(playerId, cAttributeKills);
+    float Bonus = minInt(KillCount / 15, 10);
+    Bonus = 0.01 * Bonus;
+    SetResource(playerId, cAttributeFolwarkCollectionAmount, (0.1 + Bonus) * xsPlayerAttribute(playerId, cAttributeFarmFood));
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -114,6 +123,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cKoreans:
         {
             KoreansMineral(playerId, Time);
+            break;
+        }
+        case cPoles:
+        {
+            PolesFolwarkBonus(playerId, Time);
             break;
         }
         default:

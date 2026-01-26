@@ -94909,7 +94909,7 @@
                     "Name": "Bombard Tower",
                     "Name String ID": 14156,
                     "Node ID": 236,
-                    "Node Status": "ResearchRequired",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "BuildingNonTech",
                     "Picture Index": 42,
                     "Prerequisite IDs": [
@@ -95963,7 +95963,7 @@
                     "Name": "Halberdier",
                     "Name String ID": 14409,
                     "Node ID": 359,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 104,
                     "Prerequisite IDs": [
@@ -97915,7 +97915,7 @@
                     "Name": "Siege Engineers",
                     "Name String ID": 17378,
                     "Node ID": 377,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 101,
                     "Prerequisite IDs": [
@@ -98365,7 +98365,7 @@
                     "Name": "Sappers",
                     "Name String ID": 17322,
                     "Node ID": 321,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 5,
                     "Prerequisite IDs": [
@@ -99085,7 +99085,7 @@
                     "Name": "Gold Shaft Mining",
                     "Name String ID": 17180,
                     "Node ID": 182,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 62,
                     "Prerequisite IDs": [

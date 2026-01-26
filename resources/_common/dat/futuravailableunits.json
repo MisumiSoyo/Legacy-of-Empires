@@ -9354,11 +9354,6 @@
                         "ID": 54
                     },
                     {
-                        "Name": "Siege Engineers",
-                        "RequiredAge": 3,
-                        "ID": 377
-                    },
-                    {
                         "Name": "Tang Dynasty",
                         "RequiredAge": 3,
                         "ID": 3237
@@ -9377,6 +9372,11 @@
                         "Name": "Qing Dynasty",
                         "RequiredAge": 3,
                         "ID": 3240
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
                     }
                 ]
             },
@@ -17173,6 +17173,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
                     }
                 ],
                 "Units": [
@@ -17649,6 +17654,11 @@
                         "Name": "Advanced Mercenary Contract",
                         "RequiredAge": 4,
                         "ID": 3115
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
                     }
                 ]
             },
@@ -17735,6 +17745,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -17910,6 +17925,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
