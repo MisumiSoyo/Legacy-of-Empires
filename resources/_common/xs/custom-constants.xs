@@ -47,6 +47,8 @@ extern const int cAttributeYumKaaxGoldProductivity = 448;
 extern const int cAttributeYumKaaxWoodProductivity = 449;
 extern const int cAttributeCavalryAttackGoldProductivity = 459;
 extern const int cAttributeShrineCount = 460;
+extern const int cAttributeRomansArmyCount = 701;
+extern const int cAttributeRomansArmyTimer = 702;
 
 
 //  units' IDs
@@ -161,6 +163,7 @@ extern const int TangDynastyTechID = 3237;
 extern const int SongDynastyTechID = 3238;
 extern const int YuanDynastyTechID = 3239;
 extern const int MingDynastyTechID = 3240;
+extern const int ConscriptionSystemTechID = 3425;
 
 
 // Custom Effect IDs

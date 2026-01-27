@@ -53,13 +53,6 @@ void EffectFunction10002(int playerId = -1)
             ModAttribute(playerId, Monastery4ID, cAmountFirstStorage, 10);
             break;
         }
-        case cRomans:
-        {
-            //  Romans civ bonus, walls and gates +100% building speed
-            MulAttribute(playerId, cWallClass, cTrainTime, 0.5);
-            MulAttribute(playerId, cGateClass, cTrainTime, 0.5);
-            break;
-        }
         case cGeorgians:
         {
             //  Georgians civ bonus, Repairers +100% work rate

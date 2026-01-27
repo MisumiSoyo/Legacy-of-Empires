@@ -91,9 +91,23 @@ void KoreansMineral(int playerId = -1, int Time = -1)
 void PolesFolwarkBonus(int playerId = -1, int Time = -1)
 {
     int KillCount = xsPlayerAttribute(playerId, cAttributeKills);
-    float Bonus = minInt(KillCount / 15, 10);
+    float Bonus = minInt(KillCount / 20, 5);
     Bonus = 0.01 * Bonus;
     SetResource(playerId, cAttributeFolwarkCollectionAmount, (0.1 + Bonus) * xsPlayerAttribute(playerId, cAttributeFarmFood));
+}
+
+
+void RomansFreeArmy(int playerId = -1, int Time = -1)
+{
+    if (isResearched(playerId, ConscriptionSystemTechID) == false)
+        return;
+    int RomansArmyTimer = xsPlayerAttribute(playerId, cAttributeRomansArmyTimer);
+    if (RomansArmyTimer < 0)
+    {
+        ModResource(playerId, cAttributeRomansArmyCount, 1);
+        RomansArmyTimer = RomansArmyTimer + 180;
+    }
+    SetResource(playerId, cAttributeRomansArmyTimer, RomansArmyTimer - 1);
 }
 
 
@@ -129,6 +143,10 @@ void TimerEvent(int playerId = -1, int Time = -1)
         {
             PolesFolwarkBonus(playerId, Time);
             break;
+        }
+        case cRomans:
+        {
+            RomansFreeArmy(playerId, Time);
         }
         default:
         {
