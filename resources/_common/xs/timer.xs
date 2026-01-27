@@ -105,7 +105,7 @@ void RomansFreeArmy(int playerId = -1, int Time = -1)
     if (RomansArmyTimer < 0)
     {
         ModResource(playerId, cAttributeRomansArmyCount, 1);
-        RomansArmyTimer = RomansArmyTimer + 180;
+        RomansArmyTimer = RomansArmyTimer + 90;
     }
     SetResource(playerId, cAttributeRomansArmyTimer, RomansArmyTimer - 1);
 }

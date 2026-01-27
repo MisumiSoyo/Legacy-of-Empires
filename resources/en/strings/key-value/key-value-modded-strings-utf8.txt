@@ -145,7 +145,7 @@
 
 120191 "Cavalry and Camel civilization\n\n• Start with 2 Forage Bushes\n• Can garrison Mills with livestocks, generates 15*ln(total_garrisoned_animal_food/200+1) food per minute\n• Cavalry class, Scout class, Cavalry Archer class and Special Cavalry Archer class units +20%/+30%/+40% bonus damage in Feudal/Castle/Imperial Age\n• Can garrison Docks with Fishing Ships\n• Monastery provides +10 population room\n\n<b>Unique Units:<b>\n• Chakram Thrower (infantry deals penetrate damage), Shrivamsha Rider (cavalry can dodge projectiles), Camel Scout (light camel rider)\n\n<b>Unique Techs:<b>\n• Kshatriyas (Infantries, cavalries, archers, cavalry archers and Petards -25% food cost)\n• Frontier Guards (Camel Scout-Line units and Elephant Archers +4 melee armor)\n• Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)\n\n<b>Team Bonus:<b>\nAll Camel and Elephants -20% training time"
 
-120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n• Can build monastery and train monks at Feudal Age\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Conscription System (Can conscript Legionaries, Knights and Elite Centurions at Town Centers once every 3 minutes since Feudal Age)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
+120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n• Can build monastery and train monks at Feudal Age\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Conscription System (Can conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
 
 120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Light Cavalry line and Knight line units receive -70% additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 
@@ -453,7 +453,7 @@
 501142 "Upgrade to Veteran Celtic Hunter"
 501143 "Upgrade to Elite Celtic Hunter"
 501144 "Research Adarga (Archer-line and Cavalry Archer-line units +2 pierce armor, +2 archer armor)"
-501145 "Research Conscription System (Can conscript Legionaries, Knights and Elite Centurions at Town Centers once every 3 minutes since Feudal Age)"
+501145 "Research Conscription System (Can conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -600,7 +600,7 @@
 521142 "Upgrade to <b>Veteran Celtic Hunter<b> (<cost>) (time: 30)\nUpgrades your Celtic Hunters and lets you create Veteran Celtic Hunters."
 521143 "Upgrade to <b>Elite Celtic Hunter<b> (<cost>) (time: 60)\nUpgrades your Veteran Celtic Hunters and lets you create Elite Celtic Hunters."
 521144 "Research <b>Adarga<b> (<cost>) (time: 45)\nArcher-line and Cavalry Archer-line units +2 pierce armor, +2 archer armor."
-521145 "Research <b>Conscription System<b> (<cost>) (time: 45)\nCan conscript Legionaries, Knights and Elite Centurions at Town Centers once every 3 minutes since Feudal Age."
+521145 "Research <b>Conscription System<b> (<cost>) (time: 45)\nCan conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -677,6 +677,9 @@
 700063 "Celtic Hunter"
 700064 "Veteran Celtic Hunter"
 700065 "Elite Celtic Hunter"
+700066 "Legionary"
+700067 "Hussar"
+700068 "Elite Centurion"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -743,6 +746,9 @@
 701063 "Create Celtic Hunter"
 701064 "Create Veteran Celtic Hunter"
 701065 "Create Elite Celtic Hunter"
+701066 "Conscript 3 Legionaries"
+701067 "Conscript 3 Hussars"
+701068 "Conscript an Elite Centurion"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\n<i><GREY>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit; Training time: 20; Moving speed: 0.96; Reload time: 2.75; Attack delay: 0.35; Accuracy: 75%; LOS: 9; Search radius: 9. \nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -872,6 +878,12 @@
 721064 "Create <b>Veteran Celtic Hunter<b> (<cost>) \nCelts' unique archer. Uses 2 population space. \n<i><GREY> Upgrades: attack, armor (Blacksmith); attack, accuracy (University); accuracy, to Elite Celtic Hunter 450F, 350G, 60s (Archery Range); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer; Training time: 45; Moving speed: 0.96; Reload time: 1.8; Attack delay: 0.34; LOS: 7; Search radius: 7. \nAttack Bonus: +3 vs Pikeman."
 
 721065 "Create <b>Elite Celtic Hunter<b> (<cost>) \nCelts' unique archer. Uses 2 population space. \n<i><GREY> Upgrades: attack, armor (Blacksmith); attack, accuracy (University); accuracy (Archery Range); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer; Training time: 45; Moving speed: 0.96; Reload time: 1.8; Attack delay: 0.34; LOS: 7; Search radius: 7. \nAttack Bonus: +3 vs Pikeman."
+
+721066 "Conscript 3 Legionaries"
+
+721067 "Conscript 3 Hussars"
+
+721068 "Conscript an Elite Centurion"
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

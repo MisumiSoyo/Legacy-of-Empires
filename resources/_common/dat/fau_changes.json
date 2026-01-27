@@ -1890,6 +1890,38 @@
             "building_id": 209,
             "Name": "Adarga",
             "RequiredAge": 3
+        },
+        {
+            "note": "募兵制",
+            "civilizations": "Romans",
+            "tech_id": 3425,
+            "building_id": 209,
+            "Name": "Conscription System",
+            "RequiredAge": 3
+        },
+        {
+            "note": "征召罗马军",
+            "civilizations": "Romans",
+            "unit_id": 4146,
+            "building_id": 109,
+            "Name": "Conscript Legionaries",
+            "RequiredAge": 3
+        },
+        {
+            "note": "征召翼骑兵",
+            "civilizations": "Romans",
+            "unit_id": 4147,
+            "building_id": 109,
+            "Name": "Conscript Hussars",
+            "RequiredAge": 3
+        },
+        {
+            "note": "征召精英百夫长",
+            "civilizations": "Romans",
+            "unit_id": 4148,
+            "building_id": 109,
+            "Name": "Conscript Elite Centurions",
+            "RequiredAge": 3
         }
     ]
 }
