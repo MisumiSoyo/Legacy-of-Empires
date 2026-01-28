@@ -206021,17 +206021,17 @@
                     "Use Type": "Unit"
                 },
                 {
-                    "Age ID": 3,
+                    "Age ID": 2,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105167,
+                    "Help String ID": 800069,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Battle Elephant",
-                    "Name String ID": 14167,
-                    "Node ID": 1132,
+                    "Name": "Raider Elephant",
+                    "Name String ID": 700069,
+                    "Node ID": 4149,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "RegionalUnit",
+                    "Node Type": "UniqueUnit",
                     "Picture Index": 228,
                     "Prerequisite IDs": [
                         0,
@@ -206047,22 +206047,22 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": 630,
+                    "Trigger Tech ID": -1,
                     "Use Type": "Unit"
                 },
                 {
-                    "Age ID": 4,
+                    "Age ID": 3,
                     "Building ID": 101,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 105168,
-                    "Link ID": 1132,
-                    "Link Node Type": "RegionalUnit",
-                    "Name": "Elite Battle Elephant",
-                    "Name String ID": 14168,
-                    "Node ID": 1134,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "RegionalUnit",
-                    "Picture Index": 246,
+                    "Help String ID": 800070,
+                    "Link ID": 4149,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Veteran Raider Elephant",
+                    "Name String ID": 700070,
+                    "Node ID": 4150,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 228,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -206077,7 +206077,37 @@
                         "None",
                         "None"
                     ],
-                    "Trigger Tech ID": 631,
+                    "Trigger Tech ID": 3429,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800071,
+                    "Link ID": 4150,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Elite Raider Elephant",
+                    "Name String ID": 700071,
+                    "Node ID": 4151,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 228,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3430,
                     "Use Type": "Unit"
                 },
                 {

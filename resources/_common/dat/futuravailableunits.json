@@ -41848,6 +41848,11 @@
                         "ID": 630,
                         "Name": "Battle Elephant",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Veteran Raider Elephant",
+                        "RequiredAge": 3,
+                        "ID": 3429
                     }
                 ],
                 "Units": [

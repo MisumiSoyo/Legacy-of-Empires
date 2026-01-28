@@ -1922,6 +1922,14 @@
             "building_id": 109,
             "Name": "Conscript Elite Centurions",
             "RequiredAge": 3
+        },
+        {
+            "note": "老练突袭大象",
+            "civilizations": "Dravidians",
+            "tech_id": 3429,
+            "building_id": 101,
+            "Name": "Veteran Raider Elephant",
+            "RequiredAge": 3
         }
     ]
 }
