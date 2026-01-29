@@ -1281,13 +1281,23 @@ void EffectFunction10097(int playerId = -1)
 }
 
 
+//  10098 - C-Bonus, extra resource from army
+void EffectFunction10099(int playerId = -1)
+{
+    int ArmyCount = xsPlayerAttribute(playerId, cAttributeMilitaryPopulation);
+    ModResource(playerId, cAttributeFood, ArmyCount * 6);
+    ModResource(playerId, cAttributeWood, ArmyCount * 6);
+    ModResource(playerId, cAttributeGold, ArmyCount * 3);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 111  2026.01.29");
+    xsChatData("Build: 112  2026.01.29");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
