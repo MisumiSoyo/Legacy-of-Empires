@@ -85753,7 +85753,7 @@
                     "Name": "Elite Steppe Lancer",
                     "Name String ID": 14010,
                     "Node ID": 1372,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "RegionalUnit",
                     "Picture Index": 274,
                     "Prerequisite IDs": [
@@ -85771,6 +85771,36 @@
                         "None"
                     ],
                     "Trigger Tech ID": 715,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800072,
+                    "Link ID": 1372,
+                    "Link Node Type": "RegionalUnit",
+                    "Name": "Imperial Steppe Lancer",
+                    "Name String ID": 700072,
+                    "Node ID": 4152,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 274,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3434,
                     "Use Type": "Unit"
                 },
                 {

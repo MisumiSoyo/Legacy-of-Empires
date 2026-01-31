@@ -14213,6 +14213,16 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 715
+                    },
+                    {
+                        "Name": "Imperial Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 3434
                     }
                 ],
                 "Units": [
@@ -14251,6 +14261,11 @@
                         "Name": "Steppe Lancer",
                         "RequiredAge": 3,
                         "ID": 1370
+                    },
+                    {
+                        "Name": "Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 1372
                     }
                 ]
             },

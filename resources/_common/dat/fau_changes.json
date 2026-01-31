@@ -406,19 +406,12 @@
             "RequiredAge": 4
         },
         {
-            "note": "马扎尔和土耳其启用精锐草原枪兵",
-            "civilizations": ["Turks", "Magyars"],
+            "note": "马扎尔, 土耳其和匈奴启用精锐草原枪兵",
+            "civilizations": ["Turks", "Magyars", "Huns"],
             "tech_id": 715,
             "building_id": 101,
             "Name": "Elite Steppe Lancer",
             "RequiredAge": 4
-        },
-        {
-            "note": "匈奴禁用精锐草原枪兵",
-            "civilizations": "Huns",
-            "unit_id": 1372,
-            "building_id": 101,
-            "type": "delete"
         },
         {
             "note": "互市",
@@ -1939,6 +1932,14 @@
             "Name": "Elite Battle Elephant",
             "RequiredAge": 4,
             "RequiredTechID": 3429
+        },
+        {
+            "note": "帝王草原枪兵",
+            "civilizations": "Huns",
+            "tech_id": 3434,
+            "building_id": 101,
+            "Name": "Imperial Steppe Lancer",
+            "RequiredAge": 4
         }
     ]
 }

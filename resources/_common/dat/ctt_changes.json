@@ -2968,14 +2968,6 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "匈奴禁用精锐草原枪兵",
-            "action": "modify",
-            "civ_id": "HUNS",
-            "Node ID": 1372,
-            "Use Type": "Unit",
-            "Node Status": "NotAvailable"
-        },
-        {
             "note": "罗马修道院提前一个时代",
             "action": "modify",
             "civ_id": "ROMANS",
@@ -4590,6 +4582,29 @@
             "civ_id": ["DRAVIDIANS"],
             "Node ID": [1132, 1134],
             "Use Type": "Unit"
+        },
+        {
+            "note": "帝王草原枪兵",
+            "action": "add",
+            "civ_id": "HUNS",
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800072,
+            "Link ID": 1372,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Imperial Steppe Lancer",
+            "Name String ID": 700072,
+            "Node ID": 4152,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 274,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3434,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1372
         }
     ]
 }
