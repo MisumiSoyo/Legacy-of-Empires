@@ -14200,16 +14200,6 @@
                         "RequiredAge": 2
                     },
                     {
-                        "ID": 209,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
-                    },
-                    {
-                        "ID": 265,
-                        "Name": "Paladin",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
@@ -14241,21 +14231,6 @@
                         "Name": "Hussar",
                         "RequiredAge": 4,
                         "RequiredUnitID": 546
-                    },
-                    {
-                        "ID": 38,
-                        "Name": "Knight",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 283,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
-                    },
-                    {
-                        "ID": 569,
-                        "Name": "Paladin",
-                        "RequiredAge": 4
                     },
                     {
                         "Name": "Steppe Lancer",
@@ -36541,11 +36516,6 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Elite Sipahi",
-                        "RequiredAge": 4,
-                        "ID": 3015
-                    },
-                    {
                         "ID": 435,
                         "Name": "Bloodlines",
                         "RequiredAge": 2
@@ -36589,9 +36559,14 @@
                         "RequiredUnitID": 546
                     },
                     {
-                        "Name": "Sipahi",
-                        "RequiredAge": 3,
-                        "ID": 4014
+                        "ID": 38,
+                        "Name": "Knight",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "ID": 283,
+                        "Name": "Cavalier",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 329,

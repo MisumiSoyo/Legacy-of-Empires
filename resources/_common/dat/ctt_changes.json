@@ -579,6 +579,27 @@
             "Use Type": "Unit"
         },
         {
+            "note": "单于",
+            "action": "add",
+            "civ_id": "HUNS",
+            "Age ID": 2,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800017,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Chanyu",
+            "Name String ID": 700017,
+            "Node ID": 4024,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 487,
+            "Prerequisite IDs": [21, 0, 0, 0, 0],
+            "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
             "action": "add",
             "civ_id": "BOHEMIANS",
             "Age ID": 3,
@@ -2282,10 +2303,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "中国失去骑士系",
+            "note": "中国, 匈奴失去骑士系",
             "action": "modify",
-            "civ_id": "CHINESE",
-            "Node ID": [38, 283],
+            "civ_id": ["CHINESE", "HUNS"],
+            "Node ID": [38, 283, 569],
             "Use Type": "Unit",
             "Node Status": "NotAvailable"
         },

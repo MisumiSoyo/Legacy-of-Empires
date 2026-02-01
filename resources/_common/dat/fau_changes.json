@@ -65,40 +65,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "西帕希骑兵",
-            "civilizations": "Turks",
-            "unit_id": 4014,
-            "building_id": 101,
-            "Name": "Sipahi",
-            "RequiredAge": 3,
-            "position": "after",
-            "target_id": 441
-        },
-        {
-            "note": "精锐西帕希骑兵",
-            "civilizations": "Turks",
-            "tech_id": 3015,
-            "building_id": 101,
-            "Name": "Elite Sipahi",
-            "RequiredAge": 4,
-            "position": "after",
-            "target_id": 428
-        },
-        {
-            "note": "土耳其移除骑士",
-            "civilizations": "Turks",
-            "unit_id": 38,
-            "building_id": 101,
-            "type": "delete"
-        },
-        {
-            "note": "土耳其移除重装骑士",
-            "civilizations": "Turks",
-            "unit_id": 283,
-            "building_id": 101,
-            "type": "delete"
-        },
-        {
             "note": "坞堡",
             "civilizations": ["Shu", "Wu", "Wei"],
             "unit_id": 4016,
@@ -1857,15 +1823,33 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国失去骑士系",
-            "civilizations": ["Chinese"],
+            "note": "中国, 匈奴失去骑士系",
+            "civilizations": ["Chinese", "Huns"],
             "unit_id": [38, 283],
             "type": "delete"
         },
         {
-            "note": "中国失去重装骑士",
-            "civilizations": ["Chinese"],
+            "note": "中国, 匈奴失去重装骑士",
+            "civilizations": ["Chinese", "Huns"],
             "tech_id": 209,
+            "type": "delete"
+        },
+        {
+            "note": "中国, 匈奴失去重装骑士",
+            "civilizations": ["Chinese", "Huns"],
+            "unit_id": 283,
+            "type": "delete"
+        },
+        {
+            "note": "匈奴失去游侠",
+            "civilizations": ["Huns"],
+            "unit_id": 569,
+            "type": "delete"
+        },
+        {
+            "note": "匈奴失去游侠",
+            "civilizations": ["Huns"],
+            "tech_id": 265,
             "type": "delete"
         },
         {

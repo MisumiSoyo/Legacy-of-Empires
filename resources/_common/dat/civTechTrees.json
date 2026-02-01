@@ -85633,7 +85633,7 @@
                     "Name": "Knight",
                     "Name String ID": 14068,
                     "Node ID": 38,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Unit",
                     "Picture Index": 1,
                     "Prerequisite IDs": [
@@ -85663,7 +85663,7 @@
                     "Name": "Cavalier",
                     "Name String ID": 14070,
                     "Node ID": 283,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 49,
                     "Prerequisite IDs": [
@@ -85693,7 +85693,7 @@
                     "Name": "Paladin",
                     "Name String ID": 14471,
                     "Node ID": 569,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 2,
                     "Prerequisite IDs": [
@@ -89052,6 +89052,36 @@
                     "Help String ID": 800017,
                     "Link ID": 757,
                     "Link Node Type": "UniqueUnit",
+                    "Name": "Chanyu",
+                    "Name String ID": 700017,
+                    "Node ID": 4024,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 487,
+                    "Prerequisite IDs": [
+                        21,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "Tech",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 2,
+                    "Building ID": 109,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800017,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
                     "Name": "Chanyu",
                     "Name String ID": 700017,
                     "Node ID": 4024,
