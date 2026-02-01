@@ -49403,6 +49403,16 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Exempted Tenant System",
+                        "RequiredAge": 3,
+                        "ID": 3443
+                    },
+                    {
+                        "Name": "Trouble-Freeing Army",
+                        "RequiredAge": 4,
+                        "ID": 3444
                     }
                 ]
             },

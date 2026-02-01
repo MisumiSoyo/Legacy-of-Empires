@@ -1924,6 +1924,22 @@
             "building_id": 101,
             "Name": "Imperial Steppe Lancer",
             "RequiredAge": 4
+        },
+        {
+            "note": "复客制",
+            "civilizations": "Wu",
+            "tech_id": 3443,
+            "building_id": 209,
+            "Name": "Exempted Tenant System",
+            "RequiredAge": 3
+        },
+        {
+            "note": "解烦兵",
+            "civilizations": "Wu",
+            "tech_id": 3444,
+            "building_id": 209,
+            "Name": "Trouble-Freeing Army",
+            "RequiredAge": 4
         }
     ]
 }

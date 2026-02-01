@@ -4626,6 +4626,48 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 1372
+        },
+        {
+            "note": "复客制",
+            "action": "add",
+            "civ_id": "WU",
+            "Age ID": 3,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600149,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Exempted Tenant System",
+            "Name String ID": 500149,
+            "Node ID": 3443,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "note": "解烦兵",
+            "action": "add",
+            "civ_id": "WU",
+            "Age ID": 4,
+            "Building ID": 209,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600150,
+            "Link ID": 3443,
+            "Link Node Type": "BuildingTech",
+            "Name": "Trouble-Freeing Army",
+            "Name String ID": 500150,
+            "Node ID": 3444,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }

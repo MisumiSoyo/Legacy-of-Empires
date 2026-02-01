@@ -79,11 +79,6 @@ void EffectFunction10024(int playerId = -1)
     int playerCiv = xsGetPlayerCivilization(playerId);
     switch (playerCiv)
     {
-        case cWu:
-        {
-            SetResource(playerId, cAttributeWubaoGoldProductivity, 10);
-            break;
-        }
         default:
             break;
     }
@@ -103,11 +98,6 @@ void EffectFunction10025(int playerId = -1)
             xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.25, playerId);
             break;
         }
-        case cWu:
-        {
-            SetResource(playerId, cAttributeWubaoGoldProductivity, 15);
-            break;
-        }
         default:
             break;
     }
@@ -125,11 +115,6 @@ void EffectFunction10026(int playerId = -1)
         {
             xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.2, playerId);
             xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.2, playerId);
-            break;
-        }
-        case cWu:
-        {
-            SetResource(playerId, cAttributeWubaoGoldProductivity, 20);
             break;
         }
         default:

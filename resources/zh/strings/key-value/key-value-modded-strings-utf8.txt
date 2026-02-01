@@ -106,7 +106,7 @@
 
 120170 "步兵文明\n\n• 军事单位食物费用在黑暗/封建/城堡/帝王时代 -10/15/20/25%\n• 城堡时代起铁匠铺步兵科技升级可以加成村民\n• 兵营，靶场，马厩，攻城武器厂 建造速度 +100%\n• 房屋能支持 10 人口\n• 建筑石料费用 -15%(对游牧模式的首个城镇中心无效)\n• 可蓄养动物 +2 视野范围\n\n<b>独特单位：<b>\n• 印加枪兵长 (步兵系), 投石手 (克制步兵的射手)\n\n<b>独特科技：<b> \n• 安第斯弹弓 (掷矛手和投石手无最小射程；投石手攻击力 +1)\n• 织物盾 (印加枪兵长、投石手和鹰勇士 +1 护甲/2 盾牌)\n• 信使(投石手、鹰勇士、印加枪兵长和索洛托勇士 +15% 移动速度)\n• 奇普(圣坛建造上限 +2, 并且可以产出索洛托勇士)\n\n<b>团队加成：<b> \n游戏开始时获得一只羊驼"
 
-120171 "骑兵文明\n\n• 村民一击就能杀死狼群\n• 锻造、铸铁和鼓风炉免费\n• 斥候骑兵、轻骑兵、翼骑兵训练费用 -15%\n• 每驻扎 2 件圣物，草原枪兵 +1 攻击力(最多 +2)\n• 可在城堡以 +75% 速度训练兵营、靶场和马厩单位\n\n<b>独特单位：<b> \n• 马扎尔骠骑 (克制攻城武器的轻骑兵)\n\n<b>独特科技：<b> \n• 科维尼安军队 (马扎尔骠骑 +45 食物费用，无需黄金)\n• 反曲弓 (骑射手射程 +1，攻击力 +1)\n\n<b>团队加成：<b> \n骑射手训练速度 +25%"
+120171 "骑兵文明\n\n• 村民一击就能杀死狼群\n• 锻造、铸铁和鼓风炉免费\n• 斥候骑兵、轻骑兵、翼骑兵训练费用 -15%\n• 每驻扎 1 件圣物，草原枪兵 +1 护甲(最多 +4)\n• 可在城堡以 +75% 速度训练兵营、靶场和马厩单位\n\n<b>独特单位：<b> \n• 马扎尔骠骑 (克制攻城武器的轻骑兵)\n\n<b>独特科技：<b> \n• 科维尼安军队 (马扎尔骠骑 +45 食物费用，无需黄金)\n• 反曲弓 (骑射手射程 +1，攻击力 +1)\n\n<b>团队加成：<b> \n骑射手训练速度 +25%"
 
 120172 "步兵和攻城武器文明\n\n• 农夫工作效率 +15%\n• 供给，软甲免费升级\n• 攻城武器厂单位 -15% 费用\n• 僧侣 +20% 移动速度\n• 攻城武器厂在城堡/帝王时代 +25/50% 工作效率\n\n<b>独特单位：<b>\n• 贵族铁骑 (重甲骑兵), 射击军 (火枪手)\n\n<b>独特科技：<b>\n• 罗斯堡垒 (木材替代城堡和箭塔 40% 的石料费用)\n• 皇家卫队 (步兵造成溅射伤害)\n• 贵族铁骑的坚毅(骑士系和贵族铁骑对建筑 +5 攻击力)\n• 东正教(射击军 -50% 占用人口, 民兵系 -20% 占用人口)\n\n<b>团队加成：<b>\n兵营，靶场，马厩，攻城武器厂提供的人口 +5"
 
@@ -156,7 +156,7 @@
 
 120198 "弓兵和攻城文明\n\n• 伐木工不仅能产生木材，还能产生食物\n• 弓兵单位在靶场和铁匠铺的科技费用 -25%\n• 攻城武器和攻城战船在城堡/帝王时代的移动速度 +10/15%\n• 步兵攻击农田时每秒产生 0.25 食物\n• 坞堡 -20% 建造费用\n• 黑光铠骑兵在城堡/帝王时代 -15/25% 训练费用\n\n<b>独特单位：<b>\n• 白毦兵 (步兵), 战车 (攻城武器), 刘备 (英雄)\n\n<b>独特科技：<b>\n• 盘蛇阵 (长矛兵系和白羽卫兵彼此靠近时获得额外的生命值)\n• 弩匣 (弓兵系、战车和楼船可发射更多弩箭)\n• 攻城术 (冲车系 +400% 近战攻击力, +20% 对建筑附加攻击)\n\n<b>团队加成：<b>\n步弓手视野 +2"
 
-120199 "步兵和海军文明\n\n• 军事生产建筑和码头提供的食物 +55\n• 步兵在封建/城堡/帝王时代每分钟可恢复 10/20/30 生命值\n• 剑士和黑光铠骑兵在帝王时代 +2攻击力\n• 修船厂、干船坞可提前一个时代使用，且费用和研究时间 -75%\n• 坞堡在封建/城堡/帝王时代每分钟产生 6/9/12 黄金\n• 坞堡科技 -33% 研究费用\n\n<b>独特单位：<b>\n• 火焰弓箭手 (步弓手), 剑士 (步兵), 孙坚 (英雄)\n\n<b>独特科技：<b>\n• 赤壁战术 (爆破船和火焰弓箭手对船只和建筑造成火焰伤害)\n• 卧虎 (牵引抛石机和楼船巨型投石机武器发射更多炮弹)\n\n<b>团队加成：<b>\n房屋建造速度 +100%"
+120199 "步兵和海军文明\n\n• 军事生产建筑和码头提供的食物 +55\n• 步兵在封建/城堡/帝王时代每分钟可恢复 10/20/30 生命值\n• 剑士和黑光铠骑兵在帝王时代 +2攻击力\n• 修船厂、干船坞可提前一个时代使用，且费用和研究时间 -75%\n• 坞堡科技 -33% 研究费用\n\n<b>独特单位：<b>\n• 火焰弓箭手 (步弓手), 剑士 (步兵), 孙坚 (英雄)\n\n<b>独特科技：<b>\n• 赤壁战术 (爆破船和火焰弓箭手对船只和建筑造成火焰伤害)\n• 卧虎 (牵引抛石机和楼船巨型投石机武器发射更多炮弹)\n• 复客制 (坞堡每分钟可产生 12 黄金, 并且可生产兵营单位)\n• 解烦兵 (剑士和骑兵 +3 攻击力, +15 黄金费用)\n\n<b>团队加成：<b>\n房屋建造速度 +100%"
 
 120200 "骑兵文明\n\n• 每研究一项经济科技，就可免费获得一个村民\n• 黑光铠骑兵和鲜卑掠骑兵在城堡/帝王时代的生命值 +20/30%\n• 牵引抛石机和楼船费用 -25%\n• 坞堡建造数量上限在封建/城堡/帝王时代 +1/2/3\n\n<b>独特单位：<b>\n• 虎豹骑 (骑兵), 鲜卑掠骑兵 (骑射手), 曹操 (英雄)\n\n<b>独特科技：<b>\n• 屯田 (每个军事单位（除攻城武器）每分钟产生 1.8 食物)\n• 明光铠 (骑兵单位 +4 护甲)\n• 霹雳车 (解锁牵引抛石机, 并且牵引抛石机 +10% 攻击速度, +1 射程)\n\n<b>团队加成：<b>\n骑兵对攻城武器 +2 攻击力"
 
@@ -313,6 +313,8 @@
 500146 "老练突袭大象"
 500147 "精锐突袭大象"
 500148 "帝王草原枪兵"
+500149 "复客制"
+500150 "解烦兵"
 
 
 501001 "研究季风航行(渔船和运输船 +25%移动速度)"
@@ -463,6 +465,8 @@
 501146 "升级到老练突袭大象"
 501147 "升级到精锐突袭大象"
 501148 "升级到帝王草原枪兵"
+501149 "研究复客制(坞堡每分钟可产生 12 黄金, 并且可生产兵营单位)"
+501150 "研究解烦兵(剑士和骑兵 +3 攻击力, +15 黄金费用)"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -613,6 +617,8 @@
 521146 "升级到<b>老练突袭大象<b> (<cost>) (时间: 30)\n将您的突袭大象升级, 生产更为强大的老练突袭大象。"
 521147 "升级到<b>精锐突袭大象<b> (<cost>) (时间: 60)\n将您的老练突袭大象升级, 生产更为强大的精锐突袭大象。"
 521148 "升级到<b>帝王草原枪兵<b> (<cost>) (时间: 90)\n将您的精锐草原枪兵升级, 生产更为强大的帝王草原枪兵。"
+521149 "研究<b>复客制<b> (<cost>) (时间: 45)\n坞堡每分钟可产生 12 黄金, 并且可生产兵营单位。"
+521150 "研究<b>解烦兵<b> (<cost>) (时间: 60)\n剑士和骑兵 +3 攻击力, +15 黄金费用。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -793,7 +799,7 @@
 
 721011 "生产<b>猎狼<b> (<cost>)\n蒙古独特单位,能快速攻击敌人，只占用0.5人口空间。\n<GREY><i>升级: 攻击, 护甲 (铁匠铺); 生产速度 (城堡); 提升抵抗僧侣的能力 (修道院) 。<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位; 训练时间: 10; 移动速度: 1.25; 攻击间隔: 2; 视野: 4; 搜索范围: 4。\n攻击加成: +1 vs 村民\n\n封建时代后获得: +5 生命值, +1 攻击力, +1 攻击力 vs 村民;\n城堡时代后获得: +10 生命值, +2 攻击力, +2 攻击力 vs 村民;\n帝王时代后获得: +15 生命值, +2 攻击力, +2 攻击力 vs 村民"
 
-721012 "建造<b>坞堡<b> (<cost>) \n三国独特防御建筑，每分钟产生 30 木材和 30 食物，提供 5 人口。周围己方村民每分钟回复 30 生命值。只能拥有 3 座。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT069TownWatch,1> <MATERIAL=TechIconsT089TownPatrol,1> <MATERIAL=TechIconsT013Masonry,1> <MATERIAL=TechIconsT014Architecture,1> <MATERIAL=TechIconsT104HeatedShot,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT061MurderHoles,1> <MATERIAL=TechIconsT119Arrowslits,1>\n<hp> <attack> <armor> <piercearmor> <range> <garrison>\n<MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon> 8\n主类: 建筑; 标签: 建筑, 标准建筑。\n攻击加成: +2 vs 枪兵。\n\n<MATERIAL=TechIconsT030FeudalAge,1> +250 生命值\n<MATERIAL=TechIconsT031CastleAge,1> +300 生命值\n<MATERIAL=TechIconsT032ImperialAge,1> +300 生命值"
+721012 "建造<b>坞堡<b> (<cost>) \n三国独特防御建筑，每分钟产生 30 木材和 24 食物，提供 5 人口。周围己方村民每分钟回复 30 生命值。只能拥有 3 座。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT069TownWatch,1> <MATERIAL=TechIconsT089TownPatrol,1> <MATERIAL=TechIconsT013Masonry,1> <MATERIAL=TechIconsT014Architecture,1> <MATERIAL=TechIconsT104HeatedShot,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT061MurderHoles,1> <MATERIAL=TechIconsT119Arrowslits,1>\n<hp> <attack> <armor> <piercearmor> <range> <garrison>\n<MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon> 8\n主类: 建筑; 标签: 建筑, 标准建筑。\n攻击加成: +2 vs 枪兵。\n\n<MATERIAL=TechIconsT030FeudalAge,1> +250 生命值\n<MATERIAL=TechIconsT031CastleAge,1> +300 生命值\n<MATERIAL=TechIconsT032ImperialAge,1> +300 生命值"
 
 721013 "生产<b>早期骑射手<b> (<cost>)\n匈奴独特骑射手单位。适于远程攻击移动缓慢的单位。不适于近程攻击精锐掷矛手等单位。城堡时代自动升级为骑射手。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.35 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 50% <MATERIAL=EyeIcon,1> 5\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手。\n攻击加成: +2 vs 枪兵。"
 
