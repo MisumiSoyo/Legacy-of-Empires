@@ -811,8 +811,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚启用轮作",
-            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians"],
+            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴启用轮作",
+            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -1258,16 +1258,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用软甲",
-            "civilizations": "Chinese",
+            "note": "中国, 吴启用软甲",
+            "civilizations": ["Chinese", "Wu"],
             "tech_id": 875,
             "building_id": 12,
             "Name": "Gambesons",
             "RequiredAge": 3
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1394,8 +1394,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔获得工兵",
-            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers"],
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1447,14 +1447,6 @@
             "tech_id": 441,
             "building_id": 104,
             "Name": "Herbal Medicine",
-            "RequiredAge": 3
-        },
-        {
-            "note": "西西里获得扳指",
-            "civilizations": "Sicilians",
-            "tech_id": 437,
-            "building_id": 87,
-            "Name": "Thumb Ring",
             "RequiredAge": 3
         },
         {
@@ -1528,8 +1520,8 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特获得扳指",
-            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts"],
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴获得扳指",
+            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1591,16 +1583,16 @@
             "RequiredAge": 2
         },
         {
-            "note": "勃艮第获得血统",
-            "civilizations": "Burgundians",
+            "note": "获得血统",
+            "civilizations": [],
             "tech_id": 435,
             "building_id": 101, 
             "Name": "Bloodlines",
             "RequiredAge": 2
         },
         {
-            "note": "阿兹特克, 波兰, 勃艮第获得射手锁甲",
-            "civilizations": ["Aztecs", "Burgundians", "Poles"],
+            "note": "阿兹特克, 波兰, 勃艮第, 吴获得射手锁甲",
+            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu"],
             "tech_id": 219,
             "building_id": 103,
             "Name": "Ring Archer Armor",
@@ -1715,8 +1707,8 @@
             "type": "delete"
         },
         {
-            "note": "缅甸获得射箭槽",
-            "civilizations": "Burmese",
+            "note": "缅甸, 吴获得射箭槽",
+            "civilizations": ["Burmese", "Wu"],
             "tech_id": 608,
             "building_id": 209,
             "Name": "Arrowslits",
@@ -1940,6 +1932,14 @@
             "building_id": 209,
             "Name": "Trouble-Freeing Army",
             "RequiredAge": 4
+        },
+        {
+            "note": "吴获得垛墙",
+            "civilizations": "Wu",
+            "tech_id": 194,
+            "building_id": 209,
+            "Name": "Fortified Wall",
+            "RequiredAge": 3
         }
     ]
 }

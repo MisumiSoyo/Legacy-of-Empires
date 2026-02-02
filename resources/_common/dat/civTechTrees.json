@@ -185248,7 +185248,7 @@
                     "Name": "Bloodlines",
                     "Name String ID": 17409,
                     "Node ID": 435,
-                    "Node Status": "ResearchedCompleted",
+                    "Node Status": "NotAvailable",
                     "Node Type": "Research",
                     "Picture Index": 110,
                     "Prerequisite IDs": [
@@ -258144,7 +258144,7 @@
                     "Name": "Fortified Wall",
                     "Name String ID": 14204,
                     "Node ID": 155,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "BuildingNonTech",
                     "Picture Index": 32,
                     "Prerequisite IDs": [
@@ -258768,7 +258768,7 @@
                     "Name": "Thumb Ring",
                     "Name String ID": 17411,
                     "Node ID": 437,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 112,
                     "Prerequisite IDs": [
@@ -259128,7 +259128,7 @@
                     "Name": "Gambesons",
                     "Name String ID": 17450,
                     "Node ID": 875,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 116,
                     "Prerequisite IDs": [
@@ -259878,7 +259878,7 @@
                     "Name": "Ring Archer Armor",
                     "Name String ID": 17216,
                     "Node ID": 219,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 51,
                     "Prerequisite IDs": [
@@ -260930,7 +260930,7 @@
                     "Name": "Fortified Wall",
                     "Name String ID": 17163,
                     "Node ID": 194,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 46,
                     "Prerequisite IDs": [
@@ -261170,7 +261170,7 @@
                     "Name": "Arrowslits",
                     "Name String ID": 17278,
                     "Node ID": 608,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 119,
                     "Prerequisite IDs": [
@@ -261470,7 +261470,7 @@
                     "Name": "Hoardings",
                     "Name String ID": 17376,
                     "Node ID": 379,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 103,
                     "Prerequisite IDs": [
@@ -261530,7 +261530,7 @@
                     "Name": "Sappers",
                     "Name String ID": 17322,
                     "Node ID": 321,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 5,
                     "Prerequisite IDs": [
@@ -262640,7 +262640,7 @@
                     "Name": "Crop Rotation",
                     "Name String ID": 17012,
                     "Node ID": 12,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
                     "Prerequisite IDs": [
