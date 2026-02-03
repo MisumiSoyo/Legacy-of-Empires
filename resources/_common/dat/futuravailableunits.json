@@ -24282,6 +24282,21 @@
                         "ID": 83,
                         "Name": "Villager (Male)",
                         "RequiredAge": 1
+                    },
+                    {
+                        "Name": "Conscript Spearmen",
+                        "RequiredAge": 2,
+                        "ID": 4155
+                    },
+                    {
+                        "Name": "Conscript Skirmishers",
+                        "RequiredAge": 2,
+                        "ID": 4156
+                    },
+                    {
+                        "Name": "Conscript Karambit Warriors",
+                        "RequiredAge": 3,
+                        "ID": 4157
                     }
                 ]
             },
@@ -45258,11 +45273,6 @@
                         "ID": 322,
                         "Name": "Murder Holes",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Conscription System",
-                        "RequiredAge": 3,
-                        "ID": 3425
                     }
                 ]
             },
@@ -45473,21 +45483,6 @@
                         "ID": 83,
                         "Name": "Villager (Male)",
                         "RequiredAge": 1
-                    },
-                    {
-                        "Name": "Conscript Legionaries",
-                        "RequiredAge": 3,
-                        "ID": 4146
-                    },
-                    {
-                        "Name": "Conscript Hussars",
-                        "RequiredAge": 3,
-                        "ID": 4147
-                    },
-                    {
-                        "Name": "Conscript Elite Centurions",
-                        "RequiredAge": 3,
-                        "ID": 4148
                     }
                 ]
             },

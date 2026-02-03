@@ -97,17 +97,15 @@ void PolesFolwarkBonus(int playerId = -1, int Time = -1)
 }
 
 
-void RomansFreeArmy(int playerId = -1, int Time = -1)
+void MalayFreeArmy(int playerId = -1, int Time = -1)
 {
-    if (isResearched(playerId, ConscriptionSystemTechID) == false)
-        return;
-    int RomansArmyTimer = xsPlayerAttribute(playerId, cAttributeRomansArmyTimer);
-    if (RomansArmyTimer < 0)
+    int MalayArmyTimer = xsPlayerAttribute(playerId, cAttributeMalayArmyTimer);
+    if (MalayArmyTimer <= 0)
     {
-        ModResource(playerId, cAttributeRomansArmyCount, 1);
-        RomansArmyTimer = RomansArmyTimer + 90;
+        ModResource(playerId, cAttributeMalayArmyCount, 1);
+        MalayArmyTimer = MalayArmyTimer + 120;
     }
-    SetResource(playerId, cAttributeRomansArmyTimer, RomansArmyTimer - 1);
+    SetResource(playerId, cAttributeMalayArmyTimer, MalayArmyTimer - 1);
 }
 
 
@@ -139,14 +137,15 @@ void TimerEvent(int playerId = -1, int Time = -1)
             KoreansMineral(playerId, Time);
             break;
         }
+        case cMalay:
+        {
+            MalayFreeArmy(playerId, Time);
+            break;
+        }
         case cPoles:
         {
             PolesFolwarkBonus(playerId, Time);
             break;
-        }
-        case cRomans:
-        {
-            RomansFreeArmy(playerId, Time);
         }
         default:
         {

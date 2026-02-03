@@ -115,7 +115,7 @@
 
 120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
 
-120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Warships can produce 8 food per minute\n• Can create villagers at docks with -50% speed\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
+120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows) \n• Forced Levy (Militia-Line units gold cost converted to food) \n\n<b>Team bonus: <b>\nDocks +6 LOS"
 
 120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 
@@ -696,6 +696,10 @@
 700069 "Raider Elephant"
 700070 "Veteran Raider Elephant"
 700071 "Elite Raider Elephant"
+700072 "Imperial Steppe Lancer"
+700073 "Conscript Spearmen"
+700074 "Conscript Skirmishers"
+700075 "Conscript Karambit Warriors"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -768,6 +772,10 @@
 701069 "Create Raider Elephant"
 701070 "Create Veteran Raider Elephant"
 701071 "Create Elite Raider Elephant"
+701072 "Create Imperial Steppe Lancer"
+701073 "Conscript 3 Spearmen"
+701074 "Conscript 3 Skirmishers"
+701075 "Conscript 3 Karambit Warriors"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -911,6 +919,12 @@
 721071 "Create <b>Elite Raider Elephant<b> (<cost>)\nDravidians' unique battle elephant. Can quickly approach and attack enemies.v\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.15 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=StatIconsBlastRadius,1> 0.4 <MATERIAL=EyeIcon,1> 7\nClass: Cavalry; Tags: Cavalry, Elephant, Unique Unit.\nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
 
 721072 "Create <b>Imperial Steppe Lancer<b> (<cost>)\nHuns unique cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>.25\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 5\nClass: Cavalry; Tags: Cavalry."
+
+721073 "Conscript 3 Spearmen"
+
+721074 "Conscript 3 Skirmishers"
+
+721075 "Conscript 3 Karambit Warriors"
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."
