@@ -221517,6 +221517,96 @@
             "civ_techs_units": [
                 {
                     "Age ID": 2,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800076,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Auxiliary Cavalry",
+                    "Name String ID": 700076,
+                    "Node ID": 4158,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 163,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800077,
+                    "Link ID": 4158,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Veteran Auxiliary Cavalry",
+                    "Name String ID": 700077,
+                    "Node ID": 4159,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 163,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3455,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 4,
+                    "Building ID": 101,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 800078,
+                    "Link ID": 4159,
+                    "Link Node Type": "UniqueUnit",
+                    "Name": "Elite Auxiliary Cavalry",
+                    "Name String ID": 700078,
+                    "Node ID": 4160,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "UniqueUnit",
+                    "Picture Index": 163,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": 3456,
+                    "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 2,
                     "Building ID": 87,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 105083,
@@ -222114,96 +222204,6 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105326,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Scout Cavalry",
-                    "Name String ID": 14326,
-                    "Node ID": 448,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Unit",
-                    "Picture Index": 64,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105444,
-                    "Link ID": 448,
-                    "Link Node Type": "Unit",
-                    "Name": "Light Cavalry",
-                    "Name String ID": 14444,
-                    "Node ID": 546,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 91,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 254,
-                    "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 101,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 105661,
-                    "Link ID": 546,
-                    "Link Node Type": "UnitUpgrade",
-                    "Name": "Hussar",
-                    "Name String ID": 14661,
-                    "Node ID": 441,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "UnitUpgrade",
-                    "Picture Index": 103,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": 428,
-                    "Use Type": "Unit"
                 },
                 {
                     "Age ID": 3,

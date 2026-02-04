@@ -143,7 +143,7 @@
 
 120191 "Cavalry and Camel civilization\n\n• Start with 2 Forage Bushes\n• Can garrison Mills with livestocks, generates 15*ln(total_garrisoned_animal_food/200+1) food per minute\n• Cavalry class, Scout class, Cavalry Archer class and Special Cavalry Archer class units +20%/+30%/+40% bonus damage in Feudal/Castle/Imperial Age\n• Can garrison Docks with Fishing Ships\n• Monastery provides +10 population room\n\n<b>Unique Units:<b>\n• Chakram Thrower (infantry deals penetrate damage), Shrivamsha Rider (cavalry can dodge projectiles), Camel Scout (light camel rider)\n\n<b>Unique Techs:<b>\n• Kshatriyas (Infantries, cavalries, archers, cavalry archers and Petards -25% food cost)\n• Frontier Guards (Camel Scout-Line units and Elephant Archers +4 melee armor)\n• Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)\n\n<b>Team Bonus:<b>\nAll Camel and Elephants -20% training time"
 
-120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n• Can build monastery and train monks at Feudal Age\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Conscription System (Can conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
+120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n• Can build monastery and train monks at Feudal Age\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman), Auxiliary Cavalry (Light Cavalry)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Conscription System (Can conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
 
 120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Light Cavalry line and Knight line units receive -70% additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 
@@ -310,6 +310,8 @@
 500148 "Imperial Steppe Lancer"
 500149 "Exempted Tenant System"
 500150 "Trouble-Freeing Army"
+500151 "Veteran Auxiliary Cavalry"
+500152 "Elite Auxiliary Cavalry"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -462,6 +464,8 @@
 501148 "Upgrade to Imperial Steppe Lancer"
 501149 "Research Exempted Tenant System (Wubaos produce 15 gold per minute, and can train Barracks units)"
 501150 "Research Trouble-Freeing Army (Jian Swordmen and Cavalries +3 attack, +15 gold cost)"
+501151 "Upgrade to Veteran Auxiliary Cavalry"
+501152 "Upgrade to Elite Auxiliary Cavalry"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -611,9 +615,11 @@
 521145 "Research <b>Conscription System<b> (<cost>) (time: 45)\nCan conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age."
 521146 "Upgrade to <b>Veteran Raider Elephant<b> (<cost>) (time: 30)\nUpgrades your Raider Elephants and lets you create Veteran Raider Elephants."
 521147 "Upgrade to <b>Elite Raider Elephant<b> (<cost>) (time: 60)\nUpgrades your Veteran Raider Elephants and lets you create Elite Raider Elephants."
-521148 "Upgrade to <b>Imperial Steppe Lancer<b> (<cost>) (time: 60)\nUpgrades your Elite Steppe Lancers and lets you create Imperial Steppe Lancers."
+521148 "Upgrade to <b>Imperial Steppe Lancer<b> (<cost>) (time: 90)\nUpgrades your Elite Steppe Lancers and lets you create Imperial Steppe Lancers."
 521149 "Research <b>Exempted Tenant System<b> (<cost>) (time: 45)\nWubaos produce 15 gold per minute, and can train Barracks units."
 521150 "Research <b>Trouble-Freeing Army<b> (<cost>) (time: 60)\nJian Swordmen and Cavalries +3 attack, +15 gold cost."
+521151 "Upgrade to <b>Veteran Auxiliary Cavalry<b> (<cost>) (time: 30)\nUpgrades your Auxiliary Cavalries and lets you create Veteran Auxiliary Cavalries."
+521152 "Upgrade to <b>Elite Auxiliary Cavalry<b> (<cost>) (time: 30)\nUpgrades your Veteran Auxiliary Cavalries and lets you create Elite Auxiliary Cavalries."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -700,6 +706,9 @@
 700073 "Conscript Spearmen"
 700074 "Conscript Skirmishers"
 700075 "Conscript Karambit Warriors"
+700076 "Auxiliary Cavalry"
+700077 "Veteran Auxiliary Cavalry"
+700078 "Elite Auxiliary Cavalry"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -776,6 +785,9 @@
 701073 "Conscript 3 Spearmen"
 701074 "Conscript 3 Skirmishers"
 701075 "Conscript 3 Karambit Warriors"
+701076 "Create Auxiliary Cavalry"
+701077 "Create Veteran Auxiliary Cavalry"
+701078 "Create Elite Auxiliary Cavalry"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -925,6 +937,12 @@
 721074 "Conscript 3 Skirmishers"
 
 721075 "Conscript 3 Karambit Warriors"
+
+721076 "Create <b>Auxiliary Cavalry<b> (<cost>)\nRomans' unique light cavalry. Can use the ability every 50 seconds: lose 3 melee armor and increase attack speed by 40%, lasting for 10 seconds.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.2 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 4\nClass: Scout Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +6 vs Monk.\n\n<MATERIAL=TechIconsT030FeudalAge> +3 attack, +0.35 movement speed, +2 LOS."
+
+721077 "Create <b>Veteran Auxiliary Cavalry<b> (<cost>)\nRomans' unique light cavalry. Can use the ability every 50 seconds: lose 3 melee armor and increase attack speed by 40%, lasting for 10 seconds.\nUpgrades:: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +10 vs Monk."
+
+721078 "Create <b>Elite Auxiliary Cavalry<b> (<cost>)\nRomans' unique light cavalry. Can use the ability every 50 seconds: lose 3 melee armor and increase attack speed by 40%, lasting for 10 seconds.\nUpgrades:: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 1.9 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +12 vs Monk."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

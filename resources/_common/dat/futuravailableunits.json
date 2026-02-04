@@ -44952,6 +44952,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 428
                     }
                 ],
                 "Units": [
@@ -44974,6 +44979,11 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 441
                     }
                 ]
             },
