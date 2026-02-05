@@ -1291,13 +1291,23 @@ void EffectFunction10099(int playerId = -1)
 }
 
 
+//  10100 - Portuguese Team Bonus
+void EffectFunction10100(int playerId = -1)
+{
+    if (xsGetPlayerCivilization(playerId) == cIndians)
+        SetResource(playerId, cAttributeResearchTimeMod, 1.6);
+    else
+        SetResource(playerId, cAttributeResearchTimeMod, 0.8);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 121  2026.02.05");
+    xsChatData("Build: 122  2026.02.05");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

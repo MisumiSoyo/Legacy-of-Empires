@@ -568,3 +568,14 @@ int InRangeCount(int playerId = -1, int CollectorUnitID = -1, int TargetPlayerId
             ans = ans + 1;
     return (ans);
 }
+
+
+bool AllyCiv(int playerId = -1, int civ = -1)
+{
+    int i = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if (i != playerId)
+            if (isAlly(i, playerId) && (xsGetPlayerCivilization(i) == civ))
+                return (true);
+    return (false);
+}
