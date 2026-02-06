@@ -29391,8 +29391,13 @@
                     },
                     {
                         "Name": "Sagres School",
-                        "RequiredAge": 4,
+                        "RequiredAge": 3,
                         "ID": 3137
+                    },
+                    {
+                        "Name": "Carta Regia",
+                        "RequiredAge": 4,
+                        "ID": 3459
                     }
                 ]
             },

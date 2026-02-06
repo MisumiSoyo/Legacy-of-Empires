@@ -996,6 +996,14 @@
             "tech_id": 3137,
             "building_id": 209,
             "Name": "Sagres School",
+            "RequiredAge": 3
+        },
+        {
+            "note": "特许状",
+            "civilizations": "Portuguese",
+            "tech_id": 3459,
+            "building_id": 209,
+            "Name": "Carta Regia",
             "RequiredAge": 4
         },
         {

@@ -105,7 +105,7 @@
 
 120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate\n• Supplies and Gambesons free\n• Siege Workshop units -15% cost\n• Monk class units +20% moving speed \n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood)\n• Druzhina (Infantry units make blast damage)\n• Boyar's Fortitude (Knight-line units and Boyars +5 attack vs buildings)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
 
-120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost \n• Foragers generate 0.33 wood per meat \n• All ships +10% HP \n• Can build Feitoria in Imperial Age\n• Genitours +2 Archer armor\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b> \n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Carrack (All ships +1/1P armor)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Sagres School (Docks +80% work rate)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
+120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost \n• Foragers generate 0.33 wood per meat \n• All ships +10% HP \n• Can build Feitoria in Imperial Age\n• Genitours +10% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b> \n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Carrack (All ships +1/1P armor)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Sagres School (Docks +80% work rate)\n• Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 
 120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n\n<b>Unique Unit:<b> \n• Shotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 
@@ -312,6 +312,7 @@
 500150 "Trouble-Freeing Army"
 500151 "Veteran Auxiliary Cavalry"
 500152 "Elite Auxiliary Cavalry"
+500153 "Carta Regia"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -466,6 +467,7 @@
 501150 "Research Trouble-Freeing Army (Jian Swordmen and Cavalries +3 attack, +15 gold cost)"
 501151 "Upgrade to Veteran Auxiliary Cavalry"
 501152 "Upgrade to Elite Auxiliary Cavalry"
+501153 "Research Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -555,7 +557,7 @@
 521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>) (time: 45)\nMined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production."
 521086 "Research <b>Jinete Tactics<b> (<cost>) (time: 60)\nGenitours +2 max range."
 521087 "Research <b>Explorer<b> (<cost>) (time: 45)\nYou can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on."
-521088 "Research <b>Sagres School<b> (<cost>) (time: 60)\nDocks +80% work rate."
+521088 "Research <b>Sagres School<b> (<cost>) (time: 45)\nDocks +80% work rate."
 521089 "Research <b>Siha Bow Limbs<b> (<cost>) (time: 60)\nRanged soldiers remove attack delay and -15% gold cost."
 521090 "Recruit a mercenary squad (<cost>) (time: 15), with values and troop types determined by your luck. You can accumulate 1 recruitment opportunity every 90 seconds."
 521091 "Research <b>Polutasvarf<b> (<cost>) (time: 60)\nMilitary units can loot 150 olive oil from every destroyed building; Varangains +33% gold obtained from kills."
@@ -620,6 +622,7 @@
 521150 "Research <b>Trouble-Freeing Army<b> (<cost>) (time: 60)\nJian Swordmen and Cavalries +3 attack, +15 gold cost."
 521151 "Upgrade to <b>Veteran Auxiliary Cavalry<b> (<cost>) (time: 30)\nUpgrades your Auxiliary Cavalries and lets you create Veteran Auxiliary Cavalries."
 521152 "Upgrade to <b>Elite Auxiliary Cavalry<b> (<cost>) (time: 30)\nUpgrades your Veteran Auxiliary Cavalries and lets you create Elite Auxiliary Cavalries."
+521153 "Research <b>Carta Regia<b> (<cost>) (time: 60)\nYou and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

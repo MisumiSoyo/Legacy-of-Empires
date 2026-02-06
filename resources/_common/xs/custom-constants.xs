@@ -49,9 +49,11 @@ extern const int cAttributeCavalryAttackGoldProductivity = 459;
 extern const int cAttributeShrineCount = 460;
 extern const int cAttributeMalayArmyCount = 701;
 extern const int cAttributeMalayArmyTimer = 702;
+extern const int cAttributeExtraFeitoriaCount = 703;
 
 
 //  units' IDs
+extern const int Feitoria2ID = 273;
 extern const int TotalObjects = 4061;
 extern const int AssassinID = 4001;
 extern const int StreltsyID = 4002;
@@ -136,6 +138,12 @@ extern const int MehterID = 4139;
 extern const int FoodBuilding1ID = 4140;
 extern const int SeaTower2ID = 4141;
 extern const int GoldBuilding1ID = 4142;
+extern const int AuxiliaryCavalryID = 4158;
+extern const int VeteranAuxiliaryCavalryID = 4159;
+extern const int EliteAuxiliaryCavalryID = 4160;
+extern const int AuxiliaryCavalry2ID = 4161;
+extern const int VeteranAuxiliaryCavalry2ID = 4162;
+extern const int EliteAuxiliaryCavalry2ID = 4163;
 
 
 //  Newly added tech IDs
@@ -164,6 +172,7 @@ extern const int SongDynastyTechID = 3238;
 extern const int YuanDynastyTechID = 3239;
 extern const int MingDynastyTechID = 3240;
 extern const int ConscriptionSystemTechID = 3425;
+extern const int CartaRegiaTechID = 3459;
 
 
 // Custom Effect IDs
