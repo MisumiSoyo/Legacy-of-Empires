@@ -1,5 +1,6 @@
 8063 "Upgrade to Keep. (+750 HP, +1 attack, -20% reload time, +1/1P armor, +1 damage vs Ships and Fishing Ships, secondary arrows +1 base attack, +1 damage vs Ships and Fishing Ships)"
 8255 "Research Farimba (Cavalry +4 attack)"
+8281 "Research Kamandaran (Archer-Line cost no gold, but +50 wood cost)"
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
 8298 "Research Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)"
 8318 "Research Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)"
@@ -44,6 +45,8 @@
 
 28255 "Research <b>Farimba<b> (<cost>) (Time: 40)\nCavalry +4 attack."
 
+28281 "Research <b>Kamandaran<b> (<cost>)\nArcher-Line cost no gold, but +50 wood cost."
+
 28282 "Research <b>Town Patrol<b> (<cost>) (time: 40)\nBuilding class, Tower class units +4 LOS. Town Center +2 arrows/max arrows."
 
 28298 "Research <b>Paper Money<b> (<cost>) (time: 60) \nLumberjacks generate 1 extra gold for every 13 wood gathered."
@@ -73,7 +76,7 @@
 
 120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age\n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost \n• Fire Ships and Dromons -16.67% reload time \n• Advance to Imperial Age -33% costs\n• Town Watch and Townb Patrol free\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries), Varangian (Infantries that gain gold from killing units)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Galley-Line +1 max range, Bombard Towers cause 5 blast damage in 0.5 radius)\n• Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)\n• Olive Grove (Villagers can generate olive oil to recruit mercenaries, and you can unlock a mercenary contract at Town Center and use olive oil to recruit mercenaries; The quantity of olive oil is temporarily displayed using the range of military buildings)\n• Polutasvarf (Military units can loot 150 olive oil from every destroyed building; Varangains +33% gold obtained from kills)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 
-120157 "Cavalry civilization \n\n• Start with +50 wood and food (received when the first TC is built up in Nomad mode) \n• Town Center, Dock +100% HP, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Can build Caravanserai in Imperial Age\n• Market technologies free\n\n<b>Unique Unit:<b> \n• War Elephant (low-speed heary cavalry), Savar (heavy cavalry replaces Paladin and better combat vs archers), Parthian Cavalry Archer (high-speed cavalry archers), Assassin (Infantry)\n\n<b>Unique Techs: <b>\n• Kamandaran (Archer-Line cost no gold, but +25 wood cost)\n• Citadels (Castles fire Bullets [+4 attack, +3 vs Rams, +3 vs Infantry], receive -25% bonus damage)\n• Satrap (Castles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute)\n• Camel Lancer (Camel Riders +1 attack range)\n\n<b>Team bonus: <b>\nKnight-Line units +2 damage vs archers"
+120157 "Cavalry civilization \n\n• Start with +50 wood and food (received when the first TC is built up in Nomad mode) \n• Town Center, Dock +100% HP, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Can build Caravanserai in Imperial Age\n• Market technologies free\n\n<b>Unique Unit:<b> \n• War Elephant (low-speed heary cavalry), Savar (heavy cavalry replaces Paladin and better combat vs archers), Parthian Cavalry Archer (high-speed cavalry archers), Assassin (Infantry)\n\n<b>Unique Techs: <b>\n• Kamandaran (Archer-Line cost no gold, but +50 wood cost)\n• Citadels (Castles fire Bullets [+4 attack, +3 vs Rams, +3 vs Infantry], receive -25% bonus damage)\n• Satrap (Castles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute)\n• Camel Lancer (Camel Riders +1 attack range)\n\n<b>Team bonus: <b>\nKnight-Line units +2 damage vs archers"
 
 120158 "Camel and Naval civilization\n\n• Market -100 wood cost, and trade cost only 5%\n• Transport Ships +100% HP, carry capacity +100% \n• All camel units +25% HP \n• Galley-Line -20% reload time\n• Get 30 food from each trade unit produced\n\n<b>Unique Unit: <b>\n• Mameluke (ranged camel), Assassin (Infantry)\n\n<b>Unique Techs: <b>\n• Bimaristan (Monks passively heal multiple nearby units)\n• Counterweights (Trebuchets and Mangonel-line units +15% all damage)\n• Suftaja (Spawn 8 trade carts, with each market +1)\n• Red Sea Fleet (Warships -20% population space)\n\n<b>Team bonus: <b>\nArcher class unit +3 attack vs Buildings"
 

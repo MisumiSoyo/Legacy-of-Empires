@@ -27765,6 +27765,11 @@
                         "RequiredAge": 4,
                         "RequiredTechID": 3244,
                         "ID": 3027
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -27797,6 +27802,11 @@
                         "Name": "Parthian Cavalry Archer",
                         "RequiredAge": 2,
                         "ID": 4020
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -28115,6 +28125,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Bracer",
+                        "RequiredAge": 4,
+                        "ID": 201
                     }
                 ]
             },
@@ -28315,6 +28330,11 @@
                         "Name": "Camel Lancer",
                         "RequiredAge": 4,
                         "ID": 3173
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
                     }
                 ]
             },

@@ -37940,7 +37940,7 @@
                     "Name": "Arbalester",
                     "Name String ID": 14418,
                     "Node ID": 492,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "UnitUpgrade",
                     "Picture Index": 90,
                     "Prerequisite IDs": [
@@ -39320,7 +39320,7 @@
                     "Name": "Bracer",
                     "Name String ID": 17151,
                     "Node ID": 201,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 37,
                     "Prerequisite IDs": [
@@ -40372,7 +40372,7 @@
                     "Name": "Siege Engineers",
                     "Name String ID": 17378,
                     "Node ID": 377,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 101,
                     "Prerequisite IDs": [

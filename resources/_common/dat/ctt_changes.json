@@ -4753,6 +4753,22 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4159
+        },
+        {
+            "note": "波斯获得劲弩手",
+            "action": "modify",
+            "civ_id": "PERSIANS",
+            "Node ID": [492],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "波斯获得护腕, 攻城技师",
+            "action": "modify",
+            "civ_id": "PERSIANS",
+            "Node ID": [201, 377],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

@@ -1234,8 +1234,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "法兰克, 凯尔特获得护腕",
-            "civilizations": ["Franks", "Celts"],
+            "note": "法兰克, 凯尔特, 波斯获得护腕",
+            "civilizations": ["Franks", "Celts", "Persians"],
             "tech_id": 201,
             "building_id": 103,
             "Name": "Bracer",
@@ -1607,8 +1607,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "勃艮第, 中国, 意大利获得攻城技师",
-            "civilizations": ["Burgundians", "Chinese", "Italians"],
+            "note": "勃艮第, 中国, 意大利, 波斯获得攻城技师",
+            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians"],
             "tech_id": 377,
             "building_id": 209,
             "Name": "Siege Engineers",
@@ -1739,16 +1739,16 @@
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特获得劲弩手",
-            "civilizations": ["Teutons", "Celts"],
+            "note": "条顿, 凯尔特, 波斯获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特获得劲弩手",
-            "civilizations": ["Teutons", "Celts"],
+            "note": "条顿, 凯尔特, 波斯获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",
