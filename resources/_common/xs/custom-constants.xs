@@ -50,6 +50,7 @@ extern const int cAttributeShrineCount = 460;
 extern const int cAttributeMalayArmyCount = 701;
 extern const int cAttributeMalayArmyTimer = 702;
 extern const int cAttributeExtraFeitoriaCount = 703;
+extern const int cAttributeForestryProductivity = 704;
 
 
 //  units' IDs
@@ -338,6 +339,8 @@ extern const int MuleCartID = 1808;
 extern const int WarriorPriestID = 1811;
 extern const int SavarID = 1813;
 extern const int TamarID = 1822;
+extern const int FemaleHerderID = 1891;
+extern const int MaleHerderID = 1892;
 extern const int FireLancerID = 1901;
 extern const int EliteFireLancerID = 1903;
 extern const int IronPagodaID = 1908;

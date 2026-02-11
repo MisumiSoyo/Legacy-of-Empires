@@ -5192,6 +5192,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -10338,6 +10368,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -15704,6 +15764,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -20839,6 +20929,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -25955,6 +26075,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -31469,6 +31619,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -36934,6 +37114,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -42221,6 +42431,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -47446,6 +47686,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -52652,6 +52922,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -57928,6 +58228,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -58800,19 +59130,19 @@
                 },
                 {
                     "Age ID": 1,
-                    "Building ID": 68,
+                    "Building ID": 1889,
                     "Building in new column": false,
                     "Building upgraded from ID": -1,
                     "Draw Node Type": "Building",
-                    "Help String ID": 105149,
-                    "Link ID": 68,
+                    "Help String ID": 105895,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Farm",
-                    "Name String ID": 14149,
-                    "Node ID": 50,
+                    "Name": "Pasture",
+                    "Name String ID": 5895,
+                    "Node ID": 1889,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "BuildingNonTech",
-                    "Picture Index": 35,
+                    "Node Type": "RegionalBuilding",
+                    "Picture Index": 96,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -62798,15 +63128,15 @@
                     "Age ID": 2,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107014,
-                    "Link ID": 50,
+                    "Help String ID": 107484,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Horse Collar",
-                    "Name String ID": 17014,
-                    "Node ID": 14,
+                    "Name": "Domestication",
+                    "Name String ID": 17484,
+                    "Node ID": 1014,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 2,
+                    "Picture Index": 138,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -62828,15 +63158,15 @@
                     "Age ID": 3,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107013,
-                    "Link ID": 14,
+                    "Help String ID": 107485,
+                    "Link ID": 1014,
                     "Link Node Type": "Research",
-                    "Name": "Heavy Plow",
-                    "Name String ID": 17013,
-                    "Node ID": 13,
+                    "Name": "Pastoralism",
+                    "Name String ID": 17485,
+                    "Node ID": 1013,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 1,
+                    "Picture Index": 137,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -62858,135 +63188,15 @@
                     "Age ID": 4,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107012,
-                    "Link ID": 13,
+                    "Help String ID": 107486,
+                    "Link ID": 1013,
                     "Link Node Type": "Research",
-                    "Name": "Crop Rotation",
-                    "Name String ID": 17012,
-                    "Node ID": 12,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600030,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Horticulture",
-                    "Name String ID": 500030,
-                    "Node ID": 3054,
+                    "Name": "Transhumance",
+                    "Name String ID": 17486,
+                    "Node ID": 1012,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600031,
-                    "Link ID": 3054,
-                    "Link Node Type": "Research",
-                    "Name": "Fertilization",
-                    "Name String ID": 500031,
-                    "Node ID": 3055,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600032,
-                    "Link ID": 3055,
-                    "Link Node Type": "Research",
-                    "Name": "Breeding",
-                    "Name String ID": 500032,
-                    "Node ID": 3056,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600002,
-                    "Link ID": -1,
-                    "Link Node Type": "Research",
-                    "Name": "Cash Crop",
-                    "Name String ID": 500002,
-                    "Node ID": 3057,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
+                    "Picture Index": 136,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -63134,6 +63344,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -68209,6 +68449,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -73483,6 +73753,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -78691,6 +78991,36 @@
                     "Name": "Switch to training Jaguar Warrior",
                     "Name String ID": 500075,
                     "Node ID": 3118,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -83937,6 +84267,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -84841,19 +85201,19 @@
                 },
                 {
                     "Age ID": 1,
-                    "Building ID": 68,
+                    "Building ID": 1889,
                     "Building in new column": false,
                     "Building upgraded from ID": -1,
                     "Draw Node Type": "Building",
-                    "Help String ID": 105149,
-                    "Link ID": 68,
+                    "Help String ID": 105895,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Farm",
-                    "Name String ID": 14149,
-                    "Node ID": 50,
+                    "Name": "Pasture",
+                    "Name String ID": 5895,
+                    "Node ID": 1889,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "BuildingNonTech",
-                    "Picture Index": 35,
+                    "Node Type": "RegionalBuilding",
+                    "Picture Index": 96,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -88959,15 +89319,15 @@
                     "Age ID": 2,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107014,
-                    "Link ID": 50,
+                    "Help String ID": 107484,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Horse Collar",
-                    "Name String ID": 17014,
-                    "Node ID": 14,
+                    "Name": "Domestication",
+                    "Name String ID": 17484,
+                    "Node ID": 1014,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 2,
+                    "Picture Index": 138,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -88989,15 +89349,15 @@
                     "Age ID": 3,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107013,
-                    "Link ID": 14,
+                    "Help String ID": 107485,
+                    "Link ID": 1014,
                     "Link Node Type": "Research",
-                    "Name": "Heavy Plow",
-                    "Name String ID": 17013,
-                    "Node ID": 13,
+                    "Name": "Pastoralism",
+                    "Name String ID": 17485,
+                    "Node ID": 1013,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 1,
+                    "Picture Index": 137,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -89019,15 +89379,15 @@
                     "Age ID": 4,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107012,
-                    "Link ID": 13,
+                    "Help String ID": 107486,
+                    "Link ID": 1013,
                     "Link Node Type": "Research",
-                    "Name": "Crop Rotation",
-                    "Name String ID": 17012,
-                    "Node ID": 12,
-                    "Node Status": "NotAvailable",
+                    "Name": "Transhumance",
+                    "Name String ID": 17486,
+                    "Node ID": 1012,
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 0,
+                    "Picture Index": 136,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -89104,126 +89464,6 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Unit"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600030,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Horticulture",
-                    "Name String ID": 500030,
-                    "Node ID": 3054,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600031,
-                    "Link ID": 3054,
-                    "Link Node Type": "Research",
-                    "Name": "Fertilization",
-                    "Name String ID": 500031,
-                    "Node ID": 3055,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600032,
-                    "Link ID": 3055,
-                    "Link Node Type": "Research",
-                    "Name": "Breeding",
-                    "Name String ID": 500032,
-                    "Node ID": 3056,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600002,
-                    "Link ID": -1,
-                    "Link Node Type": "Research",
-                    "Name": "Cash Crop",
-                    "Name String ID": 500002,
-                    "Node ID": 3057,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
                 },
                 {
                     "Age ID": 3,
@@ -89358,6 +89598,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -94580,6 +94850,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -99838,6 +100138,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -105171,6 +105501,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -110488,6 +110848,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -111360,19 +111750,19 @@
                 },
                 {
                     "Age ID": 1,
-                    "Building ID": 68,
+                    "Building ID": 1889,
                     "Building in new column": false,
                     "Building upgraded from ID": -1,
                     "Draw Node Type": "Building",
-                    "Help String ID": 105149,
-                    "Link ID": 68,
+                    "Help String ID": 105895,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Farm",
-                    "Name String ID": 14149,
-                    "Node ID": 50,
+                    "Name": "Pasture",
+                    "Name String ID": 5895,
+                    "Node ID": 1889,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "BuildingNonTech",
-                    "Picture Index": 35,
+                    "Node Type": "RegionalBuilding",
+                    "Picture Index": 96,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -115328,15 +115718,15 @@
                     "Age ID": 2,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107014,
-                    "Link ID": 50,
+                    "Help String ID": 107484,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Horse Collar",
-                    "Name String ID": 17014,
-                    "Node ID": 14,
+                    "Name": "Domestication",
+                    "Name String ID": 17484,
+                    "Node ID": 1014,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 2,
+                    "Picture Index": 138,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -115358,15 +115748,15 @@
                     "Age ID": 3,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107013,
-                    "Link ID": 14,
+                    "Help String ID": 107485,
+                    "Link ID": 1014,
                     "Link Node Type": "Research",
-                    "Name": "Heavy Plow",
-                    "Name String ID": 17013,
-                    "Node ID": 13,
+                    "Name": "Pastoralism",
+                    "Name String ID": 17485,
+                    "Node ID": 1013,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 1,
+                    "Picture Index": 137,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -115388,135 +115778,15 @@
                     "Age ID": 4,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107012,
-                    "Link ID": 13,
+                    "Help String ID": 107486,
+                    "Link ID": 1013,
                     "Link Node Type": "Research",
-                    "Name": "Crop Rotation",
-                    "Name String ID": 17012,
-                    "Node ID": 12,
+                    "Name": "Transhumance",
+                    "Name String ID": 17486,
+                    "Node ID": 1012,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600030,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Horticulture",
-                    "Name String ID": 500030,
-                    "Node ID": 3054,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600031,
-                    "Link ID": 3054,
-                    "Link Node Type": "Research",
-                    "Name": "Fertilization",
-                    "Name String ID": 500031,
-                    "Node ID": 3055,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600032,
-                    "Link ID": 3055,
-                    "Link Node Type": "Research",
-                    "Name": "Breeding",
-                    "Name String ID": 500032,
-                    "Node ID": 3056,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600002,
-                    "Link ID": -1,
-                    "Link Node Type": "Research",
-                    "Name": "Cash Crop",
-                    "Name String ID": 500002,
-                    "Node ID": 3057,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
+                    "Picture Index": 136,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -115604,6 +115874,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -120742,6 +121042,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -126045,6 +126375,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -131284,6 +131644,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -136555,6 +136945,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -141780,6 +142200,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -146926,6 +147376,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -152202,6 +152682,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Unit"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -157408,6 +157918,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -162772,6 +163312,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -167999,6 +168569,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -168871,19 +169471,19 @@
                 },
                 {
                     "Age ID": 1,
-                    "Building ID": 68,
+                    "Building ID": 1889,
                     "Building in new column": false,
                     "Building upgraded from ID": -1,
                     "Draw Node Type": "Building",
-                    "Help String ID": 105149,
-                    "Link ID": 68,
+                    "Help String ID": 105895,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Farm",
-                    "Name String ID": 14149,
-                    "Node ID": 50,
+                    "Name": "Pasture",
+                    "Name String ID": 5895,
+                    "Node ID": 1889,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "BuildingNonTech",
-                    "Picture Index": 35,
+                    "Node Type": "RegionalBuilding",
+                    "Picture Index": 96,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -172869,15 +173469,15 @@
                     "Age ID": 2,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107014,
-                    "Link ID": 50,
+                    "Help String ID": 107484,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Horse Collar",
-                    "Name String ID": 17014,
-                    "Node ID": 14,
+                    "Name": "Domestication",
+                    "Name String ID": 17484,
+                    "Node ID": 1014,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 2,
+                    "Picture Index": 138,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -172899,15 +173499,15 @@
                     "Age ID": 3,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107013,
-                    "Link ID": 14,
+                    "Help String ID": 107485,
+                    "Link ID": 1014,
                     "Link Node Type": "Research",
-                    "Name": "Heavy Plow",
-                    "Name String ID": 17013,
-                    "Node ID": 13,
+                    "Name": "Pastoralism",
+                    "Name String ID": 17485,
+                    "Node ID": 1013,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 1,
+                    "Picture Index": 137,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -172929,135 +173529,15 @@
                     "Age ID": 4,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107012,
-                    "Link ID": 13,
+                    "Help String ID": 107486,
+                    "Link ID": 1013,
                     "Link Node Type": "Research",
-                    "Name": "Crop Rotation",
-                    "Name String ID": 17012,
-                    "Node ID": 12,
+                    "Name": "Transhumance",
+                    "Name String ID": 17486,
+                    "Node ID": 1012,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600030,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Horticulture",
-                    "Name String ID": 500030,
-                    "Node ID": 3054,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600031,
-                    "Link ID": 3054,
-                    "Link Node Type": "Research",
-                    "Name": "Fertilization",
-                    "Name String ID": 500031,
-                    "Node ID": 3055,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600032,
-                    "Link ID": 3055,
-                    "Link Node Type": "Research",
-                    "Name": "Breeding",
-                    "Name String ID": 500032,
-                    "Node ID": 3056,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600002,
-                    "Link ID": -1,
-                    "Link Node Type": "Research",
-                    "Name": "Cash Crop",
-                    "Name String ID": 500002,
-                    "Node ID": 3057,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
+                    "Picture Index": 136,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -173208,6 +173688,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -174096,19 +174606,19 @@
                 },
                 {
                     "Age ID": 1,
-                    "Building ID": 68,
+                    "Building ID": 1889,
                     "Building in new column": false,
                     "Building upgraded from ID": -1,
                     "Draw Node Type": "Building",
-                    "Help String ID": 105149,
-                    "Link ID": 68,
+                    "Help String ID": 105895,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Farm",
-                    "Name String ID": 14149,
-                    "Node ID": 50,
+                    "Name": "Pasture",
+                    "Name String ID": 5895,
+                    "Node ID": 1889,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "BuildingNonTech",
-                    "Picture Index": 35,
+                    "Node Type": "RegionalBuilding",
+                    "Picture Index": 96,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -178154,15 +178664,15 @@
                     "Age ID": 2,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107014,
-                    "Link ID": 50,
+                    "Help String ID": 107484,
+                    "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Horse Collar",
-                    "Name String ID": 17014,
-                    "Node ID": 14,
+                    "Name": "Domestication",
+                    "Name String ID": 17484,
+                    "Node ID": 1014,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 2,
+                    "Picture Index": 138,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -178184,15 +178694,15 @@
                     "Age ID": 3,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107013,
-                    "Link ID": 14,
+                    "Help String ID": 107485,
+                    "Link ID": 1014,
                     "Link Node Type": "Research",
-                    "Name": "Heavy Plow",
-                    "Name String ID": 17013,
-                    "Node ID": 13,
+                    "Name": "Pastoralism",
+                    "Name String ID": 17485,
+                    "Node ID": 1013,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 1,
+                    "Picture Index": 137,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -178214,135 +178724,15 @@
                     "Age ID": 4,
                     "Building ID": 68,
                     "Draw Node Type": "UnitTech",
-                    "Help String ID": 107012,
-                    "Link ID": 13,
+                    "Help String ID": 107486,
+                    "Link ID": 1013,
                     "Link Node Type": "Research",
-                    "Name": "Crop Rotation",
-                    "Name String ID": 17012,
-                    "Node ID": 12,
+                    "Name": "Transhumance",
+                    "Name String ID": 17486,
+                    "Node ID": 1012,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 2,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600030,
-                    "Link ID": -1,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Horticulture",
-                    "Name String ID": 500030,
-                    "Node ID": 3054,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600031,
-                    "Link ID": 3054,
-                    "Link Node Type": "Research",
-                    "Name": "Fertilization",
-                    "Name String ID": 500031,
-                    "Node ID": 3055,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600032,
-                    "Link ID": 3055,
-                    "Link Node Type": "Research",
-                    "Name": "Breeding",
-                    "Name String ID": 500032,
-                    "Node ID": 3056,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 68,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 600002,
-                    "Link ID": -1,
-                    "Link Node Type": "Research",
-                    "Name": "Cash Crop",
-                    "Name String ID": 500002,
-                    "Node ID": 3057,
-                    "Node Status": "ResearchedCompleted",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
+                    "Picture Index": 136,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -178493,6 +178883,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -183614,6 +184034,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -188700,6 +189150,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -194066,6 +194546,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -199182,6 +199692,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -204410,6 +204950,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -209755,6 +210325,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -215266,6 +215866,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -220641,6 +221271,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -225697,6 +226357,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -230943,6 +231633,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -236154,6 +236874,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -241485,6 +242235,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -246781,6 +247561,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -252156,6 +252966,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -257566,6 +258406,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -263019,6 +263889,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -268407,6 +269307,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -273831,6 +274761,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -274703,38 +275663,6 @@
                 },
                 {
                     "Age ID": 1,
-                    "Building ID": 50,
-                    "Building in new column": true,
-                    "Building upgraded from ID": -1,
-                    "Draw Node Type": "Building",
-                    "Help String ID": 105149,
-                    "Link ID": 68,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Farm",
-                    "Name String ID": 14149,
-                    "Node ID": 50,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "BuildingNonTech",
-                    "Picture Index": 35,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Building"
-                },
-                {
-                    "Age ID": 1,
                     "Building ID": 1889,
                     "Building in new column": false,
                     "Building upgraded from ID": -1,
@@ -274746,7 +275674,7 @@
                     "Name String ID": 5895,
                     "Node ID": 1889,
                     "Node Status": "ResearchedCompleted",
-                    "Node Type": "UniqueBuilding",
+                    "Node Type": "RegionalBuilding",
                     "Picture Index": 96,
                     "Prerequisite IDs": [
                         0,
@@ -279000,96 +279928,6 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 2,
-                    "Building ID": 50,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 107014,
-                    "Link ID": 50,
-                    "Link Node Type": "BuildingTech",
-                    "Name": "Horse Collar",
-                    "Name String ID": 17014,
-                    "Node ID": 14,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "Research",
-                    "Picture Index": 2,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 3,
-                    "Building ID": 50,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 107013,
-                    "Link ID": 14,
-                    "Link Node Type": "Research",
-                    "Name": "Heavy Plow",
-                    "Name String ID": 17013,
-                    "Node ID": 13,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "Research",
-                    "Picture Index": 1,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
-                    "Age ID": 4,
-                    "Building ID": 50,
-                    "Draw Node Type": "UnitTech",
-                    "Help String ID": 107012,
-                    "Link ID": 13,
-                    "Link Node Type": "Research",
-                    "Name": "Crop Rotation",
-                    "Name String ID": 17012,
-                    "Node ID": 12,
-                    "Node Status": "NotAvailable",
-                    "Node Type": "Research",
-                    "Picture Index": 0,
-                    "Prerequisite IDs": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "Prerequisite Types": [
-                        "None",
-                        "None",
-                        "None",
-                        "None",
-                        "None"
-                    ],
-                    "Trigger Tech ID": -1,
-                    "Use Type": "Tech"
-                },
-                {
                     "Age ID": 3,
                     "Building ID": 103,
                     "Draw Node Type": "UnitTech",
@@ -279192,6 +280030,36 @@
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 107,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
                     "Prerequisite IDs": [
                         0,
                         0,
@@ -284465,6 +285333,36 @@
                     ],
                     "Trigger Tech ID": -1,
                     "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
                 }
             ]
         },
@@ -289671,6 +290569,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,
@@ -294956,6 +295884,36 @@
                     "Name": "Town Defense",
                     "Name String ID": 500052,
                     "Node ID": 3078,
+                    "Node Status": "ResearchedCompleted",
+                    "Node Type": "Research",
+                    "Picture Index": 0,
+                    "Prerequisite IDs": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "Prerequisite Types": [
+                        "None",
+                        "None",
+                        "None",
+                        "None",
+                        "None"
+                    ],
+                    "Trigger Tech ID": -1,
+                    "Use Type": "Tech"
+                },
+                {
+                    "Age ID": 3,
+                    "Building ID": 562,
+                    "Draw Node Type": "UnitTech",
+                    "Help String ID": 600154,
+                    "Link ID": -1,
+                    "Link Node Type": "BuildingTech",
+                    "Name": "Forestry",
+                    "Name String ID": 500154,
+                    "Node ID": 3461,
                     "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 0,

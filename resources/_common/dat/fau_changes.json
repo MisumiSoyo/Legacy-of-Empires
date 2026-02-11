@@ -1940,6 +1940,46 @@
             "building_id": 109,
             "Name": "Conscript Karambit Warriors",
             "RequiredAge": 3
+        },
+        {
+            "note": "林业",
+            "civilizations": "all",
+            "tech_id": 3461,
+            "building_id": 562,
+            "Name": "Forestry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "蒙古, 匈奴, 马扎尔, 鞑靼, 库曼失去农田科技",
+            "civilizations": ["Mongols", "Huns", "Magyars", "Tatars", "Cumans"],
+            "tech_id": [12, 13, 14, 3054, 3055, 3056, 3057],
+            "type": "delete"
+        },
+        {
+            "note": "蒙古, 匈奴, 马扎尔, 鞑靼, 库曼获得驯化术",
+            "civilizations": ["Mongols", "Huns", "Magyars", "Tatars", "Cumans"],
+            "tech_id": 1014,
+            "building_id": 68,
+            "Name": "Domestication",
+            "RequiredAge": 2
+        },
+        {
+            "note": "蒙古, 匈奴, 马扎尔, 鞑靼, 库曼获得畜牧业",
+            "civilizations": ["Mongols", "Huns", "Magyars", "Tatars", "Cumans"],
+            "tech_id": 1013,
+            "building_id": 68,
+            "Name": "Pastoralism",
+            "RequiredAge": 3,
+            "RequiredTechID": 1014
+        },
+        {
+            "note": "蒙古, 匈奴, 马扎尔, 鞑靼, 库曼获得畜牧季移",
+            "civilizations": ["Mongols", "Huns", "Magyars", "Tatars", "Cumans"],
+            "tech_id": 1012,
+            "building_id": 68,
+            "Name": "Transhumance",
+            "RequiredAge": 4,
+            "RequiredTechID": 1013
         }
     ]
 }

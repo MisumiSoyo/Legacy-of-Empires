@@ -1301,13 +1301,28 @@ void EffectFunction10100(int playerId = -1)
 }
 
 
+//  10101 - Forestry
+void EffectFunction10101(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeForestryProductivity);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000009);
+    xsTask(MaleLumberjackID, cTaskTypeGenerateResources, cTreeClass, playerId);
+    xsTask(FemaleLumberjackID, cTaskTypeGenerateResources, cTreeClass, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeForestryProductivity, 1.5);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 125  2026.02.11");
+    xsChatData("Build: 126  2026.02.11");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
