@@ -984,8 +984,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "马里, 高丽启用鼓风炉",
-            "civilizations": ["Koreans", "Malians"],
+            "note": "马里, 高丽, 拜占庭获得鼓风炉",
+            "civilizations": ["Koreans", "Malians", "Byzantines"],
             "tech_id": 75,
             "building_id": 103,
             "RequiredAge": 4
@@ -1450,8 +1450,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "契丹获得草药",
-            "civilizations": "Khitans",
+            "note": "契丹, 拜占庭获得草药",
+            "civilizations": ["Khitans", "Byzantines"],
             "tech_id": 441,
             "building_id": 104,
             "Name": "Herbal Medicine",

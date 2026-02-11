@@ -6935,6 +6935,10 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 75
                     }
                 ]
             },
@@ -7311,6 +7315,11 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3059
+                    },
+                    {
+                        "Name": "Herbal Medicine",
+                        "RequiredAge": 3,
+                        "ID": 441
                     }
                 ],
                 "Units": [

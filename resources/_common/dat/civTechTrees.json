@@ -34093,7 +34093,7 @@
                     "Name": "Blast Furnace",
                     "Name String ID": 17075,
                     "Node ID": 75,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 21,
                     "Prerequisite IDs": [
@@ -35805,7 +35805,7 @@
                     "Name": "Herbal Medicine",
                     "Name String ID": 17435,
                     "Node ID": 441,
-                    "Node Status": "NotAvailable",
+                    "Node Status": "ResearchedCompleted",
                     "Node Type": "Research",
                     "Picture Index": 114,
                     "Prerequisite IDs": [
