@@ -21154,6 +21154,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3078
+                    },
+                    {
+                        "Name": "Korean Bow",
+                        "RequiredAge": 3,
+                        "ID": 3472
                     }
                 ],
                 "Units": [

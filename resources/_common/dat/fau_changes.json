@@ -1980,6 +1980,14 @@
             "Name": "Transhumance",
             "RequiredAge": 4,
             "RequiredTechID": 1013
+        },
+        {
+            "note": "高丽弓",
+            "civilizations": "Koreans",
+            "tech_id": 3472,
+            "building_id": 109,
+            "Name": "Korean Bow",
+            "RequiredAge": 3
         }
     ]
 }
