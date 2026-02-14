@@ -44981,6 +44981,11 @@
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Elite Heavy Skirmisher",
+                        "RequiredAge": 4,
+                        "ID": 655
                     }
                 ],
                 "Units": [

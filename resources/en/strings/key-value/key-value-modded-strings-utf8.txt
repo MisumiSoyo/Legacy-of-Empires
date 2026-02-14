@@ -146,7 +146,7 @@
 
 120191 "Cavalry and Camel civilization\n\n• Start with 2 Forage Bushes\n• Can garrison Mills with livestocks, generates 15*ln(total_garrisoned_animal_food/200+1) food per minute\n• Cavalry class, Scout class, Cavalry Archer class and Special Cavalry Archer class units +20%/+30%/+40% bonus damage in Feudal/Castle/Imperial Age\n• Can garrison Docks with Fishing Ships\n• Monastery provides +10 population room\n\n<b>Unique Units:<b>\n• Chakram Thrower (infantry deals penetrate damage), Shrivamsha Rider (cavalry can dodge projectiles), Camel Scout (light camel rider)\n\n<b>Unique Techs:<b>\n• Kshatriyas (Infantries, cavalries, archers, cavalry archers and Petards -25% food cost)\n• Frontier Guards (Camel Scout-Line units and Elephant Archers +4 melee armor)\n• Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)\n\n<b>Team Bonus:<b>\nAll Camel and Elephants -20% training time"
 
-120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n• Can build monastery and train monks at Feudal Age\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman), Auxiliary Cavalry (Light Cavalry)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Conscription System (Can conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
+120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n• Can build monastery and train monks at Feudal Age\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman), Auxiliary Cavalry (Light cavalry), Heavy Skirmisher (Strong skirmisher)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Conscription System (Can conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
 
 120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Light Cavalry line and Knight line units receive -70% additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 
@@ -318,6 +318,8 @@
 500153 "Carta Regia"
 500154 "Forestry"
 500155 "Korean Bow"
+500156 "Veteran Heavy Skirmisher"
+500157 "Elite Heavy Skirmisher"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -475,6 +477,8 @@
 501153 "Research Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)"
 501154 "Research Forestry (Lumberjacks generate 1 gold per 66 seconds)"
 501155 "Research Korean Bow (Remove Archer-line and Cavalry Archer-line units' wood cost)"
+501156 "Upgrade to Veteran Heavy Skirmisher"
+501157 "Upgrade to Elite Heavy Skirmisher"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -632,6 +636,8 @@
 521153 "Research <b>Carta Regia<b> (<cost>) (time: 60)\nYou and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way."
 521154 "Research <b>Forestry<b> (<cost>) (time: 45)\nLumberjacks generate 1 gold per 66 seconds."
 521155 "Research <b>Korean Bow<b> (<cost>) (time: 45)\nRemove Archer-line and Cavalry Archer-line units' wood cost."
+521156 "Upgrade to <b>Veteran Heavy Skirmisher<b> (<cost>) (time: 30)\nUpgrades your Heavy Skirmishers and lets you create Veteran Heavy Skirmishers."
+521157 "Upgrade to <b>Elite Heavy Skirmisher<b> (<cost>) (time: 60)\nUpgrades your Veteran Heavy Skirmishers and lets you create Elite Heavy Skirmishers."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -721,6 +727,9 @@
 700076 "Auxiliary Cavalry"
 700077 "Veteran Auxiliary Cavalry"
 700078 "Elite Auxiliary Cavalry"
+700079 "Heavy Skirmisher"
+700080 "Veteran Heavy Skirmisher"
+700081 "Elite Heavy Skirmisher"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -800,6 +809,9 @@
 701076 "Create Auxiliary Cavalry"
 701077 "Create Veteran Auxiliary Cavalry"
 701078 "Create Elite Auxiliary Cavalry"
+701079 "Create Heavy Skirmisher"
+701080 "Create Veteran Heavy Skirmisher"
+701081 "Create Elite Heavy Skirmisher"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -955,6 +967,12 @@
 721077 "Create <b>Veteran Auxiliary Cavalry<b> (<cost>)\nRomans' unique light cavalry. Can use the ability every 50 seconds: lose 3 melee armor and increase attack speed by 40%, lasting for 10 seconds.\nUpgrades:: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +10 vs Monk."
 
 721078 "Create <b>Elite Auxiliary Cavalry<b> (<cost>)\nRomans' unique light cavalry. Can use the ability every 50 seconds: lose 3 melee armor and increase attack speed by 40%, lasting for 10 seconds.\nUpgrades:: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 1.9 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +12 vs Monk."
+
+721079 "生产<b>Heavy Skirmisher<b> (<cost>)\nRomans' unique skirmisher. Stronger than normal skirmishers.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\nClass: Archer; Tags: Archer, Skirmisher, Unique Unit.\nAttack Bonus: +4 vs Archer, +3 vs Pikeman, +2 vs Mameluke."
+
+721080 "生产<b>Veteran Heavy Skirmisher<b> (<cost>)\nRomans' unique skirmisher. Stronger than normal skirmishers.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\nClass: Archer; Tags: Archer, Skirmisher, Unique Unit.\nAttack Bonus: +4 vs Archer, +3 vs Pikeman, +2 vs Mameluke."
+
+721081 "生产<b>Elite Heavy Skirmisher<b> (<cost>)\nRomans' unique skirmisher. Stronger than normal skirmishers.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\nClass: Archer; Tags: Archer, Skirmisher, Unique Unit.\nAttack Bonus: +4 vs Archer, +3 vs Pikeman, +2 vs Mameluke."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

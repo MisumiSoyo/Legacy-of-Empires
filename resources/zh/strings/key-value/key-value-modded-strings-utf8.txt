@@ -151,7 +151,7 @@
 
 120191 "骑兵和骆驼文明\n\n• 开始游戏时城镇中心附近产生 2 片果树丛\n• 可将牲畜驻扎于磨坊, 每分钟产生 15*ln(驻扎动物总食物量/200+1) 食物 \n• 骑兵类、侦察骑兵类、骑射手类、特殊骑兵类单位在封建/城堡/帝王时代造成 +20%/+30%/+40%附加伤害\n• 渔船可驻扎于船坞和巨港\n• 修道院提供+10人口空间\n\n<b>独特单位: <b>\n• 飞轮刃投掷手 (具有穿透攻击的步兵), 施里瓦姆沙骑手 (可闪避投射攻击的骑兵), 骆驼斥候 (轻型骆驼兵)\n\n<b>独特科技: <b>\n• 刹帝利 (步兵、骑兵、射手、骑射手、破坏者、火枪类单位、特殊骑兵类单位食物费用 -25%)\n• 边防部队 (骆驼斥候系单位和骑象射手护甲 +4)\n• 商队护卫 (贸易车 +100% 生命值, +2 护甲/盾牌, 每分钟回复 70 生命值并额外产生 6 黄金)\n\n<b>团队加成: <b>\n骆驼和大象单位 +25% 训练速度"
 
-120192 "步兵文明\n\n• 村民采集资源、建造和修理效率 +5%, 农夫耕田效率再 +3.8%, 农田生产效率 +5% \n• 箭船系单位和德罗蒙战舰 +1 护甲/盾牌\n• 步兵鳞甲、步兵锁甲和步兵钢甲科技效果翻倍\n• 弩炮系单位黄金费用 -50%\n• 可在封建时代建造修道院和生产僧侣\n\n<b>独特单位: <b>\n• 百夫长 (可加强周围步兵战斗力的骑兵), 罗马军 (代替双手剑士、冠军剑士, 克制步兵的步兵), 辅助骑兵 (轻骑兵)\n\n<b>独特科技: <b>\n• 重弩 (重弩战象和弩炮系单位攻击间隔 -25%, 箭船系单位攻击 +2)\n• 野战军 (民兵系、骑士系和百夫长训练时间 -33%, 获得蓄力攻击能力: 蓄力攻击 5, 充能时间 20s)\n\n<b>团队加成: <b>\n弩炮系单位最小射程降低为 1"
+120192 "步兵文明\n\n• 村民采集资源、建造和修理效率 +5%, 农夫耕田效率再 +3.8%, 农田生产效率 +5% \n• 箭船系单位和德罗蒙战舰 +1 护甲/盾牌\n• 步兵鳞甲、步兵锁甲和步兵钢甲科技效果翻倍\n• 弩炮系单位黄金费用 -50%\n• 可在封建时代建造修道院和生产僧侣\n\n<b>独特单位: <b>\n• 百夫长 (可加强周围步兵战斗力的骑兵), 罗马军 (代替双手剑士、冠军剑士, 克制步兵的步兵), 辅助骑兵 (轻骑兵), 重装掷矛手 (更强大的掷矛手)\n\n<b>独特科技: <b>\n• 重弩 (重弩战象和弩炮系单位攻击间隔 -25%, 箭船系单位攻击 +2)\n• 野战军 (民兵系、骑士系和百夫长训练时间 -33%, 获得蓄力攻击能力: 蓄力攻击 5, 充能时间 20s)\n\n<b>团队加成: <b>\n弩炮系单位最小射程降低为 1"
 
 120193 "步兵和海军文明\n\n• 骡车费用 -25%\n• 骡车科技效果中的村民工作效率提升 +40%\n• 建造首座强化教堂时免费获得一个驻扎的圣物\n• 可在黑暗时代训练长矛兵, 可在封建时代升级到长剑士和长枪兵, 可在城堡时代升级到双手剑士、冠军剑士和长戟兵\n• 箭船系可一箭双发 (副箭对舰船和渔船伤害 +1, 对骆驼伤害 +1), 德罗蒙战舰主箭数量 +1\n\n<b>独特单位: <b>\n• 复合弓箭手 (无视盾牌攻击的射手), 牧师战士 (可治疗友军和拾取圣物的步兵)\n\n<b>独特科技: <b>\n• 奇里乞亚舰队 (爆破船系单位溅射范围 +20%; 箭船系单位和德罗蒙战舰射程/视野/搜索范围 +1)\n• 费雷特斯 (步兵类单位(长枪兵系除外)生命值 +30, 祭司战士治疗速度 +100%)\n• 使徒 (军事单位/僧侣每分钟产生 3/6 黄金)\n• 陶鲁斯伏击 (轻骑兵系和骑士系单位受到的伤害加成 -70%)\n\n<b>团队加成: <b>\n步兵类单位视野/搜索范围 +2"
 
@@ -323,6 +323,8 @@
 500153 "特许状"
 500154 "林业"
 500155 "高丽弓"
+500156 "老练重装掷矛手"
+500157 "精锐重装掷矛手"
 
 
 501001 "研究季风航行(渔船和运输船 +25%移动速度)"
@@ -480,6 +482,8 @@
 501153 "研究特许状(你和盟友可以免费建造一座大商站, 并且你可以从盟友以这种方式建造的大商站中额外获得 50% 的收益)"
 501154 "研究林业(村民每伐木 66 秒可产生 1 黄金)"
 501155 "研究高丽弓(训练步弓手系和骑射手系不需要木材)"
+501156 "升级到老练重装掷矛手"
+501157 "升级到精锐重装掷矛手"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -637,6 +641,8 @@
 521153 "研究<b>特许状<b> (<cost>) (时间: 60)\n你和盟友可以免费建造一座大商站, 并且你可以从盟友以这种方式建造的大商站中额外获得 50% 的收益。"
 521154 "研究<b>林业<b> (<cost>) (时间: 45)\n村民每伐木 66 秒可产生 1 黄金。"
 521155 "研究<b>高丽弓<b> (<cost>) (时间: 45)\n训练步弓手系和骑射手系不需要木材。"
+521156 "升级到<b>老练重装掷矛手<b> (<cost>) (时间: 30)\n将您的重装掷矛手升级, 生产更为强大的老练重装掷矛手。"
+521157 "升级到<b>精锐重装掷矛手<b> (<cost>) (时间: 60)\n将您的老练重装掷矛手升级, 生产更为强大的精锐重装掷矛手。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -726,6 +732,9 @@
 700076 "辅助骑兵"
 700077 "老练辅助骑兵"
 700078 "精锐辅助骑兵"
+700079 "重装掷矛手"
+700080 "老练重装掷矛手"
+700081 "精锐重装掷矛手"
 
 
 701001 "生产铁炮足轻"
@@ -802,9 +811,12 @@
 701073 "征召 3 名长矛兵"
 701074 "征召 3 名掷矛手"
 701075 "征召 3 名爪刀勇士"
-701076 "辅助骑兵"
-701077 "老练辅助骑兵"
-701078 "精锐辅助骑兵"
+701076 "生产辅助骑兵"
+701077 "生产老练辅助骑兵"
+701078 "生产精锐辅助骑兵"
+701079 "生产重装掷矛手"
+701080 "生产老练重装掷矛手"
+701081 "生产精锐重装掷矛手"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -960,6 +972,12 @@
 721077 "生产<b>老练辅助骑兵<b> (<cost>)\n罗马独特轻骑兵, 每 50 秒可使用 1 次技能, 失去 3 护甲, 增加 40% 攻击速度, 持续 10 秒。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\n主类: 骑兵; 标签: 骑兵, 轻骑兵, 独特单位。\n攻击加成: +10 vs 僧侣"
 
 721078 "生产<b>精锐辅助骑兵<b> (<cost>)\n罗马独特轻骑兵, 每 50 秒可使用 1 次技能, 失去 3 护甲, 增加 40% 攻击速度, 持续 10 秒。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 1.9 <MATERIAL=EyeIcon,1> 6\n主类: 骑兵; 标签: 骑兵, 轻骑兵, 独特单位。\n攻击加成: +12 vs 僧侣"
+
+721079 "生产<b>重装掷矛手<b> (<cost>)\n罗马独特掷矛手, 战斗能力更强。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\n主类: 射手; 标签: 射手, 掷矛手, 独特单位。\n攻击加成: +4 vs 射手, +3 vs 枪兵, +2 vs 马穆鲁克。"
+
+721080 "生产<b>老练重装掷矛手<b> (<cost>)\n罗马独特掷矛手, 战斗能力更强。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\n主类: 射手; 标签: 射手, 掷矛手, 独特单位。\n攻击加成: +5 vs 射手, +3 vs 枪兵, +3 vs 马穆鲁克。"
+
+721081 "生产<b>精锐重装掷矛手<b> (<cost>)\n罗马独特掷矛手, 战斗能力更强。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\n主类: 射手; 标签: 射手, 掷矛手, 独特单位。\n攻击加成: +5 vs 射手, +3 vs 枪兵, +4 vs 马穆鲁克。"
 
 
 

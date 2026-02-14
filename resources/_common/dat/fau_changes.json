@@ -1988,6 +1988,14 @@
             "building_id": 109,
             "Name": "Korean Bow",
             "RequiredAge": 3
+        },
+        {
+            "note": "精锐重装掷矛手",
+            "civilizations": "Romans",
+            "tech_id": 655,
+            "building_id": 87,
+            "Name": "Elite Heavy Skirmisher",
+            "RequiredAge": 4
         }
     ]
 }
