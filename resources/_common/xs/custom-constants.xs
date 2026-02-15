@@ -51,6 +51,7 @@ extern const int cAttributeMalayArmyCount = 701;
 extern const int cAttributeMalayArmyTimer = 702;
 extern const int cAttributeExtraFeitoriaCount = 703;
 extern const int cAttributeForestryProductivity = 704;
+extern const int cAttributeTestKillEffect = 705;
 
 
 //  units' IDs

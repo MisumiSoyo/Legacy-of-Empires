@@ -796,10 +796,10 @@ void EffectFunction10071(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000002);
     xsTaskAmount(cTaskAttrWorkRange, 7);
-    xsTaskAmount(cTaskAttrWorkValue2, 30);
+    xsTaskAmount(cTaskAttrWorkValue2, 20);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrWorkValue1, 30);
+    xsTaskAmount(cTaskAttrWorkValue1, 20);
     xsTaskAmount(cTaskAttrAutoSearch, 0);
     for (i = 900; <= 964)
         if (isMilitaryClass(i))
@@ -810,7 +810,7 @@ void EffectFunction10071(int playerId = -1)
                 xsTaskAmount(cTaskAttrAutoSearch, 1);
         }
     xsTaskAmount(cTaskAttrSearchWaitTime, 109.000001);
-    xsTaskAmount(cTaskAttrWorkValue1, 30);
+    xsTaskAmount(cTaskAttrWorkValue1, 20);
     xsTaskAmount(cTaskAttrAutoSearch, 0);
     for (i = 900; <= 964)
         if (isMilitaryClass(i))
@@ -1316,13 +1316,31 @@ void EffectFunction10101(int playerId = -1)
 }
 
 
+//  10102 - Upgrade Test
+void EffectFunction10102(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrUnusedResource, cAttributeTestKillEffect);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000010);
+    xsTask(cInfantryClass, cTaskTypeLoot, -1, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeTestKillEffect, 3439);
+
+    // for testing
+    if (playerId == 1)
+        ModAttribute(playerId, cInfantryClass, cRegenerationRate, 300);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
-    xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 130  2026.02.14");
-    xsChatData("Author: Misumi Soyo");
-    xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
+    //xsChatData("Mod: Legacy of Empires");
+    //xsChatData("Build: 131  2026.02.15");
+    //xsChatData("Author: Misumi Soyo");
+    //xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

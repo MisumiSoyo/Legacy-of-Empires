@@ -238,3 +238,30 @@ bool ConsumeRelic(int playerId = -1)
     }
     return (false);
 }
+
+
+void PrintPlayerUnitObjectIDs(int playerId = -1)
+{
+    int UnitArray = xsArrayCreateInt(1000, -1);
+    int UnitCnt = 0;
+    int TempArray = -1;
+    int i = 0;
+    int j = 0;
+    for (i = 900; <= 964)
+    {
+        if (TempArray == -1)
+            TempArray = xsGetPlayerUnitIds(playerId, i);
+        else
+            TempArray = xsGetPlayerUnitIds(playerId, i, TempArray);
+        if (xsArrayGetSize(TempArray) > 0)
+        {
+            for (j = 0; < xsArrayGetSize(TempArray))
+            {
+                xsArraySetInt(UnitArray, UnitCnt, xsGetUnitObjectId(xsArrayGetInt(TempArray, j)));
+                UnitCnt = UnitCnt + 1;
+            }
+        }
+    }
+    xsArrayResizeInt(UnitArray, UnitCnt);
+    PrintMessage("Player " + playerId + "'s units' object IDs: " + ArrayToStringInt(UnitArray));
+}
