@@ -44983,6 +44983,11 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
+                    },
+                    {
                         "Name": "Elite Heavy Skirmisher",
                         "RequiredAge": 4,
                         "ID": 655
@@ -45018,6 +45023,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -45295,6 +45305,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Bracer",
+                        "RequiredAge": 4,
+                        "ID": 201
                     }
                 ]
             },

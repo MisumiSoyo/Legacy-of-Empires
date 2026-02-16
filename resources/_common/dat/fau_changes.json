@@ -1234,8 +1234,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "法兰克, 凯尔特, 波斯获得护腕",
-            "civilizations": ["Franks", "Celts", "Persians"],
+            "note": "法兰克, 凯尔特, 波斯, 罗马获得护腕",
+            "civilizations": ["Franks", "Celts", "Persians", "Romans"],
             "tech_id": 201,
             "building_id": 103,
             "Name": "Bracer",
@@ -1739,16 +1739,16 @@
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特, 波斯获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians"],
+            "note": "条顿, 凯尔特, 波斯, 罗马获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特, 波斯获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians"],
+            "note": "条顿, 凯尔特, 波斯, 罗马获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",
