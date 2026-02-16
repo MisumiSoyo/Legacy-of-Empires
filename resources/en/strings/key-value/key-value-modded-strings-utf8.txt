@@ -124,7 +124,7 @@
 
 120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed)\n• Elephant Formation (Battle Elephants +150% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 
-120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Can build Krepost\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead) \n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +150% heal range and heal rate)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
+120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Can build Krepost\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead) \n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +150% heal range and heal rate)\n• Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 
 120182 "Cavalry Archer civilization \n\n• Shepherds and herders -36% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Cavalries can generate 0.25 gold per second when attacking enemies (except buildings), and Keshiks +200% generation)\n• Khan's Conscription (Immediately conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 
@@ -320,6 +320,7 @@
 500155 "Korean Bow"
 500156 "Veteran Heavy Skirmisher"
 500157 "Elite Heavy Skirmisher"
+500158 "Fervor of Battle"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -479,6 +480,7 @@
 501155 "Research Korean Bow (Remove Archer-line and Cavalry Archer-line units' wood cost)"
 501156 "Upgrade to Veteran Heavy Skirmisher"
 501157 "Upgrade to Elite Heavy Skirmisher"
+501158 "Research Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -638,6 +640,7 @@
 521155 "Research <b>Korean Bow<b> (<cost>) (time: 45)\nRemove Archer-line and Cavalry Archer-line units' wood cost."
 521156 "Upgrade to <b>Veteran Heavy Skirmisher<b> (<cost>) (time: 30)\nUpgrades your Heavy Skirmishers and lets you create Veteran Heavy Skirmishers."
 521157 "Upgrade to <b>Elite Heavy Skirmisher<b> (<cost>) (time: 60)\nUpgrades your Veteran Heavy Skirmishers and lets you create Elite Heavy Skirmishers."
+521158 "Research <b> Fervor of Battle<b> (<cost>) (time: 60)\nMilitia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

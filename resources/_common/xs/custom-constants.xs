@@ -51,6 +51,7 @@ extern const int cAttributeMalayArmyCount = 701;
 extern const int cAttributeMalayArmyTimer = 702;
 extern const int cAttributeExtraFeitoriaCount = 703;
 extern const int cAttributeForestryProductivity = 704;
+extern const int cAttributeFervorofBattleKillEffect = 705;
 
 
 //  units' IDs
@@ -145,6 +146,10 @@ extern const int EliteAuxiliaryCavalryID = 4160;
 extern const int AuxiliaryCavalry2ID = 4161;
 extern const int VeteranAuxiliaryCavalry2ID = 4162;
 extern const int EliteAuxiliaryCavalry2ID = 4163;
+extern const int Konnik2ID = 4169;
+extern const int EliteKonnik2ID = 4170;
+extern const int FootKonnik2ID = 4171;
+extern const int EliteFootKonnik2ID = 4172;
 
 
 //  Newly added tech IDs
@@ -178,6 +183,11 @@ extern const int CartaRegiaTechID = 3459;
 
 // Custom Effect IDs
 extern const int FoederatiArmyKillEffectID = 3221;
+extern const int FervorofBattleKillEffect1ID = 3439;
+extern const int FervorofBattleKillEffect2ID = 3440;
+extern const int FervorofBattleKillEffect3ID = 3441;
+extern const int FervorofBattleKillEffect4ID = 3442;
+extern const int FervorofBattleKillEffect5ID = 3443;
 
 
 //  Original Unit IDs
@@ -320,6 +330,8 @@ extern const int KeshikID = 1228;
 extern const int EliteKeshikID = 1230;
 extern const int KipchakID = 1231;
 extern const int EliteKipchakID = 1233;
+extern const int FootKonnikID = 1252;
+extern const int EliteFootKonnikID = 1253;
 extern const int FeudalBatteringRamID = 1258;
 extern const int FlameCamelID = 1263;
 extern const int SteppeLancerID = 1370;

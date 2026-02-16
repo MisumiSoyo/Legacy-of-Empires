@@ -2493,10 +2493,11 @@
             "Building ID": 1806
         },
         {
+            "note": "静修士",
             "action": "add",
             "civ_id": "BULGARIANS",
             "Age ID": 3,
-            "Building ID": 209,
+            "Building ID": 109,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600084,
             "Link ID": -1,
@@ -2507,6 +2508,27 @@
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "note": "战争热诚",
+            "action": "add",
+            "civ_id": "BULGARIANS",
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600158,
+            "Link ID": 3132,
+            "Link Node Type": "BuildingTech",
+            "Name": "Fervor of Battle",
+            "Name String ID": 500158,
+            "Node ID": 3476,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
@@ -3004,10 +3026,10 @@
             "Age ID": 2
         },
         {
-            "note": "保加利亚启用冠军剑士",
+            "note": "保加利亚启用",
             "action": "modify",
             "civ_id": "BULGARIANS",
-            "Node ID": 567,
+            "Node ID": [],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },

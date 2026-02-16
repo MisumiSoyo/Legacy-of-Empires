@@ -4481,11 +4481,6 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
-                    },
-                    {
-                        "Name": "Champion",
-                        "RequiredAge": 4,
-                        "ID": 264
                     }
                 ],
                 "Units": [
@@ -4911,11 +4906,6 @@
                         "ID": 322,
                         "Name": "Murder Holes",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Hesychast",
-                        "RequiredAge": 3,
-                        "ID": 3132
                     }
                 ]
             },
@@ -5141,6 +5131,16 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3078
+                    },
+                    {
+                        "Name": "Hesychast",
+                        "RequiredAge": 3,
+                        "ID": 3132
+                    },
+                    {
+                        "Name": "Fervor of Battle",
+                        "RequiredAge": 4,
+                        "ID": 3476
                     }
                 ],
                 "Units": [

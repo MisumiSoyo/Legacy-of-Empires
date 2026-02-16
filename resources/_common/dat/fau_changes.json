@@ -915,9 +915,17 @@
             "note": "静修士",
             "civilizations": "Bulgarians",
             "tech_id": 3132,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Hesychast",
             "RequiredAge": 3
+        },
+        {
+            "note": "战争热诚",
+            "civilizations": "Bulgarians",
+            "tech_id": 3476,
+            "building_id": 109,
+            "Name": "Fervor of Battle",
+            "RequiredAge": 4
         },
         {
             "note": "库曼启用畜牧",
@@ -1150,8 +1158,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "保加利亚启用冠军剑士",
-            "civilizations": "Bulgarians",
+            "note": "启用冠军剑士",
+            "civilizations": [],
             "tech_id": 264,
             "building_id": 12,
             "Name": "Champion",

@@ -1316,13 +1316,39 @@ void EffectFunction10101(int playerId = -1)
 }
 
 
+//  10102 - Fervor of Battle
+void EffectFunction10102(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrUnusedResource, cAttributeFervorofBattleKillEffect);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000010);
+    xsTask(MilitiaID, cTaskTypeLoot, -1, playerId);
+    xsTask(ManAtArmsID, cTaskTypeLoot, -1, playerId);
+    xsTask(LongSwordmanID, cTaskTypeLoot,, -1, playerId);
+    xsTask(TwoHandedSwordmanID, cTaskTypeLoot, -1, playerId);
+    xsResetTaskAmount();
+
+    xsTaskAmount(cTaskAttrResourceIn, FervorofBattleKillEffect5ID);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000011);
+    xsTask(FootKonnikID, cTaskTypeLoot, -1, playerId);
+    xsTask(EliteFootKonnikID, cTaskTypeLoot, -1, playerId);
+    xsTask(FootKonnik2ID, cTaskTypeLoot, -1, playerId);
+    xsTask(EliteFootKonnik2ID, cTaskTypeLoot, -1, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeFervorofBattleKillEffect, FervorofBattleKillEffect1ID);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 134  2026.02.16");
+    xsChatData("Build: 135  2026.02.17");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
