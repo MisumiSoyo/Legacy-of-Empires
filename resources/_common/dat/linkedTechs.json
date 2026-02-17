@@ -98,14 +98,15 @@
         },
         {
             "NameId": 424011,
-            "Comment": "Antiquity Mode Merchant Trade Rates",
-            "Type": "Cycle",
-            "StartingTech": 1263,
-            "Instant": true,
+            "Comment": "Trade Cog Rates",
+            "Type": "Toggleable",
+            "StartingTech": 1359,
             "Techs": [
                 1263,
                 1264,
-                1265
+                1265,
+                1359,
+                1373
             ]
         },
         {

@@ -541,7 +541,6 @@ void EffectFunction10021(int playerId = -1)
     MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.0 / 1.2);
     MulAttribute(playerId, cFishingBoatClass, cWorkRate, 1.0 / 1.2);
     MulAttribute(playerId, cFarmClass, cWorkRate, 1.0 / 1.2);
-    MulAttribute(playerId, ShrineID, cMaxCharge, 1.2);
 }
 
 
@@ -1348,7 +1347,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 135  2026.02.17");
+    xsChatData("Build: 136  2026.02.18");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

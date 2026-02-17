@@ -365,6 +365,10 @@ extern const int LouChuanID = 1948;
 extern const int ProjectileCrossbowmanSecondaryID = 1960;
 extern const int WhiteFeatherGuardID = 1959;
 extern const int EliteWhiteFeatherGuardID = 1961;
+extern const int ChampiScoutID = 2550;
+extern const int ChampiWarriorID = 2552;
+extern const int EliteChampiWarriorID = 2554;
+extern const int ChampiRunnerID = 2588;
 
 
 //  Original Tech IDs

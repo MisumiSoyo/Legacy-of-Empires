@@ -64,7 +64,7 @@ void EffectFunction10002(int playerId = -1)
         {
             //  Shu civ bonus, infantries generate food from attacking farms
             SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
-            SetResource(playerId, cAttributeMaintenance, 10010);
+            SetResource(playerId, cAttributeEffectFunctionNumber, 10010);
             break;
         }
         default:

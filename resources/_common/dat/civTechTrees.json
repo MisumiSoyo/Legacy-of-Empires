@@ -5135,7 +5135,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600064,
                     "Link ID": -1,
@@ -5165,7 +5165,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600063,
                     "Link ID": 3091,
@@ -10300,7 +10300,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600036,
                     "Link ID": -1,
@@ -10330,7 +10330,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600111,
                     "Link ID": 3064,
@@ -15707,7 +15707,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600127,
                     "Link ID": -1,
@@ -15737,7 +15737,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600133,
                     "Link ID": 3214,
@@ -20872,7 +20872,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600082,
                     "Link ID": -1,
@@ -20902,7 +20902,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600114,
                     "Link ID": 3130,
@@ -26007,7 +26007,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600040,
                     "Link ID": -1,
@@ -26037,7 +26037,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600109,
                     "Link ID": 3068,
@@ -31472,7 +31472,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600129,
                     "Link ID": -1,
@@ -31502,7 +31502,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600130,
                     "Link ID": -1,
@@ -31532,7 +31532,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600131,
                     "Link ID": -1,
@@ -31562,7 +31562,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600132,
                     "Link ID": -1,
@@ -31592,7 +31592,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600059,
                     "Link ID": 3237,
@@ -36936,7 +36936,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 3,
                     "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600117,
@@ -36966,7 +36966,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 3,
                     "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600118,
@@ -36996,7 +36996,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 3,
                     "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600119,
@@ -37026,7 +37026,7 @@
                     "Use Type": "Tech"
                 },
                 {
-                    "Age ID": 2,
+                    "Age ID": 3,
                     "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600120,
@@ -37057,7 +37057,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600125,
                     "Link ID": -1,
@@ -37087,7 +37087,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600091,
                     "Link ID": 3208,
@@ -42374,7 +42374,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600113,
                     "Link ID": -1,
@@ -42404,7 +42404,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600112,
                     "Link ID": 3174,
@@ -47599,7 +47599,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600058,
                     "Link ID": -1,
@@ -47629,7 +47629,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600047,
                     "Link ID": 3090,
@@ -52884,7 +52884,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600050,
                     "Link ID": -1,
@@ -58141,7 +58141,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600046,
                     "Link ID": -1,
@@ -58201,7 +58201,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600057,
                     "Link ID": 3073,
@@ -63276,7 +63276,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600033,
                     "Link ID": -1,
@@ -63306,7 +63306,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600115,
                     "Link ID": 3061,
@@ -73696,7 +73696,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600087,
                     "Link ID": -1,
@@ -73726,7 +73726,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600086,
                     "Link ID": 3135,
@@ -78773,7 +78773,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600042,
                     "Link ID": -1,
@@ -78803,7 +78803,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600067,
                     "Link ID": 3112,
@@ -84030,7 +84030,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600068,
                     "Link ID": -1,
@@ -84060,7 +84060,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600043,
                     "Link ID": 3095,
@@ -89527,12 +89527,12 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600045,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Frontlien Outpost",
+                    "Name": "Frontline Outpost",
                     "Name String ID": 500045,
                     "Node ID": 3072,
                     "Node Status": "ResearchedCompleted",
@@ -89587,7 +89587,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600056,
                     "Link ID": 3072,
@@ -100067,7 +100067,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600051,
                     "Link ID": -1,
@@ -100127,7 +100127,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600060,
                     "Link ID": -1,
@@ -100157,7 +100157,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600061,
                     "Link ID": 3114,
@@ -105474,7 +105474,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600107,
                     "Link ID": -1,
@@ -105504,7 +105504,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600108,
                     "Link ID": 3168,
@@ -110791,7 +110791,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600080,
                     "Link ID": -1,
@@ -110821,7 +110821,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600081,
                     "Link ID": 3125,
@@ -121031,7 +121031,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600135,
                     "Link ID": -1,
@@ -121061,7 +121061,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600070,
                     "Link ID": 3243,
@@ -126348,7 +126348,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600088,
                     "Link ID": -1,
@@ -126378,7 +126378,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600153,
                     "Link ID": 3137,
@@ -131633,7 +131633,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600094,
                     "Link ID": -1,
@@ -131663,7 +131663,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600093,
                     "Link ID": 3145,
@@ -136888,7 +136888,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600034,
                     "Link ID": -1,
@@ -136918,7 +136918,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600123,
                     "Link ID": 3062,
@@ -142203,7 +142203,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600144,
                     "Link ID": -1,
@@ -157910,7 +157910,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600038,
                     "Link ID": -1,
@@ -163255,7 +163255,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600039,
                     "Link ID": -1,
@@ -163315,7 +163315,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600077,
                     "Link ID": 3067,
@@ -173707,7 +173707,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600054,
                     "Link ID": -1,
@@ -173737,7 +173737,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600055,
                     "Link ID": 3111,
@@ -178902,7 +178902,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600137,
                     "Link ID": -1,
@@ -178932,7 +178932,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600089,
                     "Link ID": 3245,
@@ -184067,7 +184067,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600065,
                     "Link ID": -1,
@@ -194579,7 +194579,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600053,
                     "Link ID": -1,
@@ -199684,7 +199684,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600085,
                     "Link ID": -1,
@@ -199714,7 +199714,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600044,
                     "Link ID": 3133,
@@ -204969,7 +204969,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600062,
                     "Link ID": -1,
@@ -204999,7 +204999,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600105,
                     "Link ID": 3085,
@@ -210374,7 +210374,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600139,
                     "Link ID": -1,
@@ -221274,12 +221274,12 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600048,
                     "Link ID": -1,
                     "Link Node Type": "BuildingTech",
-                    "Name": "Desert Guard",
+                    "Name": "Caravan Guard",
                     "Name String ID": 500048,
                     "Node ID": 3075,
                     "Node Status": "ResearchedCompleted",
@@ -231636,7 +231636,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600083,
                     "Link ID": -1,
@@ -231666,7 +231666,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600035,
                     "Link ID": 3131,
@@ -236923,7 +236923,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600126,
                     "Link ID": -1,
@@ -236953,7 +236953,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600128,
                     "Link ID": 3212,
@@ -258485,7 +258485,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600071,
                     "Link ID": -1,
@@ -263922,7 +263922,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600149,
                     "Link ID": -1,
@@ -263952,7 +263952,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600150,
                     "Link ID": 3443,
@@ -269359,7 +269359,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600037,
                     "Link ID": -1,
@@ -274794,7 +274794,7 @@
                 },
                 {
                     "Age ID": 3,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600106,
                     "Link ID": -1,
@@ -274824,7 +274824,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600110,
                     "Link ID": 3162,
@@ -280109,7 +280109,7 @@
                 },
                 {
                     "Age ID": 4,
-                    "Building ID": 209,
+                    "Building ID": 109,
                     "Draw Node Type": "UnitTech",
                     "Help String ID": 600066,
                     "Link ID": -1,

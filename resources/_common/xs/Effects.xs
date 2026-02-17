@@ -17,8 +17,79 @@ void EffectFunction1(int playerId = -1)
     xsEffectAmount(cSpawnUnit, llamaId, 619, 1, playerId);
 }
 
-// 2 - Dark Age effect: randomize graphics for Hunnic Horse
-void EffectFunction2(int playerId = -1)
+// Handicap effects
+void HandicapSetup(int playerId = -1)
+{
+  float handicapMultiplier = xsGetHandicapMultiplier(playerId);
+  if (handicapMultiplier <= 1)
+  {
+      return;
+  }
+  float trainTimeMultiplier = 1.0 / handicapMultiplier;
+  int VillagerMaleID = 83;
+  int VillagerFemaleID = 293;
+  int BuilderMaleID = 118;
+  int BuilderFemaleID = 212;
+  int RepairerMaleID = 156;
+  int RepairerFemaleID = 222;
+
+  xsEffectAmount(cMulAttribute, cBuildingClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cWallClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cGateClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cTowerClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cFarmClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cFarmClass, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cTradeCartClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cTradeCartClass, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cTradeBoatClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cTradeBoatClass, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cFishingBoatClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cFishingBoatClass, cCarryCapacity, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cVillagerClass, cHitpoints, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cVillagerClass, cCarryCapacity, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, VillagerMaleID, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, VillagerFemaleID, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, BuilderMaleID, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, BuilderFemaleID, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, RepairerMaleID, cWorkRate, handicapMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, RepairerFemaleID, cWorkRate, handicapMultiplier, playerId);
+  
+  xsEffectAmount(cMulResource, cAttributeFoodBonus, -1, handicapMultiplier, playerId);
+  xsEffectAmount(cMulResource, cAttributeWoodBonus, -1, handicapMultiplier, playerId);
+  xsEffectAmount(cMulResource, cAttributeGoldBonus, -1, handicapMultiplier, playerId);
+  xsEffectAmount(cMulResource, cAttributeStoneBonus, -1, handicapMultiplier, playerId);
+  xsEffectAmount(cMulResource, cAttributeFishingProductivity, -1, handicapMultiplier, playerId);
+  xsEffectAmount(cMulResource, cAttributeShepherdingProductivity, -1, handicapMultiplier, playerId);
+  xsEffectAmount(cMulResource, cAttributeHuntingProductivity, -1, handicapMultiplier, playerId);
+  xsEffectAmount(cMulResource, cAttributeForagingProductivity, -1, handicapMultiplier, playerId);
+
+  xsEffectAmount(cMulAttribute, cArcherClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cInfantryClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cCavalryClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cSiegeWeaponClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cMonkClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cWarshipClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cConquistadorClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cWarElephantClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cElephantArcherClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cPhalanxClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cPetardClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cCavalryArcherClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cMonkWithRelicClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cHandCannoneerClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cTwoHandedSwordsmanClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cPikemanClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cScoutCavalryClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cSpearmanClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cPackedUnitClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cUnpackedSiegeUnitClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cScorpionClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cRaiderClass, cTrainTime, trainTimeMultiplier, playerId);
+  xsEffectAmount(cMulAttribute, cCavalryRaiderClass, cTrainTime, trainTimeMultiplier, playerId);
+}
+
+// Randomize graphics for Hunnic Horse
+void HunnicHorseGraphic(int playerId = -1)
 {
     int hunnicHorseId = 1869;
     int newAttackGraphicId = -1;
@@ -68,6 +139,13 @@ void EffectFunction2(int playerId = -1)
     xsEffectAmount(cSetAttribute, hunnicHorseId, cDyingGraphic, newDyingGraphicId, playerId);
     xsEffectAmount(cSetAttribute, hunnicHorseId, cUndeadGraphic, newUndeadGraphicId, playerId);
     xsEffectAmount(cSetAttribute, hunnicHorseId, cWalkingGraphic, newWalkingGraphicId, playerId);
+}
+
+// 2 - Dark Age effect
+void EffectFunction2(int playerId = -1)
+{
+    HandicapSetup(playerId);
+    HunnicHorseGraphic(playerId);
 }
 
 // Effect of Ordo Cavalry UT for Khitans
@@ -168,7 +246,7 @@ void EffectFunction5(int playerId = -1)
   xsResetTaskAmount();
 
   xsTaskAmount(cTaskAttrWorkValue1, 20);
-  xsTaskAmount(cTaskAttrProductivityResource, 274);
+  xsTaskAmount(cTaskAttrProductivityResource, cAttributeInfantryKillReward);
   xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
   xsTask(cInfantryClass, cTaskTypeLoot, cTradeBoatClass, playerId);
   xsTask(cInfantryClass, cTaskTypeLoot, cMonkWithRelicClass, playerId);
@@ -626,6 +704,237 @@ void EffectFunction16(int playerId = -1)
   xsResetTaskAmount();
 }
 
+
+// Effect of Curare for Tupi
+void Curare(int UnitTarget = -1, int playerId = -1)
+{
+  xsEffectAmount(cAddAttribute, UnitTarget, cCombatAbility, 128, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cArcherClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cVillagerClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cInfantryClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cPreyAnimalClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cPredatorAnimalClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cCavalryClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cMonkClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cTradeCartClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cConquistadorClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cDomesticAnimalClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cPetardClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cMonkWithRelicClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cHandCannoneerClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cScoutCavalryClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cKingClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cPhalanxClass, playerId);
+}
+
+// Remove Curare from undesirable units
+void CurareRemoval(int UnitTarget = -1, int playerId = -1)
+{
+  xsEffectAmount(cAddAttribute, UnitTarget, cCombatAbility, -128, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cArcherClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cVillagerClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cInfantryClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cPreyAnimalClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cPredatorAnimalClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cCavalryClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cMonkClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cTradeCartClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cConquistadorClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cDomesticAnimalClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cPetardClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cMonkWithRelicClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cHandCannoneerClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cScoutCavalryClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cKingClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cPhalanxClass, playerId);
+}
+
+// 25 - Add Curare for Tupi
+void EffectFunction25(int playerId = -1)
+{
+  int SkirmisherID = 7;
+  int EliteSkirmisherID = 6;
+  int ImperialSkirmisherID = 1155;
+  int GuechaWarriorID = 2562;
+  int EliteGuechaWarriorID = 2564;
+  int SlingerID = 185;
+  int BlackWoodArcherID = 2579;
+  int EliteBlackWoodArcherID = 2581;
+  int TownCenterProjID = 54;
+  int WatchTowerID = 79;
+  int CastleID = 82;
+  int GuardTowerID = 234;
+  int KeepID = 235;
+  int TownCenterFireProjID = 328;
+  int TowerProjID = 505;
+  int TowerFireProjID = 518;
+  int CastleProjID = 746;
+  int CastleFireProjID = 747;
+  int SeaTowerID = 785;
+  int KrepostProjID = 786;
+  int KrepostFireProjID = 787;
+  int KrepostID = 1251;
+  int DonjonID = 1665;
+  int ProjectileKep = 505;
+  int TownCenterFnd1ID = 109;
+  int TownCenterFnd2ID = 71;
+  int TownCenterFnd3ID = 141;
+  int TownCenterFnd4ID = 142;
+
+  xsResetTaskAmount();
+  xsTaskAmount(cTaskAttrWorkValue2, 15);
+  xsTaskAmount(cTaskAttrSearchWaitTime, 109);
+  xsTaskAmount(cTaskAttrWorkRange, 1);
+
+  xsTaskAmount(cTaskAttrWorkValue1, -20);
+  Curare(cArcherClass, playerId);
+  CurareRemoval(SkirmisherID, playerId);
+  CurareRemoval(EliteSkirmisherID, playerId);
+  CurareRemoval(ImperialSkirmisherID, playerId);
+  CurareRemoval(GuechaWarriorID, playerId);
+  CurareRemoval(EliteGuechaWarriorID, playerId);
+  CurareRemoval(SlingerID, playerId);
+  CurareRemoval(BlackWoodArcherID, playerId);
+  CurareRemoval(EliteBlackWoodArcherID, playerId);
+
+  xsTaskAmount(cTaskAttrWorkValue1, -12);
+  Curare(BlackWoodArcherID, playerId);
+  Curare(EliteBlackWoodArcherID, playerId);
+
+  xsTaskAmount(cTaskAttrWorkValue1, -30);
+  Curare(TownCenterProjID, playerId);
+  Curare(WatchTowerID, playerId);
+  Curare(CastleID, playerId);
+  Curare(GuardTowerID, playerId);
+  Curare(KeepID, playerId);
+  Curare(TownCenterFireProjID, playerId);
+  Curare(TowerProjID, playerId);
+  Curare(TowerFireProjID, playerId);
+  Curare(CastleProjID, playerId);
+  Curare(CastleFireProjID, playerId);
+  Curare(SeaTowerID, playerId);
+  Curare(KrepostProjID, playerId);
+  Curare(KrepostFireProjID, playerId);
+  Curare(KrepostID, playerId);
+  Curare(DonjonID, playerId);
+  Curare(ProjectileKep, playerId);
+  Curare(TownCenterFnd1ID, playerId);
+  Curare(TownCenterFnd2ID, playerId);
+  Curare(TownCenterFnd3ID, playerId);
+  Curare(TownCenterFnd4ID, playerId);
+
+  xsResetTaskAmount();
+}
+
+void CavalryKillReward(int classId = -1, int playerId = -1)
+{
+  xsTask(classId, cTaskTypeLoot, cArcherClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cInfantryClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cCavalryClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cSiegeWeaponClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cConquistadorClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cPetardClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cCavalryArcherClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cHandCannoneerClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cScoutCavalryClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cPackedUnitClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cUnpackedSiegeUnitClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cScorpionClass, playerId);
+  xsTask(classId, cTaskTypeLoot, cWarshipClass, playerId);
+}
+
+// 26 - Effect of Cavalry kill for Mapuche
+void EffectFunction26(int playerId = -1)
+{
+  xsResetTaskAmount();
+  xsTaskAmount(cTaskAttrWorkValue1, 3);
+  xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+
+  CavalryKillReward(cCavalryClass, playerId);
+  CavalryKillReward(cScoutCavalryClass, playerId);
+  CavalryKillReward(cConquistadorClass, playerId);
+  CavalryKillReward(cCavalryArcherClass, playerId);
+  
+  xsResetTaskAmount();
+}
+
+// Apply Cost Refund for Tupis
+void TupiRefund(int TaskID = -1, int playerId = -1)
+{
+  xsTask(cVillagerClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cArcherClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cInfantryClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cCavalryClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cMonkClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cTradeCartClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cConquistadorClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cPetardClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cCavalryArcherClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cMonkWithRelicClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cHandCannoneerClass, cTaskTypeRefund, TaskID, playerId);
+  xsTask(cScoutCavalryClass, cTaskTypeRefund, TaskID, playerId);
+}
+
+// 27 - Effect of Unit Refund for Tupis
+void EffectFunction27(int playerId = -1)
+{
+  xsResetTaskAmount();
+  xsTaskAmount(cTaskAttrWorkValue1, 1);
+  xsTaskAmount(cTaskAttrProductivityResource, cAttributeUnitCostRefund);
+  xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+  xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+  TupiRefund(-1, playerId);
+  xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+  TupiRefund(-2, playerId);
+  xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+  TupiRefund(-3, playerId);
+  xsResetTaskAmount();
+}
+
+// Apply Settlement Healing For Muisca
+void MuiscaHeal(int HealAmount = -1, int SettlementAge = -1, int playerId = -1)
+{
+  xsTaskAmount(cTaskAttrWorkValue1, HealAmount);
+  xsEffectAmount(cAddAttribute, SettlementAge, cCombatAbility, 32, playerId);
+
+  xsTask(SettlementAge, cTaskTypeAura, cArcherClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cVillagerClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cInfantryClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cCavalryClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cMonkClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cTradeCartClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cConquistadorClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cCavalryArcherClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cMonkWithRelicClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cHandCannoneerClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cFarmClass, playerId);
+  xsTask(SettlementAge, cTaskTypeAura, cKingClass, playerId);
+}
+
+// 28 - Effect of Settlements for Muisca Feudal & Castle Age
+void EffectFunction28(int playerId = -1)
+{
+  int Settlement1ID = 2556;
+  int Settlement2ID = 2558;
+  int Settlement3ID = 2560;
+  xsResetTaskAmount();
+
+  xsTaskAmount(cTaskAttrWorkValue2, 1);
+  xsTaskAmount(cTaskAttrWorkRange, 3);
+  xsTaskAmount(cTaskAttrGatheringSoundInt32, 13407);
+  xsTaskAmount(cTaskAttrDepositSoundInt32, 13407);
+  xsTaskAmount(cTaskAttrOwnerType, 4);
+  xsTaskAmount(cTaskAttrCombatLevelFlag, 4);
+  xsTaskAmount(cTaskAttrSearchWaitTime, 109);
+  xsTaskAmount(cTaskAttrGatherType, 21);
+
+  MuiscaHeal(5, Settlement1ID, playerId);
+  MuiscaHeal(10, Settlement2ID, playerId);
+  MuiscaHeal(15, Settlement3ID, playerId);
+
+  xsResetTaskAmount();
+}
+
 void OdomantianRaiderHighValueTargets(int taskObject = -1, int playerId = -1)
 {
   xsTask(taskObject, cTaskTypeLoot, cTradeBoatClass, playerId);
@@ -667,7 +976,7 @@ void EffectFunction1000(int playerId = -1)
 
   OdomantianRaiderHighValueTargets(cInfantryClass, playerId);
   OdomantianRaiderHighValueTargets(cCavalryClass, playerId);
-  
+
   xsTaskAmount(cTaskAttrWorkValue1, 3);
 
   OdomantianRaiderLowValueTargets(cInfantryClass, playerId);
@@ -796,7 +1105,7 @@ void EffectFunction1003(int playerId = -1)
   int EliteHopliteID = 2111;
   int RhomphaiaWarriorID = 2386;
   int EliteRhomphaiaWarriorID = 2387;
-  
+
   xsResetTaskAmount();
 
   xsTaskAmount(cTaskAttrWorkValue1, 0.15);
@@ -808,23 +1117,23 @@ void EffectFunction1003(int playerId = -1)
   xsTaskAmount(cTaskAttrEnableTargeting, 1);
   xsTaskAmount(cTaskAttrOwnerType, 5);
   xsTaskAmount(cTaskAttrGatherType, 1);
-  
+
   xsTask(SpearmanID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(PikemanID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(HalberdierID, cTaskTypeGenerateResources, cBuildingClass, playerId);
-  
+
   xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
-  
+
   xsTask(MilitiaID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(ManAtArmsID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(LongSwordsmanID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(ChampionID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(HopliteID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(EliteHopliteID, cTaskTypeGenerateResources, cBuildingClass, playerId);
-  
+
   xsTaskAmount(cTaskAttrWorkValue1, 0.1);
   xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
-  
+
   xsTask(RhomphaiaWarriorID, cTaskTypeGenerateResources, cBuildingClass, playerId);
   xsTask(EliteRhomphaiaWarriorID, cTaskTypeGenerateResources, cBuildingClass, playerId);
 
@@ -858,10 +1167,9 @@ void EffectFunction1004(int playerId = -1)
   xsTask(cTowerClass, cTaskTypeAura, StoneMinerFemaleID, playerId);
   xsTask(cTowerClass, cTaskTypeAura, GoldMinerMaleID, playerId);
   xsTask(cTowerClass, cTaskTypeAura, GoldMinerFemaleID, playerId);
-  
+
   xsResetTaskAmount();
 }
-
 
 include "custom-constants.xs";
 include "custom-effects.xs";

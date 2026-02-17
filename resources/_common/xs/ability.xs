@@ -176,9 +176,9 @@ void EffectFunction10019(int playerId = -1)
 }
 
 
-void EffectFunction10030(int playerId = -1)  //  Switch to training Militia
+void EffectFunction10030(int playerId = -1)  //  Switch to training Champi Warrior
 {
-    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, MilitiaID, playerId);
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, ChampiScoutID, playerId);
     SetResource(playerId, cAttributeShrineSpawnTime, 45);
 }
 
@@ -210,7 +210,7 @@ void EffectFunction10034(int playerId = -1)  //  Switch to training Skirmisher
 void EffectFunction10035(int playerId = -1)  //  Switch to training Slinger
 {
     xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, SlingerID, playerId);
-    SetResource(playerId, cAttributeShrineSpawnTime, 55);
+    SetResource(playerId, cAttributeShrineSpawnTime, 40);
 }
 
 
@@ -261,13 +261,22 @@ void TCSpawnedDeerInit(int playerId = -1)
 void ShrineInit(int playerId = -1)
 {
     int i = 0;
+    SetInfinityStacking(playerId, 3100  );
+    SetInfinityStacking(playerId, 3101);
+    SetInfinityStacking(playerId, 3103);
+    SetInfinityStacking(playerId, 3104);
+    SetInfinityStacking(playerId, 3105);
+    SetInfinityStacking(playerId, 3106);
+    SetInfinityStacking(playerId, 3118);
+    SetInfinityStacking(playerId, 3119);
+    SetInfinityStacking(playerId, 3127);
     for (i = 3100; <= 3127)
         if ((3100 <= i) && (i <= 3106) || (i == 3118) || (i == 3119) || (i == 3127))
         {
             xsEffectAmount(cModifyTech, i, cAttrSetStacking, 1, playerId);
             xsEffectAmount(cModifyTech, i, cAttrSetStackingResearchCap, 32767, playerId);
         }
-    SetResource(playerId, cAttributeShrineSpawnUnitID, MilitiaID);
+    SetResource(playerId, cAttributeShrineSpawnUnitID, ChampiScoutID);
     SetResource(playerId, cAttributeShrineSpawnTime, 45);
 }
 

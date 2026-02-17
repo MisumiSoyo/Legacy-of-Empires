@@ -383,7 +383,7 @@
             "note": "互市",
             "civilizations": "Mongols",
             "tech_id": 3061,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Mutual Trade",
             "RequiredAge": 3
         },
@@ -391,7 +391,7 @@
             "note": "撒哈拉商道",
             "civilizations": "Malians",
             "tech_id": 3062,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Sahara Caravan Route",
             "RequiredAge": 3
         },
@@ -399,7 +399,7 @@
             "note": "淬毒",
             "civilizations": "Malians",
             "tech_id": 3204,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Poisoning",
             "RequiredAge": 4
         },
@@ -407,7 +407,7 @@
             "note": "陶鲁斯伏击",
             "civilizations": "Armenians",
             "tech_id": 3063,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Taurus Ambush",
             "RequiredAge": 4
         },
@@ -415,7 +415,7 @@
             "note": "大盾",
             "civilizations": "Franks",
             "tech_id": 3064,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Pavise",
             "RequiredAge": 3
         },
@@ -423,7 +423,7 @@
             "note": "霹雳车",
             "civilizations": "Wei",
             "tech_id": 3065,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Thunderclap Cart",
             "RequiredAge": 3
         },
@@ -431,7 +431,7 @@
             "note": "阿奴律陀运河",
             "civilizations": "Burmese",
             "tech_id": 3066,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Anawrahta's Canals",
             "RequiredAge": 3
         },
@@ -439,7 +439,7 @@
             "note": "季风航行",
             "civilizations": "Vietnamese",
             "tech_id": 3067,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Monsoon Navigation",
             "RequiredAge": 3
         },
@@ -447,7 +447,7 @@
             "note": "一向一揆",
             "civilizations": "Japanese",
             "tech_id": 3068,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Hongan Ikki",
             "RequiredAge": 3
         },
@@ -455,7 +455,7 @@
             "note": "翼骑兵冲锋",
             "civilizations": "Poles",
             "tech_id": 3071,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Winged Charge",
             "RequiredAge": 4
         },
@@ -463,7 +463,7 @@
             "note": "前哨",
             "civilizations": "Huns",
             "tech_id": 3072,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Frontline Outpost",
             "RequiredAge": 3
         },
@@ -471,7 +471,7 @@
             "note": "冰海霸权",
             "civilizations": "Vikings",
             "tech_id": 3073,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Frozen Sea Dominance",
             "RequiredAge": 3
         },
@@ -479,7 +479,7 @@
             "note": "红海舰队",
             "civilizations": "Saracens",
             "tech_id": 3074,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Red Sea Fleet",
             "RequiredAge": 4
         },
@@ -487,7 +487,7 @@
             "note": "沙漠护卫",
             "civilizations": "Gurjaras",
             "tech_id": 3075,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Desert Guard",
             "RequiredAge": 3
         },
@@ -495,7 +495,7 @@
             "note": "徳夫希尔梅",
             "civilizations": "Turks",
             "tech_id": 3076,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Devsirme",
             "RequiredAge": 4
         },
@@ -503,7 +503,7 @@
             "note": "教皇国",
             "civilizations": "Italians",
             "tech_id": 3077,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Papal State",
             "RequiredAge": 3
         },
@@ -519,7 +519,7 @@
             "note": "免役税",
             "civilizations": "Sicilians",
             "tech_id": 3079,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Scutage",
             "RequiredAge": 3
         },
@@ -527,7 +527,7 @@
             "note": "可汗征召",
             "civilizations": "Tatars",
             "tech_id": 3080,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Khan's Conscription",
             "RequiredAge": 4
         },
@@ -535,7 +535,7 @@
             "note": "鸣镝箭",
             "civilizations": "Huns",
             "tech_id": 3081,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Whistling Arrow",
             "RequiredAge": 4
         },
@@ -543,7 +543,7 @@
             "note": "鳕鱼贸易",
             "civilizations": "Vikings",
             "tech_id": 3082,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Stockfish Trade",
             "RequiredAge": 4
         },
@@ -551,7 +551,7 @@
             "note": "羁縻",
             "civilizations": "Chinese",
             "tech_id": 3084,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Jimi",
             "RequiredAge": 4
         },
@@ -559,7 +559,7 @@
             "note": "塔博尔派",
             "civilizations": "Bohemians",
             "tech_id": 3085,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Taborites",
             "RequiredAge": 3
         },
@@ -567,7 +567,7 @@
             "note": "圈地",
             "civilizations": "Britons",
             "tech_id": 3086,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Enclosure",
             "RequiredAge": 4
         },
@@ -575,7 +575,7 @@
             "note": "苏福塔亚",
             "civilizations": "Saracens",
             "tech_id": 3090,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Suftaja",
             "RequiredAge": 3
         },
@@ -583,7 +583,7 @@
             "note": "城堡网络",
             "civilizations": "Britons",
             "tech_id": 3091,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Castle Network",
             "RequiredAge": 3
         },
@@ -591,7 +591,7 @@
             "note": "考纳斯城堡",
             "civilizations": "Lithuanians",
             "tech_id": 3092,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Kaunus Castle",
             "RequiredAge": 3
         },
@@ -599,7 +599,7 @@
             "note": "打草谷",
             "civilizations": "Khitans",
             "tech_id": 3093,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Dacaogu",
             "RequiredAge": 4
         },
@@ -607,7 +607,7 @@
             "note": "祭祀仪式",
             "civilizations": "Aztecs",
             "tech_id": 3094,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Ixiplta",
             "RequiredAge": 4
         },
@@ -615,7 +615,7 @@
             "note": "黑曜石之箭",
             "civilizations": "Mayans",
             "tech_id": 3095,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Obsidian Arrow",
             "RequiredAge": 3
         },
@@ -623,7 +623,7 @@
             "note": "东正教",
             "civilizations": "Slavs",
             "tech_id": 3097,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Orthodoxy",
             "RequiredAge": 4
         },
@@ -631,7 +631,7 @@
             "note": "攻城术",
             "civilizations": "Shu",
             "tech_id": 3098,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Siege Technique",
             "RequiredAge": 4
         },
@@ -645,7 +645,7 @@
         },
         {
             "note": "圣坛",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "unit_id": 4049,
             "building_id": 118,
             "Name": "Shrine",
@@ -653,38 +653,30 @@
         },
         {
             "note": "圣坛",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "building_id" : 4049,
             "Name": "Shrine",
             "type": "add"
         },
         {
-            "note": "切换到训练民兵系",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "note": "切换到训练昌皮战士系",
+            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3100,
             "building_id": 4049,
-            "Name": "Switch to training Militia Line",
+            "Name": "Switch to training Champi Scout Line",
             "RequiredAge": 2
         },
         {
             "note": "切换到训练长矛兵系",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3101,
             "building_id": 4049,
             "Name": "Switch to training Spearman Line",
             "RequiredAge": 2
         },
         {
-            "note": "切换到训练鹰斥候系",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
-            "tech_id": 3102,
-            "building_id": 4049,
-            "Name": "Switch to training Eagle Scout Line",
-            "RequiredAge": 2
-        },
-        {
             "note": "切换到训练步弓手系",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3103,
             "building_id": 4049,
             "Name": "Switch to training Archer Line",
@@ -692,7 +684,7 @@
         },
         {
             "note": "切换到训练掷矛手系",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3104,
             "building_id": 4049,
             "Name": "Switch to training Skirmisher Line",
@@ -716,7 +708,7 @@
         },
         {
             "note": "切换到训练投石手",
-            "civilizations": "Incas",
+            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3105,
             "building_id": 4049,
             "Name": "Switch to training Slinger",
@@ -734,7 +726,7 @@
             "note": "掠夺号角",
             "civilizations": "Tatars",
             "tech_id": 3111,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Raide Horn",
             "RequiredAge": 3
         },
@@ -742,7 +734,7 @@
             "note": "浮动园地",
             "civilizations": "Aztecs",
             "tech_id": 3112,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Floating Garden",
             "RequiredAge": 3
         },
@@ -750,7 +742,7 @@
             "note": "玉米神祝福",
             "civilizations": "Mayans",
             "tech_id": 3113,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Yum Kaax's Blessing",
             "RequiredAge": 4
         },
@@ -758,7 +750,7 @@
             "note": "佣兵合同",
             "civilizations": "Italians",
             "tech_id": 3114,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Mercenary Contract",
             "RequiredAge": 3
         },
@@ -766,7 +758,7 @@
             "note": "高级佣兵合同",
             "civilizations": "Italians",
             "tech_id": 3115,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Advanced Mercenary Contract",
             "RequiredAge": 4
         },
@@ -851,7 +843,7 @@
             "note": "象阵",
             "civilizations": "Vietnamese",
             "tech_id": 3124,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Elephant Formation",
             "RequiredAge": 4
         },
@@ -859,7 +851,7 @@
             "note": "信使",
             "civilizations": "Incas",
             "tech_id": 3125,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Couriers",
             "RequiredAge": 3
         },
@@ -867,7 +859,7 @@
             "note": "奇普",
             "civilizations": "Incas",
             "tech_id": 3126,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Quipu",
             "RequiredAge": 4
         },
@@ -891,7 +883,7 @@
             "note": "金玺诏书",
             "civilizations": "Teutons",
             "tech_id": 3130,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Die Goldene Bulle",
             "RequiredAge": 3
         },
@@ -899,7 +891,7 @@
             "note": "骑士册封",
             "civilizations": "Teutons",
             "tech_id": 3175,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Accolade",
             "RequiredAge": 4
         },
@@ -907,7 +899,7 @@
             "note": "使徒",
             "civilizations": "Armenians",
             "tech_id": 3131,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Apostle",
             "RequiredAge": 3
         },
@@ -939,7 +931,7 @@
             "note": "维利奇卡盐矿",
             "civilizations": "Poles",
             "tech_id": 3133,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Kopalnia Soli Wieliczka",
             "RequiredAge": 3
         },
@@ -947,7 +939,7 @@
             "note": "游击战术",
             "civilizations": "Spanish",
             "tech_id": 3134,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Jinete Tactics",
             "RequiredAge": 4
         },
@@ -987,7 +979,7 @@
             "note": "探险家",
             "civilizations": "Spanish",
             "tech_id": 3135,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Explorer",
             "RequiredAge": 3
         },
@@ -1002,7 +994,7 @@
             "note": "萨格里什学校",
             "civilizations": "Portuguese",
             "tech_id": 3137,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Sagres School",
             "RequiredAge": 3
         },
@@ -1010,7 +1002,7 @@
             "note": "特许状",
             "civilizations": "Portuguese",
             "tech_id": 3459,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Carta Regia",
             "RequiredAge": 4
         },
@@ -1018,7 +1010,7 @@
             "note": "可萨长矛骑兵",
             "civilizations": "Cumans",
             "tech_id": 3245,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Khazar Lancers",
             "RequiredAge": 3
         },
@@ -1026,7 +1018,7 @@
             "note": "西哈弓臂",
             "civilizations": "Cumans",
             "tech_id": 3138,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Siha Bow Limbs",
             "RequiredAge": 4
         },
@@ -1058,7 +1050,7 @@
             "note": "阿伯哈拉战象",
             "civilizations": "Ethiopians",
             "tech_id": 3144,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Abhara Elephant",
             "RequiredAge": 4
         },
@@ -1066,7 +1058,7 @@
             "note": "重型长矛",
             "civilizations": "Ethiopians",
             "tech_id": 3145,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Heavy Spear",
             "RequiredAge": 3
         },
@@ -1189,7 +1181,7 @@
             "note": "手炮",
             "civilizations": "Bohemians",
             "tech_id": 3161,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Pistala",
             "RequiredAge": 4
         },
@@ -1197,7 +1189,7 @@
             "note": "猛安谋克",
             "civilizations": "Jurchens",
             "tech_id": 3162,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Meng'an Mouke",
             "RequiredAge": 3
         },
@@ -1205,7 +1197,7 @@
             "note": "物力钱",
             "civilizations": "Jurchens",
             "tech_id": 3171,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Property Tax",
             "RequiredAge": 4
         },
@@ -1221,7 +1213,7 @@
             "note": "坎达操练",
             "civilizations": "Indians",
             "tech_id": 3168,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Khanda Drills",
             "RequiredAge": 3
         },
@@ -1229,7 +1221,7 @@
             "note": "苏丹王",
             "civilizations": "Indians",
             "tech_id": 3169,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Sultans",
             "RequiredAge": 4
         },
@@ -1237,7 +1229,7 @@
             "note": "日本长枪骑兵",
             "civilizations": "Japanese",
             "tech_id": 3170,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Yari Cavalry",
             "RequiredAge": 4
         },
@@ -1253,7 +1245,7 @@
             "note": "敕令骑士",
             "civilizations": "Franks",
             "tech_id": 3172,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Gendarmes d'ordonnance",
             "RequiredAge": 4
         },
@@ -1261,7 +1253,7 @@
             "note": "总督",
             "civilizations": "Persians",
             "tech_id": 3174,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Satrap",
             "RequiredAge": 3
         },
@@ -1269,7 +1261,7 @@
             "note": "骆驼长矛骑兵",
             "civilizations": "Persians",
             "tech_id": 3173,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Camel Lancer",
             "RequiredAge": 4
         },
@@ -1333,7 +1325,7 @@
             "note": "蒙古和平",
             "civilizations": "Mongols",
             "tech_id": 3176,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Pax Mongolica",
             "RequiredAge": 4
         },
@@ -1389,7 +1381,7 @@
             "note": "橄榄树林",
             "civilizations": "Byzantines",
             "tech_id": 3208,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Olive Grove",
             "RequiredAge": 3
         },
@@ -1397,7 +1389,7 @@
             "note": "宫殿掠夺",
             "civilizations": "Byzantines",
             "tech_id": 3140,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Polutasvarf",
             "RequiredAge": 4
         },
@@ -1421,7 +1413,7 @@
             "note": "钦察援军",
             "civilizations": "Georgians",
             "tech_id": 3212,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Kipchak Reinforcements",
             "RequiredAge": 3
         },
@@ -1429,7 +1421,7 @@
             "note": "山地训练",
             "civilizations": "Georgians",
             "tech_id": 3236,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Hill Training",
             "RequiredAge": 4
         },
@@ -1453,7 +1445,7 @@
             "note": "契丹, 波希米亚获得造船匠",
             "civilizations": ["Bohemians", "Khitans"],
             "tech_id": 373,
-            "building_id": 45,
+            "building_id": 209,
             "Name": "Shipwright",
             "RequiredAge": 4
         },
@@ -1547,7 +1539,7 @@
             "note": "契约军团",
             "civilizations": "Goths",
             "tech_id": 3214,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Foederati Army",
             "RequiredAge": 3
         },
@@ -1555,14 +1547,14 @@
             "note": "格鲁森尼骑兵",
             "civilizations": "Goths",
             "tech_id": 3241,
-            "building_id": 209,
+            "building_id": 109,
             "RequiredAge": 4
         },
         {
             "note": "唐朝",
             "civilizations": "Chinese",
             "tech_id": 3237,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Tang Dynasty",
             "RequiredAge": 3
         },
@@ -1570,7 +1562,7 @@
             "note": "宋朝",
             "civilizations": "Chinese",
             "tech_id": 3238,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Song Dynasty",
             "RequiredAge": 3
         },
@@ -1578,7 +1570,7 @@
             "note": "元朝",
             "civilizations": "Chinese",
             "tech_id": 3239,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Yuan Dynasty",
             "RequiredAge": 3
         },
@@ -1586,7 +1578,7 @@
             "note": "明朝",
             "civilizations": "Chinese",
             "tech_id": 3240,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Qing Dynasty",
             "RequiredAge": 3
         },
@@ -1689,7 +1681,7 @@
             "note": "贵族铁骑的坚毅",
             "civilizations": "Slavs",
             "tech_id": 3243,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Boyar's Fortitude",
             "RequiredAge": 3
         },
@@ -1719,7 +1711,6 @@
             "note": "缅甸禁用干船坞",
             "civilizations": "Burmese",
             "tech_id": 375,
-            "building_id": 45,
             "type": "delete"
         },
         {
@@ -1774,7 +1765,7 @@
             "note": "虔信主义",
             "civilizations": "Dravidians",
             "tech_id": 3413,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Bhakti",
             "RequiredAge": 4
         },
@@ -1872,7 +1863,7 @@
             "note": "阿达加",
             "civilizations": "Berbers",
             "tech_id": 3424,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Adarga",
             "RequiredAge": 3
         },
@@ -1905,7 +1896,7 @@
             "note": "复客制",
             "civilizations": "Wu",
             "tech_id": 3443,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Exempted Tenant System",
             "RequiredAge": 3
         },
@@ -1913,7 +1904,7 @@
             "note": "解烦兵",
             "civilizations": "Wu",
             "tech_id": 3444,
-            "building_id": 209,
+            "building_id": 109,
             "Name": "Trouble-Freeing Army",
             "RequiredAge": 4
         },

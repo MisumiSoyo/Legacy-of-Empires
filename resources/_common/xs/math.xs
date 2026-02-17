@@ -579,3 +579,10 @@ bool AllyCiv(int playerId = -1, int civ = -1)
                 return (true);
     return (false);
 }
+
+
+void SetInfinityStacking(int playerId = -1, int TechID = -1)
+{
+    xsEffectAmount(cModifyTech, TechID, cAttrSetStacking, 1, playerId);
+    xsEffectAmount(cModifyTech, TechID, cAttrSetStackingResearchCap, 32767, playerId);
+}
