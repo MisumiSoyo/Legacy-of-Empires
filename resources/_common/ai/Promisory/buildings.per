@@ -83,6 +83,88 @@
 ;3684
 
 
+;Can-build settlement now works correctly, so it's now important to include it to preserve the build queue
+(defrule
+	(can-build settlement)
+	(building-available settlement)
+	(game-time > 10)
+	(up-compare-const diff-id >= 3)
+	;(dropsite-min-distance wood < 15);stragglers available
+	;(dropsite-min-distance food > 3)
+	(dropsite-min-distance food < 255)
+	(building-available settlement)
+	(wood-amount > 125)
+	(resource-found food)
+	(or(building-type-count-total settlement < 1)
+	(and(dropsite-min-distance food > 4)
+	(game-time > 150)))
+	(building-type-count-total settlement < 2)
+	(or(game-time > 90)
+	(unit-type-count-total villager-forager > 0))
+=>
+	(build settlement)
+	;(chat-to-all "TEST")
+	(set-strategic-number sn-preferred-settlement-placement 6)
+	(set-goal lock-settlement-placement yes)
+)
+(defrule
+	(building-available settlement)
+	(resource-found wood)
+	(can-build settlement)
+	(or(game-time > 120)
+	(or(resource-found gold)
+	(or(resource-found stone)
+	(up-gaia-type-count c: deer-class > 0))))
+	(building-type-count-total settlement < 1)
+	(or(game-time > 180)
+	(unit-type-count-total villager-wood > 0))
+=>
+	(set-strategic-number sn-preferred-settlement-placement 3);wood
+	(set-goal lock-settlement-placement yes)
+	;(chat-to-player my-player-number "Wood settlement .1")
+	(build settlement)
+)
+
+(defrule
+	(can-build settlement)
+	(building-available settlement)
+	(wood-amount > 125)
+	(or(unit-type-count-total villager-forager > 0)
+	(or(dropsite-min-distance food > 3)
+	(and(game-time > 400)
+	(or(unit-type-count-total villager-shepherd > 0)
+	(unit-type-count-total villager-hunter > 0)))))
+	(dropsite-min-distance food < 255)
+	(or(building-type-count-total settlement > 0)
+	(and(unit-type-count livestock-class < 1)
+	(up-gaia-type-count c: boar-class < 1)))
+	(game-time > 20)
+	(building-type-count-total town-center > 0)
+	(building-type-count-total settlement < 2)
+	(up-pending-objects c: settlement < 1)
+=>
+	(set-strategic-number sn-preferred-settlement-placement 6);forage
+	(set-goal lock-settlement-placement yes)
+	;(chat-to-player my-player-number "Food settlement .1")
+	(build settlement)
+	(up-jump-rule 500)
+)
+
+(defrule
+	(can-build settlement)
+	(building-available settlement)
+	(wood-amount > 125)
+	(unit-type-count-total villager-gold > 0)
+	(building-type-count-total town-center > 0)
+	(building-type-count-total settlement < 4)
+	(building-type-count settlement > 1)
+	(up-pending-objects c: settlement < 1)
+=>
+	(set-strategic-number sn-preferred-settlement-placement 4)
+	(set-goal lock-settlement-placement yes)
+	(build settlement)
+)
+
 (defrule
 	(goal migration-state 1)
 =>
@@ -1003,6 +1085,17 @@
     (building-type-count house > 0)
 =>
     (build house)
+)
+
+(defrule
+	(building-available settlement)
+	(up-compare-const diff-id >= 3)
+	(can-build house)
+	(building-type-count-total house < 4)
+	(housing-headroom < 8)
+	(building-type-count-total town-center > 0)
+=>
+	(build house)
 )
 (defrule
 (or	(game-time >= 10)
@@ -3186,6 +3279,61 @@
 )
 
 (defrule
+	(can-build settlement)
+	(up-pending-objects c: settlement < 1)
+	(building-type-count-total settlement > 3)
+	(dropsite-min-distance gold > 4)
+	(dropsite-min-distance gold < 255)
+	(building-type-count-total settlement < 13)
+=>
+	(up-full-reset-search)
+	(up-set-target-point position-self-x)
+	(up-modify-goal temporary-goal6 s:= sn-maximum-town-size)
+	(up-modify-goal temporary-goal6 c:+ 6)
+	(up-filter-distance c: 6 s: temporary-goal6)
+	(up-filter-status c: status-resource c: list-active)
+	(up-find-resource c: gold c: 10)
+	(up-clean-search search-remote object-data-distance search-order-desc)
+	(set-goal temporary-goal2 87654)
+)
+
+(defrule	
+	(goal temporary-goal2 87654)
+	(up-set-target-object search-remote c: 0)
+=>
+	(up-get-point position-object point-x)
+	(set-goal temporary-goal3 5)
+	(set-goal temporary-goal2 87655)
+)
+
+(defrule
+	(goal temporary-goal2 87655)
+	(up-can-build-line 0 point-x c: settlement)
+=>
+	(up-build-line point-x point-x c: settlement)
+	(up-jump-rule 1)
+)
+
+(defrule
+	(goal temporary-goal2 87655)
+	(up-compare-goal temporary-goal3 > 0)
+=>
+	(up-modify-goal temporary-goal3 c:- 1)
+	(up-lerp-tiles point-x position-self-x c: 1)
+	(up-jump-rule -2)
+)
+
+
+(defrule
+	(or(civ-selected incan)
+	(or(civ-selected tupi)
+	(or(civ-selected mapuche)
+	(civ-selected muisca))))
+	(building-type-count settlement < 5)
+=>
+	(up-jump-rule 5)
+)
+(defrule
 (or	(and	(up-pending-objects c: lumber-camp <= 0)
 		(up-pending-objects c: mining-camp <= 0))
 (or	(strategic-number sn-camp-max-distance >= 50)
@@ -3428,6 +3576,8 @@
 	(up-find-resource c: wild-chicken-a c: 10)
 	(up-find-resource c: wild-chicken-b c: 10)
 	(up-find-resource c: wild-chicken-c c: 10)
+	(up-find-resource c: hare-a c: 10)
+	(up-find-resource c: hare-b c: 10)
 	(up-get-search-state local-total)
 )
 
@@ -3489,6 +3639,8 @@
 	(cc-players-unit-type-count 0 wild-chicken-a <= 0)
 	(cc-players-unit-type-count 0 wild-chicken-b <= 0)
 	(cc-players-unit-type-count 0 wild-chicken-c <= 0)
+	(cc-players-unit-type-count 0 hare-a <= 0)
+	(cc-players-unit-type-count 0 hare-b <= 0)
 =>
 	(up-jump-rule 2))
 (defrule
@@ -5050,8 +5202,7 @@
 	(build farm)); end jump
 
 
-
-
+#load-if-defined KHITANS-CIV
 (defrule
     (can-build pasture)
     (or(building-type-count-total barracks > 0)
@@ -5063,7 +5214,77 @@
 =>
     (build pasture)
 )
+#end-if
 
+#load-if-defined MONGOL-CIV
+(defrule
+    (can-build pasture)
+    (or(building-type-count-total barracks > 0)
+    (wood-amount > 275))
+    (building-type-count-total lumber-camp > 0)
+    (building-type-count-total mill > 0)
+	(building-type-count-total town-center > 0)
+    (fe-idle-pasture-count < 1)
+=>
+    (build pasture)
+)
+#end-if
+
+#load-if-defined HUN-CIV
+(defrule
+    (can-build pasture)
+    (or(building-type-count-total barracks > 0)
+    (wood-amount > 275))
+    (building-type-count-total lumber-camp > 0)
+    (building-type-count-total mill > 0)
+	(building-type-count-total town-center > 0)
+    (fe-idle-pasture-count < 1)
+=>
+    (build pasture)
+)
+#end-if
+
+#load-if-defined MAGYAR-CIV
+(defrule
+    (can-build pasture)
+    (or(building-type-count-total barracks > 0)
+    (wood-amount > 275))
+    (building-type-count-total lumber-camp > 0)
+    (building-type-count-total mill > 0)
+	(building-type-count-total town-center > 0)
+    (fe-idle-pasture-count < 1)
+=>
+    (build pasture)
+)
+#end-if
+
+#load-if-defined CUMANS-CIV
+(defrule
+    (can-build pasture)
+    (or(building-type-count-total barracks > 0)
+    (wood-amount > 275))
+    (building-type-count-total lumber-camp > 0)
+    (building-type-count-total mill > 0)
+	(building-type-count-total town-center > 0)
+    (fe-idle-pasture-count < 1)
+=>
+    (build pasture)
+)
+#end-if
+
+#load-if-defined TATARS-CIV
+(defrule
+    (can-build pasture)
+    (or(building-type-count-total barracks > 0)
+    (wood-amount > 275))
+    (building-type-count-total lumber-camp > 0)
+    (building-type-count-total mill > 0)
+	(building-type-count-total town-center > 0)
+    (fe-idle-pasture-count < 1)
+=>
+    (build pasture)
+)
+#end-if
 
 #load-if-not-defined INFINITE-RESOURCES-START
 ;#load-if-defined PORTUGUESE-CIV
@@ -5789,6 +6010,38 @@
 	(disable-self)); end mini jump
 #end-if
 
+;Ship university
+
+(defrule
+	(building-type-count-total dock > 0)
+	(or(unit-type-count-total galley-line > 10)
+	(or(unit-type-count-total fire-ship-line > 10)
+	(or(warboat-count > 20)
+	(or(unit-type-count-total fire-galley-line > 5)
+	(players-unit-type-count target-player galley-line > 1)))));clinker construction matters in this lineup
+	(can-build university)
+	(building-type-count-total university < 1)
+	(building-type-count-total town-center > 0)
+=>
+	(set-goal increase-ts university)
+	(set-goal increase-ts-timer 7)
+)
+
+(defrule
+	(building-type-count-total dock > 0)
+	(or(unit-type-count-total galley-line > 15)
+	(or(unit-type-count-total fire-ship-line > 15)
+	(or(warboat-count > 25)
+	(or(unit-type-count-total fire-galley-line > 8)
+	(players-unit-type-count target-player galley-line > 2)))));clinker construction matters in this lineup
+	(can-build-with-escrow university)
+	(building-type-count-total university < 1)
+	(building-type-count-total town-center > 0)
+	(not(goal increase-ts university))
+=>
+	(release-escrow wood)
+	(build university)
+)
 (defrule
 	(goal increase-ts university)
 (or	(up-pending-objects c: university >= 1)
@@ -10412,7 +10665,10 @@
 #end-if
 #end-if
 #end-if
-
+#load-if-not-defined MUISCA-CIV
+#load-if-not-defined MAPUCHE-CIV;don't want to delete camps that could be farms
+#load-if-not-defined TUPI-CIV
+#load-if-not-defined INCAN-CIV
 (defrule
 	(game-time > 300)
 	(goal relocating yes)
@@ -10611,7 +10867,10 @@
 	(up-find-local c: mining-camp c: 32)
 	(up-remove-objects search-local object-data-researching == 1)
 	(up-target-point 0 action-delete -1 -1))
-
+#end-if
+#end-if
+#end-if
+#end-if
 
 ;(defrule
 ;	(timer-triggered embassy)
@@ -12845,5 +13104,19 @@
 	(up-find-resource c: wood c: 1)
 	;(chat-to-all "Debug: Retreat")
 	(up-target-objects 0 action-gather -1 -1)
+)
+
+;Reset settlement placement back to -1 perodically
+
+(defrule
+	(goal lock-settlement-placement yes)
+=>
+	(set-goal lock-settlement-placement no)
+	(up-jump-rule 1)
+)
+(defrule
+	(timer-triggered threesec)
+=>
+	(set-strategic-number sn-preferred-settlement-placement -1)
 )
 
