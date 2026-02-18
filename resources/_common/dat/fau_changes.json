@@ -497,7 +497,7 @@
             "tech_id": 3076,
             "building_id": 109,
             "Name": "Devsirme",
-            "RequiredAge": 4
+            "RequiredAge": 3
         },
         {
             "note": "教皇国",
@@ -1994,6 +1994,14 @@
             "tech_id": 655,
             "building_id": 87,
             "Name": "Elite Heavy Skirmisher",
+            "RequiredAge": 4
+        },
+        {
+            "note": "旱地行舟",
+            "civilizations": "Turks",
+            "tech_id": 3313,
+            "building_id": 109,
+            "Name": "Sail on Land",
             "RequiredAge": 4
         }
     ]

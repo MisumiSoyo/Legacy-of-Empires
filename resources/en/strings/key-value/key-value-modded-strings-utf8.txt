@@ -81,7 +81,7 @@
 //	Saracens
 120158 "Camel and Naval civilization\n\n• Market -100 wood cost, and trade cost only 5%\n• Transport Ships +100% HP, carry capacity +100% \n• All camel units +25% HP \n• Galley-Line -20% reload time\n• Get 30 food from each trade unit produced\n\n<b>Unique Unit: <b>\n• Mameluke (ranged camel), Assassin (Infantry)\n\n<b>Unique Techs: <b>\n• Bimaristan (Monks passively heal multiple nearby units)\n• Counterweights (Trebuchets and Mangonel-line units +15% all damage)\n• Suftaja (Spawn 8 trade carts, with each market +1)\n• Red Sea Fleet (Warships -20% population space)\n\n<b>Team bonus: <b>\nArcher class unit +3 attack vs Buildings"
 //	Turks
-120159 "Gunpowder civilization \n\n• Gunpowder units +25% HP; researching gunpowder technologies -50% cost; Chemistry free\n• Gold miners +25% work rate\n• Scout Cavalry, Light Cavalry, and Hussar +1P armor \n• Light Cavalry and Hussar upgrades free \n• Elite Steppe Lancer and Heavy Camel Rider upgrade -33% cost\n• Cannon Galleons can move on land\n\n<b>Unique Unit:<b> \n• Janissary (High attack hand cannon), Sipahi (Cavalries that can reduce nearby enemy ranged soldiers' attack speed), Mehter (Cavalry that can strengthen allies)\n\n<b>Unique Techs: <b>\n• Sipahi (Cavalry Archers +20 HP) \n• Artillery (Cannon Tower, Bombard Cannon and Cannon Galley +2 max range)\n• Devsirme (Hand cannoneer class +10 attack vs Infantry)\n\n<b>Team bonus: <b>\nGunpowder units +25% creation speed"
+120159 "Gunpowder civilization \n\n• Gunpowder units +25% HP; researching gunpowder technologies -50% cost; Chemistry free\n• Gold miners +25% work rate\n• Scout Cavalry line upgrades free, and +1 pierce armor\n• Elite Steppe Lancer and Heavy Camel Rider upgrade -33% cost\n• Cannon Galleons can move on land\n\n<b>Unique Unit:<b> \n• Janissary (High attack hand cannon), Sipahi (Cavalries that can reduce nearby enemy ranged soldiers' attack speed), Mehter (Cavalry that can strengthen allies)\n\n<b>Unique Techs: <b>\n• Sipahi (Cavalry Archers +20 HP) \n• Artillery (Cannon Tower, Bombard Cannon and Cannon Galley +2 max range)\n• Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)\n• Sail on Land (Warships can move at 50% speed on land)\n\n<b>Team bonus: <b>\nGunpowder units +25% creation speed"
 //	Vikings
 120160 "Infantry and Naval civilization\n\n• War Ships cost -10%/-15%/-20% at Feudal/Castle/Imperial Age\n• Infantry +20% HP starting at Feudal Age\n• Wheelbarrow, Hand Cart free\n\n<b>Unique Units:<b>\n• Berserk (Infantry with regeneration), Longboat (War ship with multiple arrows), Viking Raiders (High speed infantry that can reduce enemy's work rate)\n\n<b>Unique Techs: <b>\n• Chieftains (Infantry +5 damage vs cavalries, +4 damage vs camels, gain 5 gold for each killed villager and 20 gold for monks and trade units.) \n• Bogsveigar (Archer-line and Longboats +1 attack)\n• Frozen Sea Dominance (Transport Ships +250% hit points; Your land military units near Transport Ships and Longboats get +10% attack speed and regenerate 20 HP per minute, except siege weapons and monks)\n• Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)\n\n<b>Team bonus: <b>\nDock cost -15%"
 //	Mongols
@@ -103,7 +103,7 @@
 //	Hindustanis
 120169 "Camel and Gunpowder civilization \n\n• Villagers -20% cost\n• Camel Rider-Line units -16.67% reload time \n• Gunpowder units +1/+1P armor\n• Can build Caravanserai in Imperial Age\n• All technologies (except age ups) are free but researched 50% slower\n\n<b>Unique Units:<b> \n• Ghulam (Infantry can deal spear damages), Imperial Camel (High-level Camel rider)\n\n<b>Unique Techs: <b>\n• Grand Trunk Road (All gold incomes +10% rate, trading fee reduced to 10%) \n• Shatagni (Hand cannon +2 max range)\n• Khanda Drills (Ghulams and Mansabdars +25% attack speed)\n• Sultans (Infantries/Cavalries/Ranged units cause 9/9/6 additional damage over time vs elephants)\n\n<b>Team bonus: <b>\nAll Camels, Scout Cavalry-Line units, Magyar Huszars, Steppe Lancers and Shrivamsha Riders +2 damage vs Buildings"
 //	Incas
-120170 "Infantry civilization \n\n• Military units -10%/25%/20%/25% food cost in Dark/Feudal/Castle/Imperial Age \n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age) \n• Barracks, Archery Ranges, Stables, Siege Workshop build 100% faster\n• Houses support 10 population \n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +2 LOS\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Slingers (archer better combats with infantries)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack) \n• Fabric Shields (Kamayuks, Slingers , Eagle Warriors +1/2P armor)\n• Couriers (Slingers, Eagle Warriors, Kamayuks and Xolotl Warriors +15% movement speed)\n• Quipu (Shrines +2 construction limit and can train Xolotl Warriors)\n\n<b>Team bonus: <b>\nStart with a free Llama"
+120170 "Infantry civilization \n\n• Military units -10%/25%/20%/25% food cost in Dark/Feudal/Castle/Imperial Age \n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age)\n• Barracks, Archery Ranges, Stables, Siege Workshop build 100% faster\n• Houses and Settlements support +5 population\n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +2 LOS\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Slingers (archer better combats with infantries)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack) \n• Fabric Shields (Kamayuks, Slingers , Eagle Warriors +1/2P armor)\n• Couriers (Slingers, Eagle Warriors, Kamayuks and Xolotl Warriors +15% movement speed)\n• Quipu (Shrines +2 construction limit and can train Xolotl Warriors)\n\n<b>Team bonus: <b>\nStart with a free Llama"
 //	Magyars
 120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 1 garrisoned relics give +1 melee armor to Steppe Lancers (maximum +4)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n• Pasture technologies free\n\n<b>Unique Unit:<b> \n• Magyar Huszar (Light cavalry better combats with siege weapons)\n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food) \n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 //	Slavs
@@ -322,6 +322,7 @@
 500156 "Veteran Heavy Skirmisher"
 500157 "Elite Heavy Skirmisher"
 500158 "Fervor of Battle"
+500159 "Sail on Land"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -373,7 +374,7 @@
 501047 "Research Red Sea Fleet (Warships -20% population space)"
 501048 "Research Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)"
 501049 "Upgrade to Elite Sofa"
-501050 "Research Devsirme (Hand cannoneer class +10 attack vs Infantry)"
+501050 "Research Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)"
 501051 "Research Papal States (Monks regain their faith +50% faster after a successful conversion)"
 501052 "Research Town Defense (Town Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power)"
 501053 "Research Scutage (Gain 250 gold, and each military unit +10)"
@@ -482,6 +483,7 @@
 501156 "Upgrade to Veteran Heavy Skirmisher"
 501157 "Upgrade to Elite Heavy Skirmisher"
 501158 "Research Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP)"
+501159 "Research Sail on Land (Warships can move at 50% speed on land)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>) (time: 30)\nFish ships and Transport ships +25% Movement Speed."
@@ -533,7 +535,7 @@
 521047 "Research <b>Red Sea Fleet<b> (<cost>) (time: 60)\nWarships -20% population space."
 521048 "Research <b>Caravan Guard<b> (<cost>) (time: 45)\nTrade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute."
 521049 "Upgrade to <b>Elite Sofa<b> (<cost>) (time: 60)\nUpgrades your Sofas and lets you create Elite Sofas."
-521050 "Research <b>Devsirme<b> (<cost>) (time: 60)\nHand cannoneer class +10 attack vs Infantry."
+521050 "Research <b>Devsirme<b> (<cost>) (time: 45)\nImmediately spawn 5 Janissaries, and +1 additional spawn for each Town Center."
 521051 "Research <b>Papal States<b> (<cost>) (time: 45)\nMonks regain their faith +50% faster after a successful conversion."
 521052 "Research <b>Town Defense<b> (<cost>) (time: 55)\nTown Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power."
 521053 "Research <b>Scutage<b> (<cost>) (time: 45)\nGain 250 gold, and each military +10."
@@ -642,6 +644,7 @@
 521156 "Upgrade to <b>Veteran Heavy Skirmisher<b> (<cost>) (time: 30)\nUpgrades your Heavy Skirmishers and lets you create Veteran Heavy Skirmishers."
 521157 "Upgrade to <b>Elite Heavy Skirmisher<b> (<cost>) (time: 60)\nUpgrades your Veteran Heavy Skirmishers and lets you create Elite Heavy Skirmishers."
 521158 "Research <b> Fervor of Battle<b> (<cost>) (time: 60)\nMilitia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP."
+521159 "Research <b>Sail on Land<b> (<cost>) (time: 60)\nWarships can move at 50% speed on land."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

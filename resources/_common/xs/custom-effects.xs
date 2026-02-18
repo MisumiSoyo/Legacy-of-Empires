@@ -90,12 +90,12 @@ void EffectFunction10005(int playerId = -1)
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
-    xsTaskAmount(cTaskAttrWorkValue1, 0.245);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.21);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.14);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.12);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cShoreFish, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.175);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.174);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cFarmClass, playerId);
 
     xsTaskAmount(cTaskAttrWorkValue1, 0.215);
@@ -439,13 +439,6 @@ void EffectFunction10017(int playerId = -1)
     xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsResetTaskAmount();
-}
-
-
-// 10018 - Stockfish Trade + Gillnet
-void EffectFunction10018(int playerId = -1)
-{
-    MulResource(playerId, cAttributeGoldFishingProductivity, 1.2);
 }
 
 
@@ -1341,13 +1334,27 @@ void EffectFunction10102(int playerId = -1)
 }
 
 
+//  10103 - Sail on Land
+void EffectFunction10103(int playerId = -1)
+{
+    SetAttribute(playerId, cWarshipClass, cTerrainTable, 0);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrTaskType, cTaskTypeAmphibious);
+    xsTaskAmount(cTaskAttrTerrain, -32);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.5);
+    xsModifyObjectTasks(cWarshipClass, playerId, 1);
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 137  2026.02.18");
+    xsChatData("Build: 138  2026.02.18");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

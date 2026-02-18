@@ -38221,13 +38221,18 @@
                     },
                     {
                         "Name": "Devsirme",
-                        "RequiredAge": 4,
+                        "RequiredAge": 3,
                         "ID": 3076
                     },
                     {
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3078
+                    },
+                    {
+                        "Name": "Sail on Land",
+                        "RequiredAge": 4,
+                        "ID": 3313
                     }
                 ],
                 "Units": [
