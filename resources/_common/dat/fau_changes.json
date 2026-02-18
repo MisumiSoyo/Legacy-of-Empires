@@ -190,7 +190,7 @@
         },
         {
             "note": "小艇",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": [],
             "unit_id": 4032,
             "building_id": 45,
             "Name": "Lembos",
@@ -198,14 +198,14 @@
         },
         {
             "note": "阿兹特克, 玛雅和印加移除箭船系",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": [],
             "unit_id": [21, 442, 539],
             "building_id": 45,
             "type": "delete"
         },
         {
             "note": "阿兹特克, 玛雅和印加移除箭船系",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "civilizations": [],
             "tech_id": 35,
             "building_id": 45,
             "type": "delete"
@@ -2003,6 +2003,102 @@
             "building_id": 109,
             "Name": "Sail on Land",
             "RequiredAge": 4
+        },
+        {
+            "note": "亚美尼亚, 格鲁吉亚林业位置调整",
+            "civilizations": ["Armenians", "Georgians"],
+            "tech_id": 3461,
+            "building_id": 1808,
+            "Name": "Forestry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "印加, 穆伊斯卡, 马普切, 图皮林业位置调整",
+            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
+            "tech_id": 3461,
+            "building_id": 2556,
+            "Name": "Forestry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "印加, 穆伊斯卡, 马普切, 图皮园艺学位置调整",
+            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
+            "tech_id": 3054,
+            "building_id": 2556,
+            "Name": "Horticulture",
+            "RequiredAge": 2
+        },
+        {
+            "note": "印加, 穆伊斯卡, 马普切, 图皮施肥位置调整",
+            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
+            "tech_id": 3055,
+            "building_id": 2556,
+            "Name": "Fertilization",
+            "RequiredAge": 3
+        },
+        {
+            "note": "印加, 穆伊斯卡, 马普切, 图皮育种位置调整",
+            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
+            "tech_id": 3056,
+            "building_id": 2556,
+            "Name": "Breeding",
+            "RequiredAge": 4
+        },
+        {
+            "note": "印加, 穆伊斯卡, 马普切, 图皮经济作物位置调整",
+            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
+            "tech_id": 3057,
+            "building_id": 2556,
+            "Name": "Cash Crop",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练格查战士",
+            "civilizations": "Muisca",
+            "tech_id": 3482,
+            "building_id": 4049,
+            "Name": "Switch to training Guecha Warrior",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练神庙护卫",
+            "civilizations": "Muisca",
+            "tech_id": 3483,
+            "building_id": 4049,
+            "Name": "Switch to training Temple Guard",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练科那",
+            "civilizations": "Mapuche",
+            "tech_id": 3484,
+            "building_id": 4049,
+            "Name": "Switch to training Kona",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练掷石绳骑兵",
+            "civilizations": "Mapuche",
+            "tech_id": 3485,
+            "building_id": 4049,
+            "Name": "Switch to training Bolas Rider",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练黑檀木步弓手",
+            "civilizations": "Tupi",
+            "tech_id": 3486,
+            "building_id": 4049,
+            "Name": "Switch to training Blackwood Archer",
+            "RequiredAge": 3
+        },
+        {
+            "note": "切换到训练伊比拉贝玛战士",
+            "civilizations": "Tupi",
+            "tech_id": 3487,
+            "building_id": 4049,
+            "Name": "Switch to training Ibirapema Warrior",
+            "RequiredAge": 3
         }
     ]
 }

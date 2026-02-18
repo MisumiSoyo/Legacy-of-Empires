@@ -466,6 +466,11 @@
                         "ID": 34,
                         "Name": "Medium Warships",
                         "RequiredAge": 3
+                    },
+                    {
+                        "ID": 35,
+                        "Name": "Heavy Warships",
+                        "RequiredAge": 4
                     }
                 ],
                 "Units": [
@@ -535,9 +540,15 @@
                         "RequiredUnitID": 1104
                     },
                     {
-                        "Name": "Lembos",
-                        "RequiredAge": 2,
-                        "ID": 4032
+                        "ID": 539,
+                        "Name": "Galley",
+                        "RequiredAge": 2
+                    },
+                    {
+                        "ID": 21,
+                        "Name": "War Galley",
+                        "RequiredAge": 3,
+                        "RequiredUnitID": 539
                     }
                 ]
             },
@@ -15770,6 +15781,11 @@
                         "ID": 34,
                         "Name": "Medium Warships",
                         "RequiredAge": 3
+                    },
+                    {
+                        "ID": 35,
+                        "Name": "Heavy Warships",
+                        "RequiredAge": 4
                     }
                 ],
                 "Units": [
@@ -15839,9 +15855,21 @@
                         "RequiredUnitID": 1104
                     },
                     {
-                        "Name": "Lembos",
-                        "RequiredAge": 2,
-                        "ID": 4032
+                        "ID": 539,
+                        "Name": "Galley",
+                        "RequiredAge": 2
+                    },
+                    {
+                        "ID": 21,
+                        "Name": "War Galley",
+                        "RequiredAge": 3,
+                        "RequiredUnitID": 539
+                    },
+                    {
+                        "ID": 442,
+                        "Name": "Galleon",
+                        "RequiredAge": 4,
+                        "RequiredUnitID": 21
                     }
                 ]
             },
@@ -16242,6 +16270,31 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3461
+                    },
+                    {
+                        "Name": "Horticulture",
+                        "RequiredAge": 2,
+                        "ID": 3054
+                    },
+                    {
+                        "Name": "Fertilization",
+                        "RequiredAge": 3,
+                        "ID": 3055
+                    },
+                    {
+                        "Name": "Breeding",
+                        "RequiredAge": 4,
+                        "ID": 3056
+                    },
+                    {
+                        "Name": "Cash Crop",
+                        "RequiredAge": 3,
+                        "ID": 3057
                     }
                 ]
             },
@@ -26713,6 +26766,11 @@
                         "ID": 34,
                         "Name": "Medium Warships",
                         "RequiredAge": 3
+                    },
+                    {
+                        "ID": 35,
+                        "Name": "Heavy Warships",
+                        "RequiredAge": 4
                     }
                 ],
                 "Units": [
@@ -26788,9 +26846,21 @@
                         "RequiredUnitID": 527
                     },
                     {
-                        "Name": "Lembos",
-                        "RequiredAge": 2,
-                        "ID": 4032
+                        "ID": 539,
+                        "Name": "Galley",
+                        "RequiredAge": 2
+                    },
+                    {
+                        "ID": 21,
+                        "Name": "War Galley",
+                        "RequiredAge": 3,
+                        "RequiredUnitID": 539
+                    },
+                    {
+                        "ID": 442,
+                        "Name": "Galleon",
+                        "RequiredAge": 4,
+                        "RequiredUnitID": 21
                     }
                 ]
             },
@@ -48027,6 +48097,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3461
                     }
                 ]
             },
@@ -49107,6 +49182,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3461
                     }
                 ]
             },
@@ -56780,6 +56860,31 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3461
+                    },
+                    {
+                        "Name": "Horticulture",
+                        "RequiredAge": 2,
+                        "ID": 3054
+                    },
+                    {
+                        "Name": "Fertilization",
+                        "RequiredAge": 3,
+                        "ID": 3055
+                    },
+                    {
+                        "Name": "Breeding",
+                        "RequiredAge": 4,
+                        "ID": 3056
+                    },
+                    {
+                        "Name": "Cash Crop",
+                        "RequiredAge": 3,
+                        "ID": 3057
                     }
                 ]
             },
@@ -56855,6 +56960,16 @@
                         "Name": "Switch to training Slinger",
                         "RequiredAge": 3,
                         "ID": 3105
+                    },
+                    {
+                        "Name": "Switch to training Guecha Warrior",
+                        "RequiredAge": 3,
+                        "ID": 3482
+                    },
+                    {
+                        "Name": "Switch to training Temple Guard",
+                        "RequiredAge": 3,
+                        "ID": 3483
                     }
                 ],
                 "Units": []
@@ -57756,6 +57871,31 @@
                         "ID": 429,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3461
+                    },
+                    {
+                        "Name": "Horticulture",
+                        "RequiredAge": 2,
+                        "ID": 3054
+                    },
+                    {
+                        "Name": "Fertilization",
+                        "RequiredAge": 3,
+                        "ID": 3055
+                    },
+                    {
+                        "Name": "Breeding",
+                        "RequiredAge": 4,
+                        "ID": 3056
+                    },
+                    {
+                        "Name": "Cash Crop",
+                        "RequiredAge": 3,
+                        "ID": 3057
                     }
                 ],
                 "Units": [
@@ -57854,6 +57994,16 @@
                         "Name": "Switch to training Slinger",
                         "RequiredAge": 3,
                         "ID": 3105
+                    },
+                    {
+                        "Name": "Switch to training Kona",
+                        "RequiredAge": 3,
+                        "ID": 3484
+                    },
+                    {
+                        "Name": "Switch to training Bolas Rider",
+                        "RequiredAge": 3,
+                        "ID": 3485
                     }
                 ],
                 "Units": []
@@ -58725,6 +58875,31 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3461
+                    },
+                    {
+                        "Name": "Horticulture",
+                        "RequiredAge": 2,
+                        "ID": 3054
+                    },
+                    {
+                        "Name": "Fertilization",
+                        "RequiredAge": 3,
+                        "ID": 3055
+                    },
+                    {
+                        "Name": "Breeding",
+                        "RequiredAge": 4,
+                        "ID": 3056
+                    },
+                    {
+                        "Name": "Cash Crop",
+                        "RequiredAge": 3,
+                        "ID": 3057
                     }
                 ]
             },
@@ -58795,6 +58970,16 @@
                         "Name": "Switch to training Slinger",
                         "RequiredAge": 3,
                         "ID": 3105
+                    },
+                    {
+                        "Name": "Switch to training Blackwood Archer",
+                        "RequiredAge": 3,
+                        "ID": 3486
+                    },
+                    {
+                        "Name": "Switch to training Ibirapema Warrior",
+                        "RequiredAge": 3,
+                        "ID": 3487
                     }
                 ],
                 "Units": []

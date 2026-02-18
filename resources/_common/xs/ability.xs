@@ -242,6 +242,48 @@ void EffectFunction10045(int playerId = -1)  //  Switch to training Xolotl
 }
 
 
+void EffectFunction10106(int playerId = -1)  //  Switch to training Guecha Warrior
+{
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, GuechaWarriorID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 70);
+}
+
+
+void EffectFunction10107(int playerId = -1)  //  Switch to training Temple Guard
+{
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, TempleGuardID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 80);
+}
+
+
+void EffectFunction10108(int playerId = -1)  //  Switch to training Kona
+{
+    xsEffectAmount(cModResource, cAttributeShrineSpawnUnitID, 0, KonaID, playerId);
+    SetResource(playerId, cAttributeShrineSpawnTime, 75);
+}
+
+
+void EffectFunction10109(int playerId = -1)  //  Switch to training Bolas Rider
+{
+    SetResource(playerId, cAttributeShrineSpawnUnitID, BolasRiderID);
+    SetResource(playerId, cAttributeShrineSpawnTime, 60);
+}
+
+
+void EffectFunction10110(int playerId = -1)  //  Switch to training Blackwood Archer
+{
+    SetResource(playerId, cAttributeShrineSpawnUnitID, BlackwoodArcherID);
+    SetResource(playerId, cAttributeShrineSpawnTime, 60);
+}
+
+
+void EffectFunction10111(int playerId = -1)  //  Switch to training Ibirapema Warrior
+{
+    SetResource(playerId, cAttributeShrineSpawnUnitID, IbirapemaWarriorID);
+    SetResource(playerId, cAttributeShrineSpawnTime, 65);
+}
+
+
 void TCSpawnedDeerInit(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -261,7 +303,7 @@ void TCSpawnedDeerInit(int playerId = -1)
 void ShrineInit(int playerId = -1)
 {
     int i = 0;
-    SetInfinityStacking(playerId, 3100  );
+    SetInfinityStacking(playerId, 3100);
     SetInfinityStacking(playerId, 3101);
     SetInfinityStacking(playerId, 3103);
     SetInfinityStacking(playerId, 3104);
@@ -270,12 +312,12 @@ void ShrineInit(int playerId = -1)
     SetInfinityStacking(playerId, 3118);
     SetInfinityStacking(playerId, 3119);
     SetInfinityStacking(playerId, 3127);
-    for (i = 3100; <= 3127)
-        if ((3100 <= i) && (i <= 3106) || (i == 3118) || (i == 3119) || (i == 3127))
-        {
-            xsEffectAmount(cModifyTech, i, cAttrSetStacking, 1, playerId);
-            xsEffectAmount(cModifyTech, i, cAttrSetStackingResearchCap, 32767, playerId);
-        }
+    SetInfinityStacking(playerId, 3482);
+    SetInfinityStacking(playerId, 3483);
+    SetInfinityStacking(playerId, 3484);
+    SetInfinityStacking(playerId, 3485);
+    SetInfinityStacking(playerId, 3486);
+    SetInfinityStacking(playerId, 3487);
     SetResource(playerId, cAttributeShrineSpawnUnitID, ChampiScoutID);
     SetResource(playerId, cAttributeShrineSpawnTime, 45);
 }

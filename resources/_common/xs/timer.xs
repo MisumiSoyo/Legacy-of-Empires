@@ -23,7 +23,10 @@ void Shrine(int playerId = -1, int Time = -1)
     {
         if (xsPlayerAttribute(playerId, cAttributePopulationCap) <= 0.0)
             return;
-        SpawnUnit(playerId, SpawnUnitID, ShrineID, 1, 1000);
+        if (SpawnUnitID == BlackwoodArcherID)
+            SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
+        else
+            SpawnUnit(playerId, SpawnUnitID, ShrineID, 1, 1000);
         SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
     }
 }
@@ -126,6 +129,22 @@ void PortugueseFeitoria(int playerId = -1, int Time = -1)
 }
 
 
+void SpanishExplorer(int playerId = -1, int Time = -1)
+{
+    if (isResearched(playerId, ExplorerTechID) == false)
+        return;
+    float ExplorerGoldRate = 0.015;
+    int i = 0;
+    float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
+    float CurrentGold = 0;
+    for (i = 1; <= xsGetNumPlayers())
+        if (i != playerId)
+            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
+    ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
+    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -148,6 +167,10 @@ void TimerEvent(int playerId = -1, int Time = -1)
         {
             ByzantinesOliveOil(playerId, Time);
             break;
+        }
+        case cSpanish:
+        {
+            SpanishExplorer(playerId, Time);
         }
         case cKoreans:
         {

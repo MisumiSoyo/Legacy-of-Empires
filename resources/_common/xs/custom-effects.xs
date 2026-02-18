@@ -521,7 +521,7 @@ void EffectFunction10038(int playerId = -1)
     MulAttribute(playerId, cFarmClass, cWorkRate, 1.2);
     SetAttribute(playerId, FloatingGardenBuildingID, cRegenerationHpPercent, 0.0 - 1.0 / 3);
     SetAttribute(playerId, FloatingGardenBuildingID, cDeadUnitId, FloatingGardenEndBuildingID);
-    SpawnUnit(playerId, FloatingGardenBuildingID, UniversityID, 1, 1);
+    SpawnUnit(playerId, FloatingGardenBuildingID, TownCenterID, 1, 1);
 }
 
 
@@ -547,7 +547,7 @@ void EffectFunction10039(int playerId = -1)
     MulAttribute(playerId, 50, cWorkRate, 10000);
     SetAttribute(playerId, YumKaaxsBlessingBuildingID, cRegenerationHpPercent, -6);
     SetAttribute(playerId, YumKaaxsBlessingBuildingID, cDeadUnitId, YumKaaxsBlessingEndBuildingID);
-    SpawnUnit(playerId, YumKaaxsBlessingBuildingID, UniversityID, 1, 1);
+    SpawnUnit(playerId, YumKaaxsBlessingBuildingID, TownCenterID, 1, 1);
 
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
@@ -591,7 +591,7 @@ void EffectFunction10040(int playerId = -1)
     SetAttribute(playerId, MercenaryContractBuildingID, cDeadUnitId, MercenaryContractBuildingID);
     SetAttribute(playerId, MercenaryContractBuildingID, cBloodUnitId, MercenaryContractEffectBuildingID);
     SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
-    SpawnUnit(playerId, MercenaryContractBuildingID, UniversityID, 1, 1);
+    SpawnUnit(playerId, MercenaryContractBuildingID, TownCenterID, 1, 1);
 }
 
 
@@ -880,21 +880,6 @@ void EffectFunction10073(int playerId = -1)
             UpgradeUnit(playerId, KnightID, KeshikID);
     
     xsResetTaskAmount();
-}
-
-
-//  Spanish, Explorer
-void EffectFunction10078(int playerId = -1)
-{
-    float ExplorerGoldRate = 0.015;
-    int i = 0;
-    float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
-    float CurrentGold = 0;
-    for (i = 1; <= xsGetNumPlayers())
-        if (i != playerId)
-            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
-    ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
-    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
 }
 
 
@@ -1348,13 +1333,35 @@ void EffectFunction10103(int playerId = -1)
 }
 
 
+//  10104 - Manila Galleon + Blacksmith techs
+void EffectFunction10104(int playerId = -1)
+{
+    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
+    ModAttribute(playerId, ManilaGalleonID, cLineOfSight, 1);
+    ModAttribute(playerId, ManilaGalleonID, cMaxRange, 1);
+
+    if (isResearched(playerId, ManilaGalleonTechID))
+        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
+}
+
+
+//  10105 - Manila Galleon + Chemistry
+void EffectFunction10105(int playerId = -1)
+{
+    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
+
+    if (isResearched(playerId, ManilaGalleonTechID))
+        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 138  2026.02.18");
+    xsChatData("Build: 139  2026.02.18");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

@@ -2653,7 +2653,7 @@
             "Name": "Galley",
             "Name String ID": 14436,
             "Node ID": 539,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Unit",
             "Picture Index": 87,
             "Prerequisite IDs": [
@@ -2683,7 +2683,7 @@
             "Name": "War Galley",
             "Name String ID": 14091,
             "Node ID": 21,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchRequired",
             "Node Type": "UnitUpgrade",
             "Picture Index": 25,
             "Prerequisite IDs": [
@@ -2713,7 +2713,7 @@
             "Name": "Galleon",
             "Name String ID": 14309,
             "Node ID": 442,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchRequired",
             "Node Type": "UnitUpgrade",
             "Picture Index": 60,
             "Prerequisite IDs": [
@@ -5075,36 +5075,6 @@
         },
         {
             "Age ID": 2,
-            "Building ID": 45,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800022,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Lembos",
-            "Name String ID": 700022,
-            "Node ID": 4032,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "RegionalUnit",
-            "Picture Index": 656,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 2,
             "Building ID": 68,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600030,
@@ -5498,7 +5468,7 @@
             "Building ID": 4049,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600076,
-            "Link ID": 3102,
+            "Link ID": -1,
             "Link Node Type": "BuildingTech",
             "Name": "Switch to training Plumed Archer",
             "Name String ID": 500076,

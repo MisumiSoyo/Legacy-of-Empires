@@ -5377,7 +5377,7 @@
         },
         {
             "Age ID": 2,
-            "Building ID": 68,
+            "Building ID": 2556,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600030,
             "Link ID": -1,
@@ -5407,7 +5407,7 @@
         },
         {
             "Age ID": 3,
-            "Building ID": 68,
+            "Building ID": 2556,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600031,
             "Link ID": 3054,
@@ -5437,7 +5437,7 @@
         },
         {
             "Age ID": 4,
-            "Building ID": 68,
+            "Building ID": 2556,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600032,
             "Link ID": 3055,
@@ -5467,7 +5467,7 @@
         },
         {
             "Age ID": 3,
-            "Building ID": 68,
+            "Building ID": 2556,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600002,
             "Link ID": -1,
@@ -5710,7 +5710,7 @@
             "Building ID": 4049,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600073,
-            "Link ID": 3101,
+            "Link ID": -1,
             "Link Node Type": "BuildingTech",
             "Name": "Switch to training Slinger",
             "Name String ID": 500073,
@@ -5737,7 +5737,7 @@
         },
         {
             "Age ID": 3,
-            "Building ID": 562,
+            "Building ID": 2556,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600154,
             "Link ID": -1,
@@ -5745,6 +5745,66 @@
             "Name": "Forestry",
             "Name String ID": 500154,
             "Node ID": 3461,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 4049,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600162,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Switch to training Kona",
+            "Name String ID": 500162,
+            "Node ID": 3484,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 4049,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600163,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Switch to training Bolas Rider",
+            "Name String ID": 500163,
+            "Node ID": 3485,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 0,
