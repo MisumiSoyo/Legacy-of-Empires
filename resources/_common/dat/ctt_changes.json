@@ -993,66 +993,6 @@
         {
             "action": "add",
             "civ_id": "all",
-            "Age ID": 2,
-            "Building ID": 68,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600030,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Horticulture",
-            "Name String ID": 500030,
-            "Node ID": 3054,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
-            "action": "add",
-            "civ_id": "all",
-            "Age ID": 3,
-            "Building ID": 68,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600031,
-            "Link ID": 3054,
-            "Link Node Type": "Research",
-            "Name": "Fertilization",
-            "Name String ID": 500031,
-            "Node ID": 3055,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
-            "action": "add",
-            "civ_id": "all",
-            "Age ID": 4,
-            "Building ID": 68,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600032,
-            "Link ID": 3055,
-            "Link Node Type": "Research",
-            "Name": "Breeding",
-            "Name String ID": 500032,
-            "Node ID": 3056,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
-            "action": "add",
-            "civ_id": "all",
             "Age ID": 3,
             "Building ID": 68,
             "Draw Node Type": "UnitTech",
@@ -1071,27 +1011,7 @@
             "Use Type": "Tech"
         },
         {
-            "action": "modify",
-            "civ_id": "BURGUNDIANS",
-            "Node ID": 3054,
-            "Use Type": "Tech",
-            "Age ID": 1
-        },
-        {
-            "action": "modify",
-            "civ_id": "BURGUNDIANS",
-            "Node ID": 3055,
-            "Use Type": "Tech",
-            "Age ID": 2
-        },
-        {
-            "action": "modify",
-            "civ_id": "BURGUNDIANS",
-            "Node ID": 3056,
-            "Use Type": "Tech",
-            "Age ID": 3
-        },
-        {
+            "note": "勃艮第经济作物时代调整",
             "action": "modify",
             "civ_id": "BURGUNDIANS",
             "Node ID": 3057,
@@ -1099,9 +1019,10 @@
             "Age ID": 2
         },
         {
+            "note": "契丹移除经济作物",
             "action": "delete",
             "civ_id": "KHITANS",
-            "Node ID": [3054, 3055, 3056, 3057],
+            "Node ID": [3057],
             "Use Type": "Tech"
         },
         {
@@ -2708,9 +2629,10 @@
             "Link ID": 437
         },
         {
+            "note": "波兰经济作物位置调整",
             "action": "modify",
             "civ_id": "POLES",
-            "Node ID": [3054, 3055, 3056, 3057],
+            "Node ID": [3057],
             "Use Type": "Tech",
             "Building ID": 1734
         },
@@ -4932,7 +4854,7 @@
             "note": "蒙古, 匈奴, 马扎尔, 鞑靼, 库曼, 契丹失去农田科技",
             "action": "delete",
             "civ_id": ["MONGOLS", "HUNS", "MAGYAR", "TATARS", "CUMANS", "KHITANS"],
-            "Node ID": [12, 13, 14, 3054, 3055, 3056, 3057],
+            "Node ID": [12, 13, 14, 3057],
             "Use Type": "Tech"
         },
         {
@@ -5098,7 +5020,7 @@
             "note": "印加, 穆伊斯卡, 马普切, 图皮经济科技位置调整",
             "action": "modify",
             "civ_id": ["INCAS", "MUISCA", "MAPUCHE", "TUPI"],
-            "Node ID": [3054, 3055, 3056, 3057, 3461],
+            "Node ID": [3057, 3461],
             "Use Type": "Tech",
             "Building ID": 2556
         },

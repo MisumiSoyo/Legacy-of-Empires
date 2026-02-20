@@ -301,30 +301,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "园艺学",
-            "civilizations": "all",
-            "tech_id": 3054,
-            "building_id": 68,
-            "Name": "Horticulture",
-            "RequiredAge": 2
-        },
-        {
-            "note": "施肥",
-            "civilizations": "all",
-            "tech_id": 3055,
-            "building_id": 68,
-            "Name": "Fertilization",
-            "RequiredAge": 3
-        },
-        {
-            "note": "育种",
-            "civilizations": "all",
-            "tech_id": 3056,
-            "building_id": 68,
-            "Name": "Breeding",
-            "RequiredAge": 4
-        },
-        {
             "note": "经济作物",
             "civilizations": "all",
             "tech_id": 3057,
@@ -333,9 +309,9 @@
             "RequiredAge": 3
         },
         {
-            "note": "契丹移除园艺学, 施肥, 育种, 经济作物",
+            "note": "契丹移除经济作物",
             "civilizations": "Khitans",
-            "tech_id": [3054, 3055, 3056, 3057],
+            "tech_id": [3057],
             "building_id": 68,
             "type": "delete"
         },
@@ -2019,30 +1995,6 @@
             "building_id": 2556,
             "Name": "Forestry",
             "RequiredAge": 3
-        },
-        {
-            "note": "印加, 穆伊斯卡, 马普切, 图皮园艺学位置调整",
-            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
-            "tech_id": 3054,
-            "building_id": 2556,
-            "Name": "Horticulture",
-            "RequiredAge": 2
-        },
-        {
-            "note": "印加, 穆伊斯卡, 马普切, 图皮施肥位置调整",
-            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
-            "tech_id": 3055,
-            "building_id": 2556,
-            "Name": "Fertilization",
-            "RequiredAge": 3
-        },
-        {
-            "note": "印加, 穆伊斯卡, 马普切, 图皮育种位置调整",
-            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
-            "tech_id": 3056,
-            "building_id": 2556,
-            "Name": "Breeding",
-            "RequiredAge": 4
         },
         {
             "note": "印加, 穆伊斯卡, 马普切, 图皮经济作物位置调整",
