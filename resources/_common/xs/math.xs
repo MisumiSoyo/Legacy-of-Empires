@@ -586,3 +586,24 @@ void SetInfinityStacking(int playerId = -1, int TechID = -1)
     xsEffectAmount(cModifyTech, TechID, cAttrSetStacking, 1, playerId);
     xsEffectAmount(cModifyTech, TechID, cAttrSetStackingResearchCap, 32767, playerId);
 }
+
+
+void SetTechEffectID(int playerId = -1, int TechID = -1, int EffectID = -1)
+{
+    xsEffectAmount(cModifyTech, TechID, cAttrSetEffect, EffectID, playerId);
+}
+
+
+void ArrayMultipleSetInt(int ArrayID = -1, int StartIndex = -1, int num1 = -1, int num2 = -1, int num3 = -1, int num4 = -1, int num5 = -1, int num6 = -1, int num7 = -1, int num8 = -1, int num9 = -1, int num10 = -1)
+{
+    xsArraySetInt(ArrayID, StartIndex, num1);
+    xsArraySetInt(ArrayID, StartIndex + 1, num2);
+    xsArraySetInt(ArrayID, StartIndex + 2, num3);
+    xsArraySetInt(ArrayID, StartIndex + 3, num4);
+    xsArraySetInt(ArrayID, StartIndex + 4, num5);
+    xsArraySetInt(ArrayID, StartIndex + 5, num6);
+    xsArraySetInt(ArrayID, StartIndex + 6, num7);
+    xsArraySetInt(ArrayID, StartIndex + 7, num8);
+    xsArraySetInt(ArrayID, StartIndex + 8, num9);
+    xsArraySetInt(ArrayID, StartIndex + 9, num10);
+}
