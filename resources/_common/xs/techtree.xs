@@ -8,7 +8,8 @@ void EffectFunction10001(int playerId = -1)
     int playerCiv = xsGetPlayerCivilization(playerId);
 
     //  Some civs' Tithe descriptions adjustment
-    if ((playerCiv == cChinese) || (playerCiv == cJapanese) || (playerCiv == cKoreans) || (playerCiv == cVietnamese) || (playerCiv == cBurmese))
+    if ((playerCiv == cChinese) || (playerCiv == cJapanese) || (playerCiv == cKoreans) || (playerCiv == cVietnamese) || (playerCiv == cBurmese)
+        || (playerCiv == cKhitans) || (playerCiv == cJurchens))
     {
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetName, 500078, playerId);
         xsEffectAmount(cModifyTech, TitheTechID, cAttrSetDescription, 521078, playerId);

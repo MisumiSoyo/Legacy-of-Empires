@@ -2306,8 +2306,9 @@
             "Use Type": "Tech"
         },
         {
+            "note": "东亚文明什一税科技文本调整",
             "action": "modify",
-            "civ_id": ["CHINESE", "JAPANESE", "KOREANS", "VIETNAMESE", "BURMESE", "KHMER"],
+            "civ_id": ["CHINESE", "JAPANESE", "KOREANS", "VIETNAMESE", "BURMESE", "KHMER", "JURCHENS", "KHITANS"],
             "Node ID": 3059,
             "Use Type": "Tech",
             "Help String ID": 600078,
