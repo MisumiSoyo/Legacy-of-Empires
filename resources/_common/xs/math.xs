@@ -124,7 +124,7 @@ void PrintMessage(string Message = "")
 
 bool isAlly(int player1 = -1, int player2 = -1)
 {
-    return (xsPlayerAttribute(player1, cAttributeTeam) == xsPlayerAttribute(player2, cAttributeTeam));
+    return (xsGetDiplomacy(player1, player2) == cDiplomacyAlly);
 }
 
 bool isEnemy(int player1 = -1, int player2 = -1)
