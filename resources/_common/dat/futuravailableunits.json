@@ -2261,6 +2261,11 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 236
                     }
                 ]
             },
@@ -2543,6 +2548,11 @@
                         "ID": 1105,
                         "Name": "Siege Tower",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bombard Cannon",
+                        "RequiredAge": 4,
+                        "ID": 36
                     }
                 ]
             },
@@ -2864,6 +2874,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 64
                     }
                 ]
             },
@@ -3029,6 +3044,11 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3059
+                    },
+                    {
+                        "Name": "Heresy",
+                        "RequiredAge": 4,
+                        "ID": 439
                     }
                 ],
                 "Units": [
@@ -3125,6 +3145,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -12210,6 +12235,11 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 236
                     }
                 ]
             },
@@ -12243,6 +12273,11 @@
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -12280,6 +12315,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -12776,8 +12816,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 375,
@@ -12803,6 +12843,16 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Heated Shot",
+                        "RequiredAge": 3,
+                        "ID": 380
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 64
                     }
                 ]
             },
@@ -12889,6 +12939,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -13064,6 +13119,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -13080,6 +13140,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Forestry",
@@ -13107,6 +13172,11 @@
                         "ID": 48,
                         "Name": "Caravan",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Guilds",
+                        "RequiredAge": 3,
+                        "ID": 15
                     }
                 ],
                 "Units": [

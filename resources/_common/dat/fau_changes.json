@@ -755,8 +755,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 日本启用手推炮",
-            "civilizations": ["Chinese", "Japanese"],
+            "note": "中国, 日本, 不列颠启用手推炮",
+            "civilizations": ["Chinese", "Japanese", "Britons"],
             "unit_id": 36,
             "building_id": 49,
             "Name": "Bombard Cannon",
@@ -1282,16 +1282,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 条顿获得脚踏起重机",
-            "civilizations": ["Teutons", "Chinese"],
+            "note": "中国, 条顿, 法兰克, 契丹获得脚踏起重机",
+            "civilizations": ["Teutons", "Chinese", "Franks", "Khitans"],
             "tech_id": 54,
             "building_id": 209,
             "Name": "Treadmill Crane",
             "RequiredAge": 3
         },
         {
-            "note": "中国启用行会",
-            "civilizations": "Chinese",
+            "note": "中国, 法兰克启用行会",
+            "civilizations": ["Chinese", "Franks"],
             "tech_id": 15,
             "building_id": 84,
             "Name": "Guilds",
@@ -1378,8 +1378,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴获得工兵",
-            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu"],
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1410,16 +1410,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "契丹获得脚踏起重机",
-            "civilizations": "Khitans",
-            "tech_id": 54,
-            "building_id": 209,
-            "Name": "Treadmill Crane",
-            "RequiredAge": 3
-        },
-        {
-            "note": "契丹, 波希米亚获得造船匠",
-            "civilizations": ["Bohemians", "Khitans"],
+            "note": "契丹, 波希米亚, 法兰克获得造船匠",
+            "civilizations": ["Bohemians", "Khitans", "Franks"],
             "tech_id": 373,
             "building_id": 209,
             "Name": "Shipwright",
@@ -1434,22 +1426,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "西西里获得双人锯",
-            "civilizations": "Sicilians",
-            "tech_id": 221,
-            "building_id": 562,
-            "Name": "Two-Man Saw",
-            "RequiredAge": 4
-        },
-        {
-            "note": "高棉获得双人锯",
-            "civilizations": "Khmer",
-            "tech_id": 221,
-            "building_id": 562,
-            "Name": "Two-Man Saw",
-            "RequiredAge": 4
-        },
-        {
             "note": "柏柏尔, 波兰, 意大利获得长戟兵",
             "civilizations": ["Berbers", "Poles", "Italians"],
             "tech_id": 429,
@@ -1458,8 +1434,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles"],
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -1676,8 +1652,8 @@
             "type": "delete"
         },
         {
-            "note": "波希米亚获得预热射击",
-            "civilizations": "Bohemians",
+            "note": "波希米亚, 法兰克获得预热射击",
+            "civilizations": ["Bohemians", "Franks"],
             "tech_id": 380,
             "building_id": 209,
             "Name": "Heated Shot",
@@ -1714,16 +1690,16 @@
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",
@@ -1746,16 +1722,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "埃塞俄比亚, 意大利获得炮塔",
-            "civilizations": ["Ethiopians", "Italians"],
+            "note": "埃塞俄比亚, 意大利, 不列颠, 法兰克获得炮塔",
+            "civilizations": ["Ethiopians", "Italians", "Britons", "Franks"],
             "unit_id": 236,
             "building_id": 118,
             "Name": "Bombard Tower",
             "RequiredAge": 4
         },
         {
-            "note": "埃塞俄比亚, 意大利获得炮塔",
-            "civilizations": ["Ethiopians", "Italians"],
+            "note": "埃塞俄比亚, 意大利, 不列颠, 法兰克获得炮塔",
+            "civilizations": ["Ethiopians", "Italians", "Britons", "Franks"],
             "tech_id": 64,
             "building_id": 209,
             "Name": "Bombard Tower",
@@ -1828,8 +1804,8 @@
             "type": "delete"
         },
         {
-            "note": "孟加拉获得钻井采石法",
-            "civilizations": ["Bengalis"],
+            "note": "孟加拉, 不列颠, 法兰克获得钻井采石法",
+            "civilizations": ["Bengalis", "Britons", "Franks"],
             "tech_id": 279,
             "building_id": 584,
             "Name": "Stone Shaft Mining",
@@ -2051,6 +2027,14 @@
             "building_id": 4049,
             "Name": "Switch to training Ibirapema Warrior",
             "RequiredAge": 3
+        },
+        {
+            "note": "不列颠启用异教",
+            "civilizations": "Britons",
+            "tech_id": 439,
+            "building_id": 104,
+            "Name": "Heresy",
+            "RequiredAge": 4
         }
     ]
 }

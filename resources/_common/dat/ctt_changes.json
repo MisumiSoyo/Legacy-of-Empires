@@ -3226,11 +3226,27 @@
             "Use Type": "Tech"
         },
         {
-            "note": "法兰克获得护腕",
+            "note": "法兰克获得护腕, 造船匠, 工兵, 预热射击, 炮塔, 行会, 双人锯, 钻井采石法, 脚踏起重机",
             "action": "modify",
             "civ_id": "FRANKS",
-            "Node ID": 201,
+            "Node ID": [15, 54, 64, 201, 221, 279, 321, 373, 380],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "法兰克获得劲弩手",
+            "action": "modify",
+            "civ_id": "FRANKS",
+            "Node ID": [492],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "法兰克获得炮塔",
+            "action": "modify",
+            "civ_id": "FRANKS",
+            "Node ID": [236],
+            "Use Type": "Building",
             "Node Status": "ResearchedCompleted"
         },
         {
@@ -5150,6 +5166,30 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "note": "不列颠启用手推炮",
+            "action": "modify",
+            "civ_id": "BRITONS",
+            "Node ID": [36],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "不列颠启用炮塔, 钻井采石法, 异教",
+            "action": "modify",
+            "civ_id": "BRITONS",
+            "Node ID": [64, 279, 439],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "不列颠启用炮塔",
+            "action": "modify",
+            "civ_id": "BRITONS",
+            "Node ID": [236],
+            "Use Type": "Building",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

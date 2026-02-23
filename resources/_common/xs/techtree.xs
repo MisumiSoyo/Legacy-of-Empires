@@ -39,9 +39,26 @@ void EffectFunction10001(int playerId = -1)
 
     switch (playerCiv)
     {
+        case cBritons:
+        {
+            EnableTech(playerId, BombardCannonTechID);
+            EnableTech(playerId, BombardTowerTechID);
+            EnableTech(playerId, HeresyTechID);
+            EnableTech(playerId, StoneShaftMiningTechID);
+            break;
+        }
         case cFranks:
         {
             EnableTech(playerId, BracerTechID);
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, ArbalesterID);
+            EnableTech(playerId, HeatedShotTechID);
+            EnableTech(playerId, BombardTowerTechID);
+            EnableTech(playerId, GuildsTechID);
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, StoneShaftMiningTechID);
+            EnableTech(playerId, TreadmillCraneTechID);
             break;
         }
         case cGoths:

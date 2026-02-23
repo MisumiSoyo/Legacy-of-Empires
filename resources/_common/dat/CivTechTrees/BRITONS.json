@@ -365,7 +365,7 @@
             "Name": "Bombard Tower",
             "Name String ID": 14156,
             "Node ID": 236,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "BuildingNonTech",
             "Picture Index": 42,
             "Prerequisite IDs": [
@@ -2079,7 +2079,7 @@
             "Name": "Bombard Cannon",
             "Name String ID": 14093,
             "Node ID": 36,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Unit",
             "Picture Index": 30,
             "Prerequisite IDs": [
@@ -3341,7 +3341,7 @@
             "Name": "Bombard Tower",
             "Name String ID": 17320,
             "Node ID": 64,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 47,
             "Prerequisite IDs": [
@@ -4391,7 +4391,7 @@
             "Name": "Heresy",
             "Name String ID": 17412,
             "Node ID": 439,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 108,
             "Prerequisite IDs": [
@@ -4841,7 +4841,7 @@
             "Name": "Stone Shaft Mining",
             "Name String ID": 17277,
             "Node ID": 279,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 88,
             "Prerequisite IDs": [

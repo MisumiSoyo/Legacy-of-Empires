@@ -365,7 +365,7 @@
             "Name": "Bombard Tower",
             "Name String ID": 14156,
             "Node ID": 236,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "BuildingNonTech",
             "Picture Index": 42,
             "Prerequisite IDs": [
@@ -969,7 +969,7 @@
             "Name": "Arbalester",
             "Name String ID": 14418,
             "Node ID": 492,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 90,
             "Prerequisite IDs": [
@@ -3341,7 +3341,7 @@
             "Name": "Bombard Tower",
             "Name String ID": 17320,
             "Node ID": 64,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 47,
             "Prerequisite IDs": [
@@ -3491,7 +3491,7 @@
             "Name": "Heated Shot",
             "Name String ID": 17374,
             "Node ID": 380,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 104,
             "Prerequisite IDs": [
@@ -3761,7 +3761,7 @@
             "Name": "Shipwright",
             "Name String ID": 17377,
             "Node ID": 373,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 97,
             "Prerequisite IDs": [
@@ -3791,7 +3791,7 @@
             "Name": "Treadmill Crane",
             "Name String ID": 17054,
             "Node ID": 54,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 60,
             "Prerequisite IDs": [
@@ -4841,7 +4841,7 @@
             "Name": "Stone Shaft Mining",
             "Name String ID": 17277,
             "Node ID": 279,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 88,
             "Prerequisite IDs": [
@@ -4931,7 +4931,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [
@@ -5081,7 +5081,7 @@
             "Name": "Guilds",
             "Name String ID": 17015,
             "Node ID": 15,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 58,
             "Prerequisite IDs": [
