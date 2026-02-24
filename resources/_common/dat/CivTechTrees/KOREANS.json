@@ -1869,7 +1869,7 @@
             "Name": "Siege Ram",
             "Name String ID": 14446,
             "Node ID": 548,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 73,
             "Prerequisite IDs": [
@@ -5291,7 +5291,7 @@
             "Name": "Crop Rotation",
             "Name String ID": 17012,
             "Node ID": 12,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 0,
             "Prerequisite IDs": [

@@ -3881,7 +3881,7 @@
             "Name": "Carvel Hull",
             "Name String ID": 517004,
             "Node ID": 907,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 141,
             "Prerequisite IDs": [
@@ -3941,7 +3941,7 @@
             "Name": "Incendiaries",
             "Name String ID": 517007,
             "Node ID": 910,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 143,
             "Prerequisite IDs": [

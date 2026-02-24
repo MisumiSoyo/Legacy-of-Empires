@@ -5261,7 +5261,7 @@
             "Name": "Crop Rotation",
             "Name String ID": 17012,
             "Node ID": 12,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 0,
             "Prerequisite IDs": [

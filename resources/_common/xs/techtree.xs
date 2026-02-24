@@ -102,6 +102,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HeiKuangCavalryTechID);
             EnableTech(playerId, HeavyHeiKuangCavalryTechID);
             EnableTech(playerId, TreadmillCraneTechID);
+            EnableTech(playerId, CarvelHullTechID);
+            EnableTech(playerId, ClinkerConstructionTechID);
             SetResource(playerId, cAttributeResearchCostMod, 0.95);
             DisableTech(playerId, KnightTechID);
             DisableTech(playerId, CavalierTechID);
@@ -123,25 +125,41 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ArbalesterTechID);
             EnableTech(playerId, BracerTechID);
             EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, FortifiedWallTechID);
+            EnableTech(playerId, KeepTechID);
+            EnableTech(playerId, ArrowslitsTechID);
+            EnableTech(playerId, BombardTowerTechID);
             break;
         }
         case cSaracens:
         {
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, BombardTowerTechID);
+            EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, HeavyScorpionTechID);
+            EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, HeatedShotTechID);
             break;
         }
         case cTurks:
         {
             EnableTech(playerId, SteppeLancerTechID);
             EnableTech(playerId, EliteSteppeLancerTechID);
+            EnableTech(playerId, CropRotationTechID);
             break;
         }
         case cVikings:
         {
+            EnableTech(playerId, ShipwrightTechID);
             DisableTech(playerId, WatchTowerTechID);
+            DisableTech(playerId, ArrowslitsTechID);
             break;
         }
         case cMongols:
         {
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, BombardCannonTechID);
             break;
         }
         case cCelts:
@@ -155,6 +173,12 @@ void EffectFunction10001(int playerId = -1)
         }
         case cSpanish:
         {
+            EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, CrossbowmanTechID);
+            EnableTech(playerId, ArbalesterTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, HeavyScorpionTechID);
+            DisableTech(playerId, StoneShaftMiningTechID);
             break;
         }
         case cAztecs:
@@ -187,6 +211,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, HoardingsTechID);
+            EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, SiegeRamTechID);
             break;
         }
         case cItalians:

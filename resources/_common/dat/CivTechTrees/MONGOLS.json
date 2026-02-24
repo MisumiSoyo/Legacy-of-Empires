@@ -72,7 +72,7 @@
             "Building upgraded from ID": -1,
             "Draw Node Type": "Building",
             "Help String ID": 105171,
-            "Link ID": 12,
+            "Link ID": -1,
             "Link Node Type": "BuildingTech",
             "Name": "Stable",
             "Name String ID": 14171,
@@ -2139,7 +2139,7 @@
             "Name": "Bombard Cannon",
             "Name String ID": 14093,
             "Node ID": 36,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Unit",
             "Picture Index": 30,
             "Prerequisite IDs": [
@@ -4991,7 +4991,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [

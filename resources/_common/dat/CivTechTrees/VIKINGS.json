@@ -3523,7 +3523,7 @@
             "Name": "Guard Tower",
             "Name String ID": 17186,
             "Node ID": 140,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 76,
             "Prerequisite IDs": [
@@ -3613,7 +3613,7 @@
             "Name": "Arrowslits",
             "Name String ID": 17278,
             "Node ID": 608,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 119,
             "Prerequisite IDs": [
@@ -3853,7 +3853,7 @@
             "Name": "Shipwright",
             "Name String ID": 17377,
             "Node ID": 373,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 97,
             "Prerequisite IDs": [

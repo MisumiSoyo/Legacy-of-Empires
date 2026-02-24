@@ -939,7 +939,7 @@
             "Name": "Crossbowman",
             "Name String ID": 14084,
             "Node ID": 24,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 18,
             "Prerequisite IDs": [
@@ -969,7 +969,7 @@
             "Name": "Arbalester",
             "Name String ID": 14418,
             "Node ID": 492,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 90,
             "Prerequisite IDs": [
@@ -2049,7 +2049,7 @@
             "Name": "Heavy Scorpion",
             "Name String ID": 14439,
             "Node ID": 542,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 89,
             "Prerequisite IDs": [
@@ -3431,7 +3431,7 @@
             "Name": "Siege Engineers",
             "Name String ID": 17378,
             "Node ID": 377,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 101,
             "Prerequisite IDs": [
@@ -4901,7 +4901,7 @@
             "Name": "Stone Shaft Mining",
             "Name String ID": 17277,
             "Node ID": 279,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 88,
             "Prerequisite IDs": [
@@ -5231,7 +5231,7 @@
             "Name": "Crop Rotation",
             "Name String ID": 17012,
             "Node ID": 12,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 0,
             "Prerequisite IDs": [

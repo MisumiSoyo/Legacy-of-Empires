@@ -333,7 +333,7 @@
             "Name": "Keep",
             "Name String ID": 14155,
             "Node ID": 235,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "BuildingNonTech",
             "Picture Index": 26,
             "Prerequisite IDs": [
@@ -365,7 +365,7 @@
             "Name": "Bombard Tower",
             "Name String ID": 14156,
             "Node ID": 236,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "BuildingNonTech",
             "Picture Index": 42,
             "Prerequisite IDs": [
@@ -525,7 +525,7 @@
             "Name": "Fortified Wall",
             "Name String ID": 14204,
             "Node ID": 155,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "BuildingNonTech",
             "Picture Index": 32,
             "Prerequisite IDs": [
@@ -3403,7 +3403,7 @@
             "Name": "Fortified Wall",
             "Name String ID": 17163,
             "Node ID": 194,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 46,
             "Prerequisite IDs": [
@@ -3463,7 +3463,7 @@
             "Name": "Bombard Tower",
             "Name String ID": 17320,
             "Node ID": 64,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 47,
             "Prerequisite IDs": [
@@ -3583,7 +3583,7 @@
             "Name": "Keep",
             "Name String ID": 17063,
             "Node ID": 63,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 16,
             "Prerequisite IDs": [
@@ -3643,7 +3643,7 @@
             "Name": "Arrowslits",
             "Name String ID": 17278,
             "Node ID": 608,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 119,
             "Prerequisite IDs": [

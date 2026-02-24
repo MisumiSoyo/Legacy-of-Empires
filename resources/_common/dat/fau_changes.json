@@ -49,6 +49,12 @@
             "type": "delete"
         },
         {
+            "note": "哥特, 维京和匈奴移除箭塔系和射箭槽",
+            "civilizations": ["Goths", "Vikings", "Huns"],
+            "tech_id": [63, 140, 608],
+            "type": "delete"
+        },
+        {
             "note": "瓦兰吉卫队",
             "civilizations": "Byzantines",
             "unit_id": 4011,
@@ -755,8 +761,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 日本, 不列颠启用手推炮",
-            "civilizations": ["Chinese", "Japanese", "Britons"],
+            "note": "中国, 日本, 不列颠, 蒙古启用手推炮",
+            "civilizations": ["Chinese", "Japanese", "Britons", "Mongols"],
             "unit_id": 36,
             "building_id": 49,
             "Name": "Bombard Cannon",
@@ -779,8 +785,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴启用轮作",
-            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu"],
+            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽启用轮作",
+            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -796,8 +802,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭, 条顿获得建筑学",
-            "civilizations": ["Teutons", "Byzantines"],
+            "note": "拜占庭, 条顿, 萨拉森获得建筑学",
+            "civilizations": ["Teutons", "Byzantines", "Saracens"],
             "tech_id": 51,
             "building_id": 209,
             "Name": "Architecture",
@@ -1274,14 +1280,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用手推炮",
-            "civilizations": "Chinese",
-            "unit_id": 36,
-            "building_id": 49,
-            "Name": "Bombard Cannon",
-            "RequiredAge": 4
-        },
-        {
             "note": "中国, 条顿, 法兰克, 契丹获得脚踏起重机",
             "civilizations": ["Teutons", "Chinese", "Franks", "Khitans"],
             "tech_id": 54,
@@ -1378,8 +1376,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克获得工兵",
-            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks"],
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1410,8 +1408,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "契丹, 波希米亚, 法兰克获得造船匠",
-            "civilizations": ["Bohemians", "Khitans", "Franks"],
+            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京获得造船匠",
+            "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens"],
             "tech_id": 373,
             "building_id": 209,
             "Name": "Shipwright",
@@ -1434,8 +1432,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks"],
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -1638,8 +1636,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "阿兹特克, 玛雅, 印加禁用钻井采金法, 钻井采石法",
-            "civilizations": ["Aztecs", "Mayans", "Incas"],
+            "note": "阿兹特克, 玛雅, 印加, 西班牙禁用钻井采金法, 钻井采石法",
+            "civilizations": ["Aztecs", "Mayans", "Incas", "Spanish"],
             "tech_id": [182, 279],
             "building_id": 584,
             "type": "delete"
@@ -1652,8 +1650,8 @@
             "type": "delete"
         },
         {
-            "note": "波希米亚, 法兰克获得预热射击",
-            "civilizations": ["Bohemians", "Franks"],
+            "note": "波希米亚, 法兰克, 萨拉森获得预热射击",
+            "civilizations": ["Bohemians", "Franks", "Saracens"],
             "tech_id": 380,
             "building_id": 209,
             "Name": "Heated Shot",
@@ -1666,8 +1664,8 @@
             "type": "delete"
         },
         {
-            "note": "缅甸, 吴获得射箭槽",
-            "civilizations": ["Burmese", "Wu"],
+            "note": "缅甸, 吴, 波斯获得射箭槽",
+            "civilizations": ["Burmese", "Wu", "Persians"],
             "tech_id": 608,
             "building_id": 209,
             "Name": "Arrowslits",
@@ -1690,16 +1688,32 @@
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks"],
+            "note": "西班牙启用弩手",
+            "civilizations": ["Spanish"],
+            "unit_id": 24,
+            "building_id": 87,
+            "Name": "Crossbowman",
+            "RequiredAge": 3
+        },
+        {
+            "note": "西班牙启用弩手",
+            "civilizations": ["Spanish"],
+            "tech_id": 100,
+            "building_id": 87,
+            "Name": "Crossbowman",
+            "RequiredAge": 3
+        },
+        {
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",
@@ -1722,16 +1736,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "埃塞俄比亚, 意大利, 不列颠, 法兰克获得炮塔",
-            "civilizations": ["Ethiopians", "Italians", "Britons", "Franks"],
+            "note": "埃塞俄比亚, 意大利, 不列颠, 法兰克, 萨拉森, 波斯获得炮塔",
+            "civilizations": ["Ethiopians", "Italians", "Britons", "Franks", "Saracens", "Persians"],
             "unit_id": 236,
             "building_id": 118,
             "Name": "Bombard Tower",
             "RequiredAge": 4
         },
         {
-            "note": "埃塞俄比亚, 意大利, 不列颠, 法兰克获得炮塔",
-            "civilizations": ["Ethiopians", "Italians", "Britons", "Franks"],
+            "note": "埃塞俄比亚, 意大利, 不列颠, 法兰克, 萨拉森, 波斯获得炮塔",
+            "civilizations": ["Ethiopians", "Italians", "Britons", "Franks", "Saracens", "Persians"],
             "tech_id": 64,
             "building_id": 209,
             "Name": "Bombard Tower",
@@ -1861,8 +1875,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "吴获得垛墙",
-            "civilizations": "Wu",
+            "note": "吴, 波斯获得垛墙",
+            "civilizations": ["Wu", "Persians"],
             "tech_id": 194,
             "building_id": 209,
             "Name": "Fortified Wall",
@@ -2030,10 +2044,59 @@
         },
         {
             "note": "不列颠启用异教",
-            "civilizations": "Britons",
+            "civilizations": ["Britons"],
             "tech_id": 439,
             "building_id": 104,
             "Name": "Heresy",
+            "RequiredAge": 4
+        },
+        {
+            "note": "萨拉森启用重型弩炮",
+            "civilizations": ["Saracens"],
+            "tech_id": 239,
+            "building_id": 49,
+            "Name": "Heavy Scorpion",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用平铺船体",
+            "civilizations": ["Chinese"],
+            "tech_id": 907,
+            "building_id": 209,
+            "Name": "Carvel Hull",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用燃烧弹",
+            "civilizations": ["Chinese"],
+            "tech_id": 910,
+            "building_id": 209,
+            "Name": "Incendiaries",
+            "RequiredAge": 4
+        },
+        {
+            "note": "波斯获得大型箭塔",
+            "civilizations": ["Persians"],
+            "tech_id": 63,
+            "building_id": 209,
+            "Name": "Keep",
+            "RequiredAge": 4,
+            "RequiredTechID": 140
+        },
+        {
+            "note": "高丽获得重型冲车",
+            "civilizations": ["Koreans"],
+            "tech_id": 255,
+            "building_id": 49,
+            "Name": "Siege Ram",
+            "RequiredAge": 4
+        },
+        {
+            "note": "高丽获得重型冲车",
+            "civilizations": ["Koreans"],
+            "unit_id": 548,
+            "building_id": 49,
+            "Name": "Siege Ram",
             "RequiredAge": 4
         }
     ]

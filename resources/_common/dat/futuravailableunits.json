@@ -9566,6 +9566,16 @@
                         "Name": "Siege Engineers",
                         "RequiredAge": 4,
                         "ID": 377
+                    },
+                    {
+                        "Name": "Carvel Hull",
+                        "RequiredAge": 4,
+                        "ID": 907
+                    },
+                    {
+                        "Name": "Incendiaries",
+                        "RequiredAge": 4,
+                        "ID": 910
                     }
                 ]
             },
@@ -20998,6 +21008,11 @@
                         "ID": 980,
                         "Name": "Heavy Rocket Cart",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 255
                     }
                 ],
                 "Units": [
@@ -21036,6 +21051,11 @@
                         "ID": 36,
                         "Name": "Bombard Cannon",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 548
                     }
                 ]
             },
@@ -21711,6 +21731,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -27537,6 +27563,11 @@
                         "ID": 1105,
                         "Name": "Siege Tower",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bombard Cannon",
+                        "RequiredAge": 4,
+                        "ID": 36
                     }
                 ]
             },
@@ -28090,6 +28121,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
+                    },
+                    {
                         "Name": "Forestry",
                         "RequiredAge": 3,
                         "ID": 3461
@@ -28286,6 +28322,11 @@
                         "ID": 1754,
                         "Name": "Caravanserai",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 236
                     }
                 ]
             },
@@ -28930,6 +28971,27 @@
                         "Name": "Siege Engineers",
                         "RequiredAge": 4,
                         "ID": 377
+                    },
+                    {
+                        "Name": "Arrowslits",
+                        "RequiredAge": 4,
+                        "ID": 608
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 64
+                    },
+                    {
+                        "Name": "Fortified Wall",
+                        "RequiredAge": 3,
+                        "ID": 194
+                    },
+                    {
+                        "Name": "Keep",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 140,
+                        "ID": 63
                     }
                 ]
             },
@@ -30504,6 +30566,11 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 236
                     }
                 ]
             },
@@ -30774,6 +30841,11 @@
                         "ID": 320,
                         "Name": "Siege Onager",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Heavy Scorpion",
+                        "RequiredAge": 4,
+                        "ID": 239
                     }
                 ],
                 "Units": [
@@ -31111,8 +31183,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 375,
@@ -31143,6 +31215,21 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
+                    },
+                    {
+                        "Name": "Heated Shot",
+                        "RequiredAge": 3,
+                        "ID": 380
+                    },
+                    {
+                        "Name": "Bombard Tower",
+                        "RequiredAge": 4,
+                        "ID": 64
                     }
                 ]
             },
@@ -31229,6 +31316,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -31501,6 +31593,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -33791,6 +33889,16 @@
                         "Name": "Elite Genitour",
                         "RequiredAge": 3,
                         "ID": 599
+                    },
+                    {
+                        "Name": "Crossbowman",
+                        "RequiredAge": 3,
+                        "ID": 100
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -33828,6 +33936,16 @@
                         "Name": "Genitour",
                         "RequiredAge": 2,
                         "ID": 1010
+                    },
+                    {
+                        "Name": "Crossbowman",
+                        "RequiredAge": 3,
+                        "ID": 24
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -34658,11 +34776,6 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
-                    },
-                    {
-                        "ID": 279,
-                        "Name": "Stone Shaft Mining",
-                        "RequiredAge": 3
                     }
                 ]
             },
@@ -34755,6 +34868,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -38068,6 +38187,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -39854,19 +39979,9 @@
                         "RequiredAge": 4
                     },
                     {
-                        "ID": 140,
-                        "Name": "Guard Tower",
-                        "RequiredAge": 3
-                    },
-                    {
                         "ID": 380,
                         "Name": "Heated Shot",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 608,
-                        "Name": "Arrowslits",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 322,
