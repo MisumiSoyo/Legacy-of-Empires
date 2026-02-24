@@ -4633,9 +4633,9 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "吴获得垛墙",
+            "note": "吴, 马扎尔, 波斯获得垛墙",
             "action": "modify",
-            "civ_id": "WU",
+            "civ_id": ["WU", "MAGYAR", "PERSIANS"],
             "Node ID": [155],
             "Use Type": "Building",
             "Node Status": "ResearchedCompleted"
@@ -5218,14 +5218,6 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "波斯启用垛墙",
-            "action": "modify",
-            "civ_id": "PERSIANS",
-            "Node ID": 155,
-            "Use Type": "Building",
-            "Node Status": "ResearchedCompleted"
-        },
-        {
             "note": "土耳其启用轮作",
             "action": "modify",
             "civ_id": "TURKS",
@@ -5280,6 +5272,30 @@
             "Node ID": [279],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
+        },
+        {
+            "note": "马扎尔获得手推炮",
+            "action": "modify",
+            "civ_id": "MAGYAR",
+            "Node ID": [36],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "马扎尔获得护卫, 步兵钢甲, 信念, 垛墙, 建筑学, 行会, 钻井采石法",
+            "action": "modify",
+            "civ_id": "MAGYAR",
+            "Node ID": [15, 45, 51, 77, 194, 215, 279],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "斯拉夫获得建筑学, 护腕, 异教",
+            "action": "modify",
+            "civ_id": "SLAVS",
+            "Node ID": [51, 201, 439],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

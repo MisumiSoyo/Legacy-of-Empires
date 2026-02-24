@@ -23087,6 +23087,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Squires",
+                        "RequiredAge": 3,
+                        "ID": 215
                     }
                 ],
                 "Units": [
@@ -23272,6 +23277,11 @@
                         "ID": 1105,
                         "Name": "Siege Tower",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bombard Cannon",
+                        "RequiredAge": 4,
+                        "ID": 36
                     }
                 ]
             },
@@ -23354,6 +23364,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Plate Mail Armor",
+                        "RequiredAge": 4,
+                        "ID": 77
                     }
                 ]
             },
@@ -23551,6 +23566,16 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
+                    },
+                    {
+                        "Name": "Fortified Wall",
+                        "RequiredAge": 3,
+                        "ID": 194
                     }
                 ]
             },
@@ -23715,6 +23740,12 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3059
+                    },
+                    {
+                        "Name": "Faith",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 46,
+                        "ID": 45
                     }
                 ],
                 "Units": [
@@ -23801,6 +23832,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -23849,6 +23885,11 @@
                         "ID": 48,
                         "Name": "Caravan",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Guilds",
+                        "RequiredAge": 3,
+                        "ID": 15
                     }
                 ],
                 "Units": [
@@ -33164,6 +33205,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "Name": "Bracer",
+                        "RequiredAge": 4,
+                        "ID": 201
                     }
                 ]
             },
@@ -33361,6 +33407,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
                     }
                 ]
             },
@@ -33531,6 +33582,11 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3059
+                    },
+                    {
+                        "Name": "Heresy",
+                        "RequiredAge": 4,
+                        "ID": 439
                     }
                 ],
                 "Units": [

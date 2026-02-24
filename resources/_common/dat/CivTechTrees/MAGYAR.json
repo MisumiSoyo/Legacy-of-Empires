@@ -525,7 +525,7 @@
             "Name": "Fortified Wall",
             "Name String ID": 14204,
             "Node ID": 155,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "BuildingNonTech",
             "Picture Index": 32,
             "Prerequisite IDs": [
@@ -1509,7 +1509,7 @@
             "Name": "Squires",
             "Name String ID": 17210,
             "Node ID": 215,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 80,
             "Prerequisite IDs": [
@@ -2109,7 +2109,7 @@
             "Name": "Bombard Cannon",
             "Name String ID": 14093,
             "Node ID": 36,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Unit",
             "Picture Index": 30,
             "Prerequisite IDs": [
@@ -2559,7 +2559,7 @@
             "Name": "Plate Mail Armor",
             "Name String ID": 17077,
             "Node ID": 77,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 64,
             "Prerequisite IDs": [
@@ -3281,7 +3281,7 @@
             "Name": "Architecture",
             "Name String ID": 17051,
             "Node ID": 51,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 14,
             "Prerequisite IDs": [
@@ -3311,7 +3311,7 @@
             "Name": "Fortified Wall",
             "Name String ID": 17163,
             "Node ID": 194,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 46,
             "Prerequisite IDs": [
@@ -4211,7 +4211,7 @@
             "Name": "Faith",
             "Name String ID": 17045,
             "Node ID": 45,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 11,
             "Prerequisite IDs": [
@@ -4871,7 +4871,7 @@
             "Name": "Stone Shaft Mining",
             "Name String ID": 17277,
             "Node ID": 279,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 88,
             "Prerequisite IDs": [
@@ -5111,7 +5111,7 @@
             "Name": "Guilds",
             "Name String ID": 17015,
             "Node ID": 15,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 58,
             "Prerequisite IDs": [

@@ -235,11 +235,22 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SteppeLancerTechID);
             EnableTech(playerId, EliteSteppeLancerTechID);
             EnableTech(playerId, HandCannoneerTechID);
+            EnableTech(playerId, BombardCannonTechID);
+            EnableTech(playerId, SquiresTechID);
+            EnableTech(playerId, PlateMailArmorTechID);
+            EnableTech(playerId, GuildsTechID);
+            EnableTech(playerId, FortifiedWallTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, StoneShaftMiningTechID);
+            EnableTech(playerId, FaithTechID);
             break;
         }
         case cSlavs:
         {
             EnableTech(playerId, HandCannoneerTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, BracerTechID);
+            EnableTech(playerId, HeresyTechID);
             break;
         }
         case cPortuguese:

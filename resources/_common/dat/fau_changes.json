@@ -761,8 +761,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 日本, 不列颠, 蒙古启用手推炮",
-            "civilizations": ["Chinese", "Japanese", "Britons", "Mongols"],
+            "note": "中国, 日本, 不列颠, 蒙古, 马扎尔启用手推炮",
+            "civilizations": ["Chinese", "Japanese", "Britons", "Mongols", "Magyars"],
             "unit_id": 36,
             "building_id": 49,
             "Name": "Bombard Cannon",
@@ -802,8 +802,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭, 条顿, 萨拉森获得建筑学",
-            "civilizations": ["Teutons", "Byzantines", "Saracens"],
+            "note": "拜占庭, 条顿, 萨拉森, 马扎尔, 斯拉夫获得建筑学",
+            "civilizations": ["Teutons", "Byzantines", "Saracens", "Magyars", "Slavs"],
             "tech_id": 51,
             "building_id": 209,
             "Name": "Architecture",
@@ -1216,8 +1216,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "法兰克, 凯尔特, 波斯, 罗马获得护腕",
-            "civilizations": ["Franks", "Celts", "Persians", "Romans"],
+            "note": "法兰克, 凯尔特, 波斯, 罗马, 斯拉夫获得护腕",
+            "civilizations": ["Franks", "Celts", "Persians", "Romans", "Slavs"],
             "tech_id": 201,
             "building_id": 103,
             "Name": "Bracer",
@@ -1288,8 +1288,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 法兰克启用行会",
-            "civilizations": ["Chinese", "Franks"],
+            "note": "中国, 法兰克, 马扎尔启用行会",
+            "civilizations": ["Chinese", "Franks", "Magyars"],
             "tech_id": 15,
             "building_id": 84,
             "Name": "Guilds",
@@ -1368,8 +1368,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "立陶宛获得步兵钢甲",
-            "civilizations": "Lithuanians",
+            "note": "立陶宛, 马扎尔获得步兵钢甲",
+            "civilizations": ["Lithuanians", "Magyars"],
             "tech_id": 77,
             "building_id": 103,
             "Name": "Plate Mail Armor",
@@ -1818,8 +1818,8 @@
             "type": "delete"
         },
         {
-            "note": "孟加拉, 不列颠, 法兰克获得钻井采石法",
-            "civilizations": ["Bengalis", "Britons", "Franks"],
+            "note": "孟加拉, 不列颠, 法兰克, 马扎尔获得钻井采石法",
+            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars"],
             "tech_id": 279,
             "building_id": 584,
             "Name": "Stone Shaft Mining",
@@ -1875,8 +1875,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "吴, 波斯获得垛墙",
-            "civilizations": ["Wu", "Persians"],
+            "note": "吴, 波斯, 马扎尔获得垛墙",
+            "civilizations": ["Wu", "Persians", "Magyars"],
             "tech_id": 194,
             "building_id": 209,
             "Name": "Fortified Wall",
@@ -2043,8 +2043,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "不列颠启用异教",
-            "civilizations": ["Britons"],
+            "note": "不列颠, 斯拉夫启用异教",
+            "civilizations": ["Britons", "Slavs"],
             "tech_id": 439,
             "building_id": 104,
             "Name": "Heresy",
@@ -2098,6 +2098,23 @@
             "building_id": 49,
             "Name": "Siege Ram",
             "RequiredAge": 4
+        },
+        {
+            "note": "马扎尔获得护卫",
+            "civilizations": ["Magyars"],
+            "tech_id": 215,
+            "building_id": 12,
+            "Name": "Squires",
+            "RequiredAge": 3
+        },
+        {
+            "note": "马扎尔获得信念",
+            "civilizations": ["Magyars"],
+            "tech_id": 45,
+            "building_id": 104,
+            "Name": "Faith",
+            "RequiredAge": 4,
+            "RequiredTechID": 46
         }
     ]
 }

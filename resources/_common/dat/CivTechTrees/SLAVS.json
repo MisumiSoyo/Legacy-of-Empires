@@ -2229,7 +2229,7 @@
             "Name": "Bracer",
             "Name String ID": 17151,
             "Node ID": 201,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 37,
             "Prerequisite IDs": [
@@ -3221,7 +3221,7 @@
             "Name": "Architecture",
             "Name String ID": 17051,
             "Node ID": 51,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 14,
             "Prerequisite IDs": [
@@ -4361,7 +4361,7 @@
             "Name": "Heresy",
             "Name String ID": 17412,
             "Node ID": 439,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 108,
             "Prerequisite IDs": [
