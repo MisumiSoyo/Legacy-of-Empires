@@ -52,7 +52,7 @@
             "action": "add",
             "civ_id": ["PERSIANS", "SARACENS"],
             "Age ID": 3,
-            "Building ID": 12,
+            "Building ID": 82,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800038,
             "Link ID": -1,
@@ -67,8 +67,15 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Unit",
-            "position": "after",
-            "target_id": 359
+            "position": "before",
+            "target_id": 440
+        },
+        {
+            "note": "波斯, 萨拉森移除爆破兵",
+            "action": "delete",
+            "civ_id": ["PERSIANS", "SARACENS"],
+            "Node ID": 440,
+            "Use Type": "Unit"
         },
         {
             "note": "射击军",

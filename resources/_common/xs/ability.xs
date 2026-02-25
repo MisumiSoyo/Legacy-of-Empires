@@ -5,7 +5,7 @@
 include "units.xs";
 
 
-//  Assasins' Ability
+//  Assassins' Ability
 void AssassinInit(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -17,19 +17,13 @@ void AssassinInit(int playerId = -1)
     xsResetTaskAmount();
     xsEffectAmount(cSetAttribute, AssassinID, cSpecialAbility, 3, playerId);
 
-    xsTaskAmount(cTaskAttrWorkValue1, -60);
+    xsTaskAmount(cTaskAttrWorkValue1, -120);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 120.00001);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 120.000010);
     xsTask(AssassinID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 60);
-    xsTask(AssassinID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cTowerClass, playerId);
     xsTaskAmount(cTaskAttrWorkValue1, -20);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 120.00002);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 120.000020);
     xsTaskAmount(cTaskAttrWorkRange, 1);
     xsTask(AssassinID, cTaskTypeStinger, -1, playerId);
     xsTaskAmount(cTaskAttrWorkValue1, 20);
@@ -43,10 +37,10 @@ void AssassinInit(int playerId = -1)
 
     //  since current bugs existing in game, units would never trigger task 157 when their attacks kill target enemies
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.00003);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000030);
     xsTaskAmount(cTaskAttrGatherType, -100);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTask(AssassinID, cTaskTypeLoot, -1, playerId);
-    xsTaskAmount(cTaskAttrGatherType, 100);
     xsTask(AssassinID, cTaskTypeLoot, cBuildingClass, playerId);
     xsTask(AssassinID, cTaskTypeLoot, cWallClass, playerId);
     xsTask(AssassinID, cTaskTypeLoot, cGateClass, playerId);
@@ -54,83 +48,6 @@ void AssassinInit(int playerId = -1)
     xsTask(AssassinID, cTaskTypeLoot, cTowerClass, playerId);
     xsResetTaskAmount();
 }
-
-
-//  Berserks regenerate HP and increase attack speed when attacking
-void BerserkInit(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109);
-    xsTaskAmount(cTaskAttrWorkValue1, 360);
-    xsTask(BerserkID, cTaskTypeStinger, -1, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, -360);
-    xsTask(BerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 480);
-    xsTask(EliteBerserkID, cTaskTypeStinger, -1, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, -480);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cTowerClass, playerId);
-
-    xsTaskAmount(cTaskAttrWorkValue1, -0.1);
-    xsTaskAmount(cTaskAttrWorkValue2, 6);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 10.000001);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
-    xsTask(BerserkID, cTaskTypeStinger, -1, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.1);
-    xsTask(BerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(BerserkID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(MercenaryBerserkID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, -0.1);
-    xsTask(EliteBerserkID, cTaskTypeStinger, -1, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.1);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(EliteBerserkID, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(MercenaryEliteBerserkID, cTaskTypeStinger, cTowerClass, playerId);
-    xsResetTaskAmount();
-
-    LaunchStinger(playerId, BerserkID);
-    LaunchStinger(playerId, EliteBerserkID);
-    LaunchStinger(playerId, MercenaryBerserkID);
-    LaunchStinger(playerId, MercenaryEliteBerserkID);
-}
-
 
 
 //  Viking Raider Task
@@ -735,7 +652,6 @@ void AbilityApplier(int playerId = -1)
 {
     SetNewAttackForms(playerId);
     AssassinInit(playerId);
-    BerserkInit(playerId);
     VikingRaiderInit(playerId);
     TCSpawnedDeerInit(playerId);
     ShrineInit(playerId);

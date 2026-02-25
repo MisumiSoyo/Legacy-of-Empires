@@ -1440,36 +1440,6 @@
             "Use Type": "Unit"
         },
         {
-            "Age ID": 3,
-            "Building ID": 12,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800038,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Assassin",
-            "Name String ID": 700038,
-            "Node ID": 4001,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 163,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
             "Age ID": 2,
             "Building ID": 12,
             "Draw Node Type": "UnitTech",
@@ -3935,15 +3905,15 @@
             "Age ID": 3,
             "Building ID": 82,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 105660,
+            "Help String ID": 800038,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Petard",
-            "Name String ID": 14660,
-            "Node ID": 440,
+            "Name": "Assassin",
+            "Name String ID": 700038,
+            "Node ID": 4001,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "Unit",
-            "Picture Index": 113,
+            "Node Type": "UniqueUnit",
+            "Picture Index": 163,
             "Prerequisite IDs": [
                 0,
                 0,

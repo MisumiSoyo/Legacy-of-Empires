@@ -2,14 +2,6 @@
     "changes":
     [
         {
-            "note": "阿萨辛",
-            "civilizations": ["Saracens", "Persians"],
-            "unit_id": 4001,
-            "building_id": 12,
-            "Name": "Assassin",
-            "RequiredAge": 3
-        },
-        {
             "note": "射击军",
             "civilizations": "Slavs",
             "unit_id": 4002,

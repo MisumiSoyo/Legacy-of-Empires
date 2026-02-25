@@ -28533,11 +28533,6 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Assassin",
-                        "RequiredAge": 3,
-                        "ID": 4001
                     }
                 ]
             },
@@ -30787,11 +30782,6 @@
                         "ID": 358,
                         "Name": "Pikeman",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Assassin",
-                        "RequiredAge": 3,
-                        "ID": 4001
                     }
                 ]
             },
