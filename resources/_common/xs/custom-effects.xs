@@ -28,51 +28,18 @@ void EffectFunction10003(int playerId = -1)
 }
 
 
-//  Frozen Sea Dominance Aura Adder
-void FrozenSeaDominanceAura(int ClassTarget = -1, int playerId = -1)
-{
-    xsTaskAmount(cTaskAttrWorkValue1, 1.0 - 1.0 / 1.1);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 10);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 10);
-    xsTaskAmount(cTaskAttrOwnerType, 1);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
-
-    xsTask(ClassTarget, cTaskTypeAura, cArcherClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cInfantryClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cCavalryClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cConquistadorClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cPetardClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cCavalryArcherClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cHandCannoneerClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cScoutCavalryClass, playerId);
-
-    xsTaskAmount(cTaskAttrWorkValue1, 20);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-
-    xsTask(ClassTarget, cTaskTypeAura, cArcherClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cInfantryClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cCavalryClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cConquistadorClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cPetardClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cCavalryArcherClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cHandCannoneerClass, playerId);
-    xsTask(ClassTarget, cTaskTypeAura, cScoutCavalryClass, playerId);
-}
-
-
-// 10004 - Frozen Sea Dominance Aura Applier
+// 10004 - Piracy
 void EffectFunction10004(int playerId = -1)
 {
-    xsEffectAmount(cAddAttribute, LongBoatID, cCombatAbility, 32, playerId);
-    xsEffectAmount(cAddAttribute, EliteLongBoatID, cCombatAbility, 32, playerId);
-    LaunchAura(playerId, cTransportShipClass);
-
     xsResetTaskAmount();
-    FrozenSeaDominanceAura(LongBoatID, playerId);
-    FrozenSeaDominanceAura(EliteLongBoatID, playerId);
-    FrozenSeaDominanceAura(cTransportShipClass, playerId);
+    xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
+    xsTaskAmount(cTaskAttrObjectId, -1);
+    xsTaskAmount(cTaskAttrObjectClass, 899);
+    xsTaskAmount(cTaskAttrWorkValue1, 40);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    ApplyModifyAllTargets(playerId, cWarshipClass);
+    ApplyModifyBuildingTargets(playerId, cWarshipClass, false);
     xsResetTaskAmount();
 }
 
@@ -673,35 +640,13 @@ void EffectFunction10047(int playerId = -1)
 //  10065 - Sultans
 void EffectFunction10065(int playerId = -1)
 {
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000009);
-    xsTaskAmount(cTaskAttrWorkRange, 1);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrOwnerType, 0);
-    SultansApplier(playerId, 239);
-    SultansApplier(playerId, 558);
-    SultansApplier(playerId, 873);
-    SultansApplier(playerId, 875);
-    SultansApplier(playerId, 1071);
-    SultansApplier(playerId, 1120);
-    SultansApplier(playerId, 1122);
-    SultansApplier(playerId, 1132);
-    SultansApplier(playerId, 1134);
-    SultansApplier(playerId, 1744);
-    SultansApplier(playerId, 1746);
-    xsResetTaskAmount();
-
-    LaunchStinger(playerId, cInfantryClass);
-    LaunchStinger(playerId, cCavalryClass);
-    LaunchStinger(playerId, cScoutCavalryClass);
-    LaunchStinger(playerId, cArcherClass);
-    LaunchStinger(playerId, cCavalryArcherClass);
-    LaunchStinger(playerId, cConquistadorClass);
-    LaunchStinger(playerId, cHandCannoneerClass);
-    ModAttribute(playerId, LiaoDaoID, cCombatAbility, -128);
-    ModAttribute(playerId, EliteLiaoDaoID, cCombatAbility, -128);
-    ModAttribute(playerId, WhiteFeatherGuardID, cCombatAbility, -128);
-    ModAttribute(playerId, EliteWhiteFeatherGuardID, cCombatAbility, -128);
+    AddAttackForm(playerId, cInfantryClass, cDamageClassElephantUnits, 10);
+    AddAttackForm(playerId, cCavalryClass, cDamageClassElephantUnits, 10);
+    AddAttackForm(playerId, cScoutCavalryClass,cDamageClassElephantUnits, 10);
+    AddAttackForm(playerId, cArcherClass, cDamageClassElephantUnits, 6);
+    AddAttackForm(playerId, cCavalryArcherClass, cDamageClassElephantUnits, 6);
+    AddAttackForm(playerId, cConquistadorClass, cDamageClassElephantUnits, 6);
+    AddAttackForm(playerId, cHandCannoneerClass, cDamageClassElephantUnits, 6);
 }
 
 
@@ -1328,7 +1273,7 @@ void EffectFunction10103(int playerId = -1)
     xsTaskAmount(cTaskAttrTaskType, cTaskTypeAmphibious);
     xsTaskAmount(cTaskAttrTerrain, -32);
     xsTaskAmount(cTaskAttrWorkValue1, 0.5);
-    xsModifyObjectTasks(cWarshipClass, playerId, 1);
+    xsModifyObjectTasks(cWarshipClass, playerId, 100);
     xsResetTaskAmount();
 }
 
@@ -1369,7 +1314,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 149  2026.02.26");
+    xsChatData("Build: 150  2026.02.27");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

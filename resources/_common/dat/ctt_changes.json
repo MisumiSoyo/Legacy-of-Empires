@@ -1375,7 +1375,7 @@
             "Use Type": "Tech"
         },
         {
-            "note": "冰海霸权",
+            "note": "海盗行为",
             "action": "add",
             "civ_id": "VIKINGS",
             "Age ID": 3,
@@ -1384,7 +1384,7 @@
             "Help String ID": 600046,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Frozen Sea Dominance",
+            "Name": "Piracy",
             "Name String ID": 500046,
             "Node ID": 3073,
             "Node Status": "ResearchedCompleted",

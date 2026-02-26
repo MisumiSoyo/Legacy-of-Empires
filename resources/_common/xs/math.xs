@@ -520,6 +520,7 @@ void ApplyToAllPlayerTargets(int playerId = -1, int ClassTarget = -1, int TaskTy
     xsTask(ClassTarget, TaskType, cCavalryClass, playerId);
     xsTask(ClassTarget, TaskType, cSiegeWeaponClass, playerId);
     xsTask(ClassTarget, TaskType, cMonkClass, playerId);
+    xsTask(ClassTarget, TaskType, cTradeCartClass, playerId);
     xsTask(ClassTarget, TaskType, cTransportShipClass, playerId);
     xsTask(ClassTarget, TaskType, cFishingBoatClass, playerId);
     xsTask(ClassTarget, TaskType, cWarshipClass, playerId);
@@ -613,7 +614,7 @@ void AddAttackForm(int playerId = -1, int ClassTarget = -1, int DamageClass = -1
 {
     xsEffectAmount(cSetAttribute, ClassTarget, cAddAttackType, DamageClass, playerId);
     if (DefaultValue != 0)
-        SetAttack(playerId, ClassTarget, DamageClass, DefaultValue);
+        ModAttack(playerId, ClassTarget, DamageClass, DefaultValue);
 }
 
 
@@ -621,5 +622,89 @@ void AddArmorForm(int playerId = -1, int ClassTarget = -1, int DamageClass = -1,
 {
     xsEffectAmount(cSetAttribute, ClassTarget, cAddArmorType, DamageClass, playerId);
     if (DefaultValue != 0)
-        SetArmor(playerId, ClassTarget, DamageClass, DefaultValue);
+        ModArmor(playerId, ClassTarget, DamageClass, DefaultValue);
+}
+
+
+void PrintObjectTasks(int playerId = -1, int ObjectID = -1)
+{
+    int i = 0;
+    int TaskCount = xsGetObjectTaskCount(ObjectID, playerId);
+    PrintMessage("player = " + playerId + ", ObjectID = " + ObjectID);
+    for (i = 0; < TaskCount)
+    {
+        xsObjectTaskAmount(ObjectID, playerId, i);
+        PrintMessage("TaskType: " + xsGetTaskAmount(cTaskAttrTaskType) + ", ObjectID = " +
+                     xsGetTaskAmount(cTaskAttrObjectId) + ", ObjectClass = " +
+                     xsGetTaskAmount(cTaskAttrObjectClass));
+    }
+}
+
+
+void ApplyModifyAllTargets(int playerId = -1, int ClassTarget = -1, bool includeBuildings = false)
+{
+    xsTaskAmount(cTaskAttrObjectClass, cArcherClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cTradeBoatClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cVillagerClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cInfantryClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cCavalryClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cSiegeWeaponClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cMonkClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cTradeCartClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cTransportShipClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cFishingBoatClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cWarshipClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cConquistadorClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cPetardClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cCavalryArcherClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cMonkWithRelicClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cHandCannoneerClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cScoutCavalryClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cPackedUnitClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cUnpackedSiegeUnitClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cScorpionClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cKingClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cControlledAnimalClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    if (includeBuildings)
+    {
+        xsTaskAmount(cTaskAttrObjectClass, cBuildingClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+        xsTaskAmount(cTaskAttrObjectClass, cWallClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+        xsTaskAmount(cTaskAttrObjectClass, cGateClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+        xsTaskAmount(cTaskAttrObjectClass, cFarmClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+        xsTaskAmount(cTaskAttrObjectClass, cTowerClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    }
+}
+
+
+void ApplyModifyMilitaryTargets(int playerId = -1, int ClassTarget = -1)
+{
+    xsTaskAmount(cTaskAttrObjectClass, cArcherClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cInfantryClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cCavalryClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cSiegeWeaponClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cMonkClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cTransportShipClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cWarshipClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cConquistadorClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cPetardClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cCavalryArcherClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cMonkWithRelicClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cHandCannoneerClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cScoutCavalryClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cPackedUnitClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cUnpackedSiegeUnitClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cScorpionClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+}
+
+
+void ApplyModifyBuildingTargets(int playerId = -1, int ClassTarget = -1, bool includeWallsAndGates = true)
+{
+    xsTaskAmount(cTaskAttrObjectClass, cBuildingClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cFarmClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    xsTaskAmount(cTaskAttrObjectClass, cTowerClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    if (includeWallsAndGates)
+    {
+        xsTaskAmount(cTaskAttrObjectClass, cWallClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+        xsTaskAmount(cTaskAttrObjectClass, cGateClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
+    }
 }

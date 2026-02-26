@@ -442,11 +442,11 @@
             "RequiredAge": 3
         },
         {
-            "note": "冰海霸权",
+            "note": "海盗行为",
             "civilizations": "Vikings",
             "tech_id": 3073,
             "building_id": 109,
-            "Name": "Frozen Sea Dominance",
+            "Name": "Piracy",
             "RequiredAge": 3
         },
         {
