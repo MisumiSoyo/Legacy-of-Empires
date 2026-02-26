@@ -1355,13 +1355,21 @@ void EffectFunction10105(int playerId = -1)
 }
 
 
+//  10112 - Hussite Reforms Adjustment
+void EffectFunction10112(int playerId = -1)
+{
+    int MonkCount = xsGetObjectCount(playerId, cMonkClass) + xsGetObjectCount(playerId, cMonkWithRelicClass);
+    ModResource(playerId, cAttributeGold, 50 * MonkCount);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 148  2026.02.26");
+    xsChatData("Build: 149  2026.02.26");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

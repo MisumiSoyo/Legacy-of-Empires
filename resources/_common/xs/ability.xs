@@ -428,10 +428,42 @@ void EffectFunction10076(int playerId = -1)
 
 void SetNewAttackForms(int playerId = -1)
 {
-    SetAttack(playerId, cSiegeWeaponClass, cDamageClassSiegeWeaponAttack, -10);
-    SetAttack(playerId, cPackedUnitClass, cDamageClassSiegeWeaponAttack, -10);
-    SetAttack(playerId, cUnpackedSiegeUnitClass, cDamageClassSiegeWeaponAttack, -10);
-    SetAttack(playerId, cScorpionClass, cDamageClassSiegeWeaponAttack, -10);
+    AddAttackForm(playerId, cSiegeWeaponClass, cDamageClassSiegeWeaponAttack, -10);
+    AddAttackForm(playerId, cPackedUnitClass, cDamageClassSiegeWeaponAttack, -10);
+    AddAttackForm(playerId, cUnpackedSiegeUnitClass, cDamageClassSiegeWeaponAttack, -10);
+    AddAttackForm(playerId, cScorpionClass, cDamageClassSiegeWeaponAttack, -10);
+
+    AddAttackForm(playerId, cHandCannoneerClass, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, ConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, EliteConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryEliteConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, BombardCannonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, HoufniceID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, HussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, EliteHussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryHussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryEliteHussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, PetardID, cDamageClassGunpowderAttack);
+}
+
+
+void SetNewArmorForms(int playerId = -1)
+{
+    AddArmorForm(playerId, MonasteryID, cDamageClassMonastery);
+    AddArmorForm(playerId, Monastery2ID, cDamageClassMonastery);
+    AddArmorForm(playerId, Monastery3ID, cDamageClassMonastery);
+    AddArmorForm(playerId, Monastery4ID, cDamageClassMonastery);
+
+    AddArmorForm(playerId, cVillagerClass, cDamageClassVillager);
+
+    AddArmorForm(playerId, ScoutCavalryID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, LightCavalryID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, HussarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, MagyarHuszarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, EliteMagyarHuszarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, MercenaryMagyarHuszarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, MercenaryEliteMagyarHuszarID, cDamageClassLightCavalry);
 }
 
 
@@ -651,6 +683,7 @@ void EffectFunction10098(int playerId = -1)
 void AbilityApplier(int playerId = -1)
 {
     SetNewAttackForms(playerId);
+    SetNewArmorForms(playerId);
     AssassinInit(playerId);
     VikingRaiderInit(playerId);
     TCSpawnedDeerInit(playerId);

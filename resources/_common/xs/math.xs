@@ -607,3 +607,19 @@ void ArrayMultipleSetInt(int ArrayID = -1, int StartIndex = -1, int num1 = -1, i
     xsArraySetInt(ArrayID, StartIndex + 8, num9);
     xsArraySetInt(ArrayID, StartIndex + 9, num10);
 }
+
+
+void AddAttackForm(int playerId = -1, int ClassTarget = -1, int DamageClass = -1, int DefaultValue = 0)
+{
+    xsEffectAmount(cSetAttribute, ClassTarget, cAddAttackType, DamageClass, playerId);
+    if (DefaultValue != 0)
+        SetAttack(playerId, ClassTarget, DamageClass, DefaultValue);
+}
+
+
+void AddArmorForm(int playerId = -1, int ClassTarget = -1, int DamageClass = -1, int DefaultValue = 0)
+{
+    xsEffectAmount(cSetAttribute, ClassTarget, cAddArmorType, DamageClass, playerId);
+    if (DefaultValue != 0)
+        SetArmor(playerId, ClassTarget, DamageClass, DefaultValue);
+}
