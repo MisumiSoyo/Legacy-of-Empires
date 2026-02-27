@@ -1248,8 +1248,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1400,8 +1400,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京获得造船匠",
-            "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens"],
+            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙获得造船匠",
+            "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens", "Portuguese"],
             "tech_id": 373,
             "building_id": 209,
             "Name": "Shipwright",
@@ -1448,8 +1448,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 波兰, 条顿, 意大利, 契丹, 立陶宛获得钻井采金法",
-            "civilizations": ["Goths", "Teutons", "Poles", "Italians", "Khitans", "Lithuanians"],
+            "note": "哥特, 波兰, 条顿, 意大利, 契丹, 立陶宛, 葡萄牙获得钻井采金法",
+            "civilizations": ["Goths", "Teutons", "Poles", "Italians", "Khitans", "Lithuanians", "Portuguese"],
             "tech_id": 182,
             "building_id": 584,
             "Name": "Gold Shaft Mining",
@@ -1656,8 +1656,8 @@
             "type": "delete"
         },
         {
-            "note": "缅甸, 吴, 波斯获得射箭槽",
-            "civilizations": ["Burmese", "Wu", "Persians"],
+            "note": "缅甸, 吴, 波斯, 葡萄牙获得射箭槽",
+            "civilizations": ["Burmese", "Wu", "Persians", "Portuguese"],
             "tech_id": 608,
             "building_id": 209,
             "Name": "Arrowslits",
@@ -2107,6 +2107,14 @@
             "Name": "Faith",
             "RequiredAge": 4,
             "RequiredTechID": 46
+        },
+        {
+            "note": "葡萄牙获得启发",
+            "civilizations": ["Portuguese"],
+            "tech_id": 233,
+            "building_id": 104,
+            "Name": "Illumination",
+            "RequiredAge": 4
         }
     ]
 }

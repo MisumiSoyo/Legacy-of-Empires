@@ -450,6 +450,9 @@ void SetNewAttackForms(int playerId = -1)
 
 void SetNewArmorForms(int playerId = -1)
 {
+    AddArmorForm(playerId, cArcherClass, cDamageClassRoyalHeirs, -3);
+    AddArmorForm(playerId, cHandCannoneerClass, cDamageClassRoyalHeirs, -3);
+
     AddArmorForm(playerId, MonasteryID, cDamageClassMonastery);
     AddArmorForm(playerId, Monastery2ID, cDamageClassMonastery);
     AddArmorForm(playerId, Monastery3ID, cDamageClassMonastery);

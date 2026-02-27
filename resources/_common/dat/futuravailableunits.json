@@ -30081,8 +30081,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 375,
@@ -30108,6 +30108,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Arrowslits",
+                        "RequiredAge": 4,
+                        "ID": 608
                     }
                 ]
             },
@@ -30194,6 +30199,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hoardings",
+                        "RequiredAge": 4,
+                        "ID": 379
                     }
                 ],
                 "Units": [
@@ -30278,6 +30288,11 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3059
+                    },
+                    {
+                        "Name": "Illumination",
+                        "RequiredAge": 4,
+                        "ID": 233
                     }
                 ],
                 "Units": [
@@ -30378,6 +30393,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },

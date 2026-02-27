@@ -52,7 +52,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BracerTechID);
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, SappersTechID);
-            EnableTech(playerId, ArbalesterID);
+            EnableTech(playerId, ArbalesterTechID);
             EnableTech(playerId, HeatedShotTechID);
             EnableTech(playerId, BombardTowerTechID);
             EnableTech(playerId, GuildsTechID);
@@ -255,6 +255,12 @@ void EffectFunction10001(int playerId = -1)
         }
         case cPortuguese:
         {
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, IlluminationTechID);
+            EnableTech(playerId, GoldShaftMiningTechID);
+            EnableTech(playerId, ArrowslitsTechID);
+            EnableTech(playerId, HoardingsTechID);
+            EnableTech(playerId, );
             break;
         }
         case cEthiopians:

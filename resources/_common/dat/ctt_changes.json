@@ -5303,6 +5303,14 @@
             "Node ID": [51, 201, 439],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "葡萄牙获得造船匠, 启发, 钻井采金法, 射箭槽, 围墙",
+            "action": "modify",
+            "civ_id": "PORTUGUESE",
+            "Node ID": [182, 233, 373, 379, 608],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }
