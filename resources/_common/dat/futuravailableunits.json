@@ -113,11 +113,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Shrine",
-                        "RequiredAge": 2,
-                        "ID": 4049
                     }
                 ]
             },
@@ -830,29 +825,19 @@
                         "RequiredAge": 1
                     },
                     {
-                        "ID": 213,
-                        "Name": "Wheelbarrow",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 249,
-                        "Name": "Hand Cart",
-                        "RequiredAge": 3
-                    },
-                    {
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3078
                     },
                     {
                         "Name": "Ixiplta",
-                        "RequiredAge": 4,
+                        "RequiredAge": 3,
                         "ID": 3094
                     },
                     {
-                        "Name": "Floating Garden",
-                        "RequiredAge": 3,
-                        "ID": 3112
+                        "Name": "Cuauhocelotl",
+                        "RequiredAge": 4,
+                        "ID": 3116
                     }
                 ],
                 "Units": [
@@ -965,49 +950,11 @@
                         "RequiredTechID": 14
                     },
                     {
-                        "ID": 12,
-                        "Name": "Crop Rotation",
-                        "RequiredAge": 4,
-                        "RequiredTechID": 13
-                    },
-                    {
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
                     }
                 ]
-            },
-            {
-                "ID": 4049,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Switch to training Champi Scout Line",
-                        "RequiredAge": 2,
-                        "ID": 3100
-                    },
-                    {
-                        "Name": "Switch to training Spearman Line",
-                        "RequiredAge": 2,
-                        "ID": 3101
-                    },
-                    {
-                        "Name": "Switch to training Archer Line",
-                        "RequiredAge": 2,
-                        "ID": 3103
-                    },
-                    {
-                        "Name": "Switch to training Skirmisher Line",
-                        "RequiredAge": 2,
-                        "ID": 3104
-                    },
-                    {
-                        "Name": "Switch to training Jaguar Warrior",
-                        "RequiredAge": 3,
-                        "ID": 3118
-                    }
-                ],
-                "Units": []
             }
         ]
     },

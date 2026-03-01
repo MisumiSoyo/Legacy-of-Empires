@@ -52,6 +52,9 @@ extern const int cAttributeMalayArmyTimer = 702;
 extern const int cAttributeExtraFeitoriaCount = 703;
 extern const int cAttributeForestryProductivity = 704;
 extern const int cAttributeFervorofBattleKillEffect = 705;
+extern const int cAttributeAztecsSpearmanKillUpgradeEffect = 706;
+extern const int cAttributeAztecsSkirmisherKillUpgradeEffect = 707;
+extern const int cAttributeAztecsEagleWarriorKillUpgradeEffect = 708;
 
 
 //  units' IDs
@@ -197,6 +200,11 @@ extern const int FervorofBattleKillEffect2ID = 3440;
 extern const int FervorofBattleKillEffect3ID = 3441;
 extern const int FervorofBattleKillEffect4ID = 3442;
 extern const int FervorofBattleKillEffect5ID = 3443;
+extern const int AztecsSpearmanKillUpgradeEffectID = 3461;
+extern const int AztecsSpearmanKillUpgradeEffect2ID = 3462;
+extern const int AztecsSkirmisherKillUpgradeEffectID = 3463;
+extern const int AztecsEagleWarriorKillUpgradeEffectID = 3464;
+extern const int AztecsEagleWarriorKillUpgradeEffect2ID = 3465;
 
 
 //  Original Unit IDs
@@ -472,6 +480,7 @@ extern const int HeavyCamelTechID = 236;
 extern const int ArbalesterTechID = 237;
 extern const int HeavyScorpionTechID = 239;
 extern const int GalleyTechID = 240;
+extern const int HandCartTechID = 249;
 extern const int LightCavalryTechID = 254;
 extern const int SiegeRamTechID = 255;
 extern const int ChampionTechID = 264;

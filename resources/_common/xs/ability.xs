@@ -475,7 +475,7 @@ void KhanInit(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrWorkFlag2, 30);
-    xsTaskAmount(cTaskAttrCarryCheck, 1);
+    xsTaskAmount(cTaskAttrCarryCheck, 101);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000001);
     xsTaskAmount(cTaskAttrGatherType, 5);

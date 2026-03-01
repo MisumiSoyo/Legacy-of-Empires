@@ -583,6 +583,14 @@
             "tech_id": 3094,
             "building_id": 109,
             "Name": "Ixiplta",
+            "RequiredAge": 3
+        },
+        {
+            "note": "夸乌塞洛特",
+            "civilizations": "Aztecs",
+            "tech_id": 3116,
+            "building_id": 109,
+            "Name": "Cuauhocelotl",
             "RequiredAge": 4
         },
         {
@@ -619,7 +627,7 @@
         },
         {
             "note": "圣坛",
-            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "unit_id": 4049,
             "building_id": 118,
             "Name": "Shrine",
@@ -627,14 +635,14 @@
         },
         {
             "note": "圣坛",
-            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "building_id" : 4049,
             "Name": "Shrine",
             "type": "add"
         },
         {
             "note": "切换到训练昌皮战士系",
-            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3100,
             "building_id": 4049,
             "Name": "Switch to training Champi Scout Line",
@@ -642,7 +650,7 @@
         },
         {
             "note": "切换到训练长矛兵系",
-            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3101,
             "building_id": 4049,
             "Name": "Switch to training Spearman Line",
@@ -650,7 +658,7 @@
         },
         {
             "note": "切换到训练步弓手系",
-            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3103,
             "building_id": 4049,
             "Name": "Switch to training Archer Line",
@@ -658,19 +666,11 @@
         },
         {
             "note": "切换到训练掷矛手系",
-            "civilizations": ["Aztecs", "Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
             "tech_id": 3104,
             "building_id": 4049,
             "Name": "Switch to training Skirmisher Line",
             "RequiredAge": 2
-        },
-        {
-            "note": "切换到训练豹勇士",
-            "civilizations": "Aztecs",
-            "tech_id": 3118,
-            "building_id": 4049,
-            "Name": "Switch to training Jaguar Warrior",
-            "RequiredAge": 3
         },
         {
             "note": "切换到训练羽箭手",
@@ -702,14 +702,6 @@
             "tech_id": 3111,
             "building_id": 109,
             "Name": "Raide Horn",
-            "RequiredAge": 3
-        },
-        {
-            "note": "浮动园地",
-            "civilizations": "Aztecs",
-            "tech_id": 3112,
-            "building_id": 109,
-            "Name": "Floating Garden",
             "RequiredAge": 3
         },
         {
@@ -1635,10 +1627,9 @@
             "type": "delete"
         },
         {
-            "note": "玛雅禁用轮作",
-            "civilizations": "Mayans",
+            "note": "玛雅, 阿兹特克禁用轮作",
+            "civilizations": ["Mayans", "Aztecs"],
             "tech_id": 12,
-            "building_id": 68,
             "type": "delete"
         },
         {
@@ -2115,6 +2106,18 @@
             "building_id": 104,
             "Name": "Illumination",
             "RequiredAge": 4
+        },
+        {
+            "note": "阿兹特克禁用独轮推车",
+            "civilizations": ["Aztecs"],
+            "tech_id": 213,
+            "type": "delete"
+        },
+        {
+            "note": "阿兹特克禁用手推车",
+            "civilizations": ["Aztecs"],
+            "tech_id": 249,
+            "type": "delete"
         }
     ]
 }

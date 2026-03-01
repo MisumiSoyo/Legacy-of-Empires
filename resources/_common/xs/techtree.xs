@@ -32,7 +32,7 @@ void EffectFunction10001(int playerId = -1)
     }
 
     //  Shrine
-    if ((playerCiv != cAztecs) && (playerCiv != cMayans) && (playerCiv != cIncas) && (playerCiv != cMuisca) && (playerCiv != cMapuche) && (playerCiv != cTupi))
+    if ((playerCiv != cMayans) && (playerCiv != cIncas) && (playerCiv != cMuisca) && (playerCiv != cMapuche) && (playerCiv != cTupi))
     {
         DisableTech(playerId, ShrineTechID);
     }
@@ -186,7 +186,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, RingArcherArmorTechID);
             DisableTech(playerId, GoldShaftMiningTechID);
             DisableTech(playerId, StoneShaftMiningTechID);
-            DisableTech(playerId, 3105);
+            DisableTech(playerId, CropRotationTechID);
+            DisableTech(playerId, WheelBarrowTechID);
+            DisableTech(playerId, HandCartTechID);
             break;
         }
         case cMayans:

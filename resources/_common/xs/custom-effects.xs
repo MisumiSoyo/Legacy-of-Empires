@@ -775,11 +775,11 @@ void EffectFunction10072(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkFlag2, 5);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
 
-    xsTaskAmount(cTaskAttrCarryCheck, 5);
+    xsTaskAmount(cTaskAttrCarryCheck, 102);
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000003);
     xsTaskAmount(cTaskAttrGatherType, 5);
     AccoladeApplier(playerId);
-    xsTaskAmount(cTaskAttrCarryCheck, 2);
+    xsTaskAmount(cTaskAttrCarryCheck, 103);
     xsTaskAmount(cTaskAttrSearchWaitTime, 9.000001);
     xsTaskAmount(cTaskAttrGatherType, 1);
     AccoladeApplier(playerId);
@@ -1217,7 +1217,7 @@ void EffectFunction10099(int playerId = -1)
 void EffectFunction10100(int playerId = -1)
 {
     if (xsGetPlayerCivilization(playerId) == cIndians)
-        SetResource(playerId, cAttributeResearchTimeMod, 1.6);
+        SetResource(playerId, cAttributeResearchTimeMod, 2);
     else
         SetResource(playerId, cAttributeResearchTimeMod, 0.8);
 }
@@ -1245,6 +1245,7 @@ void EffectFunction10102(int playerId = -1)
     xsTaskAmount(cTaskAttrUnusedResource, cAttributeFervorofBattleKillEffect);
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000010);
+    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
     xsTask(MilitiaID, cTaskTypeLoot, -1, playerId);
     xsTask(ManAtArmsID, cTaskTypeLoot, -1, playerId);
     xsTask(LongSwordmanID, cTaskTypeLoot,, -1, playerId);
@@ -1273,7 +1274,7 @@ void EffectFunction10103(int playerId = -1)
     xsTaskAmount(cTaskAttrTaskType, cTaskTypeAmphibious);
     xsTaskAmount(cTaskAttrTerrain, -32);
     xsTaskAmount(cTaskAttrWorkValue1, 0.5);
-    xsModifyObjectTasks(cWarshipClass, playerId, 100);
+    xsModifyObjectTasks(cWarshipClass, playerId, 1000);
     xsResetTaskAmount();
 }
 
@@ -1308,13 +1309,70 @@ void EffectFunction10112(int playerId = -1)
 }
 
 
+//  10113 - C-Bonus, upgrade when killing enemies
+void EffectFunction10113(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrUnusedResource, cAttributeAztecsSpearmanKillUpgradeEffect);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
+    xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
+    xsTaskAmount(cTaskAttrObjectId, -1);
+    xsTaskAmount(cTaskAttrObjectClass, 899);
+    xsModifyObjectTasks(SpearmanID, playerId, 1000);
+    xsModifyObjectTasks(PikemanID, playerId, 1000);
+    xsTaskAmount(cTaskAttrUnusedResource, cAttributeAztecsSkirmisherKillUpgradeEffect);
+    xsModifyObjectTasks(SkirmisherID, playerId, 1000);
+    xsTaskAmount(cTaskAttrUnusedResource, cAttributeAztecsEagleWarriorKillUpgradeEffect);
+    xsModifyObjectTasks(EagleScoutID, playerId, 1000);
+    xsModifyObjectTasks(EagleWarriorID, playerId, 1000);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeAztecsSpearmanKillUpgradeEffect, AztecsSpearmanKillUpgradeEffectID);
+    SetResource(playerId, cAttributeAztecsSkirmisherKillUpgradeEffect, AztecsSkirmisherKillUpgradeEffectID);
+    SetResource(playerId, cAttributeAztecsEagleWarriorKillUpgradeEffect, AztecsEagleWarriorKillUpgradeEffectID);
+}
+
+
+//  10114 - Cuauhocelotl
+void EffectFunction10114(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCarryCheck, 2);
+    xsTaskAmount(cTaskAttrGatherType, 2);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrWorkFlag2, 4);
+    ApplyToAllMilitaryTargets(playerId, JaguarWarriorID, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, EliteJaguarWarriorID, cTaskTypeLoot);
+    xsResetTaskAmount();
+
+    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCarryCheck, 104);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrWorkFlag2, 4);
+    xsTaskAmount(cTaskAttrGatherType, 1);
+    xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
+    xsTaskAmount(cTaskAttrObjectId, -1);
+    xsTaskAmount(cTaskAttrObjectClass, 899);
+    xsModifyObjectTasks(EagleScoutID, playerId, 1000);
+    xsModifyObjectTasks(EagleWarriorID, playerId, 1000);
+    xsModifyObjectTasks(EliteEagleWarriorID, playerId, 1000);
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 151  2026.02.27");
+    xsChatData("Build: 153  2026.03.01");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
