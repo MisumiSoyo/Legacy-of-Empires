@@ -4032,10 +4032,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "玛雅禁用轮作",
+            "note": "玛雅禁用轮作, 脚踏起重机",
             "action": "modify",
             "civ_id": "MAYANS",
-            "Node ID": 12,
+            "Node ID": [12, 54],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
         },
@@ -5291,10 +5291,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "阿兹特克禁用轮作, 独轮推车, 手推车",
+            "note": "阿兹特克禁用轮作, 独轮推车, 手推车, 脚踏起重机",
             "action": "modify",
             "civ_id": "AZTECS",
-            "Node ID": [12, 213, 249],
+            "Node ID": [12, 54, 213, 249],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
         }

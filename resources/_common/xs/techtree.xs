@@ -189,12 +189,14 @@ void EffectFunction10001(int playerId = -1)
             DisableTech(playerId, CropRotationTechID);
             DisableTech(playerId, WheelBarrowTechID);
             DisableTech(playerId, HandCartTechID);
+            DisableTech(playerId, TreadmillCraneTechID);
             break;
         }
         case cMayans:
         {
             DisableTech(playerId, StoneShaftMiningTechID);
             DisableTech(playerId, CropRotationTechID);
+            DisableTech(playerId, TreadmillCraneTechID)
             DisableTech(playerId, 3105);
             break;
         }

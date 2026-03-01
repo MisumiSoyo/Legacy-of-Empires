@@ -115,7 +115,7 @@
 //	Magyars
 120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 1 garrisoned relics give +1 melee armor to Steppe Lancers (maximum +4)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n• Cavalry archers can enjoy Bloodlines and Husbandry for free\n\n<b>Unique Unit:<b> \n• Magyar Huszar (Light cavalry better combats with siege weapons)\n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food) \n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 //	Slavs
-120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate\n• Supplies and Gambesons free\n• Siege Workshop units -15% cost\n• Monk class units +20% moving speed \n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood)\n• Druzhina (Infantry units make blast damage)\n• Boyar's Fortitude (Knight-line units and Boyars +5 attack vs buildings)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
+120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate\n• Supplies and Gambesons free\n• Siege Workshop units -15% cost\n• Monk class units +20% moving speed \n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood)\n• Druzhina (Infantry units make blast damage)\n• Boyar's Fortitude (Knight-line units and Boyars +6 attack vs buildings)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
 //	Portuguese
 120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost\n• Foragers generate 0.33 wood per meat\n• Ships +10/15/20% HP at Feudal/Castle/Imperial Age\n• Can build Feitoria in Imperial Age\n• Genitours +10% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b> \n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Circumnavigation (Sets the entire map to explored; Ships train +33% faster)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Sagres School (Docks +80% work rate)\n• Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 //	Ethiopians
@@ -474,7 +474,7 @@
 501132 "Enter Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guanning Cavalry; All military units +10% HP)"
 501133 "Research Greuthungi Cavalry (Knight-line units -50% food cost)"
 501134 "Upgrade to Elephant Archer"
-501135 "Research Boyar's Fortitude (Knight-line units and Boyars +5 attack vs buildings)"
+501135 "Research Boyar's Fortitude (Knight-line units and Boyars +6 attack vs buildings)"
 501136 "Upgrade to Veteran Parthian Cavalry Archer"
 501137 "Research Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)"
 501138 "Upgrade to Elite Goguryeo Heavy Cavalry"
@@ -642,7 +642,7 @@
 521132 "Enter <b>Ming Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nImmediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)"
 521133 "Research <b>Greuthungi Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nKnight-line units -50% food cost."
 521134 "Upgrade to <b>Elephant Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Early Elephant Archers and lets you create Elephant Archers."
-521135 "Research <b>Boyar's Fortitude<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nKnight-line units and Boyars +5 attack vs buildings."
+521135 "Research <b>Boyar's Fortitude<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nKnight-line units and Boyars +6 attack vs buildings."
 521136 "Upgrade to <b>Veteran Parthian Archer<b> (<cost>) (time: 25)\nUpgrades your Parthian Cavalry Archers and lets you create Veteran Parthian Cavalry Archers."
 521137 "Research <b>Khazar Lancers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nSteppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second."
 521138 "Upgrade to <b>Elite Goguryeo Heavy Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Goguryeo Heavy Cavalry and lets you create Elite Goguryeo Heavy Cavalry."

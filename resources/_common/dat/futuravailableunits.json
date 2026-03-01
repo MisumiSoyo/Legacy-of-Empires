@@ -610,11 +610,6 @@
                         "ID": 908,
                         "Name": "Clinker Construction",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 54,
-                        "Name": "Treadmill Crane",
-                        "RequiredAge": 3
                     }
                 ]
             },
@@ -26701,11 +26696,6 @@
                     {
                         "ID": 908,
                         "Name": "Clinker Construction",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 54,
-                        "Name": "Treadmill Crane",
                         "RequiredAge": 3
                     }
                 ]

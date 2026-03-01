@@ -2118,6 +2118,12 @@
             "civilizations": ["Aztecs"],
             "tech_id": 249,
             "type": "delete"
+        },
+        {
+            "note": "阿兹特克, 玛雅禁用脚踏起重机",
+            "civilizations": ["Aztecs", "Mayans"],
+            "tech_id": 54,
+            "type": "delete"
         }
     ]
 }
