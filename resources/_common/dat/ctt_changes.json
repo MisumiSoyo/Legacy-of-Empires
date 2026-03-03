@@ -2995,17 +2995,17 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "罗马修道院提前一个时代",
+            "note": "孟加拉修道院提前一个时代",
             "action": "modify",
-            "civ_id": "ROMANS",
+            "civ_id": "BENGALIS",
             "Node ID": 104,
             "Use Type": "Building",
             "Age ID": 2
         },
         {
-            "note": "罗马僧侣提前一个时代",
+            "note": "孟加拉僧侣提前一个时代",
             "action": "modify",
-            "civ_id": "ROMANS",
+            "civ_id": "BENGALIS",
             "Node ID": 125,
             "Use Type": "Unit",
             "Age ID": 2

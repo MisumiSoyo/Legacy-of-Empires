@@ -578,7 +578,7 @@
             "Use Type": "Building"
         },
         {
-            "Age ID": 2,
+            "Age ID": 3,
             "Building ID": 104,
             "Building in new column": true,
             "Building upgraded from ID": -1,
@@ -4112,7 +4112,7 @@
             "Use Type": "Tech"
         },
         {
-            "Age ID": 2,
+            "Age ID": 3,
             "Building ID": 104,
             "Draw Node Type": "UnitTech",
             "Help String ID": 105099,
