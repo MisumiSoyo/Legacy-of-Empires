@@ -1160,9 +1160,9 @@
             "RequiredAge": 3
         },
         {
-            "note": "物力钱",
+            "note": "拐子马",
             "civilizations": "Jurchens",
-            "tech_id": 3171,
+            "tech_id": 3498,
             "building_id": 109,
             "Name": "Property Tax",
             "RequiredAge": 4
@@ -2123,6 +2123,12 @@
             "note": "阿兹特克, 玛雅禁用脚踏起重机",
             "civilizations": ["Aztecs", "Mayans"],
             "tech_id": 54,
+            "type": "delete"
+        },
+        {
+            "note": "玛雅禁用耕犁",
+            "civilizations": ["Mayans"],
+            "tech_id": 13,
             "type": "delete"
         }
     ]

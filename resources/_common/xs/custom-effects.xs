@@ -516,23 +516,9 @@ void EffectFunction10039(int playerId = -1)
     SetAttribute(playerId, YumKaaxsBlessingBuildingID, cDeadUnitId, YumKaaxsBlessingEndBuildingID);
     SpawnUnit(playerId, YumKaaxsBlessingBuildingID, TownCenterID, 1, 1);
 
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeYumKaaxGoldProductivity);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000006);
-    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeYumKaaxWoodProductivity);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000007);
-    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsResetTaskAmount();
-
-    MulResource(playerId, cAttributeFoodBonus, 0.15);
-    SetResource(playerId, cAttributeYumKaaxGoldProductivity, 53.0 * 0.15 * 1000);
-    SetResource(playerId, cAttributeYumKaaxWoodProductivity, 53.0 * 0.15 * 1000);
+    MulResource(playerId, cAttributeMayansFarmWoodProductivity, 1000);
+    MulResource(playerId, cAttributeMayansFarmStoneProductivity, 1000);
+    MulResource(playerId, cAttributeMayansFarmGoldProductivity, 1000);
 }
 
 
@@ -544,9 +530,9 @@ void EffectFunction10020(int playerId = -1)
     MulAttribute(playerId, 259, cWorkRate, 1.0 / 1000);
     MulAttribute(playerId, 259, cCarryCapacity, 1.0 / 100);
     MulAttribute(playerId, 50, cWorkRate, 1.0 / 10000);
-    MulResource(playerId, cAttributeFoodBonus, 1.0 / 0.15);
-    SetResource(playerId, cAttributeYumKaaxGoldProductivity, 0.0);
-    SetResource(playerId, cAttributeYumKaaxWoodProductivity, 0.0);
+    MulResource(playerId, cAttributeMayansFarmWoodProductivity, 1.0 / 1000);
+    MulResource(playerId, cAttributeMayansFarmStoneProductivity, 1.0 / 1000);
+    MulResource(playerId, cAttributeMayansFarmGoldProductivity, 1.0 / 1000);
 }
 
 
@@ -711,18 +697,14 @@ void EffectFunction10069(int playerId = -1)
 }
 
 
-//  10070 - Property Tax
+//  10070 - Meng'an Mouke
 void EffectFunction10070(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, ExtraConscriptedArmyID);
-    xsTaskAmount(cTaskAttrWorkValue2, 3);
-    xsTask(ConscriptedArmyID, cTaskTypeExtraSpawn, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000003);
-    xsTask(1908, cTaskTypeExtraSpawn, -1, playerId);
-    xsTask(1910, cTaskTypeExtraSpawn, -1, playerId);
-    xsResetTaskAmount();   
+    xsTaskAmount(cTaskAttrWorkValue1, ConscriptedArmyID);
+    xsTaskAmount(cTaskAttrWorkValue2, 4);
+    xsTask(ConscriptedArmyBuildingID, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
 }
 
 
@@ -1366,13 +1348,70 @@ void EffectFunction10114(int playerId = -1)
 }
 
 
+void FlankingCavalryApplier(int playerId = -1, int ClassTarget = -1)
+{
+    ModAttribute(playerId, ClassTarget, cMaxCharge, 1);
+    SetAttribute(playerId, ClassTarget, cChargeEvent, 0);
+    SetAttribute(playerId, ClassTarget, cChargeType, 5);
+
+    int PlayerUnitIDs = xsGetPlayerUnitIds(playerId, ClassTarget);
+    int i = 0;
+    int UnitCount = xsArrayGetSize(PlayerUnitIDs);
+    int UnitID = 0;
+    float CurrentCharge = 0.0;
+    for (i = 0; < UnitCount)
+    {
+        UnitID = xsArrayGetInt(PlayerUnitIDs, i);
+        CurrentCharge = xsGetUnitCharge(UnitID);
+        xsSetUnitCharge(UnitID, CurrentCharge + 1.0);
+    }
+}
+
+
+//  10115 - Flanking Cavalry
+void EffectFunction10115(int playerId = -1)
+{
+    FlankingCavalryApplier(playerId, cCavalryClass);
+    FlankingCavalryApplier(playerId, cCavalryArcherClass);
+    FlankingCavalryApplier(playerId, cConquistadorClass);
+}
+
+
+//  10116 - C-Bonus, farms produce all resources
+void EffectFunction10116(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeMayansFarmGoldProductivity);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000006);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeMayansFarmWoodProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000009);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeMayansFarmStoneProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeStone);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000010);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.15);
+    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.04);
+    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.08);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 155  2026.03.02");
+    xsChatData("Build: 156  2026.03.03");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

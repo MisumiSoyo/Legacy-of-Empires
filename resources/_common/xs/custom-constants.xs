@@ -43,8 +43,6 @@ extern const int cAttributeTimerFlag = 444;
 extern const int cAttributeOliveOil = 445;
 extern const int cAttributeOliveOilProductivity = 446;
 extern const int cAttributeExclusiveTechFlag = 447;
-extern const int cAttributeYumKaaxGoldProductivity = 448;
-extern const int cAttributeYumKaaxWoodProductivity = 449;
 extern const int cAttributeCavalryAttackGoldProductivity = 459;
 extern const int cAttributeShrineCount = 460;
 extern const int cAttributeMalayArmyCount = 701;
@@ -55,6 +53,9 @@ extern const int cAttributeFervorofBattleKillEffect = 705;
 extern const int cAttributeAztecsSpearmanKillUpgradeEffect = 706;
 extern const int cAttributeAztecsSkirmisherKillUpgradeEffect = 707;
 extern const int cAttributeAztecsEagleWarriorKillUpgradeEffect = 708;
+extern const int cAttributeMayansFarmWoodProductivity = 709;
+extern const int cAttributeMayansFarmStoneProductivity = 710;
+extern const int cAttributeMayansFarmGoldProductivity = 711;
 
 
 //  units' IDs
@@ -88,7 +89,7 @@ extern const int EliteRungScoutID = 4029;
 extern const int InvisibleEliteRungScoutID = 4030;
 extern const int SwissLancerID = 4031;
 extern const int LembosID = 4032;
-extern const int ConscriptedArmyID = 4033;
+extern const int ConscriptedArmyBuildingID = 4033;
 extern const int CamelLancerID = 4034;
 extern const int EliteCamelLancerID = 4035;
 extern const int HobelarID = 4036;
@@ -104,7 +105,7 @@ extern const int FlameThrowerID = 4047;
 extern const int TaboriteWarriorID = 4048;
 extern const int ShrineID = 4049;
 extern const int KhanID = 4050;
-extern const int ExtraConscriptedArmyID = 4051;
+extern const int ConscriptedArmyID = 4051;
 extern const int InvisibleDeerSpawnerID = 4052;
 extern const int SpawnedDeerID = 4054;
 extern const int ToungooWarriorID = 4055;

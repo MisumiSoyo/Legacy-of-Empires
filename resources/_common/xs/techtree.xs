@@ -196,7 +196,8 @@ void EffectFunction10001(int playerId = -1)
         {
             DisableTech(playerId, StoneShaftMiningTechID);
             DisableTech(playerId, CropRotationTechID);
-            DisableTech(playerId, TreadmillCraneTechID)
+            DisableTech(playerId, TreadmillCraneTechID);
+            DisableTech(playerId, HeavyPlowTechID);
             DisableTech(playerId, 3105);
             break;
         }

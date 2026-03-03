@@ -5023,7 +5023,7 @@
             "Name": "Heavy Plow",
             "Name String ID": 17013,
             "Node ID": 13,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 1,
             "Prerequisite IDs": [

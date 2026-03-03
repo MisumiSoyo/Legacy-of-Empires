@@ -3158,18 +3158,18 @@
             "Use Type": "Tech"
         },
         {
-            "note": "物力钱",
+            "note": "拐子马",
             "action": "add",
             "civ_id": "JURCHENS",
             "Age ID": 4,
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 600110,
+            "Help String ID": 600167,
             "Link ID": 3162,
             "Link Node Type": "BuildingTech",
-            "Name": "Property Tax",
-            "Name String ID": 500110,
-            "Node ID": 3171,
+            "Name": "Flanking Cavalry",
+            "Name String ID": 500167,
+            "Node ID": 3498,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 107,
@@ -4032,10 +4032,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "玛雅禁用轮作, 脚踏起重机",
+            "note": "玛雅禁用耕犁, 轮作, 脚踏起重机",
             "action": "modify",
             "civ_id": "MAYANS",
-            "Node ID": [12, 54],
+            "Node ID": [12, 13, 54],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
         },

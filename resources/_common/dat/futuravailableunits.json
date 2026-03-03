@@ -27041,12 +27041,6 @@
                         "RequiredAge": 2
                     },
                     {
-                        "ID": 13,
-                        "Name": "Heavy Plow",
-                        "RequiredAge": 3,
-                        "RequiredTechID": 14
-                    },
-                    {
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
@@ -52986,7 +52980,7 @@
                     {
                         "Name": "Property Tax",
                         "RequiredAge": 4,
-                        "ID": 3171
+                        "ID": 3498
                     }
                 ],
                 "Units": [
