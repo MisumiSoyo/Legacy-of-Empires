@@ -1353,24 +1353,13 @@ void FlankingCavalryApplier(int playerId = -1, int ClassTarget = -1)
     ModAttribute(playerId, ClassTarget, cMaxCharge, 1);
     SetAttribute(playerId, ClassTarget, cChargeEvent, 0);
     SetAttribute(playerId, ClassTarget, cChargeType, 5);
-
-    int PlayerUnitIDs = xsGetPlayerUnitIds(playerId, ClassTarget);
-    int i = 0;
-    int UnitCount = xsArrayGetSize(PlayerUnitIDs);
-    int UnitID = 0;
-    float CurrentCharge = 0.0;
-    for (i = 0; < UnitCount)
-    {
-        UnitID = xsArrayGetInt(PlayerUnitIDs, i);
-        CurrentCharge = xsGetUnitCharge(UnitID);
-        xsSetUnitCharge(UnitID, CurrentCharge + 1.0);
-    }
 }
 
 
 //  10115 - Flanking Cavalry
 void EffectFunction10115(int playerId = -1)
 {
+    FlankingCavalryApplier(playerId, cScoutCavalryClass);
     FlankingCavalryApplier(playerId, cCavalryClass);
     FlankingCavalryApplier(playerId, cCavalryArcherClass);
     FlankingCavalryApplier(playerId, cConquistadorClass);
@@ -1399,9 +1388,9 @@ void EffectFunction10116(int playerId = -1)
     xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsResetTaskAmount();
 
-    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.15);
-    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.04);
-    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.08);
+    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.81 * 1.15 * 0.15);
+    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.81 * 1.15 * 0.04);
+    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.81 * 1.15 * 0.08);
 }
 
 
@@ -1411,7 +1400,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 156  2026.03.03");
+    xsChatData("Build: 157  2026.03.04");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
