@@ -26902,16 +26902,6 @@
                         "RequiredAge": 1
                     },
                     {
-                        "ID": 213,
-                        "Name": "Wheelbarrow",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 249,
-                        "Name": "Hand Cart",
-                        "RequiredAge": 3
-                    },
-                    {
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3078
@@ -26979,11 +26969,6 @@
                         "ID": 221,
                         "Name": "Two-Man Saw",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3461
                     }
                 ]
             },
@@ -26995,12 +26980,6 @@
                         "ID": 23,
                         "Name": "Coinage",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 17,
-                        "Name": "Banking",
-                        "RequiredAge": 4,
-                        "RequiredTechID": 23
                     },
                     {
                         "ID": 48,
@@ -27034,18 +27013,7 @@
             {
                 "ID": 68,
                 "Name": "Mill",
-                "Techs": [
-                    {
-                        "ID": 14,
-                        "Name": "Horse Collar",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3057
-                    }
-                ]
+                "Techs": []
             },
             {
                 "ID": 4049,

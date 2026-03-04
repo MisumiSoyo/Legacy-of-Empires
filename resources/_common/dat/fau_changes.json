@@ -2108,14 +2108,14 @@
             "RequiredAge": 4
         },
         {
-            "note": "阿兹特克禁用独轮推车",
-            "civilizations": ["Aztecs"],
+            "note": "阿兹特克, 玛雅禁用独轮推车",
+            "civilizations": ["Aztecs", "Mayans"],
             "tech_id": 213,
             "type": "delete"
         },
         {
-            "note": "阿兹特克禁用手推车",
-            "civilizations": ["Aztecs"],
+            "note": "阿兹特克, 玛雅禁用手推车",
+            "civilizations": ["Aztecs", "Mayans"],
             "tech_id": 249,
             "type": "delete"
         },
@@ -2129,6 +2129,30 @@
             "note": "玛雅禁用耕犁",
             "civilizations": ["Mayans"],
             "tech_id": 13,
+            "type": "delete"
+        },
+        {
+            "note": "玛雅禁用马轭",
+            "civilizations": ["Mayans"],
+            "tech_id": 14,
+            "type": "delete"
+        },
+        {
+            "note": "玛雅禁用银行业",
+            "civilizations": ["Mayans"],
+            "tech_id": 17,
+            "type": "delete"
+        },
+        {
+            "note": "玛雅禁用经济作物",
+            "civilizations": ["Mayans"],
+            "tech_id": 3057,
+            "type": "delete"
+        },
+        {
+            "note": "玛雅禁用林业",
+            "civilizations": ["Mayans"],
+            "tech_id": 3461,
             "type": "delete"
         }
     ]

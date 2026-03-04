@@ -4573,7 +4573,7 @@
             "Name": "Wheelbarrow",
             "Name String ID": 17211,
             "Node ID": 213,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 79,
             "Prerequisite IDs": [
@@ -4603,7 +4603,7 @@
             "Name": "Hand Cart",
             "Name String ID": 17246,
             "Node ID": 249,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 42,
             "Prerequisite IDs": [
@@ -4933,7 +4933,7 @@
             "Name": "Banking",
             "Name String ID": 17017,
             "Node ID": 17,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 3,
             "Prerequisite IDs": [
@@ -4993,7 +4993,7 @@
             "Name": "Horse Collar",
             "Name String ID": 17014,
             "Node ID": 14,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 2,
             "Prerequisite IDs": [
@@ -5083,7 +5083,7 @@
             "Name": "Cash Crop",
             "Name String ID": 500002,
             "Node ID": 3057,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 0,
             "Prerequisite IDs": [

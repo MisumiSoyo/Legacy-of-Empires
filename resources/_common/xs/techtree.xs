@@ -198,7 +198,12 @@ void EffectFunction10001(int playerId = -1)
             DisableTech(playerId, CropRotationTechID);
             DisableTech(playerId, TreadmillCraneTechID);
             DisableTech(playerId, HeavyPlowTechID);
-            DisableTech(playerId, 3105);
+            DisableTech(playerId, WheelBarrowTechID);
+            DisableTech(playerId, HandCartTechID);
+            DisableTech(playerId, HorseCollarTechID);
+            DisableTech(playerId, BankingTechID);
+            DisableTech(playerId, CashCropTechID);
+            DisableTech(playerId, ForestryTechID);
             break;
         }
         case cHuns:

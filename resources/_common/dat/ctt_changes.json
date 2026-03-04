@@ -4032,10 +4032,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "玛雅禁用耕犁, 轮作, 脚踏起重机",
+            "note": "玛雅禁用耕犁, 轮作, 脚踏起重机, 独轮推车, 手推车, 马轭, 银行业, 经济作物, 林业",
             "action": "modify",
             "civ_id": "MAYANS",
-            "Node ID": [12, 13, 54],
+            "Node ID": [12, 13, 14, 17, 54, 213, 249, 3057, 3461],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
         },

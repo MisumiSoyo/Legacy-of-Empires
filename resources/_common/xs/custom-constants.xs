@@ -192,6 +192,7 @@ extern const int ManilaGalleonTechID = 3292;
 extern const int ShrineTechID = 3351;
 extern const int ConscriptionSystemTechID = 3425;
 extern const int CartaRegiaTechID = 3459;
+extern const int ForestryTechID = 3461;
 
 
 // Custom Effect IDs

@@ -101,7 +101,7 @@
 //	Aztecs
 120164 "Infantry and Monk civilization \n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +50 gold (receive when first TC is built up in Nomad mode)\n• Spearman-line, Skirmisher-line and Eagle Scout-line units can upgrade to a higher level when killing enemies since Feudal Age\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries) \n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range) \n• Garland Wars (Infantries +4 attack)\n• Ixitpla (Castle will produce one Jaguar Warrior for every 7 enemy land units killed)\n• Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
 //	Mayans
-120165 "Archer civilization \n\n• Start with +1 villager, but -50 food \n• Resources last 15% longer\n• Archers cost -10%/-20%/-30% at Feudal/Castle/Imperial Age\n• Farms can produce wood/gold/stone equivalent to 15/8/4% of the food output\n• Masonry free\n\n<b>Unique Unit:<b>\n• Plumed Archer (High moving speed archer)\n\n<b>Unique Techs: <b>\n• Hul'che Javelineers (Skirmishers and Genitours throw a second projectile) \n• El Dorado (Eagle Warrior-Line +40 HP)\n• Obsidian Arrow (Archers +3 attack vs buildings)\n• Yum Kaax's Blessing (Immediately harvest all the food from farms being cultivated by farmers)\n\n<b>Team bonus: <b>\nWalls and gates -50% cost"
+120165 "Archer civilization \n\n• Start with +1 villager, but -50 food \n• Resources last 15% longer\n• Archers cost -10%/-20%/-30% at Feudal/Castle/Imperial Age\n• Farms can produce wood/gold/stone equivalent to 40/20/10% of the food output\n• Masonry free\n\n<b>Unique Unit:<b>\n• Plumed Archer (High moving speed archer)\n\n<b>Unique Techs: <b>\n• Hul'che Javelineers (Skirmishers and Genitours throw a second projectile) \n• El Dorado (Eagle Warrior-Line +40 HP)\n• Obsidian Arrow (Archers +4 attack vs buildings)\n• Yum Kaax's Blessing (Immediately harvest all the food from farms being cultivated by farmers)\n\n<b>Team bonus: <b>\nWalls and gates -50% cost"
 //	Huns
 120166 "Cavalry civilization \n\n• Do not need houses, but start with -100 wood \n• Receive an unique scouting horse on nomad style maps once the starting Town Center is completed\n• Cavalry Archers cost -10%/-20% at Castle/Imperial Age \n• Trebuchets +35% accuracy\n• A Chanyu will be produced after advancing age\n\n<b>Unique Unit:<b>\n• Tarkan (Cavalry better combats with buildings), Chanyu (Strong heavy cavalry), Early Cavalry Archer (Cavalry archer), Imperial Steppe Lancer (Cavalry), Wooden Fortress (unique tower)\n\n<b>Unique Techs: <b>\n• Marauders (Create Tarkans at Stables) \n• Atheism (Relic and Wonder games +100 years; Enemy relics -50% incoming golds and foods; Tarkans can pick up and destroy relics to upgrade to Chanyu, and can't be converted; Chanyus +200 attack vs Monastery)\n• Frontline Outpost (Land military units (except siege weapons and monks) around Wooden Fortress +10% movement speed and regenerate 30 HP per minute; Wooden Fortress +100% build speed)\n• Whistling Arrow (Chanyu gains +100 HP and the ability to perform charge attacks)\n\n<b>Team bonus: <b>\nStables work rate +20%"
 //	Koreans
@@ -408,7 +408,7 @@
 501065 "Research Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)"
 501066 "Research Dacaogu (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)"
 501067 "Research Ixitpla (Castle will produce one Jaguar Warrior for every 7 enemy land units killed)"
-501068 "Research Obsidian Arrow (Archers +3 attack vs buildings)"
+501068 "Research Obsidian Arrow (Archers +4 attack vs buildings)"
 501069 "Research Political Reform (Farms cost 30 food instead of wood and don't need time to build)"
 501070 "Research Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)"
 501071 "Research Siege Technique (Rams +400 melee attack, +20% attack bonus vs buildings)"
@@ -577,7 +577,7 @@
 521065 "Research <b>Kaunas Castle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nWatch Tower line continuously shoots arrows that ignore defense with lower attack."
 521066 "Research <b>Dacaogu<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nLand military units can loot food and gold equivalent to 10/4% of the value of killed enemies."
 521067 "Research <b>Ixitpla<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nCastle will produce one Jaguar Warrior for every 7 enemy land units killed."
-521068 "Research <b>Obsidian Arrow<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nArchers +3 attack vs buildings."
+521068 "Research <b>Obsidian Arrow<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nArchers +4 attack vs buildings."
 521069 "Research <b>Political Reform<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nFarms cost 30 food instead of wood and don't need time to build."
 521070 "Research <b>Orthodoxy<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nStreltsys take -50% population space, and Militia-Line take -20% population space."
 521071 "Research <b>Siege Technique<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nRams +400 melee attack, +20% attack bonus vs buildings."

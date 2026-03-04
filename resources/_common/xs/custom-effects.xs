@@ -1299,6 +1299,7 @@ void EffectFunction10113(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
     xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000012);
     xsTaskAmount(cTaskAttrObjectId, -1);
     xsTaskAmount(cTaskAttrObjectClass, 899);
     xsModifyObjectTasks(SpearmanID, playerId, 1000);
@@ -1388,9 +1389,9 @@ void EffectFunction10116(int playerId = -1)
     xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsResetTaskAmount();
 
-    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.81 * 1.15 * 0.15);
-    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.81 * 1.15 * 0.04);
-    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.81 * 1.15 * 0.08);
+    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.81 * 1.15 * 0.40);
+    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.81 * 1.15 * 0.10);
+    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.81 * 1.15 * 0.20);
 }
 
 
@@ -1400,7 +1401,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 157  2026.03.04");
+    xsChatData("Build: 158  2026.03.04");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
