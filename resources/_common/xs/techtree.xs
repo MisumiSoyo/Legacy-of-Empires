@@ -400,6 +400,9 @@ void EffectFunction10001(int playerId = -1)
         }
         case cGurjaras:
         {
+            EnableTech(playerId, BlastFurnaceTechID);
+            EnableTech(playerId, GuildsTechID);
+            EnableTech(playerId, TwoManSawTechID);
             //  Gurjaras civ bonus, Monastries +10 population headroom
             ModAttribute(playerId, MonasteryID, cAmountFirstStorage, 10);
             ModAttribute(playerId, Monastery2ID, cAmountFirstStorage, 10);

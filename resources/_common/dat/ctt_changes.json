@@ -5297,6 +5297,14 @@
             "Node ID": [12, 54, 213, 249],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
+        },
+        {
+            "note": "瞿折罗获得行会, 鼓风炉, 工兵, 双人锯",
+            "action": "modify",
+            "civ_id": "GURJARAS",
+            "Node ID": [15, 75, 221, 321],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

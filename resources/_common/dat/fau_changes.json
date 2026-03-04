@@ -950,8 +950,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "马里, 高丽, 拜占庭获得鼓风炉",
-            "civilizations": ["Koreans", "Malians", "Byzantines"],
+            "note": "马里, 高丽, 拜占庭, 瞿折罗获得鼓风炉",
+            "civilizations": ["Koreans", "Malians", "Byzantines", "Gurjaras"],
             "tech_id": 75,
             "building_id": 103,
             "RequiredAge": 4
@@ -1272,8 +1272,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 法兰克, 马扎尔启用行会",
-            "civilizations": ["Chinese", "Franks", "Magyars"],
+            "note": "中国, 法兰克, 马扎尔, 瞿折罗启用行会",
+            "civilizations": ["Chinese", "Franks", "Magyars", "Gurjaras"],
             "tech_id": 15,
             "building_id": 84,
             "Name": "Guilds",
@@ -1416,8 +1416,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols"],
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",

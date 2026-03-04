@@ -45142,6 +45142,10 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 75
                     }
                 ]
             },
@@ -45634,6 +45638,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
+                    },
+                    {
                         "Name": "Forestry",
                         "RequiredAge": 3,
                         "ID": 3461
@@ -45659,6 +45668,11 @@
                         "ID": 48,
                         "Name": "Caravan",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Guilds",
+                        "RequiredAge": 3,
+                        "ID": 15
                     }
                 ],
                 "Units": [
