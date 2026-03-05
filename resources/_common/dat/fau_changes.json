@@ -2130,6 +2130,30 @@
             "civilizations": ["Mayans"],
             "tech_id": 3461,
             "type": "delete"
+        },
+        {
+            "note": "军犬",
+            "civilizations": ["Spanish"],
+            "unit_id": 4173,
+            "building_id": 12,
+            "Name": "War Dog",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐军犬",
+            "civilizations": ["Spanish"],
+            "unit_id": 4174,
+            "building_id": 12,
+            "Name": "Elite War Dog",
+            "RequiredAge": 4
+        },
+        {
+            "note": "精锐军犬",
+            "civilizations": ["Spanish"],
+            "tech_id": 3502,
+            "building_id": 12,
+            "Name": "Elite War Dog",
+            "RequiredAge": 4
         }
     ]
 }

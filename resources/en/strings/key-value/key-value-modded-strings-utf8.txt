@@ -97,7 +97,7 @@
 //	Celts
 120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight \n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry), Celtic Hunter (Archer that uses 2 population space)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP) \n• Siege Technique (Rams +400 melee attack, +20% attack bonus vs buildings)\n\n<b>Team bonus: <b>\nSiege Workshop work rate +20%"
 //	Spanish
-120163 "Gunpowder and Monk civilization \n\n• Builders +30% work rate (not applied on the first TC in Nomad mode) \n• Blacksmith upgrades don't cost gold \n• Cannon Galleons projectile speed increases to 7 and enables Ballistics effect \n• Gunpowder units +18% attack speed\n• Gain 20 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\n• Conquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range) \n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)\n• Jinete Tactics (Genitours +2 max range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
+120163 "Gunpowder and Monk civilization \n\n• Builders +30% work rate (not applied on the first TC in Nomad mode) \n• Blacksmith upgrades don't cost gold \n• Cannon Galleons projectile speed increases to 7 and enables Ballistics effect \n• Gunpowder units +18% attack speed\n• Gain 20 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\n• Conquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat), War Dog (High speed army)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range) \n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Explorer (You can obtain extra gold equai to 1.5% of the total gold acquired by both allies and enemies from now on)\n• Jinete Tactics (Genitours +2 max range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 //	Aztecs
 120164 "Infantry and Monk civilization \n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +50 gold (receive when first TC is built up in Nomad mode)\n• Spearman-line, Skirmisher-line and Eagle Scout-line units can upgrade to a higher level when killing enemies since Feudal Age\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries) \n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range) \n• Garland Wars (Infantries +4 attack)\n• Ixitpla (Castle will produce one Jaguar Warrior for every 7 enemy land units killed)\n• Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
 //	Mayans
@@ -345,6 +345,7 @@
 500165 "Train Ibirapema Warrior"
 500166 "Cuauhocelotl"
 500167 "Flanking Cavalry"
+500168 "Elite War Dog"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -514,6 +515,7 @@
 501165 "Switch to train Ibirapema Warrior"
 501166 "Research Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)"
 501167 "Research Flanking Cavalry (Mounted units can additionally block a melee attack)"
+501168 "Upgrade to Elite War Dog"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -683,6 +685,7 @@
 521165 "Switch to train Ibirapema Warriors. Automatically spawn 1 Ibirapema Warrior every 65 seconds."
 521166 "Research <b>Cuauhocelotl<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nEagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills."
 521167 "Research <b>Flanking Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMounted units can additionally block a melee attack."
+521168 "Research <b>Elite War Dog<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your War Dogs and lets you create Elite War Dogs."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -775,6 +778,8 @@
 700079 "Heavy Skirmisher"
 700080 "Veteran Heavy Skirmisher"
 700081 "Elite Heavy Skirmisher"
+700082 "War Dog"
+700083 "Elite War Dog"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -857,6 +862,8 @@
 701079 "Create Heavy Skirmisher"
 701080 "Create Veteran Heavy Skirmisher"
 701081 "Create Elite Heavy Skirmisher"
+701082 "Create War Dog"
+701083 "Create Elite War Dog"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1018,6 +1025,10 @@
 721080 "Create <b>Veteran Heavy Skirmisher<b> (<cost>, 26 <MATERIAL=MPIconGoodCPU,1>)\nRomans' unique skirmisher. Stronger than normal skirmishers.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>/1\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\nClass: Archer; Tags: Archer, Skirmisher, Unique Unit.\nAttack Bonus: +4 vs Archer, +3 vs Pikeman, +2 vs Mameluke."
 
 721081 "Create <b>Elite Heavy Skirmisher<b> (<cost>, 26 <MATERIAL=MPIconGoodCPU,1>)\nRomans' unique skirmisher. Stronger than normal skirmishers.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>/1\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\nClass: Archer; Tags: Archer, Skirmisher, Unique Unit.\nAttack Bonus: +4 vs Archer, +3 vs Pikeman, +2 vs Mameluke."
+
+721082 "Create <b>War Dog<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\nSpanish unique unit. Can dodge projectiles and kill enemies with less than 15% HP. +25% movement speed when chasing enemies.\nUpgrades: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\nClass: Phalanx; Tags: Shock Infantry, Unique Unit."
+
+721083 "Create <b>Elite War Dog<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\nSpanish unique unit. Can dodge projectiles and kill enemies with less than 15% HP. +25% movement speed when chasing enemies.\nUpgrades: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\nClass: Phalanx; Tags: Shock Infantry, Unique Unit."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

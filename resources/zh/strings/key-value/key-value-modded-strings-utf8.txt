@@ -101,7 +101,7 @@
 //	凯尔特
 120162 "步兵和攻城武器文明\n\n• 步兵在黑暗/封建/城堡/帝王时代 +5%/+10%/+15%/+20% 移动速度\n• 伐木工 +15% 工作效率\n• 攻城武器 +25% 攻击速度\n• 凯尔特单位视野内的绵羊无法被捕获\n• 步兵和骑兵系单位更难被招降\n\n<b>独特单位：<b> \n• 靛蓝突袭者 (快速步兵), 凯尔特猎手 (占用 2 人口的步弓手)\n\n<b>独特科技：<b> \n• 堡垒 (城堡和箭塔攻击速度 +33%；城堡每分钟可以治疗 7 格范围内的友方步兵 30 生命值(不叠加))\n• 凯尔特狂暴 (攻城武器 +40% 生命值)\n\n<b>团队加成：<b> \n攻城武器厂 +20% 工作效率"
 //	西班牙
-120163 "火药和僧侣文明\n\n• 村民建造速度 +30%(对游牧模式的首个城镇中心无效)\n• 铁匠铺科技升级无需黄金\n• 炮舰弹道速度增加到7并且可受益于弹道学\n• 火药单位 +18% 攻击速度\n• 每研究一个科技可获得20黄金(升级时代除外)\n• 可提前一个时代使用标枪骑兵和精锐标枪骑兵, 并且升级 -50% 食物费用\n\n<b>独特单位：<b>\n• 西班牙征服者 (马上火枪手), 传教士 (马上僧侣), 马尼拉大帆船 (武装贸易船)\n\n<b>独特科技：<b> \n• 宗教法庭 (僧侣招降单位/建筑时间分别 -1/-6秒，招降建筑概率 +5%，传教士招降距离 +1)\n• 霸权 (村民 +40生命值，+6攻击力，+2护甲/盾牌)\n• 探险家 (你可以获取额外黄金, 相当于盟友和敌人从现在开始获取的黄金总量的 1.5%)\n• 游击战术 (标枪骑兵 +2 射程)\n\n<b>团队加成：<b> \n贸易单位产生的黄金 +25%"
+120163 "火药和僧侣文明\n\n• 村民建造速度 +30%(对游牧模式的首个城镇中心无效)\n• 铁匠铺科技升级无需黄金\n• 炮舰弹道速度增加到7并且可受益于弹道学\n• 火药单位 +18% 攻击速度\n• 每研究一个科技可获得20黄金(升级时代除外)\n• 可提前一个时代使用标枪骑兵和精锐标枪骑兵, 并且升级 -50% 食物费用\n\n<b>独特单位：<b>\n• 西班牙征服者 (马上火枪手), 传教士 (马上僧侣), 马尼拉大帆船 (武装贸易船), 军犬 (高速士兵)\n\n<b>独特科技：<b> \n• 宗教法庭 (僧侣招降单位/建筑时间分别 -1/-6秒，招降建筑概率 +5%，传教士招降距离 +1)\n• 霸权 (村民 +40生命值，+6攻击力，+2护甲/盾牌)\n• 探险家 (你可以获取额外黄金, 相当于盟友和敌人从现在开始获取的黄金总量的 1.5%)\n• 游击战术 (标枪骑兵 +2 射程)\n\n<b>团队加成：<b> \n贸易单位产生的黄金 +25%"
 //	阿兹特克
 120164 "步兵和僧侣文明\n\n• 村民携带量 +3\n• 军事单位训练速度 +15%\n• 每研究一项修道院科技, 僧侣生命值 +5\n• 游戏开始时获得 50 黄金\n• 封建时代起长矛兵系, 掷矛手系和鹰斥候系单位击杀敌人后可晋升为高一级的单位\n\n<b>独特单位：<b>\n• 豹勇士 (克制步兵的步兵)\n\n<b>独特科技：<b> \n• 掷矛器(掷矛手攻击力 +1，射程 +1)\n• 荣冠战争(步兵 +4 攻击力)\n• 祭祀仪式(每击杀 7 名敌方陆地单位, 城堡会产出一名豹勇士)\n• 夸乌塞洛特 (鹰斥候系单位击杀敌人可提升 1 攻击力 (最多 +4); 豹勇士击杀敌人提升的攻击力 +1)\n\n<b>团队加成：<b> \n圣物产生黄金 +33%"
 //	玛雅
@@ -349,6 +349,7 @@
 500165 "训练伊比拉贝玛战士"
 500166 "夸乌塞洛特"
 500167 "拐子马"
+500168 "精锐军犬"
 
 
 501001 "研究季风航行(渔船和运输船 +25%移动速度)"
@@ -518,6 +519,7 @@
 501165 "切换到训练伊比拉贝玛战士"
 501166 "研究夸乌塞洛特(鹰斥候系单位击杀敌人可提升 1 攻击力 (最多 +4); 豹勇士击杀敌人提升的攻击力 +1)"
 501167 "研究拐子马(骑乘单位可额外抵挡 1 次近战攻击)"
+501168 "升级到精锐军犬"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -686,7 +688,8 @@
 521164 "切换到训练黑檀木步弓手, 每 60 秒自动训练 2 名黑檀木步弓手。\n(需要城堡)"
 521165 "切换到训练伊比拉贝玛战士, 每 65 秒自动训练 1 名伊比拉贝玛战士。"
 521166 "研究<b>夸乌塞洛特<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n鹰斥候系单位击杀敌人可提升 1 攻击力 (最多 +4); 豹勇士击杀敌人提升的攻击力 +1。"
-521167 "研究<b>拐子马<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1> )\n骑乘单位可额外抵挡 1 次近战攻击。"
+521167 "研究<b>拐子马<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n骑乘单位可额外抵挡 1 次近战攻击。"
+521168 "升级到<b>精锐军犬<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n将您的军犬升级, 生产更为强大的精锐军犬。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -779,6 +782,8 @@
 700079 "重装掷矛手"
 700080 "老练重装掷矛手"
 700081 "精锐重装掷矛手"
+700082 "军犬"
+700083 "精锐军犬"
 
 
 701001 "生产铁炮足轻"
@@ -861,6 +866,8 @@
 701079 "生产重装掷矛手"
 701080 "生产老练重装掷矛手"
 701081 "生产精锐重装掷矛手"
+701082 "生产军犬"
+701083 "生产精锐军犬"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1022,6 +1029,10 @@
 721080 "生产<b>老练重装掷矛手<b> (<cost>, 26 <MATERIAL=MPIconGoodCPU,1>)\n罗马独特掷矛手, 战斗能力更强。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>/1\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\n主类: 射手; 标签: 射手, 掷矛手, 独特单位。\n攻击加成: +5 vs 射手, +3 vs 枪兵, +3 vs 马穆鲁克。"
 
 721081 "生产<b>精锐重装掷矛手<b> (<cost>, 26 <MATERIAL=MPIconGoodCPU,1>)\n罗马独特掷矛手, 战斗能力更强。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>/1\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 6\n主类: 射手; 标签: 射手, 掷矛手, 独特单位。\n攻击加成: +5 vs 射手, +3 vs 枪兵, +4 vs 马穆鲁克。"
+
+721082 "生产<b>军犬<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\n西班牙独特单位, 可闪避远程攻击, 并且会斩杀生命值在 15% 以下的敌人。追击敌人时, 移动速度 + 25%。\n升级: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\n主类: 方阵兵; 标签: 冲击步兵, 独特单位。"
+
+721083 "生产<b>精锐军犬<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\n西班牙独特单位, 可闪避远程攻击, 并且会斩杀生命值在 15% 以下的敌人。追击敌人时, 移动速度 + 25%。\n升级: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\n主类: 方阵兵; 标签: 冲击步兵, 独特单位。"
 
 
 

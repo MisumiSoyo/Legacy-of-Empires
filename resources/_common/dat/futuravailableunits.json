@@ -33927,6 +33927,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Elite War Dog",
+                        "RequiredAge": 4,
+                        "ID": 3502
                     }
                 ],
                 "Units": [
@@ -33969,6 +33974,16 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "War Dog",
+                        "RequiredAge": 3,
+                        "ID": 4173
+                    },
+                    {
+                        "Name": "Elite War Dog",
+                        "RequiredAge": 4,
+                        "ID": 4174
                     }
                 ]
             },
