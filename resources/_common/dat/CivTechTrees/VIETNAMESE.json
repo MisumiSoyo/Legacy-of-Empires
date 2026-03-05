@@ -1179,7 +1179,7 @@
             "Name": "Hand Cannoneer",
             "Name String ID": 14086,
             "Node ID": 5,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchRequired",
             "Node Type": "Unit",
             "Picture Index": 22,
             "Prerequisite IDs": [
@@ -2139,7 +2139,7 @@
             "Name": "Siege Onager",
             "Name String ID": 14493,
             "Node ID": 588,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 102,
             "Prerequisite IDs": [
@@ -2529,7 +2529,7 @@
             "Name": "Blast Furnace",
             "Name String ID": 17075,
             "Node ID": 75,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 21,
             "Prerequisite IDs": [
@@ -3401,7 +3401,7 @@
             "Name": "Masonry",
             "Name String ID": 17050,
             "Node ID": 50,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 13,
             "Prerequisite IDs": [
@@ -3431,7 +3431,7 @@
             "Name": "Architecture",
             "Name String ID": 17051,
             "Node ID": 51,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 14,
             "Prerequisite IDs": [
@@ -3941,7 +3941,7 @@
             "Name": "Shipwright",
             "Name String ID": 17377,
             "Node ID": 373,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 97,
             "Prerequisite IDs": [
@@ -4961,7 +4961,7 @@
             "Name": "Gold Shaft Mining",
             "Name String ID": 17180,
             "Node ID": 182,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 62,
             "Prerequisite IDs": [

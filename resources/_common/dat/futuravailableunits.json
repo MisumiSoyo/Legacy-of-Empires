@@ -1207,11 +1207,6 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
-                    },
-                    {
-                        "Name": "Halberdier",
-                        "RequiredAge": 4,
-                        "ID": 429
                     }
                 ],
                 "Units": [
@@ -1344,6 +1339,11 @@
                         "ID": 239,
                         "Name": "Heavy Scorpion",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 255
                     }
                 ],
                 "Units": [
@@ -1387,6 +1387,11 @@
                         "ID": 36,
                         "Name": "Bombard Cannon",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 548
                     }
                 ]
             },
@@ -1713,6 +1718,17 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
+                    },
+                    {
+                        "Name": "Keep",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 140,
+                        "ID": 63
                     }
                 ]
             },
@@ -25348,6 +25364,11 @@
                         "ID": 320,
                         "Name": "Siege Onager",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 255
                     }
                 ],
                 "Units": [
@@ -25391,6 +25412,11 @@
                         "ID": 36,
                         "Name": "Bombard Cannon",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 548
                     }
                 ]
             },
@@ -25472,6 +25498,11 @@
                     {
                         "RequiredAge": 4,
                         "ID": 75
+                    },
+                    {
+                        "Name": "Bracer",
+                        "RequiredAge": 4,
+                        "ID": 201
                     }
                 ]
             },
@@ -25664,8 +25695,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 375,
@@ -25686,6 +25717,16 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
+                    },
+                    {
+                        "Name": "Arrowslits",
+                        "RequiredAge": 4,
+                        "ID": 608
                     }
                 ]
             },
@@ -25978,6 +26019,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Forestry",
@@ -38354,6 +38400,11 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Hand Cannoneer",
+                        "RequiredAge": 4,
+                        "ID": 5
+                    },
+                    {
                         "Name": "Elephant Archer",
                         "RequiredAge": 3,
                         "ID": 873
@@ -38561,6 +38612,10 @@
                         "ID": 257,
                         "Name": "Onager",
                         "RequiredAge": 4
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 320
                     }
                 ],
                 "Units": [
@@ -38599,6 +38654,11 @@
                         "ID": 36,
                         "Name": "Bombard Cannon",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Onager",
+                        "RequiredAge": 4,
+                        "ID": 588
                     }
                 ]
             },
@@ -38681,6 +38741,10 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 75
                     }
                 ]
             },
@@ -38888,8 +38952,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 375,
@@ -38910,6 +38974,16 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Masonry",
+                        "RequiredAge": 3,
+                        "ID": 50
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
                     }
                 ]
             },
@@ -39171,6 +39245,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },

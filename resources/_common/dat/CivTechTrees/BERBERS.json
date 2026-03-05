@@ -333,7 +333,7 @@
             "Name": "Keep",
             "Name String ID": 14155,
             "Node ID": 235,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "BuildingNonTech",
             "Picture Index": 26,
             "Prerequisite IDs": [
@@ -1479,7 +1479,7 @@
             "Name": "Halberdier",
             "Name String ID": 14409,
             "Node ID": 359,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "UnitUpgrade",
             "Picture Index": 104,
             "Prerequisite IDs": [
@@ -1959,7 +1959,7 @@
             "Name": "Siege Ram",
             "Name String ID": 14446,
             "Node ID": 548,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 73,
             "Prerequisite IDs": [
@@ -3341,7 +3341,7 @@
             "Name": "Architecture",
             "Name String ID": 17051,
             "Node ID": 51,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 14,
             "Prerequisite IDs": [
@@ -3551,7 +3551,7 @@
             "Name": "Keep",
             "Name String ID": 17063,
             "Node ID": 63,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 16,
             "Prerequisite IDs": [

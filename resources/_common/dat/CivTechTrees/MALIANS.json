@@ -1959,7 +1959,7 @@
             "Name": "Siege Ram",
             "Name String ID": 14446,
             "Node ID": 548,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 73,
             "Prerequisite IDs": [
@@ -2349,7 +2349,7 @@
             "Name": "Bracer",
             "Name String ID": 17151,
             "Node ID": 201,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 37,
             "Prerequisite IDs": [
@@ -3491,7 +3491,7 @@
             "Name": "Siege Engineers",
             "Name String ID": 17378,
             "Node ID": 377,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 101,
             "Prerequisite IDs": [
@@ -3611,7 +3611,7 @@
             "Name": "Arrowslits",
             "Name String ID": 17278,
             "Node ID": 608,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 119,
             "Prerequisite IDs": [
@@ -3851,7 +3851,7 @@
             "Name": "Shipwright",
             "Name String ID": 17377,
             "Node ID": 373,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 97,
             "Prerequisite IDs": [
@@ -5021,7 +5021,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [

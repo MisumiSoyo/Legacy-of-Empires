@@ -286,13 +286,21 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, HalberdierTechID);
+            EnableTech(playerId, BracerTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, SiegeRamTechID);
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, ArrowslitsTechID);
             break;
         }
         case cBerbers:
         {
-            EnableTech(playerId, HalberdierTechID);
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, SiegeRamTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, KeepTechID);
             break;
         }
         case cKhmer:
@@ -326,6 +334,13 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, ElephantArcherTechID);
             EnableTech(playerId, EliteElephantArcherTechID);
+            EnableTech(playerId, SiegeOnagerTechID);
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, HandCannoneerTechID);
+            EnableTech(playerId, MasonryTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, GoldShaftMiningTechID);
+            EnableTech(playerId, BlastFurnaceTechID);
             DisableTech(playerId, CavalryArcherTechID);
             DisableTech(playerId, HeavyCavalryArcherTechID);
             break;

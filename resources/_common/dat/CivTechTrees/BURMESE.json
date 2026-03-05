@@ -1059,7 +1059,7 @@
             "Name": "Hand Cannoneer",
             "Name String ID": 14086,
             "Node ID": 5,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "ResearchRequired",
             "Node Type": "Unit",
             "Picture Index": 22,
             "Prerequisite IDs": [

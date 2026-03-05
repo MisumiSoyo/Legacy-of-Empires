@@ -488,6 +488,7 @@ extern const int SiegeRamTechID = 255;
 extern const int ChampionTechID = 264;
 extern const int PaladinTechID = 265;
 extern const int StoneShaftMiningTechID = 279;
+extern const int SiegeOnagerTechID = 320;
 extern const int SappersTechID = 321;
 extern const int MurderHolesTechID = 322;
 extern const int ShipwrightTechID = 373;
