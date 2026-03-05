@@ -682,6 +682,45 @@ void EffectFunction10098(int playerId = -1)
 }
 
 
+//  10117 - C-Bonus, unique tech from allies
+void EffectFunction10117(int playerId = -1)
+{
+    static int TechIDArray = -1;
+
+    if (TechIDArray == -1)
+    {
+        TechIDArray = xsArrayCreateInt(100, 0);
+        ArrayMultipleSetInt(TechIDArray, 1, 461, 493, 457, 11, 59, 52, 61, 7, 454, 10);
+        ArrayMultipleSetInt(TechIDArray, 11, 49, 6, 5, 440, 24, 4, 21, 445, 902, 507);
+        ArrayMultipleSetInt(TechIDArray, 21, 517, 515, 513, 573, 575, 577, 579, 623, 625, 626);
+        ArrayMultipleSetInt(TechIDArray, 31, 629, 686, 688, 690, 692, 755, 757, 783, 785, 832);
+        ArrayMultipleSetInt(TechIDArray, 41, 834, 836, 884, 921, 924, 1113, 1123, 1133, 1069, 1081);
+        ArrayMultipleSetInt(TechIDArray, 51, 1062, 997, 1007, 1285, 1298, 1309, 1366, 1380, 1393, 0);
+    }
+
+    int i = 0;
+    for (i = 1; <= xsGetNumPlayers())
+        if ((i != playerId) && (isAlly(i, playerId)))
+        {
+            int UniqueTechID = xsArrayGetInt(TechIDArray, xsGetPlayerCivilization(i));
+            if (xsGetTechState(playerId, UniqueTechID) < cTechStateNotReady)
+            {
+                xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetState, cAttributeForce, playerId);
+                if (i <= 4)
+                {
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 20, playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i), playerId);
+                }
+                else
+                {
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 21, playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i + 1), playerId);
+                }
+            }
+        }
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

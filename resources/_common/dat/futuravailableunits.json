@@ -26171,11 +26171,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Shrine",
-                        "RequiredAge": 2,
-                        "ID": 4049
                     }
                 ]
             },
@@ -27014,38 +27009,6 @@
                 "ID": 68,
                 "Name": "Mill",
                 "Techs": []
-            },
-            {
-                "ID": 4049,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Switch to training Champi Scout Line",
-                        "RequiredAge": 2,
-                        "ID": 3100
-                    },
-                    {
-                        "Name": "Switch to training Spearman Line",
-                        "RequiredAge": 2,
-                        "ID": 3101
-                    },
-                    {
-                        "Name": "Switch to training Archer Line",
-                        "RequiredAge": 2,
-                        "ID": 3103
-                    },
-                    {
-                        "Name": "Switch to training Skirmisher Line",
-                        "RequiredAge": 2,
-                        "ID": 3104
-                    },
-                    {
-                        "Name": "Switch to training Plumed Archer",
-                        "RequiredAge": 3,
-                        "ID": 3119
-                    }
-                ],
-                "Units": []
             }
         ]
     },
@@ -56566,11 +56529,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Shrine",
-                        "RequiredAge": 2,
-                        "ID": 4049
                     }
                 ]
             },
@@ -57424,48 +57382,6 @@
                 "PrereqIconIndex": 19,
                 "PrereqStyle": 0,
                 "PrereqStringID": 14157
-            },
-            {
-                "ID": 4049,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Switch to training Champi Scout Line",
-                        "RequiredAge": 2,
-                        "ID": 3100
-                    },
-                    {
-                        "Name": "Switch to training Spearman Line",
-                        "RequiredAge": 2,
-                        "ID": 3101
-                    },
-                    {
-                        "Name": "Switch to training Archer Line",
-                        "RequiredAge": 2,
-                        "ID": 3103
-                    },
-                    {
-                        "Name": "Switch to training Skirmisher Line",
-                        "RequiredAge": 2,
-                        "ID": 3104
-                    },
-                    {
-                        "Name": "Switch to training Slinger",
-                        "RequiredAge": 3,
-                        "ID": 3105
-                    },
-                    {
-                        "Name": "Switch to training Kona",
-                        "RequiredAge": 3,
-                        "ID": 3484
-                    },
-                    {
-                        "Name": "Switch to training Bolas Rider",
-                        "RequiredAge": 3,
-                        "ID": 3485
-                    }
-                ],
-                "Units": []
             }
         ]
     },

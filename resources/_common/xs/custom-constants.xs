@@ -547,3 +547,20 @@ extern const int HospitallerKnightMaxCharge = 300;
 extern const float ShrineMaxCharge = 1200.0;
 extern const int SatrapAuraRange = 10;
 extern const float MalayTCAuraRange = 10.0;
+
+
+//  Hotkey IDs
+extern const int QHotkeyID = 18012;
+extern const int WHotkeyID = 18019;
+extern const int EHotkeyID = 18017;
+extern const int RHotkeyID = 18015;
+extern const int THotkeyID = 18047;
+extern const int AHotkeyID = 18022;
+extern const int SHotkeyID = 18045;
+extern const int DHotkeyID = 18008;
+extern const int FHotkeyID = 18034;
+extern const int GHotkeyID = 18278;
+extern const int ZHotkeyID = 18090;
+extern const int XHotkeyID = 18039;
+extern const int CHotkeyID = 18258;
+extern const int VHotkeyID = 18239;

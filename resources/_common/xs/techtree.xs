@@ -32,7 +32,7 @@ void EffectFunction10001(int playerId = -1)
     }
 
     //  Shrine
-    if ((playerCiv != cMayans) && (playerCiv != cIncas) && (playerCiv != cMuisca) && (playerCiv != cMapuche) && (playerCiv != cTupi))
+    if ((playerCiv != cIncas) && (playerCiv != cMuisca) && (playerCiv != cTupi))
     {
         DisableTech(playerId, ShrineTechID);
     }

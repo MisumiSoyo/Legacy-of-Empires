@@ -708,3 +708,45 @@ void ApplyModifyBuildingTargets(int playerId = -1, int ClassTarget = -1, bool in
         xsTaskAmount(cTaskAttrObjectClass, cGateClass);   xsModifyObjectTasks(ClassTarget, playerId, 1001);
     }
 }
+
+
+int KeyToHotkeyID(int KeyID = -1)
+{
+    int keyid = KeyID;
+    if (keyid > 15)
+        keyid = keyid - 20;
+    switch (keyid)
+    {
+        case 1:
+            return (QHotkeyID);
+        case 2:
+            return (WHotkeyID);
+        case 3:
+            return (EHotkeyID);
+        case 4:
+            return (RHotkeyID);
+        case 5:
+            return (THotkeyID);
+        case 6:
+            return (AHotkeyID);
+        case 7:
+            return (SHotkeyID);
+        case 8:
+            return (DHotkeyID);
+        case 9:
+            return (FHotkeyID);
+        case 10:
+            return (GHotkeyID);
+        case 11:
+            return (ZHotkeyID);
+        case 12:
+            return (XHotkeyID);
+        case 13:
+            return (CHotkeyID);
+        case 14:
+            return (VHotkeyID);
+        default:
+            return (-1);
+    }
+    return (-1);
+}

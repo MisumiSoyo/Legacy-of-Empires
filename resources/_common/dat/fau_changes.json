@@ -627,7 +627,7 @@
         },
         {
             "note": "圣坛",
-            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Incas", "Muisca", "Tupi"],
             "unit_id": 4049,
             "building_id": 118,
             "Name": "Shrine",
@@ -635,14 +635,14 @@
         },
         {
             "note": "圣坛",
-            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Incas", "Muisca", "Tupi"],
             "building_id" : 4049,
             "Name": "Shrine",
             "type": "add"
         },
         {
             "note": "切换到训练昌皮战士系",
-            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Incas", "Muisca", "Tupi"],
             "tech_id": 3100,
             "building_id": 4049,
             "Name": "Switch to training Champi Scout Line",
@@ -650,7 +650,7 @@
         },
         {
             "note": "切换到训练长矛兵系",
-            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Incas", "Muisca", "Tupi"],
             "tech_id": 3101,
             "building_id": 4049,
             "Name": "Switch to training Spearman Line",
@@ -658,7 +658,7 @@
         },
         {
             "note": "切换到训练步弓手系",
-            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Incas", "Muisca", "Tupi"],
             "tech_id": 3103,
             "building_id": 4049,
             "Name": "Switch to training Archer Line",
@@ -666,23 +666,15 @@
         },
         {
             "note": "切换到训练掷矛手系",
-            "civilizations": ["Mayans", "Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Incas", "Muisca", "Tupi"],
             "tech_id": 3104,
             "building_id": 4049,
             "Name": "Switch to training Skirmisher Line",
             "RequiredAge": 2
         },
         {
-            "note": "切换到训练羽箭手",
-            "civilizations": "Mayans",
-            "tech_id": 3119,
-            "building_id": 4049,
-            "Name": "Switch to training Plumed Archer",
-            "RequiredAge": 3
-        },
-        {
             "note": "切换到训练投石手",
-            "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
+            "civilizations": ["Incas", "Muisca", "Tupi"],
             "tech_id": 3105,
             "building_id": 4049,
             "Name": "Switch to training Slinger",
@@ -1991,22 +1983,6 @@
             "tech_id": 3483,
             "building_id": 4049,
             "Name": "Switch to training Temple Guard",
-            "RequiredAge": 3
-        },
-        {
-            "note": "切换到训练科那",
-            "civilizations": "Mapuche",
-            "tech_id": 3484,
-            "building_id": 4049,
-            "Name": "Switch to training Kona",
-            "RequiredAge": 3
-        },
-        {
-            "note": "切换到训练掷石绳骑兵",
-            "civilizations": "Mapuche",
-            "tech_id": 3485,
-            "building_id": 4049,
-            "Name": "Switch to training Bolas Rider",
             "RequiredAge": 3
         },
         {
