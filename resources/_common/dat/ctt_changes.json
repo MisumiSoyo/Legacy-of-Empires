@@ -5322,6 +5322,14 @@
             "Node ID": [588],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "马普切禁用独轮推车, 手推车",
+            "civ_id": "MAPUCHE",
+            "action": "modify",
+            "Node ID": [213, 249],
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable"
         }
     ]
 }

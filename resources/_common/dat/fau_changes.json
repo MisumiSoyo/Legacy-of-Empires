@@ -2084,14 +2084,14 @@
             "RequiredAge": 4
         },
         {
-            "note": "阿兹特克, 玛雅禁用独轮推车",
-            "civilizations": ["Aztecs", "Mayans"],
+            "note": "阿兹特克, 玛雅, 马普切禁用独轮推车",
+            "civilizations": ["Aztecs", "Mayans", "Mapuche"],
             "tech_id": 213,
             "type": "delete"
         },
         {
-            "note": "阿兹特克, 玛雅禁用手推车",
-            "civilizations": ["Aztecs", "Mayans"],
+            "note": "阿兹特克, 玛雅, 马普切禁用手推车",
+            "civilizations": ["Aztecs", "Mayans", "Mapuche"],
             "tech_id": 249,
             "type": "delete"
         },
@@ -2168,6 +2168,29 @@
             "civilizations": ["Vietnamese"],
             "tech_id": 320,
             "building_id": 49,
+            "RequiredAge": 4
+        },
+        {
+            "note": "马普切马厩",
+            "civilizations": ["Mapuche"],
+            "building_id": 101,
+            "Name": "Stable",
+            "type": "add"
+        },
+        {
+            "note": "马普切 + 掠夺者",
+            "civilizations": ["Mapuche"],
+            "tech_id": 2,
+            "building_id": 101,
+            "Name": "Elite Tarkan",
+            "RequiredAge": 4
+        },
+        {
+            "note": "马普切 + 无政府",
+            "civilizations": ["Mapuche"],
+            "tech_id": 365,
+            "building_id": 12,
+            "Name": "Elite Huskarl",
             "RequiredAge": 4
         }
     ]

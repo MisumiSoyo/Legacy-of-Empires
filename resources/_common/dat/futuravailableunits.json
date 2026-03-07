@@ -56731,6 +56731,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Elite Huskarl",
+                        "RequiredAge": 4,
+                        "ID": 365
                     }
                 ],
                 "Units": [
@@ -56779,6 +56784,13 @@
                         "ID": 1570,
                         "Name": "Xolotl Warrior",
                         "RequiredAge": 3
+                    }
+                ],
+                "Techs": [
+                    {
+                        "Name": "Elite Tarkan",
+                        "RequiredAge": 4,
+                        "ID": 2
                     }
                 ]
             },
@@ -57297,16 +57309,6 @@
                         "ID": 22,
                         "Name": "Loom",
                         "RequiredAge": 1
-                    },
-                    {
-                        "ID": 213,
-                        "Name": "Wheelbarrow",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 249,
-                        "Name": "Hand Cart",
-                        "RequiredAge": 3
                     },
                     {
                         "Name": "Town Defense",

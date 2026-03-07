@@ -685,24 +685,24 @@ void EffectFunction10098(int playerId = -1)
 //  10117 - C-Bonus, unique tech from allies
 void EffectFunction10117(int playerId = -1)
 {
-    static int TechIDArray = -1;
+    static int ImperialTechIDArray = -1;
 
-    if (TechIDArray == -1)
+    if (ImperialTechIDArray == -1)
     {
-        TechIDArray = xsArrayCreateInt(100, 0);
-        ArrayMultipleSetInt(TechIDArray, 1, 461, 493, 457, 11, 59, 52, 61, 7, 454, 10);
-        ArrayMultipleSetInt(TechIDArray, 11, 49, 6, 5, 440, 24, 4, 21, 445, 902, 507);
-        ArrayMultipleSetInt(TechIDArray, 21, 517, 515, 513, 573, 575, 577, 579, 623, 625, 626);
-        ArrayMultipleSetInt(TechIDArray, 31, 629, 686, 688, 690, 692, 755, 757, 783, 785, 832);
-        ArrayMultipleSetInt(TechIDArray, 41, 834, 836, 884, 921, 924, 1113, 1123, 1133, 1069, 1081);
-        ArrayMultipleSetInt(TechIDArray, 51, 1062, 997, 1007, 1285, 1298, 1309, 1366, 1380, 1393, 0);
+        ImperialTechIDArray = xsArrayCreateInt(100, 0);
+        ArrayMultipleSetInt(ImperialTechIDArray, 1, 461, 493, 457, 11, 59, 52, 61, 7, 454, 10);
+        ArrayMultipleSetInt(ImperialTechIDArray, 11, 49, 6, 5, 440, 24, 4, 21, 445, 902, 507);
+        ArrayMultipleSetInt(ImperialTechIDArray, 21, 517, 515, 513, 573, 575, 577, 579, 623, 625, 626);
+        ArrayMultipleSetInt(ImperialTechIDArray, 31, 629, 686, 688, 690, 692, 755, 757, 783, 785, 832);
+        ArrayMultipleSetInt(ImperialTechIDArray, 41, 834, 836, 884, 921, 924, 1113, 1123, 1133, 1069, 1081);
+        ArrayMultipleSetInt(ImperialTechIDArray, 51, 1062, 997, 1007, 1287, 1298, 1309, 1366, 1380, 1393, 0);
     }
 
     int i = 0;
     for (i = 1; <= xsGetNumPlayers())
         if ((i != playerId) && (isAlly(i, playerId)))
         {
-            int UniqueTechID = xsArrayGetInt(TechIDArray, xsGetPlayerCivilization(i));
+            int UniqueTechID = xsArrayGetInt(ImperialTechIDArray, xsGetPlayerCivilization(i));
             if (xsGetTechState(playerId, UniqueTechID) < cTechStateNotReady)
             {
                 xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetState, cAttributeForce, playerId);
@@ -719,6 +719,48 @@ void EffectFunction10117(int playerId = -1)
             }
         }
 }
+
+
+//  10118 - C-Bonus, unique tech from allies
+void EffectFunction10118(int playerId = -1)
+{
+    static int CastleTechIDArray = -1;
+
+    if (CastleTechIDArray == -1)
+    {
+        CastleTechIDArray = xsArrayCreateInt(100, 0);
+        ArrayMultipleSetInt(CastleTechIDArray, 1, 3, 83, 16, 489, 484, 462, 464, 488, 28, 491);
+        ArrayMultipleSetInt(CastleTechIDArray, 11, 463, 487, 482, 492, 460, 485, 483, 486, 499, 506);
+        ArrayMultipleSetInt(CastleTechIDArray, 21, 516, 514, 455, 1404, 574, 576, 578, 622, 624, 627);
+        ArrayMultipleSetInt(CastleTechIDArray, 31, 628, 685, 687, 689, 691, 754, 756, 782, 784, 831);
+        ArrayMultipleSetInt(CastleTechIDArray, 41, 833, 835, 883, 922, 923, 1111, 1120, 1130, 1070, 1080);
+        ArrayMultipleSetInt(CastleTechIDArray, 51, 1061, 996, 1006, 1285, 1297, 1307, 1365, 1379, 1392, 0);
+    }
+
+    int i = 0;
+    for (i = 1; <= xsGetNumPlayers())
+        if ((i != playerId) && (isAlly(i, playerId)))
+        {
+            int UniqueTechID = xsArrayGetInt(CastleTechIDArray, xsGetPlayerCivilization(i));
+            if (xsGetTechState(playerId, UniqueTechID) < cTechStateNotReady)
+            {
+                xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetState, cAttributeForce, playerId);
+                if (i <= 4)
+                {
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 20, playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i), playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetLocation, UniversityID, playerId);
+                }
+                else
+                {
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 21, playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i + 1), playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetLocation, UniversityID, playerId);
+                }
+            }
+        }
+}
+
 
 
 //  Interface
