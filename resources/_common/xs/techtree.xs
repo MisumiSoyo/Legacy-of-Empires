@@ -372,7 +372,6 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, RingArcherArmorTechID);
             EnableTech(playerId, SiegeEngineersTechID);
-            EnableTech(playerId, BloodlinesTechID);
             break;
         }
         case cSicilians:

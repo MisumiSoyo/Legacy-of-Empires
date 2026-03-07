@@ -268,6 +268,7 @@ extern const int FemaleRepairerID = 222;
 extern const int WarElephantID = 239;
 extern const int LongBoatID = 250;
 extern const int FemaleFarmerID = 259;
+extern const int MangonelID = 280;
 extern const int ThrowingAxemanID = 281;
 extern const int CavalierID = 283;
 extern const int RelicID = 285;
@@ -385,6 +386,9 @@ extern const int FemaleHerderID = 1891;
 extern const int MaleHerderID = 1892;
 extern const int FireLancerID = 1901;
 extern const int EliteFireLancerID = 1903;
+extern const int RocketCartID = 1904;
+extern const int ProjectileRocketCartID = 1906;
+extern const int HeavyRocketCartID = 1907;
 extern const int IronPagodaID = 1908;
 extern const int EliteIronPagodaID = 1910;
 extern const int GrenadierID = 1911;
@@ -411,6 +415,9 @@ extern const int EliteIbirapemaWarriorID = 2584;
 extern const int TempleGuardID = 2586;
 extern const int EliteTempleGuardID = 2587;
 extern const int ChampiRunnerID = 2588;
+extern const int HulkID = 2626;
+extern const int WarHulkID = 2627;
+extern const int CarrackID = 2628;
 
 
 //  Original Tech IDs

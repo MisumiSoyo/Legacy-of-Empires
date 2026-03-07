@@ -762,6 +762,26 @@ void EffectFunction10118(int playerId = -1)
 }
 
 
+void MangonelAdjustment(int playerId = -1)
+{
+    AddAttackForm(playerId, MangonelID, cDamageClassTrees, -109);
+    SetAttribute(playerId, MangonelID, cBlastAttackLevel, 1);
+    AddAttackForm(playerId, RocketCartID, cDamageClassTrees, -21);
+    SetAttribute(playerId, RocketCartID, cBlastAttackLevel, 1);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTaskAmount(cTaskAttrEnableTargeting, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 3);
+    xsTaskAmount(cTaskAttrGatherType, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTask(MangonelID, cTaskTypeCombat, cTreeClass, playerId);
+    xsTask(RocketCartID, cTaskTypeCombat, cTreeClass, playerId);
+    xsResetTaskAmount();
+}
+
+
 
 //  Interface
 void AbilityApplier(int playerId = -1)
@@ -774,4 +794,5 @@ void AbilityApplier(int playerId = -1)
     ShrineInit(playerId);
     KhanInit(playerId);
     FoederatiArmyInit(playerId);
+    MangonelAdjustment(playerId);
 }
