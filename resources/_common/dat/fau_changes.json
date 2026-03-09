@@ -2192,6 +2192,14 @@
             "building_id": 12,
             "Name": "Elite Huskarl",
             "RequiredAge": 4
+        },
+        {
+            "note": "攻城训练",
+            "civilizations": "all",
+            "tech_id": 3508,
+            "building_id": 12,
+            "Name": "Siege Training",
+            "RequiredAge": 3
         }
     ]
 }

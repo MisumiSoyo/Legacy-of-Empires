@@ -1715,6 +1715,35 @@
             "Age ID": 3,
             "Building ID": 12,
             "Draw Node Type": "UnitTech",
+            "Help String ID": 600169,
+            "Link ID": 602,
+            "Link Node Type": "Research",
+            "Name": "Siege Training",
+            "Name String ID": 500169,
+            "Node ID": 3508,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Use Type": "Tech"
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 12,
+            "Draw Node Type": "UnitTech",
             "Help String ID": 107450,
             "Link ID": -1,
             "Link Node Type": "Research",

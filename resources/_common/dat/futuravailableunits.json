@@ -231,6 +231,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -1207,6 +1212,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -2352,6 +2362,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -3444,6 +3459,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -4532,6 +4552,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -5610,6 +5635,11 @@
                         "Name": "Elite Toungoo Warrior",
                         "RequiredAge": 4,
                         "ID": 3141
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -6732,6 +6762,11 @@
                         "Name": "Elite Varangians",
                         "RequiredAge": 4,
                         "ID": 3014
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -7891,6 +7926,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -9004,6 +9044,11 @@
                         "Name": "Gambesons",
                         "RequiredAge": 3,
                         "ID": 875
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -10152,6 +10197,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -11214,6 +11264,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -12341,6 +12396,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -13409,6 +13469,11 @@
                         "Name": "Arson",
                         "RequiredAge": 2,
                         "ID": 602
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -14441,6 +14506,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -15424,6 +15494,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -16473,6 +16548,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -17517,6 +17597,11 @@
                         "Name": "Halberdier",
                         "RequiredAge": 4,
                         "ID": 429
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -18655,6 +18740,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -19726,6 +19816,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -20844,6 +20939,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -21949,6 +22049,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -23050,6 +23155,11 @@
                         "Name": "Squires",
                         "RequiredAge": 3,
                         "ID": 215
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -24142,6 +24252,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -25233,6 +25348,11 @@
                         "Name": "Elite Donso",
                         "RequiredAge": 4,
                         "ID": 429
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -26335,6 +26455,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -27307,6 +27432,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -28409,6 +28539,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -29559,6 +29694,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -30673,6 +30813,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -31792,6 +31937,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -32861,6 +33011,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -33978,6 +34133,11 @@
                         "Name": "Elite War Dog",
                         "RequiredAge": 4,
                         "ID": 3502
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -35117,6 +35277,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -36193,6 +36358,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -37297,6 +37467,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -38471,6 +38646,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -39582,6 +39762,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -40627,6 +40812,11 @@
                         "Name": "Halberdier",
                         "RequiredAge": 4,
                         "ID": 429
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -41673,6 +41863,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -42773,6 +42968,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -43840,6 +44040,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -44951,6 +45156,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -46012,6 +46222,11 @@
                         "ID": 215,
                         "Name": "Squires",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -47029,6 +47244,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -48078,6 +48298,11 @@
                         "Name": "Elite Khevsureti Warrior",
                         "RequiredAge": 4,
                         "ID": 3007
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -49154,6 +49379,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -50203,6 +50433,11 @@
                         "Name": "Gambesons",
                         "RequiredAge": 3,
                         "ID": 875
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -51299,6 +51534,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -52321,6 +52561,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -53415,6 +53660,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -54506,6 +54756,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -55721,6 +55976,11 @@
                         "ID": 215,
                         "Name": "Squires",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -56736,6 +56996,11 @@
                         "Name": "Elite Huskarl",
                         "RequiredAge": 4,
                         "ID": 365
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [
@@ -57710,6 +57975,11 @@
                         "ID": 215,
                         "Name": "Squires",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Siege Training",
+                        "RequiredAge": 3,
+                        "ID": 3508
                     }
                 ],
                 "Units": [

@@ -346,6 +346,7 @@
 500166 "Cuauhocelotl"
 500167 "Flanking Cavalry"
 500168 "Elite War Dog"
+500169 "Siege Training"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -516,6 +517,7 @@
 501166 "Research Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)"
 501167 "Research Flanking Cavalry (Mounted units can additionally block a melee attack)"
 501168 "Upgrade to Elite War Dog"
+501169 "Research Siege Training (Infantries +3 attack vs Buildings, +4 attack vs Stone Defensive Buildings)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -686,6 +688,7 @@
 521166 "Research <b>Cuauhocelotl<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nEagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills."
 521167 "Research <b>Flanking Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMounted units can additionally block a melee attack."
 521168 "Research <b>Elite War Dog<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your War Dogs and lets you create Elite War Dogs."
+521169 "Research <b>Siege Training<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nInfantries +3 attack vs Buildings, +4 attack vs Stone Defensive Buildings."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
