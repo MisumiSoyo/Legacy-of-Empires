@@ -1723,7 +1723,7 @@
             "Name": "Arson",
             "Name String ID": 17258,
             "Node ID": 602,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 118,
             "Prerequisite IDs": [

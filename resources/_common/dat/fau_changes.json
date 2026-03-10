@@ -1400,8 +1400,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "波兰, 意大利获得长戟兵",
-            "civilizations": ["Poles", "Italians"],
+            "note": "波兰, 意大利, 维京获得长戟兵",
+            "civilizations": ["Poles", "Italians", "Vikings"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",
@@ -1509,8 +1509,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "哥特获得纵火",
-            "civilizations": "Goths",
+            "note": "哥特, 穆伊斯卡, 罗马获得纵火",
+            "civilizations": ["Goths", "Muisca", "Romans"],
             "tech_id": 602,
             "building_id": 12,
             "Name": "Arson",
@@ -2200,6 +2200,12 @@
             "building_id": 12,
             "Name": "Siege Training",
             "RequiredAge": 3
+        },
+        {
+            "note": "禁用攻城训练",
+            "civilizations": [],
+            "tech_id": 3508,
+            "type": "delete"
         }
     ]
 }

@@ -39764,6 +39764,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3508
@@ -46222,6 +46227,11 @@
                         "ID": 215,
                         "Name": "Squires",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Arson",
+                        "RequiredAge": 2,
+                        "ID": 602
                     },
                     {
                         "Name": "Siege Training",
@@ -55976,6 +55986,11 @@
                         "ID": 215,
                         "Name": "Squires",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Arson",
+                        "RequiredAge": 2,
+                        "ID": 602
                     },
                     {
                         "Name": "Siege Training",

@@ -2,6 +2,28 @@
     "changes":
     [
         {
+            "note": "攻城训练",
+            "action": "add",
+            "civ_id": "all",
+            "Age ID": 3,
+            "Building ID": 12,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600169,
+            "Link ID": 602,
+            "Link Node Type": "Research",
+            "Name": "Siege Training",
+            "Name String ID": 500169,
+            "Node ID": 3508,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Use Type": "Tech",
+            "position": "after",
+            "target_id": 602
+        },
+        {
             "note": "马扎尔, 土耳其, 匈奴获得草原枪兵",
             "action": "add",
             "civ_id": ["HUNS", "TURKS", "MAGYAR"],
@@ -679,28 +701,6 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4027
-        },
-        {
-            "action": "add",
-            "civ_id": "FRANKS",
-            "Age ID": 4,
-            "Building ID": 12,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800021,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Swiss Lancer",
-            "Name String ID": 700021,
-            "Node ID": 4031,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 136,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit",
-            "position": "after",
-            "target_id": 359
         },
         {
             "note": "小艇",
@@ -2960,18 +2960,10 @@
             "target_id": 4059
         },
         {
-            "note": "达罗毗荼纵火提前一个时代",
+            "note": "维京护卫, 软甲, 攻城训练提前一个时代",
             "action": "modify",
-            "civ_id": "DRAVIDIANS",
-            "Node ID": 602,
-            "Use Type": "Tech",
-            "Age ID": 1
-        },
-        {
-            "note": "达罗毗荼护卫和软甲提前一个时代",
-            "action": "modify",
-            "civ_id": "DRAVIDIANS",
-            "Node ID": [215, 875],
+            "civ_id": "VIKINGS",
+            "Node ID": [215, 875, 3508],
             "Use Type": "Tech",
             "Age ID": 2
         },
@@ -5010,10 +5002,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "罗马获得护腕",
+            "note": "罗马获得护腕, 纵火",
             "action": "modify",
             "civ_id": "ROMANS",
-            "Node ID": [201],
+            "Node ID": [201, 602],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -5171,6 +5163,14 @@
             "civ_id": "VIKINGS",
             "Node ID": [373],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "维京获得长戟兵",
+            "action": "modify",
+            "civ_id": "VIKINGS",
+            "Node ID": [359],
+            "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
         {
@@ -5332,26 +5332,33 @@
             "Node Status": "NotAvailable"
         },
         {
-            "note": "攻城训练",
+            "note": "穆伊斯卡获得纵火",
+            "action": "modify",
+            "civ_id": "MUISCA",
+            "Node ID": [602],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "瑞士枪兵",
             "action": "add",
-            "civ_id": "all",
-            "Age ID": 3,
+            "civ_id": "FRANKS",
+            "Age ID": 4,
             "Building ID": 12,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 600169,
-            "Link ID": 602,
-            "Link Node Type": "Research",
-            "Name": "Siege Training",
-            "Name String ID": 500169,
-            "Node ID": 3508,
+            "Help String ID": 800021,
+            "Link ID": 3508,
+            "Link Node Type": "BuildingTech",
+            "Name": "Swiss Pikeman",
+            "Name String ID": 700021,
+            "Node ID": 4031,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
+            "Node Type": "UniqueUnit",
+            "Picture Index": 136,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Use Type": "Tech",
-            "position": "after",
-            "target_id": 602
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         }
     ]
 }

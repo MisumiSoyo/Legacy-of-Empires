@@ -152,8 +152,10 @@ void EffectFunction10001(int playerId = -1)
         case cVikings:
         {
             EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, HalberdierTechID);
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, ArrowslitsTechID);
+            DisableTech(playerId, 416);
             break;
         }
         case cMongols:
@@ -429,6 +431,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HussarTechID);
             EnableTech(playerId, BracerTechID);
             EnableTech(playerId, ArbalesterTechID);
+            EnableTech(playerId, ArsonTechID);
             break;
         }
         case cArmenians:
@@ -481,6 +484,7 @@ void EffectFunction10001(int playerId = -1)
         }
         case cMuisca:
         {
+            EnableTech(playerId, ArsonTechID);
             break;
         }
         case cMapuche:
