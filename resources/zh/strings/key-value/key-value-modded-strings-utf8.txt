@@ -95,7 +95,7 @@
 //	土耳其
 120159 "火药文明\n\n• 火药单位生命值 +25%; 研究火药科技费用 -50%, 化学免费升级\n• 金矿工 +25% 工作效率\n• 斥候骑兵系自动升级, 并且 +1 盾牌\n• 精锐草原枪兵和重装骆驼兵升级费用 -50%\n\n<b>独特单位：<b>\n• 苏丹亲兵 (高攻击火枪手), 西帕希骑兵 (可降低敌方远程单位攻击速度的骑兵), 奥斯曼军乐队 (可强化友军的骑兵)\n\n<b>独特科技：<b> \n• 突厥骑射 (骑射手 +20 生命值)\n• 火炮术 (炮塔、手推炮、炮舰射程 +2)\n• 徳夫希尔梅 (立即产出 5 名苏丹亲兵, 每个城镇中心再 +1)\n• 旱地行舟 (战舰可以在陆地上以 50% 速度移动)\n\n<b>团队加成：<b> \n火药单位 +25% 训练速度"
 //	维京
-120160 "步兵和海军文明\n\n• 战船类单位费用在封建/城堡/帝王时代 -10/15/20%\n• 独轮手推车和手推车免费升级\n• 护卫, 软甲和攻城训练 可提前一个时代研究\n\n<b>独特单位：<b> \n• 狂战士 (可回复生命值和叠加攻速的步兵), 龙头战舰 (多重放箭的战船), 维京掠夺者(可减少敌方工作效率的高速步兵), 木制要塞 (独特箭塔)\n\n<b>独特科技：<b> \n• 酋长 (步兵对骑兵攻击力 + 5, 对骆驼攻击力 +4, 击杀村民获得 5 黄金, 击杀贸易单位和僧侣时获得 20 黄金)\n• 博格斯维加尔 (步弓手系和龙头战舰攻击力 +1)\n• 海盗行为 (运输船 +250% 生命值; 战舰击杀敌人和摧毁建筑时可获得 40 黄金)\n• 鳕鱼贸易 (渔夫和渔船 -50% 食物获取, 但可以产出等量黄金)\n\n<b>团队加成：<b> \n船坞建造费用 -15%"
+120160 "步兵和海军文明\n\n• 战船类单位费用在封建/城堡/帝王时代 -10/15/20%\n• 独轮手推车和手推车免费升级\n• 纵火, 护卫和攻城训练 可提前一个时代研究\n\n<b>独特单位：<b> \n• 狂战士 (可回复生命值和叠加攻速的步兵), 龙头战舰 (多重放箭的战船), 维京掠夺者(可减少敌方工作效率的高速步兵), 木制要塞 (独特箭塔)\n\n<b>独特科技：<b> \n• 酋长 (步兵对骑兵攻击力 +5, 对骆驼攻击力 +4, 击杀村民获得 5 黄金, 击杀贸易单位和僧侣时获得 20 黄金)\n• 博格斯维加尔 (步弓手系和龙头战舰攻击力 +1)\n• 海盗行为 (运输船 +250% 生命值; 战舰击杀敌人和摧毁建筑时可获得 40 黄金)\n• 鳕鱼贸易 (渔夫和渔船 -50% 食物获取, 但可以产出等量黄金)\n\n<b>团队加成：<b> \n船坞建造费用 -15%"
 //	蒙古
 120161 "骑射手文明\n\n• 骑射手 +25%攻击速度\n• 斥候骑兵系和草原枪兵生命值在城堡/帝王时代 +20/30%\n• 猎人工作效率 +40%\n• 步兵和骑兵攻击建筑 (不包括墙，门和农田) 时每秒产生 0.33 黄金\n• 怯薛和精锐怯薛可提前一个时代使用\n• 牧场可容纳 4 名村民工作\n\n<b>独特单位：<b>\n• 蒙古突骑 (高射速骑射手), 怯薛 (攻击可回复生命值的骑兵)\n\n<b>独特科技：<b> \n• 游牧 (失去房屋不影响人口余数)\n• 操练 (攻城武器厂单位 +50% 移动速度)\n• 互市 (贸易单位食物费用代替黄金费用)\n• 蒙古和平 (兵营和靶场单位每次攻击可回复 2 生命值, 怯薛攻击回复的生命值 +1)\n\n<b>团队加成：<b> \n侦察骑兵系视野 +2"
 //	凯尔特
@@ -351,6 +351,9 @@
 500167 "拐子马"
 500168 "精锐军犬"
 500169 "攻城训练"
+500170 "狂战士"
+500171 "老练狂战士"
+500172 "精锐狂战士"
 
 
 501001 "研究季风航行(渔船和运输船 +25%移动速度)"
@@ -521,7 +524,10 @@
 501166 "研究夸乌塞洛特(鹰斥候系单位击杀敌人可提升 1 攻击力 (最多 +4); 豹勇士击杀敌人提升的攻击力 +1)"
 501167 "研究拐子马(骑乘单位可额外抵挡 1 次近战攻击)"
 501168 "升级到精锐军犬"
-501169 "研究攻城训练(步兵 +3 攻击力 vs 建筑, +4 攻击力 vs 石质防御建筑)"
+501169 "研究攻城训练(步兵 +2 攻击力 vs 建筑, +3 攻击力 vs 石质防御建筑)"
+501170 "升级到狂战士"
+501171 "升级到老练狂战士"
+501172 "升级到精锐狂战士"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -692,7 +698,7 @@
 521166 "研究<b>夸乌塞洛特<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n鹰斥候系单位击杀敌人可提升 1 攻击力 (最多 +4); 豹勇士击杀敌人提升的攻击力 +1。"
 521167 "研究<b>拐子马<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n骑乘单位可额外抵挡 1 次近战攻击。"
 521168 "升级到<b>精锐军犬<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n将您的军犬升级, 生产更为强大的精锐军犬。"
-521169 "研究<b>攻城训练<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n步兵 +3 攻击力 vs 建筑, +4 攻击力 vs 石质防御建筑。"
+521169 "研究<b>攻城训练<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n步兵 +2 攻击力 vs 建筑, +3 攻击力 vs 石质防御建筑。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -787,6 +793,10 @@
 700081 "精锐重装掷矛手"
 700082 "军犬"
 700083 "精锐军犬"
+700084 "早期狂战士"
+700085 "狂战士"
+700086 "老练狂战士"
+700087 "精锐狂战士"
 
 
 701001 "生产铁炮足轻"
@@ -871,6 +881,10 @@
 701081 "生产精锐重装掷矛手"
 701082 "生产军犬"
 701083 "生产精锐军犬"
+701084 "生产早期狂战士"
+701085 "生产狂战士"
+701086 "生产老练狂战士"
+701087 "生产精锐狂战士"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1036,6 +1050,14 @@
 721082 "生产<b>军犬<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\n西班牙独特单位, 可闪避远程攻击, 并且会斩杀生命值在 15% 以下的敌人。追击敌人时, 移动速度 + 25%。\n升级: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\n主类: 方阵兵; 标签: 冲击步兵, 独特单位。"
 
 721083 "生产<b>精锐军犬<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\n西班牙独特单位, 可闪避远程攻击, 并且会斩杀生命值在 15% 以下的敌人。追击敌人时, 移动速度 + 25%。\n升级: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\n主类: 方阵兵; 标签: 冲击步兵, 独特单位。"
+
+721084 "生产<b>早期狂战士<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\n维京独特步兵, 可回复生命值, 攻击时回复速率加倍。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.05 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 4 <MATERIAL=StatIconsHpRegeneration,1> 20\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +1 vs 冲击步兵。"
+
+721085 "生产<b>狂战士<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\n维京独特步兵, 可回复生命值, 攻击时回复速率加倍。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.075 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsHpRegeneration,1> 30\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +2 vs 冲击步兵, +1 vs 标准建筑。"
+
+721086 "生产<b>老练狂战士<b> (<cost>, 24 <MATERIAL=MPIconGoodCPU,1>)\n维京独特步兵, 可回复生命值, 攻击时回复速率加倍。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsHpRegeneration,1> 40\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +5 vs 冲击步兵, +3 vs 标准建筑, +2 vs 石质防御建筑。"
+
+721087 "生产<b>精锐狂战士<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU,1>)\n维京独特步兵, 可回复生命值, 攻击时回复速率加倍。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.15 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsHpRegeneration,1> 50\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +8 vs 冲击步兵, +6 vs 标准建筑, +3 vs 石质防御建筑, +3 vs 墙和门。"
 
 
 

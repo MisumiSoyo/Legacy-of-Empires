@@ -91,7 +91,7 @@
 //	Turks
 120159 "Gunpowder civilization \n\n• Gunpowder units +25% HP; researching gunpowder technologies -50% cost; Chemistry free\n• Gold miners +25% work rate\n• Scout Cavalry line upgrades free, and +1 pierce armor\n• Elite Steppe Lancer and Heavy Camel Rider upgrade -50% cost\n• Cannon Galleons can move on land\n\n<b>Unique Unit:<b> \n• Janissary (High attack hand cannon), Sipahi (Cavalries that can reduce nearby enemy ranged soldiers' attack speed), Mehter (Cavalry that can strengthen allies)\n\n<b>Unique Techs: <b>\n• Sipahi (Cavalry Archers +20 HP) \n• Artillery (Cannon Tower, Bombard Cannon and Cannon Galley +2 max range)\n• Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)\n• Sail on Land (Warships can move at 50% speed on land)\n\n<b>Team bonus: <b>\nGunpowder units +25% creation speed"
 //	Vikings
-120160 "Infantry and Naval civilization\n\n• War Ships cost -10%/-15%/-20% at Feudal/Castle/Imperial Age\n• Wheelbarrow, Hand Cart free\n• Squires, Gambesons and Siege Training can be researched an age in advance\n\n<b>Unique Units:<b>\n• Berserk (Infantry with regeneration), Longboat (War ship with multiple arrows), Viking Raiders (High speed infantry that can reduce enemy's work rate), Wooden Fortress (unique tower)\n\n<b>Unique Techs: <b>\n• Chieftains (Infantry +5 damage vs cavalries, +4 damage vs camels, gain 5 gold for each killed villager and 20 gold for monks and trade units.) \n• Bogsveigar (Archer-line and Longboats +1 attack)\n• Frozen Sea Dominance (Transport Ships +250% hit points; Warships can loot 40 gold when killing enemies or destroying buildings)\n• Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)\n\n<b>Team bonus: <b>\nDock cost -15%"
+120160 "Infantry and Naval civilization\n\n• War Ships cost -10%/-15%/-20% at Feudal/Castle/Imperial Age\n• Wheelbarrow, Hand Cart free\n• Arson, Squires and Siege Training can be researched an age in advance\n\n<b>Unique Units:<b>\n• Berserk (Infantry with regeneration), Longboat (War ship with multiple arrows), Viking Raiders (High speed infantry that can reduce enemy's work rate), Wooden Fortress (unique tower)\n\n<b>Unique Techs: <b>\n• Chieftains (Infantry +5 damage vs cavalries, +4 damage vs camels, gain 5 gold for each killed villager and 20 gold for monks and trade units.) \n• Bogsveigar (Archer-line and Longboats +1 attack)\n• Frozen Sea Dominance (Transport Ships +250% hit points; Warships can loot 40 gold when killing enemies or destroying buildings)\n• Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)\n\n<b>Team bonus: <b>\nDock cost -15%"
 //	Mongols
 120161 "Cavalry Archer civilization \n\n• Cavalry archers +25% attack speed\n• Scout Cavalry-line and Steppe Lancers +20/30% HP at Castle/Imperial Age\n• Hunters +40% work rate\n• Infantries and cavalries can loot 0.33 gold per second when attacking buildings(except gates, walls and farms)\n• Keshik and Elite Keshik available an age in advance\n• Pastures can accommodate 4 herders\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom) \n• Drill (Siege Workshop units +50% moving speed) \n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barracks and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking)\n\n<b>Team bonus: <b>\nScout-Line +2 LOS"
 //	Celts
@@ -347,6 +347,9 @@
 500167 "Flanking Cavalry"
 500168 "Elite War Dog"
 500169 "Siege Training"
+500170 "Berserk"
+500171 "Veteran Berserk"
+500172 "Elite Berserk"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -517,7 +520,10 @@
 501166 "Research Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)"
 501167 "Research Flanking Cavalry (Mounted units can additionally block a melee attack)"
 501168 "Upgrade to Elite War Dog"
-501169 "Research Siege Training (Infantries +3 attack vs Buildings, +4 attack vs Stone Defensive Buildings)"
+501169 "Research Siege Training (Infantries +2 attack vs Buildings, +3 attack vs Stone Defensive Buildings)"
+501170 "Upgrade to Berserk"
+501171 "Upgrade to Veteran Berserk"
+501172 "Upgrade to Elite Berserk"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -688,7 +694,7 @@
 521166 "Research <b>Cuauhocelotl<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nEagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills."
 521167 "Research <b>Flanking Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMounted units can additionally block a melee attack."
 521168 "Research <b>Elite War Dog<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your War Dogs and lets you create Elite War Dogs."
-521169 "Research <b>Siege Training<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nInfantries +3 attack vs Buildings, +4 attack vs Stone Defensive Buildings."
+521169 "Research <b>Siege Training<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nInfantries +2 attack vs Buildings, +3 attack vs Stone Defensive Buildings."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -783,6 +789,10 @@
 700081 "Elite Heavy Skirmisher"
 700082 "War Dog"
 700083 "Elite War Dog"
+700084 "Early Berserk"
+700085 "Berserk"
+700086 "Veteran Berserk"
+700087 "Elite Berserk"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -867,6 +877,10 @@
 701081 "Create Elite Heavy Skirmisher"
 701082 "Create War Dog"
 701083 "Create Elite War Dog"
+701084 "Create Early Berserk"
+701085 "Create Berserk"
+701086 "Create Veteran Berserk"
+701087 "Create Elite Berserk"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1032,6 +1046,14 @@
 721082 "Create <b>War Dog<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\nSpanish unique unit. Can dodge projectiles and kill enemies with less than 15% HP. +25% movement speed when chasing enemies.\nUpgrades: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\nClass: Phalanx; Tags: Shock Infantry, Unique Unit."
 
 721083 "Create <b>Elite War Dog<b> (<cost>, 8 <MATERIAL=MPIconGoodCPU,1>)\nSpanish unique unit. Can dodge projectiles and kill enemies with less than 15% HP. +25% movement speed when chasing enemies.\nUpgrades: <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.06 <MATERIAL=StatIconsReloadTime,1> 1.7 <MATERIAL=EyeIcon,1> 5\nClass: Phalanx; Tags: Shock Infantry, Unique Unit."
+
+721084 "Create <b>Early Berserk<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique infantry. Can regenerate hit points. The regenration rate will double when attacking.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.05 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 4 <MATERIAL=StatIconsHpRegeneration,1> 20\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +1 vs Shock Infantry."
+
+721085 "Create <b>Berserk<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique infantry. Can regenerate hit points. The regenration rate will double when attacking.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.075 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsHpRegeneration,1> 30\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +2 vs Shock Infantry, +1 vs Standard Buildings."
+
+721086 "Create <b>Veteran Berserk<b> (<cost>, 24 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique infantry. Can regenerate hit points. The regenration rate will double when attacking.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsHpRegeneration,1> 40\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +5 vs Shock Infantry, +3 vs Standard Buildings, +2 vs Stone Defensive Buildings."
+
+721087 "Create <b>Elite Berserk<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique infantry. Can regenerate hit points. The regenration rate will double when attacking.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.15 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsHpRegeneration,1> 50\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +8 vs Shock Infantry, +6 vs Standard Buildings, +3 vs Stone Defensive Buildings, +3 vs Walls & Gates."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

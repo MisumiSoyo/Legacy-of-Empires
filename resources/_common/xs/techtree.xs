@@ -155,6 +155,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HalberdierTechID);
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, ArrowslitsTechID);
+            DisableTech(playerId, GambesonsTechID);
+            DisableTech(playerId, ChampionTechID);
             DisableTech(playerId, 416);
             break;
         }

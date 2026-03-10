@@ -39749,11 +39749,6 @@
                         "RequiredAge": 3
                     },
                     {
-                        "ID": 875,
-                        "Name": "Gambesons",
-                        "RequiredAge": 3
-                    },
-                    {
                         "ID": 215,
                         "Name": "Squires",
                         "RequiredAge": 3
@@ -39809,11 +39804,6 @@
                         "ID": 358,
                         "Name": "Pikeman",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Viking Raider",
-                        "RequiredAge": 1,
-                        "ID": 4044
                     }
                 ]
             },

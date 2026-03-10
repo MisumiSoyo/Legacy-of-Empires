@@ -259,14 +259,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "维京掠夺者",
-            "civilizations": "Vikings",
-            "unit_id": 4044,
-            "building_id": 12,
-            "Name": "Viking Raider",
-            "RequiredAge": 1
-        },
-        {
             "note": "索法骑手",
             "civilizations": "Malians",
             "unit_id": 4045,
@@ -1230,6 +1222,12 @@
             "building_id": 12,
             "Name": "Gambesons",
             "RequiredAge": 3
+        },
+        {
+            "note": "维京禁用软甲",
+            "civilizations": ["Vikings"],
+            "tech_id": 875,
+            "type": "delete"
         },
         {
             "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙启用围墙",

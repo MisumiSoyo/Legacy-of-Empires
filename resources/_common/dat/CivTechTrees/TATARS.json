@@ -5282,6 +5282,36 @@
         },
         {
             "Age ID": 3,
+            "Building ID": 562,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600154,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Forestry",
+            "Name String ID": 500154,
+            "Node ID": 3461,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "Age ID": 3,
             "Building ID": 103,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600041,
@@ -5413,36 +5443,6 @@
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 107,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
-            "Age ID": 3,
-            "Building ID": 562,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600154,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Forestry",
-            "Name String ID": 500154,
-            "Node ID": 3461,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
             "Prerequisite IDs": [
                 0,
                 0,
