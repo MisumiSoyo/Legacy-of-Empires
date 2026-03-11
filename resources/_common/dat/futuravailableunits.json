@@ -40554,12 +40554,6 @@
                         "RequiredTechID": 14
                     },
                     {
-                        "ID": 12,
-                        "Name": "Crop Rotation",
-                        "RequiredAge": 4,
-                        "RequiredTechID": 13
-                    },
-                    {
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057

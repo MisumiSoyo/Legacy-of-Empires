@@ -1617,8 +1617,8 @@
             "type": "delete"
         },
         {
-            "note": "玛雅, 阿兹特克禁用轮作",
-            "civilizations": ["Mayans", "Aztecs"],
+            "note": "玛雅, 阿兹特克, 维京禁用轮作",
+            "civilizations": ["Mayans", "Aztecs", "Vikings"],
             "tech_id": 12,
             "type": "delete"
         },

@@ -5451,6 +5451,28 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Unit"
+        },
+        {
+            "note": "维京独特单位调整",
+            "action": "modify",
+            "civ_id": "VIKINGS",
+            "Node ID": 692,
+            "Use Type": "Unit",
+            "Help String ID": 800088,
+            "Name": "Jarl",
+            "Name String ID": 700088,
+            "Picture Index": 188
+        },
+        {
+            "note": "维京独特单位调整",
+            "action": "modify",
+            "civ_id": "VIKINGS",
+            "Node ID": 694,
+            "Use Type": "Unit",
+            "Help String ID": 800089,
+            "Name": "Elite Jarl",
+            "Name String ID": 700089,
+            "Picture Index": 188
         }
     ]
 }

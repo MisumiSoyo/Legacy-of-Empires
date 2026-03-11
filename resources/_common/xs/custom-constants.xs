@@ -60,6 +60,8 @@ extern const int cAttributeMayansFarmGoldProductivity = 711;
 
 //  units' IDs
 extern const int Feitoria2ID = 273;
+extern const int JarlID = 692;
+extern const int EliteJarlID = 694;
 extern const int TotalObjects = 4061;
 extern const int AssassinID = 4001;
 extern const int StreltsyID = 4002;
@@ -160,6 +162,10 @@ extern const int Konnik2ID = 4169;
 extern const int EliteKonnik2ID = 4170;
 extern const int FootKonnik2ID = 4171;
 extern const int EliteFootKonnik2ID = 4172;
+extern const int EarlyBerserkID = 4175;
+extern const int BerserkID = 4176;
+extern const int VeteranBerserkID = 4177;
+extern const int EliteBerserkID = 4178;
 
 
 //  Newly added tech IDs
@@ -311,8 +317,6 @@ extern const int SiegeOnagerID = 588;
 extern const int FemaleShepherdID = 590;
 extern const int MaleShepherdID = 592;
 extern const int EliteCannonGalleonID = 691;
-extern const int BerserkID = 692;
-extern const int EliteBerserkID = 694;
 extern const int JaguarWarriorID = 725;
 extern const int EliteJaguarWarriorID = 726;
 extern const int EagleScoutID = 751;
