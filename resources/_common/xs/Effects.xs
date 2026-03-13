@@ -725,6 +725,7 @@ void Curare(int UnitTarget = -1, int playerId = -1)
   xsTask(UnitTarget, cTaskTypeStinger, cScoutCavalryClass, playerId);
   xsTask(UnitTarget, cTaskTypeStinger, cKingClass, playerId);
   xsTask(UnitTarget, cTaskTypeStinger, cPhalanxClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cCavalryArcherClass, playerId);
 }
 
 // Remove Curare from undesirable units
@@ -747,6 +748,7 @@ void CurareRemoval(int UnitTarget = -1, int playerId = -1)
   xsRemoveTask(UnitTarget, cTaskTypeStinger, cScoutCavalryClass, playerId);
   xsRemoveTask(UnitTarget, cTaskTypeStinger, cKingClass, playerId);
   xsRemoveTask(UnitTarget, cTaskTypeStinger, cPhalanxClass, playerId);
+  xsRemoveTask(UnitTarget, cTaskTypeStinger, cCavalryArcherClass, playerId);
 }
 
 // 25 - Add Curare for Tupi
@@ -797,7 +799,7 @@ void EffectFunction25(int playerId = -1)
   CurareRemoval(BlackWoodArcherID, playerId);
   CurareRemoval(EliteBlackWoodArcherID, playerId);
 
-  xsTaskAmount(cTaskAttrWorkValue1, -12);
+  xsTaskAmount(cTaskAttrWorkValue1, -8);
   Curare(BlackWoodArcherID, playerId);
   Curare(EliteBlackWoodArcherID, playerId);
 
@@ -878,6 +880,9 @@ void TupiRefund(int TaskID = -1, int playerId = -1)
 // 27 - Effect of Unit Refund for Tupis
 void EffectFunction27(int playerId = -1)
 {
+  int BlackWoodArcherID = 2579;
+  int EliteBlackWoodArcherID = 2581;
+
   xsResetTaskAmount();
   xsTaskAmount(cTaskAttrWorkValue1, 1);
   xsTaskAmount(cTaskAttrProductivityResource, cAttributeUnitCostRefund);
@@ -888,6 +893,17 @@ void EffectFunction27(int playerId = -1)
   TupiRefund(-2, playerId);
   xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
   TupiRefund(-3, playerId);
+
+  xsTaskAmount(cTaskAttrWorkValue1, 0.5);
+  xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+  xsTask(BlackWoodArcherID, cTaskTypeRefund, -1, playerId);
+  xsTask(EliteBlackWoodArcherID, cTaskTypeRefund, -1, playerId);
+  xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+  xsTask(BlackWoodArcherID, cTaskTypeRefund, -2, playerId);
+  xsTask(EliteBlackWoodArcherID, cTaskTypeRefund, -2, playerId);
+  xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+  xsTask(BlackWoodArcherID, cTaskTypeRefund, -3, playerId);
+  xsTask(EliteBlackWoodArcherID, cTaskTypeRefund, -3, playerId);
   xsResetTaskAmount();
 }
 

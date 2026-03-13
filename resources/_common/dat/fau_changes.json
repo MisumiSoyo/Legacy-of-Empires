@@ -1326,12 +1326,12 @@
             "RequiredAge": 4
         },
         {
-            "note": "橄榄树林",
+            "note": "金角湾塔",
             "civilizations": "Byzantines",
             "tech_id": 3208,
             "building_id": 109,
-            "Name": "Olive Grove",
-            "RequiredAge": 3
+            "Name": "Golden Horn Tower",
+            "RequiredAge": 4
         },
         {
             "note": "宫殿掠夺",
@@ -1339,7 +1339,7 @@
             "tech_id": 3140,
             "building_id": 109,
             "Name": "Polutasvarf",
-            "RequiredAge": 4
+            "RequiredAge": 3
         },
         {
             "note": "立陶宛, 马扎尔获得步兵钢甲",

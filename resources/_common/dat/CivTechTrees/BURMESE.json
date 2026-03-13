@@ -2228,7 +2228,7 @@
             "Name": "Padded Archer Armor",
             "Name String ID": 17208,
             "Node ID": 211,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 49,
             "Prerequisite IDs": [

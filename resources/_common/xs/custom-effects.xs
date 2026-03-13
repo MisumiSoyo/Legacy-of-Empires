@@ -1024,7 +1024,7 @@ void EffectFunction10083(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrResourceOut, cAttributeOliveOil);
-    xsTaskAmount(cTaskAttrWorkValue1, 150);
+    xsTaskAmount(cTaskAttrWorkValue1, 120);
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000007);
     PolutasvarfApplier(playerId, cArcherClass);
@@ -1400,7 +1400,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 169  2026.03.12");
+    xsChatData("Build: 170  2026.03.13");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
