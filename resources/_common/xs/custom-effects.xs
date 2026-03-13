@@ -990,7 +990,7 @@ void EffectFunction10079(int playerId = -1)
 }
 
 
-//  10082 - Olive Grove
+//  10082 - C-Bonus, Olive Oil
 void EffectFunction10082(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -1008,8 +1008,7 @@ void EffectFunction10082(int playerId = -1)
     xsTask(cVillagerClass, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsTask(cVillagerClass, cTaskTypeGenerateResources, cLivestockClass, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeOliveOilProductivity, 10);
-    SetResource(playerId, cAttributeRecruitMercenaryCost, 1);
+    SetResource(playerId, cAttributeOliveOilProductivity, 9);
 }
 
 
@@ -1401,7 +1400,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 168  2026.03.12");
+    xsChatData("Build: 169  2026.03.12");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
