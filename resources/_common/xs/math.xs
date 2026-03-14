@@ -406,17 +406,27 @@ void UpgradeUnit(int playerId = -1, int SourceObject = -1, int TargetObject = -1
 }
 
 
-//  Must carefully use this function for classes
 void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
 {
+    int ObjectCombatAbility = 0;
+    int temp = 0;
     if ((ObjectID >= 900) && (ObjectID <= 964))
     {
-        ModAttribute(playerId, ObjectID, cCombatAbility, 32);
-        if (isSelf)
-            ModAttribute(playerId, ObjectID, cCombatAbility, 64);
+        int i = 0;
+        for (i = 0; < TotalObjects)
+            if (((i < 900) || (i > 964)) && (xsGetObjectClass(playerId, i) == ObjectID))
+            {
+                ObjectCombatAbility = xsGetObjectAttribute(playerId, i, cCombatAbility);
+                if (isSelf)
+                    temp = BitwiseOr(ObjectCombatAbility, 96);
+                else 
+                    temp = BitwiseOr(ObjectCombatAbility, 32);
+                if (temp != ObjectCombatAbility)
+                    xsEffectAmount(cSetAttribute, i, cCombatAbility, temp, playerId);
+            }
         return;
     }
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
     ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 32);
     if (isSelf)
         ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 64);
@@ -426,27 +436,50 @@ void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
 
 void RemoveAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
 {
+    int ObjectCombatAbility = 0;
+    int temp = 0;
     if ((ObjectID >= 900) && (ObjectID <= 964))
     {
-        ModAttribute(playerId, ObjectID, cCombatAbility, -32);
-        if (isSelf)
-            ModAttribute(playerId, ObjectID, cCombatAbility, -64);
+        int i = 0;
+        for (i = 0; < TotalObjects)
+            if (((i < 900) || (i > 964)) && (xsGetObjectClass(playerId, i) == ObjectID))
+            {
+                ObjectCombatAbility = xsGetObjectAttribute(playerId, i, cCombatAbility);
+                if (isSelf)
+                    temp = BitwiseRemove(ObjectCombatAbility, 96);
+                else 
+                    temp = BitwiseRemove(ObjectCombatAbility, 32);
+                if (temp != ObjectCombatAbility)
+                    xsEffectAmount(cSetAttribute, i, cCombatAbility, temp, playerId);
+            }
         return;
     }
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
-    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 96);
+    ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 32);
+    if (isSelf)
+        ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 64);
     xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
 }
 
 
 void LaunchStinger(int playerId = -1, int ObjectID = -1)
 {
+    int ObjectCombatAbility = 0;
+    int temp = 0;
     if ((ObjectID >= 900) && (ObjectID <= 964))
     {
-        ModAttribute(playerId, ObjectID, cCombatAbility, 128);
+        int i = 0;
+        for (i = 0; < TotalObjects)
+            if (((i < 900) || (i > 964)) && (xsGetObjectClass(playerId, i) == ObjectID))
+            {
+                ObjectCombatAbility = xsGetObjectAttribute(playerId, i, cCombatAbility);
+                temp = BitwiseOr(ObjectCombatAbility, 128);
+                if (temp != ObjectCombatAbility)
+                    xsEffectAmount(cSetAttribute, i, cCombatAbility, temp, playerId);
+            }
         return;
     }
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
     ObjectCombatAbility = BitwiseOr(ObjectCombatAbility, 128);
     xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
 }
@@ -454,12 +487,22 @@ void LaunchStinger(int playerId = -1, int ObjectID = -1)
 
 void RemoveStinger(int playerId = -1, int ObjectID = -1)
 {
+    int ObjectCombatAbility = 0;
+    int temp = 0;
     if ((ObjectID >= 900) && (ObjectID <= 964))
     {
-        ModAttribute(playerId, ObjectID, cCombatAbility, -128);
+        int i = 0;
+        for (i = 0; < TotalObjects)
+            if (((i < 900) || (i > 964)) && (xsGetObjectClass(playerId, i) == ObjectID))
+            {
+                ObjectCombatAbility = xsGetObjectAttribute(playerId, i, cCombatAbility);
+                temp = BitwiseRemove(ObjectCombatAbility, 128);
+                if (temp != ObjectCombatAbility)
+                    xsEffectAmount(cSetAttribute, i, cCombatAbility, temp, playerId);
+            }
         return;
     }
-    int ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
+    ObjectCombatAbility = xsGetObjectAttribute(playerId, ObjectID, cCombatAbility);
     ObjectCombatAbility = BitwiseRemove(ObjectCombatAbility, 128);
     xsEffectAmount(cSetAttribute, ObjectID, cCombatAbility, ObjectCombatAbility, playerId);
 }

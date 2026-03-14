@@ -742,8 +742,6 @@ void EffectFunction10071(int playerId = -1)
     xsResetTaskAmount();
     LaunchAura(playerId, cCavalryClass, true);
     LaunchAura(playerId, cScoutCavalryClass, true);
-    ModAttribute(playerId, MonaspaID, cCombatAbility, -96);
-    ModAttribute(playerId, EliteMonaspaID, cCombatAbility, -96);
 }
 
 
@@ -1433,7 +1431,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 173  2026.03.14");
+    xsChatData("Build: 174  2026.03.14");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }
