@@ -1136,7 +1136,7 @@ void EffectFunction10095(int playerId = -1)
 }
 
 
-//  10096 - C-Bonus, warships building
+//  10096 - Maritime Stronghold
 void EffectFunction10096(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -1159,6 +1159,7 @@ void EffectFunction10096(int playerId = -1)
 
     SetAttribute(playerId, cWarshipClass, cTraits, 4);
     SetAttribute(playerId, cWarshipClass, cTraitPiece, SeaTower2ID);
+    EnableObject(playerId, SeaTower2ID);
 }
 
 
@@ -1432,7 +1433,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 172  2026.03.14");
+    xsChatData("Build: 173  2026.03.14");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

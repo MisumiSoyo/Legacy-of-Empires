@@ -466,11 +466,11 @@
             "RequiredAge": 3
         },
         {
-            "note": "教皇国",
+            "note": "海上据点",
             "civilizations": "Italians",
             "tech_id": 3077,
             "building_id": 109,
-            "Name": "Papal State",
+            "Name": "Maritime Stronghold",
             "RequiredAge": 3
         },
         {

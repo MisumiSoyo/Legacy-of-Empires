@@ -107,7 +107,7 @@
 //	Koreans
 120167 "Defensive and Naval civilization \n\n• Stone miners +20% work rate \n• Tower upgrades free (Cannon Tower requires Chemistry) \n• Archer armor upgrades free\n• Infantry class, archer class and cavalry archer class units -50% wood cost, warship class units -20% wood cost\n• Devotion and Faith free\n• Get 1 gold per minute for every 33 gold or stone collected (maximum 200)\n\n<b>Unique Unit : <b>\n• War Wagon (Heavy armored cavalry archer), Turtle Ship (Heary armored war ship), Goguryeo Heavy Cavalry (Cavalry)\n\n<b>Unique Techs: <b>\n• Eupseong (Watch Towers, Guard Towers and Keeps +2 max range/LOS/search radius) \n• Shinkichon (Rocket Carts and Turtle Ships +1 range, fire additional projectiles)\n• Korean Bow (Remove Archer-line and Cavalry Archer-line units' wood cost)\n• Iron Armor (Warships +2 melee armor and can reflect 20% damage to melee attackers)\n\n<b>Team bonus: <b>\nVillagers +3 line of sight"
 //	Italians
-120168 "Archer and Naval civilization \n\n• Advancing to the next age -15% costs \n• Foot Archers and Condottiero +1 melee/+1 pierce armor\n• University and Dock technologies -25% cost \n• Fishing Ships -15% wood cost\n• Gunpowder units -20% cost\n• Archer class units and Condottieros +1/+1P armor\n• Get 15/30/45 gold per minute at Feudal/Castle/Imperial Age\n\n<b>Unique Units:<b>\n• Genoese Crossbowman (archer better combats with cavalries), Condottiero (Infantry better combats with gunpowder units), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs: <b>\n• Silk Road (Trade Units cost -50%)\n• Pirotechnia (Hand Cannoneers deal +15% pass through damage and accuracy increased to 90%)\n• Papal States (Monks regain their faith +50% faster after a successful conversion)\n• Mercenary Contract (Spawn 5 Condottieros at Town Center every 120 seconds)\n• Advanced Mercenary Contract (Mercenary Contract will spawn additionally 5 Condottieros)\n\n<b>Team bonus: <b>\n Can create Condottieros at barracks at Imperial Age"
+120168 "Archer and Naval civilization \n\n• Advancing to the next age -15% costs \n• Foot Archers and Condottiero +1 melee/+1 pierce armor\n• University and Dock technologies -25% cost \n• Fishing Ships -15% wood cost\n• Gunpowder units -20% cost\n• Archer class units and Condottieros +1/+1P armor\n• Get 15/30/45 gold per minute at Feudal/Castle/Imperial Age\n\n<b>Unique Units:<b>\n• Genoese Crossbowman (archer better combats with cavalries), Condottiero (Infantry better combats with gunpowder units), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs: <b>\n• Silk Road (Trade Units cost -50%)\n• Pirotechnia (Hand Cannoneers deal +15% pass through damage and accuracy increased to 90%)\n• Maritime Stronghold (Warships can build Sea Towers)\n• Mercenary Contract (Spawn 5 Condottieros at Town Center every 120 seconds)\n• Advanced Mercenary Contract (Mercenary Contract will spawn additionally 5 Condottieros)\n\n<b>Team bonus: <b>\n Can create Condottieros at barracks at Imperial Age"
 //	Hindustanis
 120169 "Camel and Gunpowder civilization \n\n• Villagers -20% cost\n• Camel Rider-Line units -16.67% reload time \n• Gunpowder units +1/+1P armor\n• Can build Caravanserai in Imperial Age\n• All technologies (except age ups) are free but researched 60% slower\n\n<b>Unique Units:<b> \n• Ghulam (Infantry can deal spear damages), Imperial Camel (High-level Camel rider)\n\n<b>Unique Techs: <b>\n• Grand Trunk Road (All gold incomes +10% rate, trading fee reduced to 10%) \n• Shatagni (Hand cannon +2 max range)\n• Khanda Drills (Ghulams and Mansabdars +25% attack speed)\n• Sultans (Infantries/Cavalries/Ranged units +10/10/6 attack vs elephants)\n\n<b>Team bonus: <b>\nScout Cavalry line and Camel units +2 attack vs Buildings"
 //	Incas
@@ -228,7 +228,7 @@
 500048 "Caravan Guard"
 500049 "Elite Sofa"
 500050 "Devsirme"
-500051 "Papal States"
+500051 "Maritime Stronghold"
 500052 "Town Defense"
 500053 "Scutage"
 500054 "Raide Horn"
@@ -407,7 +407,7 @@
 501048 "Research Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)"
 501049 "Upgrade to Elite Sofa"
 501050 "Research Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)"
-501051 "Research Papal States (Monks regain their faith +50% faster after a successful conversion)"
+501051 "Research Maritime Stronghold (Warships can build Sea Towers)"
 501052 "Research Town Defense (Town Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power)"
 501053 "Research Scutage (Gain 250 gold, and each military unit +15)"
 501054 "Research Raide Horn (Cavalries can generate 0.25 gold per second when attacking enemies (except buildings), and Keshiks +200% generation)"
@@ -586,7 +586,7 @@
 521048 "Research <b>Caravan Guard<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nTrade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute."
 521049 "Upgrade to <b>Elite Sofa<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Sofas and lets you create Elite Sofas."
 521050 "Research <b>Devsirme<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nImmediately spawn 5 Janissaries, and +1 additional spawn for each Town Center."
-521051 "Research <b>Papal States<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks regain their faith +50% faster after a successful conversion."
+521051 "Research <b>Maritime Stronghold<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nWarships can build Sea Towers."
 521052 "Research <b>Town Defense<b> (<cost>) (time: 55)\nTown Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power."
 521053 "Research <b>Scutage<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nGain 250 gold, and each military +15."
 521054 "Research <b>Raide Horn<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nCavalries can generate 0.25 gold per second when attacking enemies (except buildings), and Keshiks +200% generation."

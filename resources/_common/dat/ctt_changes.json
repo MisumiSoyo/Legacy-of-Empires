@@ -1479,7 +1479,7 @@
             "Use Type": "Tech"
         },
         {
-            "note": "教皇国",
+            "note": "海上据点",
             "action": "add",
             "civ_id": "ITALIANS",
             "Age ID": 3,
@@ -1488,7 +1488,7 @@
             "Help String ID": 600051,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Papal State",
+            "Name": "Maritime Stronghold",
             "Name String ID": 500051,
             "Node ID": 3077,
             "Node Status": "ResearchedCompleted",
