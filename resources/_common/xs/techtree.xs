@@ -183,6 +183,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ArbalesterTechID);
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, HeavyScorpionTechID);
+            EnableTech(playerId, TreadmillCraneTechID);
             DisableTech(playerId, StoneShaftMiningTechID);
             break;
         }
@@ -275,7 +276,6 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, ArrowslitsTechID);
             EnableTech(playerId, HoardingsTechID);
-            EnableTech(playerId, );
             break;
         }
         case cEthiopians:
@@ -321,7 +321,10 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, ElephantArcherTechID);
             EnableTech(playerId, EliteElephantArcherTechID);
+            EnableTech(playerId, ChampionTechID);
+            EnableTech(playerId, TwoManSawTechID);
             DisableTech(playerId, CavalryArcherTechID);
+            DisableTech(playerId, PlateMailArmorTechID);
             break;
         }
         case cBurmese:
@@ -451,7 +454,7 @@ void EffectFunction10001(int playerId = -1)
         }
         case cShu:
         {
-
+            EnableTech(playerId, CropRotationTechID);
             //  Shu civ bonus, infantries generate food from attacking farms
             SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
             SetResource(playerId, cAttributeEffectFunctionNumber, 10010);

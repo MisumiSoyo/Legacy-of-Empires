@@ -1394,13 +1394,45 @@ void EffectFunction10116(int playerId = -1)
 }
 
 
+//  10119 - C-Bonus, economic units refund when killed
+void EffectFunction10119(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000013);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000014);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000015);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeStone);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000016);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 171  2026.03.13");
+    xsChatData("Build: 172  2026.03.14");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

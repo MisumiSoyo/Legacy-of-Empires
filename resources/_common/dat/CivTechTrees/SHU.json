@@ -5382,7 +5382,7 @@
             "Name": "Crop Rotation",
             "Name String ID": 17012,
             "Node ID": 12,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 0,
             "Prerequisite IDs": [
@@ -5643,11 +5643,41 @@
             "Use Type": "Tech"
         },
         {
+            "Age ID": 3,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600175,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Tube-Sleeved Armor",
+            "Name String ID": 500175,
+            "Node ID": 3516,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
             "Age ID": 4,
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600071,
-            "Link ID": -1,
+            "Link ID": 3516,
             "Link Node Type": "BuildingTech",
             "Name": "Siege Technique",
             "Name String ID": 500071,

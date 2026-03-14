@@ -3910,7 +3910,7 @@
             "Name": "Treadmill Crane",
             "Name String ID": 17054,
             "Node ID": 54,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 60,
             "Prerequisite IDs": [

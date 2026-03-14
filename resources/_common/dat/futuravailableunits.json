@@ -21654,6 +21654,11 @@
                         "Name": "Korean Bow",
                         "RequiredAge": 3,
                         "ID": 3472
+                    },
+                    {
+                        "Name": "Iron Armor",
+                        "RequiredAge": 4,
+                        "ID": 3514
                     }
                 ],
                 "Units": [
@@ -24489,11 +24494,6 @@
                         "RequiredAge": 3
                     },
                     {
-                        "ID": 77,
-                        "Name": "Plate Mail Armor",
-                        "RequiredAge": 4
-                    },
-                    {
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3058
@@ -24938,6 +24938,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3078
+                    },
+                    {
+                        "Name": "Spice Trade",
+                        "RequiredAge": 3,
+                        "ID": 3518
                     }
                 ],
                 "Units": [
@@ -25012,6 +25017,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Forestry",
@@ -32618,8 +32628,13 @@
                         "ID": 3078
                     },
                     {
-                        "Name": "Scutage",
+                        "Name": "Mediterranean Galleys",
                         "RequiredAge": 3,
+                        "ID": 3517
+                    },
+                    {
+                        "Name": "Scutage",
+                        "RequiredAge": 4,
                         "ID": 3079
                     }
                 ],
@@ -34650,6 +34665,11 @@
                         "ID": 909,
                         "Name": "Siphons",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Treadmill Crane",
+                        "RequiredAge": 3,
+                        "ID": 54
                     }
                 ]
             },
@@ -50013,6 +50033,11 @@
                         "ID": 3078
                     },
                     {
+                        "Name": "Tube-Sleeved Armor",
+                        "RequiredAge": 3,
+                        "ID": 3516
+                    },
+                    {
                         "Name": "Siege Technique",
                         "RequiredAge": 4,
                         "ID": 3098
@@ -50146,6 +50171,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3057
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             },

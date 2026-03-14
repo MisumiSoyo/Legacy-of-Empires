@@ -5519,6 +5519,36 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600174,
+            "Link ID": 3472,
+            "Link Node Type": "BuildingTech",
+            "Name": "Iron Armor",
+            "Name String ID": 500174,
+            "Node ID": 3514,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }

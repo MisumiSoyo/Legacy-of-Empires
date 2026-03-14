@@ -482,12 +482,20 @@
             "RequiredAge": 4
         },
         {
+            "note": "地中海桨帆船",
+            "civilizations": "Sicilians",
+            "tech_id": 3517,
+            "building_id": 109,
+            "Name": "Mediterranean Galleys",
+            "RequiredAge": 3
+        },
+        {
             "note": "免役税",
             "civilizations": "Sicilians",
             "tech_id": 3079,
             "building_id": 109,
             "Name": "Scutage",
-            "RequiredAge": 3
+            "RequiredAge": 4
         },
         {
             "note": "可汗征召",
@@ -600,6 +608,14 @@
             "building_id": 109,
             "Name": "Orthodoxy",
             "RequiredAge": 4
+        },
+        {
+            "note": "筒袖铠",
+            "civilizations": "Shu",
+            "tech_id": 3516,
+            "building_id": 109,
+            "Name": "Tube-Sleeved Armor",
+            "RequiredAge": 3
         },
         {
             "note": "攻城术",
@@ -753,8 +769,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽启用轮作",
-            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans"],
+            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀启用轮作",
+            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans", "Shu"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -1254,8 +1270,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 条顿, 法兰克, 契丹获得脚踏起重机",
-            "civilizations": ["Teutons", "Chinese", "Franks", "Khitans"],
+            "note": "中国, 条顿, 法兰克, 契丹, 西班牙获得脚踏起重机",
+            "civilizations": ["Teutons", "Chinese", "Franks", "Khitans", "Spanish"],
             "tech_id": 54,
             "building_id": 209,
             "Name": "Treadmill Crane",
@@ -1350,6 +1366,12 @@
             "RequiredAge": 4
         },
         {
+            "note": "马来禁用步兵钢甲",
+            "civilizations": ["Malay"],
+            "tech_id": 77,
+            "type": "delete"
+        },
+        {
             "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森获得工兵",
             "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens"],
             "tech_id": 321,
@@ -1406,8 +1428,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians"],
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -1928,6 +1950,14 @@
             "RequiredAge": 3
         },
         {
+            "note": "铁甲",
+            "civilizations": "Koreans",
+            "tech_id": 3514,
+            "building_id": 109,
+            "Name": "Iron Armor",
+            "RequiredAge": 4
+        },
+        {
             "note": "精锐重装掷矛手",
             "civilizations": "Romans",
             "tech_id": 655,
@@ -2204,6 +2234,14 @@
             "civilizations": [],
             "tech_id": 3508,
             "type": "delete"
+        },
+        {
+            "note": "香料贸易",
+            "civilizations": "Malay",
+            "tech_id": 3518,
+            "building_id": 109,
+            "Name": "Spice Trade",
+            "RequiredAge": 3
         }
     ]
 }

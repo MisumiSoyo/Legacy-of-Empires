@@ -1329,7 +1329,7 @@
             "Name": "Champion",
             "Name String ID": 14469,
             "Node ID": 567,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 72,
             "Prerequisite IDs": [
@@ -2588,7 +2588,7 @@
             "Name": "Plate Mail Armor",
             "Name String ID": 17077,
             "Node ID": 77,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 64,
             "Prerequisite IDs": [
@@ -5022,7 +5022,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [
@@ -5521,6 +5521,36 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Unit"
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600177,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Spice Trade",
+            "Name String ID": 500177,
+            "Node ID": 3518,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }
