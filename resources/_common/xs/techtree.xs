@@ -525,7 +525,7 @@ void EffectFunction10002(int playerId = -1)
         ArrayMultipleSetInt(TechTreeEffectIDs, 21, 3, 5, 7, 31, 48, 42, 37, 646, 648, 650);
         ArrayMultipleSetInt(TechTreeEffectIDs, 31, 652, 706, 708, 710, 712, 782, 784, 801, 803, 838);
         ArrayMultipleSetInt(TechTreeEffectIDs, 41, 840, 842, 890, 925, 927, 1101, 1117, 1129, 1028, 1030);
-        ArrayMultipleSetInt(TechTreeEffectIDs, 51, 1026, 986, 988, 1218, 1246, 1256, 1360, 1361, 1362);
+        ArrayMultipleSetInt(TechTreeEffectIDs, 51, 1026, 986, 988, 1218, 1246, 1256, 1360, 1361, 1362, -1);
     }
     SetTechEffectID(playerId, TechTreeTechID, xsArrayGetInt(TechTreeEffectIDs, playerCiv));
     ForceResearchTech(playerId, TechTreeTechID);

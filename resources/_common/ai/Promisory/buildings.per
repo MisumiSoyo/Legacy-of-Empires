@@ -2652,6 +2652,64 @@
 	(enable-timer upwood 240)); end jumps
 #end-if
 
+#load-if-not-defined DEATH-MATCH
+#load-if-not-defined INFINITE-RESOURCES-START
+#load-if-not-defined ULTRA-RESOURCES-START
+(defrule
+	(can-build lumber-camp)
+	(building-type-count-total lumber-camp < 1)
+	;(wood-amount > 215)
+	(unit-type-count-total villager-wood > 1)
+=>
+	(up-full-reset-search)
+	(up-find-local c: male-lumberjack c: 10)
+	(up-find-local c: female-lumberjack c: 10)
+	(up-set-target-point position-self-x)
+	(up-clean-search search-local object-data-distance search-order-desc)
+	(up-set-target-object search-local c: 1);2nd furthest
+	(up-get-object-data object-data-distance temporary-goal)
+)
+
+(defrule
+	(up-set-target-object search-local c: 1)
+	(or(up-compare-goal temporary-goal > 8)
+	(and(game-time > 500)
+	(up-compare-goal temporary-goal > 6)))
+	(can-build lumber-camp)
+	;(wood-amount > 200)
+	(unit-type-count-total villager-wood > 1)
+	(building-type-count-total lumber-camp < 1)
+	(or(building-type-count-total town-center > 0)
+	(wood-amount < 275))
+	(or(game-time > 400)
+	(and(goal landnomad no)
+	(game-time > 270)))
+	(or(goal buildlumber yes)
+	(game-time > 450))
+	(up-pending-objects c: lumber-camp < 1)
+=>
+	(build lumber-camp)
+;	(chat-to-player my-player-number "Debug: Lumbercamp backup 1 triggered")
+)
+#end-if
+#end-if
+#end-if
+
+(defrule
+	(current-age == dark-age)
+	(game-time > 480)
+	(goal landnomad no)
+	(food-amount > 500)
+	(can-build lumber-camp)
+	(wood-amount > 200)
+	(up-pending-objects c: lumber-camp < 1)
+	(nand(building-type-count-total mill > 0)
+	(building-type-count-total barracks > 0))
+=>
+	(build lumber-camp)
+;	(chat-to-player my-player-number "Debug: Lumbercamp backup 2 triggered")
+)
+
 
 (defrule
 	(goal strategy s-flush)
@@ -3368,6 +3426,7 @@
 	(chat-local-to-self "Wood too far? Increasing camp distance.")
 	(up-target-point 0 action-delete -1 -1)
 	(up-reset-placement c: lumber-camp)
+	(set-strategic-number sn-enable-new-building-system 1)
 	(set-strategic-number sn-allow-adjacent-dropsites 1)
 	(up-modify-sn sn-camp-max-distance c:+ 1))
 (defrule
@@ -3401,6 +3460,7 @@
 	(up-target-point 0 action-delete -1 -1)
 	(up-reset-placement c: mining-camp)
 	(set-strategic-number sn-allow-adjacent-dropsites 1)
+	(set-strategic-number sn-enable-new-building-system 1)
 	(up-modify-sn sn-camp-max-distance c:+ 1)); end jump
 #end-if
 
@@ -5203,6 +5263,9 @@
 
 
 #load-if-defined KHITANS-CIV
+
+
+
 (defrule
     (can-build pasture)
     (or(building-type-count-total barracks > 0)
@@ -5214,6 +5277,8 @@
 =>
     (build pasture)
 )
+
+
 #end-if
 
 #load-if-defined MONGOL-CIV
