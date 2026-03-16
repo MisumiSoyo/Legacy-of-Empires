@@ -2242,6 +2242,14 @@
             "building_id": 109,
             "Name": "Spice Trade",
             "RequiredAge": 4
+        },
+        {
+            "note": "马来武术",
+            "civilizations": "Malay",
+            "tech_id": 3519,
+            "building_id": 109,
+            "Name": "Silat Melayu",
+            "RequiredAge": 3
         }
     ]
 }
