@@ -1425,13 +1425,33 @@ void EffectFunction10119(int playerId = -1)
 }
 
 
+//  10120 - Silat Melayu
+void EffectFunction10120(int playerId = -1)
+{
+    AddAttackForm(playerId, KarambitWarriorID, cDamageClassVillager, 5);
+    AddAttackForm(playerId, KarambitWarriorID, cDamageClassTradeUnit, 5);
+    AddAttackForm(playerId, EliteKarambitWarriorID, cDamageClassVillager, 5);
+    AddAttackForm(playerId, EliteKarambitWarriorID, cDamageClassTradeUnit, 5);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, -10);
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000017);
+    xsTask(KarambitWarriorID, cTaskTypeRefund, -1, playerId);
+    xsTask(EliteKarambitWarriorID, cTaskTypeRefund, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 174  2026.03.14");
+    xsChatData("Build: 175  2026.03.16");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

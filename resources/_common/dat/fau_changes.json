@@ -2241,7 +2241,7 @@
             "tech_id": 3518,
             "building_id": 109,
             "Name": "Spice Trade",
-            "RequiredAge": 3
+            "RequiredAge": 4
         }
     ]
 }

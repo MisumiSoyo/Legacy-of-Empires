@@ -467,6 +467,9 @@ void SetNewArmorForms(int playerId = -1)
     AddArmorForm(playerId, EliteMagyarHuszarID, cDamageClassLightCavalry);
     AddArmorForm(playerId, MercenaryMagyarHuszarID, cDamageClassLightCavalry);
     AddArmorForm(playerId, MercenaryEliteMagyarHuszarID, cDamageClassLightCavalry);
+
+    AddArmorForm(playerId, cTradeBoatClass, cDamageClassTradeUnit);
+    AddArmorForm(playerId, cTradeCartClass, cDamageClassTradeUnit);
 }
 
 

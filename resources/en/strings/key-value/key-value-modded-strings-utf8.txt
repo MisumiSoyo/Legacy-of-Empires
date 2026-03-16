@@ -19,6 +19,7 @@
 12503 "Gunpowder Attack"
 12504 "Siege Weapon Attack"
 12505 "Light Cavalry"
+12506 "Trade Unit"
 
 
 26137 "Create <b>Genitour<b> (<cost>, 29 <MATERIAL=MPIconGoodCPU,1>) \nMounted skirmisher. Strong vs archers. Weak vs units at close range.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.35 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 5\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Skirmisher; Training time: 25; Moving speed: 1.35; Reload time: 3; Attack delay: 0.5; Projectile speed: 7; Accuracy: 90%; Min range: 1; LOS: 5; Search radius: 5. \nAttack Bonus: +4 vs Archer, +3 vs Pikeman.\nArmor Bonus: +1 Cavalry Archer armor."
@@ -127,7 +128,7 @@
 //	Khmer
 120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
 //	Malay
-120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
+120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
 //	Burmese
 120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 //	Vietnamese
@@ -355,6 +356,7 @@
 500175 "Tube-Sleeved Armor"
 500176 "Mediterranean Galleys"
 500177 "Spice Trade"
+500178 "Silat Melayu"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -534,6 +536,7 @@
 501175 "Research Tube-Sleeved Armor (Spearman-line units can resist bonus damage against spearmen; Hei Guang Cavalries +1 pierce armor)"
 501176 "Research Mediterranean Galleys (Hulk-line units +1 attack)"
 501177 "Research Spice Trade (Team's Trade Cog +20% movement speed)"
+501178 "Research Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -712,7 +715,8 @@
 521174 "Research <b>Iron Armor<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nWarships +2 melee armor and can reflect 20% damage to melee attackers."
 521175 "Research <b>Tube-Sleeved Armor<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nSpearman-line units can resist bonus damage against spearmen; Hei Guang Cavalries +1 pierce armor."
 521176 "Research <b>Mediterranean Galleys<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nHulk-line units +1 attack."
-521177 "Research <b>Spice Trade<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nTeam's Trade Cog +20% movement speed."
+521177 "Research <b>Spice Trade<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nTeam's Trade Cog +20% movement speed."
+521178 "Research <b>Silat Melayu<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nKarambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

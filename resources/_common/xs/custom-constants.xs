@@ -349,6 +349,8 @@ extern const int EliteCamelArcherID = 1009;
 extern const int GenitourID = 1010;
 extern const int EliteGenitourID = 1012;
 extern const int FeitoriaID = 1021;
+extern const int KarambitWarriorID = 1123;
+extern const int EliteKarambitWarriorID = 1125;
 extern const int RattanArcherID = 1129;
 extern const int EliteRattanArcherID = 1131;
 extern const int BattleElephantID = 1132;
@@ -555,6 +557,7 @@ extern const int cDamageClassVillager = 102;
 extern const int cDamageClassGunpowderAttack = 103;
 extern const int cDamageClassSiegeWeaponAttack = 104;
 extern const int cDamageClassLightCavalry = 105;
+extern const int cDamageClassTradeUnit = 106;
 
 
 extern const int HospitallerKnightMaxCharge = 300;
