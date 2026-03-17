@@ -619,3 +619,100 @@ void EffectFunction10063(int playerId = -1)
 void EffectFunction10064(int playerId = -1)
 {
 }
+
+
+void FreeTech(int playerId = -1, int TechID = -1)
+{
+    xsEffectAmount(cModifyTech, TechID, cAttrMulTime, 2.5, playerId);
+    xsEffectAmount(cModifyTech, TechID, cAttrMulAllCosts, 0, playerId);
+}
+
+
+//  10123 - C-Bonus, free techs
+void EffectFunction10123(int playerId = -1)
+{
+    FreeTech(playerId, LoomTechID);
+    FreeTech(playerId, WheelBarrowTechID);
+    FreeTech(playerId, HandCartTechID);
+    FreeTech(playerId, TownWatchTechID);
+    FreeTech(playerId, TownPatrolTechID);
+    FreeTech(playerId, TownDefenseTechID);
+    FreeTech(playerId, DoubleBitAxeTechID);
+    FreeTech(playerId, BowSawTechID);
+    FreeTech(playerId, TwoManSawTechID);
+    FreeTech(playerId, ForestryTechID);
+    FreeTech(playerId, HorseCollarTechID);
+    FreeTech(playerId, HeavyPlowTechID);
+    FreeTech(playerId, CropRotationTechID);
+    FreeTech(playerId, CashCropTechID);
+    FreeTech(playerId, DomesticationTechID);
+    FreeTech(playerId, PastoralismTechID);
+    FreeTech(playerId, TranshumanceTechID);
+    FreeTech(playerId, GoldMiningTechID);
+    FreeTech(playerId, GoldShaftMiningTechID);
+    FreeTech(playerId, StoneMiningTechID);
+    FreeTech(playerId, StoneShaftMiningTechID);
+    FreeTech(playerId, CaravanTechID);
+    FreeTech(playerId, CoinageTechID);
+    FreeTech(playerId, BankingTechID);
+    FreeTech(playerId, GuildsTechID);
+    FreeTech(playerId, FishingLinesTechID);
+    FreeTech(playerId, GillnetsTechID);
+    FreeTech(playerId, PaddedArcherArmorTechID);
+    FreeTech(playerId, LeatherArcherArmorTechID);
+    FreeTech(playerId, RingArcherArmorTechID);
+    FreeTech(playerId, FletchingTechID);
+    FreeTech(playerId, BodkinArrowTechID);
+    FreeTech(playerId, BracerTechID);
+    FreeTech(playerId, ForgingTechID);
+    FreeTech(playerId, IronCastingTechID);
+    FreeTech(playerId, BlastFurnaceTechID);
+    FreeTech(playerId, ScaleBardingArmorTechID);
+    FreeTech(playerId, ChainBardingArmorTechID);
+    FreeTech(playerId, PlateBardingArmorTechID);
+    FreeTech(playerId, ScaleMailArmorTechID);
+    FreeTech(playerId, ChainMailArmorTechID);
+    FreeTech(playerId, PlateMailArmorTechID);
+    FreeTech(playerId, MasonryTechID);
+    FreeTech(playerId, ArchitectureTechID);
+    FreeTech(playerId, TreadmillCraneTechID);
+    FreeTech(playerId, HeatedShotTechID);
+    FreeTech(playerId, BallisticsTechID);
+    FreeTech(playerId, ChemistryTechID);
+    FreeTech(playerId, BombardTowerTechID);
+    FreeTech(playerId, SiegeEngineersTechID);
+    FreeTech(playerId, MurderHolesTechID);
+    FreeTech(playerId, FortifiedWallTechID);
+    FreeTech(playerId, GuardTowerTechID);
+    FreeTech(playerId, KeepTechID);
+    FreeTech(playerId, ArrowslitsTechID);
+    FreeTech(playerId, CareeningTechID);
+    FreeTech(playerId, DryDockTechID);
+    FreeTech(playerId, ClinkerConstructionTechID);
+    FreeTech(playerId, CarvelHullTechID);
+    FreeTech(playerId, ShipwrightTechID);
+    FreeTech(playerId, SiphonsTechID);
+    FreeTech(playerId, IncendiariesTechID);
+    FreeTech(playerId, RedemptionTechID);
+    FreeTech(playerId, AtonementTechID);
+    FreeTech(playerId, HerbalMedicineTechID);
+    FreeTech(playerId, HeresyTechID);
+    FreeTech(playerId, SancityTechID);
+    FreeTech(playerId, FervorTechID);
+    FreeTech(playerId, DevotionTechID);
+    FreeTech(playerId, IlluminationTechID);
+    FreeTech(playerId, BlockPrintingTechID);
+    FreeTech(playerId, FaithTechID);
+    FreeTech(playerId, TheocracyTechID);
+    FreeTech(playerId, TitheTechID);
+    FreeTech(playerId, ArsonTechID);
+    FreeTech(playerId, SquiresTechID);
+    FreeTech(playerId, GambesonsTechID);
+    FreeTech(playerId, BloodlinesTechID);
+    FreeTech(playerId, HusbandryTechID);
+    FreeTech(playerId, ThumbRingTechID);
+    FreeTech(playerId, ParthianTacticsTechID);
+    FreeTech(playerId, HoardingsTechID);
+    FreeTech(playerId, SappersTechID);
+    FreeTech(playerId, ConscriptTechID);
+}
