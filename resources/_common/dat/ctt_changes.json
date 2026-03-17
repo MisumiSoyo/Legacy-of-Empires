@@ -5618,6 +5618,22 @@
             "Node ID": [12],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "鞑靼获得双人锯, 建筑学, 围墙",
+            "action": "modify",
+            "civ_id": "TATARS",
+            "Node ID": [51, 221, 379],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "鞑靼获得重型投石车",
+            "action": "modify",
+            "civ_id": "TATARS",
+            "Node ID": [588],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

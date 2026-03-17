@@ -786,8 +786,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭, 条顿, 萨拉森, 马扎尔, 斯拉夫, 越南, 柏柏尔获得建筑学",
-            "civilizations": ["Teutons", "Byzantines", "Saracens", "Magyars", "Slavs", "Vietnamese", "Berbers"],
+            "note": "拜占庭, 条顿, 萨拉森, 马扎尔, 斯拉夫, 越南, 柏柏尔, 鞑靼获得建筑学",
+            "civilizations": ["Teutons", "Byzantines", "Saracens", "Magyars", "Slavs", "Vietnamese", "Berbers", "Tatars"],
             "tech_id": 51,
             "building_id": 209,
             "Name": "Architecture",
@@ -1246,8 +1246,8 @@
             "type": "delete"
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙, 保加利亚启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese", "Bulgarians"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙, 保加利亚, 鞑靼启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese", "Bulgarians", "Tatars"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1428,8 +1428,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians"],
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -2184,16 +2184,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "越南获得重型投石车",
-            "civilizations": ["Vietnamese"],
+            "note": "越南, 鞑靼获得重型投石车",
+            "civilizations": ["Vietnamese", "Tatars"],
             "unit_id": 588,
             "building_id": 49,
             "Name": "Siege Onager",
             "RequiredAge": 4
         },
         {
-            "note": "越南获得重型投石车",
-            "civilizations": ["Vietnamese"],
+            "note": "越南, 鞑靼获得重型投石车",
+            "civilizations": ["Vietnamese", "Tatars"],
             "tech_id": 320,
             "building_id": 49,
             "RequiredAge": 4

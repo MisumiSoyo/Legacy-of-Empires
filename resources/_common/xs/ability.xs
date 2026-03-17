@@ -592,17 +592,6 @@ void EffectFunction10022(int playerId = -1)
 
 void PoisoningApplier(int playerId = -1, int ClassTarget = -1)
 {
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000003);
-    xsTaskAmount(cTaskAttrWorkValue1, -90);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 90);
-    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
-
     xsTaskAmount(cTaskAttrSearchWaitTime, 5.000002);
     xsTaskAmount(cTaskAttrWorkValue1, -0.08);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 3);

@@ -2048,7 +2048,7 @@
             "Name": "Siege Onager",
             "Name String ID": 14493,
             "Node ID": 588,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 102,
             "Prerequisite IDs": [
@@ -3370,7 +3370,7 @@
             "Name": "Architecture",
             "Name String ID": 17051,
             "Node ID": 51,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 14,
             "Prerequisite IDs": [
@@ -4090,7 +4090,7 @@
             "Name": "Hoardings",
             "Name String ID": 17376,
             "Node ID": 379,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 103,
             "Prerequisite IDs": [
@@ -5020,7 +5020,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [

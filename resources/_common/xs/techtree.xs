@@ -362,6 +362,10 @@ void EffectFunction10001(int playerId = -1)
         }
         case cTatars:
         {
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, SiegeOnagerTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, HoardingsTechID);
             break;
         }
         case cCumans:

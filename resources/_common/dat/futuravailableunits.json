@@ -35474,6 +35474,10 @@
                         "ID": 239,
                         "Name": "Heavy Scorpion",
                         "RequiredAge": 4
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 320
                     }
                 ],
                 "Units": [
@@ -35522,6 +35526,11 @@
                         "ID": 1263,
                         "Name": "Flaming Camel",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Onager",
+                        "RequiredAge": 4,
+                        "ID": 588
                     }
                 ]
             },
@@ -35816,6 +35825,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
                     }
                 ]
             },
@@ -35897,6 +35911,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hoardings",
+                        "RequiredAge": 4,
+                        "ID": 379
                     }
                 ],
                 "Units": [
@@ -36067,6 +36086,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Forestry",

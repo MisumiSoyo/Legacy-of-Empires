@@ -826,7 +826,7 @@ void EffectFunction10080(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkRange, 1);
-    xsTaskAmount(cTaskAttrWorkValue2, 3);
+    xsTaskAmount(cTaskAttrWorkValue2, 2);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
     PoisoningApplier(playerId, cArcherClass);
@@ -1491,7 +1491,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 178  2026.03.17");
+    xsChatData("Build: 179  2026.03.17");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

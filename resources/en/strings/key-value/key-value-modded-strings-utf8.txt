@@ -122,7 +122,7 @@
 //	Ethiopians
 120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n\n<b>Unique Unit:<b> \n• Shotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 //	Malians
-120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Gbeto (High-speed infantry), Sofa (Cavalry that counters spearmen, skirmishers and light cavalries), Donsos (Infantry that can charge and throw spears)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n• Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable)\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
+120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Gbeto (High-speed infantry), Sofa (Cavalry that counters spearmen, skirmishers and light cavalries), Donsos (Infantry that can charge and throw spears)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n• Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable)\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
 //	Berbers
 120176 "Cavalry and Naval civilization \n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age \n• Ships +10% moving speed \n• Get 6 wood, 6 food and 3 gold for each military unit when advancing to the next age\n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate)\n• Maghrabi Camels (Camel units have regeneration of 15 HP/minute)\n• Adarga (Archer-line and Cavalry Archer-line units +2 pierce armor, +2 archer armor)\n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Elite Genitours upgrade -50% cost"
 //	Khmer
@@ -132,7 +132,7 @@
 //	Burmese
 120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 //	Vietnamese
-120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed)\n• Elephant Formation (Battle Elephants +150% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
+120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
 120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +150% heal range and heal rate)\n• Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 //	Tatars
@@ -435,7 +435,7 @@
 501074 "Switch to training Kamayuk"
 501075 "Switch to training Jaguar Warrior"
 501076 "Switch to training Plumed Archer"
-501077 "Research Elephant Formation (Battle Elephants +150% area damage radius)"
+501077 "Research Elephant Formation (Battle Elephants +100% area damage radius)"
 501078 "Research Incense Money (Each relic produces 30 wood and 30 food per minute)"
 501079 "Switch to training Xolotl Warrior"
 501080 "Research Couriers (Slingers, Eagle Warriors and Kamayuks +15% movement speed)"
@@ -481,7 +481,7 @@
 501120 "Research Silk Road Mercenary Contract (You can use olive oil to recruit Gbetoes, Shotel Warriors, Kipchaks, Camel Archers, Mamelukes, War Elephants and Keshiks)"
 501121 "Upgrade to Veteran Donso"
 501122 "Upgrade to Elite Donso"
-501123 "Research Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable)"
+501123 "Research Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable)"
 501124 "Upgrade to Elite Hospitaller Knight"
 501125 "Research Golden Horn Tower (Trade units can additionally generate 15% stone)"
 501126 "Research Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks)"
@@ -615,7 +615,7 @@
 521074 "Switch to training Kamayuk. Automatically spawn 1 Kamayuk every 60 seconds.\n(Need Castle)"
 521075 "Switch to training Jaguar Warrior. Automatically spawn 1 Jaguar Warrior every 60 seconds.\n(Need Castle)"
 521076 "Switch to training Plumed Archer. Automatically spawn 1 Plumed Archer every 60 seconds.\n(Need Castle)"
-521077 "Research <b>Elephant Formation<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nBattle Elephants +150% area damage radius."
+521077 "Research <b>Elephant Formation<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nBattle Elephants +100% area damage radius."
 521078 "Research <b>Incense Money<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nEach relic produces 30 wood and 30 food per minute."
 521079 "Switch to training Xolotl Warrior. Automatically spawn 1 Xolotl Warrior every 45 seconds."
 521080 "Research <b>Couriers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nSlingers, Eagle Warriors and Kamayuks +15% movement speed."
@@ -661,7 +661,7 @@
 521120 "Research <b>Silk Road Mercenary Contract<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nYou can use olive oil to recruit Gbetoes, Shotel Warriors, Kipchaks, Camel Archers, Mamelukes, War Elephants and Keshiks."
 521121 "Upgrade to <b>Veteran Donso<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Donsos and lets you create Veteran Donsos."
 521122 "Upgrade to <b>Veteran Donso<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Donsos and lets you create Elite Donsos."
-521123 "Research <b>Poisoning<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nArchers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can cause 1.5 additional damage per second and slow down enemies by 8%, lasting for 3 seconds. This effect is non-stackable."
+521123 "Research <b>Poisoning<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nArchers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable."
 521124 "Upgrade to <b>Elite Hospitaller Knight<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Hospitaller Knights and lets you create Elite Hospitaller Knights."
 521125 "Research <b>Golden Horn Tower<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nTrade units can additionally generate 15% stone."
 521126 "Research <b>Kipchak Reinforcements<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nUpgrade Cavalry Archers to Kipchaks."
