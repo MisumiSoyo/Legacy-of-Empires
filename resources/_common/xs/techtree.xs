@@ -99,8 +99,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HussarTechID);
             EnableTech(playerId, ParthianTacticsTechID);
             EnableTech(playerId, GambesonsTechID);
-            EnableTech(playerId, HeiKuangCavalryTechID);
-            EnableTech(playerId, HeavyHeiKuangCavalryTechID);
+            EnableTech(playerId, HeiGuangCavalryTechID);
+            EnableTech(playerId, HeavyHeiGuangCavalryTechID);
             EnableTech(playerId, TreadmillCraneTechID);
             EnableTech(playerId, CarvelHullTechID);
             EnableTech(playerId, ClinkerConstructionTechID);
