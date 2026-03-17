@@ -1445,13 +1445,53 @@ void EffectFunction10120(int playerId = -1)
 }
 
 
+//  10121 - Persians Team Bonus
+void EffectFunction10121(int playerId = -1)
+{
+    AddAttackForm(playerId, KnightID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, CavalierID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, PaladinID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, SavarID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, HeiGuangCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, HeavyHeiGuangCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, SipahiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteSipahiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, GuanNingCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, MountedSamuraiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteMountedSamuraiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, GoguryeoHeavyCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteGoguryeoHeavyCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, KeshikID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteKeshikID, cDamageClassArchers, 2);
+}
+
+
+//  10122 - Poles Team Bonus
+void EffectFunction10122(int playerId = -1)
+{
+    AddAttackForm(playerId, ScoutCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, LightCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, HussarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, WingedHussarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, MansabdarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, VeteranMansabdarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, EliteMansabdarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, AuxiliaryCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, AuxiliaryCavalry2ID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, VeteranAuxiliaryCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, VeteranAuxiliaryCavalry2ID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, EliteAuxiliaryCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, EliteAuxiliaryCavalry2ID, cDamageClassArchers, 1);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 177  2026.03.16");
+    xsChatData("Build: 178  2026.03.17");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 }

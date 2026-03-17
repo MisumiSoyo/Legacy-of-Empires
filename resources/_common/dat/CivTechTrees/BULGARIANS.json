@@ -4032,7 +4032,7 @@
             "Name": "Hoardings",
             "Name String ID": 17376,
             "Node ID": 379,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 103,
             "Prerequisite IDs": [
@@ -5052,7 +5052,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [

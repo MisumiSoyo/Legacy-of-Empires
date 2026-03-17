@@ -142,6 +142,8 @@ extern const int DonsoID = 4127;
 extern const int VeteranDonsoID = 4128;
 extern const int EliteDonsoID = 4129;
 extern const int ProjectileDonsoID = 4130;
+extern const int MountedSamuraiID = 4131;
+extern const int EliteMountedSamuraiID = 4132;
 extern const int FoederatiSwordmanID = 4133;
 extern const int FoederatiCavalryArcherID = 4134;
 extern const int FoederatiKnightID = 4135;
@@ -401,6 +403,8 @@ extern const int GrenadierID = 1911;
 extern const int LiaoDaoID = 1920;
 extern const int EliteLiaoDaoID = 1922;
 extern const int MountedTrebuchetID = 1923;
+extern const int HeiGuangCavalryID = 1944;
+extern const int HeavyHeiGuangCavalryID = 1946;
 extern const int LouChuanID = 1948;
 extern const int WhiteFeatherGuardID = 1959;
 extern const int ProjectileCrossbowmanSecondaryID = 1960;
@@ -546,8 +550,8 @@ extern const int PastureTechID = 1008;
 extern const int TranshumanceTechID = 1012;
 extern const int PastoralismTechID = 1013;
 extern const int DomesticationTechID = 1014;
-extern const int HeiKuangCavalryTechID = 1032;
-extern const int HeavyHeiKuangCavalryTechID = 1033;
+extern const int HeiGuangCavalryTechID = 1032;
+extern const int HeavyHeiGuangCavalryTechID = 1033;
 
 
 //  Custom Attack Forms

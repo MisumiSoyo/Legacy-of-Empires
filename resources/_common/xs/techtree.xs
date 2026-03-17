@@ -355,6 +355,9 @@ void EffectFunction10001(int playerId = -1)
         }
         case cBulgarians:
         {
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, HoardingsTechID);
             break;
         }
         case cTatars:
@@ -425,11 +428,6 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, GuildsTechID);
             EnableTech(playerId, TwoManSawTechID);
-            //  Gurjaras civ bonus, Monastries +10 population headroom
-            ModAttribute(playerId, MonasteryID, cAmountFirstStorage, 10);
-            ModAttribute(playerId, Monastery2ID, cAmountFirstStorage, 10);
-            ModAttribute(playerId, Monastery3ID, cAmountFirstStorage, 10);
-            ModAttribute(playerId, Monastery4ID, cAmountFirstStorage, 10);
             break;
         }
         case cRomans:

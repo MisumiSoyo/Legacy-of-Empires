@@ -3123,6 +3123,14 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "保加利亚启用双人锯, 围墙, 工兵",
+            "action": "modify",
+            "civ_id": "BULGARIANS",
+            "Node ID": [221, 321, 379],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
             "note": "孟加拉修道院提前一个时代",
             "action": "modify",
             "civ_id": "BENGALIS",

@@ -1,3 +1,6 @@
+import sys
+sys.dont_write_bytecode = True
+
 from utils import *
 from inputs import *
 
@@ -24,9 +27,6 @@ def run():
         copyFromOldVersion(source_units, civ.units, copy_dict["unit_list"], blank_unit, 4001)
         copyFromOldVersion(source_resources, civ.resources, copy_dict["resource_list"], 0)
         copyFromOldVersion(source_resources, civ.resources, [], civ.resources[0], 701)
-        if (i == 1):
-            with open('civ1.txt','w') as file:
-                print(civ, file = file)
 
     applyUnitChanges(data, unit_change_list, tech_change_dict["sync_unit_buff"])
     applyTechChanges(data, tech_change_dict)
@@ -35,10 +35,11 @@ def run():
     # 保存
     data.save(save_file)
 
+
 def customChanges(data):
-    #为每个科技树效果后面增加一个XS调用
     for i in range(len(data.civs)):
         civ = data.civs[i]
+        #为每个科技树效果后面增加一个XS调用
         EffectID = civ.tech_tree_id
         data.effects[EffectID].effect_commands.append(EffectCommand(type = 1, a = 33, b = 0, c = -1, d = 10001.0))
         

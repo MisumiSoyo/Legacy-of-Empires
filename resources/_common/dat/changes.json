@@ -1,0 +1,106 @@
+{
+    "remove_armor_type":
+    [
+    ],
+    "create_attack_type":
+    [
+    ],
+    "unit_changes":
+    {
+        "armor_type":
+        [
+        ]
+    },
+    "resource_changes":
+    [
+    ],
+    "tech_changes":
+    {
+        "disable_techs":
+        [
+        ],
+        "tech_time_modifier":
+        [
+        ],
+        "tech_tree_enable":
+        [
+        ],
+        "tech_tree_disable":
+        [
+        ],
+        "sync_unit_buff":
+        [
+        ]
+    },
+    "copy_from_old_datafile":
+    {
+        "unit_list":
+        [
+            {
+                "name": "贸易单位改动",
+                "id": [17, 128, 204]
+            },
+            {
+                "name": "狂战士改动",
+                "id": [692, 694]
+            },
+            {
+                "name": "怯薛",
+                "id": [1228, 1230]
+            },
+            {
+                "name": "大商站",
+                "id": [273]
+            },
+            {
+                "name": "飞轮刃投掷手",
+                "id": [1743]
+            }
+        ],
+        "tech_list":
+        [
+            {
+                "name": "精锐怯薛",
+                "id": [680]
+            },
+            {
+                "name": "精锐标枪骑兵",
+                "id": [599]
+            },
+            {
+                "name": "牧场",
+                "id": [1008, 1012, 1013, 1014]
+            },
+            {
+                "name": "精锐飞轮刃投掷手",
+                "id": [830]
+            },
+            {
+                "name": "精锐雅尔",
+                "id": [398]
+            }
+        ],
+        "effect_list":
+        [
+            {
+                "name": "柏柏尔团队加成",
+                "id": 38
+            },
+            {
+                "name": "波希米亚团队加成",
+                "id": 804
+            },
+            {
+                "name": "波斯团队加成",
+                "id": 408
+            },
+            {
+                "name": "波兰团队加成",
+                "id": 802
+            }
+        ],
+        "graphic_list":
+        [
+        ]
+    }
+}

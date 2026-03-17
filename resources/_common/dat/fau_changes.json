@@ -1246,8 +1246,8 @@
             "type": "delete"
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙, 保加利亚启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese", "Bulgarians"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1372,8 +1372,8 @@
             "type": "delete"
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森获得工兵",
-            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens"],
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1428,8 +1428,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay"],
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
