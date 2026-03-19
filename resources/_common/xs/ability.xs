@@ -479,10 +479,119 @@ void EffectFunction10078(int playerId = -1)
 }
 
 
+void SetNewAttackForms(int playerId = -1)
+{
+    AddAttackForm(playerId, cSiegeWeaponClass, cDamageClassSiegeWeaponAttack, -10);
+    AddAttackForm(playerId, cUnpackedSiegeUnitClass, cDamageClassSiegeWeaponAttack, -10);
+    AddAttackForm(playerId, cScorpionClass, cDamageClassSiegeWeaponAttack, -10);
+
+    AddAttackForm(playerId, cHandCannoneerClass, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, ConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, EliteConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryEliteConquistadorID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, BombardCannonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, HoufniceID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, HussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, EliteHussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryHussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, MercenaryEliteHussiteWagonID, cDamageClassGunpowderAttack);
+    AddAttackForm(playerId, PetardID, cDamageClassGunpowderAttack);
+}
+
+
+void SetNewArmorForms(int playerId = -1)
+{
+    AddArmorForm(playerId, cArcherClass, cDamageClassRoyalHeirs, -3);
+    AddArmorForm(playerId, cHandCannoneerClass, cDamageClassRoyalHeirs, -3);
+
+    AddArmorForm(playerId, MonasteryID, cDamageClassMonastery);
+    AddArmorForm(playerId, Monastery2ID, cDamageClassMonastery);
+    AddArmorForm(playerId, Monastery3ID, cDamageClassMonastery);
+    AddArmorForm(playerId, Monastery4ID, cDamageClassMonastery);
+
+    AddArmorForm(playerId, cVillagerClass, cDamageClassVillager);
+
+    AddArmorForm(playerId, ScoutCavalryID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, LightCavalryID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, HussarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, MagyarHuszarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, EliteMagyarHuszarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, MercenaryMagyarHuszarID, cDamageClassLightCavalry);
+    AddArmorForm(playerId, MercenaryEliteMagyarHuszarID, cDamageClassLightCavalry);
+
+    AddArmorForm(playerId, cTradeBoatClass, cDamageClassTradeUnit);
+    AddArmorForm(playerId, cTradeCartClass, cDamageClassTradeUnit);
+}
+
+
+void KhanInit(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrWorkFlag2, 30);
+    xsTaskAmount(cTaskAttrCarryCheck, 101);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000001);
+    xsTaskAmount(cTaskAttrGatherType, 5);
+
+    int i = 0;
+    for (i = 900; <= 964)
+        if (isClassOperable(i) && (isBuildingClass(i) == false))
+            xsTask(KhanID, cTaskTypeLoot, i, playerId);
+    xsResetTaskAmount();
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 10.000002);
+    xsTaskAmount(cTaskAttrWorkRange, 8);
+    xsTaskAmount(cTaskAttrWorkValue1, 1.0 - 1.0 / 1.25);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 47);
+
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+            xsTask(KhanID, cTaskTypeAura, i, playerId);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5.000001);
+    xsTaskAmount(cTaskAttrWorkValue1, 1.15);
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+            xsTask(KhanID, cTaskTypeAura, i, playerId);
+    xsResetTaskAmount();
+    SetAttribute(playerId, KhanID, cMaxCharge, 1);
+    SetAttribute(playerId, KhanID, cRechargeRate, 1.0 / 120);
+    SetAttribute(playerId, KhanID, cChargeEvent, 15);
+    SetAttribute(playerId, KhanID, cChargeType, -3);
+}
+
+
+void MangonelAdjustment(int playerId = -1)
+{
+    AddAttackForm(playerId, MangonelID, cDamageClassTrees, -109);
+    SetAttribute(playerId, MangonelID, cBlastAttackLevel, 1);
+    AddAttackForm(playerId, RocketCartID, cDamageClassTrees, -21);
+    SetAttribute(playerId, RocketCartID, cBlastAttackLevel, 1);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTaskAmount(cTaskAttrEnableTargeting, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 3);
+    xsTaskAmount(cTaskAttrGatherType, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTask(MangonelID, cTaskTypeCombat, cTreeClass, playerId);
+    xsTask(RocketCartID, cTaskTypeCombat, cTreeClass, playerId);
+    xsResetTaskAmount();
+}
+
 
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
+    SetNewAttackForms(playerId);
+    SetNewArmorForms(playerId);
     FoederatiArmyInit(playerId);
     AssassinInit(playerId);
+    KhanInit(playerId);
+    MangonelAdjustment(playerId);
 }
