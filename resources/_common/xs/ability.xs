@@ -388,6 +388,17 @@ void FlankingCavalryApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
+//  10075 - Dacaogu Kill Effect
+void EffectFunction10075(int playerId = -1)
+{
+    float CalcedValue = xsPlayerAttribute(playerId, cAttributeDacaoguCalcedValue);
+    float TotalValue = xsPlayerAttribute(playerId, cAttributeTotalValueOfKills) - xsPlayerAttribute(playerId, cAttributeTotalValueOfRazings);
+    ModResource(playerId, cAttributeFood, (TotalValue - CalcedValue) * 0.1);
+    ModResource(playerId, cAttributeGold, (TotalValue - CalcedValue) * 0.04);
+    SetResource(playerId, cAttributeDacaoguCalcedValue, TotalValue);
+}
+
+
 
 //  Interface
 void AbilityApplier(int playerId = -1)

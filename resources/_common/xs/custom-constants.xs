@@ -264,6 +264,7 @@ extern const int FervorofBattleKillEffect2ID = 3263;
 extern const int FervorofBattleKillEffect3ID = 3264;
 extern const int FervorofBattleKillEffect4ID = 3265;
 extern const int FervorofBattleKillEffect5ID = 3266;
+extern const int DacaoguKillEffectID = 3380;
 
 
 //  Original Unit IDs

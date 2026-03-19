@@ -1191,13 +1191,33 @@ void EffectFunction10073(int playerId = -1)
 }
 
 
+//  10074 - Dacaogu
+void EffectFunction10074(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceIn, DacaoguKillEffectID);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000002);
+    int i = 0;
+    int j = 0;
+    for (i = 900; <= 964)
+        if (isLandMilitaryClass(i))
+            for (j = 900; <= 964)
+                if (isClassOperable(j))
+                    xsTask(i, cTaskTypeLoot, j, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeDacaoguCalcedValue, xsPlayerAttribute(playerId, cAttributeTotalValueOfKills) - xsPlayerAttribute(playerId, cAttributeTotalValueOfRazings));
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 197  2026.03.20");
+    xsChatData("Build: 198  2026.03.20");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
