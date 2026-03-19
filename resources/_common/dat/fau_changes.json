@@ -580,7 +580,7 @@
         {
             "note": "祭祀仪式",
             "civilizations": "Aztecs",
-            "tech_id": 3094,
+            "tech_id": 3173,
             "building_id": 109,
             "Name": "Ixiplta",
             "RequiredAge": 3
@@ -588,7 +588,7 @@
         {
             "note": "夸乌塞洛特",
             "civilizations": "Aztecs",
-            "tech_id": 3116,
+            "tech_id": 3174,
             "building_id": 109,
             "Name": "Cuauhocelotl",
             "RequiredAge": 4

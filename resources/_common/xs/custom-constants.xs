@@ -150,10 +150,15 @@ extern const int PaxMongolicaTechID = 3156;
 extern const int EliteWarDogTechID = 3167;
 extern const int ExplorerTechID = 3168;
 extern const int JineteTacticsTechID = 3169;
+extern const int IxiptlaTechID = 3173;
+extern const int CuauhocelotlTechID = 3174;
 
 
 // Custom Effect IDs
 extern const int FoederatiArmyKillEffectID = 3055;
+extern const int AztecsSpearmanKillUpgradeEffectID = 3154;
+extern const int AztecsSkirmisherKillUpgradeEffectID = 3156;
+extern const int AztecsEagleWarriorKillUpgradeEffectID = 3157;
 
 
 //  Original Unit IDs
