@@ -301,7 +301,7 @@
         {
             "note": "契丹移除经济作物",
             "civilizations": "Khitans",
-            "tech_id": [3057],
+            "tech_id": [3002],
             "building_id": 68,
             "type": "delete"
         },
@@ -1912,7 +1912,7 @@
         {
             "note": "蒙古, 匈奴, 马扎尔, 鞑靼, 库曼失去农田科技",
             "civilizations": ["Mongols", "Huns", "Magyars", "Tatars", "Cumans"],
-            "tech_id": [12, 13, 14, 3054, 3055, 3056, 3057],
+            "tech_id": [12, 13, 14, 3002],
             "type": "delete"
         },
         {
@@ -1976,7 +1976,7 @@
         {
             "note": "亚美尼亚, 格鲁吉亚林业位置调整",
             "civilizations": ["Armenians", "Georgians"],
-            "tech_id": 3461,
+            "tech_id": 3003,
             "building_id": 1808,
             "Name": "Forestry",
             "RequiredAge": 3
@@ -1984,7 +1984,7 @@
         {
             "note": "印加, 穆伊斯卡, 马普切, 图皮林业位置调整",
             "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
-            "tech_id": 3461,
+            "tech_id": 3003,
             "building_id": 2556,
             "Name": "Forestry",
             "RequiredAge": 3
@@ -1992,7 +1992,7 @@
         {
             "note": "印加, 穆伊斯卡, 马普切, 图皮经济作物位置调整",
             "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
-            "tech_id": 3057,
+            "tech_id": 3003,
             "building_id": 2556,
             "Name": "Cash Crop",
             "RequiredAge": 3
@@ -2150,13 +2150,13 @@
         {
             "note": "玛雅禁用经济作物",
             "civilizations": ["Mayans"],
-            "tech_id": 3057,
+            "tech_id": 3002,
             "type": "delete"
         },
         {
             "note": "玛雅禁用林业",
             "civilizations": ["Mayans"],
-            "tech_id": 3461,
+            "tech_id": 3003,
             "type": "delete"
         },
         {

@@ -5374,7 +5374,7 @@
         },
         {
             "Age ID": 3,
-            "Building ID": 562,
+            "Building ID": 2556,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600154,
             "Link ID": -1,
@@ -5404,7 +5404,7 @@
         },
         {
             "Age ID": 3,
-            "Building ID": 68,
+            "Building ID": 2556,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600002,
             "Link ID": -1,

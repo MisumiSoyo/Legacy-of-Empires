@@ -11010,11 +11010,6 @@
                 "Name": "Mill",
                 "Techs": [
                     {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3002
-                    },
-                    {
                         "Name": "Domestication",
                         "RequiredAge": 2,
                         "ID": 1014
@@ -15260,11 +15255,6 @@
                 "Name": "Mill",
                 "Techs": [
                     {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3002
-                    },
-                    {
                         "Name": "Domestication",
                         "RequiredAge": 2,
                         "ID": 1014
@@ -16230,14 +16220,9 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3461
-                    },
-                    {
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
-                        "ID": 3057
+                        "ID": 3003
                     }
                 ]
             },
@@ -24013,11 +23998,6 @@
                 "Name": "Mill",
                 "Techs": [
                     {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3002
-                    },
-                    {
                         "Name": "Domestication",
                         "RequiredAge": 2,
                         "ID": 1014
@@ -27180,11 +27160,6 @@
                         "ID": 221,
                         "Name": "Two-Man Saw",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3003
                     }
                 ]
             },
@@ -27229,13 +27204,7 @@
             {
                 "ID": 68,
                 "Name": "Mill",
-                "Techs": [
-                    {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3002
-                    }
-                ]
+                "Techs": []
             }
         ]
     },
@@ -28310,11 +28279,6 @@
                 "ID": 68,
                 "Name": "Mill",
                 "Techs": [
-                    {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3002
-                    },
                     {
                         "Name": "Domestication",
                         "RequiredAge": 2,
@@ -36178,11 +36142,6 @@
                 "ID": 68,
                 "Name": "Mill",
                 "Techs": [
-                    {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3002
-                    },
                     {
                         "Name": "Domestication",
                         "RequiredAge": 2,
@@ -48066,7 +48025,7 @@
                     {
                         "Name": "Forestry",
                         "RequiredAge": 3,
-                        "ID": 3461
+                        "ID": 3003
                     }
                 ]
             },
@@ -49141,7 +49100,7 @@
                     {
                         "Name": "Forestry",
                         "RequiredAge": 3,
-                        "ID": 3461
+                        "ID": 3003
                     }
                 ]
             },
@@ -54577,11 +54536,6 @@
                         "Name": "Transhumance",
                         "RequiredAge": 4,
                         "RequiredTechID": 1013
-                    },
-                    {
-                        "Name": "Cash Crop",
-                        "RequiredAge": 3,
-                        "ID": 3002
                     }
                 ]
             }
@@ -56783,14 +56737,9 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3461
-                    },
-                    {
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
-                        "ID": 3057
+                        "ID": 3003
                     }
                 ]
             },
@@ -57781,14 +57730,9 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3461
-                    },
-                    {
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
-                        "ID": 3057
+                        "ID": 3003
                     }
                 ],
                 "Units": [
@@ -58733,14 +58677,9 @@
                         "RequiredAge": 2
                     },
                     {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3461
-                    },
-                    {
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
-                        "ID": 3057
+                        "ID": 3003
                     }
                 ]
             },
