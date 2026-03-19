@@ -33,7 +33,7 @@ void EffectFunction10001(int playerId = -1)
 
     if ((playerCiv != cShu) && (playerCiv != cWu) && (playerCiv != cWei))
     {
-        DisableTech(playerId, WubaoID);
+        DisableTech(playerId, WubaoTechID);
         DisableTech(playerId, GentryTechID);
         DisableTech(playerId, MercenaryTechID);
         DisableTech(playerId, StrongFortressTechID);
