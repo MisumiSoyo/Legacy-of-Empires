@@ -89,6 +89,15 @@ extern const int AssassinID = 4078;
 extern const int MehterID = 4079;
 extern const int SipahiID = 4080;
 extern const int EliteSipahiID = 4081;
+extern const int EarlyBerserkID = 4082;
+extern const int BerserkID = 4083;
+extern const int VeteranBerserkID = 4084;
+extern const int EliteBerserkID = 4085;
+extern const int CelticHunterID = 4086;
+extern const int VeteranCelticHunterID = 4087;
+extern const int EliteCelticHunterID = 4088;
+extern const int WarDogID = 4089;
+extern const int EliteWarDogID = 4090;
 
 
 
@@ -134,6 +143,13 @@ extern const int SuftajaTechID = 3124;
 extern const int RedSeaFleetTechID = 3125;
 extern const int DevsirmeTechID = 3133;
 extern const int SailOnLandTechID = 3134;
+extern const int PiracyTechID = 3141;
+extern const int StockfishTradeTechID = 3142;
+extern const int MutualTradeTechID = 3155;
+extern const int PaxMongolicaTechID = 3156;
+extern const int EliteWarDogTechID = 3167;
+extern const int ExplorerTechID = 3168;
+extern const int JineteTacticsTechID = 3169;
 
 
 // Custom Effect IDs

@@ -348,7 +348,7 @@
         {
             "note": "互市",
             "civilizations": "Mongols",
-            "tech_id": 3061,
+            "tech_id": 3155,
             "building_id": 109,
             "Name": "Mutual Trade",
             "RequiredAge": 3
@@ -436,7 +436,7 @@
         {
             "note": "海盗行为",
             "civilizations": "Vikings",
-            "tech_id": 3073,
+            "tech_id": 3141,
             "building_id": 109,
             "Name": "Piracy",
             "RequiredAge": 3
@@ -516,7 +516,7 @@
         {
             "note": "鳕鱼贸易",
             "civilizations": "Vikings",
-            "tech_id": 3082,
+            "tech_id": 3142,
             "building_id": 109,
             "Name": "Stockfish Trade",
             "RequiredAge": 4
@@ -904,7 +904,7 @@
         {
             "note": "游击战术",
             "civilizations": "Spanish",
-            "tech_id": 3134,
+            "tech_id": 3169,
             "building_id": 109,
             "Name": "Jinete Tactics",
             "RequiredAge": 4
@@ -944,7 +944,7 @@
         {
             "note": "探险家",
             "civilizations": "Spanish",
-            "tech_id": 3135,
+            "tech_id": 3168,
             "building_id": 109,
             "Name": "Explorer",
             "RequiredAge": 3
@@ -1288,7 +1288,7 @@
         {
             "note": "蒙古和平",
             "civilizations": "Mongols",
-            "tech_id": 3176,
+            "tech_id": 3156,
             "building_id": 109,
             "Name": "Pax Mongolica",
             "RequiredAge": 4
@@ -2162,7 +2162,7 @@
         {
             "note": "军犬",
             "civilizations": ["Spanish"],
-            "unit_id": 4173,
+            "unit_id": 4089,
             "building_id": 12,
             "Name": "War Dog",
             "RequiredAge": 3
@@ -2170,7 +2170,7 @@
         {
             "note": "精锐军犬",
             "civilizations": ["Spanish"],
-            "unit_id": 4174,
+            "unit_id": 4090,
             "building_id": 12,
             "Name": "Elite War Dog",
             "RequiredAge": 4
@@ -2178,7 +2178,7 @@
         {
             "note": "精锐军犬",
             "civilizations": ["Spanish"],
-            "tech_id": 3502,
+            "tech_id": 3167,
             "building_id": 12,
             "Name": "Elite War Dog",
             "RequiredAge": 4

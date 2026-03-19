@@ -28184,7 +28184,7 @@
                     {
                         "Name": "Mutual Trade",
                         "RequiredAge": 3,
-                        "ID": 3061
+                        "ID": 3155
                     },
                     {
                         "Name": "Town Defense",
@@ -28194,7 +28194,7 @@
                     {
                         "Name": "Pax Mongolica",
                         "RequiredAge": 4,
-                        "ID": 3176
+                        "ID": 3156
                     }
                 ],
                 "Units": [
@@ -34198,7 +34198,7 @@
                     {
                         "Name": "Elite War Dog",
                         "RequiredAge": 4,
-                        "ID": 3502
+                        "ID": 3167
                     },
                     {
                         "Name": "Siege Training",
@@ -34250,12 +34250,12 @@
                     {
                         "Name": "War Dog",
                         "RequiredAge": 3,
-                        "ID": 4173
+                        "ID": 4089
                     },
                     {
                         "Name": "Elite War Dog",
                         "RequiredAge": 4,
-                        "ID": 4174
+                        "ID": 4090
                     }
                 ]
             },
@@ -34957,12 +34957,12 @@
                     {
                         "Name": "Jinete Tactics",
                         "RequiredAge": 4,
-                        "ID": 3134
+                        "ID": 3169
                     },
                     {
                         "Name": "Explorer",
                         "RequiredAge": 3,
-                        "ID": 3135
+                        "ID": 3168
                     }
                 ],
                 "Units": [
@@ -40521,7 +40521,7 @@
                     {
                         "Name": "Piracy",
                         "RequiredAge": 3,
-                        "ID": 3073
+                        "ID": 3141
                     },
                     {
                         "Name": "Town Defense",
@@ -40531,7 +40531,7 @@
                     {
                         "Name": "Stockfish Trade",
                         "RequiredAge": 4,
-                        "ID": 3082
+                        "ID": 3142
                     }
                 ],
                 "Units": [

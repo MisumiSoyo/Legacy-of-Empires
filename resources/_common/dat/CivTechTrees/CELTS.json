@@ -908,7 +908,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Celtic Hunter",
             "Name String ID": 700063,
-            "Node ID": 4143,
+            "Node ID": 4086,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 17,
@@ -934,11 +934,11 @@
             "Building ID": 87,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800064,
-            "Link ID": 4143,
+            "Link ID": 4086,
             "Link Node Type": "UniqueUnit",
             "Name": "Veteran Celtic Hunter",
             "Name String ID": 700064,
-            "Node ID": 4144,
+            "Node ID": 4087,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 18,
@@ -956,7 +956,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3421,
+            "Trigger Tech ID": 3159,
             "Use Type": "Unit"
         },
         {
@@ -964,11 +964,11 @@
             "Building ID": 87,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800065,
-            "Link ID": 4144,
+            "Link ID": 4087,
             "Link Node Type": "UniqueUnit",
             "Name": "Elite Celtic Hunter",
             "Name String ID": 700065,
-            "Node ID": 4145,
+            "Node ID": 4088,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 90,
@@ -986,7 +986,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3422,
+            "Trigger Tech ID": 3160,
             "Use Type": "Unit"
         },
         {

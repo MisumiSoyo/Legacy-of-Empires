@@ -390,13 +390,114 @@ void EffectFunction10021(int playerId = -1)
 }
 
 
+// 10022 - Piracy
+void EffectFunction10022(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
+    xsTaskAmount(cTaskAttrObjectId, -1);
+    xsTaskAmount(cTaskAttrObjectClass, 899);
+    xsTaskAmount(cTaskAttrWorkValue1, 40);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    ApplyModifyAllTargets(playerId, cWarshipClass);
+    ApplyModifyBuildingTargets(playerId, cWarshipClass, false);
+    xsResetTaskAmount();
+}
+
+
+// 10023 - Stockfish Trade
+void EffectFunction10023(int playerId = -1)
+{
+    xsEffectAmount(cModResource, cAttributeFishingProductivity, 0, 0.5, playerId);
+    xsEffectAmount(cModResource, cAttributeGoldFishingProductivity, 1, 1, playerId);
+
+    //  Reset Fishing Ships' tasks
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeGoldFishingProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 0.21);
+    xsTask(FishingShipID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
+    xsTask(FishingShipID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.12);
+    xsTask(FishingShipID, cTaskTypeGenerateResources, cShoreFish, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.174);
+    xsTask(FishingShipID, cTaskTypeGenerateResources, cFarmClass, playerId);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 0.215);
+    xsTask(MaleFishermanID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
+    xsTask(MaleFishermanID, cTaskTypeGenerateResources, cShoreFish, playerId);
+    xsTask(MaleFishermanID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
+    xsTask(FemaleFishermanID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
+    xsTask(FemaleFishermanID, cTaskTypeGenerateResources, cShoreFish, playerId);
+    xsTask(FemaleFishermanID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
+    xsResetTaskAmount();
+}
+
+
+// 10024 - C-Bonus, Infantry and Cavalry generate gold by attacking buildings
+void EffectFunction10024(int playerId = -1)
+{
+    xsResetTaskAmount();
+    GenerateGoldFromBuilding(cScoutCavalryClass);
+    GenerateGoldFromBuilding(cCavalryClass);
+    GenerateGoldFromBuilding(cInfantryClass);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 33);
+}
+
+
+//  10025 - Pax Mongolica
+void EffectFunction10025(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000007);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+
+    PaxMongolicaApplier(playerId, MilitiaID);
+    PaxMongolicaApplier(playerId, ManAtArmsID);
+    PaxMongolicaApplier(playerId, LongSwordmanID);
+    PaxMongolicaApplier(playerId, TwoHandedSwordmanID);
+    PaxMongolicaApplier(playerId, ChampionID);
+    PaxMongolicaApplier(playerId, SpearmanID);
+    PaxMongolicaApplier(playerId, PikemanID);
+    PaxMongolicaApplier(playerId, HalberdierID);
+    PaxMongolicaApplier(playerId, ArcherID);
+    PaxMongolicaApplier(playerId, CrossbowmanID);
+    PaxMongolicaApplier(playerId, ArbalesterID);
+    PaxMongolicaApplier(playerId, SkirmisherID);
+    PaxMongolicaApplier(playerId, EliteSkirmisherID);
+    PaxMongolicaApplier(playerId, ImperialSkirmisherID);
+    //PaxMongolicaApplier(playerId, EarlyCavalryArcherID);
+    PaxMongolicaApplier(playerId, CavalryArcherID);
+    PaxMongolicaApplier(playerId, HeavyCavalryArcherID);
+    PaxMongolicaApplier(playerId, HandCannoneerID);
+    PaxMongolicaApplier(playerId, GenitourID);
+    PaxMongolicaApplier(playerId, EliteGenitourID);
+    PaxMongolicaApplier(playerId, KeshikID);
+    PaxMongolicaApplier(playerId, EliteKeshikID);
+    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
+        if (isResearched(playerId, CavalierTechID))
+            UpgradeUnit(playerId, KnightID, EliteKeshikID);
+        else
+            UpgradeUnit(playerId, KnightID, KeshikID);
+    
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 183  2026.03.19");
+    xsChatData("Build: 184  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

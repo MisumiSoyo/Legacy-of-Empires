@@ -44,6 +44,22 @@ void GothsVillager(int playerId = -1, int Time = 0)
 }
 
 
+void SpanishExplorer(int playerId = -1, int Time = -1)
+{
+    if (isResearched(playerId, ExplorerTechID) == false)
+        return;
+    float ExplorerGoldRate = 0.015;
+    int i = 0;
+    float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
+    float CurrentGold = 0;
+    for (i = 1; <= xsGetNumPlayers())
+        if (i != playerId)
+            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
+    ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
+    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -65,6 +81,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cByzantines:
         {
             ByzantinesOliveOil(playerId, Time);
+            break;
+        }
+        case cSpanish:
+        {
+            SpanishExplorer(playerId, Time);
             break;
         }
         default:
