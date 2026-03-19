@@ -388,7 +388,7 @@
         {
             "note": "霹雳车",
             "civilizations": "Wei",
-            "tech_id": 3065,
+            "tech_id": 3396,
             "building_id": 109,
             "Name": "Thunderclap Cart",
             "RequiredAge": 3
