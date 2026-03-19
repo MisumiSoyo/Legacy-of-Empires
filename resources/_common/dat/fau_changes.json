@@ -1761,7 +1761,7 @@
         {
             "note": "复客制",
             "civilizations": "Wu",
-            "tech_id": 3443,
+            "tech_id": 3386,
             "building_id": 109,
             "Name": "Exempted Tenant System",
             "RequiredAge": 3
@@ -1769,7 +1769,7 @@
         {
             "note": "解烦兵",
             "civilizations": "Wu",
-            "tech_id": 3444,
+            "tech_id": 3387,
             "building_id": 109,
             "Name": "Trouble-Freeing Army",
             "RequiredAge": 4
