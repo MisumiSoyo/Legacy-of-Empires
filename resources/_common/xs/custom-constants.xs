@@ -145,6 +145,8 @@ extern const int EliteRaiderElephantID = 4139;
 extern const int KhevsuretiWarriorID = 4149;
 extern const int EliteKhevsuretiWarriorID = 4150;
 extern const int WubaoID = 4151;
+extern const int ConscriptedArmyBuildingID = 4152;
+extern const int ConscriptedArmyID = 4153;
 
 
 //  Newly added tech IDs

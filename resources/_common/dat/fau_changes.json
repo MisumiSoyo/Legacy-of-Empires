@@ -211,7 +211,7 @@
         {
             "note": "签军",
             "civilizations": "Jurchens",
-            "unit_id": 4033,
+            "unit_id": 4153,
             "Name": "Conscripted Army",
             "building_id": 109,
             "RequiredAge": 2
@@ -1059,7 +1059,7 @@
         {
             "note": "猛安谋克",
             "civilizations": "Jurchens",
-            "tech_id": 3162,
+            "tech_id": 3404,
             "building_id": 109,
             "Name": "Meng'an Mouke",
             "RequiredAge": 3
@@ -1067,7 +1067,7 @@
         {
             "note": "拐子马",
             "civilizations": "Jurchens",
-            "tech_id": 3498,
+            "tech_id": 3405,
             "building_id": 109,
             "Name": "Property Tax",
             "RequiredAge": 4

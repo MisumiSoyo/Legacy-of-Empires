@@ -1170,13 +1170,34 @@ void EffectFunction10071(int playerId = -1)
 }
 
 
+//  10072 - Meng'an Mouke
+void EffectFunction10072(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, ConscriptedArmyID);
+    xsTaskAmount(cTaskAttrWorkValue2, 4);
+    xsTask(ConscriptedArmyBuildingID, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
+//  10073 - Flanking Cavalry
+void EffectFunction10073(int playerId = -1)
+{
+    FlankingCavalryApplier(playerId, cScoutCavalryClass);
+    FlankingCavalryApplier(playerId, cCavalryClass);
+    FlankingCavalryApplier(playerId, cCavalryArcherClass);
+    FlankingCavalryApplier(playerId, cConquistadorClass);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 196  2026.03.19");
+    xsChatData("Build: 197  2026.03.20");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

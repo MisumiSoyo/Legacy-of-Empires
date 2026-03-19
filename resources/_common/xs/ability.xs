@@ -380,6 +380,14 @@ void EffectFunction10068(int playerId = -1)
 }
 
 
+void FlankingCavalryApplier(int playerId = -1, int ClassTarget = -1)
+{
+    ModAttribute(playerId, ClassTarget, cMaxCharge, 1);
+    SetAttribute(playerId, ClassTarget, cChargeEvent, 0);
+    SetAttribute(playerId, ClassTarget, cChargeType, 5);
+}
+
+
 
 //  Interface
 void AbilityApplier(int playerId = -1)
