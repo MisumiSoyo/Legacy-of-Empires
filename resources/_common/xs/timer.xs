@@ -67,6 +67,23 @@ void KoreansMineral(int playerId = -1, int Time = -1)
 }
 
 
+void PortugueseFeitoria(int playerId = -1, int Time = -1)
+{
+    if (isResearched(playerId, CartaRegiaTechID) == false)
+        return;
+    int TeamFeitoriaCount = 0;
+    int i = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if (i != playerId)
+            if (isAlly(i, playerId))
+                TeamFeitoriaCount = TeamFeitoriaCount + xsPlayerAttribute(i, cAttributeExtraFeitoriaCount);
+    ModResource(playerId, cAttributeFood, 0.8 * TeamFeitoriaCount);
+    ModResource(playerId, cAttributeWood, 0.35 * TeamFeitoriaCount);
+    ModResource(playerId, cAttributeStone, 0.15 * TeamFeitoriaCount);
+    ModResource(playerId, cAttributeGold, 0.5* TeamFeitoriaCount);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -98,6 +115,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cKoreans:
         {
             KoreansMineral(playerId, Time);
+            break;
+        }
+        case cPortuguese:
+        {
+            PortugueseFeitoria(playerId, Time);
             break;
         }
         default:

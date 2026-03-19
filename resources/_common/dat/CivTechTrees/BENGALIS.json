@@ -908,7 +908,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Mansabdar",
             "Name String ID": 700045,
-            "Node ID": 4058,
+            "Node ID": 4105,
             "Node Status": "ResearchedCompleted",
             "Node Type": "RegionalUnit",
             "Picture Index": 399,
@@ -934,11 +934,11 @@
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800046,
-            "Link ID": 4058,
+            "Link ID": 4105,
             "Link Node Type": "RegionalUnit",
             "Name": "Veteran Mansabdar",
             "Name String ID": 700046,
-            "Node ID": 4059,
+            "Node ID": 4106,
             "Node Status": "ResearchedCompleted",
             "Node Type": "RegionalUnit",
             "Picture Index": 399,
@@ -956,7 +956,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3147,
+            "Trigger Tech ID": 3215,
             "Use Type": "Unit"
         },
         {
@@ -964,11 +964,11 @@
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800047,
-            "Link ID": 4059,
+            "Link ID": 4106,
             "Link Node Type": "RegionalUnit",
             "Name": "Elite Mansabdar",
             "Name String ID": 700047,
-            "Node ID": 4060,
+            "Node ID": 4107,
             "Node Status": "ResearchedCompleted",
             "Node Type": "RegionalUnit",
             "Picture Index": 399,
@@ -986,7 +986,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3148,
+            "Trigger Tech ID": 3216,
             "Use Type": "Unit"
         },
         {

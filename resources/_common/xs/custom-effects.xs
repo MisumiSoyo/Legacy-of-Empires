@@ -665,13 +665,113 @@ void EffectFunction10033(int playerId = -1)
 }
 
 
+//  10034 - Maritime Stronghold
+void EffectFunction10034(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0.1);
+    xsTaskAmount(cTaskAttrBuildingPick, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
+    xsTaskAmount(cTaskAttrOwnerType, 4);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTask(cWarshipClass, cTaskTypeBuild, SeaTower2ID, playerId);
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 12.5);
+    xsTaskAmount(cTaskAttrWorkRange, 0.1);
+    xsTaskAmount(cTaskAttrBuildingPick, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 4);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTask(cWarshipClass, cTaskTypeRepair, SeaTower2ID, playerId);
+    xsResetTaskAmount();
+
+    SetAttribute(playerId, cWarshipClass, cTraits, 4);
+    SetAttribute(playerId, cWarshipClass, cTraitPiece, SeaTower2ID);
+    EnableObject(playerId, SeaTower2ID);
+}
+
+
+//  10035 - Mercenary Contract
+void EffectFunction10035(int playerId = -1)
+{
+    SpawnUnit(playerId, CondottieroID, TownCenterID, 5, 1);
+    SetResource(playerId, cAttributeCondottieroMercenaryNum, 5);
+    SetAttribute(playerId, MercenaryContractBuildingID, cDeadUnitId, MercenaryContractBuildingID);
+    SetAttribute(playerId, MercenaryContractBuildingID, cBloodUnitId, MercenaryContractEffectBuildingID);
+    SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
+    SpawnUnit(playerId, MercenaryContractBuildingID, TownCenterID, 1, 1);
+}
+
+
+//  10036 - Italians, Mercenary Contract spawn Condottieros
+void EffectFunction10036(int playerId = -1)
+{
+    if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)
+    {
+        SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
+        SpawnUnit(playerId, CondottieroID, TownCenterID, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
+    }
+    else
+        SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -30);
+}
+
+
+//  10038 - Sultans
+void EffectFunction10038(int playerId = -1)
+{
+    AddAttackForm(playerId, cInfantryClass, cDamageClassElephantUnits, 10);
+    AddAttackForm(playerId, cCavalryClass, cDamageClassElephantUnits, 10);
+    AddAttackForm(playerId, cScoutCavalryClass,cDamageClassElephantUnits, 10);
+    AddAttackForm(playerId, cArcherClass, cDamageClassElephantUnits, 6);
+    AddAttackForm(playerId, cCavalryArcherClass, cDamageClassElephantUnits, 6);
+    AddAttackForm(playerId, cConquistadorClass, cDamageClassElephantUnits, 6);
+    AddAttackForm(playerId, cHandCannoneerClass, cDamageClassElephantUnits, 6);
+}
+
+
+//  10039 - C-Bonus, Faster Castle Units
+void EffectFunction10039(int playerId = -1)
+{
+    FasterCastleUnits(playerId, 74, 21, 16079);
+    FasterCastleUnits(playerId, 75, 21, 16079);
+    FasterCastleUnits(playerId, 77, 21, 16079);
+    FasterCastleUnits(playerId, 473, 21, 16079);
+    FasterCastleUnits(playerId, 567, 21, 16079);
+    FasterCastleUnits(playerId, 93, 22, 16068);
+    FasterCastleUnits(playerId, 358, 22, 16068);
+    FasterCastleUnits(playerId, 359, 22, 16068);
+    FasterCastleUnits(playerId, 882, 23, 16085);
+    FasterCastleUnits(playerId, 1010, 24, 16086);
+    FasterCastleUnits(playerId, 1012, 24, 16086);
+    FasterCastleUnits(playerId, 4, 26, 18022);
+    FasterCastleUnits(playerId, 24, 26, 18022);
+    FasterCastleUnits(playerId, 492, 26, 18022);
+    FasterCastleUnits(playerId, 7, 27, 18045);
+    FasterCastleUnits(playerId, 6, 27, 18045);
+    FasterCastleUnits(playerId, 1155, 27, 18045);
+    FasterCastleUnits(playerId, 39, 28, 18008);
+    FasterCastleUnits(playerId, 474, 28, 18008);
+    FasterCastleUnits(playerId, HandCannoneerID, 29, 18034);
+    FasterCastleUnits(playerId, 448, 31, 18090);
+    FasterCastleUnits(playerId, 546, 31, 18090);
+    FasterCastleUnits(playerId, 441, 31, 18090);
+    FasterCastleUnits(playerId, 1707, 31, 18090);
+    FasterCastleUnits(playerId, 38, 32, 18039);
+    FasterCastleUnits(playerId, 283, 32, 18039);
+    FasterCastleUnits(playerId, 569, 32, 18039);
+    FasterCastleUnits(playerId, 1370, 33, 18258);
+    FasterCastleUnits(playerId, 1372, 33, 18258);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 187  2026.03.19");
+    xsChatData("Build: 188  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

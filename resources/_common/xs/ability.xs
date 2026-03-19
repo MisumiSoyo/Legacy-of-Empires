@@ -189,6 +189,19 @@ void EffectFunction10032(int playerId = -1)
 }
 
 
+//  Magyars civ bonus
+void FasterCastleUnits(int playerId = -1, int ObjectID = -1, int TrainButtonID = -1, int HotKeyID = -1)
+{
+    SetAttribute(playerId, ObjectID, cTrainLocationsTotalNum, 2);
+    SetAttribute(playerId, ObjectID, cTrainLocationsEntryMod, 3);
+    SetAttribute(playerId, ObjectID, cTrainLocation, 82);
+    SetAttribute(playerId, ObjectID, cTrainButton, TrainButtonID);
+    MulAttribute(playerId, ObjectID, cTrainTime, 1.0 / 1.75);
+    SetAttribute(playerId, ObjectID, cHotkeyId, HotKeyID);
+    SetAttribute(playerId, ObjectID, cTrainLocationsEntryMod, 0);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

@@ -108,7 +108,17 @@ extern const int ImperialSteppeLancerID = 4097;
 extern const int WoodenFortressID = 4098;
 extern const int GoguryeoHeavyCavalryID = 4099;
 extern const int EliteGoguryeoHeavyCavalryID = 4100;
-
+extern const int HospitallerKnightID = 4101;
+extern const int EliteHospitallerKnightID = 4102;
+extern const int MercenaryContractBuildingID = 4103;
+extern const int MercenaryContractEffectBuildingID = 4104;
+extern const int MansabdarID = 4105;
+extern const int VeteranMansabdarID = 4106;
+extern const int EliteMansabdarID = 4107;
+extern const int SeaTower2ID = 4108;
+extern const int StreltsyID = 4109;
+extern const int ExtraFeitoriaCountBuildingID = 4110;
+extern const int ExtraFeitoriaDeadCountBuildingID = 4111;
 
 
 //  Newly added tech IDs
@@ -169,6 +179,15 @@ extern const int FrontlineOutpostTechID = 3191;
 extern const int WhistlingArrowTechID = 3192;
 extern const int KoreanBowTechID = 3199;
 extern const int IronArmorTechID = 3200;
+extern const int MaritimeStrongholdTechID = 3206;
+extern const int MercenaryContractTechID = 3207;
+extern const int AdvancedMercenaryContractTechID = 3208;
+extern const int KhandaDrillsTechID = 3217;
+extern const int SultansTechID = 3218;
+extern const int BoyarsFortitudeTechID = 3233;
+extern const int OrthodoxyTechID = 3234;
+extern const int SagresSchoolTechID = 3237;
+extern const int CartaRegiaTechID = 3238;
 
 
 // Custom Effect IDs

@@ -237,7 +237,7 @@
         {
             "note": "医院骑士",
             "civilizations": ["Italians", "Sicilians"],
-            "unit_id": 4038,
+            "unit_id": 4101,
             "building_id": 101,
             "Name": "Hospitaller Knight",
             "RequiredAge": 3
@@ -245,7 +245,7 @@
         {
             "note": "精锐医院骑士",
             "civilizations": ["Italians", "Sicilians"],
-            "tech_id": 3039,
+            "tech_id": 3202,
             "building_id": 101,
             "Name": "Elite Hospitaller Knight",
             "RequiredAge": 4
@@ -468,7 +468,7 @@
         {
             "note": "海上据点",
             "civilizations": "Italians",
-            "tech_id": 3077,
+            "tech_id": 3206,
             "building_id": 109,
             "Name": "Maritime Stronghold",
             "RequiredAge": 3
@@ -604,7 +604,7 @@
         {
             "note": "东正教",
             "civilizations": "Slavs",
-            "tech_id": 3097,
+            "tech_id": 3234,
             "building_id": 109,
             "Name": "Orthodoxy",
             "RequiredAge": 4
@@ -626,77 +626,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "购买圣物",
-            "civilizations": "Italians",
-            "tech_id": 3099,
-            "building_id": 104,
-            "Name": "Purchase Relic",
-            "RequiredAge": 3
-        },
-        {
-            "note": "圣坛",
-            "civilizations": ["Incas", "Muisca", "Tupi"],
-            "unit_id": 4049,
-            "building_id": 118,
-            "Name": "Shrine",
-            "RequiredAge": 2
-        },
-        {
-            "note": "圣坛",
-            "civilizations": ["Incas", "Muisca", "Tupi"],
-            "building_id" : 4049,
-            "Name": "Shrine",
-            "type": "add"
-        },
-        {
-            "note": "切换到训练昌皮战士系",
-            "civilizations": ["Incas", "Muisca", "Tupi"],
-            "tech_id": 3100,
-            "building_id": 4049,
-            "Name": "Switch to training Champi Scout Line",
-            "RequiredAge": 2
-        },
-        {
-            "note": "切换到训练长矛兵系",
-            "civilizations": ["Incas", "Muisca", "Tupi"],
-            "tech_id": 3101,
-            "building_id": 4049,
-            "Name": "Switch to training Spearman Line",
-            "RequiredAge": 2
-        },
-        {
-            "note": "切换到训练步弓手系",
-            "civilizations": ["Incas", "Muisca", "Tupi"],
-            "tech_id": 3103,
-            "building_id": 4049,
-            "Name": "Switch to training Archer Line",
-            "RequiredAge": 2
-        },
-        {
-            "note": "切换到训练掷矛手系",
-            "civilizations": ["Incas", "Muisca", "Tupi"],
-            "tech_id": 3104,
-            "building_id": 4049,
-            "Name": "Switch to training Skirmisher Line",
-            "RequiredAge": 2
-        },
-        {
-            "note": "切换到训练投石手",
-            "civilizations": ["Incas", "Muisca", "Tupi"],
-            "tech_id": 3105,
-            "building_id": 4049,
-            "Name": "Switch to training Slinger",
-            "RequiredAge": 3
-        },
-        {
-            "note": "切换到训练印加枪兵长",
-            "civilizations": "Incas",
-            "tech_id": 3106,
-            "building_id": 4049,
-            "Name": "Switch to training Kamayuk",
-            "RequiredAge": 3
-        },
-        {
             "note": "掠夺号角",
             "civilizations": "Tatars",
             "tech_id": 3111,
@@ -715,7 +644,7 @@
         {
             "note": "佣兵合同",
             "civilizations": "Italians",
-            "tech_id": 3114,
+            "tech_id": 3207,
             "building_id": 109,
             "Name": "Mercenary Contract",
             "RequiredAge": 3
@@ -723,7 +652,7 @@
         {
             "note": "高级佣兵合同",
             "civilizations": "Italians",
-            "tech_id": 3115,
+            "tech_id": 3208,
             "building_id": 109,
             "Name": "Advanced Mercenary Contract",
             "RequiredAge": 4
@@ -812,30 +741,6 @@
             "building_id": 109,
             "Name": "Elephant Formation",
             "RequiredAge": 4
-        },
-        {
-            "note": "信使",
-            "civilizations": "Incas",
-            "tech_id": 3125,
-            "building_id": 109,
-            "Name": "Couriers",
-            "RequiredAge": 3
-        },
-        {
-            "note": "奇普",
-            "civilizations": "Incas",
-            "tech_id": 3126,
-            "building_id": 109,
-            "Name": "Quipu",
-            "RequiredAge": 4
-        },
-        {
-            "note": "切换到训练索洛托勇士",
-            "civilizations": "Incas",
-            "tech_id": 3127,
-            "building_id": 4049,
-            "Name": "Switch to training Xolotl Warrior",
-            "RequiredAge": 3
         },
         {
             "note": "缅甸启用火枪手",
@@ -959,7 +864,7 @@
         {
             "note": "萨格里什学校",
             "civilizations": "Portuguese",
-            "tech_id": 3137,
+            "tech_id": 3237,
             "building_id": 109,
             "Name": "Sagres School",
             "RequiredAge": 3
@@ -967,7 +872,7 @@
         {
             "note": "特许状",
             "civilizations": "Portuguese",
-            "tech_id": 3459,
+            "tech_id": 3238,
             "building_id": 109,
             "Name": "Carta Regia",
             "RequiredAge": 4
@@ -1626,7 +1531,7 @@
         {
             "note": "贵族铁骑的坚毅",
             "civilizations": "Slavs",
-            "tech_id": 3243,
+            "tech_id": 3233,
             "building_id": 109,
             "Name": "Boyar's Fortitude",
             "RequiredAge": 3
@@ -1995,38 +1900,6 @@
             "tech_id": 3003,
             "building_id": 2556,
             "Name": "Cash Crop",
-            "RequiredAge": 3
-        },
-        {
-            "note": "切换到训练格查战士",
-            "civilizations": "Muisca",
-            "tech_id": 3482,
-            "building_id": 4049,
-            "Name": "Switch to training Guecha Warrior",
-            "RequiredAge": 3
-        },
-        {
-            "note": "切换到训练神庙护卫",
-            "civilizations": "Muisca",
-            "tech_id": 3483,
-            "building_id": 4049,
-            "Name": "Switch to training Temple Guard",
-            "RequiredAge": 3
-        },
-        {
-            "note": "切换到训练黑檀木步弓手",
-            "civilizations": "Tupi",
-            "tech_id": 3486,
-            "building_id": 4049,
-            "Name": "Switch to training Blackwood Archer",
-            "RequiredAge": 3
-        },
-        {
-            "note": "切换到训练伊比拉贝玛战士",
-            "civilizations": "Tupi",
-            "tech_id": 3487,
-            "building_id": 4049,
-            "Name": "Switch to training Ibirapema Warrior",
             "RequiredAge": 3
         },
         {

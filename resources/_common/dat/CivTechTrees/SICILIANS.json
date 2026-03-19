@@ -1779,7 +1779,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Hospitaller Knight",
             "Name String ID": 700029,
-            "Node ID": 4038,
+            "Node ID": 4101,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 357,
@@ -1805,11 +1805,11 @@
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800030,
-            "Link ID": 4038,
+            "Link ID": 4101,
             "Link Node Type": "UniqueUnit",
             "Name": "Elite Hospitaller Knight",
             "Name String ID": 700030,
-            "Node ID": 4039,
+            "Node ID": 4102,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 357,
@@ -1827,7 +1827,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3039,
+            "Trigger Tech ID": 3032,
             "Use Type": "Unit"
         },
         {

@@ -15391,11 +15391,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Shrine",
-                        "RequiredAge": 2,
-                        "ID": 4049
                     }
                 ]
             },
@@ -16138,16 +16133,6 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
-                    },
-                    {
-                        "Name": "Couriers",
-                        "RequiredAge": 3,
-                        "ID": 3125
-                    },
-                    {
-                        "Name": "Quipu",
-                        "RequiredAge": 4,
-                        "ID": 3126
                     }
                 ],
                 "Units": [
@@ -16269,48 +16254,6 @@
                 "PrereqIconIndex": 19,
                 "PrereqStyle": 0,
                 "PrereqStringID": 14157
-            },
-            {
-                "ID": 4049,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Switch to training Champi Scout Line",
-                        "RequiredAge": 2,
-                        "ID": 3100
-                    },
-                    {
-                        "Name": "Switch to training Spearman Line",
-                        "RequiredAge": 2,
-                        "ID": 3101
-                    },
-                    {
-                        "Name": "Switch to training Archer Line",
-                        "RequiredAge": 2,
-                        "ID": 3103
-                    },
-                    {
-                        "Name": "Switch to training Skirmisher Line",
-                        "RequiredAge": 2,
-                        "ID": 3104
-                    },
-                    {
-                        "Name": "Switch to training Slinger",
-                        "RequiredAge": 3,
-                        "ID": 3105
-                    },
-                    {
-                        "Name": "Switch to training Kamayuk",
-                        "RequiredAge": 3,
-                        "ID": 3106
-                    },
-                    {
-                        "Name": "Switch to training Xolotl Warrior",
-                        "RequiredAge": 3,
-                        "ID": 3127
-                    }
-                ],
-                "Units": []
             }
         ]
     },
@@ -17689,7 +17632,7 @@
                     {
                         "Name": "Elite Hospitaller Knight",
                         "RequiredAge": 4,
-                        "ID": 3039
+                        "ID": 3202
                     }
                 ],
                 "Units": [
@@ -17722,7 +17665,7 @@
                     {
                         "Name": "Hospitaller Knight",
                         "RequiredAge": 3,
-                        "ID": 4038
+                        "ID": 4101
                     }
                 ]
             },
@@ -18287,11 +18230,6 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3005
-                    },
-                    {
-                        "Name": "Purchase Relic",
-                        "RequiredAge": 3,
-                        "ID": 3099
                     }
                 ],
                 "Units": [
@@ -18339,7 +18277,7 @@
                     {
                         "Name": "Maritime Stronghold",
                         "RequiredAge": 3,
-                        "ID": 3077
+                        "ID": 3206
                     },
                     {
                         "Name": "Town Defense",
@@ -18349,12 +18287,12 @@
                     {
                         "Name": "Mercenary Contract",
                         "RequiredAge": 3,
-                        "ID": 3114
+                        "ID": 3207
                     },
                     {
                         "Name": "Advanced Mercenary Contract",
                         "RequiredAge": 4,
-                        "ID": 3115
+                        "ID": 3208
                     }
                 ],
                 "Units": [
@@ -30418,12 +30356,12 @@
                     {
                         "Name": "Sagres School",
                         "RequiredAge": 3,
-                        "ID": 3137
+                        "ID": 3237
                     },
                     {
                         "Name": "Carta Regia",
                         "RequiredAge": 4,
-                        "ID": 3459
+                        "ID": 3238
                     }
                 ],
                 "Units": [
@@ -32039,7 +31977,7 @@
                     {
                         "Name": "Elite Hospitaller Knight",
                         "RequiredAge": 4,
-                        "ID": 3039
+                        "ID": 3202
                     }
                 ],
                 "Units": [
@@ -32066,7 +32004,7 @@
                     {
                         "Name": "Hospitaller Knight",
                         "RequiredAge": 3,
-                        "ID": 4038
+                        "ID": 4101
                     }
                 ]
             },
@@ -33742,12 +33680,12 @@
                     {
                         "Name": "Orthodoxy",
                         "RequiredAge": 4,
-                        "ID": 3097
+                        "ID": 3234
                     },
                     {
                         "Name": "Boyar's Fortitude",
                         "RequiredAge": 3,
-                        "ID": 3243
+                        "ID": 3233
                     }
                 ],
                 "Units": [
@@ -55922,11 +55860,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Shrine",
-                        "RequiredAge": 2,
-                        "ID": 4049
                     }
                 ]
             },
@@ -56786,48 +56719,6 @@
                 "PrereqIconIndex": 19,
                 "PrereqStyle": 0,
                 "PrereqStringID": 14157
-            },
-            {
-                "ID": 4049,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Switch to training Champi Scout Line",
-                        "RequiredAge": 2,
-                        "ID": 3100
-                    },
-                    {
-                        "Name": "Switch to training Spearman Line",
-                        "RequiredAge": 2,
-                        "ID": 3101
-                    },
-                    {
-                        "Name": "Switch to training Archer Line",
-                        "RequiredAge": 2,
-                        "ID": 3103
-                    },
-                    {
-                        "Name": "Switch to training Skirmisher Line",
-                        "RequiredAge": 2,
-                        "ID": 3104
-                    },
-                    {
-                        "Name": "Switch to training Slinger",
-                        "RequiredAge": 3,
-                        "ID": 3105
-                    },
-                    {
-                        "Name": "Switch to training Guecha Warrior",
-                        "RequiredAge": 3,
-                        "ID": 3482
-                    },
-                    {
-                        "Name": "Switch to training Temple Guard",
-                        "RequiredAge": 3,
-                        "ID": 3483
-                    }
-                ],
-                "Units": []
             }
         ]
     },
@@ -57921,11 +57812,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Shrine",
-                        "RequiredAge": 2,
-                        "ID": 4049
                     }
                 ]
             },
@@ -58721,48 +58607,6 @@
                 "PrereqIconIndex": 19,
                 "PrereqStyle": 0,
                 "PrereqStringID": 14157
-            },
-            {
-                "ID": 4049,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Switch to training Champi Scout Line",
-                        "RequiredAge": 2,
-                        "ID": 3100
-                    },
-                    {
-                        "Name": "Switch to training Spearman Line",
-                        "RequiredAge": 2,
-                        "ID": 3101
-                    },
-                    {
-                        "Name": "Switch to training Archer Line",
-                        "RequiredAge": 2,
-                        "ID": 3103
-                    },
-                    {
-                        "Name": "Switch to training Skirmisher Line",
-                        "RequiredAge": 2,
-                        "ID": 3104
-                    },
-                    {
-                        "Name": "Switch to training Slinger",
-                        "RequiredAge": 3,
-                        "ID": 3105
-                    },
-                    {
-                        "Name": "Switch to training Blackwood Archer",
-                        "RequiredAge": 3,
-                        "ID": 3486
-                    },
-                    {
-                        "Name": "Switch to training Ibirapema Warrior",
-                        "RequiredAge": 3,
-                        "ID": 3487
-                    }
-                ],
-                "Units": []
             }
         ]
     }

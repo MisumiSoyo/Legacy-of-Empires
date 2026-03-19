@@ -505,8 +505,8 @@ void EffectFunction10001(int playerId = -1)
 }
 
 
-//  10123 - C-Bonus, free techs
-void EffectFunction10123(int playerId = -1)
+//  10037 - C-Bonus, free techs
+void EffectFunction10037(int playerId = -1)
 {
     FreeTech(playerId, LoomTechID);
     FreeTech(playerId, WheelBarrowTechID);
