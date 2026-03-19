@@ -104,7 +104,7 @@
         {
             "note": "早期骑射手",
             "civilizations": "Huns",
-            "unit_id": 4017,
+            "unit_id": 4094,
             "building_id": 87,
             "Name": "Early Cavalry Archer",
             "RequiredAge": 2
@@ -428,7 +428,7 @@
         {
             "note": "前哨",
             "civilizations": "Huns",
-            "tech_id": 3072,
+            "tech_id": 3191,
             "building_id": 109,
             "Name": "Frontline Outpost",
             "RequiredAge": 3
@@ -508,7 +508,7 @@
         {
             "note": "鸣镝箭",
             "civilizations": "Huns",
-            "tech_id": 3081,
+            "tech_id": 3192,
             "building_id": 109,
             "Name": "Whistling Arrow",
             "RequiredAge": 4
@@ -596,7 +596,7 @@
         {
             "note": "黑曜石之箭",
             "civilizations": "Mayans",
-            "tech_id": 3095,
+            "tech_id": 3180,
             "building_id": 109,
             "Name": "Obsidian Arrow",
             "RequiredAge": 3
@@ -707,7 +707,7 @@
         {
             "note": "玉米神祝福",
             "civilizations": "Mayans",
-            "tech_id": 3113,
+            "tech_id": 3181,
             "building_id": 109,
             "Name": "Yum Kaax's Blessing",
             "RequiredAge": 4
@@ -1848,7 +1848,7 @@
         {
             "note": "帝王草原枪兵",
             "civilizations": "Huns",
-            "tech_id": 3434,
+            "tech_id": 3190,
             "building_id": 101,
             "Name": "Imperial Steppe Lancer",
             "RequiredAge": 4
@@ -1944,7 +1944,7 @@
         {
             "note": "高丽弓",
             "civilizations": "Koreans",
-            "tech_id": 3472,
+            "tech_id": 3199,
             "building_id": 109,
             "Name": "Korean Bow",
             "RequiredAge": 3
@@ -1952,7 +1952,7 @@
         {
             "note": "铁甲",
             "civilizations": "Koreans",
-            "tech_id": 3514,
+            "tech_id": 3200,
             "building_id": 109,
             "Name": "Iron Armor",
             "RequiredAge": 4

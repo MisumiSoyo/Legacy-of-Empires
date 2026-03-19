@@ -331,15 +331,15 @@ void EffectFunction10018(int playerId = -1)
     AddAttackForm(playerId, SavarID, cDamageClassArchers, 2);
     AddAttackForm(playerId, HeiGuangCavalryID, cDamageClassArchers, 2);
     AddAttackForm(playerId, HeavyHeiGuangCavalryID, cDamageClassArchers, 2);
-    //AddAttackForm(playerId, SipahiID, cDamageClassArchers, 2);
-    //AddAttackForm(playerId, EliteSipahiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, SipahiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteSipahiID, cDamageClassArchers, 2);
     AddAttackForm(playerId, GuanNingCavalryID, cDamageClassArchers, 2);
     AddAttackForm(playerId, MountedSamuraiID, cDamageClassArchers, 2);
     AddAttackForm(playerId, EliteMountedSamuraiID, cDamageClassArchers, 2);
-    //AddAttackForm(playerId, GoguryeoHeavyCavalryID, cDamageClassArchers, 2);
-    //AddAttackForm(playerId, EliteGoguryeoHeavyCavalryID, cDamageClassArchers, 2);
-    //AddAttackForm(playerId, KeshikID, cDamageClassArchers, 2);
-    //AddAttackForm(playerId, EliteKeshikID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, GoguryeoHeavyCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteGoguryeoHeavyCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, KeshikID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteKeshikID, cDamageClassArchers, 2);
 }
 
 
@@ -473,7 +473,7 @@ void EffectFunction10025(int playerId = -1)
     PaxMongolicaApplier(playerId, SkirmisherID);
     PaxMongolicaApplier(playerId, EliteSkirmisherID);
     PaxMongolicaApplier(playerId, ImperialSkirmisherID);
-    //PaxMongolicaApplier(playerId, EarlyCavalryArcherID);
+    PaxMongolicaApplier(playerId, EarlyCavalryArcherID);
     PaxMongolicaApplier(playerId, CavalryArcherID);
     PaxMongolicaApplier(playerId, HeavyCavalryArcherID);
     PaxMongolicaApplier(playerId, HandCannoneerID);
@@ -568,13 +568,110 @@ void EffectFunction10028(int playerId = -1)
 }
 
 
+//  10029 - C-Bonus, farms produce all resources
+void EffectFunction10029(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeMayansFarmGoldProductivity);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000006);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeMayansFarmWoodProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000009);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeMayansFarmStoneProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeStone);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000010);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.81 * 1.15 * 0.40);
+    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.81 * 1.15 * 0.10);
+    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.81 * 1.15 * 0.20);
+}
+
+
+//  10030 - Yum Kaax's Blessing
+void EffectFunction10030(int playerId = -1)
+{
+    MulAttribute(playerId, 214, cWorkRate, 1000);
+    MulAttribute(playerId, 214, cCarryCapacity, 100);
+    MulAttribute(playerId, 259, cWorkRate, 1000);
+    MulAttribute(playerId, 259, cCarryCapacity, 100);
+    MulAttribute(playerId, 50, cWorkRate, 10000);
+    SetAttribute(playerId, YumKaaxsBlessingBuildingID, cRegenerationHpPercent, -6);
+    SetAttribute(playerId, YumKaaxsBlessingBuildingID, cDeadUnitId, YumKaaxsBlessingEndBuildingID);
+    vector pos = xsVectorSet(0.0, 0.0, 0.0);
+    xsCreateUnit(YumKaaxsBlessingBuildingID, playerId, pos, false, false, false);
+
+    MulResource(playerId, cAttributeMayansFarmWoodProductivity, 1000);
+    MulResource(playerId, cAttributeMayansFarmStoneProductivity, 1000);
+    MulResource(playerId, cAttributeMayansFarmGoldProductivity, 1000);
+}
+
+
+//  10031 - Yum Kaax's Blessing End Effect
+void EffectFunction10031(int playerId = -1)
+{
+    MulAttribute(playerId, 214, cWorkRate, 1.0 / 1000);
+    MulAttribute(playerId, 214, cCarryCapacity, 1.0 / 100);
+    MulAttribute(playerId, 259, cWorkRate, 1.0 / 1000);
+    MulAttribute(playerId, 259, cCarryCapacity, 1.0 / 100);
+    MulAttribute(playerId, 50, cWorkRate, 1.0 / 10000);
+    MulResource(playerId, cAttributeMayansFarmWoodProductivity, 1.0 / 1000);
+    MulResource(playerId, cAttributeMayansFarmStoneProductivity, 1.0 / 1000);
+    MulResource(playerId, cAttributeMayansFarmGoldProductivity, 1.0 / 1000);
+}
+
+
+// 10033 - Frontline Outpost
+void EffectFunction10033(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1.1);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 9);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 7);
+
+    xsTask(WoodenFortressID, cTaskTypeAura, cArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cConquistadorClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cPetardClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cHandCannoneerClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cScoutCavalryClass, playerId);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 30);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000006);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(WoodenFortressID, cTaskTypeAura, cArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cConquistadorClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cPetardClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cCavalryArcherClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cHandCannoneerClass, playerId);
+    xsTask(WoodenFortressID, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsResetTaskAmount();
+    LaunchAura(playerId, WoodenFortressID);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 186  2026.03.19");
+    xsChatData("Build: 187  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

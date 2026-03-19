@@ -14477,7 +14477,7 @@
                     {
                         "Name": "Early Cavalry Archer",
                         "RequiredAge": 2,
-                        "ID": 4017
+                        "ID": 4094
                     }
                 ]
             },
@@ -14598,7 +14598,7 @@
                     {
                         "Name": "Imperial Steppe Lancer",
                         "RequiredAge": 4,
-                        "ID": 3434
+                        "ID": 3190
                     }
                 ],
                 "Units": [
@@ -15128,7 +15128,7 @@
                     {
                         "Name": "Frontline Outpost",
                         "RequiredAge": 3,
-                        "ID": 3072
+                        "ID": 3191
                     },
                     {
                         "Name": "Town Defense",
@@ -15138,7 +15138,7 @@
                     {
                         "Name": "Whistling Arrow",
                         "RequiredAge": 4,
-                        "ID": 3081
+                        "ID": 3192
                     }
                 ],
                 "Units": [
@@ -21663,12 +21663,12 @@
                     {
                         "Name": "Korean Bow",
                         "RequiredAge": 3,
-                        "ID": 3472
+                        "ID": 3199
                     },
                     {
                         "Name": "Iron Armor",
                         "RequiredAge": 4,
-                        "ID": 3514
+                        "ID": 3200
                     }
                 ],
                 "Units": [
@@ -27100,12 +27100,12 @@
                     {
                         "Name": "Obsidian Arrow",
                         "RequiredAge": 3,
-                        "ID": 3095
+                        "ID": 3180
                     },
                     {
                         "Name": "Yum Kaax's Blessing",
                         "RequiredAge": 4,
-                        "ID": 3113
+                        "ID": 3181
                     }
                 ],
                 "Units": [

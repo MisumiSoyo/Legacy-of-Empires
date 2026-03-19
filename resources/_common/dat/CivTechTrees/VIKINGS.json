@@ -396,7 +396,7 @@
             "Link Node Type": "BuildingNonTech",
             "Name": "Wooden Fortress",
             "Name String ID": 700005,
-            "Node ID": 4009,
+            "Node ID": 4098,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueBuilding",
             "Picture Index": 103,

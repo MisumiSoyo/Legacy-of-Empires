@@ -171,6 +171,24 @@ void PaxMongolicaApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
+// 10032 - Huns Atheism Adjustment, Tarkan Task Adder
+void EffectFunction10032(int playerId = -1)
+{
+    int TarkanID1 = 755;
+    int TarkanID2 = 886;
+    int EliteTarkanID1 = 757;
+    int EliteTarkanID2 = 887;
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, ChanyuID);
+    xsTask(TarkanID1, cTaskTypePickupUnit, RelicID, playerId);
+    xsTask(TarkanID2, cTaskTypePickupUnit, RelicID, playerId);
+    xsTask(EliteTarkanID1, cTaskTypePickupUnit, RelicID, playerId);
+    xsTask(EliteTarkanID2, cTaskTypePickupUnit, RelicID, playerId);
+    xsResetTaskAmount();
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

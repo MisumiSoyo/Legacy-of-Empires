@@ -98,6 +98,16 @@ extern const int VeteranCelticHunterID = 4087;
 extern const int EliteCelticHunterID = 4088;
 extern const int WarDogID = 4089;
 extern const int EliteWarDogID = 4090;
+extern const int YumKaaxsBlessingBuildingID = 4091;
+extern const int YumKaaxsBlessingEndBuildingID = 4092;
+extern const int ChanyuID = 4093;
+extern const int EarlyCavalryArcherID = 4094;
+extern const int FreeChanyuTimerID = 4095;
+extern const int FreeChanyuSpawnerID = 4096;
+extern const int ImperialSteppeLancerID = 4097;
+extern const int WoodenFortressID = 4098;
+extern const int GoguryeoHeavyCavalryID = 4099;
+extern const int EliteGoguryeoHeavyCavalryID = 4100;
 
 
 
@@ -152,6 +162,13 @@ extern const int ExplorerTechID = 3168;
 extern const int JineteTacticsTechID = 3169;
 extern const int IxiptlaTechID = 3173;
 extern const int CuauhocelotlTechID = 3174;
+extern const int ObsidianArrowTechID = 3181;
+extern const int YumKaaxsBlessingTechID = 3182;
+extern const int ImperialSteppeLancerTechID = 3190;
+extern const int FrontlineOutpostTechID = 3191;
+extern const int WhistlingArrowTechID = 3192;
+extern const int KoreanBowTechID = 3199;
+extern const int IronArmorTechID = 3200;
 
 
 // Custom Effect IDs
