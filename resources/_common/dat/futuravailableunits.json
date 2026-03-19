@@ -1961,7 +1961,7 @@
                     {
                         "Name": "Adarga",
                         "RequiredAge": 3,
-                        "ID": 3424
+                        "ID": 3263
                     }
                 ],
                 "Units": [
@@ -12000,12 +12000,12 @@
                     {
                         "Name": "Abhara Elephant",
                         "RequiredAge": 4,
-                        "ID": 3144
+                        "ID": 3242
                     },
                     {
                         "Name": "Heavy Spear",
                         "RequiredAge": 3,
-                        "ID": 3145
+                        "ID": 3241
                     }
                 ],
                 "Units": [
@@ -25388,7 +25388,7 @@
                     {
                         "Name": "Elite Sofa",
                         "RequiredAge": 4,
-                        "ID": 3053
+                        "ID": 3255
                     }
                 ],
                 "Units": [
@@ -25425,7 +25425,7 @@
                     {
                         "Name": "Sofa",
                         "RequiredAge": 3,
-                        "ID": 4045
+                        "ID": 4116
                     }
                 ]
             },
@@ -26032,12 +26032,12 @@
                     {
                         "Name": "Sahara Caravan Route",
                         "RequiredAge": 3,
-                        "ID": 3062
+                        "ID": 3256
                     },
                     {
                         "Name": "Poisoning",
                         "RequiredAge": 4,
-                        "ID": 3204
+                        "ID": 3257
                     },
                     {
                         "Name": "Town Defense",

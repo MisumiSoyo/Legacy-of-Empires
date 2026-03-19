@@ -261,7 +261,7 @@
         {
             "note": "索法骑手",
             "civilizations": "Malians",
-            "unit_id": 4045,
+            "unit_id": 4116,
             "building_id": 101,
             "Name": "Sofa",
             "RequiredAge": 3
@@ -269,7 +269,7 @@
         {
             "note": "精锐索法骑手",
             "civilizations": "Malians",
-            "tech_id": 3053,
+            "tech_id": 3255,
             "building_id": 101,
             "Name": "Elite Sofa",
             "RequiredAge": 4
@@ -356,7 +356,7 @@
         {
             "note": "撒哈拉商道",
             "civilizations": "Malians",
-            "tech_id": 3062,
+            "tech_id": 3256,
             "building_id": 109,
             "Name": "Sahara Caravan Route",
             "RequiredAge": 3
@@ -364,7 +364,7 @@
         {
             "note": "淬毒",
             "civilizations": "Malians",
-            "tech_id": 3204,
+            "tech_id": 3257,
             "building_id": 109,
             "Name": "Poisoning",
             "RequiredAge": 4
@@ -920,7 +920,7 @@
         {
             "note": "阿伯哈拉战象",
             "civilizations": "Ethiopians",
-            "tech_id": 3144,
+            "tech_id": 3242,
             "building_id": 109,
             "Name": "Abhara Elephant",
             "RequiredAge": 4
@@ -928,7 +928,7 @@
         {
             "note": "重型长矛",
             "civilizations": "Ethiopians",
-            "tech_id": 3145,
+            "tech_id": 3241,
             "building_id": 109,
             "Name": "Heavy Spear",
             "RequiredAge": 3
@@ -1728,7 +1728,7 @@
         {
             "note": "阿达加",
             "civilizations": "Berbers",
-            "tech_id": 3424,
+            "tech_id": 3263,
             "building_id": 109,
             "Name": "Adarga",
             "RequiredAge": 3

@@ -765,13 +765,82 @@ void EffectFunction10039(int playerId = -1)
 }
 
 
+//  Heavy Spear Applier
+void HeavySpearApplier(int ClassTarget = -1, int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, -1);
+    xsTaskAmount(cTaskAttrWorkValue2, 3);
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 116.000001);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 117.000001);
+    xsTaskAmount(cTaskAttrWorkValue1, -1);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+    xsResetTaskAmount();
+    LaunchStinger(playerId, ClassTarget);
+}
+
+
+//  10040 - Heavy Spear
+void EffectFunction10040(int playerId = -1)
+{
+    HeavySpearApplier(SpearmanID, playerId);
+    HeavySpearApplier(PikemanID, playerId);
+    HeavySpearApplier(HalberdierID, playerId);
+    HeavySpearApplier(cScoutCavalryClass, playerId);
+    HeavySpearApplier(cCavalryClass, playerId);
+}
+
+
+//  10041 - Poisoning
+void EffectFunction10041(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrWorkValue2, 2);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+
+    PoisoningApplier(playerId, cArcherClass);
+    PoisoningApplier(playerId, cConquistadorClass);
+    PoisoningApplier(playerId, cCavalryArcherClass);
+    PoisoningApplier(playerId, cHandCannoneerClass);
+    PoisoningApplier(playerId, ProjectileDonsoID);
+    xsResetTaskAmount();
+}
+
+
+//  10042 - C-Bonus, extra resource from army
+void EffectFunction10042(int playerId = -1)
+{
+    int ArmyCount = xsPlayerAttribute(playerId, cAttributeMilitaryPopulation);
+    ModResource(playerId, cAttributeFood, ArmyCount * 6);
+    ModResource(playerId, cAttributeWood, ArmyCount * 6);
+    ModResource(playerId, cAttributeGold, ArmyCount * 3);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 188  2026.03.19");
+    xsChatData("Build: 189  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

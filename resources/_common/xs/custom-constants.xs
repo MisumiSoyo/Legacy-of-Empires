@@ -119,6 +119,12 @@ extern const int SeaTower2ID = 4108;
 extern const int StreltsyID = 4109;
 extern const int ExtraFeitoriaCountBuildingID = 4110;
 extern const int ExtraFeitoriaDeadCountBuildingID = 4111;
+extern const int DonsoID = 4112;
+extern const int VeteranDonsoID = 4113;
+extern const int EliteDonsoID = 4114;
+extern const int ProjectileDonsoID = 4115;
+extern const int SofaID = 4116;
+extern const int EliteSofaID = 4117;
 
 
 //  Newly added tech IDs
@@ -188,6 +194,12 @@ extern const int BoyarsFortitudeTechID = 3233;
 extern const int OrthodoxyTechID = 3234;
 extern const int SagresSchoolTechID = 3237;
 extern const int CartaRegiaTechID = 3238;
+extern const int HeavySpearTechID = 3241;
+extern const int AbharaElephantTechID = 3242;
+extern const int EliteSofaTechID = 3255;
+extern const int SaharaCaravanRouteTechID = 3256;
+extern const int PoisonedArrowsTechID = 3257;
+extern const int AdargaTechID = 3263;
 
 
 // Custom Effect IDs
