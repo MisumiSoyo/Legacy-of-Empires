@@ -500,7 +500,7 @@
         {
             "note": "可汗征召",
             "civilizations": "Tatars",
-            "tech_id": 3080,
+            "tech_id": 3294,
             "building_id": 109,
             "Name": "Khan's Conscription",
             "RequiredAge": 4
@@ -564,7 +564,7 @@
         {
             "note": "考纳斯城堡",
             "civilizations": "Lithuanians",
-            "tech_id": 3092,
+            "tech_id": 3303,
             "building_id": 109,
             "Name": "Kaunus Castle",
             "RequiredAge": 3
@@ -628,7 +628,7 @@
         {
             "note": "掠夺号角",
             "civilizations": "Tatars",
-            "tech_id": 3111,
+            "tech_id": 3293,
             "building_id": 109,
             "Name": "Raide Horn",
             "RequiredAge": 3
@@ -777,7 +777,7 @@
         {
             "note": "静修士",
             "civilizations": "Bulgarians",
-            "tech_id": 3132,
+            "tech_id": 3286,
             "building_id": 109,
             "Name": "Hesychast",
             "RequiredAge": 3
@@ -785,7 +785,7 @@
         {
             "note": "战争热诚",
             "civilizations": "Bulgarians",
-            "tech_id": 3476,
+            "tech_id": 3287,
             "building_id": 109,
             "Name": "Fervor of Battle",
             "RequiredAge": 4
@@ -880,7 +880,7 @@
         {
             "note": "可萨长矛骑兵",
             "civilizations": "Cumans",
-            "tech_id": 3245,
+            "tech_id": 3298,
             "building_id": 109,
             "Name": "Khazar Lancers",
             "RequiredAge": 3
@@ -888,7 +888,7 @@
         {
             "note": "西哈弓臂",
             "civilizations": "Cumans",
-            "tech_id": 3138,
+            "tech_id": 3299,
             "building_id": 109,
             "Name": "Siha Bow Limbs",
             "RequiredAge": 4
@@ -1043,7 +1043,7 @@
         {
             "note": "可汗",
             "civilizations": "Tatars",
-            "unit_id": 4050,
+            "unit_id": 4133,
             "building_id": 82,
             "Name": "Khan",
             "RequiredAge": 3

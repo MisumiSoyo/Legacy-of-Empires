@@ -131,6 +131,11 @@ extern const int ToungooWarriorDeadUnitID = 4123;
 extern const int EliteToungooWarriorID = 4124;
 extern const int RungScoutID = 4125;
 extern const int EliteRungScoutID = 4127;
+extern const int Konnik2ID = 4129;
+extern const int EliteKonnik2ID = 4130;
+extern const int FootKonnik2ID = 4131;
+extern const int EliteFootKonnik2ID = 4132;
+extern const int KhanID = 4133;
 
 
 //  Newly added tech IDs
@@ -212,6 +217,13 @@ extern const int EliteToungooWarriorTechID = 3274;
 extern const int AnawrahtasCanalsTechID = 3275;
 extern const int MonsoonNavigationTechID = 3279;
 extern const int ElephantFormationTechID = 3280;
+extern const int HesychastTechID = 3286;
+extern const int FervorOfBattleTechID = 3287;
+extern const int RaideHornTechID = 3293;
+extern const int KhansConscriptionTechID = 3294;
+extern const int KhazarLancersTechID = 3298;
+extern const int SihaBowLimbsTechID = 3299;
+extern const int KaunusCastleTechID = 3303;
 
 
 
@@ -220,6 +232,11 @@ extern const int FoederatiArmyKillEffectID = 3055;
 extern const int AztecsSpearmanKillUpgradeEffectID = 3154;
 extern const int AztecsSkirmisherKillUpgradeEffectID = 3156;
 extern const int AztecsEagleWarriorKillUpgradeEffectID = 3157;
+extern const int FervorofBattleKillEffect1ID = 3262;
+extern const int FervorofBattleKillEffect2ID = 3263;
+extern const int FervorofBattleKillEffect3ID = 3264;
+extern const int FervorofBattleKillEffect4ID = 3265;
+extern const int FervorofBattleKillEffect5ID = 3266;
 
 
 //  Original Unit IDs

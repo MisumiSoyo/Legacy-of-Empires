@@ -896,6 +896,101 @@ void EffectFunction10045(int playerId = -1)
 }
 
 
+//  10046 - C-Bonus, economic units refund when killed
+void EffectFunction10046(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000013);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000014);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000015);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeStone);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000016);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTask(cTradeBoatClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cVillagerClass, cTaskTypeRefund, -1, playerId);
+    xsTask(cTradeCartClass, cTaskTypeRefund, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
+//  10047 - Fervor of Battle
+void EffectFunction10047(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrUnusedResource, cAttributeFervorofBattleKillEffect);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000010);
+    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
+    xsTask(MilitiaID, cTaskTypeLoot, -1, playerId);
+    xsTask(ManAtArmsID, cTaskTypeLoot, -1, playerId);
+    xsTask(LongSwordmanID, cTaskTypeLoot,, -1, playerId);
+    xsTask(TwoHandedSwordmanID, cTaskTypeLoot, -1, playerId);
+    xsResetTaskAmount();
+
+    xsTaskAmount(cTaskAttrResourceIn, FervorofBattleKillEffect5ID);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000011);
+    xsTask(FootKonnikID, cTaskTypeLoot, -1, playerId);
+    xsTask(EliteFootKonnikID, cTaskTypeLoot, -1, playerId);
+    xsTask(FootKonnik2ID, cTaskTypeLoot, -1, playerId);
+    xsTask(EliteFootKonnik2ID, cTaskTypeLoot, -1, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeFervorofBattleKillEffect, FervorofBattleKillEffect1ID);
+}
+
+
+//  10048 - Raide Horn
+void EffectFunction10048(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeCavalryAttackGoldProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01 / 3);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000006);
+
+    ApplyToAllPlayerTargets(playerId, cScoutCavalryClass, cTaskTypeGenerateResources);
+    ApplyToAllPlayerTargets(playerId, cCavalryClass, cTaskTypeGenerateResources);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    ApplyToAllPlayerTargets(playerId, KeshikID, cTaskTypeGenerateResources);
+    ApplyToAllPlayerTargets(playerId, EliteKeshikID, cTaskTypeGenerateResources);
+    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
+        ApplyToAllPlayerTargets(playerId, KnightID, cTaskTypeGenerateResources);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeCavalryAttackGoldProductivity, 75);
+}
+
+
+// 10049 - C-Bonus, hunters don't need to drop off food
+void EffectFunction10049(int playerId = -1)
+{
+    int HunterMaleID = 122;
+    int HunterFemaleID = 216;
+
+    xsResetTaskAmount();
+    NoDropSiteHunters(MaleHunterID, playerId);
+    NoDropSiteHunters(FemaleHunterID, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeHunterFoodProductivity, 41);
+    MulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
+}
+
+
 
 include "timer.xs";
 
@@ -903,7 +998,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 190  2026.03.19");
+    xsChatData("Build: 191  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

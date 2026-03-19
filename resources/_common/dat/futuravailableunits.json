@@ -5244,12 +5244,12 @@
                     {
                         "Name": "Hesychast",
                         "RequiredAge": 3,
-                        "ID": 3132
+                        "ID": 3286
                     },
                     {
                         "Name": "Fervor of Battle",
                         "RequiredAge": 4,
-                        "ID": 3476
+                        "ID": 3287
                     }
                 ],
                 "Units": [
@@ -10888,12 +10888,12 @@
                     {
                         "Name": "Khazar Lancers",
                         "RequiredAge": 3,
-                        "ID": 3245
+                        "ID": 3298
                     },
                     {
                         "Name": "Siha Bow Limbs",
                         "RequiredAge": 4,
-                        "ID": 3138
+                        "ID": 3299
                     }
                 ],
                 "Units": [
@@ -22702,7 +22702,7 @@
                     {
                         "Name": "Kaunus Castle",
                         "RequiredAge": 3,
-                        "ID": 3092
+                        "ID": 3303
                     }
                 ],
                 "Units": [
@@ -35865,7 +35865,7 @@
                     {
                         "Name": "Khan",
                         "RequiredAge": 3,
-                        "ID": 4050
+                        "ID": 4133
                     }
                 ]
             },
@@ -35959,12 +35959,12 @@
                     {
                         "Name": "Khan's Conscription",
                         "RequiredAge": 4,
-                        "ID": 3080
+                        "ID": 3294
                     },
                     {
                         "Name": "Raide Horn",
                         "RequiredAge": 3,
-                        "ID": 3111
+                        "ID": 3293
                     }
                 ],
                 "Units": [

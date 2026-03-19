@@ -219,6 +219,22 @@ void PoisoningApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
+// Cumans Civ Bonus Task Adder
+void NoDropSiteHunters(int ClassTarget = -1, int playerId = -1)
+{
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeHunterFoodProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, 0);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrEnableTargeting, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 5);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+
+    xsTask(ClassTarget, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
+    xsTask(ClassTarget, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
+    xsTask(ClassTarget, cTaskTypeGenerateResources, cBirdClass, playerId);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
