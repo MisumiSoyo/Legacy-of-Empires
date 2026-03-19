@@ -4,6 +4,13 @@
         "action": "add",
         "Comment": "Chinese Dynasties",
         "Type": "MutuallyExclusive",
-        "Techs": [3237, 3238, 3239, 3240]
+        "Techs": [3093, 3094, 3095, 3096]
+    },
+    {
+        "note": "拜占庭选择一组雇佣兵",
+        "action": "add",
+        "Comment": "Byzantine Mercenaries",
+        "Type": "MutuallyExclusive",
+        "Techs": [3109, 3110, 3111, 3112]
     }
 ]

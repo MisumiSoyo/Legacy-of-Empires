@@ -49,7 +49,7 @@
         {
             "note": "瓦兰吉卫队",
             "civilizations": "Byzantines",
-            "unit_id": 4011,
+            "unit_id": 4020,
             "building_id": 12,
             "Name": "Varangians",
             "RequiredAge": 3
@@ -57,7 +57,7 @@
         {
             "note": "精锐瓦兰吉卫队",
             "civilizations": "Byzantines",
-            "tech_id": 3014,
+            "tech_id": 3107,
             "building_id": 12,
             "Name": "Elite Varangians",
             "RequiredAge": 4
@@ -112,7 +112,7 @@
         {
             "note": "安息骑射手",
             "civilizations": "Persians",
-            "unit_id": 4020,
+            "unit_id": 4074,
             "building_id": 87,
             "Name": "Parthian Cavalry Archer",
             "RequiredAge": 2
@@ -120,7 +120,7 @@
         {
             "note": "老练安息骑射手",
             "civilizations": "Persians",
-            "tech_id": 3244,
+            "tech_id": 3118,
             "building_id": 87,
             "Name": "Veteran Parthian Cavalry Archer",
             "RequiredAge": 3
@@ -128,7 +128,7 @@
         {
             "note": "精锐安息骑射手",
             "civilizations": "Persians",
-            "tech_id": 3027,
+            "tech_id": 3119,
             "building_id": 87,
             "Name": "Elite Parthian Cavalry Archer",
             "RequiredAge": 4,
@@ -179,9 +179,9 @@
         {
             "note": "瑞士枪兵",
             "civilizations": "Franks",
-            "unit_id": 4031,
+            "unit_id": 4005,
             "building_id": 12,
-            "Name": "Swiss Lancer",
+            "Name": "Swiss Pikeman",
             "RequiredAge": 4,
             "position":"after",
             "target_id": 359
@@ -219,7 +219,7 @@
         {
             "note": "骑马步兵",
             "civilizations": "Britons",
-            "unit_id": 4036,
+            "unit_id": 4003,
             "building_id": 101,
             "Name": "Hobelar",
             "RequiredAge": 3,
@@ -229,7 +229,7 @@
         {
             "note": "精锐骑马步兵",
             "civilizations": "Britons",
-            "tech_id": 3037,
+            "tech_id": 3015,
             "building_id": 101,
             "Name": "Elite Hobelar",
             "RequiredAge": 4
@@ -253,7 +253,7 @@
         {
             "note": "僧兵",
             "civilizations": "Japanese",
-            "unit_id": 4042,
+            "unit_id": 4016,
             "building_id": 104,
             "Name": "Sohei",
             "RequiredAge": 3
@@ -277,7 +277,7 @@
         {
             "note": "猛火油柜/喷火车",
             "civilizations": ["Chinese", "Byzantines"],
-            "unit_id": 4047,
+            "unit_id": 40,
             "building_id": 49,
             "Name": "Flame Thrower",
             "RequiredAge": 3
@@ -293,7 +293,7 @@
         {
             "note": "经济作物",
             "civilizations": "all",
-            "tech_id": 3057,
+            "tech_id": 3002,
             "building_id": 68,
             "Name": "Cash Crop",
             "RequiredAge": 3
@@ -308,7 +308,7 @@
         {
             "note": "军事训练",
             "civilizations": "all",
-            "tech_id": 3058,
+            "tech_id": 3004,
             "building_id": 103,
             "Name": "Military Training",
             "RequiredAge": 3
@@ -316,7 +316,7 @@
         {
             "note": "什一税",
             "civilizations": "all",
-            "tech_id": 3059,
+            "tech_id": 3005,
             "building_id": 104,
             "Name": "Tithe",
             "RequiredAge": 4
@@ -380,7 +380,7 @@
         {
             "note": "大盾",
             "civilizations": "Franks",
-            "tech_id": 3064,
+            "tech_id": 3031,
             "building_id": 109,
             "Name": "Pavise",
             "RequiredAge": 3
@@ -412,9 +412,9 @@
         {
             "note": "一向一揆",
             "civilizations": "Japanese",
-            "tech_id": 3068,
+            "tech_id": 3079,
             "building_id": 109,
-            "Name": "Hongan Ikki",
+            "Name": "Ikko Ikki",
             "RequiredAge": 3
         },
         {
@@ -444,7 +444,7 @@
         {
             "note": "红海舰队",
             "civilizations": "Saracens",
-            "tech_id": 3074,
+            "tech_id": 3125,
             "building_id": 109,
             "Name": "Red Sea Fleet",
             "RequiredAge": 4
@@ -460,7 +460,7 @@
         {
             "note": "徳夫希尔梅",
             "civilizations": "Turks",
-            "tech_id": 3076,
+            "tech_id": 3133,
             "building_id": 109,
             "Name": "Devsirme",
             "RequiredAge": 3
@@ -476,7 +476,7 @@
         {
             "note": "城镇防御",
             "civilizations": "all",
-            "tech_id": 3078,
+            "tech_id": 3022,
             "building_id": 109,
             "Name": "Town Defense",
             "RequiredAge": 4
@@ -522,11 +522,11 @@
             "RequiredAge": 4
         },
         {
-            "note": "羁縻",
+            "note": "朝贡体系",
             "civilizations": "Chinese",
-            "tech_id": 3084,
+            "tech_id": 3098,
             "building_id": 109,
-            "Name": "Jimi",
+            "Name": "Tributary System",
             "RequiredAge": 4
         },
         {
@@ -540,7 +540,7 @@
         {
             "note": "圈地",
             "civilizations": "Britons",
-            "tech_id": 3086,
+            "tech_id": 3017,
             "building_id": 109,
             "Name": "Enclosure",
             "RequiredAge": 4
@@ -548,7 +548,7 @@
         {
             "note": "苏福塔亚",
             "civilizations": "Saracens",
-            "tech_id": 3090,
+            "tech_id": 3124,
             "building_id": 109,
             "Name": "Suftaja",
             "RequiredAge": 3
@@ -556,7 +556,7 @@
         {
             "note": "城堡网络",
             "civilizations": "Britons",
-            "tech_id": 3091,
+            "tech_id": 3016,
             "building_id": 109,
             "Name": "Castle Network",
             "RequiredAge": 3
@@ -848,7 +848,7 @@
         {
             "note": "金玺诏书",
             "civilizations": "Teutons",
-            "tech_id": 3130,
+            "tech_id": 3071,
             "building_id": 109,
             "Name": "Die Goldene Bulle",
             "RequiredAge": 3
@@ -856,7 +856,7 @@
         {
             "note": "骑士册封",
             "civilizations": "Teutons",
-            "tech_id": 3175,
+            "tech_id": 3072,
             "building_id": 109,
             "Name": "Accolade",
             "RequiredAge": 4
@@ -1194,7 +1194,7 @@
         {
             "note": "日本长枪骑兵",
             "civilizations": "Japanese",
-            "tech_id": 3170,
+            "tech_id": 3087,
             "building_id": 109,
             "Name": "Yari Cavalry",
             "RequiredAge": 4
@@ -1210,7 +1210,7 @@
         {
             "note": "敕令骑士",
             "civilizations": "Franks",
-            "tech_id": 3172,
+            "tech_id": 3032,
             "building_id": 109,
             "Name": "Gendarmes d'ordonnance",
             "RequiredAge": 4
@@ -1218,7 +1218,7 @@
         {
             "note": "总督",
             "civilizations": "Persians",
-            "tech_id": 3174,
+            "tech_id": 3121,
             "building_id": 109,
             "Name": "Satrap",
             "RequiredAge": 3
@@ -1226,7 +1226,7 @@
         {
             "note": "骆驼长矛骑兵",
             "civilizations": "Persians",
-            "tech_id": 3173,
+            "tech_id": 3122,
             "building_id": 109,
             "Name": "Camel Lancer",
             "RequiredAge": 4
@@ -1296,7 +1296,7 @@
         {
             "note": "西欧/中欧雇佣兵合同",
             "civilizations": "Byzantines",
-            "tech_id": 3194,
+            "tech_id": 3109,
             "building_id": 109,
             "Name": "Western/Middle European Mercenary Contract",
             "RequiredAge": 2
@@ -1304,7 +1304,7 @@
         {
             "note": "东欧雇佣兵合同",
             "civilizations": "Byzantines",
-            "tech_id": 3195,
+            "tech_id": 3110,
             "building_id": 109,
             "Name": "Eastern European Mercenary Contract",
             "RequiredAge": 2
@@ -1312,7 +1312,7 @@
         {
             "note": "地中海雇佣兵合同",
             "civilizations": "Byzantines",
-            "tech_id": 3196,
+            "tech_id": 3111,
             "building_id": 109,
             "Name": "Mediterranean Mercenary Contract",
             "RequiredAge": 2
@@ -1320,7 +1320,7 @@
         {
             "note": "丝绸之路雇佣兵合同",
             "civilizations": "Byzantines",
-            "tech_id": 3197,
+            "tech_id": 3112,
             "building_id": 109,
             "Name": "Silk Road Mercenary Contract",
             "RequiredAge": 2
@@ -1328,7 +1328,7 @@
         {
             "note": "拜占庭精锐雇佣军",
             "civilizations": "Byzantines",
-            "tech_id": 3177,
+            "tech_id": 3113,
             "building_id": 109,
             "Name": "Elite Mercenary",
             "RequiredAge": 4
@@ -1484,7 +1484,7 @@
         {
             "note": "契约军团",
             "civilizations": "Goths",
-            "tech_id": 3214,
+            "tech_id": 3033,
             "building_id": 109,
             "Name": "Foederati Army",
             "RequiredAge": 3
@@ -1492,14 +1492,14 @@
         {
             "note": "格鲁森尼骑兵",
             "civilizations": "Goths",
-            "tech_id": 3241,
+            "tech_id": 3060,
             "building_id": 109,
             "RequiredAge": 4
         },
         {
             "note": "唐朝",
             "civilizations": "Chinese",
-            "tech_id": 3237,
+            "tech_id": 3093,
             "building_id": 109,
             "Name": "Tang Dynasty",
             "RequiredAge": 3
@@ -1507,7 +1507,7 @@
         {
             "note": "宋朝",
             "civilizations": "Chinese",
-            "tech_id": 3238,
+            "tech_id": 3094,
             "building_id": 109,
             "Name": "Song Dynasty",
             "RequiredAge": 3
@@ -1515,7 +1515,7 @@
         {
             "note": "元朝",
             "civilizations": "Chinese",
-            "tech_id": 3239,
+            "tech_id": 3095,
             "building_id": 109,
             "Name": "Yuan Dynasty",
             "RequiredAge": 3
@@ -1523,7 +1523,7 @@
         {
             "note": "明朝",
             "civilizations": "Chinese",
-            "tech_id": 3240,
+            "tech_id": 3096,
             "building_id": 109,
             "Name": "Qing Dynasty",
             "RequiredAge": 3
@@ -1717,7 +1717,7 @@
         {
             "note": "奥斯曼军乐队",
             "civilizations": "Turks",
-            "unit_id": 4139,
+            "unit_id": 4079,
             "building_id": 101,
             "Name": "Mehter",
             "RequiredAge": 2
@@ -1904,7 +1904,7 @@
         {
             "note": "林业",
             "civilizations": "all",
-            "tech_id": 3461,
+            "tech_id": 3003,
             "building_id": 562,
             "Name": "Forestry",
             "RequiredAge": 3
@@ -1968,7 +1968,7 @@
         {
             "note": "旱地行舟",
             "civilizations": "Turks",
-            "tech_id": 3313,
+            "tech_id": 3134,
             "building_id": 109,
             "Name": "Sail on Land",
             "RequiredAge": 4
@@ -2224,7 +2224,7 @@
         {
             "note": "攻城训练",
             "civilizations": "all",
-            "tech_id": 3508,
+            "tech_id": 3024,
             "building_id": 12,
             "Name": "Siege Training",
             "RequiredAge": 3

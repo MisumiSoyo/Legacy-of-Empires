@@ -1,37 +1,3 @@
-void Shrine(int playerId = -1, int Time = -1)
-{
-    int SpawnUnitID = 0;
-    float LastSpawnTime = 0.0;
-    float SpawnTime = 0.0;
-    int SpawnCount = 0;
-    if (xsPlayerAttribute(playerId, cAttributeShrineCount) == 0)
-        return;
-
-    SpawnUnitID = xsPlayerAttribute(playerId, cAttributeShrineSpawnUnitID);
-    LastSpawnTime = xsPlayerAttribute(playerId, cAttributeShrineLastSpawnTime);
-    if (LastSpawnTime == 0.0)
-    {
-        LastSpawnTime = Time;
-        SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
-    }
-    SpawnTime = xsPlayerAttribute(playerId, cAttributeShrineSpawnTime);
-    if (xsGetObjectCount(playerId, FloatingGardenBuildingID) > 0)
-        SpawnTime = SpawnTime / 1.2;
-    if (xsGetPlayerCivilization(playerId) == cAztecs)
-        SpawnTime = SpawnTime / 1.15;
-    if (Time - LastSpawnTime >= SpawnTime)
-    {
-        if (xsPlayerAttribute(playerId, cAttributePopulationCap) <= 0.0)
-            return;
-        if (SpawnUnitID == BlackwoodArcherID)
-            SpawnUnit(playerId, SpawnUnitID, ShrineID, 2, 1000);
-        else
-            SpawnUnit(playerId, SpawnUnitID, ShrineID, 1, 1000);
-        SetResource(playerId, cAttributeShrineLastSpawnTime, Time);
-    }
-}
-
-
 //  print the amount of olive oil
 void ByzantinesOliveOil(int playerId = -1, int Time = -1)
 {
@@ -78,73 +44,6 @@ void GothsVillager(int playerId = -1, int Time = 0)
 }
 
 
-void KhanLimit(int playerId = -1, int Time = -1)
-{
-    SetAttribute(playerId, KhanID, cAvailableFlag, xsPlayerAttribute(playerId, cAttributeCastle));
-}
-
-
-void KoreansMineral(int playerId = -1, int Time = -1)
-{
-    float TotalMineCount = xsPlayerAttribute(playerId, cAttributeGoldTotal) + xsPlayerAttribute(playerId, cAttributeStoneTotal);
-    ModResource(playerId, cAttributeGold, minFloat(TotalMineCount/ 1980.0, 3.333333));
-}
-
-
-void PolesFolwarkBonus(int playerId = -1, int Time = -1)
-{
-    int KillCount = xsPlayerAttribute(playerId, cAttributeKills);
-    float Bonus = minInt(KillCount / 20, 5);
-    Bonus = 0.01 * Bonus;
-    SetResource(playerId, cAttributeFolwarkCollectionAmount, (0.1 + Bonus) * xsPlayerAttribute(playerId, cAttributeFarmFood));
-}
-
-
-void MalayFreeArmy(int playerId = -1, int Time = -1)
-{
-    int MalayArmyTimer = xsPlayerAttribute(playerId, cAttributeMalayArmyTimer);
-    if (MalayArmyTimer <= 0)
-    {
-        ModResource(playerId, cAttributeMalayArmyCount, 1);
-        MalayArmyTimer = MalayArmyTimer + 120;
-    }
-    SetResource(playerId, cAttributeMalayArmyTimer, MalayArmyTimer - 1);
-}
-
-
-void PortugueseFeitoria(int playerId = -1, int Time = -1)
-{
-    if (isResearched(playerId, CartaRegiaTechID) == false)
-        return;
-    int TeamFeitoriaCount = 0;
-    int i = 0;
-    for (i = 0; <= xsGetNumPlayers())
-        if (i != playerId)
-            if (isAlly(i, playerId))
-                TeamFeitoriaCount = TeamFeitoriaCount + xsPlayerAttribute(i, cAttributeExtraFeitoriaCount);
-    ModResource(playerId, cAttributeFood, 0.8 * TeamFeitoriaCount);
-    ModResource(playerId, cAttributeWood, 0.35 * TeamFeitoriaCount);
-    ModResource(playerId, cAttributeStone, 0.15 * TeamFeitoriaCount);
-    ModResource(playerId, cAttributeGold, 0.5* TeamFeitoriaCount);
-}
-
-
-void SpanishExplorer(int playerId = -1, int Time = -1)
-{
-    if (isResearched(playerId, ExplorerTechID) == false)
-        return;
-    float ExplorerGoldRate = 0.015;
-    int i = 0;
-    float CalcedGold = xsPlayerAttribute(playerId, cAttributeSpanishExplorerGoldCalced);
-    float CurrentGold = 0;
-    for (i = 1; <= xsGetNumPlayers())
-        if (i != playerId)
-            CurrentGold = CurrentGold + xsPlayerAttribute(i, cAttributeGoldTotal);
-    ModResource(playerId, cAttributeGold, (CurrentGold - CalcedGold) * ExplorerGoldRate);
-    SetResource(playerId, cAttributeSpanishExplorerGoldCalced, CurrentGold);
-}
-
-
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -168,37 +67,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
             ByzantinesOliveOil(playerId, Time);
             break;
         }
-        case cSpanish:
-        {
-            SpanishExplorer(playerId, Time);
-        }
-        case cKoreans:
-        {
-            KoreansMineral(playerId, Time);
-            break;
-        }
-        case cPortuguese:
-        {
-            PortugueseFeitoria(playerId, Time);
-        }
-        case cMalay:
-        {
-            MalayFreeArmy(playerId, Time);
-            break;
-        }
-        case cPoles:
-        {
-            PolesFolwarkBonus(playerId, Time);
-            break;
-        }
         default:
         {
             break;
         }
     }
-
-    Shrine(playerId, Time);
-    KhanLimit(playerId, Time);
 }
 
 

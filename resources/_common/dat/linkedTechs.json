@@ -204,10 +204,10 @@
             "Comment": "Chinese Dynasties",
             "Type": "MutuallyExclusive",
             "Techs": [
-                3237,
-                3238,
-                3239,
-                3240
+                3093,
+                3094,
+                3095,
+                3096
             ]
         }
     ]

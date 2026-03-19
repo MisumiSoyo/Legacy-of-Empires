@@ -31,12 +31,6 @@ void EffectFunction10001(int playerId = -1)
         DisableTech(playerId, TranshumanceTechID);
     }
 
-    //  Shrine
-    if ((playerCiv != cIncas) && (playerCiv != cMuisca) && (playerCiv != cTupi))
-    {
-        DisableTech(playerId, ShrineTechID);
-    }
-
     switch (playerCiv)
     {
         case cBritons:
@@ -508,123 +502,6 @@ void EffectFunction10001(int playerId = -1)
         default:
             break;
     }
-}
-
-
-//  10002 - Tech Tree ID set
-void EffectFunction10002(int playerId = -1)
-{
-    int playerCiv = xsGetPlayerCivilization(playerId);
-    int TechTreeAdjustmentTechID = 3001;
-    int TechTreeTechID = 3488;
-
-    static int TechTreeEffectIDs = -1;
-    if (TechTreeEffectIDs == -1)
-    {
-        TechTreeEffectIDs = xsArrayCreateInt(100, 348);
-        ArrayMultipleSetInt(TechTreeEffectIDs, 1, 254, 258, 259, 262, 255, 257, 256, 260, 261, 263);
-        ArrayMultipleSetInt(TechTreeEffectIDs, 11, 276, 277, 275, 446, 447, 449, 448, 504, 10, 1);
-        ArrayMultipleSetInt(TechTreeEffectIDs, 21, 3, 5, 7, 31, 48, 42, 37, 646, 648, 650);
-        ArrayMultipleSetInt(TechTreeEffectIDs, 31, 652, 706, 708, 710, 712, 782, 784, 801, 803, 838);
-        ArrayMultipleSetInt(TechTreeEffectIDs, 41, 840, 842, 890, 925, 927, 1101, 1117, 1129, 1028, 1030);
-        ArrayMultipleSetInt(TechTreeEffectIDs, 51, 1026, 986, 988, 1218, 1246, 1256, 1360, 1361, 1362, -1);
-    }
-    SetTechEffectID(playerId, TechTreeTechID, xsArrayGetInt(TechTreeEffectIDs, playerCiv));
-    ForceResearchTech(playerId, TechTreeTechID);
-    ForceResearchTech(playerId, TechTreeAdjustmentTechID);
-}
-
-
-//  10024 - Feudal Age Effect
-void EffectFunction10024(int playerId = -1)
-{
-    int playerCiv = xsGetPlayerCivilization(playerId);
-    switch (playerCiv)
-    {
-        default:
-            break;
-    }
-}
-
-
-//  10025 - Castle Age effect
-void EffectFunction10025(int playerId = -1)
-{
-    int playerCiv = xsGetPlayerCivilization(playerId);
-
-    switch (playerCiv)
-    {
-        case cSlavs:
-        {
-            xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.25, playerId);
-            xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.25, playerId);
-            break;
-        }
-        default:
-            break;
-    }
-}
-
-
-//  10026 - Imperial Age effect
-void EffectFunction10026(int playerId = -1)
-{
-    int playerCiv = xsGetPlayerCivilization(playerId);
-
-    switch (playerCiv)
-    {
-        case cSlavs:
-        {
-            xsEffectAmount(cMulAttribute, SiegeWorkshopID, cWorkRate, 1.2, playerId);
-            xsEffectAmount(cMulAttribute, SiegeWorkshop4ID, cWorkRate, 1.2, playerId);
-            break;
-        }
-        default:
-            break;
-    }
-}
-
-
-//  Feudal Age start effect
-void EffectFunction10061(int playerId = -1)
-{
-}
-
-
-//  Castle Age start effect
-void EffectFunction10062(int playerId = -1)
-{
-}
-
-
-//  Imperial Age start effect
-void EffectFunction10063(int playerId = -1)
-{
-    int playerCiv = xsGetPlayerCivilization(playerId);
-
-    switch (playerCiv)
-    {
-        case cMongols:
-        {
-            ForceResearchTech(playerId, CavalierTechID);
-            break;
-        }
-        default:
-            break;
-    }
-}
-
-
-//  Post Imperial Age start effect
-void EffectFunction10064(int playerId = -1)
-{
-}
-
-
-void FreeTech(int playerId = -1, int TechID = -1)
-{
-    xsEffectAmount(cModifyTech, TechID, cAttrMulTime, 2.5, playerId);
-    xsEffectAmount(cModifyTech, TechID, cAttrMulAllCosts, 0, playerId);
 }
 
 
