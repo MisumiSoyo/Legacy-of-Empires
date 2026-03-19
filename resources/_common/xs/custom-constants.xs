@@ -142,6 +142,9 @@ extern const int ChariotCrossbowmanID = 4136;
 extern const int RaiderElephantID = 4137;
 extern const int VeteranRaiderElephantID = 4138;
 extern const int EliteRaiderElephantID = 4139;
+extern const int KhevsuretiWarriorID = 4149;
+extern const int EliteKhevsuretiWarriorID = 4150;
+extern const int WubaoID = 4151;
 
 
 //  Newly added tech IDs
@@ -240,6 +243,12 @@ extern const int BhaktiTechID = 3337;
 extern const int CaravanGuardTechID = 3348;
 extern const int ApostleTechID = 3356;
 extern const int TaurusAmbushTechID = 3357;
+extern const int KipchakReinforcementsTechID = 3366;
+extern const int HillTrainingTechID = 3367;
+extern const int WubaoTechID = 3369;
+extern const int GentryTechID = 3377;
+extern const int MercenaryTechID = 3378;
+extern const int StrongFortressTechID = 3379;
 
 
 

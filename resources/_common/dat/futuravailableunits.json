@@ -48288,7 +48288,7 @@
                     {
                         "Name": "Elite Khevsureti Warrior",
                         "RequiredAge": 4,
-                        "ID": 3007
+                        "ID": 3365
                     },
                     {
                         "Name": "Siege Training",
@@ -48340,7 +48340,7 @@
                     {
                         "Name": "Khevsureti Warrior",
                         "RequiredAge": 3,
-                        "ID": 4003
+                        "ID": 4149
                     }
                 ]
             },
@@ -48980,12 +48980,12 @@
                     {
                         "Name": "Kipchak Reinforcements",
                         "RequiredAge": 3,
-                        "ID": 3212
+                        "ID": 3366
                     },
                     {
                         "Name": "Hill Training",
                         "RequiredAge": 4,
-                        "ID": 3236
+                        "ID": 3367
                     }
                 ],
                 "Units": [
@@ -49236,7 +49236,7 @@
                     {
                         "Name": "Wubao",
                         "RequiredAge": 2,
-                        "ID": 4016
+                        "ID": 4151
                     }
                 ]
             },
@@ -50012,12 +50012,12 @@
                     {
                         "Name": "Tube-Sleeved Armor",
                         "RequiredAge": 3,
-                        "ID": 3516
+                        "ID": 3383
                     },
                     {
                         "Name": "Siege Technique",
                         "RequiredAge": 4,
-                        "ID": 3098
+                        "ID": 3384
                     }
                 ],
                 "Units": [
@@ -50158,23 +50158,23 @@
                 ]
             },
             {
-                "ID": 4016,
+                "ID": 4151,
                 "Name": null,
                 "Techs": [
                     {
                         "Name": "Gentry",
                         "RequiredAge": 3,
-                        "ID": 3022
+                        "ID": 3377
                     },
                     {
                         "Name": "Mercenary",
                         "RequiredAge": 3,
-                        "ID": 3023
+                        "ID": 3378
                     },
                     {
                         "Name": "Strong Fortress",
                         "RequiredAge": 3,
-                        "ID": 3024
+                        "ID": 3379
                     }
                 ],
                 "Units": []
@@ -50301,7 +50301,7 @@
                     {
                         "Name": "Wubao",
                         "RequiredAge": 2,
-                        "ID": 4016
+                        "ID": 4151
                     }
                 ]
             },
@@ -51274,23 +51274,23 @@
                 ]
             },
             {
-                "ID": 4016,
+                "ID": 4151,
                 "Name": null,
                 "Techs": [
                     {
                         "Name": "Gentry",
                         "RequiredAge": 3,
-                        "ID": 3022
+                        "ID": 3377
                     },
                     {
                         "Name": "Mercenary",
                         "RequiredAge": 3,
-                        "ID": 3023
+                        "ID": 3378
                     },
                     {
                         "Name": "Strong Fortress",
                         "RequiredAge": 3,
-                        "ID": 3024
+                        "ID": 3379
                     }
                 ],
                 "Units": []
@@ -51422,7 +51422,7 @@
                     {
                         "Name": "Wubao",
                         "RequiredAge": 2,
-                        "ID": 4016
+                        "ID": 4151
                     }
                 ]
             },
@@ -52308,23 +52308,23 @@
                 ]
             },
             {
-                "ID": 4016,
+                "ID": 4151,
                 "Name": null,
                 "Techs": [
                     {
                         "Name": "Gentry",
                         "RequiredAge": 3,
-                        "ID": 3022
+                        "ID": 3377
                     },
                     {
                         "Name": "Mercenary",
                         "RequiredAge": 3,
-                        "ID": 3023
+                        "ID": 3378
                     },
                     {
                         "Name": "Strong Fortress",
                         "RequiredAge": 3,
-                        "ID": 3024
+                        "ID": 3379
                     }
                 ],
                 "Units": []

@@ -12,7 +12,7 @@
         {
             "note": "赫雷苏维季战士",
             "civilizations": "Georgians",
-            "unit_id": 4003,
+            "unit_id": 4149,
             "building_id": 12,
             "Name": "Khevsureti Warrior",
             "RequiredAge": 3
@@ -20,7 +20,7 @@
         {
             "note": "精锐赫雷苏维季战士",
             "civilizations": "Georgians",
-            "tech_id": 3007,
+            "tech_id": 3365,
             "building_id": 12,
             "Name": "Elite Khevsureti Warrior",
             "RequiredAge": 4
@@ -65,7 +65,7 @@
         {
             "note": "坞堡",
             "civilizations": ["Shu", "Wu", "Wei"],
-            "unit_id": 4016,
+            "unit_id": 4151,
             "building_id": 118,
             "Name": "Wubao",
             "RequiredAge": 2
@@ -73,31 +73,31 @@
         {
             "note": "坞堡",
             "civilizations": ["Shu", "Wu", "Wei"],
-            "building_id" : 4016,
+            "building_id" : 4151,
             "Name": "Wubao",
             "type": "add"
         },
         {
             "note": "士族制",
             "civilizations": ["Shu", "Wu", "Wei"],
-            "tech_id": 3022,
-            "building_id": 4016,
+            "tech_id": 3377,
+            "building_id": 4151,
             "Name": "Gentry",
             "RequiredAge": 3
         },
         {
             "note": "雇佣军",
             "civilizations": ["Shu", "Wu", "Wei"],
-            "tech_id": 3023,
-            "building_id": 4016,
+            "tech_id": 3378,
+            "building_id": 4151,
             "Name": "Mercenary",
             "RequiredAge": 3
         },
         {
             "note": "坚固防御",
             "civilizations": ["Shu", "Wu", "Wei"],
-            "tech_id": 3024,
-            "building_id": 4016,
+            "tech_id": 3379,
+            "building_id": 4151,
             "Name": "Strong Fortress",
             "RequiredAge": 3
         },
@@ -612,7 +612,7 @@
         {
             "note": "筒袖铠",
             "civilizations": "Shu",
-            "tech_id": 3516,
+            "tech_id": 3383,
             "building_id": 109,
             "Name": "Tube-Sleeved Armor",
             "RequiredAge": 3
@@ -620,7 +620,7 @@
         {
             "note": "攻城术",
             "civilizations": "Shu",
-            "tech_id": 3098,
+            "tech_id": 3384,
             "building_id": 109,
             "Name": "Siege Technique",
             "RequiredAge": 4
@@ -1287,7 +1287,7 @@
         {
             "note": "钦察援军",
             "civilizations": "Georgians",
-            "tech_id": 3212,
+            "tech_id": 3366,
             "building_id": 109,
             "Name": "Kipchak Reinforcements",
             "RequiredAge": 3
@@ -1295,7 +1295,7 @@
         {
             "note": "山地训练",
             "civilizations": "Georgians",
-            "tech_id": 3236,
+            "tech_id": 3367,
             "building_id": 109,
             "Name": "Hill Training",
             "RequiredAge": 4

@@ -1121,13 +1121,62 @@ void EffectFunction10070(int playerId = -1)
 }
 
 
+// 10071 - Strong Fortress
+void EffectFunction10071(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1.05);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 8);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+
+    xsTask(WubaoID, cTaskTypeAura, cArcherClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cVillagerClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cSiegeWeaponClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cMonkClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cTradeCartClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cConquistadorClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cPetardClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cCavalryArcherClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cHandCannoneerClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cPackedUnitClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cUnpackedSiegeUnitClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cScorpionClass, playerId);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 117);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(WubaoID, cTaskTypeAura, cArcherClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cVillagerClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cSiegeWeaponClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cMonkClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cTradeCartClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cConquistadorClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cPetardClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cCavalryArcherClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cHandCannoneerClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cPackedUnitClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cUnpackedSiegeUnitClass, playerId);
+    xsTask(WubaoID, cTaskTypeAura, cScorpionClass, playerId);
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 193  2026.03.19");
+    xsChatData("Build: 194  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

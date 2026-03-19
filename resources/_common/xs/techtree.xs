@@ -31,6 +31,14 @@ void EffectFunction10001(int playerId = -1)
         DisableTech(playerId, TranshumanceTechID);
     }
 
+    if ((playerCiv != cShu) && (playerCiv != cWu) && (playerCiv != cWei))
+    {
+        DisableTech(playerId, WubaoID);
+        DisableTech(playerId, GentryTechID);
+        DisableTech(playerId, MercenaryTechID);
+        DisableTech(playerId, StrongFortressTechID);
+    }
+
     switch (playerCiv)
     {
         case cBritons:
