@@ -908,7 +908,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Auxiliary Cavalry",
             "Name String ID": 700076,
-            "Node ID": 4158,
+            "Node ID": 4140,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 163,
@@ -934,11 +934,11 @@
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800077,
-            "Link ID": 4158,
+            "Link ID": 4140,
             "Link Node Type": "UniqueUnit",
             "Name": "Veteran Auxiliary Cavalry",
             "Name String ID": 700077,
-            "Node ID": 4159,
+            "Node ID": 4141,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 163,
@@ -956,7 +956,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3455,
+            "Trigger Tech ID": 3351,
             "Use Type": "Unit"
         },
         {
@@ -964,11 +964,11 @@
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800078,
-            "Link ID": 4159,
+            "Link ID": 4141,
             "Link Node Type": "UniqueUnit",
             "Name": "Elite Auxiliary Cavalry",
             "Name String ID": 700078,
-            "Node ID": 4160,
+            "Node ID": 4142,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 163,
@@ -986,7 +986,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3456,
+            "Trigger Tech ID": 3352,
             "Use Type": "Unit"
         },
         {
@@ -1088,7 +1088,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Heavy Skirmisher",
             "Name String ID": 700079,
-            "Node ID": 4166,
+            "Node ID": 4146,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 20,
@@ -1114,11 +1114,11 @@
             "Building ID": 87,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800080,
-            "Link ID": 4166,
+            "Link ID": 4146,
             "Link Node Type": "UniqueUnit",
             "Name": "Veteran Heavy Skirmisher",
             "Name String ID": 700080,
-            "Node ID": 4167,
+            "Node ID": 4147,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 21,
@@ -1136,7 +1136,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3474,
+            "Trigger Tech ID": 3354,
             "Use Type": "Unit"
         },
         {
@@ -1144,11 +1144,11 @@
             "Building ID": 87,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800081,
-            "Link ID": 4167,
+            "Link ID": 4147,
             "Link Node Type": "UniqueUnit",
             "Name": "Elite Heavy Skirmisher",
             "Name String ID": 700081,
-            "Node ID": 4168,
+            "Node ID": 4148,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 229,
@@ -1166,7 +1166,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3475,
+            "Trigger Tech ID": 3355,
             "Use Type": "Unit"
         },
         {

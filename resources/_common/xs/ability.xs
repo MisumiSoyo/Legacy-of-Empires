@@ -277,6 +277,110 @@ void EffectFunction10058(int playerId = -1)
 }
 
 
+void EffectFunction10061(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    ModArmor(playerId, cMonkClass, cDamageClassMelee, 2);
+    ModArmor(playerId, cMonkClass, cDamageClassPierce, 3);
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 2);
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 3);
+    ModAttribute(playerId, cMonkClass, cHitpoints, 15);
+    ModAttribute(playerId, cMonkWithRelicClass, cHitpoints, 15);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
+
+
+void EffectFunction10062(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
+    ModAttack(playerId, VeteranMansabdarID, cDamageClassMelee, 2);
+    ModAttack(playerId, EliteMansabdarID, cDamageClassMelee, 2);
+    ModAttack(playerId, ScoutCavalryID, cDamageClassMelee, 2);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
+
+
+void EffectFunction10063(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    ModArmor(playerId, 1738, cDamageClassPierce, 1);
+    SetArmor(playerId, 1738, cDamageClassArchers, 254);
+    ModArmor(playerId, 1740, cDamageClassPierce, 1);
+    SetArmor(playerId, 1740, cDamageClassArchers, 254);
+    ModArmor(playerId, 1759, cDamageClassPierce, 1);
+    SetArmor(playerId, 1759, cDamageClassArchers, 254);
+    ModArmor(playerId, 1761, cDamageClassPierce, 1);
+    SetArmor(playerId, 1761, cDamageClassArchers, 254);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
+
+
+void EffectFunction10064(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    ModAllyResource(playerId, cAttributeTradeFoodPercent, 10);
+    ModAllyResource(playerId, cAttributeTradeWoodPercent, 10);
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+}
+
+
+void EffectFunction10065(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    MulAttribute(playerId, cInfantryClass, cAttackReloadTime, 1.0 / 1.15);
+    ModArmor(playerId, cInfantryClass, cDamageClassMelee, 1);
+    ModArmor(playerId, cInfantryClass, cDamageClassPierce, 1);
+}
+
+
+void EffectFunction10066(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    ModAttribute(playerId, cTradeBoatClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cFishingBoatClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cWarshipClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cBoardingShipClass, cRegenerationRate, 15);
+    ModAttribute(playerId, cTransportShipClass, cRegenerationRate, 15);
+}
+
+
+void EffectFunction10067(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    SpawnUnit(playerId, 1738, 109, 1, 32767);
+    SpawnUnit(playerId, 1738, 104, 1, 32767);
+    SpawnUnit(playerId, 1738, 82, 1, 32767);
+    ModAttribute(playerId, 1738, cWoodCost, -15);
+    ModAttribute(playerId, 1740, cWoodCost, -15);
+    ModAttribute(playerId, 1759, cWoodCost, -15);
+    ModAttribute(playerId, 1761, cWoodCost, -15);
+}
+
+
+void EffectFunction10068(int playerId = -1)
+{
+    if (ConsumeRelic(playerId) == false)
+        return;
+    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    ModAttack(playerId, 873, cDamageClassPierce, 1);
+    ModAttack(playerId, 875, cDamageClassPierce, 1);
+    ModAttack(playerId, 873, cDamageClassSpearmen, 4);
+    ModAttack(playerId, 875, cDamageClassSpearmen, 4);
+}
+
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

@@ -43021,12 +43021,12 @@
                     {
                         "Name": "Veteran Raider Elephant",
                         "RequiredAge": 3,
-                        "ID": 3429
+                        "ID": 3335
                     },
                     {
                         "Name": "Elite Battle Elephant",
                         "RequiredAge": 4,
-                        "RequiredTechID": 3429,
+                        "RequiredTechID": 3335,
                         "ID": 631
                     }
                 ],
@@ -43656,7 +43656,7 @@
                     {
                         "Name": "Bhakti",
                         "RequiredAge": 4,
-                        "ID": 3413
+                        "ID": 3337
                     }
                 ],
                 "Units": [
@@ -44708,42 +44708,42 @@
                     {
                         "Name": "Monk Armor",
                         "RequiredAge": 3,
-                        "ID": 3150
+                        "ID": 3340
                     },
                     {
                         "Name": "Mansabdar Attack",
                         "RequiredAge": 3,
-                        "ID": 3151
+                        "ID": 3341
                     },
                     {
                         "Name": "Ratha Armor",
                         "RequiredAge": 3,
-                        "ID": 3152
+                        "ID": 3342
                     },
                     {
                         "Name": "Wood and Food from Trade",
                         "RequiredAge": 3,
-                        "ID": 3153
+                        "ID": 3343
                     },
                     {
                         "Name": "Infantry Bonus",
                         "RequiredAge": 3,
-                        "ID": 3154
+                        "ID": 3344
                     },
                     {
                         "Name": "Navy Bonus",
                         "RequiredAge": 3,
-                        "ID": 3155
+                        "ID": 3345
                     },
                     {
                         "Name": "Spawn Ratha",
                         "RequiredAge": 3,
-                        "ID": 3156
+                        "ID": 3346
                     },
                     {
                         "Name": "Elephant Archer Attack",
                         "RequiredAge": 3,
-                        "ID": 3157
+                        "ID": 3347
                     }
                 ],
                 "Units": [
@@ -45822,9 +45822,9 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Desert Guard",
+                        "Name": "Caravan Guard",
                         "RequiredAge": 3,
-                        "ID": 3075
+                        "ID": 3348
                     },
                     {
                         "Name": "Town Defense",
@@ -47900,7 +47900,7 @@
                     {
                         "Name": "Taurus Ambush",
                         "RequiredAge": 4,
-                        "ID": 3063
+                        "ID": 3357
                     },
                     {
                         "Name": "Town Defense",
@@ -47910,7 +47910,7 @@
                     {
                         "Name": "Apostle",
                         "RequiredAge": 3,
-                        "ID": 3131
+                        "ID": 3356
                     }
                 ],
                 "Units": [

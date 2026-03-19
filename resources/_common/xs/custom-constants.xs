@@ -139,6 +139,9 @@ extern const int KhanID = 4133;
 extern const int GoldBuilding1ID = 4134;
 extern const int TaboriteWarriorID = 4135;
 extern const int ChariotCrossbowmanID = 4136;
+extern const int RaiderElephantID = 4137;
+extern const int VeteranRaiderElephantID = 4138;
+extern const int EliteRaiderElephantID = 4139;
 
 
 //  Newly added tech IDs
@@ -229,6 +232,14 @@ extern const int SihaBowLimbsTechID = 3299;
 extern const int KaunusCastleTechID = 3303;
 extern const int MediterraneanGalleysTechID = 3314;
 extern const int ScutageTechID = 3315;
+extern const int KopalniaSoliWieliczkaTechID = 3316;
+extern const int WingedChargeTechID = 3317;
+extern const int TaboritesTechID = 3327;
+extern const int PistalaTechID = 3328;
+extern const int BhaktiTechID = 3337;
+extern const int CaravanGuardTechID = 3348;
+extern const int ApostleTechID = 3356;
+extern const int TaurusAmbushTechID = 3357;
 
 
 

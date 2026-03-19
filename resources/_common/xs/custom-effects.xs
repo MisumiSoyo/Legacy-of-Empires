@@ -1070,13 +1070,64 @@ void EffectFunction10059(int playerId = -1)
 }
 
 
+//  10060 - C-Bonus, Cavalry +50% base attack vs skirmishers
+void EffectFunction10060(int playerId = -1)
+{
+    int i = 0;
+    for (i = 0; < TotalObjects)
+        if ((i < 900) || (i > 964))
+        {
+            int ClassID = xsGetObjectClass(playerId, i);
+            if ((ClassID == cScoutCavalryClass) || (ClassID == cCavalryClass))
+                ModAttack(playerId, i, cDamageClassSkirmishers, xsGetObjectAttribute(playerId, i, cAttack, cDamageClassMelee) / 2);
+        }
+}
+
+
+//  10069 - Caravan Guard
+void EffectFunction10069(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, 397);
+    xsTaskAmount(cTaskAttrResourceOut, 3);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+
+    xsTask(cTradeCartClass, cTaskTypeGenerateResources, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
+//  10070 - Apostle
+void EffectFunction10070(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeApostleProductivity);
+    xsTaskAmount(cTaskAttrWorkValue1, 3.0 / 60);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000004);
+    
+    int i = 0;
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i) && (i != cMonkClass) && (i != cMonkWithRelicClass))
+            xsTask(i, cTaskTypeGenerateResources, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 6.0 / 60);
+    xsTask(cMonkClass, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeApostleProductivity, 1);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 192  2026.03.19");
+    xsChatData("Build: 193  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -372,7 +372,7 @@
         {
             "note": "陶鲁斯伏击",
             "civilizations": "Armenians",
-            "tech_id": 3063,
+            "tech_id": 3357,
             "building_id": 109,
             "Name": "Taurus Ambush",
             "RequiredAge": 4
@@ -450,11 +450,11 @@
             "RequiredAge": 4
         },
         {
-            "note": "沙漠护卫",
+            "note": "商队护卫",
             "civilizations": "Gurjaras",
-            "tech_id": 3075,
+            "tech_id": 3348,
             "building_id": 109,
-            "Name": "Desert Guard",
+            "Name": "Caravan Guard",
             "RequiredAge": 3
         },
         {
@@ -769,7 +769,7 @@
         {
             "note": "使徒",
             "civilizations": "Armenians",
-            "tech_id": 3131,
+            "tech_id": 3356,
             "building_id": 109,
             "Name": "Apostle",
             "RequiredAge": 3
@@ -959,7 +959,7 @@
         {
             "note": "孟加拉僧侣护甲",
             "civilizations": "Bengalis",
-            "tech_id": 3150,
+            "tech_id": 3340,
             "building_id": 104,
             "Name": "Monk Armor",
             "RequiredAge": 3
@@ -967,7 +967,7 @@
         {
             "note": "孟加拉曼沙布达尔攻击力",
             "civilizations": "Bengalis",
-            "tech_id": 3151,
+            "tech_id": 3341,
             "building_id": 104,
             "Name": "Mansabdar Attack",
             "RequiredAge": 3
@@ -975,7 +975,7 @@
         {
             "note": "孟加拉战车护甲",
             "civilizations": "Bengalis",
-            "tech_id": 3152,
+            "tech_id": 3342,
             "building_id": 104,
             "Name": "Ratha Armor",
             "RequiredAge": 3
@@ -983,7 +983,7 @@
         {
             "note": "孟加拉贸易获取木材和食物",
             "civilizations": "Bengalis",
-            "tech_id": 3153,
+            "tech_id": 3343,
             "building_id": 104,
             "Name": "Wood and Food from Trade",
             "RequiredAge": 3
@@ -991,7 +991,7 @@
         {
             "note": "孟加拉步兵强化",
             "civilizations": "Bengalis",
-            "tech_id": 3154,
+            "tech_id": 3344,
             "building_id": 104,
             "Name": "Infantry Bonus",
             "RequiredAge": 3
@@ -999,7 +999,7 @@
         {
             "note": "孟加拉海军强化",
             "civilizations": "Bengalis",
-            "tech_id": 3155,
+            "tech_id": 3345,
             "building_id": 104,
             "Name": "Navy Bonus",
             "RequiredAge": 3
@@ -1007,7 +1007,7 @@
         {
             "note": "孟加拉召唤战车",
             "civilizations": "Bengalis",
-            "tech_id": 3156,
+            "tech_id": 3346,
             "building_id": 104,
             "Name": "Spawn Ratha",
             "RequiredAge": 3
@@ -1015,7 +1015,7 @@
         {
             "note": "孟加拉骑象射手强化",
             "civilizations": "Bengalis",
-            "tech_id": 3157,
+            "tech_id": 3347,
             "building_id": 104,
             "Name": "Elephant Archer Attack",
             "RequiredAge": 3
@@ -1630,7 +1630,7 @@
         {
             "note": "虔信主义",
             "civilizations": "Dravidians",
-            "tech_id": 3413,
+            "tech_id": 3337,
             "building_id": 109,
             "Name": "Bhakti",
             "RequiredAge": 4
@@ -1736,7 +1736,7 @@
         {
             "note": "老练突袭大象",
             "civilizations": "Dravidians",
-            "tech_id": 3429,
+            "tech_id": 3335,
             "building_id": 101,
             "Name": "Veteran Raider Elephant",
             "RequiredAge": 3
@@ -1748,7 +1748,7 @@
             "building_id": 101,
             "Name": "Elite Battle Elephant",
             "RequiredAge": 4,
-            "RequiredTechID": 3429
+            "RequiredTechID": 3335
         },
         {
             "note": "帝王草原枪兵",

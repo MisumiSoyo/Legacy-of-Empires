@@ -1807,7 +1807,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Raider Elephant",
             "Name String ID": 700069,
-            "Node ID": 4149,
+            "Node ID": 4137,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 228,
@@ -1833,11 +1833,11 @@
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800070,
-            "Link ID": 4149,
+            "Link ID": 4137,
             "Link Node Type": "UniqueUnit",
             "Name": "Veteran Raider Elephant",
             "Name String ID": 700070,
-            "Node ID": 4150,
+            "Node ID": 4138,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 228,
@@ -1855,7 +1855,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3429,
+            "Trigger Tech ID": 3335,
             "Use Type": "Unit"
         },
         {
@@ -1863,11 +1863,11 @@
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800071,
-            "Link ID": 4150,
+            "Link ID": 4138,
             "Link Node Type": "UniqueUnit",
             "Name": "Elite Raider Elephant",
             "Name String ID": 700071,
-            "Node ID": 4151,
+            "Node ID": 4139,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 228,
@@ -1885,7 +1885,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3430,
+            "Trigger Tech ID": 3336,
             "Use Type": "Unit"
         },
         {
@@ -5589,7 +5589,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Bhakti",
             "Name String ID": 500139,
-            "Node ID": 3413,
+            "Node ID": 3337,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 107,

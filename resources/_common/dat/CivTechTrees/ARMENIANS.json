@@ -5403,6 +5403,36 @@
             "Use Type": "Tech"
         },
         {
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600052,
+            "Link ID": 280,
+            "Link Node Type": "Research",
+            "Name": "Town Defense",
+            "Name String ID": 500052,
+            "Node ID": 3022,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
             "Age ID": 3,
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
@@ -5411,7 +5441,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Apostle",
             "Name String ID": 500083,
-            "Node ID": 3131,
+            "Node ID": 3356,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
@@ -5437,44 +5467,14 @@
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600035,
-            "Link ID": 3131,
+            "Link ID": 3356,
             "Link Node Type": "BuildingTech",
             "Name": "Taurus Ambush",
             "Name String ID": 500035,
-            "Node ID": 3063,
+            "Node ID": 3357,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 107,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 109,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600052,
-            "Link ID": 280,
-            "Link Node Type": "Research",
-            "Name": "Town Defense",
-            "Name String ID": 500052,
-            "Node ID": 3022,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
             "Prerequisite IDs": [
                 0,
                 0,
