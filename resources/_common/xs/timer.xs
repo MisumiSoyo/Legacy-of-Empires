@@ -84,6 +84,18 @@ void PortugueseFeitoria(int playerId = -1, int Time = -1)
 }
 
 
+void MalayFreeArmy(int playerId = -1, int Time = -1)
+{
+    int MalayArmyTimer = xsPlayerAttribute(playerId, cAttributeMalayArmyTimer);
+    if (MalayArmyTimer <= 0)
+    {
+        ModResource(playerId, cAttributeMalayArmyCount, 1);
+        MalayArmyTimer = MalayArmyTimer + 120;
+    }
+    SetResource(playerId, cAttributeMalayArmyTimer, MalayArmyTimer - 1);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -120,6 +132,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cPortuguese:
         {
             PortugueseFeitoria(playerId, Time);
+            break;
+        }
+        case cMalay:
+        {
+            MalayFreeArmy(playerId, Time);
             break;
         }
         default:

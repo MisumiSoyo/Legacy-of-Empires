@@ -834,13 +834,76 @@ void EffectFunction10042(int playerId = -1)
 }
 
 
+// 10043 - C-Bonus, monk strengthens elephants
+void EffectFunction10043(int playerId = -1)
+{
+    xsEffectAmount(cAddAttribute, BattleElephantID, cCombatAbility, 96, playerId);
+    xsEffectAmount(cAddAttribute, EliteBattleElephantID, cCombatAbility, 96, playerId);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.130435);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 8);
+    xsTaskAmount(cTaskAttrAutoSearch, 0);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 10);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+
+    xsTask(BattleElephantID, cTaskTypeAura, cMonkClass, playerId);
+    xsTask(EliteBattleElephantID, cTaskTypeAura, cMonkClass, playerId);
+
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+
+    xsTask(BattleElephantID, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    xsTask(EliteBattleElephantID, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    xsResetTaskAmount();
+}
+
+
+//  10044 - Silat Melayu
+void EffectFunction10044(int playerId = -1)
+{
+    AddAttackForm(playerId, KarambitWarriorID, cDamageClassVillager, 5);
+    AddAttackForm(playerId, KarambitWarriorID, cDamageClassTradeUnit, 5);
+    AddAttackForm(playerId, EliteKarambitWarriorID, cDamageClassVillager, 5);
+    AddAttackForm(playerId, EliteKarambitWarriorID, cDamageClassTradeUnit, 5);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, -10);
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000017);
+    xsTask(KarambitWarriorID, cTaskTypeRefund, -1, playerId);
+    xsTask(EliteKarambitWarriorID, cTaskTypeRefund, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
+// 10045 - Anawrahta Canals
+void EffectFunction10045(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeFarmFoodGenerateProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, 0);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+
+    xsTask(FarmID, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(RiceFarmID, cTaskTypeGenerateResources, -1, playerId);
+    xsResetTaskAmount();
+    xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 8, playerId);
+}
+
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 189  2026.03.19");
+    xsChatData("Build: 190  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

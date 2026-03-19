@@ -5649,7 +5649,7 @@
                     {
                         "Name": "Elite Toungoo Warrior",
                         "RequiredAge": 4,
-                        "ID": 3141
+                        "ID": 3274
                     },
                     {
                         "Name": "Siege Training",
@@ -5701,7 +5701,7 @@
                     {
                         "Name": "Toungoo Warrior",
                         "RequiredAge": 3,
-                        "ID": 4055
+                        "ID": 4122
                     }
                 ]
             },
@@ -6361,7 +6361,7 @@
                     {
                         "Name": "Anawrahta's Canals",
                         "RequiredAge": 3,
-                        "ID": 3066
+                        "ID": 3275
                     },
                     {
                         "Name": "Town Defense",
@@ -19677,13 +19677,13 @@
                     {
                         "Name": "Elephant Archer",
                         "RequiredAge": 3,
-                        "ID": 3242
+                        "ID": 3265
                     },
                     {
                         "Name": "Elite Elephant Archer",
                         "RequiredAge": 4,
                         "ID": 481,
-                        "RequiredTechID": 3242
+                        "RequiredTechID": 3265
                     }
                 ],
                 "Units": [
@@ -24890,12 +24890,12 @@
                     {
                         "Name": "Spice Trade",
                         "RequiredAge": 4,
-                        "ID": 3518
+                        "ID": 3272
                     },
                     {
                         "Name": "Silat Melayu",
                         "RequiredAge": 3,
-                        "ID": 3519
+                        "ID": 3271
                     }
                 ],
                 "Units": [
@@ -24907,17 +24907,17 @@
                     {
                         "Name": "Conscript Spearmen",
                         "RequiredAge": 2,
-                        "ID": 4155
+                        "ID": 4119
                     },
                     {
                         "Name": "Conscript Skirmishers",
                         "RequiredAge": 2,
-                        "ID": 4156
+                        "ID": 4120
                     },
                     {
                         "Name": "Conscript Karambit Warriors",
                         "RequiredAge": 3,
-                        "ID": 4157
+                        "ID": 4121
                     }
                 ]
             },
@@ -38627,7 +38627,7 @@
                     {
                         "Name": "Elite Rung Scout",
                         "RequiredAge": 4,
-                        "ID": 3031
+                        "ID": 3278
                     },
                     {
                         "ID": 982,
@@ -38694,7 +38694,7 @@
                     {
                         "Name": "Rung Scout",
                         "RequiredAge": 3,
-                        "ID": 4027
+                        "ID": 4125
                     },
                     {
                         "ID": 1901,
@@ -39373,7 +39373,7 @@
                     {
                         "Name": "Monsoon Navigation",
                         "RequiredAge": 3,
-                        "ID": 3067
+                        "ID": 3279
                     },
                     {
                         "Name": "Town Defense",
@@ -39383,7 +39383,7 @@
                     {
                         "Name": "Elephant Formation",
                         "RequiredAge": 4,
-                        "ID": 3124
+                        "ID": 3280
                     }
                 ],
                 "Units": [

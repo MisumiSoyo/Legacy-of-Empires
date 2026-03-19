@@ -125,6 +125,12 @@ extern const int EliteDonsoID = 4114;
 extern const int ProjectileDonsoID = 4115;
 extern const int SofaID = 4116;
 extern const int EliteSofaID = 4117;
+extern const int EarlyElephantArcherID = 4118;
+extern const int ToungooWarriorID = 4122;
+extern const int ToungooWarriorDeadUnitID = 4123;
+extern const int EliteToungooWarriorID = 4124;
+extern const int RungScoutID = 4125;
+extern const int EliteRungScoutID = 4127;
 
 
 //  Newly added tech IDs
@@ -200,6 +206,13 @@ extern const int EliteSofaTechID = 3255;
 extern const int SaharaCaravanRouteTechID = 3256;
 extern const int PoisonedArrowsTechID = 3257;
 extern const int AdargaTechID = 3263;
+extern const int SilatMelayuTechID = 3271;
+extern const int SpiceTradeTechID = 3272;
+extern const int EliteToungooWarriorTechID = 3274;
+extern const int AnawrahtasCanalsTechID = 3275;
+extern const int MonsoonNavigationTechID = 3279;
+extern const int ElephantFormationTechID = 3280;
+
 
 
 // Custom Effect IDs

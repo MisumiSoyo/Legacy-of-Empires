@@ -1088,7 +1088,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Early Elephant Archer",
             "Name String ID": 700055,
-            "Node ID": 4136,
+            "Node ID": 4118,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 393,
@@ -1114,7 +1114,7 @@
             "Building ID": 87,
             "Draw Node Type": "UnitTech",
             "Help String ID": 105682,
-            "Link ID": 4136,
+            "Link ID": 4118,
             "Link Node Type": "UniqueUnit",
             "Name": "Elephant Archer",
             "Name String ID": 14682,
@@ -1136,7 +1136,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3242,
+            "Trigger Tech ID": 3265,
             "Use Type": "Unit"
         },
         {

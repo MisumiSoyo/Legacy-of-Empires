@@ -159,7 +159,7 @@
         {
             "note": "丛林斥候",
             "civilizations": "Vietnamese",
-            "unit_id": 4027,
+            "unit_id": 4125,
             "building_id": 12,
             "Name": "Rung Scout",
             "RequiredAge": 3,
@@ -169,7 +169,7 @@
         {
             "note": "精锐丛林斥候",
             "civilizations": "Vietnamese",
-            "tech_id": 3031,
+            "tech_id": 3278,
             "building_id": 12,
             "Name": "Elite Rung Scout",
             "RequiredAge": 4,
@@ -396,7 +396,7 @@
         {
             "note": "阿奴律陀运河",
             "civilizations": "Burmese",
-            "tech_id": 3066,
+            "tech_id": 3275,
             "building_id": 109,
             "Name": "Anawrahta's Canals",
             "RequiredAge": 3
@@ -404,7 +404,7 @@
         {
             "note": "季风航行",
             "civilizations": "Vietnamese",
-            "tech_id": 3067,
+            "tech_id": 3279,
             "building_id": 109,
             "Name": "Monsoon Navigation",
             "RequiredAge": 3
@@ -737,7 +737,7 @@
         {
             "note": "象阵",
             "civilizations": "Vietnamese",
-            "tech_id": 3124,
+            "tech_id": 3280,
             "building_id": 109,
             "Name": "Elephant Formation",
             "RequiredAge": 4
@@ -896,7 +896,7 @@
         {
             "note": "东吁勇士",
             "civilizations": "Burmese",
-            "unit_id": 4055,
+            "unit_id": 4122,
             "building_id": 12,
             "Name": "Toungoo Warrior",
             "RequiredAge": 3
@@ -904,7 +904,7 @@
         {
             "note": "精锐东吁勇士",
             "civilizations": "Burmese",
-            "tech_id": 3141,
+            "tech_id": 3274,
             "building_id": 12,
             "Name": "Elite Toungoo Warrior",
             "RequiredAge": 4
@@ -1513,7 +1513,7 @@
         {
             "note": "高棉骑象射手升级",
             "civilizations": "Khmer",
-            "tech_id": 3242,
+            "tech_id": 3265,
             "building_id": 87,
             "Name": "Elephant Archer",
             "RequiredAge": 3,
@@ -1526,7 +1526,7 @@
             "tech_id": 481,
             "type": "modify",
             "building_id": 87,
-            "RequiredTechID": 3242
+            "RequiredTechID": 3265
         },
         {
             "note": "贵族铁骑的坚毅",
@@ -1785,7 +1785,7 @@
         {
             "note": "征召长矛兵",
             "civilizations": "Malay",
-            "unit_id": 4155,
+            "unit_id": 4119,
             "building_id": 109,
             "Name": "Conscript Spearmen",
             "RequiredAge": 2
@@ -1793,7 +1793,7 @@
         {
             "note": "征召掷矛手",
             "civilizations": "Malay",
-            "unit_id": 4156,
+            "unit_id": 4120,
             "building_id": 109,
             "Name": "Conscript Skirmishers",
             "RequiredAge": 2
@@ -1801,7 +1801,7 @@
         {
             "note": "征召爪刀勇士",
             "civilizations": "Malay",
-            "unit_id": 4157,
+            "unit_id": 4121,
             "building_id": 109,
             "Name": "Conscript Karambit Warriors",
             "RequiredAge": 3
@@ -2111,7 +2111,7 @@
         {
             "note": "香料贸易",
             "civilizations": "Malay",
-            "tech_id": 3518,
+            "tech_id": 3272,
             "building_id": 109,
             "Name": "Spice Trade",
             "RequiredAge": 4
@@ -2119,7 +2119,7 @@
         {
             "note": "马来武术",
             "civilizations": "Malay",
-            "tech_id": 3519,
+            "tech_id": 3271,
             "building_id": 109,
             "Name": "Silat Melayu",
             "RequiredAge": 3
