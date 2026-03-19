@@ -149,12 +149,12 @@
             "type": "delete"
         },
         {
-            "note": "战车弓兵",
+            "note": "战车弩手",
             "civilizations": "Bohemians",
-            "unit_id": 4025,
+            "unit_id": 4136,
             "building_id": 87,
             "RequiredAge": 3,
-            "Name": "Chariot Archer"
+            "Name": "Chariot Crossbowman"
         },
         {
             "note": "丛林斥候",
@@ -285,7 +285,7 @@
         {
             "note": "塔博尔战士",
             "civilizations": "Bohemians",
-            "unit_id": 4048,
+            "unit_id": 4135,
             "building_id": 109,
             "Name": "Taborite Warrior",
             "RequiredAge": 3
@@ -420,7 +420,7 @@
         {
             "note": "翼骑兵冲锋",
             "civilizations": "Poles",
-            "tech_id": 3071,
+            "tech_id": 3317,
             "building_id": 109,
             "Name": "Winged Charge",
             "RequiredAge": 4
@@ -484,7 +484,7 @@
         {
             "note": "地中海桨帆船",
             "civilizations": "Sicilians",
-            "tech_id": 3517,
+            "tech_id": 3314,
             "building_id": 109,
             "Name": "Mediterranean Galleys",
             "RequiredAge": 3
@@ -492,7 +492,7 @@
         {
             "note": "免役税",
             "civilizations": "Sicilians",
-            "tech_id": 3079,
+            "tech_id": 3315,
             "building_id": 109,
             "Name": "Scutage",
             "RequiredAge": 4
@@ -532,7 +532,7 @@
         {
             "note": "塔博尔派",
             "civilizations": "Bohemians",
-            "tech_id": 3085,
+            "tech_id": 3327,
             "building_id": 109,
             "Name": "Taborites",
             "RequiredAge": 3
@@ -801,7 +801,7 @@
         {
             "note": "维利奇卡盐矿",
             "civilizations": "Poles",
-            "tech_id": 3133,
+            "tech_id": 3316,
             "building_id": 109,
             "Name": "Kopalnia Soli Wieliczka",
             "RequiredAge": 3
@@ -1051,7 +1051,7 @@
         {
             "note": "手炮",
             "civilizations": "Bohemians",
-            "tech_id": 3161,
+            "tech_id": 3328,
             "building_id": 109,
             "Name": "Pistala",
             "RequiredAge": 4

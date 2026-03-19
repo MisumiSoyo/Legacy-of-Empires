@@ -991,6 +991,84 @@ void EffectFunction10049(int playerId = -1)
 }
 
 
+//  10050 - C-Bonus, extra gold from spearmen and skirmishers
+void EffectFunction10050(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, GoldBuilding1ID);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000008);
+    xsTask(SpearmanID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(PikemanID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(HalberdierID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(DonsoID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(VeteranDonsoID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(EliteDonsoID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(SkirmisherID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(EliteSkirmisherID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(ImperialSkirmisherID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(GenitourID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(EliteGenitourID, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
+//  10051 - Kopalnia Soli Wieliczka
+void EffectFunction10051(int playerId = -1)
+{
+    float StoneTotal = xsPlayerAttribute(playerId, cAttributeStoneTotal);
+    ModResource(playerId, cAttributeFood, 0.8 * StoneTotal);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeStoneMinerFoodProductivity);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000004);
+    xsTask(MaleStoneMinerID, cTaskTypeGenerateResources, cStoneMineClass, playerId);
+    xsTask(FemaleStoneMinerID, cTaskTypeGenerateResources, cStoneMineClass, playerId);
+    xsResetTaskAmount();
+
+    SetResource(playerId, cAttributeStoneMinerFoodProductivity, 28.8);
+}
+
+
+// 10052 - Winged Charge
+void EffectFunction10052(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 2);
+    xsTaskAmount(cTaskAttrWorkValue2, 7);
+    xsTaskAmount(cTaskAttrWorkRange, 1.25);
+    xsTaskAmount(cTaskAttrWorkFlag2, 2001);
+    xsTask(cCavalryClass, cTaskTypeChargeAttack, -1, playerId);
+    xsTask(cScoutCavalryClass, cTaskTypeChargeAttack, -1, playerId);
+    xsResetTaskAmount();
+
+    SetAttribute(playerId, cCavalryClass, cSpecialAbility, 3);
+    SetAttribute(playerId, cCavalryClass, cMaxCharge, 2);
+    SetAttribute(playerId, cCavalryClass, cRechargeRate, 2.0 / 12);
+    SetAttribute(playerId, cCavalryClass, cChargeEvent, 1);
+    SetAttribute(playerId, cCavalryClass, cChargeType, 1);
+    SetAttribute(playerId, cScoutCavalryClass, cSpecialAbility, 3);
+    SetAttribute(playerId, cScoutCavalryClass, cMaxCharge, 2);
+    SetAttribute(playerId, cScoutCavalryClass, cRechargeRate, 2.0 / 12);
+    SetAttribute(playerId, cScoutCavalryClass, cChargeEvent, 1);
+    SetAttribute(playerId, cScoutCavalryClass, cChargeType, 1);
+}
+
+
+//  10059 - C-Bonus, Barrack and Archery Range units + attack bonus
+void EffectFunction10059(int playerId = -1)
+{
+    MulAttackBonus(playerId, cInfantryClass, 1.25);
+    MulAttackBonus(playerId, cArcherClass, 1.25);
+    MulAttackBonus(playerId, cCavalryArcherClass, 1.25);
+    MulAttackBonus(playerId, cHandCannoneerClass, 1.25);
+    MulAttackBonus(playerId, SpearmanID, 0.8);
+    MulAttackBonus(playerId, PikemanID, 0.8);
+    MulAttackBonus(playerId, HalberdierID, 0.8);
+}
+
 
 include "timer.xs";
 
@@ -998,7 +1076,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 191  2026.03.19");
+    xsChatData("Build: 192  2026.03.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -136,6 +136,9 @@ extern const int EliteKonnik2ID = 4130;
 extern const int FootKonnik2ID = 4131;
 extern const int EliteFootKonnik2ID = 4132;
 extern const int KhanID = 4133;
+extern const int GoldBuilding1ID = 4134;
+extern const int TaboriteWarriorID = 4135;
+extern const int ChariotCrossbowmanID = 4136;
 
 
 //  Newly added tech IDs
@@ -224,6 +227,8 @@ extern const int KhansConscriptionTechID = 3294;
 extern const int KhazarLancersTechID = 3298;
 extern const int SihaBowLimbsTechID = 3299;
 extern const int KaunusCastleTechID = 3303;
+extern const int MediterraneanGalleysTechID = 3314;
+extern const int ScutageTechID = 3315;
 
 
 

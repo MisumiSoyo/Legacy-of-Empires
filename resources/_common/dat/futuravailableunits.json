@@ -32583,12 +32583,12 @@
                     {
                         "Name": "Mediterranean Galleys",
                         "RequiredAge": 3,
-                        "ID": 3517
+                        "ID": 3314
                     },
                     {
                         "Name": "Scutage",
                         "RequiredAge": 4,
-                        "ID": 3079
+                        "ID": 3315
                     }
                 ],
                 "Units": [
@@ -41468,7 +41468,7 @@
                     {
                         "Name": "Winged Charge",
                         "RequiredAge": 4,
-                        "ID": 3071
+                        "ID": 3317
                     },
                     {
                         "Name": "Town Defense",
@@ -41478,7 +41478,7 @@
                     {
                         "Name": "Kopalnia Soli Wieliczka",
                         "RequiredAge": 3,
-                        "ID": 3133
+                        "ID": 3316
                     }
                 ],
                 "Units": [
@@ -41799,8 +41799,8 @@
                     },
                     {
                         "RequiredAge": 3,
-                        "Name": "Chariot Archer",
-                        "ID": 4025
+                        "Name": "Chariot Crossbowman",
+                        "ID": 4136
                     }
                 ]
             },
@@ -42553,12 +42553,12 @@
                     {
                         "Name": "Taborites",
                         "RequiredAge": 3,
-                        "ID": 3085
+                        "ID": 3327
                     },
                     {
                         "Name": "Pistala",
                         "RequiredAge": 4,
-                        "ID": 3161
+                        "ID": 3328
                     }
                 ],
                 "Units": [
@@ -42570,7 +42570,7 @@
                     {
                         "Name": "Taborite Warrior",
                         "RequiredAge": 3,
-                        "ID": 4048
+                        "ID": 4135
                     }
                 ]
             },

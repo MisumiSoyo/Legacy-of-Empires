@@ -5311,6 +5311,36 @@
             "Use Type": "Tech"
         },
         {
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600052,
+            "Link ID": 280,
+            "Link Node Type": "Research",
+            "Name": "Town Defense",
+            "Name String ID": 500052,
+            "Node ID": 3022,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
             "Age ID": 3,
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
@@ -5319,7 +5349,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Kopalnia Soli Wieliczka",
             "Name String ID": 500085,
-            "Node ID": 3133,
+            "Node ID": 3316,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
@@ -5345,44 +5375,14 @@
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600044,
-            "Link ID": 3133,
+            "Link ID": 3316,
             "Link Node Type": "BuildingTech",
             "Name": "Winged Charge",
             "Name String ID": 500044,
-            "Node ID": 3071,
+            "Node ID": 3317,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 107,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 109,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600052,
-            "Link ID": 280,
-            "Link Node Type": "Research",
-            "Name": "Town Defense",
-            "Name String ID": 500052,
-            "Node ID": 3022,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
             "Prerequisite IDs": [
                 0,
                 0,

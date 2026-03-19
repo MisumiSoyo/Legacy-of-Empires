@@ -235,6 +235,48 @@ void NoDropSiteHunters(int ClassTarget = -1, int playerId = -1)
 }
 
 
+void EffectFunction10053(int playerId = -1)
+{
+    ModAttackBonus(playerId, cInfantryClass, 1);
+}
+
+
+void EffectFunction10054(int playerId = -1)
+{
+    ModAttackBonus(playerId, cInfantryClass, 1);
+}
+
+
+void EffectFunction10055(int playerId = -1)
+{
+    ModAttackBonus(playerId, cInfantryClass, 1);
+}
+
+
+void EffectFunction10056(int playerId = -1)
+{
+    ModAttackBonus(playerId, cArcherClass, 1);
+    ModAttackBonus(playerId, cCavalryArcherClass, 1);
+    ModAttackBonus(playerId, cHandCannoneerClass, 1);
+}
+
+
+void EffectFunction10057(int playerId = -1)
+{
+    ModAttackBonus(playerId, cArcherClass, 1);
+    ModAttackBonus(playerId, cCavalryArcherClass, 1);
+    ModAttackBonus(playerId, cHandCannoneerClass, 1);
+}
+
+
+void EffectFunction10058(int playerId = -1)
+{
+    ModAttackBonus(playerId, cArcherClass, 1);
+    ModAttackBonus(playerId, cCavalryArcherClass, 1);
+    ModAttackBonus(playerId, cHandCannoneerClass, 1);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
