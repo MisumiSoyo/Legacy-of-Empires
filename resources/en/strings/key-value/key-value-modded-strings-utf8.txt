@@ -1308,3 +1308,12 @@
 1021053 "Recruit <b>Shotel Warrior<b> (cost: 85 Olive Oil) \nEthiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.2; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +2 vs Eagle Warriors."
 
 1021054 "Recruit <b>Elite Shotel Warrior<b> (cost: 85 Olive Oil) \nEthiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.2; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +2 vs Eagle Warriors, +1 vs Buildings."
+
+
+2000001 "Sappers"
+
+
+2001001 "Research Sappers (Villagers +15 attack vs buildings, +3 attack vs Ram/Trebuchet/Siege Tower)"
+
+
+2021001 "Research <b>Sappers<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nVillagers +15 attack vs Buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower."

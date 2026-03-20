@@ -585,6 +585,15 @@ void MangonelAdjustment(int playerId = -1)
 }
 
 
+void SetCustomResources(int playerId = -1)
+{
+    SetResource(playerId, cAttributeVarangianLootProductivity, 1);
+    SetResource(playerId, cAttributeWubaoFoodWoodProductivity, 1);
+    SetResource(playerId, cAttributeTaboriteWarriorProductivity, 1);
+    SetResource(playerId, cAttributeLastRuleTime, -1);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
@@ -594,4 +603,5 @@ void AbilityApplier(int playerId = -1)
     AssassinInit(playerId);
     KhanInit(playerId);
     MangonelAdjustment(playerId);
+    SetCustomResources(playerId);
 }
