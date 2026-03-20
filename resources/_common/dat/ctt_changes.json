@@ -57,6 +57,27 @@
             "Name String ID": 2000001
         },
         {
+            "note": "补给",
+            "action": "add",
+            "civ_id": "all",
+            "Age ID": 4,
+            "Building ID": 82,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600179,
+            "Link ID": 379,
+            "Link Node Type": "BuildingTech",
+            "Name": "Supplies",
+            "Name String ID": 500179,
+            "Node ID": 3426,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 0,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
             "note": "马扎尔, 土耳其, 匈奴获得草原枪兵",
             "action": "add",
             "civ_id": ["HUNS", "TURKS", "MAGYAR"],
@@ -3203,6 +3224,14 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "日本获得行会",
+            "action": "modify",
+            "civ_id": "JAPANESE",
+            "Node ID": [15],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
             "note": "日本失去掷矛手系",
             "action": "modify",
             "civ_id": "JAPANESE",
@@ -5342,10 +5371,10 @@
             "Use Type": "Tech"
         },
         {
-            "note": "蜀获得轮作",
+            "note": "蜀获得轮作, 工兵",
             "action": "modify",
             "civ_id": "SHU",
-            "Node ID": [12],
+            "Node ID": [12, 321],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },

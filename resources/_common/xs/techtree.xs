@@ -87,6 +87,7 @@ void EffectFunction10001(int playerId = -1)
         case cJapanese:
         {
             EnableTech(playerId, BombardCannonTechID);
+            EnableTech(playerId, GuildsTechID);
             DisableTech(playerId, SkirmisherTechID);
             DisableTech(playerId, EliteSkirmisherTechID);
             break;
@@ -459,9 +460,7 @@ void EffectFunction10001(int playerId = -1)
         case cShu:
         {
             EnableTech(playerId, CropRotationTechID);
-            //  Shu civ bonus, infantries generate food from attacking farms
-            SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
-            SetResource(playerId, cAttributeEffectFunctionNumber, 10010);
+            EnableTech(playerId, SappersTechID);
             break;
         }
         case cWu:
@@ -490,6 +489,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TreadmillCraneTechID);
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, HerbalMedicineTechID);
+            DisableTech(playerId, CashCropTechID);
             break;
         }
         case cMuisca:

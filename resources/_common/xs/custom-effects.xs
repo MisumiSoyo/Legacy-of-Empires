@@ -1253,13 +1253,28 @@ void EffectFunction10080(int playerId = -1)
 }
 
 
+// 10081 - C-Bonus, infantry generates gold from attacking farms
+void EffectFunction10081(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeInfantryLootFarmFoodProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrUnusedResource, 3);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+
+    xsTask(cInfantryClass, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 202  2026.03.20");
+    xsChatData("Build: 203  2026.03.20");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

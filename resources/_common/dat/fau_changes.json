@@ -1183,8 +1183,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 法兰克, 马扎尔, 瞿折罗启用行会",
-            "civilizations": ["Chinese", "Franks", "Magyars", "Gurjaras"],
+            "note": "中国, 法兰克, 马扎尔, 瞿折罗, 日本启用行会",
+            "civilizations": ["Chinese", "Franks", "Magyars", "Gurjaras", "Japanese"],
             "tech_id": 15,
             "building_id": 84,
             "Name": "Guilds",
@@ -1277,8 +1277,9 @@
             "type": "delete"
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚获得工兵",
-            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians"],
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀获得工兵",
+            "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians",
+                              "Shu"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -2123,6 +2124,13 @@
             "building_id": 109,
             "Name": "Silat Melayu",
             "RequiredAge": 3
+        },
+        {
+            "note": "补给",
+            "civilizations": "all",
+            "tech_id": 3426,
+            "building_id": 82,
+            "RequiredAge": 4
         }
     ]
 }

@@ -357,6 +357,7 @@
 500176 "Mediterranean Galleys"
 500177 "Spice Trade"
 500178 "Silat Melayu"
+500179 "Supplies"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -537,6 +538,7 @@
 501176 "Research Mediterranean Galleys (Hulk-line units +1 attack)"
 501177 "Research Spice Trade (Team's Trade Cog +20% movement speed)"
 501178 "Research Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)"
+501179 "Research Supplies (All units and buildings -10% cost)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -717,6 +719,7 @@
 521176 "Research <b>Mediterranean Galleys<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nHulk-line units +1 attack."
 521177 "Research <b>Spice Trade<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nTeam's Trade Cog +20% movement speed."
 521178 "Research <b>Silat Melayu<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nKarambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death."
+521179 "Research <b>Supplies<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nAll units and buildings -10% cost."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -1313,7 +1316,7 @@
 2000001 "Sappers"
 
 
-2001001 "Research Sappers (Villagers +15 attack vs buildings, +3 attack vs Ram/Trebuchet/Siege Tower)"
+2001001 "Research Sappers (Villagers +15 attack vs buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower)"
 
 
 2021001 "Research <b>Sappers<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nVillagers +15 attack vs Buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower."
