@@ -171,24 +171,6 @@ void PaxMongolicaApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
-// 10032 - Huns Atheism Adjustment, Tarkan Task Adder
-void EffectFunction10032(int playerId = -1)
-{
-    int TarkanID1 = 755;
-    int TarkanID2 = 886;
-    int EliteTarkanID1 = 757;
-    int EliteTarkanID2 = 887;
-
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, ChanyuID);
-    xsTask(TarkanID1, cTaskTypePickupUnit, RelicID, playerId);
-    xsTask(TarkanID2, cTaskTypePickupUnit, RelicID, playerId);
-    xsTask(EliteTarkanID1, cTaskTypePickupUnit, RelicID, playerId);
-    xsTask(EliteTarkanID2, cTaskTypePickupUnit, RelicID, playerId);
-    xsResetTaskAmount();
-}
-
-
 //  Magyars civ bonus
 void FasterCastleUnits(int playerId = -1, int ObjectID = -1, int TrainButtonID = -1, int HotKeyID = -1)
 {
@@ -594,6 +576,23 @@ void SetCustomResources(int playerId = -1)
 }
 
 
+void FeitoriaAdjustment(int playerId = -1)
+{
+    SetAttribute(playerId, FeitoriaID, cAmountFirstStorage, -15);
+    SetAttribute(playerId, FeitoriaID, cAmountSecondStorage, 15);
+    SetAttribute(playerId, FeitoriaID, cAmountThirdStorage, 15);
+}
+
+
+void GenitourAdjustment(int playerId = -1)
+{
+    SetAttribute(playerId, GenitourID, cTrainButton, 21);
+    SetAttribute(playerId, GenitourID, cHotkeyId, QHotkeyID);
+    SetAttribute(playerId, EliteGenitourID, cTrainButton, 21);
+    SetAttribute(playerId, EliteGenitourID, cHotkeyId, QHotkeyID);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
@@ -604,4 +603,6 @@ void AbilityApplier(int playerId = -1)
     KhanInit(playerId);
     MangonelAdjustment(playerId);
     SetCustomResources(playerId);
+    FeitoriaAdjustment(playerId);
+    GenitourAdjustment(playerId);
 }

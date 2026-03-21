@@ -42,6 +42,36 @@ def customChanges(data):
         #为每个科技树效果后面增加一个XS调用
         EffectID = civ.tech_tree_id
         data.effects[EffectID].effect_commands.append(EffectCommand(type = 1, a = 33, b = 0, c = -1, d = 10001.0))
+
+    #编辑effect
+    for effect_change in effect_change_list:
+        # 支持单个effect_id或列表
+        effect_ids = effect_change["effect_id"]
+        if isinstance(effect_ids, (int, float)):
+            effect_ids = [effect_ids]
+        
+        change_type = effect_change.get("type", "adjustment")
+        
+        # 遍历所有指定的effect_id
+        for effect_id in effect_ids:
+            if change_type == "add":
+                # 获取指令列表，支持单个列表或列表的列表
+                commands = effect_change["commands"]
+                # 如果是单个指令（第一个元素是数字），包装成列表
+                if isinstance(commands[0], (int, float)):
+                    commands = [commands]
+                
+                # 批量添加指令
+                for cmd in commands:
+                    cmd_type, a, b, c, d = cmd  # 直接解包 [type, a, b, c, d]
+                    data.effects[effect_id].effect_commands.append(
+                        EffectCommand(type=cmd_type, a=a, b=b, c=c, d=d)
+                    )
+            else:  # adjustment
+                function_id = effect_change["function_id"]
+                data.effects[effect_id].effect_commands.append(
+                    EffectCommand(type=1, a=33, b=0, c=-1, d=function_id)
+                )
         
     return
 

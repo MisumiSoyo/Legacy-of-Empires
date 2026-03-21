@@ -65,4 +65,7 @@ copy_dict = {
     }
 }
 
+
+effect_change_list = changes_json["effect_adjustments"]
+
 changes_json = None

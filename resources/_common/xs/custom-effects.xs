@@ -322,27 +322,6 @@ void EffectFunction10017(int playerId = -1)
 }
 
 
-//  10018 - Persians Team Bonus
-void EffectFunction10018(int playerId = -1)
-{
-    AddAttackForm(playerId, KnightID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, CavalierID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, PaladinID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, SavarID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, HeiGuangCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, HeavyHeiGuangCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, SipahiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteSipahiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, GuanNingCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, MountedSamuraiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteMountedSamuraiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, GoguryeoHeavyCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteGoguryeoHeavyCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, KeshikID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteKeshikID, cDamageClassArchers, 2);
-}
-
-
 //  10019 - C-Bonus, extra food from trade units
 void EffectFunction10019(int playerId = -1)
 {
@@ -1211,48 +1190,6 @@ void EffectFunction10074(int playerId = -1)
 }
 
 
-//  10076 - Hussite Reforms Adjustment
-void EffectFunction10076(int playerId = -1)
-{
-    int MonkCount = xsGetObjectCount(playerId, cMonkClass) + xsGetObjectCount(playerId, cMonkWithRelicClass);
-    ModResource(playerId, cAttributeGold, 50 * MonkCount);
-}
-
-
-//  10079 - Poles Team Bonus
-void EffectFunction10079(int playerId = -1)
-{
-    AddAttackForm(playerId, ScoutCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, LightCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, HussarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, WingedHussarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, MansabdarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, VeteranMansabdarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, EliteMansabdarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, AuxiliaryCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, AuxiliaryCavalry2ID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, VeteranAuxiliaryCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, VeteranAuxiliaryCavalry2ID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, EliteAuxiliaryCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, EliteAuxiliaryCavalry2ID, cDamageClassArchers, 1);
-}
-
-
-//  10080 - Berbers Team Bonus
-void EffectFunction10080(int playerId = -1)
-{
-    xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetFoodCost, 0, playerId);
-    xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetTime, 0, playerId);
-
-    int playerCiv = xsGetPlayerCivilization(playerId);
-
-    if ((playerCiv == cSpanish) || (playerCiv == cBerbers) || (playerCiv == cPortuguese))
-    {
-        xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulAllCosts, 0.5, playerId);
-    }
-}
-
-
 // 10081 - C-Bonus, infantry generates gold from attacking farms
 void EffectFunction10081(int playerId = -1)
 {
@@ -1274,7 +1211,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 203  2026.03.20");
+    xsChatData("Build: 204  2026.03.21");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

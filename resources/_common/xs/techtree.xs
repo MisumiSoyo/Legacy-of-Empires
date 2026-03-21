@@ -1,7 +1,8 @@
 include "ability.xs";
+include "tech-adjustment.xs";
 
 
-// 10001 - Tech Tree Adjustment (takes effect from dark age)
+// 10001 - Tech Tree Adjustment
 void EffectFunction10001(int playerId = -1)
 {
     AbilityApplier(playerId);
@@ -600,4 +601,132 @@ void EffectFunction10037(int playerId = -1)
     FreeTech(playerId, HoardingsTechID);
     FreeTech(playerId, SappersTechID);
     FreeTech(playerId, ConscriptTechID);
+}
+
+
+//  10018 - Persians Team Bonus
+void EffectFunction10018(int playerId = -1)
+{
+    AddAttackForm(playerId, HeiGuangCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, HeavyHeiGuangCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, SipahiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteSipahiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, GuanNingCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, CrusaderKnightID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, MountedSamuraiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteMountedSamuraiID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, GoguryeoHeavyCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteGoguryeoHeavyCavalryID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, KeshikID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteKeshikID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, MercenaryKeshikID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, MercenaryEliteKeshikID, cDamageClassArchers, 2);
+}
+
+
+//  10079 - Poles Team Bonus
+void EffectFunction10079(int playerId = -1)
+{
+    AddAttackForm(playerId, MansabdarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, VeteranMansabdarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, EliteMansabdarID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, AuxiliaryCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, AuxiliaryCavalry2ID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, VeteranAuxiliaryCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, VeteranAuxiliaryCavalry2ID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, EliteAuxiliaryCavalryID, cDamageClassArchers, 1);
+    AddAttackForm(playerId, EliteAuxiliaryCavalry2ID, cDamageClassArchers, 1);
+}
+
+
+//  10080 - Berbers Team Bonus
+void EffectFunction10080(int playerId = -1)
+{
+    xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetFoodCost, 0, playerId);
+    xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetTime, 0, playerId);
+
+    int playerCiv = xsGetPlayerCivilization(playerId);
+
+    if ((playerCiv == cSpanish) || (playerCiv == cBerbers) || (playerCiv == cPortuguese))
+    {
+        xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulAllCosts, 0.5, playerId);
+    }
+}
+
+
+//  10088 - Franks Team Bonus
+void EffectFunction10088(int playerId = -1)
+{
+    ModAttribute(playerId, GuanNingCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, CrusaderKnightID, cLineOfSight, 2);
+    ModAttribute(playerId, HeiGuangCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, HeavyHeiGuangCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, SipahiID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteSipahiID, cLineOfSight, 2);
+    ModAttribute(playerId, MountedSamuraiID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteMountedSamuraiID, cLineOfSight, 2);
+    ModAttribute(playerId, GoguryeoHeavyCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteGoguryeoHeavyCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, KeshikID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteKeshikID, cLineOfSight, 2);
+    ModAttribute(playerId, MercenaryKeshikID, cLineOfSight, 2);
+    ModAttribute(playerId, MercenaryEliteKeshikID, cLineOfSight, 2);
+
+    ModAttribute(playerId, GuanNingCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, CrusaderKnightID, cSearchRadius, 2);
+    ModAttribute(playerId, HeiGuangCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, HeavyHeiGuangCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, SipahiID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteSipahiID, cSearchRadius, 2);
+    ModAttribute(playerId, MountedSamuraiID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteMountedSamuraiID, cSearchRadius, 2);
+    ModAttribute(playerId, GoguryeoHeavyCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteGoguryeoHeavyCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, KeshikID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteKeshikID, cSearchRadius, 2);
+    ModAttribute(playerId, MercenaryKeshikID, cSearchRadius, 2);
+    ModAttribute(playerId, MercenaryEliteKeshikID, cSearchRadius, 2);
+}
+
+
+//  10085 - Mongols Team Bonus
+void EffectFunction10085(int playerId = -1)
+{
+    ModAttribute(playerId, MansabdarID, cLineOfSight, 2);
+    ModAttribute(playerId, VeteranMansabdarID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteMansabdarID, cLineOfSight, 2);
+    ModAttribute(playerId, AuxiliaryCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, AuxiliaryCavalry2ID, cLineOfSight, 2);
+    ModAttribute(playerId, VeteranAuxiliaryCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, VeteranAuxiliaryCavalry2ID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteAuxiliaryCavalryID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteAuxiliaryCavalry2ID, cLineOfSight, 2);
+
+    ModAttribute(playerId, MansabdarID, cSearchRadius, 2);
+    ModAttribute(playerId, VeteranMansabdarID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteMansabdarID, cSearchRadius, 2);
+    ModAttribute(playerId, AuxiliaryCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, AuxiliaryCavalry2ID, cSearchRadius, 2);
+    ModAttribute(playerId, VeteranAuxiliaryCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, VeteranAuxiliaryCavalry2ID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteAuxiliaryCavalryID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteAuxiliaryCavalry2ID, cSearchRadius, 2);
+}
+
+
+//  10086 - Bohemians Team Bonus
+void EffectFunction10086(int playerId = -1)
+{
+    MulAttribute(playerId, MarketID, cWorkRate, 1.5 / 1.8);
+    MulAttribute(playerId, Market2ID, cWorkRate, 1.5 / 1.8);
+    MulAttribute(playerId, Market3ID, cWorkRate, 1.5 / 1.8);
+}
+
+
+//  10087 - Gurjaras Team Bonus
+void EffectFunction10087(int playerId = -1)
+{
+    MulAttribute(playerId, RaiderElephantID, cTrainTime, 0.8);
+    MulAttribute(playerId, VeteranRaiderElephantID, cTrainTime, 0.8);
+    MulAttribute(playerId, EliteRaiderElephantID, cTrainTime, 0.8);
 }

@@ -93,22 +93,137 @@
             {
                 "name": "柏柏尔团队加成",
                 "id": 38
-            },
-            {
-                "name": "波希米亚团队加成",
-                "id": 804
-            },
-            {
-                "name": "波斯团队加成",
-                "id": 408
-            },
-            {
-                "name": "波兰团队加成",
-                "id": 802
             }
         ],
         "graphic_list":
         [
         ]
-    }
+    },
+    "effect_adjustments":
+    [
+        {
+            "type": "adjustment",
+            "name": "城镇巡逻",
+            "effect_id": 280,
+            "function_id": 10082
+        },
+        {
+            "type": "add",
+            "name": "无神论",
+            "effect_id": 464,
+            "commands": [[1, 33, 0, -1, 10032],
+                         [26, 264, 0, 0, 0.5],
+                         [26, 265, 0, 0, 0.5]]
+        },
+        {
+            "type": "adjustment",
+            "name": "后勤学",
+            "effect_id": 493,
+            "function_id": 10083
+        },
+        {
+            "type": "adjustment",
+            "name": "波斯团队加成",
+            "effect_id": 408,
+            "function_id": 10018
+        },
+        {
+            "type": "adjustment",
+            "name": "法兰克团队加成",
+            "effect_id": 403,
+            "function_id": 10088
+        },
+        {
+            "type": "adjustment",
+            "name": "波兰团队加成",
+            "effect_id": 802,
+            "function_id": 10079
+        },
+        {
+            "type": "adjustment",
+            "name": "蒙古团队加成",
+            "effect_id": 407,
+            "function_id": 10085
+        },
+        {
+            "type": "adjustment",
+            "name": "波希米亚团队加成",
+            "effect_id": 804,
+            "function_id": 10086
+        },
+        {
+            "type": "adjustment",
+            "name": "瞿折罗团队加成",
+            "effect_id": 843,
+            "function_id": 10087
+        },
+        {
+            "type": "add",
+            "name": "纸币",
+            "effect_id": 669,
+            "commands": [6, 266, 0, -1, 2]
+        },
+        {
+            "type": "add",
+            "name": "农田科技调整",
+            "effect_id": [12, 13, 14],
+            "commands": [[5, 50, -1, 13, 1.05],
+                         [5, 1187, -1, 13, 1.05],
+                         [5, 214, -1, 13, 1.05],
+                         [5, 259, -1, 13, 1.05]]
+        },
+        {
+            "type": "add",
+            "name": "耕犁",
+            "effect_id": 13,
+            "commands": [[4, 214, -1, 14, -1],
+                         [4, 259, -1, 14, -1]]
+        },
+        {
+            "type": "add",
+            "name": "勃艮第葡萄园",
+            "effect_id": 790,
+            "commands": [1, 236, -1, -1, 2]
+        },
+        {
+            "type": "add",
+            "name": "死士",
+            "effect_id": 606,
+            "commands": [[4, -1, 12, 9, -1025],
+                         [4, -1, 47, 9, -1025]]
+        },
+        {
+            "type": "add",
+            "name": "屯田",
+            "effect_id": 1061,
+            "commands": [1, 287, -1, -1, 2]
+        },
+        {
+            "type": "add",
+            "name": "布图马普",
+            "effect_id": 1380,
+            "commands": [[5, 1228, -1, 100, 1.17647],
+                         [5, 1230, -1, 100, 1.17647]]
+        },
+        {
+            "type": "add",
+            "name": "波斯步弓手",
+            "effect_id": 543,
+            "commands": [[4, 4, -1, 104, 25],
+                         [4, 24, -1, 104, 25],
+                         [4, 492, -1, 104, 25]]
+        },
+        {
+            "type": "adjustment",
+            "name": "胡斯革新",
+            "effect_id": 812,
+            "function_id": 10076
+        },
+        {
+            "type": "add",
+            "name": "工兵",
+            "effect_id": 321,
+            "commands": [4, -1, 4, 9, -3333]
+        }
+    ]
 }
