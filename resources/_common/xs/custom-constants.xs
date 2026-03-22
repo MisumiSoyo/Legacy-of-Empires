@@ -159,8 +159,8 @@ extern const int EliteAuxiliaryCavalry2ID = 4145;
 extern const int KhevsuretiWarriorID = 4149;
 extern const int EliteKhevsuretiWarriorID = 4150;
 extern const int WubaoID = 4151;
-extern const int ConscriptedArmyBuildingID = 4152;
-extern const int ConscriptedArmyID = 4153;
+extern const int ConscriptedArmyID = 4152;
+extern const int ConscriptedArmy2ID = 4153;
 
 
 //  Newly added tech IDs

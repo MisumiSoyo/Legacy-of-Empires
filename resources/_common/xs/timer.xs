@@ -156,6 +156,7 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cPoles:
         {
             PolesFolwarkBonus(playerId, Time);
+            break;
         }
         default:
         {
