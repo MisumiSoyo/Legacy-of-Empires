@@ -730,3 +730,18 @@ void EffectFunction10087(int playerId = -1)
     MulAttribute(playerId, VeteranRaiderElephantID, cTrainTime, 0.8);
     MulAttribute(playerId, EliteRaiderElephantID, cTrainTime, 0.8);
 }
+
+
+//  10089 - Hindustanis Team Bonus
+void EffectFunction10089(int playerId = -1)
+{
+    ModAttack(playerId, MansabdarID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, VeteranMansabdarID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, EliteMansabdarID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, AuxiliaryCavalryID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, VeteranAuxiliaryCavalryID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, EliteAuxiliaryCavalryID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, AuxiliaryCavalry2ID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, VeteranAuxiliaryCavalry2ID, cDamageClassStandardBuildings, 2);
+    ModAttack(playerId, EliteAuxiliaryCavalry2ID, cDamageClassStandardBuildings, 2);
+}

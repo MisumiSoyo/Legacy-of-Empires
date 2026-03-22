@@ -224,6 +224,12 @@
             "name": "工兵",
             "effect_id": 321,
             "commands": [4, -1, 4, 9, -3333]
+        },
+        {
+            "type": "adjustment",
+            "name": "印度斯坦团队加成",
+            "effect_id": 2,
+            "function_id": 10089
         }
     ]
 }

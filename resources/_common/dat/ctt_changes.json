@@ -3092,17 +3092,17 @@
             "Age ID": 1
         },
         {
-            "note": "蒙古封建时代怯薛",
+            "note": "鞑靼封建时代怯薛",
             "action": "modify",
-            "civ_id": "MONGOLS",
+            "civ_id": "TATARS",
             "Node ID": 1228,
             "Use Type": "Unit",
             "Age ID": 2
         },
         {
-            "note": "蒙古城堡时代精锐怯薛",
+            "note": "鞑靼城堡时代精锐怯薛",
             "action": "modify",
-            "civ_id": "MONGOLS",
+            "civ_id": "TATARS",
             "Node ID": 1230,
             "Use Type": "Unit",
             "Age ID": 3

@@ -1649,7 +1649,7 @@
             "Use Type": "Unit"
         },
         {
-            "Age ID": 3,
+            "Age ID": 2,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 105313,
@@ -1679,7 +1679,7 @@
             "Use Type": "Unit"
         },
         {
-            "Age ID": 4,
+            "Age ID": 3,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 105314,
