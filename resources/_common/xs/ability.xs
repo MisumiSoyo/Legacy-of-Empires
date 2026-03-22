@@ -70,6 +70,7 @@ void AccoladeApplier(int playerId = -1)
     ApplyToAllMilitaryTargets(playerId, cTransportShipClass, cTaskTypeLoot);
     ApplyToAllMilitaryTargets(playerId, cWarshipClass, cTaskTypeLoot);
     ApplyToAllMilitaryTargets(playerId, cConquistadorClass, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, cPhalanxClass, cTaskTypeLoot);
     ApplyToAllMilitaryTargets(playerId, cPetardClass, cTaskTypeLoot);
     ApplyToAllMilitaryTargets(playerId, cCavalryArcherClass, cTaskTypeLoot);
     ApplyToAllMilitaryTargets(playerId, cHandCannoneerClass, cTaskTypeLoot);
@@ -517,10 +518,7 @@ void KhanInit(int playerId = -1)
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000001);
     xsTaskAmount(cTaskAttrGatherType, 5);
 
-    int i = 0;
-    for (i = 900; <= 964)
-        if (isClassOperable(i) && (isBuildingClass(i) == false))
-            xsTask(KhanID, cTaskTypeLoot, i, playerId);
+    ApplyToAllPlayerTargets(playerId, KhanID, cTaskTypeLoot);
     xsResetTaskAmount();
 
     xsTaskAmount(cTaskAttrSearchWaitTime, 10.000002);
@@ -530,15 +528,11 @@ void KhanInit(int playerId = -1)
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 47);
 
-    for (i = 900; <= 964)
-        if (isMilitaryClass(i))
-            xsTask(KhanID, cTaskTypeAura, i, playerId);
+    ApplyToAllMilitaryTargets(playerId, KhanID, cTaskTypeAura);
 
     xsTaskAmount(cTaskAttrSearchWaitTime, 5.000001);
     xsTaskAmount(cTaskAttrWorkValue1, 1.15);
-    for (i = 900; <= 964)
-        if (isMilitaryClass(i))
-            xsTask(KhanID, cTaskTypeAura, i, playerId);
+    ApplyToAllMilitaryTargets(playerId, KhanID, cTaskTypeAura);
     xsResetTaskAmount();
     SetAttribute(playerId, KhanID, cMaxCharge, 1);
     SetAttribute(playerId, KhanID, cRechargeRate, 1.0 / 120);
