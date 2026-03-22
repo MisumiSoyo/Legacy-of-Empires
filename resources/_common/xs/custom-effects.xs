@@ -949,7 +949,10 @@ void EffectFunction10048(int playerId = -1)
     ApplyToAllPlayerTargets(playerId, KeshikID, cTaskTypeGenerateResources);
     ApplyToAllPlayerTargets(playerId, EliteKeshikID, cTaskTypeGenerateResources);
     if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
+    {
         ApplyToAllPlayerTargets(playerId, KnightID, cTaskTypeGenerateResources);
+        ApplyToAllPlayerTargets(playerId, CavalierID, cTaskTypeGenerateResources);
+    }
     xsResetTaskAmount();
     SetResource(playerId, cAttributeCavalryAttackGoldProductivity, 75);
 }
@@ -1211,7 +1214,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 206  2026.03.22");
+    xsChatData("Build: 207  2026.03.22");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
