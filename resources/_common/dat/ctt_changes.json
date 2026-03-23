@@ -2280,9 +2280,10 @@
             "Use Type": "Tech"
         },
         {
+            "note": "亚美尼亚, 格鲁吉亚什一税位置调整",
             "action": "modify",
             "civ_id": ["ARMENIANS", "GEORGIANS"],
-            "Node ID": 3059,
+            "Node ID": 3005,
             "Use Type": "Tech",
             "Building ID": 1806
         },
@@ -5152,10 +5153,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "斯拉夫获得建筑学, 护腕, 异教",
+            "note": "斯拉夫获得建筑学, 护腕, 异教, 热情",
             "action": "modify",
             "civ_id": "SLAVS",
-            "Node ID": [51, 201, 439],
+            "Node ID": [51, 201, 252, 439],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -5435,6 +5436,22 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "note": "亚美尼亚获得双人锯",
+            "action": "modify",
+            "civ_id": "ARMENIANS",
+            "Node ID": [221],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "亚美尼亚获得翼骑兵",
+            "action": "modify",
+            "civ_id": "ARMENIANS",
+            "Node ID": [441],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
         }
     ]
 }

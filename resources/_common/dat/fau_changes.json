@@ -1159,16 +1159,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 罗马启用翼骑兵",
-            "civilizations": ["Chinese", "Romans"],
+            "note": "中国, 罗马, 亚美尼亚启用翼骑兵",
+            "civilizations": ["Chinese", "Romans", "Armenians"],
             "tech_id": 428,
             "building_id": 101,
             "Name": "Hussar",
             "RequiredAge": 4
         },
         {
-            "note": "中国, 罗马启用翼骑兵",
-            "civilizations": ["Chinese", "Romans"],
+            "note": "中国, 罗马, 亚美尼亚启用翼骑兵",
+            "civilizations": ["Chinese", "Romans", "Armenians"],
             "unit_id": 441,
             "building_id": 101,
             "Name": "Hussar",
@@ -1334,8 +1334,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars"],
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚获得双人锯",
+            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars",
+                              "Armenians"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -2152,6 +2153,14 @@
             "tech_id": 3116,
             "building_id": 109,
             "RequiredAge": 4
+        },
+        {
+            "note": "斯拉夫获得热情",
+            "civilizations": ["Slavs"],
+            "tech_id": 252,
+            "building_id": 104,
+            "Name": "Fervor",
+            "RequiredAge": 3
         }
     ]
 }

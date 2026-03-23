@@ -1660,7 +1660,7 @@
             "Name": "Hussar",
             "Name String ID": 14661,
             "Node ID": 441,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 103,
             "Prerequisite IDs": [
@@ -5022,7 +5022,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [
@@ -5404,7 +5404,7 @@
         },
         {
             "Age ID": 4,
-            "Building ID": 104,
+            "Building ID": 1806,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600029,
             "Link ID": -1,
