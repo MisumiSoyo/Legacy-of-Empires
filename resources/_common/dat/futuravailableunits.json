@@ -2753,6 +2753,10 @@
                         "Name": "Galleon",
                         "RequiredAge": 4,
                         "RequiredUnitID": 21
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 2628
                     }
                 ]
             },
@@ -3089,7 +3093,7 @@
                         "ID": 3017
                     },
                     {
-                        "Name": "Castle Network",
+                        "Name": "Privateers",
                         "RequiredAge": 3,
                         "ID": 3016
                     }
@@ -16193,6 +16197,14 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "RequiredAge": 3,
+                        "ID": 3021
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 3116
                     }
                 ],
                 "Units": [
@@ -53484,7 +53496,7 @@
                     {
                         "Name": "Conscripted Army",
                         "RequiredAge": 2,
-                        "ID": 4153
+                        "ID": 4152
                     }
                 ]
             },

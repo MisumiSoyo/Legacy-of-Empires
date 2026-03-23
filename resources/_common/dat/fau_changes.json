@@ -211,7 +211,7 @@
         {
             "note": "签军",
             "civilizations": "Jurchens",
-            "unit_id": 4153,
+            "unit_id": 4152,
             "Name": "Conscripted Army",
             "building_id": 109,
             "RequiredAge": 2
@@ -554,11 +554,11 @@
             "RequiredAge": 3
         },
         {
-            "note": "城堡网络",
+            "note": "私掠者",
             "civilizations": "Britons",
             "tech_id": 3016,
             "building_id": 109,
-            "Name": "Castle Network",
+            "Name": "Privateers",
             "RequiredAge": 3
         },
         {
@@ -2130,6 +2130,27 @@
             "civilizations": "all",
             "tech_id": 3426,
             "building_id": 82,
+            "RequiredAge": 4
+        },
+        {
+            "note": "不列颠获得大帆船",
+            "civilizations": ["Britons"],
+            "unit_id": 2628,
+            "building_id": 45,
+            "RequiredAge": 4
+        },
+        {
+            "note": "信使",
+            "civilizations": "Incas",
+            "tech_id": 3021,
+            "building_id": 109,
+            "RequiredAge": 3
+        },
+        {
+            "note": "奇普",
+            "civilizations": "Incas",
+            "tech_id": 3116,
+            "building_id": 109,
             "RequiredAge": 4
         }
     ]

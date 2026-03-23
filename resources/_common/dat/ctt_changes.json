@@ -1800,7 +1800,7 @@
             "Use Type": "Tech"
         },
         {
-            "note": "城堡网络",
+            "note": "私掠者",
             "action": "add",
             "civ_id": "BRITONS",
             "Age ID": 3,
@@ -1809,7 +1809,7 @@
             "Help String ID": 600064,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Castle Network",
+            "Name": "Privateers",
             "Name String ID": 500064,
             "Node ID": 3016,
             "Node Status": "ResearchedCompleted",
@@ -5024,10 +5024,10 @@
             "Building ID": 2556
         },
         {
-            "note": "不列颠启用手推炮",
+            "note": "不列颠启用手推炮, 大帆船",
             "action": "modify",
             "civ_id": "BRITONS",
-            "Node ID": [36],
+            "Node ID": [36, 2628],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
@@ -5393,6 +5393,48 @@
             "Node ID": [588],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "信使",
+            "action": "add",
+            "civ_id": "INCAS",
+            "Age ID": 3,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600080,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Couriers",
+            "Name String ID": 500080,
+            "Node ID": 3021,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "note": "奇普",
+            "action": "add",
+            "civ_id": "INCAS",
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600081,
+            "Link ID": 3021,
+            "Link Node Type": "BuildingTech",
+            "Name": "Quipu",
+            "Name String ID": 500081,
+            "Node ID": 3116,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }

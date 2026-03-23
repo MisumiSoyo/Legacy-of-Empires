@@ -23,19 +23,17 @@ void EffectFunction10003(int playerId = -1)
 {
 
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 0.0909090909);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.13043478);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTaskAmount(cTaskAttrWorkRange, 8);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrSearchWaitTime, 10);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 39);
 
-    CastleNetworkEffect(cTowerClass, playerId);
     CastleNetworkEffect(TownCenterID, playerId);
     CastleNetworkEffect(TownCenter2ID, playerId);
     CastleNetworkEffect(TownCenter3ID, playerId);
     CastleNetworkEffect(TownCenter4ID, playerId);
-    CastleNetworkEffect(CastleID, playerId);
 
     xsResetTaskAmount();
 }
@@ -1214,7 +1212,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 209  2026.03.22");
+    xsChatData("Build: 210  2026.03.23");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -48,6 +48,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BombardTowerTechID);
             EnableTech(playerId, HeresyTechID);
             EnableTech(playerId, StoneShaftMiningTechID);
+            EnableTech(playerId, CarrackTechID);
             break;
         }
         case cFranks:

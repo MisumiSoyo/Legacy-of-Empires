@@ -72,7 +72,7 @@
 
 
 //	Britons
-120150 "Foot Archer civilization \n\n• Town Centers cost -50% wood in Castle Age\n• Archers (excepts Skirmishers) +1/+2 max range/LOS/search radius at Castle/Imperial Age\n• Shepherds work rate +25%\n• Military units around towers +10% attack speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Castle Network (Military units around towers, town centers and castles +10% attack speed)\n• Warwolf (Trebuchets have blast damage)\n• Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
+120150 "Foot Archer civilization \n\n• Town Centers cost -50% wood in Castle Age\n• Archers (excepts Skirmishers) +1/+2 max range/LOS/search radius at Castle/Imperial Age\n• Shepherds work rate +25%\n• Military units around town centers +15% attack speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Warwolf (Trebuchets have blast damage)\n• Privateers (Hulk line +25% attack speed)\n• Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
 //	Franks
 120151 "Cavalry civilization \n\n• Castles -15%/-25% cost in Castle/Imperial Age\n• Cavalry class, scout cavalry class, cavalry archer class units +20% hit points starting in Feudal Age\n• Farm upgrades free (Requires Mill) \n• Foragers +15% work rate\n• Can lend money for profit after researching Banking\n\n<b>Unique Unit : <b>\n• Throwing Axeman (Ranged infantry), Swiss Pikeman (Infantry strong vs cavalries and monks)\n\n<b>Unique Techs: <b>\n• Bearded Axe (Throwing Axeman +2 max range)\n• Chivalry (Stables +40% work rate)\n• Pavise (Archer line and Hand Cannoneers +3 melee armor, receive -2 damage from cavalry units)\n• Gendarmes d'ordonnance (Cavalries gain additional 1 HP and 1 HP generation per minute from each nearby unit of yours (maximum 20 stacks))\n\n<b>Team bonus: <b>\nKnight-line, Hei Guang Cavalry-line, Sipahi, Keshik, Mounted Samurai and Goguryeo Heavy Cavalry +2 LOS"
 //	Goths
@@ -112,7 +112,7 @@
 //	Hindustanis
 120169 "Camel and Gunpowder civilization \n\n• Villagers -15% cost\n• Camel Rider-Line units -16.67% reload time \n• Gunpowder units +1/+1P armor\n• Can build Caravanserai in Imperial Age\n• Technologies are free but researched 60% slower (except age upgrades, unit upgrades and Spies)\n\n<b>Unique Units:<b> \n• Ghulam (Infantry can deal spear damages), Imperial Camel (High-level Camel rider)\n\n<b>Unique Techs: <b>\n• Grand Trunk Road (All gold incomes +10% rate, trading fee reduced to 10%) \n• Shatagni (Hand cannon +2 max range)\n• Khanda Drills (Ghulams and Mansabdars +25% attack speed)\n• Sultans (Infantries/Cavalries/Ranged units +10/10/6 attack vs elephants)\n\n<b>Team bonus: <b>\nScout Cavalry line and Camel units +2 attack vs Buildings"
 //	Incas
-120170 "Infantry civilization \n\n• Military units -10%/25%/20%/25% food cost in Dark/Feudal/Castle/Imperial Age \n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age)\n• Barracks, Archery Ranges, Stables, Siege Workshop build 100% faster\n• Houses and Settlements support +5 population\n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +2 LOS\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Slingers (archer better combats with infantries)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack) \n• Fabric Shields (Kamayuks, Slingers and Champi Warrior +1 melee/pierce armor)\n• Couriers (Slingers, Eagle Warriors, Kamayuks and Xolotl Warriors +15% movement speed)\n• Quipu (Shrines +2 construction limit and can train Xolotl Warriors)\n\n<b>Team bonus: <b>\nStart with a free Llama"
+120170 "Infantry civilization \n\n• Military units -10%/25%/20%/25% food cost in Dark/Feudal/Castle/Imperial Age \n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age)\n• Barracks, Archery Ranges, Stables, Siege Workshop build 100% faster\n• Houses and Settlements support +5 population\n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +2 LOS\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Slingers (archer better combats with infantries)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack) \n• Fabric Shields (Kamayuks, Slingers and Champi Warrior +1 melee/pierce armor)\n• Couriers (Infantries and foot archers +6 line of sight)\n• Quipu (Monks -50% cost)\n\n<b>Team bonus: <b>\nStart with a free Llama"
 //	Magyars
 120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 1 garrisoned relics give +1 melee armor to Steppe Lancers (maximum +5)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n• Cavalry archers can enjoy Bloodlines and Husbandry for free\n\n<b>Unique Unit:<b> \n• Magyar Huszar (Light cavalry better combats with siege weapons)\n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food) \n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 //	Slavs
@@ -176,7 +176,7 @@
 //	Mapuche
 120207 "Cavalry and Counter-Units civilization\n\n• Foragers drop off +20% food\n• Settlements can train Spearman-line and Skirmishers\n• Infantry, Slingers and Skirmishers +5/10/15 HP in Feudal/Castle/Imperial Age\n• Mounted Units generate +3 gold when defeating military units\n• Enemy Castles are revealed on the map\n• Can research allies' Castle unique technologies (cannot be duplicated)\n\n<b>Unique Units:<b>\nKona (Cavalry), Bolas Rider (Mounted Archer)\n\n<b>Unique Techs:<b>\n• Malon (Bolas Riders, Slingers and Skirmishers deal pass through damage)\n• Butalmapu (Team Castle Unique Units and Bolas Riders cost -15%)\n\n<b>Team Bonus:<b>\nSpearman-line and Skirmishers +2 line of sight"
 //	Tupi
-120208 "Archer and Infantry civilization\n\n• Start with +25 of each resource\n• Villagers can garrison in Settlements\n• Fallen units return 15% of their cost\n• Archery Range and Barracks upgrades cost -50% food\n\n<b>Unique Units:<b>\nBlackwood Archer (Foot Archer), Ibirapema Warrior (Infantry)\n\n<b>Unique Techs:<b>\n• Caciques (Champi Warriors and Slingers attack +25% faster)\n• Curare (Foot Archers and Fortifications deal poison damage)\n\n<b>Team Bonus:<b>\nTowers and Castles provide +10 population space"
+120208 "Archer and Infantry civilization\n\n• Start with +25 of each resource\n• Villagers can garrison in Settlements\n• Fallen units return 15% of their cost\n• Archery Range and Barracks upgrades cost -50% food\n• Tree resource lasts +100% longer\n\n<b>Unique Units:<b>\nBlackwood Archer (Foot Archer), Ibirapema Warrior (Infantry)\n\n<b>Unique Techs:<b>\n• Caciques (Champi Warriors and Slingers attack +25% faster)\n• Curare (Foot Archers and Fortifications deal poison damage)\n\n<b>Team Bonus:<b>\nTowers and Castles provide +10 population space"
 
 
 500001 "Monsoon Navigation"
@@ -242,7 +242,7 @@
 500061 "Advanced Mercenary Contract"
 500062 "Taborites"
 500063 "Enclosure"
-500064 "Castle Network"
+500064 "Privateers"
 500065 "Kaunas Castle"
 500066 "Dacaogu"
 500067 "Ixitpla"
@@ -423,7 +423,7 @@
 501061 "Research Advanced Mercenary Contract (Mercenary Contract will spawn additionally 5 Condottieros)"
 501062 "Research Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)"
 501063 "Research Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)"
-501064 "Research Castle Network (Military units around towers, town centers and castles +10% attack speed)"
+501064 "Research Privateers (Hulk line +25% attack speed)"
 501065 "Research Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)"
 501066 "Research Dacaogu (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)"
 501067 "Research Ixitpla (Castle will produce one Jaguar Warrior for every 7 enemy land units killed)"
@@ -439,8 +439,8 @@
 501077 "Research Elephant Formation (Battle Elephants +100% area damage radius)"
 501078 "Research Incense Money (Each relic produces 30 wood and 30 food per minute)"
 501079 "Switch to training Xolotl Warrior"
-501080 "Research Couriers (Slingers, Eagle Warriors and Kamayuks +15% movement speed)"
-501081 "Research Quipu (Shrines +2 construction limit and can train Xolotl Warriors)"
+501080 "Research Couriers (Infantries and foot archers +6 line of sight)"
+501081 "Research Quipu (Monks -50% cost)"
 501082 "Research Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)"
 501083 "Research Apostle (Military units/monks can generate 3/6 gold per minute)"
 501084 "Research Hesychast (Monks +150% heal range and heal rate)"
@@ -604,7 +604,7 @@
 521061 "Research <b>Advanced Mercenary Contract<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMercenary Contract will spawn additionally 5 Condottieros."
 521062 "Research <b>Taborites<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nTaborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned."
 521063 "Research <b>Enclosure<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nFarmers -25% food production, -15 HP, but can produce gold equal to 27% food produced."
-521064 "Research <b>Castle Network<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMilitary units around towers, town centers and castles +10% attack speed."
+521064 "Research <b>Privateers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nHulk line +25% attack speed."
 521065 "Research <b>Kaunas Castle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nWatch Tower line continuously shoots arrows that ignore defense with lower attack."
 521066 "Research <b>Dacaogu<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nLand military units can loot food and gold equivalent to 10/4% of the value of killed enemies."
 521067 "Research <b>Ixitpla<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nCastle will produce one Jaguar Warrior for every 7 enemy land units killed."
@@ -620,8 +620,8 @@
 521077 "Research <b>Elephant Formation<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nBattle Elephants +100% area damage radius."
 521078 "Research <b>Incense Money<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nEach relic produces 30 wood and 30 food per minute."
 521079 "Switch to training Xolotl Warrior. Automatically spawn 1 Xolotl Warrior every 45 seconds."
-521080 "Research <b>Couriers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nSlingers, Eagle Warriors and Kamayuks +15% movement speed."
-521081 "Research <b>Quipu<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nShrines +2 construction limit and can train Xolotl Warriors."
+521080 "Research <b>Couriers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nInfantries and foot archers +6 line of sight."
+521081 "Research <b>Quipu<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMonks -50% cost."
 521082 "Research <b>Die Goldene Bulle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received."
 521083 "Research <b>Apostle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMilitary units/monks can generate 3/6 gold per minute."
 521084 "Research <b>Hesychast<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks +150% heal range and heal rate."

@@ -617,6 +617,7 @@ extern const int SteppeLancerTechID = 714;
 extern const int EliteSteppeLancerTechID = 715;
 extern const int WingedHussarTechID = 786;
 extern const int GambesonsTechID = 875;
+extern const int CarrackTechID = 904;
 extern const int DemolitionShipTechID = 905;
 extern const int FishingLinesTechID = 906;
 extern const int CarvelHullTechID = 907;

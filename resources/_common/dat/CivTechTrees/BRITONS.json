@@ -2980,7 +2980,7 @@
             "Name": "Carrack",
             "Name String ID": 14525,
             "Node ID": 2628,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 567,
             "Prerequisite IDs": [
@@ -5437,7 +5437,7 @@
             "Help String ID": 600064,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Castle Network",
+            "Name": "Privateers",
             "Name String ID": 500064,
             "Node ID": 3016,
             "Node Status": "ResearchedCompleted",
