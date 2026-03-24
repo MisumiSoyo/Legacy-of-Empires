@@ -1660,7 +1660,7 @@
             "Name": "Hussar",
             "Name String ID": 14661,
             "Node ID": 441,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "UnitUpgrade",
             "Picture Index": 103,
             "Prerequisite IDs": [

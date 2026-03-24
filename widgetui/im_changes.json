@@ -1,0 +1,15 @@
+{
+    "changes":
+    [
+        {
+            "type": "Units",
+            "icon_name": "UnitIcons75750730",
+            "source_file": "textures/ingame/units/757_50730.dds"
+        },
+        {
+            "type": "Units",
+            "icon_name": "UnitIcons75850730",
+            "source_file": "textures/ingame/units/758_50730.dds"
+        }
+  ]
+}

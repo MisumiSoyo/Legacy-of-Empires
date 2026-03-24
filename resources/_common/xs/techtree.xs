@@ -451,7 +451,6 @@ void EffectFunction10001(int playerId = -1)
         case cArmenians:
         {
             EnableTech(playerId, TwoManSawTechID);
-            EnableTech(playerId, HussarTechID);
             break;
         }
         case cGeorgians:

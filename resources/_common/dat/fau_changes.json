@@ -812,7 +812,7 @@
             "tech_id": 3169,
             "building_id": 109,
             "Name": "Jinete Tactics",
-            "RequiredAge": 4
+            "RequiredAge": 3
         },
         {
             "note": "西班牙标枪骑兵",
@@ -847,12 +847,12 @@
             "RequiredAge": 4
         },
         {
-            "note": "探险家",
+            "note": "西班牙大方阵",
             "civilizations": "Spanish",
             "tech_id": 3168,
             "building_id": 109,
-            "Name": "Explorer",
-            "RequiredAge": 3
+            "Name": "Spanish Phalanx",
+            "RequiredAge": 4
         },
         {
             "note": "马里, 高丽, 拜占庭, 瞿折罗, 越南获得鼓风炉",
@@ -1159,16 +1159,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 罗马, 亚美尼亚启用翼骑兵",
-            "civilizations": ["Chinese", "Romans", "Armenians"],
+            "note": "中国, 罗马启用翼骑兵",
+            "civilizations": ["Chinese", "Romans"],
             "tech_id": 428,
             "building_id": 101,
             "Name": "Hussar",
             "RequiredAge": 4
         },
         {
-            "note": "中国, 罗马, 亚美尼亚启用翼骑兵",
-            "civilizations": ["Chinese", "Romans", "Armenians"],
+            "note": "中国, 罗马启用翼骑兵",
+            "civilizations": ["Chinese", "Romans"],
             "unit_id": 441,
             "building_id": 101,
             "Name": "Hussar",

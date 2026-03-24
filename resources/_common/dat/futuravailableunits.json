@@ -35008,12 +35008,12 @@
                     },
                     {
                         "Name": "Jinete Tactics",
-                        "RequiredAge": 4,
+                        "RequiredAge": 3,
                         "ID": 3169
                     },
                     {
-                        "Name": "Explorer",
-                        "RequiredAge": 3,
+                        "Name": "Spanish Phalanx",
+                        "RequiredAge": 4,
                         "ID": 3168
                     }
                 ],
@@ -47502,11 +47502,6 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Hussar",
-                        "RequiredAge": 4,
-                        "ID": 428
                     }
                 ],
                 "Units": [
@@ -47534,11 +47529,6 @@
                         "ID": 569,
                         "Name": "Paladin",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Hussar",
-                        "RequiredAge": 4,
-                        "ID": 441
                     }
                 ]
             },

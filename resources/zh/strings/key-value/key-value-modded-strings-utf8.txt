@@ -102,7 +102,7 @@
 //	凯尔特
 120162 "步兵和攻城武器文明\n\n• 步兵在黑暗/封建/城堡/帝王时代 +5%/+10%/+15%/+20% 移动速度\n• 伐木工 +15% 工作效率\n• 攻城武器 +25% 攻击速度\n• 凯尔特单位视野内的绵羊无法被捕获\n• 步兵和骑兵系单位更难被招降\n\n<b>独特单位：<b> \n• 靛蓝突袭者 (快速步兵), 凯尔特猎手 (占用 2 人口的步弓手)\n\n<b>独特科技：<b> \n• 堡垒 (城堡和箭塔攻击速度 +33%；城堡每分钟可以治疗 7 格范围内的友方步兵 30 生命值(不叠加))\n• 凯尔特狂暴 (攻城武器 +40% 生命值)\n\n<b>团队加成：<b> \n攻城武器厂 +20% 工作效率"
 //	西班牙
-120163 "火药和僧侣文明\n\n• 村民建造速度 +30%(对游牧模式的首个城镇中心无效)\n• 铁匠铺科技升级无需黄金\n• 炮舰弹道速度增加到7并且可受益于弹道学\n• 火药单位 +18% 攻击速度\n• 每研究一个科技可获得20黄金(升级时代除外)\n• 可提前一个时代使用标枪骑兵和精锐标枪骑兵, 并且升级 -50% 食物费用\n\n<b>独特单位：<b>\n• 西班牙征服者 (马上火枪手), 传教士 (马上僧侣), 马尼拉大帆船 (武装贸易船), 军犬 (高速士兵)\n\n<b>独特科技：<b> \n• 宗教法庭 (僧侣招降单位/建筑时间分别 -1/-6秒，招降建筑概率 +5%，传教士招降距离 +1)\n• 霸权 (村民 +40生命值，+6攻击力，+2护甲/盾牌)\n• 探险家 (你可以获取额外黄金, 相当于盟友和敌人从现在开始获取的黄金总量的 1.5%)\n• 游击战术 (标枪骑兵 +2 射程)\n\n<b>团队加成：<b> \n贸易单位产生的黄金 +25%"
+120163 "火药和僧侣文明\n\n• 村民建造速度 +30%(对游牧模式的首个城镇中心无效)\n• 铁匠铺科技升级无需黄金\n• 炮舰弹道速度增加到7并且可受益于弹道学\n• 火药单位 +18% 攻击速度\n• 每研究一个科技可获得20黄金(升级时代除外)\n• 可提前一个时代使用标枪骑兵和精锐标枪骑兵, 并且升级 -50% 食物费用\n\n<b>独特单位：<b>\n• 西班牙征服者 (马上火枪手), 传教士 (马上僧侣), 马尼拉大帆船 (武装贸易船), 军犬 (高速士兵)\n\n<b>独特科技：<b> \n• 宗教法庭 (僧侣招降单位/建筑时间分别 -1/-6秒，招降建筑概率 +5%，传教士招降距离 +1)\n• 霸权 (村民 +40生命值，+6攻击力，+2护甲/盾牌)\n• 游击战术 (标枪骑兵 +2 射程)\n• 西班牙大方阵 (长矛兵系单位可在 0.5 范围内造成 33% 溅射伤害)\n\n<b>团队加成：<b> \n贸易单位产生的黄金 +25%"
 //	阿兹特克
 120164 "步兵和僧侣文明\n\n• 村民携带量 +3\n• 军事单位训练速度 +15%\n• 每研究一项修道院科技, 僧侣生命值 +5\n• 游戏开始时获得 50 黄金\n• 封建时代起长矛兵系, 掷矛手系和鹰斥候系单位击杀敌人后可晋升为高一级的单位\n\n<b>独特单位：<b>\n• 豹勇士 (克制步兵的步兵)\n\n<b>独特科技：<b> \n• 掷矛器(掷矛手攻击力 +1，射程 +1)\n• 荣冠战争(步兵 +4 攻击力)\n• 祭祀仪式(每击杀 7 名敌方陆地单位, 城堡会产出一名豹勇士)\n• 夸乌塞洛特 (鹰斥候系单位击杀敌人可提升 1 攻击力 (最多 +4); 豹勇士击杀敌人提升的攻击力 +1)\n\n<b>团队加成：<b> \n圣物产生黄金 +33%"
 //	玛雅
@@ -269,7 +269,7 @@
 500084 "静修士"
 500085 "维利奇卡盐矿"
 500086 "游击战术"
-500087 "探险家"
+500087 "西班牙大方阵"
 500088 "萨格里什学校"
 500089 "西哈弓臂"
 500090 "招募雇佣兵"
@@ -450,7 +450,7 @@
 501084 "研究静修士(僧侣 +150% 治疗范围和治疗速度)"
 501085 "研究维利奇卡盐矿(已开采和未来开采的石矿会额外产出相当于 80% 石料产量的食物)"
 501086 "研究游击战术(标枪骑兵 +2 射程)"
-501087 "研究探险家(你可以获取额外黄金, 相当于盟友和敌人从现在开始获取的黄金总量的 1.5%)"
+501087 "研究西班牙大方阵(长矛兵系单位可在 0.5 范围内造成 33% 溅射伤害)"
 501088 "研究萨格里什学校(船坞 +80% 工作效率)"
 501089 "研究西哈弓臂(射手, 骑射手和火枪手移除攻击延迟, 并且 -15% 黄金费用)"
 501090 "招募一支雇佣兵小队, 价值和兵种基于你的运气"
@@ -630,8 +630,8 @@
 521083 "研究<b>使徒<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n军事单位/僧侣每分钟产生 3/6 黄金。"
 521084 "研究<b>静修士<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n僧侣 +150% 治疗范围和治疗速度。"
 521085 "研究<b>维利奇卡盐矿<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n已开采和未来开采的石矿会额外产出相当于 80% 石料产量的食物。"
-521086 "研究<b>游击战术<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n标枪骑兵 +2 射程。"
-521087 "研究<b>探险家<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n你可以获取额外黄金, 相当于盟友和敌人从现在开始获取的黄金总量的 1.5%。"
+521086 "研究<b>游击战术<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n标枪骑兵 +2 射程。"
+521087 "研究<b>西班牙大方阵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n长矛兵系单位可在 0.5 范围内造成 33% 溅射伤害。"
 521088 "研究<b>萨格里什学校<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n船坞 +80% 工作效率。"
 521089 "研究<b>西哈弓臂<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n射手, 骑射手和火枪手移除攻击延迟, 并且 -15% 黄金费用。"
 521090 "招募一支雇佣兵小队 (<cost>, 15 <MATERIAL=MPIconGoodCPU,1>)\n价值和兵种取决于你的运气。每 90 秒可积累 1 次招募次数。"
@@ -960,7 +960,7 @@
 
 721022 "建造<b>小艇<b> (<cost>)\n美洲独特战船, 能远程攻击。可随时代自动升级。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.6 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\n主类: 战船; 标签: 舰船。\n攻击加成: +6 vs 舰船, +6 vs 渔船, +3 vs 冲车/巨型投石机, +3 vs 建筑\n<MATERIAL=TechIconsT031CastleAge,1> +15生命值, +1攻击力, +1攻击力 vs 舰船, +1攻击力 vs 渔船\n<MATERIAL=TechIconsT032ImperialAge,1> +15生命值, +1攻击力, +1攻击力 vs 舰船, +1攻击力 vs 渔船"
 
-721023 "生产<b>签军<b> (总<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\n女真独特步兵, 在城镇中心以 3 名为单位训练。击杀村民可获得 25 食物。非常容易被僧侣转化。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +3 vs 标准建筑\n\n<MATERIAL=TechIconsT030FeudalAge,1> <MATERIAL=TechIconsT031CastleAge,1> <MATERIAL=TechIconsT032ImperialAge,1> +0.1 移动速度"
+721023 "生产<b>签军<b> (总<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\n女真独特步兵, 在城镇中心以 3 名为单位训练。击杀村民可获得 25 食物。非常容易被僧侣转化。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.05 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +3 vs 标准建筑\n\n<MATERIAL=TechIconsT030FeudalAge,1> <MATERIAL=TechIconsT031CastleAge,1> <MATERIAL=TechIconsT032ImperialAge,1> +0.1 移动速度"
 
 721024 "生产<b>骆驼长矛骑兵<b> (<cost>) \n萨拉森独特重装骆驼骑兵, 拥有0.75格攻击范围。\n<GREY><i>升级: 攻击, 护甲 (铁匠铺); 速度, 生命值 (马厩); 生产速度 (城堡); 提升抵抗僧侣的能力 (修道院) 。<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 骑兵; 标签: 骆驼, 独特单位; 训练时间: 22; 移动速度: 1.32; 攻击间隔: 2; 视野: 5; 搜索范围: 4。\n攻击加成: +5 vs 骑兵, +4 vs 骆驼"
 
