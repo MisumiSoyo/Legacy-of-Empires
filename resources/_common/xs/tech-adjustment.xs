@@ -75,3 +75,34 @@ void EffectFunction10090(int playerId = -1)
     ModArmor(playerId, FireLancerID, cDamageClassMelee, 1);
     ModArmor(playerId, EliteFireLancerID, cDamageClassMelee, 1);
 }
+
+
+//  10091 - Teutons Armor Bonus Adjustment
+void EffectFunction10091(int playerId = -1)
+{
+    int i = 0;
+    int TrainLocation = 0;
+    for (i = NewObjectStartID; <= TotalObjects)
+    {
+        TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
+        if ((TrainLocation == BarracksID) || (TrainLocation == StableID))
+            ModArmor(playerId, i, cDamageClassMelee, 1);
+    }
+
+    ModArmor(playerId, KeshikID, cDamageClassMelee, 1);
+    ModArmor(playerId, EliteKeshikID, cDamageClassMelee, 1);
+}
+
+
+//  10092 - Malians Armor Bonus Adjustment
+void EffectFunction10092(int playerId = -1)
+{
+    int i = 0;
+    int TrainLocation = 0;
+    for (i = NewObjectStartID; <= TotalObjects)
+    {
+        TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
+        if (TrainLocation == BarracksID)
+            ModArmor(playerId, i, cDamageClassPierce, 1);
+    }
+}

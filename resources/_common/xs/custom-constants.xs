@@ -59,6 +59,7 @@ extern const int cAttributeTechEffectTime = 713;
 
 
 //  Custom Units' IDs
+extern const int NewObjectStartID = 4001;
 extern const int TotalObjects = 4156;
 extern const int TimerBuildingID = 4001;
 extern const int TimerEventBuildingID = 4002;

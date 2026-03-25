@@ -250,6 +250,30 @@
             "name": "软甲改动",
             "effect_id": 886,
             "function_id": 10090
+        },
+        {
+            "type": "adjustment",
+            "name": "条顿兵营和马厩单位护甲加成补充",
+            "effect_id": [333, 334],
+            "function_id": 10091
+        },
+        {
+            "type": "adjustment",
+            "name": "马里兵营单位盾牌加成补充",
+            "effect_id": [618, 619, 620],
+            "function_id": 10092
+        },
+        {
+            "type": "add",
+            "name": "当佐兵投掷物 + 铁匠铺攻击科技和化学",
+            "effect_id": [47, 67, 68],
+            "commands": [4, 4115, -1, 9, 1025]
+        },
+        {
+            "type": "add",
+            "name": "当佐兵投掷物 + 鼓风炉",
+            "effect_id": [75],
+            "commands": [4, 4115, -1, 9, 1026]
         }
     ]
 }
