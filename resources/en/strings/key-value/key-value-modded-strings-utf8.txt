@@ -7,9 +7,11 @@
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
 8298 "Research Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)"
 8318 "Research Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)"
+8322 "Research Sappers (Villagers +15 attack vs buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower)"
 8342 "Research Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)"
 8351 "Research Hussite Reforms (Monks and Monastery technologies consume food instead of gold; Each existing monk refunds 50 gold)"
 8428 "Research Atheism (Relic and Wonder games +100 years; Enemy relics -50% incoming golds and foods; Tarkans can pick up and destroy relics to upgrade to Chanyu, and can't be converted; Chanyus +200 attack vs Monastery)"
+8450 "Research Gambesons (Militia-line and Fire Lancers +1 melee/pierce armor)"
 8473 "Research Tuntian (Each military unit produces 3 food per minute)"
 
 
@@ -62,11 +64,15 @@
 
 28318 "Research <b>Logistica<b> (<cost>, 50 <MATERIAL=MPIconGoodCPU,1>)\nCataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry."
 
+28322 "Research <b>Sappers<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nVillagers +15 attack vs Buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower."
+
 28342 "Research <b>Burgundian Vineyards<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nFarmers generate 1 gold per 25 sec in addition to food."
 
 28351 "Research <b>Hussite Reforms<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks and Monastery technologies consume food instead of gold; Each existing monk refunds 50 gold."
 
 28428 "Research <b>Atheism<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nRelic and Wonder games +100 years; Enemy relics -50% incoming golds and foods; Tarkans can pick up and destroy relics to upgrade to Chanyu, and can't be converted; Chanyus +200 attack vs Monastery."
+
+28450 "Research <b>Gambesons<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nMilitia-line and Fire Lancers +1 melee/pierce armor."
 
 28473 "Research <b>Tuntian<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nEach military unit produces 3 food per minute."
 
@@ -1311,12 +1317,3 @@
 1021053 "Recruit <b>Shotel Warrior<b> (cost: 85 Olive Oil) \nEthiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.2; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +2 vs Eagle Warriors."
 
 1021054 "Recruit <b>Elite Shotel Warrior<b> (cost: 85 Olive Oil) \nEthiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.2; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +2 vs Eagle Warriors, +1 vs Buildings."
-
-
-2000001 "Sappers"
-
-
-2001001 "Research Sappers (Villagers +15 attack vs buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower)"
-
-
-2021001 "Research <b>Sappers<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nVillagers +15 attack vs Buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower."

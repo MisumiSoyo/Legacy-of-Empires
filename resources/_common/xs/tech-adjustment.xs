@@ -61,3 +61,17 @@ void EffectFunction10083(int playerId = -1)
     SetAttribute(playerId, SavarID, cAreaDamage, -5);
     SetAttribute(playerId, GuanNingCavalryID, cAreaDamage, -5);
 }
+
+
+//  10090 - Gambeson Adjustment
+void EffectFunction10090(int playerId = -1)
+{
+    ModArmor(playerId, MilitiaID, cDamageClassMelee, 1);
+    ModArmor(playerId, ManAtArmsID, cDamageClassMelee, 1);
+    ModArmor(playerId, LongSwordmanID, cDamageClassMelee, 1);
+    ModArmor(playerId, TwoHandedSwordmanID, cDamageClassMelee, 1);
+    ModArmor(playerId, ChampionID, cDamageClassMelee, 1);
+    ModArmor(playerId, LegionaryID, cDamageClassMelee, 1);
+    ModArmor(playerId, FireLancerID, cDamageClassMelee, 1);
+    ModArmor(playerId, EliteFireLancerID, cDamageClassMelee, 1);
+}
