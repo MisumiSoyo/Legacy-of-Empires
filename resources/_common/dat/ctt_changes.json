@@ -348,7 +348,7 @@
             "note": "马尼拉大帆船",
             "action": "add",
             "civ_id": "SPANISH",
-            "Age ID": 3,
+            "Age ID": 2,
             "Building ID": 45,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800006,
