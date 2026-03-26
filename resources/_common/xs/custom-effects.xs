@@ -1234,17 +1234,17 @@ void EffectFunction10094(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkValue2, 100);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTask(cMonkWithRelicClass, cTaskTypeAura, cInfantryClass, playerId);
-    xsTask(cMonkWithRelicClass, cTaskTypeAura, cCavalryClass, playerId);
-    xsTask(cMonkWithRelicClass, cTaskTypeAura, cPhalanxClass, playerId);
-    xsTask(cMonkWithRelicClass, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsTask(cInfantryClass, cTaskTypeAura, cMonkWithRelicClass, playerId);
 
     xsTaskAmount(cTaskAttrSearchWaitTime, 116.000002);
-    ApplyToAllMilitaryTargets(playerId, cMonkWithRelicClass, cTaskTypeAura);
+    xsTask(cArcherClass, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    xsTask(cInfantryClass, cTaskTypeAura, cMonkWithRelicClass, playerId);
     xsTaskAmount(cTaskAttrSearchWaitTime, 117.000002);
-    ApplyToAllMilitaryTargets(playerId, cMonkWithRelicClass, cTaskTypeAura);
+    xsTask(cArcherClass, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    xsTask(cInfantryClass, cTaskTypeAura, cMonkWithRelicClass, playerId);
     xsResetTaskAmount();
-    LaunchAura(playerId, cMonkWithRelicClass);
+    LaunchAura(playerId, cInfantryClass, true);
+    LaunchAura(playerId, cArcherClass, true);
 
     ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 5);
     ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 5);
@@ -1323,7 +1323,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 216  2026.03.26");
+    xsChatData("Build: 217  2026.03.26");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

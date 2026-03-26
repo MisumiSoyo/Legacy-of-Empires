@@ -178,7 +178,7 @@
 //	Khitans
 120202 "Infantry and Cavalry civilization\n\n• Shepherds and herders produce +5/10/15% food at Feudal/Castle/Imperial Age\n• Melee attack upgrade effects are doubled\n• Skirmishers, Spearman-, and Scout Cavalry-line train and upgrade +15% faster\n• Heavy Cavalry Archer upgrade available in Castle Age and costs -50%\n\n<b>Unique Units:<b>\n• Liao Dao (Infantry), Mounted Trebuchet (Siege Cavalry)\n\n<b>Unique Techs:<b>\n• Lamellar Armor (Infantry and Skirmishers reflect 25% melee damage back to the attacker)\n• Ordo Cavalry (Cavalry regenerates 150% HP per minute in combat)\n• Dacaogu (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)\n\n<b>Team Bonus:<b>\nInfantry +2 attack vs ranged soldiers"
 //	Muisca
-120206 "Archer and Monk civilization\n\n• Advancing to the next Age costs -50% gold\n• Settlements cost -25% and heal nearby units\n• Champi Warriors and Archery Range Units +1/2/3 melee armor in Feudal/Castle/Imperial Age\n• Monks regain faith +50% faster\n• Caravan, Guilds free\n\n<b>Unique Units:<b>\nGuecha Warrior (Skirmisher), Temple Guard (Infantry)\n\n<b>Unique Techs:<b>\n• Herbalism (Archer-line and Champi Warriors move +15% faster)\n• Huaracas (Slingers +1 range; train +25% faster)\n• El Dorado (Monk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby military units, and +1 attack for Infantries and Cavalries (stackable))\n• Sacred Ritual (Infantries regenerate 2 HP from each attack)\n\n<b>Team Bonus:<b>\nNatural gold sources last +15% longer"
+120206 "Archer and Monk civilization\n\n• Advancing to the next Age costs -50% gold\n• Settlements cost -25% and heal nearby units\n• Champi Warriors and Archery Range Units +1/2/3 melee armor in Feudal/Castle/Imperial Age\n• Monks regain faith +50% faster\n• Caravan, Guilds free\n\n<b>Unique Units:<b>\nGuecha Warrior (Skirmisher), Temple Guard (Infantry)\n\n<b>Unique Techs:<b>\n• Herbalism (Archer-line and Champi Warriors move +15% faster)\n• Huaracas (Slingers +1 range; train +25% faster)\n• El Dorado (Monk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable))\n• Sacred Ritual (Infantries regenerate 2 HP from each attack)\n\n<b>Team Bonus:<b>\nNatural gold sources last +15% longer"
 //	Mapuche
 120207 "Cavalry and Counter-Units civilization\n\n• Foragers drop off +20% food\n• Settlements can train Spearman-line and Skirmishers\n• Infantry, Slingers and Skirmishers +5/10/15 HP in Feudal/Castle/Imperial Age\n• Mounted Units generate +3 gold when defeating military units\n• Enemy Castles are revealed on the map\n• Can research allies' Castle unique technologies (cannot be duplicated)\n\n<b>Unique Units:<b>\nKona (Cavalry), Bolas Rider (Mounted Archer)\n\n<b>Unique Techs:<b>\n• Malon (Bolas Riders, Slingers and Skirmishers deal pass through damage)\n• Butalmapu (Team Castle Unique Units and Bolas Riders cost -15%)\n\n<b>Team Bonus:<b>\nSpearman-line and Skirmishers +2 line of sight"
 //	Tupi
@@ -549,7 +549,7 @@
 501178 "Research Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)"
 501179 "Research Supplies (All units and buildings -10% cost)"
 501180 "Research Sacred Ritual (Infantries regenerate 2 HP from each attack)"
-501181 "Research El Dorado (Monk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby military units, and +1 attack for Infantries and Cavalries (stackable))"
+501181 "Research El Dorado (Monk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable))"
 501182 "Research Tamoios (Upgrade all your infantries on map to Elite Ibirapema Warriors)"
 
 
@@ -733,7 +733,7 @@
 521178 "Research <b>Silat Melayu<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nKarambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death."
 521179 "Research <b>Supplies<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nAll units and buildings -10% cost."
 521180 "Research <b>Sacred Ritual<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantries regenerate 2 HP from each attack."
-521181 "Research <b>El Dorado<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby military units, and +1 attack for Infantries and Cavalries (stackable)."
+521181 "Research <b>El Dorado<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable)."
 521182 "Research <b>Tamoios<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade all your infantries on map to Elite Ibirapema Warriors."
 
 
