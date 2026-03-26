@@ -274,6 +274,25 @@
             "name": "当佐兵投掷物 + 鼓风炉",
             "effect_id": [75],
             "commands": [4, 4115, -1, 9, 1026]
+        },
+        {
+            "type": "add",
+            "name": "大篷车 + 马尼拉大帆船",
+            "effect_id": 482,
+            "commands": [[5, 4157, -1, 5, 1.2],
+                         [5, 4157, -1, 13, 1.2]]
+        },
+        {
+            "type": "adjustment",
+            "name": "马尼拉大帆船 + 铁匠铺科技",
+            "effect_id": [192, 193, 194],
+            "function_id": 10097
+        },
+        {
+            "type": "adjustment",
+            "name": "马尼拉大帆船 + 化学",
+            "effect_id": 47,
+            "function_id": 10098
         }
     ]
 }

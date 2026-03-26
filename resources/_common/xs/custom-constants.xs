@@ -60,7 +60,7 @@ extern const int cAttributeTechEffectTime = 713;
 
 //  Custom Units' IDs
 extern const int NewObjectStartID = 4001;
-extern const int TotalObjects = 4156;
+extern const int TotalObjects = 4157;
 extern const int TimerBuildingID = 4001;
 extern const int TimerEventBuildingID = 4002;
 extern const int HobelarID = 4003;
@@ -162,6 +162,7 @@ extern const int EliteKhevsuretiWarriorID = 4150;
 extern const int WubaoID = 4151;
 extern const int ConscriptedArmyID = 4152;
 extern const int ConscriptedArmy2ID = 4153;
+extern const int ManilaGalleonID = 4157;
 
 
 //  Newly added tech IDs
@@ -171,14 +172,17 @@ extern const int MilitaryTrainingTechID = 3004;
 extern const int TitheTechID = 3005;
 extern const int HobelarTechID = 3014;
 extern const int EliteHobelarTechID = 3015;
-extern const int CastleNetworkTechID = 3016;
+extern const int PrivateersTechID = 3016;
 extern const int EnclosureTechID = 3017;
+extern const int CouriersTechID = 3021;
 extern const int TownDefenseTechID = 3022;
 extern const int SiegeTrainingTechID = 3024;
 extern const int PaviseTechID = 3031;
 extern const int GendarmesdOrdonnanceTechID = 3032;
 extern const int FoederatiArmyTechID = 3033;
 extern const int GreuthungiCavalryTechID = 3060;
+extern const int SacredRitualTechID = 3068;
+extern const int ManilaGalleonTechID = 3069;
 extern const int DieGoldeneBulleTechID = 3071;
 extern const int AccoladeTechID = 3072;
 extern const int IkkoIkkiTechID = 3079;
@@ -198,6 +202,7 @@ extern const int SilkRoadMercenaryContractTechID = 3112;
 extern const int EliteMercenaryTechID = 3113;
 extern const int PolutasvarfTechID = 3114;
 extern const int GoldenHornTowerTechID = 3115;
+extern const int QuipuTechID = 3116;
 extern const int VeteranParthianCavalryArcherTechID = 3118;
 extern const int EliteParthianCavalryArcherTechID = 3119;
 extern const int SatrapTechID = 3121;
@@ -233,6 +238,8 @@ extern const int SagresSchoolTechID = 3237;
 extern const int CartaRegiaTechID = 3238;
 extern const int HeavySpearTechID = 3241;
 extern const int AbharaElephantTechID = 3242;
+extern const int ElDoradoTechID = 3249;
+extern const int TamoiosTechID = 3250;
 extern const int EliteSofaTechID = 3255;
 extern const int SaharaCaravanRouteTechID = 3256;
 extern const int PoisonedArrowsTechID = 3257;

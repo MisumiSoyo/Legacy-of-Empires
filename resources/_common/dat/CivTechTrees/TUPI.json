@@ -4086,11 +4086,11 @@
             "Age ID": 3,
             "Building ID": 209,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 2100001,
+            "Help String ID": 107322,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
             "Name": "Sappers",
-            "Name String ID": 2000001,
+            "Name String ID": 17322,
             "Node ID": 321,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
@@ -5253,36 +5253,6 @@
             "Use Type": "Tech"
         },
         {
-            "Age ID": 4,
-            "Building ID": 82,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600179,
-            "Link ID": 379,
-            "Link Node Type": "BuildingTech",
-            "Name": "Supplies",
-            "Name String ID": 500179,
-            "Node ID": 3426,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 0,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
             "Age ID": 3,
             "Building ID": 2556,
             "Draw Node Type": "UnitTech",
@@ -5385,6 +5355,36 @@
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 0,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600182,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Tamoios",
+            "Name String ID": 500182,
+            "Node ID": 3250,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
             "Prerequisite IDs": [
                 0,
                 0,

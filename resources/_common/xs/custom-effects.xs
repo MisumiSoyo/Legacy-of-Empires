@@ -1191,7 +1191,7 @@ void EffectFunction10074(int playerId = -1)
 }
 
 
-// 10081 - C-Bonus, infantry generates gold from attacking farms
+//  10081 - C-Bonus, infantry generates food from attacking farms
 void EffectFunction10081(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -1206,13 +1206,124 @@ void EffectFunction10081(int playerId = -1)
 }
 
 
+//  10093 - Sacred Ritual
+void EffectFunction10093(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000008);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrWorkValue1, 120);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+    ApplyToAllPlayerTargets(playerId, cInfantryClass, cTaskTypeStinger);
+    xsTaskAmount(cTaskAttrWorkValue1, 60);
+    ApplyToAllPlayerTargets(playerId, IbirapemaWarriorID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteIbirapemaWarriorID, cTaskTypeStinger);
+    xsResetTaskAmount();
+    LaunchStinger(playerId, cInfantryClass);
+}
+
+
+//  10094 - El Dorado
+void EffectFunction10094(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000002);
+    xsTaskAmount(cTaskAttrWorkRange, 5);
+    xsTaskAmount(cTaskAttrWorkValue1, 100);
+    xsTaskAmount(cTaskAttrWorkValue2, 100);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, cPhalanxClass, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, cScoutCavalryClass, playerId);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 116.000002);
+    ApplyToAllMilitaryTargets(playerId, cMonkWithRelicClass, cTaskTypeAura);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 117.000002);
+    ApplyToAllMilitaryTargets(playerId, cMonkWithRelicClass, cTaskTypeAura);
+    xsResetTaskAmount();
+    LaunchAura(playerId, cMonkWithRelicClass);
+
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 5);
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 5);
+    ModAttribute(playerId, cMonkWithRelicClass, cRegenerationRate, 60);
+}
+
+
+//  10095 - Khazar Lancers
+void EffectFunction10095(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrWorkValue2, 3);
+    xsTaskAmount(cTaskAttrOwnerType, 0);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000005);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTaskAmount(cTaskAttrWorkValue1, -60);
+    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
+    xsTaskAmount(cTaskAttrWorkValue1, -1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000002);
+    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
+    xsTaskAmount(cTaskAttrWorkValue1, -0.15);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5.000003);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
+    xsResetTaskAmount();
+    LaunchStinger(playerId, SteppeLancerID);
+    LaunchStinger(playerId, EliteSteppeLancerID);
+}
+
+
+//  10096 - Gendarmes d'ordonnance
+void EffectFunction10096(int playerId = -1)
+{
+    int i = 0;
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000002);
+    xsTaskAmount(cTaskAttrWorkRange, 7);
+    xsTaskAmount(cTaskAttrWorkValue2, 20);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTaskAmount(cTaskAttrWorkValue1, 20);
+    xsTaskAmount(cTaskAttrAutoSearch, 0);
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+        {
+            xsTask(cCavalryClass, cTaskTypeAura, i, playerId);
+            xsTask(cScoutCavalryClass, cTaskTypeAura, i, playerId);
+            if  (i == 900)
+                xsTaskAmount(cTaskAttrAutoSearch, 1);
+        }
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000001);
+    xsTaskAmount(cTaskAttrWorkValue1, 20);
+    xsTaskAmount(cTaskAttrAutoSearch, 0);
+    for (i = 900; <= 964)
+        if (isMilitaryClass(i))
+        {
+            xsTask(cCavalryClass, cTaskTypeAura, i, playerId);
+            xsTask(cScoutCavalryClass, cTaskTypeAura, i, playerId);
+            if  (i == 900)
+                xsTaskAmount(cTaskAttrAutoSearch, 1);
+        }
+    xsResetTaskAmount();
+    LaunchAura(playerId, cCavalryClass, true);
+    LaunchAura(playerId, cScoutCavalryClass, true);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 215  2026.03.25");
+    xsChatData("Build: 216  2026.03.26");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -41,7 +41,7 @@ void FoederatiArmyInit(int playerId = -1)
 
 
 //  10008 - Foederati Army Kill Effect
-void EffectFunction10084(int playerId = -1)
+void EffectFunction10008(int playerId = -1)
 {
     int i = 0;
     int n = xsGetNumPlayers();
@@ -584,6 +584,28 @@ void GenitourAdjustment(int playerId = -1)
     SetAttribute(playerId, GenitourID, cHotkeyId, QHotkeyID);
     SetAttribute(playerId, EliteGenitourID, cTrainButton, 21);
     SetAttribute(playerId, EliteGenitourID, cHotkeyId, QHotkeyID);
+}
+
+
+//  10097 - Manila Galleon + Blacksmith techs
+void EffectFunction10097(int playerId = -1)
+{
+    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
+    ModAttribute(playerId, ManilaGalleonID, cLineOfSight, 1);
+    ModAttribute(playerId, ManilaGalleonID, cMaxRange, 1);
+
+    if (isResearched(playerId, ManilaGalleonTechID))
+        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
+}
+
+
+//  10098 - Manila Galleon + Chemistry
+void EffectFunction10098(int playerId = -1)
+{
+    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
+
+    if (isResearched(playerId, ManilaGalleonTechID))
+        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
 }
 
 
