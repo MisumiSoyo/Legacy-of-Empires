@@ -2738,7 +2738,7 @@
             "Name": "Plate Mail Armor",
             "Name String ID": 17077,
             "Node ID": 77,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 64,
             "Prerequisite IDs": [

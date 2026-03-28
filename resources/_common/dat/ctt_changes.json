@@ -5438,20 +5438,23 @@
         {
             "note": "魏获得冠军剑士",
             "action": "modify",
+            "civ_id": "WEI",
             "Node ID": [567],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "魏获得软甲, 双人锯, 工兵",
+            "note": "魏获得软甲, 双人锯, 工兵, 步兵钢甲",
             "action": "modify",
-            "Node ID": [221, 321, 875],
+            "civ_id": "WEI",
+            "Node ID": [77, 221, 321, 875],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
         {
             "note": "女真获得步兵钢甲",
             "action": "modify",
+            "civ_id": "JURCHENS",
             "Node ID": [77],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
@@ -5459,6 +5462,7 @@
         {
             "note": "达罗毗荼获得轮作",
             "action": "modify",
+            "civ_id": "DRAVIDIANS",
             "Node ID": [12],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"

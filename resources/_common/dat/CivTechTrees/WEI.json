@@ -1359,7 +1359,7 @@
             "Name": "Champion",
             "Name String ID": 14469,
             "Node ID": 567,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 72,
             "Prerequisite IDs": [
@@ -1538,7 +1538,7 @@
             "Name": "Gambesons",
             "Name String ID": 17450,
             "Node ID": 875,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 116,
             "Prerequisite IDs": [
@@ -2648,7 +2648,7 @@
             "Name": "Plate Mail Armor",
             "Name String ID": 17077,
             "Node ID": 77,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 64,
             "Prerequisite IDs": [
@@ -4240,7 +4240,7 @@
             "Name": "Sappers",
             "Name String ID": 17322,
             "Node ID": 321,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 5,
             "Prerequisite IDs": [
@@ -5110,7 +5110,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [

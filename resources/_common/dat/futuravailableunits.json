@@ -43804,6 +43804,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3002
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -51760,6 +51766,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 3,
                         "ID": 3004
+                    },
+                    {
+                        "Name": "Plate Mail Armor",
+                        "RequiredAge": 4,
+                        "ID": 77
                     }
                 ]
             },

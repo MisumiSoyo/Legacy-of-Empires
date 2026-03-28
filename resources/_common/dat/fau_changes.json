@@ -1224,8 +1224,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "立陶宛, 马扎尔, 女真获得步兵钢甲",
-            "civilizations": ["Lithuanians", "Magyars", "Jurchens"],
+            "note": "立陶宛, 马扎尔, 女真, 魏获得步兵钢甲",
+            "civilizations": ["Lithuanians", "Magyars", "Jurchens", "Wei"],
             "tech_id": 77,
             "building_id": 103,
             "Name": "Plate Mail Armor",

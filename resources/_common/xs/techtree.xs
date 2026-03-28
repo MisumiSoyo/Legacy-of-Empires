@@ -486,6 +486,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GambesonsTechID);
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, PlateMailArmorTechID);
             break;
         }
         case cJurchens:
