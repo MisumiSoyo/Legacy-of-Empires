@@ -63,7 +63,7 @@ void EffectFunction10083(int playerId = -1)
 }
 
 
-//  10090 - Gambeson Adjustment
+//  10090 - Gambesons Adjustment
 void EffectFunction10090(int playerId = -1)
 {
     ModArmor(playerId, MilitiaID, cDamageClassMelee, 1);

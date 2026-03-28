@@ -130,7 +130,7 @@
 //	Malians
 120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +10% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Gbeto (High-speed infantry), Sofa (Cavalry that counters spearmen, skirmishers and light cavalries), Donsos (Infantry that can charge and throw spears)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n• Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable)\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
 //	Berbers
-120176 "Cavalry and Naval civilization \n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age \n• Ships +10% moving speed \n• Get 6 wood, 6 food and 3 gold for each military unit when advancing to the next age\n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate)\n• Maghrabi Camels (Camel units have regeneration of 15 HP/minute)\n• Adarga (Archer-line and Cavalry Archer-line units +2 pierce armor, +2 archer armor)\n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Elite Genitours upgrade -50% cost"
+120176 "Cavalry and Naval civilization \n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age\n• Ships +10% moving speed \n• Get 7 wood, 7 food and 5 gold for each military unit when advancing to the next age\n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate)\n• Maghrabi Camels (Camel units have regeneration of 15 HP/minute)\n• Adarga (Archer-line and Cavalry Archer-line units +2 pierce armor, +2 archer armor)\n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Elite Genitours upgrade -50% cost"
 //	Khmer
 120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food, but -5% work rate \n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
 //	Malay
@@ -168,13 +168,13 @@
 //	Georgians
 120194 "Defensive and Cavalry civilization\n\n• Start with a Mule Cart (received when the first TC is built up in Nomad mode), and receive one when advancing age\n• Fortified Churches provide +10% work rate for Villagers within 9 squared tiles range\n• Units and buildings receive -15% damage when fighting from higher elevation\n• Cavalry regenerates 5/15/25 HP per minute in Feudal/Castle/Imperial Age\n• villagers +100% repair speed\n\n<b>Unique Unit:<b>\n• Monaspa (cavalry which becomes stronger when friendly units are nearby), Khevsureti Warrior (Infantry that counters siege weapons)\n\n<b>Unique Techs:<b>\n• Svan Towers (All towers, Castles, Kreposts and Town Centers +2 attack (for all arrows), Watch Tower-Line can deal 50% penetrate damage)\n• Aznauri Cavalry (All mounted units -20% population space)\n• Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks)\n• Hill Training (Knight-line units +45 HP regeneration per minute)\n\n<b>Team Bonus:<b>\nBuildings -25% repairing cost"
 //	Shu
-120198 "Archer and Siege civilization\n\n• Lumberjacks generate food in addition to wood\n• Archery Unit technologies at the Archery Range and Blacksmith cost -25%\n• Siege Weapons and Siege Warships move +10/15% faster in Castle/Imperial Age\n• Infantry can generate 0.25 food per second from attacking farms(only generate when attack action is being performed)\n• Wubao -20% cost\n• Hei Guang Cavalry -15/25% cost at Castle/Imperial Age\n\n<b>Unique Units:<b>\n• White Feather Guard (Infantry), War Chariot (Siege Weapon), Liu Bei (Hero)\n\n<b>Unique Techs:<b>\n• Coiled Serpent Array (Spearman-line and White Feather Guards gain additional HP when near each other)\n• Bolt Magazine (Archer-line, War Chariots and Lou Chuans fire additional projectiles)\n• Tube-Sleeved Armor (Spearman-line units can resist bonus damage against spearmen; Hei Guang Cavalries +1 pierce armor)\n• Siege Technique (Rams +400 melee attack, +20% attack bonus vs buildings)\n\n<b>Team Bonus:<b>\nFoot Archers +2 line of sight"
+120198 "Archer and Siege civilization\n\n• Lumberjacks generate food in addition to wood\n• Archery Unit technologies at the Archery Range and Blacksmith cost -25%\n• Siege Weapons and Siege Warships move +10/15% faster in Castle/Imperial Age\n• Infantry can generate 0.25 food per second from attacking farms(only generate when attack action is being performed)\n• Hei Guang Cavalry -15/25% cost at Castle/Imperial Age\n\n<b>Unique Units:<b>\n• White Feather Guard (Infantry), War Chariot (Siege Weapon), Liu Bei (Hero)\n\n<b>Unique Techs:<b>\n• Coiled Serpent Array (Spearman-line and White Feather Guards gain additional HP when near each other)\n• Bolt Magazine (Archer-line, War Chariots and Lou Chuans fire additional projectiles)\n• Tube-Sleeved Armor (Spearman-line units can resist bonus damage against spearmen; Hei Guang Cavalries +1 pierce armor)\n• Siege Technique (Rams +400% melee attack, +20% attack bonus vs buildings)\n\n<b>Team Bonus:<b>\nFoot Archers +2 line of sight"
 //	Wu
-120199 "Infantry and Naval civilization\n\n• Military production buildings and Docks provide +55 food\n• Infantry regenerates 10/15/30 HP per minute in Feudal/Castle/Imperial Age\n• Jian Swordsmen and Hei Guang Cavalry +2 attack in Imperial Age\n• Careening and Dry Dock free\n• Wubao technologies -33% cost\n\n<b>Unique Units:<b>\n• Fire Archer (Foot Archer), Jian Swordsman (Infantry), Sun Jian (Hero)\n\n<b>Unique Techs:<b>\n• Red Cliffs Tactics (Demolition Ships and Fire Archers deal fire damage to ships and buildings)\n• Sitting Tiger (Traction Trebuchets and Lou Chuan trebuchet weapons fire additional projectiles)\n• Exempted Tenant System (Wubaos produce 15 gold per minute, and can train Barracks units)\n• Trouble-Freeing Army (Jian Swordmen and Cavalries +3 attack, +15 gold cost)\n\n<b>Team Bonus:<b>\nHouses built +100% faster"
+120199 "Infantry and Naval civilization\n\n• Military production buildings and Docks provide +50/60/70/80 food at Dark/Feudal/Castle/Imperial Age\n• Infantry regenerates 10/15/30 HP per minute in Feudal/Castle/Imperial Age\n• Jian Swordsmen and Hei Guang Cavalry +2 attack in Imperial Age\n• Careening and Dry Dock free\n\n<b>Unique Units:<b>\n• Fire Archer (Foot Archer), Jian Swordsman (Infantry), Sun Jian (Hero)\n\n<b>Unique Techs:<b>\n• Red Cliffs Tactics (Demolition Ships and Fire Archers deal fire damage to ships and buildings)\n• Sitting Tiger (Traction Trebuchets and Lou Chuan trebuchet weapons fire additional projectiles)\n• Exempted Tenant System (Castle/Watch Tower line can create villagers with +25/-50% work rate)\n• Trouble-Freeing Army (Jian Swordmen and Cavalries +3 attack, +15 gold cost)\n\n<b>Team Bonus:<b>\nHouses built +100% faster"
 //	Wei
-120200 "Cavalry civilization\n\n• Receive one free Villager for each economic technology researched\n• Hei Guang Cavalry and Xianbei Raider +20/30% HP in Castle/Imperial Age\n• Traction Trebuchets and Lou Chuans cost -25%\n• Wubao limit +1/2/3 at Feudal/Castle/Imperial Age\n\n<b>Unique Units:<b>\n• Tiger Cavalry (Cavalry), Xianbei Raider (Mounted Archer), Cao Cao (Hero)\n\n<b>Unique Techs:<b>\n• Tuntian (Soldiers passively produce food)\n• Ming Guang Armor (Mounted Units +4 melee armor)\n• Thunderclap Cart (Make Traction Trebuchets available, and Traction Trebuchets +10% attack speed, +1 range)\n\n<b>Team Bonus:<b>\nCavalry +2 attack vs Siege Weapons"
+120200 "Cavalry civilization\n\n• Receive one free Villager for each economic technology researched\n• Hei Guang Cavalry and Xianbei Raider +20/30% HP in Castle/Imperial Age\n• Traction Trebuchets and Lou Chuans cost -25%\n• Sappers and Treadmill Crane are free\n\n<b>Unique Units:<b>\n• Tiger Cavalry (Cavalry), Xianbei Raider (Mounted Archer), Cao Cao (Hero)\n\n<b>Unique Techs:<b>\n• Tuntian (Soldiers passively produce food)\n• Ming Guang Armor (Mounted Units +4 melee armor)\n• Thunderclap Cart (Make Traction Trebuchets available, and Traction Trebuchets +10% attack speed, +1 range)\n• Ring-Pommeled Sword (Militia line +6 attack, +10 gold cost)\n\n<b>Team Bonus:<b>\nCavalry +2 attack vs Siege Weapons"
 //	Jurchens
-120201 "Cavalry and Gunpowder civilization\n\n• Meat of hunted and livestock animals doesn't decay\n• Mounted Units and Fire Lancers attack +20% faster starting in Feudal Age\n• Siege Engineers available in Castle Age\n• Siege and Fortification upgrades cost -75% wood and research +100% faster\n• Units receive -50% friendly fire damage\n• Each town center spawns a deer every 325/275/225/175 seconds at Dark/Feudal/Castle/Imperial Age\n\n<b>Unique Units:<b>\n• Iron Pagoda (Cavalry), Grenadier (Gunpowder Unit), Conscripted Army (Infantries that can be trained at town center)\n\n<b>Unique Techs:<b>\n• Fortified Bastions (Fortifications regenerate 500 HP per minute)\n• Thunderclap Bombs (Rocket Carts, Grenadiers and Lou Chuans detonate when defeated; projectiles produce additional explosions)\n• Meng'an Mouke (Town Center +50% work rate and can train an additional Conscripted Army in one group; +40 population headroom)\n• Flanking Cavalry (Mounted units can additionally block a melee attack)\n\n<b>Team Bonus:<b>\nGunpowder Units +2 line of sight"
+120201 "Cavalry and Gunpowder civilization\n\n• Meat of hunted and livestock animals doesn't decay\n• Mounted Units and Fire Lancers attack +25% faster starting in Feudal Age\n• Siege Engineers available in Castle Age\n• Siege and Fortification upgrades cost -75% wood and research +100% faster\n• Units receive -50% friendly fire damage\n• Each town center spawns a deer every 325/275/225/175 seconds at Dark/Feudal/Castle/Imperial Age\n\n<b>Unique Units:<b>\n• Iron Pagoda (Cavalry), Grenadier (Gunpowder Unit), Conscripted Army (Infantries that can be trained at town center)\n\n<b>Unique Techs:<b>\n• Fortified Bastions (Fortifications regenerate 500 HP per minute)\n• Thunderclap Bombs (Rocket Carts, Grenadiers and Lou Chuans detonate when defeated; projectiles produce additional explosions)\n• Meng'an Mouke (Town Center +50% work rate and can train an additional Conscripted Army in one group; +40 population headroom)\n• Flanking Cavalry (Mounted units can additionally block a melee attack)\n\n<b>Team Bonus:<b>\nGunpowder Units +2 line of sight"
 //	Khitans
 120202 "Infantry and Cavalry civilization\n\n• Shepherds and herders produce +5/10/15% food at Feudal/Castle/Imperial Age\n• Melee attack upgrade effects are doubled\n• Skirmishers, Spearman-, and Scout Cavalry-line train and upgrade +15% faster\n• Heavy Cavalry Archer upgrade available in Castle Age and costs -50%\n\n<b>Unique Units:<b>\n• Liao Dao (Infantry), Mounted Trebuchet (Siege Cavalry)\n\n<b>Unique Techs:<b>\n• Lamellar Armor (Infantry and Skirmishers reflect 25% melee damage back to the attacker)\n• Ordo Cavalry (Cavalry regenerates 150% HP per minute in combat)\n• Dacaogu (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)\n\n<b>Team Bonus:<b>\nInfantry +2 attack vs ranged soldiers"
 //	Muisca
@@ -367,6 +367,7 @@
 500180 "Sacred Ritual"
 500181 "El Dorado"
 500182 "Tamoios"
+500183 "Ring-Pommeled Swrod"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -380,9 +381,9 @@
 501009 "Upgrade to Elite Yumi Ashigaru"
 501010 "Upgrade to Elite Varangian"
 501011 "Upgrade to Elite Sipahi"
-501012 "Research Gentry (Maximum number of Wubao built +3)"
+501012 "Research Gentry (Maximum number of Wubao built +2)"
 501013 "Research Mercenary (Immediately produce 4 Archers and 4 Hei Guang Cavalries, with an additional 1 Archer and 1 Hei Guang Cavalry produced for each Wubao)"
-501014 "Research Strong Fortress (Within 8 tile distance of Wubao, your own land units +5% movement speed,+1 pierce armor)"
+501014 "Research Strong Fortress (Within 7 tile distance of Wubao, your own land units +5% movement speed, +1 pierce armor)"
 501015 "Upgrade to Guan Ning Cavalry"
 501016 "Upgrade to Elite Parthian Cavalry Archer"
 501017 "Upgrade to Elite Rung Scout"
@@ -439,7 +440,7 @@
 501068 "Research Obsidian Arrow (Archers +4 attack vs buildings)"
 501069 "Research Political Reform (Farms cost 30 food instead of wood and don't need time to build)"
 501070 "Research Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)"
-501071 "Research Siege Technique (Rams +400 melee attack, +20% attack bonus vs buildings)"
+501071 "Research Siege Technique (Rams +400% melee attack, +20% attack bonus vs buildings)"
 501072 "Upgrade to Elite Khevsureti Warrior"
 501073 "Switch to training Slinger"
 501074 "Switch to training Kamayuk"
@@ -517,7 +518,7 @@
 501146 "Upgrade to Veteran Raider Elephant"
 501147 "Upgrade to Elite Raider Elephant"
 501148 "Upgrade to Imperial Steppe Lancer"
-501149 "Research Exempted Tenant System (Wubaos produce 15 gold per minute, and can train Barracks units)"
+501149 "Research Exempted Tenant System (Castle/Watch Tower line can create villagers with +25/-50% work rate)"
 501150 "Research Trouble-Freeing Army (Jian Swordmen and Cavalries +3 attack, +15 gold cost)"
 501151 "Upgrade to Veteran Auxiliary Cavalry"
 501152 "Upgrade to Elite Auxiliary Cavalry"
@@ -551,6 +552,7 @@
 501180 "Research Sacred Ritual (Infantries regenerate 2 HP from each attack)"
 501181 "Research El Dorado (Monk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable))"
 501182 "Research Tamoios (Upgrade all your infantries on map to Elite Ibirapema Warriors)"
+501183 "Research Ring-Pommeled Sword (Militia line +6 attack, +10 gold cost)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -564,9 +566,9 @@
 521009 "Upgrade to <b>Elite Yumi Ashigaru<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Veteran Yumi Ashigarus and lets you create Elite Yumi Ashigarus."
 521010 "Upgrade to <b>Elite Varangian<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Varangian and lets you create Elite Varangian."
 521011 "Upgrade to <b>Elite Sipahi<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Sipahi and lets you create Elite Sipahi."
-521012 "Research<b>Gentry<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nMaximum number of Wubao +3."
+521012 "Research<b>Gentry<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nMaximum number of Wubao +2."
 521013 "Research<b>Mercenary<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\nImmediately produce 4 Archers and 4 Hei Guang Cavalries, with an additional 1 Archer and 1 Hei Guang Cavalry produced for each Wubao."
-521014 "Research<b>Strong Fortress<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nWithin 8 tile distance of Wubao, your own land units +5% movement speed,+1 pierce armor."
+521014 "Research<b>Strong Fortress<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nWithin 7 tile distance of Wubao, your own land units +5% movement speed, +1 pierce armor."
 521015 "Upgrade to <b>Guan Ning Cavalry<b> (<cost>, 90 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Cavaliers and lets you create Guan Ning Cavalries."
 521016 "Upgrade to <b>Elite Parthian Cavalry Archer<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Parthian Cavalry Archers and lets you create Elite Parthian Cavalry Archers."
 521017 "Upgrade to <b>Elite Rung Scout<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Rung Scouts and lets you create Elite Rung Scouts."
@@ -623,7 +625,7 @@
 521068 "Research <b>Obsidian Arrow<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nArchers +4 attack vs buildings."
 521069 "Research <b>Political Reform<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nFarms cost 30 food instead of wood and don't need time to build."
 521070 "Research <b>Orthodoxy<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nStreltsys take -50% population space, and Militia-Line take -20% population space."
-521071 "Research <b>Siege Technique<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nRams +400 melee attack, +20% attack bonus vs buildings."
+521071 "Research <b>Siege Technique<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nRams +400% melee attack, +20% attack bonus vs buildings."
 521072 "Upgrade to <b>Elite Khevsureti Warrior<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Khevsureti Warriors and lets you create Elite Khevsureti Warriors."
 521073 "Switch to training Slinger. Automatically spawn 1 Slinger every 40 seconds."
 521074 "Switch to training Kamayuk. Automatically spawn 1 Kamayuk every 60 seconds.\n(Need Castle)"
@@ -701,7 +703,7 @@
 521146 "Upgrade to <b>Veteran Raider Elephant<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Raider Elephants and lets you create Veteran Raider Elephants."
 521147 "Upgrade to <b>Elite Raider Elephant<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Raider Elephants and lets you create Elite Raider Elephants."
 521148 "Upgrade to <b>Imperial Steppe Lancer<b> (<cost>, 90 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Elite Steppe Lancers and lets you create Imperial Steppe Lancers."
-521149 "Research <b>Exempted Tenant System<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nWubaos produce 15 gold per minute, and can train Barracks units."
+521149 "Research <b>Exempted Tenant System<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nCastle/Watch Tower line can create villagers with +25/-50% work rate."
 521150 "Research <b>Trouble-Freeing Army<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nJian Swordmen and Cavalries +3 attack, +15 gold cost."
 521151 "Upgrade to <b>Veteran Auxiliary Cavalry<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Auxiliary Cavalries and lets you create Veteran Auxiliary Cavalries."
 521152 "Upgrade to <b>Elite Auxiliary Cavalry<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Auxiliary Cavalries and lets you create Elite Auxiliary Cavalries."
@@ -735,6 +737,7 @@
 521180 "Research <b>Sacred Ritual<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantries regenerate 2 HP from each attack."
 521181 "Research <b>El Dorado<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable)."
 521182 "Research <b>Tamoios<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade all your infantries on map to Elite Ibirapema Warriors."
+521183 "Research <b>Ring-Pommeled Sword<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nMilitia line +6 attack, +10 gold cost."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

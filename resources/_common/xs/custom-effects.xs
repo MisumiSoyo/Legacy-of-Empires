@@ -805,9 +805,9 @@ void EffectFunction10041(int playerId = -1)
 void EffectFunction10042(int playerId = -1)
 {
     int ArmyCount = xsPlayerAttribute(playerId, cAttributeMilitaryPopulation);
-    ModResource(playerId, cAttributeFood, ArmyCount * 6);
-    ModResource(playerId, cAttributeWood, ArmyCount * 6);
-    ModResource(playerId, cAttributeGold, ArmyCount * 3);
+    ModResource(playerId, cAttributeFood, ArmyCount * 7);
+    ModResource(playerId, cAttributeWood, ArmyCount * 7);
+    ModResource(playerId, cAttributeGold, ArmyCount * 5);
 }
 
 
@@ -1107,7 +1107,7 @@ void EffectFunction10071(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 1.05);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 8);
+    xsTaskAmount(cTaskAttrWorkRange, 7);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrSearchWaitTime, 5);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
@@ -1317,13 +1317,30 @@ void EffectFunction10096(int playerId = -1)
 }
 
 
+//  10099 - Exempted Tenant System
+void EffectFunction10099(int playerId = -1)
+{
+    MulAttribute(playerId, cVillagerClass, cTrainLocationsEntryMod, 32767);
+    SetAttribute(playerId, cVillagerClass, cTrainLocation, CastleID);
+    SetAttribute(playerId, cVillagerClass, cTrainButton, 21);
+    SetAttribute(playerId, cVillagerClass, cHotkeyId, QHotkeyID);
+    MulAttribute(playerId, cVillagerClass, cTrainTime, 0.8);
+    MulAttribute(playerId, cVillagerClass, cTrainLocationsEntryMod, 32767);
+    SetAttribute(playerId, cVillagerClass, cTrainLocation, WatchTowerID);
+    SetAttribute(playerId, cVillagerClass, cTrainButton, 1);
+    SetAttribute(playerId, cVillagerClass, cHotkeyId, QHotkeyID);
+    MulAttribute(playerId, cVillagerClass, cTrainTime, 2);
+    SetAttribute(playerId, cVillagerClass, cTrainLocationsEntryMod, 0);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 218  2026.03.26");
+    xsChatData("Build: 219  2026.03.28");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

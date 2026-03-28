@@ -49254,11 +49254,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Wubao",
-                        "RequiredAge": 2,
-                        "ID": 4151
                     }
                 ]
             },
@@ -50183,28 +50178,6 @@
                         "ID": 12
                     }
                 ]
-            },
-            {
-                "ID": 4151,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Gentry",
-                        "RequiredAge": 3,
-                        "ID": 3377
-                    },
-                    {
-                        "Name": "Mercenary",
-                        "RequiredAge": 3,
-                        "ID": 3378
-                    },
-                    {
-                        "Name": "Strong Fortress",
-                        "RequiredAge": 3,
-                        "ID": 3379
-                    }
-                ],
-                "Units": []
             }
         ]
     },
@@ -50324,11 +50297,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Wubao",
-                        "RequiredAge": 2,
-                        "ID": 4151
                     }
                 ]
             },
@@ -51299,28 +51267,6 @@
                         "ID": 12
                     }
                 ]
-            },
-            {
-                "ID": 4151,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Gentry",
-                        "RequiredAge": 3,
-                        "ID": 3377
-                    },
-                    {
-                        "Name": "Mercenary",
-                        "RequiredAge": 3,
-                        "ID": 3378
-                    },
-                    {
-                        "Name": "Strong Fortress",
-                        "RequiredAge": 3,
-                        "ID": 3379
-                    }
-                ],
-                "Units": []
             }
         ]
     },
@@ -51445,11 +51391,6 @@
                         "PrereqIconIndex": 19,
                         "PrereqStyle": 0,
                         "PrereqStringID": 14157
-                    },
-                    {
-                        "Name": "Wubao",
-                        "RequiredAge": 2,
-                        "ID": 4151
                     }
                 ]
             },
@@ -51563,6 +51504,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Champion",
+                        "RequiredAge": 4,
+                        "ID": 264
                     },
                     {
                         "Name": "Siege Training",
@@ -52083,6 +52029,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -52205,6 +52156,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Ring-Pommeled Sword",
+                        "RequiredAge": 4,
+                        "ID": 3388
                     }
                 ],
                 "Units": [
@@ -52259,6 +52215,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Forestry",
@@ -52333,28 +52294,6 @@
                         "ID": 3002
                     }
                 ]
-            },
-            {
-                "ID": 4151,
-                "Name": null,
-                "Techs": [
-                    {
-                        "Name": "Gentry",
-                        "RequiredAge": 3,
-                        "ID": 3377
-                    },
-                    {
-                        "Name": "Mercenary",
-                        "RequiredAge": 3,
-                        "ID": 3378
-                    },
-                    {
-                        "Name": "Strong Fortress",
-                        "RequiredAge": 3,
-                        "ID": 3379
-                    }
-                ],
-                "Units": []
             }
         ]
     },

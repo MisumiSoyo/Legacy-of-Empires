@@ -32,13 +32,13 @@ void EffectFunction10001(int playerId = -1)
         DisableTech(playerId, TranshumanceTechID);
     }
 
-    if ((playerCiv != cShu) && (playerCiv != cWu) && (playerCiv != cWei))
-    {
+    //if ((playerCiv != cShu) && (playerCiv != cWu) && (playerCiv != cWei))
+    //{
         DisableTech(playerId, WubaoTechID);
         DisableTech(playerId, GentryTechID);
         DisableTech(playerId, MercenaryTechID);
         DisableTech(playerId, StrongFortressTechID);
-    }
+    //}
 
     switch (playerCiv)
     {
@@ -422,6 +422,7 @@ void EffectFunction10001(int playerId = -1)
         }
         case cDravidians:
         {
+            EnableTech(playerId, CropRotationTechID);
             break;
         }
         case cBengalis:
@@ -481,10 +482,15 @@ void EffectFunction10001(int playerId = -1)
         }
         case cWei:
         {
+            EnableTech(playerId, ChampionTechID);
+            EnableTech(playerId, GambesonsTechID);
+            EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, TwoManSawTechID);
             break;
         }
         case cJurchens:
         {
+            EnableTech(playerId, PlateMailArmorTechID);
             break;
         }
         case cKhitans:

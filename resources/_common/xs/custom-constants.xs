@@ -273,6 +273,15 @@ extern const int WubaoTechID = 3369;
 extern const int GentryTechID = 3377;
 extern const int MercenaryTechID = 3378;
 extern const int StrongFortressTechID = 3379;
+extern const int TubeSleevedArmorTechID = 3383;
+extern const int SiegeTechniqueTechID = 3384;
+extern const int ExemptedTenantSystemTechID = 3386;
+extern const int TroubleFreeingArmyTechID = 3387;
+extern const int RingPommeledSwordTechID = 3388;
+extern const int ThunderclapCartTechID = 3396;
+extern const int MenganMoukeTechID = 3404;
+extern const int FlankingCavalryTechID = 3405;
+extern const int DacaoguTechID = 3409;
 
 
 
@@ -319,6 +328,7 @@ extern const int TownCenter2ID = 71;
 extern const int MilitiaID = 74;
 extern const int ManAtArmsID = 75;
 extern const int LongSwordmanID = 77;
+extern const int WatchTowerID = 79;
 extern const int CastleID = 82;
 extern const int MarketID = 84;
 extern const int ArcheryRangeID = 87;

@@ -63,45 +63,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "坞堡",
-            "civilizations": ["Shu", "Wu", "Wei"],
-            "unit_id": 4151,
-            "building_id": 118,
-            "Name": "Wubao",
-            "RequiredAge": 2
-        },
-        {
-            "note": "坞堡",
-            "civilizations": ["Shu", "Wu", "Wei"],
-            "building_id" : 4151,
-            "Name": "Wubao",
-            "type": "add"
-        },
-        {
-            "note": "士族制",
-            "civilizations": ["Shu", "Wu", "Wei"],
-            "tech_id": 3377,
-            "building_id": 4151,
-            "Name": "Gentry",
-            "RequiredAge": 3
-        },
-        {
-            "note": "雇佣军",
-            "civilizations": ["Shu", "Wu", "Wei"],
-            "tech_id": 3378,
-            "building_id": 4151,
-            "Name": "Mercenary",
-            "RequiredAge": 3
-        },
-        {
-            "note": "坚固防御",
-            "civilizations": ["Shu", "Wu", "Wei"],
-            "tech_id": 3379,
-            "building_id": 4151,
-            "Name": "Strong Fortress",
-            "RequiredAge": 3
-        },
-        {
             "note": "早期骑射手",
             "civilizations": "Huns",
             "unit_id": 4094,
@@ -698,8 +659,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀启用轮作",
-            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans", "Shu"],
+            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀, 达罗毗荼启用轮作",
+            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans", "Shu", "Dravidians"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -1021,8 +982,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "启用冠军剑士",
-            "civilizations": [],
+            "note": "魏启用冠军剑士",
+            "civilizations": ["Wei"],
             "tech_id": 264,
             "building_id": 12,
             "Name": "Champion",
@@ -1137,8 +1098,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 吴启用软甲",
-            "civilizations": ["Chinese", "Wu"],
+            "note": "中国, 吴, 魏启用软甲",
+            "civilizations": ["Chinese", "Wu", "Wei"],
             "tech_id": 875,
             "building_id": 12,
             "Name": "Gambesons",
@@ -1263,8 +1224,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "立陶宛, 马扎尔获得步兵钢甲",
-            "civilizations": ["Lithuanians", "Magyars"],
+            "note": "立陶宛, 马扎尔, 女真获得步兵钢甲",
+            "civilizations": ["Lithuanians", "Magyars", "Jurchens"],
             "tech_id": 77,
             "building_id": 103,
             "Name": "Plate Mail Armor",
@@ -1277,9 +1238,9 @@
             "type": "delete"
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀获得工兵",
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏获得工兵",
             "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians",
-                              "Shu"],
+                              "Shu", "Wei"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1334,9 +1295,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚获得双人锯",
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏获得双人锯",
             "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars",
-                              "Armenians"],
+                              "Armenians", "Wei"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -2177,6 +2138,14 @@
             "tech_id": 3250,
             "building_id": 109,
             "Name": "Tamoios",
+            "RequiredAge": 4
+        },
+        {
+            "note": "环首刀",
+            "civilizations": "Wei",
+            "tech_id": 3388,
+            "building_id": 109,
+            "Name": "Ring-Pommeled Sword",
             "RequiredAge": 4
         }
     ]
