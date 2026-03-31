@@ -293,6 +293,12 @@
             "name": "马尼拉大帆船 + 化学",
             "effect_id": 47,
             "function_id": 10098
+        },
+        {
+            "type": "adjustment",
+            "name": "锁子甲",
+            "effect_id": 793,
+            "function_id": 10101
         }
     ]
 }

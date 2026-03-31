@@ -166,7 +166,7 @@
 //	Armenians
 120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n• Buildings enjoy Ballistics for free\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Scout Cavalry line units is immune to additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 //	Georgians
-120194 "Defensive and Cavalry civilization\n\n• Start with a Mule Cart (received when the first TC is built up in Nomad mode), and receive one when advancing age\n• Fortified Churches provide +10% work rate for Villagers within 9 squared tiles range\n• Units and buildings receive -15% damage when fighting from higher elevation\n• Cavalry regenerates 5/15/25 HP per minute in Feudal/Castle/Imperial Age\n• villagers +100% repair speed\n\n<b>Unique Unit:<b>\n• Monaspa (cavalry which becomes stronger when friendly units are nearby), Khevsureti Warrior (Infantry that counters siege weapons)\n\n<b>Unique Techs:<b>\n• Svan Towers (All towers, Castles, Kreposts and Town Centers +2 attack (for all arrows), Watch Tower-Line can deal 50% penetrate damage)\n• Aznauri Cavalry (All mounted units -20% population space)\n• Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks)\n• Hill Training (Knight-line units +45 HP regeneration per minute)\n\n<b>Team Bonus:<b>\nBuildings -25% repairing cost"
+120194 "Defensive and Cavalry civilization\n\n• Start with a Mule Cart (received when the first TC is built up in Nomad mode), and receive one when advancing age\n• Fortified Churches provide +10% work rate for Villagers within 9 squared tiles range\n• Units and buildings receive -15% damage when fighting from higher elevation\n• Cavalry regenerates 5/15/25 HP per minute in Feudal/Castle/Imperial Age\n• Villagers +100% repair speed\n\n<b>Unique Unit:<b>\n• Monaspa (Cavalry which becomes stronger when friendly units are nearby), Khevsureti Warrior (Infantry that counters siege weapons)\n\n<b>Unique Techs:<b>\n• Svan Towers (All towers, Castles, Kreposts and Town Centers +2 attack (for all arrows), Watch Tower-Line can deal 50% penetrate damage)\n• Aznauri Cavalry (All mounted units -20% population space)\n• Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks)\n• Hill Training (Knight-line units +45 HP regeneration per minute)\n\n<b>Team Bonus:<b>\nBuildings -25% repairing cost"
 //	Shu
 120198 "Archer and Siege civilization\n\n• Lumberjacks generate food in addition to wood\n• Archery Unit technologies at the Archery Range and Blacksmith cost -25%\n• Siege Weapons and Siege Warships move +10/15% faster in Castle/Imperial Age\n• Infantry can generate 0.25 food per second from attacking farms(only generate when attack action is being performed)\n• Hei Guang Cavalry -15/25% cost at Castle/Imperial Age\n\n<b>Unique Units:<b>\n• White Feather Guard (Infantry), War Chariot (Siege Weapon), Liu Bei (Hero)\n\n<b>Unique Techs:<b>\n• Coiled Serpent Array (Spearman-line and White Feather Guards gain additional HP when near each other)\n• Bolt Magazine (Archer-line, War Chariots and Lou Chuans fire additional projectiles)\n• Tube-Sleeved Armor (Spearman-line units can resist bonus damage against spearmen; Hei Guang Cavalries +1 pierce armor)\n• Siege Technique (Rams +400% melee attack, +20% attack bonus vs buildings)\n\n<b>Team Bonus:<b>\nFoot Archers +2 line of sight"
 //	Wu
@@ -282,11 +282,11 @@
 500095 "Veteran Mansabdar"
 500096 "Elite Mansabdar"
 500097 "Monk Armor"
-500098 "Mansabdar Attack"
-500099 "Ratha Armor"
+500098 "Melee Attack"
+500099 "Archer Armor"
 500100 "Resource from Trade"
 500101 "Infantry Bonus"
-500102 "Navy Bonus"
+500102 "Warship Attack"
 500103 "Spawn Ratha"
 500104 "Elephant Archer Bonus"
 500105 "Pistala"
@@ -466,12 +466,12 @@
 501094 "Research Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)"
 501095 "Upgrade to Veteran Mansabdar"
 501096 "Upgrade to Elite Mansabdar"
-501097 "Monk +2 melee/3 pierce armor, +15 HP"
-501098 "Mansabdars +2 attack"
-501099 "Ratha +1 pierce armor and become immune to additional damage against Archers"
+501097 "Monk +20 HP"
+501098 "Melee attack (Infantry and Cavalry +1 attack)"
+501099 "Archers and Cavalry Archers +1 melee/pierce armor"
 501100 "Your team +10% wood and food produced from trade"
 501101 "Infantry +15% attack speed, +1 melee/pierce armor"
-501102 "Ships + 15 HP regeneration per minute"
+501102 "Warships +1 attack"
 501103 "Spawn one Ratha from each town center, castle and monastery; Ratha -15 wood cost"
 501104 "Elephant Archers +1 attack, +4 attack vs Spearman"
 501105 "Research Pistala (Train Hand Cannoneers with 60 wood instead of gold cost)"
@@ -651,12 +651,12 @@
 521094 "Research <b>Heavy Spear<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nSpearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units."
 521095 "Upgrade to <b>Veteran Mansabdar<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Mansabdars and lets you create Veteran Mansabdars."
 521096 "Upgrade to <b>Elite Mansabdar<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Mansabdars and lets you create Elite Mansabdars."
-521097 "(Cost: 1 relic)\nMonk +2 melee/3 pierce armor, +15 HP."
-521098 "(Cost: 1 relic)\nMansabdars +2 attack."
-521099 "(Cost: 1 relic)\nRatha +1 pierce armor and become immune to additional damage against Archers."
+521097 "(Cost: 1 relic)\nMonk +20 HP."
+521098 "(Cost: 1 relic)\nInfantry and Cavalry +1 attack."
+521099 "(Cost: 1 relic)\nArchers and Cavalry Archers +1 melee/pierce armor."
 521100 "(Cost: 1 relic)\nYour team +10% wood and food produced from trade."
 521101 "(Cost: 1 relic)\nInfantry +15% attack speed, +1 melee/pierce armor."
-521102 "(Cost: 1 relic)\nShips + 15 HP regeneration per minute."
+521102 "(Cost: 1 relic)\nWarships +1 attack."
 521103 "(Cost: 1 relic)\nSpawn 1 Ratha from each town center, castle and monastery; Ratha -15 wood cost."
 521104 "(Cost: 1 relic)\nElephant Archers +1 attack, +4 attack vs Spearman."
 521105 "Research <b>Pistala<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nTrain Hand Cannoneers with 60 wood instead of gold cost."
@@ -986,9 +986,9 @@
 
 721028 "Create <b>Elite Hobelar<b> (<cost>, 10 <MATERIAL=MPIconGoodCPU,1>)\nBritons' unique cavalry. The first attack in combat mode +7, and then gains 1 melee armor/2 pierce armor, -0.25 movement speed, lasting for 12 seconds.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 1.85 <MATERIAL=EyeIcon> 4\nClass: Cavalry; Tags: Infantry, Unique Unit.\nAttack Bonus: +7 vs buildings in non-combat mode"
 
-721029 "Create <b>Hospitaller Knight<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nItalian and Sicilians' unique cavalry. Can heal allies for 3 HP per second. Can't be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
+721029 "Create <b>Hospitaller Knight<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nItalian and Sicilians' unique Knight-line Cavalry. Can heal allies for 2 HP per second. Hard to be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
 
-721030 "Create <b>Elite Hospitaller Knight<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nItalian and Sicilians' unique cavalry. Can heal allies for 4 HP per second. Can't be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
+721030 "Create <b>Elite Hospitaller Knight<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nItalian and Sicilians' unique Knight-line Cavalry. Can heal allies for 3 HP per second. Hard to be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
 
 721031 "Create <b>Crusader Knight<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nTeutons unique heavy cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.35 <MATERIAL=StatIconsReloadTime,1> 1.9 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry."
 

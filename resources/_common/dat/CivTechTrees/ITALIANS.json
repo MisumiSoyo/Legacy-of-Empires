@@ -1682,96 +1682,6 @@
             "Age ID": 3,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 105068,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Knight",
-            "Name String ID": 14068,
-            "Node ID": 38,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Unit",
-            "Picture Index": 1,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 105070,
-            "Link ID": 38,
-            "Link Node Type": "Unit",
-            "Name": "Cavalier",
-            "Name String ID": 14070,
-            "Node ID": 283,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UnitUpgrade",
-            "Picture Index": 49,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": 209,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 105471,
-            "Link ID": 283,
-            "Link Node Type": "UnitUpgrade",
-            "Name": "Paladin",
-            "Name String ID": 14471,
-            "Node ID": 569,
-            "Node Status": "NotAvailable",
-            "Node Type": "UnitUpgrade",
-            "Picture Index": 2,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": 265,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 3,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
             "Help String ID": 800029,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
@@ -1825,7 +1735,7 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 3032,
+            "Trigger Tech ID": 3202,
             "Use Type": "Unit"
         },
         {

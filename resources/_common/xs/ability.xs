@@ -260,44 +260,45 @@ void EffectFunction10058(int playerId = -1)
 }
 
 
+//  10061 - Bengalis relic, monk hit points
 void EffectFunction10061(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
         return;
-    ModArmor(playerId, cMonkClass, cDamageClassMelee, 2);
-    ModArmor(playerId, cMonkClass, cDamageClassPierce, 3);
-    ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 2);
-    ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 3);
-    ModAttribute(playerId, cMonkClass, cHitpoints, 15);
-    ModAttribute(playerId, cMonkWithRelicClass, cHitpoints, 15);
+    ModAttribute(playerId, cMonkClass, cHitpoints, 20);
+    ModAttribute(playerId, cMonkWithRelicClass, cHitpoints, 20);
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 }
 
 
+//  10062 - Bengalis relic, melee attack bonus
 void EffectFunction10062(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
         return;
-    ModAttack(playerId, MansabdarID, cDamageClassMelee, 2);
-    ModAttack(playerId, VeteranMansabdarID, cDamageClassMelee, 2);
-    ModAttack(playerId, EliteMansabdarID, cDamageClassMelee, 2);
-    ModAttack(playerId, ScoutCavalryID, cDamageClassMelee, 2);
+    ModAttack(playerId, cInfantryClass, cDamageClassMelee, 1);
+    ModAttack(playerId, cCavalryClass, cDamageClassMelee, 1);
+    ModAttack(playerId, cScoutCavalryClass, cDamageClassMelee, 1);
+    ModAttack(playerId, MountedTrebuchetID, cDamageClassMelee, -1);
+
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 }
 
 
+//  10063 - Bengalis relic, archer armor
 void EffectFunction10063(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
         return;
-    ModArmor(playerId, 1738, cDamageClassPierce, 1);
-    SetArmor(playerId, 1738, cDamageClassArchers, 254);
-    ModArmor(playerId, 1740, cDamageClassPierce, 1);
-    SetArmor(playerId, 1740, cDamageClassArchers, 254);
-    ModArmor(playerId, 1759, cDamageClassPierce, 1);
-    SetArmor(playerId, 1759, cDamageClassArchers, 254);
-    ModArmor(playerId, 1761, cDamageClassPierce, 1);
-    SetArmor(playerId, 1761, cDamageClassArchers, 254);
+    ModArmor(playerId, cArcherClass, cDamageClassPierce, 1);
+    ModArmor(playerId, cConquistadorClass, cDamageClassPierce, 1);
+    ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
+    ModArmor(playerId, cHandCannoneerClass, cDamageClassPierce, 1);
+    ModArmor(playerId, cArcherClass, cDamageClassMelee, 1);
+    ModArmor(playerId, cConquistadorClass, cDamageClassMelee, 1);
+    ModArmor(playerId, cCavalryArcherClass, cDamageClassMelee, 1);
+    ModArmor(playerId, cHandCannoneerClass, cDamageClassMelee, 1);
+
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 }
 
@@ -323,16 +324,14 @@ void EffectFunction10065(int playerId = -1)
 }
 
 
+//  10066 - Bengalis relic, navy bonus
 void EffectFunction10066(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
         return;
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
-    ModAttribute(playerId, cTradeBoatClass, cRegenerationRate, 15);
-    ModAttribute(playerId, cFishingBoatClass, cRegenerationRate, 15);
-    ModAttribute(playerId, cWarshipClass, cRegenerationRate, 15);
-    ModAttribute(playerId, cBoardingShipClass, cRegenerationRate, 15);
-    ModAttribute(playerId, cTransportShipClass, cRegenerationRate, 15);
+    ModAttack(playerId, cWarshipClass, cDamageClassPierce, 1);
+    ModAttack(playerId, cWarshipClass, cDamageClassMelee, 1);
 }
 
 

@@ -452,11 +452,20 @@ void EffectFunction10001(int playerId = -1)
         case cArmenians:
         {
             EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, StoneShaftMiningTechID);
+            EnableTech(playerId, ThumbRingTechID);
+            EnableTech(playerId, ShipwrightTechID);
             break;
         }
         case cGeorgians:
         {
             EnableTech(playerId, RingArcherArmorTechID);
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, GoldShaftMiningTechID);
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, TreadmillCraneTechID);
+            EnableTech(playerId, AtonementTechID);
+            EnableTech(playerId, IlluminationTechID);
             //  Georgians civ bonus, Repairers +100% work rate
             MulAttribute(playerId, MaleRepairerID, cWorkRate, 2);
             MulAttribute(playerId, FemaleRepairerID, cWorkRate, 2);
@@ -631,6 +640,8 @@ void EffectFunction10018(int playerId = -1)
     AddAttackForm(playerId, EliteKeshikID, cDamageClassArchers, 2);
     AddAttackForm(playerId, MercenaryKeshikID, cDamageClassArchers, 2);
     AddAttackForm(playerId, MercenaryEliteKeshikID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, HospitallerKnightID, cDamageClassArchers, 2);
+    AddAttackForm(playerId, EliteHospitallerKnightID, cDamageClassArchers, 2);
 }
 
 
@@ -681,6 +692,8 @@ void EffectFunction10088(int playerId = -1)
     ModAttribute(playerId, EliteKeshikID, cLineOfSight, 2);
     ModAttribute(playerId, MercenaryKeshikID, cLineOfSight, 2);
     ModAttribute(playerId, MercenaryEliteKeshikID, cLineOfSight, 2);
+    ModAttribute(playerId, HospitallerKnightID, cLineOfSight, 2);
+    ModAttribute(playerId, EliteHospitallerKnightID, cLineOfSight, 2);
 
     ModAttribute(playerId, GuanNingCavalryID, cSearchRadius, 2);
     ModAttribute(playerId, CrusaderKnightID, cSearchRadius, 2);
@@ -696,6 +709,8 @@ void EffectFunction10088(int playerId = -1)
     ModAttribute(playerId, EliteKeshikID, cSearchRadius, 2);
     ModAttribute(playerId, MercenaryKeshikID, cSearchRadius, 2);
     ModAttribute(playerId, MercenaryEliteKeshikID, cSearchRadius, 2);
+    ModAttribute(playerId, HospitallerKnightID, cSearchRadius, 2);
+    ModAttribute(playerId, EliteHospitallerKnightID, cSearchRadius, 2);
 }
 
 

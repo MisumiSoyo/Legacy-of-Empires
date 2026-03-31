@@ -196,22 +196,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "医院骑士",
-            "civilizations": ["Italians", "Sicilians"],
-            "unit_id": 4101,
-            "building_id": 101,
-            "Name": "Hospitaller Knight",
-            "RequiredAge": 3
-        },
-        {
-            "note": "精锐医院骑士",
-            "civilizations": ["Italians", "Sicilians"],
-            "tech_id": 3202,
-            "building_id": 101,
-            "Name": "Elite Hospitaller Knight",
-            "RequiredAge": 4
-        },
-        {
             "note": "僧兵",
             "civilizations": "Japanese",
             "unit_id": 4016,
@@ -926,59 +910,27 @@
             "RequiredAge": 3
         },
         {
-            "note": "孟加拉曼沙布达尔攻击力",
+            "note": "孟加拉步兵和骑兵攻击力",
             "civilizations": "Bengalis",
             "tech_id": 3341,
             "building_id": 104,
-            "Name": "Mansabdar Attack",
+            "Name": "Melee Attack",
             "RequiredAge": 3
         },
         {
-            "note": "孟加拉战车护甲",
+            "note": "孟加拉射手护甲",
             "civilizations": "Bengalis",
             "tech_id": 3342,
             "building_id": 104,
-            "Name": "Ratha Armor",
-            "RequiredAge": 3
-        },
-        {
-            "note": "孟加拉贸易获取木材和食物",
-            "civilizations": "Bengalis",
-            "tech_id": 3343,
-            "building_id": 104,
-            "Name": "Wood and Food from Trade",
-            "RequiredAge": 3
-        },
-        {
-            "note": "孟加拉步兵强化",
-            "civilizations": "Bengalis",
-            "tech_id": 3344,
-            "building_id": 104,
-            "Name": "Infantry Bonus",
+            "Name": "Archer Armor",
             "RequiredAge": 3
         },
         {
             "note": "孟加拉海军强化",
             "civilizations": "Bengalis",
-            "tech_id": 3345,
+            "tech_id": 3343,
             "building_id": 104,
             "Name": "Navy Bonus",
-            "RequiredAge": 3
-        },
-        {
-            "note": "孟加拉召唤战车",
-            "civilizations": "Bengalis",
-            "tech_id": 3346,
-            "building_id": 104,
-            "Name": "Spawn Ratha",
-            "RequiredAge": 3
-        },
-        {
-            "note": "孟加拉骑象射手强化",
-            "civilizations": "Bengalis",
-            "tech_id": 3347,
-            "building_id": 104,
-            "Name": "Elephant Archer Attack",
             "RequiredAge": 3
         },
         {
@@ -1136,8 +1088,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 条顿, 法兰克, 契丹, 西班牙获得脚踏起重机",
-            "civilizations": ["Teutons", "Chinese", "Franks", "Khitans", "Spanish"],
+            "note": "中国, 条顿, 法兰克, 契丹, 西班牙, 格鲁吉亚获得脚踏起重机",
+            "civilizations": ["Teutons", "Chinese", "Franks", "Khitans", "Spanish", "Georgians"],
             "tech_id": 54,
             "building_id": 209,
             "Name": "Treadmill Crane",
@@ -1271,8 +1223,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙, 越南, 马里获得造船匠",
-            "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens", "Portuguese", "Vietnamese", "Malians"],
+            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙, 越南, 马里, 亚美尼亚, 格鲁吉亚获得造船匠",
+            "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens", "Portuguese", "Vietnamese", "Malians", "Armenians", "Georgians"],
             "tech_id": 373,
             "building_id": 209,
             "Name": "Shipwright",
@@ -1295,9 +1247,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏获得双人锯",
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚获得双人锯",
             "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars",
-                              "Armenians", "Wei"],
+                              "Armenians", "Wei", "Georgians"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -1342,8 +1294,8 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴获得扳指",
-            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu"],
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚获得扳指",
+            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1940,8 +1892,8 @@
             "RequiredTechID": 46
         },
         {
-            "note": "葡萄牙获得启发",
-            "civilizations": ["Portuguese"],
+            "note": "葡萄牙, 格鲁吉亚获得启发",
+            "civilizations": ["Portuguese", "Georgians"],
             "tech_id": 233,
             "building_id": 104,
             "Name": "Illumination",
@@ -2147,6 +2099,30 @@
             "building_id": 109,
             "Name": "Ring-Pommeled Sword",
             "RequiredAge": 4
+        },
+        {
+            "note": "格鲁吉亚获得赎罪",
+            "civilizations": "Georgians",
+            "tech_id": 319,
+            "building_id": 104,
+            "Name": "Atonement",
+            "RequiredAge": 3
+        },
+        {
+            "note": "格鲁吉亚获得钻井采金法",
+            "civilizations": ["Georgians"],
+            "tech_id": 182,
+            "building_id": 1808,
+            "Name": "Gold Shaft Mining",
+            "RequiredAge": 3
+        },
+        {
+            "note": "亚美尼亚获得钻井采石法",
+            "civilizations": ["Armenians"],
+            "tech_id": 279,
+            "building_id": 1808,
+            "Name": "Stone Shaft Mining",
+            "RequiredAge": 3
         }
     ]
 }

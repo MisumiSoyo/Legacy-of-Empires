@@ -3852,7 +3852,7 @@
             "Name": "Shipwright",
             "Name String ID": 17377,
             "Node ID": 373,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 97,
             "Prerequisite IDs": [
@@ -4332,7 +4332,7 @@
             "Name": "Illumination",
             "Name String ID": 17220,
             "Node ID": 233,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 84,
             "Prerequisite IDs": [
@@ -4362,7 +4362,7 @@
             "Name": "Atonement",
             "Name String ID": 17316,
             "Node ID": 319,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 93,
             "Prerequisite IDs": [
@@ -4872,7 +4872,7 @@
             "Name": "Gold Shaft Mining",
             "Name String ID": 17180,
             "Node ID": 182,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 62,
             "Prerequisite IDs": [
@@ -5022,7 +5022,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [

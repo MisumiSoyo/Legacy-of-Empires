@@ -17640,11 +17640,6 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Elite Hospitaller Knight",
-                        "RequiredAge": 4,
-                        "ID": 3202
                     }
                 ],
                 "Units": [
@@ -17673,11 +17668,6 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Hospitaller Knight",
-                        "RequiredAge": 3,
-                        "ID": 4101
                     }
                 ]
             },
@@ -31990,11 +31980,6 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Elite Hospitaller Knight",
-                        "RequiredAge": 4,
-                        "ID": 3202
                     }
                 ],
                 "Units": [
@@ -32017,11 +32002,6 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Hospitaller Knight",
-                        "RequiredAge": 3,
-                        "ID": 4101
                     }
                 ]
             },
@@ -44739,39 +44719,19 @@
                         "ID": 3340
                     },
                     {
-                        "Name": "Mansabdar Attack",
+                        "Name": "Melee Attack",
                         "RequiredAge": 3,
                         "ID": 3341
                     },
                     {
-                        "Name": "Ratha Armor",
+                        "Name": "Archer Armor",
                         "RequiredAge": 3,
                         "ID": 3342
                     },
                     {
-                        "Name": "Wood and Food from Trade",
-                        "RequiredAge": 3,
-                        "ID": 3343
-                    },
-                    {
-                        "Name": "Infantry Bonus",
-                        "RequiredAge": 3,
-                        "ID": 3344
-                    },
-                    {
                         "Name": "Navy Bonus",
                         "RequiredAge": 3,
-                        "ID": 3345
-                    },
-                    {
-                        "Name": "Spawn Ratha",
-                        "RequiredAge": 3,
-                        "ID": 3346
-                    },
-                    {
-                        "Name": "Elephant Archer Attack",
-                        "RequiredAge": 3,
-                        "ID": 3347
+                        "ID": 3343
                     }
                 ],
                 "Units": [
@@ -47178,6 +47138,11 @@
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
                     }
                 ],
                 "Units": [
@@ -47674,8 +47639,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 908,
@@ -47992,6 +47957,11 @@
                         "Name": "Forestry",
                         "RequiredAge": 3,
                         "ID": 3003
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -48779,8 +48749,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 908,
@@ -48956,6 +48926,16 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3005
+                    },
+                    {
+                        "Name": "Illumination",
+                        "RequiredAge": 4,
+                        "ID": 233
+                    },
+                    {
+                        "Name": "Atonement",
+                        "RequiredAge": 3,
+                        "ID": 319
                     }
                 ],
                 "Units": [
@@ -49067,6 +49047,11 @@
                         "Name": "Forestry",
                         "RequiredAge": 3,
                         "ID": 3003
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
