@@ -215,25 +215,15 @@ bool ConsumeRelic(int playerId = -1)
         RelicList = xsGetPlayerUnitIds(0, cRelicClass);
     else
         RelicList = xsGetPlayerUnitIds(0, cRelicClass, RelicList);
-    static int PlayerBuildings = 0;
-    if (PlayerBuildings == 0)
-        PlayerBuildings = xsGetPlayerUnitIds(playerId, cBuildingClass);
-    else
-        PlayerBuildings = xsGetPlayerUnitIds(playerId, cBuildingClass, PlayerBuildings);
     int i = 0;
-    int j = 0;
     for (i = 0; < xsArrayGetSize(RelicList))
     {
         int RelicUnitID = xsArrayGetInt(RelicList, i);
-        vector RelicUnitPos = xsGetUnitPosition(RelicUnitID);
-        for (j = 0; < xsArrayGetSize(PlayerBuildings))
+        int UnitID = xsGetGarrisonedInUnitId(RelicUnitID);
+        if (xsGetUnitOwner(UnitID) == playerId)
         {
-            int BuildingID = xsArrayGetInt(PlayerBuildings, j);
-            if (isMonastery(xsGetUnitObjectId(BuildingID)) && (RelicUnitPos == xsGetUnitPosition(BuildingID)))
-            {
-                xsSetUnitHitpoints(RelicUnitID, 0);
-                return (true);
-            }
+            xsRemoveUnit(RelicUnitID);
+            return (true);
         }
     }
     return (false);
