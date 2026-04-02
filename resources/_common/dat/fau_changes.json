@@ -2123,6 +2123,14 @@
             "building_id": 1808,
             "Name": "Stone Shaft Mining",
             "RequiredAge": 3
+        },
+        {
+            "note": "金马刺",
+            "civilizations": "Burgundians",
+            "tech_id": 3390,
+            "building_id": 109,
+            "Name": "Golden Spurs",
+            "RequiredAge": 4
         }
     ]
 }

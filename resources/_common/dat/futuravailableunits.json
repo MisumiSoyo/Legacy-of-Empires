@@ -4171,6 +4171,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Golden Spurs",
+                        "RequiredAge": 4,
+                        "ID": 3390
                     }
                 ],
                 "Units": [
