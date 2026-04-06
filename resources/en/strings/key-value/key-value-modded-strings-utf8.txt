@@ -2,6 +2,7 @@
 8013 "Research Heavy Plow (New Farms provide +125 food, while existing Farms provide a smaller food amount; Farmers +5% work rate)"
 8014 "Research Horse Collar (New Farms provide +75 food, while existing Farms provide a smaller food amount; Farmers +5% work rate)"
 8063 "Upgrade to Keep. (+750 HP, +1 attack, -20% reload time, +1/1P armor, +1 damage vs Ships and Fishing Ships, secondary arrows +1 base attack, +1 damage vs Ships and Fishing Ships)"
+8093 "Research Ballistics (Projectiles become more accurate for moving target and deal full damage to non-primary targets)"
 8255 "Research Farimba (Cavalry +4 attack)"
 8281 "Research Kamandaran (Archer-Line cost no gold, but +50 wood cost)"
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
@@ -53,6 +54,8 @@
 28013 "Research <b>Heavy Plow<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nNew Farms provide +125 food, while existing Farms provide a smaller food amount; Farmers +5% work rate."
 
 28014 "Research <b>Horse Collar<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>)\nNew Farms provide +75 food, while existing Farms provide a smaller food amount; Farmers +5% work rate."
+
+28093 "Research <b>Ballistics<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nProjectiles become more accurate for moving target and deal full damage to non-primary targets."
 
 28255 "Research <b>Farimba<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nCavalry +4 attack."
 

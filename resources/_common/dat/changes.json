@@ -305,6 +305,12 @@
             "name": "弹道学",
             "effect_id": 93,
             "function_id": 10102
+        },
+        {
+            "type": "adjustment",
+            "name": "火绳枪",
+            "effect_id": 602,
+            "function_id": 10103
         }
     ]
 }

@@ -213,6 +213,22 @@ void EffectFunction10102(int playerId = -1)
     SetAttribute(playerId, 2632, cEnableSmartProjectile, 3);
     SetAttribute(playerId, 1548, cEnableSmartProjectile, 3);
 
-    SetAttribute(playerId, ProjectileGuanNingCavalryID, cEnableSmartProjectile, 3);
     SetAttribute(playerId, ProjectileDonsoID, cEnableSmartProjectile, 3);
+}
+
+
+//  10103 - Arquebus Adjustment
+void EffectFunction10103(int playerId = -1)
+{
+    SetAttribute(playerId, 380, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, 368, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, 506, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, 537, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, 374, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, 1119, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, 1733, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, 1789, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, ProjectileGuanNingCavalryID, cEnableSmartProjectile, 3);
+
+    ModAttribute(playerId, ProjectileGuanNingCavalryID, cMovementSpeed, 0.5);
 }
