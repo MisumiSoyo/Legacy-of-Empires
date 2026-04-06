@@ -163,6 +163,7 @@ extern const int WubaoID = 4151;
 extern const int ConscriptedArmyID = 4152;
 extern const int ConscriptedArmy2ID = 4153;
 extern const int ManilaGalleonID = 4157;
+extern const int ProjectileGuanNingCavalryID = 4158;
 
 
 //  Newly added tech IDs

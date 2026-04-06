@@ -299,6 +299,12 @@
             "name": "锁子甲",
             "effect_id": 793,
             "function_id": 10101
+        },
+        {
+            "type": "adjustment",
+            "name": "弹道学",
+            "effect_id": 93,
+            "function_id": 10102
         }
     ]
 }
