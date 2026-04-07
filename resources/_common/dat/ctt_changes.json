@@ -467,9 +467,9 @@
             "target_id": 4080
         },
         {
-            "note": "土耳其, 蒙古, 鞑靼, 高丽, 日本, 西西里, 意大利移除骑士系",
+            "note": "土耳其, 蒙古, 鞑靼, 高丽, 日本移除骑士系",
             "action": "delete",
-            "civ_id": ["TURKS", "MONGOLS", "TATARS", "KOREANS", "JAPANESE", "SICILIANS", "ITALIANS"],
+            "civ_id": ["TURKS", "MONGOLS", "TATARS", "KOREANS", "JAPANESE"],
             "Node ID": [38, 283, 569],
             "Use Type": "Unit"
         },
