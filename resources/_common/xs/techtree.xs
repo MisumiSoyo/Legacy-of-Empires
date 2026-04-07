@@ -243,6 +243,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, BombardTowerTechID);
             EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, PaladinTechID);
             break;
         }
         case cIncas:
@@ -264,6 +265,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ArchitectureTechID);
             EnableTech(playerId, StoneShaftMiningTechID);
             EnableTech(playerId, FaithTechID);
+            EnableTech(playerId, ArrowslitsTechID);
             break;
         }
         case cSlavs:
@@ -401,6 +403,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, PaladinTechID);
             break;
         }
         case cPoles:
@@ -642,7 +645,6 @@ void EffectFunction10018(int playerId = -1)
     AddAttackForm(playerId, MercenaryKeshikID, cDamageClassArchers, 2);
     AddAttackForm(playerId, MercenaryEliteKeshikID, cDamageClassArchers, 2);
     AddAttackForm(playerId, HospitallerKnightID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteHospitallerKnightID, cDamageClassArchers, 2);
 }
 
 
@@ -694,7 +696,6 @@ void EffectFunction10088(int playerId = -1)
     ModAttribute(playerId, MercenaryKeshikID, cLineOfSight, 2);
     ModAttribute(playerId, MercenaryEliteKeshikID, cLineOfSight, 2);
     ModAttribute(playerId, HospitallerKnightID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteHospitallerKnightID, cLineOfSight, 2);
 
     ModAttribute(playerId, GuanNingCavalryID, cSearchRadius, 2);
     ModAttribute(playerId, CrusaderKnightID, cSearchRadius, 2);
@@ -711,7 +712,6 @@ void EffectFunction10088(int playerId = -1)
     ModAttribute(playerId, MercenaryKeshikID, cSearchRadius, 2);
     ModAttribute(playerId, MercenaryEliteKeshikID, cSearchRadius, 2);
     ModAttribute(playerId, HospitallerKnightID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteHospitallerKnightID, cSearchRadius, 2);
 }
 
 

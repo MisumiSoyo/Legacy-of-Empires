@@ -311,7 +311,7 @@
 500121 "Veteran Donso"
 500122 "Elite Donso"
 500123 "Poisoning"
-500124 "Elite Hospitaller Knight"
+500124 "Hospitaller Knight"
 500125 "Golden Horn Tower"
 500126 "Kipchak Reinforcements"
 500127 "Foederati Army"
@@ -499,7 +499,7 @@
 501121 "Upgrade to Veteran Donso"
 501122 "Upgrade to Elite Donso"
 501123 "Research Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable)"
-501124 "Upgrade to Elite Hospitaller Knight"
+501124 "Upgrade to Hospitaller Knight"
 501125 "Research Golden Horn Tower (Trade units can additionally generate 15% stone)"
 501126 "Research Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks)"
 501127 "Research Foederati Army (Enable your team to train Foederati units; Receive 7 food and gold from killing enemies with Foederati units)"
@@ -687,7 +687,7 @@
 521121 "Upgrade to <b>Veteran Donso<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Donsos and lets you create Veteran Donsos."
 521122 "Upgrade to <b>Veteran Donso<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Donsos and lets you create Elite Donsos."
 521123 "Research <b>Poisoning<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nArchers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable."
-521124 "Upgrade to <b>Elite Hospitaller Knight<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Hospitaller Knights and lets you create Elite Hospitaller Knights."
+521124 "Upgrade to <b>Hospitaller Knight<b> (<cost>, 120 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Cavaliers and lets you create Hospitaller Knights."
 521125 "Research <b>Golden Horn Tower<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nTrade units can additionally generate 15% stone."
 521126 "Research <b>Kipchak Reinforcements<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nUpgrade Cavalry Archers to Kipchaks."
 521127 "Research <b>Foederati Army<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nEnable your team to train Foederati units. Receive 7 food and gold from killing enemies with Foederati units.\n\n<GREY>If multiple players researched this technology, the rewards will be divided equally."
@@ -998,7 +998,7 @@
 
 721028 "Create <b>Elite Hobelar<b> (<cost>, 10 <MATERIAL=MPIconGoodCPU,1>)\nBritons' unique cavalry. The first attack in combat mode +7, and then gains 1 melee armor/2 pierce armor, -0.25 movement speed, lasting for 12 seconds.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 1.85 <MATERIAL=EyeIcon> 4\nClass: Cavalry; Tags: Infantry, Unique Unit.\nAttack Bonus: +7 vs buildings in non-combat mode"
 
-721029 "Create <b>Hospitaller Knight<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nItalian and Sicilians' unique Knight-line Cavalry. Can heal allies for 2 HP per second. Hard to be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
+721029 "Create <b>Hospitaller Knight<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nItalian and Sicilians' unique Knight-line Cavalry. Can heal allies for 3 HP per second. Hard to be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.35 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
 
 721030 "Create <b>Elite Hospitaller Knight<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nItalian and Sicilians' unique Knight-line Cavalry. Can heal allies for 3 HP per second. Hard to be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
 

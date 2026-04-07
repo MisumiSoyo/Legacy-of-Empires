@@ -315,7 +315,7 @@
 500121 "老练当佐兵"
 500122 "精锐当佐兵"
 500123 "淬毒"
-500124 "精锐医院骑士"
+500124 "医院骑士"
 500125 "金角湾塔"
 500126 "钦察援军"
 500127 "契约军团"
@@ -503,7 +503,7 @@
 501121 "升级到老练当佐兵"
 501122 "升级到精锐当佐兵"
 501123 "研究淬毒(射手, 骑射手, 火枪手和当佐兵的远程攻击可使敌人减速 15%, 持续 2 秒, 效果不可叠加)"
-501124 "升级到精锐医院骑士"
+501124 "升级到医院骑士"
 501125 "研究金角湾塔(贸易单位可额外产生 15% 石料)"
 501126 "研究钦察援军(将骑射手升级为钦察骑射手)"
 501127 "研究契约军团(团队可训练同盟单位, 并且同盟单位击杀敌人时可为你提供 7 食物和黄金)"
@@ -691,7 +691,7 @@
 521121 "升级到<b>老练当佐兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\n将您的当佐兵升级, 生产更为强大的老练当佐兵。"
 521122 "升级到<b>精锐当佐兵<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n将您的老练当佐兵升级, 生产更为强大的精锐当佐兵。"
 521123 "研究<b>淬毒<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n射手, 骑射手, 火枪手和当佐兵的远程攻击可使敌人减速 15%, 持续 2 秒, 效果不可叠加。"
-521124 "升级到<b>精锐医院骑士<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n将您的医院骑士升级, 生产更为强大的精锐医院骑士。"
+521124 "升级到<b>医院骑士<b> (<cost>, 120 <MATERIAL=MPIconGoodCPU,1>)\n将您的重装骑士升级, 生产更为强大的医院骑士。"
 521125 "研究<b>金角湾塔<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n贸易单位可额外产生 15% 石料。"
 521126 "研究<b>钦察援军<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n将骑射手升级为钦察骑射手。"
 521127 "研究<b>契约军团<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n团队可训练同盟单位, 并且同盟单位击杀敌人时可为你提供 7 食物和黄金。\n\n<GREY>如果多名哥特玩家研究了该科技, 将会平分奖励。"
@@ -1002,7 +1002,7 @@
 
 721028 "生产<b>精锐骑马步兵<b> (<cost>, 10 <MATERIAL=MPIconGoodCPU,1>) \n不列颠独特骑兵, 进入战斗状态的第一次攻击 +7 攻击力, 之后获得 1 护甲/2 盾牌, -0.25 移动速度, 持续 12 秒。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 1.85 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 步兵, 独特单位。\n攻击加成: 非战斗状态下 +7 vs 建筑"
 
-721029 "生产<b>医院骑士<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>) \n意大利和西西里独特骑士系单位, 可每秒治疗 1 名附近友军 2 生命值。难以被转化。\n<i>升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\n主类: 骑兵; 标签: 骑兵, 独特单位。"
+721029 "生产<b>医院骑士<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>) \n意大利和西西里独特骑士系单位, 可每秒治疗 1 名附近友军 3 生命值。难以被转化。\n<i>升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.35 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\n主类: 骑兵; 标签: 骑兵, 独特单位。"
 
 721030 "生产<b>精锐医院骑士<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>) \n意大利和西西里独特骑士系单位, 可每秒治疗 1 名附近友军 3 生命值。难以被转化。\n<i>升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\n主类: 骑兵; 标签: 骑兵, 独特单位。"
 

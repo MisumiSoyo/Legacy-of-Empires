@@ -1479,8 +1479,8 @@
             "type": "delete"
         },
         {
-            "note": "缅甸, 吴, 波斯, 葡萄牙, 马里获得射箭槽",
-            "civilizations": ["Burmese", "Wu", "Persians", "Portuguese", "Malians"],
+            "note": "缅甸, 吴, 波斯, 葡萄牙, 马里, 马扎尔获得射箭槽",
+            "civilizations": ["Burmese", "Wu", "Persians", "Portuguese", "Malians", "Magyars"],
             "tech_id": 608,
             "building_id": 209,
             "Name": "Arrowslits",

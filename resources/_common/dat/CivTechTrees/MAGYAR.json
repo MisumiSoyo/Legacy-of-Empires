@@ -3580,7 +3580,7 @@
             "Name": "Arrowslits",
             "Name String ID": 17278,
             "Node ID": 608,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 119,
             "Prerequisite IDs": [

@@ -754,15 +754,22 @@
             "Use Type": "Unit"
         },
         {
+            "note": "医院骑士替代游侠",
+            "action": "delete",
+            "civ_id": ["ITALIANS", "SICILIANS"],
+            "Node ID": [569],
+            "Use Type": "Unit"
+        },
+        {
             "note": "医院骑士",
             "action": "add",
             "civ_id": ["ITALIANS", "SICILIANS"],
-            "Age ID": 3,
+            "Age ID": 4,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 800029,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
+            "Link ID": 283,
+            "Link Node Type": "UnitUpgrade",
             "Name": "Hospitaller Knight",
             "Name String ID": 700029,
             "Node ID": 4101,
@@ -774,30 +781,7 @@
             "Trigger Tech ID": -1,
             "Use Type": "Unit",
             "position": "after",
-            "target_id": 441
-        },
-        {
-            "note": "精锐医院骑士",
-            "action": "add",
-            "civ_id": ["ITALIANS", "SICILIANS"],
-            "Age ID": 4,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800030,
-            "Link ID": 4101,
-            "Link Node Type": "UniqueUnit",
-            "Name": "Elite Hospitaller Knight",
-            "Name String ID": 700030,
-            "Node ID": 4102,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 357,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": 3202,
-            "Use Type": "Unit",
-            "position": "after",
-            "target_id": 4101
+            "target_id": 283
         },
         {
             "note": "十字军骑士",
@@ -4980,10 +4964,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "马扎尔获得护卫, 步兵钢甲, 信念, 垛墙, 建筑学, 行会, 钻井采石法",
+            "note": "马扎尔获得护卫, 步兵钢甲, 信念, 垛墙, 建筑学, 行会, 钻井采石法, 射箭槽",
             "action": "modify",
             "civ_id": "MAGYAR",
-            "Node ID": [15, 45, 51, 77, 194, 215, 279],
+            "Node ID": [15, 45, 51, 77, 194, 215, 279, 608],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },

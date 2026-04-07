@@ -23611,6 +23611,11 @@
                         "ID": 51
                     },
                     {
+                        "Name": "Arrowslits",
+                        "RequiredAge": 4,
+                        "ID": 608
+                    },
+                    {
                         "Name": "Fortified Wall",
                         "RequiredAge": 3,
                         "ID": 194

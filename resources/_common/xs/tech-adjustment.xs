@@ -113,11 +113,9 @@ void EffectFunction10101(int playerId = -1)
 {
     ModAttribute(playerId, GuanNingCavalryID, cDamageClassPierce, 2);
     ModAttribute(playerId, HospitallerKnightID, cDamageClassPierce, 2);
-    ModAttribute(playerId, EliteHospitallerKnightID, cDamageClassPierce, 2);
 
     ModAttribute(playerId, GuanNingCavalryID, cDamageClassMelee, 1);
     ModAttribute(playerId, HospitallerKnightID, cDamageClassMelee, 1);
-    ModAttribute(playerId, EliteHospitallerKnightID, cDamageClassMelee, 1);
 }
 
 

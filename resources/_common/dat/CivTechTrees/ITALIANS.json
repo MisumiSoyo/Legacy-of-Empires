@@ -1679,66 +1679,6 @@
             "Use Type": "Unit"
         },
         {
-            "Age ID": 3,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800029,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Hospitaller Knight",
-            "Name String ID": 700029,
-            "Node ID": 4101,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 357,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800030,
-            "Link ID": 4101,
-            "Link Node Type": "UniqueUnit",
-            "Name": "Elite Hospitaller Knight",
-            "Name String ID": 700030,
-            "Node ID": 4102,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 357,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": 3202,
-            "Use Type": "Unit"
-        },
-        {
             "Age ID": 2,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
@@ -5219,6 +5159,36 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800029,
+            "Link ID": 283,
+            "Link Node Type": "UnitUpgrade",
+            "Name": "Hospitaller Knight",
+            "Name String ID": 700029,
+            "Node ID": 4101,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 357,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         },
         {
             "Age ID": 3,
