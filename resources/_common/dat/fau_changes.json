@@ -2130,6 +2130,22 @@
             "tech_id": 3390,
             "building_id": 109,
             "Name": "Golden Spurs",
+            "RequiredAge": 3
+        },
+        {
+            "note": "火器铸造",
+            "civilizations": "Burgundians",
+            "tech_id": 3393,
+            "building_id": 109,
+            "Name": "Firearm Casting",
+            "RequiredAge": 4
+        },
+        {
+            "note": "黑军",
+            "civilizations": "Magyars",
+            "tech_id": 3394,
+            "building_id": 109,
+            "Name": "Black Army",
             "RequiredAge": 4
         }
     ]

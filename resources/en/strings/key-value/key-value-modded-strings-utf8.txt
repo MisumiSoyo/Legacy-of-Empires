@@ -123,7 +123,7 @@
 //	Incas
 120170 "Infantry civilization \n\n• Military units -10%/25%/20%/25% food cost in Dark/Feudal/Castle/Imperial Age \n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age)\n• Barracks, Archery Ranges, Stables, Siege Workshop build 100% faster\n• Houses and Settlements support +5 population\n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +2 LOS\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Slingers (archer better combats with infantries)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack) \n• Fabric Shields (Kamayuks, Slingers and Champi Warrior +1 melee/pierce armor)\n• Couriers (Infantries and foot archers +6 line of sight)\n• Quipu (Monks -50% cost)\n\n<b>Team bonus: <b>\nStart with a free Llama"
 //	Magyars
-120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 1 garrisoned relics give +1 melee armor to Steppe Lancers (maximum +5)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n• Cavalry archers can enjoy Bloodlines and Husbandry for free\n\n<b>Unique Unit:<b> \n• Magyar Huszar (Light cavalry better combats with siege weapons)\n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food) \n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
+120171 "Cavalry civilization \n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry, Light Cavalry, Hussar cost -15% \n• Every 1 garrisoned relics give +1 melee armor to Steppe Lancers (maximum +5)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n• Cavalry archers can enjoy Bloodlines and Husbandry for free\n\n<b>Unique Unit:<b> \n• Magyar Huszar (Light cavalry better combats with siege weapons)\n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food)\n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n• Black Army (Cavalries can increase your nearby hand cannoneers' hit points by 30 at most)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 //	Slavs
 120172 "Infantry and Siege civilization \n\n• Farmers +23% work rate, Farms +15% production rate\n• Supplies and Gambesons free\n• Siege Workshop units -15% cost\n• Monk class units +15% moving speed \n• Siege Workshop +25/50% work rate in Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood)\n• Druzhina (Infantry units make blast damage)\n• Boyar's Fortitude (Knight-line units and Boyars +6 attack vs buildings)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
 //	Portuguese
@@ -151,7 +151,7 @@
 //	Lithunians
 120184 "Cavalry and Monk civilization \n\n• Receive 100 food when a Town Center is built up (including the starting one) \n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrades free\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking) \n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range) \n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
 //	Burgundians
-120185 "Cavalry civilization \n\n• Economic upgrades available one age earlier, and -33% food cost\n• Stable technologies -25% cost and don't need ages to unlock\n• Gunpowder units +25% attack\n• Spearman-line units enjoy full Blacksmith infantry armor technologies since feudal age\n\n<b>Unique Units:<b> \n• Coustillier (cavalry with charged attack), Flemish Militia (infantry batter combats with cavalries)\n\n<b>Unique Techs:<b> \n• Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)\n• Flemish Revolution (Upgrades all existing Villagers to Flemish Militia)\n• Golden Spurs (Spearman-line and Flemish Militias +4 melee armor)\n\n<b>Team Bonus:<b>\nRelics generate 30 food per minute besides gold"
+120185 "Cavalry civilization \n\n• Economic upgrades available one age earlier, and -33% food cost\n• Stable technologies -25% cost and don't need ages to unlock\n• Spearman-line units enjoy full Blacksmith infantry armor technologies since feudal age\n\n<b>Unique Units:<b> \n• Coustillier (cavalry with charged attack), Flemish Militia (infantry batter combats with cavalries)\n\n<b>Unique Techs:<b> \n• Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)\n• Flemish Revolution (Upgrades all existing Villagers to Flemish Militia)\n• Golden Spurs (Spearman-line and Flemish Militias +4 melee armor)\n• Firearm Casting (Gunpowder units +25% attack)\n\n<b>Team Bonus:<b>\nRelics generate 30 food per minute besides gold"
 //	Sicilians
 120186 "Infantry civilization \n\n• Start with +100 stone (received when the first TC is built up in Nomad mode)\n• Castles, Tower class, Wall class and Gate class buildings -40% building time, Town Centers -50% building time \n• Land military units (except siege weapons) receive -40% bonus damage \n• Farm upgrades provide +100% additional food\n• Get 1.5 extra gold from each Spearman-line, Skirmisher-line and Genitour line unit trained\n\n<b>Unique Unit:<b> \n• Serjeant (infantry can build Donjons), Donjon (Fortification), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs:<b> \n• First Crusade (Each Town Center (maximum 5) spawns a one-time batch of 5 Serjeants; All units +4 min/max conversion time)\n• Hauberk (Knight-Line units +1/+2P armor)\n• Mediterranean Galleys (Hulk-line units +1 attack)\n• Scutage (Gain 250 gold, and each military unit +15)\n\n<b>Team Bonus:<b>\nTransport ships -50% cost, +5 LOS"
 //	Poles
@@ -372,6 +372,8 @@
 500182 "Tamoios"
 500183 "Ring-Pommeled Swrod"
 500184 "Golden Spurs"
+500185 "Firearm Casting"
+500186 "Black Army"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -558,6 +560,8 @@
 501182 "Research Tamoios (Upgrade all your infantries on map to Elite Ibirapema Warriors)"
 501183 "Research Ring-Pommeled Sword (Militia line +6 attack, +10 gold cost)"
 501184 "Research Golden Spurs (Spearman-line and Flemish Militias +4 melee armor)"
+501185 "Research Firearm Casting (Gunpowder units +25% attack)"
+501186 "Research Black Army (Cavalries can increase your nearby hand cannoneers' hit points by 30 at most)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -743,7 +747,9 @@
 521181 "Research <b>El Dorado<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable)."
 521182 "Research <b>Tamoios<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrade all your infantries on map to Elite Ibirapema Warriors."
 521183 "Research <b>Ring-Pommeled Sword<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nMilitia line +6 attack, +10 gold cost."
-521184 "Research <b>Golden Spurs<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nSpearman-line and Flemish Militias +4 melee armor."
+521184 "Research <b>Golden Spurs<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nSpearman-line and Flemish Militias +4 melee armor."
+521185 "Research <b>Firearm Casting<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nGunpowder units +25% attack."
+521186 "Research <b>Black Army<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalries can increase your nearby hand cannoneers' hit points by 30 at most."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

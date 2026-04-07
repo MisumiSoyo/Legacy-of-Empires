@@ -82,7 +82,7 @@ void EffectFunction10091(int playerId = -1)
 {
     int i = 0;
     int TrainLocation = 0;
-    for (i = NewObjectStartID; <= TotalObjects)
+    for (i = NewObjectStartID; < TotalObjects)
     {
         TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
         if ((TrainLocation == BarracksID) || (TrainLocation == StableID))
@@ -99,7 +99,7 @@ void EffectFunction10092(int playerId = -1)
 {
     int i = 0;
     int TrainLocation = 0;
-    for (i = NewObjectStartID; <= TotalObjects)
+    for (i = NewObjectStartID; < TotalObjects)
     {
         TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
         if (TrainLocation == BarracksID)

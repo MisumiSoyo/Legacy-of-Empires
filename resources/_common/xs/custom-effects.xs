@@ -1344,13 +1344,49 @@ void EffectFunction10100(int playerId = -1)
 }
 
 
+//  10104 - Firearm Casting
+void EffectFunction10104(int playerId = -1)
+{
+    ForceResearchTech(playerId, 769);
+    MulAttack(playerId, GuanNingCavalryID, -1, 1.25);
+    MulAttack(playerId, ProjectileGuanNingCavalryID, -1, 1.25);
+    MulAttack(playerId, HandcannonAshigaruID, -1, 1.25);
+    MulAttack(playerId, StreltsyID, -1, 1.25);
+    MulAttack(playerId, MercenaryConquistadorID, -1, 1.25);
+    MulAttack(playerId, MercenaryEliteConquistadorID, -1, 1.25);
+    MulAttack(playerId, MercenaryOrganGunID, -1, 1.25);
+    MulAttack(playerId, MercenaryEliteOrganGunID, -1, 1.25);
+    MulAttack(playerId, MercenaryHussiteWagonID, -1, 1.25);
+    MulAttack(playerId, MercenaryEliteHussiteWagonID, -1, 1.25);
+}
+
+
+//  10105 - Black Army
+void EffectFunction10105(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000018);
+    xsTaskAmount(cTaskAttrWorkValue1, 30);
+    xsTaskAmount(cTaskAttrWorkValue2, 30);
+    xsTaskAmount(cTaskAttrWorkRange, 8);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTaskAmount(cTaskAttrAutoSearch, 0);
+    xsTask(cHandCannoneerClass, cTaskTypeAura, cCavalryClass, playerId);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTask(cHandCannoneerClass, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsResetTaskAmount();
+    LaunchAura(playerId, cHandCannoneerClass, true);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 225  2026.04.07");
+    xsChatData("Build: 226  2026.04.07");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -4174,8 +4174,13 @@
                     },
                     {
                         "Name": "Golden Spurs",
-                        "RequiredAge": 4,
+                        "RequiredAge": 3,
                         "ID": 3390
+                    },
+                    {
+                        "Name": "Firearm Casting",
+                        "RequiredAge": 4,
+                        "ID": 3393
                     }
                 ],
                 "Units": [
@@ -23827,6 +23832,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Black Army",
+                        "RequiredAge": 4,
+                        "ID": 3394
                     }
                 ],
                 "Units": [

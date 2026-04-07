@@ -321,8 +321,11 @@ void MulAttackBonus(int playerId = -1, int ClassTarget = -1, float value = 0.0)
     MulAttack(playerId, ClassTarget, cDamageClassHeroesAndKings, value);
     MulAttack(playerId, ClassTarget, cDamageClassHeavySiege, value);
     MulAttack(playerId, ClassTarget, cDamageClassSkirmishers, value);
-    MulAttack(playerId, ClassTarget, cDamageClassMonastery, value);
-    MulAttack(playerId, ClassTarget, cDamageClassLightCavalry, value);
+    MulAttack(playerId, ClassTarget, 60, value);
+
+    int i = 0;
+    for (i = NewAttackFormStartID; < TotalAttackForms)
+        MulAttack(playerId, ClassTarget, i, value);
 }
 
 
@@ -413,7 +416,7 @@ void LaunchAura(int playerId = -1, int ObjectID = -1, bool isSelf = false)
     if ((ObjectID >= 900) && (ObjectID <= 964))
     {
         int i = 0;
-        for (i = 0; <= TotalObjects)
+        for (i = 0; < TotalObjects)
             if (((i < 900) || (i > 964)) && (xsGetObjectClass(playerId, i) == ObjectID))
             {
                 ObjectCombatAbility = xsGetObjectAttribute(playerId, i, cCombatAbility);

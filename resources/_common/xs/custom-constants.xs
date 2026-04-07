@@ -60,7 +60,7 @@ extern const int cAttributeTechEffectTime = 713;
 
 //  Custom Units' IDs
 extern const int NewObjectStartID = 4001;
-extern const int TotalObjects = 4157;
+extern const int TotalObjects = 4159;
 extern const int TimerBuildingID = 4001;
 extern const int TimerEventBuildingID = 4002;
 extern const int HobelarID = 4003;
@@ -86,6 +86,8 @@ extern const int MercenaryMagyarHuszarID = 4028;
 extern const int MercenaryEliteMagyarHuszarID = 4029;
 extern const int MercenaryHussiteWagonID = 4044;
 extern const int MercenaryEliteHussiteWagonID = 4045;
+extern const int MercenaryOrganGunID = 4050;
+extern const int MercenaryEliteOrganGunID = 4051;
 extern const int MercenaryConquistadorID = 4052;
 extern const int MercenaryEliteConquistadorID = 4053;
 extern const int MercenaryKeshikID = 4066;
@@ -656,7 +658,8 @@ extern const int HeavyHeiGuangCavalryTechID = 1033;
 
 
 //  Custom Attack Forms
-extern const int TotalAttackForms = 106;
+extern const int NewAttackFormStartID = 101;
+extern const int TotalAttackForms = 107;
 extern const int cDamageClassMonastery = 101;
 extern const int cDamageClassVillager = 102;
 extern const int cDamageClassGunpowderAttack = 103;
