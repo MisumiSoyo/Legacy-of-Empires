@@ -105,7 +105,7 @@
 //	Mongols
 120161 "Cavalry Archer civilization \n\n• Cavalry archers +25% attack speed\n• Scout Cavalry-line and Steppe Lancers +20/30% HP at Castle/Imperial Age\n• Hunters +40% work rate\n• Infantries and cavalries can loot 0.33 gold per second when attacking buildings(except gates, walls and farms)\n• Pastures can accommodate 4 herders\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom) \n• Drill (Siege Workshop units +50% moving speed) \n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barracks and Archery Range units can regenerate 2 HP from each attack; Keshik +1 HP regeneration from attacking)\n\n<b>Team bonus: <b>\nScout-Line, Mansabdar and Auxiliary Cavalry +2 LOS"
 //	Celts
-120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight \n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry), Celtic Hunter (Archer that uses 2 population space)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP)\n\n<b>Team bonus: <b>\nSiege Workshop work rate +20%"
+120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight\n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry), Celtic Hunter (Archer that uses 2 population space)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP)\n• Druid (Monks can increase your nearby lumberjacks and miners' work rate by 12%)\n\n<b>Team bonus: <b>\nSiege Workshop +20% work rate"
 //	Spanish
 120163 "Gunpowder and Monk civilization \n\n• Builders +30% work rate (not applied on the first TC in Nomad mode) \n• Blacksmith upgrades don't cost gold \n• Cannon Galleons projectile speed increases to 7 and enables Ballistics effect \n• Gunpowder units +18% attack speed\n• Gain 20 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\n• Conquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat), War Dog (High speed army)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range) \n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Genitours +2 max range)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 //	Aztecs
@@ -375,6 +375,7 @@
 500185 "Firearm Casting"
 500186 "Black Army"
 500187 "Pilum"
+500188 "Druid"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -564,6 +565,7 @@
 501185 "Research Firearm Casting (Gunpowder units +25% attack)"
 501186 "Research Black Army (Cavalries can increase your nearby hand cannoneers' hit points by 30 at most)"
 501187 "Research Pilum (Skirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers)"
+501188 "Research Druid (Monks can increase your nearby lumberjacks and miners' work rate by 12%)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -753,6 +755,7 @@
 521185 "Research <b>Firearm Casting<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nGunpowder units +25% attack."
 521186 "Research <b>Black Army<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalries can increase your nearby hand cannoneers' hit points by 30 at most."
 521187 "Research <b>Pilum<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nSkirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers."
+521188 "Research <b>Druid<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonks can increase your nearby lumberjacks and miners' work rate by 12%."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

@@ -2147,6 +2147,14 @@
             "building_id": 109,
             "Name": "Pilum",
             "RequiredAge": 3
+        },
+        {
+            "note": "德鲁伊",
+            "civilizations": "Celts",
+            "tech_id": 3395,
+            "building_id": 109,
+            "Name": "Druid",
+            "RequiredAge": 3
         }
     ]
 }

@@ -1380,13 +1380,41 @@ void EffectFunction10105(int playerId = -1)
 }
 
 
+//  10106 - Druid
+void EffectFunction10106(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 13.000002);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.12);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 7);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 39);
+    xsTask(cMonkClass, cTaskTypeAura, MaleLumberjackID, playerId);
+    xsTask(cMonkClass, cTaskTypeAura, FemaleLumberjackID, playerId);
+    xsTask(cMonkClass, cTaskTypeAura, MaleGoldMinerID, playerId);
+    xsTask(cMonkClass, cTaskTypeAura, FemaleGoldMinerID, playerId);
+    xsTask(cMonkClass, cTaskTypeAura, MaleStoneMinerID, playerId);
+    xsTask(cMonkClass, cTaskTypeAura, FemaleStoneMinerID, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, MaleLumberjackID, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, FemaleLumberjackID, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, MaleGoldMinerID, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, FemaleGoldMinerID, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, MaleStoneMinerID, playerId);
+    xsTask(cMonkWithRelicClass, cTaskTypeAura, FemaleStoneMinerID, playerId);
+    xsResetTaskAmount();
+    LaunchAura(playerId, cMonkClass);
+    LaunchAura(playerId, cMonkWithRelicClass);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 229  2026.04.09");
+    xsChatData("Build: 230  2026.04.09");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

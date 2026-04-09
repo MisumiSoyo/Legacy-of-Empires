@@ -8653,6 +8653,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Druid",
+                        "RequiredAge": 3,
+                        "ID": 3395
                     }
                 ],
                 "Units": [
