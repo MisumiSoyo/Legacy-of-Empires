@@ -165,7 +165,7 @@
 //	Gurjaras
 120191 "Cavalry and Camel civilization\n\n• Start with 2 Forage Bushes\n• Can garrison Mills with livestocks, generates 15*ln(total_garrisoned_animal_food/200+1) food per minute\n• Mounted units +20%/+30%/+40% bonus damage in Feudal/Castle/Imperial Age\n• Docks +5 garrison capacity\n\n<b>Unique Units:<b>\n• Chakram Thrower (infantry deals penetrate damage), Shrivamsha Rider (cavalry can dodge projectiles), Camel Scout (light camel rider)\n\n<b>Unique Techs:<b>\n• Kshatriyas (Military units -25% food cost)\n• Frontier Guards (Camel Scout-Line units and Elephant Archers +4 melee armor)\n• Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)\n\n<b>Team Bonus:<b>\nAll Camel and Elephants -20% training time"
 //	Romans
-120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman), Auxiliary Cavalry (Light cavalry), Heavy Skirmisher (Strong skirmisher)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Conscription System (Can conscript Legionaries, Hussars and Elite Centurions at Town Centers once every 90 seconds since Feudal Age)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
+120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman), Auxiliary Cavalry (Light cavalry)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Pilum (Skirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
 //	Armenians
 120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n• Buildings enjoy Ballistics for free\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Scout Cavalry line units is immune to additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 //	Georgians
@@ -374,6 +374,7 @@
 500184 "Golden Spurs"
 500185 "Firearm Casting"
 500186 "Black Army"
+500187 "Pilum"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -562,6 +563,7 @@
 501184 "Research Golden Spurs (Spearman-line and Flemish Militias +4 melee armor)"
 501185 "Research Firearm Casting (Gunpowder units +25% attack)"
 501186 "Research Black Army (Cavalries can increase your nearby hand cannoneers' hit points by 30 at most)"
+501187 "Research Pilum (Skirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -750,6 +752,7 @@
 521184 "Research <b>Golden Spurs<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nSpearman-line and Flemish Militias +4 melee armor."
 521185 "Research <b>Firearm Casting<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nGunpowder units +25% attack."
 521186 "Research <b>Black Army<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalries can increase your nearby hand cannoneers' hit points by 30 at most."
+521187 "Research <b>Pilum<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nSkirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

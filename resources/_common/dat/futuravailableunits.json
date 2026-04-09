@@ -46137,11 +46137,6 @@
                         "Name": "Arbalester",
                         "RequiredAge": 4,
                         "ID": 237
-                    },
-                    {
-                        "Name": "Elite Heavy Skirmisher",
-                        "RequiredAge": 4,
-                        "ID": 655
                     }
                 ],
                 "Units": [
@@ -46868,6 +46863,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Pilum",
+                        "RequiredAge": 3,
+                        "ID": 3389
                     }
                 ],
                 "Units": [
