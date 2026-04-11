@@ -180,14 +180,6 @@ void EffectFunction10102(int playerId = -1)
     SetAttribute(playerId, 1830, cEnableSmartProjectile, 3);
     SetAttribute(playerId, 1867, cEnableSmartProjectile, 3);
     SetAttribute(playerId, 1868, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 367, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 378, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 627, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 628, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 1113, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 1114, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 1167, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, 1168, cEnableSmartProjectile, 3);
     SetAttribute(playerId, 1930, cEnableSmartProjectile, 3);
     SetAttribute(playerId, 1931, cEnableSmartProjectile, 3);
     SetAttribute(playerId, 1971, cEnableSmartProjectile, 3);
