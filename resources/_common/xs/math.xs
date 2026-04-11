@@ -917,3 +917,23 @@ int KeyToHotkeyID(int KeyID = -1)
     }
     return (-1);
 }
+
+
+int FindTask(int playerId = -1, int ObjectID = -1, int TaskType = -1, int TaskObjectClass = 899, int TaskObjectID = -1, float SearchWaitTime = -101.0)
+{
+    int TaskCount = xsGetObjectTaskCount(ObjectID, playerId);
+    int i = 0;
+    for (i = 0; < TaskCount)
+    {
+        xsObjectTaskAmount(ObjectID, playerId, i);
+        if (xsGetTaskAmount(cTaskAttrTaskType) == TaskType)
+        {
+            if ((TaskObjectID != xsGetTaskAmount(cTaskAttrObjectId)) || (TaskObjectClass != xsGetTaskAmount(cTaskAttrObjectClass)))
+                continue;
+            if ((SearchWaitTime != -101.0) && (SearchWaitTime != xsGetTaskAmount(cTaskAttrSearchWaitTime)))
+                continue;
+            return (i);
+        }
+    }
+    return (-1);
+}

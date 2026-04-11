@@ -2149,6 +2149,14 @@
             "RequiredAge": 3
         },
         {
+            "note": "拉丁帆",
+            "civilizations": "Romans",
+            "tech_id": 3414,
+            "building_id": 109,
+            "Name": "Lateen Sail",
+            "RequiredAge": 4
+        },
+        {
             "note": "德鲁伊",
             "civilizations": "Celts",
             "tech_id": 3395,

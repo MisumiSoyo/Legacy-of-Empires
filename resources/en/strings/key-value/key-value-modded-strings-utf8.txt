@@ -141,11 +141,11 @@
 //	Burmese
 120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 //	Vietnamese
-120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
+120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
 120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +150% heal range and heal rate)\n• Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 //	Tatars
-120182 "Cavalry Archer civilization \n\n• Shepherds and herders -36% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Keshik and Elite Keshik available an age in advance\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Cavalries can generate 0.25 gold per second when attacking enemies (except buildings), and Keshiks +200% generation)\n• Khan's Conscription (Immediately conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
+120182 "Cavalry Archer civilization \n\n• Shepherds and herders -36% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Keshik and Elite Keshik available an age in advance\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Cavalries can generate 0.25 gold per second when attacking enemies (except buildings), and Keshiks +200% generation)\n• Khan's Conscription (Immediately conscript 12 Keshiks and 15 Cavalry Archers, and each castle provides 2 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 //	Cumans
 120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Barracks, Archery Ranges and Stables -75 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 //	Lithunians
@@ -165,7 +165,7 @@
 //	Gurjaras
 120191 "Cavalry and Camel civilization\n\n• Start with 2 Forage Bushes\n• Can garrison Mills with livestocks, generates 15*ln(total_garrisoned_animal_food/200+1) food per minute\n• Mounted units +20%/+30%/+40% bonus damage in Feudal/Castle/Imperial Age\n• Docks +5 garrison capacity\n\n<b>Unique Units:<b>\n• Chakram Thrower (infantry deals penetrate damage), Shrivamsha Rider (cavalry can dodge projectiles), Camel Scout (light camel rider)\n\n<b>Unique Techs:<b>\n• Kshatriyas (Military units -25% food cost)\n• Frontier Guards (Camel Scout-Line units and Elephant Archers +4 melee armor)\n• Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)\n\n<b>Team Bonus:<b>\nAll Camel and Elephants -20% training time"
 //	Romans
-120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman), Auxiliary Cavalry (Light cavalry)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Pilum (Skirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
+120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing, Farmers +4% extra work rate\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades \n• Scorpions -50% gold cost\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry replace Two-Handed Swordsman), Auxiliary Cavalry (Light cavalry)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line, and Centurions -33% training time, get 5 charge damage within 20 charge time)\n• Pilum (Skirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers)\n• Lateen Sail (Dromons +15% movement speed)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
 //	Armenians
 120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectiles (second arrow of Galley-line deal 1 damage to any target)\n• Buildings enjoy Ballistics for free\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 range/LOS/search radius)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Scout Cavalry line units is immune to additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 //	Georgians
@@ -376,6 +376,7 @@
 500186 "Black Army"
 500187 "Pilum"
 500188 "Druid"
+500189 "Lateen Sail"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -416,7 +417,7 @@
 501036 "Research Pavise (Archer line and Hand Cannoneers +3 melee armor, receive -2 damage from cavalry units)"
 501037 "Research Thunderclap Cart (Make Traction Trebuchets available, and Traction Trebuchets +10% attack speed, +1 range)"
 501038 "Research Anawrahta's Canals (Farms generate 4.8 food per minute)"
-501039 "Research Monsoon Navigation (Fish ships and Transport ships +60% movement speed)"
+501039 "Research Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)"
 501040 "Research Ikko-Ikki (Enable you to train Soheis, but villagers -7% work rate)"
 501041 "Research Military Training (Land military units +20% training speed, except siege weapons and monks)"
 501042 "Research Floating Garden (Economic units and all buildings +20% work rate, lasting for 3 minutes)"
@@ -432,7 +433,7 @@
 501052 "Research Town Defense (Town Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power)"
 501053 "Research Scutage (Gain 250 gold, and each military unit +15)"
 501054 "Research Raide Horn (Cavalries can generate 0.25 gold per second when attacking enemies (except buildings), and Keshiks +200% generation)"
-501055 "Research Khan's Conscription (Immediately conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription)"
+501055 "Research Khan's Conscription (Immediately conscript 12 Keshiks and 12 Cavalry Archers, and each castle provides 2 additional conscription)"
 501056 "Research Whistling Arrow (Chanyu gains +100 HP and the ability to perform charge attacks)"
 501057 "Research Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)"
 501058 "Research Suftaja (Spawn 8 trade carts, with each market +1)"
@@ -566,6 +567,7 @@
 501186 "Research Black Army (Cavalries can increase your nearby hand cannoneers' hit points by 30 at most)"
 501187 "Research Pilum (Skirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers)"
 501188 "Research Druid (Monks can increase your nearby lumberjacks and miners' work rate by 12%)"
+501189 "Research Lateen Sail (Dromons +15% movement speed)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -606,7 +608,7 @@
 521036 "Research <b>Pavise<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nArcher line and Hand Cannoneers +3 melee armor, receive -2 damage from cavalry units."
 521037 "Research <b>Thunderclap Cart<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMake Traction Trebuchets available, and Traction Trebuchets +10% attack speed, +1 range."
 521038 "Research <b>Anawrahta's Canals<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nFarms generate 4.8 food per minute."
-521039 "Research <b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +60% movement speed."
+521039 "Research <b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish."
 521040 "Research <b>Ikko-Ikki<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nEnable you to train Soheis, but villagers -7% work rate."
 521041 "Research <b>Military Training<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nLand military units +20% training speed, except siege weapons and monks."
 521042 "Research <b>Floating Garden<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nEconomic units and all buildings +20% work rate, lasting for 3 minutes."
@@ -622,7 +624,7 @@
 521052 "Research <b>Town Defense<b> (<cost>) (time: 55)\nTown Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power."
 521053 "Research <b>Scutage<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nGain 250 gold, and each military +15."
 521054 "Research <b>Raide Horn<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nCavalries can generate 0.25 gold per second when attacking enemies (except buildings), and Keshiks +200% generation."
-521055 "Research <b>Khan's Conscription<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nImmediately conscript 15 Keshiks and 15 Cavalry Archers, and each castle provides 1 additional conscription."
+521055 "Research <b>Khan's Conscription<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nImmediately conscript 12 Keshiks and 12 Cavalry Archers, and each castle provides 2 additional conscription."
 521056 "Research <b>Whistling Arrow<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nChanyu gains +100 HP and the ability to perform charge attacks."
 521057 "Research <b>Stockfish Trade<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nFishermen and Fishing Ships -50% food production, but can generate equivalent gold."
 521058 "Research <b>Suftaja<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nSpawn 8 trade carts, with each market +1."
@@ -756,6 +758,7 @@
 521186 "Research <b>Black Army<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalries can increase your nearby hand cannoneers' hit points by 30 at most."
 521187 "Research <b>Pilum<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nSkirmisher line +15 food and wood cost, +2 attack, +3 attack vs Archers."
 521188 "Research <b>Druid<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonks can increase your nearby lumberjacks and miners' work rate by 12%."
+521189 "Research <b>Lateen Sail<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nDromons +15% movement speed."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

@@ -1408,13 +1408,25 @@ void EffectFunction10106(int playerId = -1)
 }
 
 
+//  10107 - Monsoon Navigation
+void EffectFunction10107(int playerId = -1)
+{
+    MulAttribute(playerId, cFishingBoatClass, cMovementSpeed, 1.6);
+    MulAttribute(playerId, cFishingBoatClass, cMovementSpeed, 1.6);
+
+    MulFishingWorkValue(playerId, FishingShipID);
+    MulFishingWorkValue(playerId, FishingShip2ID);
+    MulFishingWorkValue(playerId, AntiquityModeFishingShipID);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 230  2026.04.09");
+    xsChatData("Build: 231  2026.04.11");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -608,6 +608,22 @@ void EffectFunction10098(int playerId = -1)
 }
 
 
+void MulFishingWorkValue(int playerId = -1, int ObjectID = -1)
+{
+    int TaskID = FindTask(playerId, ObjectID, cTaskTypeGatherRebuild, cSeaFishClass, -1);
+    xsObjectTaskAmount(ObjectID, playerId, TaskID);
+    float tmp = xsGetTaskAmount(cTaskAttrWorkValue1) * 1.33;
+    xsTaskAmount(cTaskAttrWorkValue1, tmp);
+    xsTask(ObjectID, cTaskTypeGatherRebuild, cSeaFishClass, playerId);
+    TaskID = FindTask(playerId, ObjectID, cTaskTypeGatherRebuild, cDeepSeaFishClass, -1);
+    xsObjectTaskAmount(ObjectID, playerId, TaskID);
+    tmp = xsGetTaskAmount(cTaskAttrWorkValue1) * 1.33;
+    xsTaskAmount(cTaskAttrWorkValue1, tmp);
+    xsTask(ObjectID, cTaskTypeGatherRebuild, cSeaFishClass, playerId);
+    xsResetTaskAmount();
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

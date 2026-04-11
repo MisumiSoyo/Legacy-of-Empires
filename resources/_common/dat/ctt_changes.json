@@ -5376,6 +5376,27 @@
             "Use Type": "Tech"
         },
         {
+            "note": "拉丁帆",
+            "action": "add",
+            "civ_id": "ROMANS",
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600189,
+            "Link ID": 3389,
+            "Link Node Type": "BuildingTech",
+            "Name": "Lateen Sail",
+            "Name String ID": 500189,
+            "Node ID": 3414,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
             "note": "德鲁伊",
             "action": "add",
             "civ_id": "CELTS",

@@ -46873,6 +46873,11 @@
                         "Name": "Pilum",
                         "RequiredAge": 3,
                         "ID": 3389
+                    },
+                    {
+                        "Name": "Lateen Sail",
+                        "RequiredAge": 4,
+                        "ID": 3414
                     }
                 ],
                 "Units": [
