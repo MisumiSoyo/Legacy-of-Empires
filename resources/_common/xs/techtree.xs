@@ -643,10 +643,6 @@ void EffectFunction10018(int playerId = -1)
     AddAttackForm(playerId, EliteMountedSamuraiID, cDamageClassArchers, 2);
     AddAttackForm(playerId, GoguryeoHeavyCavalryID, cDamageClassArchers, 2);
     AddAttackForm(playerId, EliteGoguryeoHeavyCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, KeshikID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteKeshikID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, MercenaryKeshikID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, MercenaryEliteKeshikID, cDamageClassArchers, 2);
     AddAttackForm(playerId, HospitallerKnightID, cDamageClassArchers, 2);
 }
 
@@ -694,10 +690,6 @@ void EffectFunction10088(int playerId = -1)
     ModAttribute(playerId, EliteMountedSamuraiID, cLineOfSight, 2);
     ModAttribute(playerId, GoguryeoHeavyCavalryID, cLineOfSight, 2);
     ModAttribute(playerId, EliteGoguryeoHeavyCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, KeshikID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteKeshikID, cLineOfSight, 2);
-    ModAttribute(playerId, MercenaryKeshikID, cLineOfSight, 2);
-    ModAttribute(playerId, MercenaryEliteKeshikID, cLineOfSight, 2);
     ModAttribute(playerId, HospitallerKnightID, cLineOfSight, 2);
 
     ModAttribute(playerId, GuanNingCavalryID, cSearchRadius, 2);
@@ -710,10 +702,6 @@ void EffectFunction10088(int playerId = -1)
     ModAttribute(playerId, EliteMountedSamuraiID, cSearchRadius, 2);
     ModAttribute(playerId, GoguryeoHeavyCavalryID, cSearchRadius, 2);
     ModAttribute(playerId, EliteGoguryeoHeavyCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, KeshikID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteKeshikID, cSearchRadius, 2);
-    ModAttribute(playerId, MercenaryKeshikID, cSearchRadius, 2);
-    ModAttribute(playerId, MercenaryEliteKeshikID, cSearchRadius, 2);
     ModAttribute(playerId, HospitallerKnightID, cSearchRadius, 2);
 }
 

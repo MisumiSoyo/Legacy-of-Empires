@@ -88,9 +88,6 @@ void EffectFunction10091(int playerId = -1)
         if ((TrainLocation == BarracksID) || (TrainLocation == StableID))
             ModArmor(playerId, i, cDamageClassMelee, 1);
     }
-
-    ModArmor(playerId, KeshikID, cDamageClassMelee, 1);
-    ModArmor(playerId, EliteKeshikID, cDamageClassMelee, 1);
 }
 
 
