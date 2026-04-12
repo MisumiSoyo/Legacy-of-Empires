@@ -23,6 +23,7 @@ void EffectFunction10001(int playerId = -1)
         DisableTech(playerId, HorseCollarTechID);
         DisableTech(playerId, HeavyPlowTechID);
         DisableTech(playerId, CropRotationTechID);
+        DisableTech(playerId, CashCropTechID);
     }
     else
     {
@@ -170,6 +171,8 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, BombardCannonTechID);
+            DisableTech(playerId, KnightTechID);
+            DisableTech(playerId, CavalierTechID);
             break;
         }
         case cCelts:

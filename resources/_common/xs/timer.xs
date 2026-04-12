@@ -79,11 +79,6 @@ void MalayFreeArmy(int playerId = -1, int Time = -1)
     SetResource(playerId, cAttributeMalayArmyTimer, MalayArmyTimer - 1);
 }
 
-void KhanLimit(int playerId = -1, int Time = -1)
-{
-    SetAttribute(playerId, KhanID, cAvailableFlag, xsPlayerAttribute(playerId, cAttributeCastle));
-}
-
 
 void PolesFolwarkBonus(int playerId = -1, int Time = -1)
 {
@@ -142,8 +137,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
             break;
         }
     }
-
-    KhanLimit(playerId, Time);
 }
 
 

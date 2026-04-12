@@ -456,15 +456,12 @@ void EffectFunction10025(int playerId = -1)
     PaxMongolicaApplier(playerId, HandCannoneerID);
     PaxMongolicaApplier(playerId, GenitourID);
     PaxMongolicaApplier(playerId, EliteGenitourID);
-    PaxMongolicaApplier(playerId, KeshikID);
-    PaxMongolicaApplier(playerId, EliteKeshikID);
-    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
-        if (isResearched(playerId, CavalierTechID))
-            UpgradeUnit(playerId, KnightID, EliteKeshikID);
-        else
-            UpgradeUnit(playerId, KnightID, KeshikID);
-    
     xsResetTaskAmount();
+
+    SetAttribute(playerId, EliteKeshikID, cTrainLocation, StableID);
+    SetAttribute(playerId, EliteKeshikID, cTrainButton, 2);
+    SetAttribute(playerId, EliteKeshikID, cHotkeyId, WHotkeyID);
+    EnableObject(playerId, EliteKeshikID);
 }
 
 
@@ -936,23 +933,17 @@ void EffectFunction10047(int playerId = -1)
 void EffectFunction10048(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeCavalryAttackGoldProductivity);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01 / 3);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000006);
-
-    ApplyToAllPlayerTargets(playerId, cScoutCavalryClass, cTaskTypeGenerateResources);
-    ApplyToAllPlayerTargets(playerId, cCavalryClass, cTaskTypeGenerateResources);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    ApplyToAllPlayerTargets(playerId, KeshikID, cTaskTypeGenerateResources);
-    ApplyToAllPlayerTargets(playerId, EliteKeshikID, cTaskTypeGenerateResources);
-    if ((xsGetPlayerCivilization(playerId) == cMongols) || (xsGetPlayerCivilization(playerId) == cTatars))
-    {
-        ApplyToAllPlayerTargets(playerId, KnightID, cTaskTypeGenerateResources);
-        ApplyToAllPlayerTargets(playerId, CavalierID, cTaskTypeGenerateResources);
-    }
+    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000002);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrWorkValue1, 180);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 2);
+    ApplyToAllPlayerTargets(playerId, KeshikID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, EliteKeshikID, cTaskTypeStinger);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeCavalryAttackGoldProductivity, 75);
+    LaunchStinger(playerId, KeshikID);
+    LaunchStinger(playerId, EliteKeshikID);
+    MulResource(playerId, 213, 2);
 }
 
 
@@ -1426,7 +1417,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 233  2026.04.12");
+    xsChatData("Build: 234  2026.04.12");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

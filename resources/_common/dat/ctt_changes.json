@@ -467,9 +467,9 @@
             "target_id": 4080
         },
         {
-            "note": "土耳其, 蒙古, 鞑靼, 高丽, 日本移除骑士系",
+            "note": "土耳其, 高丽, 日本移除骑士系",
             "action": "delete",
-            "civ_id": ["TURKS", "MONGOLS", "TATARS", "KOREANS", "JAPANESE"],
+            "civ_id": ["TURKS", "KOREANS", "JAPANESE"],
             "Node ID": [38, 283, 569],
             "Use Type": "Unit"
         },
@@ -2886,57 +2886,27 @@
             "Age ID": 2
         },
         {
-            "note": "鞑靼移除原有怯薛",
-            "action": "delete",
-            "civ_id": "TATARS",
-            "Node ID": [1228, 1230],
-            "Use Type": "Unit"
-        },
-        {
-            "note": "蒙古, 鞑靼新增怯薛",
+            "note": "蒙古新增精锐怯薛",
             "action": "add",
-            "civ_id": ["MONGOLS", "TATARS"],
-            "Age ID": 3,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 105313,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Keshik",
-            "Name String ID": 5313,
-            "Node ID": 1228,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 251,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit",
-            "position": "after",
-            "target_id": 441
-        },
-        {
-            "note": "蒙古, 鞑靼新增精锐怯薛",
-            "action": "add",
-            "civ_id": ["MONGOLS", "TATARS"],
+            "civ_id": ["MONGOLS"],
             "Age ID": 4,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
             "Help String ID": 105314,
-            "Link ID": 1228,
-            "Link Node Type": "UniqueUnit",
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
             "Name": "Elite Keshik",
             "Name String ID": 5314,
             "Node ID": 1230,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "ResearchRequired",
             "Node Type": "UniqueUnit",
             "Picture Index": 507,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": 680,
+            "Prerequisite IDs": [3156, 0, 0, 0, 0],
+            "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
             "Use Type": "Unit",
             "position": "after",
-            "target_id": 1228
+            "target_id": 569
         },
         {
             "note": "可汗",
@@ -2994,22 +2964,6 @@
             "Node ID": 448,
             "Use Type": "Unit",
             "Age ID": 1
-        },
-        {
-            "note": "鞑靼封建时代怯薛",
-            "action": "modify",
-            "civ_id": "TATARS",
-            "Node ID": 1228,
-            "Use Type": "Unit",
-            "Age ID": 2
-        },
-        {
-            "note": "鞑靼城堡时代精锐怯薛",
-            "action": "modify",
-            "civ_id": "TATARS",
-            "Node ID": 1230,
-            "Use Type": "Unit",
-            "Age ID": 3
         },
         {
             "note": "猛安谋克",
@@ -4854,6 +4808,14 @@
             "Node ID": [36],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "蒙古失去骑士, 重装骑士",
+            "action": "modify",
+            "civ_id": "MONGOLS",
+            "Node ID": [38, 283],
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable"
         },
         {
             "note": "西班牙获得轮作, 攻城技师, 脚踏起重机",

@@ -942,18 +942,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "鞑靼移除原有怯薛",
-            "civilizations": "Tatars",
-            "unit_id": [1228, 1230],
-            "type": "delete"
-        },
-        {
-            "note": "鞑靼移除原有精锐怯薛科技",
-            "civilizations": "Tatars",
-            "tech_id": 680,
-            "type": "delete"
-        },
-        {
             "note": "可汗",
             "civilizations": "Tatars",
             "unit_id": 4133,
@@ -1603,14 +1591,14 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 匈奴失去骑士系",
-            "civilizations": ["Chinese", "Huns"],
+            "note": "中国, 匈奴, 蒙古失去骑士系",
+            "civilizations": ["Chinese", "Huns", "Mongols"],
             "unit_id": [38, 283],
             "type": "delete"
         },
         {
-            "note": "中国, 匈奴失去重装骑士",
-            "civilizations": ["Chinese", "Huns"],
+            "note": "中国, 匈奴, 蒙古失去重装骑士",
+            "civilizations": ["Chinese", "Huns", "Mongols"],
             "tech_id": 209,
             "type": "delete"
         },

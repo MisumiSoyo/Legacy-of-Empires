@@ -157,12 +157,8 @@ void GenerateGoldFromBuilding(int ClassTarget = -1, int playerId = -1)
 void PaxMongolicaApplier(int playerId = -1, int ClassTarget = -1)
 {
     xsTaskAmount(cTaskAttrWorkValue1, 2.0 * 60);
-    if ((ClassTarget == KeshikID) || (ClassTarget == EliteKeshikID))
-        xsTaskAmount(cTaskAttrWorkValue1, 1.0 * 60);
     xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
     xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 2.0 * 60);
-    if ((ClassTarget == KeshikID) || (ClassTarget == EliteKeshikID))
-        xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 1.0 * 60);
     xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
     xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);

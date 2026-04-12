@@ -27492,11 +27492,6 @@
                         "RequiredAge": 2
                     },
                     {
-                        "ID": 209,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 236,
                         "Name": "Heavy Camel Rider",
                         "RequiredAge": 4
@@ -27528,16 +27523,6 @@
                         "Name": "Hussar",
                         "RequiredAge": 4,
                         "RequiredUnitID": 546
-                    },
-                    {
-                        "ID": 38,
-                        "Name": "Knight",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 283,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 329,
@@ -35848,6 +35833,11 @@
                 "Name": "Castle",
                 "Techs": [
                     {
+                        "ID": 680,
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4
+                    },
+                    {
                         "ID": 687,
                         "Name": "Silk Armor",
                         "RequiredAge": 3
@@ -35879,6 +35869,16 @@
                     }
                 ],
                 "Units": [
+                    {
+                        "ID": 1228,
+                        "Name": "Keshik",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "ID": 1230,
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4
+                    },
                     {
                         "ID": 440,
                         "Name": "Petard",

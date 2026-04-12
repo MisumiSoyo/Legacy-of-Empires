@@ -1649,18 +1649,18 @@
             "Use Type": "Unit"
         },
         {
-            "Age ID": 2,
+            "Age ID": 3,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 105313,
+            "Help String ID": 105068,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Keshik",
-            "Name String ID": 5313,
-            "Node ID": 1228,
+            "Name": "Knight",
+            "Name String ID": 14068,
+            "Node ID": 38,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 251,
+            "Node Type": "Unit",
+            "Picture Index": 1,
             "Prerequisite IDs": [
                 0,
                 0,
@@ -1679,18 +1679,18 @@
             "Use Type": "Unit"
         },
         {
-            "Age ID": 3,
+            "Age ID": 4,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 105314,
-            "Link ID": 1228,
-            "Link Node Type": "UniqueUnit",
-            "Name": "Elite Keshik",
-            "Name String ID": 5314,
-            "Node ID": 1230,
+            "Help String ID": 105070,
+            "Link ID": 38,
+            "Link Node Type": "Unit",
+            "Name": "Cavalier",
+            "Name String ID": 14070,
+            "Node ID": 283,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 507,
+            "Node Type": "UnitUpgrade",
+            "Picture Index": 49,
             "Prerequisite IDs": [
                 0,
                 0,
@@ -1705,7 +1705,37 @@
                 "None",
                 "None"
             ],
-            "Trigger Tech ID": 680,
+            "Trigger Tech ID": 209,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105471,
+            "Link ID": 283,
+            "Link Node Type": "UnitUpgrade",
+            "Name": "Paladin",
+            "Name String ID": 14471,
+            "Node ID": 569,
+            "Node Status": "NotAvailable",
+            "Node Type": "UnitUpgrade",
+            "Picture Index": 2,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 265,
             "Use Type": "Unit"
         },
         {
@@ -3929,6 +3959,66 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 82,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105313,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Keshik",
+            "Name String ID": 14313,
+            "Node ID": 1228,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 251,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 82,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105314,
+            "Link ID": 1228,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Keshik",
+            "Name String ID": 14314,
+            "Node ID": 1230,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 507,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 680,
+            "Use Type": "Unit"
         },
         {
             "Age ID": 3,
