@@ -58496,16 +58496,6 @@
                         "RequiredAge": 1
                     },
                     {
-                        "ID": 213,
-                        "Name": "Wheelbarrow",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 249,
-                        "Name": "Hand Cart",
-                        "RequiredAge": 3
-                    },
-                    {
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
