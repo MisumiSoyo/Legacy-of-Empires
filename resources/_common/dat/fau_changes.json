@@ -2151,6 +2151,14 @@
             "building_id": 109,
             "Name": "Druid",
             "RequiredAge": 3
+        },
+        {
+            "note": "凯尔特民兵",
+            "civilizations": "Celts",
+            "tech_id": 3145,
+            "building_id": 109,
+            "Name": "Kern",
+            "RequiredAge": 4
         }
     ]
 }

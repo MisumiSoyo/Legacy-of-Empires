@@ -8658,6 +8658,11 @@
                         "Name": "Druid",
                         "RequiredAge": 3,
                         "ID": 3395
+                    },
+                    {
+                        "Name": "Kern",
+                        "RequiredAge": 4,
+                        "ID": 3145
                     }
                 ],
                 "Units": [

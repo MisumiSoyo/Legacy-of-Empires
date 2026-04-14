@@ -661,13 +661,14 @@ extern const int HeavyHeiGuangCavalryTechID = 1033;
 
 //  Custom Attack Forms
 extern const int NewAttackFormStartID = 101;
-extern const int TotalAttackForms = 107;
+extern const int TotalAttackForms = 108;
 extern const int cDamageClassMonastery = 101;
 extern const int cDamageClassVillager = 102;
 extern const int cDamageClassGunpowderAttack = 103;
 extern const int cDamageClassSiegeWeaponAttack = 104;
 extern const int cDamageClassLightCavalry = 105;
 extern const int cDamageClassTradeUnit = 106;
+extern const int cDamageClassScout = 107;
 
 
 extern const int HospitallerKnightMaxCharge = 300;
