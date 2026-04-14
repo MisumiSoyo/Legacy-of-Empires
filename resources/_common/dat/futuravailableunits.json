@@ -1962,6 +1962,11 @@
                         "Name": "Adarga",
                         "RequiredAge": 3,
                         "ID": 3263
+                    },
+                    {
+                        "Name": "Desert Raider",
+                        "RequiredAge": 4,
+                        "ID": 3146
                     }
                 ],
                 "Units": [
@@ -58504,6 +58509,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Woven Talismans",
+                        "RequiredAge": 3,
+                        "ID": 3147
                     },
                     {
                         "Name": "Tamoios",

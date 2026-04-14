@@ -5489,6 +5489,36 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600191,
+            "Link ID": 3263,
+            "Link Node Type": "BuildingTech",
+            "Name": "Desert Raider",
+            "Name String ID": 500191,
+            "Node ID": 3146,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
         }
     ]
 }

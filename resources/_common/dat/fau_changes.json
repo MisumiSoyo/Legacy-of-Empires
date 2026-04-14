@@ -1637,6 +1637,14 @@
             "RequiredAge": 3
         },
         {
+            "note": "沙漠掠夺者",
+            "civilizations": "Berbers",
+            "tech_id": 3146,
+            "building_id": 109,
+            "Name": "Desert Raider",
+            "RequiredAge": 4
+        },
+        {
             "note": "老练突袭大象",
             "civilizations": "Dravidians",
             "tech_id": 3335,
@@ -2063,6 +2071,14 @@
             "building_id": 109,
             "Name": "Sacred Ritual",
             "RequiredAge": 4
+        },
+        {
+            "note": "编织护符",
+            "civilizations": "Tupi",
+            "tech_id": 3147,
+            "building_id": 109,
+            "Name": "Woven Talismans",
+            "RequiredAge": 3
         },
         {
             "note": "塔莫约联盟",
