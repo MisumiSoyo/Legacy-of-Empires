@@ -176,7 +176,7 @@
 //	Jurchens
 120201 "Cavalry and Gunpowder civilization\n\n• Meat of hunted and livestock animals doesn't decay\n• Mounted Units and Fire Lancers attack +25% faster starting in Feudal Age\n• Siege Engineers available in Castle Age\n• Siege and Fortification upgrades cost -75% wood and research +100% faster\n• Units receive -50% friendly fire damage\n• Each town center spawns a deer every 325/275/225/175 seconds at Dark/Feudal/Castle/Imperial Age\n\n<b>Unique Units:<b>\n• Iron Pagoda (Cavalry), Grenadier (Gunpowder Unit), Conscripted Army (Infantries that can be trained at town center)\n\n<b>Unique Techs:<b>\n• Fortified Bastions (Fortifications regenerate 500 HP per minute)\n• Thunderclap Bombs (Rocket Carts, Grenadiers and Lou Chuans detonate when defeated; projectiles produce additional explosions)\n• Meng'an Mouke (Town Center +50% work rate and can train an additional Conscripted Army in one group; +40 population headroom)\n• Flanking Cavalry (Mounted units can additionally block a melee attack)\n\n<b>Team Bonus:<b>\nGunpowder Units +2 line of sight"
 //	Khitans
-120202 "Infantry and Cavalry civilization\n\n• Shepherds and herders produce +5/10/15% food at Feudal/Castle/Imperial Age\n• Melee attack upgrade effects are doubled\n• Skirmishers, Spearman-, and Scout Cavalry-line train and upgrade +15% faster\n• Heavy Cavalry Archer upgrade available in Castle Age and costs -50%\n\n<b>Unique Units:<b>\n• Liao Dao (Infantry), Mounted Trebuchet (Siege Cavalry)\n\n<b>Unique Techs:<b>\n• Lamellar Armor (Infantry and Skirmishers reflect 25% melee damage back to the attacker)\n• Ordo Cavalry (Cavalry regenerates 150% HP per minute in combat)\n• Dacaogu (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)\n\n<b>Team Bonus:<b>\nInfantry +2 attack vs ranged soldiers"
+120202 "Infantry and Cavalry civilization\n\n• Shepherds and herders produce +5/10/15% food at Feudal/Castle/Imperial Age\n• Melee attack upgrade effects are doubled\n• Skirmishers, Spearman-, and Scout Cavalry-line train and upgrade +15% faster\n• Heavy Cavalry Archer upgrade available in Castle Age and costs -50%\n\n<b>Unique Units:<b>\n• Liao Dao (Infantry), Mounted Trebuchet (Siege Cavalry)\n\n<b>Unique Techs:<b>\n• Lamellar Armor (Infantry and Skirmishers reflect 25% melee damage back to the attacker)\n• Ordo Cavalry (Cavalry regenerates 150% HP per minute in combat)\n• Iron Hawk (Enable you to train Iron Hawk)\n• Dacaogu (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)\n\n<b>Team Bonus:<b>\nInfantry +2 attack vs ranged soldiers"
 //	Muisca
 120206 "Archer and Monk civilization\n\n• Advancing to the next Age costs -50% gold\n• Settlements cost -25% and heal nearby units\n• Champi Warriors and Archery Range Units +1/2/3 melee armor in Feudal/Castle/Imperial Age\n• Monks regain faith +50% faster\n• Caravan, Guilds free\n\n<b>Unique Units:<b>\nGuecha Warrior (Skirmisher), Temple Guard (Infantry)\n\n<b>Unique Techs:<b>\n• Herbalism (Archer-line and Champi Warriors move +15% faster)\n• Huaracas (Slingers +1 range; train +25% faster)\n• El Dorado (Monk with relics +5 melee/pierce armor, +60 HP regeneration per minute; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable))\n• Sacred Ritual (Infantries regenerate 2 HP from each attack)\n\n<b>Team Bonus:<b>\nNatural gold sources last +15% longer"
 //	Mapuche
@@ -377,6 +377,7 @@
 500190 "Kern"
 500191 "Desert Raider"
 500192 "Woven Talismans"
+500193 "Iron Hawk"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -571,6 +572,7 @@
 501190 "Research Kern (Villagers +10 attack vs scout units, +10 attack vs Standard Buildings, +6 attack vs Stone Defensive Buildings, +10 attack vs Castle)"
 501191 "Research Desert Raider (Genitours +50% attack speed, -1 melee/pierce armor)"
 501192 "Research Woven Talismans (Spearman line can block a melee attack every 40 seconds)"
+501193 "Research Iron Hawk (Enable you to train Iron Hawk)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -765,6 +767,7 @@
 521190 "Research <b>Kern<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nVillagers +10 attack vs scout units, +10 attack vs Standard Buildings, +6 attack vs Stone Defensive Buildings, +10 attack vs Castle."
 521191 "Research <b>Desert Raider<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nGenitours +50% attack speed, -1 melee/pierce armor."
 521192 "Research <b>Woven Talismans<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nSpearman line can block a melee attack every 40 seconds."
+521193 "Research <b>Iron Hawk<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nEnable you to train Iron Hawk."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -865,6 +868,7 @@
 700087 "Elite Berserk"
 700088 "Jarl"
 700089 "Elite Jarl"
+700090 "Iron Hawk"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -955,6 +959,7 @@
 701087 "Create Elite Berserk"
 701088 "Create Jarl"
 701089 "Create Elite Jarl"
+701090 "Create Iron Hawk"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1132,6 +1137,8 @@
 721088 "Create <b>Jarl<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique cavalry. Can throw axes to cause melee damage. Nearby Berserks can increase Jarls' attack by up to 5 and HP regenration rate by up to 75 (requires 15 Berserks).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.4 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +2 vs Standard Buildings, +2 vs Stone Defensive Buildings, +2 vs Castle, +4 vs Villager."
 
 721089 "Create <b>Elite Jarl<b> (<cost>, 22 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique cavalry. Can throw axes to cause melee damage. Nearby Berserks can increase Jarls' attack by up to 5 and HP regenration rate by up to 90 (requires 15 Berserks).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +4 vs Standard Buildings, +4 vs Stone Defensive Buildings, +4 vs Castle, +8 vs Villager."
+
+721090 "Create <b>Iron Hawk<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU,1>)\nKhitans' unique cavalry. Can charge attack with blast damage.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 5 <MATERIAL=StatIconsBlastRadius> 1\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +3 vs Cavalry."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

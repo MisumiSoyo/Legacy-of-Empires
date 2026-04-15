@@ -56,11 +56,12 @@ extern const int cAttributeMayansFarmStoneProductivity = 710;
 extern const int cAttributeMayansFarmGoldProductivity = 711;
 extern const int cAttributeLoanLimit = 712;
 extern const int cAttributeTechEffectTime = 713;
+extern const int cAttributeHerderGoldProductivity = 714;
 
 
 //  Custom Units' IDs
 extern const int NewObjectStartID = 4001;
-extern const int TotalObjects = 4159;
+extern const int TotalObjects = 4160;
 extern const int TimerBuildingID = 4001;
 extern const int TimerEventBuildingID = 4002;
 extern const int HobelarID = 4003;
@@ -166,6 +167,7 @@ extern const int ConscriptedArmyID = 4152;
 extern const int ConscriptedArmy2ID = 4153;
 extern const int ManilaGalleonID = 4157;
 extern const int ProjectileGuanNingCavalryID = 4158;
+extern const int IronHawkID = 4159;
 
 
 //  Newly added tech IDs

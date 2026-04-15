@@ -53785,6 +53785,11 @@
                         "ID": 1372,
                         "Name": "Elite Steppe Lancer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Iron Hawk",
+                        "RequiredAge": 3,
+                        "ID": 4159
                     }
                 ]
             },
@@ -54340,6 +54345,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Iron Hawk",
+                        "RequiredAge": 3,
+                        "ID": 3148
                     },
                     {
                         "Name": "Dacaogu",

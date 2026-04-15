@@ -515,6 +515,22 @@
             "RequiredAge": 3
         },
         {
+            "note": "铁鹞子",
+            "civilizations": "Khitans",
+            "tech_id": 3148,
+            "building_id": 109,
+            "Name": "Iron Hawk",
+            "RequiredAge": 3
+        },
+        {
+            "note": "铁鹞子",
+            "civilizations": "Khitans",
+            "unit_id": 4159,
+            "building_id": 101,
+            "Name": "Iron Hawk",
+            "RequiredAge": 3
+        },
+        {
             "note": "打草谷",
             "civilizations": "Khitans",
             "tech_id": 3409,

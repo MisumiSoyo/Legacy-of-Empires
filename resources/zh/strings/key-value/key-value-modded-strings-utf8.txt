@@ -180,7 +180,7 @@
 //	女真
 120201 "骑兵和火药文明\n\n• 猎物和牲畜动物的肉不会腐烂\n• 从封建时代开始，骑乘单位和火枪骑兵的攻击速度 +25%\n• 攻城工程技师在城堡时代可用\n• 攻城和防御工事升级木材费用 -75%，研究速度 +100%\n• 单位受到友军误伤伤害 -50%\n• 每个城镇中心在黑暗/封建/城堡/帝王时代每 325/275/225/175 秒产生一只鹿\n\n<b>独特单位：<b>\n• 铁浮屠 (骑兵), 掷弹兵 (火药单位), 签军 (在城镇中心生产的步兵)\n\n<b>独特科技：<b>\n• 加固堡垒 (防御工事每分钟恢复 500 生命值)\n• 霹雳炸弹 (火箭推车、掷弹兵和楼船在被击败时爆炸；炮弹会产生额外爆炸)\n• 猛安谋克 (城镇中心 +50% 工作效率, 立即获得 40 人口空间; 签军一次训练的数量 +1)\n• 拐子马 (骑乘单位可额外抵挡 1 次近战攻击)\n\n<b>团队加成：<b>\n火药单位视野 +2"
 //	契丹
-120202 "步兵和骑兵文明\n\n• 牧羊人和牧民在封建/城堡/帝王时代产出 +5/10/15% 食物\n• 近战攻击升级效果翻倍\n• 掷矛手、长矛兵和斥候骑兵系训练和升级速度 +15%\n• 重装骑射手可于城堡时代升级，研究费用 -50%\n\n<b>独特单位：<b>\n• 辽刀 (步兵), 骑乘巨型投石机 (攻城骑兵)\n\n<b>独特科技：<b>\n• 札甲 (步兵和掷矛手可反弹 25% 近战伤害给攻击者)\n• 斡鲁朵骑兵 (骑兵在战斗中每分钟回复150%最大生命值)\n• 打草谷 (陆地军事单位可获取相当于击杀的敌人价值 10% 的食物和 4% 的黄金)\n\n<b>团队加成：<b>\n步兵对远程士兵 +2 攻击力"
+120202 "步兵和骑兵文明\n\n• 牧羊人和牧民在封建/城堡/帝王时代产出 +5/10/15% 食物\n• 近战攻击升级效果翻倍\n• 掷矛手、长矛兵和斥候骑兵系训练和升级速度 +15%\n• 重装骑射手可于城堡时代升级，研究费用 -50%\n\n<b>独特单位：<b>\n• 辽刀 (步兵), 骑乘巨型投石机 (攻城骑兵)\n\n<b>独特科技：<b>\n• 札甲 (步兵和掷矛手可反弹 25% 近战伤害给攻击者)\n• 斡鲁朵骑兵 (骑兵在战斗中每分钟回复 150% 最大生命值)\n• 铁鹞子 (解锁铁鹞子的训练)\n• 打草谷 (陆地军事单位可获取相当于击杀的敌人价值 10% 的食物和 4% 的黄金)\n\n<b>团队加成：<b>\n步兵对远程士兵 +2 攻击力"
 //	穆伊斯卡
 120206 "弓兵与僧侣文明\n\n• 进入下一个时代所需黄金成本 -50%\n• 聚落成本 -25%，并治疗附近单位\n• 蔷琵战士和靶场单位在封建/城堡/帝王时代 +1/2/3 护甲\n• 僧侣信仰的恢复速度 +50%\n• 大篷车, 行会免费\n\n<b>独特单位：<b>\n格查战士 (掷矛手), 神庙护卫 (步兵)\n\n<b>独特科技：<b>\n• 草药医学 (弓兵系和蔷琵战士的移动速度 +15%)\n• 瓦拉卡斯 (投石手射程 +1；训练速度 +25%)\n• 黄金国 (持有圣物的僧侣 +5 护甲/盾牌, +60 每分钟生命回复; 周围己方步兵和射手 +1 护甲/盾牌, 步兵再 +1 攻击力 (可叠加))\n• 神圣仪式 (步兵每次攻击可回复 2 生命值)\n\n<b>团队加成：<b>\n天然黄金资源持续时间 +15%"
 //	马普切
@@ -381,6 +381,7 @@
 500190 "凯尔特民兵"
 500191 "沙漠掠夺者"
 500192 "编织护符"
+500193 "铁鹞子"
 
 
 501001 "研究季风航行(渔船和运输船 +25% 移动速度)"
@@ -575,6 +576,7 @@
 501190 "研究凯尔特民兵(村民 +10 攻击力 vs 斥候单位, +10 攻击力 vs 标准建筑, +6 攻击力 vs 石质防御建筑, +10 攻击力 vs 城堡)"
 501191 "研究沙漠掠夺者(标枪骑兵 +50% 攻击速度, -1 护甲/盾牌)"
 501192 "研究编织护符(长矛兵系每 40 秒可以格挡 1 次近战攻击)"
+501193 "研究铁鹞子(解锁铁鹞子的训练)"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -769,6 +771,7 @@
 521190 "研究<b>凯尔特民兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n村民 +10 攻击力 vs 斥候单位, +10 攻击力 vs 标准建筑, +6 攻击力 vs 石质防御建筑, +10 攻击力 vs 城堡。"
 521191 "研究<b>沙漠掠夺者<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n标枪骑兵 +50% 攻击速度, -1 护甲/盾牌。"
 521192 "研究<b>编织护符<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n长矛兵系每 40 秒可以格挡 1 次近战攻击。"
+521193 "研究<b>铁鹞子<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n解锁铁鹞子的训练。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -869,6 +872,7 @@
 700087 "精锐狂战士"
 700088 "雅尔"
 700089 "精锐雅尔"
+700090 "铁鹞子"
 
 
 701001 "生产铁炮足轻"
@@ -959,6 +963,7 @@
 701087 "生产精锐狂战士"
 701088 "生产雅尔"
 701089 "生产精锐雅尔"
+701090 "生产铁鹞子"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1136,6 +1141,8 @@
 721088 "生产<b>雅尔<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\n维京独特骑兵, 可投掷斧头造成近战伤害。 附近的狂战士可以增加雅尔最多 5 攻击力和 75 生命回复/分钟 (需要 15 名狂战士)。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.4 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +2 vs 标准建筑, +2 vs 石质防御建筑, +2 vs 城堡, +4 vs 村民。"
 
 721089 "生产<b>精锐雅尔<b> (<cost>, 22 <MATERIAL=MPIconGoodCPU,1>)\n维京独特骑兵, 可投掷斧头造成近战伤害。 附近的狂战士可以增加雅尔最多 5 攻击力和 90 生命回复/分钟 (需要 15 名狂战士)。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +4 vs 标准建筑, +4 vs 石质防御建筑, +4 vs 城堡, +8 vs 村民。"
+
+721090 "生产<b>铁鹞子<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU,1>)\n契丹独特骑兵, 可充能进行冲锋并造成践踏伤害。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 5\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +3 vs 骑兵。"
 
 
 

@@ -1766,6 +1766,27 @@
             "Use Type": "Tech"
         },
         {
+            "note": "铁鹞子",
+            "action": "add",
+            "civ_id": "KHITANS",
+            "Age ID": 3,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600193,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Iron Hawk",
+            "Name String ID": 500193,
+            "Node ID": 3148,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 33,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
             "note": "打草谷",
             "action": "add",
             "civ_id": "KHITANS",
@@ -1773,7 +1794,7 @@
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600066,
-            "Link ID": -1,
+            "Link ID": 3148,
             "Link Node Type": "BuildingTech",
             "Name": "Dacaogu",
             "Name String ID": 500066,
@@ -5449,6 +5470,29 @@
             "Node ID": [213, 249],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
+        },
+        {
+            "note": "铁鹞子",
+            "action": "add",
+            "civ_id": "KHITANS",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800090,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Iron Hawk",
+            "Name String ID": 700090,
+            "Node ID": 4159,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 147,
+            "Prerequisite IDs": [3148, 0, 0, 0, 0],
+            "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 569
         }
     ]
 }
