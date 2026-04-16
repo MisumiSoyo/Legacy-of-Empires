@@ -23854,6 +23854,11 @@
                         "ID": 3022
                     },
                     {
+                        "Name": "Rotation Grazing",
+                        "RequiredAge": 3,
+                        "ID": 3150
+                    },
+                    {
                         "Name": "Black Army",
                         "RequiredAge": 4,
                         "ID": 3394
@@ -43641,6 +43646,16 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3005
+                    },
+                    {
+                        "Name": "Illumination",
+                        "RequiredAge": 4,
+                        "ID": 233
+                    },
+                    {
+                        "Name": "Fervor",
+                        "RequiredAge": 3,
+                        "ID": 252
                     }
                 ],
                 "Units": [
@@ -45848,6 +45863,11 @@
                         "Name": "Caravan Guard",
                         "RequiredAge": 3,
                         "ID": 3348
+                    },
+                    {
+                        "Name": "Raja",
+                        "RequiredAge": 4,
+                        "ID": 3409
                     },
                     {
                         "Name": "Town Defense",
@@ -54352,9 +54372,9 @@
                         "ID": 3148
                     },
                     {
-                        "Name": "Dacaogu",
+                        "Name": "Northern Officials",
                         "RequiredAge": 4,
-                        "ID": 3409
+                        "ID": 3149
                     }
                 ],
                 "Units": [

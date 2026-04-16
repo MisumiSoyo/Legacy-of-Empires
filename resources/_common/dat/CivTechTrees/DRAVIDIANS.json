@@ -4480,7 +4480,7 @@
             "Name": "Illumination",
             "Name String ID": 17220,
             "Node ID": 233,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 84,
             "Prerequisite IDs": [
@@ -4690,7 +4690,7 @@
             "Name": "Fervor",
             "Name String ID": 17249,
             "Node ID": 252,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 73,
             "Prerequisite IDs": [

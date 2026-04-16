@@ -430,6 +430,8 @@ void EffectFunction10001(int playerId = -1)
         case cDravidians:
         {
             EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, IlluminationTechID);
+            EnableTech(playerId, FervorTechID);
             break;
         }
         case cBengalis:
@@ -446,6 +448,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, GuildsTechID);
             EnableTech(playerId, TwoManSawTechID);
+            DisableTech(playerId, 854);
+            DisableTech(playerId, 859);
+            DisableTech(playerId, 874);
             break;
         }
         case cRomans:
@@ -748,6 +753,7 @@ void EffectFunction10087(int playerId = -1)
     MulAttribute(playerId, RaiderElephantID, cTrainTime, 0.8);
     MulAttribute(playerId, VeteranRaiderElephantID, cTrainTime, 0.8);
     MulAttribute(playerId, EliteRaiderElephantID, cTrainTime, 0.8);
+    MulAttribute(playerId, EarlyElephantArcherID, cTrainTime, 0.8);
 }
 
 

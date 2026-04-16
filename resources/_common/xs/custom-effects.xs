@@ -1162,13 +1162,13 @@ void EffectFunction10073(int playerId = -1)
 }
 
 
-//  10074 - Dacaogu
+//  10074 - Raja
 void EffectFunction10074(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrResourceIn, DacaoguKillEffectID);
+    xsTaskAmount(cTaskAttrResourceIn, RajaKillEffectID);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000002);
     int i = 0;
     int j = 0;
@@ -1178,7 +1178,7 @@ void EffectFunction10074(int playerId = -1)
                 if (isClassOperable(j))
                     xsTask(i, cTaskTypeLoot, j, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeDacaoguCalcedValue, xsPlayerAttribute(playerId, cAttributeTotalValueOfKills) - xsPlayerAttribute(playerId, cAttributeTotalValueOfRazings));
+    SetResource(playerId, cAttributeRajaCalcedValue, xsPlayerAttribute(playerId, cAttributeTotalValueOfKills) - xsPlayerAttribute(playerId, cAttributeTotalValueOfRazings));
 }
 
 
@@ -1411,13 +1411,32 @@ void EffectFunction10107(int playerId = -1)
 }
 
 
+//  10108 - C-Bonus, mounted units +50% attack bonus
+void EffectFunction10108(int playerId = -1)
+{
+    MulAttackBonus(playerId, cCavalryClass, 1.5);
+    MulAttackBonus(playerId, cConquistadorClass, 1.5);
+    MulAttackBonus(playerId, cCavalryArcherClass, 1.5);
+    MulAttackBonus(playerId, cScoutCavalryClass, 1.5);
+}
+
+
+//  10109 - C-Bonus, team free vills for monastery techs
+void EffectFunction10109(int playerId = -1)
+{
+    int playerCiv = xsGetPlayerCivilization(playerId);
+    if (playerCiv == cDravidians)
+        AllySpawnUnit(playerId, MaleVillagerID, TownCenterID, 1, 1);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 239  2026.04.15");
+    xsChatData("Build: 240  2026.04.16");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -403,6 +403,14 @@
             "RequiredAge": 3
         },
         {
+            "note": "拉者",
+            "civilizations": "Gurjaras",
+            "tech_id": 3409,
+            "building_id": 109,
+            "Name": "Raja",
+            "RequiredAge": 4
+        },
+        {
             "note": "徳夫希尔梅",
             "civilizations": "Turks",
             "tech_id": 3133,
@@ -531,11 +539,11 @@
             "RequiredAge": 3
         },
         {
-            "note": "打草谷",
+            "note": "北面官",
             "civilizations": "Khitans",
-            "tech_id": 3409,
+            "tech_id": 3149,
             "building_id": 109,
-            "Name": "Dacaogu",
+            "Name": "Northern Officials",
             "RequiredAge": 4
         },
         {
@@ -1896,8 +1904,8 @@
             "RequiredTechID": 46
         },
         {
-            "note": "葡萄牙, 格鲁吉亚获得启发",
-            "civilizations": ["Portuguese", "Georgians"],
+            "note": "葡萄牙, 格鲁吉亚, 达罗毗荼获得启发",
+            "civilizations": ["Portuguese", "Georgians", "Dravidians"],
             "tech_id": 233,
             "building_id": 104,
             "Name": "Illumination",
@@ -2065,8 +2073,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "斯拉夫获得热情",
-            "civilizations": ["Slavs"],
+            "note": "斯拉夫, 达罗毗荼获得热情",
+            "civilizations": ["Slavs", "Dravidians"],
             "tech_id": 252,
             "building_id": 104,
             "Name": "Fervor",
@@ -2151,6 +2159,14 @@
             "building_id": 109,
             "Name": "Firearm Casting",
             "RequiredAge": 4
+        },
+        {
+            "note": "轮牧",
+            "civilizations": "Magyars",
+            "tech_id": 3150,
+            "building_id": 109,
+            "Name": "Rotation Grazing",
+            "RequiredAge": 3
         },
         {
             "note": "黑军",

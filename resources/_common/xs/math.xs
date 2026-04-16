@@ -1,4 +1,4 @@
-//数学函数定义
+//Math functions
 
 
 int minInt(int a = 0, int b = 0)
@@ -119,6 +119,13 @@ void PrintMessage(string Message = "")
     static int MessageNum = 0;
     xsChatData("Message " + MessageNum + ": " + Message);
     MessageNum ++;
+}
+
+
+bool RandomChance(int Chance = 0)
+{
+    int tmp = xsGetRandomNumberLH(0, 100) + 1;
+    return (tmp <= Chance);
 }
 
 
@@ -936,4 +943,13 @@ int FindTask(int playerId = -1, int ObjectID = -1, int TaskType = -1, int TaskOb
         }
     }
     return (-1);
+}
+
+
+void AllySpawnUnit(int playerId = -1, int SpawnUnitID = -1, int SpawnBuidingID = -1, int SpawnNum = -1, int SpawnBuildingCap = 1, bool isInside = false)
+{
+    int i = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if ((i == playerId) || (isAlly(playerId, i)))
+            SpawnUnit(i, SpawnUnitID, SpawnBuidingID, SpawnNum, SpawnBuildingCap, isInside);
 }
