@@ -158,7 +158,7 @@ void TimerEvent(int playerId = -1, int Time = -1)
         }
         case cCumans:
         {
-            CumansHunters(playerId, Time);
+            //CumansHunters(playerId, Time);
             break;
         }
         case cPoles:
