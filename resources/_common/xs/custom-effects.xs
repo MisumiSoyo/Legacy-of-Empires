@@ -953,12 +953,12 @@ void EffectFunction10049(int playerId = -1)
     int HunterMaleID = 122;
     int HunterFemaleID = 216;
 
-    xsResetTaskAmount();
-    NoDropSiteHunters(MaleHunterID, playerId);
-    NoDropSiteHunters(FemaleHunterID, playerId);
-    xsResetTaskAmount();
-    SetResource(playerId, cAttributeHunterFoodProductivity, 41);
-    MulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
+    //xsResetTaskAmount();
+    //NoDropSiteHunters(MaleHunterID, playerId);
+    //NoDropSiteHunters(FemaleHunterID, playerId);
+    //xsResetTaskAmount();
+    //SetResource(playerId, cAttributeHunterFoodProductivity, 41);
+    //MulResource(playerId, cAttributeHuntingProductivity, 0.0000000000000001);
 }
 
 
@@ -1436,7 +1436,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Build: 240  2026.04.16");
+    xsChatData("Patch: 241  2026.04.18");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
