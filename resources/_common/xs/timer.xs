@@ -91,30 +91,28 @@ void PolesFolwarkBonus(int playerId = -1, int Time = -1)
 
 void CumansHunters(int playerId = -1, int Time = -1)
 {
-    static int HunterUnitIDs = -1;
+    static int VillagerUnitIDs = -1;
     int i = 0;
     int UnitID = 0;
+    int ObjectID = 0;
     float ResHeld = 0.0;
     float TotalRes = 0.0;
 
-    if (HunterUnitIDs == -1)
-        HunterUnitIDs = xsGetPlayerUnitIds(playerId, MaleHunterID);
+    if (VillagerUnitIDs == -1)
+        VillagerUnitIDs = xsGetPlayerUnitIds(playerId, cVillagerClass);
     else
-        HunterUnitIDs = xsGetPlayerUnitIds(playerId, MaleHunterID, HunterUnitIDs);
-    for (i = 0; < xsArrayGetSize(HunterUnitIDs))
+        VillagerUnitIDs = xsGetPlayerUnitIds(playerId, cVillagerClass, VillagerUnitIDs);
+    for (i = 0; < xsArrayGetSize(VillagerUnitIDs))
     {
-        UnitID = xsArrayGetInt(HunterUnitIDs, i);
-        ResHeld = xsGetUnitAttributeHeld(UnitID);
-        TotalRes = TotalRes + ResHeld;
-        xsSetUnitAttributeHeld(UnitID, 0.0);
-    }
-    HunterUnitIDs = xsGetPlayerUnitIds(playerId, FemaleHunterID, HunterUnitIDs);
-    for (i = 0; < xsArrayGetSize(HunterUnitIDs))
-    {
-        UnitID = xsArrayGetInt(HunterUnitIDs, i);
-        ResHeld = xsGetUnitAttributeHeld(UnitID);
-        TotalRes = TotalRes + ResHeld;
-        xsSetUnitAttributeHeld(UnitID, 0.0);
+        UnitID = xsArrayGetInt(VillagerUnitIDs, i);
+        ObjectID = xsGetUnitObjectId(UnitID);
+        if ((ObjectID == MaleHunterID) || (ObjectID == FemaleHunterID) || (ObjectID == MaleFishermanID) || (ObjectID == FemaleFishermanID)
+            || (ObjectID == MaleForagerID) || (ObjectID == FemaleForagerID) || (ObjectID == MaleShepherdID) || (ObjectID == FemaleShepherdID))
+        {
+            ResHeld = xsGetUnitAttributeHeld(UnitID);
+            TotalRes = TotalRes + ResHeld;
+            xsSetUnitAttributeHeld(UnitID, 0.0);
+        }
     }
     ModResource(playerId, cAttributeFood, TotalRes);
 }
