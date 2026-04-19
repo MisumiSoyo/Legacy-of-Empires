@@ -347,6 +347,14 @@
             "RequiredAge": 3
         },
         {
+            "note": "缅刀",
+            "civilizations": "Burmese",
+            "tech_id": 3253,
+            "building_id": 109,
+            "Name": "Dha",
+            "RequiredAge": 4
+        },
+        {
             "note": "季风航行",
             "civilizations": "Vietnamese",
             "tech_id": 3279,

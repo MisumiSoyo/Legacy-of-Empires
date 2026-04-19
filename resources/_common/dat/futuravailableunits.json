@@ -6383,6 +6383,11 @@
                         "ID": 3275
                     },
                     {
+                        "Name": "Dha",
+                        "RequiredAge": 4,
+                        "ID": 3253
+                    },
+                    {
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022

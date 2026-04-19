@@ -1199,6 +1199,27 @@
             "Use Type": "Tech"
         },
         {
+            "note": "缅刀",
+            "action": "add",
+            "civ_id": "BURMESE",
+            "Age ID": 4,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 600196,
+            "Link ID": 3275,
+            "Link Node Type": "BuildingTech",
+            "Name": "Dha",
+            "Name String ID": 500196,
+            "Node ID": 3253,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Research",
+            "Picture Index": 107,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Tech"
+        },
+        {
             "note": "季风航行",
             "action": "add",
             "civ_id": "VIETNAMESE",

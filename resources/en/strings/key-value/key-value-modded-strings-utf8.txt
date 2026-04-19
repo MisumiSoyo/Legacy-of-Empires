@@ -136,7 +136,7 @@
 //	Malay
 120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
 //	Burmese
-120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
+120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free \n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n• Dha (Spearman line -50% train time and cost, +2 attack, -50% bonus damage)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 //	Vietnamese
 120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
@@ -144,7 +144,7 @@
 //	Tatars
 120182 "Cavalry Archer civilization \n\n• Shepherds and herders -36% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Pasture technologies free\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Keshiks regenerate 3 HP from each attack and generate double gold)\n• Khan's Conscription (Immediately conscript 12 Keshiks and 15 Cavalry Archers, and each castle provides 2 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 //	Cumans
-120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age (Build time: 270)\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Barracks, Archery Ranges and Stables -75 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
+120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Barracks, Archery Ranges and Stables -75 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 //	Lithunians
 120184 "Cavalry and Monk civilization \n\n• Receive 100 food when a Town Center is built up (including the starting one) \n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrades free\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking) \n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range) \n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
 //	Burgundians
@@ -380,6 +380,7 @@
 500193 "Iron Hawk"
 500194 "Northern Officials"
 500195 "Rotation Grazing"
+500196 "Dha"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -577,6 +578,7 @@
 501193 "Research Iron Hawk (Enable you to train Iron Hawk)"
 501194 "Research Northern Officials (Cavalry Archer line -30 gold cost, +30 wood cost)"
 501195 "Research Rotation Grazing (Pastures -75% cost)"
+501196 "Research Dha (Spearman line -50% train time and cost, +2 attack, -50% bonus damage)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -774,6 +776,7 @@
 521193 "Research <b>Iron Hawk<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nEnable you to train Iron Hawk."
 521194 "Research <b>Northern Officials<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalry Archer line -30 gold cost, +30 wood cost."
 521195 "Research <b>Rotation Grazing<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nPastures -75% cost."
+521196 "Research <b>Dha<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nSpearman line -50% train time and cost, +2 attack, -50% bonus damage."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

@@ -1430,13 +1430,34 @@ void EffectFunction10109(int playerId = -1)
 }
 
 
+//  10110 - Dha
+void EffectFunction10110(int playerId = -1)
+{
+    MulAttribute(playerId, SpearmanID, cTrainTime, 0.5);
+    MulAttribute(playerId, PikemanID, cTrainTime, 0.5);
+    MulAttribute(playerId, HalberdierID, cTrainTime, 0.5);
+
+    MulAttribute(playerId, SpearmanID, cResourceCost, 0.5);
+    MulAttribute(playerId, PikemanID, cResourceCost, 0.5);
+    MulAttribute(playerId, HalberdierID, cResourceCost, 0.5);
+
+    MulAttackBonus(playerId, SpearmanID, 0.5);
+    MulAttackBonus(playerId, PikemanID, 0.5);
+    MulAttackBonus(playerId, HalberdierID, 0.5);
+
+    ModAttack(playerId, SpearmanID, cDamageClassMelee, 2);
+    ModAttack(playerId, PikemanID, cDamageClassMelee, 2);
+    ModAttack(playerId, HalberdierID, cDamageClassMelee, 2);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 243  2026.04.18");
+    xsChatData("Patch: 244  2026.04.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
