@@ -67,6 +67,27 @@ def customChanges(data):
                     data.effects[effect_id].effect_commands.append(
                         EffectCommand(type=cmd_type, a=a, b=b, c=c, d=d)
                     )
+            elif change_type == "delete":
+                match_list = effect_change.get("match", [])
+                # 自动包装单个条件
+                if isinstance(match_list[0], (int, float, type(None))):
+                    match_list = [match_list]
+                
+                def should_delete(cmd):
+                    for match in match_list:
+                        m_type, m_a, m_b, m_c, m_d = match
+                        if (m_type is None or cmd.type == m_type) and \
+                           (m_a is None or cmd.a == m_a) and \
+                           (m_b is None or cmd.b == m_b) and \
+                           (m_c is None or cmd.c == m_c) and \
+                           (m_d is None or cmd.d == m_d):
+                            return True
+                    return False
+            
+                data.effects[effect_id].effect_commands = [
+                    cmd for cmd in data.effects[effect_id].effect_commands 
+                    if not should_delete(cmd)
+                ]
             else:  # adjustment
                 function_id = effect_change["function_id"]
                 data.effects[effect_id].effect_commands.append(
