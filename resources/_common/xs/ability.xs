@@ -596,7 +596,7 @@ void UniqueUnitInit()
         ArrayMultipleSetInt(EliteUniqueUnitIDArray, 51, 1951, 1910, 1922, 2383, 2387, 2389, 2564, 2568, 2581, 0);
 
         UniqueUnitTechIDArray = xsArrayCreateInt(100, 0);
-        ArrayMultipleSetInt(UniqueUnitTechIDArray, 1, 263, 275, 270, 276, 262, 268, 267, 274, 269, 271);
+        ArrayMultipleSetInt(UniqueUnitTechIDArray, 1, 263, 275, 446, 276, 262, 268, 267, 274, 269, 271);
         ArrayMultipleSetInt(UniqueUnitTechIDArray, 11, 399, 273, 277, 58, 431, 26, 1, 449, 467, 839);
         ArrayMultipleSetInt(UniqueUnitTechIDArray, 21, 508, 471, 503, 562, 568, 566, 564, 614, 616, 618);
         ArrayMultipleSetInt(UniqueUnitTechIDArray, 31, 620, 677, 679, 681, 683, 750, 752, 778, 780, 825);
@@ -635,7 +635,7 @@ void EffectFunction10015(int playerId = -1)
     {
         while (true)
         {
-            tmp = xsGetRandomNumberLH(1, CivCount + 1);
+            tmp = xsGetRandomNumberMax(CivCount) + 1;
             if (xsArrayGetInt(FlagArray, tmp) == 0)
                 break;
         }
