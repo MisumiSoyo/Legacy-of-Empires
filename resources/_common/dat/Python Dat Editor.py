@@ -36,58 +36,100 @@ def run():
     data.save(save_file)
 
 
+import math
+
 def customChanges(data):
     for i in range(len(data.civs)):
         civ = data.civs[i]
-        #为每个科技树效果后面增加一个XS调用
         EffectID = civ.tech_tree_id
-        data.effects[EffectID].effect_commands.append(EffectCommand(type = 1, a = 33, b = 0, c = -1, d = 10001.0))
+        data.effects[EffectID].effect_commands.append(EffectCommand(type=1, a=33, b=0, c=-1, d=10001.0))
 
-    #编辑effect
+    ANY = "any"
+    # float 比较容差参数
+    FLOAT_REL_TOL = 1e-5  # 相对容差
+    FLOAT_ABS_TOL = 1e-6  # 绝对容差
+
+    def match_command(cmd, match_list):
+        """通用匹配函数：检查指令是否匹配任一条件
+        type(uint8), a/b/c(int16) 精确匹配；d(float) 使用 math.isclose 容差匹配
+        """
+        for match in match_list:
+            m_type, m_a, m_b, m_c, m_d = match
+            
+            # type, a, b, c 精确匹配
+            if not (m_type == ANY or cmd.type == m_type):
+                continue
+            if not (m_a == ANY or cmd.a == m_a):
+                continue
+            if not (m_b == ANY or cmd.b == m_b):
+                continue
+            if not (m_c == ANY or cmd.c == m_c):
+                continue
+            
+            # d(float) 使用 math.isclose 容差匹配
+            if m_d == ANY:
+                return True
+            if math.isclose(cmd.d, m_d, rel_tol=FLOAT_REL_TOL, abs_tol=FLOAT_ABS_TOL):
+                return True
+                
+        return False
+
+    # 编辑effect
     for effect_change in effect_change_list:
-        # 支持单个effect_id或列表
         effect_ids = effect_change["effect_id"]
         if isinstance(effect_ids, (int, float)):
             effect_ids = [effect_ids]
         
         change_type = effect_change.get("type", "adjustment")
         
-        # 遍历所有指定的effect_id
         for effect_id in effect_ids:
             if change_type == "add":
-                # 获取指令列表，支持单个列表或列表的列表
                 commands = effect_change["commands"]
-                # 如果是单个指令（第一个元素是数字），包装成列表
                 if isinstance(commands[0], (int, float)):
                     commands = [commands]
                 
-                # 批量添加指令
                 for cmd in commands:
-                    cmd_type, a, b, c, d = cmd  # 直接解包 [type, a, b, c, d]
+                    cmd_type, a, b, c, d = cmd
                     data.effects[effect_id].effect_commands.append(
                         EffectCommand(type=cmd_type, a=a, b=b, c=c, d=d)
                     )
+                    
             elif change_type == "delete":
                 match_list = effect_change.get("match", [])
-                # 自动包装单个条件
-                if isinstance(match_list[0], (int, float, type(None))):
+                if isinstance(match_list[0], (int, float, str)):
                     match_list = [match_list]
-                
-                def should_delete(cmd):
-                    for match in match_list:
-                        m_type, m_a, m_b, m_c, m_d = match
-                        if (m_type is None or cmd.type == m_type) and \
-                           (m_a is None or cmd.a == m_a) and \
-                           (m_b is None or cmd.b == m_b) and \
-                           (m_c is None or cmd.c == m_c) and \
-                           (m_d is None or cmd.d == m_d):
-                            return True
-                    return False
             
                 data.effects[effect_id].effect_commands = [
                     cmd for cmd in data.effects[effect_id].effect_commands 
-                    if not should_delete(cmd)
+                    if not match_command(cmd, match_list)
                 ]
+                
+            elif change_type == "modify":
+                match_list = effect_change.get("match", [])
+                if isinstance(match_list[0], (int, float, str)):
+                    match_list = [match_list]
+                
+                modifications = effect_change.get("modifications", [])
+                if modifications and isinstance(modifications[0], str):
+                    modifications = [modifications]
+                
+                def apply_modification(cmd, field, op, value):
+                    current = getattr(cmd, field)
+                    if op == "set":
+                        new_value = value
+                    elif op == "add":
+                        new_value = current + value
+                    elif op == "mul":
+                        new_value = current * value
+                    else:
+                        raise ValueError(f"不支持的修改操作: {op}")
+                    setattr(cmd, field, type(current)(new_value))
+                
+                for cmd in data.effects[effect_id].effect_commands:
+                    if match_command(cmd, match_list):
+                        for field, op, value in modifications:
+                            apply_modification(cmd, field, op, value)
+                            
             else:  # adjustment
                 function_id = effect_change["function_id"]
                 data.effects[effect_id].effect_commands.append(
@@ -95,6 +137,7 @@ def customChanges(data):
                 )
         
     return
+
 
 if __name__ == "__main__":
     run()
