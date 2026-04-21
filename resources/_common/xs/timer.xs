@@ -77,35 +77,6 @@ void PolesFolwarkBonus(int playerId = -1, int Time = -1)
 }
 
 
-void CumansHunters(int playerId = -1, int Time = -1)
-{
-    static int VillagerUnitIDs = -1;
-    int i = 0;
-    int UnitID = 0;
-    int ObjectID = 0;
-    float ResHeld = 0.0;
-    float TotalRes = 0.0;
-
-    if (VillagerUnitIDs == -1)
-        VillagerUnitIDs = xsGetPlayerUnitIds(playerId, cVillagerClass);
-    else
-        VillagerUnitIDs = xsGetPlayerUnitIds(playerId, cVillagerClass, VillagerUnitIDs);
-    for (i = 0; < xsArrayGetSize(VillagerUnitIDs))
-    {
-        UnitID = xsArrayGetInt(VillagerUnitIDs, i);
-        ObjectID = xsGetUnitObjectId(UnitID);
-        if ((ObjectID == MaleHunterID) || (ObjectID == FemaleHunterID) || (ObjectID == MaleFishermanID) || (ObjectID == FemaleFishermanID)
-            || (ObjectID == MaleForagerID) || (ObjectID == FemaleForagerID) || (ObjectID == MaleShepherdID) || (ObjectID == FemaleShepherdID))
-        {
-            ResHeld = xsGetUnitAttributeHeld(UnitID);
-            TotalRes = TotalRes + ResHeld;
-            xsSetUnitAttributeHeld(UnitID, 0.0);
-        }
-    }
-    ModResource(playerId, cAttributeFood, TotalRes);
-}
-
-
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -137,11 +108,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cMalay:
         {
             MalayFreeArmy(playerId, Time);
-            break;
-        }
-        case cCumans:
-        {
-            //CumansHunters(playerId, Time);
             break;
         }
         case cPoles:
