@@ -1,5 +1,9 @@
 //  extern definition
 
+
+extern int CivCount = 59;
+
+
 //  Resources
 extern const int cAttributeVarangianLootProductivity = 384;
 extern const int cAttributeWubaoFoodWoodProductivity = 385;
@@ -57,6 +61,7 @@ extern const int cAttributeMayansFarmGoldProductivity = 711;
 extern const int cAttributeLoanLimit = 712;
 extern const int cAttributeTechEffectTime = 713;
 extern const int cAttributeHerderGoldProductivity = 714;
+extern const int cAttributeByzantinesMercenaryIDStart = 721;
 
 
 //  Custom Units' IDs
@@ -386,6 +391,7 @@ extern const int LongBoatID = 250;
 extern const int FemaleFarmerID = 259;
 extern const int MangonelID = 280;
 extern const int ThrowingAxemanID = 281;
+extern const int MamelukeID = 282;
 extern const int CavalierID = 283;
 extern const int RelicID = 285;
 extern const int FemaleVillagerID = 293;
@@ -419,6 +425,7 @@ extern const int LightCavalryID = 546;
 extern const int SiegeRamID = 548;
 extern const int OnagerID = 550;
 extern const int EliteHuskarlID = 555;
+extern const int EliteMamelukeID = 556;
 extern const int EliteWarElephantID = 558;
 extern const int EliteMangudaiID = 561;
 extern const int ChampionID = 567;
@@ -689,10 +696,7 @@ extern const int cDamageClassTradeUnit = 106;
 extern const int cDamageClassScout = 107;
 
 
-extern const int HospitallerKnightMaxCharge = 300;
-extern const float ShrineMaxCharge = 1200.0;
 extern const int SatrapAuraRange = 10;
-extern const float MalayTCAuraRange = 10.0;
 
 
 //  Hotkey IDs

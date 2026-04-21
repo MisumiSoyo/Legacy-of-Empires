@@ -1,15 +1,3 @@
-//  print the amount of olive oil
-void ByzantinesOliveOil(int playerId = -1, int Time = -1)
-{
-    int OliveOil = 0;
-    OliveOil = xsPlayerAttribute(playerId, cAttributeOliveOil);
-    SetAttribute(playerId, BarracksID, cMaxRange, OliveOil);
-    SetAttribute(playerId, ArcheryRangeID, cMaxRange, OliveOil);
-    SetAttribute(playerId, StableID, cMaxRange, OliveOil);
-    SetAttribute(playerId, SiegeWorkshopID, cMaxRange, OliveOil);
-}
-
-
 //  Franks, loan
 void FranksLoan(int playerId = -1, int Time = 0)
 {
@@ -134,11 +122,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cGoths:
         {
             GothsVillager(playerId, Time);
-            break;
-        }
-        case cByzantines:
-        {
-            ByzantinesOliveOil(playerId, Time);
             break;
         }
         case cKoreans:

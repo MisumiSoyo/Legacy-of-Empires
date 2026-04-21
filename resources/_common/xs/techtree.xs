@@ -110,7 +110,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TreadmillCraneTechID);
             EnableTech(playerId, CarvelHullTechID);
             EnableTech(playerId, ClinkerConstructionTechID);
-            SetResource(playerId, cAttributeResearchCostMod, 0.95);
+            SetResource(playerId, cAttributeResearchCostMod, 0.85);
             DisableTech(playerId, KnightTechID);
             DisableTech(playerId, CavalierTechID);
             DisableTech(playerId, 350);

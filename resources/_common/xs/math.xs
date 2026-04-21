@@ -559,6 +559,7 @@ void ApplyToAllMilitaryTargets(int playerId = -1, int ClassTarget = -1, int Task
     xsTask(ClassTarget, TaskType, cMonkWithRelicClass, playerId);
     xsTask(ClassTarget, TaskType, cHandCannoneerClass, playerId);
     xsTask(ClassTarget, TaskType, cScoutCavalryClass, playerId);
+    xsTask(ClassTarget, TaskType, cLandMineClass, playerId);
 
     if (includeSiege)
     {
@@ -586,6 +587,7 @@ void ApplyAllMilitaryToTarget(int playerId = -1, int ClassTarget = -1, int TaskT
     xsTask(cMonkWithRelicClass, TaskType, ClassTarget, playerId);
     xsTask(cHandCannoneerClass, TaskType, ClassTarget, playerId);
     xsTask(cScoutCavalryClass, TaskType, ClassTarget, playerId);
+    xsTask(cLandMineClass, TaskType, ClassTarget, playerId);
 
     if (includeSiege)
     {
@@ -616,6 +618,7 @@ void ApplyToAllPlayerTargets(int playerId = -1, int ClassTarget = -1, int TaskTy
     xsTask(ClassTarget, TaskType, cHandCannoneerClass, playerId);
     xsTask(ClassTarget, TaskType, cScoutCavalryClass, playerId);
     xsTask(ClassTarget, TaskType, cKingClass, playerId);
+    xsTask(ClassTarget, TaskType, cLandMineClass, playerId);
 
     if (includeBuildings)
     {
@@ -664,6 +667,7 @@ void ApplyAllToTarget(int playerId = -1, int ClassTarget = -1, int TaskType = -1
     xsTask(cHandCannoneerClass, TaskType, ClassTarget, playerId);
     xsTask(cScoutCavalryClass, TaskType, ClassTarget, playerId);
     xsTask(cKingClass, TaskType, ClassTarget, playerId);
+    xsTask(cLandMineClass, TaskType, ClassTarget, playerId);
 
     if (includeBuildings)
     {
@@ -952,4 +956,10 @@ void AllySpawnUnit(int playerId = -1, int SpawnUnitID = -1, int SpawnBuidingID =
     for (i = 0; <= xsGetNumPlayers())
         if ((i == playerId) || (isAlly(playerId, i)))
             SpawnUnit(i, SpawnUnitID, SpawnBuidingID, SpawnNum, SpawnBuildingCap, isInside);
+}
+
+
+bool isChroniclesCiv(int civ = -1)
+{
+    return ((civ == cAchaemenids) || (civ == cAthenians) || (civ == cSpartans) || (civ == cMacedonians) || (civ == cThracians) || (civ == cPuru));
 }

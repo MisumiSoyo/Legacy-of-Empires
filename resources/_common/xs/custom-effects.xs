@@ -130,7 +130,7 @@ void EffectFunction10011(int playerId = -1)
     MulAttribute(playerId, cTradeCartClass, cResourceCost, 0.65);
     MulAttribute(playerId, cTradeBoatClass, cTrainTime, 0.5);
     MulAttribute(playerId, cTradeCartClass, cTrainTime, 0.5);
-    ModResource(playerId, cAttributeResearchCostMod, -0.05);
+    ModResource(playerId, cAttributeResearchCostMod, -0.1);
     DisableTech(playerId, TangDynastyTechID);
     DisableTech(playerId, YuanDynastyTechID);
     DisableTech(playerId, MingDynastyTechID);
@@ -260,63 +260,17 @@ void EffectFunction10014(int playerId = -1)
 }
 
 
-//  10015 - C-Bonus, Olive Oil
-void EffectFunction10015(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeOliveOilProductivity);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeOliveOil);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000005);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cSeaFishClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cForageBushClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cTreeClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cShoreFish, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTask(cVillagerClass, cTaskTypeGenerateResources, cLivestockClass, playerId);
-    xsResetTaskAmount();
-    SetResource(playerId, cAttributeOliveOilProductivity, 9);
-}
-
-
-//  10016 - Elite Mercenary
-void EffectFunction10016(int playerId = -1)
-{
-    int i = 0;
-    for (i = 4022; <= 4072)
-        if (i % 2 == 0)
-            UpgradeUnit(playerId, i, i+1);  
-}
-
-
 //  10017 - Polutasvarf
 void EffectFunction10017(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeOliveOil);
-    xsTaskAmount(cTaskAttrWorkValue1, 120);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrWorkValue1, 30);
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000007);
-    PolutasvarfApplier(playerId, cArcherClass);
-    PolutasvarfApplier(playerId, cInfantryClass);
-    PolutasvarfApplier(playerId, cCavalryClass);
-    PolutasvarfApplier(playerId, cSiegeWeaponClass);
-    PolutasvarfApplier(playerId, cWarshipClass);
-    PolutasvarfApplier(playerId, cConquistadorClass);
-    PolutasvarfApplier(playerId, cPetardClass);
-    PolutasvarfApplier(playerId, cCavalryArcherClass);
-    PolutasvarfApplier(playerId, cHandCannoneerClass);
-    PolutasvarfApplier(playerId, cScoutCavalryClass);
-    PolutasvarfApplier(playerId, cPackedUnitClass);
-    PolutasvarfApplier(playerId, cUnpackedSiegeUnitClass);
-    PolutasvarfApplier(playerId, cScorpionClass);
-    PolutasvarfApplier(playerId, cLandMineClass);
+    ApplyAllMilitaryToTarget(playerId, cBuildingClass, cTaskTypeLoot);
+    ApplyAllMilitaryToTarget(playerId, cTowerClass, cTaskTypeLoot);
     xsResetTaskAmount();
-
-    MulResource(playerId, cAttributeVarangianLootProductivity, 1.33);
 }
 
 
@@ -1457,7 +1411,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 246  2026.04.21");
+    xsChatData("Patch: 247  2026.04.21");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
