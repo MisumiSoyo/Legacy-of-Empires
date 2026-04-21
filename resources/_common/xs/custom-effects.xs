@@ -1232,33 +1232,19 @@ void EffectFunction10096(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000002);
     xsTaskAmount(cTaskAttrWorkRange, 7);
-    xsTaskAmount(cTaskAttrWorkValue2, 20);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.5);
+    xsTaskAmount(cTaskAttrWorkValue2, 30);
     xsTaskAmount(cTaskAttrOwnerType, 1);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrWorkValue1, 20);
-    xsTaskAmount(cTaskAttrAutoSearch, 0);
-    for (i = 900; <= 964)
-        if (isMilitaryClass(i))
-        {
-            xsTask(cCavalryClass, cTaskTypeAura, i, playerId);
-            xsTask(cScoutCavalryClass, cTaskTypeAura, i, playerId);
-            if  (i == 900)
-                xsTaskAmount(cTaskAttrAutoSearch, 1);
-        }
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000001);
-    xsTaskAmount(cTaskAttrWorkValue1, 20);
-    xsTaskAmount(cTaskAttrAutoSearch, 0);
-    for (i = 900; <= 964)
-        if (isMilitaryClass(i))
-        {
-            xsTask(cCavalryClass, cTaskTypeAura, i, playerId);
-            xsTask(cScoutCavalryClass, cTaskTypeAura, i, playerId);
-            if  (i == 900)
-                xsTaskAmount(cTaskAttrAutoSearch, 1);
-        }
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+
+    GendarmesdOrdonnanceApplier(playerId, ScoutCavalryID);
+    GendarmesdOrdonnanceApplier(playerId, LightCavalryID);
+    GendarmesdOrdonnanceApplier(playerId, HussarID);
     xsResetTaskAmount();
-    LaunchAura(playerId, cCavalryClass, true);
-    LaunchAura(playerId, cScoutCavalryClass, true);
+
+    LaunchAura(playerId, ScoutCavalryID, true);
+    LaunchAura(playerId, LightCavalryID, true);
+    LaunchAura(playerId, HussarID, true);
 }
 
 
@@ -1411,7 +1397,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 247  2026.04.21");
+    xsChatData("Patch: 248  2026.04.21");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

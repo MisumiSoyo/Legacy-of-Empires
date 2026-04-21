@@ -396,13 +396,13 @@ void EffectFunction10077(int playerId = -1)
                 xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetState, cAttributeForce, playerId);
                 if (i <= 4)
                 {
-                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 20, playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 25, playerId);
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i), playerId);
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetLocation, UniversityID, playerId);
                 }
                 else
                 {
-                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 21, playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 26, playerId);
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i + 1), playerId);
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetLocation, UniversityID, playerId);
                 }
@@ -670,6 +670,17 @@ void EffectFunction10111(int playerId = -1)
         xsEffectAmount(cModifyTech, TargetEliteUniqueUnitTechID, cAttrSetHotkey, KeyToHotkeyID(25 + i));
         ForceEnableTech(playerId, TargetEliteUniqueUnitTechID);
     }
+}
+
+
+void GendarmesdOrdonnanceApplier(int playerId = -1, int ClassTarget = -1)
+{
+    xsTaskAmount(cTaskAttrAutoSearch, 0);
+    xsTask(ClassTarget, cTaskTypeAura, KnightID, playerId);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTask(ClassTarget, cTaskTypeAura, CavalierID, playerId);
+    xsTask(ClassTarget, cTaskTypeAura, PaladinID, playerId);
+    xsTask(ClassTarget, cTaskTypeAura, SavarID, playerId);
 }
 
 

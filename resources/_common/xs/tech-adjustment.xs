@@ -51,7 +51,6 @@ void EffectFunction10083(int playerId = -1)
     ModAttribute(playerId, CavalierID, cBlastWidth, 0.5);
     ModAttribute(playerId, PaladinID, cBlastWidth, 0.5);
     ModAttribute(playerId, SavarID, cBlastWidth, 0.5);
-    ModAttribute(playerId, GuanNingCavalryID, cBlastWidth, 0.5);
 
     SetAttribute(playerId, VarangianID, cAreaDamage, -5);
     SetAttribute(playerId, EliteVarangianID, cAreaDamage, -5);
@@ -59,7 +58,6 @@ void EffectFunction10083(int playerId = -1)
     SetAttribute(playerId, CavalierID, cAreaDamage, -5);
     SetAttribute(playerId, PaladinID, cAreaDamage, -5);
     SetAttribute(playerId, SavarID, cAreaDamage, -5);
-    SetAttribute(playerId, GuanNingCavalryID, cAreaDamage, -5);
 }
 
 
@@ -108,10 +106,7 @@ void EffectFunction10092(int playerId = -1)
 //  10101 - Hauberk Adjustment
 void EffectFunction10101(int playerId = -1)
 {
-    ModAttribute(playerId, GuanNingCavalryID, cDamageClassPierce, 2);
     ModAttribute(playerId, HospitallerKnightID, cDamageClassPierce, 2);
-
-    ModAttribute(playerId, GuanNingCavalryID, cDamageClassMelee, 1);
     ModAttribute(playerId, HospitallerKnightID, cDamageClassMelee, 1);
 }
 
