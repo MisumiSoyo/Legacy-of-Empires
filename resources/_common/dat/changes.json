@@ -1,37 +1,4 @@
 {
-    "remove_armor_type":
-    [
-    ],
-    "create_attack_type":
-    [
-    ],
-    "unit_changes":
-    {
-        "armor_type":
-        [
-        ]
-    },
-    "resource_changes":
-    [
-    ],
-    "tech_changes":
-    {
-        "disable_techs":
-        [
-        ],
-        "tech_time_modifier":
-        [
-        ],
-        "tech_tree_enable":
-        [
-        ],
-        "tech_tree_disable":
-        [
-        ],
-        "sync_unit_buff":
-        [
-        ]
-    },
     "copy_from_old_datafile":
     {
         "unit_list":
@@ -112,6 +79,9 @@
             }
         ],
         "graphic_list":
+        [
+        ],
+        "resource_list":
         [
         ]
     },
@@ -340,20 +310,20 @@
             "type": "delete",
             "name": "勃艮第文明加成改动, 马厩科技费用减免删除",
             "effect_id": 782,
-            "match": [[101, "any", "any", 2, 0.5]]
+            "match": [101, "any", "any", 2, 0.5]
         },
         {
             "type": "modify",
             "name": "护卫改动",
             "effect_id": 204,
-            "match": [[5, "any", "any", 5, 1.1]],
-            "modifications": [["d", "set", 1.15]]
+            "match": [5, "any", "any", 5, 1.1],
+            "modifications": ["d", "set", 1.15]
         },
         {
             "type": "modify",
             "name": "达罗毗荼兵营科技减价效果实现改动",
             "effect_id": 838,
-            "match": [[101, "any", 0, 2, 0.5]],
+            "match": [101, "any", 0, 2, 0.5],
             "modifications": [["type", "set", 8],
                               ["b", "set", 17],
                               ["c", "set", -1],
@@ -363,7 +333,21 @@
             "type": "delete",
             "name": "达罗毗荼兵营科技减价效果实现改动",
             "effect_id": 838,
-            "match": [[101, "any", 3, 2, 0.5]]
+            "match": [101, "any", 3, 2, 0.5]
+        },
+        {
+            "type": "add",
+            "name": "哥特织布机加成改动, 免费研究织布机",
+            "effect_id": 341,
+            "commands": [[8, 22, 17, -1, 0],
+                         [8, 22, -1, -1, 0]]
+        },
+        {
+            "type": "modify",
+            "name": "阿兹特克初始黄金改动",
+            "effect_id": 213,
+            "match": [1, 94, 1, -1, "any"],
+            "modifications": ["d", "set", 100]
         }
     ]
 }

@@ -28,8 +28,6 @@ def run():
         copyFromOldVersion(source_resources, civ.resources, copy_dict["resource_list"], 0)
         copyFromOldVersion(source_resources, civ.resources, [], civ.resources[0], 701)
 
-    applyUnitChanges(data, unit_change_list, tech_change_dict["sync_unit_buff"])
-    applyTechChanges(data, tech_change_dict)
     customChanges(data)
 
     # 保存
