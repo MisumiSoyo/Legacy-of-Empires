@@ -4814,10 +4814,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "不列颠启用炮塔, 钻井采石法, 异教",
+            "note": "不列颠启用炮塔, 钻井采石法, 异教, 轮作",
             "action": "modify",
             "civ_id": "BRITONS",
-            "Node ID": [64, 279, 439],
+            "Node ID": [64, 279, 439, 12],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },

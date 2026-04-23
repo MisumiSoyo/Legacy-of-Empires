@@ -214,3 +214,15 @@ void EffectFunction10103(int playerId = -1)
 
     ModAttribute(playerId, ProjectileGuanNingCavalryID, cMovementSpeed, 0.5);
 }
+
+
+//  10113 - Chatras Adjustment
+void EffectFunction10113(int playerId = -1)
+{
+    ModAttribute(playerId, RaiderElephantID, cHitpoints, 100);
+    ModAttribute(playerId, VeteranRaiderElephantID, cHitpoints, 100);
+    ModAttribute(playerId, EliteRaiderElephantID, cHitpoints, 100);
+    ModAttribute(playerId, EarlyElephantArcherID, cHitpoints, 100);
+    ModAttribute(playerId, ElephantArcherID, cHitpoints, 100);
+    ModAttribute(playerId, EliteElephantArcherID, cHitpoints, 100);
+}
