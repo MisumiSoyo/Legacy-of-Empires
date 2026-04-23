@@ -4,9 +4,9 @@ void FranksLoan(int playerId = -1, int Time = 0)
     int FrankLoanTime = xsPlayerAttribute(playerId, cAttributeTechEffectTime);
     if (FrankLoanTime > 0)
     {
+        FrankLoanTime --;
         if (FrankLoanTime % 60 == 0)
             xsEffectAmount(cModResource, cAttributeGold, 1, xsPlayerAttribute(playerId, cAttributeFrankLoan), playerId);
-        FrankLoanTime --;
         if (FrankLoanTime == 0)
             xsEffectAmount(cModResource, cAttributeLoanLimit, 1, 1, playerId);
         SetResource(playerId, cAttributeTechEffectTime, FrankLoanTime);

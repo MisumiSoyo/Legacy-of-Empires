@@ -683,6 +683,16 @@ void GendarmesdOrdonnanceApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
+//  10112 - Ixiptla kill effect
+void EffectFunction10112(int playerId = -1)
+{
+    int KillCount = xsPlayerAttribute(playerId, cAttributeIxipltaKillCount) + 1;
+    if (KillCount % 7 == 0)
+        SpawnUnit(playerId, JaguarWarriorID, CastleID, 1, 1);
+    SetResource(playerId, cAttributeIxipltaKillCount, KillCount);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

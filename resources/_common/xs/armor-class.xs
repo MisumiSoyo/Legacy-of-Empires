@@ -33,14 +33,10 @@ void SetGunpowderAttackArmor(int playerId = -1)
     AddAttackForm(playerId, cHandCannoneerClass, cDamageClassGunpowderAttack);
     AddAttackForm(playerId, ConquistadorID, cDamageClassGunpowderAttack);
     AddAttackForm(playerId, EliteConquistadorID, cDamageClassGunpowderAttack);
-    AddAttackForm(playerId, MercenaryConquistadorID, cDamageClassGunpowderAttack);
-    AddAttackForm(playerId, MercenaryEliteConquistadorID, cDamageClassGunpowderAttack);
     AddAttackForm(playerId, BombardCannonID, cDamageClassGunpowderAttack);
     AddAttackForm(playerId, HoufniceID, cDamageClassGunpowderAttack);
     AddAttackForm(playerId, HussiteWagonID, cDamageClassGunpowderAttack);
     AddAttackForm(playerId, EliteHussiteWagonID, cDamageClassGunpowderAttack);
-    AddAttackForm(playerId, MercenaryHussiteWagonID, cDamageClassGunpowderAttack);
-    AddAttackForm(playerId, MercenaryEliteHussiteWagonID, cDamageClassGunpowderAttack);
     AddAttackForm(playerId, PetardID, cDamageClassGunpowderAttack);
 }
 
@@ -52,8 +48,6 @@ void SetLightCavalryArmor(int playerId = -1)
     AddArmorForm(playerId, HussarID, cDamageClassLightCavalry);
     AddArmorForm(playerId, MagyarHuszarID, cDamageClassLightCavalry);
     AddArmorForm(playerId, EliteMagyarHuszarID, cDamageClassLightCavalry);
-    AddArmorForm(playerId, MercenaryMagyarHuszarID, cDamageClassLightCavalry);
-    AddArmorForm(playerId, MercenaryEliteMagyarHuszarID, cDamageClassLightCavalry);
 }
 
 

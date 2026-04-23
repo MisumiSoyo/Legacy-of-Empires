@@ -61,7 +61,7 @@ void EffectFunction10004(int playerId = -1)
 //  10005 - Frank Loan (500 gold)
 void EffectFunction10005(int playerId = -1)
 {
-    SetResource(playerId, cAttributeTechEffectTime, 239);
+    SetResource(playerId, cAttributeTechEffectTime, 240);
     SetResource(playerId, cAttributeFrankLoan, 150);
 }
 
@@ -69,7 +69,7 @@ void EffectFunction10005(int playerId = -1)
 //  10006 - Frank Loan (1000 gold)
 void EffectFunction10006(int playerId = -1)
 {
-    SetResource(playerId, cAttributeTechEffectTime, 359);
+    SetResource(playerId, cAttributeTechEffectTime, 360);
     SetResource(playerId, cAttributeFrankLoan, 300);
 }
 
@@ -77,7 +77,7 @@ void EffectFunction10006(int playerId = -1)
 //  10007 - Frank Loan (2000 gold)
 void EffectFunction10007(int playerId = -1)
 {
-    SetResource(playerId, cAttributeTechEffectTime, 479);
+    SetResource(playerId, cAttributeTechEffectTime, 480);
     SetResource(playerId, cAttributeFrankLoan, 500);
 }
 
@@ -451,15 +451,12 @@ void EffectFunction10027(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrResourceIn, 3157);
+    xsTaskAmount(cTaskAttrResourceIn, IxiptlaKillEffectID);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000001);
     int i = 0;
-    int j = 0;
     for (i = 900; <= 964)
-        if (isClassOperable(i))
-            for (j = 900; <= 964)
-                if (isLandMilitaryClass(j))
-                    xsTask(i, cTaskTypeLoot, j, playerId);
+        if (isLandMilitaryClass(i))
+            ApplyAllToTarget(playerId, i, cTaskTypeLoot);
     xsResetTaskAmount();
 }
 
@@ -1379,7 +1376,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 252  2026.04.23");
+    xsChatData("Patch: 253  2026.04.23");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
