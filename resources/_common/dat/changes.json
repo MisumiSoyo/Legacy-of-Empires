@@ -354,6 +354,13 @@
             "name": "宝伞加成骑象射手生命值",
             "effect_id": 668,
             "function_id": 10113
+        },
+        {
+            "type": "modify",
+            "name": "葡萄牙采集浆果获得木材比例调整",
+            "effect_id": 510,
+            "match": [1, 267, 1, "any", "any"],
+            "modifications": ["d", "set", 20.7]
         }
     ]
 }
