@@ -350,15 +350,15 @@ void EffectFunction10023(int playerId = -1)
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrOwnerType, 0);
 
-    xsTaskAmount(cTaskAttrWorkValue1, 0.21);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.24 * 0.5 * 1.75);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.12);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.24 * 0.5);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cShoreFish, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.174);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.24 * 0.5 * 1.45);
     xsTask(FishingShipID, cTaskTypeGenerateResources, cFarmClass, playerId);
 
-    xsTaskAmount(cTaskAttrWorkValue1, 0.215);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.43 * 0.5 * 1);
     xsTask(MaleFishermanID, cTaskTypeGenerateResources, cSeaFishClass, playerId);
     xsTask(MaleFishermanID, cTaskTypeGenerateResources, cShoreFish, playerId);
     xsTask(MaleFishermanID, cTaskTypeGenerateResources, cDeepSeaFishClass, playerId);
@@ -642,6 +642,13 @@ void EffectFunction10036(int playerId = -1)
     }
     else
         SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -30);
+}
+
+
+//  10016 - Advanced Mercenary Contract
+void EffectFunction10016(int playerId = -1)
+{
+    ModResource(playerId, cAttributeCondottieroMercenaryNum, 5);
 }
 
 
@@ -935,25 +942,6 @@ void EffectFunction10050(int playerId = -1)
     xsTask(GenitourID, cTaskTypeExtraSpawn, -1, playerId);
     xsTask(EliteGenitourID, cTaskTypeExtraSpawn, -1, playerId);
     xsResetTaskAmount();
-}
-
-
-//  10051 - Kopalnia Soli Wieliczka
-void EffectFunction10051(int playerId = -1)
-{
-    float StoneTotal = xsPlayerAttribute(playerId, cAttributeStoneTotal);
-    ModResource(playerId, cAttributeFood, 0.8 * StoneTotal);
-
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeStoneMinerFoodProductivity);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000004);
-    xsTask(MaleStoneMinerID, cTaskTypeGenerateResources, cStoneMineClass, playerId);
-    xsTask(FemaleStoneMinerID, cTaskTypeGenerateResources, cStoneMineClass, playerId);
-    xsResetTaskAmount();
-
-    SetResource(playerId, cAttributeStoneMinerFoodProductivity, 28.8);
 }
 
 
@@ -1283,12 +1271,6 @@ void EffectFunction10104(int playerId = -1)
     MulAttack(playerId, ProjectileGuanNingCavalryID, -1, 1.25);
     MulAttack(playerId, HandcannonAshigaruID, -1, 1.25);
     MulAttack(playerId, StreltsyID, -1, 1.25);
-    MulAttack(playerId, MercenaryConquistadorID, -1, 1.25);
-    MulAttack(playerId, MercenaryEliteConquistadorID, -1, 1.25);
-    MulAttack(playerId, MercenaryOrganGunID, -1, 1.25);
-    MulAttack(playerId, MercenaryEliteOrganGunID, -1, 1.25);
-    MulAttack(playerId, MercenaryHussiteWagonID, -1, 1.25);
-    MulAttack(playerId, MercenaryEliteHussiteWagonID, -1, 1.25);
 }
 
 
@@ -1397,7 +1379,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 251  2026.04.22");
+    xsChatData("Patch: 252  2026.04.23");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

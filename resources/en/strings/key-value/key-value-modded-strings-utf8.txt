@@ -155,7 +155,7 @@
 //	Sicilians
 120186 "Infantry civilization \n\n• Start with +100 stone (received when the first TC is built up in Nomad mode)\n• Castles, Tower class, Wall class and Gate class buildings -40% building time, Town Centers -50% building time \n• Land military units (except siege weapons) receive -40% bonus damage \n• Farm upgrades provide +100% additional food\n• Get 1.5 extra gold from each Spearman-line, Skirmisher-line and Genitour line unit trained\n\n<b>Unique Unit:<b> \n• Serjeant (infantry can build Donjons), Donjon (Fortification), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs:<b> \n• First Crusade (Each Town Center (maximum 5) spawns a one-time batch of 5 Serjeants; All units +4 min/max conversion time)\n• Hauberk (Knight-Line units +1/+2P armor)\n• Mediterranean Galleys (Hulk-line units +1 attack)\n• Scutage (Gain 250 gold, and each military unit +15)\n\n<b>Team Bonus:<b>\nTransport ships -50% cost, +5 LOS"
 //	Poles
-120187 "Cavalry civilization \n\n• Villagers regenerate 10/15/20 HPs per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill \n• Stone Miners generate 0.33 gold per stone\n• Stable technologies -50% cost\n• Folwarks collect +1% food for every 20 enemies killed (maximum +5%)\n\n<b>Unique Units:<b> \n• Obuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry)\n\n<b>Unique Techs:<b> \n• Szlachta Privileges (Knight-line -60% gold cost)\n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b> \nScout-Line, Mansabdar and Auxiliary Cavalry +1 attack vs Archers"
+120187 "Cavalry civilization \n\n• Villagers regenerate 10/15/20 HPs per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill \n• Stone Miners generate 0.33 gold per stone\n• Stable technologies -50% cost\n• Folwarks collect +1% food for every 20 enemies killed (maximum +5%)\n\n<b>Unique Units:<b> \n• Obuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry)\n\n<b>Unique Techs:<b> \n• Szlachta Privileges (Knight-line -60% gold cost)\n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 40 stone at Barracks and Castles)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b> \nScout-Line, Mansabdar and Auxiliary Cavalry +1 attack vs Archers"
 //	Bohemians
 120188 "Gunpowder and Monk civilization \n\n• Blacksmiths and Universities -100 wood cost \n• Chemistry and Hand Cannoneer available in Castle Age \n• Infantries, Archers, Cavalry Archers and Hand Cannoneers +25% bonus damage, with each corresponding attack technology in Blacksmith +1\n• Fervor and Sanctity affect Villagers \n• Mining Camp technologies free\n\n<b>Unique Units:<b> \n• Hussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Chariot Crossbowman (cavalry archer), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b>\n• Wagenburg Tactics (Gunpowder units move 15% faster)\n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food; Each existing monk refunds 50 gold)\n• Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)\n• Pistala (Train Hand Cannoneers with 60 wood instead of gold cost)\n\n<b>Team Bonus:<b>\nMarkets +50% work rate"
 //	Dravidians
@@ -470,7 +470,7 @@
 501082 "Research Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)"
 501083 "Research Apostle (Military units/monks can generate 3/6 gold per minute)"
 501084 "Research Hesychast (Monks +150% heal range and heal rate)"
-501085 "Research Kopalnia Soli Wieliczka (Mined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production)"
+501085 "Research Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 40 stone at Barracks and Castles)"
 501086 "Research Jinete Tactics (Genitours +2 max range)"
 501087 "Research Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)"
 501088 "Research Sagres School (Docks +80% work rate)"
@@ -668,7 +668,7 @@
 521082 "Research <b>Die Goldene Bulle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received."
 521083 "Research <b>Apostle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMilitary units/monks can generate 3/6 gold per minute."
 521084 "Research <b>Hesychast<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks +150% heal range and heal rate."
-521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMined and future-mined stone mines will produce an additional food output equivalent to 80% of the stone production."
+521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nStone resource lasts 100% longer; You can train Elite Obuches with 40 stone at Barracks and Castles."
 521086 "Research <b>Jinete Tactics<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nGenitours +2 max range."
 521087 "Research <b>Tercio<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nSpearman line units can deal 33% area damage in 0.5 blast range."
 521088 "Research <b>Sagres School<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nDocks +80% work rate."
@@ -1154,224 +1154,3 @@
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."
-
-
-1000001 "Longbowman"
-1000002 "Elite Longbowman"
-1000003 "Woad Raider"
-1000004 "Elite Woad Raider"
-1000005 "Throwing Axeman"
-1000006 "Elite Throwing Axeman"
-1000007 "Magyar Huszar"
-1000008 "Elite Magyar Huszar"
-1000009 "Boyar"
-1000010 "Elite Boyar"
-1000011 "Leitis"
-1000012 "Elite Leitis"
-1000013 "Huskarl"
-1000014 "Elite Huskarl"
-1000015 "Coustillier"
-1000016 "Elite Coustillier"
-1000017 "Teutonic Knight"
-1000018 "Elite Teutonic Knight"
-1000019 "Jarl"
-1000020 "Elite Jarl"
-1000021 "Tarkan"
-1000022 "Elite Tarkan"
-1000023 "Konnik"
-1000024 "Elite Konnik"
-1000025 "Hussite Wagon"
-1000026 "Elite Hussite Wagon"
-1000027 "Obuch"
-1000028 "Elite Obuch"
-1000029 "Genoese Crossbowman"
-1000030 "Elite Genoese Crossbowman"
-1000031 "Organ Gun"
-1000032 "Elite Organ Gun"
-1000033 "Conquistador"
-1000034 "Elite Conquistador"
-1000035 "Serjeant"
-1000036 "Elite Serjeant"
-1000037 "Composite Bowman"
-1000038 "Elite Composite Bowman"
-1000039 "Monaspa"
-1000040 "Elite Monaspa"
-1000041 "Mameluke"
-1000042 "Elite Mameluke"
-1000043 "Camel Archer"
-1000044 "Elite Camel Archer"
-1000045 "War Elephant"
-1000046 "Elite War Elephant"
-1000047 "Keshik"
-1000048 "Elite Keshik"
-1000049 "Kipchak"
-1000050 "Elite Kipchak"
-1000051 "Gbeto"
-1000052 "Elite Gbeto"
-1000053 "Shotel Warrior"
-1000054 "Elite Shotel Warrior"
-
-
-1001001 "Recruit Longbowman (cost: 75 Olive Oil)"
-1001002 "Recruit Elite Longbowman (cost: 75 Olive Oil)"
-1001003 "Recruit Woad Raider (cost: 85 Olive Oil)"
-1001004 "Recruit Elite Woad Raider (cost: 85 Olive Oil)"
-1001005 "Recruit Throwing Axeman (cost: 80 Olive Oil)"
-1001006 "Recruit Elite Throwing Axeman (cost: 80 Olive Oil)"
-1001007 "Recruit Magyar Huszar (cost: 80 Olive Oil)"
-1001008 "Recruit Elite Magyar Huszar (cost: 80 Olive Oil)"
-1001009 "Recruit Boyar (cost: 120 Olive Oil)"
-1001010 "Recruit Elite Boyar (cost: 120 Olive Oil)"
-1001011 "Recruit Leitis (cost: 115 Olive Oil)"
-1001012 "Recruit Elite Leitis (cost: 115 Olive Oil)"
-1001013 "Recruit Huskarl (cost: 85 Olive Oil)"
-1001014 "Recruit Elite Huskarl (cost: 85 Olive Oil)"
-1001015 "Recruit Coustillier (cost: 105 Olive Oil)"
-1001016 "Recruit Elite Coustillier (cost: 105 Olive Oil)"
-1001017 "Recruit Teutonic Knight (cost: 100 Olive Oil)"
-1001018 "Recruit Elite Teutonic Knight (cost: 100 Olive Oil)"
-1001019 "Recruit Jarl (cost: 180 Olive Oil)"
-1001020 "Recruit Elite Jarl (cost: 180 Olive Oil)"
-1001021 "Recruit Tarkan (cost: 110 Olive Oil)"
-1001022 "Recruit Elite Tarkan (cost: 110 Olive Oil)"
-1001023 "Recruit Konnik (cost: 120 Olive Oil)"
-1001024 "Recruit Elite Konnik (cost: 120 Olive Oil)"
-1001025 "Recruit Hussite Wagon (cost: 180 Olive Oil)"
-1001026 "Recruit Elite Hussite Wagon (cost: 180 Olive Oil)"
-1001027 "Recruit Obuch (cost: 80 Olive Oil)"
-1001028 "Recruit Elite Obuch (cost: 80 Olive Oil)"
-1001029 "Recruit Genoese Crossbowman (cost: 85 Olive Oil)"
-1001030 "Recruit Elite Genoese Crossbowman (cost: 85 Olive Oil)"
-1001031 "Recruit Organ Gun (cost: 140 Olive Oil)"
-1001032 "Recruit Elite Organ Gun (cost: 140 Olive Oil)"
-1001033 "Recruit Conquistador (cost: 140 Olive Oil)"
-1001034 "Recruit Elite Conquistador (cost: 140 Olive Oil)"
-1001035 "Recruit Serjeant (cost: 80 Olive Oil)"
-1001036 "Recruit Elite Serjeant (cost: 80 Olive Oil)"
-1001037 "Recruit Composite Bowman (cost: 80 Olive Oil)"
-1001038 "Recruit Elite Composite Bowman (cost: 80 Olive Oil)"
-1001039 "Recruit Monaspa (cost: 95 Olive Oil)"
-1001040 "Recruit Elite Monaspa (cost: 95 Olive Oil)"
-1001041 "Recruit Mameluke (cost: 140 Olive Oil)"
-1001042 "Recruit Elite Mameluke (cost: 140 Olive Oil)"
-1001043 "Recruit Camel Archer (cost: 105 Olive Oil)"
-1001044 "Recruit Elite Camel Archer (cost: 105 Olive Oil)"
-1001045 "Recruit War Elephant (cost: 250 Olive Oil)"
-1001046 "Recruit Elite War Elephant (cost: 250 Olive Oil)"
-1001047 "Recruit Keshik (cost: 100 Olive Oil)"
-1001048 "Recruit Elite Keshik (cost: 100 Olive Oil)"
-1001049 "Recruit Kipchak (cost: 85 Olive Oil)"
-1001050 "Recruit Elite Kipchak (cost: 85 Olive Oil)"
-1001051 "Recruit Gbeto (cost: 95 Olive Oil)"
-1001052 "Recruit Elite Gbeto (cost: 95 Olive Oil)"
-1001053 "Recruit Shotel Warrior (cost: 85 Olive Oil)"
-1001054 "Recruit Elite Shotel Warrior (cost: 85 Olive Oil)"
-
-
-1021001 "Recruit <b>Longbowman<b> (cost: 75 Olive Oil) \nBritish unique archer with very long range. Strong vs. infantry. Weak vs. cavalry and Skirmishers.\n<GREY><i> Upgrades: attack, range, armor (Blacksmith); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit; Training time: 25; Moving speed: 0.96; Reload time: 2; Attack delay: 0.5; Accuracy: 70%; LOS: 7; Search radius: 7. \nAttack Bonus: +2 vs Pikeman."
-
-1021002 "Recruit <b>Elite Longbowman<b> (cost: 75 Olive Oil) \nBritish unique archer with very long range. Strong vs. infantry. Weak vs. cavalry and Skirmishers.\n<GREY><i> Upgrades: attack, range, armor (Blacksmith); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit; Training time: 25; Moving speed: 0.96; Reload time: 2; Attack delay: 0.5; Accuracy: 80%; LOS: 8; Search radius: 8. \nAttack Bonus: +2 vs Pikeman."
-
-1021003 "Recruit <b>Woad Raider<b> (cost: 85 Olive Oil) \nCeltic unique infantry unit. Fast-moving. Strong vs. infantry and siege weapons. Weak vs. archers and cavalry.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.17; Reload time: 2; LOS: 3; Search radius: 3.\nAdditional damage: +2 vs Eagle Warriors, +2 vs Buildings."
-
-1021004 "Recruit <b>Elite Woad Raider<b> (cost: 85 Olive Oil) \nCeltic unique infantry unit. Fast-moving. Strong vs. infantry and siege weapons. Weak vs. archers and cavalry.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.17; Reload time: 2; LOS: 5; Search radius: 3.\nAdditional damage: +3 vs Eagle Warriors, +3 vs Buildings."
-
-1021005 "Recruit <b>Throwing Axeman<b> (cost: 80 Olive Oil) \nFrankish unique infantry unit with ranged melee attack. Strong vs. infantry. Weak vs. archers and siege weapons.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> (melee) <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1; Reload time: 2; Attack delay: 1; Accuracy: 100%; LOS: 5; Search radius: 5. \nAdditional damage: +1 vs Eagle Warriors, +1 vs Buildings."
-
-1021006 "Recruit <b>Elite Throwing Axeman<b> (cost: 80 Olive Oil) \nFrankish unique infantry unit with ranged melee attack. Strong vs. infantry. Weak vs. archers and siege weapons.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> (melee) <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1; Reload time: 2; Attack delay: 0.82; LOS: 6; Search radius: 6. \nAdditional damage: +2 vs Eagle Warriors, +2 vs Buildings."
-
-1021007 "Recruit <b>Magyar Huszar<b> (cost: 80 Olive Oil)\nMagyar unique light cavalry unit. Strong vs siege weapons. Weak vs Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed, to Elite Magyar Huszar (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit, Light Cavalry; Training time: 30; Moving speed: 1.5; Reload time: 1.8; LOS: 5; Search radius: 4.\nAttack Bonus: +5 vs Siege weapon, +1 vs Rams."
-
-1021008 "Recruit <b>Elite Magyar Huszar<b> (cost: 80 Olive Oil)\nMagyar unique light cavalry unit. Strong vs siege weapons. Weak vs Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit, Light Cavalry; Training time: 30; Moving speed: 1.5; Reload time: 1.8; LOS: 6; Search radius: 4. \nAttack Bonus: +8 vs Siege weapon, +2 vs Rams."
-
-1021009 "Recruit <b>Boyar<b> (cost: 120 Olive Oil) \nSlavic unique cavalry unit. Resistant to melee attack.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.3; Reload time: 1.9; LOS: 5; Search radius: 4."
-
-1021010 "Recruit <b>Elite Boyar<b> (cost: 120 Olive Oil) \nSlavic unique cavalry unit. Resistant to melee attack.\n<GREY><i> Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 15; Moving speed: 1.3; Reload time: 1.9; LOS: 5; Search radius: 4. \nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.35; Reload time: 1.7; LOS: 5; Search radius: 4."
-
-1021011 "Recruit <b>Leitis<b> (cost: 115 Olive Oil)\nLithuanian unique cavalry unit with attack that ignores armor. Strong vs. armored units.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4."
-
-1021012 "Recruit <b>Elite Leitis<b> (cost: 115 Olive Oil) \nLithuanian unique cavalry unit with attack that ignores armor. Strong vs. armored units.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4."
-
-1021013 "Recruit <b>Huskarl<b> (cost: 85 Olive Oil) \nGothic unique infantry unit with high pierce armor. Strong vs. archers and buildings. Weak vs. cavalry. \n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.05; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +6 vs Archers, +2 vs Eagle Warriors, +2 vs Buildings."
-
-1021014 "Recruit <b>Elite Huskarl<b> (cost: 85 Olive Oil) \nGothic unique infantry unit with high pierce armor. Strong vs. archers and buildings. Weak vs. cavalry.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.05; Reload time: 2; LOS: 5; Search radius: 3. \nAdditional damage: +10 vs Archer, +3 vs Eagle Warriors, +3 vs Buildings."
-
-1021015 "Recruit <b>Coustillier<b> (cost: 105 Olive Oil) \nBurgundian unique cavalry unit which can charge its attack. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range> \nClass: cavalry, Tags: cavalry, unique unit; training time: 30; moving speed: 1.35; reload time: 1.9; LOS: 5; search radius: 4. \n\n+20 attack when charged (inapplicable for buildings), need 40 sec to recharge after one attack."
-
-1021016 "Recruit <b>Elite Coustillier<b> (cost: 105 Olive Oil) \nBurgundian unique cavalry unit which can charge its attack. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: cavalry, Tags: cavalry, unique unit; training time: 30; moving speed: 1.35; reload time: 1.9; LOS: 5; search radius: 4. \n\n+25 attack when charged (inapplicable for buildings), need 40 sec to recharge after one attack."
-
-1021017 "Recruit <b>Teutonic Knight<b> (cost: 100 Olive Oil) \nTeutonic unique infantry unit. Slow and powerful, resists with conversions (Conversion resist level +3). Strong vs. melee units. Weak vs. archers and Scorpions. \n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 0.8; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +4 vs Eagle Warriors, +4 vs Buildings."
-
-1021018 "Recruit <b>Elite Teutonic Knight<b> (cost: 100 Olive Oil) \nTeutonic unique infantry unit. Slow and powerful, resists with conversions (Conversion resist level +3). Strong vs. melee units. Weak vs. archers and Scorpions.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 0.8; Reload time: 2; LOS: 5; Search radius: 3. \nAdditional damage: +4 vs Eagle Warriors, +4 vs Buildings."
-
-1021019 "Create <b>Jarl<b> (cost: 180 Olive Oil, 30 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique cavalry. Can throw axes to cause melee damage. Nearby Berserks can increase Jarls' attack by up to 5 and HP regenration rate by up to 75 (requires 15 Berserks).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.4 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +2 vs Standard Buildings, +2 vs Stone Defensive Buildings, +2 vs Castle, +4 vs Villager."
-
-1021020 "Create <b>Elite Jarl<b> (cost: 180 Olive Oil, 30 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique cavalry. Can throw axes to cause melee damage. Nearby Berserks can increase Jarls' attack by up to 5 and HP regenration rate by up to 90 (requires 15 Berserks).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +4 vs Standard Buildings, +4 vs Stone Defensive Buildings, +4 vs Castle, +8 vs Villager."
-
-1021021 "Recruit <b>Tarkan<b> (cost: 110 Olive Oil) \nHunnic unique cavalry unit with attack bonus vs. buildings. Strong vs. buildings and archers. Weak vs. Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 5. \nAdditional damage: +8 vs Buildings (siege), +12 extra vs Defensive Building, +8 extra vs Walls and Gates, +10 extra vs Castle ."
-
-1021022 "Recruit <b>Elite Tarkan<b> (cost: 110 Olive Oil) \nHunnic unique cavalry unit with attack bonus vs. buildings. Strong vs. buildings and archers. Weak vs. Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.4; Reload time: 1.9; LOS: 7; Search radius: 7. \nAdditional damage: +10 vs Buildings (siege), +12 extra vs Defensive Building, +10 extra vs Walls and Gates, +10 extra vs Castle ."
-
-1021023 "Recruit <b>Konnik<b> (cost: 120 Olive Oil) \nBulgarian unique cavalry unit that fights on as infantry when felled. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.35; Reload time: 2.4; LOS: 5; Search radius: 4.\n\nUnmounted infantry: HP 45, Attack 12, Armor 2/1P, Range 0\nClass: Infantry; Tags: Infantry, Unique unit; Moving speed: 0.9, Reload time: 2.4, LOS: 3; Search radius: 2; Additional damage: +4 vs Buildings."
-
-1021024 "Recruit <b>Elite Konnik<b> (cost: 120 Olive Oil) \nBulgarian unique cavalry unit that fights on as infantry when felled. Strong vs. infantry and archers. Weak vs. Camel Riders and Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Unique Unit; Training time: 30; Moving speed: 1.35; Reload time: 2.4; LOS: 5; Search radius: 4.\n\nUnmounted infantry: HP 50, Attack 13, Armor 2/2P, Range 0\nClass: Infantry; Tags: Infantry, Unique unit; Moving speed: 0.9, Reload time: 2.4, LOS: 3, Search radius: 2; Additional damage: +4 vs Buildings."
-
-1021025 "Build <b>Hussite Wagon<b> (cost: 180 Olive Oil) \nBohemian unique siege unit, can protect the units behind from projectile attacks. Strong vs. archers. Weak vs. siege weapons.\n<GREY><i>Upgrades: attack, range (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range> \nClass: Ballista; Tags: Siege weapons, Unique units, Gunpowder units, Heavy siege; Training time: 40; Moving speed: 0.8; Reload time: 3.45; Attack delay: 0.62; Projectile speed: 7; Accuracy: 85%; Dispersion radius: 0.1; LOS: 8; Search radius: 8.\nAdditional damages: +1 vs Buildings(siege), +3 vs Rams."
-
-1021026 "Build <b>Elite Hussite Wagon<b> (cost: 180 Olive Oil) \nBohemian unique siege unit, can protect the units behind from projectile attacks. Strong vs. archers. Weak vs. siege weapons.\n<GREY><i>Upgrades: attack, range (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range> \nClass: Ballista; Tags: Siege weapons, Unique units, Gunpowder units, Heavy siege; Training time: 40; Moving speed: 0.8; Reload time: 3.45; Attack delay: 0.62; Projectile speed: 7; Accuracy: 90%; Dispersion radius: 0.1; LOS: 8; Search radius: 8.\nAdditional damages: +2 vs Buildings(siege), +3 vs Rams."
-
-1021027 "Recruit <b>Obuch<b> (cost: 80 Olive Oil) \nPolish unique infantry unit which can damage the armor of units it is fighting. Strong vs. buildings and infantry. Weak vs. archers at long range.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range> \nClass: infantry; Tags: infantry, unique unit; Training time: 20; Moving speed: 0.9; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damages: +2 vs. Eagle Warriors, +4 vs. Buildings. \n\nThis unit deals -1/-1P armor to target after each attack (not appliable for buildings). the effect is stackable and the minimum overall armors (including tech bonus) can reach 0/0P. This effect will be dismissed after the its HP restored to full."
-
-1021028 "Recruit <b>Elite Obuch<b> (cost: 80 Olive Oil) \nPolish unique infantry unit which can damage the armor of units it is fighting. Strong vs. buildings and infantry. Weak vs. archers at long range.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range> \nClass: infantry; Tags: infantry, unique unit; Training time: 20; Moving speed: 0.9; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damages: +3 vs. Eagle Warriors, +6 vs. Buildings. \n\nThis unit deals -1/-1P armor to target after each attack (not appliable for buildings). the effect is stackable and the minimum overall armors (including tech bonus) can reach 0/0P. This effect will be dismissed after the its HP restored to full."
-
-1021029 "Recruit <b>Genoese Crossbowman<b> (cost: 85 Olive Oil) \nItalian unique archer. Strong vs. cavalry and infantry. Weak vs. archers and siege weapons.\n<GREY><i>Upgrades: attack, range, armor (Blacksmith); accuracy (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit; Training time: 25; Moving speed: 0.96; Reload time: 2; Attack delay: 0.5; Projectile speed: 7; Accuracy: 100%; LOS: 8; Search radius: 7. \nAdditional damage: +5 vs cavalries, +5 extra vs Elephant, +4 vs camels, +4 vs Ships."
-
-1021030 "Recruit <b>Elite Genoese Crossbowman<b> (cost: 85 Olive Oil) \nItalian unique archer. Strong vs. cavalry and infantry. Weak vs. archers and siege weapons.\n<GREY><i>Upgrades: attack, range, armor (Blacksmith); accuracy (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Archer; Tags: Archer, Unique Unit; Training time: 25; Moving speed: 0.96; Reload time: 2; Attack delay: 0.5; Projectile speed: 7; Accuracy: 100%; LOS: 8; Search radius: 7. \nAdditional damage: +7 vs cavalries, +7 extra vs Elephant, +6 vs camels, +5 vs Ships."
-
-1021031 "Recruit <b>Organ Gun<b> (cost: 140 Olive Oil) \nPortuguese unique siege unit. Fires a volley of bullets. Strong vs. large groups of units. Weak vs. cavalry and Mangonels.\n<GREY><i>Upgrades: attack, range (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege weapon; Tags: Siege weapon, Gunpowder units, Unique Unit; Training time: 40; Moving speed: 0.85; Reload time: 3.45; Attack delay: 0.6; Accuracy: 0%; Projectile speed: 7.5; Projectile amount: 5; Dispersion radius: 0.6; Min range: 1; LOS: 9; Search radius: 9. \nAdditional damage: +2 vs. Infantries, +2 vs. Skirmishers, +1 vs Rams."
-
-1021032 "Recruit <b>Elite Organ Gun<b> (cost: 140 Olive Oil) \nPortuguese unique siege unit. Fires a volley of bullets. Strong vs. large groups of units. Weak vs. cavalry and Mangonels.\n<GREY><i>Upgrades: attack, range (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Siege weapon; Tags: Siege weapon, Gunpowder units, Unique Unit; Training time: 40; Moving speed: 0.85; Reload time: 3.45; Attack delay: 0.6; Accuracy: 0%; Projectile speed: 7.5; Projectile amount: 6; Dispersion radius: 0.6; Min range: 1; LOS: 9; Search radius: 9. \nAdditional damage: +2 vs. Infantries, +2 vs. Skirmishers, +1 vs Rams, +1 vs. Buildings(siege)."
-
-1021033 "Recruit <b>Conquistador<b> (cost: 130 Olive Oil) \nSpanish unique mounted hand cannoneer. Strong vs. infantry. Weak vs. Pikemen, Skirmishers, and Monks.\n<GREY><i>Upgrades: armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Special cavalry; Tags: Cavalry, Archer, Cavalry Archer, Gunpowder units, Unique Unit; Training time: 30; Moving speed: 1.3; Reload time: 2.9; Attack delay: 0.4; Projectile speed: 7.5; Accuracy: 65%; Dispersion radius: 0.75; LOS: 8; Search radius: 8. \nAdditional damage: +4 vs Rams."
-
-1021034 "Recruit <b>Elite Conquistador<b> (cost: 130 Olive Oil) \nSpanish unique mounted hand cannoneer. Strong vs. infantry. Weak vs. Pikemen, Skirmishers, and Monks.\n<GREY><i>Upgrades: armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Special cavalry; Tags: Cavalry, Archer, Cavalry Archer, Gunpowder units, Unique Unit; Training time: 30; Moving speed: 1.3; Reload time: 2.9; Attack delay: 0.4; Projectile speed: 7.5; Accuracy: 70%; Dispersion radius: 0.75; LOS: 9; Search radius: 9. \nAdditional damage: +6 vs Rams, +2 vs Buildings (siege)."
-
-1021035 "Recruit <b>Serjeant<b> (cost: 80 Olive Oil) \nSicilian unique infantry unit which can construct and repair Donjons.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: infantry; Tags: infantry, unique unit; Training time: 20; Moving speed: 0.95; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +2 vs. Eagle Warriors, +2 vs Buildings. \n\nAfter Castle Age gets: +25 HP, +3 attack, +2/+1P armor \n\nThis unit can build and repair Donjons, the work rate is 25% slower in feudal Age, the same as villagers from castle Age, but not affected by Treadmill Crane."
-
-1021036 "Recruit <b>Elite Serjeant<b> (cost: 80 Olive Oil) \nSicilian unique infantry unit which can construct and repair Donjons.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: infantry; Tags: infantry, unique unit; Training time: 20; Moving speed: 0.95; Reload time: 2; LOS: 5; Search radius: 3. \nAdditional damage: +2 vs. Eagle Warriors, +2 vs Buildings.\n\nThis unit can build and repair Donjons, the work rate is the same as villagers from castle Age, but not affected by Treadmill Crane."
-
-1021037 "Recruit <b>Composite Bowman<b> (cost: 80 Olive Oil)\nArmenian unique archer unit which can ignores pierce armor when attacking units. Strong vs. infantry. Weak vs. archers and siege weapons.\n<GREY><i>Upgrades: attack, range, armor (Blacksmith); accuracy, armor (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: archer; Tags: archer, unique unit; Training time: 25; Moving speed: 0.96; Reload time: 2; Attack delay: 0.5; Projectile speed: 7; Accuracy: 100%; Dispersion radius: 0; LOS: 7; Search radius: 7. \nAdditional damage: +2 vs. Pikemen."
-
-1021038 "Recruit <b>Elite Composite Bowman<b> (cost: 80 Olive Oil)\nArmenian unique archer unit which can ignores pierce armor when attacking units. Strong vs. infantry. Weak vs. archers and siege weapons.\n<GREY><i>Upgrades: attack, range, armor (Blacksmith); accuracy, armor (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: archer; Tags: archer, unique unit; Training time: 25; Moving speed: 0.96; Reload time: 2; Attack delay: 0.5; Projectile speed: 7; Accuracy: 100%; Dispersion radius: 0; LOS: 7; Search radius: 7. \nAdditional damage: +2 vs. Pikemen."
-
-1021039 "Recruit <b>Monaspa<b> (cost: 105 Olive Oil) \nGeorgian unique cavalry unit which can receive +1 damage (max +4) for per 7 nearby other Monaspas or Knight-Line units within 15 circle tiles range. Strong vs. infantry. Weak vs. Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: cavalry; Tags: cavalry, unique unit; Training time: 30; Moving speed: 1.4; Reload time: 1.8; LOS: 4; Search radius: 4."
-
-1021040 "Recruit <b>Elite Monaspa<b> (cost: 105 Olive Oil) \nGeorgian unique cavalry unit which can receive +1 damage (max +4) for per 7 nearby other Monaspas or Knight-Line units within 15 circle tiles range. Strong vs. infantry. Weak vs. Pikemen and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range> \nClass: cavalry; Tags: cavalry, unique unit; Training time: 30; Moving speed: 1.4; Reload time: 1.8; LOS: 5; Search radius: 4."
-
-1021041 "Recruit <b>Mameluke<b> (cost: 140 Olive Oil) \nSaracen unique camel unit with ranged melee attack. Strong vs. cavalry. Weak vs. archers and Pikemen. \n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> (melee) <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Camel, Mameluke, Unique Unit; Training time: 30; Moving speed: 1.4; Reload time: 2; Attack delay: 0.4; Accuracy: 100%; Projectile speed: 7; LOS: 5; Search radius: 5. \nAdditional damage: +9 vs cavalries."
-
-1021042 "Recruit <b>Elite Mameluke<b> (cost: 140 Olive Oil) \nSaracen unique camel unit with ranged melee attack. Strong vs. cavalry. Weak vs. archers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> (melee) <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Camel, Mameluke, Unique Unit; Training time: 30; Moving speed: 1.4; Reload time: 2; Attack delay: 0.2; Projectile speed: 7; Accuracy: 100%; LOS: 5; Search radius: 5. \nAdditional damage: +12 vs cavalries, +1 vs Mameluke."
-
-1021043 "Recruit <b>Camel Archer<b> (cost: 110 Olive Oil) \nBerber unique mounted archer. Strong vs. Cavalry Archers and infantry. Weak vs. Pikemen, Skirmishers, and Camel Riders.\n<GREY><i>Upgrades: attack, range, armor (Blacksmith); speed, hit points (Stable); accuracy, armor (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Camel, Archer, Cavalry Archer, Unique Unit; Training time: 25; Moving speed: 1.4; Reload time: 2; Attack delay: 0.625; Projectile speed: 7; Accuracy: 95%; Dispersion radius: 0.75; LOS: 5; Search radius: 5. \nAdditional damage: +4 vs cavalry archers."
-
-1021044 "Recruit <b>Elite Camel Archer<b> (cost: 110 Olive Oil) \nBerber unique mounted archer. Strong vs. Cavalry Archers and infantry. Weak vs. Pikemen, Skirmishers, and Camel Riders.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); accuracy, armor (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Camel, Archer, Cavalry Archer, Unique Unit; Training time: 25; Moving speed: 1.4; Reload time: 2; Attack delay: 0.625; Projectile speed: 7; Accuracy: 95%; Dispersion radius: 0.75; LOS: 5; Search radius: 5. \nAdditional damage: +6 vs cavalry archers."
-
-1021045 "Recruit <b>War Elephant<b> (cost: 250 Olive Oil) \nPersian unique unit. Slow and powerful cavalry. Resistant to conversion (+2 conversion resistance, +2.5 min/max conversion time). Strong vs. buildings and units at close range. Weak vs. Monks. \n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Elephant, Unique Unit; Training time: 30; Moving speed: 0.8; Reload time: 2; Blast Range: 0.5 (take half of the actual damage); LOS: 7; Search radius: 7. \nAdditional damage: +30 vs Buildings (siege), +30 extra vs Defensive Building."
-
-1021046 "Recruit <b>Elite War Elephant<b> (cost: 250 Olive Oil) \nPersian unique unit. Slow and powerful cavalry. Resistant to conversion (+2 conversion resistance, +2.5 min/max conversion time). Strong vs. buildings and units at close range. Weak vs. Monks.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry, Elephant, Unique Unit; Training time: 30; Moving speed: 0.8; Reload time: 2; Blast Range: 0.5 (take half of the actual damage); LOS: 8; Search radius: 8. \nAdditional damage: +30 vs Buildings (siege), +30 extra vs Defensive Building."
-
-1021047 "Recruit <b>Keshik<b> (cost: 100 Olive Oil) \nCavalry unit that can generate gold when attacking enemy (except buildings).\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4.\n\n<GREY>Before Castle Age: -20 HP, -2 attack, -50% HP regeneration from attacking."
-
-1021048 "Recruit <b>Elite Keshik<b> (cost: 100 Olive Oil) \nCavalry unit that can generate gold when attacking enemy (except buildings).\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed, hit points (Stable); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry; Tags: Cavalry; Training time: 30; Moving speed: 1.4; Reload time: 1.9; LOS: 5; Search radius: 4.\n\n<GREY>Before Castle Age: -50% HP regeneration from attacking."
-
-1021049 "Recruit <b>Kipchak<b> (cost: 85 Olive Oil) \nCuman unique cavalry archer with rapid-fire attack. Strong vs. infantry. Weak vs. Skirmishers.\n<GREY><i>Upgrades: attack, range, armor (Blacksmith); speed, hit points (Stable); accuracy, armor (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Unique Unit; Training time: 25; Moving speed: 1.4; Reload time: 2.2; Attack delay: 21 frames; Accuracy: 90%; Dispersion radius: 0.33; LOS: 6; Search radius: 5. \nAdditional damage: +1 vs Pikeman."
-
-1021050 "Recruit <b>Elite Kipchak<b> (cost: 85 Olive Oil) \nCuman unique cavalry archer with rapid-fire attack. Strong vs. infantry. Weak vs. Skirmishers.\n<GREY><i>Upgrades: attack, range, armor (Blacksmith); speed, hit points (Stable); accuracy, armor (Archery Range); attack, accuracy (University); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Unique Unit; Training time: 25; Moving speed: 1.4; Reload time: 2.2; Attack delay: 21 frames; Accuracy: 90%; Dispersion radius: 0.33; LOS: 6; Search radius: 5. \nAdditional damage: +1 vs Pikeman."
-
-1021051 "Recruit <b>Gbeto<b> (cost: 95 Olive Oil) \nMalian unique infantry unit with ranged melee attack. Fast-moving. Strong vs. infantry. Weak vs. archers and siege weapons.\n<GREY><i>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> (melee) <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.25; Reload time: 2; Attack delay: 1; Projectile speed: 7; Accuracy: 100%; LOS: 6; Search radius: 6. \nAdditional damage: +1 vs Eagle Warriors."
-
-1021052 "Recruit <b>Elite Gbeto<b> (cost: 95 Olive Oil) \nMalian unique infantry unit with ranged melee attack. Fast-moving. Strong vs. infantry. Weak vs. archers and siege weapons.\n<GREY><i>Upgrades: armor (Blacksmith); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> (melee) <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.25; Reload time: 2; Attack delay: 1; Projectile speed: 7; Accuracy: 100%; LOS: 7; Search radius: 7. \nAdditional damage: +1 vs Eagle Warriors."
-
-1021053 "Recruit <b>Shotel Warrior<b> (cost: 85 Olive Oil) \nEthiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.2; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +2 vs Eagle Warriors."
-
-1021054 "Recruit <b>Elite Shotel Warrior<b> (cost: 85 Olive Oil) \nEthiopian unique infantry with high attack and fast training speed. Fast-moving. Strong vs. infantry. Weak vs. archers.\n<GREY><i>Upgrades: attack, armor (Blacksmith); speed (Barracks); creation speed (Castle); more resistant to Monks (Monastery).<i><DEFAULT> \n<hp> <attack> <armor> <piercearmor> <range>\nClass: Infantry; Tags: Infantry, Unique Unit; Training time: 20; Moving speed: 1.2; Reload time: 2; LOS: 3; Search radius: 3. \nAdditional damage: +2 vs Eagle Warriors, +1 vs Buildings."
