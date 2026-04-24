@@ -766,28 +766,33 @@ void EffectFunction10042(int playerId = -1)
 }
 
 
-// 10043 - C-Bonus, monk strengthens elephants
+// 10043 - Devaraja
 void EffectFunction10043(int playerId = -1)
 {
-    xsEffectAmount(cAddAttribute, BattleElephantID, cCombatAbility, 96, playerId);
-    xsEffectAmount(cAddAttribute, EliteBattleElephantID, cCombatAbility, 96, playerId);
-
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 0.130435);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 8);
-    xsTaskAmount(cTaskAttrAutoSearch, 0);
-    xsTaskAmount(cTaskAttrOwnerType, 1);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 10);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
-
-    xsTask(BattleElephantID, cTaskTypeAura, cMonkClass, playerId);
-    xsTask(EliteBattleElephantID, cTaskTypeAura, cMonkClass, playerId);
-
-    xsTaskAmount(cTaskAttrAutoSearch, 1);
-
-    xsTask(BattleElephantID, cTaskTypeAura, cMonkWithRelicClass, playerId);
-    xsTask(EliteBattleElephantID, cTaskTypeAura, cMonkWithRelicClass, playerId);
+    int TaskID = FindTask(playerId, MonkID, cTaskTypeHeal);
+    xsObjectTaskAmount(MonkID, playerId, TaskID);
+    float tmp = xsGetTaskAmount(cTaskAttrWorkValue1);
+    xsTaskAmount(cTaskAttrWorkValue1, tmp / 10);
+    xsTask(MonkID, cTaskTypeHeal, cBuildingClass, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, tmp);
+    xsTask(MonkID, cTaskTypeHeal, cSiegeWeaponClass, playerId);
+    xsTask(MonkID, cTaskTypeHeal, cPackedUnitClass, playerId);
+    xsTask(MonkID, cTaskTypeHeal, cUnpackedSiegeUnitClass, playerId);
+    xsTask(MonkID, cTaskTypeHeal, cScorpionClass, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, tmp * 3);
+    xsTask(MonkID, cTaskTypeHeal, BattleElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, EliteBattleElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, RaiderElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, VeteranRaiderElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, EliteRaiderElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, WarElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, EliteWarElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, EarlyElephantArcherID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, ElephantArcherID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, EliteElephantArcherID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, BallistaElephantID, playerId);
+    xsTask(MonkID, cTaskTypeHeal, EliteBallistaElephantID, playerId);
     xsResetTaskAmount();
 }
 
@@ -1376,7 +1381,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 259  2026.04.24");
+    xsChatData("Patch: 260  2026.04.25");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -361,6 +361,12 @@
             "effect_id": 510,
             "match": [1, 267, 1, "any", "any"],
             "modifications": ["d", "set", 20.7]
+        },
+        {
+            "type": "delete",
+            "name": "高棉农夫效率惩罚移除",
+            "effect_id": 690,
+            "match": [5, "any", "any", 13, "any"]
         }
     ]
 }
