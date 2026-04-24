@@ -1297,7 +1297,7 @@ void EffectFunction10106(int playerId = -1)
     xsTaskAmount(cTaskAttrSearchWaitTime, 13.000002);
     xsTaskAmount(cTaskAttrWorkValue1, 0.12);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 7);
+    xsTaskAmount(cTaskAttrWorkRange, 9);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 39);
     xsTask(cMonkClass, cTaskTypeAura, MaleLumberjackID, playerId);
@@ -1376,7 +1376,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 257  2026.04.24");
+    xsChatData("Patch: 258  2026.04.24");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
