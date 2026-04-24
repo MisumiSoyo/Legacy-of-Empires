@@ -1113,36 +1113,6 @@
             "Age ID": 3,
             "Building ID": 87,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 800018,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Chariot Crossbowman",
-            "Name String ID": 700018,
-            "Node ID": 4136,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 758,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 3,
-            "Building ID": 87,
-            "Draw Node Type": "UnitTech",
             "Help String ID": 105086,
             "Link ID": 6,
             "Link Node Type": "BuildingTech",

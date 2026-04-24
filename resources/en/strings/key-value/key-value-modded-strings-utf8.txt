@@ -105,7 +105,7 @@
 //	Mongols
 120161 "Cavalry Archer civilization \n\n• Cavalry archers +25% attack speed\n• Scout Cavalry-line and Steppe Lancers +20/30% HP at Castle/Imperial Age\n• Hunters +40% work rate\n• Infantries and cavalries can loot 0.33 gold per second when attacking buildings(except gates, walls and farms)\n• Pastures can accommodate 4 herders\n• Can build Stable and train Scout Cavalry at Dark Age\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom) \n• Drill (Siege Workshop units +50% moving speed) \n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barracks and Archery Range units can regenerate 2 HP from each attack; Can train Elite Keshiks at stable)\n\n<b>Team bonus: <b>\nScout-Line, Mansabdar and Auxiliary Cavalry +2 LOS"
 //	Celts
-120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight\n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry), Celtic Hunter (Archer that uses 2 population space)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP)\n• Druid (Monks can increase your nearby lumberjacks and miners' work rate by 12%)\n• Kern (Villagers +10 attack vs scout units, +10 attack vs Standard Buildings, +6 attack vs Stone Defensive Buildings, +10 attack vs Castle)\n\n<b>Team bonus: <b>\nSiege Workshop +20% work rate"
+120162 "Infantry and Siege civilization \n\n• Infantry +5/10/15/20% movement speed at Dark/Feudal/Castle/Imperial Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight\n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry), Celtic Hunter (Archer that uses 2 population space), Chariot Javelineer (Heavy mounted skirmisher)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP)\n• Druid (Monks can increase your nearby lumberjacks and miners' work rate by 12%)\n• Kern (Villagers +10 attack vs scout units, +10 attack vs Standard Buildings, +6 attack vs Stone Defensive Buildings, +10 attack vs Castle)\n\n<b>Team bonus: <b>\nSiege Workshop +20% work rate"
 //	Spanish
 120163 "Gunpowder and Monk civilization \n\n• Builders +30% work rate (not applied on the first TC in Nomad mode) \n• Blacksmith upgrades don't cost gold \n• Cannon Galleons projectile speed increases to 7 and enables Ballistics effect \n• Gunpowder units +18% attack speed\n• Gain 20 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\n• Conquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat), War Dog (High speed army)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range) \n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Genitours +2 max range)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 //	Aztecs
@@ -155,9 +155,9 @@
 //	Sicilians
 120186 "Infantry civilization \n\n• Start with +100 stone (received when the first TC is built up in Nomad mode)\n• Castles, Tower class, Wall class and Gate class buildings -40% building time, Town Centers -50% building time \n• Land military units (except siege weapons) receive -40% bonus damage \n• Farm upgrades provide +100% additional food\n• Get 1.5 extra gold from each Spearman-line, Skirmisher-line and Genitour line unit trained\n\n<b>Unique Unit:<b> \n• Serjeant (infantry can build Donjons), Donjon (Fortification), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs:<b> \n• First Crusade (Each Town Center (maximum 5) spawns a one-time batch of 5 Serjeants; All units +4 min/max conversion time)\n• Hauberk (Knight-Line units +1/+2P armor)\n• Mediterranean Galleys (Hulk-line units +1 attack)\n• Scutage (Gain 250 gold, and each military unit +15)\n\n<b>Team Bonus:<b>\nTransport ships -50% cost, +5 LOS"
 //	Poles
-120187 "Cavalry civilization \n\n• Villagers regenerate 10/15/20 HPs per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill \n• Stone Miners generate 0.33 gold per stone\n• Stable technologies -50% cost\n• Folwarks collect +1% food for every 20 enemies killed (maximum +5%)\n\n<b>Unique Units:<b> \n• Obuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry)\n\n<b>Unique Techs:<b> \n• Szlachta Privileges (Knight-line -60% gold cost)\n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 40 stone at Barracks and Castles)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b> \nScout-Line, Mansabdar and Auxiliary Cavalry +1 attack vs Archers"
+120187 "Cavalry civilization \n\n• Villagers regenerate 10/15/20 HPs per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill \n• Stone Miners generate 0.33 gold per stone\n• Stable technologies -50% cost\n• Folwarks collect +1% food for every 20 enemies killed (maximum +5%)\n\n<b>Unique Units:<b> \n• Obuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry)\n\n<b>Unique Techs:<b> \n• Szlachta Privileges (Knight-line -60% gold cost)\n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b> \nScout-Line, Mansabdar and Auxiliary Cavalry +1 attack vs Archers"
 //	Bohemians
-120188 "Gunpowder and Monk civilization \n\n• Blacksmiths and Universities -100 wood cost \n• Chemistry and Hand Cannoneer available in Castle Age \n• Infantries, Archers, Cavalry Archers and Hand Cannoneers +25% bonus damage, with each corresponding attack technology in Blacksmith +1\n• Fervor and Sanctity affect Villagers \n• Mining Camp technologies free\n\n<b>Unique Units:<b> \n• Hussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Chariot Crossbowman (cavalry archer), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b>\n• Wagenburg Tactics (Gunpowder units move 15% faster)\n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food; Each existing monk refunds 50 gold)\n• Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)\n• Pistala (Train Hand Cannoneers with 60 wood instead of gold cost)\n\n<b>Team Bonus:<b>\nMarkets +50% work rate"
+120188 "Gunpowder and Monk civilization \n\n• Blacksmiths and Universities -100 wood cost \n• Chemistry and Hand Cannoneer available in Castle Age \n• Infantries, Archers, Cavalry Archers and Hand Cannoneers +25% bonus damage, with each corresponding attack technology in Blacksmith +1\n• Fervor and Sanctity affect Villagers \n• Mining Camp technologies free\n\n<b>Unique Units:<b> \n• Hussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b>\n• Wagenburg Tactics (Gunpowder units move 15% faster)\n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food; Each existing monk refunds 50 gold)\n• Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)\n• Pistala (Train Hand Cannoneers with 60 wood instead of gold cost)\n\n<b>Team Bonus:<b>\nMarkets +50% work rate"
 //	Dravidians
 120189 "Infantry and Naval civilization\n\n• Receive +200/350/500 wood when advancing to Feudal/Castle/Imperial Age\n• Fishermen and Fishing Ships +15 carry capacity\n• Barracks technologies -50% cost%\n• Siege weapons -33% wood cost\n• Skirmishers, Genitours and Elephant Archers -20% reload time\n• Your team receive a free villager from your every Monastery technology\n\n<b>Unique Units:<b>\n• Urumi Swordsman (Infantry that can charge and deal blast damage), Thirisadai (Heavy armored warship with multiple arrows), Raider Elephant (Fast battle elephants)\n\n<b>Unique Techs:<b>\n• Medical Corps (All Elephants regenerate 30 HP per minute)\n• Wootz Steel (Infantry and cavalry attacks ignore armor)\n• Bhakti (Monks +3 conversion range)\n\n<b>Team Bonus:<b>\nDocks provide +5 population room"
 //	Bengalis
@@ -384,6 +384,7 @@
 500194 "Northern Officials"
 500195 "Rotation Grazing"
 500196 "Dha"
+500197 "Elite Chariot Javelineer"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -470,7 +471,7 @@
 501082 "Research Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)"
 501083 "Research Apostle (Military units/monks can generate 3/6 gold per minute)"
 501084 "Research Hesychast (Monks +150% heal range and heal rate)"
-501085 "Research Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 40 stone at Barracks and Castles)"
+501085 "Research Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles)"
 501086 "Research Jinete Tactics (Genitours +2 max range)"
 501087 "Research Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)"
 501088 "Research Sagres School (Docks +80% work rate)"
@@ -582,6 +583,7 @@
 501194 "Research Northern Officials (Cavalry Archer line -30 gold cost, +30 wood cost)"
 501195 "Research Rotation Grazing (Pastures -75% cost)"
 501196 "Research Dha (Spearman line -50% train time and cost, +2 attack, -50% bonus damage)"
+501197 "Upgrade to Elite Chariot Javelineer"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -668,7 +670,7 @@
 521082 "Research <b>Die Goldene Bulle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received."
 521083 "Research <b>Apostle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMilitary units/monks can generate 3/6 gold per minute."
 521084 "Research <b>Hesychast<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks +150% heal range and heal rate."
-521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nStone resource lasts 100% longer; You can train Elite Obuches with 40 stone at Barracks and Castles."
+521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nStone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles."
 521086 "Research <b>Jinete Tactics<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nGenitours +2 max range."
 521087 "Research <b>Tercio<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nSpearman line units can deal 33% area damage in 0.5 blast range."
 521088 "Research <b>Sagres School<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nDocks +80% work rate."
@@ -780,6 +782,7 @@
 521194 "Research <b>Northern Officials<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalry Archer line -30 gold cost, +30 wood cost."
 521195 "Research <b>Rotation Grazing<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nPastures -75% cost."
 521196 "Research <b>Dha<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nSpearman line -50% train time and cost, +2 attack, -50% bonus damage."
+521197 "Upgrade to <b>Elite Chariot Javelineer<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Chariot Javelineers and lets you create Elite Chariot Javelineers."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -808,7 +811,7 @@
 700015 "Parthian Cavalry Archer"
 700016 "Veteran Parthian Cavalry Archer"
 700017 "Chanyu"
-700018 "Chariot Crossbowman"
+700018 "Chariot Javelineer"
 700019 "Rung Scout"
 700020 "Elite Rung Scout"
 700021 "Swiss Pikeman"
@@ -881,6 +884,7 @@
 700088 "Jarl"
 700089 "Elite Jarl"
 700090 "Iron Hawk"
+700091 "Elite Chariot Javelineer"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -900,7 +904,7 @@
 701015 "Create Parthian Cavalry Archer"
 701016 "Create Elite Parthian Cavalry Archer"
 701017 "Create Chanyu"
-701018 "Create Chariot Crossbowman"
+701018 "Create Chariot Javelineer"
 701019 "Create Rung Scout"
 701020 "Create Elite Rung Scout"
 701021 "Create Swiss Pikeman"
@@ -972,6 +976,7 @@
 701088 "Create Jarl"
 701089 "Create Elite Jarl"
 701090 "Create Iron Hawk"
+701091 "Create Elite Chariot Javelineer"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1008,7 +1013,7 @@
 
 721017 "<b>Chanyu<b>\nHuns' unique cavalry. Can resist 33% bonus damage, and can't be converted. Every own military unit around can reduce Chanyus' reload time by 2% .(maximum -40%)\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.4 <MATERIAL=StatIconsReloadTime,1> 1.9 <MATERIAL=StatIconsHpRegeneration,1> 30 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +6 vs All Buildings, +3 vs Stone Defensive Buildings, +3 vs Walls & Gates, +12 vs Castle, +5 vs Monk.\n\n<MATERIAL=TechIconsT031CastleAge,1> +90 HP, +60 HP regeneration, +4 attack, +3 attack vs All Buildings, +3 attack vs Stone Defensive Buildings, +3 attack vs Walls & Gates, +5 attack vs Monk, +8 attack vs Castle, +1 melee/pierce armor.\n<MATERIAL=TechIconsT032ImperialAge,1> +60 HP, +60 HP regeneration, +5 attack, +6 attack vs All Buildings, +6 attack vs Stone Defensive Buildings, +6 attack vs Walls & Gates, +20 attack vs Monk, +15 attack vs Castle, +1 melee/pierce armor."
 
-721018 "Create <b>Chariot Crossbowman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nBohemians' unique mounted archer. Strong vs slow units at long range.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.15 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 80% <MATERIAL=EyeIcon,1> 5\nClass: Cavalry archer; Tags: Archer, Unique Unit.\nAttack Bonus: +2 vs Pikemen, +2 vs Archer, +1 vs Skirmisher\n\n<MATERIAL=TechIconsT032ImperialAge,1> Deal 3 damage per second to enemy units (except buildings, siege weapons and ships) within 0.5 range"
+721018 "Create <b>Chariot Javelineer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nCeltics' unique mounted archer. Strong vs slow units at long range.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 80% <MATERIAL=EyeIcon,1> 5\nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry Archer, Skirmisher, Unique Unit.\nAttack Bonus: +3 vs Pikemen, +4 vs Archer, +1 vs Cavalry Archer."
 
 721019 "Create <b>Rung Scout<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU,1>)\nVietnamese unique infantry unit. Can become invisible for 10 seconds and gain 0.75 speed bonus temporarily every 60 second. Strong vs buildings and infantry. Weak vs archers at long range.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry.\nAttack Bonus: +2 vs Shock Infantry, +4 vs Standard Buildings."
 
@@ -1151,6 +1156,8 @@
 721089 "Create <b>Elite Jarl<b> (<cost>, 22 <MATERIAL=MPIconGoodCPU,1>)\nVikings' unique cavalry. Can throw axes to cause melee damage. Nearby Militia line units and Berserks can increase Jarls' attack by up to 5 and HP regenration rate by up to 90 (requires 15 Berserks).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon,1> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +4 vs Standard Buildings, +4 vs Stone Defensive Buildings, +4 vs Castle, +8 vs Villager."
 
 721090 "Create <b>Iron Hawk<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU,1>)\nKhitans' unique cavalry. Can charge attack with blast damage.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 5 <MATERIAL=StatIconsBlastRadius> 1\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +3 vs Cavalry."
+
+721091 "Create <b>Elite Chariot Javelineer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nCeltics' unique mounted archer. Strong vs slow units at long range.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 5\nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry Archer, Skirmisher, Unique Unit.\nAttack Bonus: +3 vs Pikemen, +5 vs Archer, +2 vs Cavalry Archer."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

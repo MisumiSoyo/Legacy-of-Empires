@@ -110,12 +110,28 @@
             "type": "delete"
         },
         {
-            "note": "战车弩手",
-            "civilizations": "Bohemians",
-            "unit_id": 4136,
+            "note": "战车掷矛手",
+            "civilizations": "Celts",
+            "unit_id": 4023,
             "building_id": 87,
             "RequiredAge": 3,
-            "Name": "Chariot Crossbowman"
+            "Name": "Chariot Javelineer"
+        },
+        {
+            "note": "精锐战车掷矛手",
+            "civilizations": "Celts",
+            "unit_id": 4024,
+            "building_id": 87,
+            "RequiredAge": 4,
+            "Name": "Elite Chariot Javelineer"
+        },
+        {
+            "note": "精锐战车掷矛手",
+            "civilizations": "Celts",
+            "tech_id": 3330,
+            "building_id": 87,
+            "RequiredAge": 4,
+            "Name": "Elite Chariot Javelineer"
         },
         {
             "note": "丛林斥候",

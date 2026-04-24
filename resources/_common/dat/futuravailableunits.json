@@ -7878,6 +7878,11 @@
                         "RequiredAge": 4
                     },
                     {
+                        "RequiredAge": 4,
+                        "Name": "Elite Chariot Javelineer",
+                        "ID": 3330
+                    },
+                    {
                         "Name": "Thumb Ring",
                         "RequiredAge": 3,
                         "ID": 437
@@ -7918,6 +7923,16 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "RequiredAge": 3,
+                        "Name": "Chariot Javelineer",
+                        "ID": 4023
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "Name": "Elite Chariot Javelineer",
+                        "ID": 4024
                     },
                     {
                         "Name": "Arbalester",
@@ -41849,11 +41864,6 @@
                         "ID": 5,
                         "Name": "Hand Cannoneer",
                         "RequiredAge": 3
-                    },
-                    {
-                        "RequiredAge": 3,
-                        "Name": "Chariot Crossbowman",
-                        "ID": 4136
                     }
                 ]
             },
