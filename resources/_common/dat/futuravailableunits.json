@@ -20535,6 +20535,11 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Devaraja",
+                        "RequiredAge": 3,
+                        "ID": 3267
                     }
                 ],
                 "Units": [

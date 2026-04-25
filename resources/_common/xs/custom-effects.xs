@@ -773,7 +773,7 @@ void EffectFunction10043(int playerId = -1)
     int TaskID = FindTask(playerId, MonkID, cTaskTypeHeal);
     xsObjectTaskAmount(MonkID, playerId, TaskID);
     float tmp = xsGetTaskAmount(cTaskAttrWorkValue1);
-    xsTaskAmount(cTaskAttrWorkValue1, tmp / 10);
+    xsTaskAmount(cTaskAttrWorkValue1, tmp / 12);
     xsTask(MonkID, cTaskTypeHeal, cBuildingClass, playerId);
     xsTaskAmount(cTaskAttrWorkValue1, tmp);
     xsTask(MonkID, cTaskTypeHeal, cSiegeWeaponClass, playerId);
@@ -884,8 +884,6 @@ void EffectFunction10047(int playerId = -1)
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000011);
     xsTask(FootKonnikID, cTaskTypeLoot, -1, playerId);
     xsTask(EliteFootKonnikID, cTaskTypeLoot, -1, playerId);
-    xsTask(FootKonnik2ID, cTaskTypeLoot, -1, playerId);
-    xsTask(EliteFootKonnik2ID, cTaskTypeLoot, -1, playerId);
     xsResetTaskAmount();
 
     SetResource(playerId, cAttributeFervorofBattleKillEffect, FervorofBattleKillEffect1ID);
@@ -1381,15 +1379,11 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 260  2026.04.25");
+    xsChatData("Patch: 261 2026.04.25");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
-    int playerId = 0;
     vector pos = xsVectorSet(0.0, 0.0, 0.0);
-    for (playerId = 0; <= xsGetNumPlayers())
-    {
-        SetAttribute(playerId, TimerBuildingID, cRegenerationHpPercent, -134);
-        xsCreateUnit(TimerBuildingID, playerId, pos, false, false);
-    }
+    SetAttribute(0, TimerBuildingID, cRegenerationHpPercent, -267);
+    xsCreateUnit(TimerBuildingID, 0, pos, false, false);
 }

@@ -540,16 +540,6 @@ void EffectFunction10097(int playerId = -1)
 }
 
 
-//  10098 - Manila Galleon + Chemistry
-void EffectFunction10098(int playerId = -1)
-{
-    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
-
-    if (isResearched(playerId, ManilaGalleonTechID))
-        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
-}
-
-
 void MulFishingWorkValue(int playerId = -1, int ObjectID = -1)
 {
     int TaskID = FindTask(playerId, ObjectID, cTaskTypeGatherRebuild, cSeaFishClass, -1);

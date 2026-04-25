@@ -135,7 +135,7 @@
 //	Berbers
 120176 "Cavalry and Naval civilization \n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age\n• Ships +10% moving speed \n• Get 7 wood, 7 food and 5 gold for each military unit when advancing to the next age\n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate)\n• Maghrabi Camels (Camel units have regeneration of 15 HP/minute)\n• Adarga (Archer-line and Cavalry Archer-line units +2 pierce armor, +2 archer armor)\n• Desert Raider (Genitours +50% attack speed, -1 melee/pierce armor)\n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Genitours -50% upgrade cost"
 //	Khmer
-120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food\n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack) \n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow) \n\n<b>Team bonus: <b>\nScorpion +1 max range"
+120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food\n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer), Rattan Swordman (Infantry that can attack mounted units at long range)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack)\n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow)\n• Devaraja (Monks can heal siege weapons and buildings, +200% healing rate for elephant units)\n\n<b>Team bonus: <b>\nScorpion +1 max range"
 //	Malay
 120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
 //	Burmese
@@ -143,7 +143,7 @@
 //	Vietnamese
 120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units and Fire Lancers +20% HP \n• Conscription free \n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Battle Elephants +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
-120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +150% heal range and heal rate)\n• Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
+120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +200% heal range, +100% heal rate)\n• Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount once after killing an enemy and retain 50% HP)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 //	Tatars
 120182 "Cavalry Archer civilization \n\n• Shepherds and herders -36% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation \n• Parthian Tactics and Thumb Ring free\n• Pasture technologies free\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Keshiks regenerate 3 HP from each attack and generate double gold)\n• Khan's Conscription (Immediately conscript 12 Keshiks and 15 Cavalry Archers, and each castle provides 2 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 //	Cumans
@@ -385,6 +385,9 @@
 500195 "Rotation Grazing"
 500196 "Dha"
 500197 "Elite Chariot Javelineer"
+500198 "Devaraja"
+500199 "Rattan Swordman"
+500200 "Elite Rattan Swordman"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -470,7 +473,7 @@
 501081 "Research Quipu (Monks -50% cost)"
 501082 "Research Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)"
 501083 "Research Apostle (Military units/monks can generate 3/6 gold per minute)"
-501084 "Research Hesychast (Monks +150% heal range and heal rate)"
+501084 "Research Hesychast (Monks +200% heal range, +100% heal rate)"
 501085 "Research Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles)"
 501086 "Research Jinete Tactics (Genitours +2 max range)"
 501087 "Research Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)"
@@ -544,7 +547,7 @@
 501155 "Research Korean Bow (Remove Archer-line and Cavalry Archer-line units' wood cost)"
 501156 "Upgrade to Veteran Heavy Skirmisher"
 501157 "Upgrade to Elite Heavy Skirmisher"
-501158 "Research Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP)"
+501158 "Research Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount once after killing an enemy and retain 50% HP)"
 501159 "Research Sail on Land (Warships can move at 50% speed on land)"
 501160 "Switch to train Guecha Warrior"
 501161 "Switch to train Temple Guard"
@@ -584,6 +587,9 @@
 501195 "Research Rotation Grazing (Pastures -75% cost)"
 501196 "Research Dha (Spearman line -50% train time and cost, +2 attack, -50% bonus damage)"
 501197 "Upgrade to Elite Chariot Javelineer"
+501198 "Research Devaraja (Monks can heal siege weapons and buildings, +200% healing rate for elephant units)"
+501199 "Upgrade to Rattan Swordman"
+501200 "Upgrade to Elite Rattan Swordman"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -669,7 +675,7 @@
 521081 "Research <b>Quipu<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMonks -50% cost."
 521082 "Research <b>Die Goldene Bulle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received."
 521083 "Research <b>Apostle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMilitary units/monks can generate 3/6 gold per minute."
-521084 "Research <b>Hesychast<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMonks +150% heal range and heal rate."
+521084 "Research <b>Hesychast<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonks +200% heal range, +100% heal rate."
 521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nStone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles."
 521086 "Research <b>Jinete Tactics<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nGenitours +2 max range."
 521087 "Research <b>Tercio<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nSpearman line units can deal 33% area damage in 0.5 blast range."
@@ -743,7 +749,7 @@
 521155 "Research <b>Korean Bow<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nRemove Archer-line and Cavalry Archer-line units' wood cost."
 521156 "Upgrade to <b>Veteran Heavy Skirmisher<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Heavy Skirmishers and lets you create Veteran Heavy Skirmishers."
 521157 "Upgrade to <b>Elite Heavy Skirmisher<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Heavy Skirmishers and lets you create Elite Heavy Skirmishers."
-521158 "Research <b> Fervor of Battle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nMilitia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount after killing an enemy and retain 50% HP."
+521158 "Research <b> Fervor of Battle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nMilitia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount once after killing an enemy and retain 50% HP."
 521159 "Research <b>Sail on Land<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nWarships can move at 50% speed on land."
 521160 "Switch to train Guecha Warriors. Automatically spawn 1 Guecha Warrior every 70 seconds.\n(Need Castle)"
 521161 "Switch to train Temple Guards. Automatically spawn 1 Temple Guard every 80 seconds."
@@ -783,6 +789,9 @@
 521195 "Research <b>Rotation Grazing<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nPastures -75% cost."
 521196 "Research <b>Dha<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nSpearman line -50% train time and cost, +2 attack, -50% bonus damage."
 521197 "Upgrade to <b>Elite Chariot Javelineer<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Chariot Javelineers and lets you create Elite Chariot Javelineers."
+521198 "Research <b>Devaraja<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonks can heal siege weapons and buildings, +200% healing rate for elephant units."
+521199 "Upgrade to <b>Rattan Swordman<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Man-at-Arms and lets you create Rattan Swordman."
+521200 "Upgrade to <b>Elite Rattan Swordman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Rattan Swordmen and lets you create Elite Rattan Swordman."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -885,6 +894,8 @@
 700089 "Elite Jarl"
 700090 "Iron Hawk"
 700091 "Elite Chariot Javelineer"
+700092 "Rattan Swordman"
+700093 "Elite Rattan Swordman"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -977,6 +988,8 @@
 701089 "Create Elite Jarl"
 701090 "Create Iron Hawk"
 701091 "Create Elite Chariot Javelineer"
+701092 "Create Rattan Swordman"
+701093 "Create Elite Rattan Swordman"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1158,6 +1171,10 @@
 721090 "Create <b>Iron Hawk<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU,1>)\nKhitans' unique cavalry. Can charge attack with blast damage.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 5 <MATERIAL=StatIconsBlastRadius> 1\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +3 vs Cavalry."
 
 721091 "Create <b>Elite Chariot Javelineer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nCeltics' unique mounted archer. Strong vs slow units at long range.\nUpgrades: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.25 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 90% <MATERIAL=EyeIcon,1> 5\nClass: Cavalry archer; Tags: Archer, Cavalry, Cavalry Archer, Skirmisher, Unique Unit.\nAttack Bonus: +3 vs Pikemen, +5 vs Archer, +2 vs Cavalry Archer, +5 vs Monk."
+
+721092 "Create <b>Rattan Swordman<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\nKhmers' unique infantry. Can throw spears to attack mounted units at long range.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.15 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit。\nAttack Bonus: +6 vs Shock Infantry, +3 vs Standard Buildings, +7 vs Cavalry, +5 vs Camel."
+
+721093 "Create <b>Elite Rattan Swordman<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\nKhmers' unique infantry. Can throw spears to attack mounted units at long range.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.2 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit。\nAttack Bonus: +8 vs Shock Infantry, +4 vs Standard Buildings, +9 vs Cavalry, +7 vs Camel."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

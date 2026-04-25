@@ -72,6 +72,11 @@ void EffectFunction10090(int playerId = -1)
     ModArmor(playerId, LegionaryID, cDamageClassMelee, 1);
     ModArmor(playerId, FireLancerID, cDamageClassMelee, 1);
     ModArmor(playerId, EliteFireLancerID, cDamageClassMelee, 1);
+    ModArmor(playerId, RattanSwordmanID, cDamageClassMelee, 1);
+    ModArmor(playerId, EliteRattanSwordmanID, cDamageClassMelee, 1);
+
+    ModArmor(playerId, RattanSwordmanID, cDamageClassPierce, 1);
+    ModArmor(playerId, EliteRattanSwordmanID, cDamageClassPierce, 1);
 }
 
 
@@ -225,4 +230,46 @@ void EffectFunction10113(int playerId = -1)
     ModAttribute(playerId, EarlyElephantArcherID, cHitpoints, 100);
     ModAttribute(playerId, ElephantArcherID, cHitpoints, 100);
     ModAttribute(playerId, EliteElephantArcherID, cHitpoints, 100);
+}
+
+
+//  10114 - Forging Adjustment
+void EffectFunction10114(int playerId = -1)
+{
+    ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 1);
+    ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 1);
+    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 1);
+}
+
+
+//  10115 - Iron Casting Adjustment
+void EffectFunction10115(int playerId = -1)
+{
+    ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 1);
+    ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 1);
+    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 1);
+}
+
+
+//  10116 - Blast Furnace Adjustment
+void EffectFunction10116(int playerId = -1)
+{
+    ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 2);
+    ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 2);
+    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 2);
+}
+
+
+//  10098 - Chemistry Adjustment
+void EffectFunction10098(int playerId = -1)
+{
+    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
+    if (isResearched(playerId, ManilaGalleonTechID))
+        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
+
+    ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 1);
+    ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 1);
+    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 1);
+
+    UpgradeUnit(playerId, ProjectileRattanSwordmanID, ProjectileRattanSwordmanFireID);
 }

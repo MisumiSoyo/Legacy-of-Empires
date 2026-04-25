@@ -2231,6 +2231,14 @@
             "building_id": 109,
             "Name": "Kern",
             "RequiredAge": 4
+        },
+        {
+            "note": "神王",
+            "civilizations": "Khmer",
+            "tech_id": 3267,
+            "building_id": 109,
+            "Name": "Devaraja",
+            "RequiredAge": 3
         }
     ]
 }

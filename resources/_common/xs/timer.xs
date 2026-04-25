@@ -126,9 +126,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
 void EffectFunction10000(int playerId = -1)
 {
     int Time = xsGetGameTime();
-    if (xsPlayerAttribute(playerId, cAttributeLastRuleTime) < Time)
-    {
-        TimerEvent(playerId, Time);
-        SetResource(playerId, cAttributeLastRuleTime, Time);
-    }
+    int i = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if (xsPlayerAttribute(i, cAttributeLastRuleTime) < Time)
+        {
+            TimerEvent(i, Time);
+            SetResource(i, cAttributeLastRuleTime, Time);
+        }
 }
