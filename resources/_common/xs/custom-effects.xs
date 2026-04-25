@@ -14,7 +14,7 @@ void EffectFunction10002(int playerId = -1)
     xsTask(MaleLumberjackID, cTaskTypeGenerateResources, cTreeClass, playerId);
     xsTask(FemaleLumberjackID, cTaskTypeGenerateResources, cTreeClass, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeForestryProductivity, 1.5);
+    SetResource(playerId, cAttributeForestryProductivity, 2.2);
 }
 
 
@@ -1379,7 +1379,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 261 2026.04.25");
+    xsChatData("Patch: 262 2026.04.25");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

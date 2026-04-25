@@ -201,6 +201,8 @@ void EffectFunction10102(int playerId = -1)
     SetAttribute(playerId, 1548, cEnableSmartProjectile, 3);
 
     SetAttribute(playerId, ProjectileDonsoID, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, ProjectileRattanSwordmanID, cEnableSmartProjectile, 3);
+    SetAttribute(playerId, ProjectileRattanSwordmanFireID, cEnableSmartProjectile, 3);
 }
 
 
