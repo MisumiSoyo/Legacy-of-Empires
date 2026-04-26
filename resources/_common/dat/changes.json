@@ -377,16 +377,30 @@
         {
             "type": "modify",
             "name": "西班牙科技返还黄金调整",
-            "effect_id": [237],
+            "effect_id": 237,
             "match": [1, 3, 1, -1, "any"],
             "modifications": ["d", "set", -50]
         },
         {
             "type": "modify",
             "name": "西班牙科技返还黄金调整",
-            "effect_id": [300],
+            "effect_id": 300,
             "match": [1, 3, 1, -1, "any"],
             "modifications": ["d", "set", 50]
+        },
+        {
+            "type": "modify",
+            "name": "柏柏尔村民移动速度加成调整",
+            "effect_id": 626,
+            "match": [5, -1, 4, 5, "any"],
+            "modifications": ["d", "set", 1.0952381]
+        },
+        {
+            "type": "add",
+            "name": "缅甸伐木场科技免费升级 + 林业",
+            "effect_id": 685,
+            "commands": [[8, 3003, -1, -1, 0],
+                         [8, 3003, 17, -1, 0]]
         }
     ]
 }
