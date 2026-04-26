@@ -39526,6 +39526,24 @@
                 "TextureRef": "UnitIcons75850730",
                 "AtlasRef": "ingameunits"
             }
+        },
+        {
+            "MaterialDef": {
+                "Name": "TechIconsCashCrop",
+                "Type": "Atlas",
+                "Blend": "AlphaPlayerColor",
+                "TextureRef": "TechIconsCashCrop",
+                "AtlasRef": "ingametechs"
+            }
+        },
+        {
+            "MaterialDef": {
+                "Name": "TechIconsMilitaryTraining",
+                "Type": "Atlas",
+                "Blend": "AlphaPlayerColor",
+                "TextureRef": "TechIconsMilitaryTraining",
+                "AtlasRef": "ingametechs"
+            }
         }
     ],
     "AtlasTextures": [
@@ -65334,6 +65352,22 @@
                         "imageTLY": "0.426771",
                         "imageBRX": "0.693229",
                         "imageBRY": "0.479896"
+                    },
+                    {
+                        "RefName": "TechIconsCashCrop",
+                        "FileName": "textures/ingame/tech/Cash Crop.dds",
+                        "imageTLX": "0.037109",
+                        "imageTLY": "0.740813",
+                        "imageBRX": "0.074002",
+                        "imageBRY": "0.777705"
+                    },
+                    {
+                        "RefName": "TechIconsMilitaryTraining",
+                        "FileName": "textures/ingame/tech/Military Training.dds",
+                        "imageTLX": "0.037109",
+                        "imageTLY": "0.740813",
+                        "imageBRX": "0.074002",
+                        "imageBRY": "0.777705"
                     }
                 ],
                 "UHDSource": "textures/atlas/UHD/ingametechs.dds",

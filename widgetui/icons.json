@@ -1192,7 +1192,9 @@
         "309": "TechIconsT309FortifiedOutpostUpgrade",
         "310": "TechIconsT310PalintononEmplacements",
         "311": "TechIconsT311PontoonBridge",
-        "312": "TechIconsT312SapperTunnel"
+        "312": "TechIconsT312SapperTunnel",
+        "313": "TechIconsCashCrop",
+        "314": "TechIconsMilitaryTraining"
     },
     "StatIcons": {
         "000": "stat_icon_powerup",

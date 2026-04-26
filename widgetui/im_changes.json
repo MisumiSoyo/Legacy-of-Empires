@@ -10,6 +10,16 @@
             "type": "Units",
             "icon_name": "UnitIcons75850730",
             "source_file": "textures/ingame/units/758_50730.dds"
+        },
+        {
+            "type": "Techs",
+            "icon_name": "TechIconsCashCrop",
+            "source_file": "textures/ingame/tech/Cash Crop.dds"
+        },
+        {
+            "type": "Techs",
+            "icon_name": "TechIconsMilitaryTraining",
+            "source_file": "textures/ingame/tech/Military Training.dds"
         }
   ]
 }
