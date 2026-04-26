@@ -1194,7 +1194,10 @@
         "311": "TechIconsT311PontoonBridge",
         "312": "TechIconsT312SapperTunnel",
         "313": "TechIconsCashCrop",
-        "314": "TechIconsMilitaryTraining"
+        "314": "TechIconsMilitaryTraining",
+        "315": "TechIconsForestry",
+        "316": "TechIconsSiegeTraining",
+        "317": "TechIconsTithe"
     },
     "StatIcons": {
         "000": "stat_icon_powerup",

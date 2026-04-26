@@ -39544,6 +39544,33 @@
                 "TextureRef": "TechIconsMilitaryTraining",
                 "AtlasRef": "ingametechs"
             }
+        },
+        {
+            "MaterialDef": {
+                "Name": "TechIconsForestry",
+                "Type": "Atlas",
+                "Blend": "AlphaPlayerColor",
+                "TextureRef": "TechIconsForestry",
+                "AtlasRef": "ingametechs"
+            }
+        },
+        {
+            "MaterialDef": {
+                "Name": "TechIconsSiegeTraining",
+                "Type": "Atlas",
+                "Blend": "AlphaPlayerColor",
+                "TextureRef": "TechIconsSiegeTraining",
+                "AtlasRef": "ingametechs"
+            }
+        },
+        {
+            "MaterialDef": {
+                "Name": "TechIconsTithe",
+                "Type": "Atlas",
+                "Blend": "AlphaPlayerColor",
+                "TextureRef": "TechIconsTithe",
+                "AtlasRef": "ingametechs"
+            }
         }
     ],
     "AtlasTextures": [
@@ -65364,6 +65391,30 @@
                     {
                         "RefName": "TechIconsMilitaryTraining",
                         "FileName": "textures/ingame/tech/Military Training.dds",
+                        "imageTLX": "0.037109",
+                        "imageTLY": "0.740813",
+                        "imageBRX": "0.074002",
+                        "imageBRY": "0.777705"
+                    },
+                    {
+                        "RefName": "TechIconsForestry",
+                        "FileName": "textures/ingame/tech/Forestry.dds",
+                        "imageTLX": "0.037109",
+                        "imageTLY": "0.740813",
+                        "imageBRX": "0.074002",
+                        "imageBRY": "0.777705"
+                    },
+                    {
+                        "RefName": "TechIconsSiegeTraining",
+                        "FileName": "textures/ingame/tech/SiegeTraining.dds",
+                        "imageTLX": "0.037109",
+                        "imageTLY": "0.740813",
+                        "imageBRX": "0.074002",
+                        "imageBRY": "0.777705"
+                    },
+                    {
+                        "RefName": "TechIconsTithe",
+                        "FileName": "textures/ingame/tech/Tithe.dds",
                         "imageTLX": "0.037109",
                         "imageTLY": "0.740813",
                         "imageBRX": "0.074002",

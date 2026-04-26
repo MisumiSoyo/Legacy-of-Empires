@@ -20,6 +20,21 @@
             "type": "Techs",
             "icon_name": "TechIconsMilitaryTraining",
             "source_file": "textures/ingame/tech/Military Training.dds"
+        },
+        {
+            "type": "Techs",
+            "icon_name": "TechIconsForestry",
+            "source_file": "textures/ingame/tech/Forestry.dds"
+        },
+        {
+            "type": "Techs",
+            "icon_name": "TechIconsSiegeTraining",
+            "source_file": "textures/ingame/tech/SiegeTraining.dds"
+        },
+        {
+            "type": "Techs",
+            "icon_name": "TechIconsTithe",
+            "source_file": "textures/ingame/tech/Tithe.dds"
         }
   ]
 }
