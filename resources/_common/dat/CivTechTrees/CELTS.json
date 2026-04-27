@@ -1598,7 +1598,7 @@
             "Name": "Squires",
             "Name String ID": 17210,
             "Node ID": 215,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 80,
             "Prerequisite IDs": [

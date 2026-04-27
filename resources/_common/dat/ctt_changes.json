@@ -564,7 +564,7 @@
             "Node ID": 4093,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
-            "Picture Index": 487,
+            "Picture Index": 119,
             "Prerequisite IDs": [21, 0, 0, 0, 0],
             "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
@@ -3934,10 +3934,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "凯尔特获得双人锯, 护腕, 轮作, 扳指",
+            "note": "凯尔特获得双人锯, 护腕, 轮作, 扳指, 护卫",
             "action": "modify",
             "civ_id": "CELTS",
-            "Node ID": [12, 201, 221, 437],
+            "Node ID": [12, 201, 215, 221, 437],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },

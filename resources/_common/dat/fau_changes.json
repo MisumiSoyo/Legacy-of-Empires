@@ -1911,8 +1911,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "马扎尔获得护卫",
-            "civilizations": ["Magyars"],
+            "note": "马扎尔, 凯尔特获得护卫",
+            "civilizations": ["Magyars", "Celts"],
             "tech_id": 215,
             "building_id": 12,
             "Name": "Squires",

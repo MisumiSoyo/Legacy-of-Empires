@@ -7988,6 +7988,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Squires",
+                        "RequiredAge": 3,
+                        "ID": 215
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024

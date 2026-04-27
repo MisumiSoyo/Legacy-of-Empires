@@ -401,6 +401,26 @@
             "effect_id": 685,
             "commands": [[8, 3003, -1, -1, 0],
                          [8, 3003, 17, -1, 0]]
+        },
+        {
+            "type": "modify",
+            "name": "土耳其村民采金效率加成调整",
+            "effect_id": 295,
+            "match": [5, "any", -1, 13, "any"],
+            "modifications": ["d", "set", 1.35]
+        },
+        {
+            "type": "delete",
+            "name": "凯尔特步兵移动速度加成调整",
+            "effect_id": [392, 905, 906, 907],
+            "match": [5, "any", "any", 5, "any"]
+        },
+        {
+            "type": "modify",
+            "name": "马里村民采金加成调整",
+            "effect_id": 621,
+            "match": ["any", "any", "any", "any", "any"],
+            "modifications": ["d", "set", 1.15]
         }
     ]
 }

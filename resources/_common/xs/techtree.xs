@@ -183,6 +183,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, ArbalesterTechID);
+            EnableTech(playerId, SquiresTechID);
             break;
         }
         case cSpanish:

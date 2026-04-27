@@ -24,7 +24,7 @@ void CastleNetworkEffect(int ClassTarget = -1, int playerId = -1)
 
 void FreeTech(int playerId = -1, int TechID = -1)
 {
-    xsEffectAmount(cModifyTech, TechID, cAttrMulTime, 2.5, playerId);
+    xsEffectAmount(cModifyTech, TechID, cAttrMulTime, 3, playerId);
     xsEffectAmount(cModifyTech, TechID, cAttrMulAllCosts, 0, playerId);
 }
 
