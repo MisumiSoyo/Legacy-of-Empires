@@ -955,7 +955,7 @@
             "tech_id": 3340,
             "building_id": 104,
             "Name": "Monk Armor",
-            "RequiredAge": 3
+            "RequiredAge": 2
         },
         {
             "note": "孟加拉步兵和骑兵攻击力",
@@ -963,7 +963,7 @@
             "tech_id": 3341,
             "building_id": 104,
             "Name": "Melee Attack",
-            "RequiredAge": 3
+            "RequiredAge": 2
         },
         {
             "note": "孟加拉射手护甲",
@@ -971,7 +971,7 @@
             "tech_id": 3342,
             "building_id": 104,
             "Name": "Archer Armor",
-            "RequiredAge": 3
+            "RequiredAge": 2
         },
         {
             "note": "孟加拉海军强化",
@@ -979,7 +979,7 @@
             "tech_id": 3343,
             "building_id": 104,
             "Name": "Navy Bonus",
-            "RequiredAge": 3
+            "RequiredAge": 2
         },
         {
             "note": "魏启用冠军剑士",

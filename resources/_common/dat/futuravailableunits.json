@@ -44801,22 +44801,22 @@
                     },
                     {
                         "Name": "Monk Armor",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3340
                     },
                     {
                         "Name": "Melee Attack",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3341
                     },
                     {
                         "Name": "Archer Armor",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3342
                     },
                     {
                         "Name": "Navy Bonus",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3343
                     }
                 ],

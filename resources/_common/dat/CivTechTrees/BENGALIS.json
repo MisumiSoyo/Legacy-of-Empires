@@ -5521,7 +5521,7 @@
             "Use Type": "Tech"
         },
         {
-            "Age ID": 3,
+            "Age ID": 2,
             "Building ID": 104,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600097,
@@ -5551,7 +5551,7 @@
             "Use Type": "Tech"
         },
         {
-            "Age ID": 3,
+            "Age ID": 2,
             "Building ID": 104,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600098,
@@ -5581,7 +5581,7 @@
             "Use Type": "Tech"
         },
         {
-            "Age ID": 3,
+            "Age ID": 2,
             "Building ID": 104,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600099,
@@ -5611,7 +5611,7 @@
             "Use Type": "Tech"
         },
         {
-            "Age ID": 3,
+            "Age ID": 2,
             "Building ID": 104,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600102,

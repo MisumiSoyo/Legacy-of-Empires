@@ -254,8 +254,8 @@ void EffectFunction10061(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
         return;
-    ModAttribute(playerId, cMonkClass, cHitpoints, 20);
-    ModAttribute(playerId, cMonkWithRelicClass, cHitpoints, 20);
+    ModAttribute(playerId, cMonkClass, cHitpoints, 25);
+    ModAttribute(playerId, cMonkWithRelicClass, cHitpoints, 25);
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 }
 
@@ -269,6 +269,13 @@ void EffectFunction10062(int playerId = -1)
     ModAttack(playerId, cCavalryClass, cDamageClassMelee, 1);
     ModAttack(playerId, cScoutCavalryClass, cDamageClassMelee, 1);
     ModAttack(playerId, MountedTrebuchetID, cDamageClassMelee, -1);
+    AddAttackForm(playerId, cInfantryClass, cDamageClassArchers);
+    AddAttackForm(playerId, cCavalryClass, cDamageClassArchers);
+    AddAttackForm(playerId, cScoutCavalryClass, cDamageClassArchers);
+    ModAttack(playerId, cInfantryClass, cDamageClassArchers, 2);
+    ModAttack(playerId, cCavalryClass, cDamageClassArchers, 2);
+    ModAttack(playerId, cScoutCavalryClass, cDamageClassArchers, 2);
+    ModAttack(playerId, MountedTrebuchetID, cDamageClassArchers, -2);
 
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 }
@@ -279,10 +286,10 @@ void EffectFunction10063(int playerId = -1)
 {
     if (ConsumeRelic(playerId) == false)
         return;
-    ModArmor(playerId, cArcherClass, cDamageClassPierce, 1);
-    ModArmor(playerId, cConquistadorClass, cDamageClassPierce, 1);
-    ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 1);
-    ModArmor(playerId, cHandCannoneerClass, cDamageClassPierce, 1);
+    ModArmor(playerId, cArcherClass, cDamageClassPierce, 2);
+    ModArmor(playerId, cConquistadorClass, cDamageClassPierce, 2);
+    ModArmor(playerId, cCavalryArcherClass, cDamageClassPierce, 2);
+    ModArmor(playerId, cHandCannoneerClass, cDamageClassPierce, 2);
     ModArmor(playerId, cArcherClass, cDamageClassMelee, 1);
     ModArmor(playerId, cConquistadorClass, cDamageClassMelee, 1);
     ModArmor(playerId, cCavalryArcherClass, cDamageClassMelee, 1);
@@ -321,6 +328,7 @@ void EffectFunction10066(int playerId = -1)
     SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
     ModAttack(playerId, cWarshipClass, cDamageClassPierce, 1);
     ModAttack(playerId, cWarshipClass, cDamageClassMelee, 1);
+    ModAttribute(playerId, cWarshipClass, cHitpoints, 15);
 }
 
 
