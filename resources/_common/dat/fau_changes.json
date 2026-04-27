@@ -2239,6 +2239,14 @@
             "building_id": 109,
             "Name": "Devaraja",
             "RequiredAge": 3
+        },
+        {
+            "note": "钩刃斧",
+            "civilizations": "Khmer",
+            "tech_id": 3113,
+            "building_id": 109,
+            "Name": "Ph'kak",
+            "RequiredAge": 4
         }
     ]
 }

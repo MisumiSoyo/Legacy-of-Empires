@@ -135,7 +135,7 @@
 //	Berbers
 120176 "Cavalry and Naval civilization \n\n• Villagers +5/15/25/35% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age\n• Ships +10% moving speed \n• Get 7 wood, 7 food and 5 gold for each military unit when advancing to the next age\n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate)\n• Maghrabi Camels (Camel units have regeneration of 15 HP/minute)\n• Adarga (Archer-line and Cavalry Archer-line units +2 pierce armor, +2 archer armor)\n• Desert Raider (Genitours +50% attack speed, -1 melee/pierce armor)\n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Genitours -50% upgrade cost"
 //	Khmer
-120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food\n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer), Rattan Swordman (Infantry that can attack mounted units at long range)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack)\n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow)\n• Devaraja (Monks can heal siege weapons and buildings, +200% healing rate for elephant units)\n\n<b>Team bonus: <b>\nScorpion +1 max range"
+120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food\n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer), Rattan Swordman (Infantry that can attack mounted units at long range)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack)\n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow)\n• Devaraja (Monks can heal siege weapons and buildings, +200% healing rate for elephant units)\n• Ph'kak (Infantries can decrease nearby enemy cavalries' attack by 20%)\n\n<b>Team bonus: <b>\nScorpion +1 max range"
 //	Malay
 120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
 //	Burmese
@@ -388,6 +388,7 @@
 500198 "Devaraja"
 500199 "Rattan Swordman"
 500200 "Elite Rattan Swordman"
+500201 "Ph'kak"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -590,6 +591,7 @@
 501198 "Research Devaraja (Monks can heal siege weapons and buildings, +200% healing rate for elephant units)"
 501199 "Upgrade to Rattan Swordman"
 501200 "Upgrade to Elite Rattan Swordman"
+501201 "Research Ph'kak (Infantries can decrease nearby enemy cavalries' attack by 20%)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -792,6 +794,7 @@
 521198 "Research <b>Devaraja<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonks can heal siege weapons and buildings, +200% healing rate for elephant units."
 521199 "Upgrade to <b>Rattan Swordman<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Man-at-Arms and lets you create Rattan Swordman."
 521200 "Upgrade to <b>Elite Rattan Swordman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Rattan Swordmen and lets you create Elite Rattan Swordman."
+521201 "Research <b>Ph'kak<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantries can decrease nearby enemy cavalries' attack by 20%."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

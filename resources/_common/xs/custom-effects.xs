@@ -1199,7 +1199,7 @@ void EffectFunction10095(int playerId = -1)
     ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
     xsTaskAmount(cTaskAttrWorkValue1, -1);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000002);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000003);
     ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
     ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
     xsTaskAmount(cTaskAttrWorkValue1, -0.15);
@@ -1373,13 +1373,31 @@ void EffectFunction10110(int playerId = -1)
 }
 
 
+//  10117 - Ph'kak
+void EffectFunction10117(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000004);
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrWorkValue1, -0.2);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 5);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+    xsTask(cInfantryClass, cTaskTypeAura, cCavalryClass, playerId);
+    xsTask(cInfantryClass, cTaskTypeAura, cScoutCavalryClass, playerId);
+    xsResetTaskAmount();
+
+    LaunchAura(playerId, cInfantryClass);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 267 2026.04.27");
+    xsChatData("Patch: 268 2026.04.27");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
