@@ -5,5 +5,12 @@
         "Comment": "Chinese Dynasties",
         "Type": "MutuallyExclusive",
         "Techs": [3093, 3094, 3095, 3096]
+    },
+    {
+        "note": "孟加拉, 选择一个圣物加成",
+        "action": "add",
+        "Comment": "Bengalis Relic Bonus",
+        "Type": "MutuallyExclusive",
+        "Techs": [3340, 3341, 3342, 3343]
     }
 ]

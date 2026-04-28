@@ -38,6 +38,8 @@ extern const int cAttributeCondottieroMercenaryNum = 739;
 extern const int cAttributeRelicCount = 740;
 extern const int cAttributeGothsVillagerBonus = 741;
 extern const int cAttributeRajaCalcedValue = 742;
+extern const int cAttributeBengalisRelicCount = 743;
+extern const int cAttributeBengalisRelicBonus = 744;
 
 
 //  Custom Units' IDs

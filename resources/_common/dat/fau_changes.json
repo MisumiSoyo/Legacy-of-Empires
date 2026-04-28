@@ -927,21 +927,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "印度斯坦和孟加拉移除轻骑兵和翼骑兵",
-            "civilizations": ["Indians", "Bengalis"],
-            "unit_id": [441],
-            "building_id": 101,
-            "type": "delete"
-        },
-        {
-            "note": "曼沙布达尔骑兵",
-            "civilizations": ["Indians", "Bengalis"],
-            "unit_id": 4058,
-            "building_id": 101,
-            "Name": "Mansabdar",
-            "RequiredAge": 2
-        },
-        {
             "note": "精锐曼沙布达尔骑兵",
             "civilizations": ["Bengalis"],
             "tech_id": 428,
@@ -955,7 +940,7 @@
             "tech_id": 3340,
             "building_id": 104,
             "Name": "Monk Armor",
-            "RequiredAge": 2
+            "RequiredAge": 3
         },
         {
             "note": "孟加拉步兵和骑兵攻击力",
@@ -963,7 +948,7 @@
             "tech_id": 3341,
             "building_id": 104,
             "Name": "Melee Attack",
-            "RequiredAge": 2
+            "RequiredAge": 3
         },
         {
             "note": "孟加拉射手护甲",
@@ -971,7 +956,7 @@
             "tech_id": 3342,
             "building_id": 104,
             "Name": "Archer Armor",
-            "RequiredAge": 2
+            "RequiredAge": 3
         },
         {
             "note": "孟加拉海军强化",
@@ -979,7 +964,7 @@
             "tech_id": 3343,
             "building_id": 104,
             "Name": "Navy Bonus",
-            "RequiredAge": 2
+            "RequiredAge": 3
         },
         {
             "note": "魏启用冠军剑士",
@@ -1145,46 +1130,6 @@
             "tech_id": 3156,
             "building_id": 109,
             "Name": "Pax Mongolica",
-            "RequiredAge": 4
-        },
-        {
-            "note": "西欧/中欧雇佣兵合同",
-            "civilizations": "Byzantines",
-            "tech_id": 3109,
-            "building_id": 109,
-            "Name": "Western/Middle European Mercenary Contract",
-            "RequiredAge": 2
-        },
-        {
-            "note": "东欧雇佣兵合同",
-            "civilizations": "Byzantines",
-            "tech_id": 3110,
-            "building_id": 109,
-            "Name": "Eastern European Mercenary Contract",
-            "RequiredAge": 2
-        },
-        {
-            "note": "地中海雇佣兵合同",
-            "civilizations": "Byzantines",
-            "tech_id": 3111,
-            "building_id": 109,
-            "Name": "Mediterranean Mercenary Contract",
-            "RequiredAge": 2
-        },
-        {
-            "note": "丝绸之路雇佣兵合同",
-            "civilizations": "Byzantines",
-            "tech_id": 3112,
-            "building_id": 109,
-            "Name": "Silk Road Mercenary Contract",
-            "RequiredAge": 2
-        },
-        {
-            "note": "拜占庭精锐雇佣军",
-            "civilizations": "Byzantines",
-            "tech_id": 3113,
-            "building_id": 109,
-            "Name": "Elite Mercenary",
             "RequiredAge": 4
         },
         {
@@ -2247,6 +2192,14 @@
             "building_id": 109,
             "Name": "Ph'kak",
             "RequiredAge": 4
+        },
+        {
+            "note": "波兰新银冠精锐奥布奇战锤兵",
+            "civilizations": "Poles",
+            "unit_id": 4022,
+            "building_id": [12, 82],
+            "Name": "Elite Obuch",
+            "RequiredAge": 3
         }
     ]
 }

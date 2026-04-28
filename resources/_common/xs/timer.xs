@@ -77,11 +77,50 @@ void PolesFolwarkBonus(int playerId = -1, int Time = -1)
 }
 
 
+void BengalisRelicBonus(int playerId = -1, int Time = -1)
+{
+    int RelicBonus = xsPlayerAttribute(playerId, cAttributeBengalisRelicBonus);
+    if (RelicBonus > 0)
+    {
+        int RelicCounted = xsPlayerAttribute(playerId, cAttributeBengalisRelicCount);
+        int RelicCount = xsPlayerAttribute(playerId, cAttributeRelics);
+        RelicCounted = minInt(RelicCounted, 7);
+        RelicCount = minInt(RelicCount, 7);
+        if (RelicCounted == RelicCount)
+            return;
+        switch (RelicBonus)
+        {
+            case 1:
+            {
+                RelicMonkArmor(playerId, RelicCount, RelicCounted);
+                break;
+            }
+            case 2:
+            {
+                RelicInfCavAttack(playerId, RelicCount, RelicCounted);
+                break;
+            }
+            case 3:
+            {
+                RelicArcherArmor(playerId, RelicCount, RelicCounted);
+                break;
+            }
+            case 4:
+            {
+                RelicNavyAttack(playerId, RelicCount, RelicCounted);
+                break;
+            }
+            default:
+                break;
+        }
+        SetResource(playerId, cAttributeBengalisRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
+    }
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
-
-    SetResource(playerId, cAttributeRelicCount, xsPlayerAttribute(playerId, cAttributeRelics));
 
     switch (playerCiv)
     {
@@ -113,6 +152,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cPoles:
         {
             PolesFolwarkBonus(playerId, Time);
+            break;
+        }
+        case cBengalis:
+        {
+            BengalisRelicBonus(playerId, Time);
             break;
         }
         default:

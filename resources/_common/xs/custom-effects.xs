@@ -1253,16 +1253,6 @@ void EffectFunction10099(int playerId = -1)
 }
 
 
-//  10100 - C-Bonus, relic bonus techs
-void EffectFunction10100(int playerId = -1)
-{
-    SetInfinityStacking(playerId, BengalisMonkArmorTechID);
-    SetInfinityStacking(playerId, BengalisMeleeAttackTechID);
-    SetInfinityStacking(playerId, BengalisArcherArmorTechID);
-    SetInfinityStacking(playerId, BengalisNavyBonusTechID);
-}
-
-
 //  10104 - Firearm Casting
 void EffectFunction10104(int playerId = -1)
 {
@@ -1397,7 +1387,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 269 2026.04.27");
+    xsChatData("Patch: 270 2026.04.28");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

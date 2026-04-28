@@ -209,6 +209,17 @@
                 3095,
                 3096
             ]
+        },
+        {
+            "NameId": 424022,
+            "Comment": "Bengalis Relic Bonus",
+            "Type": "MutuallyExclusive",
+            "Techs": [
+                3340,
+                3341,
+                3342,
+                3343
+            ]
         }
     ]
 }

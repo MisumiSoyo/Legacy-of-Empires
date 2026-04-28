@@ -7543,31 +7543,6 @@
                         "ID": 3022
                     },
                     {
-                        "Name": "Western/Middle European Mercenary Contract",
-                        "RequiredAge": 2,
-                        "ID": 3109
-                    },
-                    {
-                        "Name": "Eastern European Mercenary Contract",
-                        "RequiredAge": 2,
-                        "ID": 3110
-                    },
-                    {
-                        "Name": "Mediterranean Mercenary Contract",
-                        "RequiredAge": 2,
-                        "ID": 3111
-                    },
-                    {
-                        "Name": "Silk Road Mercenary Contract",
-                        "RequiredAge": 2,
-                        "ID": 3112
-                    },
-                    {
-                        "Name": "Elite Mercenary",
-                        "RequiredAge": 4,
-                        "ID": 3113
-                    },
-                    {
                         "Name": "Golden Horn Tower",
                         "RequiredAge": 4,
                         "ID": 3208
@@ -16661,6 +16636,12 @@
                         "RequiredAge": 3
                     },
                     {
+                        "ID": 441,
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "RequiredUnitID": 546
+                    },
+                    {
                         "ID": 329,
                         "Name": "Camel Rider",
                         "RequiredAge": 3
@@ -16675,11 +16656,6 @@
                         "Name": "Imperial Camel Rider",
                         "RequiredAge": 4,
                         "RequiredUnitID": 236
-                    },
-                    {
-                        "Name": "Mansabdar",
-                        "RequiredAge": 2,
-                        "ID": 4058
                     }
                 ]
             },
@@ -40923,6 +40899,11 @@
                         "ID": 358,
                         "Name": "Pikeman",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Obuch",
+                        "RequiredAge": 3,
+                        "ID": 4022
                     }
                 ]
             },
@@ -41452,6 +41433,11 @@
                         "ID": 331,
                         "Name": "Trebuchet (Packed)",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Elite Obuch",
+                        "RequiredAge": 3,
+                        "ID": 4022
                     }
                 ]
             },
@@ -44225,11 +44211,6 @@
                         "ID": 1134,
                         "Name": "Elite Battle Elephant",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Mansabdar",
-                        "RequiredAge": 2,
-                        "ID": 4058
                     }
                 ]
             },
@@ -44801,22 +44782,22 @@
                     },
                     {
                         "Name": "Monk Armor",
-                        "RequiredAge": 2,
+                        "RequiredAge": 3,
                         "ID": 3340
                     },
                     {
                         "Name": "Melee Attack",
-                        "RequiredAge": 2,
+                        "RequiredAge": 3,
                         "ID": 3341
                     },
                     {
                         "Name": "Archer Armor",
-                        "RequiredAge": 2,
+                        "RequiredAge": 3,
                         "ID": 3342
                     },
                     {
                         "Name": "Navy Bonus",
-                        "RequiredAge": 2,
+                        "RequiredAge": 3,
                         "ID": 3343
                     }
                 ],
