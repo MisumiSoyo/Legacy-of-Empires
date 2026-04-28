@@ -539,12 +539,20 @@
             "RequiredAge": 3
         },
         {
+            "note": "波罗的海弓箭手",
+            "civilizations": "Lithuanians",
+            "tech_id": 3304,
+            "building_id": 109,
+            "Name": "Baltic Archers",
+            "RequiredAge": 3
+        },
+        {
             "note": "考纳斯城堡",
             "civilizations": "Lithuanians",
             "tech_id": 3303,
             "building_id": 109,
             "Name": "Kaunus Castle",
-            "RequiredAge": 3
+            "RequiredAge": 4
         },
         {
             "note": "铁鹞子",

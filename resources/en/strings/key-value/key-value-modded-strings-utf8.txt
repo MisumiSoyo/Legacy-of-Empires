@@ -149,7 +149,7 @@
 //	Cumans
 120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Barracks, Archery Ranges and Stables -75 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 //	Lithunians
-120184 "Cavalry and Monk civilization \n\n• Receive 100 food when a Town Center is built up (including the starting one) \n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrades free\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking) \n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range) \n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
+120184 "Cavalry and Monk civilization \n\n• Receive 100 food when a Town Center is built up (including the starting one) \n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrades free\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking) \n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range)\n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Baltic Archers (Archer line -40% gold cost, +1 attack vs Cavalry and Camel)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
 //	Burgundians
 120185 "Cavalry civilization \n\n• Economic upgrades available one age earlier, and -33% food cost\n• Stable technologies can be researched regardless of age since Feudal Age (except unlocking Knight)\n• Spearman-line units enjoy full Blacksmith infantry armor technologies since feudal age\n\n<b>Unique Units:<b> \n• Coustillier (cavalry with charged attack), Flemish Militia (infantry batter combats with cavalries)\n\n<b>Unique Techs:<b> \n• Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)\n• Flemish Revolution (Upgrades all existing Villagers to Flemish Militia)\n• Golden Spurs (Spearman-line and Flemish Militias +4 melee armor)\n• Firearm Casting (Gunpowder units +25% attack)\n\n<b>Team Bonus:<b>\nRelics generate 30 food per minute besides gold"
 //	Sicilians
@@ -389,6 +389,7 @@
 500199 "Rattan Swordman"
 500200 "Elite Rattan Swordman"
 500201 "Ph'kak"
+500202 "Baltic Archers"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -592,6 +593,7 @@
 501199 "Upgrade to Rattan Swordman"
 501200 "Upgrade to Elite Rattan Swordman"
 501201 "Research Ph'kak (Infantries can decrease nearby enemy cavalries' attack by 20%)"
+501202 "Research Baltic Archers (Archer line -40% gold cost, +1 attack vs Cavalry and Camel)"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -658,7 +660,7 @@
 521062 "Research <b>Taborites<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nTaborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned."
 521063 "Research <b>Enclosure<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nFarmers -25% food production, -15 HP, but can produce gold equal to 27% food produced."
 521064 "Research <b>Privateers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nHulk line +25% attack speed."
-521065 "Research <b>Kaunas Castle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nWatch Tower line continuously shoots arrows that ignore defense with lower attack."
+521065 "Research <b>Kaunas Castle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nWatch Tower line continuously shoots arrows that ignore defense with lower attack."
 521066 "Research <b>Raja<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nLand military units can loot food and gold equivalent to 10/4% of the value of killed enemies."
 521067 "Research <b>Ixitpla<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nCastle will produce one Jaguar Warrior for every 7 enemy land units killed."
 521068 "Research <b>Obsidian Arrow<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nArchers +4 attack vs buildings."
@@ -795,6 +797,7 @@
 521199 "Upgrade to <b>Rattan Swordman<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Man-at-Arms and lets you create Rattan Swordman."
 521200 "Upgrade to <b>Elite Rattan Swordman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Rattan Swordmen and lets you create Elite Rattan Swordman."
 521201 "Research <b>Ph'kak<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantries can decrease nearby enemy cavalries' attack by 20%."
+521202 "Research <b>Baltic Archers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nArcher line -40% gold cost, +1 attack vs Cavalry and Camel."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"

@@ -22749,8 +22749,13 @@
                         "ID": 3022
                     },
                     {
-                        "Name": "Kaunus Castle",
+                        "Name": "Baltic Archers",
                         "RequiredAge": 3,
+                        "ID": 3304
+                    },
+                    {
+                        "Name": "Kaunus Castle",
+                        "RequiredAge": 4,
                         "ID": 3303
                     }
                 ],
