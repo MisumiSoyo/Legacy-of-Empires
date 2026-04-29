@@ -1532,6 +1532,14 @@
             "RequiredAge": 2
         },
         {
+            "note": "海洋视野",
+            "civilizations": "Dravidians",
+            "tech_id": 3318,
+            "building_id": 109,
+            "Name": "Kadal Paarvai",
+            "RequiredAge": 3
+        },
+        {
             "note": "虔信主义",
             "civilizations": "Dravidians",
             "tech_id": 3337,

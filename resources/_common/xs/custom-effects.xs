@@ -1381,13 +1381,24 @@ void EffectFunction10117(int playerId = -1)
 }
 
 
+//  10118 - Kadal Paarvai
+void EffectFunction10118(int playerId = -1)
+{
+    KadalPaarvaiApplier(playerId, FishingShipID);
+    KadalPaarvaiApplier(playerId, FishingShip2ID);
+    KadalPaarvaiApplier(playerId, AntiquityModeFishingShipID);
+    MulResource(playerId, cAttributeFishingProductivity, 5);
+    SetResource(playerId, cAttributeFishTrapProductivity, 1);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 271 2026.04.28");
+    xsChatData("Patch: 272 2026.04.29");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

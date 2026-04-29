@@ -657,6 +657,19 @@ void EffectFunction10112(int playerId = -1)
 }
 
 
+void KadalPaarvaiApplier(int playerId = -1, int ObjectID = -1)
+{
+    int TaskID = FindTask(playerId, ObjectID, cTaskTypeGatherRebuild, 899, FishTrapID);
+    xsObjectTaskAmount(ObjectID, playerId, TaskID);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeFishTrapProductivity);
+    float tmp = xsGetTaskAmount(cTaskAttrWorkValue1);
+    xsTaskAmount(cTaskAttrWorkValue1, tmp * 5);
+    xsTask(ObjectID, cTaskTypeGatherRebuild, FishTrapID, playerId);
+    xsResetTaskAmount();
+    MulAttribute(playerId, ObjectID, cWorkRate, 0.2);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
