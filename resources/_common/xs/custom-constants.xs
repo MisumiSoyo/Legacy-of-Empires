@@ -255,6 +255,7 @@ extern const int ScutageTechID = 3315;
 extern const int KopalniaSoliWieliczkaTechID = 3316;
 extern const int WingedChargeTechID = 3317;
 extern const int KadalPaarvaiTechID = 3318;
+extern const int CanoeTechID = 3319;
 extern const int TaboritesTechID = 3327;
 extern const int PistalaTechID = 3328;
 extern const int BhaktiTechID = 3337;

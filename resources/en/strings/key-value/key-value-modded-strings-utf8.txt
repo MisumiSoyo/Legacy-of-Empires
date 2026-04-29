@@ -905,6 +905,9 @@
 700091 "Elite Chariot Javelineer"
 700092 "Rattan Swordman"
 700093 "Elite Rattan Swordman"
+700094 "Canoe"
+700095 "War Canoe"
+700096 "Elite Canoe"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -999,6 +1002,9 @@
 701091 "Create Elite Chariot Javelineer"
 701092 "Create Rattan Swordman"
 701093 "Create Elite Rattan Swordman"
+701094 "Create Canoe"
+701095 "Create War Canoe"
+701096 "Create Elite Canoe"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1184,6 +1190,12 @@
 721092 "Create <b>Rattan Swordman<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\nKhmers' unique infantry. Can throw spears to attack mounted units at long range.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.15 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit。\nAttack Bonus: +6 vs Shock Infantry, +3 vs Standard Buildings, +7 vs Cavalry, +5 vs Camel."
 
 721093 "Create <b>Elite Rattan Swordman<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\nKhmers' unique infantry. Can throw spears to attack mounted units at long range.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.2 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit。\nAttack Bonus: +8 vs Shock Infantry, +4 vs Standard Buildings, +9 vs Cavalry, +7 vs Camel."
+
+721094 "Create <b>Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\nClass: Warship; Tags: Ship, Ranged Ship.\nAttack Bonus: +9 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
+
+721095 "Create <b>War Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 7\nAttack Bonus: +11 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
+
+721096 "Create <b>Elite Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 8\nAttack Bonus: +15 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

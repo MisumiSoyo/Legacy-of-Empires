@@ -41,6 +41,15 @@ void EffectFunction10001(int playerId = -1)
         DisableTech(playerId, StrongFortressTechID);
     //}
 
+    if ((playerCiv == cAztecs) || (playerCiv == cMayans) || (playerCiv == cIncas) || (playerCiv == cMuisca) || (playerCiv == cMapuche) || (playerCiv == cTupi))
+    {
+        EnableTech(playerId, CanoeTechID);
+    }
+    else
+    {
+        DisableTech(playerId, CanoeTechID);
+    }
+
     switch (playerCiv)
     {
         case cBritons:

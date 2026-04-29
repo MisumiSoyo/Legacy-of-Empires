@@ -909,6 +909,9 @@
 700091 "精锐战车掷矛手"
 700092 "藤牌兵"
 700093 "精锐藤牌兵"
+700094 "独木舟"
+700095 "战争独木舟"
+700096 "精锐独木舟"
 
 
 701001 "生产铁炮足轻"
@@ -1003,6 +1006,9 @@
 701091 "生产战车掷矛手"
 701092 "生产藤牌兵"
 701093 "生产精锐藤牌兵"
+701094 "生产独木舟"
+701095 "生产战争独木舟"
+701096 "生产精锐独木舟"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1188,6 +1194,12 @@
 721092 "生产<b>藤牌兵<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\n高棉独特步兵, 可远程投掷标枪攻击骑乘单位。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.15 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +6 vs 冲击步兵, +3 vs 标准建筑, +7 vs 骑兵, +5 vs 骆驼。"
 
 721093 "生产<b>精锐藤牌兵<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\n高棉独特步兵, 可远程投掷标枪攻击骑乘单位。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.2 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +8 vs 冲击步兵, +4 vs 标准建筑, +9 vs 骑兵, +7 vs 骆驼。"
+
+721094 "建造<b>独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +9 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
+
+721095 "建造<b>战争独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 7\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +11 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
+
+721096 "建造<b>精锐独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 8\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +15 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
 
 
 
