@@ -1197,7 +1197,8 @@
         "314": "TechIconsMilitaryTraining",
         "315": "TechIconsForestry",
         "316": "TechIconsSiegeTraining",
-        "317": "TechIconsTithe"
+        "317": "TechIconsTithe",
+        "318": "TechIconsTownDefense"
     },
     "StatIcons": {
         "000": "stat_icon_powerup",

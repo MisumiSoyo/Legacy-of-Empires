@@ -29,12 +29,17 @@
         {
             "type": "Techs",
             "icon_name": "TechIconsSiegeTraining",
-            "source_file": "textures/ingame/tech/SiegeTraining.dds"
+            "source_file": "textures/ingame/tech/Siege Training.dds"
         },
         {
             "type": "Techs",
             "icon_name": "TechIconsTithe",
             "source_file": "textures/ingame/tech/Tithe.dds"
+        },
+        {
+            "type": "Techs",
+            "icon_name": "TechIconsTownDefense",
+            "source_file":"textures/ingame/tech/Town Defense.dds"
         }
   ]
 }

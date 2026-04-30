@@ -39571,6 +39571,15 @@
                 "TextureRef": "TechIconsTithe",
                 "AtlasRef": "ingametechs"
             }
+        },
+        {
+            "MaterialDef": {
+                "Name": "TechIconsTownDefense",
+                "Type": "Atlas",
+                "Blend": "AlphaPlayerColor",
+                "TextureRef": "TechIconsTownDefense",
+                "AtlasRef": "ingametechs"
+            }
         }
     ],
     "AtlasTextures": [
@@ -65406,7 +65415,7 @@
                     },
                     {
                         "RefName": "TechIconsSiegeTraining",
-                        "FileName": "textures/ingame/tech/SiegeTraining.dds",
+                        "FileName": "textures/ingame/tech/Siege Training.dds",
                         "imageTLX": "0.037109",
                         "imageTLY": "0.740813",
                         "imageBRX": "0.074002",
@@ -65415,6 +65424,14 @@
                     {
                         "RefName": "TechIconsTithe",
                         "FileName": "textures/ingame/tech/Tithe.dds",
+                        "imageTLX": "0.037109",
+                        "imageTLY": "0.740813",
+                        "imageBRX": "0.074002",
+                        "imageBRY": "0.777705"
+                    },
+                    {
+                        "RefName": "TechIconsTownDefense",
+                        "FileName": "textures/ingame/tech/Town Defense.dds",
                         "imageTLX": "0.037109",
                         "imageTLY": "0.740813",
                         "imageBRX": "0.074002",
