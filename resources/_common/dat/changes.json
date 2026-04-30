@@ -449,6 +449,13 @@
             "effect_id": 621,
             "match": ["any", "any", "any", "any", "any"],
             "modifications": ["d", "set", 1.15]
+        },
+        {
+            "type": "modify",
+            "name": "蜀国伐木获取食物调整",
+            "effect_id": 1071,
+            "match": [1, 502, -1, "any", "any"],
+            "modifications": ["d", "set", 3.9]
         }
     ],
     "unit_changes":

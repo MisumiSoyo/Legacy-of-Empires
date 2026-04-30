@@ -1135,7 +1135,7 @@ void EffectFunction10081(int playerId = -1)
 
     xsTask(cInfantryClass, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 25);
+    SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 100);
 }
 
 
@@ -1349,9 +1349,9 @@ void EffectFunction10110(int playerId = -1)
     MulAttribute(playerId, PikemanID, cTrainTime, 0.5);
     MulAttribute(playerId, HalberdierID, cTrainTime, 0.5);
 
-    MulAttribute(playerId, SpearmanID, cResourceCost, 0.5);
-    MulAttribute(playerId, PikemanID, cResourceCost, 0.5);
-    MulAttribute(playerId, HalberdierID, cResourceCost, 0.5);
+    MulAttribute(playerId, SpearmanID, cResourceCost, 0.6);
+    MulAttribute(playerId, PikemanID, cResourceCost, 0.6);
+    MulAttribute(playerId, HalberdierID, cResourceCost, 0.6);
 
     MulAttackBonus(playerId, SpearmanID, 0.5);
     MulAttackBonus(playerId, PikemanID, 0.5);
@@ -1398,7 +1398,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 275 2026.04.30");
+    xsChatData("Patch: 276 2026.04.30");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

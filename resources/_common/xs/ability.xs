@@ -371,13 +371,13 @@ void EffectFunction10077(int playerId = -1)
                 if (i <= 4)
                 {
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 25, playerId);
-                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i), playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i + 25), playerId);
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetLocation, UniversityID, playerId);
                 }
                 else
                 {
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetButton, i + 26, playerId);
-                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i + 1), playerId);
+                    xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetHotkey, KeyToHotkeyID(i + 26), playerId);
                     xsEffectAmount(cModifyTech, UniqueTechID, cAttrSetLocation, UniversityID, playerId);
                 }
             }

@@ -2611,7 +2611,7 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "萨格里什学校",
+            "note": "伊比利亚轻骑兵",
             "action": "add",
             "civ_id": "PORTUGUESE",
             "Age ID": 3,
@@ -2620,7 +2620,7 @@
             "Help String ID": 600088,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Sagres School",
+            "Name": "Iberian Light Cavalry",
             "Name String ID": 500088,
             "Node ID": 3237,
             "Node Status": "ResearchedCompleted",

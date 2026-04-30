@@ -863,11 +863,11 @@
             "RequiredAge": 4
         },
         {
-            "note": "萨格里什学校",
+            "note": "伊比利亚轻骑兵",
             "civilizations": "Portuguese",
             "tech_id": 3237,
             "building_id": 109,
-            "Name": "Sagres School",
+            "Name": "Iberian Light Cavalry",
             "RequiredAge": 3
         },
         {
