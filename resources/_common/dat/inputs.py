@@ -19,5 +19,7 @@ copy_dict = {
 
 
 effect_change_list = changes_json["effect_adjustments"]
+unit_change_list = changes_json["unit_changes"]
+tech_change_list = changes_json["tech_changes"]
 
 changes_json = None

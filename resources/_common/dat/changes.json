@@ -4,10 +4,6 @@
         "unit_list":
         [
             {
-                "name": "贸易单位改动",
-                "id": [17, 128, 204]
-            },
-            {
                 "name": "狂战士改动",
                 "id": [692, 694]
             },
@@ -22,10 +18,6 @@
             {
                 "name": "城镇中心",
                 "id": [71, 109, 141, 142]
-            },
-            {
-                "name": "冠军剑士生命值加强",
-                "id": [567]
             },
             {
                 "name": "攻城塔改动",
@@ -108,34 +100,61 @@
             "function_id": 10083
         },
         {
-            "type": "adjustment",
+            "type": "delete",
             "name": "波斯团队加成",
             "effect_id": 408,
-            "function_id": 10018
+            "match": ["any", "any", "any", "any", "any"]
         },
         {
-            "type": "adjustment",
+            "type": "add",
+            "name": "波斯团队加成改为所有骑兵(除轻骑兵外)对射手 +2 攻击力",
+            "effect_id": 408,
+            "commands": [4, -1, 12, 9, 3842]
+        },
+        {
+            "type": "delete",
             "name": "法兰克团队加成",
             "effect_id": 403,
-            "function_id": 10088
+            "match": ["any", "any", "any", "any", "any"]
         },
         {
-            "type": "adjustment",
+            "type": "add",
+            "name": "法兰克团队加成改为骑兵(除轻骑兵外) +2 视野",
+            "effect_id": 403,
+            "commands": [[4, -1, 12, 1, 2],
+                         [4, -1, 12, 23, 2]]
+        },
+        {
+            "type": "delete",
             "name": "波兰团队加成",
             "effect_id": 802,
-            "function_id": 10079
+            "match": ["any", "any", "any", "any", "any"]
         },
         {
-            "type": "adjustment",
+            "type": "add",
+            "name": "波兰团队加成改为轻骑兵对射手 +1 攻击力",
+            "effect_id": 802,
+            "commands": [4, -1, 47, 9, 3841]
+        },
+        {
+            "type": "delete",
             "name": "蒙古团队加成",
             "effect_id": 407,
-            "function_id": 10085
+            "match": ["any", "any", "any", "any", "any"]
         },
         {
-            "type": "adjustment",
+            "type": "add",
+            "name": "蒙古团队加成改为轻骑兵 +2 视野",
+            "effect_id": 407,
+            "commands": [[4, -1, 47, 1, 2],
+                         [4, -1, 47, 23, 2]]
+        },
+        {
+            "type": "modify",
             "name": "波希米亚团队加成",
             "effect_id": 804,
-            "function_id": 10086
+            "match": [5, "any", "any", 13, "any"],
+            "modifications": ["d", "set", 1.5]
         },
         {
             "type": "adjustment",
@@ -212,10 +231,19 @@
             "commands": [4, -1, 4, 9, -3333]
         },
         {
-            "type": "adjustment",
+            "type": "delete",
             "name": "印度斯坦团队加成",
             "effect_id": 2,
-            "function_id": 10089
+            "match": [[4, 448, -1, 9, "any"],
+                      [4, 546, -1, 9, "any"],
+                      [4, 441, -1, 9, "any"],
+                      [4, 1707, -1, 9, "any"]]
+        },
+        {
+            "type": "add",
+            "name": "印度斯坦团队加成改为轻骑兵和骆驼 +2 攻击力 vs 建筑",
+            "effect_id": 2,
+            "commands": [4, -1, 47, 9, 5378]
         },
         {
             "type": "add",
@@ -422,5 +450,35 @@
             "match": ["any", "any", "any", "any", "any"],
             "modifications": ["d", "set", 1.15]
         }
+    ],
+    "unit_changes":
+    [
+        {
+            "note": "轻骑兵类型设置",
+            "unit_id": [441, 546, 869, 871],
+            "attributes": [["class_", 47]]
+        },
+        {
+            "note": "贸易单位费用减少, 训练速度加快",
+            "unit_id": [17],
+            "attributes": [["creatable.resource_costs[0].amount", 60],
+                           ["creatable.resource_costs[1].amount", 45],
+                           ["creatable.train_locations[0].train_time", 30]]
+        },
+        {
+            "note": "贸易单位费用减少, 训练速度加快",
+            "unit_id": [128, 204],
+            "attributes": [["creatable.resource_costs[0].amount", 60],
+                           ["creatable.resource_costs[1].amount", 45],
+                           ["creatable.train_locations[0].train_time", 40]]
+        },
+        {
+            "note": "冠军剑士生命值加强",
+            "unit_id": 567,
+            "attributes": [["hit_points", 75]]
+        }
+    ],
+    "tech_changes":
+    [
     ]
 }

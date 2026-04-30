@@ -36,44 +36,92 @@ def run():
 
 import math
 
-def customChanges(data):
+ANY = "any"
+FLOAT_REL_TOL = 1e-5
+FLOAT_ABS_TOL = 1e-6
+
+
+def match_command(cmd, match_list):
+    for match in match_list:
+        m_type, m_a, m_b, m_c, m_d = match
+        if not (m_type == ANY or cmd.type == m_type):
+            continue
+        if not (m_a == ANY or cmd.a == m_a):
+            continue
+        if not (m_b == ANY or cmd.b == m_b):
+            continue
+        if not (m_c == ANY or cmd.c == m_c):
+            continue
+        if m_d == ANY:
+            return True
+        if math.isclose(cmd.d, m_d, rel_tol=FLOAT_REL_TOL, abs_tol=FLOAT_ABS_TOL):
+            return True
+    return False
+
+
+def apply_modification(cmd, field, op, value):
+    current = getattr(cmd, field)
+    if op == "set":
+        new_value = value
+    elif op == "add":
+        new_value = current + value
+    elif op == "mul":
+        new_value = current * value
+    else:
+        raise ValueError(f"不支持的修改操作: {op}")
+    setattr(cmd, field, type(current)(new_value))
+
+
+def parseAttrPath(attr_path):
+    import re
+    return re.findall(r'[^\.\[\]]+|\[\d+\]', attr_path)
+
+
+def setNestedAttribute(obj, attr_path, value):
+    tokens = parseAttrPath(attr_path)
+    current = obj
+    for token in tokens[:-1]:
+        if token.startswith('[') and token.endswith(']'):
+            idx = int(token[1:-1])
+            current = current[idx]
+        else:
+            current = getattr(current, token)
+    last_token = tokens[-1]
+    if last_token.startswith('[') and last_token.endswith(']'):
+        idx = int(last_token[1:-1])
+        current[idx] = value
+    else:
+        setattr(current, last_token, value)
+
+
+def getNestedAttribute(obj, attr_path):
+    tokens = parseAttrPath(attr_path)
+    current = obj
+    for token in tokens:
+        if token.startswith('[') and token.endswith(']'):
+            idx = int(token[1:-1])
+            current = current[idx]
+        else:
+            current = getattr(current, token)
+    return current
+
+
+def normalizeIdList(ids):
+    if isinstance(ids, (int, float)):
+        return [int(ids)]
+    return [int(x) for x in ids]
+
+
+def applyCivTechTreeEffects(data):
     for i in range(len(data.civs)):
         civ = data.civs[i]
         EffectID = civ.tech_tree_id
-        data.effects[EffectID].effect_commands.append(EffectCommand(type=1, a=33, b=0, c=-1, d=10001.0))
-
-    ANY = "any"
-    # float 比较容差参数
-    FLOAT_REL_TOL = 1e-5  # 相对容差
-    FLOAT_ABS_TOL = 1e-6  # 绝对容差
-
-    def match_command(cmd, match_list):
-        """通用匹配函数：检查指令是否匹配任一条件
-        type(uint8), a/b/c(int16) 精确匹配；d(float) 使用 math.isclose 容差匹配
-        """
-        for match in match_list:
-            m_type, m_a, m_b, m_c, m_d = match
-            
-            # type, a, b, c 精确匹配
-            if not (m_type == ANY or cmd.type == m_type):
-                continue
-            if not (m_a == ANY or cmd.a == m_a):
-                continue
-            if not (m_b == ANY or cmd.b == m_b):
-                continue
-            if not (m_c == ANY or cmd.c == m_c):
-                continue
-            
-            # d(float) 使用 math.isclose 容差匹配
-            if m_d == ANY:
-                return True
-            if math.isclose(cmd.d, m_d, rel_tol=FLOAT_REL_TOL, abs_tol=FLOAT_ABS_TOL):
-                return True
-                
-        return False
+        data.effects[EffectID].effect_commands.append(
+            EffectCommand(type=1, a=33, b=0, c=-1, d=10001.0)
+        )
 
 
-    # 编辑effect
+def applyEffectChanges(data, effect_change_list):
     for effect_change in effect_change_list:
         effect_ids = effect_change["effect_id"]
         if isinstance(effect_ids, (int, float)):
@@ -86,7 +134,6 @@ def customChanges(data):
                 commands = effect_change["commands"]
                 if isinstance(commands[0], (int, float)):
                     commands = [commands]
-                
                 for cmd in commands:
                     cmd_type, a, b, c, d = cmd
                     data.effects[effect_id].effect_commands.append(
@@ -97,7 +144,6 @@ def customChanges(data):
                 match_list = effect_change.get("match", [])
                 if isinstance(match_list[0], (int, float, str)):
                     match_list = [match_list]
-            
                 data.effects[effect_id].effect_commands = [
                     cmd for cmd in data.effects[effect_id].effect_commands 
                     if not match_command(cmd, match_list)
@@ -107,34 +153,79 @@ def customChanges(data):
                 match_list = effect_change.get("match", [])
                 if isinstance(match_list[0], (int, float, str)):
                     match_list = [match_list]
-                
                 modifications = effect_change.get("modifications", [])
                 if modifications and isinstance(modifications[0], str):
                     modifications = [modifications]
-                
-                def apply_modification(cmd, field, op, value):
-                    current = getattr(cmd, field)
-                    if op == "set":
-                        new_value = value
-                    elif op == "add":
-                        new_value = current + value
-                    elif op == "mul":
-                        new_value = current * value
-                    else:
-                        raise ValueError(f"不支持的修改操作: {op}")
-                    setattr(cmd, field, type(current)(new_value))
-                
                 for cmd in data.effects[effect_id].effect_commands:
                     if match_command(cmd, match_list):
                         for field, op, value in modifications:
                             apply_modification(cmd, field, op, value)
                             
-            else:  # adjustment
+            else:
                 function_id = effect_change["function_id"]
                 data.effects[effect_id].effect_commands.append(
                     EffectCommand(type=1, a=33, b=0, c=-1, d=function_id)
                 )
+
+
+def applyAttributeChange(obj, attr_change):
+    """
+    应用单个属性修改
+    格式1: [path, value]          -> 直接赋值
+    格式2: [path, op, value]      -> 运算修改
+    """
+    if len(attr_change) == 2:
+        attr_path, new_value = attr_change
+        setNestedAttribute(obj, attr_path, new_value)
+    elif len(attr_change) == 3:
+        attr_path, op, value = attr_change
+        current = getNestedAttribute(obj, attr_path)
+        if op == "set":
+            final_value = value
+        elif op == "add":
+            final_value = current + value
+        elif op == "mul":
+            final_value = current * value
+        else:
+            raise ValueError(f"不支持的修改操作: {op}")
+        setNestedAttribute(obj, attr_path, type(current)(final_value))
+    else:
+        raise ValueError(f"不支持的属性修改格式: {attr_change}")
+
+
+def applyUnitChanges(data, unit_change_list):
+    for change in unit_change_list:
+        unit_ids = normalizeIdList(change["unit_id"])
+        civs = change.get("civs", "all")
+        attributes = change.get("attributes", [])
         
+        if civs == "all":
+            target_civs = range(len(data.civs))
+        else:
+            target_civs = civs
+        
+        for civ_idx in target_civs:
+            civ = data.civs[civ_idx]
+            
+            for unit_id in unit_ids:
+                if unit_id >= len(civ.units):
+                    continue
+                    
+                unit = civ.units[unit_id]
+                
+                for attr_change in attributes:
+                    applyAttributeChange(unit, attr_change)
+
+
+def customChanges(data):
+    applyCivTechTreeEffects(data)
+    
+    if 'effect_change_list' in globals():
+        applyEffectChanges(data, effect_change_list)
+    
+    if 'unit_change_list' in globals():
+        applyUnitChanges(data, unit_change_list)
+    
     return
 
 

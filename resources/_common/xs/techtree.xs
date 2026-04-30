@@ -492,9 +492,6 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TreadmillCraneTechID);
             EnableTech(playerId, AtonementTechID);
             EnableTech(playerId, IlluminationTechID);
-            //  Georgians civ bonus, Repairers +100% work rate
-            MulAttribute(playerId, MaleRepairerID, cWorkRate, 2);
-            MulAttribute(playerId, FemaleRepairerID, cWorkRate, 2);
             break;
         }
         case cShu:
@@ -651,38 +648,6 @@ void EffectFunction10037(int playerId = -1)
 }
 
 
-//  10018 - Persians Team Bonus
-void EffectFunction10018(int playerId = -1)
-{
-    AddAttackForm(playerId, HeiGuangCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, HeavyHeiGuangCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, SipahiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteSipahiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, GuanNingCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, CrusaderKnightID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, MountedSamuraiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteMountedSamuraiID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, GoguryeoHeavyCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, EliteGoguryeoHeavyCavalryID, cDamageClassArchers, 2);
-    AddAttackForm(playerId, HospitallerKnightID, cDamageClassArchers, 2);
-}
-
-
-//  10079 - Poles Team Bonus
-void EffectFunction10079(int playerId = -1)
-{
-    AddAttackForm(playerId, MansabdarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, VeteranMansabdarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, EliteMansabdarID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, AuxiliaryCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, AuxiliaryCavalry2ID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, VeteranAuxiliaryCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, VeteranAuxiliaryCavalry2ID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, EliteAuxiliaryCavalryID, cDamageClassArchers, 1);
-    AddAttackForm(playerId, EliteAuxiliaryCavalry2ID, cDamageClassArchers, 1);
-}
-
-
 //  10080 - Berbers Team Bonus
 void EffectFunction10080(int playerId = -1)
 {
@@ -698,69 +663,6 @@ void EffectFunction10080(int playerId = -1)
 }
 
 
-//  10088 - Franks Team Bonus
-void EffectFunction10088(int playerId = -1)
-{
-    ModAttribute(playerId, GuanNingCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, CrusaderKnightID, cLineOfSight, 2);
-    ModAttribute(playerId, HeiGuangCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, HeavyHeiGuangCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, SipahiID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteSipahiID, cLineOfSight, 2);
-    ModAttribute(playerId, MountedSamuraiID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteMountedSamuraiID, cLineOfSight, 2);
-    ModAttribute(playerId, GoguryeoHeavyCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteGoguryeoHeavyCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, HospitallerKnightID, cLineOfSight, 2);
-
-    ModAttribute(playerId, GuanNingCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, CrusaderKnightID, cSearchRadius, 2);
-    ModAttribute(playerId, HeiGuangCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, HeavyHeiGuangCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, SipahiID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteSipahiID, cSearchRadius, 2);
-    ModAttribute(playerId, MountedSamuraiID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteMountedSamuraiID, cSearchRadius, 2);
-    ModAttribute(playerId, GoguryeoHeavyCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteGoguryeoHeavyCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, HospitallerKnightID, cSearchRadius, 2);
-}
-
-
-//  10085 - Mongols Team Bonus
-void EffectFunction10085(int playerId = -1)
-{
-    ModAttribute(playerId, MansabdarID, cLineOfSight, 2);
-    ModAttribute(playerId, VeteranMansabdarID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteMansabdarID, cLineOfSight, 2);
-    ModAttribute(playerId, AuxiliaryCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, AuxiliaryCavalry2ID, cLineOfSight, 2);
-    ModAttribute(playerId, VeteranAuxiliaryCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, VeteranAuxiliaryCavalry2ID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteAuxiliaryCavalryID, cLineOfSight, 2);
-    ModAttribute(playerId, EliteAuxiliaryCavalry2ID, cLineOfSight, 2);
-
-    ModAttribute(playerId, MansabdarID, cSearchRadius, 2);
-    ModAttribute(playerId, VeteranMansabdarID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteMansabdarID, cSearchRadius, 2);
-    ModAttribute(playerId, AuxiliaryCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, AuxiliaryCavalry2ID, cSearchRadius, 2);
-    ModAttribute(playerId, VeteranAuxiliaryCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, VeteranAuxiliaryCavalry2ID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteAuxiliaryCavalryID, cSearchRadius, 2);
-    ModAttribute(playerId, EliteAuxiliaryCavalry2ID, cSearchRadius, 2);
-}
-
-
-//  10086 - Bohemians Team Bonus
-void EffectFunction10086(int playerId = -1)
-{
-    MulAttribute(playerId, MarketID, cWorkRate, 1.5 / 1.8);
-    MulAttribute(playerId, Market2ID, cWorkRate, 1.5 / 1.8);
-    MulAttribute(playerId, Market3ID, cWorkRate, 1.5 / 1.8);
-}
-
-
 //  10087 - Gurjaras Team Bonus
 void EffectFunction10087(int playerId = -1)
 {
@@ -768,19 +670,4 @@ void EffectFunction10087(int playerId = -1)
     MulAttribute(playerId, VeteranRaiderElephantID, cTrainTime, 0.8);
     MulAttribute(playerId, EliteRaiderElephantID, cTrainTime, 0.8);
     MulAttribute(playerId, EarlyElephantArcherID, cTrainTime, 0.8);
-}
-
-
-//  10089 - Hindustanis Team Bonus
-void EffectFunction10089(int playerId = -1)
-{
-    ModAttack(playerId, MansabdarID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, VeteranMansabdarID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, EliteMansabdarID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, AuxiliaryCavalryID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, VeteranAuxiliaryCavalryID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, EliteAuxiliaryCavalryID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, AuxiliaryCavalry2ID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, VeteranAuxiliaryCavalry2ID, cDamageClassStandardBuildings, 2);
-    ModAttack(playerId, EliteAuxiliaryCavalry2ID, cDamageClassStandardBuildings, 2);
 }
