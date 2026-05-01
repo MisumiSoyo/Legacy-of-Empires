@@ -145,6 +145,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, KeepTechID);
             EnableTech(playerId, ArrowslitsTechID);
             EnableTech(playerId, BombardTowerTechID);
+            DisableTech(playerId, CavalryArcherTechID);
+            DisableTech(playerId, HeavyCavalryArcherTechID);
             break;
         }
         case cSaracens:
