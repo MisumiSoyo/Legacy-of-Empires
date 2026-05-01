@@ -133,7 +133,7 @@
 //	葡萄牙
 120173 "海军和火药文明\n\n• 单位黄金费用 -20%\n• 浆果采集者每采集 1.5 食物额外获得 1 木材 \n• 船只在封建/城堡/帝王时代 +10/15/20% 生命值\n• 在帝王时代可建造大商站\n• 标枪骑兵系 +10% 移动速度\n• 每研究 1 个科技, 获得 5 人口空间\n\n<b>独特单位: <b>\n• 风琴炮 (散射攻击的攻城武器), 卡拉维尔战舰 (有贯穿攻击效果的战船) \n\n<b>独特科技: <b>\n• 环球探险 (将整个地图设置为已探索; 船只训练速度 +33%)\n• 火绳枪 (炮舰、火枪手和风琴炮弹道速度 +0.5, 火炮系单位和炮塔弹道速度 +0.2, 并具有弹道学效果)\n• 伊比利亚轻骑兵 (标枪骑兵 +5 攻击力 vs 射手, +3 攻击力 vs 骑射手, +3 攻击力 vs 枪兵)\n• 特许状 (你和盟友可以免费建造一座大商站, 并且你可以从盟友以这种方式建造的大商站中额外获得 50% 的收益)\n\n<b>团队加成: <b>\n所有科技研究时间 -20% (升级时代除外)"
 //	埃塞俄比亚
-120174 "弓兵文明\n\n• 升级到封建/城堡/帝王时代时获得 100/200/300 食物和黄金\n• 步弓手系 +18% 攻击速度\n• 长枪兵升级免费\n• 单位在低海拔造成的伤害 +25%\n\n<b>独特单位：<b>\n• 弯刀勇士 (步兵)\n\n<b>独特科技：<b>\n• 龙脉 (弯刀勇士和骆驼骑兵受到骑兵单位的伤害 -3)\n• 扭绞机 (攻城武器厂单位的爆炸伤害范围提升)\n• 重型长矛 (长矛兵系和骑兵的攻击可降低目标 1 护甲/盾牌, 持续 3 秒)\n• 阿伯哈拉战象 (训练象兵不需要黄金, 但 +25 食物费用)\n\n<b>团队加成：<b>\n哨站视野 +3 且不消耗石料"
+120174 "弓兵文明\n\n• 升级到封建/城堡/帝王时代时获得 100/200/300 食物和黄金\n• 步弓手系 +18% 攻击速度\n• 长枪兵升级免费\n• 单位在低海拔造成的伤害 +25%\n\n<b>独特单位：<b>\n• 弯刀勇士 (步兵), 切瓦骑手 (适于对抗步兵的骑兵)\n\n<b>独特科技：<b>\n• 龙脉 (弯刀勇士和骆驼骑兵受到骑兵单位的伤害 -3)\n• 扭绞机 (攻城武器厂单位的爆炸伤害范围提升)\n• 重型长矛 (长矛兵系和骑兵的攻击可降低目标 1 护甲/盾牌, 持续 3 秒)\n• 阿伯哈拉战象 (训练象兵不需要黄金, 但 +25 食物费用)\n\n<b>团队加成：<b>\n哨站视野 +3 且不消耗石料"
 //	马里
 120175 "步兵文明\n\n• 建筑的木材费用 -15%\n• 村民存放的黄金额外 +15%\n• 兵营单位在封建/城堡/帝王时代 +1/+2/+3 盾牌\n• 火枪手 +66% 训练速度\n\n<b>独特单位：<b>\n• 飞刀女兵 (快速远程步兵), 索法骑手 (对长矛兵系、掷矛手和轻骑兵有攻击加成的骑兵), 当佐兵 (可充能投掷标枪的步兵)\n\n<b>独特科技：<b>\n• 蛮王 (城镇中心无驻军亦能自动射箭，放箭数/最大放箭数 +8)\n• 死士 (骑兵 +4 攻击力)\n• 撒哈拉商道 (贸易单位产生黄金 -20%, 可额外产生相当于黄金收入 66% 的食物)\n• 淬毒 (射手, 骑射手, 火枪手和当佐兵的远程攻击可使敌人减速 15%, 持续 2 秒, 效果不可叠加)\n\n<b>团队加成：<b>\n大学工作速度 +80%"
 //	柏柏尔
@@ -395,6 +395,8 @@
 500201 "钩刃斧"
 500202 "波罗的海弓箭手"
 500203 "海洋视野"
+500204 "老练切瓦骑手"
+500205 "精锐切瓦骑手"
 
 
 501001 "研究季风航行(渔船和运输船 +25% 移动速度)"
@@ -437,7 +439,7 @@
 501038 "研究阿奴律陀运河(农田每分钟产生 4.8 食物)"
 501039 "研究季风航行(渔船和运输船 +60% 移动速度; 渔船 +33% 采集深海鱼的工作效率)"
 501040 "研究一向一揆(解锁僧兵, 村民 -7% 工作效率)"
-501041 "研究军事训练(步兵、骑兵、射手、骑射手、破坏者、火枪类、特殊骑兵类单位 +20% 训练速度)"
+501041 "研究军事训练(军事建筑 +20% 工作效率)"
 501042 "研究浮动园地(经济单位和所有建筑 +20% 工作效率, 持续 3 分钟)"
 501043 "研究玉米神祝福(立刻收获完成当前所有农夫正在耕作的农田的食物)"
 501044 "研究翼骑兵冲锋(骑兵获得冲锋能力)"
@@ -600,6 +602,8 @@
 501201 "研究钩刃斧(步兵可以减少周围敌方骑兵 20% 攻击力)"
 501202 "研究波罗的海弓箭手(步弓手系 -40% 黄金费用, +1 攻击力 vs 骑兵和骆驼)"
 501203 "研究海洋视野(渔船 -80% 采集消耗的自然食物资源)"
+501204 "升级到老练切瓦骑手"
+501205 "升级到精锐切瓦骑手"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -642,7 +646,7 @@
 521038 "研究<b>阿奴律陀运河<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n农田每分钟产生 4.8 食物。"
 521039 "研究<b>季风航行<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\n渔船和运输船 +60% 移动速度; 渔船 +33% 采集深海鱼的工作效率。"
 521040 "研究<b>一向一揆<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n解锁僧兵, 村民 -7% 工作效率。"
-521041 "研究<b>军事训练<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n步兵、骑兵、射手、骑射手、破坏者、火枪类、特殊骑兵类单位 +20% 训练速度。"
+521041 "研究<b>军事训练<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n军事建筑 +20% 工作效率。"
 521042 "研究<b>浮动园地<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\n经济单位和所有建筑 +20% 工作效率, 持续 3 分钟。"
 521043 "研究<b>玉米神祝福<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n立刻收获完成当前所有农夫正在耕作的农田的食物。"
 521044 "研究<b>翼骑兵冲锋<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\n骑兵获得冲锋能力。"
@@ -805,6 +809,8 @@
 521201 "研究<b>钩刃斧<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n步兵可以减少周围敌方骑兵 20% 攻击力。"
 521202 "研究<b>波罗的海弓箭手<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n步弓手系 -40% 黄金费用, +1 攻击力 vs 骑兵和骆驼)"
 521203 "研究<b>海洋视野<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n渔船 -80% 采集消耗的自然食物资源。"
+521204 "升级到<b>老练切瓦骑手<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n将您的切瓦骑手升级, 生产更为强大的老练切瓦骑手。"
+521205 "升级到<b>精锐切瓦骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练切瓦骑手升级, 生产更为强大的精锐切瓦骑手。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -912,6 +918,9 @@
 700094 "独木舟"
 700095 "战争独木舟"
 700096 "精锐独木舟"
+700097 "切瓦骑手"
+700098 "老练切瓦骑手"
+700099 "精锐切瓦骑手"
 
 
 701001 "生产铁炮足轻"
@@ -1009,6 +1018,9 @@
 701094 "生产独木舟"
 701095 "生产战争独木舟"
 701096 "生产精锐独木舟"
+701097 "生产切瓦骑手"
+701098 "生产老练切瓦骑手"
+701099 "生产精锐切瓦骑手"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1195,11 +1207,17 @@
 
 721093 "生产<b>精锐藤牌兵<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\n高棉独特步兵, 可远程投掷标枪攻击骑乘单位。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.2 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +8 vs 冲击步兵, +4 vs 标准建筑, +9 vs 骑兵, +7 vs 骆驼。"
 
-721094 "建造<b>独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +9 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
+721094 "建造<b>独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船, 适于对抗远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +9 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
 
-721095 "建造<b>战争独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 7\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +11 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
+721095 "建造<b>战争独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船, 适于对抗远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 7\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +11 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
 
-721096 "建造<b>精锐独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 8\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +15 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
+721096 "建造<b>精锐独木舟<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n美洲独特远程战船, 适于对抗远程战船。\n升级: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 8\n主类: 战舰; 标签: 舰船, 远程船只。\n攻击加成: +15 vs 远程船只, +3 vs 所有建筑, +2 vs 冲车/巨型投石机/攻城塔。"
+
+721097 "生产<b>切瓦骑手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\n埃塞俄比亚独特骑兵, 适于对抗步兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +4 vs 步兵。"
+
+721098 "生产<b>老练切瓦骑手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\n埃塞俄比亚独特骑兵, 适于对抗步兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +6 vs 步兵。"
+
+721099 "生产<b>精锐切瓦骑手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\n埃塞俄比亚独特骑兵, 适于对抗步兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +10 vs 步兵。"
 
 
 

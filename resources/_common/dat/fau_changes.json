@@ -272,7 +272,7 @@
             "tech_id": 3004,
             "building_id": 103,
             "Name": "Military Training",
-            "RequiredAge": 3
+            "RequiredAge": 2
         },
         {
             "note": "什一税",
@@ -2216,6 +2216,14 @@
             "building_id": [12, 82],
             "Name": "Elite Obuch",
             "RequiredAge": 3
+        },
+        {
+            "note": "精锐切瓦骑手",
+            "civilizations": "Ethiopians",
+            "tech_id": 265,
+            "building_id": 101,
+            "Name": "Paladin",
+            "RequiredAge": 4
         }
     ]
 }

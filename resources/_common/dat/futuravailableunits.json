@@ -432,7 +432,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -1487,7 +1487,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -2616,7 +2616,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -3724,7 +3724,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -4842,7 +4842,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -5945,7 +5945,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -7087,7 +7087,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -8230,7 +8230,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -9378,7 +9378,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -10531,7 +10531,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -11387,6 +11387,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Paladin",
+                        "RequiredAge": 4,
+                        "ID": 265
                     }
                 ],
                 "Units": [
@@ -11593,7 +11598,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -12690,7 +12695,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -13758,7 +13763,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -14786,7 +14791,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -15730,7 +15735,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -16789,7 +16794,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -17839,7 +17844,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -18960,7 +18965,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -20073,7 +20078,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -21185,7 +21190,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -22295,7 +22300,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -23437,7 +23442,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -24512,7 +24517,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -25644,7 +25649,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -26693,7 +26698,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -27738,7 +27743,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -28831,7 +28836,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -29945,7 +29950,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -31100,7 +31105,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -32198,7 +32203,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -33288,7 +33293,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -34425,7 +34430,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -35588,7 +35593,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -36673,7 +36678,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -37808,7 +37813,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -38980,7 +38985,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -40051,7 +40056,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -41105,7 +41110,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -42161,7 +42166,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -43266,7 +43271,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -44359,7 +44364,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -45458,7 +45463,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -46522,7 +46527,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -47553,7 +47558,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -48644,7 +48649,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -49694,7 +49699,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -50752,7 +50757,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -51836,7 +51841,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     },
                     {
@@ -52887,7 +52892,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -53986,7 +53991,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -55167,7 +55172,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -56228,7 +56233,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -57203,7 +57208,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]
@@ -58185,7 +58190,7 @@
                     },
                     {
                         "Name": "Military Training",
-                        "RequiredAge": 3,
+                        "RequiredAge": 2,
                         "ID": 3004
                     }
                 ]

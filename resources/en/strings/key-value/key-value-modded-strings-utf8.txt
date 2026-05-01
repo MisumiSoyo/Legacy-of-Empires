@@ -129,7 +129,7 @@
 //	Portuguese
 120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost\n• Foragers generate 0.67 wood per meat\n• Ships +10/15/20% HP at Feudal/Castle/Imperial Age\n• Can build Feitoria in Imperial Age\n• Genitours +10% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b> \n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Circumnavigation (Sets the entire map to explored; Ships train +33% faster)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Iberian Light Cavalry (Genitours +5 attack vs Archer, +3 attack vs Cavalry Archer, +3 attack vs Spearman)\n• Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 //	Ethiopians
-120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n• Units deal +25% damage when fighting from lower elevation\n\n<b>Unique Unit:<b> \n• Shotel Warrior (High attack, low HP infantry) \n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
+120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/200/300 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n• Units deal +25% damage when fighting from lower elevation\n\n<b>Unique Unit:<b> \n• Shotel Warrior (High attack, low HP infantry), Chewa Rider (Cavalries that are strong vs Infantries)\n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 //	Malians
 120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +15% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b> \n• Gbeto (High-speed infantry), Sofa (Cavalry that counters spearmen, skirmishers and light cavalries), Donso (Infantry that can charge and throw spears)\n\n<b>Unique Techs:<b> \n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (Trade units produce -20% gold, and 66% extra food\n• Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable)\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
 //	Berbers
@@ -391,6 +391,8 @@
 500201 "Ph'kak"
 500202 "Baltic Archers"
 500203 "Kadal Paarvai"
+500204 "Veteran Chewa Rider"
+500205 "Elite Chewa Rider"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -433,7 +435,7 @@
 501038 "Research Anawrahta's Canals (Farms generate 4.8 food per minute)"
 501039 "Research Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)"
 501040 "Research Ikko-Ikki (Enable you to train Soheis, but villagers -7% work rate)"
-501041 "Research Military Training (Land military units +20% training speed, except siege weapons and monks)"
+501041 "Research Military Training (Military buildings +20% work rate)"
 501042 "Research Floating Garden (Economic units and all buildings +20% work rate, lasting for 3 minutes)"
 501043 "Research Yum Kaax's Blessing (Immediately harvest all the food from farms being cultivated by farmers)"
 501044 "Research Winged Charge (Cavalries get charge ability)"
@@ -596,6 +598,8 @@
 501201 "Research Ph'kak (Infantries can decrease nearby enemy cavalries' attack by 20%)"
 501202 "Research Baltic Archers (Archer line -40% gold cost, +1 attack vs Cavalry and Camel)"
 501203 "Research Kadal Paarvai (Fishing ships -80% gathering consumption of natural food resources)"
+501024 "Upgrade to Veteran Chewa Rider"
+501025 "Upgrade to Elite Chewa Rider"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -638,7 +642,7 @@
 521038 "Research <b>Anawrahta's Canals<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nFarms generate 4.8 food per minute."
 521039 "Research <b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish."
 521040 "Research <b>Ikko-Ikki<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nEnable you to train Soheis, but villagers -7% work rate."
-521041 "Research <b>Military Training<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nLand military units +20% training speed, except siege weapons and monks."
+521041 "Research <b>Military Training<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nMilitary buildings +20% work rate."
 521042 "Research <b>Floating Garden<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nEconomic units and all buildings +20% work rate, lasting for 3 minutes."
 521043 "Research <b>Yum Kaax's Blessing<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nImmediately harvest all the food from farms being cultivated by farmers."
 521044 "Research <b>Winged Charge<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nCavalries get charge ability."
@@ -796,11 +800,13 @@
 521196 "Research <b>Dha<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nSpearman line -40% train time and cost, +2 attack, -50% bonus damage."
 521197 "Upgrade to <b>Elite Chariot Javelineer<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Chariot Javelineers and lets you create Elite Chariot Javelineers."
 521198 "Research <b>Devaraja<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonks can heal siege weapons and buildings, +200% healing rate for elephant units."
-521199 "Upgrade to <b>Rattan Swordman<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Man-at-Arms and lets you create Rattan Swordman."
-521200 "Upgrade to <b>Elite Rattan Swordman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Rattan Swordmen and lets you create Elite Rattan Swordman."
+521199 "Upgrade to <b>Rattan Swordman<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Man-at-Arms and lets you create Rattan Swordmen."
+521200 "Upgrade to <b>Elite Rattan Swordman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Rattan Swordmen and lets you create Elite Rattan Swordmen."
 521201 "Research <b>Ph'kak<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantries can decrease nearby enemy cavalries' attack by 20%."
 521202 "Research <b>Baltic Archers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nArcher line -40% gold cost, +1 attack vs Cavalry and Camel."
 521203 "Research <b>Kadal Paarvai<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nFishing ships -80% gathering consumption of natural food resources."
+521204 "Upgrade to <b>Veteran Chewa Rider<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Chewa Riders and lets you create Veteran Chewa Riders."
+521205 "Upgrade to <b>Elite Chewa Rider<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Chewa Riders and lets you create Elite Chewa Riders."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -908,6 +914,9 @@
 700094 "Canoe"
 700095 "War Canoe"
 700096 "Elite Canoe"
+700097 "Chewa Rider"
+700098 "Veteran Chewa Rider"
+700099 "Elite Chewa Rider"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -1005,6 +1014,9 @@
 701094 "Create Canoe"
 701095 "Create War Canoe"
 701096 "Create Elite Canoe"
+701097 "Create Chewa Rider"
+701098 "Create Veteran Chewa Rider"
+701099 "Create Elite Chewa Rider"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1191,11 +1203,17 @@
 
 721093 "Create <b>Elite Rattan Swordman<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\nKhmers' unique infantry. Can throw spears to attack mounted units at long range.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.2 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +8 vs Shock Infantry, +4 vs Standard Buildings, +9 vs Cavalry, +7 vs Camel."
 
-721094 "Create <b>Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\nClass: Warship; Tags: Ship, Ranged Ship.\nAttack Bonus: +9 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
+721094 "Create <b>Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship. Strong vs ranged warships.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\nClass: Warship; Tags: Ship, Ranged Ship.\nAttack Bonus: +9 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
 
-721095 "Create <b>War Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 7\nAttack Bonus: +11 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
+721095 "Create <b>War Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship. Strong vs ranged warships.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 7\nAttack Bonus: +11 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
 
-721096 "Create <b>Elite Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 8\nAttack Bonus: +15 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
+721096 "Create <b>Elite Canoe<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAmerican unique ranged warship. Strong vs ranged warships.\nUpgrades: <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 8\nAttack Bonus: +15 vs Ranged Ship, +3 vs All Buildings, +2 vs Ram/Trebuchet/Siege Tower."
+
+721097 "Create <b>Chewa Rider<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\nEthiopians' unique Cavalry. Strong vs \nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +4 vs Infantry."
+
+721098 "Create <b>Veteran Chewa Rider<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\nEthiopians' unique Cavalry. Strong vs \nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +6 vs Infantry."
+
+721099 "Create <b>Elite Chewa Rider<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\nEthiopians' unique Cavalry. Strong vs \nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +10 vs Infantry."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

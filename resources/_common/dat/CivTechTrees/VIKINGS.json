@@ -5313,7 +5313,7 @@
             "Use Type": "Tech"
         },
         {
-            "Age ID": 3,
+            "Age ID": 2,
             "Building ID": 103,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600041,

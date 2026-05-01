@@ -309,6 +309,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, PlateBardingArmorTechID);
             EnableTech(playerId, BombardTowerTechID);
             EnableTech(playerId, HoardingsTechID);
+            EnableTech(playerId, PaladinTechID);
             break;
         }
         case cMalians:
