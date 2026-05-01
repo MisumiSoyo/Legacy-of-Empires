@@ -1398,11 +1398,13 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 277 2026.05.01");
+    xsChatData("Patch: 278 2026.05.01");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
     vector pos = xsVectorSet(0.0, 0.0, 0.0);
-    SetAttribute(0, TimerBuildingID, cRegenerationHpPercent, -267);
-    xsCreateUnit(TimerBuildingID, 0, pos, false, false);
+    int i = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        SetAttribute(i, TimerBuildingID, cRegenerationHpPercent, -267);
+    xsCreateUnit(TimerBuildingID, 1, pos, false, false);
 }
