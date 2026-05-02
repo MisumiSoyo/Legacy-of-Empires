@@ -35,7 +35,7 @@ void GothsVillager(int playerId = -1, int Time = 0)
 void KoreansMineral(int playerId = -1, int Time = -1)
 {
     float TotalMineCount = xsPlayerAttribute(playerId, cAttributeGoldTotal) + xsPlayerAttribute(playerId, cAttributeStoneTotal);
-    ModResource(playerId, cAttributeGold, minFloat(TotalMineCount/ 1980.0, 3.333333));
+    ModResource(playerId, cAttributeGold, minFloat(TotalMineCount/ 1980.0, 2.5));
 }
 
 
