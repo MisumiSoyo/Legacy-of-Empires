@@ -456,6 +456,34 @@
             "effect_id": 1071,
             "match": [1, 502, -1, "any", "any"],
             "modifications": ["d", "set", 3.9]
+        },
+        {
+            "type": "modify",
+            "name": "吴国军事建筑提供食物调整",
+            "effect_id": 1084,
+            "match": [4, -1, 3, 27, "any"],
+            "modifications": ["d", "set", 80]
+        },
+        {
+            "type": "modify",
+            "name": "吴国步兵回复调整",
+            "effect_id": 1085,
+            "match": [4, -1, 6, 109, "any"],
+            "modifications": ["d", "set", 20]
+        },
+        {
+            "type": "modify",
+            "name": "吴国步兵回复调整",
+            "effect_id": 1086,
+            "match": [4, -1, 6, 109, "any"],
+            "modifications": ["d", "set", 10]
+        },
+        {
+            "type": "modify",
+            "name": "吴国步兵回复调整",
+            "effect_id": 1087,
+            "match": [4, -1, 6, 109, "any"],
+            "modifications": ["d", "set", 10]
         }
     ],
     "unit_changes":
