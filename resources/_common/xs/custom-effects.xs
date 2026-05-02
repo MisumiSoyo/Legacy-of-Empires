@@ -419,39 +419,13 @@ void EffectFunction10025(int playerId = -1)
 }
 
 
-//  10026 - C-Bonus, upgrade when killing enemies
+//  10026 - C-Bonus, free Jaguar Warrior from kills
 void EffectFunction10026(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrUnusedResource, cAttributeAztecsSpearmanKillUpgradeEffect);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
-    xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000012);
-    xsTaskAmount(cTaskAttrObjectId, -1);
-    xsTaskAmount(cTaskAttrObjectClass, 899);
-    xsModifyObjectTasks(SpearmanID, playerId, 1000);
-    xsModifyObjectTasks(PikemanID, playerId, 1000);
-    xsTaskAmount(cTaskAttrUnusedResource, cAttributeAztecsSkirmisherKillUpgradeEffect);
-    xsModifyObjectTasks(SkirmisherID, playerId, 1000);
-    xsTaskAmount(cTaskAttrUnusedResource, cAttributeAztecsEagleWarriorKillUpgradeEffect);
-    xsModifyObjectTasks(EagleScoutID, playerId, 1000);
-    xsModifyObjectTasks(EagleWarriorID, playerId, 1000);
-    xsResetTaskAmount();
-
-    SetResource(playerId, cAttributeAztecsSpearmanKillUpgradeEffect, AztecsSpearmanKillUpgradeEffectID);
-    SetResource(playerId, cAttributeAztecsSkirmisherKillUpgradeEffect, AztecsSkirmisherKillUpgradeEffectID);
-    SetResource(playerId, cAttributeAztecsEagleWarriorKillUpgradeEffect, AztecsEagleWarriorKillUpgradeEffectID);
-}
-
-
-//  10027 - Ixiptla
-void EffectFunction10027(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrResourceIn, IxiptlaKillEffectID);
+    xsTaskAmount(cTaskAttrResourceIn, FreeJaguarKillEffectID);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000001);
     int i = 0;
     for (i = 900; <= 964)
@@ -697,37 +671,6 @@ void EffectFunction10039(int playerId = -1)
 }
 
 
-//  Heavy Spear Applier
-void HeavySpearApplier(int ClassTarget = -1, int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, -1);
-    xsTaskAmount(cTaskAttrWorkValue2, 3);
-    xsTaskAmount(cTaskAttrWorkRange, 1);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 116.000001);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 1);
-    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
-
-    xsTaskAmount(cTaskAttrSearchWaitTime, 117.000001);
-    xsTaskAmount(cTaskAttrWorkValue1, -1);
-    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 1);
-    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
-    xsResetTaskAmount();
-    LaunchStinger(playerId, ClassTarget);
-}
-
-
 //  10040 - Heavy Spear
 void EffectFunction10040(int playerId = -1)
 {
@@ -869,24 +812,21 @@ void EffectFunction10046(int playerId = -1)
 void EffectFunction10047(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrUnusedResource, cAttributeFervorofBattleKillEffect);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000010);
-    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
-    xsTask(MilitiaID, cTaskTypeLoot, -1, playerId);
-    xsTask(ManAtArmsID, cTaskTypeLoot, -1, playerId);
-    xsTask(LongSwordmanID, cTaskTypeLoot,, -1, playerId);
-    xsTask(TwoHandedSwordmanID, cTaskTypeLoot, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 5.000004);
+    xsTaskAmount(cTaskAttrWorkRange, 4);
+    xsTaskAmount(cTaskAttrWorkValue1, 1.15);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
+    xsTask(cCavalryClass, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(cConquistadorClass, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(cCavalryArcherClass, cTaskTypeAura, cInfantryClass, playerId);
+    xsTask(cScoutCavalryClass, cTaskTypeAura, cInfantryClass, playerId);
     xsResetTaskAmount();
-
-    xsTaskAmount(cTaskAttrResourceIn, FervorofBattleKillEffect5ID);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000011);
-    xsTask(FootKonnikID, cTaskTypeLoot, -1, playerId);
-    xsTask(EliteFootKonnikID, cTaskTypeLoot, -1, playerId);
-    xsResetTaskAmount();
-
-    SetResource(playerId, cAttributeFervorofBattleKillEffect, FervorofBattleKillEffect1ID);
+    LaunchAura(playerId, cCavalryClass);
+    LaunchAura(playerId, cConquistadorClass);
+    LaunchAura(playerId, cCavalryArcherClass);
+    LaunchAura(playerId, cScoutCavalryClass);
 }
 
 
@@ -901,9 +841,15 @@ void EffectFunction10048(int playerId = -1)
     xsTaskAmount(cTaskAttrOwnerType, 2);
     ApplyToAllPlayerTargets(playerId, KeshikID, cTaskTypeStinger);
     ApplyToAllPlayerTargets(playerId, EliteKeshikID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, KnightID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, CavalierID, cTaskTypeStinger);
+    ApplyToAllPlayerTargets(playerId, PaladinID, cTaskTypeStinger);
     xsResetTaskAmount();
     LaunchStinger(playerId, KeshikID);
     LaunchStinger(playerId, EliteKeshikID);
+    LaunchStinger(playerId, KnightID);
+    LaunchStinger(playerId, CavalierID);
+    LaunchStinger(playerId, PaladinID);
     MulResource(playerId, 213, 2);
 }
 
@@ -1398,7 +1344,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 280 2026.05.02");
+    xsChatData("Patch: 281 2026.05.02");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -1361,7 +1361,7 @@
             "Name": "Champion",
             "Name String ID": 14469,
             "Node ID": 567,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UnitUpgrade",
             "Picture Index": 72,
             "Prerequisite IDs": [

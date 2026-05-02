@@ -177,10 +177,10 @@ void FasterCastleUnits(int playerId = -1, int ObjectID = -1, int TrainButtonID =
 void PoisoningApplier(int playerId = -1, int ClassTarget = -1)
 {
     xsTaskAmount(cTaskAttrSearchWaitTime, 5.000002);
-    xsTaskAmount(cTaskAttrWorkValue1, -0.08);
+    xsTaskAmount(cTaskAttrWorkValue1, -0.15);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
     xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.08);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.15);
     xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
     xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
     xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
@@ -647,12 +647,12 @@ void GendarmesdOrdonnanceApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
-//  10112 - Ixiptla kill effect
+//  10112 - Free Jaguar kill effect
 void EffectFunction10112(int playerId = -1)
 {
     int KillCount = xsPlayerAttribute(playerId, cAttributeIxipltaKillCount) + 1;
     if (KillCount % 7 == 0)
-        SpawnUnit(playerId, JaguarWarriorID, CastleID, 1, 1);
+        SpawnUnit(playerId, JaguarWarriorID, TownCenterID, 1, 1);
     SetResource(playerId, cAttributeIxipltaKillCount, KillCount);
 }
 
@@ -667,6 +667,37 @@ void KadalPaarvaiApplier(int playerId = -1, int ObjectID = -1)
     xsTask(ObjectID, cTaskTypeGatherRebuild, FishTrapID, playerId);
     xsResetTaskAmount();
     MulAttribute(playerId, ObjectID, cWorkRate, 0.2);
+}
+
+
+//  Heavy Spear Applier
+void HeavySpearApplier(int ClassTarget = -1, int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, -1);
+    xsTaskAmount(cTaskAttrWorkValue2, 3);
+    xsTaskAmount(cTaskAttrWorkRange, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 116.000001);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+
+    xsTaskAmount(cTaskAttrSearchWaitTime, 117.000001);
+    xsTaskAmount(cTaskAttrWorkValue1, -1);
+    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
+    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
+    xsResetTaskAmount();
+    LaunchStinger(playerId, ClassTarget);
 }
 
 

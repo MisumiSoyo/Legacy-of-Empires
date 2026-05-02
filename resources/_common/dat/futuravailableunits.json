@@ -4579,6 +4579,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Champion",
+                        "RequiredAge": 4,
+                        "ID": 264
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024

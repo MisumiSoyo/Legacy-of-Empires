@@ -292,15 +292,7 @@ extern const int LateenSailTechID = 3414;
 
 // Custom Effect IDs
 extern const int FoederatiArmyKillEffectID = 3055;
-extern const int IxiptlaKillEffectID = 3078;
-extern const int AztecsSpearmanKillUpgradeEffectID = 3154;
-extern const int AztecsSkirmisherKillUpgradeEffectID = 3156;
-extern const int AztecsEagleWarriorKillUpgradeEffectID = 3157;
-extern const int FervorofBattleKillEffect1ID = 3262;
-extern const int FervorofBattleKillEffect2ID = 3263;
-extern const int FervorofBattleKillEffect3ID = 3264;
-extern const int FervorofBattleKillEffect4ID = 3265;
-extern const int FervorofBattleKillEffect5ID = 3266;
+extern const int FreeJaguarKillEffectID = 3078;
 extern const int RajaKillEffectID = 3380;
 
 

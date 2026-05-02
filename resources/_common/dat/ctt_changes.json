@@ -3016,10 +3016,10 @@
             "target_id": 4084
         },
         {
-            "note": "保加利亚启用",
+            "note": "保加利亚启用冠军剑士",
             "action": "modify",
             "civ_id": "BULGARIANS",
-            "Node ID": [],
+            "Node ID": [567],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },

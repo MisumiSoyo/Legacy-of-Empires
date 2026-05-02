@@ -383,6 +383,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, HoardingsTechID);
+            EnableTech(playerId, ChampionTechID);
             break;
         }
         case cTatars:

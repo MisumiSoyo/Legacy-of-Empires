@@ -109,7 +109,7 @@
 //	Spanish
 120163 "Gunpowder and Monk civilization \n\n• Builders +30% work rate (not applied on the first TC in Nomad mode) \n• Blacksmith upgrades don't cost gold \n• Cannon Galleons projectile speed increases to 7 and enables Ballistics effect \n• Gunpowder units +18% attack speed\n• Gain 50 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\n• Conquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat), War Dog (High speed army)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range) \n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Genitours +2 max range)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 //	Aztecs
-120164 "Infantry and Monk civilization \n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +100 gold\n• Spearman-line, Skirmisher-line and Eagle Scout-line units can upgrade to a higher level when killing enemies since Feudal Age\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries) \n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range) \n• Garland Wars (Infantries +4 attack)\n• Ixitpla (Castle will produce one Jaguar Warrior for every 7 enemy land units killed)\n• Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
+120164 "Infantry and Monk civilization \n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +100 gold\n• Town Center will produce one Jaguar Warrior for every 7 enemy land units killed since Feudal Age\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries) \n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range) \n• Garland Wars (Infantries +4 attack)\n• Ixitpla (Eagle Scout line removes food cost)\n• Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
 //	Mayans
 120165 "Archer civilization \n\n• Start with +1 villager, but -50 food \n• Resources last 15% longer\n• Archers cost -10%/-20%/-30% at Feudal/Castle/Imperial Age\n• Farms can produce wood/gold/stone equivalent to 40/20/10% of the food output\n• Masonry free\n\n<b>Unique Unit:<b>\n• Plumed Archer (High moving speed archer)\n\n<b>Unique Techs: <b>\n• Hul'che Javelineers (Skirmishers and Genitours throw a second projectile) \n• El Dorado (Eagle Warrior-Line +40 HP)\n• Obsidian Arrow (Archers +4 attack vs buildings)\n• Yum Kaax's Blessing (Immediately harvest all the food from farms being cultivated by farmers)\n\n<b>Team bonus: <b>\nWalls and gates -50% cost"
 //	Huns
@@ -143,9 +143,9 @@
 //	Vietnamese
 120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units (except Elephant Archers) and Fire Lancers +20% HP \n• Conscription free\n• Economic upgrading techs cost no wood and -50% research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Elephant units +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
-120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +200% heal range, +100% heal rate)\n• Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount once after killing an enemy and retain 50% HP)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
+120181 "Infantry and Cavalry civilization \n\n• Militia-line upgrades free (except Champion)\n• Town Centers do not cost stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +200% heal range, +100% heal rate)\n• Fervor of Battle (Mounted units can increase nearby infantries' movemenet speed by 15%)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 //	Tatars
-120182 "Cavalry Archer civilization \n\n• Shepherds and herders -36% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation\n• Parthian Tactics and Thumb Ring free\n• Pasture technologies free\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Keshiks regenerate 3 HP from each attack and generate double gold)\n• Khan's Conscription (Immediately conscript 12 Keshiks and 12 Cavalry Archers, and each castle provides 2 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
+120182 "Cavalry Archer civilization \n\n• Shepherds and herders -36% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation\n• Parthian Tactics and Thumb Ring free\n• Pasture technologies free\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Knight line and Keshiks regenerate 3 HP from each attack; Keshiks generate double gold)\n• Khan's Conscription (Immediately conscript 12 Keshiks and 12 Cavalry Archers, and each castle provides 2 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 //	Cumans
 120183 "Cavalry civilization \n\n• One Additional Town Center can be built in the Feudal Age\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age \n• Barracks, Archery Ranges and Stables -75 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b> \n• Kipchak (Cavalry archer with multiple arrows) \n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 //	Lithunians
@@ -448,7 +448,7 @@
 501051 "Research Maritime Stronghold (Warships can build Sea Towers)"
 501052 "Research Town Defense (Town Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power)"
 501053 "Research Scutage (Gain 250 gold, and each military unit +15)"
-501054 "Research Raide Horn (Keshiks regenerate 3 HP from each attack and generate double gold)"
+501054 "Research Raide Horn (Knight line and Keshiks regenerate 3 HP from each attack; Keshiks generate double gold)"
 501055 "Research Khan's Conscription (Immediately conscript 12 Keshiks and 12 Cavalry Archers, and each castle provides 2 additional conscription)"
 501056 "Research Whistling Arrow (Chanyu gains +100 HP and the ability to perform charge attacks)"
 501057 "Research Stockfish Trade (Fishermen and Fishing Ships -50% food production, but can generate equivalent gold)"
@@ -461,7 +461,7 @@
 501064 "Research Privateers (Hulk line +25% attack speed)"
 501065 "Research Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)"
 501066 "Research Raja (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)"
-501067 "Research Ixitpla (Castle will produce one Jaguar Warrior for every 7 enemy land units killed)"
+501067 "Research Ixitpla (Eagle Scout line removes food cost)"
 501068 "Research Obsidian Arrow (Archers +4 attack vs buildings)"
 501069 "Research Political Reform (Farms cost 30 food instead of wood and don't need time to build)"
 501070 "Research Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)"
@@ -552,7 +552,7 @@
 501155 "Research Korean Bow (Remove Archer-line and Cavalry Archer-line units' wood cost)"
 501156 "Upgrade to Veteran Heavy Skirmisher"
 501157 "Upgrade to Elite Heavy Skirmisher"
-501158 "Research Fervor of Battle (Militia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount once after killing an enemy and retain 50% HP)"
+501158 "Research Fervor of Battle (Mounted units can increase nearby infantries' movemenet speed by 15%)"
 501159 "Research Sail on Land (Warships can move at 50% speed on land)"
 501160 "Switch to train Guecha Warrior"
 501161 "Switch to train Temple Guard"
@@ -655,7 +655,7 @@
 521051 "Research <b>Maritime Stronghold<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nWarships can build Sea Towers."
 521052 "Research <b>Town Defense<b> (<cost>) (time: 55)\nTown Center +10% hit points, +5 garrison capacity, +1 attack, +1 max range; Villager +100% garrison power."
 521053 "Research <b>Scutage<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nGain 250 gold, and each military +15."
-521054 "Research <b>Raide Horn<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nKeshiks regenerate 3 HP from each attack and generate double gold."
+521054 "Research <b>Raide Horn<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nKnight line and Keshiks regenerate 3 HP from each attack; Keshiks generate double gold."
 521055 "Research <b>Khan's Conscription<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nImmediately conscript 12 Keshiks and 12 Cavalry Archers, and each castle provides 2 additional conscription."
 521056 "Research <b>Whistling Arrow<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nChanyu gains +100 HP and the ability to perform charge attacks."
 521057 "Research <b>Stockfish Trade<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nFishermen and Fishing Ships -50% food production, but can generate equivalent gold."
@@ -668,7 +668,7 @@
 521064 "Research <b>Privateers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nHulk line +25% attack speed."
 521065 "Research <b>Kaunas Castle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nWatch Tower line continuously shoots arrows that ignore defense with lower attack."
 521066 "Research <b>Raja<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nLand military units can loot food and gold equivalent to 10/4% of the value of killed enemies."
-521067 "Research <b>Ixitpla<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nCastle will produce one Jaguar Warrior for every 7 enemy land units killed."
+521067 "Research <b>Ixitpla<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nEagle Scout line removes food cost."
 521068 "Research <b>Obsidian Arrow<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nArchers +4 attack vs buildings."
 521069 "Research <b>Political Reform<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nFarms cost 30 food instead of wood and don't need time to build."
 521070 "Research <b>Orthodoxy<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nStreltsys take -50% population space, and Militia-Line take -20% population space."
@@ -759,7 +759,7 @@
 521155 "Research <b>Korean Bow<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>)\nRemove Archer-line and Cavalry Archer-line units' wood cost."
 521156 "Upgrade to <b>Veteran Heavy Skirmisher<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Heavy Skirmishers and lets you create Veteran Heavy Skirmishers."
 521157 "Upgrade to <b>Elite Heavy Skirmisher<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nUpgrades your Veteran Heavy Skirmishers and lets you create Elite Heavy Skirmishers."
-521158 "Research <b> Fervor of Battle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nMilitia-line units can upgrade to a higher level after killing an enemy; Foot Konniks can remount once after killing an enemy and retain 50% HP."
+521158 "Research <b>Fervor of Battle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nMounted units can increase nearby infantries' movemenet speed by 15%."
 521159 "Research <b>Sail on Land<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>)\nWarships can move at 50% speed on land."
 521160 "Switch to train Guecha Warriors. Automatically spawn 1 Guecha Warrior every 70 seconds.\n(Need Castle)"
 521161 "Switch to train Temple Guards. Automatically spawn 1 Temple Guard every 80 seconds."

@@ -975,8 +975,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "魏启用冠军剑士",
-            "civilizations": ["Wei"],
+            "note": "魏, 保加利亚启用冠军剑士",
+            "civilizations": ["Wei", "Bulgarians"],
             "tech_id": 264,
             "building_id": 12,
             "Name": "Champion",
