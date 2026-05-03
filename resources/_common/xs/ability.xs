@@ -90,51 +90,6 @@ void TributarySystemApplier(int playerId = -1, int ObjectTarget = -1, int TrainB
 }
 
 
-//  Assassins' Ability
-void AssassinInit(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 2);
-    xsTaskAmount(cTaskAttrWorkValue2, 8);
-    xsTaskAmount(cTaskAttrWorkRange, 1.5);
-    xsTaskAmount(cTaskAttrWorkFlag2, 2001);
-    xsTask(AssassinID, cTaskTypeChargeAttack, -1, playerId);
-    xsResetTaskAmount();
-    xsEffectAmount(cSetAttribute, AssassinID, cSpecialAbility, 3, playerId);
-
-    xsTaskAmount(cTaskAttrWorkValue1, -120);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 120.000010);
-    xsTask(AssassinID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, -20);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 120.000020);
-    xsTaskAmount(cTaskAttrWorkRange, 1);
-    xsTask(AssassinID, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 20);
-    xsTask(AssassinID, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cFarmClass, playerId);
-    xsTask(AssassinID, cTaskTypeStinger, cTowerClass, playerId);
-    xsResetTaskAmount();
-    LaunchStinger(playerId, AssassinID);
-
-    //  since current bugs existing in game, units would never trigger task 157 when their attacks kill target enemies
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000030);
-    xsTaskAmount(cTaskAttrGatherType, -100);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTask(AssassinID, cTaskTypeLoot, -1, playerId);
-    xsTask(AssassinID, cTaskTypeLoot, cBuildingClass, playerId);
-    xsTask(AssassinID, cTaskTypeLoot, cWallClass, playerId);
-    xsTask(AssassinID, cTaskTypeLoot, cGateClass, playerId);
-    xsTask(AssassinID, cTaskTypeLoot, cFarmClass, playerId);
-    xsTask(AssassinID, cTaskTypeLoot, cTowerClass, playerId);
-    xsResetTaskAmount();
-}
-
-
 void GenerateGoldFromBuilding(int ClassTarget = -1, int playerId = -1)
 {
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
@@ -706,7 +661,6 @@ void AbilityApplier(int playerId = -1)
 {
     SetNewArmorForms(playerId);
     FoederatiArmyInit(playerId);
-    AssassinInit(playerId);
     KhanInit(playerId);
     MangonelAdjustment(playerId);
     SetCustomResources(playerId);

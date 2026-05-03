@@ -20,13 +20,10 @@ void GothsVillager(int playerId = -1, int Time = 0)
     int CalcedBonus = xsPlayerAttribute(playerId, cAttributeGothsVillagerBonus);
     if (CalcedBonus >= 20)
         return;
-    int Bonus = xsPlayerAttribute(playerId, cAttributeKills) / 3;
+    int Bonus = xsPlayerAttribute(playerId, cAttributeKills) / 2;
     if (CalcedBonus < Bonus)
     {
-        if (Bonus % 3 == 0)
-            SpawnUnit(playerId, 83, 109, Bonus - CalcedBonus, 1);
-        else
-            SpawnUnit(playerId, 293, 109, Bonus - CalcedBonus, 1);
+        SpawnUnit(playerId, 83, TownCenterID, Bonus - CalcedBonus, 1);
     }
     SetResource(playerId, cAttributeGothsVillagerBonus, Bonus);
 }
