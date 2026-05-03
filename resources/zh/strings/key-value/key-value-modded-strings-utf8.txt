@@ -397,6 +397,7 @@
 500203 "海洋视野"
 500204 "老练切瓦骑手"
 500205 "精锐切瓦骑手"
+500206 "精锐潘采尔尼骑手"
 
 
 501001 "研究季风航行(渔船和运输船 +25% 移动速度)"
@@ -604,6 +605,7 @@
 501203 "研究海洋视野(渔船 -80% 采集消耗的自然食物资源)"
 501204 "升级到老练切瓦骑手"
 501205 "升级到精锐切瓦骑手"
+501206 "升级到精锐潘采尔尼骑手"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -811,6 +813,7 @@
 521203 "研究<b>海洋视野<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n渔船 -80% 采集消耗的自然食物资源。"
 521204 "升级到<b>老练切瓦骑手<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n将您的切瓦骑手升级, 生产更为强大的老练切瓦骑手。"
 521205 "升级到<b>精锐切瓦骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练切瓦骑手升级, 生产更为强大的精锐切瓦骑手。"
+521206 "升级到<b>精锐潘采尔尼骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的潘采尔尼骑手升级, 生产更为强大的精锐潘采尔尼骑手。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -921,6 +924,8 @@
 700097 "切瓦骑手"
 700098 "老练切瓦骑手"
 700099 "精锐切瓦骑手"
+700100 "潘采尔尼骑手"
+700101 "精锐潘采尔尼骑手"
 
 
 701001 "生产铁炮足轻"
@@ -1021,6 +1026,8 @@
 701097 "生产切瓦骑手"
 701098 "生产老练切瓦骑手"
 701099 "生产精锐切瓦骑手"
+701100 "生产潘采尔尼骑手"
+701101 "生产精锐潘采尔尼骑手"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1218,6 +1225,10 @@
 721098 "生产<b>老练切瓦骑手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\n埃塞俄比亚独特骑兵, 适于对抗步兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +6 vs 步兵。"
 
 721099 "生产<b>精锐切瓦骑手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\n埃塞俄比亚独特骑兵, 适于对抗步兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +10 vs 步兵。"
+
+721100 "生产<b>潘采尔尼骑手<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n波兰独特骑射手, 适于远程攻击移动缓慢的单位。不适于近程攻击精锐掷矛手等单位。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.47 <MATERIAL=StatIconsReloadTime> 1.33 <MATERIAL=TechIconsT112ThumbRing> 30% <MATERIAL=EyeIcon,1> 5\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手, 独特单位。\n攻击加成: +2 vs 枪兵。"
+
+721101 "生产<b>精锐潘采尔尼骑手<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n波兰独特骑射手, 适于远程攻击移动缓慢的单位。不适于近程攻击精锐掷矛手等单位。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.5 <MATERIAL=StatIconsReloadTime> 1.2 <MATERIAL=TechIconsT112ThumbRing> 50% <MATERIAL=EyeIcon,1> 6\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手, 独特单位。\n攻击加成: +2 vs 枪兵。"
 
 
 
