@@ -5379,7 +5379,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Flame Thrower",
             "Name String ID": 700042,
-            "Node ID": 4047,
+            "Node ID": 4019,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 144,

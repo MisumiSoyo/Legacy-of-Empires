@@ -7011,7 +7011,7 @@
                     {
                         "Name": "Flame Thrower",
                         "RequiredAge": 3,
-                        "ID": 40
+                        "ID": 4019
                     }
                 ]
             },
@@ -9292,7 +9292,7 @@
                     {
                         "Name": "Flame Thrower",
                         "RequiredAge": 3,
-                        "ID": 40
+                        "ID": 4019
                     },
                     {
                         "Name": "Bombard Cannon",

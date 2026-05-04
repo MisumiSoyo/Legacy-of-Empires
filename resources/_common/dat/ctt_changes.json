@@ -992,7 +992,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Flame Thrower",
             "Name String ID": 700035,
-            "Node ID": 4047,
+            "Node ID": 4019,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 144,
@@ -1004,7 +1004,7 @@
         {
             "action": "modify",
             "civ_id": "BYZANTINES",
-            "Node ID": 4047,
+            "Node ID": 4019,
             "Use Type": "Unit",
             "Help String ID": 800042,
             "Name String ID": 700042

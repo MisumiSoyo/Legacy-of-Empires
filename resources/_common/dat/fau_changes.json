@@ -238,7 +238,7 @@
         {
             "note": "猛火油柜/喷火车",
             "civilizations": ["Chinese", "Byzantines"],
-            "unit_id": 40,
+            "unit_id": 4019,
             "building_id": 49,
             "Name": "Flame Thrower",
             "RequiredAge": 3

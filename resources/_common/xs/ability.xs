@@ -606,8 +606,8 @@ void GendarmesdOrdonnanceApplier(int playerId = -1, int ClassTarget = -1)
 void EffectFunction10112(int playerId = -1)
 {
     int KillCount = xsPlayerAttribute(playerId, cAttributeIxipltaKillCount) + 1;
-    if (KillCount % 7 == 0)
-        SpawnUnit(playerId, JaguarWarriorID, TownCenterID, 1, 1);
+    if (KillCount % 30 == 0)
+        SpawnUnit(playerId, JaguarWarriorID, TownCenterID, 5, 1);
     SetResource(playerId, cAttributeIxipltaKillCount, KillCount);
 }
 
