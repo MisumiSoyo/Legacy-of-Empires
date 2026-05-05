@@ -508,6 +508,13 @@
                               ["b", "set", -1],
                               ["c", "set", -1],
                               ["d", "set", 1]]
+        },
+        {
+            "type": "add",
+            "name": "瞿折罗开局获得的果树丛调整",
+            "effect_id": 872,
+            "position": 0,
+            "commands": [40, 1549, -1, 21, 750]
         }
     ],
     "unit_changes":

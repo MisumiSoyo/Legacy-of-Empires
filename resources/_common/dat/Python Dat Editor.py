@@ -134,11 +134,30 @@ def applyEffectChanges(data, effect_change_list):
                 commands = effect_change["commands"]
                 if isinstance(commands[0], (int, float)):
                     commands = [commands]
+                
+                # 获取插入位置，不指定则默认为 None（表示追加到最后）
+                position = effect_change.get("position", None)
+                
+                effect_commands = data.effects[effect_id].effect_commands
+                
                 for cmd in commands:
                     cmd_type, a, b, c, d = cmd
-                    data.effects[effect_id].effect_commands.append(
-                        EffectCommand(type=cmd_type, a=a, b=b, c=c, d=d)
-                    )
+                    # 确保 d 是 float 类型
+                    d = float(d)
+                    new_cmd = EffectCommand(type=cmd_type, a=a, b=b, c=c, d=d)
+                    
+                    if position is None:
+                        # 不指定位置，默认追加到最后（原行为）
+                        effect_commands.append(new_cmd)
+                    else:
+                        # 指定了位置，在指定索引处插入
+                        pos = int(position)
+                        if pos < 0:
+                            pos = max(0, len(effect_commands) + pos + 1)
+                        pos = min(pos, len(effect_commands))
+                        effect_commands.insert(pos, new_cmd)
+                        # 每插入一个命令后，后续同批次命令的位置需要顺延
+                        position = pos + 1
                     
             elif change_type == "delete":
                 match_list = effect_change.get("match", [])

@@ -2378,7 +2378,7 @@
             "Name": "Bracer",
             "Name String ID": 17151,
             "Node ID": 201,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 37,
             "Prerequisite IDs": [

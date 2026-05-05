@@ -316,7 +316,6 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, HalberdierTechID);
-            EnableTech(playerId, BracerTechID);
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, SiegeRamTechID);

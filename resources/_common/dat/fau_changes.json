@@ -1047,8 +1047,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "法兰克, 凯尔特, 波斯, 罗马, 斯拉夫, 马里获得护腕",
-            "civilizations": ["Franks", "Celts", "Persians", "Romans", "Slavs", "Malians"],
+            "note": "法兰克, 凯尔特, 波斯, 罗马, 斯拉夫获得护腕",
+            "civilizations": ["Franks", "Celts", "Persians", "Romans", "Slavs"],
             "tech_id": 201,
             "building_id": 103,
             "Name": "Bracer",
