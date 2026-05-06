@@ -661,7 +661,8 @@ void EffectFunction10080(int playerId = -1)
 
     if ((playerCiv == cSpanish) || (playerCiv == cBerbers) || (playerCiv == cPortuguese))
     {
-        xsEffectAmount(cModifyTech, EliteGenitourTechID, cAttrMulAllCosts, 0.5, playerId);
+        MulAttribute(playerId, GenitourID, cResourceCost, 0.9);
+        MulAttribute(playerId, EliteGenitourID, cResourceCost, 0.9);
     }
 }
 

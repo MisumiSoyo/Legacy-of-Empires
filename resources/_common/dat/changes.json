@@ -515,6 +515,13 @@
             "effect_id": 872,
             "position": 0,
             "commands": [40, 1549, -1, 21, 750]
+        },
+        {
+            "type": "add",
+            "name": "脚踏起重机调整, +20% 修理速度",
+            "effect_id": 54,
+            "commands": [[5, 156, -1, 13, 1.2],
+                         [5, 222, -1, 13, 1.2]]
         }
     ],
     "unit_changes":
@@ -536,7 +543,7 @@
             "unit_id": [128, 204],
             "attributes": [["creatable.resource_costs[0].amount", 60],
                            ["creatable.resource_costs[1].amount", 45],
-                           ["creatable.train_locations[0].train_time", 40]]
+                           ["creatable.train_locations[0].train_time", 33]]
         },
         {
             "note": "冠军剑士生命值加强",

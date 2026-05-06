@@ -41,6 +41,7 @@ extern const int cAttributeRajaCalcedValue = 742;
 extern const int cAttributeBengalisRelicCount = 743;
 extern const int cAttributeBengalisRelicBonus = 744;
 extern const int cAttributeFishTrapProductivity = 745;
+extern const int cAttributeHunterGoldProductivity = 746;
 
 
 //  Custom Units' IDs

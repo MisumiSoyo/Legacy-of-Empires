@@ -274,6 +274,25 @@ void EffectFunction10017(int playerId = -1)
 }
 
 
+//  10018 - C-Bonus, hunters generate gold
+void EffectFunction10018(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.41);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeHunterGoldProductivity);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000019);
+    xsTask(MaleHunterID, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
+    xsTask(MaleHunterID, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
+    xsTask(MaleHunterID, cTaskTypeGenerateResources, cBirdClass, playerId);
+    xsTask(FemaleHunterID, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
+    xsTask(FemaleHunterID, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
+    xsTask(FemaleHunterID, cTaskTypeGenerateResources, cBirdClass, playerId);
+    xsResetTaskAmount();
+    SetResource(playerId, cAttributeHunterGoldProductivity, 0.33333333);
+}
+
+
 //  10019 - C-Bonus, extra food from trade units
 void EffectFunction10019(int playerId = -1)
 {
@@ -1344,7 +1363,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 287 2026.05.05");
+    xsChatData("Patch: 288 2026.05.06");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
