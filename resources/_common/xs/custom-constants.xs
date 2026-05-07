@@ -42,6 +42,7 @@ extern const int cAttributeBengalisRelicCount = 743;
 extern const int cAttributeBengalisRelicBonus = 744;
 extern const int cAttributeFishTrapProductivity = 745;
 extern const int cAttributeHunterGoldProductivity = 746;
+extern const int cAttributeTradeCartGoldProductivity = 747;
 
 
 //  Custom Units' IDs
@@ -495,6 +496,7 @@ extern const int GrenadierID = 1911;
 extern const int LiaoDaoID = 1920;
 extern const int EliteLiaoDaoID = 1922;
 extern const int MountedTrebuchetID = 1923;
+extern const int ProjectileFireLancerID = 1925;
 extern const int HeiGuangCavalryID = 1944;
 extern const int HeavyHeiGuangCavalryID = 1946;
 extern const int LouChuanID = 1948;

@@ -115,6 +115,7 @@ void EffectFunction10010(int playerId = -1)
     ModAttribute(playerId, cScoutCavalryClass, cLineOfSight, 4);
     ModResource(playerId, cAttributePopulationCap, 25);
     ModResource(playerId, cAttributeUnitLimit, 25);
+    xsEffectAmount(cModifyTech, TributarySystemTechID, cAttrMulAllCosts, 0.5, playerId);
 
     DisableTech(playerId, SongDynastyTechID);
     DisableTech(playerId, YuanDynastyTechID);
@@ -131,6 +132,8 @@ void EffectFunction10011(int playerId = -1)
     MulAttribute(playerId, cTradeBoatClass, cTrainTime, 0.5);
     MulAttribute(playerId, cTradeCartClass, cTrainTime, 0.5);
     ModResource(playerId, cAttributeResearchCostMod, -0.1);
+    ModAttack(playerId, ProjectileFireLancerID, cDamageClassPierce, 2);
+    ModAttribute(playerId, ProjectileFireLancerID, cShownAttack, 2);
     DisableTech(playerId, TangDynastyTechID);
     DisableTech(playerId, YuanDynastyTechID);
     DisableTech(playerId, MingDynastyTechID);
@@ -966,13 +969,13 @@ void EffectFunction10060(int playerId = -1)
 void EffectFunction10069(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrProductivityResource, 397);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeTradeCartGoldProductivity);
     xsTaskAmount(cTaskAttrResourceOut, 3);
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-
     xsTask(cTradeCartClass, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
+    ModResource(playerId, cAttributeTradeCartGoldProductivity, 10);
 }
 
 
@@ -1363,7 +1366,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 288 2026.05.06");
+    xsChatData("Patch: 289 2026.05.07");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

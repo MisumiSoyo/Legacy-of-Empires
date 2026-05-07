@@ -32972,9 +32972,9 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Streltsy",
+                        "Name": "Hand Cannoneer",
                         "RequiredAge": 4,
-                        "ID": 4002
+                        "ID": 5
                     }
                 ]
             },

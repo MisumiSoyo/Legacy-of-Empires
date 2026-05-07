@@ -4,9 +4,9 @@
         {
             "note": "射击军",
             "civilizations": "Slavs",
-            "unit_id": 4002,
+            "unit_id": 5,
             "building_id": 87,
-            "Name": "Streltsy",
+            "Name": "Hand Cannoneer",
             "RequiredAge": 4
         },
         {
