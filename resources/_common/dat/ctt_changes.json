@@ -5079,10 +5079,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "马普切禁用独轮推车, 手推车",
+            "note": "马普切禁用",
             "civ_id": "MAPUCHE",
             "action": "modify",
-            "Node ID": [213, 249],
+            "Node ID": [],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
         },

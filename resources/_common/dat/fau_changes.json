@@ -1897,14 +1897,14 @@
             "RequiredAge": 4
         },
         {
-            "note": "阿兹特克, 玛雅, 马普切, 图皮禁用独轮推车",
-            "civilizations": ["Aztecs", "Mayans", "Mapuche", "Tupi"],
+            "note": "阿兹特克, 玛雅, 图皮禁用独轮推车",
+            "civilizations": ["Aztecs", "Mayans", "Tupi"],
             "tech_id": 213,
             "type": "delete"
         },
         {
-            "note": "阿兹特克, 玛雅, 马普切, 图皮禁用手推车",
-            "civilizations": ["Aztecs", "Mayans", "Mapuche", "Tupi"],
+            "note": "阿兹特克, 玛雅, 图皮禁用手推车",
+            "civilizations": ["Aztecs", "Mayans", "Tupi"],
             "tech_id": 249,
             "type": "delete"
         },

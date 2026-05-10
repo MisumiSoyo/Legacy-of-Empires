@@ -144,13 +144,15 @@ void EffectFunction10011(int playerId = -1)
 void EffectFunction10012(int playerId = -1)
 {
     MulAttribute(playerId, cArcherClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cBuildingClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cVillagerClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cInfantryClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cCavalryClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cMonkClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cSiegeWeaponClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cMonkClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cTradeCartClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cConquistadorClass, cMovementSpeed, 1.05);
+    MulAttribute(playerId, cPhalanxClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cPetardClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cCavalryArcherClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cMonkWithRelicClass, cMovementSpeed, 1.05);
@@ -162,6 +164,8 @@ void EffectFunction10012(int playerId = -1)
     MulAttribute(playerId, cLivestockClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cKingClass, cMovementSpeed, 1.05);
     MulAttribute(playerId, cControlledAnimalClass, cMovementSpeed, 1.05);
+
+    MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.05);
 
     SetTechAuto(playerId, ManAtArmsTechID);
     SetTechAuto(playerId, LongSwordmanTechID);
@@ -1366,7 +1370,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 289 2026.05.07");
+    xsChatData("Patch: 290 2026.05.10");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

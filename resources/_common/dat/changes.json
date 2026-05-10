@@ -540,6 +540,31 @@
             "name": "希腊火可以加成喷火车",
             "effect_id": 518,
             "commands": [4, 4019, -1, 12, 1]
+        },
+        {
+            "type": "delete",
+            "name": "二级采矿科技调整",
+            "effect_id": [178, 279],
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "add",
+            "name": "钻井采金法提升 15% 的黄金存放",
+            "effect_id": 178,
+            "commands": [6, 47, 0, -1, 1.15]
+        },
+        {
+            "type": "add",
+            "name": "钻井采石法提升 15% 的石料存放",
+            "effect_id": 279,
+            "commands": [6, 79, 0, -1, 1.15]
+        },
+        {
+            "type": "modify",
+            "name": "库曼文明加成 马厩和靶场减费调整",
+            "effect_id": 697,
+            "match": [4, "any", "any", 104, "any"],
+            "modifications": ["d", "set", -50]
         }
     ],
     "unit_changes":
@@ -550,23 +575,47 @@
             "attributes": [["class_", 47]]
         },
         {
-            "note": "贸易单位费用减少, 训练速度加快",
+            "note": "贸易单位费用减少, 训练速度加快, 携带量增加, 工作效率增加",
             "unit_id": [17],
             "attributes": [["creatable.resource_costs[0].amount", 60],
                            ["creatable.resource_costs[1].amount", 45],
-                           ["creatable.train_locations[0].train_time", 30]]
+                           ["creatable.train_locations[0].train_time", 30],
+                           ["resource_capacity", 500],
+                           ["bird.work_rate", 0.4]]
         },
         {
             "note": "贸易单位费用减少, 训练速度加快",
             "unit_id": [128, 204],
             "attributes": [["creatable.resource_costs[0].amount", 60],
                            ["creatable.resource_costs[1].amount", 45],
-                           ["creatable.train_locations[0].train_time", 33]]
+                           ["creatable.train_locations[0].train_time", 33],
+                           ["resource_capacity", 500],
+                           ["bird.work_rate", 0.32]]
         },
         {
             "note": "冠军剑士生命值加强",
             "unit_id": 567,
             "attributes": [["hit_points", 75]]
+        },
+        {
+            "note": "牧民工作效率提升",
+            "unit_id": [1891, 1892],
+            "attributes": [["bird.work_rate", 0.49]]
+        },
+        {
+            "note": "兵营, 靶场, 马厩 费用降低至 150",
+            "unit_id": [10, 12, 14, 20, 86, 87, 101, 132, 153, 498, 2437, 2438, 2439],
+            "attributes": [["creatable.resource_costs[0].amount", 150]]
+        },
+        {
+            "note": "警戒塔驻扎容量增加",
+            "unit_id": 234,
+            "attributes": [["garrison_capacity", 8]]
+        },
+        {
+            "note": "大型箭塔驻扎容量增加",
+            "unit_id": 235,
+            "attributes": [["garrison_capacity", 10]]
         }
     ],
     "tech_changes":

@@ -545,8 +545,6 @@ void EffectFunction10001(int playerId = -1)
         }
         case cMapuche:
         {
-            DisableTech(playerId, WheelBarrowTechID);
-            DisableTech(playerId, HandCartTechID);
             break;
         }
         case cTupi:
