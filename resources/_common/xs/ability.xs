@@ -450,10 +450,6 @@ void FeitoriaAdjustment(int playerId = -1)
 
 void GenitourAdjustment(int playerId = -1)
 {
-    SetAttribute(playerId, GenitourID, cTrainButton, 21);
-    SetAttribute(playerId, GenitourID, cHotkeyId, QHotkeyID);
-    SetAttribute(playerId, EliteGenitourID, cTrainButton, 21);
-    SetAttribute(playerId, EliteGenitourID, cHotkeyId, QHotkeyID);
 }
 
 

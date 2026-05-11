@@ -236,6 +236,73 @@ def applyUnitChanges(data, unit_change_list):
                     applyAttributeChange(unit, attr_change)
 
 
+def applyResourceChanges(data, resource_change_list):
+    """
+    应用文明资源修改
+    配置格式与 unit_change_list 类似：
+    {
+        "resource_id": <int> or [<int>, ...],  # 资源ID
+        "civs": "all" or [<int>, ...],         # 目标文明，默认全文明
+        "attributes": [                         # 属性修改列表
+            ["amount", 500],                    # 直接赋值
+            ["amount", "add", 100],             # 加法运算
+            ["amount", "mul", 1.5],             # 乘法运算
+            ["enabled", true],                  # 布尔值
+        ]
+    }
+    """
+    for change in resource_change_list:
+        resource_ids = normalizeIdList(change["resource_id"])
+        civs = change.get("civs", "all")
+        attributes = change.get("attributes", [])
+        
+        if civs == "all":
+            target_civs = range(len(data.civs))
+        else:
+            target_civs = civs
+        
+        for civ_idx in target_civs:
+            civ = data.civs[civ_idx]
+            
+            for resource_id in resource_ids:
+                if resource_id >= len(civ.resources):
+                    continue
+                    
+                resource = civ.resources[resource_id]
+                
+                for attr_change in attributes:
+                    applyAttributeChange(resource, attr_change)
+
+
+def applyTechChanges(data, tech_change_list):
+    """
+    应用科技(Tech)修改
+    Tech 直接属于 data/loe 下的子对象，支持嵌套属性修改
+    配置格式：
+    {
+        "tech_id": <int> or [<int>, ...],      # 科技ID
+        "attributes": [                         # 属性修改列表
+            ["name", "新科技名称"],              # 直接赋值
+            ["research_time", "mul", 0.8],      # 运算修改
+            ["required_techs[0]", 101],         # 数组元素修改
+            ["tech_effects[0].type", 1],        # 嵌套对象属性
+        ]
+    }
+    """
+    for change in tech_change_list:
+        tech_ids = normalizeIdList(change["tech_id"])
+        attributes = change.get("attributes", [])
+        
+        for tech_id in tech_ids:
+            if tech_id >= len(data.techs):
+                continue
+                
+            tech = data.techs[tech_id]
+            
+            for attr_change in attributes:
+                applyAttributeChange(tech, attr_change)
+
+
 def customChanges(data):
     applyCivTechTreeEffects(data)
     
@@ -244,6 +311,14 @@ def customChanges(data):
     
     if 'unit_change_list' in globals():
         applyUnitChanges(data, unit_change_list)
+    
+    # 新增：文明资源修改
+    if 'resource_change_list' in globals():
+        applyResourceChanges(data, resource_change_list)
+    
+    # 新增：科技修改
+    if 'tech_change_list' in globals():
+        applyTechChanges(data, tech_change_list)
     
     return
 

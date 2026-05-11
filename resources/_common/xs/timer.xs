@@ -65,15 +65,6 @@ void MalayFreeArmy(int playerId = -1, int Time = -1)
 }
 
 
-void PolesFolwarkBonus(int playerId = -1, int Time = -1)
-{
-    int KillCount = xsPlayerAttribute(playerId, cAttributeKills);
-    float Bonus = minInt(KillCount / 20, 5);
-    Bonus = 0.01 * Bonus;
-    SetResource(playerId, cAttributeFolwarkCollectionAmount, (0.1 + Bonus) * xsPlayerAttribute(playerId, cAttributeFarmFood));
-}
-
-
 void BengalisRelicBonus(int playerId = -1, int Time = -1)
 {
     int RelicBonus = xsPlayerAttribute(playerId, cAttributeBengalisRelicBonus);
@@ -144,11 +135,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cMalay:
         {
             MalayFreeArmy(playerId, Time);
-            break;
-        }
-        case cPoles:
-        {
-            PolesFolwarkBonus(playerId, Time);
             break;
         }
         case cBengalis:
