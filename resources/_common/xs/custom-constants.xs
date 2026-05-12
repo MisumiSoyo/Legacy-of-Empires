@@ -43,6 +43,7 @@ extern const int cAttributeBengalisRelicBonus = 744;
 extern const int cAttributeFishTrapProductivity = 745;
 extern const int cAttributeHunterGoldProductivity = 746;
 extern const int cAttributeTradeCartGoldProductivity = 747;
+extern const int cAttributeDonkeyFoodRatio = 748;
 
 
 //  Custom Units' IDs

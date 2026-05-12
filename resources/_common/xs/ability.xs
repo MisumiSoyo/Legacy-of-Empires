@@ -528,6 +528,29 @@ void UniqueUnitInit()
 }
 
 
+void MercenaryUnitAdjustment(int playerId = -1, int ObjectID = -1, int tmp = -1)
+{
+    SetAttribute(playerId, ObjectID, cTrainButton, 20 + tmp);
+    SetAttribute(playerId, ObjectID, cHotkeyId, KeyToHotkeyID(20 + tmp));
+    SetAttribute(playerId, ObjectID, cHotkeyId, KeyToHotkeyID(20 + tmp));
+    float NewCost = xsGetObjectAttribute(playerId, ObjectID, cFoodCost) * 1.2
+                    + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) * 1.2
+                    + xsGetObjectAttribute(playerId, ObjectID, cWoodCost)
+                    + xsGetObjectAttribute(playerId, ObjectID, cStoneCost) * 1.3;
+    SetAttribute(playerId, ObjectID, cGoldCost, NewCost * 5);
+    SetAttribute(playerId, ObjectID, cFoodCost, 0);
+    SetAttribute(playerId, ObjectID, cWoodCost, 0);
+    SetAttribute(playerId, ObjectID, cStoneCost, 0);
+
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, ObjectID);
+    xsTaskAmount(cTaskAttrWorkValue2, 4);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000010);
+    xsTask(ObjectID, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
 //  10015 - C-Bonus, random mercenaries
 void EffectFunction10015(int playerId = -1)
 {
@@ -558,12 +581,9 @@ void EffectFunction10015(int playerId = -1)
         TargetEliteUniqueUnitID = xsArrayGetInt(EliteUniqueUnitIDArray, tmp);
         TargetUniqueUnitTechID = xsArrayGetInt(UniqueUnitTechIDArray, tmp);
         ForceResearchTech(playerId, TargetUniqueUnitTechID);
-        SetAttribute(playerId, TargetUniqueUnitID, cTrainButton, 20 + i);
-        SetAttribute(playerId, TargetEliteUniqueUnitID, cTrainButton, 20 + i);
-        SetAttribute(playerId, TargetUniqueUnitID, cHotkeyId, KeyToHotkeyID(20 + i));
-        SetAttribute(playerId, TargetUniqueUnitID, cHotkeyId, KeyToHotkeyID(20 + i));
-        SetAttribute(playerId, TargetEliteUniqueUnitID, cHotkeyId, KeyToHotkeyID(20 + i));
-        SetAttribute(playerId, TargetEliteUniqueUnitID, cHotkeyId, KeyToHotkeyID(20 + i));
+        MercenaryUnitAdjustment(playerId, TargetUniqueUnitID, i);
+        MercenaryUnitAdjustment(playerId, TargetEliteUniqueUnitID, i);
+
         SetResource(playerId, cAttributeByzantinesMercenaryIDStart + i - 1, tmp);
     }
 }

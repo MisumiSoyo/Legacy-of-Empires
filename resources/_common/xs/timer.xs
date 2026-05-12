@@ -106,6 +106,20 @@ void BengalisRelicBonus(int playerId = -1, int Time = -1)
 }
 
 
+void MuiscaFreeWood(int playerId = -1, int Time = -1)
+{
+    if ((Time > 0) && (Time % 600 == 0) && (Time <= 3600))
+        ModResource(playerId, cAttributeWoodGeneration, 30);
+}
+
+
+void BerbersDonkeyNumLimit(int playerId = -1, int Time = -1)
+{
+    if (xsGetObjectAttribute(playerId, DonkeyID, cDisabledFlag) > 0)
+        SetAttribute(playerId, DonkeyID, cAvailableFlag, 10 + 2 * minInt(5, xsPlayerAttribute(playerId, cAttributeCastle)));
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -132,6 +146,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
             PortugueseFeitoria(playerId, Time);
             break;
         }
+        case cBerbers:
+        {
+            BerbersDonkeyNumLimit(playerId, Time);
+            break;
+        }
         case cMalay:
         {
             MalayFreeArmy(playerId, Time);
@@ -140,6 +159,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cBengalis:
         {
             BengalisRelicBonus(playerId, Time);
+            break;
+        }
+        case cMuisca:
+        {
+            MuiscaFreeWood(playerId, Time);
             break;
         }
         default:

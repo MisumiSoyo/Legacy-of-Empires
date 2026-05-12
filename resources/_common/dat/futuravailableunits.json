@@ -40914,6 +40914,16 @@
                         "Name": "Elite Obuch",
                         "RequiredAge": 3,
                         "ID": 4022
+                    },
+                    {
+                        "Name": "Double Militia",
+                        "RequiredAge": 1,
+                        "ID": 4038
+                    },
+                    {
+                        "Name": "Double Spearmen",
+                        "RequiredAge": 2,
+                        "ID": 4039
                     }
                 ]
             },

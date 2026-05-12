@@ -2224,6 +2224,22 @@
             "building_id": 101,
             "Name": "Paladin",
             "RequiredAge": 4
+        },
+        {
+            "note": "波兰 2 倍民兵",
+            "civilizations": "Poles",
+            "unit_id": 4038,
+            "building_id": 12,
+            "Name": "Double Militia",
+            "RequiredAge": 1
+        },
+        {
+            "note": "波兰 2 倍长矛兵",
+            "civilizations": "Poles",
+            "unit_id": 4039,
+            "building_id": 12,
+            "Name": "Double Spearmen",
+            "RequiredAge": 2
         }
     ]
 }

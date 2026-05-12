@@ -239,22 +239,22 @@ def applyUnitChanges(data, unit_change_list):
 def applyResourceChanges(data, resource_change_list):
     """
     应用文明资源修改
-    配置格式与 unit_change_list 类似：
+    resources 是 civ 下的简单数值列表: civ.resources[resource_id] = value
+    配置格式：
     {
-        "resource_id": <int> or [<int>, ...],  # 资源ID
+        "resource_id": <int> or [<int>, ...],  # 资源ID（列表索引）
         "civs": "all" or [<int>, ...],         # 目标文明，默认全文明
-        "attributes": [                         # 属性修改列表
-            ["amount", 500],                    # 直接赋值
-            ["amount", "add", 100],             # 加法运算
-            ["amount", "mul", 1.5],             # 乘法运算
-            ["enabled", true],                  # 布尔值
-        ]
+        "value": <number>,                      # 直接赋值
+        # 或
+        "op": "set"/"add"/"mul",                # 运算类型
+        "value": <number>,                      # 运算值
     }
     """
     for change in resource_change_list:
         resource_ids = normalizeIdList(change["resource_id"])
         civs = change.get("civs", "all")
-        attributes = change.get("attributes", [])
+        op = change.get("op", "set")
+        value = change["num"]
         
         if civs == "all":
             target_civs = range(len(data.civs))
@@ -267,11 +267,19 @@ def applyResourceChanges(data, resource_change_list):
             for resource_id in resource_ids:
                 if resource_id >= len(civ.resources):
                     continue
-                    
-                resource = civ.resources[resource_id]
                 
-                for attr_change in attributes:
-                    applyAttributeChange(resource, attr_change)
+                current = civ.resources[resource_id]
+                
+                if op == "set":
+                    new_value = value
+                elif op == "add":
+                    new_value = current + value
+                elif op == "mul":
+                    new_value = current * value
+                else:
+                    raise ValueError(f"不支持的资源修改操作: {op}")
+                
+                civ.resources[resource_id] = type(current)(new_value)
 
 
 def applyTechChanges(data, tech_change_list):
@@ -283,6 +291,7 @@ def applyTechChanges(data, tech_change_list):
         "tech_id": <int> or [<int>, ...],      # 科技ID
         "attributes": [                         # 属性修改列表
             ["name", "新科技名称"],              # 直接赋值
+            ["research_time", 50],              # 研究时间设为50
             ["research_time", "mul", 0.8],      # 运算修改
             ["required_techs[0]", 101],         # 数组元素修改
             ["tech_effects[0].type", 1],        # 嵌套对象属性
