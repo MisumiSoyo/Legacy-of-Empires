@@ -1126,6 +1126,8 @@ void EffectFunction10093(int playerId = -1)
     ApplyToAllPlayerTargets(playerId, EliteIbirapemaWarriorID, cTaskTypeStinger);
     xsResetTaskAmount();
     LaunchStinger(playerId, cInfantryClass);
+    ModAttribute(playerId, TempleGuardID, cCombatAbility, -128);
+    ModAttribute(playerId, EliteTempleGuardID, cCombatAbility, -128);
 }
 
 
@@ -1317,9 +1319,9 @@ void EffectFunction10109(int playerId = -1)
 //  10110 - Dha
 void EffectFunction10110(int playerId = -1)
 {
-    MulAttribute(playerId, SpearmanID, cTrainTime, 0.5);
-    MulAttribute(playerId, PikemanID, cTrainTime, 0.5);
-    MulAttribute(playerId, HalberdierID, cTrainTime, 0.5);
+    MulAttribute(playerId, SpearmanID, cTrainTime, 0.6);
+    MulAttribute(playerId, PikemanID, cTrainTime, 0.6);
+    MulAttribute(playerId, HalberdierID, cTrainTime, 0.6);
 
     MulAttribute(playerId, SpearmanID, cResourceCost, 0.6);
     MulAttribute(playerId, PikemanID, cResourceCost, 0.6);
@@ -1370,7 +1372,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 293 2026.05.13");
+    xsChatData("Patch: 294 2026.05.13");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
