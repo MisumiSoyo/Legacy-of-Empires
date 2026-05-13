@@ -425,13 +425,6 @@
             "modifications": ["d", "set", 40]
         },
         {
-            "type": "modify",
-            "name": "柏柏尔村民移动速度加成调整",
-            "effect_id": 626,
-            "match": [5, -1, 4, 5, "any"],
-            "modifications": ["d", "set", 1.0952381]
-        },
-        {
             "type": "add",
             "name": "缅甸伐木场科技免费升级 + 林业",
             "effect_id": 685,
@@ -568,6 +561,26 @@
                          [0, -1, 51, 24, 0.4],
                          [0, -1, 54, 24, 0.4],
                          [0, -1, 55, 24, 0.4]]
+        },
+        {
+            "type": "add",
+            "name": "马来文明加成减价对骑象射手生效 城堡时代",
+            "effect_id": 695,
+            "commands": [[5, 873, -1, 100, 0.75],
+                         [5, 875, -1, 100, 0.75]]
+        },
+        {
+            "type": "add",
+            "name": "马来文明加成减价对骑象射手生效 帝王时代",
+            "effect_id": 696,
+            "commands": [[5, 873, -1, 100, 0.866667],
+                         [5, 875, -1, 100, 0.866667]]
+        },
+        {
+            "type": "add",
+            "name": "垛墙现在还会升级木栅栏为硬木栅栏",
+            "effect_id": 187,
+            "commands": [3, 72, 119, -1, 0]
         }
     ],
     "unit_changes":
@@ -623,6 +636,12 @@
     ],
     "tech_changes":
     [
+        {
+            "note": "垛墙费用增加",
+            "tech_id": 194,
+            "attributes": [["resource_costs[0].amount", 300],
+                           ["resource_costs[1].amount", 200]]
+        }
     ],
     "resource_changes":
     [

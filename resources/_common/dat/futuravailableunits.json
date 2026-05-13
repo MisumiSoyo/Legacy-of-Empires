@@ -6809,8 +6809,14 @@
                         "RequiredAge": 2
                     },
                     {
-                        "Name": "Elite Varangians",
+                        "Name": "Varangian Guard",
+                        "RequiredAge": 3,
+                        "ID": 3451
+                    },
+                    {
+                        "Name": "Elite Varangian Guard",
                         "RequiredAge": 4,
+                        "RequiredTechID": 3451,
                         "ID": 3107
                     },
                     {
@@ -6861,9 +6867,21 @@
                         "RequiredAge": 4
                     },
                     {
-                        "Name": "Varangians",
+                        "Name": "Early Varangian Guard",
+                        "RequiredAge": 2,
+                        "ID": 4042
+                    },
+                    {
+                        "Name": "Varangian Guard",
                         "RequiredAge": 3,
+                        "RequiredUnitID": 4042,
                         "ID": 4020
+                    },
+                    {
+                        "Name": "Elite Varangian Guard",
+                        "RequiredAge": 4,
+                        "RequiredUnitID": 4020,
+                        "ID": 4021
                     }
                 ]
             },
@@ -24352,11 +24370,6 @@
                         "ID": 631,
                         "Name": "Elite Battle Elephant",
                         "RequiredAge": 4
-                    },
-                    {
-                        "ID": 39,
-                        "Name": "Husbandry",
-                        "RequiredAge": 3
                     }
                 ],
                 "Units": [
@@ -24469,11 +24482,6 @@
                         "ID": 212,
                         "Name": "Leather Archer Armor",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 219,
-                        "Name": "Ring Archer Armor",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 199,

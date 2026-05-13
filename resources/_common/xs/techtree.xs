@@ -349,6 +349,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TwoManSawTechID);
             DisableTech(playerId, CavalryArcherTechID);
             DisableTech(playerId, PlateMailArmorTechID);
+            DisableTech(playerId, RingArcherArmorTechID);
+            DisableTech(playerId, HusbandryTechID);
             break;
         }
         case cBurmese:

@@ -55,6 +55,8 @@ void PortugueseFeitoria(int playerId = -1, int Time = -1)
 
 void MalayFreeArmy(int playerId = -1, int Time = -1)
 {
+    if (xsPlayerAttribute(playerId, cAttributeCurrentAge) < 1)
+        return;
     int MalayArmyTimer = xsPlayerAttribute(playerId, cAttributeMalayArmyTimer);
     if (MalayArmyTimer <= 0)
     {

@@ -47,11 +47,37 @@
             "type": "delete"
         },
         {
+            "note": "早期瓦兰吉卫队",
+            "civilizations": "Byzantines",
+            "unit_id": 4042,
+            "building_id": 12,
+            "Name": "Early Varangian Guard",
+            "RequiredAge": 2
+        },
+        {
             "note": "瓦兰吉卫队",
             "civilizations": "Byzantines",
             "unit_id": 4020,
             "building_id": 12,
-            "Name": "Varangians",
+            "Name": "Varangian Guard",
+            "RequiredAge": 3,
+            "RequiredUnitID": 4042
+        },
+        {
+            "note": "精锐瓦兰吉卫队",
+            "civilizations": "Byzantines",
+            "unit_id": 4021,
+            "building_id": 12,
+            "Name": "Elite Varangian Guard",
+            "RequiredAge": 4,
+            "RequiredUnitID": 4020
+        },
+        {
+            "note": "瓦兰吉卫队",
+            "civilizations": "Byzantines",
+            "tech_id": 3451,
+            "building_id": 12,
+            "Name": "Varangian Guard",
             "RequiredAge": 3
         },
         {
@@ -59,8 +85,9 @@
             "civilizations": "Byzantines",
             "tech_id": 3107,
             "building_id": 12,
-            "Name": "Elite Varangians",
-            "RequiredAge": 4
+            "Name": "Elite Varangian Guard",
+            "RequiredAge": 4,
+            "RequiredTechID": 3451
         },
         {
             "note": "早期骑射手",
@@ -800,6 +827,12 @@
             "RequiredAge": 3
         },
         {
+            "note": "马来失去畜牧",
+            "civilizations": "Malay",
+            "tech_id": 39,
+            "type": "delete"
+        },
+        {
             "note": "维利奇卡盐矿",
             "civilizations": "Poles",
             "tech_id": 3316,
@@ -1204,14 +1237,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "格鲁吉亚获得射手锁甲",
-            "civilizations": "Georgians",
-            "tech_id": 219,
-            "building_id": 103,
-            "Name": "Ring Archer Armor",
-            "RequiredAge": 4
-        },
-        {
             "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙, 越南, 马里, 亚美尼亚, 格鲁吉亚获得造船匠",
             "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens", "Portuguese", "Vietnamese", "Malians", "Armenians", "Georgians"],
             "tech_id": 373,
@@ -1354,12 +1379,18 @@
             "RequiredAge": 2
         },
         {
-            "note": "阿兹特克, 波兰, 勃艮第, 吴获得射手锁甲",
-            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu"],
+            "note": "阿兹特克, 波兰, 勃艮第, 吴, 格鲁吉亚获得射手锁甲",
+            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu", "Georgians"],
             "tech_id": 219,
             "building_id": 103,
             "Name": "Ring Archer Armor",
             "RequiredAge": 4
+        },
+        {
+            "note": "马来失去射手锁甲",
+            "civilizations": ["Malay"],
+            "tech_id": 219,
+            "type": "delete"
         },
         {
             "note": "勃艮第, 中国, 意大利, 波斯, 马里获得攻城技师",

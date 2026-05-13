@@ -12,7 +12,7 @@
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
 8298 "Research Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)"
 8313 "Research Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)"
-8318 "Research Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)"
+8318 "Research Logistica (Cataphracts, Knight-line units and Varangian Guards deal blast damage; Cataphracts +6 attack vs Infantry)"
 8322 "Research Sappers (Villagers +15 attack vs buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower)"
 8342 "Research Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)"
 8351 "Research Hussite Reforms (Monks and Monastery technologies consume food instead of gold; Each existing monk refunds 50 gold)"
@@ -61,6 +61,8 @@
 
 28093 "Research <b>Ballistics<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nNon-gunpowder projectiles become more accurate for moving target and (except ballista) deal full damage to non-primary targets."
 
+28163 "Upgrade to <b>Fortified Wall<b> (<cost>, 50 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Stone Walls to Fortified Walls, and Palisade Walls to Fortified Palisade Walls."
+
 28180 "Research <b>Gold Shaft Mining<b> (<cost>, 75 <MATERIAL=MPIconGoodCPU>)\nVillagers drop +15% gold."
 
 28210 "Research <b>Squires<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\nInfantries +15% movement speed."
@@ -77,7 +79,7 @@
 
 28313 "Research <b>Greek Fire<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nFire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range."
 
-28318 "Research <b>Logistica<b> (<cost>, 50 <MATERIAL=MPIconGoodCPU,1>)\nCataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry."
+28318 "Research <b>Logistica<b> (<cost>, 50 <MATERIAL=MPIconGoodCPU,1>)\nCataphracts, Knight-line units and Varangian Guards deal blast damage; Cataphracts +6 attack vs Infantry."
 
 28322 "Research <b>Sappers<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nVillagers +15 attack vs Buildings, +10 attack vs Stone Defensive Buildings, +3 attack vs Ram/Trebuchet/Siege Tower."
 
@@ -105,7 +107,7 @@
 //	Chinese
 120155 "Archer and Gunpowder civilization \n\n• Start with +3 villagers, -200 food\n• Technologies -15% cost\n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n• Hei Guang Cavalry line +15% attack speed\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flamethrower (Siege weapon)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)\n• Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)\n• Yuan Dynasty (Land units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
 //	Byzantines
-120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age\n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost\n• Fire Ships, Flamethrowers and Dromons +25% attack speed\n• Advance to Imperial Age -33% costs\n• Town Watch, Town Patrol and Town Defense free\n• Can train an additional 4 unique units since Castle Age; You need to spend a hight price of gold to train 5 at once\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries), Varangian (Infantries that gain gold from killing units)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)\n• Logistica (Cataphracts, Knight-line units and Varangians deal blast damage; Cataphracts +6 attack vs Infantry)\n\n• Polutasvarf (Military units can loot 30 gold from every destroyed building)\n• Golden Horn Tower (Trade units can additionally generate 15% stone)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
+120156 "Defensive civilization \n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age\n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost\n• Fire Ships, Flamethrowers and Dromons +25% attack speed\n• Advance to Imperial Age -33% costs\n• Town Watch, Town Patrol and Town Defense free\n• Can train an additional 4 unique units since Castle Age; You need to spend a hight price of gold to train 5 at once\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries), Varangian Guard (Infantries that gain gold from killing units)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)\n• Logistica (Cataphracts, Knight-line units and Varangian Guards deal blast damage; Cataphracts +6 attack vs Infantry)\n\n• Polutasvarf (Military units can loot 30 gold from every destroyed building)\n• Golden Horn Tower (Trade units can additionally generate 15% stone)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 //	Persians
 120157 "Cavalry civilization \n\n• Start with +50 wood and food (received when the first TC is built up in Nomad mode) \n• Town Center, Dock +100% HP, work rate +5%/+10%/+15%/+20% at Dark/Feudal/Castle/Imperial Age\n• Can build Caravanserai in Imperial Age\n• Coinage and Banking free\n\n<b>Unique Unit:<b> \n• War Elephant (low-speed heary cavalry), Savar (heavy cavalry replaces Paladin and better combat vs archers), Parthian Cavalry Archer (high-speed cavalry archers), Assassin (Infantry)\n\n<b>Unique Techs: <b>\n• Kamandaran (Archer-Line cost no gold, but +50 wood cost)\n• Citadels (Castles fire Bullets, receive -25% bonus damage)\n• Satrap (Castles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute)\n• Camel Lancer (Camel Riders +1 attack range)\n\n<b>Team bonus: <b>\nCavalry (except Light Cavalry) +2 attack vs archers"
 //	Saracens
@@ -141,17 +143,17 @@
 //	Portuguese
 120173 "Naval and Gunpowder civilization \n\n• All units -20% gold cost\n• Foragers generate 0.67 wood per meat\n• Ships +10/15/20% HP at Feudal/Castle/Imperial Age\n• Can build Feitoria in Imperial Age\n• Genitours +10% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b> \n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Circumnavigation (Sets the entire map to explored; Ships train +33% faster)\n• Arquebus (Hand Cannoneers and Organ Guns +0.5 projectile speed, Bombard Cannons and Bombard Towers +0.2 projectile speed, enable Ballistics effect)\n• Iberian Light Cavalry (Genitours +5 attack vs Archer, +3 attack vs Cavalry Archer, +3 attack vs Spearman)\n• Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 //	Ethiopians
-120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/250/400 food and gold when advancing to Feudal/Castle/Imperial Age \n• Pikeman upgrade free\n• Units deal +25% damage when fighting from lower elevation\n\n<b>Unique Unit:<b> \n• Shotel Warrior (High attack, low HP infantry), Chewa Rider (Cavalries that are strong vs Infantries)\n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
+120174 "Archer civilization \n\n• Archer-Line -15% reload time\n• Receive +100/250/400 food and gold when advancing to Feudal/Castle/Imperial Age\n• Pikeman upgrade free\n• Units deal +25% damage when fighting from lower elevation\n\n<b>Unique Unit:<b>\n• Shotel Warrior (High attack, low HP infantry), Chewa Rider (Cavalries that are strong vs Infantries)\n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, and +25 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 //	Malians
 120175 "Infantry civilization\n\n• Buildings cost -15% wood\n• Villagers drop off +15% more gold\n• Barracks Units +1/+2/+3 pierce armor in Feudal/Castle/Imperial Age\n• Camel units and Hand Cannoneers +66% train speed\n• Town Centers cost gold instead of stone since Castle Age\n• Trade units produce +50% extra food and -25% gold\n\n<b>Unique Unit:<b> \n• Gbeto (High-speed infantry), Sofa (Cavalry that counters spearmen, skirmishers and light cavalries), Donso (Infantry that can charge and throw spears)\n\n<b>Unique Techs:<b>\n• Tigui (Town Centers fire arrows without garrison)\n• Farimba (Cavalry +4 attack)\n• Sahara Caravan Route (The gold generated by trading units will no longer decrease)\n• Poisoning (Archers, Cavalry Archers, Hand Cannoneers and Donsos' ranged attack can slow down enemies by 15%, lasting for 2 seconds. This effect is non-stackable)\n\n<b>Team Bonus:<b> \nUniversities work +80% faster"
 //	Berbers
-120176 "Cavalry and Naval civilization\n\n• Villagers +5/15/25/35% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age\n• Ships +10% moving speed \n• Get 7 wood, 7 food and 5 gold for each military unit when advancing to the next age\n• Can create 10 (+2 for each Castle, maximum +10) Donkeys at most since Feudal Age\n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers), Donkey (Trade unit that can produce food and gold)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate)\n• Maghrabi Camels (Camel units have regeneration of 15 HP/minute)\n• Adarga (Camel Rider line +1 pierce armor, -30% additional damage received)\n• Desert Raider (Genitours +50% attack speed, -1 melee/pierce armor)\n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Genitours -10% cost"
+120176 "Cavalry and Naval civilization\n\n• Villagers +5/10/15/20% moving speed at Dark/Feudal/Castle/Imperial Age\n• Stables units -15%/-20% cost at Castle/Imperial Age\n• Ships +10% moving speed \n• Get 7 wood, 7 food and 5 gold for each military unit when advancing to the next age\n• Can create 10 (+2 for each Castle, maximum +10) Donkeys at most since Feudal Age\n\n<b>Unique Unit : <b>\n• Camel Archer (Cavalry archer better combats with cavalry archers), Donkey (Trade unit that can produce food and gold)\n\n<b>Unique Techs: <b>\n• Kasbah (Team's Castle +25% work rate)\n• Maghrabi Camels (Camel units have regeneration of 15 HP/minute)\n• Adarga (Camel Rider line +1 pierce armor, -30% additional damage received)\n• Desert Raider (Genitours +50% attack speed, -1 melee/pierce armor)\n\n<b>Team bonus: <b>\nCan train Genitours in Archery Range starting in Castle Age; Spanish, Portuguese and Berbers' Genitours -10% cost"
 //	Khmer
-120177 "Siege and Elephant civilization \n\n• No buildings required to advance to the next age or to unlock other buildings \n• Farmers don't require Mills/Town Centers to drop off food\n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer), Rattan Swordman (Infantry that can attack mounted units at long range)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack)\n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow)\n• Devaraja (Monks can heal siege weapons and buildings, +200% healing rate for elephant units)\n• Ph'kak (Infantries can decrease nearby enemy cavalries' attack by 20%)\n\n<b>Team bonus: <b>\nScorpion +1 max range"
+120177 "Siege and Elephant civilization\n\n• No buildings required to advance to the next age or to unlock other buildings\n• Farmers don't require Mills/Town Centers to drop off food\n• Battle Elephants and Elephant Archers +10% moving speed\n• Villagers can garrison in Houses \n• Battle Elephants around monks -13% reload time\n\n<b>Unique Unit:<b> \n• Ballista Elephant (Scorpion on elephant), Early Elephant Archer (cavalry archer), Rattan Swordman (Infantry that can attack mounted units at long range)\n\n<b>Unique Techs: <b>\n• Tusk Swords (Battle Elephant +3 attack)\n• Double Crossbow (Ballista Elephant and Scorpion have secondary arrow)\n• Devaraja (Monks can heal siege weapons and buildings, +200% healing rate for elephant units)\n• Ph'kak (Infantries can decrease nearby enemy cavalries' attack by 20%)\n\n<b>Team bonus: <b>\nScorpion +1 max range"
 //	Malay
-120178 "Naval civilization \n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants -25%/-35% cost at Castle/Imperial Age \n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
+120178 "Naval civilization\n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants and Elephant Archers -25%/-35% cost at Castle/Imperial Age\n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 2 minutes since feudal age\n\n<b>Unique Unit:<b> \n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
 //	Burmese
-120179 "Monk and Elephant civilization \n\n• Lumber Camp upgrades free\n• Infantries +1 attack per age starting in Feudal Age \n• Monastery techs cost -50% \n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit : <b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n• Dha (Spearman line -40% train time and cost, +2 attack, -50% bonus damage)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
+120179 "Monk and Elephant civilization\n\n• Lumber Camp upgrades free\n• Infantries +1 attack per age starting in Feudal Age\n• Monastery techs cost -50%\n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit:<b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Stable units +5 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.8 food per minute)\n• Dha (Spearman line -40% train time and cost, +2 attack, -50% bonus damage)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 //	Vietnamese
 120180 "Archer civilization \n\n• Enemy positions are revealed at the start of the game\n• Archery Range units (except Elephant Archers) and Fire Lancers +20% HP \n• Conscription free\n• Economic upgrading techs cost no wood and research time\n\n<b>Unique Units:<b> \n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Elephant units +100 HP) \n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
@@ -209,7 +211,7 @@
 500007 "Spearman Squad"
 500008 "Veteran Yumi Ashigaru"
 500009 "Elite Yumi Ashigaru"
-500010 "Elite Varangian"
+500010 "Elite Varangian Guard"
 500011 "Elite Sipahi"
 500012 "Gentry"
 500013 "Mercenary"
@@ -406,6 +408,7 @@
 500204 "Veteran Chewa Rider"
 500205 "Elite Chewa Rider"
 500206 "Elite Cossack Rider"
+500207 "Varangian Guard"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -417,7 +420,7 @@
 501007 "Research Spearman Squad (Quickly summon a military team consisting of 5 spearman units)"
 501008 "Upgrade to Veteran Yumi Ashigaru"
 501009 "Upgrade to Elite Yumi Ashigaru"
-501010 "Upgrade to Elite Varangian"
+501010 "Upgrade to Elite Varangian Guard"
 501011 "Upgrade to Elite Sipahi"
 501012 "Research Gentry (Maximum number of Wubao built +2)"
 501013 "Research Mercenary (Immediately produce 4 Archers and 4 Hei Guang Cavalries, with an additional 1 Archer and 1 Hei Guang Cavalry produced for each Wubao)"
@@ -614,6 +617,7 @@
 501204 "Upgrade to Veteran Chewa Rider"
 501205 "Upgrade to Elite Chewa Rider"
 501206 "Upgrade to Elite Cossack Rider"
+501207 "Upgrade to Varangian Guard"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nFish ships and Transport ships +25% Movement Speed."
@@ -625,7 +629,7 @@
 521007 "Research<b>Spearman Squad<b> (<cost>) (Time: 15) Quickly summon a military team consisting of 5 spearman units)"
 521008 "Upgrade to <b>Veteran Yumi Ashigaru<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Yumi Ashigarus and lets you create Veteran Yumi Ashigarus."
 521009 "Upgrade to <b>Elite Yumi Ashigaru<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Veteran Yumi Ashigarus and lets you create Elite Yumi Ashigarus."
-521010 "Upgrade to <b>Elite Varangian<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Varangian and lets you create Elite Varangian."
+521010 "Upgrade to <b>Elite Varangian Guard<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Varangian Guards and lets you create Elite Varangian Guards."
 521011 "Upgrade to <b>Elite Sipahi<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU,1>) \nUpgrades your Sipahi and lets you create Elite Sipahi."
 521012 "Research<b>Gentry<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nMaximum number of Wubao +2."
 521013 "Research<b>Mercenary<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU,1>)\nImmediately produce 4 Archers and 4 Hei Guang Cavalries, with an additional 1 Archer and 1 Hei Guang Cavalry produced for each Wubao."
@@ -822,6 +826,7 @@
 521204 "Upgrade to <b>Veteran Chewa Rider<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Chewa Riders and lets you create Veteran Chewa Riders."
 521205 "Upgrade to <b>Elite Chewa Rider<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Chewa Riders and lets you create Elite Chewa Riders."
 521206 "Upgrade to <b>Elite Cossack Rider<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Cossack Riders and lets you create Elite Cossack Riders."
+521207 "Upgrade to <b>Varangian Guard<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Early Varangian Guards and lets you create Varangian Guards."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -839,8 +844,8 @@
 700004 "Elite Yumi Ashigaru"
 700005 "Wooden Fortress"
 700006 "Manila Galleon"
-700007 "Varangian"
-700008 "Elite Varangian"
+700007 "Varangian Guard"
+700008 "Elite Varangian Guard"
 700009 "Sipahi"
 700010 "Elite Sipahi"
 700011 "Hunting Wolf"
@@ -938,6 +943,8 @@
 700103 "2 Spearman line units"
 700104 "2 Condottieros"
 700105 "Donkey"
+700106 "Heavy Swordman"
+700107 "Early Varangian Guard"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -946,8 +953,8 @@
 701004 "Create Elite Yumi Ashigaru"
 701005 "Build Wooden Fortress"
 701006 "Create Manila Galleon"
-701007 "Create Varangian"
-701008 "Create Elite Varangian"
+701007 "Create Varangian Guard"
+701008 "Create Elite Varangian Guard"
 701009 "Create Sipahi"
 701010 "Create Elite Sipahi"
 701011 "Create Hunting Wolf"
@@ -1044,6 +1051,8 @@
 701103 "Create 2 Spearman line units"
 701104 "Create 2 Condottieros"
 701105 "Create Donkey"
+701106 "Create Heavy Swordman"
+701107 "Create Early Varangian Guard"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1058,9 +1067,9 @@
 
 721006 "Build <b>Manila Galleon<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nSpanish unique armed trade cog. To trade, click the Trade Cog then right-click another player's Dock. Will return with resource to your Dock.\nUpgrades: <MATERIAL=TechIconsT113Caravan,1> <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.65 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\nClass: Trade Ship; Tags: Ship, Ranged Ship, Trade Unit.\nAttack Bonus: +1 vs Ranged Ship."
 
-721007 "Create <b>Varangian<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\nByzantine's unique infantry. Can gain gold by killing enemies (economic units 10, military units 20, and siege weapons 30).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +2 vs Shock Infantry, +3 vs buildings"
+721007 "Create <b>Varangian Guard<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\nByzantine's unique infantry. Can gain gold by killing enemies (economic units 10, military units 15, and siege weapons 25).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +2 vs Shock Infantry, +3 vs buildings"
 
-721008 "Create <b>Elite Varangian<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\nByzantine's unique infantry. Can gain gold by killing enemies (economic units 10, military units 20, and siege weapons 30).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.75 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +4 vs Shock Infantry, +6 vs buildings"
+721008 "Create <b>Elite Varangian Guard<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\nByzantine's unique infantry. Can gain gold by killing enemies (economic units 10, military units 15, and siege weapons 25).\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.75 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +4 vs Shock Infantry, +6 vs buildings"
 
 721009 "Create <b>Sipahi<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\nTurks' unique cavalry. Can increase enemy ranged soldiers' reload time by 16.7% within a distance of 2.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 4\nClass: Cavalry; Tags: Cavalry, Unique Unit."
 
@@ -1253,6 +1262,8 @@
 721104 "Create 2 Condottieros (<cost>, 10 <MATERIAL=MPIconGoodCPU>)"
 
 721105 "Create <b>Donkey<b> (<cost>, 33 <MATERIAL=MPIconGoodCPU>)\nTrade unit that can produce equal food and gold.\nUpgrades: <MATERIAL=TechIconsT113Caravan,1><MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=EyeIcon,1> 6\nClass: Trade Cart; Tags: Trade Unit, Unique Unit."
+
+721107 "Create <b>Early Varangian Guard<b> (<cost>, 34 <MATERIAL=MPIconGoodCPU>)\nByzantine's unique infantry. Can gain gold by killing enemies (economic units 10, military units 15, and siege weapons 25).\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +2 vs Shock Infantry, +2 vs Building."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

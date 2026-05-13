@@ -1838,7 +1838,7 @@
             "Name": "Husbandry",
             "Name String ID": 17039,
             "Node ID": 39,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 10,
             "Prerequisite IDs": [
@@ -2228,7 +2228,7 @@
             "Name": "Ring Archer Armor",
             "Name String ID": 17216,
             "Node ID": 219,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 51,
             "Prerequisite IDs": [

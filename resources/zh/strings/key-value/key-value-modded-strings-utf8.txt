@@ -65,6 +65,8 @@
 
 28093 "研究<b>弹道学<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n远程部队(不包括火药单位)对移动目标的射击准确度提高, 并且(除弩炮类外)命中非主要目标不减少伤害。"
 
+28163 "升级到<b>垛墙<b> (<cost>, 50 <MATERIAL=MPIconGoodCPU>)\n将石墙和石门升级为更坚固的垛墙和城门, 木栅栏升级为硬木栅栏。"
+
 28180 "研究<b>钻井采金法<b> (<<cost>, 75 <MATERIAL=MPIconGoodCPU>)\n村民存放的黄金 +15%。"
 
 28210 "研究<b>护卫<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\n步兵 +15% 移动速度。"
@@ -149,11 +151,11 @@
 //	马里
 120175 "步兵文明\n\n• 建筑的木材费用 -15%\n• 村民存放的黄金额外 +15%\n• 兵营单位在封建/城堡/帝王时代 +1/+2/+3 盾牌\n• 骆驼单位和火枪手 +66% 训练速度\n• 城堡时代起城镇中心消耗黄金代替石料\n• 贸易单位额外产生 50% 食物和 -25% 黄金\n\n<b>独特单位：<b>\n• 飞刀女兵 (快速远程步兵), 索法骑手 (对长矛兵系、掷矛手和轻骑兵有攻击加成的骑兵), 当佐兵 (可充能投掷标枪的步兵)\n\n<b>独特科技：<b>\n• 蛮王 (城镇中心无驻军亦能自动射箭，放箭数/最大放箭数 +8)\n• 死士 (骑兵 +4 攻击力)\n• 撒哈拉商道 (贸易单位产生的黄金不再减少)\n• 淬毒 (射手, 骑射手, 火枪手和当佐兵的远程攻击可使敌人减速 15%, 持续 2 秒, 效果不可叠加)\n\n<b>团队加成：<b>\n大学工作速度 +80%"
 //	柏柏尔
-120176 "骑兵和海军文明\n\n• 村民在黑暗/封建/城堡/帝王时代 +5/15/25/35% 移动速度\n• 骑兵在城堡/帝王时代 -15/20% 训练费用\n• 船只 +10% 移动速度\n• 升级时代时, 每个军事单位产出 7 木材, 7 食物和 5 黄金\n• 封建时代起可生产最多 10 只毛驴, 每座城堡再 +2 (最多 +10)\n\n<b>独特单位: <b>\n• 骆驼射手 (克制骑射手的骑射手), 毛驴 (产生食物和黄金的贸易单位)\n\n<b>独特科技: <b>\n• 土堡 (团队城堡 +25% 工作效率)\n• 马格里布骆驼 (骆驼单位每分钟回复 15 生命值)\n• 阿达加 (骆驼兵系 +1 盾牌, -30% 受到的伤害加成)\n• 沙漠掠夺者 (标枪骑兵 +50% 攻击速度, -1 护甲/盾牌)\n\n<b>团队加成: <b>\n城堡时代起可以在靶场训练标枪骑兵，西班牙、葡萄牙、柏柏尔的标枪骑兵 -10% 训练费用"
+120176 "骑兵和海军文明\n\n• 村民在黑暗/封建/城堡/帝王时代 +5/10/15/20% 移动速度\n• 骑兵在城堡/帝王时代 -15/20% 训练费用\n• 船只 +10% 移动速度\n• 升级时代时, 每个军事单位产出 7 木材, 7 食物和 5 黄金\n• 封建时代起可生产最多 10 只毛驴, 每座城堡再 +2 (最多 +10)\n\n<b>独特单位: <b>\n• 骆驼射手 (克制骑射手的骑射手), 毛驴 (产生食物和黄金的贸易单位)\n\n<b>独特科技: <b>\n• 土堡 (团队城堡 +25% 工作效率)\n• 马格里布骆驼 (骆驼单位每分钟回复 15 生命值)\n• 阿达加 (骆驼兵系 +1 盾牌, -30% 受到的伤害加成)\n• 沙漠掠夺者 (标枪骑兵 +50% 攻击速度, -1 护甲/盾牌)\n\n<b>团队加成: <b>\n城堡时代起可以在靶场训练标枪骑兵，西班牙、葡萄牙、柏柏尔的标枪骑兵 -10% 训练费用"
 //	高棉
 120177 "攻城武器和大象文明\n\n• 不需要建筑即可升级到下一时代或者解锁其他建筑\n• 农民不需要磨坊或城镇中心就可以存放食物\n• 村民可以驻扎进房屋里\n• 象兵和骑象射手 +10% 移动速度\n\n<b>独特单位：<b>\n• 重弩战象 (象上弩炮), 早期骑象射手(重型骑射手), 藤牌兵 (可远程攻击骑兵的步兵)\n\n<b>独特科技：<b>\n• 獠牙剑 (象兵 +3 攻击力)\n• 双箭弩 (重弩战象和弩炮可一箭双发)\n• 神王 (僧侣可以治疗建筑和攻城武器, 治疗大象单位的速率 +200%)\n• 钩刃斧 (步兵可以减少周围敌方骑兵 20% 攻击力)\n\n<b>团队加成：<b>\n弩炮射程 +1"
 //	马来
-120178 "海军文明\n\n• 升级至下一个时代的速度 +66%\n• 步兵护甲免费升级\n• 象兵在城堡/帝王时代 -25/35% 训练费用\n• 养鱼场 -33% 建造费用且提供的食物 +200%\n• 船坞可以生产村民, 但 -50% 生产速度\n• 封建时代起每 2 分钟可在城镇中心征召一次军队\n\n<b>独特单位：<b>\n• 爪刀勇士 (步兵)\n\n<b>独特科技：<b>\n• 海上霸主 (将码头升级为巨港)\n• 强征兵役 (生产民兵系消耗额外食物，而不消耗黄金)\n• 马来武术 (爪刀勇士对村民和贸易单位 +5 攻击力, 并且阵亡后会扣除击杀方 10 食物)\n• 香料贸易 (团队贸易船 +20% 移动速度)\n\n<b>团队加成：<b>\n船坞视野 +6"
+120178 "海军文明\n\n• 升级至下一个时代的速度 +66%\n• 步兵护甲免费升级\n• 象兵和骑象射手在城堡/帝王时代 -25/35% 训练费用\n• 养鱼场 -33% 建造费用且提供的食物 +200%\n• 船坞可以生产村民, 但 -50% 生产速度\n• 封建时代起每 2 分钟可在城镇中心征召一次军队\n\n<b>独特单位：<b>\n• 爪刀勇士 (步兵)\n\n<b>独特科技：<b>\n• 海上霸主 (将码头升级为巨港)\n• 强征兵役 (生产民兵系消耗额外食物，而不消耗黄金)\n• 马来武术 (爪刀勇士对村民和贸易单位 +5 攻击力, 并且阵亡后会扣除击杀方 10 食物)\n• 香料贸易 (团队贸易船 +20% 移动速度)\n\n<b>团队加成：<b>\n船坞视野 +6"
 //	缅甸
 120179 "步兵和骑兵文明\n\n• 伐木场科技免费升级\n• 步兵在封建/城堡/帝王时代 +1/+2/+3 攻击力\n• 象兵 +1 护甲/盾牌\n• 修道院科技研究费用 -50%\n\n<b>独特单位：<b>\n• 飞镖骑兵 (远程骑兵单位), 东吁勇士 (阵亡后可对周围敌人造成伤害的步兵)\n\n<b>独特科技：<b>\n• 曼尼普尔马 (骑兵对远程单位 +4 攻击力)\n• 象轿 (象兵 +1 护甲/盾牌)\n• 阿奴律陀运河 (农田每分钟产生 4.8 食物)\n• 缅刀 (长矛兵系 -40% 训练费用和训练时间, +2 攻击力, -50% 附加伤害)\n\n<b>团队加成：<b>\n游戏开始时就能在地图上看见圣物"
 //	越南
@@ -410,6 +412,7 @@
 500204 "老练切瓦骑手"
 500205 "精锐切瓦骑手"
 500206 "精锐哥萨克骑手"
+500207 "瓦兰吉卫队"
 
 
 501001 "研究季风航行(渔船和运输船 +25% 移动速度)"
@@ -618,6 +621,7 @@
 501204 "升级到老练切瓦骑手"
 501205 "升级到精锐切瓦骑手"
 501206 "升级到精锐哥萨克骑手"
+501207 "升级到瓦兰吉卫队"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -826,6 +830,7 @@
 521204 "升级到<b>老练切瓦骑手<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n将您的切瓦骑手升级, 生产更为强大的老练切瓦骑手。"
 521205 "升级到<b>精锐切瓦骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练切瓦骑手升级, 生产更为强大的精锐切瓦骑手。"
 521206 "升级到<b>精锐哥萨克骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的哥萨克骑手升级, 生产更为强大的精锐哥萨克骑手。"
+521207 "升级到<b>瓦兰吉卫队<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的早期瓦兰吉卫队升级, 生产更为强大的瓦兰吉卫队。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -942,6 +947,8 @@
 700103 "2 名长矛兵系单位"
 700104 "2 名意大利佣兵"
 700105 "毛驴"
+700106 "重装剑士"
+700107 "早期瓦兰吉卫队"
 
 
 701001 "生产铁炮足轻"
@@ -1048,6 +1055,8 @@
 701103 "生产 2 名长矛兵系单位"
 701104 "生产 2 名意大利佣兵"
 701105 "生产毛驴"
+701106 "生产重装剑士"
+701107 "生产早期瓦兰吉卫队"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>) \n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 0.96 <MATERIAL=StatIconsReloadTime,1> 2.75 <MATERIAL=TechIconsT112ThumbRing,1> 75% <MATERIAL=EyeIcon,1> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1060,19 +1069,19 @@
 
 721005 "建造<b>木制要塞<b> (<cost>, 70 <MATERIAL=MPIconGoodCPU,1>)\n可进行远程攻击的箭塔。各单位可在内部进行驻扎, 获得保护。远程单位和村民可发射额外的炮弹。适于攻击步弓手。不适于近程攻击敌方单位, 尤其是冲车。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT069TownWatch,1> <MATERIAL=TechIconsT089TownPatrol,1> <MATERIAL=TechIconsT013Masonry,1> <MATERIAL=TechIconsT014Architecture,1> <MATERIAL=TechIconsT104HeatedShot,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT061MurderHoles,1>\n<hp> <attack> <armor> <piercearmor> <range> <garrison>\n<MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon> 10\n主类: 塔; 标签: 所有建筑, 标准建筑。\n攻击加成: +2 vs 枪兵, +5 vs 舰船, +1 vs 骆驼。"
 
-721006 "建造<b>马尼拉大帆船<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>) \n西班牙独特武装贸易单位。如要贸易, 请点击贸易船后右击其他玩家的船坞/港口。随后就可带着黄金和木材回到您的船坞/港口。\n升级: <MATERIAL=TechIconsT113Caravan,1> <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.65 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\n主类: 贸易船; 标签: 舰船, 远程船只, 贸易单位。\n攻击加成: +1 vs 远程船只。"
+721006 "建造<b>马尼拉大帆船<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\n西班牙独特武装贸易单位。如要贸易, 请点击贸易船后右击其他玩家的船坞/港口。随后就可带着黄金和木材回到您的船坞/港口。\n升级: <MATERIAL=TechIconsT113Caravan,1> <MATERIAL=TechIconsT098Careening,1> <MATERIAL=TechIconsT099DryDock,1> <MATERIAL=TechIconsT097Shipwright,1> <MATERIAL=TechIconsT142ClinkerConstruction,1> <MATERIAL=TechIconsT141CarvelHull,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.65 <MATERIAL=StatIconsReloadTime,1> 3 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon,1> 6\n主类: 贸易船; 标签: 舰船, 远程船只, 贸易单位。\n攻击加成: +1 vs 远程船只。"
 
-721007 "生产<b>瓦兰吉卫队<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>) \n拜占庭独特步兵单位，击杀经济单位获得 10 黄金，击杀军事单位获得 20 黄金，击杀攻城武器获得 30 黄金。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +2 vs 冲击步兵, +3 vs 建筑"
+721007 "生产<b>瓦兰吉卫队<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\n拜占庭独特步兵单位，击杀经济单位获得 10 黄金，击杀军事单位获得 15 黄金，击杀攻城武器获得 25 黄金。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +2 vs 冲击步兵, +3 vs 建筑。"
 
-721008 "生产<b>精锐瓦兰吉卫队<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>) \n拜占庭独特步兵单位，击杀经济单位获得 10 黄金，击杀军事单位获得 20 黄金，击杀攻城武器获得 30 黄金。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.75 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +4 vs 冲击步兵, +6 vs 建筑"
+721008 "生产<b>精锐瓦兰吉卫队<b> (<cost>, 27 <MATERIAL=MPIconGoodCPU,1>)\n拜占庭独特步兵单位，击杀经济单位获得 10 黄金，击杀军事单位获得 15 黄金，击杀攻城武器获得 25 黄金。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT063ScaleMailArmor,1> <MATERIAL=TechIconsT022ChainMailArmor,1> <MATERIAL=TechIconsT064PlateMailArmor,1> <MATERIAL=TechIconsT080Squires,1> <MATERIAL=TechIconsT118Arson,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=StatIconsReloadTime,1> 1.75 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +4 vs 冲击步兵, +6 vs 建筑。"
 
-721009 "生产<b>西帕希骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>) \n土耳其独特骑兵单位。能使 2 格范围内的敌方远程单位 -16.7% 攻击速度。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。"
+721009 "生产<b>西帕希骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\n土耳其独特骑兵单位。能使 2 格范围内的敌方远程单位 -16.7% 攻击速度。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。"
 
-721010 "生产<b>精锐西帕希骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>) \n土耳其独特骑兵单位。能使 2 格范围内的敌方远程单位 -20% 攻击速度。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。"
+721010 "生产<b>精锐西帕希骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU,1>)\n土耳其独特骑兵单位。能使 2 格范围内的敌方远程单位 -20% 攻击速度。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.45 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon,1> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。"
 
 721011 "生产<b>猎狼<b> (<cost>)\n蒙古独特单位,能快速攻击敌人，只占用0.5人口空间。\n<GREY><i>升级: 攻击, 护甲 (铁匠铺); 生产速度 (城堡); 提升抵抗僧侣的能力 (修道院) 。<i><DEFAULT>\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 步兵; 标签: 步兵, 独特单位; 训练时间: 10; 移动速度: 1.25; 攻击间隔: 2; 视野: 4; 搜索范围: 4。\n攻击加成: +1 vs 村民\n\n封建时代后获得: +5 生命值, +1 攻击力, +1 攻击力 vs 村民;\n城堡时代后获得: +10 生命值, +2 攻击力, +2 攻击力 vs 村民;\n帝王时代后获得: +15 生命值, +2 攻击力, +2 攻击力 vs 村民"
 
-721012 "建造<b>坞堡<b> (<cost>, 75 <MATERIAL=MPIconGoodCPU,1>) \n三国独特防御建筑，每分钟产生 30 木材和 24 食物，提供 5 人口。周围己方村民每分钟回复 30 生命值。只能拥有 3 座。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT069TownWatch,1> <MATERIAL=TechIconsT089TownPatrol,1> <MATERIAL=TechIconsT013Masonry,1> <MATERIAL=TechIconsT014Architecture,1> <MATERIAL=TechIconsT104HeatedShot,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT061MurderHoles,1> <MATERIAL=TechIconsT119Arrowslits,1>\n<hp> <attack> <armor> <piercearmor> <range> <garrison>\n<MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon> 8\n主类: 建筑; 标签: 建筑, 标准建筑。\n攻击加成: +2 vs 枪兵。\n\n<MATERIAL=TechIconsT030FeudalAge,1> +250 生命值\n<MATERIAL=TechIconsT031CastleAge,1> +300 生命值\n<MATERIAL=TechIconsT032ImperialAge,1> +300 生命值"
+721012 "建造<b>坞堡<b> (<cost>, 75 <MATERIAL=MPIconGoodCPU,1>)\n三国独特防御建筑，每分钟产生 30 木材和 24 食物，提供 5 人口。周围己方村民每分钟回复 30 生命值。只能拥有 3 座。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT069TownWatch,1> <MATERIAL=TechIconsT089TownPatrol,1> <MATERIAL=TechIconsT013Masonry,1> <MATERIAL=TechIconsT014Architecture,1> <MATERIAL=TechIconsT104HeatedShot,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT061MurderHoles,1> <MATERIAL=TechIconsT119Arrowslits,1>\n<hp> <attack> <armor> <piercearmor> <range> <garrison>\n<MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 100% <MATERIAL=EyeIcon> 8\n主类: 建筑; 标签: 建筑, 标准建筑。\n攻击加成: +2 vs 枪兵。\n\n<MATERIAL=TechIconsT030FeudalAge,1> +250 生命值\n<MATERIAL=TechIconsT031CastleAge,1> +300 生命值\n<MATERIAL=TechIconsT032ImperialAge,1> +300 生命值"
 
 721013 "生产<b>早期骑射手<b> (<cost>, 37 <MATERIAL=MPIconGoodCPU,1>)\n匈奴独特骑射手单位。适于远程攻击移动缓慢的单位。不适于近程攻击精锐掷矛手等单位。城堡时代自动升级为骑射手。\n升级: <MATERIAL=TechIconsT034Fletching,1> <MATERIAL=TechIconsT035BodkinArrow,1> <MATERIAL=TechIconsT037Bracer,1> <MATERIAL=TechIconsT049PaddedArcherArmor,1> <MATERIAL=TechIconsT050LeatherArcherArmor,1> <MATERIAL=TechIconsT051RingArcherArmor,1> <MATERIAL=TechIconsT112ThumbRing,1> <MATERIAL=TechIconsT111ParthianTactics,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT025Ballistics,1> <MATERIAL=TechIconsT012Chemistry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.3 <MATERIAL=StatIconsReloadTime,1> 2 <MATERIAL=TechIconsT112ThumbRing,1> 50% <MATERIAL=EyeIcon,1> 5\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手。\n攻击加成: +2 vs 枪兵。"
 
@@ -1256,7 +1265,9 @@
 
 721104 "生产 2 名意大利佣兵 (<cost>, 10 <MATERIAL=MPIconGoodCPU>)"
 
-721105 "生产<b>毛驴<b> (<cost>, 33 <MATERIAL=MPIconGoodCPU>)\n贸易单位, 产生等量的食物和黄金。\n升级: <MATERIAL=TechIconsT113Caravan,1><MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=EyeIcon,1> 6\n主类: 贸易车; 标签: 贸易单位, 独特单位。"
+721105 "生产<b>毛驴<b> (<cost>, 33 <MATERIAL=MPIconGoodCPU>)\n贸易单位, 产生等量的食物和黄金。\n升级: <MATERIAL=TechIconsT113Caravan><MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.1 <MATERIAL=EyeIcon,1> 6\n主类: 贸易车; 标签: 贸易单位, 独特单位。"
+
+721107 "生产<b>早期瓦兰吉卫队<b> (<cost>, 34 <MATERIAL=MPIconGoodCPU>)\n拜占庭独特步兵单位，击杀经济单位获得 10 黄金，击杀军事单位获得 15 黄金，击杀攻城武器获得 25 黄金。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +2 vs 冲击步兵, +2 vs 建筑。"
 
 
 
