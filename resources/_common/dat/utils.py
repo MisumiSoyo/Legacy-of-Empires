@@ -1,89 +1,5 @@
 from toolbox import *
 
-def getIdByName(data, name: Union[int, List[int], Set[int]], key: str = "name", reverse: bool = False) -> Set[int]:
-    result = set()
-    name = to_set(name)
-
-    # 检查 key 是否支持
-    if key not in key_getters:
-        raise ValueError(f"不支持的 key: {key} 在 name: {name}")
-
-    getter = key_getters[key]
-    for unit in data.civs[0].units:
-        if unit is None:
-            continue
-        value = to_set(getter(unit))
-        # 当reverse=False时：需要value & name不为空
-        # 当reverse=True时：需要value & name为空
-        if (not value & name) == reverse:
-            result.add(unit.id)
-    return result
-
-
-def applyUnitChanges(data, changes, copy_tuple_set):
-    for change in changes:
-        if "ids" in change:
-            unit_ids = change["ids"]
-        elif "id_by_key" in change:
-            unit_ids = getIdByName(data, change["id_by_key"], change.get("key_type", "name"), change.get("reverse", False))
-            if "id_by_key_2" in change:
-                unit_ids &= getIdByName(data, change["id_by_key_2"], change.get("key_type_2", "name"), change.get("reverse_2", False))
-        else:
-            print(f"[警告] 在 '{change}' 中没有指定 id，此改动被跳过")
-            continue
-
-        # 检查是否有未知字段
-        for key in change:
-            if key not in valid_fields:
-                print(f"[警告] 在 '{unit_ids}' 中发现未知字段 '{key}'，可能是拼写错误或未启用该字段")
-
-        unit_ids = to_set(unit_ids)
-        civ_ids = to_set(change.get("civ", range(len(data.civs))))
-        for civ_id in civ_ids:
-            for unit_id in unit_ids:
-                unit = data.civs[civ_id].units[unit_id]
-                if unit is None:
-                    continue
-                _miscChanges(data, civ_id, unit, change, copy_tuple_set)
-                _directChanges(unit, change)
-                _combatChanges(unit, change)
-                _costChanges(unit, change)
-
-
-def applyTechChanges(data, changes):
-    # Disable Techs
-    for tech_id in changes["disable_techs"]:
-        data.techs[tech_id].effect_id = -1
-
-    # Modify Tech Time
-    for tech_id, new_time in changes["tech_time_modifier"].items():
-        data.techs[tech_id].research_time = new_time
-
-    # Modify Tech Cost
-    for tech_id, cost in changes["tech_cost_modifier"].items():
-        _costModifier(data.techs[tech_id].resource_costs, parse_costs_regex(cost))
-
-    # Tech Tree Enable
-    for civ_id, techs in changes["tech_tree_enable"].items():
-        tree = data.effects[data.civs[civ_id].tech_tree_id].effect_commands
-        tree[:] = [t for t in tree if not (t.type == 102 and t.d in to_set(techs))]
-
-    # Tech Tree Disable
-    for civ_id, techs in changes["tech_tree_disable"].items():
-        tree = data.effects[data.civs[civ_id].tech_tree_id].effect_commands
-        for tech in to_set(techs):
-            tree.append(EffectCommand(102, -1, -1, -1, tech))
-
-    # Sync Unit Buff
-    sync_units = changes["sync_unit_buff"]
-    for effect in data.effects:
-        commands = []
-        for cmd in effect.effect_commands:
-            commands.append(cmd)
-            for unit_pair in sync_units:
-                if cmd.type in sync_effect_type and cmd.a == unit_pair[0]:
-                    commands.append(EffectCommand(cmd.type, unit_pair[1], cmd.b, cmd.c, cmd.d))
-        effect.effect_commands = commands
 
 
 def copyFromOldVersion(source_list, target_list, ids, blank_item, all_copy_start=9999):
@@ -95,206 +11,289 @@ def copyFromOldVersion(source_list, target_list, ids, blank_item, all_copy_start
         target_list[item_id] = copy(source_list[item_id])
 
 
-def _directChanges(unit, change):
-    for key, attr_paths in field_mapping.items():
-        if key in change:
-            value = change[key]
-            attr_paths = to_set(attr_paths)
-            for attr_path in attr_paths:
-                obj = unit
-                parent_obj = None
-                last_attr = None
 
-                if not isinstance(attr_path, tuple):
-                    attr_path = (attr_path,)
+import math
 
-                for attr in attr_path[:-1]:
-                    if isinstance(attr, int):
-                        parent_obj = obj
-                        last_attr = attr
-                        obj = obj[attr]
-                    else:
-                        parent_obj = obj
-                        last_attr = attr
-                        obj = getattr(obj, attr, None)
-                        if obj is None:
-                            break
-
-                final_attr = attr_path[-1]
-
-                if obj is not None:
-                    if isinstance(final_attr, int):
-                        if isinstance(obj, list) and 0 <= final_attr < len(obj):
-                            obj[final_attr] = apply_modifier(obj[final_attr], value)
-                        elif isinstance(obj, tuple) and 0 <= final_attr < len(obj):
-                            # 将 tuple 转为 list 修改后再转回 tuple
-                            temp = list(obj)
-                            temp[final_attr] = apply_modifier(temp[final_attr], value)
-                            # 找到上层对象并替换该 tuple 属性
-                            if parent_obj is not None and last_attr is not None:
-                                setattr(parent_obj, last_attr, tuple(temp))
-                            else:
-                                print(f"[警告] 无法更新 tuple 属性 '{final_attr}'，缺少父对象信息")
-                        else:
-                            print(f"[警告] 索引越界或非列表/元组对象，无法修改：{final_attr}")
-                    else:
-                        try:
-                            setattr(obj, final_attr, apply_modifier(getattr(obj, final_attr), value))
-                        except Exception as e:
-                            print(f"[警告] 设置属性失败：{e}")
+ANY = "any"
+FLOAT_REL_TOL = 1e-5
+FLOAT_ABS_TOL = 1e-6
 
 
-def _combatChanges(unit, change):
-    if "atk" in change:
-        _setAttacksOrArmours(unit, "attacks", 4, change["atk"], create=False)
-        _setAttacksOrArmours(unit, "attacks", 3, change["atk"], create=False)
-
-    if "attacks" in change:
-        for attack_type in change["attacks"]:
-            value = change["attacks"][attack_type]
-            if isinstance(value, int):
-                _setAttacksOrArmours(unit, "attacks", int(attack_type), value)
-            else:
-                unit.type_50.attacks = [x for x in unit.type_50.attacks if x.class_ != int(attack_type)]
-
-    if "ma" in change:
-        _setAttacksOrArmours(unit, "armours", 4, change["ma"])
-
-    if "pa" in change:
-        _setAttacksOrArmours(unit, "armours", 3, change["pa"])
-
-    if "armors" in change:
-        for armor_type in change["armors"]:
-            value = change["armors"][armor_type]
-            if isinstance(value, int):
-                _setAttacksOrArmours(unit, "armours", int(armor_type), value)
-            else:
-                unit.type_50.armours = [x for x in unit.type_50.armours if x.class_ != int(armor_type)]
+def match_command(cmd, match_list):
+    for match in match_list:
+        m_type, m_a, m_b, m_c, m_d = match
+        if not (m_type == ANY or cmd.type == m_type):
+            continue
+        if not (m_a == ANY or cmd.a == m_a):
+            continue
+        if not (m_b == ANY or cmd.b == m_b):
+            continue
+        if not (m_c == ANY or cmd.c == m_c):
+            continue
+        if m_d == ANY:
+            return True
+        if math.isclose(cmd.d, m_d, rel_tol=FLOAT_REL_TOL, abs_tol=FLOAT_ABS_TOL):
+            return True
+    return False
 
 
-def _costChanges(unit, change):
-    if not hasattr(unit.creatable, 'resource_costs'):
-        return
-
-    if "remove_cost_type" in change:
-        for cost in unit.creatable.resource_costs:
-            if cost.type == change["remove_cost_type"]:
-                cost.type = -1
-                cost.amount = 0
-                cost.flag = 0
-                break
-
-    if "add_cost_type" in change:
-        for cost in unit.creatable.resource_costs:
-            if cost.type == change["add_cost_type"]:
-                break
-            if cost.type == -1:
-                cost.type = change["add_cost_type"]
-                cost.flag = 1
-                break
-
-    if "costs" in change:
-        cost_dict = parse_costs_regex(change["costs"])
-        change.update(cost_dict)
-
-    _costModifier(unit.creatable.resource_costs, change)
+def apply_modification(cmd, field, op, value):
+    current = getattr(cmd, field)
+    if op == "set":
+        new_value = value
+    elif op == "add":
+        new_value = current + value
+    elif op == "mul":
+        new_value = current * value
+    else:
+        raise ValueError(f"不支持的修改操作: {op}")
+    setattr(cmd, field, type(current)(new_value))
 
 
-def _miscChanges(data, civ_id, unit, change, copy_tuple_set):
-    if "copy_from_civ" in change:
-        data.civs[civ_id].units[unit.id] = copy(data.civs[change["copy_from_civ"]].units[unit.id])
-
-    if "copy_from_unit" in change:
-        old_unit = change["copy_from_unit"]
-        new_unit = unit.id
-        data.civs[civ_id].units[unit.id] = copy(data.civs[0].units[old_unit])
-        unit.id = new_unit
-        copy_tuple_set.add((old_unit, new_unit))
-
-    if "storages" in change:
-        s = change["storages"]
-        if len(s) != 9:
-            raise ValueError("storages 必须是长度为 9 的列表")
-        unit.resource_storages = [
-            ResourceStorage(s[i], s[i+1], s[i+2])
-            for i in [0, 3, 6]
-        ]
-
-    if "create_task" in change:
-        tasks = to_list(change["create_task"])
-        for task in tasks:
-            if "class_id" in task:
-                class_ids = to_list(task["class_id"])
-                for cid in class_ids:
-                    task_kwargs = task.copy()
-                    task_kwargs["class_id"] = cid
-                    _appendTask(task_kwargs, unit)
-            elif "unit_id" in task:
-                unit_ids = to_list(task["unit_id"])
-                for uid in unit_ids:
-                    task_kwargs = task.copy()
-                    task_kwargs["unit_id"] = uid
-                    _appendTask(task_kwargs, unit)
-            else:
-                _appendTask(task, unit)
-
-    if "task_modify" in change:
-        modifies = change["task_modify"]
-        modifies = to_list(modifies)
-        for modify in modifies:
-            for task in unit.bird.tasks:
-                if _taskMatches(task, modify):
-                    for field in task_fields:
-                        if field in modify:
-                            setattr(task, field, modify[field])
-
-    if "atk_anim_duration" in change:
-        dur = change["atk_anim_duration"]
-        graphic_id = unit.type_50.attack_graphic
-        graphic = data.graphics[graphic_id]
-        graphic.frame_duration =  dur / graphic.frame_count
+def parseAttrPath(attr_path):
+    import re
+    return re.findall(r'[^\.\[\]]+|\[\d+\]', attr_path)
 
 
-def _setAttacksOrArmours(unit, stat_name, class_id, num, create=True):
-    stats = getattr(unit.type_50, stat_name, [])
-    for stat in stats:
-        if getattr(stat, 'class_', -1) == class_id:
-            create = False
-            stat.amount = apply_modifier(stat.amount, num)
-    if create:
-        stats.append(AttackOrArmor(class_id, apply_modifier(0, num)))
+def setNestedAttribute(obj, attr_path, value):
+    tokens = parseAttrPath(attr_path)
+    current = obj
+    for token in tokens[:-1]:
+        if token.startswith('[') and token.endswith(']'):
+            idx = int(token[1:-1])
+            current = current[idx]
+        else:
+            current = getattr(current, token)
+    last_token = tokens[-1]
+    if last_token.startswith('[') and last_token.endswith(']'):
+        idx = int(last_token[1:-1])
+        current[idx] = value
+    else:
+        setattr(current, last_token, value)
+
+
+def getNestedAttribute(obj, attr_path):
+    tokens = parseAttrPath(attr_path)
+    current = obj
+    for token in tokens:
+        if token.startswith('[') and token.endswith(']'):
+            idx = int(token[1:-1])
+            current = current[idx]
+        else:
+            current = getattr(current, token)
+    return current
+
+
+def normalizeIdList(ids):
+    if ids is None:
+        return None  # None 表示搜索所有
+    if isinstance(ids, (int, float)):
+        return [int(ids)]
+    return [int(x) for x in ids]
+
+
+# ==================== 搜索系统核心封装 ====================
+
+def _compare_values(current, op, target):
+    """
+    底层值比较逻辑
+    """
+    if op in ("eq", "=", "=="):
+        if isinstance(current, float) and isinstance(target, (int, float)):
+            return math.isclose(current, target, rel_tol=FLOAT_REL_TOL, abs_tol=FLOAT_ABS_TOL)
+        return current == target
+    elif op in ("ne", "!=", "<>"):
+        if isinstance(current, float) and isinstance(target, (int, float)):
+            return not math.isclose(current, target, rel_tol=FLOAT_REL_TOL, abs_tol=FLOAT_ABS_TOL)
+        return current != target
+    elif op in ("gt", ">"):
+        return current > target
+    elif op in ("gte", ">=", "=>"):
+        return current >= target
+    elif op in ("lt", "<"):
+        return current < target
+    elif op in ("lte", "<=", "=<"):
+        return current <= target
+    elif op == "contains":
+        return target in current
+    elif op == "startswith":
+        return str(current).startswith(str(target))
+    elif op == "endswith":
+        return str(current).endswith(str(target))
+    elif op == "in":
+        return current in target
+    elif op == "range":
+        min_val, max_val = target
+        return min_val <= current <= max_val
+    elif op == "regex":
+        import re
+        return re.search(target, str(current)) is not None
+    else:
+        raise ValueError(f"不支持的比较操作: {op}")
+
+
+def _evaluate_single_condition(obj, condition):
+    """
+    评估单个条件字典 {field, op, value}
+    """
+    field = condition.get("field")
+    if field is None:
+        raise ValueError("搜索条件必须指定 field")
     
-    # 如果有 display 显示值映射，也同步修改
-    key = (stat_name, class_id)
-    if key in display_map:
-        attrs = display_map[key]
-        obj = getattr(unit, attrs[0], None)
-        current_value = getattr(obj, attrs[1], 0)
-        setattr(obj, attrs[1], apply_modifier(current_value, num))
+    op = condition.get("op", "eq")
+    target_value = condition["value"]
+    
+    try:
+        current_value = getNestedAttribute(obj, field)
+    except (AttributeError, IndexError, KeyError):
+        return False
+    
+    return _compare_values(current_value, op, target_value)
 
 
-def _costModifier(resource_costs, change):
-    for cost in resource_costs:
-        if cost.type in resource_mapping:
-            field_name = resource_mapping[cost.type]
-            if field_name in change:
-                cost.amount = apply_modifier(cost.amount, change[field_name])
-
-
-def _appendTask(task_kwargs, unit):
-    merged_kwargs = default_task.copy()
-    merged_kwargs.update(task_kwargs)
-    task = Task(**merged_kwargs)
-    tasks = unit.bird.tasks
-    task.id = len(tasks)
-    tasks.append(task)
-
-
-def _taskMatches(task, modify):
-    if "filter" not in modify:
+def evaluate_search(obj, search_config):
+    """
+    直接评估对象是否符合搜索配置
+    """
+    if search_config is None:
         return True
-    filters = modify["filter"]
-    for key in task_fields:
-        if key in filters and getattr(task, key, None) != filters[key]:
-            return False
-    return True
+    
+    if isinstance(search_config, list):
+        return all(evaluate_search(obj, cond) for cond in search_config)
+    
+    if "and" in search_config:
+        return all(evaluate_search(obj, cond) for cond in search_config["and"])
+    if "or" in search_config:
+        return any(evaluate_search(obj, cond) for cond in search_config["or"])
+    
+    return _evaluate_single_condition(obj, search_config)
+
+
+def create_search_function(search_config):
+    """
+    将搜索配置编译为可复用的搜索函数，返回 callable(obj) -> bool
+    """
+    if search_config is None:
+        return None
+    
+    if isinstance(search_config, list):
+        if len(search_config) == 0:
+            return lambda obj: True
+        
+        first_elem = search_config[0]
+        is_single_condition = isinstance(first_elem, (str, int, float))
+        
+        if is_single_condition:
+            if len(search_config) == 2:
+                field, target_value = search_config
+                op = "eq"
+            elif len(search_config) == 3:
+                field, op, target_value = search_config
+            else:
+                raise ValueError(f"单条件列表必须是 [field, value] 或 [field, op, value] 格式: {search_config}")
+            
+            def list_single_search(obj):
+                try:
+                    current_value = getNestedAttribute(obj, field)
+                except (AttributeError, IndexError, KeyError):
+                    return False
+                return _compare_values(current_value, op, target_value)
+            return list_single_search
+        else:
+            sub_funcs = [create_search_function(cond) for cond in search_config]
+            def list_and_search(obj):
+                return all(f(obj) for f in sub_funcs)
+            return list_and_search
+    
+    if isinstance(search_config, dict):
+        if "and" in search_config:
+            sub_funcs = [create_search_function(cond) for cond in search_config["and"]]
+            def and_search(obj):
+                return all(f(obj) for f in sub_funcs)
+            return and_search
+        
+        if "or" in search_config:
+            sub_funcs = [create_search_function(cond) for cond in search_config["or"]]
+            def or_search(obj):
+                return any(f(obj) for f in sub_funcs)
+            return or_search
+        
+        field = search_config.get("field")
+        if field is None:
+            raise ValueError("搜索条件必须指定 field")
+        op = search_config.get("op", "eq")
+        target_value = search_config["value"]
+        
+        def dict_single_search(obj):
+            try:
+                current_value = getNestedAttribute(obj, field)
+            except (AttributeError, IndexError, KeyError):
+                return False
+            return _compare_values(current_value, op, target_value)
+        return dict_single_search
+    
+    raise ValueError(f"不支持的搜索配置格式: {search_config}")
+
+
+# ==================== 新增：列表元素搜索与修改 ====================
+
+def find_in_list(obj_list, element_search_config):
+    """
+    在对象列表/元组中按条件查找匹配的元素，返回 (index, element) 列表
+    
+    element_search_config 格式与 create_search_function 相同
+    """
+    if obj_list is None:
+        return []
+    
+    # 支持 list 和 tuple
+    if not isinstance(obj_list, (list, tuple)):
+        raise ValueError(f"属性不是列表或元组，实际类型: {type(obj_list).__name__}")
+    
+    search_func = create_search_function(element_search_config)
+    results = []
+    
+    for idx, elem in enumerate(obj_list):
+        if elem is None:
+            continue
+        if search_func is None or search_func(elem):
+            results.append((idx, elem))
+    
+    return results
+
+
+def applyListElementChange(obj, list_attr_path, element_search_config, attr_change):
+    """
+    在列表/元组属性中查找匹配元素并修改
+    """
+    # 获取列表
+    try:
+        obj_list = getNestedAttribute(obj, list_attr_path)
+    except (AttributeError, IndexError, KeyError):
+        return  # 列表不存在，静默跳过
+    
+    if not isinstance(obj_list, (list, tuple)):
+        raise ValueError(f"属性 {list_attr_path} 不是列表或元组，实际类型: {type(obj_list).__name__}")
+    
+    # 查找匹配的元素
+    matches = find_in_list(obj_list, element_search_config)
+    
+    for idx, elem in matches:
+        # 对匹配的元素应用修改
+        if len(attr_change) == 2:
+            attr_path, new_value = attr_change
+            setNestedAttribute(elem, attr_path, new_value)
+        elif len(attr_change) == 3:
+            attr_path, op, value = attr_change
+            current = getNestedAttribute(elem, attr_path)
+            if op in ("set", None):
+                final_value = value
+            elif op == "add":
+                final_value = current + value
+            elif op == "mul":
+                final_value = current * value
+            else:
+                raise ValueError(f"不支持的修改操作: {op}")
+            setNestedAttribute(elem, attr_path, type(current)(final_value))
+        else:
+            raise ValueError(f"不支持的属性修改格式: {attr_change}")

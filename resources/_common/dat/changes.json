@@ -12,16 +12,8 @@
                 "id": [273]
             },
             {
-                "name": "飞轮刃投掷手",
-                "id": [1743]
-            },
-            {
                 "name": "城镇中心",
                 "id": [71, 109, 141, 142]
-            },
-            {
-                "name": "攻城塔改动",
-                "id": [1105]
             }
         ],
         "tech_list":
@@ -35,20 +27,12 @@
                 "id": [1008, 1012, 1013, 1014]
             },
             {
-                "name": "精锐飞轮刃投掷手",
-                "id": [830]
-            },
-            {
                 "name": "精锐雅尔",
                 "id": [398]
             },
             {
                 "name": "工兵",
                 "id": [321]
-            },
-            {
-                "name": "勃艮第移除火药单位加成",
-                "id": [769]
             },
             {
                 "name": "雕版印刷术",
@@ -632,6 +616,20 @@
             "note": "大型箭塔驻扎容量增加",
             "unit_id": 235,
             "attributes": [["garrison_capacity", 10]]
+        },
+        {
+            "note": "精锐飞轮刃投掷手攻击力降低",
+            "unit_id": 1743,
+            "attributes": [["type_50.attacks", "list_search", ["class_", 4], ["amount", "set", 3]],
+                           ["displayed_attack", 3]]
+        },
+        {
+            "note": "攻城塔改动",
+            "unit_id": 1105,
+            "attributes": [["hit_points", 400],
+                           ["garrison_capacity", 20],
+                           ["creatable.resource_costs", "list_search", ["type", 1], ["amount", 240]],
+                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 100]]]
         }
     ],
     "tech_changes":
@@ -641,6 +639,12 @@
             "tech_id": 194,
             "attributes": [["resource_costs[0].amount", 300],
                            ["resource_costs[1].amount", 200]]
+        },
+        {
+            "note": "勃艮第移除火药单位加成",
+            "tech_id": 769,
+            "attributes": [["required_techs", [-1, -1, -1, -1, -1, -1]],
+                           ["required_tech_count", 1]]
         }
     ],
     "resource_changes":

@@ -24,6 +24,8 @@ void EffectFunction10076(int playerId = -1)
     ModResource(playerId, cAttributeGold, 50 * MonkCount);
     xsEffectAmount(cModifyTech, TitheTechID, cAttrSetGoldCost, 0, playerId);
     xsEffectAmount(cModifyTech, TitheTechID, cAttrAddFoodCost, 125, playerId);
+    xsEffectAmount(cModifyTech, BlockPrintingTechID, cAttrSetGoldCost, 0, playerId);
+    xsEffectAmount(cModifyTech, BlockPrintingTechID, cAttrAddFoodCost, 250, playerId);
 }
 
 
