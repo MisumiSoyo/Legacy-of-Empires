@@ -543,6 +543,8 @@ void EffectFunction10001(int playerId = -1)
         case cMuisca:
         {
             EnableTech(playerId, ArsonTechID);
+            DisableTech(playerId, WheelBarrowTechID);
+            DisableTech(playerId, HandCartTechID);
             break;
         }
         case cMapuche:

@@ -47,19 +47,17 @@ void EffectFunction10082(int playerId = -1)
 //  10083 - Logistica Adjustment
 void EffectFunction10083(int playerId = -1)
 {
-    ModAttribute(playerId, VarangianID, cBlastWidth, 0.5);
-    ModAttribute(playerId, EliteVarangianID, cBlastWidth, 0.5);
-    ModAttribute(playerId, KnightID, cBlastWidth, 0.5);
-    ModAttribute(playerId, CavalierID, cBlastWidth, 0.5);
-    ModAttribute(playerId, PaladinID, cBlastWidth, 0.5);
-    ModAttribute(playerId, SavarID, cBlastWidth, 0.5);
-
-    SetAttribute(playerId, VarangianID, cAreaDamage, -5);
-    SetAttribute(playerId, EliteVarangianID, cAreaDamage, -5);
-    SetAttribute(playerId, KnightID, cAreaDamage, -5);
-    SetAttribute(playerId, CavalierID, cAreaDamage, -5);
-    SetAttribute(playerId, PaladinID, cAreaDamage, -5);
-    SetAttribute(playerId, SavarID, cAreaDamage, -5);
+    AddAttackForm(playerId, VarangianID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, EliteVarangianID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, CataphractID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, EliteCataphractID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, KnightID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, CavalierID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, PaladinID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, SavarID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, GuanNingCavalryID, cDamageClassInfantry, 6);
+    ModAttribute(playerId, CataphractID, cAreaDamage, -2);
+    ModAttribute(playerId, EliteCataphractID, cAreaDamage, -2);
 }
 
 

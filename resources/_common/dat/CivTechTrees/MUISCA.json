@@ -4782,7 +4782,7 @@
             "Name": "Wheelbarrow",
             "Name String ID": 17211,
             "Node ID": 213,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 79,
             "Prerequisite IDs": [
@@ -4812,7 +4812,7 @@
             "Name": "Hand Cart",
             "Name String ID": 17246,
             "Node ID": 249,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 42,
             "Prerequisite IDs": [

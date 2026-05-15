@@ -78,6 +78,12 @@
                          [26, 265, 0, 0, 0.5]]
         },
         {
+            "type": "delete",
+            "name": "后勤学",
+            "effect_id": 493,
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
             "type": "adjustment",
             "name": "后勤学",
             "effect_id": 493,
@@ -630,6 +636,25 @@
                            ["garrison_capacity", 20],
                            ["creatable.resource_costs", "list_search", ["type", 1], ["amount", 240]],
                            ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 100]]]
+        },
+        {
+            "note": "甲胄骑兵改动, 自带溅射",
+            "unit_id": 40,
+            "attributes": [["type_50.armours", "list_search", ["class_", 3], ["amount", "set", 2]],
+                           ["creatable.displayed_pierce_armour", 2],
+                           ["type_50.blast_width", 0.5],
+                           ["type_50.blast_damage", -3],
+                           ["creatable.resource_costs", "list_search", ["type", 0], ["amount", 60]],
+                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 85]]]
+        },
+        {
+            "note": "精锐甲胄骑兵改动, 自带溅射",
+            "unit_id": 553,
+            "attributes": [["type_50.armours", "list_search", ["class_", 3], ["amount", "set", 2]],
+                           ["creatable.displayed_pierce_armour", 2],
+                           ["type_50.blast_width", 0.5],
+                           ["creatable.resource_costs", "list_search", ["type", 0], ["amount", 60]],
+                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 85]]]
         }
     ],
     "tech_changes":

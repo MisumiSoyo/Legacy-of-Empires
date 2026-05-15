@@ -1153,9 +1153,10 @@ void EffectFunction10094(int playerId = -1)
     LaunchAura(playerId, cInfantryClass, true);
     LaunchAura(playerId, cArcherClass, true);
 
-    ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 5);
-    ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 5);
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 8);
+    ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 8);
     ModAttribute(playerId, cMonkWithRelicClass, cRegenerationRate, 60);
+    MulAttribute(playerId, cMonkWithRelicClass, cMovementSpeed, 1.2);
 }
 
 
@@ -1372,7 +1373,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 295 2026.05.14");
+    xsChatData("Patch: 296 2026.05.15");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

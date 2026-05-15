@@ -110,7 +110,7 @@ void BengalisRelicBonus(int playerId = -1, int Time = -1)
 
 void MuiscaFreeWood(int playerId = -1, int Time = -1)
 {
-    if ((Time > 0) && (Time % 600 == 0) && (Time <= 3600))
+    if ((Time > 0) && (Time % 420 == 0) && (Time <= 3360))
         ModResource(playerId, cAttributeWoodGeneration, 30);
 }
 

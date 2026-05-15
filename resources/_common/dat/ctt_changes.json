@@ -5118,6 +5118,14 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "穆伊斯卡失去独轮推车, 手推车",
+            "action": "modify",
+            "civ_id": "MUISCA",
+            "Node ID": [213, 249],
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable"
+        },
+        {
             "note": "瑞士枪兵",
             "action": "add",
             "civ_id": "FRANKS",

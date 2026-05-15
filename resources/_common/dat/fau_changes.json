@@ -1840,7 +1840,7 @@
         {
             "note": "印加, 穆伊斯卡, 马普切, 图皮经济作物位置调整",
             "civilizations": ["Incas", "Muisca", "Mapuche", "Tupi"],
-            "tech_id": 3003,
+            "tech_id": 3002,
             "building_id": 2556,
             "Name": "Cash Crop",
             "RequiredAge": 3
@@ -1928,14 +1928,14 @@
             "RequiredAge": 4
         },
         {
-            "note": "阿兹特克, 玛雅, 图皮禁用独轮推车",
-            "civilizations": ["Aztecs", "Mayans", "Tupi"],
+            "note": "阿兹特克, 玛雅, 图皮, 穆伊斯卡禁用独轮推车",
+            "civilizations": ["Aztecs", "Mayans", "Tupi", "Muisca"],
             "tech_id": 213,
             "type": "delete"
         },
         {
-            "note": "阿兹特克, 玛雅, 图皮禁用手推车",
-            "civilizations": ["Aztecs", "Mayans", "Tupi"],
+            "note": "阿兹特克, 玛雅, 图皮, 穆伊斯卡禁用手推车",
+            "civilizations": ["Aztecs", "Mayans", "Tupi", "Muisca"],
             "tech_id": 249,
             "type": "delete"
         },
