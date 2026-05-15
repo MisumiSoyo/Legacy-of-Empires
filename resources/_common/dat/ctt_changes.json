@@ -2250,10 +2250,10 @@
             "Node Status": "NotAvailable"
         },
         {
-            "note": "拜占庭获得石匠, 建筑学, 鼓风炉, 草药",
+            "note": "拜占庭获得石匠, 建筑学, 鼓风炉, 草药, 预热射击, 工兵",
             "action": "modify",
             "civ_id": "BYZANTINES",
-            "Node ID": [50, 51, 75, 441],
+            "Node ID": [50, 51, 75, 321, 380, 441],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -3496,7 +3496,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Polutasvarf",
             "Name String ID": 500091,
-            "Node ID": 3140,
+            "Node ID": 3114,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
@@ -3513,7 +3513,7 @@
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
             "Help String ID": 600125,
-            "Link ID": 3140,
+            "Link ID": 3114,
             "Link Node Type": "BuildingTech",
             "Name": "Golden Horn Tower",
             "Name String ID": 500125,

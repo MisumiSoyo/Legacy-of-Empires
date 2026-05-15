@@ -7341,6 +7341,11 @@
                         "Name": "Architecture",
                         "RequiredAge": 4,
                         "ID": 51
+                    },
+                    {
+                        "Name": "Heated Shot",
+                        "RequiredAge": 3,
+                        "ID": 380
                     }
                 ]
             },
@@ -7427,6 +7432,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [

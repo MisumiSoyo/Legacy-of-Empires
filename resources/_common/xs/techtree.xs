@@ -134,6 +134,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ArchitectureTechID);
             EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, HerbalMedicineTechID);
+            EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, HeatedShotTechID);
             break;
         }
         case cPersians:

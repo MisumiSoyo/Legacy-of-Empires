@@ -1212,9 +1212,9 @@
             "type": "delete"
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏获得工兵",
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏, 拜占庭获得工兵",
             "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians",
-                              "Shu", "Wei"],
+                              "Shu", "Wei", "Byzantines"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1485,8 +1485,8 @@
             "type": "delete"
         },
         {
-            "note": "波希米亚, 法兰克, 萨拉森获得预热射击",
-            "civilizations": ["Bohemians", "Franks", "Saracens"],
+            "note": "波希米亚, 法兰克, 萨拉森, 拜占庭获得预热射击",
+            "civilizations": ["Bohemians", "Franks", "Saracens", "Byzantines"],
             "tech_id": 380,
             "building_id": 209,
             "Name": "Heated Shot",
