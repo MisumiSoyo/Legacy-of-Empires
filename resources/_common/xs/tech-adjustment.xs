@@ -275,3 +275,13 @@ void EffectFunction10098(int playerId = -1)
 
     UpgradeUnit(playerId, ProjectileRattanSwordmanID, ProjectileRattanSwordmanFireID);
 }
+
+
+//  10119 - Medical Corps Adjustment
+void EffectFunction10119(int playerId = -1)
+{
+    ModAttribute(playerId, RaiderElephantID, cRegenerationRate, 30);
+    ModAttribute(playerId, VeteranRaiderElephantID, cRegenerationRate, 30);
+    ModAttribute(playerId, EliteRaiderElephantID, cRegenerationRate, 30);
+    ModAttribute(playerId, EarlyElephantArcherID, cRegenerationRate, 30);
+}

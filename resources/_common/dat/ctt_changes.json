@@ -822,7 +822,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Conscripted Army",
             "Name String ID": 700023,
-            "Node ID": 4153,
+            "Node ID": 4152,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 186,

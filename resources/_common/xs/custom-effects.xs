@@ -479,16 +479,13 @@ void EffectFunction10028(int playerId = -1)
     xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCarryCheck, 104);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 9);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000005);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrWorkFlag2, 4);
     xsTaskAmount(cTaskAttrGatherType, 1);
-    xsTaskAmount(cTaskAttrTaskType, cTaskTypeLoot);
-    xsTaskAmount(cTaskAttrObjectId, -1);
-    xsTaskAmount(cTaskAttrObjectClass, 899);
-    xsModifyObjectTasks(EagleScoutID, playerId, 1000);
-    xsModifyObjectTasks(EagleWarriorID, playerId, 1000);
-    xsModifyObjectTasks(EliteEagleWarriorID, playerId, 1000);
+    ApplyToAllMilitaryTargets(playerId, EagleScoutID, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, EagleWarriorID, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, EliteEagleWarriorID, cTaskTypeLoot);
     xsResetTaskAmount();
 }
 
@@ -1059,7 +1056,7 @@ void EffectFunction10071(int playerId = -1)
 void EffectFunction10072(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, ConscriptedArmyID);
+    xsTaskAmount(cTaskAttrWorkValue1, ConscriptedArmy2ID);
     xsTaskAmount(cTaskAttrWorkValue2, 3);
     xsTask(ConscriptedArmyID, cTaskTypeExtraSpawn, -1, playerId);
     xsResetTaskAmount();
@@ -1136,7 +1133,7 @@ void EffectFunction10094(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 9.000002);
-    xsTaskAmount(cTaskAttrWorkRange, 5);
+    xsTaskAmount(cTaskAttrWorkRange, 8);
     xsTaskAmount(cTaskAttrWorkValue1, 100);
     xsTaskAmount(cTaskAttrWorkValue2, 100);
     xsTaskAmount(cTaskAttrOwnerType, 1);
@@ -1155,7 +1152,7 @@ void EffectFunction10094(int playerId = -1)
 
     ModArmor(playerId, cMonkWithRelicClass, cDamageClassPierce, 8);
     ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 8);
-    ModAttribute(playerId, cMonkWithRelicClass, cRegenerationRate, 60);
+    ModAttribute(playerId, cMonkWithRelicClass, cRegenerationRate, 90);
     MulAttribute(playerId, cMonkWithRelicClass, cMovementSpeed, 1.2);
 }
 
@@ -1373,7 +1370,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 299 2026.05.16");
+    xsChatData("Patch: 300 2026.05.17");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

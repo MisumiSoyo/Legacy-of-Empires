@@ -400,6 +400,15 @@ void MulAllyResource(int playerId = -1, int ResourceID = -1, float value = 0.0)
 }
 
 
+void MulAllyAttribute(int playerId = -1, int ObjectID = -1, int AttributeID = -1, float value = 0.0)
+{
+    int i = 0;
+    for (i = 0; <= xsGetNumPlayers())
+        if ((i == playerId) || (isAlly(playerId, i)))
+            xsEffectAmount(cMulAttribute, ObjectID, AttributeID, value, i);
+}
+
+
 void SpawnUnit(int playerId = -1, int SpawnUnitID = -1, int SpawnBuidingID = -1, int SpawnNum = -1, int SpawnBuildingCap = 1, bool isInside = false)
 {
     xsEffectAmount(cModResource, cAttributeSpawnCap, 0, SpawnBuildingCap, playerId);

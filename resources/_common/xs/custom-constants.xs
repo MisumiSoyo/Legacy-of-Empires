@@ -91,6 +91,7 @@ extern const int DoubleSpearmenBuildingID = 4039;
 extern const int DoubleCondottierosBuildingID = 4040;
 extern const int HeavySwordmanID = 4041;
 extern const int EarlyVarangianID = 4042;
+extern const int ByzantinesMercenary1ID = 4043;
 extern const int ParthianCavalryArcherID = 4074;
 extern const int VeteranParthianCavalryArcherID = 4075;
 extern const int EliteParthianCavalryArcherID = 4076;

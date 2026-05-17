@@ -534,17 +534,19 @@ void MercenaryUnitAdjustment(int playerId = -1, int ObjectID = -1, int tmp = -1)
     SetAttribute(playerId, ObjectID, cHotkeyId, KeyToHotkeyID(20 + tmp));
     SetAttribute(playerId, ObjectID, cHotkeyId, KeyToHotkeyID(20 + tmp));
     float NewCost = xsGetObjectAttribute(playerId, ObjectID, cFoodCost) * 1.2
-                    + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) * 1.2
+                    + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) * 1.15
                     + xsGetObjectAttribute(playerId, ObjectID, cWoodCost)
                     + xsGetObjectAttribute(playerId, ObjectID, cStoneCost) * 1.3;
-    SetAttribute(playerId, ObjectID, cGoldCost, NewCost * 5);
+    SetAttribute(playerId, ObjectID, cGoldCost, NewCost * 3);
     SetAttribute(playerId, ObjectID, cFoodCost, 0);
     SetAttribute(playerId, ObjectID, cWoodCost, 0);
     SetAttribute(playerId, ObjectID, cStoneCost, 0);
 
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, ObjectID);
-    xsTaskAmount(cTaskAttrWorkValue2, 4);
+    xsTaskAmount(cTaskAttrWorkValue2, 2);
+    if ((ObjectID == BlackwoodArcherID) || (ObjectID == EliteBlackwoodArcherID))
+        xsTaskAmount(cTaskAttrWorkValue2, 5);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000010);
     xsTask(ObjectID, cTaskTypeExtraSpawn, -1, playerId);
     xsResetTaskAmount();
@@ -623,7 +625,7 @@ void EffectFunction10112(int playerId = -1)
 {
     int KillCount = xsPlayerAttribute(playerId, cAttributeIxipltaKillCount) + 1;
     if (KillCount % 30 == 0)
-        SpawnUnit(playerId, JaguarWarriorID, TownCenterID, 5, 1);
+        SpawnUnit(playerId, JaguarWarriorID, TownCenterID, 7, 1);
     SetResource(playerId, cAttributeIxipltaKillCount, KillCount);
 }
 

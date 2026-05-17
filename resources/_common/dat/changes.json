@@ -571,6 +571,12 @@
             "name": "垛墙现在还会升级木栅栏为硬木栅栏",
             "effect_id": 187,
             "commands": [3, 72, 119, -1, 0]
+        },
+        {
+            "type": "adjustment",
+            "name": "医疗部队 对新增加的大象单位生效",
+            "effect_id": 850,
+            "function_id": 10119
         }
     ],
     "unit_changes":
