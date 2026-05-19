@@ -533,10 +533,10 @@ void MercenaryUnitAdjustment(int playerId = -1, int ObjectID = -1, int tmp = -1)
     SetAttribute(playerId, ObjectID, cTrainButton, 20 + tmp);
     SetAttribute(playerId, ObjectID, cHotkeyId, KeyToHotkeyID(20 + tmp));
     SetAttribute(playerId, ObjectID, cHotkeyId, KeyToHotkeyID(20 + tmp));
-    float NewCost = xsGetObjectAttribute(playerId, ObjectID, cFoodCost) * 1.2
-                    + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) * 1.15
+    float NewCost = xsGetObjectAttribute(playerId, ObjectID, cFoodCost) * 1.07
+                    + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) * 1.04
                     + xsGetObjectAttribute(playerId, ObjectID, cWoodCost)
-                    + xsGetObjectAttribute(playerId, ObjectID, cStoneCost) * 1.3;
+                    + xsGetObjectAttribute(playerId, ObjectID, cStoneCost) * 1.2;
     SetAttribute(playerId, ObjectID, cGoldCost, NewCost * 3);
     SetAttribute(playerId, ObjectID, cFoodCost, 0);
     SetAttribute(playerId, ObjectID, cWoodCost, 0);

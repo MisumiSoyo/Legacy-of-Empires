@@ -3783,10 +3783,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "波兰获得钻井采金法, 射手锁甲, 双人锯",
+            "note": "波兰获得钻井采金法, 射手锁甲, 双人锯, 软甲",
             "action": "modify",
             "civ_id": "POLES",
-            "Node ID": [182, 219, 221],
+            "Node ID": [182, 219, 221, 875],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -5796,7 +5796,7 @@
             "Use Type": "Unit"
         },
         {
-            "note": "潘采尔尼骑手",
+            "note": "哥萨克骑手",
             "action": "add",
             "civ_id": "POLES",
             "Age ID": 3,
@@ -5805,7 +5805,7 @@
             "Help String ID": 800100,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Pancerny Rider",
+            "Name": "Cossack Rider",
             "Name String ID": 700100,
             "Node ID": 4035,
             "Node Status": "ResearchRequired",
@@ -5819,7 +5819,7 @@
             "target_id": 474
         },
         {
-            "note": "精锐潘采尔尼骑手",
+            "note": "精锐哥萨克骑手",
             "action": "add",
             "civ_id": "POLES",
             "Age ID": 4,
@@ -5828,7 +5828,7 @@
             "Help String ID": 800101,
             "Link ID": 4035,
             "Link Node Type": "UniqueUnit",
-            "Name": "Elite Pancerny Rider",
+            "Name": "Elite Cossack Rider",
             "Name String ID": 700101,
             "Node ID": 4036,
             "Node Status": "ResearchRequired",
@@ -5846,6 +5846,27 @@
             "action": "delete",
             "civ_id": "POLES",
             "Node ID": [39, 474],
+            "Use Type": "Unit"
+        },
+        {
+            "note": "黑军步兵",
+            "action": "add",
+            "civ_id": "MAGYAR",
+            "Age ID": 4,
+            "Building ID": 12,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800106,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Black Army Infantry",
+            "Name String ID": 700106,
+            "Node ID": 4041,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 184,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
             "Use Type": "Unit"
         }
     ]

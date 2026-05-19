@@ -2,6 +2,7 @@
 (load "Promisory\finalingConstants")
 (load "Promisory\customConstants")
 (load "Promisory\LOECustomConstants")
+(include "custom-constants.xs")
 #load-if-not-defined BATTLE-ROYALE
 (load "Promisory\init")
 (load "Promisory\threats")

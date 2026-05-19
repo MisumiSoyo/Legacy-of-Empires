@@ -1,4 +1,4 @@
-//Math functions
+//  Math functions
 
 
 int minInt(int a = 0, int b = 0)

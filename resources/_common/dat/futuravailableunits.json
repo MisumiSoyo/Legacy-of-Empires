@@ -23252,6 +23252,11 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Black Army Infantry",
+                        "RequiredAge": 4,
+                        "ID": 4041
                     }
                 ]
             },
@@ -40885,6 +40890,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Gambesons",
+                        "RequiredAge": 3,
+                        "ID": 875
                     },
                     {
                         "Name": "Halberdier",

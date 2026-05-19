@@ -670,7 +670,8 @@ void EffectFunction10039(int playerId = -1)
     FasterCastleUnits(playerId, 93, 22, 16068);
     FasterCastleUnits(playerId, 358, 22, 16068);
     FasterCastleUnits(playerId, 359, 22, 16068);
-    FasterCastleUnits(playerId, 882, 23, 16085);
+    FasterCastleUnits(playerId, BlackArmyInfantryID, 23, EHotkeyID);
+    FasterCastleUnits(playerId, CondottieroID, 24, RHotkeyID);
     FasterCastleUnits(playerId, 1010, 24, 16086);
     FasterCastleUnits(playerId, 1012, 24, 16086);
     FasterCastleUnits(playerId, 4, 26, 18022);
@@ -795,7 +796,7 @@ void EffectFunction10045(int playerId = -1)
     xsTask(FarmID, cTaskTypeGenerateResources, -1, playerId);
     xsTask(RiceFarmID, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
-    xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 8, playerId);
+    xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 7, playerId);
 }
 
 
@@ -1370,7 +1371,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 300 2026.05.17");
+    xsChatData("Patch: 301 2026.05.19");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

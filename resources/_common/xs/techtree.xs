@@ -435,9 +435,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, HandCannoneerTechID);
-            //xsEffectAmount(cModifyTech, LightCavalryTechID, cAttrMulFoodCost, 2, playerId);
-            //xsEffectAmount(cModifyTech, WingedHussarTechID, cAttrMulFoodCost, 2, playerId);
-            //xsEffectAmount(cModifyTech, BloodlinesTechID, cAttrMulFoodCost, 2, playerId);
+            EnableTech(playerId, GambesonsTechID);
             break;
         }
         case cBohemians:

@@ -1112,8 +1112,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 吴, 魏启用软甲",
-            "civilizations": ["Chinese", "Wu", "Wei"],
+            "note": "中国, 吴, 魏, 波兰启用软甲",
+            "civilizations": ["Chinese", "Wu", "Wei", "Poles"],
             "tech_id": 875,
             "building_id": 12,
             "Name": "Gambesons",
@@ -2271,6 +2271,14 @@
             "building_id": 12,
             "Name": "Double Spearmen",
             "RequiredAge": 2
+        },
+        {
+            "note": "黑军步兵",
+            "civilizations": "Magyars",
+            "unit_id": 4041,
+            "building_id": 12,
+            "Name": "Black Army Infantry",
+            "RequiredAge": 4
         }
     ]
 }

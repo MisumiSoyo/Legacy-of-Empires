@@ -1187,5 +1187,6 @@ void EffectFunction1004(int playerId = -1)
   xsResetTaskAmount();
 }
 
+
 include "custom-constants.xs";
 include "custom-effects.xs";
