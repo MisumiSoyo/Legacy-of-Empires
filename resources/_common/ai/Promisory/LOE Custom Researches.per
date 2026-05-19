@@ -1,0 +1,94 @@
+;   universal techs
+
+#load-if-not-defined DIFFICULTY-EASIEST
+#load-if-not-defined DIFFICULTY-EASY
+#load-if-not-defined DIFFICULTY-MODERATE
+
+
+;   Cash Crop
+(defrule
+	(up-compare-goal excessFood >= 500)
+(or	(commodity-selling-price food < 50)
+(or	(building-type-count-total market <= 0)
+	(up-compare-goal excessFood >= 500)))
+(or	(up-compare-goal excessGold < 500)
+(or	(strategic-number sn-food-gatherer-percentage >= 50)
+	(up-compare-goal excessFood >= 1200)))
+	(can-research ri-cash-crop)
+=>
+	(research ri-cash-crop))
+(defrule
+(or	(up-compare-goal excessFood >= 700)
+(or	(up-compare-goal custom-civ-pop >= up-max-civ)
+(or	(population >= max-civ-pop)
+(or	(up-compare-goal tradeunits <= 3)
+	(unit-type-count villager-farmer >= 30)))))
+	(can-research ri-cash-crop)
+=>
+	(research ri-cash-crop))
+
+
+;   Forestry
+(defrule
+    (or	(and(player-in-game any-ally)
+		    (or	(up-allied-resource-amount any-ally gold < 1000)
+			    (up-compare-goal excessGold < 1000)))
+        (unit-type-count villager-wood >= 35))
+	(can-research ri-forestry)
+=>
+    (research ri-forestry)
+)
+
+
+;   Military Training
+(defrule
+    (goal milunits yes)
+    (or (strategic-number sn-current-age > feudal)
+        (or (building-type-count barracks >= 2)
+            (or (building-type-count archery-range >= 2)
+                (building-type-count stable >= 2))))
+    (can-research ri-military-training)
+=>
+    (research ri-military-training)
+)
+
+
+;   Tithe
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (or (up-resource-amount amount-relics > 1)
+        (and(up-resource-amount amount-relics == 1)
+            (population >= max-pop)))
+    (can-research ri-tithe)
+=>
+    (research ri-tithe)
+)
+
+
+;   Town Defense
+(defrule
+    (or (and(town-under-attack)
+            (military-population <= 5))
+        (and(up-compare-goal excessFood >= 750)
+            (up-compare-goal excessGold >= 450)))
+    (can-research ri-town-defense)
+=>
+    (research ri-town-defense)
+)
+
+
+;   Siege Training
+(defrule
+    (unit-type-count-total infantry-class >= 15)
+    (or (unit-type-count-total infantry-class >= 30)
+        (or (up-research-status c: ri-plate-mail >= research-pending)
+            (up-research-status c: ri-blast-furnace >= research-pending)))
+    (can-research ri-siege-training)
+=>
+    (research ri-siege-training)
+)
+
+
+#end-if
+#end-if
+#end-if
