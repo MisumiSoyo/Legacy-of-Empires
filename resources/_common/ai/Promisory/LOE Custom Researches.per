@@ -359,6 +359,7 @@
 #end-if
 
 
+#load-if-defined BYZANTINE-CIV
 ;   Polutasvarf
 (defrule
     (military-population >= 20)
@@ -396,11 +397,13 @@
 =>
     (research ri-elite-varangian-guard)
 )
+#end-if
 
 
+#load-if-defined PERSIAN-CIV
 ;   Satrap
 (defrule
-    (unit-type-count-total castle >= 3)
+    (building-type-count castle >= 3)
     (can-research ri-satrap)
 =>
     (research ri-satrap)
@@ -433,8 +436,10 @@
 =>
     (research ri-elite-parthian-cavalry-archer)
 )
+#end-if
 
 
+#load-if-defined SARACEN-CIV
 ;   Suftaja
 (defrule
     (goal traincart yes)
@@ -454,8 +459,10 @@
 =>
     (research ri-red-sea-fleet)
 )
+#end-if
 
 
+#load-if-defined TURKISH-CIV
 ;   Devsirme
 (defrule
     (building-type-count-total town-center >= 3)
@@ -472,6 +479,630 @@
 =>
     (research ri-sail-on-land)
 )
+#end-if
+
+
+#load-if-defined VIKING-CIV
+;   Piracy
+(defrule
+    (unit-type-count-total warship-class >= 15)
+    (can-research ri-piracy)
+=>
+    (research ri-piracy)
+)
+
+
+;   Stockfish Trade
+(defrule
+    (or (unit-type-count-total villager-farmer >= 10)
+        (up-compare-goal tradeunits <= 10))
+    (unit-type-count-total fish-trap >= 10)
+    (can-research ri-stockfish-trade)
+=>
+    (research ri-stockfish-trade)
+)
+#end-if
+
+
+#load-if-defined MONGOL-CIV
+;   Mutual Trade
+(defrule
+    (or (goal traincart yes)
+        (goal traincog yes))
+    (or (up-compare-goal excessFood >= 500)
+        (unit-type-count-total villager-farmer >= 25))
+    (up-compare-goal excessGold < 800)
+    (can-research ri-mutual-trade)
+=>
+    (research ri-mutual-trade)
+)
+
+
+;   Pax Mongolica
+(defrule
+    (or (goal trainchamp yes)
+        (or (goal trainpike yes)
+            (or (goal trainarcher yes)
+                (or (goal traincamel yes)
+                    (goal trainskirm yes)))))
+    (can-research ri-pax-mongolica)
+=>
+    (research ri-pax-mongolica)
+)
+#end-if
+
+
+#load-if-defined CELTIC-CIV
+;   Druid
+(defrule
+    (unit-type-count-total monk >= 4)
+    (can-research ri-druid)
+=>
+    (research ri-druid)
+)
+
+
+;   Kern
+(defrule
+    (or (population >= max-civ-pop)
+        (and(military-population <= 15)
+            (goal underattack yes)))
+    (can-research ri-kern)
+=>
+    (research ri-kern)
+)
+
+
+;   Elite Chariot Javelineer
+(defrule
+    (unit-type-count-total chariot-javelineer >= 5)
+    (can-research ri-elite-chariot-javelineer)
+=>
+    (research ri-elite-chariot-javelineer)
+)
+#end-if
+
+
+#load-if-defined SPANISH-CIV
+;   Jinete Tactics
+(defrule
+    (unit-type-count-total genitour-line >= 10)
+    (can-research ri-jinete-tactics)
+=>
+    (research ri-jinete-tactics)
+)
+
+
+;   Tercio
+(defrule
+    (unit-type-count-total spearman-line >= 16)
+    (can-research ri-tercio)
+=>
+    (research ri-tercio)
+)
+
+
+;   Elite War Dog
+(defrule
+    (unit-type-count-total loe-war-dog >= 16)
+    (can-research ri-loe-elite-war-dog)
+=>
+    (research ri-loe-elite-war-dog)
+)
+#end-if
+
+
+#load-if-defined AZTEC-CIV
+;   Ixiptla
+(defrule
+    (goal traineagle yes)
+    (can-research ri-ixiptla)
+=>
+    (research ri-ixiptla)
+)
+
+
+;   Cuauhocelotl
+(defrule
+    (or (and(unit-type-count-total eagle-warrior-line >= 12)
+            (up-research-status c: ri-elite-eagle-warrior >= research-pending))
+        (and(unit-type-count-total jaguar-man-line >= 10)
+            (up-research-status c: my-unique-unit-upgrade >= research-pending)))
+    (can-research ri-cuauhocelotl)
+=>
+    (research ri-cuauhocelotl)
+)
+#end-if
+
+
+#load-if-defined MAYAN-CIV
+;   Obsidian Arrow
+(defrule
+    (goal attacking yes)
+    (unit-type-count-total archery-class >= 12)
+    (can-research ri-obsidian-arrow)
+=>
+    (research ri-obsidian-arrow)
+)
+
+
+;   Yum Kaax's Blessing
+(defrule
+    (unit-type-count-total villager-farmer >= 20)
+    (can-research ri-yum-kaax-blessing)
+=>
+    (research ri-yum-kaax-blessing)
+)
+#end-if
+
+
+#load-if-defined HUN-CIV
+;   Whistling Arrow
+(defrule
+    (unit-type-count-total chanyu >= 2)
+    (can-research ri-whistling-arrow)
+=>
+    (research ri-whistling-arrow)
+)
+
+;   Imperial Steppe Lancer
+(defrule
+    (unit-type-count-total steppe-lancer-line >= 15)
+    (can-research ri-imperial-steppe-lancer)
+=>
+    (research ri-imperial-steppe-lancer)
+)
+#end-if
+
+
+#load-if-defined KOREAN-CIV
+;   Korean Bow
+(defrule
+    (goal milunits yes)
+    (or (goal trainarcher yes)
+        (goal traincavarcher yes))
+    (can-research ri-korean-bow)
+=>
+    (research ri-korean-bow)
+)
+
+
+;   Iron Armor
+(defrule
+    (unit-type-count-total warship-class >= 12)
+    (or (unit-type-count-total warship-class >= 24)
+        (players-unit-type-count focus-player hulk-line >= 10))
+    (can-research ri-iron-armor)
+=>
+    (research ri-iron-armor)
+)
+#end-if
+
+
+#load-if-defined ITALIAN-CIV
+;   Mercenary Contract
+(defrule
+    (strategic-number sn-current-age < imperial)
+    (or (goal trainchamp yes)
+        (goal traincondottiero yes))
+    (can-research ri-mercenary-contract)
+=>
+    (research ri-mercenary-contract)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (can-research ri-mercenary-contract)
+=>
+    (research ri-mercenary-contract)
+)
+
+
+(defrule
+    (can-research ri-advanced-mercenary-contract)
+=>
+    (research ri-advanced-mercenary-contract)
+)
+#end-if
+
+
+#load-if-defined INDIAN-CIV
+;   Khanda Drills
+(defrule
+    (or (unit-type-count-total my-unique-unit-line >= 12)
+        (or (unit-type-count-total scout-cavalry-line >= 16)
+            (unit-type-count-total mansabdar >= 16)))
+    (or (up-compare-goal excessGold >= 800)
+        (up-compare-goal tradeunits >= 14))
+    (can-research ri-khanda-drills)
+=>
+    (research ri-khanda-drills)
+)
+
+
+;   Sultans
+(defrule
+    (or (players-unit-type-count focus-player battle-elephant-line >= 10)
+        (or (players-unit-type-count focus-player war-elephant-line >= 10)
+            (or (players-unit-type-count focus-player elephant-archer >= 10)
+                (players-unit-type-count focus-player ballista-elephant >= 10))))
+    (can-research ri-sultans)
+=>
+    (research ri-sultans)
+)
+#end-if
+
+
+#load-if-defined INCAN-CIV
+;   Couriers
+(defrule
+    (or (or (unit-type-count-total infantry-class >= 20)
+            (unit-type-count-total archery-class >= 20))
+        (and(strategic-number sn-current-age >= imperial)
+            (population >= max-civ-pop)))
+    (can-research ri-couriers)
+=>
+    (research ri-couriers)
+)
+
+
+;   Quipu
+(defrule
+    (goal trainmonk yes)
+    (can-research ri-quipu)
+=>
+    (research ri-quipu)
+)
+#end-if
+
+
+#load-if-defined MAGYAR-CIV
+;   Rotation Grazing
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (can-research ri-rotation-grazing)
+=>
+    (research ri-rotation-grazing)
+)
+
+
+;   Black Army
+(defrule
+    (unit-type-count-total hand-cannoneer >= 10)
+    (or (or (goal trainhussar yes)
+            (goal trainknight yes))
+        (or (unit-type-count-total cavalry-class >= 12)
+            (unit-type-count-total scout-cavalry-class >= 12)))
+    (can-research ri-black-army)
+=>
+    (research ri-black-army)
+)
+#end-if
+
+
+#load-if-defined SLAVIC-CIV
+;   Boyar's Fortitude
+(defrule
+    (goal attacking yes)
+    (unit-type-count-total cavalry-class >= 11)
+    (research-completed ri-chain-barding)
+    (can-research ri-boyars-fortitude)
+=>
+    (research ri-boyars-fortitude)
+)
+
+
+;   Orthodoxy
+(defrule
+    (or (or (unit-type-count-total hand-cannoneer >= 24)
+            (unit-type-count-total militiaman-line >= 20))
+        (or (goal trainchamp yes)
+            (goal trainhandcannon yes)))
+    (can-research ri-loe-orthodoxy)
+=>
+    (research ri-loe-orthodoxy)
+)
+#end-if
+
+
+#load-if-defined PORTUGUESE-CIV
+;   Iberian Light Cavalry
+(defrule
+    (unit-type-count-total genitour-line >= 8)
+    (or (players-unit-type-count focus-player archer-line >= 9)
+        (players-unit-type-count focus-player cavalry-archer-line >= 7))
+    (can-research ri-iberian-light-cavalry)
+=>
+    (research ri-iberian-light-cavalry)
+)
+
+
+;   Carta Regia
+(defrule
+    (can-research ri-carta-regia)
+=>
+    (research ri-carta-regia)
+)
+#end-if
+
+
+#load-if-defined ETHIOPIAN-CIV
+;   Heavy Spear
+(defrule
+    (or (unit-type-count-total spearman-line >= 12)
+        (or (unit-type-count-total cavalry-class >= 9)
+            (unit-type-count-total scout-cavalry-class >= 10)))
+    (can-research ri-heavy-spear)
+=>
+    (research ri-heavy-spear)
+)
+
+
+;   Abhara Elephant
+(defrule
+    (goal trainbattle yes)
+    (can-research ri-abhara-elephant)
+=>
+    (research ri-abhara-elephant)
+)
+#end-if
+
+
+#load-if-defined MALIAN-CIV
+;   Sahara Caravan Route
+(defrule
+    (up-compare-goal tradeunits >= 18)
+    (can-research ri-sahara-caravan-route)
+=>
+    (research ri-sahara-caravan-route)
+)
+
+
+;   Poisoned Arrows
+(defrule
+    (can-research ri-poisoned-arrows)
+    (or (unit-type-count-total archery-class >= 13)
+        (or (unit-type-count-total cavalry-archer-class >= 10)
+            (or (unit-type-count-total hand-cannoneer >= 10)
+                (or (unit-type-count-total spearman-line >= 15)
+                    (unit-type-count-total donso >= 15)))))
+=>
+    (research ri-poisoned-arrows)
+)
+
+
+;   Elite Sofa
+(defrule
+    (can-research ri-elite-sofa)
+    (unit-type-count-total sofa >= 7)
+=>
+    (research ri-elite-sofa)
+)
+#end-if
+
+
+#load-if-defined BERBERS-CIV
+;   Adarga
+(defrule
+    (unit-type-count-total camel-line >= 6)
+    (can-research ri-adarga)
+=>
+    (research ri-adarga)
+)
+
+
+;   Desert Raider
+(defrule
+    (unit-type-count-total genitour-line >= 10)
+    (players-unit-type-count focus-player spearman-line >= 10)
+    (can-research ri-desert-raider)
+=>
+    (research ri-desert-raider)
+)
+#end-if
+
+
+#load-if-defined KHMER-CIV
+;   Devaraja
+(defrule
+    (can-research ri-devaraja)
+    (unit-type-count-total monk >= 3)
+    (or (unit-type-count-total monk >= 5)
+        (or (unit-type-count-total battle-elephant-line >= 5)
+            (unit-type-count-total ballista-elephant-line >= 5)))
+=>
+    (research ri-devaraja)
+)
+
+
+;   Ph'kak
+(defrule
+    (can-research ri-phkak)
+    (or (unit-type-count-total infantry-class >= 12)
+        (and(or (goal trainchamp yes)
+                (goal trainpike yes))
+            (players-unit-type-count focus-player knight-line >= 10)))
+=>
+    (research ri-phkak)
+)
+
+
+;   Elephant Archer
+(defrule
+    (unit-type-count-total elephant-archer >= 3)
+    (can-research ri-loe-elephant-archer)
+=>
+    (research ri-loe-elephant-archer)
+)
+#end-if
+
+
+#load-if-defined MALAY-CIV
+;   Silat Melayu
+(defrule
+    (can-research ri-silat-melayu)
+    (unit-type-count-total my-unique-unit-line >= 12)
+=>
+    (research ri-silat-melayu)
+)
+
+
+;   Spice Trade
+(defrule
+    (players-unit-type-count any-ally trade-cog >= 10)
+    (can-research ri-spice-trade)
+=>
+    (research ri-spice-trade)
+)
+#end-if
+
+
+#load-if-defined BURMESE-CIV
+;   Anawrahta's Canals
+(defrule
+    (unit-type-count-total villager-farmer >= 20)
+    (can-research ri-anawrahtas-canals)
+=>
+    (research ri-anawrahtas-canals)
+)
+
+
+;   Dha
+(defrule
+    (goal trainpike yes)
+    (players-unit-type-count focus-player knight-line <= 20)
+    (can-research ri-dha)
+=>
+    (research ri-dha)
+)
+
+
+;   Elite Toungoo Warrior
+(defrule
+    (unit-type-count-total toungoo-warrior >= 6)
+    (can-research ri-elite-toungoo-warrior)
+=>
+    (research ri-elite-toungoo-warrior)
+)
+#end-if
+
+
+#load-if-defined VIETNAMESE-CIV
+;   Monsoon Navigation
+(defrule
+    (unit-type-count-total fishing-ship >= 4)
+    (can-research ri-monsoon-navigation)
+=>
+    (research ri-monsoon-navigation)
+)
+
+
+;   Elephant Formation
+(defrule
+    (goal trainbattle yes)
+    (research-completed ri-elite-battle-elephant)
+    (can-research ri-elephant-formation)
+=>
+    (research ri-elephant-formation)
+)
+
+
+;   Elite Rung Scout
+(defrule
+    (unit-type-count-total rung-scout >= 7)
+    (can-research ri-elite-rung-scout)
+=>
+    (research ri-elite-rung-scout)
+)
+#end-if
+
+
+#load-if-defined BULGARIANS-CIV
+;   Hesychast
+(defrule
+    (unit-type-count-total monk >= 4)
+    (can-research ri-hesychast)
+=>
+    (research ri-hesychast)
+)
+
+
+;   Fervor of Battle
+(defrule
+    (can-research ri-fervor-of-battle)
+    (or (and(unit-type-count-total infantry-class >= 9)
+            (or (unit-type-count-total cavalry-class >= 5)
+                (unit-type-count-total scout-cavalry-class >= 6)))
+        (unit-type-count-total my-unique-unit-line >= 8))
+=>
+    (research ri-fervor-of-battle)
+)
+#end-if
+
+
+#load-if-defined TATARS-CIV
+;   Raide Horn
+(defrule
+    (or (unit-type-count-total knight-line >= 9)
+        (unit-type-count-total my-unique-unit-line >= 7))
+    (can-research ri-raide-horn)
+=>
+    (research ri-raide-horn)
+)
+
+
+;   Khan's Conscription
+(defrule
+    (building-type-count castle >= 2)
+    (can-research ri-khans-conscription)
+=>
+    (research ri-khans-conscription)
+)
+#end-if
+
+
+#load-if-defined CUMANS-CIV
+;   Khazar Lancers
+(defrule
+    (unit-type-count-total steppe-lancer-line >= 10)
+    (can-research ri-khazar-lancers)
+=>
+    (research ri-khazar-lancers)
+)
+
+
+;   Siha Bow Limbs
+(defrule
+    (or (goal trainarcher yes)
+        (or (goal traincavarcher yes)
+            (or (goal trainhandcannon yes)
+                (goal trainunique yes))))
+    (can-research ri-siha-bow-limbs)
+=>
+    (research ri-siha-bow-limbs)
+)
+#end-if
+
+
+#load-if-defined LITHUANIANS-CIV
+;   Baltic Archers
+(defrule
+    (goal trainarcher yes)
+    (can-research ri-baltic-archers)
+=>
+    (research ri-baltic-archers)
+)
+
+
+;   Kaunus Castle
+(defrule
+    (building-type-count watch-tower-line >= 2)
+    (can-research ri-kaunus-castle)
+=>
+    (research ri-kaunus-castle)
+)
+#end-if
 
 
 #end-if

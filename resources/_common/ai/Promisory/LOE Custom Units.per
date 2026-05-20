@@ -112,3 +112,119 @@
 	(can-train parthian-cavalry-archer)
 =>
 	(train parthian-cavalry-archer))
+
+
+;   Chariot Javelineer
+(defrule
+    (goal trainskirm yes)
+    (or (and(strategic-number sn-current-age <= castlea)
+            (and(civilian-population >= 30)
+                (unit-type-count-total skirmisher-line <= 5)))
+        (civilian-population >= 80))
+=>
+    (train chariot-javelineer)
+)
+
+
+;   War Dog
+(defrule
+    (goal trainhussar yes)
+    (or (and(strategic-number sn-current-age <= castlea)
+        (not(research-completed ri-chain-barding)))
+        (not(research-completed ri-plate-barding)))
+    (can-train loe-war-dog)
+=>
+    (train loe-war-dog)
+)
+
+
+;   Feitoria from Carta Regia
+(defrule
+    (can-build loe-feitoria-2)
+=>
+    (build loe-feitoria-2)
+)
+
+
+;   Sofa
+(defrule
+    (can-train sofa)
+    (research-completed ri-bloodlines)
+    (or (players-unit-type-count focus-player spearman-line >= 6)
+        (or (players-unit-type-count focus-player skirmisher-line >= 6)
+            (players-unit-type-count focus-player scout-cavalry-line >= 5)))
+=>
+    (train sofa)
+)
+
+
+;   Malay Free Army
+(defrule
+    (goal trainunique yes)
+    (can-train malay-karambit-building)
+=>
+    (train malay-karambit-building)
+)
+
+
+(defrule
+    (goal trainpike yes)
+    (can-train malay-spearman-building)
+=>
+    (train malay-spearman-building)
+)
+
+
+(defrule
+    (goal trainskirm yes)
+    (can-train malay-skirmisher-building)
+=>
+    (train malay-skirmisher-building)
+)
+
+
+;   Toungoo Warrior
+(defrule
+    (goal attacking yes)
+    (or (players-unit-type-count focus-player archer-line >= 5)
+        (players-unit-type-count focus-player skirmisher-line >= 5))
+    (can-train toungoo-warrior)
+=>
+    (train toungoo-warrior)
+)
+
+
+(defrule
+    (goal attacking yes)
+    (goal trainchamp yes)
+    (players-unit-type-count focus-player militiaman-line <= 10)
+    (or (up-compare-goal excessGold >= 300)
+        (up-compare-goal tradeunits >= 15))
+    (can-train toungoo-warrior)
+=>
+    (train toungoo-warrior)
+)
+
+
+;   Rung Scout
+(defrule
+    (can-train rung-scout)
+    (or (goal trainchamp yes)
+        (goal trainhussar yes))
+    (or (players-unit-type-count focus-player archer-line >= 4)
+        (players-unit-type-count focus-player skirmisher-line >= 4))
+=>
+    (train rung-scout)
+)
+
+
+;   Mongols Elite Keshik
+(defrule
+    (or (goal trainhussar yes)
+        (goal trainknight yes))
+    (or (up-compare-goal excessGold >= 200)
+        (up-compare-goal tradeunits >= 12))
+    (can-train elite-keshik)
+=>
+    (train elite-keshik)
+)

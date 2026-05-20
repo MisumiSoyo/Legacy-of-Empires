@@ -137,6 +137,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HerbalMedicineTechID);
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, HeatedShotTechID);
+            EnableTech(playerId, IncendiariesTechID);
             break;
         }
         case cPersians:
@@ -263,6 +264,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BombardTowerTechID);
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, PaladinTechID);
+            EnableTech(playerId, GambesonsTechID);
             break;
         }
         case cIncas:

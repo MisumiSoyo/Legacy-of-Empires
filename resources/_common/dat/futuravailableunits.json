@@ -7346,6 +7346,11 @@
                         "Name": "Heated Shot",
                         "RequiredAge": 3,
                         "ID": 380
+                    },
+                    {
+                        "Name": "Incendiaries",
+                        "RequiredAge": 4,
+                        "ID": 910
                     }
                 ]
             },
@@ -17632,6 +17637,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Gambesons",
+                        "RequiredAge": 3,
+                        "ID": 875
                     },
                     {
                         "Name": "Halberdier",

@@ -1112,8 +1112,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 吴, 魏, 波兰启用软甲",
-            "civilizations": ["Chinese", "Wu", "Wei", "Poles"],
+            "note": "中国, 吴, 魏, 波兰, 意大利启用软甲",
+            "civilizations": ["Chinese", "Wu", "Wei", "Poles", "Italians"],
             "tech_id": 875,
             "building_id": 12,
             "Name": "Gambesons",
@@ -1870,8 +1870,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用燃烧弹",
-            "civilizations": ["Chinese"],
+            "note": "中国, 拜占庭启用燃烧弹",
+            "civilizations": ["Chinese", "Byzantines"],
             "tech_id": 910,
             "building_id": 209,
             "Name": "Incendiaries",
