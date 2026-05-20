@@ -1,0 +1,114 @@
+;   Hobelar
+(defrule
+    (or (goal trainhussar yes)
+        (goal trainknight yes))
+    (or (players-unit-type-count focus-player spearman-line >= 8)
+        (research-completed ri-chain-barding))
+    (can-train hobelar)
+=>
+    (train hobelar)
+)
+
+
+;   Swiss Pikeman
+(defrule
+    (or (and(goal trainpike yes)
+            (or (up-research-status c: ri-halberdier < research-pending)
+                (up-compare-goal tradeunits >= 45)))
+        (and(goal trainchamp yes)
+            (or (up-research-status c: ri-champion < research-pending)
+                (up-compare-goal tradeunits >= 36))))
+    (can-train swiss-pikeman)
+=>
+    (train swiss-pikeman)
+)
+
+
+;   Foederati Units
+(defrule
+    (or (goal trainchamp yes)
+        (goal trainpike yes))
+    (or (strategic-number sn-current-age <= castlea)
+        (or (and(goal trainchamp yes)
+                (up-research-status c: ri-champion < research-pending))
+            (and(goal trainpike yes)
+                (up-research-status c: ri-halberdier < research-pending))))
+    (can-train foederati-swordman)
+=>
+    (train foederati-swordman)
+)
+
+
+(defrule
+    (or (goal trainarcher yes)
+        (or (goal traincavarcher yes)
+            (goal trainskirm yes)))
+    (or (strategic-number sn-current-age <= castlea)
+        (or (and(goal trainarcher yes)
+                (up-research-status c: ri-arbalest < research-pending))
+            (or (and(goal traincavarcher yes)
+                    (up-research-status c: ri-heavy-cavalry-archer < research-pending))
+                (and(goal trainskirm yes)
+                    (up-research-status c: ri-elite-skirmisher < research-pending)))))
+    (can-train foederati-cavalry-archer)
+=>
+    (train foederati-cavalry-archer)
+)
+
+
+(defrule
+    (or (goal trainhussar yes)
+        (goal trainknight yes))
+    (or (strategic-number sn-current-age <= castlea)
+        (or (and(goal trainhussar yes)
+                (up-research-status c: ri-hussar < research-pending))
+            (and(goal trainknight yes)
+                (up-research-status c: ri-paladin < research-pending))))
+    (can-train foederati-knight)
+=>
+    (train foederati-knight)
+)
+
+
+;   Sohei
+(defrule
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player hand-cannoneer <= 10)
+        (up-resource-amount amount-relics >= 5))
+    (can-train sohei)
+=>
+    (train sohei)
+)
+
+
+;   Flamethrower
+(defrule
+    (goal milunits yes)
+    (or (players-unit-type-count focus-player militiaman-line >= 7)
+        (players-unit-type-count focus-player spearman-line >= 9))
+    (players-unit-type-count focus-player knight-line <= 7)
+    (can-train flamethrower)
+=>
+    (train flamethrower)
+)
+
+
+;   Varangian Guard
+(defrule
+    (goal trainchamp yes)
+    (or (up-compare-goal excessGold >= 100)
+        (up-compare-goal tradeunits >= 20))
+    (can-train early-varangian-guard)
+=>
+    (train early-varangian-guard)
+)
+
+
+;   Parthian Cavalry Archer
+(defrule
+	(goal traincavarcher yes)
+    (nand   (goal temporary-goal3 1579194)
+	        (up-compare-goal local-total >= 1))
+	(can-train parthian-cavalry-archer)
+=>
+	(train parthian-cavalry-archer))

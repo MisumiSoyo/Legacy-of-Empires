@@ -89,6 +89,391 @@
 )
 
 
+;   unique techs
+
+
+#load-if-defined BRITON-CIV
+;   Elite Hobelar
+(defrule
+    (or (players-unit-type-count focus-player spearman-line >= 15)
+        (or (or (goal trainknight yes)
+                (or (up-compare-goal excessFood >= 1100)
+                    (up-compare-goal excessGold >= 800)))
+            (unit-type-count-total hobelar >= 15)))
+    (can-research ri-elite-hobelar)
+=>
+    (research ri-elite-hobelar)
+)
+
+
+;   Privateers
+(defrule
+    (or (and(goal trainhulk yes)
+            (up-research-status c: ri-forging >= research-pending))
+        (unit-type-count-total hulk-line >= 10))
+    (can-research ri-privateers)
+=>
+    (research ri-privateers)
+)
+
+
+;   Enclosure
+(defrule
+    (unit-type-count villager-farmer >= 40)
+    (up-compare-goal excessFood >= 1200)
+    (can-research ri-enclosure)
+=>
+    (research ri-enclosure)
+)
+#end-if
+
+
+#load-if-defined FRANKISH-CIV
+;   Loan 2000
+(defrule
+    (population-headroom <= 0)
+    (can-research ri-loan-2000)
+=>
+    (research ri-loan-2000)
+)
+
+
+;   Pavise
+(defrule
+    (or (unit-type-count-total archer-line >= 12)
+        (unit-type-count-total hand-cannoneer >= 9))
+    (or (up-research-status c: ri-leather-archer-armor >= research-pending)
+        (or (players-unit-type-count focus-player skirmisher-line >= 10)
+            (players-unit-type-count focus-player genitour-line >= 8)))
+    (can-research ri-pavise-french)
+=>
+    (research ri-pavise-french)
+)
+
+
+;   Gendarmes d'ordonnance
+(defrule
+    (or (and(goal trainhussar yes)
+            (unit-type-count-total knight-line >= 10))
+        (and(goal trainknight yes)
+            (unit-type-count-total scout-cavalry-line >= 13)))
+    (can-research ri-gendarmes-dordonnance)
+=>
+    (research ri-gendarmes-dordonnance)
+)
+#end-if
+
+
+#load-if-defined GOTHIC-CIV
+;   Foederati Army
+(defrule
+    (goal milunits yes)
+    (strategic-number sn-current-age < imperial)
+    (military-population < 18)
+    (can-research ri-foederati-army)
+=>
+    (research ri-foederati-army)
+)
+
+
+(defrule
+    (population >= max-civ-pop)
+    (or (and(up-compare-goal excessFood >= 1400)
+            (up-compare-goal excessGold >= 800))
+        (players-current-age any-ally <= castle-age))
+    (can-research ri-foederati-army)
+=>
+    (research ri-foederati-army)
+)
+
+
+;   Greuthungi Cavalry
+(defrule
+    (goal trainknight yes)
+    (up-research-status c: ri-cavalier >= research-pending)
+    (can-research ri-greuthungi-cavalry)
+=>
+    (research ri-greuthungi-cavalry)
+)
+#end-if
+
+
+#load-if-defined TEUTONIC-CIV
+;   Die Goldene Bulle
+(defrule
+    (unit-type-count-total monk >= 6)
+    (research-completed ri-sanctity)
+    (or (research-completed ri-block-printing)
+        (research-completed ri-illumination))
+    (can-research ri-die-goldene-bulle)
+=>
+    (research ri-die-goldene-bulle)
+)
+
+
+(defrule
+    (unit-type-count-total teutonic-knight-line >= 10)
+    (or (unit-type-count-total teutonic-knight-line >= 20)
+        (or (up-research-status c: my-unique-unit-upgrade >= research-pending)
+            (strategic-number sn-current-age <= castlea)))
+    (can-research ri-die-goldene-bulle)
+=>
+    (research ri-die-goldene-bulle)
+)
+
+
+;   Accolade
+(defrule
+    (can-research ri-accolade)
+=>
+    (research ri-accolade)
+)
+#end-if
+
+
+#load-if-defined JAPANESE-CIV
+;   Ikko-Ikki
+(defrule
+    (goal milunits yes)
+    (or (goal trainchamp yes)
+        (goal trainunique yes))
+    (up-resource-amount amount-relics >= 3)
+    (or (up-resource-amount amount-relics >= 5)
+        (and(players-unit-type-count focus-player hand-cannoneer <= 10)
+            (up-research-status c: ri-chain-mail >= research-pending)))
+    (can-research ri-ikko-ikki)
+=>
+    (research ri-ikko-ikki)
+)
+
+
+;   Yari Cavalry
+(defrule
+    (or (unit-type-count-total cavalry-class >= 12)
+        (unit-type-count-total scout-cavalry-class >= 15))
+    (or (players-unit-type-count focus-player knight-line >= 12)
+        (or (players-unit-type-count focus-player scout-cavalry-line >= 15)
+            (players-unit-type-count focus-player cavalry-archer-line >= 20)))
+    (can-research ri-yari-cavalry)
+=>
+    (research ri-yari-cavalry)
+)
+#end-if
+
+
+#load-if-defined CHINESE-CIV
+;   Tang Dynasty
+(defrule
+    (strategic-number sn-current-age == castlea)
+    (or (unit-type-count-total infantry-class >= 14)
+        (unit-type-count-total cavalry-class >= 11))
+    (or (goal attacking yes)
+        (goal underattack yes))
+    (can-research ri-tang-dynasty)
+=>
+    (research ri-tang-dynasty)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (or (or (unit-type-count-total infantry-class >= 14)
+            (unit-type-count-total cavalry-class >= 11))
+        (population >= max-civ-pop))
+    (can-research ri-tang-dynasty)
+=>
+    (research ri-tang-dynasty)
+)
+
+
+;   Song Dynasty
+(defrule
+    (strategic-number sn-current-age == castlea)
+    (map-type michi)
+    (can-research ri-song-dynasty)
+=>
+    (research ri-song-dynasty)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (or (unit-type-count-total villager <= 50)
+        (or (goal traincart yes)
+            (goal traincog yes)))
+    (can-research ri-song-dynasty)
+=>
+    (research ri-song-dynasty)
+)
+
+
+(defrule
+    (unit-type-count-total fire-lancer-line >= 14)
+    (can-research ri-song-dynasty)
+=>
+    (research ri-song-dynasty)
+)
+
+
+;   Yuan Dynasty
+(defrule
+    (goal milunits yes)
+    (or (and(goal underattack yes)
+            (military-population <= 10))
+        (unit-type-count-total cavalry-class >= 12))
+    (can-research ri-yuan-dynasty)
+=>
+    (research ri-yuan-dynasty)
+)
+
+
+;   Ming Dynasty
+(defrule
+    (strategic-number sn-current-age == castlea)
+    (or (unit-type-count-total archery-class >= 15)
+        (unit-type-count-total cavalry-archer-class >= 12))
+    (can-research ri-ming-dynasty)
+=>
+    (research ri-ming-dynasty)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (or (and(goal trainknight yes)
+            (up-research-status c: ri-heavy-hei-kuang-cavalry >= research-pending))
+        (military-population >= 20))
+    (can-research ri-ming-dynasty)
+=>
+    (research ri-ming-dynasty)
+)
+
+
+;   Guan Ning Cavalry
+(defrule
+    (goal trainknight yes)
+    (can-research ri-guan-ning-cavalry)
+=>
+    (research ri-guan-ning-cavalry)
+)
+#end-if
+
+
+;   Polutasvarf
+(defrule
+    (military-population >= 20)
+    (or (military-population >= 28)
+        (strategic-number sn-current-age >= imperial))
+    (can-research ri-polutasvarf)
+=>
+    (research ri-polutasvarf)
+)
+
+
+;   Golden Horn Tower
+(defrule
+    (up-compare-goal tradeunits >= 25)
+    (can-research ri-golden-horn-tower)
+=>
+    (research ri-golden-horn-tower)
+)
+
+
+;   Varangian Guard
+(defrule
+    (unit-type-count-total early-varangian-guard >= 5)
+    (can-research ri-varangian-guard)
+=>
+    (research ri-varangian-guard)
+)
+
+
+;   Elite Varangian Guard
+(defrule
+    (or (unit-type-count-total early-varangian-guard >= 7)
+        (unit-type-count-total varangian-guard >= 7))
+    (can-research ri-elite-varangian-guard)
+=>
+    (research ri-elite-varangian-guard)
+)
+
+
+;   Satrap
+(defrule
+    (unit-type-count-total castle >= 3)
+    (can-research ri-satrap)
+=>
+    (research ri-satrap)
+)
+
+
+;   Camel Lancer
+(defrule
+    (unit-type-count-total camel-line >= 14)
+    (can-research ri-camel-lancer)
+=>
+    (research ri-camel-lancer)
+)
+
+
+;   Veteran Parthian Cavalry Archer
+(defrule
+    (unit-type-count-total parthian-cavalry-archer >= 4)
+    (can-research ri-veteran-parthian-cavalry-archer)
+=>
+    (research ri-veteran-parthian-cavalry-archer)
+)
+
+
+;   Elite Parthian Cavalry Archer
+(defrule
+    (or (unit-type-count-total parthian-cavalry-archer >= 7)
+        (unit-type-count-total veteran-parthian-cavalry-archer >= 7))
+    (can-research ri-elite-parthian-cavalry-archer)
+=>
+    (research ri-elite-parthian-cavalry-archer)
+)
+
+
+;   Suftaja
+(defrule
+    (goal traincart yes)
+    (or (map-type michi)
+        (or (unit-type-count-total market >= 3)
+            (military-population >= 20)))
+    (can-research ri-suftaja)
+=>
+    (research ri-suftaja)
+)
+
+
+;   Red Sea Fleet
+(defrule
+    (unit-type-count-total warship-class >= 20)
+    (can-research ri-red-sea-fleet)
+=>
+    (research ri-red-sea-fleet)
+)
+
+
+;   Devsirme
+(defrule
+    (building-type-count-total town-center >= 3)
+    (can-research ri-devsirme)
+=>
+    (research ri-devsirme)
+)
+
+
+;   Sail on Land
+(defrule
+    (unit-type-count-total warship-class >= 25)
+    (can-research ri-sail-on-land)
+=>
+    (research ri-sail-on-land)
+)
+
+
 #end-if
 #end-if
 #end-if

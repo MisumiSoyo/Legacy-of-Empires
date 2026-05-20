@@ -27,6 +27,7 @@
 (load "Promisory\researches")
 (load "Promisory\interaction")
 (load "Promisory\buildings")
+(load "Promisory\LOE Custom Units.per")
 (load "Promisory\units")
 (load "Promisory\trade")
 (load "Promisory\resign")

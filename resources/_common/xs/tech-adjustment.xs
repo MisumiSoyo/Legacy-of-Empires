@@ -268,6 +268,7 @@ void EffectFunction10098(int playerId = -1)
     ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
     if (isResearched(playerId, ManilaGalleonTechID))
         UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
+    ModAttack(playerId, FlameThrowerID, cDamageClassMelee, 1);
 
     ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 1);
     ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 1);
