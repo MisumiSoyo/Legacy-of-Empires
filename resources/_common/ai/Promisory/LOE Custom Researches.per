@@ -1105,6 +1105,408 @@
 #end-if
 
 
+#load-if-defined BURGUNDIANS-CIV
+;   Golden Spurs
+(defrule
+    (can-research ri-golden-spurs)
+    (or (unit-type-count-total spearman-line >= 10)
+        (unit-type-count-total flemish-militia >= 9))
+=>
+    (research ri-golden-spurs)
+)
+
+
+;   Firearm Casting
+(defrule
+    (or (goal trainhandcannon yes)
+        (goal trainbombard yes))
+    (can-research ri-firearm-casting)
+=>
+    (research ri-firearm-casting)
+)
+#end-if
+
+
+#load-if-defined SICILIANS-CIV
+;   Mediterranean Galleys
+(defrule
+    (unit-type-count-total hulk-line >= 9)
+    (can-research ri-mediterranean-galleys)
+=>
+    (research ri-mediterranean-galleys)
+)
+
+
+;   Scutage
+(defrule
+    (military-population >= 5)
+    (or (unit-type-count villager-gold <= 3)
+        (military-population >= 15))
+    (can-research ri-scutage)
+=>
+    (research ri-scutage)
+)
+#end-if
+
+
+#load-if-defined POLES-CIV
+;   Kopalnia Soli Wieliczka
+(defrule
+    (unit-type-count villager-stone > 0)
+    (can-research ri-kopalnia-soli-wieliczka)
+=>
+    (research ri-kopalnia-soli-wieliczka)
+)
+
+
+;   Winged Charge
+(defrule
+    (can-research ri-winged-charge)
+    (or (unit-type-count-total cavalry-class >= 10)
+        (unit-type-count-total scout-cavalry-class >= 12))
+=>
+    (research ri-winged-charge)
+)
+#end-if
+
+
+#load-if-defined BOHEMIANS-CIV
+;   Taborites
+(defrule
+    (strategic-number sn-current-age < imperial)
+    (goal underattack yes)
+    (military-population <= 5)
+    (can-research ri-taborites)
+=>
+    (research ri-taborites)
+)
+
+
+;   Pistala
+(defrule
+    (goal trainhandcannon yes)
+    (unit-type-count villager-wood >= 30)
+    (up-compare-goal tradeunits <= 30)
+    (up-compare-goal excessGold <= 750)
+    (can-research ri-pistala)
+=>
+    (research ri-pistala)
+)
+#end-if
+
+
+#load-if-defined DRAVIDIANS-CIV
+;   Kadal Paarvai
+(defrule
+    (unit-type-count-total fishing-ship >= 4)
+    (can-research ri-kadal-paarvai)
+=>
+    (research ri-kadal-paarvai)
+)
+
+
+;   Bhakti
+(defrule
+    (unit-type-count-total monk >= 3)
+    (up-research-status c: ri-block-printing >= research-pending)
+    (can-research ri-bhakti)
+=>
+    (research ri-bhakti)
+)
+#end-if
+
+
+#load-if-defined BENGALIS-CIV
+;   Monk Armor
+(defrule
+    (strategic-number sn-current-age < imperial)
+    (unit-type-count-total monk >= 8)
+    (can-research ri-bengalis-monk-armor)
+=>
+    (research ri-bengalis-monk-armor)
+)
+
+
+;   Melee Attack
+(defrule
+    (or (unit-type-count-total cavalry-class >= 10)
+        (unit-type-count-total scout-cavalry-class >= 13))
+    (can-research ri-bengalis-melee-attack)
+=>
+    (research ri-bengalis-melee-attack)
+)
+
+
+;   Archer Armor
+(defrule
+    (or (unit-type-count-total archery-class >= 12)
+        (unit-type-count-total cavalry-archer-class >= 9))
+    (can-research ri-bengalis-archer-armor)
+=>
+    (research ri-bengalis-archer-armor)
+)
+
+
+;   Navy Bonus
+(defrule
+    (unit-type-count-total warship-class >= 9)
+    (or (current-age <= castle-age)
+        (unit-type-count-total warship-class >= 16))
+    (can-research ri-bengalis-navy-bonus)
+=>
+    (research ri-bengalis-navy-bonus)
+)
+#end-if
+
+
+#load-if-defined GURJARAS-CIV
+;   Caravan Guard
+(defrule
+    (up-compare-goal tradeunits >= 20)
+    (can-research ri-caravan-guard)
+=>
+    (research ri-caravan-guard)
+)
+
+
+;   Raja
+(defrule
+    (can-research ri-raja)
+=>
+    (research ri-raja)
+)
+#end-if
+
+
+#load-if-defined ROMANS-CIV
+;   Pilum
+(defrule
+    (civilian-population >= 90)
+    (goal trainskirm yes)
+    (can-research ri-pilum)
+=>
+    (research ri-pilum)
+)
+
+
+;   Lateen Sail
+(defrule
+    (unit-type-count-total dromon >= 2)
+    (can-research ri-lateen-sail)
+=>
+    (research ri-lateen-sail)
+)
+#end-if
+
+
+#load-if-defined ARMENIANS-CIV
+;   Apostle
+(defrule
+    (military-population >= 15)
+    (or (military-population >= 25)
+        (current-age >= imperial-age))
+    (can-research ri-apostle)
+=>
+    (research ri-apostle)
+)
+
+
+;   Taurus Ambush
+(defrule
+    (can-research ri-taurus-ambush)
+=>
+    (research ri-taurus-ambush)
+)
+#end-if
+
+
+#load-if-defined GEORGIANS-CIV
+;   Kipchak Reinforcements
+(defrule
+    (goal traincavarcher yes)
+    (research-completed ri-bloodlines)
+    (research-completed ri-fletching)
+    (can-research ri-kipchak-reinforcements)
+=>
+    (research ri-kipchak-reinforcements)
+)
+
+
+;   Hill Training
+(defrule
+    (unit-type-count-total knight-line >= 8)
+    (can-research ri-hill-training)
+=>
+    (research ri-hill-training)
+)
+
+
+;   Elite Khevsureti Warrior
+(defrule
+    (unit-type-count-total khevsureti-warrior >= 7)
+    (can-research ri-elite-khevsureti-warrior)
+=>
+    (research ri-elite-khevsureti-warrior)
+)
+#end-if
+
+
+#load-if-defined SHU-CIV
+;   Tube-Sleeved Armor
+(defrule
+    (or (unit-type-count-total spearman-line >= 10)
+        (unit-type-count-total hei-kuang-cavalry >= 8))
+    (can-research ri-tube-sleeved-armor)
+=>
+    (research ri-tube-sleeved-armor)
+)
+
+
+;   Siege Technique
+(defrule
+    (unit-type-count-total battering-ram-line >= 3)
+    (can-research ri-siege-technique)
+=>
+    (research ri-siege-technique)
+)
+#end-if
+
+
+#load-if-defined WU-CIV
+;   Exempted Tenant System
+(defrule
+    (or (building-type-count castle > 0)
+        (building-type-count watch-tower-line >= 2))
+    (can-research ri-exempted-tenant-system)
+=>
+    (research ri-exempted-tenant-system)
+)
+
+
+;   Trouble-Freeing Army
+(defrule
+    (or (goal trainsecondary yes)
+        (goal trainknight yes))
+    (or (up-compare-goal excessGold >= 1000)
+        (up-compare-goal tradeunits >= 30))
+    (can-research ri-trouble-freeing-army)
+=>
+    (research ri-trouble-freeing-army)
+)
+#end-if
+
+
+#load-if-defined WEI-CIV
+;   Thunderclap Cart
+(defrule
+    (or (and(current-age <= castle-age)
+            (goal siegereq yes))
+        (unit-type-count traction-trebuchet >= 2))
+    (can-research ri-thunderclap-cart)
+=>
+    (research ri-thunderclap-cart)
+)
+
+
+;   Ring-Pommeled Sword
+(defrule
+    (goal trainchamp yes)
+    (or (up-compare-goal excessGold >= 700)
+        (up-compare-goal tradeunits >= 25))
+    (can-research ri-ring-pommeled-sword)
+=>
+    (research ri-ring-pommeled-sword)
+)
+#end-if
+
+
+#load-if-defined JURCHENS-CIV
+;   Meng'an Mouke
+(defrule
+    (can-research ri-mengan-mouke)
+=>
+    (research ri-mengan-mouke)
+)
+
+
+;   Flanking Cavalry
+(defrule
+    (or (unit-type-count-total cavalry-class >= 10)
+        (unit-type-count-total scout-cavalry-class >= 10))
+    (can-research ri-flanking-cavalry)
+=>
+    (research ri-flanking-cavalry)
+)
+#end-if
+
+
+#load-if-defined KHITANS-CIV
+;   Iron Hawk
+(defrule
+    (current-age < imperial-age)
+    (goal milunits yes)
+    (players-unit-type-count focus-player archer-line >= 17)
+    (can-research ri-iron-hawk)
+=>
+    (research ri-iron-hawk)
+)
+
+
+;   Northern officials
+(defrule
+    (goal traincavarcher yes)
+    (up-compare-goal excessWood >= 500)
+    (can-research ri-northern-officials)
+=>
+    (research ri-northern-officials)
+)
+#end-if
+
+
+#load-if-defined MUISCA-CIV
+;   El Dorado
+
+
+;   Sacred Ritual
+(defrule
+    (unit-type-count-total infantry-class >= 8)
+    (can-research ri-sacred-ritual)
+=>
+    (research ri-sacred-ritual)
+)
+#end-if
+
+
+#load-if-defined TUPI-CIV
+;   Woven Talismans
+(defrule
+    (unit-type-count-total spearman-line >= 11)
+    (can-research ri-woven-talismans)
+=>
+    (research ri-woven-talismans)
+)
+
+
+;   Tamoios
+(defrule
+    (not(research-completed ri-elite-ibirapema-warrior))
+    (unit-type-count-total infantry-class >= 20)
+    (can-research ri-tamoios)
+=>
+    (research ri-tamoios)
+)
+
+
+(defrule
+    (or (unit-type-count-total champi-runner >= 22)
+        (unit-type-count-total spearman-line >= 18))
+    (can-research ri-tamoios)
+=>
+    (research ri-tamoios)
+)
+#end-if
+
+
 #end-if
 #end-if
 #end-if

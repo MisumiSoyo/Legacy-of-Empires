@@ -158,6 +158,15 @@
 )
 
 
+;   Donkey
+(defrule
+    (goal traincart yes)
+    (can-train loe-donkey)
+=>
+    (train loe-donkey)
+)
+
+
 ;   Malay Free Army
 (defrule
     (goal trainunique yes)
@@ -227,4 +236,152 @@
     (can-train elite-keshik)
 =>
     (train elite-keshik)
+)
+
+
+;   Stone Obuch
+(defrule
+    (strategic-number sn-current-age < imperial)
+    (can-train poles-stone-obuch)
+    (or (goal trainchamp yes)
+        (or (goal trainpike yes)
+            (or (goal attacking yes)
+                (goal trainunique yes))))
+    (up-compare-goal excessStone >= 100)
+    (nand(goal increase-ts castle)
+        (building-type-count castle < 1))
+=>
+    (train poles-stone-obuch)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (or (goal trainunique yes)
+        (and(goal trainchamp yes)
+            (up-compare-goal excessStone >= 300)))
+    (up-compare-goal excessStone >= 200)
+    (can-train poles-stone-obuch)
+    (not(goal increase-ts castle))
+=>
+    (train poles-stone-obuch)
+)
+
+
+;   Poles Double Army
+(defrule
+    (strategic-number sn-current-age < imperial)
+    (goal trainchamp yes)
+    (or (up-compare-goal excessGold >= 125)
+        (and(goal underattack yes)
+            (military-population <= 20)))
+    (can-train poles-double-militia)
+=>
+    (train poles-double-militia)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (goal trainchamp yes)
+    (or (up-compare-goal excessGold >= 500)
+        (up-compare-goal tradeunits >= 20))
+    (can-train poles-double-militia)
+=>
+    (train poles-double-militia)
+)
+
+
+(defrule
+    (strategic-number sn-current-age < imperial)
+    (goal trainpike yes)
+    (or (up-compare-goal excessGold >= 125)
+        (and(goal underattack yes)
+            (military-population <= 20)))
+    (can-train poles-double-spearman)
+=>
+    (train poles-double-spearman)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (goal trainpike yes)
+    (or (up-compare-goal excessGold >= 500)
+        (up-compare-goal tradeunits >= 20))
+    (can-train poles-double-spearman)
+=>
+    (train poles-double-spearman)
+)
+
+
+(defrule
+    (goal traincondottiero yes)
+    (or (or (up-compare-goal excessGold >= 600)
+            (up-compare-goal tradeunits >= 25))
+        (and(or (goal underattack yes)
+                (goal attacking yes))
+            (unit-type-count-total condottiero <= 6)))
+    (can-train poles-double-condottiero)
+=>
+    (train poles-double-condottiero)
+)
+
+
+;   Taborite Warrior
+(defrule
+    (strategic-number sn-current-age < imperial)
+    (or (and(goal underattack yes)
+            (military-population <= 10))
+        (goal attacking yes))
+    (goal trainchamp yes)
+    (can-train taborite-warrior)
+=>
+    (train taborite-warrior)
+)
+
+
+(defrule
+    (strategic-number sn-current-age >= imperial)
+    (goal trainchamp yes)
+    (up-research-status c: ri-two-handed-swordsman < research-pending)
+    (can-train taborite-warrior)
+=>
+    (train taborite-warrior)
+)
+
+
+;   Khevsureti Warrior
+(defrule
+    (or (goal trainchamp yes)
+        (goal trainpike yes))
+    (players-unit-type-count focus-player scorpion-line >= 4)
+    (can-train khevsureti-warrior)
+=>
+    (train khevsureti-warrior)
+)
+
+
+;   Conscripted Army
+(defrule
+    (civilian-population >= 90)
+    (or (goal trainchamp yes)
+        (goal trainpike yes))
+    (can-train conscripted-army)
+    (players-unit-type-count focus-player archer-line <= 16)
+    (players-unit-type-count focus-player cavalry-archer-line <= 14)
+=>
+    (train conscripted-army)
+)
+
+
+;   Iron Hawk
+(defrule
+    (or (strategic-number sn-current-age < imperial)
+        (or (players-unit-type-count focus-player archer-line >= 10)
+            (or (up-compare-goal excessGold >= 600)
+                (up-compare-goal tradeunits >= 25))))
+    (can-train iron-hawk)
+=>
+    (train iron-hawk)
 )
