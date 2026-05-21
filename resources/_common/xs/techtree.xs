@@ -489,6 +489,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, StoneShaftMiningTechID);
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, CropRotationTechID);
             break;
         }
         case cGeorgians:

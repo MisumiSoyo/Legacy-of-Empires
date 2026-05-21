@@ -726,8 +726,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀, 达罗毗荼, 不列颠启用轮作",
-            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans", "Shu", "Dravidians", "Britons"],
+            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀, 达罗毗荼, 不列颠, 亚美尼亚启用轮作",
+            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans", "Shu", "Dravidians",
+                              "Britons", "Armenians"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",

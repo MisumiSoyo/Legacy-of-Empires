@@ -547,7 +547,7 @@ void MercenaryUnitAdjustment(int playerId = -1, int ObjectID = -1, int tmp = -1)
     xsTaskAmount(cTaskAttrWorkValue2, 2);
     if ((ObjectID == BlackwoodArcherID) || (ObjectID == EliteBlackwoodArcherID))
         xsTaskAmount(cTaskAttrWorkValue2, 5);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000010);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000011);
     xsTask(ObjectID, cTaskTypeExtraSpawn, -1, playerId);
     xsResetTaskAmount();
 }

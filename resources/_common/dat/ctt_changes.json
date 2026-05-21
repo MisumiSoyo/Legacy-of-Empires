@@ -5301,10 +5301,10 @@
             "Use Type": "Tech"
         },
         {
-            "note": "亚美尼亚获得双人锯, 钻井采石法, 扳指, 造船匠",
+            "note": "亚美尼亚获得双人锯, 钻井采石法, 扳指, 造船匠, 轮作",
             "action": "modify",
             "civ_id": "ARMENIANS",
-            "Node ID": [221, 279, 373, 437],
+            "Node ID": [12, 221, 279, 373, 437],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },

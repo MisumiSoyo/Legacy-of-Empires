@@ -323,13 +323,29 @@ void EffectFunction10020(int playerId = -1)
     xsTaskAmount(cTaskAttrWorkRange, SatrapAuraRange);
     xsTaskAmount(cTaskAttrSearchWaitTime, 13.000001);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 5);
-    xsTask(CastleID, cTaskTypeAura, 12, playerId);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTask(CastleID, cTaskTypeAura, cBuildingClass, playerId);
+    xsTask(TownCenterID, cTaskTypeAura, cBuildingClass, playerId);
+    xsTask(TownCenter2ID, cTaskTypeAura, cBuildingClass, playerId);
+    xsTask(TownCenter3ID, cTaskTypeAura, cBuildingClass, playerId);
+    xsTask(TownCenter4ID, cTaskTypeAura, cBuildingClass, playerId);
     xsResetTaskAmount();
     LaunchAura(playerId, CastleID);
+    LaunchAura(playerId, TownCenterID);
+    LaunchAura(playerId, TownCenter2ID);
+    LaunchAura(playerId, TownCenter3ID);
+    LaunchAura(playerId, TownCenter4ID);
 
-    ModResource(playerId, 521, 1.5);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000012);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeSatrapGoldProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTask(CastleID, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(TownCenterID, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(TownCenter2ID, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(TownCenter3ID, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(TownCenter4ID, cTaskTypeGenerateResources, -1, playerId);
+    xsResetTaskAmount();
+    ModResource(playerId, cAttributeSatrapGoldProductivity, 50);
 }
 
 
@@ -1371,7 +1387,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 305  2026.05.21");
+    xsChatData("Patch: 306  2026.05.22");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
