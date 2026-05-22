@@ -138,6 +138,18 @@
 )
 
 
+;   Black Army Infantry
+(defrule
+    (goal trainchamp yes)
+    (or (not(research-completed ri-two-handed-swordsman))
+        (or (up-compare-goal excessGold >= 300)
+            (up-compare-goal tradeunits >= 30)))
+    (can-train black-army-infantry)
+=>
+    (train black-army-infantry)
+)
+
+
 ;   Feitoria from Carta Regia
 (defrule
     (can-build loe-feitoria-2)

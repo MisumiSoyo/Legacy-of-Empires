@@ -1,3 +1,9 @@
+void SetArcherArmor(int playerId = -1)
+{
+    AddAttackForm(playerId, cCavalryClass, cDamageClassArchers);
+}
+
+
 void SetRoyalHeirArmor(int playerId = -1)
 {
     AddArmorForm(playerId, cArcherClass, cDamageClassRoyalHeirs, -3);
@@ -85,6 +91,7 @@ void SetScoutArmor(int playerId = -1)
 
 void SetNewArmorForms(int playerId = -1)
 {
+    SetArcherArmor(playerId);
     SetRoyalHeirArmor(playerId);
     SetMonasteryArmor(playerId);
     SetVillagerArmor(playerId);

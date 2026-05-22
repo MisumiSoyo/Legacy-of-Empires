@@ -2280,6 +2280,14 @@
             "building_id": 12,
             "Name": "Black Army Infantry",
             "RequiredAge": 4
+        },
+        {
+            "note": "毛驴",
+            "civilizations": "Berbers",
+            "unit_id": 4037,
+            "building_id": 84,
+            "Name": "Donkey",
+            "RequiredAge": 2
         }
     ]
 }

@@ -1381,13 +1381,24 @@ void EffectFunction10118(int playerId = -1)
 }
 
 
+//  10120 - C-Bonus, relics produce food instead of gold
+void EffectFunction10120(int playerId = -1)
+{
+    float RelicGoldRate = xsPlayerAttribute(playerId, cAttributeRelicRate);
+    if (AllyCiv(playerId, cAztecs))
+        RelicGoldRate = RelicGoldRate * 1.33;
+    ModResource(playerId, cAttributeRelicFoodRate, RelicGoldRate * 2);
+    SetResource(playerId, cAttributeRelicRate, 0);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 307  2026.05.22");
+    xsChatData("Patch: 308  2026.05.22");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

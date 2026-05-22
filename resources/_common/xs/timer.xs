@@ -118,7 +118,7 @@ void MuiscaFreeWood(int playerId = -1, int Time = -1)
 void BerbersDonkeyNumLimit(int playerId = -1, int Time = -1)
 {
     if (xsGetObjectAttribute(playerId, DonkeyID, cDisabledFlag) > 0)
-        SetAttribute(playerId, DonkeyID, cAvailableFlag, 10 + 2 * minInt(5, xsPlayerAttribute(playerId, cAttributeCastle)));
+        SetAttribute(playerId, DonkeyID, cAvailableFlag, 6 + 3 * minInt(6, xsPlayerAttribute(playerId, cAttributeCastle)));
 }
 
 

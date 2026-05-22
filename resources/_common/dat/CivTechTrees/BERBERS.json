@@ -5101,6 +5101,36 @@
             "Use Type": "Unit"
         },
         {
+            "Age ID": 2,
+            "Building ID": 84,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800105,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Donkey",
+            "Name String ID": 700105,
+            "Node ID": 4037,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 158,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
             "Age ID": 3,
             "Building ID": 84,
             "Draw Node Type": "UnitTech",

@@ -299,7 +299,7 @@ void EffectFunction10075(int playerId = -1)
 }
 
 
-//  10077 - C-Bonus, unique tech from allies
+//  10077 - C-Bonus, unique tech from other players
 void EffectFunction10077(int playerId = -1)
 {
     static int CastleTechIDArray = -1;
@@ -317,7 +317,7 @@ void EffectFunction10077(int playerId = -1)
 
     int i = 0;
     for (i = 1; <= xsGetNumPlayers())
-        if ((i != playerId) && (isAlly(i, playerId)))
+        if (i != playerId)
         {
             int UniqueTechID = xsArrayGetInt(CastleTechIDArray, xsGetPlayerCivilization(i));
             if (xsGetTechState(playerId, UniqueTechID) < cTechStateNotReady)
@@ -340,7 +340,7 @@ void EffectFunction10077(int playerId = -1)
 }
 
 
-//  10078 - C-Bonus, unique tech from allies
+//  10078 - C-Bonus, unique tech from other players
 void EffectFunction10078(int playerId = -1)
 {
     static int ImperialTechIDArray = -1;
@@ -358,7 +358,7 @@ void EffectFunction10078(int playerId = -1)
 
     int i = 0;
     for (i = 1; <= xsGetNumPlayers())
-        if ((i != playerId) && (isAlly(i, playerId)))
+        if (i != playerId)
         {
             int UniqueTechID = xsArrayGetInt(ImperialTechIDArray, xsGetPlayerCivilization(i));
             if (xsGetTechState(playerId, UniqueTechID) < cTechStateNotReady)

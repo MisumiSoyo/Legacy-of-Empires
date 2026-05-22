@@ -2070,6 +2070,11 @@
                         "ID": 128,
                         "Name": "Trade Cart (Empty)",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Donkey",
+                        "RequiredAge": 2,
+                        "ID": 4037
                     }
                 ]
             },
