@@ -612,6 +612,7 @@ void EffectFunction10037(int playerId = -1)
     FreeTech(playerId, ScaleMailArmorTechID);
     FreeTech(playerId, ChainMailArmorTechID);
     FreeTech(playerId, PlateMailArmorTechID);
+    FreeTech(playerId, MilitaryTrainingTechID);
     FreeTech(playerId, MasonryTechID);
     FreeTech(playerId, ArchitectureTechID);
     FreeTech(playerId, TreadmillCraneTechID);
@@ -645,6 +646,7 @@ void EffectFunction10037(int playerId = -1)
     FreeTech(playerId, TheocracyTechID);
     FreeTech(playerId, TitheTechID);
     FreeTech(playerId, ArsonTechID);
+    FreeTech(playerId, SiegeTrainingTechID);
     FreeTech(playerId, SquiresTechID);
     FreeTech(playerId, GambesonsTechID);
     FreeTech(playerId, BloodlinesTechID);
