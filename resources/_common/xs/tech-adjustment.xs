@@ -286,3 +286,12 @@ void EffectFunction10119(int playerId = -1)
     ModAttribute(playerId, EliteRaiderElephantID, cRegenerationRate, 30);
     ModAttribute(playerId, EarlyElephantArcherID, cRegenerationRate, 30);
 }
+
+
+//  10121 - Grand Trunk Road Adjustment
+void EffectFunction10121(int playerId = -1)
+{
+    MulResource(playerId, cAttributeGoldFarmingProductivity, 1.1);
+    MulResource(playerId, cAttributeForestryProductivity, 1.1);
+    MulResource(playerId, cAttributeCashCropProductivity, 1.1);
+}

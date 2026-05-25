@@ -45,6 +45,7 @@ extern const int cAttributeHunterGoldProductivity = 746;
 extern const int cAttributeTradeCartGoldProductivity = 747;
 extern const int cAttributeDonkeyFoodRatio = 748;
 extern const int cAttributeSatrapGoldProductivity = 749;
+extern const int cAttributeCashCropProductivity = 750;
 
 
 //  Custom Units' IDs
@@ -649,6 +650,7 @@ extern const int HeresyTechID = 439;
 extern const int HerbalMedicineTechID = 441;
 extern const int ElephantArcherTechID = 480;
 extern const int EliteElephantArcherTechID = 481;
+extern const int GrandTrunkRoadTechID = 506;
 extern const int ImperialCamelTechID = 521;
 extern const int SavarTechID = 526;
 extern const int EliteGenitourTechID = 599;

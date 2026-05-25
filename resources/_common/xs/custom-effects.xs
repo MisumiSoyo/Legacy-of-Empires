@@ -14,7 +14,10 @@ void EffectFunction10002(int playerId = -1)
     xsTask(MaleLumberjackID, cTaskTypeGenerateResources, cTreeClass, playerId);
     xsTask(FemaleLumberjackID, cTaskTypeGenerateResources, cTreeClass, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeForestryProductivity, 2.2);
+    if (isResearched(playerId, GrandTrunkRoadTechID))
+        ModResource(playerId, cAttributeForestryProductivity, 2.2 * 1.1);
+    else
+        ModResource(playerId, cAttributeForestryProductivity, 2.2);
 }
 
 
@@ -474,6 +477,30 @@ void EffectFunction10026(int playerId = -1)
         if (isLandMilitaryClass(i))
             ApplyAllToTarget(playerId, i, cTaskTypeLoot);
     xsResetTaskAmount();
+}
+
+
+//  10027 - Cash Crop
+void EffectFunction10027(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeCashCropProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000013);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTaskAmount(cTaskAttrEnableTargeting, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 5);
+    xsTaskAmount(cTaskAttrGatherType, 1);
+    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsResetTaskAmount();
+
+    if (isResearched(playerId, GrandTrunkRoadTechID))
+        ModResource(playerId, cAttributeCashCropProductivity, 2.0 * 1.1);
+    else
+        ModResource(playerId, cAttributeCashCropProductivity, 2.0);
 }
 
 
@@ -1171,6 +1198,26 @@ void EffectFunction10094(int playerId = -1)
     ModArmor(playerId, cMonkWithRelicClass, cDamageClassMelee, 8);
     ModAttribute(playerId, cMonkWithRelicClass, cRegenerationRate, 90);
     MulAttribute(playerId, cMonkWithRelicClass, cMovementSpeed, 1.2);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 1.0 / 60);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000014);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeRelicRate);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+    xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000015);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeRelicFoodRate);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000016);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeRelicWoodRate);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeWood);
+    xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000017);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeRelicStoneRate);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeStone);
+    xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
+    xsResetTaskAmount();
 }
 
 
@@ -1209,8 +1256,8 @@ void EffectFunction10096(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000002);
     xsTaskAmount(cTaskAttrWorkRange, 7);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.5);
-    xsTaskAmount(cTaskAttrWorkValue2, 30);
+    xsTaskAmount(cTaskAttrWorkValue1, 1.0);
+    xsTaskAmount(cTaskAttrWorkValue2, 40);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
 
@@ -1398,7 +1445,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 310  2026.05.22");
+    xsChatData("Patch: 311  2026.05.25");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

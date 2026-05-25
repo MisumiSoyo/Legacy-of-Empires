@@ -3790,7 +3790,7 @@
             "Name": "Treadmill Crane",
             "Name String ID": 17054,
             "Node ID": 54,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 60,
             "Prerequisite IDs": [
@@ -4930,7 +4930,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [

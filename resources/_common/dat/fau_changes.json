@@ -1151,7 +1151,7 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 条顿, 法兰克, 契丹, 西班牙, 格鲁吉亚获得脚踏起重机",
+            "note": "中国, 条顿, 法兰克, 契丹, 西班牙, 格鲁吉亚, 罗马获得脚踏起重机",
             "civilizations": ["Teutons", "Chinese", "Franks", "Khitans", "Spanish", "Georgians"],
             "tech_id": 54,
             "building_id": 209,
@@ -1262,9 +1262,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚获得双人锯",
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚, 罗马获得双人锯",
             "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars",
-                              "Armenians", "Wei", "Georgians"],
+                              "Armenians", "Wei", "Georgians", "Romans"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -2288,6 +2288,14 @@
             "building_id": 84,
             "Name": "Donkey",
             "RequiredAge": 2
+        },
+        {
+            "note": "保加利亚获得圣洁",
+            "civilizations": ["Bulgarians"],
+            "tech_id": 231,
+            "building_id": 104,
+            "Name": "Sancity",
+            "RequiredAge": 3
         }
     ]
 }

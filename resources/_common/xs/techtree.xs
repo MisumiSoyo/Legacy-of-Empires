@@ -390,6 +390,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, HoardingsTechID);
             EnableTech(playerId, ChampionTechID);
+            EnableTech(playerId, SancityTechID);
             break;
         }
         case cTatars:
@@ -481,6 +482,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BracerTechID);
             EnableTech(playerId, ArbalesterTechID);
             EnableTech(playerId, ArsonTechID);
+            EnableTech(playerId, TreadmillCraneTechID);
+            EnableTech(playerId, TwoManSawTechID);
             break;
         }
         case cArmenians:

@@ -175,10 +175,11 @@
                          [4, 259, -1, 14, -1]]
         },
         {
-            "type": "add",
-            "name": "勃艮第葡萄园",
+            "type": "modify",
+            "name": "勃艮第葡萄园产生的黄金增加",
             "effect_id": 790,
-            "commands": [1, 236, -1, -1, 2]
+            "match": [1, 236, "any", "any", "any"],
+            "modifications": ["d", "set", 4]
         },
         {
             "type": "add",
@@ -491,7 +492,7 @@
             "name": "瞿折罗开局获得的果树丛调整",
             "effect_id": 872,
             "position": 0,
-            "commands": [40, 1549, -1, 21, 750]
+            "commands": [40, 1549, -1, 21, 450]
         },
         {
             "type": "add",
@@ -581,6 +582,33 @@
             "name": "医疗部队 对新增加的大象单位生效",
             "effect_id": 850,
             "function_id": 10119
+        },
+        {
+            "type": "adjustment",
+            "name": "大干道调整, 补充资源",
+            "effect_id": 562,
+            "function_id": 10121
+        },
+        {
+            "type": "modify",
+            "name": "条顿农田减价调整",
+            "effect_id": 314,
+            "match": [5, "any", "any", 100, "any"],
+            "modifications": ["d", "set", 0.5]
+        },
+        {
+            "type": "modify",
+            "name": "鞑靼牧羊人和牧民采集消耗调整",
+            "effect_id": 741,
+            "match": [6, 216, "any", "any", "any"],
+            "modifications": ["d", "set", 2]
+        },
+        {
+            "type": "modify",
+            "name": "鞑靼牧羊人和牧民采集消耗调整",
+            "effect_id": 741,
+            "match": [5, "any", "any", 13, "any"],
+            "modifications": ["d", "set", 0.5]
         }
     ],
     "unit_changes":

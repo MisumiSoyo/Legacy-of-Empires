@@ -751,7 +751,7 @@
             "Node ID": 4125,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
-            "Picture Index": 72,
+            "Picture Index": 243,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
@@ -774,7 +774,7 @@
             "Node ID": 4127,
             "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
-            "Picture Index": 72,
+            "Picture Index": 243,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": 3278,
@@ -3047,10 +3047,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "保加利亚启用双人锯, 围墙, 工兵",
+            "note": "保加利亚启用双人锯, 围墙, 工兵, 圣洁",
             "action": "modify",
             "civ_id": "BULGARIANS",
-            "Node ID": [221, 321, 379],
+            "Node ID": [221, 231, 321, 379],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -4848,10 +4848,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "罗马获得护腕, 纵火",
+            "note": "罗马获得护腕, 纵火, 双人锯, 脚踏起重机",
             "action": "modify",
             "civ_id": "ROMANS",
-            "Node ID": [201, 602],
+            "Node ID": [54, 201, 221, 602],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
