@@ -609,6 +609,47 @@
             "effect_id": 741,
             "match": [5, "any", "any", 13, "any"],
             "modifications": ["d", "set", 0.5]
+        },
+        {
+            "type": "modify",
+            "name": "双人锯效果调整为村民存放的木材 +10%",
+            "effect_id": 210,
+            "match": [5, "any", "any", 13, "any"],
+            "modifications": ["c", "set", 14]
+        },
+        {
+            "type": "add",
+            "name": "双人锯效果调整为村民存放的木材 +10%",
+            "effect_id": 210,
+            "commands": [6, 189, 0, -1, 1.1]
+        },
+        {
+            "type": "delete",
+            "name": "亚美尼亚三级伐木科技加成调整",
+            "effect_id": 957,
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "add",
+            "name": "亚美尼亚三级伐木科技加成调整",
+            "effect_id": 957,
+            "commands": [[6, 189, 0, -1, 1.03636],
+                         [5, 123, -1, 14, 1.03636],
+                         [5, 218, -1, 14, 1.03636]]
+        },
+        {
+            "type": "modify",
+            "name": "契丹垃圾兵训练速度和升级速度调整为 +30%",
+            "effect_id": 1011,
+            "match": ["any", "any", "any", "any", "any"],
+            "modifications": ["d", "set", 0.769231]
+        },
+        {
+            "type": "modify",
+            "name": "保加利亚城镇中心石料费用减免调整为 -75%",
+            "effect_id": 731,
+            "match": [5, "any", "any", 106, "any"],
+            "modifications": ["d", "set", 0.25]
         }
     ],
     "unit_changes":
@@ -718,6 +759,26 @@
             "note": "亚美尼亚二级采石科技加成调整",
             "tech_id": 966,
             "attributes": [["effect_id", 3410]]
+        },
+        {
+            "note": "印加军事单位食物费用减免调整",
+            "tech_id": 152,
+            "attributes": [["effect_id", 3411]]
+        },
+        {
+            "note": "印加军事单位食物费用减免调整",
+            "tech_id": 153,
+            "attributes": [["effect_id", 3412]]
+        },
+        {
+            "note": "印加军事单位食物费用减免调整",
+            "tech_id": 154,
+            "attributes": [["effect_id", 3413]]
+        },
+        {
+            "note": "印加军事单位食物费用减免调整",
+            "tech_id": 155,
+            "attributes": [["effect_id", 3414]]
         }
     ],
     "resource_changes":

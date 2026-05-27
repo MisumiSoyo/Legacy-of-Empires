@@ -1262,9 +1262,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚, 罗马获得双人锯",
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚, 罗马, 印加获得双人锯",
             "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars",
-                              "Armenians", "Wei", "Georgians", "Romans"],
+                              "Armenians", "Wei", "Georgians", "Romans", "Incas"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -1929,20 +1929,20 @@
             "RequiredAge": 4
         },
         {
-            "note": "阿兹特克, 玛雅, 图皮, 穆伊斯卡禁用独轮推车",
-            "civilizations": ["Aztecs", "Mayans", "Tupi", "Muisca"],
+            "note": "阿兹特克, 玛雅, 图皮, 穆伊斯卡, 印加禁用独轮推车",
+            "civilizations": ["Aztecs", "Mayans", "Tupi", "Muisca", "Incas"],
             "tech_id": 213,
             "type": "delete"
         },
         {
-            "note": "阿兹特克, 玛雅, 图皮, 穆伊斯卡禁用手推车",
-            "civilizations": ["Aztecs", "Mayans", "Tupi", "Muisca"],
+            "note": "阿兹特克, 玛雅, 图皮, 穆伊斯卡, 印加禁用手推车",
+            "civilizations": ["Aztecs", "Mayans", "Tupi", "Muisca", "Incas"],
             "tech_id": 249,
             "type": "delete"
         },
         {
-            "note": "阿兹特克, 玛雅禁用脚踏起重机",
-            "civilizations": ["Aztecs", "Mayans"],
+            "note": "阿兹特克, 玛雅, 印加禁用脚踏起重机",
+            "civilizations": ["Aztecs", "Mayans", "Incas"],
             "tech_id": 54,
             "type": "delete"
         },
@@ -2090,8 +2090,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "斯拉夫, 达罗毗荼获得热情",
-            "civilizations": ["Slavs", "Dravidians"],
+            "note": "斯拉夫, 达罗毗荼, 印加获得热情",
+            "civilizations": ["Slavs", "Dravidians", "Incas"],
             "tech_id": 252,
             "building_id": 104,
             "Name": "Fervor",
@@ -2138,8 +2138,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "格鲁吉亚获得赎罪",
-            "civilizations": "Georgians",
+            "note": "格鲁吉亚, 印加获得赎罪",
+            "civilizations": ["Georgians", "Incas"],
             "tech_id": 319,
             "building_id": 104,
             "Name": "Atonement",

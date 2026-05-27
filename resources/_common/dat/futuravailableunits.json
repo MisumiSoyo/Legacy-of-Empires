@@ -15998,11 +15998,6 @@
                         "ID": 373,
                         "Name": "Shipwright",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 54,
-                        "Name": "Treadmill Crane",
-                        "RequiredAge": 3
                     }
                 ]
             },
@@ -16173,6 +16168,16 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3005
+                    },
+                    {
+                        "Name": "Fervor",
+                        "RequiredAge": 3,
+                        "ID": 252
+                    },
+                    {
+                        "Name": "Atonement",
+                        "RequiredAge": 3,
+                        "ID": 319
                     }
                 ],
                 "Units": [
@@ -16206,16 +16211,6 @@
                         "ID": 22,
                         "Name": "Loom",
                         "RequiredAge": 1
-                    },
-                    {
-                        "ID": 213,
-                        "Name": "Wheelbarrow",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 249,
-                        "Name": "Hand Cart",
-                        "RequiredAge": 3
                     },
                     {
                         "Name": "Town Defense",

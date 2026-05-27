@@ -269,8 +269,14 @@ void EffectFunction10001(int playerId = -1)
         }
         case cIncas:
         {
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, FervorTechID);
+            EnableTech(playerId, AtonementTechID);
             DisableTech(playerId, GoldShaftMiningTechID);
             DisableTech(playerId, StoneShaftMiningTechID);
+            DisableTech(playerId, WheelBarrowTechID);
+            DisableTech(playerId, HandCartTechID);
+            DisableTech(playerId, TreadmillCraneTechID);
             break;
         }
         case cMagyars:

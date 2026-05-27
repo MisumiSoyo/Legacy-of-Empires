@@ -418,11 +418,11 @@ void EffectFunction10023(int playerId = -1)
 void EffectFunction10024(int playerId = -1)
 {
     xsResetTaskAmount();
-    GenerateGoldFromBuilding(cScoutCavalryClass);
-    GenerateGoldFromBuilding(cCavalryClass);
-    GenerateGoldFromBuilding(cInfantryClass);
+    GenerateGoldFromBuilding(playerId, cScoutCavalryClass, 0.33);
+    GenerateGoldFromBuilding(playerId, cCavalryClass, 0.33);
+    GenerateGoldFromBuilding(playerId, cInfantryClass, 0.45);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 33);
+    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 1);
 }
 
 
@@ -1445,7 +1445,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 311  2026.05.25");
+    xsChatData("Patch: 312  2026.05.27");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

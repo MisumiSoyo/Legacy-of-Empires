@@ -90,12 +90,11 @@ void TributarySystemApplier(int playerId = -1, int ObjectTarget = -1, int TrainB
 }
 
 
-void GenerateGoldFromBuilding(int ClassTarget = -1, int playerId = -1)
+void GenerateGoldFromBuilding(int playerId = -1, int ClassTarget = -1, float Rate = 0.0)
 {
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    xsTaskAmount(cTaskAttrResourceOut, 3);
+    xsTaskAmount(cTaskAttrWorkValue1, Rate);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeCavalryLootBuildingGoldProductivity);
-    xsTaskAmount(cTaskAttrUnusedResource, 3);
 
     xsTask(ClassTarget, cTaskTypeGenerateResources, cBuildingClass, playerId);
     xsTask(ClassTarget, cTaskTypeGenerateResources, cTowerClass, playerId);

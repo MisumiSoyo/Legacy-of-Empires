@@ -5891,6 +5891,22 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 128
+        },
+        {
+            "note": "印加获得双人锯, 热情, 赎罪",
+            "action": "modify",
+            "civ_id": "INCAS",
+            "Node ID": [221, 252, 319],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "印加失去独轮推车, 手推车, 脚踏起重机",
+            "action": "modify",
+            "civ_id": "INCAS",
+            "Node ID": [54, 213, 249],
+            "Use Type": "Tech",
+            "Node Status": "NotAvailable"
         }
     ]
 }

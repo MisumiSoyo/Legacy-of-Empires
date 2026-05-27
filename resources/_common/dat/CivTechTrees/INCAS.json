@@ -3762,7 +3762,7 @@
             "Name": "Treadmill Crane",
             "Name String ID": 17054,
             "Node ID": 54,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 60,
             "Prerequisite IDs": [
@@ -4242,7 +4242,7 @@
             "Name": "Atonement",
             "Name String ID": 17316,
             "Node ID": 319,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 93,
             "Prerequisite IDs": [
@@ -4422,7 +4422,7 @@
             "Name": "Fervor",
             "Name String ID": 17249,
             "Node ID": 252,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 73,
             "Prerequisite IDs": [
@@ -4662,7 +4662,7 @@
             "Name": "Wheelbarrow",
             "Name String ID": 17211,
             "Node ID": 213,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 79,
             "Prerequisite IDs": [
@@ -4692,7 +4692,7 @@
             "Name": "Hand Cart",
             "Name String ID": 17246,
             "Node ID": 249,
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Node Type": "Research",
             "Picture Index": 42,
             "Prerequisite IDs": [
@@ -4932,7 +4932,7 @@
             "Name": "Two-Man Saw",
             "Name String ID": 17231,
             "Node ID": 221,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 81,
             "Prerequisite IDs": [
