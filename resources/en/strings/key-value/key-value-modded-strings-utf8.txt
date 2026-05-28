@@ -1,5 +1,5 @@
-8012 "Research Crop Rotation (New Farms provide +175 food, while existing Farms provide a smaller food amount; Farmers +5% work rate)"
-8013 "Research Heavy Plow (New Farms provide +125 food, while existing Farms provide a smaller food amount; Farmers +5% work rate)"
+8012 "Research Crop Rotation (New Farms provide +225 food, while existing Farms provide a smaller food amount; Farmers +5% work rate)"
+8013 "Research Heavy Plow (New Farms provide +150 food, while existing Farms provide a smaller food amount; Farmers +5% work rate)"
 8014 "Research Horse Collar (New Farms provide +75 food, while existing Farms provide a smaller food amount; Farmers +5% work rate)"
 8063 "Upgrade to Keep. (+750 HP, +1 attack, -20% reload time, +1/1P armor, +1 damage vs Ships and Fishing Ships, secondary arrows +1 base attack, +1 damage vs Ships and Fishing Ships)"
 8054 "Research Treadmill Crane (Villagers +20% building and repairing speed)"
@@ -52,9 +52,9 @@
 
 26730 "Create <b>Elite Magyar Huszar<b> (<cost>, 12 <MATERIAL=MPIconGoodCPU,1>)\nMagyar unique light cavalry unit. Strong vs siege weapons. Weak vs Pikemen and Camel Riders.\nUpgrades: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 6\nClass: Light Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +8 vs Siege weapon, +2 vs Rams."
 
-28012 "Research <b>Crop Rotation<b> (<cost>, 70 <MATERIAL=MPIconGoodCPU,1>)\nNew Farms provide +175 food, while existing Farms provide a smaller food amount; Farmers +5% work rate."
+28012 "Research <b>Crop Rotation<b> (<cost>, 70 <MATERIAL=MPIconGoodCPU,1>)\nNew Farms provide +225 food, while existing Farms provide a smaller food amount; Farmers +5% work rate."
 
-28013 "Research <b>Heavy Plow<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nNew Farms provide +125 food, while existing Farms provide a smaller food amount; Farmers +5% work rate."
+28013 "Research <b>Heavy Plow<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\nNew Farms provide +150 food, while existing Farms provide a smaller food amount; Farmers +5% work rate."
 
 28014 "Research <b>Horse Collar<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>)\nNew Farms provide +75 food, while existing Farms provide a smaller food amount; Farmers +5% work rate."
 

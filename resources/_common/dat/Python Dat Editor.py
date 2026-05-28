@@ -122,12 +122,22 @@ def applyEffectChanges(data, effect_change_list):
 
 def applyAttributeChange(obj, attr_change):
     """
-    应用单个属性修改，支持列表元素搜索修改
+    应用单个属性修改，支持列表元素搜索修改或删除
     
     格式1: [path, value]                    -> 直接赋值
     格式2: [path, op, value]                -> 运算修改
     格式3: [list_path, "list_search", element_search, elem_attr_change]  
-                                          -> 在列表中搜索元素并修改
+                                          -> 在列表中搜索元素并修改或删除
+                                          
+    element_search 支持:
+        - 单层列表: ["field", "op", value] 或 ["field", value]  单条件
+        - 两层列表: [["field1", "op1", val1], ["field2", "op2", val2]]  多条件AND
+        - 字典: {"and": [...]} 或 {"or": [...]}  复杂组合
+    
+    elem_attr_change 支持:
+        - "delete"                              删除匹配元素本身
+        - [attr_path, value]                    直接赋值
+        - [attr_path, op, value]                运算修改 (set/add/mul)
     """
     if len(attr_change) == 2:
         attr_path, new_value = attr_change

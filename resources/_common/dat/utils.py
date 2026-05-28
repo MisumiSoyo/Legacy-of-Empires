@@ -264,22 +264,28 @@ def find_in_list(obj_list, element_search_config):
 
 def applyListElementChange(obj, list_attr_path, element_search_config, attr_change):
     """
-    在列表/元组属性中查找匹配元素并修改
+    在列表/元组属性中查找匹配元素并修改或删除
     """
-    # 获取列表
     try:
         obj_list = getNestedAttribute(obj, list_attr_path)
     except (AttributeError, IndexError, KeyError):
-        return  # 列表不存在，静默跳过
+        return
     
     if not isinstance(obj_list, (list, tuple)):
         raise ValueError(f"属性 {list_attr_path} 不是列表或元组，实际类型: {type(obj_list).__name__}")
     
-    # 查找匹配的元素
     matches = find_in_list(obj_list, element_search_config)
     
+    # ========== 新增：删除匹配元素本身 ==========
+    if attr_change == "del":
+        if isinstance(obj_list, tuple):
+            raise ValueError(f"属性 {list_attr_path} 是元组，不支持删除操作")
+        for idx,_ in reversed(matches):
+            del obj_list[idx]
+        return
+    # ==========================================
+    
     for idx, elem in matches:
-        # 对匹配的元素应用修改
         if len(attr_change) == 2:
             attr_path, new_value = attr_change
             setNestedAttribute(elem, attr_path, new_value)

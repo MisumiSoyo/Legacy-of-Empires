@@ -4,8 +4,8 @@
 6155 "建造大型箭塔"
 6313 "生产怯薛"
 6314 "生产精锐怯薛"
-8012 "研究轮作 (新农田提供的食物 +175, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率)"
-8013 "研究重犁 (新农田提供的食物 +125, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率)"
+8012 "研究轮作 (新农田提供的食物 +225, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率)"
+8013 "研究重犁 (新农田提供的食物 +150, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率)"
 8014 "研究马轭 (新农田提供的食物 +75, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率)"
 8054 "研究脚踏起重机 (村民 +20% 建造和修理建筑的速度)"
 8093 "研究弹道学 (远程部队(不包括火药单位)对移动目标的射击准确度提高, 并且(除弩炮类外)命中非主要目标不减少伤害)"
@@ -57,9 +57,9 @@
 
 26730 "生产<b>精锐马扎尔骠骑<b> (<cost>, 12 <MATERIAL=MPIconGoodCPU,1>)\n马扎尔独特轻骑兵单位, 适于攻击攻城武器。不适于攻击长枪兵和骆驼兵。\n升级: <MATERIAL=TechIconsT017Forging,1> <MATERIAL=TechIconsT018IronCasting,1> <MATERIAL=TechIconsT021BlastFurnace,1> <MATERIAL=TechIconsT066ScaleBardingArmor,1> <MATERIAL=TechIconsT023ChainBardingArmor,1> <MATERIAL=TechIconsT065PlateBardingArmor,1> <MATERIAL=TechIconsT110Bloodlines,1> <MATERIAL=TechIconsT010Husbandry,1> <MATERIAL=TechIconsT131Devotion,1> <MATERIAL=TechIconsT011Faith,1> <MATERIAL=TechIconsT108Heresy,1> <MATERIAL=TechIconsT091Conscription,1>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed,1> 1.5 <MATERIAL=StatIconsReloadTime,1> 1.8 <MATERIAL=EyeIcon> 6\n主类: 轻骑兵; 标签: 骑兵, 轻骑兵, 独特单位。\n攻击加成: +8 vs 攻城武器, +2 vs 冲车。"
 
-28012 "研究<b>轮作<b> (<cost>, 70 <MATERIAL=MPIconGoodCPU,1>)\n新农田提供的食物 +175, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率。"
+28012 "研究<b>轮作<b> (<cost>, 70 <MATERIAL=MPIconGoodCPU,1>)\n新农田提供的食物 +225, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率。"
 
-28013 "研究<b>重犁<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\n新农田提供的食物 +125, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率。"
+28013 "研究<b>重犁<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU,1>)\n新农田提供的食物 +150, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率。"
 
 28014 "研究<b>马轭<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU,1>)\n新农田提供的食物 +75, 现有农田提供的食物数量较少; 农夫 +5% 耕作效率。"
 

@@ -10,10 +10,6 @@
             {
                 "name": "大商站",
                 "id": [273]
-            },
-            {
-                "name": "城镇中心",
-                "id": [71, 109, 141, 142]
             }
         ],
         "tech_list":
@@ -160,19 +156,50 @@
         },
         {
             "type": "add",
-            "name": "农田科技调整",
-            "effect_id": [12, 13, 14],
+            "name": "马轭调整",
+            "effect_id": 14,
+            "commands": [[5, 50, -1, 13, 1.05],
+                         [5, 1187, -1, 13, 1.05],
+                         [5, 214, -1, 13, 1.08],
+                         [5, 259, -1, 13, 1.08]]
+        },
+        {
+            "type": "add",
+            "name": "耕犁调整",
+            "effect_id": 13,
+            "commands": [[5, 50, -1, 13, 1.05],
+                         [5, 1187, -1, 13, 1.05],
+                         [5, 214, -1, 13, 1.08],
+                         [5, 259, -1, 13, 1.08]]
+        },
+        {
+            "type": "delete",
+            "name": "耕犁增加的携带量移除",
+            "effect_id": 13,
+            "match": [4, "any", "any", 14, "any"]
+        },
+        {
+            "type": "modify",
+            "name": "耕犁增加的农田产量提升到 150",
+            "effect_id": 13,
+            "match": [1, 36, "any", "any", "any"],
+            "modifications": ["d", "set", 150]
+        },
+        {
+            "type": "add",
+            "name": "轮作调整",
+            "effect_id": 12,
             "commands": [[5, 50, -1, 13, 1.05],
                          [5, 1187, -1, 13, 1.05],
                          [5, 214, -1, 13, 1.07],
                          [5, 259, -1, 13, 1.07]]
         },
         {
-            "type": "add",
-            "name": "耕犁",
-            "effect_id": 13,
-            "commands": [[4, 214, -1, 14, -1],
-                         [4, 259, -1, 14, -1]]
+            "type": "modify",
+            "name": "轮作增加的农田产量提升到 225",
+            "effect_id": 12,
+            "match": [1, 36, "any", "any", "any"],
+            "modifications": ["d", "set", 225]
         },
         {
             "type": "modify",
@@ -734,6 +761,20 @@
                            ["type_50.blast_width", 0.5],
                            ["creatable.resource_costs", "list_search", ["type", 0], ["amount", 60]],
                            ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 85]]]
+        },
+        {
+            "note": "城镇中心的附属建筑现在没有价值, 维修费用和其他建筑一样",
+            "unit_id": [481, 482, 483, 611, 612, 613, 614, 615, 616, 618, 619, 620],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 0]]]
+        },
+        {
+            "note": "城镇中心生命值和基础护甲调整, 删除光环",
+            "unit_id": [71, 109, 141, 142],
+            "attributes": [["hit_points", 2000],
+                           ["type_50.armours", "list_search", ["class_", 4], ["amount", "add", -3]],
+                           ["type_50.armours", "list_search", ["class_", 31], ["amount", "add", -3]],
+                           ["type_50.displayed_melee_armour", "add", -3],
+                           ["bird.tasks", "list_search", ["action_type", 155], "del"]]
         }
     ],
     "tech_changes":
