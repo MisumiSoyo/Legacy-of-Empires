@@ -129,25 +129,37 @@
 
 
 #load-if-defined FRANKISH-CIV
+;   Lettre de Change
+(defrule
+    (or (up-compare-goal excessGold >= 500)
+        (up-compare-goal tradeunits >= 15))
+    (can-research ri-lettre-de-change)
+=>
+    (research ri-lettre-de-change)
+)
+
+
 ;   Loan 2000
 (defrule
-    (population-headroom <= 0)
     (can-research ri-loan-2000)
 =>
     (research ri-loan-2000)
 )
 
 
-;   Pavise
+;   Loan 1000
 (defrule
-    (or (unit-type-count-total archer-line >= 12)
-        (unit-type-count-total hand-cannoneer >= 9))
-    (or (up-research-status c: ri-leather-archer-armor >= research-pending)
-        (or (players-unit-type-count focus-player skirmisher-line >= 10)
-            (players-unit-type-count focus-player genitour-line >= 8)))
-    (can-research ri-pavise-french)
+    (can-research ri-loan-1000)
 =>
-    (research ri-pavise-french)
+    (research ri-loan-1000)
+)
+
+
+;   Loan 500
+(defrule
+    (can-research ri-loan-500)
+=>
+    (research ri-loan-500)
 )
 
 

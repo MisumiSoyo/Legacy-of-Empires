@@ -461,6 +461,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, IlluminationTechID);
             EnableTech(playerId, FervorTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, SappersTechID);
             break;
         }
         case cBengalis:
@@ -490,6 +492,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ArsonTechID);
             EnableTech(playerId, TreadmillCraneTechID);
             EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, HoardingsTechID);
             break;
         }
         case cArmenians:

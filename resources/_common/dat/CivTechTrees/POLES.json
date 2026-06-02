@@ -1089,7 +1089,7 @@
             "Name": "Cossack Rider",
             "Name String ID": 700100,
             "Node ID": 4035,
-            "Node Status": "ResearchRequired",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 19,
             "Prerequisite IDs": [
@@ -1119,7 +1119,7 @@
             "Name": "Elite Cossack Rider",
             "Name String ID": 700101,
             "Node ID": 4036,
-            "Node Status": "ResearchRequired",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 71,
             "Prerequisite IDs": [

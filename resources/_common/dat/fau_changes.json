@@ -1127,8 +1127,8 @@
             "type": "delete"
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙, 保加利亚, 鞑靼启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese", "Bulgarians", "Tatars"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙, 保加利亚, 鞑靼, 罗马启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese", "Bulgarians", "Tatars", "Romans"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1213,9 +1213,9 @@
             "type": "delete"
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏, 拜占庭获得工兵",
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏, 拜占庭, 罗马, 达罗毗荼获得工兵",
             "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians",
-                              "Shu", "Wei", "Byzantines"],
+                              "Shu", "Wei", "Byzantines", "Romans", "Dravidians"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1394,8 +1394,8 @@
             "type": "delete"
         },
         {
-            "note": "勃艮第, 中国, 意大利, 波斯, 马里获得攻城技师",
-            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians"],
+            "note": "勃艮第, 中国, 意大利, 波斯, 马里, 达罗毗荼获得攻城技师",
+            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians", "Dravidians"],
             "tech_id": 377,
             "building_id": 209,
             "Name": "Siege Engineers",
@@ -2296,6 +2296,13 @@
             "building_id": 104,
             "Name": "Sancity",
             "RequiredAge": 3
+        },
+        {
+            "note": "格鲁吉亚免费贸易车",
+            "civilizations": "Georgians",
+            "unit_id": 4046,
+            "building_id": 82,
+            "RequiredAge": 2
         }
     ]
 }

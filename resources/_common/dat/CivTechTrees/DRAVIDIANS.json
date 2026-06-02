@@ -3640,7 +3640,7 @@
             "Name": "Siege Engineers",
             "Name String ID": 17378,
             "Node ID": 377,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 101,
             "Prerequisite IDs": [
@@ -4300,7 +4300,7 @@
             "Name": "Sappers",
             "Name String ID": 17322,
             "Node ID": 321,
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 5,
             "Prerequisite IDs": [

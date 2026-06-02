@@ -6,8 +6,6 @@ void SetArcherArmor(int playerId = -1)
 
 void SetRoyalHeirArmor(int playerId = -1)
 {
-    AddArmorForm(playerId, cArcherClass, cDamageClassRoyalHeirs, -3);
-    AddArmorForm(playerId, cHandCannoneerClass, cDamageClassRoyalHeirs, -3);
 }
 
 

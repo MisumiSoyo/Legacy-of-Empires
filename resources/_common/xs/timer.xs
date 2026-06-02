@@ -55,15 +55,22 @@ void PortugueseFeitoria(int playerId = -1, int Time = -1)
 
 void MalayFreeArmy(int playerId = -1, int Time = -1)
 {
-    if (xsPlayerAttribute(playerId, cAttributeCurrentAge) < 1)
+    int Age = xsPlayerAttribute(playerId, cAttributeCurrentAge);
+    if (Age < FeudalAge)
         return;
-    int MalayArmyTimer = xsPlayerAttribute(playerId, cAttributeMalayArmyTimer);
-    if (MalayArmyTimer <= 0)
+    float MalayArmyTimer = xsPlayerAttribute(playerId, cAttributeMalayArmyTimer);
+    if (MalayArmyTimer >= 1.0)
     {
         ModResource(playerId, cAttributeMalayArmyCount, 1);
-        MalayArmyTimer = MalayArmyTimer + 120;
+        MalayArmyTimer = MalayArmyTimer - 1.0;
     }
-    SetResource(playerId, cAttributeMalayArmyTimer, MalayArmyTimer - 1);
+    int TimeRequired = 120;
+    if (Age == CastleAge)
+        TimeRequired = 105;
+    if (Age == ImperialAge)
+        TimeRequired = 90;
+    MalayArmyTimer = minFloat(MalayArmyTimer + 1.0 / TimeRequired, 5.0);
+    SetResource(playerId, cAttributeMalayArmyTimer, MalayArmyTimer);
 }
 
 
@@ -122,6 +129,20 @@ void BerbersDonkeyNumLimit(int playerId = -1, int Time = -1)
 }
 
 
+void MercenaryContract(int playerId = -1, int Time = -1)
+{
+    int Progress = xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryTimer);
+    if (isResearched(playerId, MercenaryContractTechID) == false)
+        return;
+    if ((Progress >= 120) && (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0))
+    {
+        SpawnUnit(playerId, CondottieroID, TownCenterID, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
+        Progress = Progress - 120;
+    }
+    SetResource(playerId, cAttributeCondottieroMercenaryTimer, minInt(Progress + 1, 120));
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -173,6 +194,8 @@ void TimerEvent(int playerId = -1, int Time = -1)
             break;
         }
     }
+
+    MercenaryContract(playerId, Time);
 }
 
 

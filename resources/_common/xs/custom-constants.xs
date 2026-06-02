@@ -46,6 +46,7 @@ extern const int cAttributeTradeCartGoldProductivity = 747;
 extern const int cAttributeDonkeyFoodRatio = 748;
 extern const int cAttributeSatrapGoldProductivity = 749;
 extern const int cAttributeCashCropProductivity = 750;
+extern const int cAttributeCondottieroMercenaryTimer = 751;
 
 
 //  Custom Units' IDs
@@ -93,7 +94,9 @@ extern const int DoubleSpearmenBuildingID = 4039;
 extern const int DoubleCondottierosBuildingID = 4040;
 extern const int BlackArmyInfantryID = 4041;
 extern const int EarlyVarangianID = 4042;
-extern const int ByzantinesMercenary1ID = 4043;
+extern const int HeavyCrossbowmanID = 4043;
+extern const int VeteranHeavyCrossbowmanID = 4044;
+extern const int EliteCrossbowmanID = 4045;
 extern const int ParthianCavalryArcherID = 4074;
 extern const int VeteranParthianCavalryArcherID = 4075;
 extern const int EliteParthianCavalryArcherID = 4076;
@@ -123,8 +126,6 @@ extern const int GoguryeoHeavyCavalryID = 4099;
 extern const int EliteGoguryeoHeavyCavalryID = 4100;
 extern const int HospitallerKnightID = 4101;
 extern const int EliteHospitallerKnightID = 4102;
-extern const int MercenaryContractBuildingID = 4103;
-extern const int MercenaryContractEffectBuildingID = 4104;
 extern const int MansabdarID = 4105;
 extern const int VeteranMansabdarID = 4106;
 extern const int EliteMansabdarID = 4107;
@@ -709,3 +710,9 @@ extern const int ZHotkeyID = 18090;
 extern const int XHotkeyID = 18039;
 extern const int CHotkeyID = 18258;
 extern const int VHotkeyID = 18239;
+
+
+extern const int DarkAge = 0;
+extern const int FeudalAge = 1;
+extern const int CastleAge = 2;
+extern const int ImperialAge = 3;

@@ -64,8 +64,8 @@ void EffectFunction10004(int playerId = -1)
 //  10005 - Frank Loan (500 gold)
 void EffectFunction10005(int playerId = -1)
 {
-    SetResource(playerId, cAttributeTechEffectTime, 240);
-    SetResource(playerId, cAttributeFrankLoan, 187.5);
+    SetResource(playerId, cAttributeTechEffectTime, 180);
+    SetResource(playerId, cAttributeFrankLoan, 250);
 }
 
 
@@ -662,23 +662,6 @@ void EffectFunction10035(int playerId = -1)
 {
     SpawnUnit(playerId, CondottieroID, TownCenterID, 5, 1);
     SetResource(playerId, cAttributeCondottieroMercenaryNum, 5);
-    SetAttribute(playerId, MercenaryContractBuildingID, cDeadUnitId, MercenaryContractBuildingID);
-    SetAttribute(playerId, MercenaryContractBuildingID, cBloodUnitId, MercenaryContractEffectBuildingID);
-    SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
-    SpawnUnit(playerId, MercenaryContractBuildingID, TownCenterID, 1, 1);
-}
-
-
-//  10036 - Italians, Mercenary Contract spawn Condottieros
-void EffectFunction10036(int playerId = -1)
-{
-    if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)
-    {
-        SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -0.5);
-        SpawnUnit(playerId, CondottieroID, TownCenterID, xsPlayerAttribute(playerId, cAttributeCondottieroMercenaryNum), 1);
-    }
-    else
-        SetAttribute(playerId, MercenaryContractBuildingID, cRegenerationHpPercent, -30);
 }
 
 
@@ -1445,7 +1428,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 313  2026.05.28");
+    xsChatData("Patch: 314  2026.06.02");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

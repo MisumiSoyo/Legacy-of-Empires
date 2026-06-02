@@ -1658,7 +1658,7 @@
             "Name": "Chewa Rider",
             "Name String ID": 700097,
             "Node ID": 4032,
-            "Node Status": "ResearchRequired",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 205,
             "Prerequisite IDs": [
@@ -1688,7 +1688,7 @@
             "Name": "Veteran Chewa Rider",
             "Name String ID": 700098,
             "Node ID": 4033,
-            "Node Status": "ResearchRequired",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 205,
             "Prerequisite IDs": [
@@ -1718,7 +1718,7 @@
             "Name": "Elite Chewa Rider",
             "Name String ID": 700099,
             "Node ID": 4034,
-            "Node Status": "ResearchRequired",
+            "Node Status": "ResearchedCompleted",
             "Node Type": "UniqueUnit",
             "Picture Index": 205,
             "Prerequisite IDs": [
