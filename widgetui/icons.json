@@ -1287,12 +1287,10 @@
         "057": "menu_techtree_muisca",
         "058": "menu_techtree_mapuche",
         "059": "menu_techtree_tupi",
-        "060": "",
-        "061": "",
-        "062": "menu_techtree_random",
-        "063": "menu_techtree_mirror",
-        "064": "menu_techtree_fullrandom",
-        "065": "menu_techtree_custom"
+        "060": "menu_techtree_random",
+        "061": "menu_techtree_mirror",
+        "062": "menu_techtree_fullrandom",
+        "063": "menu_techtree_custom"
     },
     "CivEmblem": {
         "000": "",
@@ -1355,12 +1353,10 @@
         "057": "civ_emblems_muisca",
         "058": "civ_emblems_mapuche",
         "059": "civ_emblems_tupi",
-        "060": "",
-        "061": "",
-        "062": "civ_emblems_random",
-        "063": "civ_emblems_mirror",
-        "064": "civ_emblems_fullrandom",
-        "065": ""
+        "060": "civ_emblems_random",
+        "061": "civ_emblems_mirror",
+        "062": "civ_emblems_fullrandom",
+        "063": ""
     },
     "InGameCivEmblem": {
         "000": "",
@@ -1422,9 +1418,7 @@
         "056": "ingame_civ_emblems_puru",
         "057": "ingame_civ_emblems_muisca",
         "058": "ingame_civ_emblems_mapuche",
-        "059": "ingame_civ_emblems_tupi",
-        "060": "",
-        "061": ""
+        "059": "ingame_civ_emblems_tupi"
     },
     "CivHero": {
         "000": "",
@@ -1487,12 +1481,10 @@
         "057": "civ_hero_muisca",
         "058": "civ_hero_mapuche",
         "059": "civ_hero_tupi",
-        "060": "",
-        "061": "",
-        "062": "civ_hero_random",
-        "063": "civ_hero_mirror",
-        "064": "civ_hero_fullrandom",
-        "065": "civ_hero_custom"
+        "060": "civ_hero_random",
+        "061": "civ_hero_mirror",
+        "062": "civ_hero_fullrandom",
+        "063": "civ_hero_custom"
     },
     "CivUniqueUnit": {
         "000": "player_unknown",

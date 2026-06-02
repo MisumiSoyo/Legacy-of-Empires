@@ -11545,7 +11545,7 @@
             "MaterialDef": {
                 "Name": "TechIconsT158WoodTrading2",
                 "Type": "Atlas",
-                "Blend": "AlphaPlayerColor",
+                "Blend": "InverseAlpha",
                 "TextureRef": "TechIconsT158WoodTrading2",
                 "AtlasRef": "ingametechs"
             }
@@ -11554,7 +11554,7 @@
             "MaterialDef": {
                 "Name": "TechIconsT159WoodTrading3",
                 "Type": "Atlas",
-                "Blend": "AlphaPlayerColor",
+                "Blend": "InverseAlpha",
                 "TextureRef": "TechIconsT159WoodTrading3",
                 "AtlasRef": "ingametechs"
             }

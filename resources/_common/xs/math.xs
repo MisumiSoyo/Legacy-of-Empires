@@ -544,15 +544,6 @@ float ObjectTotalCost(int playerId = -1, int ObjectID = -1)
 }
 
 
-float round(float number = 0.0)
-{
-    float IntegerPart = floor(number);
-    if (number - IntegerPart >= 0.5)
-        return (IntegerPart + 1);
-    return (IntegerPart);
-}
-
-
 int roundToInt(float number = 0.0)
 {
     int IntegerPart = floor(number);
