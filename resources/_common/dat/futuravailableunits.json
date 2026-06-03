@@ -47511,6 +47511,11 @@
                         "RequiredAge": 4
                     },
                     {
+                        "ID": 255,
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4
+                    },
+                    {
                         "ID": 257,
                         "Name": "Onager",
                         "RequiredAge": 4
@@ -47532,6 +47537,11 @@
                         "Name": "Capped Ram",
                         "RequiredAge": 4,
                         "RequiredUnitID": 1258
+                    },
+                    {
+                        "ID": 548,
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 280,

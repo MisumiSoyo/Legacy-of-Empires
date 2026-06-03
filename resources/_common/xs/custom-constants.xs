@@ -47,6 +47,7 @@ extern const int cAttributeDonkeyFoodRatio = 748;
 extern const int cAttributeSatrapGoldProductivity = 749;
 extern const int cAttributeCashCropProductivity = 750;
 extern const int cAttributeCondottieroMercenaryTimer = 751;
+extern const int cAttributeTurksTradeIncome = 752;
 
 
 //  Custom Units' IDs

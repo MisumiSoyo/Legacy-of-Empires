@@ -508,54 +508,53 @@ void EffectFunction9(int playerId = -1)
   xsResetTaskAmount();
 }
 
+// Apply Red Cliff Tactics for Wu
+void RedCliffs(int UnitTarget = -1, int playerId = -1)
+{
+  xsEffectAmount(cAddAttribute, UnitTarget, cCombatAbility, 128, playerId);
+
+  xsTaskAmount(cTaskAttrProceedingGraphic, -1);
+
+  xsTask(UnitTarget, cTaskTypeStinger, cBuildingClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cWallClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cGateClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cFarmClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cTowerClass, playerId);
+
+  xsTaskAmount(cTaskAttrProceedingGraphic, 13066);
+
+  xsTask(UnitTarget, cTaskTypeStinger, cTradeBoatClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cTransportShipClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cFishingBoatClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cWarshipClass, playerId);
+  xsTask(UnitTarget, cTaskTypeStinger, cBoardingShipClass, playerId);
+}
+
 // 10 - Effect of Red Cliff Tactics for Wu
 void EffectFunction10(int playerId = -1)
 {
   int DemoShipID = 527;
   int HeavyDemoShipID = 528;
   int DemoRaftID = 1104;
+  int FireArcher = 1968;
+  int EliteFireArcher = 1970;
+  int ZhouYu = 2044;
   xsResetTaskAmount();
-
-  xsEffectAmount(cAddAttribute, DemoShipID, cCombatAbility, 128, playerId);
-  xsEffectAmount(cAddAttribute, HeavyDemoShipID, cCombatAbility, 128, playerId);
-  xsEffectAmount(cAddAttribute, DemoRaftID, cCombatAbility, 128, playerId);
 
   xsTaskAmount(cTaskAttrWorkValue1, -300);
   xsTaskAmount(cTaskAttrWorkValue2, 5);
   xsTaskAmount(cTaskAttrWorkRange, 5);
   xsTaskAmount(cTaskAttrSearchWaitTime, 109);
-  xsTask(DemoShipID, cTaskTypeStinger, cBuildingClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cWallClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cGateClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cFarmClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cTowerClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cBuildingClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cWallClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cGateClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cFarmClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cTowerClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cBuildingClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cWallClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cGateClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cFarmClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cTowerClass, playerId);
 
-  xsTaskAmount(cTaskAttrProceedingGraphic, 13066);
-  xsTask(DemoShipID, cTaskTypeStinger, cTradeBoatClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cTransportShipClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cFishingBoatClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cWarshipClass, playerId);
-  xsTask(DemoShipID, cTaskTypeStinger, cBoardingShipClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cTradeBoatClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cTransportShipClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cFishingBoatClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cWarshipClass, playerId);
-  xsTask(HeavyDemoShipID, cTaskTypeStinger, cBoardingShipClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cTradeBoatClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cTransportShipClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cFishingBoatClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cWarshipClass, playerId);
-  xsTask(DemoRaftID, cTaskTypeStinger, cBoardingShipClass, playerId);
+  RedCliffs(DemoShipID, playerId);
+  RedCliffs(HeavyDemoShipID, playerId);
+  RedCliffs(DemoRaftID, playerId);
+
+  xsTaskAmount(cTaskAttrWorkValue1, -60);
+
+  RedCliffs(FireArcher, playerId);
+  RedCliffs(EliteFireArcher, playerId);
+  RedCliffs(ZhouYu, playerId);
 
   xsResetTaskAmount();
 }
