@@ -20,6 +20,7 @@
 8428 "Research Atheism (Relic and Wonder games +100 years; Enemy relics -50% incoming golds and foods; Tarkans can pick up and destroy relics to upgrade to Chanyu, and can't be converted; Chanyus +200 attack vs Monastery)"
 8450 "Research Gambesons (Militia-line and Fire Lancers +1 melee/pierce armor)"
 8473 "Research Tuntian (Each military unit produces 3 food per minute)"
+8496 "Research Butalmapu (Your team's unique units -15% cost)"
 
 
 12439 "Cavalry Attack"
@@ -96,6 +97,8 @@
 
 28473 "Research <b>Tuntian<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\nEach military unit produces 3 food per minute."
 
+28496 "Research <b>Butalmapu<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nYour team's unique units -15% cost."
+
 
 //	Britons
 120150 "Foot Archer civilization\n\n• Town Centers cost -50% wood in Castle Age\n• Archers (except Skirmishers) +1/+2 max range at Castle/Imperial Age\n• Shepherds +25% work rat\n• Military units around town centers +15% attack speed\n• Fishing Ship +33% creation speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Warwolf (Trebuchets have blast damage)\n• Privateers (Hulk line +25% attack speed)\n• Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
@@ -106,7 +109,7 @@
 //	Teutons
 120153 "Infantry civilization\n\n• Monks +100% healing range\n• Towers +5 garrison capacity, +4 max arrows\n• Murder Holes, Herbal Medicine free\n• Farms -50% cost\n• Town Center +10 garrison capacity, +5 max arrows\n• Barracks and Stable units +1/2 melee armor at Castle/Imperial Age\n• Skirmisher line +1/2/3 max range in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Teutonic Knight (Heavy armored infantry), Crusader Knight (Heavy Cavalry)\n\n<b>Unique Techs: <b>\n• Ironclad (Siege weapons and Trebuchets +4 armor)\n• Crenellations (Castle +3 max range?LOS/search radius, infantries garrisoned in Towers, Kreposts and Castles can fire arrows)\n• Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)\n• Accolade (Military units can gain 5 HP and 1 attack after killing enemy military units, up to 5 stacks)\n\n<b>Team bonus: <b>\nAll units +3 min/+1 max conversion time"
 //	Japanese
-120154 "Infantry civilization\n\n• Fishing Ships +100% HP; Fishermen and Fishing Ships +5/10/15/20% work rate at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50%\n• Infantry -25% reload time starting in Feudal Age\n• Cavalry Archer class units +2 attack vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Archer that ignores base armor), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Mounted Samurai (Heavy cavalry), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2)\n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Enable you to train Soheis, but villagers -10% work rate)\n• Yari Cavalry (Cavalries +9 attack vs Cavalry)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
+120154 "Infantry civilization\n\n• Fishing Ships +100% HP; Fishermen and Fishing Ships +5/10/15/20% work rate at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50%\n• Infantry -25% reload time starting in Feudal Age\n• Cavalry Archer class units +2 attack vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Archer that ignores base armor), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Mounted Samurai (Heavy cavalry), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2)\n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Enable you to train Soheis, but villagers -10% work rate)\n• Yari Cavalry (Light Cavalry +9 attack vs Cavalry)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 //	Chinese
 120155 "Archer and Gunpowder civilization\n\n• Start with +1 villager\n• Technologies -15% cost\n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n• Hei Guang Cavalry line +15% attack speed\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flamethrower (Siege weapon)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)\n• Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)\n• Yuan Dynasty (Land units +5% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
 //	Byzantines
@@ -158,7 +161,7 @@
 //	Burmese
 120179 "Monk and Elephant civilization\n\n• Lumber Camp upgrades free\n• Infantries +1 attack per age starting in Feudal Age\n• Monastery techs cost -50%\n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit:<b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Cavalry +4 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.2 food per minute)\n• Dha (Spearman line -40% train time and cost, +2 attack, -50% bonus damage)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 //	Vietnamese
-120180 "Archer civilization\n\n• Enemy positions are revealed at the start of the game\n• Archery Range units (except Elephant Archers) and Fire Lancers +20% HP\n• Conscription free\n• Economic upgrading techs cost no wood and research time\n\n<b>Unique Units:<b>\n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk)\n\n<b>Unique Techs: <b>\n• Chatras (Elephant units +100 HP)\n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
+120180 "Archer civilization\n\n• Enemy positions are revealed at the start of the game\n• Archery Range units (except Elephant Archers) and Fire Lancers +20% HP\n• Conscription free\n• Economic upgrading techs cost no wood and research time\n\n<b>Unique Units:<b>\n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk), Truong Guom Cavalry (Cavalry that counters cavalry)\n\n<b>Unique Techs: <b>\n• Chatras (Elephant units +100 HP)\n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
 120181 "Infantry and Cavalry civilization\n\n• Militia-line upgrades free (except Champion)\n• Town Centers cost -75% stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Cavalries +1/2/3 attack vs mounted units at Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +250% heal range, +100% heal rate)\n• Fervor of Battle (Mounted units can increase nearby infantries' movement speed by 15%)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 //	Tatars
@@ -200,7 +203,7 @@
 //	Muisca
 120206 "Archer and Monk civilization\n\n• Advancing to the next Age costs -50% gold\n• Settlements cost -33% and heal nearby units\n• Champi Warriors and Archery Range Units +1/2/3 melee armor in Feudal/Castle/Imperial Age\n• Monks regain faith +50% faster\n• Get Caravan in Feudal Age and Guilds in Castle Age for free\n• Gain extra 30 wood per minute every 6 minutes (maximum +300)\n\n<b>Unique Units:<b>\nGuecha Warrior (Skirmisher), Temple Guard (Infantry)\n\n<b>Unique Techs:<b>\n• Herbalism (Archer-line and Champi Warriors move +15% faster)\n• Huaracas (Slingers +1 range; train +50% faster)\n• El Dorado (Monk with relics +8 melee/pierce armor, +60 HP regeneration per minute, +20% movement speed, generates resource like controlled relics; +1 melee/pierce armor for your nearby Infantries and Archers, and +1 attack for Infantries (stackable))\n• Sacred Ritual (Infantries regenerate 2 HP from each attack)\n\n<b>Team Bonus:<b>\nNatural gold sources last +15% longer"
 //	Mapuche
-120207 "Cavalry and Counter-Units civilization\n\n• Foragers drop off +25% food\n• Settlements can train Spearman-line and Skirmishers\n• Infantry, Slingers and Skirmishers +5/10/15 HP in Feudal/Castle/Imperial Age\n• Mounted Units generate +3 gold when defeating military units\n• Enemy Castles are revealed on the map\n• Can research other players' Castle unique technologies (cannot be duplicated)\n\n<b>Unique Units:<b>\nKona (Cavalry), Bolas Rider (Mounted Archer)\n\n<b>Unique Techs:<b>\n• Malon (Bolas Riders, Slingers and Skirmishers deal pass through damage)\n• Butalmapu (Team Castle Unique Units and Bolas Riders cost -15%)\n\n<b>Team Bonus:<b>\nSpearman-line and Skirmishers +2 line of sight"
+120207 "Cavalry and Counter-Units civilization\n\n• Foragers drop off +25% food\n• Settlements can train Spearman-line and Skirmishers\n• Infantry, Slingers and Skirmishers +5/10/15 HP in Feudal/Castle/Imperial Age\n• Mounted Units generate +3 gold when defeating military units\n• Enemy Castles are revealed on the map\n• Can research other players' Castle unique technologies (cannot be duplicated)\n\n<b>Unique Units:<b>\nKona (Cavalry), Bolas Rider (Mounted Archer)\n\n<b>Unique Techs:<b>\n• Malon (Bolas Riders, Slingers and Skirmishers deal pass through damage)\n• Butalmapu (Your team's unique units -15% cost)\n\n<b>Team Bonus:<b>\nSpearman-line and Skirmishers +2 line of sight"
 //	Tupi
 120208 "Archer and Infantry civilization\n\n• Start with +25 of each resource\n• Villagers can garrison in Settlements\n• Fallen units return 15% of their cost\n• Archery Range and Barracks upgrades cost -50% food\n• Tree resource lasts +100% longer\n\n<b>Unique Units:<b>\nBlackwood Archer (Foot Archer), Ibirapema Warrior (Infantry)\n\n<b>Unique Techs:<b>\n• Caciques (Champi Warriors and Slingers attack +25% faster)\n• Curare (Foot Archers and Fortifications deal poison damage)\n• Woven Talismans (Spearman line can block a melee attack every 40 seconds)\n• Tamoios (Upgrade all your infantries on map to Elite Ibirapema Warriors)\n\n<b>Team Bonus:<b>\nTowers and Castles provide +10 population space"
 
@@ -414,6 +417,7 @@
 500207 "Varangian Guard"
 500208 "Veteran Heavy Crossbowman"
 500209 "Elite Heavy Crossbowman"
+500210 "Elite Truong Guom Cavalry"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -524,7 +528,7 @@
 501106 "Research Meng'an Mouke (Town Center +50% work rate and can train an additional Conscripted Army in one group; +40 population headroom)"
 501107 "Research Khanda Drills (Ghulams and Mansabdars +25% attack speed, +5 gold cost)"
 501108 "Research Sultans (Infantries/Cavalries/Ranged units +10/10/6 attack vs elephants)"
-501109 "Research Yari Cavalry (Cavalries +9 attack vs Cavalry)"
+501109 "Research Yari Cavalry (Light Cavalry +9 attack vs Cavalry)"
 501110 "Research Property Tax (An additional Conscript Army will be spawned when training Conscript Armies and Iron Pagodas)"
 501111 "Research Gendarmes d'ordonnance (Scout Cavalry line gain additional HP when near Knight line units ( (maximum +100% when there are 40 knights)))"
 501112 "Research Camel Lancer (Camel Riders +1 attack range)"
@@ -625,6 +629,7 @@
 501207 "Upgrade to Varangian Guard"
 501208 "Upgrade to Veteran Heavy Crossbowman"
 501209 "Upgrade to Elite Heavy Crossbowman"
+501210 "Upgrade to Truong Guom Cavalry"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nFish ships and Transport ships +25% Movement Speed."
@@ -735,7 +740,7 @@
 521106 "Research <b>Meng'an Mouke<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTown Center +50% work rate and can train an additional Conscripted Army in one group; +40 population headroom."
 521107 "Research <b>Khanda Drills<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nGhulams and Mansabdars +25% attack speed, +5 gold cost."
 521108 "Research <b>Sultans<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantries/Cavalries/Ranged units +10/10/6 attack vs elephants."
-521109 "Research <b>Yari Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalries +9 attack vs Cavalry."
+521109 "Research <b>Yari Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nLight Cavalry +9 attack vs Cavalry."
 521110 "Research <b>Property Tax<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nAn additional Conscript Army will be spawned when training Conscript Armies and Iron Pagodas."
 521111 "Research <b>Gendarmes d'ordonnance<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nScout Cavalry line gain additional HP when near Knight line units (maximum +100% when there are 40 knights)."
 521112 "Research <b>Camel Lancer<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCamel Riders +1 attack range."
@@ -836,6 +841,7 @@
 521207 "Upgrade to <b>Varangian Guard<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Early Varangian Guards and lets you create Varangian Guards."
 521208 "Upgrade to <b>Veteran Heavy Crossbowman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Heavy Crossbowmen and lets you create Veteran Heavy Crossbowmen."
 521209 "Upgrade to <b>Elite Heavy Crossbowman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Heavy Crossbowmen and lets you create Elite Heavy Crossbowmen."
+521210 "Upgrade to <b>Elite Truong Guom Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Truong Guom Cavalries and lets you create Elite Truong Guom Cavalries."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -957,6 +963,8 @@
 700108 "Heavy Crossbowman"
 700109 "Veteran Heavy Crossbowman"
 700110 "Elite Heavy Crossbowman"
+700111 "Truong Guom Cavalry"
+700112 "Elite Truong Guom Cavalry"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -1068,6 +1076,8 @@
 701108 "Create Heavy Crossbowman"
 701109 "Create Veteran Heavy Crossbowman"
 701110 "Create Elite Heavy Crossbowman"
+701111 "Create Truong Guom Cavalry"
+701112 "Create Elite Truong Guom Cavalry"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1287,6 +1297,10 @@
 721109 "Create <b>Veteran Heavy Crossbowman<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\nFrench unique archer with strong armor and low movement speed.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.85 <MATERIAL=StatIconsReloadTime> 4 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 6\nClass: Archer; Tags: Archer, Unique Unit.\nArmor Bonus: -2 damage received from Cavalry."
 
 721110 "Create <b>Elite Heavy Crossbowman<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\nFrench unique archer with strong armor and low movement speed.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.85 <MATERIAL=StatIconsReloadTime> 4 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 7\nClass: Archer; Tags: Archer, Unique Unit.\nArmor Bonus: -3 damage received from Cavalry."
+
+721111 "Create<b>Truong Guom Cavalry<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nVietnamese unique cavalry. Strong vs Cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel."
+
+721112 "Creata<b>Truong Guom Cavalry<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nVietnamese unique cavalry. Strong vs Cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +13 vs Cavalry, +11 vs Camel."
 
 
 

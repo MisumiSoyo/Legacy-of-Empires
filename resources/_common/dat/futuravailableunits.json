@@ -53816,6 +53816,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024

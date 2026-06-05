@@ -25,6 +25,7 @@
 8428 "研究无神论 (圣物和世界奇观胜利推迟 100 年完成; 敌方圣物 -50% 黄金和食物产出; 答剌罕骑兵不可被招降, 并且可以拾取和毁灭圣物以升级为单于; 单于 +200 攻击力 vs 修道院)"
 8450 "研究软甲 (民兵系和火矛兵 +1 护甲/盾牌)"
 8473 "研究屯田 (每个军事单位每分钟产生 3 食物)"
+8496 "研究布图马普 (团队独特单位 -15% 训练费用)"
 
 12439 "骑兵攻击"
 12501 "修道院"
@@ -101,6 +102,8 @@
 
 28473 "研究<b>屯田<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\n每个军事单位每分钟产生 3 食物。"
 
+28496 "研究<b>布图马普<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n团队独特单位 -15% 训练费用。"
+
 
 //	不列颠
 120150 "弓兵文明\n\n• 城堡时代起城镇中心木材费用 -50%\n• 射手(除掷矛手外)在城堡/帝王时代 +1/2 射程\n• 牧羊人工作效率 +25%\n• 城镇中心周围的己方陆地军事单位 +15% 攻击速度\n• 渔船 +33% 生产速度\n\n<b>独特单位：<b>\n• 长弓兵 (超长射程射手), 骑马步兵 (不受长枪兵克制的骑兵)\n\n<b>独特科技：<b>\n• 英皇侍卫 (射手 +1 射程，塔类单位攻击力 +2)\n• 战狼号 (巨型投石机拥有 100% 准确度，并且在 0.5 格范围内造成溅射伤害)\n• 私掠者 (趸船系 +25% 攻击速度)\n• 圈地 (农夫产出食物 -25%, -15 生命值, 但可以产出相当于 27% 食物产量的黄金)\n\n<b>团队加成：<b>\n靶场工作效率 +10%"
@@ -111,7 +114,7 @@
 //	条顿
 120153 "步兵文明\n\n• 僧侣治疗距离增加到 8\n• 塔类建筑驻扎容量 +5, 最大放箭数 +4, 城镇中心驻扎容量 +10, 最大放箭数 +5\n• 近射孔和草药免费升级\n• 农田 -50% 建造费用\n• 兵营和马厩单位在城堡/帝王时代 +1/2 护甲\n• 掷矛手系在封建/城堡/帝王时代 +1/2/3 射程\n\n<b>独特单位：<b>\n• 条顿骑士 (超高护甲的步兵), 十字军骑士 (重装骑兵)\n\n<b>独特科技：<b>\n• 重装甲 (攻城武器 +4 护甲)\n• 开垛口 (城堡射程 +3, 驻扎的步兵能射箭)\n• 金玺诏书 (僧侣和条顿骑士 +33 每分钟回复生命值, -33% 受到的附加伤害)\n• 骑士册封 (军事单位击杀敌方军事单位时, 可获得 +5 生命值, +1 攻击力, 最多 5 次)\n\n<b>团队加成：<b>\n单位招降最小/最大时间 +3/+1"
 //	日本
-120154 "步兵文明\n\n• 渔船 +100% 生命值; 渔夫和渔船在黑暗/封建/城堡/帝王时代 +5/10/15/20% 工作效率\n• 磨坊、伐木场和采矿场建造费用 -50%\n• 封建时代起步兵攻击速度 +33%\n• 骑射手 +2 攻击力 vs 射手 (除掷矛手外)\n\n<b>独特单位：<b>\n• 日本武士 (克制独特单位的步兵), 弓足轻 (攻击可无视护甲的弓箭手), 铁炮足轻 (克制骑兵的火枪手), 骑马武士 (重装骑兵), 僧兵 (宗教步兵)\n\n<b>独特科技：<b>\n• 射箭孔 (箭塔系和海塔放箭数和最大放箭数 +2)\n• 弹射器 (巨型投石机展开/组装速度 +300%，攻击速度 +33%)\n• 一向一揆 (解锁僧兵, 村民 -10% 工作效率)\n• 日本长枪骑兵 (骑兵 +9 攻击力 vs 骑兵)\n\n<b>团队加成：<b>\n箭船系视野 +50%"
+120154 "步兵文明\n\n• 渔船 +100% 生命值; 渔夫和渔船在黑暗/封建/城堡/帝王时代 +5/10/15/20% 工作效率\n• 磨坊、伐木场和采矿场建造费用 -50%\n• 封建时代起步兵攻击速度 +33%\n• 骑射手 +2 攻击力 vs 射手 (除掷矛手外)\n\n<b>独特单位：<b>\n• 日本武士 (克制独特单位的步兵), 弓足轻 (攻击可无视护甲的弓箭手), 铁炮足轻 (克制骑兵的火枪手), 骑马武士 (重装骑兵), 僧兵 (宗教步兵)\n\n<b>独特科技：<b>\n• 射箭孔 (箭塔系和海塔放箭数和最大放箭数 +2)\n• 弹射器 (巨型投石机展开/组装速度 +300%，攻击速度 +33%)\n• 一向一揆 (解锁僧兵, 村民 -10% 工作效率)\n• 日本长枪骑兵 (轻骑兵 +9 攻击力 vs 骑兵)\n\n<b>团队加成：<b>\n箭船系视野 +50%"
 //	中国
 120155 "步弓手和火药文明\n\n• 初始村民数 +1\n• 科技研究费用 -15%\n• 城镇中心 +7 视野，提供 +10 人口空间\n• 火矛兵和喷火船在城堡/帝王时代 +5/10% 移动速度\n• 城堡时代起可选择进入一个朝代\n• 黑光铠骑兵系 +15% 攻击速度\n\n<b>独特单位：<b>\n• 诸葛弩 (步弓手), 龙舟 (战船), 关宁铁骑 (可使用火枪的骑兵), 猛火油柜 (可喷火的攻城武器)\n\n<b>独特科技：<b>\n• 长城 (城墙、瞭望箭塔系和炮塔的生命值 +30%)\n• 火箭术 (弩炮、火箭推车和楼船攻击力 +25%；楼船可发射火箭)\n• 唐朝 (步兵和骑兵 +3 攻击力, +4 视野, 人口空间和人口上限 +25, 朝贡体系 -50% 研究费用)\n• 宋朝 (村民和贸易单位 -35% 费用, 贸易单位 +100% 生产速度, 科技研究费用 -10%, 火矛兵的远程攻击伤害 +2)\n• 元朝 (陆地单位 +5% 移动速度, 所有军事单位可免费升级到城堡时代质量, 立即获得所有铁匠铺骑兵防御科技)\n• 明朝 (立即获得化学效果, 骑士系可升级到关宁铁骑, 军事单位 +10% 生命值)\n• 朝贡体系(可在城堡训练周围文明的精锐独特部队, 并且附带 50% 的独特加成)\n\n<b>团队加成：<b>\n农田食物产量 +10%"
 //	拜占庭
@@ -163,7 +166,7 @@
 //	缅甸
 120179 "步兵和骑兵文明\n\n• 伐木场科技免费升级\n• 步兵在封建/城堡/帝王时代 +1/2/3 攻击力\n• 象兵 +1 护甲/盾牌\n• 修道院科技研究费用 -50%\n\n<b>独特单位：<b>\n• 飞镖骑兵 (远程骑兵单位), 东吁勇士 (阵亡后可对周围敌人造成伤害的步兵)\n\n<b>独特科技：<b>\n• 曼尼普尔马 (骑兵 +4 攻击力 vs 射手和骑射手)\n• 象轿 (象兵 +1 护甲/盾牌)\n• 阿奴律陀运河 (农田每分钟产生 4.2 食物)\n• 缅刀 (长矛兵系 -40% 训练费用和训练时间, +2 攻击力, -50% 附加伤害)\n\n<b>团队加成：<b>\n游戏开始时就能在地图上看见圣物"
 //	越南
-120180 "弓兵文明\n\n• 游戏开始时就能显示敌方城镇中心位置\n• 经济升级无须花费木材和时间研究\n• 靶场单位 (除骑象射手外) 和火矛兵 +20% 生命值\n• 征召 免费升级\n\n<b>独特单位：<b>\n• 藤弓兵 (步弓手), 帝王掷矛手 (掷矛手), 丛林斥候 (能够隐身的快速步兵)\n\n<b>独特科技：<b>\n• 宝伞 (大象单位 +100 生命值)\n• 纸币 (伐木工每采集 13 木材可获得 1 黄金)\n• 季风航行 (渔船和运输船 +60% 移动速度; 渔船 +33% 采集深海鱼的工作效率)\n• 象阵 (象兵 +100% 溅射半径)\n\n<b>团队加成：<b>\n掷矛手系在帝王时代可升级为帝王掷矛手"
+120180 "弓兵文明\n\n• 游戏开始时就能显示敌方城镇中心位置\n• 经济升级无须花费木材和时间研究\n• 靶场单位 (除骑象射手外) 和火矛兵 +20% 生命值\n• 征召 免费升级\n\n<b>独特单位：<b>\n• 藤弓兵 (步弓手), 帝王掷矛手 (掷矛手), 丛林斥候 (能够隐身的快速步兵), 长刀骑兵 (克制骑兵的骑兵)\n\n<b>独特科技：<b>\n• 宝伞 (大象单位 +100 生命值)\n• 纸币 (伐木工每采集 13 木材可获得 1 黄金)\n• 季风航行 (渔船和运输船 +60% 移动速度; 渔船 +33% 采集深海鱼的工作效率)\n• 象阵 (象兵 +100% 溅射半径)\n\n<b>团队加成：<b>\n掷矛手系在帝王时代可升级为帝王掷矛手"
 //	保加利亚
 120181 "步兵和骑兵文明\n\n• 剑士、长剑士和双手剑士自动升级\n• 城镇中心 -75% 石料费用 (对游牧模式的首个城镇中心无效)\n• 铁匠铺和攻城武器厂科技 -50% 食物费用\n• 骑兵在封建/城堡/帝王时代 +1/2/3 攻击力 vs 骑乘单位\n• 经济单位被击杀时返还资源\n\n<b>独特单位: <b>\n• 保加利亚骑兵 (死后可变为步兵的骑兵), 营垒 (防御建筑)\n\n<b>独特科技: <b>\n• 马镫 (骑兵 +33% 攻击速度)\n• 协议 (民兵系 +5 护甲)\n• 静修士 (僧侣 +250% 治疗范围, +100% 治疗速度)\n• 战争热诚 (骑乘单位可提升附近步兵 15% 的移动速度)\n\n<b>团队加成: <b>\n铁匠铺 +80% 工作效率"
 //	鞑靼
@@ -205,7 +208,7 @@
 //	穆伊斯卡
 120206 "弓兵与僧侣文明\n\n• 升级时代 -50% 黄金费用\n• 聚落成本 -33%, 并治疗附近单位\n• 蔷琵战士和靶场单位在封建/城堡/帝王时代 +1/2/3 护甲\n• 僧侣信仰的恢复速度 +50%\n• 封建时代可获得大篷车科技, 城堡时代可获得行会科技\n• 每 6 分钟, 每分钟额外获得 30 木材 (最多 +300)\n\n<b>独特单位：<b>\n格查战士 (掷矛手), 神庙护卫 (步兵)\n\n<b>独特科技：<b>\n• 草药医学 (弓兵系和蔷琵战士的移动速度 +15%)\n• 瓦拉卡斯 (投石手射程 +1；训练速度 +50%)\n• 黄金国 (持有圣物的僧侣 +8 护甲/盾牌, +60 每分钟生命回复, +20% 移动速度, 和驻扎的圣物一样产生资源; 周围己方步兵和射手 +1 护甲/盾牌, 步兵再 +1 攻击力 (可叠加))\n• 神圣仪式 (步兵每次攻击可回复 2 生命值)\n\n<b>团队加成：<b>\n天然黄金资源持续时间 +15%"
 //	马普切
-120207 "骑兵与反制单位文明\n\n• 村民存放的浆果 +25%\n• 聚落可以训练长矛兵系和掷矛手\n• 步兵、投石手和掷矛手在封建/城堡/帝王时代 +5/10/15 生命值\n• 骑兵单位击败敌军时生成 3 黄金\n• 敌方城堡位置在地图上始终可见\n• 可研究其他玩家在城堡的独特科技 (不能重复)\n\n<b>独有单位：<b>\n科那 (骑兵), 掷石绳骑兵 (骑射手)\n\n<b>独特科技：<b>\n• Malon (突袭) (掷石绳骑兵、投石手和掷矛手可造成穿透伤害)•\n• 布图马普 (团队城堡独特单位及掷石绳骑兵成本 -15%)\n\n<b>团队加成：<b>\n长矛兵系和掷矛手视野 +2"
+120207 "骑兵与反制单位文明\n\n• 村民存放的浆果 +25%\n• 聚落可以训练长矛兵系和掷矛手\n• 步兵、投石手和掷矛手在封建/城堡/帝王时代 +5/10/15 生命值\n• 骑兵单位击败敌军时生成 3 黄金\n• 敌方城堡位置在地图上始终可见\n• 可研究其他玩家在城堡的独特科技 (不能重复)\n\n<b>独有单位：<b>\n科那 (骑兵), 掷石绳骑兵 (骑射手)\n\n<b>独特科技：<b>\n• Malon (突袭) (掷石绳骑兵、投石手和掷矛手可造成穿透伤害)•\n• 布图马普 (团队独特单位 -15% 训练费用)\n\n<b>团队加成：<b>\n长矛兵系和掷矛手视野 +2"
 //	图皮
 120208 "弓兵与步兵文明\n\n• 开始游戏时，每种资源 +25\n• 村民可以在聚集地驻扎\n• 战败单位返还 15% 的成本\n• 靶场与兵营升级消耗食物 -50%\n• 木材资源持续 +100%\n\n<b>独有单位：<b>\n黑檀木步弓手 (步弓手), 伊比拉贝玛战士 (步兵)\n\n<b>独特科技：<b>\n• 卡西克 (蔷琵战士与投石手的攻击速度 +25%)\n• 箭毒 (步弓手与防御工事可造成中毒伤害)\n• 编织护符 (长矛兵系每 40 秒可以格挡 1 次近战攻击)\n• 塔莫约联盟 (将当前地图上的所有己方步兵升级为精锐伊比拉贝玛战士)\n\n<b>团队加成：<b>\n塔楼和城堡提供的人口空间 +10"
 
@@ -419,6 +422,7 @@
 500207 "瓦兰吉卫队"
 500208 "老练重装弩手"
 500209 "精锐重装弩手"
+500210 "精锐长刀骑兵"
 
 
 501001 "研究季风航行(渔船和运输船 +25% 移动速度)"
@@ -529,7 +533,7 @@
 501106 "研究猛安谋克 (城镇中心 +50% 工作效率, 立即获得 40 人口空间; 签军一次训练的数量 +1)"
 501107 "研究坎达操练 (古拉姆和曼沙布达尔骑兵 +25% 攻击速度, +5 黄金费用)"
 501108 "研究苏丹王 (步兵/骑兵/远程单位 +10/10/6 攻击力 vs 大象单位)"
-501109 "研究日本长枪骑兵 (骑兵 +9 攻击力 vs 骑兵)"
+501109 "研究日本长枪骑兵 (轻骑兵 +9 攻击力 vs 骑兵)"
 501110 "研究物力钱 (训练签军和铁浮屠时会额外产生 1 名签军)"
 501111 "研究敕令骑士 (斥候骑兵系单位靠近骑士系单位时可获得最多 +100% 生命值 (需要 40 名骑士))"
 501112 "研究骆驼长矛骑兵 (骆驼兵系 +1 射程)"
@@ -630,6 +634,7 @@
 501207 "升级到瓦兰吉卫队"
 501208 "升级到老练重装弩手"
 501209 "升级到精锐重装弩手"
+501210 "升级到精锐长刀骑兵"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -740,7 +745,7 @@
 521106 "研究<b>猛安谋克<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n城镇中心 +50% 工作效率, 立即获得 40 人口空间; 签军一次训练的数量 +1。"
 521107 "研究<b>坎达操练<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n古拉姆和曼沙布达尔骑兵 +25% 攻击速度, +5 黄金费用。"
 521108 "研究<b>苏丹王<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n步兵/骑兵/远程单位 +10/10/6 攻击力 vs 大象单位。"
-521109 "研究<b>日本长枪骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n骑兵 +9 攻击力 vs 骑兵。"
+521109 "研究<b>日本长枪骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n轻骑兵 +9 攻击力 vs 骑兵。"
 521110 "研究<b>物力钱<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n训练签军和铁浮屠时会额外产生 1 名签军。"
 521111 "研究<b>敕令骑士<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n斥候骑兵系单位靠近骑士系单位时可获得最多 +100% 生命值 (需要 40 名骑士)。"
 521112 "研究<b>骆驼长矛骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n骆驼兵系 +1 射程。"
@@ -841,6 +846,7 @@
 521207 "升级到<b>瓦兰吉卫队<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的早期瓦兰吉卫队升级, 生产更为强大的瓦兰吉卫队。"
 521208 "升级到<b>老练重装弩手<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的重装弩手升级, 生产更为强大的老练重装弩手。"
 521209 "升级到<b>精锐重装弩手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练重装弩手升级, 生产更为强大的精锐重装弩手。"
+521210 "升级到<b>精锐长刀骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的长刀骑兵升级, 生产更为强大的精锐长刀骑兵。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -962,6 +968,8 @@
 700108 "重装弩手"
 700109 "老练重装弩手"
 700110 "精锐重装弩手"
+700111 "长刀骑兵"
+700112 "精锐长刀骑兵"
 
 
 701001 "生产铁炮足轻"
@@ -1073,6 +1081,8 @@
 701108 "生产重装弩手"
 701109 "生产老练重装弩手"
 701110 "生产精锐重装弩手"
+701111 "生产长刀骑兵"
+701112 "生产精锐长刀骑兵"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1291,7 +1301,11 @@
 
 721109 "生产<b>老练重装弩手<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\n法兰克独特射手, 拥有坚固的护甲, 移动缓慢。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.85 <MATERIAL=StatIconsReloadTime> 4 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 7\n主类: 射手; 标签: 射手, 独特单位。\n护甲加成: -2 受到骑兵的伤害。"
 
-721110 "生产<b>老练重装弩手<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\n法兰克独特射手, 拥有坚固的护甲, 移动缓慢。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.85 <MATERIAL=StatIconsReloadTime> 4 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 7\n主类: 射手; 标签: 射手, 独特单位。\n护甲加成: -3 受到骑兵的伤害。"
+721110 "生产<b>精锐重装弩手<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\n法兰克独特射手, 拥有坚固的护甲, 移动缓慢。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.85 <MATERIAL=StatIconsReloadTime> 4 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 7\n主类: 射手; 标签: 射手, 独特单位。\n护甲加成: -3 受到骑兵的伤害。"
+
+721111 "生产<b>长刀骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n越南独特骑兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼。"
+
+721112 "生产<b>精锐长刀骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n越南独特骑兵, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 4\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +13 vs 骑兵, +11 vs 骆驼。"
 
 
 

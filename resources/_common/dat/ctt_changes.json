@@ -566,9 +566,9 @@
             "target_id": 4080
         },
         {
-            "note": "土耳其, 高丽, 日本移除骑士系",
+            "note": "土耳其, 高丽, 日本, 越南移除骑士系",
             "action": "delete",
-            "civ_id": ["TURKS", "KOREANS", "JAPANESE"],
+            "civ_id": ["TURKS", "KOREANS", "JAPANESE", "VIETNAMESE"],
             "Node ID": [38, 283, 569],
             "Use Type": "Unit"
         },
@@ -3592,6 +3592,14 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "契丹获得长戟兵",
+            "action": "modify",
+            "civ_id": "KHITANS",
+            "Node ID": [359],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
             "note": "西西里获得扳指, 双人锯, 工兵",
             "action": "modify",
             "civ_id": "SICILIANS",
@@ -5974,6 +5982,52 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4044
+        },
+        {
+            "note": "长刀骑兵",
+            "action": "add",
+            "civ_id": "VIETNAMESE",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800111,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Truong Guom Cavalry",
+            "Name String ID": 700111,
+            "Node ID": 4047,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 236,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 441
+        },
+        {
+            "note": "精锐长刀骑兵",
+            "action": "add",
+            "civ_id": "VIETNAMESE",
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800112,
+            "Link ID": 4047,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Truong Guom Cavalry",
+            "Name String ID": 700112,
+            "Node ID": 4048,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 236,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3457,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 4047
         }
     ]
 }

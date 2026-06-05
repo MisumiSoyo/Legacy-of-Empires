@@ -1254,8 +1254,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "波兰, 意大利, 维京获得长戟兵",
-            "civilizations": ["Poles", "Italians", "Vikings"],
+            "note": "波兰, 意大利, 维京, 契丹获得长戟兵",
+            "civilizations": ["Poles", "Italians", "Vikings", "Khitans"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",

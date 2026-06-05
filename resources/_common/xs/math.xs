@@ -1,6 +1,11 @@
 //  Math functions
 
 
+bool isClassID(int id = -1)
+{
+    return ((id >= 900) && (id <= 964));
+}
+
 int minInt(int a = 0, int b = 0)
 {
     if (a<b)

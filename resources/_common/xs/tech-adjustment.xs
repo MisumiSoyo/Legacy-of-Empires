@@ -295,3 +295,130 @@ void EffectFunction10121(int playerId = -1)
     MulResource(playerId, cAttributeForestryProductivity, 1.1);
     MulResource(playerId, cAttributeCashCropProductivity, 1.1);
 }
+
+
+void ButalmapuCivCustomChanges(int playerId = -1)
+{
+    int playerCiv = xsGetPlayerCivilization(playerId);
+
+    if ((playerCiv == cVikings) || (isResearched(playerId, RattanSwordmanTechID)) || (isResearched(playerId, LegionaryTechID)))
+    {
+        MulAttribute(playerId, MilitiaID, cResourceCost, 0.85);
+        MulAttribute(playerId, ManAtArmsID, cResourceCost, 0.85);
+        MulAttribute(playerId, LongSwordmanID, cResourceCost, 0.85);
+        MulAttribute(playerId, TwoHandedSwordmanID, cResourceCost, 0.85);
+        MulAttribute(playerId, ChampionID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cMalians))
+    {
+        MulAttribute(playerId, SpearmanID, cResourceCost, 0.85);
+        MulAttribute(playerId, PikemanID, cResourceCost, 0.85);
+        MulAttribute(playerId, HalberdierID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cFranks) || (playerCiv == cJapanese) || (playerCiv == cCelts))
+    {
+        MulAttribute(playerId, ArcherID, cResourceCost, 0.85);
+        MulAttribute(playerId, CrossbowmanID, cResourceCost, 0.85);
+        MulAttribute(playerId, ArbalesterID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cPoles))
+    {
+        MulAttribute(playerId, CavalryArcherID, cResourceCost, 0.85);
+        MulAttribute(playerId, HeavyCavalryArcherID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cJapanese) || (playerCiv == cSlavs))
+    {
+        MulAttribute(playerId, HandCannoneerID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cIndians) || (playerCiv == cBengalis) || (playerCiv == cRomans) || (isResearched(playerId, WingedHussarTechID)))
+    {
+        MulAttribute(playerId, ScoutCavalryID, cResourceCost, 0.85);
+        MulAttribute(playerId, LightCavalryID, cResourceCost, 0.85);
+        MulAttribute(playerId, HussarID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cJapanese) || (playerCiv == cTurks) || (playerCiv == cKoreans) || (playerCiv == cEthiopians) || (playerCiv == cVietnamese)
+        || (isResearched(playerId, CrusaderKnightTechID)) || (isResearched(playerId, HospitallerKnightTechID)))
+    {
+        MulAttribute(playerId, KnightID, cResourceCost, 0.85);
+        MulAttribute(playerId, CavalierID, cResourceCost, 0.85);
+        MulAttribute(playerId, PaladinID, cResourceCost, 0.85);
+    }
+
+    if ((isResearched(playerId, GuanNingCavalryTechID)))
+    {
+        MulAttribute(playerId, HeiGuangCavalryID, cResourceCost, 0.85);
+        MulAttribute(playerId, HeavyHeiGuangCavalryID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cDravidians))
+    {
+        MulAttribute(playerId, BattleElephantID, cResourceCost, 0.85);
+        MulAttribute(playerId, EliteBattleElephantID, cResourceCost, 0.85);
+    }
+
+    if ((playerCiv == cPersians)  || (playerCiv == cSaracens))
+    {
+        MulAttribute(playerId, PetardID, cResourceCost, 0.85);
+    }
+
+    if ((isResearched(playerId, DragonShipTechID)))
+    {
+        MulAttribute(playerId, FireGalleyID, cResourceCost, 0.85);
+        MulAttribute(playerId, FireShipID, cResourceCost, 0.85);
+        MulAttribute(playerId, FastFireShipID, cResourceCost, 0.85);
+    }
+
+    if ((isResearched(playerId, ManilaGalleonTechID)))
+    {
+        MulAttribute(playerId, TradeCogID, cResourceCost, 0.85);
+    }
+
+    if ((isResearched(playerId, HoufniceTechID)))
+    {
+        MulAttribute(playerId, BombardCannonID, cResourceCost, 0.85);
+    }
+}
+
+
+//  10124 - Butalmapu Adjustment
+void EffectFunction10124(int playerId = -1)
+{
+    int i = 0;
+    int j = 0;
+    int PlayerObjectCount = xsGetPlayerNumberOfObjects(playerId);
+    int UniqueUnitArmor = 0;
+
+    for (i = NewObjectStartID; < PlayerObjectCount)
+        if (isClassID(i) == false)
+        {
+            UniqueUnitArmor = xsGetObjectAttribute(playerId, i, cArmor, cDamageClassUniqueUnits);
+            if (UniqueUnitArmor != -1)
+                MulAllyAttribute(playerId, i, cResourceCost, 0.85);
+        }
+    for (i = 1; <= xsGetNumPlayers())
+        ButalmapuCivCustomChanges(i);
+
+    MulAllyAttribute(playerId, DragonShipID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, GuanNingCavalryID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, LongBoatID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, EliteLongBoatID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, ManilaGalleonID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, TurtleShipID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, EliteTurtleShipID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, CondottieroID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, CaravelID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, EliteCaravelID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, FlemishPikemanID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, WingedHussarID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, HoufniceID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, ThirisadaiID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, LegionaryID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, WarriorPriestID, cResourceCost, 0.85);
+    MulAllyAttribute(playerId, WarriorPriestWithRelicID, cResourceCost, 0.85);
+}

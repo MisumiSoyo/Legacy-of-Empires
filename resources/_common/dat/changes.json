@@ -223,13 +223,6 @@
         },
         {
             "type": "add",
-            "name": "布图马普",
-            "effect_id": 1380,
-            "commands": [[5, 1228, -1, 100, 1.17647],
-                         [5, 1230, -1, 100, 1.17647]]
-        },
-        {
-            "type": "add",
             "name": "波斯步弓手",
             "effect_id": 543,
             "commands": [[4, 4, -1, 104, 25],
@@ -695,6 +688,12 @@
             "name": "法兰克原有浆果加成移除, 改为减少采集消耗",
             "effect_id": 523,
             "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "adjustment",
+            "name": "布图马普现在适用于所有独特单位",
+            "effect_id": 1380,
+            "function_id": 10124
         }
     ],
     "unit_changes":
