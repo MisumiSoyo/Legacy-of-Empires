@@ -1150,8 +1150,6 @@ void EffectFunction10093(int playerId = -1)
     ApplyToAllPlayerTargets(playerId, EliteIbirapemaWarriorID, cTaskTypeStinger);
     xsResetTaskAmount();
     LaunchStinger(playerId, cInfantryClass);
-    ModAttribute(playerId, TempleGuardID, cCombatAbility, -128);
-    ModAttribute(playerId, EliteTempleGuardID, cCombatAbility, -128);
 }
 
 
@@ -1422,13 +1420,41 @@ void EffectFunction10120(int playerId = -1)
 }
 
 
+//  10122 - Kipchak Reinforcements
+void EffectFunction10122(int playerId = -1)
+{
+    if (isResearched(playerId, HeavyCavalryArcherTechID))
+        UpgradeUnit(playerId, CavalryArcherID, EliteKipchakID);
+    else
+        UpgradeUnit(playerId, CavalryArcherID, KipchakID);
+    UpgradeUnit(playerId, HeavyCavalryArcherID, EliteKipchakID);
+    SetAttribute(playerId, CavalryArcherID, cTrainLocation, ArcheryRangeID);
+    SetAttribute(playerId, CavalryArcherID, cTrainButton, 3);
+    SetAttribute(playerId, CavalryArcherID, cHotkeyId, EHotkeyID);
+    SetAttribute(playerId, HeavyCavalryArcherID, cTrainLocation, ArcheryRangeID);
+    SetAttribute(playerId, HeavyCavalryArcherID, cTrainButton, 3);
+    SetAttribute(playerId, HeavyCavalryArcherID, cHotkeyId, EHotkeyID);
+
+    xsEffectAmount(cModifyTech, HeavyCavalryArcherTechID, cAttrSetIcon, 105, playerId);
+    SpawnUnit(playerId, CavalryArcherID, ArcheryRangeID, 1);
+}
+
+
+//  10123 - C-Bonus, free deers
+void EffectFunction10123(int playerId = -1)
+{
+    int AgeID = xsPlayerAttribute(playerId, cAttributeCurrentAge);
+    SpawnUnit(playerId, DeerID, TownCenterSpawnerID, AgeID + 1);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 316  2026.06.03");
+    xsChatData("Patch: 317  2026.06.05");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

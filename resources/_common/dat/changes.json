@@ -677,6 +677,24 @@
             "effect_id": 731,
             "match": [5, "any", "any", 106, "any"],
             "modifications": ["d", "set", 0.25]
+        },
+        {
+            "type": "delete",
+            "name": "中国开局村民数加成调整, 资源改动移除",
+            "effect_id": [215, 302],
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "delete",
+            "name": "玛雅开局村民数加成调整, 资源改动移除",
+            "effect_id": [216, 586],
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "delete",
+            "name": "法兰克原有浆果加成移除, 改为减少采集消耗",
+            "effect_id": 523,
+            "match": ["any", "any", "any", "any", "any"]
         }
     ],
     "unit_changes":
