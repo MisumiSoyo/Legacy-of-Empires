@@ -3948,10 +3948,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "条顿获得轻骑兵, 劲弩手",
+            "note": "条顿获得轻骑兵, 翼骑兵, 劲弩手",
             "action": "modify",
             "civ_id": "TEUTONS",
-            "Node ID": [492, 546],
+            "Node ID": [441, 492, 546],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
@@ -6028,6 +6028,15 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4047
+        },
+        {
+            "note": "波希米亚手推炮提前到城堡时代",
+            "action": "modify",
+            "civ_id": "BOHEMIANS",
+            "Node ID": 36,
+            "Use Type": "Unit",
+            "Age ID": 3,
+            "Link ID": -1
         }
     ]
 }

@@ -36537,6 +36537,11 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 428
+                    },
+                    {
                         "Name": "Light Cavalry",
                         "RequiredAge": 3,
                         "ID": 254
@@ -36562,6 +36567,11 @@
                         "ID": 569,
                         "Name": "Paladin",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 441
                     },
                     {
                         "Name": "Light Cavalry",

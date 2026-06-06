@@ -422,3 +422,19 @@ void EffectFunction10124(int playerId = -1)
     MulAllyAttribute(playerId, WarriorPriestID, cResourceCost, 0.85);
     MulAllyAttribute(playerId, WarriorPriestWithRelicID, cResourceCost, 0.85);
 }
+
+
+//  10125 - Cavalry kill adjustment for Mapuche
+void EffectFunction10125(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 6);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+
+    CavalryKillReward(cCavalryClass, playerId);
+    CavalryKillReward(cScoutCavalryClass, playerId);
+    CavalryKillReward(cConquistadorClass, playerId);
+    CavalryKillReward(cCavalryArcherClass, playerId);
+  
+  xsResetTaskAmount();
+}

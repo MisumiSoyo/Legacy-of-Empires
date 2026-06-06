@@ -694,6 +694,39 @@
             "name": "布图马普现在适用于所有独特单位",
             "effect_id": 1380,
             "function_id": 10124
+        },
+        {
+            "type": "adjustment",
+            "name": "马普切骑兵击杀获得的黄金增加",
+            "effect_id": 62,
+            "function_id": 10125
+        },
+        {
+            "type": "modify",
+            "name": "马扎尔斥候骑兵系训练费用减免增加",
+            "effect_id": 524,
+            "match": [5, "any", "any", 103, "any"],
+            "modifications": ["d", "set", 0.75]
+        },
+        {
+            "type": "modify",
+            "name": "保加利亚马镫提供的攻击速度加成增加",
+            "effect_id": 722,
+            "match": [5, "any", "any", 10, "any"],
+            "modifications": ["d", "set", 0.68728522]
+        },
+        {
+            "type": "modify",
+            "name": "波兰大庄园立即收集的食物增加到 15%",
+            "effect_id": [12, 13, 14],
+            "match": [1, 237, "any", "any", "any"],
+            "modifications": ["d", "set", 0.15]
+        },
+        {
+            "type": "delete",
+            "name": "匈奴移除开局木材惩罚",
+            "effect_id": [214],
+            "match": ["any", "any", "any", "any", "any"]
         }
     ],
     "unit_changes":
@@ -837,6 +870,12 @@
             "note": "印加军事单位食物费用减免调整",
             "tech_id": 155,
             "attributes": [["effect_id", 3414]]
+        },
+        {
+            "note": "保加利亚马镫科技调整",
+            "tech_id": 685,
+            "attributes": [["research_locations[0].research_time", 45],
+                           ["resource_costs", "list_search", ["type", 3], ["amount", 325]]]
         }
     ],
     "resource_changes":

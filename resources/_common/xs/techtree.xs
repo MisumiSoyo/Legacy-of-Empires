@@ -90,6 +90,7 @@ void EffectFunction10001(int playerId = -1)
         case cTeutons:
         {
             EnableTech(playerId, LightCavalryTechID);
+            EnableTech(playerId, HussarTechID);
             EnableTech(playerId, ArbalesterTechID);
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, GoldShaftMiningTechID);
@@ -121,6 +122,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, CarvelHullTechID);
             EnableTech(playerId, ClinkerConstructionTechID);
             EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, HoardingsTechID);
+            EnableTech(playerId, GuildsTechID);
             SetResource(playerId, cAttributeResearchCostMod, 0.85);
             DisableTech(playerId, KnightTechID);
             DisableTech(playerId, CavalierTechID);

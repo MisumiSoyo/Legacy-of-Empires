@@ -1131,7 +1131,7 @@
             "Use Type": "Unit",
             "Node Status": "ResearchRequired",
             "Name String ID": 14093,
-            "Age ID": 4,
+            "Age ID": 3,
             "Building ID": 49,
             "Help String ID": 105093,
             "Node ID": 36,
@@ -1149,7 +1149,8 @@
                 "None",
                 "None",
                 "None"
-            ]
+            ],
+            "Link ID": -1
         },
         {
             "Name": "Houfnice",
