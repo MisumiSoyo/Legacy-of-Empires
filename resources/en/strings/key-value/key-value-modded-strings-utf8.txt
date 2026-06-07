@@ -11,6 +11,8 @@
 8277 "Research Stone Shaft Mining (Villagers drop +15% stone)"
 8281 "Research Kamandaran (Archer-Line cost no gold, but +50 wood cost)"
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
+8295 "Research Howdah (Battle Elephants +2 melee/pierce armor)"
+8296 "Research Manipur Cavalry (Cavalry +6 attack vs archers and cavalry archers)"
 8307 "Research Stirrups (Cavalry +45% attack speed)"
 8298 "Research Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)"
 8313 "Research Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)"
@@ -81,6 +83,10 @@
 28281 "Research <b>Kamandaran<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\nArcher-Line cost no gold, but +50 wood cost."
 
 28282 "Research <b>Town Patrol<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\nBuilding class, Tower class units +4 LOS. Town Center +2 arrows/max arrows."
+
+28295 "Research <b>Howdah<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nBattle Elephants +2 melee/pierce armor."
+
+28296 "Research <b>Manipur Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nCavalry +6 attack vs archers and cavalry archers."
 
 28298 "Research <b>Paper Money<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nLumberjacks generate 1 extra gold for every 13 wood gathered."
 
@@ -164,7 +170,7 @@
 //	Malay
 120178 "Naval civilization\n\n• Advancing to the next age -40% time\n• Fish Traps -33% cost and has 300% food amount\n• Battle Elephants and Elephant Archers -25%/-35% cost at Castle/Imperial Age\n• Infantry armor upgrades in Blacksmiths for free\n• Can create villagers at docks with -50% speed\n• Can conscript army at town centers once every 120/105/90 seconds in Feudal/Castle/Imperial Age (can store up to 5 times)\n\n<b>Unique Unit:<b>\n• Karambit Warrior (Infantry uses only half of population)\n\n<b>Unique Techs: <b>\n• Thalassocracy (upgrades Docks to Harbors, which fire arrows)\n• Forced Levy (Militia-Line units gold cost converted to food)\n• Silat Melayu (Karambit Warriors +5 attack vs villagers and trade unit, and can deduct 10 food from the killer after death)\n• Spice Trade (Team's Trade Cog +20% movement speed)\n\n<b>Team bonus: <b>\nDocks +6 LOS"
 //	Burmese
-120179 "Monk and Elephant civilization\n\n• Lumber Camp upgrades free\n• Infantries +1 attack per age starting in Feudal Age\n• Monastery techs cost -50%\n• Battle Elephants have +1/+1P armor\n\n<b>Unique Unit:<b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Manipur Cavalry (Cavalry +4 attack vs Archers)\n• Howdah (Battle Elephants +1/1P armor)\n• Anawrahta's Canals (Farms generate 4.2 food per minute)\n• Dha (Spearman line -40% train time and cost, +2 attack, -50% bonus damage)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
+120179 "Monk and Elephant civilization\n\n• Lumber Camp upgrades free; Get Forestry at the start of the game\n• Infantries +1 attack per age starting in Feudal Age\n• Monastery techs cost -50%\n\n<b>Unique Unit:<b>\n• Arambai (High attack, low accuray cavalry archer), Toungoo Warrior (Infantry that can deal damage to enemies around when killed)\n\n<b>Unique Techs: <b>\n• Howdah (Battle Elephants +2 melee/pierce armor)\n• Manipur Cavalry (Cavalry +6 attack vs archers and cavalry archers)\n• Anawrahta's Canals (Farms generate 4.2 food per minute)\n• Dha (Spearman line -40% train time and cost, +2 attack, -50% bonus damage)\n\n<b>Team bonus: <b>\nRelics visible on the map at the start of the game"
 //	Vietnamese
 120180 "Archer civilization\n\n• Enemy positions are revealed at the start of the game\n• Archery Range units (except Elephant Archers) and Fire Lancers +20% HP\n• Conscription free\n• Economic upgrading techs cost no wood and research time\n\n<b>Unique Units:<b>\n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk), Truong Guom Cavalry (Cavalry that counters cavalry)\n\n<b>Unique Techs: <b>\n• Chatras (Elephant units +100 HP)\n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians

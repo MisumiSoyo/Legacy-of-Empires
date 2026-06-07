@@ -5595,6 +5595,11 @@
                         "Name": "Thumb Ring",
                         "RequiredAge": 3,
                         "ID": 437
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -5632,6 +5637,11 @@
                         "Name": "Hand Cannoneer",
                         "RequiredAge": 4,
                         "ID": 5
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -5842,6 +5852,11 @@
                         "ID": 239,
                         "Name": "Heavy Scorpion",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 255
                     }
                 ],
                 "Units": [
@@ -5885,6 +5900,11 @@
                         "ID": 36,
                         "Name": "Bombard Cannon",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 548
                     }
                 ]
             },

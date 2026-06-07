@@ -375,6 +375,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, HoardingsTechID);
             EnableTech(playerId, ArrowslitsTechID);
+            EnableTech(playerId, ArbalesterTechID);
+            EnableTech(playerId, SiegeRamTechID);
             DisableTech(playerId, DryDockTechID);
             break;
         }

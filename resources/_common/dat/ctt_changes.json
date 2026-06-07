@@ -3932,6 +3932,14 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "缅甸获得劲弩手, 重型冲车",
+            "civ_id": "BURMESE",
+            "action": "modify",
+            "Node ID": [492, 548],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
             "note": "缅甸禁用干船坞",
             "action": "modify",
             "civ_id": "BURMESE",
@@ -6037,6 +6045,28 @@
             "Use Type": "Unit",
             "Age ID": 3,
             "Link ID": -1
+        },
+        {
+            "note": "象轿调整为城堡时代科技",
+            "action": "modify",
+            "civ_id": "BURMESE",
+            "Node ID": 626,
+            "Use Type": "Tech",
+            "Age ID": 3,
+            "Link ID": -1,
+            "Picture Index": 33
+        },
+        {
+            "note": "曼尼普尔马调整为帝王时代科技",
+            "action": "modify",
+            "civ_id": "BURMESE",
+            "Node ID": 627,
+            "Use Type": "Tech",
+            "Age ID": 4,
+            "Link ID": 626,
+            "Picture Index": 107,
+            "position": "after",
+            "target_id": 626
         }
     ]
 }

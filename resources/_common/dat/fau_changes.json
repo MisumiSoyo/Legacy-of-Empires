@@ -1540,16 +1540,16 @@
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",
@@ -1888,16 +1888,16 @@
             "RequiredTechID": 140
         },
         {
-            "note": "高丽, 马里, 柏柏尔获得重型冲车",
-            "civilizations": ["Koreans", "Malians", "Berbers"],
+            "note": "高丽, 马里, 柏柏尔, 缅甸获得重型冲车",
+            "civilizations": ["Koreans", "Malians", "Berbers", "Burmese"],
             "tech_id": 255,
             "building_id": 49,
             "Name": "Siege Ram",
             "RequiredAge": 4
         },
         {
-            "note": "高丽, 马里, 柏柏尔获得重型冲车",
-            "civilizations": ["Koreans", "Malians", "Berbers"],
+            "note": "高丽, 马里, 柏柏尔, 缅甸获得重型冲车",
+            "civilizations": ["Koreans", "Malians", "Berbers", "Burmese"],
             "unit_id": 548,
             "building_id": 49,
             "Name": "Siege Ram",

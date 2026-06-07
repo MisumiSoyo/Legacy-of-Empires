@@ -727,6 +727,26 @@
             "name": "匈奴移除开局木材惩罚",
             "effect_id": [214],
             "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "modify",
+            "name": "象轿改为 +2 护甲/盾牌",
+            "effect_id": 666,
+            "match": [4, "any", "any", "any", "any"],
+            "modifications": ["d", "add", 1]
+        },
+        {
+            "type": "delete",
+            "name": "缅甸原有的象兵护甲和盾牌加成移除",
+            "effect_id": 679,
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "modify",
+            "name": "曼尼普尔马加强到 +6",
+            "effect_id": 667,
+            "match": [4, "any", "any", 9, "any"],
+            "modifications": ["d", "add", 2]
         }
     ],
     "unit_changes":
@@ -876,6 +896,24 @@
             "tech_id": 685,
             "attributes": [["research_locations[0].research_time", 45],
                            ["resource_costs", "list_search", ["type", 3], ["amount", 325]]]
+        },
+        {
+            "note": "象轿改为城堡时代科技",
+            "tech_id": 626,
+            "attributes": [["required_techs", [102, -1, -1, -1, -1, -1]],
+                           ["icon_id", 33],
+                           ["research_locations[0].research_time", 45],
+                           ["research_locations[0].button_id", 7],
+                           ["research_locations[0].hot_key_id", 18045]]
+        },
+        {
+            "note": "曼尼普尔马改为帝王时代科技",
+            "tech_id": 627,
+            "attributes": [["required_techs", [103, -1, -1, -1 ,-1, -1]],
+                           ["icon_id", 107],
+                           ["research_locations[0].research_time", 60],
+                           ["research_locations[0].button_id", 8],
+                           ["research_locations[0].hot_key_id", 18008]]
         }
     ],
     "resource_changes":

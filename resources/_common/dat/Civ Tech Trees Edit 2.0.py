@@ -46,6 +46,36 @@ def save_civs_to_folder(output_folder, civs_data, civ_files_mapping):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(civ, f, indent=4, ensure_ascii=False)
 
+def move_item_in_list(target_list, item, position="last", target_id=None):
+    """
+    将指定item移动到列表中的新位置
+    position: "first", "last", "before", "after"
+    target_id: 当position为"before"或"after"时，指定目标节点的Node ID
+    """
+    # 先从列表中移除该item（如果存在）
+    if item in target_list:
+        target_list.remove(item)
+    
+    # 计算插入位置
+    insert_position = len(target_list)  # 默认last
+    
+    position = position.lower() if position else "last"
+    
+    if position == "first":
+        insert_position = 0
+    elif position in ["before", "after"] and target_id is not None:
+        for idx, existing_item in enumerate(target_list):
+            if existing_item.get("Node ID") == target_id:
+                if position == "before":
+                    insert_position = idx
+                else:  # after
+                    insert_position = idx + 1
+                break
+    # "last" 或其他未识别的值，保持默认的 len(target_list)
+    
+    target_list.insert(insert_position, item)
+    return insert_position
+
 def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
     # 从源文件夹加载所有文明数据
     modified_data, civ_files = load_civs_from_folder(original_folder)
@@ -99,17 +129,28 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
                                     insert_position = idx + 1
                                 break
                     target_list.insert(insert_position, new_item)
+                
                 elif action == "modify":
                     node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
+                    position = change.get("position", None)  # 新增：获取位置参数
+                    target_id = change.get("target_id", None)  # 新增：获取目标ID
+                    
                     for node_id in node_ids:
                         for item in target_list:
                             if item["Node ID"] == node_id and (item.get("Use Type") == use_type or (item.get("Use Type") == "Building" and use_type == "Unit")):
+                                # 先修改属性
                                 for key, value in change.items():
-                                    if key not in ["action", "civ_id", "Node ID", "note"]:
+                                    if key not in ["action", "civ_id", "Node ID", "note", "position", "target_id"]:
                                         item[key] = value
+                                
+                                # 如果指定了位置，移动该item到新位置
+                                if position is not None:
+                                    move_item_in_list(target_list, item, position, target_id)
+                                
                                 break
                             elif item["Node ID"] == node_id and item.get("Use Type") != use_type:
                                 pass
+                
                 elif action == "delete":
                     node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
                     target_list[:] = [

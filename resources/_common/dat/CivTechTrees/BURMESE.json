@@ -542,7 +542,7 @@
             "Link Node Type": "UnitUpgrade",
             "Draw Node Type": "UnitTech",
             "Use Type": "Unit",
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Name String ID": 14418,
             "Age ID": 4,
             "Building ID": 87,
@@ -1112,7 +1112,7 @@
             "Link Node Type": "UnitUpgrade",
             "Draw Node Type": "UnitTech",
             "Use Type": "Unit",
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Name String ID": 14446,
             "Age ID": 4,
             "Building ID": 49,
@@ -2234,20 +2234,6 @@
             "Picture Index": 29
         },
         {
-            "Name": "Manipur Cavalry",
-            "Node Type": "Research",
-            "Link Node Type": "BuildingTech",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Tech",
-            "Node Status": "ResearchedCompleted",
-            "Name String ID": 17296,
-            "Age ID": 3,
-            "Building ID": 82,
-            "Help String ID": 107296,
-            "Node ID": 627,
-            "Picture Index": 33
-        },
-        {
             "Name": "Howdah",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",
@@ -2255,11 +2241,27 @@
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted",
             "Name String ID": 17295,
-            "Age ID": 4,
+            "Age ID": 3,
             "Building ID": 82,
             "Help String ID": 107295,
             "Node ID": 626,
-            "Picture Index": 107
+            "Picture Index": 33,
+            "Link ID": -1
+        },
+        {
+            "Name": "Manipur Cavalry",
+            "Node Type": "Research",
+            "Link Node Type": "BuildingTech",
+            "Draw Node Type": "UnitTech",
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted",
+            "Name String ID": 17296,
+            "Age ID": 4,
+            "Building ID": 82,
+            "Help String ID": 107296,
+            "Node ID": 627,
+            "Picture Index": 107,
+            "Link ID": 626
         },
         {
             "Name": "Hoardings",
