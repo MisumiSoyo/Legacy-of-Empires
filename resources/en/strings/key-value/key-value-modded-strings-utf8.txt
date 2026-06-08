@@ -180,7 +180,7 @@
 //	Cumans
 120183 "Cavalry civilization\n\n• One Additional Town Center can be built in the Feudal Age\n• Siege Workshop and Battering Ram available in the Feudal Age, can upgrade to Capped Ram at Castle Age\n• Barracks, Archery Ranges and Stables -50 wood cost\n• Cavalries +7% moving speed since Feudal Age\n• Hunters don't need mills or town centers to drop off food\n\n<b>Unique Unit:<b>\n• Kipchak (Cavalry archer with multiple arrows), Steppe Tribesman (Infantry that counters archer and cavalry)\n\n<b>Unique Techs: <b>\n• Steppe Husbandry (Ligh Cavalry-Line, Cavalry Archer class unit and Steppe Lancer -50% training time)\n• Cuman Mercenaries (team members can create 5 free Elite Kipchaks in each Castle)\n• Khazar Lancers (Steppe Lancers' attacks can weaken enemies for 3 seconds, -1 attack, -15% movement speed and -1 HP per second)\n• Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)\n\n<b>Team bonus: <b>\nPalisade Walls nad Palisade Gates +33% HP"
 //	Lithunians
-120184 "Cavalry and Monk civilization\n\n• Receive 100 food for every Town Center\n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrades free\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking)\n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range)\n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Baltic Archers (Archer line -40% gold cost, +1 attack vs Cavalry and Camel)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
+120184 "Cavalry and Monk civilization\n\n• Receive 100 food for every Town Center\n• Spearman-Line and Skirmisher-Line +10% moving speed\n• Each garrisoned relic gives +1 attack to Knight line and Leitis (maximum +4)\n• Chain barding armor and plate barding armor can be researched an age in advance\n• Skirmisher and Genitour upgrades free\n\n<b>Unique Unit : <b>\n• Leitis (Cavalry which ignores armor when attacking), Winged Hussar (Powerful light cavalry), Samogitian Skirmisher (Infantry that can reduce enemy's attack)\n\n<b>Unique Techs: <b>\n• Hill Forts (Town Center +3 max range)\n• Tower Shields (Pikeman-Line and Skirmisher-Line +2P armor)\n• Baltic Archers (Archer line -40% gold cost, +1 attack vs Cavalry and Camel)\n• Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)\n\n<b>Team bonus: <b>\nMonasteries +20% work rate"
 //	Burgundians
 120185 "Cavalry civilization\n\n• Economic upgrades available one age earlier, and -40% food cost\n• Stable technologies can be researched regardless of age since Feudal Age (except unlocking Knight)\n• Spearman-line units enjoy full Blacksmith attack technologies since feudal age\n\n<b>Unique Units:<b>\n• Coustillier (cavalry with charged attack), Flemish Militia (infantry batter combats with cavalries)\n\n<b>Unique Techs:<b>\n• Burgundian Vineyards (Farmers generate 1 gold per 25 sec in addition to food)\n• Flemish Revolution (Upgrades all existing Villagers to Flemish Militia)\n• Golden Spurs (Spearman-line and Flemish Militias +4 melee armor)\n• Firearm Casting (Gunpowder units +25% attack)\n\n<b>Team Bonus:<b>\nRelics generate 20 food per minute besides gold"
 //	Sicilians
@@ -431,6 +431,8 @@
 500210 "Elite Truong Guom Cavalry"
 500211 "Veteran Steppe Tribesman"
 500212 "Elite Steppe Tribesman"
+500213 "Veteran Samogitian Skirmisher"
+500214 "Elite Samogitian Skirmisher"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -645,6 +647,8 @@
 501210 "Upgrade to Truong Guom Cavalry"
 501211 "Upgrade to Veteran Steppe Tribesman"
 501212 "Upgrade to Elite Steppe Tribesman"
+501213 "Upgrade to Veteran Samogitian Skirmisher"
+501214 "Upgrade to Elite Samogitian Skirmisher"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nFish ships and Transport ships +25% Movement Speed."
@@ -859,6 +863,8 @@
 521210 "Upgrade to <b>Elite Truong Guom Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Truong Guom Cavalries and lets you create Elite Truong Guom Cavalries."
 521211 "Upgrade to <b>Veteran Steppe Tribesman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Steppe Tribesmen and lets you create Veteran Steppe Tribesmen."
 521212 "Upgrade to <b>Elite Steppe Tribesman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Steppe Tribesmen and lets you create Elite Steppe Tribesmen."
+521213 "Upgrade to <b>Veteran Samogitian Skirmisher<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Samogitian Skirmishers and lets you create Veteran Samogitian Skirmishers."
+521214 "Upgrade to <b>Elite Samogitian Skirmisher<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Samogitian Skirmishers and lets you create Elite Samogitian Skirmishers."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -985,6 +991,9 @@
 700113 "Steppe Tribesman"
 700114 "Veteran Steppe Tribesman"
 700115 "Elite Steppe Tribesman"
+700116 "Samogitian Skirmisher"
+700117 "Veteran Samogitian Skirmisher"
+700118 "Elite Samogitian Skirmisher"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -1101,6 +1110,9 @@
 701113 "Create Steppe Tribesman"
 701114 "Create Veteran Steppe Tribesman"
 701115 "Create Elite Steppe Tribesman"
+701116 "Create Samogitian Skirmisher"
+701117 "Create Veteran Samogitian Skirmisher"
+701118 "Create Elite Samogitian Skirmisher"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1331,6 +1343,11 @@
 
 721115 "Create <b>Elite Steppe Tribesman<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nCumans unique infantry. Strong vs archer and cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.25 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry.\nAttack Bonus: +29 vs Cavalry, +21 vs Camel, +5 vs Archer, +4 vs Building.\nArmor Bonus: -2 Shock Infantry Armor."
 
+721116 "Create <b>Samogitian Skirmisher<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nLithuanian unique infantry. Can reduce target enemy's attack by 1 for 4 seconds. (stackable)\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 4\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry."
+
+721117 "Create <b>Veteran Samogitian Skirmisher<b> (<cost>, 23 <MATERIAL=MPIconGoodCPU>)\nLithuanian unique infantry. Can reduce target enemy's attack by 1 for 4 seconds. (stackable)\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry."
+
+721118 "Create <b>Elite Samogitian Skirmisher<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nLithuanian unique infantry. Can reduce target enemy's attack by 1 for 4 seconds. (stackable)\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

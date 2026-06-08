@@ -185,7 +185,7 @@
 //	库曼
 120183 "骑兵文明\n\n• 在封建时代可建造第二个城镇中心\n• 在封建时代可建造攻城武器厂和生产冲车，城堡时代可升级到中型冲车\n• 兵营, 靶场和马厩 -50 木材费用\n• 封建时代起骑兵 +7% 移动速度\n• 猎人不需要存放食物\n\n<b>独特单位：<b>\n• 钦察 (具有多重副箭的高射速骑射手), 草原部落民 (克制骑兵和射手的步兵)\n\n<b>独特科技：<b>\n• 大草原畜牧 (侦察骑兵系、草原枪兵系和骑射手系训练速度 +100%)\n• 库曼雇佣军 (团队成员可在每座城堡免费生产 5 名精锐钦察)\n• 可萨长矛骑兵 (草原枪兵的攻击可使敌人进入虚弱状态 3 秒, -1 攻击力, -15% 移动速度并且每秒流失 1 生命值)\n• 西哈弓臂 (射手, 骑射手和火枪手移除攻击延迟, 并且 -15% 黄金费用)\n\n<b>团队加成：<b>\n木栅栏和木城门生命值 +33%"
 //	立陶宛
-120184 "骑兵和僧侣文明\n\n• 每座城镇中心提供 +100 食物\n• 长矛兵系和掷矛手系的移动速度 +10%\n• 每驻守一件圣物，骑士系和烈堤斯 +1 攻击力 (最高 +4)\n• 骑兵锁甲, 骑兵钢甲可提前一个时代升级\n• 掷矛手和标枪骑兵自动升级\n\n<b>独特单位：<b>\n• 烈堤司 (攻击无视防御的骑兵), 波兰翼骑兵(强力轻骑兵)\n\n<b>独特科技：<b>\n• 山寨 (城镇中心射程 +3)\n• 塔盾 (长矛兵系和掷矛手 +2 盾牌)\n• 波罗的海弓箭手 (步弓手系 -40% 黄金费用, +1 攻击力 vs 骑兵和骆驼)\n• 考纳斯城堡 (箭塔可连续发射无视防御的箭矢, 但攻击力降低)\n\n<b>团队加成：<b>\n修道院 +20% 工作效率"
+120184 "骑兵和僧侣文明\n\n• 每座城镇中心提供 +100 食物\n• 长矛兵系和掷矛手系的移动速度 +10%\n• 每驻守一件圣物，骑士系和烈堤斯 +1 攻击力 (最高 +4)\n• 骑兵锁甲, 骑兵钢甲可提前一个时代升级\n• 掷矛手和标枪骑兵自动升级\n\n<b>独特单位：<b>\n• 烈堤司 (攻击无视防御的骑兵), 波兰翼骑兵(强力轻骑兵), 萨莫吉希亚游击兵 (可减少敌人攻击力的步兵)\n\n<b>独特科技：<b>\n• 山寨 (城镇中心射程 +3)\n• 塔盾 (长矛兵系和掷矛手 +2 盾牌)\n• 波罗的海弓箭手 (步弓手系 -40% 黄金费用, +1 攻击力 vs 骑兵和骆驼)\n• 考纳斯城堡 (箭塔可连续发射无视防御的箭矢, 但攻击力降低)\n\n<b>团队加成：<b>\n修道院 +20% 工作效率"
 //	勃艮第
 120185 "骑兵文明\n\n• 可提前一个时代进行经济升级并且食物费用 -40%\n• 封建时代起可无视时代条件研究马厩科技(不包括解锁骑士)\n• 封建时代起长矛兵系立即享受满级铁匠铺攻击科技\n\n<b>独特单位：<b>\n• 马上轻装兵 (骑兵), 弗拉芒民兵 (步兵)\n\n<b>独特科技：<b>\n• 勃艮第葡萄园 (农夫每工作 25 秒可产生 1 黄金)\n• 弗拉芒革命 (将所有现有村民转变为弗拉芒民兵)\n• 金马刺 (长矛兵系和弗拉芒民兵 +4 护甲)\n• 火器铸造 (火药单位 +25% 攻击力)\n\n<b>团队加成：<b>\n圣物每分钟额外产生 20 食物"
 //	西西里
@@ -436,6 +436,8 @@
 500210 "精锐长刀骑兵"
 500211 "老练草原部落民"
 500212 "精锐草原部落民"
+500213 "老练萨莫吉希亚游击兵"
+500214 "精锐萨莫吉希亚游击兵"
 
 
 501001 "研究季风航行(渔船和运输船 +25% 移动速度)"
@@ -650,6 +652,8 @@
 501210 "升级到精锐长刀骑兵"
 501211 "升级到老练草原部落民"
 501212 "升级到精锐草原部落民"
+501213 "升级到老练萨莫吉希亚游击兵"
+501214 "升级到精锐萨莫吉希亚游击兵"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -864,6 +868,8 @@
 521210 "升级到<b>精锐长刀骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的长刀骑兵升级, 生产更为强大的精锐长刀骑兵。"
 521211 "升级到<b>老练草原部落民<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的草原部落民升级, 生产更为强大的老练草原部落民。"
 521212 "升级到<b>精锐草原部落民<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练草原部落民升级, 生产更为强大的精锐草原部落民。"
+521213 "升级到<b>老练萨莫吉希亚游击兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的萨莫吉希亚游击兵升级, 生产更为强大的老练萨莫吉希亚游击兵。"
+521214 "升级到<b>精锐萨莫吉希亚游击兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练萨莫吉希亚游击兵升级, 生产更为强大的精锐萨莫吉希亚游击兵。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -990,6 +996,9 @@
 700113 "草原部落民"
 700114 "老练草原部落民"
 700115 "精锐草原部落民"
+700116 "萨莫吉希亚游击兵"
+700117 "老练萨莫吉希亚游击兵"
+700118 "精锐萨莫吉希亚游击兵"
 
 
 701001 "生产铁炮足轻"
@@ -1106,6 +1115,9 @@
 701113 "生产草原部落民"
 701114 "生产老练草原部落民"
 701115 "生产精锐草原部落民"
+701116 "生产萨莫吉希亚游击兵"
+701117 "生产老练萨莫吉希亚游击兵"
+701118 "生产精锐萨莫吉希亚游击兵"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1336,6 +1348,11 @@
 
 721115 "生产<b>精锐草原部落民<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n库曼独特步兵, 适于对抗骑兵和弓箭手。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.25 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。\n攻击加成: +29 vs 骑兵, +21 vs 骆驼, +5 vs 射手, +4 vs 建筑。\n护甲加成: -2 冲击步兵护甲。"
 
+721116 "生产<b>萨莫吉希亚游击兵<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n立陶宛独特步兵, 攻击可减少目标敌人 1 攻击力, 持续 4 秒。 (效果可以叠加)\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 4\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
+
+721117 "生产<b>老练萨莫吉希亚游击兵<b> (<cost>, 23 <MATERIAL=MPIconGoodCPU>)\n立陶宛独特步兵, 攻击可减少目标敌人 1 攻击力, 持续 4 秒。 (效果可以叠加)\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
+
+721118 "生产<b>精锐萨莫吉希亚游击兵<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n立陶宛独特步兵, 攻击可减少目标敌人 1 攻击力, 持续 4 秒。 (效果可以叠加)\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
 
 
 900001 "<b>西帕希之怒</b>\n西帕希骑兵能减少附近敌方远程单位的攻击速度。"

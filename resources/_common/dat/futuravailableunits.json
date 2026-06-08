@@ -22193,6 +22193,16 @@
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
+                    },
+                    {
+                        "Name": "Veteran Samogitian Skirmisher",
+                        "RequiredAge": 3,
+                        "ID": 3463
+                    },
+                    {
+                        "Name": "Elite Samogitian Skirmisher",
+                        "RequiredAge": 4,
+                        "ID": 3464
                     }
                 ],
                 "Units": [
@@ -22235,6 +22245,21 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Samogitian Skirmisher",
+                        "RequiredAge": 2,
+                        "ID": 4052
+                    },
+                    {
+                        "Name": "Veteran Samogitian Skirmisher",
+                        "RequiredAge": 3,
+                        "ID": 4053
+                    },
+                    {
+                        "Name": "Elite Samogitian Skirmisher",
+                        "RequiredAge": 4,
+                        "ID": 4054
                     }
                 ]
             },

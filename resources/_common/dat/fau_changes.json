@@ -2351,6 +2351,46 @@
             "building_id": 104,
             "Name": "Redemption",
             "RequiredAge": 3
+        },
+        {
+            "note": "萨莫吉希亚游击兵",
+            "civilizations": "Lithuanians",
+            "unit_id": 4052,
+            "building_id": 12,
+            "Name": "Samogitian Skirmisher",
+            "RequiredAge": 2
+        },
+        {
+            "note": "老练萨莫吉希亚游击兵",
+            "civilizations": "Lithuanians",
+            "unit_id": 4053,
+            "building_id": 12,
+            "Name": "Veteran Samogitian Skirmisher",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐萨莫吉希亚游击兵",
+            "civilizations": "Lithuanians",
+            "unit_id": 4054,
+            "building_id": 12,
+            "Name": "Elite Samogitian Skirmisher",
+            "RequiredAge": 4
+        },
+        {
+            "note": "老练萨莫吉希亚游击兵",
+            "civilizations": "Lithuanians",
+            "tech_id": 3463,
+            "building_id": 12,
+            "Name": "Veteran Samogitian Skirmisher",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐萨莫吉希亚游击兵",
+            "civilizations": "Lithuanians",
+            "tech_id": 3464,
+            "building_id": 12,
+            "Name": "Elite Samogitian Skirmisher",
+            "RequiredAge": 4
         }
     ]
 }
