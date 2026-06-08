@@ -890,8 +890,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "马里, 高丽, 拜占庭, 瞿折罗, 越南获得鼓风炉",
-            "civilizations": ["Koreans", "Malians", "Byzantines", "Gurjaras", "Vietnamese"],
+            "note": "马里, 高丽, 拜占庭, 瞿折罗, 越南, 立陶宛获得鼓风炉",
+            "civilizations": ["Koreans", "Malians", "Byzantines", "Gurjaras", "Vietnamese", "Lithuanians"],
             "tech_id": 75,
             "building_id": 103,
             "RequiredAge": 4
@@ -1262,9 +1262,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚, 罗马, 印加获得双人锯",
+            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚, 罗马, 印加, 马普切获得双人锯",
             "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars",
-                              "Armenians", "Wei", "Georgians", "Romans", "Incas"],
+                              "Armenians", "Wei", "Georgians", "Romans", "Incas", "Mapuche"],
             "tech_id": 221,
             "building_id": 562,
             "Name": "Two-Man Saw",
@@ -1309,8 +1309,8 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚获得扳指",
-            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians"],
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切获得扳指",
+            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians", "Mapuche"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1372,8 +1372,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "获得血统",
-            "civilizations": [],
+            "note": "拜占庭获得血统",
+            "civilizations": ["Byzantines"],
             "tech_id": 435,
             "building_id": 101, 
             "Name": "Bloodlines",
@@ -1394,8 +1394,8 @@
             "type": "delete"
         },
         {
-            "note": "勃艮第, 中国, 意大利, 波斯, 马里, 达罗毗荼获得攻城技师",
-            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians", "Dravidians"],
+            "note": "勃艮第, 中国, 意大利, 波斯, 马里, 达罗毗荼, 拜占庭获得攻城技师",
+            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians", "Dravidians", "Byzantines"],
             "tech_id": 377,
             "building_id": 209,
             "Name": "Siege Engineers",
@@ -1847,8 +1847,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "不列颠, 斯拉夫启用异教",
-            "civilizations": ["Britons", "Slavs"],
+            "note": "不列颠, 斯拉夫, 中国启用异教",
+            "civilizations": ["Britons", "Slavs", "Chinese"],
             "tech_id": 439,
             "building_id": 104,
             "Name": "Heresy",
@@ -1904,8 +1904,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "马扎尔, 凯尔特获得护卫",
-            "civilizations": ["Magyars", "Celts"],
+            "note": "马扎尔, 凯尔特, 马普切, 高棉获得护卫",
+            "civilizations": ["Magyars", "Celts", "Mapuche", "Khmer"],
             "tech_id": 215,
             "building_id": 12,
             "Name": "Squires",
@@ -2001,16 +2001,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "越南, 鞑靼获得重型投石车",
-            "civilizations": ["Vietnamese", "Tatars"],
+            "note": "越南, 鞑靼, 拜占庭获得重型投石车",
+            "civilizations": ["Vietnamese", "Tatars", "Byzantines"],
             "unit_id": 588,
             "building_id": 49,
             "Name": "Siege Onager",
             "RequiredAge": 4
         },
         {
-            "note": "越南, 鞑靼获得重型投石车",
-            "civilizations": ["Vietnamese", "Tatars"],
+            "note": "越南, 鞑靼, 拜占庭获得重型投石车",
+            "civilizations": ["Vietnamese", "Tatars", "Byzantines"],
             "tech_id": 320,
             "building_id": 49,
             "RequiredAge": 4
@@ -2303,6 +2303,54 @@
             "unit_id": 4046,
             "building_id": 82,
             "RequiredAge": 2
+        },
+        {
+            "note": "草原部落民",
+            "civilizations": "Cumans",
+            "unit_id": 4049,
+            "building_id": 12,
+            "Name": "Steppe Tribesman",
+            "RequiredAge": 2
+        },
+        {
+            "note": "老练草原部落民",
+            "civilizations": "Cumans",
+            "unit_id": 4050,
+            "building_id": 12,
+            "Name": "Veteran Steppe Tribesman",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐草原部落民",
+            "civilizations": "Cumans",
+            "unit_id": 4051,
+            "building_id": 12,
+            "Name": "Elite Steppe Tribesman",
+            "RequiredAge": 4
+        },
+        {
+            "note": "老练草原部落民",
+            "civilizations": "Cumans",
+            "tech_id": 3460,
+            "building_id": 12,
+            "Name": "Veteran Steppe Tribesman",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐草原部落民",
+            "civilizations": "Cumans",
+            "tech_id": 3461,
+            "building_id": 12,
+            "Name": "Elite Steppe Tribesman",
+            "RequiredAge": 4
+        },
+        {
+            "note": "中国启用救赎",
+            "civilizations": "Chinese",
+            "tech_id": 316,
+            "building_id": 104,
+            "Name": "Redemption",
+            "RequiredAge": 3
         }
     ]
 }

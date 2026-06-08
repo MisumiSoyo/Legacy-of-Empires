@@ -1260,12 +1260,12 @@ void EffectFunction10099(int playerId = -1)
     SetAttribute(playerId, cVillagerClass, cTrainLocation, CastleID);
     SetAttribute(playerId, cVillagerClass, cTrainButton, 21);
     SetAttribute(playerId, cVillagerClass, cHotkeyId, QHotkeyID);
-    MulAttribute(playerId, cVillagerClass, cTrainTime, 0.8);
+    MulAttribute(playerId, cVillagerClass, cTrainTime, 1.0 / 1.5);
     MulAttribute(playerId, cVillagerClass, cTrainLocationsEntryMod, 32767);
     SetAttribute(playerId, cVillagerClass, cTrainLocation, WatchTowerID);
     SetAttribute(playerId, cVillagerClass, cTrainButton, 1);
     SetAttribute(playerId, cVillagerClass, cHotkeyId, QHotkeyID);
-    MulAttribute(playerId, cVillagerClass, cTrainTime, 2.5);
+    MulAttribute(playerId, cVillagerClass, cTrainTime, 3);
     SetAttribute(playerId, cVillagerClass, cTrainLocationsEntryMod, 0);
 }
 
@@ -1454,7 +1454,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 320  2026.06.07");
+    xsChatData("Patch: 321  2026.06.08");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

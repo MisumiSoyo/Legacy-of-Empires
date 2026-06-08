@@ -6948,6 +6948,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bloodlines",
+                        "RequiredAge": 2,
+                        "ID": 435
                     }
                 ],
                 "Units": [
@@ -7012,6 +7017,10 @@
                         "ID": 257,
                         "Name": "Onager",
                         "RequiredAge": 4
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 320
                     }
                 ],
                 "Units": [
@@ -7060,6 +7069,11 @@
                         "Name": "Flame Thrower",
                         "RequiredAge": 3,
                         "ID": 4019
+                    },
+                    {
+                        "Name": "Siege Onager",
+                        "RequiredAge": 4,
+                        "ID": 588
                     }
                 ]
             },
@@ -7371,6 +7385,11 @@
                         "Name": "Architecture",
                         "RequiredAge": 4,
                         "ID": 51
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
                     },
                     {
                         "Name": "Heated Shot",
@@ -9867,6 +9886,16 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3005
+                    },
+                    {
+                        "Name": "Heresy",
+                        "RequiredAge": 4,
+                        "ID": 439
+                    },
+                    {
+                        "Name": "Redemption",
+                        "RequiredAge": 3,
+                        "ID": 316
                     }
                 ],
                 "Units": [
@@ -10320,6 +10349,16 @@
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
+                    },
+                    {
+                        "Name": "Veteran Steppe Tribesman",
+                        "RequiredAge": 3,
+                        "ID": 3460
+                    },
+                    {
+                        "Name": "Elite Steppe Tribesman",
+                        "RequiredAge": 4,
+                        "ID": 3461
                     }
                 ],
                 "Units": [
@@ -10362,6 +10401,21 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Steppe Tribesman",
+                        "RequiredAge": 2,
+                        "ID": 4049
+                    },
+                    {
+                        "Name": "Veteran Steppe Tribesman",
+                        "RequiredAge": 3,
+                        "ID": 4050
+                    },
+                    {
+                        "Name": "Elite Steppe Tribesman",
+                        "RequiredAge": 4,
+                        "ID": 4051
                     }
                 ]
             },
@@ -19883,6 +19937,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Squires",
+                        "RequiredAge": 3,
+                        "ID": 215
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
@@ -22375,6 +22434,10 @@
                         "Name": "Military Training",
                         "RequiredAge": 2,
                         "ID": 3004
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 75
                     },
                     {
                         "Name": "Plate Mail Armor",
@@ -57073,6 +57136,11 @@
                         "ID": 1378,
                         "Name": "Elite Bolas Rider",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
                     }
                 ],
                 "Units": [
@@ -57148,6 +57216,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Squires",
+                        "RequiredAge": 3,
+                        "ID": 215
                     },
                     {
                         "Name": "Elite Huskarl",

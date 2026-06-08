@@ -821,7 +821,7 @@
                            ["type_50.blast_width", 0.5],
                            ["type_50.blast_damage", -3],
                            ["creatable.resource_costs", "list_search", ["type", 0], ["amount", 60]],
-                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 85]]]
+                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 90]]]
         },
         {
             "note": "精锐甲胄骑兵改动, 自带溅射",
@@ -830,7 +830,7 @@
                            ["creatable.displayed_pierce_armour", 2],
                            ["type_50.blast_width", 0.5],
                            ["creatable.resource_costs", "list_search", ["type", 0], ["amount", 60]],
-                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 85]]]
+                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", 90]]]
         },
         {
             "note": "城镇中心的附属建筑现在没有价值, 维修费用和其他建筑一样",

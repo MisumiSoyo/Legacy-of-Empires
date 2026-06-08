@@ -124,6 +124,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, HoardingsTechID);
             EnableTech(playerId, GuildsTechID);
+            EnableTech(playerId, HeresyTechID);
+            EnableTech(playerId, RedemptionTechID);
             SetResource(playerId, cAttributeResearchCostMod, 0.85);
             DisableTech(playerId, KnightTechID);
             DisableTech(playerId, CavalierTechID);
@@ -141,6 +143,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, HeatedShotTechID);
             EnableTech(playerId, IncendiariesTechID);
+            EnableTech(playerId, BloodlinesTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, SiegeOnagerTechID);
             break;
         }
         case cPersians:
@@ -351,6 +356,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, ElephantArcherTechID);
             EnableTech(playerId, EliteElephantArcherTechID);
+            EnableTech(playerId, SquiresTechID);
             DisableTech(playerId, CavalryArcherTechID);
             DisableTech(playerId, HeavyCavalryArcherTechID);
             break;
@@ -425,6 +431,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, PlateMailArmorTechID);
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, GoldShaftMiningTechID);
+            EnableTech(playerId, BlastFurnaceTechID);
             break;
         }
         case cBurgundians:
@@ -572,6 +579,9 @@ void EffectFunction10001(int playerId = -1)
         }
         case cMapuche:
         {
+            EnableTech(playerId, SquiresTechID);
+            EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, ThumbRingTechID);
             break;
         }
         case cTupi:
