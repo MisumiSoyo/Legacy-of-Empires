@@ -747,6 +747,18 @@
             "effect_id": 667,
             "match": [4, "any", "any", 9, "any"],
             "modifications": ["d", "add", 2]
+        },
+        {
+            "type": "delete",
+            "name": "库曼原有的骑兵移速加成移除",
+            "effect_id": [748, 762, 763],
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "delete",
+            "name": "库曼封建时代可建造的城镇中心无上限, 原有加成删除",
+            "effect_id": 761,
+            "match": ["any", "any", "any", "any", "any"]
         }
     ],
     "unit_changes":
