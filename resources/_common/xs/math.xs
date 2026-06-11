@@ -137,10 +137,14 @@ void ForceEnableTech(int playerId = -1, int TechID = -1)
 }
 
 
-void ForceResearchTech(int playerId = -1, int TechID = -1)
+void ForceResearchTech(int playerId = -1, int TechID = -1, bool SetAuto = false)
 {
     if (isResearched(playerId, TechID) == false)
+    {
+        if (SetAuto)
+            xsEffectAmount(cModifyTech, TechID, cAttrSetTime, 0, playerId);
         xsEffectAmount(cModifyTech, TechID, cAttrSetState, cAttributeResearch, playerId);
+    }
 }
 
 
@@ -699,7 +703,6 @@ bool AllyCiv(int playerId = -1, int civ = -1)
 void SetInfinityStacking(int playerId = -1, int TechID = -1)
 {
     xsEffectAmount(cModifyTech, TechID, cAttrSetStacking, 1, playerId);
-    xsEffectAmount(cModifyTech, TechID, cAttrSetStackingResearchCap, 32767, playerId);
 }
 
 

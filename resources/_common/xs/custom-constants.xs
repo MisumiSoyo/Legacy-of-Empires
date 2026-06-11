@@ -48,6 +48,7 @@ extern const int cAttributeSatrapGoldProductivity = 749;
 extern const int cAttributeCashCropProductivity = 750;
 extern const int cAttributeCondottieroMercenaryTimer = 751;
 extern const int cAttributeTurksTradeIncome = 752;
+extern const int cAttributeEnclosureProductivity = 753;
 
 
 //  Custom Units' IDs

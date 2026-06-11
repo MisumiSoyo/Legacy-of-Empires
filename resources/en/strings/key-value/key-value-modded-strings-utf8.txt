@@ -112,7 +112,7 @@
 
 
 //	Britons
-120150 "Foot Archer civilization\n\n• Town Centers cost -50% wood in Castle Age\n• Archers (except Skirmishers) +1/+2 max range at Castle/Imperial Age\n• Shepherds +25% work rat\n• Military units around town centers +15% attack speed\n• Fishing Ship +33% creation speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Warwolf (Trebuchets have blast damage)\n• Privateers (Hulk line +25% attack speed)\n• Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
+120150 "Foot Archer civilization\n\n• Town Centers cost -50% wood in Castle Age\n• Archers (except Skirmishers) +1/+2 max range at Castle/Imperial Age\n• Shepherds +25% work rat\n• Military units around town centers +15% attack speed\n• Fishing Ship +33% creation speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Warwolf (Trebuchets have blast damage)\n• Privateers (Hulk line +25% attack speed)\n• Enclosure (Farmers -15 hit points; 20% of the food produced is converted into gold)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
 //	Franks
 120151 "Cavalry civilization\n\n• Castles -15%/-25% cost in Castle/Imperial Age\n• Cavalry +20% hit points starting in Feudal Age\n• Mill technologies free\n• Foragers -40% collection consumption\n\n<b>Unique Unit : <b>\n• Throwing Axeman (Ranged infantry), Swiss Pikeman (Infantry strong vs cavalries and monks), Heavy Crossbowman (Strong archer with low movement speed)\n\n<b>Unique Techs: <b>\n• Bearded Axe (Throwing Axeman +2 max range)\n• Chivalry (Stables +40% work rate)\n• Lettre de Change (Enable you to loan in the market)\n• Gendarmes d'ordonnance (Scout Cavalry line gain additional HP when near Knight line units ( (maximum +100% when there are 40 knights)))\n\n<b>Team bonus: <b>\nCavalry (except Light Cavalry) +2 Line of Sight"
 //	Goths
@@ -188,7 +188,7 @@
 //	Poles
 120187 "Cavalry civilization\n\n• Villagers regenerate 10/15/20 HP per minute at Feudal/Castle/Imperial Age\n• Folwark replaces Mill\n• Stone Miners generate 0.33 gold per stone\n• Stable technologies -50% cost\n• Can spend extra gold (decreases by age) to quickly produce 2 barracks units at once\n\n<b>Unique Units:<b>\n• Obuch (Infantry destroys armor), Winged Hussar (Powerful light cavalry), Cossack Rider (Fast-firing cavalry archer)\n\n<b>Unique Techs:<b>\n• Szlachta Privileges (Knight-line -60% gold cost)\n• Lechitic Legacy (Light Cavalry deals 33% damage in 0.5 blast range)\n• Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles)\n• Winged Charge (Cavalries get charge ability)\n\n<b>Team Bonus:<b>\nLight Cavalry +1 attack vs Archers"
 //	Bohemians
-120188 "Gunpowder and Monk civilization\n\n• Blacksmiths and Universities -100 wood cost\n• Chemistry, Hand Cannoneer and Bombard Cannon available in Castle Age\n• Infantries, Archers, Cavalry Archers and Hand Cannoneers +25% bonus damage, with each corresponding attack technology in Blacksmith +1\n• Fervor and Sanctity affect Villagers\n• Mining Camp technologies free\n\n<b>Unique Units:<b>\n• Hussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b>\n• Wagenburg Tactics (Gunpowder units move 15% faster)\n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food; Each existing monk refunds 50 gold)\n• Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)\n• Pistala (Train Hand Cannoneers with 60 wood instead of gold cost)\n\n<b>Team Bonus:<b>\nMarkets +50% work rate"
+120188 "Gunpowder and Monk civilization\n\n• Blacksmiths and Universities -100 wood cost\n• Chemistry, Hand Cannoneer and Bombard Cannon available in Castle Age\n• Infantries, Archers, Cavalry Archers and Hand Cannoneers +25% bonus damage, with each corresponding attack technology in Blacksmith +1\n• Fervor and Sanctity affect Villagers\n• Mining Camp technologies free\n\n<b>Unique Units:<b>\n• Hussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b>\n• Wagenburg Tactics (Gunpowder units move 15% faster)\n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food; Each existing monk refunds 50 gold)\n• Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)\n• Pistala (Train Hand Cannoneers with 55 wood instead of gold cost)\n\n<b>Team Bonus:<b>\nMarkets +50% work rate"
 //	Dravidians
 120189 "Infantry and Naval civilization\n\n• Receive +200/350/500 wood when advancing to Feudal/Castle/Imperial Age\n• Fishermen and Fishing Ships +15 carry capacity\n• Barracks technologies -50% cost%\n• Siege weapons -33% wood cost\n• Skirmishers, Genitours and Elephant Archers -20% reload time\n• Your team receive a free villager from your every Monastery technology\n\n<b>Unique Units:<b>\n• Urumi Swordsman (Infantry that can charge and deal blast damage), Thirisadai (Heavy armored warship with multiple arrows), Raider Elephant (Fast battle elephants)\n\n<b>Unique Techs:<b>\n• Medical Corps (All Elephants regenerate 30 HP per minute)\n• Wootz Steel (Infantry and cavalry attacks ignore armor)\n• Kadal Paarvai (Fishing ships -80% gathering consumption of natural food resources)\n• Bhakti (Monks +3 conversion range)\n\n<b>Team Bonus:<b>\nDocks provide +5 population room"
 //	Bengalis
@@ -497,7 +497,7 @@
 501060 "Research Mercenary Contract (Spawn 5 Condottieros at Town Center immediately and every 120 seconds)"
 501061 "Research Advanced Mercenary Contract (Mercenary Contract will spawn additionally 5 Condottieros)"
 501062 "Research Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)"
-501063 "Research Enclosure (Farmers -25% food production, -15 HP, but can produce gold equal to 27% food produced)"
+501063 "Research Enclosure (Farmers -15 hit points; 20% of the food produced is converted into gold)"
 501064 "Research Privateers (Hulk line +25% attack speed)"
 501065 "Research Kaunas Castle (Watch Tower line continuously shoots arrows that ignore defense with lower attack)"
 501066 "Research Raja (Land military units can loot food and gold equivalent to 10/4% of the value of killed enemies)"
@@ -539,7 +539,7 @@
 501102 "For every controlled relic, Warships +1 attack"
 501103 "Spawn one Ratha from each town center, castle and monastery; Ratha -15 wood cost"
 501104 "Elephant Archers +1 attack, +4 attack vs Spearman"
-501105 "Research Pistala (Train Hand Cannoneers with 60 wood instead of gold cost)"
+501105 "Research Pistala (Train Hand Cannoneers with 55 wood instead of gold cost)"
 501106 "Research Meng'an Mouke (Town Center +50% work rate and can train an additional Conscripted Army in one group; +40 population headroom)"
 501107 "Research Khanda Drills (Ghulams and Mansabdars +25% attack speed, +5 gold cost)"
 501108 "Research Sultans (Infantries/Cavalries/Ranged units +10/10/6 attack vs elephants)"
@@ -713,7 +713,7 @@
 521060 "Research <b>Mercenary Contract<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nSpawn 5 Condottieros at Town Center immediately and every 120 seconds."
 521061 "Research <b>Advanced Mercenary Contract<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nMercenary Contract will spawn additionally 5 Condottieros."
 521062 "Research <b>Taborites<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTaborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned."
-521063 "Research <b>Enclosure<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nFarmers -25% food production, -15 HP, but can produce gold equal to 27% food produced."
+521063 "Research <b>Enclosure<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nFarmers -15 hit points; 20% of the food produced is converted into gold."
 521064 "Research <b>Privateers<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nHulk line +25% attack speed."
 521065 "Research <b>Kaunas Castle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nWatch Tower line continuously shoots arrows that ignore defense with lower attack."
 521066 "Research <b>Raja<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nLand military units can loot food and gold equivalent to 10/4% of the value of killed enemies."
@@ -755,7 +755,7 @@
 521102 "For every controlled relic, Warships +1 attack."
 521103 "(Cost: 1 relic)\nSpawn 1 Ratha from each town center, castle and monastery; Ratha -15 wood cost."
 521104 "(Cost: 1 relic)\nElephant Archers +1 attack, +4 attack vs Spearman."
-521105 "Research <b>Pistala<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nTrain Hand Cannoneers with 60 wood instead of gold cost."
+521105 "Research <b>Pistala<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nTrain Hand Cannoneers with 55 wood instead of gold cost."
 521106 "Research <b>Meng'an Mouke<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTown Center +50% work rate and can train an additional Conscripted Army in one group; +40 population headroom."
 521107 "Research <b>Khanda Drills<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nGhulams and Mansabdars +25% attack speed, +5 gold cost."
 521108 "Research <b>Sultans<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nInfantries/Cavalries/Ranged units +10/10/6 attack vs elephants."
@@ -874,6 +874,7 @@
 600005 "Switch forms to attack."
 600006 "Switch to defensive war drum. Nearby allies +1 melee/pierce armor."
 600007 "Switch to attack war drum. Nearby allies +15% movement speed."
+600008 "Increase attack speed by 40% and lose 3 melee armor, lasting for 10 seconds.\n(Reload Time: 50)"
 
 
 700001 "Handcannon Ashigaru"

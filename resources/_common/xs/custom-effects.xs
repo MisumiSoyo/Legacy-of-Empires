@@ -45,13 +45,13 @@ void EffectFunction10003(int playerId = -1)
 // 10004 - Enclosure
 void EffectFunction10004(int playerId = -1)
 {
-    xsEffectAmount(cMulResource, cAttributeFoodBonus, 0, 0.75, playerId);
-    xsEffectAmount(cModResource, cAttributeGoldFarmingProductivity, 1, 10.6, playerId);
-    xsEffectAmount(cAddAttribute, cVillagerClass, cHitpoints, -15, playerId);
+    MulResource(playerId, cAttributeFoodBonus, 0.8);
+    ModResource(playerId, cAttributeEnclosureProductivity, 0.53 * 100 * 0.2);
+    ModAttribute(playerId, cVillagerClass, cHitpoints, -15);
 
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeGoldFarmingProductivity);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeEnclosureProductivity);
     xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
 
@@ -146,29 +146,30 @@ void EffectFunction10011(int playerId = -1)
 //  10012 - Yuan Dynasty
 void EffectFunction10012(int playerId = -1)
 {
-    MulAttribute(playerId, cArcherClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cBuildingClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cVillagerClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cInfantryClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cCavalryClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cSiegeWeaponClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cMonkClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cTradeCartClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cConquistadorClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cPhalanxClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cPetardClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cCavalryArcherClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cMonkWithRelicClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cHandCannoneerClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cScoutCavalryClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cPackedUnitClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cUnpackedSiegeUnitClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cScorpionClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cLivestockClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cKingClass, cMovementSpeed, 1.05);
-    MulAttribute(playerId, cControlledAnimalClass, cMovementSpeed, 1.05);
+    float MovementSpeedBonus = 1.08;
+    MulAttribute(playerId, cArcherClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cBuildingClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cVillagerClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cInfantryClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cCavalryClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cSiegeWeaponClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cMonkClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cTradeCartClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cConquistadorClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cPhalanxClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cPetardClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cCavalryArcherClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cMonkWithRelicClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cHandCannoneerClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cScoutCavalryClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cPackedUnitClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cUnpackedSiegeUnitClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cScorpionClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cLivestockClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cKingClass, cMovementSpeed, MovementSpeedBonus);
+    MulAttribute(playerId, cControlledAnimalClass, cMovementSpeed, MovementSpeedBonus);
 
-    MulAttribute(playerId, cTradeCartClass, cWorkRate, 1.05);
+    MulAttribute(playerId, cTradeCartClass, cWorkRate, MovementSpeedBonus);
 
     SetTechAuto(playerId, ManAtArmsTechID);
     SetTechAuto(playerId, LongSwordmanTechID);
@@ -179,11 +180,11 @@ void EffectFunction10012(int playerId = -1)
     SetTechAuto(playerId, GalleonTechID);
 
     if (isResearched(playerId, ScaleBardingArmorTechID) == false)
-        ForceResearchTech(playerId, ScaleBardingArmorTechID);
+        ForceResearchTech(playerId, ScaleBardingArmorTechID, true);
     if (isResearched(playerId, ChainBardingArmorTechID) == false)
-        ForceResearchTech(playerId, ChainBardingArmorTechID);
+        ForceResearchTech(playerId, ChainBardingArmorTechID, true);
     if (isResearched(playerId, PlateBardingArmorTechID) == false)
-        ForceResearchTech(playerId, PlateBardingArmorTechID);
+        ForceResearchTech(playerId, PlateBardingArmorTechID, true);
 
     DisableTech(playerId, TangDynastyTechID);
     DisableTech(playerId, SongDynastyTechID);
@@ -196,7 +197,7 @@ void EffectFunction10013(int playerId = -1)
 {
     EnableTech(playerId, GuanNingCavalryTechID);
     if (isResearched(playerId, ChemistryTechID) == false)
-        ForceResearchTech(playerId, ChemistryTechID);
+        ForceResearchTech(playerId, ChemistryTechID, true);
 
     MulAttribute(playerId, cArcherClass, cHitpoints, 1.10);
     MulAttribute(playerId, cInfantryClass, cHitpoints, 1.10);
@@ -1454,7 +1455,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 324  2026.06.09");
+    xsChatData("Patch: 325  2026.06.10");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
