@@ -17467,6 +17467,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3002
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }

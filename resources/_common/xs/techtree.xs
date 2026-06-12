@@ -275,6 +275,12 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GambesonsTechID);
             break;
         }
+        case cIndians:
+        {
+            EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, SappersTechID);
+            break;
+        }
         case cIncas:
         {
             EnableTech(playerId, TwoManSawTechID);

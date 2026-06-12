@@ -216,10 +216,11 @@
                          [4, -1, 47, 9, -1025]]
         },
         {
-            "type": "add",
-            "name": "屯田",
+            "type": "modify",
+            "name": "屯田产生的食物量增加",
             "effect_id": 1061,
-            "commands": [1, 287, -1, -1, 2]
+            "match": [1, 287, "any", "any", "any"],
+            "modifications": ["d", "set", 8.333333333333]
         },
         {
             "type": "add",
@@ -857,6 +858,26 @@
                            ["type_50.armours", "list_search", ["class_", 31], ["amount", "add", -3]],
                            ["type_50.displayed_melee_armour", "add", -3],
                            ["bird.tasks", "list_search", ["action_type", 155], "del"]]
+        },
+        {
+            "note": "磨坊, 伐木场, 采矿场建造价格减少",
+            "unit_id": [68, 129, 130, 131, 562, 563, 564, 565, 584, 585, 586, 587],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 50]]]
+        },
+        {
+            "note": "定居点建造价格减少",
+            "unit_id": [2556, 2558, 2560],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 75]]]
+        },
+        {
+            "note": "骡车建造价格减少",
+            "unit_id": [1808],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 30]]]
+        },
+        {
+            "note": "前三个时代的经济建筑生命值减少",
+            "unit_id": [68, 129, 130, 562, 563, 564, 584, 585, 586],
+            "attributes": [["hit_points", "add", -200]]
         }
     ],
     "tech_changes":

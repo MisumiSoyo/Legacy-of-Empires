@@ -726,9 +726,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀, 达罗毗荼, 不列颠, 亚美尼亚启用轮作",
+            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀, 达罗毗荼, 不列颠, 亚美尼亚, 印度斯坦启用轮作",
             "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans", "Shu", "Dravidians",
-                              "Britons", "Armenians"],
+                              "Britons", "Armenians", "Indians"],
             "tech_id": 12,
             "building_id": 68,
             "Name": "Crop Rotation",
@@ -1213,9 +1213,9 @@
             "type": "delete"
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏, 拜占庭, 罗马, 达罗毗荼获得工兵",
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏, 拜占庭, 罗马, 达罗毗荼, 印度斯坦获得工兵",
             "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians",
-                              "Shu", "Wei", "Byzantines", "Romans", "Dravidians"],
+                              "Shu", "Wei", "Byzantines", "Romans", "Dravidians", "Indians"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
