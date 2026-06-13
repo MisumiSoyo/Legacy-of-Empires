@@ -1,0 +1,17 @@
+[
+    {
+        "type": "add",
+        "note": "林场",
+        "name": "Forest Farm",
+        "building_id": 4055,
+        "worker_object_group": 4,
+        "target_list":  [{
+                            "name": "Wood",
+                            "object_group": 49,
+                            "attribute_type": 1
+                         }],
+        "update_ai_resource_types": [{
+                                        "resource_type": 1
+                                     }]
+    }
+]

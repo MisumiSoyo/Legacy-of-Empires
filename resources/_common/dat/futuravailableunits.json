@@ -17200,6 +17200,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [
@@ -57442,6 +57447,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 2,
                         "ID": 3004
+                    },
+                    {
+                        "Name": "Bracer",
+                        "RequiredAge": 4,
+                        "ID": 201
                     }
                 ]
             },

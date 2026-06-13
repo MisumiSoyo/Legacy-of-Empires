@@ -1081,8 +1081,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "法兰克, 凯尔特, 波斯, 罗马, 斯拉夫获得护腕",
-            "civilizations": ["Franks", "Celts", "Persians", "Romans", "Slavs"],
+            "note": "法兰克, 凯尔特, 波斯, 罗马, 斯拉夫, 马普切获得护腕",
+            "civilizations": ["Franks", "Celts", "Persians", "Romans", "Slavs", "Mapuche"],
             "tech_id": 201,
             "building_id": 103,
             "Name": "Bracer",
@@ -2391,6 +2391,13 @@
             "building_id": 12,
             "Name": "Elite Samogitian Skirmisher",
             "RequiredAge": 4
+        },
+        {
+            "note": "林场",
+            "civilizations": "Teutons",
+            "unit_id": 4055,
+            "Name": "Forest Farm",
+            "RequiredAge": 1
         }
     ]
 }

@@ -503,6 +503,38 @@
             "Link ID": 68,
             "Node ID": 50,
             "Picture Index": 35
+        },
+        {
+            "Age ID": 1,
+            "Building ID": 4055,
+            "Building in new column": true,
+            "Building upgraded from ID": -1,
+            "Draw Node Type": "Building",
+            "Help String ID": 800119,
+            "Link ID": -1,
+            "Link Node Type": "BuildingNonTech",
+            "Name": "Forest Farm",
+            "Name String ID": 700119,
+            "Node ID": 4055,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueBuilding",
+            "Picture Index": 96,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Building"
         }
     ],
     "civ_techs_units": [

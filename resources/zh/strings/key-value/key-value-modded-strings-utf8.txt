@@ -123,7 +123,7 @@
 //	哥特
 120152 "步兵文明\n\n• 步兵在黑暗/封建/城堡/帝王时代 -15/20/25/30% 训练费用\n• 步兵在封建/城堡/帝王时代对建筑 +1/2/3 攻击力\n• 猎人 +15 携带量, +23% 可采集量\n• 织布机 免费升级\n• 在封建/城堡/帝王时代 +10/15/20 人口空间和人口上限\n• 每击杀 2 名敌人, 获得 1 名村民 (最多 20 名)\n\n<b>独特单位：<b>\n• 近卫军 (克制射手的步兵), 木制要塞 (独特箭塔)\n\n<b>独特科技：<b>\n• 无政府 (可在兵营生产近卫军)\n• 井喷 (兵营 +100% 工作效率)\n• 契约军团 (团队可训练同盟单位, 并且同盟单位击杀敌人时可为你提供 7 食物和黄金)\n• 格鲁森尼骑兵 (骑士系 -80% 食物费用)\n\n<b>团队加成：<b>\n兵营工作效率 +20%"
 //	条顿
-120153 "步兵文明\n\n• 僧侣治疗距离增加到 8\n• 塔类建筑驻扎容量 +5, 最大放箭数 +4, 城镇中心驻扎容量 +10, 最大放箭数 +5\n• 近射孔和草药免费升级\n• 农田 -50% 建造费用\n• 兵营和马厩单位在城堡/帝王时代 +1/2 护甲\n• 掷矛手系在封建/城堡/帝王时代 +1/2/3 射程\n\n<b>独特单位：<b>\n• 条顿骑士 (超高护甲的步兵), 十字军骑士 (重装骑兵)\n\n<b>独特科技：<b>\n• 重装甲 (攻城武器 +4 护甲)\n• 开垛口 (城堡射程 +3, 驻扎的步兵能射箭)\n• 金玺诏书 (僧侣和条顿骑士 +33 每分钟回复生命值, -33% 受到的附加伤害)\n• 骑士册封 (军事单位击杀敌方军事单位时, 可获得 +5 生命值, +1 攻击力, 最多 5 次)\n\n<b>团队加成：<b>\n单位招降最小/最大时间 +3/+1"
+120153 "步兵文明\n\n• 僧侣治疗距离增加到 8\n• 塔类建筑驻扎容量 +5, 最大放箭数 +4, 城镇中心驻扎容量 +10, 最大放箭数 +5\n• 近射孔和草药免费升级\n• 农田 -50% 建造费用\n• 兵营和马厩单位在城堡/帝王时代 +1/2 护甲\n• 掷矛手系在封建/城堡/帝王时代 +1/2/3 射程\n\n<b>独特单位：<b>\n• 条顿骑士 (超高护甲的步兵), 十字军骑士 (重装骑兵), 林场 (可采集木材)\n\n<b>独特科技：<b>\n• 重装甲 (攻城武器 +4 护甲)\n• 开垛口 (城堡射程 +3, 驻扎的步兵能射箭)\n• 金玺诏书 (僧侣和条顿骑士 +33 每分钟回复生命值, -33% 受到的附加伤害)\n• 骑士册封 (军事单位击杀敌方军事单位时, 可获得 +5 生命值, +1 攻击力, 最多 5 次)\n\n<b>团队加成：<b>\n单位招降最小/最大时间 +3/+1"
 //	日本
 120154 "步兵文明\n\n• 渔船 +100% 生命值; 渔夫和渔船在黑暗/封建/城堡/帝王时代 +5/10/15/20% 工作效率\n• 磨坊、伐木场和采矿场建造费用 -50%\n• 封建时代起步兵攻击速度 +33%\n• 骑射手 +2 攻击力 vs 射手 (除掷矛手外)\n\n<b>独特单位：<b>\n• 日本武士 (克制独特单位的步兵), 弓足轻 (攻击可无视护甲的弓箭手), 铁炮足轻 (克制骑兵的火枪手), 骑马武士 (重装骑兵), 僧兵 (宗教步兵)\n\n<b>独特科技：<b>\n• 射箭孔 (箭塔系和海塔放箭数和最大放箭数 +2)\n• 弹射器 (巨型投石机展开/组装速度 +300%，攻击速度 +33%)\n• 一向一揆 (解锁僧兵, 村民 -10% 工作效率)\n• 日本长枪骑兵 (轻骑兵 +9 攻击力 vs 骑兵)\n\n<b>团队加成：<b>\n箭船系视野 +50%"
 //	中国
@@ -1000,6 +1000,9 @@
 700116 "萨莫吉希亚游击兵"
 700117 "老练萨莫吉希亚游击兵"
 700118 "精锐萨莫吉希亚游击兵"
+700119 "林场"
+700120 "林场工"
+700121 "林场工"
 
 
 701001 "生产铁炮足轻"
@@ -1119,6 +1122,7 @@
 701116 "生产萨莫吉希亚游击兵"
 701117 "生产老练萨莫吉希亚游击兵"
 701118 "生产精锐萨莫吉希亚游击兵"
+701119 "建造林场"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1354,6 +1358,8 @@
 721117 "生产<b>老练萨莫吉希亚游击兵<b> (<cost>, 23 <MATERIAL=MPIconGoodCPU>)\n立陶宛独特步兵, 攻击可减少目标敌人 1 攻击力, 持续 2 秒。 (效果可以叠加)\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
 
 721118 "生产<b>精锐萨莫吉希亚游击兵<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n立陶宛独特步兵, 攻击可减少目标敌人 1 攻击力, 持续 2 秒。 (效果可以叠加)\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
+
+721119 "建造<b>林场<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n条顿独特建筑, 只能容纳 1 名村民工作。最多可建造 5 座。村民可从中采集无限木材, 并受到伐木科技影响。\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 农田; 标签: 建筑, 独特单位。"
 
 
 900001 "<b>西帕希之怒</b>\n西帕希骑兵能减少附近敌方远程单位的攻击速度。"

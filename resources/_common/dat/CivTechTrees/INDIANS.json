@@ -2340,7 +2340,7 @@
             "Link Node Type": "BuildingTech",
             "Draw Node Type": "UnitTech",
             "Use Type": "Tech",
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Name String ID": 17322,
             "Age ID": 3,
             "Building ID": 209,

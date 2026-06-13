@@ -118,7 +118,7 @@
 //	Goths
 120152 "Infantry civilization\n\n• Infantry -15%/-20%/-25%/-30% cost at Dark/Feudal/Castle/Imperial Age\n• Infantry +1/+2/+3 attack vs buildings at Feudal/Castle/Imperial Age\n• Hunters carry +15 meat, last 23% longer\n• Loom free\n• +10/15/20 population headroom and capacity at Feudal/Castle/Imperial Age\n• Receive one villager (maximum 20) for every 2 enemies killed\n\n<b>Unique Unit:<b>\n• Huskarl (Infantry better combats with archers), Wooden Fortress (unique tower)\n\n<b>Unique Techs: <b>\n• Anarchy (create Huskarls at Barracks)\n• Perfusion (Barracks +100% work rate)\n• Foederati Army (Enable your team to train Foederati units; Receive 7 food and gold from killing enemies with Foederati units)\n• Greuthungi Cavalry (Knight-line units -80% food cost)\n\n<b>Team bonus: <b>\nBarracks +20% work rate"
 //	Teutons
-120153 "Infantry civilization\n\n• Monks +100% healing range\n• Towers +5 garrison capacity, +4 max arrows\n• Murder Holes, Herbal Medicine free\n• Farms -50% cost\n• Town Center +10 garrison capacity, +5 max arrows\n• Barracks and Stable units +1/2 melee armor at Castle/Imperial Age\n• Skirmisher line +1/2/3 max range in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Teutonic Knight (Heavy armored infantry), Crusader Knight (Heavy Cavalry)\n\n<b>Unique Techs: <b>\n• Ironclad (Siege weapons and Trebuchets +4 armor)\n• Crenellations (Castle +3 max range?LOS/search radius, infantries garrisoned in Towers, Kreposts and Castles can fire arrows)\n• Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)\n• Accolade (Military units can gain 5 HP and 1 attack after killing enemy military units, up to 5 stacks)\n\n<b>Team bonus: <b>\nAll units +3 min/+1 max conversion time"
+120153 "Infantry civilization\n\n• Monks +100% healing range\n• Towers +5 garrison capacity, +4 max arrows\n• Murder Holes, Herbal Medicine free\n• Farms -50% cost\n• Town Center +10 garrison capacity, +5 max arrows\n• Barracks and Stable units +1/2 melee armor at Castle/Imperial Age\n• Skirmisher line +1/2/3 max range in Feudal/Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Teutonic Knight (Heavy armored infantry), Crusader Knight (Heavy Cavalry), Forest Farm (Can produce wood)\n\n<b>Unique Techs: <b>\n• Ironclad (Siege weapons and Trebuchets +4 armor)\n• Crenellations (Castle +3 max range?LOS/search radius, infantries garrisoned in Towers, Kreposts and Castles can fire arrows)\n• Die Goldene Bulle (Monks and Teutonic Knights +33 HP regeneration per minute, -33% bonus damage received)\n• Accolade (Military units can gain 5 HP and 1 attack after killing enemy military units, up to 5 stacks)\n\n<b>Team bonus: <b>\nAll units +3 min/+1 max conversion time"
 //	Japanese
 120154 "Infantry civilization\n\n• Fishing Ships +100% HP; Fishermen and Fishing Ships +5/10/15/20% work rate at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50%\n• Infantry -25% reload time starting in Feudal Age\n• Cavalry Archer class units +2 attack vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Archer that ignores base armor), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Mounted Samurai (Heavy cavalry), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2)\n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Enable you to train Soheis, but villagers -10% work rate)\n• Yari Cavalry (Light Cavalry +9 attack vs Cavalry)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 //	Chinese
@@ -995,6 +995,9 @@
 700116 "Samogitian Skirmisher"
 700117 "Veteran Samogitian Skirmisher"
 700118 "Elite Samogitian Skirmisher"
+700119 "Forest Farm"
+700120 "Forest Farm Worker"
+700121 "Forest Farm Worker"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -1114,6 +1117,7 @@
 701116 "Create Samogitian Skirmisher"
 701117 "Create Veteran Samogitian Skirmisher"
 701118 "Create Elite Samogitian Skirmisher"
+701119 "Build Forest Farm"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1349,6 +1353,8 @@
 721117 "Create <b>Veteran Samogitian Skirmisher<b> (<cost>, 23 <MATERIAL=MPIconGoodCPU>)\nLithuanian unique infantry. Can reduce target enemy's attack by 1 for 2 seconds. (stackable)\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry."
 
 721118 "Create <b>Elite Samogitian Skirmisher<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nLithuanian unique infantry. Can reduce target enemy's attack by 1 for 2 seconds. (stackable)\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry."
+
+721119 "Build <b>Forest Farm<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nTeutonic unique architecture that can only accommodate one villager for work. Up to 5 can be constructed. Villagers can collect unlimited wood from it and are influenced by lumberjack camp technologies.\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Farm; Tags: All Building, Standard Building, Unique Unit."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."
