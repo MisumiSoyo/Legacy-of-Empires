@@ -2398,6 +2398,46 @@
             "unit_id": 4055,
             "Name": "Forest Farm",
             "RequiredAge": 1
+        },
+        {
+            "note": "特拉斯卡拉投石手",
+            "civilizations": "Aztecs",
+            "unit_id": 4058,
+            "building_id": 87,
+            "Name": "Tlaxcalan Slinger",
+            "RequiredAge": 2
+        },
+        {
+            "note": "老练特拉斯卡拉投石手",
+            "civilizations": "Aztecs",
+            "unit_id": 4059,
+            "building_id": 87,
+            "Name": "Veteran Tlaxcalan Slinger",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐特拉斯卡拉投石手",
+            "civilizations": "Aztecs",
+            "unit_id": 4060,
+            "building_id": 87,
+            "Name": "Elite Tlaxcalan Slinger",
+            "RequiredAge": 4
+        },
+        {
+            "note": "老练特拉斯卡拉投石手",
+            "civilizations": "Aztecs",
+            "tech_id": 3469,
+            "building_id": 87,
+            "Name": "Veteran Tlaxcalan Slinger",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐特拉斯卡拉投石手",
+            "civilizations": "Aztecs",
+            "tech_id": 3470,
+            "building_id": 87,
+            "Name": "Elite Tlaxcalan Slinger",
+            "RequiredAge": 4
         }
     ]
 }

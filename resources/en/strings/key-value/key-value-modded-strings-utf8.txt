@@ -140,7 +140,7 @@
 //	Spanish
 120163 "Gunpowder and Monk civilization\n\n• Builders +30% work rate (not applied on the first TC in Nomad mode)\n• Blacksmith upgrades don't cost gold\n• Cannon Galleon's projectile speed increases to 7 and enables Ballistics effect\n• Gunpowder units +18% attack speed\n• Gain 40 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n\n<b>Unique Unit : <b>\n• Conquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat), War Dog (High speed army)\n\n<b>Unique Techs: <b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range)\n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Genitours +2 max range)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 //	Aztecs
-120164 "Infantry and Monk civilization\n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +100 gold\n• Town Center will produce 7 Jaguar Warriors for every 30 enemy land units killed\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries)\n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range)\n• Garland Wars (Infantries +4 attack)\n• Ixitpla (Eagle Scout line removes food cost)\n• Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
+120164 "Infantry and Monk civilization\n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +100 gold\n• Town Center will produce 7 Jaguar Warriors for every 30 enemy land units killed\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries), Tlaxcalan Slinger (Archer that counters cavalry)\n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range)\n• Garland Wars (Infantries +4 attack)\n• Ixitpla (Eagle Scout line removes food cost)\n• Cuauhocelotl (Eagle Scout-line units gain +1 attack when killing enemy military units (maximum +4); Jaguar Warriors get additionally +1 attack from kills)\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
 //	Mayans
 120165 "Archer civilization\n\n• Resources last 15% longer\n• Archers cost -10%/-20%/-30% at Feudal/Castle/Imperial Age\n• Farms can produce wood/gold/stone equivalent to 40/20/10% of the food output\n• Masonry free\n\n<b>Unique Unit:<b>\n• Plumed Archer (High moving speed archer)\n\n<b>Unique Techs: <b>\n• Hul'che Javelineers (Skirmishers and Genitours throw a second projectile)\n• Holcans (Eagle Warrior-Line +40 HP)\n• Obsidian Arrow (Archers +4 attack vs buildings)\n• Yum Kaax's Blessing (Immediately harvest all the food from farms being cultivated by farmers)\n\n<b>Team bonus: <b>\nWalls and gates -50% cost"
 //	Huns
@@ -433,6 +433,8 @@
 500212 "Elite Steppe Tribesman"
 500213 "Veteran Samogitian Skirmisher"
 500214 "Elite Samogitian Skirmisher"
+500215 "Veteran Tlaxcalan Slinger"
+500216 "Elite Tlaxcalan Slinger"
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -649,6 +651,8 @@
 501212 "Upgrade to Elite Steppe Tribesman"
 501213 "Upgrade to Veteran Samogitian Skirmisher"
 501214 "Upgrade to Elite Samogitian Skirmisher"
+501215 "Upgrade to Veteran Tlaxcalan Slinger"
+501216 "Upgrade to Elite Tlaxcalan Slinger"
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nFish ships and Transport ships +25% Movement Speed."
@@ -865,6 +869,8 @@
 521212 "Upgrade to <b>Elite Steppe Tribesman<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Steppe Tribesmen and lets you create Elite Steppe Tribesmen."
 521213 "Upgrade to <b>Veteran Samogitian Skirmisher<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Samogitian Skirmishers and lets you create Veteran Samogitian Skirmishers."
 521214 "Upgrade to <b>Elite Samogitian Skirmisher<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Samogitian Skirmishers and lets you create Elite Samogitian Skirmishers."
+521215 "Upgrade to <b>Veteran Tlaxcalan Slinger<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Tlaxcalan Slingers and lets you create Veteran Tlaxcalan Slingers."
+521216 "Upgrade to <b>Elite Tlaxcalan Slinger<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Tlaxcalan Slingers and lets you create Elite Tlaxcalan Slingers."
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -998,6 +1004,9 @@
 700119 "Forest Farm"
 700120 "Forest Farm Worker"
 700121 "Forest Farm Worker"
+700122 "Tlaxcalan Slinger"
+700123 "Veteran Tlaxcalan Slinger"
+700124 "Elite Tlaxcalan Slinger"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -1118,6 +1127,9 @@
 701117 "Create Veteran Samogitian Skirmisher"
 701118 "Create Elite Samogitian Skirmisher"
 701119 "Build Forest Farm"
+701122 "Create Tlaxcalan Slinger"
+701123 "Create Veteran Tlaxcalan Slinger"
+701124 "Create Elite Tlaxcalan Slinger"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1355,6 +1367,12 @@
 721118 "Create <b>Elite Samogitian Skirmisher<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nLithuanian unique infantry. Can reduce target enemy's attack by 1 for 2 seconds. (stackable)\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit, Shock Infantry."
 
 721119 "Build <b>Forest Farm<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nTeutonic unique architecture that can only accommodate one villager for work. Up to 5 can be constructed. Villagers can collect unlimited wood from it and are influenced by lumberjack camp technologies.\n<hp> <attack> <armor> <piercearmor> <range>\nClass: Farm; Tags: All Building, Standard Building, Unique Unit."
+
+721122 "Create <b>Tlaxcalan Slinger<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAztecs unique archer that counters cavalry.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\nClass: Archer; Tags: Archer, Unique Unit.\nAttack Bonus: +4 vs Cavalry, +4 vs Camel."
+
+721123 "Create <b>Veteran Tlaxcalan Slinger<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAztecs unique archer that counters cavalry.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\nClass: Archer; Tags: Archer, Unique Unit.\nAttack Bonus: +7 vs Cavalry, +6 vs Camel."
+
+721124 "Create <b>Elite Tlaxcalan Slinger<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAztecs unique archer that counters cavalry.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\nClass: Archer; Tags: Archer, Unique Unit.\nAttack Bonus: +10 vs Cavalry, +9 vs Camel."
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

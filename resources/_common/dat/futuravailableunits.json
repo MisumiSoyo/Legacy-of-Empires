@@ -146,6 +146,16 @@
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Veteran Tlaxcalan Slinger",
+                        "RequiredAge": 3,
+                        "ID": 3469
+                    },
+                    {
+                        "Name": "Elite Tlaxcalan Slinger",
+                        "RequiredAge": 4,
+                        "ID": 3470
                     }
                 ],
                 "Units": [
@@ -173,6 +183,21 @@
                         "ID": 6,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Tlaxcalan Slinger",
+                        "RequiredAge": 2,
+                        "ID": 4058
+                    },
+                    {
+                        "Name": "Veteran Tlaxcalan Slinger",
+                        "RequiredAge": 3,
+                        "ID": 4059
+                    },
+                    {
+                        "Name": "Elite Tlaxcalan Slinger",
+                        "RequiredAge": 4,
+                        "ID": 4060
                     }
                 ]
             },

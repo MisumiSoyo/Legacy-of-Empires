@@ -438,6 +438,8 @@
 500212 "精锐草原部落民"
 500213 "老练萨莫吉希亚游击兵"
 500214 "精锐萨莫吉希亚游击兵"
+500215 "老练特拉斯卡拉投石手"
+500216 "精锐特拉斯卡拉投石手"
 
 
 501001 "研究季风航行(渔船和运输船 +25% 移动速度)"
@@ -654,6 +656,8 @@
 501212 "升级到精锐草原部落民"
 501213 "升级到老练萨莫吉希亚游击兵"
 501214 "升级到精锐萨莫吉希亚游击兵"
+501215 "升级到老练特拉斯卡拉投石手"
+501216 "升级到精锐特拉斯卡拉投石手"
 
 
 521001 "研究<b>季风航行<b> (<cost>) (时间: 30) 渔船和运输船 +25%移动速度"
@@ -870,6 +874,8 @@
 521212 "升级到<b>精锐草原部落民<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练草原部落民升级, 生产更为强大的精锐草原部落民。"
 521213 "升级到<b>老练萨莫吉希亚游击兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的萨莫吉希亚游击兵升级, 生产更为强大的老练萨莫吉希亚游击兵。"
 521214 "升级到<b>精锐萨莫吉希亚游击兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练萨莫吉希亚游击兵升级, 生产更为强大的精锐萨莫吉希亚游击兵。"
+521215 "升级到<b>老练特拉斯卡拉投石手<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的特拉斯卡拉投石手升级, 生产更为强大的老练特拉斯卡拉投石手。"
+521216 "升级到<b>精锐特拉斯卡拉投石手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的老练特拉斯卡拉投石手升级, 生产更为强大的精锐特拉斯卡拉投石手。"
 
 
 600001 "在移动中对最近的目标进行一次攻击"
@@ -1003,6 +1009,9 @@
 700119 "林场"
 700120 "林场工"
 700121 "林场工"
+700122 "特拉斯卡拉投石手"
+700123 "老练特拉斯卡拉投石手"
+700124 "精锐特拉斯卡拉投石手"
 
 
 701001 "生产铁炮足轻"
@@ -1123,6 +1132,9 @@
 701117 "生产老练萨莫吉希亚游击兵"
 701118 "生产精锐萨莫吉希亚游击兵"
 701119 "建造林场"
+701122 "生产特拉斯卡拉投石手"
+701123 "生产老练特拉斯卡拉投石手"
+701124 "生产精锐特拉斯卡拉投石手"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1360,6 +1372,12 @@
 721118 "生产<b>精锐萨莫吉希亚游击兵<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n立陶宛独特步兵, 攻击可减少目标敌人 1 攻击力, 持续 2 秒。 (效果可以叠加)\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 独特单位, 冲击步兵。"
 
 721119 "建造<b>林场<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n条顿独特建筑, 只能容纳 1 名村民工作。最多可建造 5 座。村民可从中采集无限木材, 并受到伐木科技影响。\n<hp> <attack> <armor> <piercearmor> <range>\n主类: 农田; 标签: 建筑, 独特单位。"
+
+721122 "生产<b>特拉斯卡拉投石手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n阿兹特克独特射手, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\n主类: 射手; 标签: 射手, 独特单位。\n攻击加成: +4 vs 骑兵, +4 vs 骆驼。"
+
+721123 "生产<b>老练特拉斯卡拉投石手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n阿兹特克独特射手, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\n主类: 射手; 标签: 射手, 独特单位。\n攻击加成: +7 vs 骑兵, +6 vs 骆驼。"
+
+721124 "生产<b>精锐特拉斯卡拉投石手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n阿兹特克独特射手, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\n主类: 射手; 标签: 射手, 独特单位。\n攻击加成: +10 vs 骑兵, +9 vs 骆驼。"
 
 
 900001 "<b>西帕希之怒</b>\n西帕希骑兵能减少附近敌方远程单位的攻击速度。"
