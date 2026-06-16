@@ -3126,6 +3126,11 @@
                         "ID": 83,
                         "Name": "Villager (Male)",
                         "RequiredAge": 1
+                    },
+                    {
+                        "Name": "Lord",
+                        "RequiredAge": 2,
+                        "ID": 4061
                     }
                 ]
             },

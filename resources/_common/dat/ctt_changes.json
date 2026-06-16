@@ -1867,6 +1867,27 @@
             "Use Type": "Tech"
         },
         {
+            "note": "领主",
+            "action": "add",
+            "civ_id": "BRITONS",
+            "Age ID": 2,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800125,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Lord",
+            "Name String ID": 700125,
+            "Node ID": 4061,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 128,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
             "note": "私掠者",
             "action": "add",
             "civ_id": "BRITONS",

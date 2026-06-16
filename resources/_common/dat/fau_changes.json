@@ -2438,6 +2438,14 @@
             "building_id": 87,
             "Name": "Elite Tlaxcalan Slinger",
             "RequiredAge": 4
+        },
+        {
+            "note": "领主",
+            "civilizations": "Britons",
+            "unit_id": 4061,
+            "building_id": 109,
+            "Name": "Lord",
+            "RequiredAge": 2
         }
     ]
 }

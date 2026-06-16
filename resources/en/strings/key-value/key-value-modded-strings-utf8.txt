@@ -112,7 +112,7 @@
 
 
 //	Britons
-120150 "Foot Archer civilization\n\n• Town Centers cost -50% wood in Castle Age\n• Archers (except Skirmishers) +1/+2 max range at Castle/Imperial Age\n• Shepherds +25% work rat\n• Military units around town centers +15% attack speed\n• Fishing Ship +33% creation speed\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Warwolf (Trebuchets have blast damage)\n• Privateers (Hulk line +25% attack speed)\n• Enclosure (Farmers -15 hit points; 20% of the food produced is converted into gold)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
+120150 "Foot Archer civilization\n\n• Town Centers cost -50% wood in Castle Age\n• Archers (except Skirmishers) +1/+2 max range at Castle/Imperial Age\n• Shepherds +25% work rat\n• Military units around town centers +15% attack speed\n• Fishing Ship +33% creation speed\n• Can create sheep at mill\n\n<b>Unique Unit : <b>\n• Longbowman (archer with high max range), Hobelar (cavalry that doesn't be countered by spearman), Lord (Heavy Infantry)\n\n<b>Unique Techs: <b>\n• Yeomen (Archers +1 max range; Towers +2 attack)\n• Warwolf (Trebuchets have blast damage)\n• Privateers (Hulk line +25% attack speed)\n• Enclosure (Farmers -15 hit points; 20% of the food produced is converted into gold)\n\n<b>Team bonus: <b>\nArchery Ranges +10% work rate"
 //	Franks
 120151 "Cavalry civilization\n\n• Castles -15%/-25% cost in Castle/Imperial Age\n• Cavalry +20% hit points starting in Feudal Age\n• Mill technologies free\n• Foragers -40% collection consumption\n\n<b>Unique Unit : <b>\n• Throwing Axeman (Ranged infantry), Swiss Pikeman (Infantry strong vs cavalries and monks), Heavy Crossbowman (Strong archer with low movement speed)\n\n<b>Unique Techs: <b>\n• Bearded Axe (Throwing Axeman +2 max range)\n• Chivalry (Stables +40% work rate)\n• Lettre de Change (Enable you to loan in the market)\n• Gendarmes d'ordonnance (Scout Cavalry line gain additional HP when near Knight line units ( (maximum +100% when there are 40 knights)))\n\n<b>Team bonus: <b>\nCavalry (except Light Cavalry) +2 Line of Sight"
 //	Goths
@@ -1007,6 +1007,7 @@
 700122 "Tlaxcalan Slinger"
 700123 "Veteran Tlaxcalan Slinger"
 700124 "Elite Tlaxcalan Slinger"
+700125 "Lord"
 
 
 701001 "Create Handcannon Ashigaru"
@@ -1130,6 +1131,8 @@
 701122 "Create Tlaxcalan Slinger"
 701123 "Create Veteran Tlaxcalan Slinger"
 701124 "Create Elite Tlaxcalan Slinger"
+701125 "Create Lord"
+701126 "Create Sheep"
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1373,6 +1376,10 @@
 721123 "Create <b>Veteran Tlaxcalan Slinger<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAztecs unique archer that counters cavalry.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\nClass: Archer; Tags: Archer, Unique Unit.\nAttack Bonus: +7 vs Cavalry, +6 vs Camel."
 
 721124 "Create <b>Elite Tlaxcalan Slinger<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nAztecs unique archer that counters cavalry.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\nClass: Archer; Tags: Archer, Unique Unit.\nAttack Bonus: +10 vs Cavalry, +9 vs Camel."
+
+721125 "Create <b>Lord<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nBritish unique heavy infantry. 4 lords can be owned at most at the same time. Can not be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6 <MATERIAL=StatIconsHpRegeneration> 30\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +6 vs Shock Infantry, +3 vs Building.\n\n<MATERIAL=TechIconsT031CastleAge> +60 HP, +3 attack, +1 melee/pierce armor.\n<MATERIAL=TechIconsT032ImperialAge> +60 HP, +5 attack, +1 melee/pierce armor, +50% bonus damage resistance."
+
+721126 "Create <b>Sheep<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)"
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

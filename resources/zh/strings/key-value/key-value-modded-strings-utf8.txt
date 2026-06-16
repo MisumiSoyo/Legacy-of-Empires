@@ -117,7 +117,7 @@
 
 
 //	不列颠
-120150 "弓兵文明\n\n• 城堡时代起城镇中心木材费用 -50%\n• 射手(除掷矛手外)在城堡/帝王时代 +1/2 射程\n• 牧羊人工作效率 +25%\n• 城镇中心周围的己方陆地军事单位 +15% 攻击速度\n• 渔船 +33% 生产速度\n\n<b>独特单位：<b>\n• 长弓兵 (超长射程射手), 骑马步兵 (不受长枪兵克制的骑兵)\n\n<b>独特科技：<b>\n• 英皇侍卫 (射手 +1 射程，塔类单位攻击力 +2)\n• 战狼号 (巨型投石机拥有 100% 准确度，并且在 0.5 格范围内造成溅射伤害)\n• 私掠者 (趸船系 +25% 攻击速度)\n• 圈地 (农夫 -15 生命值, 产出食物的 20% 转换为黄金)\n\n<b>团队加成：<b>\n靶场工作效率 +10%"
+120150 "弓兵文明\n\n• 城堡时代起城镇中心木材费用 -50%\n• 射手(除掷矛手外)在城堡/帝王时代 +1/2 射程\n• 牧羊人工作效率 +25%\n• 城镇中心周围的己方陆地军事单位 +15% 攻击速度\n• 渔船 +33% 生产速度\n• 可在磨坊生产绵羊\n\n<b>独特单位：<b>\n• 长弓兵 (超长射程射手), 骑马步兵 (不受长枪兵克制的骑兵), 领主 (重装步兵)\n\n<b>独特科技：<b>\n• 英皇侍卫 (射手 +1 射程，塔类单位攻击力 +2)\n• 战狼号 (巨型投石机拥有 100% 准确度，并且在 0.5 格范围内造成溅射伤害)\n• 私掠者 (趸船系 +25% 攻击速度)\n• 圈地 (农夫 -15 生命值, 产出食物的 20% 转换为黄金)\n\n<b>团队加成：<b>\n靶场工作效率 +10%"
 //	法兰克
 120151 "骑兵文明\n\n• 城堡建造费用在城堡/帝王时代 -15/25%\n• 封建时代起骑兵生命值 +20%\n• 马轭, 重犁, 轮作, 经济作物 免费升级\n• 村民采集浆果 -40% 消耗\n\n<b>独特单位：<b>\n• 掷斧兵 (短射程的步兵), 瑞士枪兵 (擅长对抗骑兵和僧侣的步兵), 重装弩手 (强大但缓慢的射手)\n\n<b>独特科技：<b>\n• 芒刺斧 (掷斧兵射程 +2)\n• 骑士精神 (马厩工作效率 +40%)\n• 本票 (解锁在市场借贷的功能)\n• 敕令骑士 (斥候骑兵系单位靠近骑士系单位时可获得最多 +100% 生命值 (需要 40 名骑士))\n\n<b>团队加成：<b>\n骑兵(除轻骑兵外) 视野 +2"
 //	哥特
@@ -1012,6 +1012,7 @@
 700122 "特拉斯卡拉投石手"
 700123 "老练特拉斯卡拉投石手"
 700124 "精锐特拉斯卡拉投石手"
+700125 "领主"
 
 
 701001 "生产铁炮足轻"
@@ -1135,6 +1136,8 @@
 701122 "生产特拉斯卡拉投石手"
 701123 "生产老练特拉斯卡拉投石手"
 701124 "生产精锐特拉斯卡拉投石手"
+701125 "生产领主"
+701126 "生产绵羊"
 
 
 721001 "生产<b>铁炮足轻<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n日本独特火枪手。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\n主类: 火枪手; 标签: 射手, 独特单位, 火药单位。\n攻击加成: +9 vs 骑兵, +7 vs 骆驼, +2 vs 冲车。"
@@ -1378,6 +1381,10 @@
 721123 "生产<b>老练特拉斯卡拉投石手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n阿兹特克独特射手, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\n主类: 射手; 标签: 射手, 独特单位。\n攻击加成: +7 vs 骑兵, +6 vs 骆驼。"
 
 721124 "生产<b>精锐特拉斯卡拉投石手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n阿兹特克独特射手, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 90%\n主类: 射手; 标签: 射手, 独特单位。\n攻击加成: +10 vs 骑兵, +9 vs 骆驼。"
+
+721125 "生产<b>领主<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n不列颠独特重装步兵, 最多同时拥有 4 名。不能被转化。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6 <MATERIAL=StatIconsHpRegeneration> 30\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +6 vs 冲击步兵, +3 vs 建筑。\n\n<MATERIAL=TechIconsT031CastleAge> +60 生命值, +3 攻击力, +1 护甲/盾牌。\n<MATERIAL=TechIconsT032ImperialAge> +60 生命值, +5 攻击力, +1 护甲/盾牌, +50% 附加伤害抗性。"
+
+721126 "生产<b>绵羊<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)"
 
 
 900001 "<b>西帕希之怒</b>\n西帕希骑兵能减少附近敌方远程单位的攻击速度。"
