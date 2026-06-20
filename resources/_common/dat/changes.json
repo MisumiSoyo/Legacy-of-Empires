@@ -877,9 +877,10 @@
             "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 75]]]
         },
         {
-            "note": "骡车建造价格减少",
+            "note": "骡车建造价格减少, 生命值减少",
             "unit_id": [1808],
-            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 30]]]
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 30]],
+                           ["hit_points", 200]]
         },
         {
             "note": "前三个时代的经济建筑生命值减少",
