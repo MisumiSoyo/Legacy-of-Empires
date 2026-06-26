@@ -890,8 +890,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "马里, 高丽, 拜占庭, 瞿折罗, 越南, 立陶宛获得鼓风炉",
-            "civilizations": ["Koreans", "Malians", "Byzantines", "Gurjaras", "Vietnamese", "Lithuanians"],
+            "note": "马里, 高丽, 拜占庭, 瞿折罗, 越南, 立陶宛, 穆伊斯卡获得鼓风炉",
+            "civilizations": ["Koreans", "Malians", "Byzantines", "Gurjaras", "Vietnamese", "Lithuanians", "Muisca"],
             "tech_id": 75,
             "building_id": 103,
             "RequiredAge": 4
@@ -1380,8 +1380,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "阿兹特克, 波兰, 勃艮第, 吴, 格鲁吉亚获得射手锁甲",
-            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu", "Georgians"],
+            "note": "阿兹特克, 波兰, 勃艮第, 吴, 格鲁吉亚, 穆伊斯卡获得射手锁甲",
+            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu", "Georgians", "Muisca"],
             "tech_id": 219,
             "building_id": 103,
             "Name": "Ring Archer Armor",
@@ -1888,8 +1888,8 @@
             "RequiredTechID": 140
         },
         {
-            "note": "高丽, 马里, 柏柏尔, 缅甸获得重型冲车",
-            "civilizations": ["Koreans", "Malians", "Berbers", "Burmese"],
+            "note": "高丽, 马里, 柏柏尔, 缅甸, 勃艮第获得重型冲车",
+            "civilizations": ["Koreans", "Malians", "Berbers", "Burmese", "Burgundians"],
             "tech_id": 255,
             "building_id": 49,
             "Name": "Siege Ram",

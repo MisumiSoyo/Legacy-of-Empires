@@ -14,21 +14,6 @@ void FranksLoan(int playerId = -1, int Time = 0)
 }
 
 
-//  Goths, obtain 1 villager from every three killed enemies
-void GothsVillager(int playerId = -1, int Time = 0)
-{
-    int CalcedBonus = xsPlayerAttribute(playerId, cAttributeGothsVillagerBonus);
-    if (CalcedBonus >= 20)
-        return;
-    int Bonus = xsPlayerAttribute(playerId, cAttributeKills) / 2;
-    if (CalcedBonus < Bonus)
-    {
-        SpawnUnit(playerId, 83, TownCenterID, Bonus - CalcedBonus, 1);
-    }
-    SetResource(playerId, cAttributeGothsVillagerBonus, Bonus);
-}
-
-
 void KoreansMineral(int playerId = -1, int Time = -1)
 {
     float TotalMineCount = xsPlayerAttribute(playerId, cAttributeGoldTotal) + xsPlayerAttribute(playerId, cAttributeStoneTotal);
@@ -170,11 +155,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cFranks:
         {
             FranksLoan(playerId, Time);
-            break;
-        }
-        case cGoths:
-        {
-            GothsVillager(playerId, Time);
             break;
         }
         case cTurks:

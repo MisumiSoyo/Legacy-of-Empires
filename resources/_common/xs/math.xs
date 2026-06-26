@@ -529,7 +529,7 @@ void ApplyToAllMilitaryTargets(int playerId = -1, int ClassTarget = -1, int Task
 }
 
 
-void ApplyAllMilitaryToTarget(int playerId = -1, int ClassTarget = -1, int TaskType = -1, bool includeSiege = true)
+void ApplyAllMilitaryToTarget(int playerId = -1, int ClassTarget = -1, int TaskType = -1, bool includeSiege = true, bool incMisc = false)
 {
     xsTask(cArcherClass, TaskType, ClassTarget, playerId);
     xsTask(cInfantryClass, TaskType, ClassTarget, playerId);
@@ -553,6 +553,11 @@ void ApplyAllMilitaryToTarget(int playerId = -1, int ClassTarget = -1, int TaskT
         xsTask(cPackedUnitClass, TaskType, ClassTarget, playerId);
         xsTask(cUnpackedSiegeUnitClass, TaskType, ClassTarget, playerId);
         xsTask(cScorpionClass, TaskType, ClassTarget, playerId);
+    }
+
+    if (incMisc)
+    {
+        xsTask(cMiscellaneousClass, TaskType, ClassTarget, playerId);
     }
 }
 
@@ -604,7 +609,7 @@ void ApplyToAllPlayerTargets(int playerId = -1, int ClassTarget = -1, int TaskTy
 }
 
 
-void ApplyAllToTarget(int playerId = -1, int ClassTarget = -1, int TaskType = -1, bool includeBuildings = false, bool includeSiege = true, bool includeAnimals = false)
+void ApplyAllToTarget(int playerId = -1, int ClassTarget = -1, int TaskType = -1, bool includeBuildings = false, bool includeSiege = true, bool includeAnimals = false, bool incMisc = false)
 {
     xsTask(cArcherClass, TaskType, ClassTarget, playerId);
     xsTask(cTradeBoatClass, TaskType, ClassTarget, playerId);
@@ -651,6 +656,11 @@ void ApplyAllToTarget(int playerId = -1, int ClassTarget = -1, int TaskType = -1
         xsTask(cDomesticAnimalClass, TaskType, ClassTarget, playerId);
         xsTask(cLivestockClass, TaskType, ClassTarget, playerId);
         xsTask(cControlledAnimalClass, TaskType, ClassTarget, playerId);
+    }
+
+    if (incMisc)
+    {
+        xsTask(cMiscellaneousClass, TaskType, ClassTarget, playerId);
     }
 }
 

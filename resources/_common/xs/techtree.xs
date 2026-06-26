@@ -441,6 +441,7 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, RingArcherArmorTechID);
             EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, SiegeRamTechID);
             DisableTech(playerId, 769);
             break;
         }
@@ -576,6 +577,8 @@ void EffectFunction10001(int playerId = -1)
         case cMuisca:
         {
             EnableTech(playerId, ArsonTechID);
+            EnableTech(playerId, RingArcherArmorTechID);
+            EnableTech(playerId, BlastFurnaceTechID);
             DisableTech(playerId, WheelBarrowTechID);
             DisableTech(playerId, HandCartTechID);
             break;

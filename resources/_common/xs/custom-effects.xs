@@ -1449,13 +1449,33 @@ void EffectFunction10123(int playerId = -1)
 }
 
 
+//  10126 - C-Bonus, resource from killing economic units
+void EffectFunction10126(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000018);
+    xsTaskAmount(cTaskAttrWorkValue1, 15);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    ApplyAllToTarget(playerId, cTradeBoatClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cVillagerClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cTradeCartClass, cTaskTypeLoot, true, true, true, true);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000019);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    ApplyAllToTarget(playerId, cTradeBoatClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cVillagerClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cTradeCartClass, cTaskTypeLoot, true, true, true, true);
+    xsResetTaskAmount();
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 330  2026.06.20");
+    xsChatData("Patch: 331  2026.06.25");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

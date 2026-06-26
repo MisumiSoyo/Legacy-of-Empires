@@ -56497,6 +56497,15 @@
                         "Name": "Military Training",
                         "RequiredAge": 2,
                         "ID": 3004
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 75
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
