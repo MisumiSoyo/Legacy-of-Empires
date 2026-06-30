@@ -108,6 +108,27 @@ void EffectFunction10092(int playerId = -1)
 }
 
 
+//  10097 - Ranged attack techs adjustment
+void EffectFunction10097(int playerId = -1)
+{
+    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
+    ModAttribute(playerId, ManilaGalleonID, cLineOfSight, 1);
+    ModAttribute(playerId, ManilaGalleonID, cMaxRange, 1);
+    if (isResearched(playerId, ManilaGalleonTechID))
+        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
+
+    ModAttribute(playerId, CanoeID, cLineOfSight, 1);
+    ModAttribute(playerId, WarCanoeID, cLineOfSight, 1);
+    ModAttribute(playerId, EliteCanoeID, cLineOfSight, 1);
+    ModAttack(playerId, CanoeID, cDamageClassPierce, 1);
+    ModAttack(playerId, WarCanoeID, cDamageClassPierce, 1);
+    ModAttack(playerId, EliteCanoeID, cDamageClassPierce, 1);
+    ModAttribute(playerId, CanoeID, cSearchRadius, 1);
+    ModAttribute(playerId, WarCanoeID, cSearchRadius, 1);
+    ModAttribute(playerId, EliteCanoeID, cSearchRadius, 1);
+}
+
+
 //  10101 - Hauberk Adjustment
 void EffectFunction10101(int playerId = -1)
 {
@@ -275,6 +296,10 @@ void EffectFunction10098(int playerId = -1)
     ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 1);
 
     UpgradeUnit(playerId, ProjectileRattanSwordmanID, ProjectileRattanSwordmanFireID);
+
+    ModAttack(playerId, CanoeID, cDamageClassPierce, 1);
+    ModAttack(playerId, WarCanoeID, cDamageClassPierce, 1);
+    ModAttack(playerId, EliteCanoeID, cDamageClassPierce, 1);
 }
 
 

@@ -930,3 +930,89 @@ bool isChroniclesCiv(int civ = -1)
 {
     return ((civ == cAchaemenids) || (civ == cAthenians) || (civ == cSpartans) || (civ == cMacedonians) || (civ == cThracians) || (civ == cPuru));
 }
+
+
+void AddTrainLocation(int playerId = -1, int ClassTarget = -1, bool ResetIndex = true, int TrainLocationID = NullInt, int TrainTime = NullInt, int TrainButtonID = NullInt, int HotkeyID = NullInt)
+{
+    xsEffectAmount(cMulAttribute, ClassTarget, cTrainLocationsEntryMod, 32767, playerId);
+    if (TrainLocationID != NullInt)
+        xsEffectAmount(cSetAttribute, ClassTarget, cTrainLocation, TrainLocationID, playerId);
+    if (TrainTime != NullInt)
+        xsEffectAmount(cSetAttribute, ClassTarget, cTrainTime, TrainTime, playerId);
+    if (TrainButtonID != NullInt)
+        xsEffectAmount(cSetAttribute, ClassTarget, cTrainButton, TrainButtonID, playerId);
+    if (HotkeyID != NullInt)
+        xsEffectAmount(cSetAttribute, ClassTarget, cHotkeyId, HotkeyID, playerId);
+    if (ResetIndex)
+        xsEffectAmount(cSetAttribute, ClassTarget, cTrainLocationsEntryMod, 0, playerId);
+}
+
+
+int FindTrainLocation(int playerId = -1, int ObjectID = -1, int TrainLocationID = -1, bool ResetIndex = false)
+{
+    int i = 0;
+    int TotalNum = xsGetObjectAttribute(playerId, ObjectID, cTrainLocationsTotalNum);
+    int TrainLocation = 0;
+    if (TotalNum == 0)
+        return (-1);
+    for (i = 0; < TotalNum)
+    {
+        xsEffectAmount(cSetAttribute, ObjectID, cTrainLocationsEntryMod, i, playerId);
+        TrainLocation = xsGetObjectAttribute(playerId, ObjectID, cTrainLocation);
+        if (TrainLocation == TrainLocationID)
+        {
+            if (ResetIndex)
+                xsEffectAmount(cSetAttribute, ObjectID, cTrainLocationsEntryMod, 0);
+            return (i);
+        }
+    }
+    xsEffectAmount(cSetAttribute, ObjectID, cTrainLocationsEntryMod, 0, playerId);
+    return (-1);
+}
+
+
+void SetTrainLocationAttr(int playerId = -1, int ObjectID = -1, int TrainLocationID = -1, int TargetAttr = -1, float value = -1.0, bool ResetIndex = true)
+{
+    int TrainLocationIndex = FindTrainLocation(playerId, ObjectID, TrainLocationID);
+    if (TrainLocationIndex == -1)
+        return;
+    xsEffectAmount(cSetAttribute, ObjectID, TargetAttr, value, playerId);
+    if (ResetIndex)
+        xsEffectAmount(cSetAttribute, ObjectID, cTrainLocationsEntryMod, 0);
+}
+
+
+void ModTrainLocationAttr(int playerId = -1, int ObjectID = -1, int TrainLocationID = -1, int TargetAttr = -1, float value = -1.0, bool ResetIndex = true)
+{
+    int TrainLocationIndex = FindTrainLocation(playerId, ObjectID, TrainLocationID);
+    if (TrainLocationIndex == -1)
+        return;
+    xsEffectAmount(cAddAttribute, ObjectID, TargetAttr, value, playerId);
+    if (ResetIndex)
+        xsEffectAmount(cSetAttribute, ObjectID, cTrainLocationsEntryMod, 0);
+}
+
+
+void MulTrainLocationAttr(int playerId = -1, int ObjectID = -1, int TrainLocationID = -1, int TargetAttr = -1, float value = -1.0, bool ResetIndex = true)
+{
+    int TrainLocationIndex = FindTrainLocation(playerId, ObjectID, TrainLocationID);
+    if (TrainLocationIndex == -1)
+        return;
+    xsEffectAmount(cMulAttribute, ObjectID, TargetAttr, value, playerId);
+    if (ResetIndex)
+        xsEffectAmount(cSetAttribute, ObjectID, cTrainLocationsEntryMod, 0);
+}
+
+
+void PrintTrainLocations(int playerId = -1, int ObjectID = -1)
+{
+    int i = 0;
+    int TotalNum = xsGetObjectAttribute(playerId, ObjectID, cTrainLocationsTotalNum);
+    for (i = 0; < TotalNum)
+    {
+        SetAttribute(playerId, ObjectID, cTrainLocationsEntryMod, i);
+        PrintMessage("ID = " + ObjectID + ", TLID = " + xsGetObjectAttribute(playerId, ObjectID, cTrainLocation) + ", t = " + xsGetObjectAttribute(playerId, ObjectID, cTrainTime)
+            + ", BTN = " + xsGetObjectAttribute(playerId, ObjectID, cTrainButton) + ", HK = " + xsGetObjectAttribute(playerId, ObjectID, cHotkeyId));
+    }
+    SetAttribute(playerId, ObjectID, cTrainLocationsEntryMod, 0);
+}

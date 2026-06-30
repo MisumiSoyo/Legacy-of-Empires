@@ -177,12 +177,15 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SteppeLancerTechID);
             EnableTech(playerId, EliteSteppeLancerTechID);
             EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, GambesonsTechID);
+            EnableTech(playerId, StoneShaftMiningTechID);
             break;
         }
         case cVikings:
         {
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, HalberdierTechID);
+            EnableTech(playerId, ThumbRingTechID);
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, ArrowslitsTechID);
             DisableTech(playerId, GambesonsTechID);
@@ -223,6 +226,8 @@ void EffectFunction10001(int playerId = -1)
         case cAztecs:
         {
             EnableTech(playerId, RingArcherArmorTechID);
+            EnableTech(playerId, HalberdierTechID);
+            EnableTech(playerId, ThumbRingTechID);
             DisableTech(playerId, GoldShaftMiningTechID);
             DisableTech(playerId, StoneShaftMiningTechID);
             DisableTech(playerId, CropRotationTechID);
@@ -461,6 +466,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, HandCannoneerTechID);
             EnableTech(playerId, GambesonsTechID);
+            EnableTech(playerId, PlateBardingArmorTechID);
             break;
         }
         case cBohemians:

@@ -414,11 +414,11 @@
             "RequiredAge": 3
         },
         {
-            "note": "翼骑兵冲锋",
+            "note": "贵族军队",
             "civilizations": "Poles",
             "tech_id": 3317,
             "building_id": 109,
-            "Name": "Winged Charge",
+            "Name": "Pospolite Ruszenie",
             "RequiredAge": 4
         },
         {
@@ -1113,8 +1113,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 吴, 魏, 波兰, 意大利启用软甲",
-            "civilizations": ["Chinese", "Wu", "Wei", "Poles", "Italians"],
+            "note": "中国, 吴, 魏, 波兰, 意大利, 土耳其启用软甲",
+            "civilizations": ["Chinese", "Wu", "Wei", "Poles", "Italians", "Turks"],
             "tech_id": 875,
             "building_id": 12,
             "Name": "Gambesons",
@@ -1254,8 +1254,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "波兰, 意大利, 维京, 契丹获得长戟兵",
-            "civilizations": ["Poles", "Italians", "Vikings", "Khitans"],
+            "note": "波兰, 意大利, 维京, 契丹, 阿兹特克获得长戟兵",
+            "civilizations": ["Poles", "Italians", "Vikings", "Khitans", "Aztecs"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",
@@ -1279,8 +1279,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 埃塞俄比亚获得骑兵钢甲",
-            "civilizations": ["Goths", "Ethiopians"],
+            "note": "哥特, 埃塞俄比亚, 波兰获得骑兵钢甲",
+            "civilizations": ["Goths", "Ethiopians", "Poles"],
             "tech_id": 80,
             "building_id": 103,
             "Name": "Plate Barding Armor",
@@ -1309,8 +1309,9 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切获得扳指",
-            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians", "Mapuche"],
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切, 阿兹特克, 维京获得扳指",
+            "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians", "Mapuche", "Aztecs",
+                              "Vikings"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1662,8 +1663,8 @@
             "type": "delete"
         },
         {
-            "note": "孟加拉, 不列颠, 法兰克, 马扎尔获得钻井采石法",
-            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars"],
+            "note": "孟加拉, 不列颠, 法兰克, 马扎尔, 土耳其获得钻井采石法",
+            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars", "Turks"],
             "tech_id": 279,
             "building_id": 584,
             "Name": "Stone Shaft Mining",

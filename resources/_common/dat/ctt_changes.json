@@ -2496,7 +2496,7 @@
             "Use Type": "Tech"
         },
         {
-            "note": "翼骑兵冲锋",
+            "note": "贵族军队",
             "action": "add",
             "civ_id": "POLES",
             "Age ID": 4,
@@ -2505,7 +2505,7 @@
             "Help String ID": 600044,
             "Link ID": 3316,
             "Link Node Type": "BuildingTech",
-            "Name": "Winged Charge",
+            "Name": "Pospolite Ruszenie",
             "Name String ID": 500044,
             "Node ID": 3317,
             "Node Status": "ResearchedCompleted",
@@ -3819,10 +3819,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "波兰获得钻井采金法, 射手锁甲, 双人锯, 软甲",
+            "note": "波兰获得钻井采金法, 射手锁甲, 双人锯, 软甲, 骑兵钢甲",
             "action": "modify",
             "civ_id": "POLES",
-            "Node ID": [182, 219, 221, 875],
+            "Node ID": [80, 182, 219, 221, 875],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -3929,11 +3929,19 @@
             "Node Status": "NotAvailable"
         },
         {
-            "note": "阿兹特克获得射手锁甲",
+            "note": "阿兹特克获得射手锁甲, 扳指",
             "action": "modify",
             "civ_id": "AZTECS",
-            "Node ID": 219,
+            "Node ID": [219, 437],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "阿兹特克获得长戟兵",
+            "action": "modify",
+            "civ_id": "AZTECS",
+            "Node ID": [359],
+            "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
         {
@@ -4956,18 +4964,18 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "土耳其启用轮作",
+            "note": "土耳其启用轮作, 软甲, 钻井采石法",
             "action": "modify",
             "civ_id": "TURKS",
-            "Node ID": [12],
+            "Node ID": [12, 279, 875],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "维京启用造船匠",
+            "note": "维京启用造船匠, 扳指",
             "action": "modify",
             "civ_id": "VIKINGS",
-            "Node ID": [373],
+            "Node ID": [373, 437],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },

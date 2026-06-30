@@ -148,6 +148,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
+                    },
+                    {
                         "Name": "Veteran Tlaxcalan Slinger",
                         "RequiredAge": 3,
                         "ID": 3469
@@ -256,6 +261,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
                     },
                     {
                         "Name": "Siege Training",
@@ -3641,6 +3651,11 @@
                         "ID": 257,
                         "Name": "Onager",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Siege Ram",
+                        "RequiredAge": 4,
+                        "ID": 255
                     }
                 ],
                 "Units": [
@@ -37737,6 +37752,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Gambesons",
+                        "RequiredAge": 3,
+                        "ID": 875
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
@@ -41331,6 +41351,11 @@
                         "ID": 3004
                     },
                     {
+                        "Name": "Plate Barding Armor",
+                        "RequiredAge": 4,
+                        "ID": 80
+                    },
+                    {
                         "Name": "Ring Archer Armor",
                         "RequiredAge": 4,
                         "ID": 219
@@ -41762,7 +41787,7 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Winged Charge",
+                        "Name": "Pospolite Ruszenie",
                         "RequiredAge": 4,
                         "ID": 3317
                     },

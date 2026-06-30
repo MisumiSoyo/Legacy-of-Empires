@@ -942,28 +942,18 @@ void EffectFunction10050(int playerId = -1)
 }
 
 
-// 10052 - Winged Charge
+// 10052 - Pospolite Ruszenie
 void EffectFunction10052(int playerId = -1)
 {
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 2);
-    xsTaskAmount(cTaskAttrWorkValue2, 7);
-    xsTaskAmount(cTaskAttrWorkRange, 1.25);
-    xsTaskAmount(cTaskAttrWorkFlag2, 2001);
-    xsTask(cCavalryClass, cTaskTypeChargeAttack, -1, playerId);
-    xsTask(cScoutCavalryClass, cTaskTypeChargeAttack, -1, playerId);
-    xsResetTaskAmount();
+    PospoliteRuszenieApplier(playerId, MillID);
+    PospoliteRuszenieApplier(playerId, FolwarkID);
+    PospoliteRuszenieApplier(playerId, Folwark2ID);
+    PospoliteRuszenieApplier(playerId, Folwark3ID);
 
-    SetAttribute(playerId, cCavalryClass, cSpecialAbility, 3);
-    SetAttribute(playerId, cCavalryClass, cMaxCharge, 2);
-    SetAttribute(playerId, cCavalryClass, cRechargeRate, 2.0 / 12);
-    SetAttribute(playerId, cCavalryClass, cChargeEvent, 1);
-    SetAttribute(playerId, cCavalryClass, cChargeType, 1);
-    SetAttribute(playerId, cScoutCavalryClass, cSpecialAbility, 3);
-    SetAttribute(playerId, cScoutCavalryClass, cMaxCharge, 2);
-    SetAttribute(playerId, cScoutCavalryClass, cRechargeRate, 2.0 / 12);
-    SetAttribute(playerId, cScoutCavalryClass, cChargeEvent, 1);
-    SetAttribute(playerId, cScoutCavalryClass, cChargeType, 1);
+    AddTrainLocation(playerId, ScoutCavalryID, true, MillID, NullInt, AKeyID, AHotkeyID);
+    AddTrainLocation(playerId, LightCavalryID, true, MillID, NullInt, AKeyID, AHotkeyID);
+    AddTrainLocation(playerId, HussarID, true, MillID, NullInt, AKeyID, AHotkeyID);
+    AddTrainLocation(playerId, WingedHussarID, true, MillID, NullInt, AKeyID, AHotkeyID);
 }
 
 
@@ -1475,7 +1465,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 331  2026.06.25");
+    xsChatData("Patch: 332  2026.07.01");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

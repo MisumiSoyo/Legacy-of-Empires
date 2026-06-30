@@ -452,18 +452,6 @@ void GenitourAdjustment(int playerId = -1)
 }
 
 
-//  10097 - Manila Galleon + Blacksmith techs
-void EffectFunction10097(int playerId = -1)
-{
-    ModAttack(playerId, ManilaGalleonID, cDamageClassPierce, 1);
-    ModAttribute(playerId, ManilaGalleonID, cLineOfSight, 1);
-    ModAttribute(playerId, ManilaGalleonID, cMaxRange, 1);
-
-    if (isResearched(playerId, ManilaGalleonTechID))
-        UpgradeUnit(playerId, TradeCogID, ManilaGalleonID);
-}
-
-
 void MulFishingWorkValue(int playerId = -1, int ObjectID = -1)
 {
     int TaskID = FindTask(playerId, ObjectID, cTaskTypeGatherRebuild, cSeaFishClass, -1);
@@ -670,6 +658,44 @@ void HeavySpearApplier(int ClassTarget = -1, int playerId = -1)
     xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
     xsResetTaskAmount();
     LaunchStinger(playerId, ClassTarget);
+}
+
+
+void PospoliteRuszenieApplier(int playerId = -1, int ClassTarget = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTaskAmount(cTaskAttrEnableTargeting, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 5);
+    xsTaskAmount(cTaskAttrGatherType, 1);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 3);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTask(ClassTarget, cTaskTypeCombat, -1, playerId);
+    xsResetTaskAmount();
+
+    SetAttribute(playerId, ClassTarget, cGarrisonCapacity, 8);
+    SetAttribute(playerId, ClassTarget, cProjectileUnit, ProjectileVOLID);
+    SetAttribute(playerId, ClassTarget, cSecondaryProjectileUnit, ProjectileVOLID);
+    ModAttribute(playerId, ClassTarget, cMaxTotalProjectiles, 6);
+    ModAttribute(playerId, ClassTarget, cTotalProjectiles, 1);
+    SetAttribute(playerId, ClassTarget, cShownRange, 5.5);
+    SetAttribute(playerId, ClassTarget, cMaxRange, 5.5);
+    SetAttribute(playerId, ClassTarget, cShownAttack, 5);
+    SetAttribute(playerId, ClassTarget, cAttackReloadTime, 2);
+    SetAttribute(playerId, ClassTarget, cAccuracyPercent, 100);
+    SetAttribute(playerId, ClassTarget, cGarrisonHealRate, 0.2);
+    SetAttribute(playerId, ClassTarget, cGarrisonType, 1);
+    SetAttribute(playerId, ClassTarget, cProjectileSpawningAreaWidth, 1);
+    SetAttribute(playerId, ClassTarget, cProjectileSpawningAreaLength, 0.5);
+    SetAttribute(playerId, ClassTarget, cProjectileSpawningAreaRandomness, 2);
+    SetAttribute(playerId, ClassTarget, cProjectileGraphicDisplacementX, 0);
+    SetAttribute(playerId, ClassTarget, cProjectileGraphicDisplacementY, 1);
+    SetAttribute(playerId, ClassTarget, cProjectileGraphicDisplacementZ, 1);
+    SetAttribute(playerId, ClassTarget, cSearchRadius, 5.5);
+    if (isResearched(playerId, HerbalMedicineTechID))
+        MulAttribute(playerId, ClassTarget, cGarrisonHealRate, 6);
+    AddAttackForm(playerId, ClassTarget, cDamageClassPierce, 5);
+    SetAttribute(playerId, ClassTarget, cGarrisonGraphic, 4682);
 }
 
 

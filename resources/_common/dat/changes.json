@@ -302,13 +302,13 @@
         },
         {
             "type": "adjustment",
-            "name": "马尼拉大帆船 + 铁匠铺科技",
+            "name": "铁匠铺远程攻击科技调整",
             "effect_id": [192, 193, 194],
             "function_id": 10097
         },
         {
             "type": "adjustment",
-            "name": "马尼拉大帆船 + 化学",
+            "name": "化学调整",
             "effect_id": 47,
             "function_id": 10098
         },
@@ -660,10 +660,10 @@
         },
         {
             "type": "modify",
-            "name": "契丹垃圾兵训练速度和升级速度调整为 +30%",
+            "name": "契丹垃圾兵训练速度和升级速度调整为 +33%",
             "effect_id": 1011,
             "match": ["any", "any", "any", "any", "any"],
-            "modifications": ["d", "set", 0.769231]
+            "modifications": ["d", "set", 0.75]
         },
         {
             "type": "modify",
@@ -718,10 +718,10 @@
         },
         {
             "type": "modify",
-            "name": "波兰大庄园立即收集的食物增加到 15%",
+            "name": "波兰大庄园立即收集的食物增加到 12%",
             "effect_id": [12, 13, 14],
             "match": [1, 237, "any", "any", "any"],
-            "modifications": ["d", "set", 0.15]
+            "modifications": ["d", "set", 0.12]
         },
         {
             "type": "delete",
@@ -884,8 +884,13 @@
         },
         {
             "note": "前三个时代的经济建筑生命值减少",
-            "unit_id": [68, 129, 130, 562, 563, 564, 584, 585, 586],
+            "unit_id": [68, 129, 130, 562, 563, 564, 584, 585, 586, 1711, 1720, 1734],
             "attributes": [["hit_points", "add", -200]]
+        },
+        {
+            "note": "大庄园建造价格减少",
+            "unit_id": [1711, 1720, 1734],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 50]]]
         }
     ],
     "tech_changes":
