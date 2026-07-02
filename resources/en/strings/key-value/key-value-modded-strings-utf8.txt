@@ -190,7 +190,7 @@
 //	Bohemians
 120188 "Gunpowder and Monk civilization\n\n• Blacksmiths and Universities -100 wood cost\n• Chemistry, Hand Cannoneer and Bombard Cannon available in Castle Age\n• Infantries, Archers, Cavalry Archers and Hand Cannoneers +25% bonus damage, with each corresponding attack technology in Blacksmith +1\n• Fervor and Sanctity affect Villagers\n• Mining Camp technologies free\n\n<b>Unique Units:<b>\n• Hussite Wagon (siege weapon protects rear units), Houfnice (powerful bombard cannon), Taborite Warrior (infantry that can generate resource)\n\n<b>Unique Techs:<b>\n• Wagenburg Tactics (Gunpowder units move 15% faster)\n• Hussite Reforms (Monks and Monastery upgrades have their gold cost replaced by food; Each existing monk refunds 50 gold)\n• Taborites (Taborite Warriors can be trained at Town Center, and 10 Taborite Warriors will be immediately spawned)\n• Pistala (Train Hand Cannoneers with 55 wood instead of gold cost)\n\n<b>Team Bonus:<b>\nMarkets +50% work rate"
 //	Dravidians
-120189 "Infantry and Naval civilization\n\n• Receive +200/350/500 wood when advancing to Feudal/Castle/Imperial Age\n• Fishermen and Fishing Ships +15 carry capacity\n• Barracks technologies -50% cost%\n• Siege weapons -33% wood cost\n• Skirmishers, Genitours and Elephant Archers -20% reload time\n• Your team receive a free villager from your every Monastery technology\n\n<b>Unique Units:<b>\n• Urumi Swordsman (Infantry that can charge and deal blast damage), Thirisadai (Heavy armored warship with multiple arrows), Raider Elephant (Fast battle elephants)\n\n<b>Unique Techs:<b>\n• Medical Corps (All Elephants regenerate 30 HP per minute)\n• Wootz Steel (Infantry and cavalry attacks ignore armor)\n• Kadal Paarvai (Fishing ships -80% gathering consumption of natural food resources)\n• Bhakti (Monks +3 conversion range)\n\n<b>Team Bonus:<b>\nDocks provide +5 population room"
+120189 "Infantry and Naval civilization\n\n• Receive +200/350/500 wood when advancing to Feudal/Castle/Imperial Age\n• Fishermen and Fishing Ships +15 carry capacity\n• Barracks technologies -50% cost%\n• Siege weapons -33% wood cost\n• Skirmishers, Genitours and Elephant Archers -20% reload time\n• Your team receive a free villager from your every Monastery technology\n\n<b>Unique Units:<b>\n• Urumi Swordsman (Infantry that can charge and deal blast damage), Thirisadai (Heavy armored warship with multiple arrows), Raider Elephant (Fast battle elephants), Khudiraipadai (Cavalry that can gain melee armor from nearby enemies)\n\n<b>Unique Techs:<b>\n• Medical Corps (All Elephants regenerate 30 HP per minute)\n• Wootz Steel (Infantry and cavalry attacks ignore armor)\n• Kadal Paarvai (Fishing ships -80% gathering consumption of natural food resources)\n• Bhakti (Monks +3 conversion range)\n\n<b>Team Bonus:<b>\nDocks provide +5 population room"
 //	Bengalis
 120190 "Elephant and Naval civilization\n\n• All Elephants receive -25% bonus damage, +3/+1 min/max conversion time\n• Each Town Center spawn 2 Villagers when next Age is reached\n• Cavalries +50% bases attack vs Skirmishers\n• All Ships regenerate 15 HP per minute\n• Monks +3 melee/pierce armor\n• Can build monastery, train monks and get Free Tithe at Feudal Age\n• Can choose a permanent bonus based on number of relics since Castle Age, with a maximum stack of 7\n\n<b>Unique Unit:<b>\n• Ratha (Cavalry can switch between melee and shooting mode)\n\n<b>Unique Techs:<b>\n• Paiks (Rathas and all elephants -16.67% reload time)\n• Mahayana (Villagers and Monks -10% population space)\n\n<b>Team Bonus:<b>\nTrade units yield 10% food in addition to gold"
 //	Gurjaras
@@ -198,7 +198,7 @@
 //	Romans
 120192 "Infantry civilization\n\n• Villagers +5% work rate for gathering resources, building and repairing\n• Galley-line units and Dromons +1/+1P armor\n• Infantry receives double effect from Blacksmith armor upgrades\n• Scorpions -50% gold cost\n• Convert the gold produecd by relics into 200% of food\n\n<b>Unique Unit:<b>\n• Centurion (cavalry can enhance nearby infantries), Legionary (infantry that counters infantries), Auxiliary Cavalry (Light cavalry)\n\n<b>Unique Techs:<b>\n• Ballistas (Scorpions and Galley-line units -25% reload time, Galley-line units +2 attack)\n• Comitatenses (Militia-line, Knight-line and Centurions -33% training time, get charge ability)\n• Pilum (Skirmisher line +10 food and wood cost, +2 attack, +3 attack vs Archers)\n• Lateen Sail (Dromons +15% movement speed)\n\n<b>Team Bonus:<b>\nScorpion-line units minimum range reduced to 1"
 //	Armenians
-120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectile\n• Buildings enjoy Ballistics for free• Tithe free\n\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 max range)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Scout Cavalry line units is immune to additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
+120193 "Infantry and Naval civilization\n\n• Mule Carts -25% cost\n• Mule Cart technologies +40% bonus effect\n• First Fortified Church receives a free garrisoned Relic\n• Barracks units upgrades (except Man-at-Arms) available one age earlier\n• Galley-line and Dromons +1 Secondary projectile\n• Buildings enjoy Ballistics for free• Tithe free\n\n\n<b>Unique Unit:<b>\n• Composite Bowman (archer which ignores pierce armor when attacking units), Warrior Priest (infantry which can heal friendly units and pick up Relics), Ayrudzi (Cavalry that can charge attack to deal area damage)\n\n<b>Unique Techs:<b>\n• Cilician Fleet (Demolition Raft-Line +20% blast radius; Galley-line and Dromons +1 max range)\n• Fereters (Infantry class units (except Spearman-line) +30 HP, Warrior Priests +100% heal speed)\n• Apostle (Military units/monks can generate 3/6 gold per minute)\n• Taurus Ambush (Scout Cavalry line units is immune to additional damage)\n\n<b>Team Bonus:<b>\nInfantry +2 LOS/search radius"
 //	Georgians
 120194 "Defensive and Cavalry civilization\n\n• Start with a Mule Cart (received when the first TC is built up in Nomad mode)\n• Fortified Churches provide +10% work rate for Villagers within 9 squared tiles range\n• Units and buildings receive -15% damage when fighting from higher elevation\n• Cavalry regenerates 5/15/25 HP per minute in Feudal/Castle/Imperial Age\n• Can create trade carts for free at Castle\n\n<b>Unique Unit:<b>\n• Monaspa (Cavalry which becomes stronger when friendly units are nearby), Khevsureti Warrior (Infantry that counters siege weapons)\n\n<b>Unique Techs:<b>\n• Svan Towers (All towers, Castles, Kreposts and Town Centers +2 attack (for all arrows), Watch Tower-Line can deal 50% penetrate damage)\n• Aznauri Cavalry (All mounted units -20% population space)\n• Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks and spawn a Kipchak at each Archery Range)\n• Hill Training (Knight-line units +45 HP regeneration per minute)\n\n<b>Team Bonus:<b>\nBuildings -25% repairing cost"
 //	Shu
@@ -435,6 +435,10 @@
 500214 "Elite Samogitian Skirmisher"
 500215 "Veteran Tlaxcalan Slinger"
 500216 "Elite Tlaxcalan Slinger"
+500217 "Veteran Khudiraipadai"
+500218 "Elite Khudiraipadai"
+500219 "Elite Ayrudzi"
+
 
 
 501001 "Research Monsoon Navigation (Fish ships and Transport ships +25% Movement Speed)"
@@ -653,6 +657,10 @@
 501214 "Upgrade to Elite Samogitian Skirmisher"
 501215 "Upgrade to Veteran Tlaxcalan Slinger"
 501216 "Upgrade to Elite Tlaxcalan Slinger"
+501217 "Upgrade to Veteran Khudiraipadai"
+501218 "Upgrade to Elite Khudiraipadai"
+501219 "UPgrade to Elite Ayrudzi"
+
 
 
 521001 "Research<b>Monsoon Navigation<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nFish ships and Transport ships +25% Movement Speed."
@@ -871,6 +879,10 @@
 521214 "Upgrade to <b>Elite Samogitian Skirmisher<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Samogitian Skirmishers and lets you create Elite Samogitian Skirmishers."
 521215 "Upgrade to <b>Veteran Tlaxcalan Slinger<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Tlaxcalan Slingers and lets you create Veteran Tlaxcalan Slingers."
 521216 "Upgrade to <b>Elite Tlaxcalan Slinger<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Tlaxcalan Slingers and lets you create Elite Tlaxcalan Slingers."
+521217 "Upgrade to <b>Veteran Khudiraipadai<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Khudiraipadais and lets you create Veteran Khudiraipadais."
+521218 "Upgrade to <b>Elite Khudiraipadai<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Khudiraipadais and lets you create Elite Khudiraipadais."
+521219 "Upgrade to <b>Elite Ayrudzi<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Ayrudzis and lets you create Elite Ayrudzis."
+
 
 
 600001 "Deal an attack towards the nearest enemy when moving"
@@ -881,6 +893,7 @@
 600006 "Switch to defensive war drum. Nearby allies +1 melee/pierce armor."
 600007 "Switch to attack war drum. Nearby allies +15% movement speed."
 600008 "Increase attack speed by 40% and lose 3 melee armor, lasting for 10 seconds.\n(Reload Time: 50)"
+
 
 
 700001 "Handcannon Ashigaru"
@@ -1008,6 +1021,12 @@
 700123 "Veteran Tlaxcalan Slinger"
 700124 "Elite Tlaxcalan Slinger"
 700125 "Lord"
+700127 "Khudiraipadai"
+700128 "Veteran Khudiraipadai"
+700129 "Elite Khudiraipadai"
+700130 "Ayrudzi"
+700131 "Elite Ayrudzi"
+
 
 
 701001 "Create Handcannon Ashigaru"
@@ -1133,6 +1152,12 @@
 701124 "Create Elite Tlaxcalan Slinger"
 701125 "Create Lord"
 701126 "Create Sheep"
+701127 "Create Khudiraipadai"
+701128 "Create Veteran Khudiraipadai"
+701129 "Create Elite Khudiraipadai"
+701130 "Create Ayrudzi"
+701131 "Create Elite Ayrudzi"
+
 
 
 721001 "Create <b>Handcannon Ashigaru<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nJapanese unique gunpowder unit.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2.75 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 9\nClass: Archer; Tags: Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +9 vs Cavalry, +7 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
@@ -1213,9 +1238,9 @@
 
 721039 "Create <b>Streltsy<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nSlavic unique gunpowder unit. More flexible than Hand Cannoneers, but has a lower attack.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 3 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 8\nClass: Archer; Tags: Archer, Gunpowder Unit, Unique Unit.\nAttack Bonus: +8 vs Cavalry, +5 vs Camel, +2 vs Ram/Trebuchet/Siege Tower."
 
-721040 "Create <b>Khevsureti Warrior<b> (<cost>, 24 <MATERIAL=MPIconGoodCPU>)\nGeorgian unique infantry. Strong vs siege weapons.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.1 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +7 vs Siege Weapon, +15 vs Ram/Siege Tower/Trebuchet.\nArmor Bonus: -7 damage received from Siege Weapons."
+721040 "Create <b>Khevsureti Warrior<b> (<cost>, 24 <MATERIAL=MPIconGoodCPU>)\nGeorgian unique infantry. Strong vs siege weapons.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +7 vs Siege Weapon, +15 vs Ram/Siege Tower/Trebuchet.\nArmor Bonus: -7 damage received from Siege Weapons."
 
-721041 "Create <b>Elite Khevsureti Warrior<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\nGeorgian unique infantry. Strong vs siege weapons.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.1 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +10 vs Siege Weapon, +20 vs Ram/Siege Tower/Trebuchet.\nArmor Bonus: -10 damage received from Siege Weapons."
+721041 "Create <b>Elite Khevsureti Warrior<b> (<cost>, 21 <MATERIAL=MPIconGoodCPU>)\nGeorgian unique infantry. Strong vs siege weapons.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.05 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +10 vs Siege Weapon, +20 vs Ram/Siege Tower/Trebuchet.\nArmor Bonus: -10 damage received from Siege Weapons."
 
 721042 "Create <b>Flamethrower<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\nSiege Weapon that spews fire at close range. Strong vs buildings and melee units. Weak vs Archery Units at long range.\nUpgrades: <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT101SiegeEngineers> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy>\n<hp> <attack> (melee) <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.67 <MATERIAL=StatIconsReloadTime> 0.25 <MATERIAL=TechIconsT112ThumbRing> 75% <MATERIAL=EyeIcon> 7\nClass: Siege Weapon; Tags: Siege Weapon, Unique Unit.\nAttack Bonus: +4 vs All Buildings, +4 vs Stone Defensive Buildings."
 
@@ -1380,6 +1405,18 @@
 721125 "Create <b>Lord<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nBritish unique heavy infantry. 4 lords can be owned at most at the same time. Can not be converted.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6 <MATERIAL=StatIconsHpRegeneration> 30\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +6 vs Shock Infantry, +3 vs Building.\n\n<MATERIAL=TechIconsT031CastleAge> +60 HP, +3 attack, +1 melee/pierce armor.\n<MATERIAL=TechIconsT032ImperialAge> +60 HP, +5 attack, +1 melee/pierce armor, +50% bonus damage resistance."
 
 721126 "Create <b>Sheep<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)"
+
+721127 "Create <b>Khudiraipadai<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nDravidian unique cavalry. Gain 1 additional melee armor from each mounted enemy within the range of 0.8 tile.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.2 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit, Scout.\nAttack Bonus: +10 vs Monk.\n\n<MATERIAL=TechIconsT030FeudalAge> +2 attack, +0.3 movement speed."
+
+721128 "Create <b>Veteran Khudiraipadai<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nDravidian unique cavalry. Gain 1 additional melee armor from each mounted enemy within the range of 0.8 tile.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.5 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit, Scout.\nAttack Bonus: +15 vs Monk."
+
+721129 "Create <b>Elite Khudiraipadai<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nDravidian unique cavalry. Gain 1 additional melee armor from each mounted enemy within the range of 0.8 tile.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.5 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 6\nClass: Cavalry; Tags: Cavalry, Unique Unit, Scout.\nAttack Bonus: +20 vs Monk."
+
+721130 "Create <b>Ayrudzi<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nArmenian unique cavalry. Can charge attack to deal area damage.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.35 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsPowerUpRange> 2 <MATERIAL=StatIconsPowerUpReloadTime> 8 <MATERIAL=StatIconsPowerUpMovementSpeed> 1.6875 <MATERIAL=StatIconsBlastRadius> 0.5 100% (+4 attack)\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +5 vs Cavalry, +4 vs Camel."
+
+
+721131 "Create <b>Elite Ayrudzi<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nArmenian unique cavalry. Can charge attack to deal area damage.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.35 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsPowerUpRange> 2 <MATERIAL=StatIconsPowerUpReloadTime> 8 <MATERIAL=StatIconsPowerUpMovementSpeed> 1.6875 <MATERIAL=StatIconsBlastRadius> 0.5 100% (+6 attack)\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +7 vs Cavalry, +6 vs Camel."
+
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

@@ -674,8 +674,8 @@ void PospoliteRuszenieApplier(int playerId = -1, int ClassTarget = -1)
     xsResetTaskAmount();
 
     SetAttribute(playerId, ClassTarget, cGarrisonCapacity, 8);
-    SetAttribute(playerId, ClassTarget, cProjectileUnit, ProjectileVOLID);
-    SetAttribute(playerId, ClassTarget, cSecondaryProjectileUnit, ProjectileVOLID);
+    SetAttribute(playerId, ClassTarget, cProjectileUnit, ProjectileFolwarkID);
+    SetAttribute(playerId, ClassTarget, cSecondaryProjectileUnit, ProjectileFolwarkID);
     ModAttribute(playerId, ClassTarget, cMaxTotalProjectiles, 6);
     ModAttribute(playerId, ClassTarget, cTotalProjectiles, 1);
     SetAttribute(playerId, ClassTarget, cShownRange, 5.5);
@@ -694,7 +694,7 @@ void PospoliteRuszenieApplier(int playerId = -1, int ClassTarget = -1)
     SetAttribute(playerId, ClassTarget, cSearchRadius, 5.5);
     if (isResearched(playerId, HerbalMedicineTechID))
         MulAttribute(playerId, ClassTarget, cGarrisonHealRate, 6);
-    AddAttackForm(playerId, ClassTarget, cDamageClassPierce, 5);
+    AddAttackForm(playerId, ClassTarget, cDamageClassPierce, xsGetObjectAttribute(playerId, ProjectileFolwarkID, cAttack, cDamageClassPierce));
     SetAttribute(playerId, ClassTarget, cGarrisonGraphic, 4682);
 }
 

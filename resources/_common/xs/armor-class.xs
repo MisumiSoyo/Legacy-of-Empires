@@ -84,6 +84,9 @@ void SetScoutArmor(int playerId = -1)
     AddArmorForm(playerId, ChampiRunnerID, cDamageClassScout);
     AddArmorForm(playerId, ChampiWarriorID, cDamageClassScout);
     AddArmorForm(playerId, EliteChampiWarriorID, cDamageClassScout);
+    AddArmorForm(playerId, KhudiraipadaiID, cDamageClassScout);
+    AddArmorForm(playerId, VeteranKhudiraipadaiID, cDamageClassScout);
+    AddArmorForm(playerId, EliteKhudiraipadaiID, cDamageClassScout);
 }
 
 

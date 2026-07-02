@@ -485,6 +485,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, FervorTechID);
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, HussarTechID);
             break;
         }
         case cBengalis:

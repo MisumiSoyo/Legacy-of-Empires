@@ -126,6 +126,8 @@ void EffectFunction10097(int playerId = -1)
     ModAttribute(playerId, CanoeID, cSearchRadius, 1);
     ModAttribute(playerId, WarCanoeID, cSearchRadius, 1);
     ModAttribute(playerId, EliteCanoeID, cSearchRadius, 1);
+
+    ModAttack(playerId, ProjectileFolwarkID, cDamageClassPierce, 1);
 }
 
 
@@ -223,7 +225,6 @@ void EffectFunction10102(int playerId = -1)
 
     SetAttribute(playerId, ProjectileDonsoID, cEnableSmartProjectile, 3);
     SetAttribute(playerId, ProjectileRattanSwordmanID, cEnableSmartProjectile, 3);
-    SetAttribute(playerId, ProjectileRattanSwordmanFireID, cEnableSmartProjectile, 3);
 }
 
 
@@ -261,7 +262,6 @@ void EffectFunction10114(int playerId = -1)
 {
     ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 1);
     ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 1);
-    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 1);
 }
 
 
@@ -270,7 +270,6 @@ void EffectFunction10115(int playerId = -1)
 {
     ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 1);
     ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 1);
-    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 1);
 }
 
 
@@ -279,7 +278,6 @@ void EffectFunction10116(int playerId = -1)
 {
     ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 2);
     ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 2);
-    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 2);
 }
 
 
@@ -293,9 +291,12 @@ void EffectFunction10098(int playerId = -1)
 
     ModAttack(playerId, ProjectileDonsoID, cDamageClassMelee, 1);
     ModAttack(playerId, ProjectileRattanSwordmanID, cDamageClassMelee, 1);
-    ModAttack(playerId, ProjectileRattanSwordmanFireID, cDamageClassMelee, 1);
+    ModAttack(playerId, ProjectileFolwarkID, cDamageClassPierce, 1);
 
-    UpgradeUnit(playerId, ProjectileRattanSwordmanID, ProjectileRattanSwordmanFireID);
+    SetAttribute(playerId, ProjectileRattanSwordmanID, cStandingGraphic, 3398);
+    SetAttribute(playerId, ProjectileRattanSwordmanID, cWalkingGraphic, 3398);
+    SetAttribute(playerId, ProjectileFolwarkID, cStandingGraphic, 3403);
+    SetAttribute(playerId, ProjectileFolwarkID, cWalkingGraphic, 3403);
 
     ModAttack(playerId, CanoeID, cDamageClassPierce, 1);
     ModAttack(playerId, WarCanoeID, cDamageClassPierce, 1);

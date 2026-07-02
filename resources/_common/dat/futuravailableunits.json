@@ -38547,6 +38547,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -43335,6 +43340,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 428
+                    },
+                    {
                         "Name": "Veteran Raider Elephant",
                         "RequiredAge": 3,
                         "ID": 3335
@@ -43361,6 +43371,11 @@
                         "ID": 1132,
                         "Name": "Battle Elephant",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 441
                     }
                 ]
             },

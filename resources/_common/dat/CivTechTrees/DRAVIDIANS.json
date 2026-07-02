@@ -507,6 +507,96 @@
     ],
     "civ_techs_units": [
         {
+            "Age ID": 2,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800127,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Khudiraipadai",
+            "Name String ID": 700127,
+            "Node ID": 4064,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 398,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800128,
+            "Link ID": 4064,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Veteran Khudiraipadai",
+            "Name String ID": 700128,
+            "Node ID": 4065,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 398,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3478,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800129,
+            "Link ID": 4065,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Khudiraipadai",
+            "Name String ID": 700129,
+            "Node ID": 4066,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 398,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3479,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Archer",
             "Node Type": "Unit",
             "Link Node Type": "BuildingTech",
@@ -893,52 +983,6 @@
             "Link ID": 875,
             "Node ID": 215,
             "Picture Index": 80
-        },
-        {
-            "Name": "Scout Cavalry",
-            "Node Type": "Unit",
-            "Link Node Type": "BuildingTech",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
-            "Node Status": "ResearchedCompleted",
-            "Name String ID": 14326,
-            "Age ID": 2,
-            "Building ID": 101,
-            "Help String ID": 105326,
-            "Node ID": 448,
-            "Picture Index": 64
-        },
-        {
-            "Name": "Light Cavalry",
-            "Node Type": "UnitUpgrade",
-            "Link Node Type": "Unit",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
-            "Node Status": "ResearchedCompleted",
-            "Name String ID": 14444,
-            "Age ID": 3,
-            "Building ID": 101,
-            "Help String ID": 105444,
-            "Link ID": 448,
-            "Node ID": 546,
-            "Picture Index": 91,
-            "Trigger Tech ID": 254
-        },
-        {
-            "Name": "Hussar",
-            "Node Type": "UnitUpgrade",
-            "Link Node Type": "UnitUpgrade",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
-            "Node Status": "NotAvailable",
-            "Name String ID": 14661,
-            "Age ID": 4,
-            "Building ID": 101,
-            "Help String ID": 105661,
-            "Link ID": 546,
-            "Node ID": 441,
-            "Picture Index": 103,
-            "Trigger Tech ID": 428
         },
         {
             "Name": "Knight",
