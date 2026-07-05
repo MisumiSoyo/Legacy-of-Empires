@@ -611,34 +611,64 @@
             ]
         },
         {
-            "Name": "Cavalry Archer",
-            "Node Type": "Unit",
-            "Link Node Type": "BuildingTech",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
-            "Node Status": "ResearchedCompleted",
-            "Name String ID": 14085,
             "Age ID": 3,
             "Building ID": 87,
-            "Help String ID": 105085,
-            "Node ID": 39,
-            "Picture Index": 19
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800132,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Mounted Crossbowman",
+            "Name String ID": 700132,
+            "Node ID": 4069,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 19,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         },
         {
-            "Name": "Heavy Cavalry Archer",
-            "Node Type": "UnitUpgrade",
-            "Link Node Type": "Unit",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
-            "Node Status": "NotAvailable",
-            "Name String ID": 14412,
             "Age ID": 4,
             "Building ID": 87,
-            "Help String ID": 105412,
-            "Link ID": 39,
-            "Node ID": 474,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800133,
+            "Link ID": 4069,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Mounted Crossbowman",
+            "Name String ID": 700133,
+            "Node ID": 4070,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
             "Picture Index": 71,
-            "Trigger Tech ID": 218
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3483,
+            "Use Type": "Unit"
         },
         {
             "Name": "Thumb Ring",

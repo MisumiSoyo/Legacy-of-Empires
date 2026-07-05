@@ -891,7 +891,14 @@
             {
                 "ID": 276,
                 "Name": "Wonder",
-                "RequiredAge": 4
+                "RequiredAge": 4,
+                "Units": [
+                    {
+                        "Name": "Xolotl",
+                        "RequiredAge": 4,
+                        "ID": 4160
+                    }
+                ]
             },
             {
                 "ID": 584,
@@ -3434,6 +3441,11 @@
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Heavy Cavalry Archer",
+                        "RequiredAge": 4,
+                        "ID": 218
                     }
                 ],
                 "Units": [
@@ -4552,6 +4564,16 @@
                         "ID": 436,
                         "Name": "Parthian Tactics",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Crossbowman",
+                        "RequiredAge": 3,
+                        "ID": 100
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -4579,6 +4601,16 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Crossbowman",
+                        "RequiredAge": 3,
+                        "ID": 24
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -18459,6 +18491,11 @@
                         "ID": 125,
                         "Name": "Monk",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Hospitaller Knight",
+                        "RequiredAge": 3,
+                        "ID": 4101
                     }
                 ]
             },
@@ -27952,6 +27989,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 2,
                         "ID": 3004
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
@@ -32794,6 +32836,11 @@
                         "ID": 125,
                         "Name": "Monk",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Hospitaller Knight",
+                        "RequiredAge": 3,
+                        "ID": 4101
                     }
                 ]
             },
@@ -51809,6 +51856,11 @@
                         "ID": 436,
                         "Name": "Parthian Tactics",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 237
                     }
                 ],
                 "Units": [
@@ -51836,6 +51888,11 @@
                         "ID": 1952,
                         "Name": "Xianbei Raider",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     }
                 ]
             },
@@ -52145,6 +52202,11 @@
                         "Name": "Plate Mail Armor",
                         "RequiredAge": 4,
                         "ID": 77
+                    },
+                    {
+                        "Name": "Plate Barding Armor",
+                        "RequiredAge": 4,
+                        "ID": 80
                     }
                 ]
             },

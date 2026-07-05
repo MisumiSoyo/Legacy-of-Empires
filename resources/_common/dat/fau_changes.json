@@ -752,18 +752,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "越南移除重装骑射手",
-            "civilizations": "Vietnamese",
-            "unit_id": 474,
-            "type": "delete"
-        },
-        {
-            "note": "越南移除重装骑射手",
-            "civilizations": "Vietnamese",
-            "tech_id": 218,
-            "type": "delete"
-        },
-        {
             "note": "象阵",
             "civilizations": "Vietnamese",
             "tech_id": 3280,
@@ -1279,8 +1267,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 埃塞俄比亚, 波兰获得骑兵钢甲",
-            "civilizations": ["Goths", "Ethiopians", "Poles"],
+            "note": "哥特, 埃塞俄比亚, 波兰, 魏获得骑兵钢甲",
+            "civilizations": ["Goths", "Ethiopians", "Poles", "Wei"],
             "tech_id": 80,
             "building_id": 103,
             "Name": "Plate Barding Armor",
@@ -1381,8 +1369,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "阿兹特克, 波兰, 勃艮第, 吴, 格鲁吉亚, 穆伊斯卡获得射手锁甲",
-            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu", "Georgians", "Muisca"],
+            "note": "阿兹特克, 波兰, 勃艮第, 吴, 格鲁吉亚, 穆伊斯卡, 蒙古获得射手锁甲",
+            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu", "Georgians", "Muisca", "Mongols"],
             "tech_id": 219,
             "building_id": 103,
             "Name": "Ring Archer Armor",
@@ -1432,6 +1420,22 @@
             "unit_id": 39,
             "building_id": 87,
             "type": "delete"
+        },
+        {
+            "note": "重装骑射手",
+            "civilizations": ["Burgundians"],
+            "unit_id": 474,
+            "building_id": 87,
+            "Name": "Heavy Cavalry Archer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "重装骑射手",
+            "civilizations": ["Burgundians"],
+            "tech_id": 218,
+            "building_id": 87,
+            "Name": "Heavy Cavalry Archer",
+            "RequiredAge": 4
         },
         {
             "note": "马来, 越南, 高棉移除重装骑射手",
@@ -1525,32 +1529,32 @@
             "RequiredAge": 3
         },
         {
-            "note": "西班牙启用弩手",
-            "civilizations": ["Spanish"],
+            "note": "西班牙, 保加利亚启用弩手",
+            "civilizations": ["Spanish", "Bulgarians"],
             "unit_id": 24,
             "building_id": 87,
             "Name": "Crossbowman",
             "RequiredAge": 3
         },
         {
-            "note": "西班牙启用弩手",
-            "civilizations": ["Spanish"],
+            "note": "西班牙, 保加利亚启用弩手",
+            "civilizations": ["Spanish", "Bulgarians"],
             "tech_id": 100,
             "building_id": 87,
             "Name": "Crossbowman",
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",
@@ -2447,6 +2451,22 @@
             "building_id": 109,
             "Name": "Lord",
             "RequiredAge": 2
+        },
+        {
+            "note": "医院骑士",
+            "civilizations": ["Italians", "Sicilians"],
+            "unit_id": 4101,
+            "building_id": 104,
+            "Name": "Hospitaller Knight",
+            "RequiredAge": 3
+        },
+        {
+            "note": "奇观训练索洛托勇士",
+            "civilizations": "Aztecs",
+            "unit_id": 4160,
+            "building_id": 276,
+            "Name": "Xolotl",
+            "RequiredAge": 4
         }
     ]
 }

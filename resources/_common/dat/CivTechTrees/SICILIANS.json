@@ -956,34 +956,20 @@
             "Trigger Tech ID": 209
         },
         {
+            "Name": "Paladin",
+            "Node Type": "UnitUpgrade",
+            "Link Node Type": "UnitUpgrade",
+            "Draw Node Type": "UnitTech",
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable",
+            "Name String ID": 14471,
             "Age ID": 4,
             "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800029,
+            "Help String ID": 105471,
             "Link ID": 283,
-            "Link Node Type": "UnitUpgrade",
-            "Name": "Hospitaller Knight",
-            "Name String ID": 700029,
-            "Node ID": 4101,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 357,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
+            "Node ID": 569,
+            "Picture Index": 2,
+            "Trigger Tech ID": 265
         },
         {
             "Name": "Bloodlines",
@@ -2346,6 +2332,36 @@
             "Help String ID": 105099,
             "Node ID": 125,
             "Picture Index": 33
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 104,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800029,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Hospitaller Knight",
+            "Name String ID": 700029,
+            "Node ID": 4101,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 362,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         },
         {
             "Name": "Devotion",

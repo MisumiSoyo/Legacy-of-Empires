@@ -973,8 +973,9 @@ void EffectFunction10059(int playerId = -1)
 //  10060 - C-Bonus, Cavalry +50% base attack vs skirmishers
 void EffectFunction10060(int playerId = -1)
 {
+    int PlayerObjectCount = xsGetPlayerNumberOfObjects(playerId);
     int i = 0;
-    for (i = 0; < TotalObjects)
+    for (i = 0; < PlayerObjectCount)
         if ((i < 900) || (i > 964))
         {
             int ClassID = xsGetObjectClass(playerId, i);
@@ -1465,7 +1466,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 333  2026.07.01");
+    xsChatData("Patch: 334  2026.07.05");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

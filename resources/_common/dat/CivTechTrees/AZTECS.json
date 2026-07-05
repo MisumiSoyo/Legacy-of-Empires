@@ -3002,6 +3002,36 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 276,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105040,
+            "Link ID": -1,
+            "Link Node Type": "BuildingNonTech",
+            "Name": "Xolotl",
+            "Name String ID": 5040,
+            "Node ID": 4160,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 351,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         }
     ]
 }

@@ -85,7 +85,8 @@ void EffectFunction10091(int playerId = -1)
 {
     int i = 0;
     int TrainLocation = 0;
-    for (i = NewObjectStartID; < TotalObjects)
+    int PlayerObjectCount = xsGetPlayerNumberOfObjects(playerId);
+    for (i = NewObjectStartID; < PlayerObjectCount)
     {
         TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
         if ((TrainLocation == BarracksID) || (TrainLocation == StableID))
@@ -99,7 +100,8 @@ void EffectFunction10092(int playerId = -1)
 {
     int i = 0;
     int TrainLocation = 0;
-    for (i = NewObjectStartID; < TotalObjects)
+    int PlayerObjectCount = xsGetPlayerNumberOfObjects(playerId);
+    for (i = NewObjectStartID; < PlayerObjectCount)
     {
         TrainLocation = xsGetObjectAttribute(playerId, i, cTrainLocation);
         if (TrainLocation == BarracksID)
@@ -369,7 +371,7 @@ void ButalmapuCivCustomChanges(int playerId = -1)
     }
 
     if ((playerCiv == cJapanese) || (playerCiv == cTurks) || (playerCiv == cKoreans) || (playerCiv == cEthiopians) || (playerCiv == cVietnamese)
-        || (isResearched(playerId, CrusaderKnightTechID)) || (isResearched(playerId, HospitallerKnightTechID)))
+        || (isResearched(playerId, CrusaderKnightTechID)))
     {
         MulAttribute(playerId, KnightID, cResourceCost, 0.85);
         MulAttribute(playerId, CavalierID, cResourceCost, 0.85);

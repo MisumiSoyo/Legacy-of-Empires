@@ -198,6 +198,7 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, BombardCannonTechID);
+            EnableTech(playerId, RingArcherArmorTechID);
             DisableTech(playerId, KnightTechID);
             DisableTech(playerId, CavalierTechID);
             break;
@@ -419,6 +420,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HoardingsTechID);
             EnableTech(playerId, ChampionTechID);
             EnableTech(playerId, SancityTechID);
+            EnableTech(playerId, CrossbowmanTechID);
+            EnableTech(playerId, ArbalesterTechID);
             break;
         }
         case cTatars:
@@ -447,6 +450,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, RingArcherArmorTechID);
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, SiegeRamTechID);
+            EnableTech(playerId, HeavyCavalryArcherTechID);
             DisableTech(playerId, 769);
             break;
         }
@@ -564,6 +568,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, PlateMailArmorTechID);
+            EnableTech(playerId, PlateBardingArmorTechID);
+            EnableTech(playerId, ArbalesterTechID);
             break;
         }
         case cJurchens:

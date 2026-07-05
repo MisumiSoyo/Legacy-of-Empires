@@ -1,7 +1,9 @@
 //  extern definition
 
 
+
 extern int CivCount = 59;
+
 
 
 //  Resources
@@ -51,9 +53,9 @@ extern const int cAttributeTurksTradeIncome = 752;
 extern const int cAttributeEnclosureProductivity = 753;
 
 
+
 //  Custom Units' IDs
 extern const int NewObjectStartID = 4001;
-extern const int TotalObjects = 4160;
 extern const int TimerBuildingID = 4001;
 extern const int TimerEventBuildingID = 4002;
 extern const int HobelarID = 4003;
@@ -192,6 +194,8 @@ extern const int ConscriptedArmy2ID = 4153;
 extern const int ManilaGalleonID = 4157;
 extern const int ProjectileGuanNingCavalryID = 4158;
 extern const int IronHawkID = 4159;
+extern const int XolotlBuildingID = 4160;
+
 
 
 //  Newly added tech IDs
@@ -338,6 +342,7 @@ extern const int RattanSwordmanTechID = 3433;
 extern const int FoederatiArmyKillEffectID = 3055;
 extern const int FreeJaguarKillEffectID = 3078;
 extern const int RajaKillEffectID = 3380;
+
 
 
 //  Original Unit IDs
@@ -589,6 +594,7 @@ extern const int WarHulkID = 2627;
 extern const int CarrackID = 2628;
 
 
+
 //  Original Tech IDs
 extern const int TownWatchTechID = 8;
 extern const int CropRotationTechID = 12;
@@ -726,6 +732,7 @@ extern const int HeiGuangCavalryTechID = 1032;
 extern const int HeavyHeiGuangCavalryTechID = 1033;
 
 
+
 //  Custom Attack Forms
 extern const int NewAttackFormStartID = 101;
 extern const int TotalAttackForms = 108;
@@ -738,7 +745,9 @@ extern const int cDamageClassTradeUnit = 106;
 extern const int cDamageClassScout = 107;
 
 
+
 extern const int SatrapAuraRange = 10;
+
 
 
 //  Hotkey IDs
@@ -772,10 +781,12 @@ extern const int CHotkeyID = 18258;
 extern const int VHotkeyID = 18239;
 
 
+
 extern const int DarkAge = 0;
 extern const int FeudalAge = 1;
 extern const int CastleAge = 2;
 extern const int ImperialAge = 3;
+
 
 
 extern const int NullInt = -32001;
