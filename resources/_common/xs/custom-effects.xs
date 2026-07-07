@@ -562,39 +562,6 @@ void EffectFunction10029(int playerId = -1)
 }
 
 
-//  10030 - Yum Kaax's Blessing
-void EffectFunction10030(int playerId = -1)
-{
-    MulAttribute(playerId, 214, cWorkRate, 1000);
-    MulAttribute(playerId, 214, cCarryCapacity, 100);
-    MulAttribute(playerId, 259, cWorkRate, 1000);
-    MulAttribute(playerId, 259, cCarryCapacity, 100);
-    MulAttribute(playerId, 50, cWorkRate, 10000);
-    SetAttribute(playerId, YumKaaxsBlessingBuildingID, cRegenerationHpPercent, -6);
-    SetAttribute(playerId, YumKaaxsBlessingBuildingID, cDeadUnitId, YumKaaxsBlessingEndBuildingID);
-    vector pos = xsVectorSet(0.0, 0.0, 0.0);
-    xsCreateUnit(YumKaaxsBlessingBuildingID, playerId, pos, false, false, false);
-
-    MulResource(playerId, cAttributeMayansFarmWoodProductivity, 1000);
-    MulResource(playerId, cAttributeMayansFarmStoneProductivity, 1000);
-    MulResource(playerId, cAttributeMayansFarmGoldProductivity, 1000);
-}
-
-
-//  10031 - Yum Kaax's Blessing End Effect
-void EffectFunction10031(int playerId = -1)
-{
-    MulAttribute(playerId, 214, cWorkRate, 1.0 / 1000);
-    MulAttribute(playerId, 214, cCarryCapacity, 1.0 / 100);
-    MulAttribute(playerId, 259, cWorkRate, 1.0 / 1000);
-    MulAttribute(playerId, 259, cCarryCapacity, 1.0 / 100);
-    MulAttribute(playerId, 50, cWorkRate, 1.0 / 10000);
-    MulResource(playerId, cAttributeMayansFarmWoodProductivity, 1.0 / 1000);
-    MulResource(playerId, cAttributeMayansFarmStoneProductivity, 1.0 / 1000);
-    MulResource(playerId, cAttributeMayansFarmGoldProductivity, 1.0 / 1000);
-}
-
-
 // 10033 - Frontline Outpost
 void EffectFunction10033(int playerId = -1)
 {
@@ -811,7 +778,7 @@ void EffectFunction10044(int playerId = -1)
 }
 
 
-// 10045 - Anawrahta Canals
+// 10045 - C-Bonus, farm produces food
 void EffectFunction10045(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -823,7 +790,7 @@ void EffectFunction10045(int playerId = -1)
     xsTask(FarmID, cTaskTypeGenerateResources, -1, playerId);
     xsTask(RiceFarmID, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
-    xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 7, playerId);
+    xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 20.0 / 6, playerId);
 }
 
 
@@ -1473,7 +1440,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 337  2026.07.06");
+    xsChatData("Patch: 338  2026.07.08");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

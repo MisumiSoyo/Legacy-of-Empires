@@ -15668,6 +15668,11 @@
                         "ID": 437,
                         "Name": "Thumb Ring",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Amazon Archer",
+                        "RequiredAge": 4,
+                        "ID": 3492
                     }
                 ],
                 "Units": [
@@ -15700,6 +15705,16 @@
                         "ID": 185,
                         "Name": "Slinger",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Amazon Archer",
+                        "RequiredAge": 3,
+                        "ID": 4154
+                    },
+                    {
+                        "Name": "Elite Amazon Archer",
+                        "RequiredAge": 4,
+                        "ID": 4155
                     }
                 ]
             },
@@ -26741,6 +26756,11 @@
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
+                    },
+                    {
+                        "Name": "Elite Macuahuitl Warrior",
+                        "RequiredAge": 4,
+                        "ID": 3490
                     }
                 ],
                 "Units": [
@@ -26793,6 +26813,16 @@
                         "ID": 752,
                         "Name": "Elite Eagle Warrior",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Macuahuitl Warrior",
+                        "RequiredAge": 3,
+                        "ID": 4161
+                    },
+                    {
+                        "Name": "Elite Macuahuitl Warrior",
+                        "RequiredAge": 4,
+                        "ID": 4162
                     }
                 ]
             },

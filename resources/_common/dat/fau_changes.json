@@ -2467,6 +2467,54 @@
             "building_id": 276,
             "Name": "Xolotl",
             "RequiredAge": 4
+        },
+        {
+            "note": "黑曜石剑士",
+            "civilizations": "Mayans",
+            "unit_id": 4161,
+            "building_id": 12,
+            "Name": "Macuahuitl Warrior",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐黑曜石剑士",
+            "civilizations": "Mayans",
+            "unit_id": 4162,
+            "building_id": 12,
+            "Name": "Elite Macuahuitl Warrior",
+            "RequiredAge": 4
+        },
+        {
+            "note": "精锐黑曜石剑士",
+            "civilizations": "Mayans",
+            "tech_id": 3490,
+            "building_id": 12,
+            "Name": "Elite Macuahuitl Warrior",
+            "RequiredAge": 4
+        },
+        {
+            "note": "亚马逊步弓手",
+            "civilizations": "Incas",
+            "unit_id": 4154,
+            "building_id": 87,
+            "Name": "Amazon Archer",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐亚马逊步弓手",
+            "civilizations": "Incas",
+            "unit_id": 4155,
+            "building_id": 87,
+            "Name": "Elite Amazon Archer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "精锐亚马逊步弓手",
+            "civilizations": "Incas",
+            "tech_id": 3492,
+            "building_id": 87,
+            "Name": "Elite Amazon Archer",
+            "RequiredAge": 4
         }
     ]
 }

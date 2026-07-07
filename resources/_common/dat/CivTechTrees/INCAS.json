@@ -628,6 +628,66 @@
             ]
         },
         {
+            "Age ID": 3,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800139,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Amazon Archer",
+            "Name String ID": 700139,
+            "Node ID": 4154,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 165,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800140,
+            "Link ID": 4154,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Amazon Archer",
+            "Name String ID": 700140,
+            "Node ID": 4155,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 165,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3492,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Cavalry Archer",
             "Node Type": "Unit",
             "Link Node Type": "BuildingTech",
