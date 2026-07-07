@@ -1116,9 +1116,9 @@ void EffectFunction10074(int playerId = -1)
 void EffectFunction10081(int playerId = -1)
 {
     xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000020);
     xsTaskAmount(cTaskAttrProductivityResource, cAttributeInfantryLootFarmFoodProductivity);
     xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
-    xsTaskAmount(cTaskAttrUnusedResource, 3);
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
 
     xsTask(cInfantryClass, cTaskTypeGenerateResources, cFarmClass, playerId);
@@ -1460,13 +1460,20 @@ void EffectFunction10126(int playerId = -1)
 }
 
 
+//  10127 - Remove wonder victory
+void EffectFunction10127(int playerId = -1)
+{
+    xsRemoveTask(WonderID, cTaskTypeGenerateWonderVictory, -1, playerId);
+}
+
+
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 336  2026.07.05");
+    xsChatData("Patch: 337  2026.07.06");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

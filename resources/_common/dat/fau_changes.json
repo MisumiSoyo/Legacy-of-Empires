@@ -1297,9 +1297,9 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切, 阿兹特克, 维京获得扳指",
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切, 阿兹特克, 维京, 女真获得扳指",
             "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians", "Mapuche", "Aztecs",
-                              "Vikings"],
+                              "Vikings", "Jurchens"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1545,16 +1545,16 @@
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏, 女真获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei", "Jurchens"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏, 女真获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei", "Jurchens"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",

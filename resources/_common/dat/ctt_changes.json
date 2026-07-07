@@ -5463,11 +5463,19 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "女真获得步兵钢甲",
+            "note": "女真获得步兵钢甲, 扳指",
             "action": "modify",
             "civ_id": "JURCHENS",
-            "Node ID": [77],
+            "Node ID": [77, 437],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "女真获得劲弩手",
+            "action": "modify",
+            "civ_id": "JURCHENS",
+            "Node ID": [492],
+            "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
         {

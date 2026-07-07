@@ -575,6 +575,8 @@ void EffectFunction10001(int playerId = -1)
         case cJurchens:
         {
             EnableTech(playerId, PlateMailArmorTechID);
+            EnableTech(playerId, ThumbRingTechID);
+            EnableTech(playerId, ArbalesterTechID);
             break;
         }
         case cKhitans:
