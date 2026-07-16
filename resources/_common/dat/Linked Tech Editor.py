@@ -1,4 +1,8 @@
 import json
+import os
+from pathlib import Path
+
+os.chdir(Path(__file__).parent)
 
 def load_json_file(file_path):
     """加载JSON文件并返回内容"""
@@ -35,7 +39,7 @@ def add_linked_techs(base_data, changes):
 
 def main():
     # 加载原始游戏数据文件
-    base_file_path = "E:/Programs/steamapps/common/AoE2DE/resources/_common/dat/linkedTechs.json"
+    base_file_path = "C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/linkedTechs.json"
     base_data = load_json_file(base_file_path)
 
     # 加载修改指令文件

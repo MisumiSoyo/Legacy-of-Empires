@@ -3,6 +3,8 @@ import copy
 import os
 from pathlib import Path
 
+os.chdir(Path(__file__).parent)
+
 def load_civs_from_folder(folder_path):
     """从CivTechTrees文件夹加载所有文明数据"""
     civs = []
@@ -163,6 +165,6 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
 
 # 使用示例
 apply_changes(
-    original_folder="E:/Programs/steamapps/common/AoE2DE/resources/_common/dat/CivTechTrees",
+    original_folder="C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/CivTechTrees",
     changes_file="ctt_changes.json"
 )

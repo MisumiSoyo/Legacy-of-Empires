@@ -1,4 +1,6 @@
 import re
+import os
+from pathlib import Path
 from typing import Set, List, Dict, Optional, Callable, Union, Any
 from genieutils.datfile import DatFile
 from genieutils.unit import AttackOrArmor, ResourceStorage
@@ -7,9 +9,8 @@ from genieutils.task import Task
 from copy import copy
 from dataclasses import fields
 
-official_data_file = "E:/Programs/steamapps/common/AoE2DE/resources/_common/dat/empires2_x2_p1.dat"
-old_loe_file = "C:/Users/86138/Games/Age of Empires 2 DE/76561199076107470/mods/local/Irkadis Mod/resources/_common/dat/empires2_x2_p1.dat"
-save_file = "empires2_x2_p1.dat"
+os.chdir(Path(__file__).parent)
+
 sync_effect_type = {0, 4, 5, 10, 14, 15, 20, 24, 25, 30, 34, 35, 40, 44, 45, 200, 201, 202}
 
 # GetIdByName key

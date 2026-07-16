@@ -1,5 +1,8 @@
 import json
 import os
+from pathlib import Path
+
+os.chdir(Path(__file__).parent)
 
 # type 到 atlas_name 的映射
 TYPE_TO_ATLAS = {
@@ -162,8 +165,8 @@ def _update_atlas_textures(materials_data, icon_name, source_file, atlas_name, c
 
 if __name__ == "__main__":
     # 输入文件路径（源文件位置）
-    icons_path = r"E:\Programs\steamapps\common\AoE2DE\widgetui\icons.json"
-    materials_path = r"E:\Programs\steamapps\common\AoE2DE\widgetui\materials.json"
+    icons_path = r"C:\Steam\steamapps\common\AoE2DE\widgetui\icons.json"
+    materials_path = r"C:\Steam\steamapps\common\AoE2DE\widgetui\materials.json"
     changes_path = r"im_changes.json"
 
     update_json_files(icons_path, materials_path, changes_path)

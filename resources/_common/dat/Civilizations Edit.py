@@ -64,7 +64,7 @@ def update_civilizations(
 
 if __name__ == "__main__":
     # 文件路径配置
-    official_civilizations_path = r"E:/Programs/steamapps/common/AoE2DE/resources/_common/dat/civilizations.json"
+    official_civilizations_path = r"C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/civilizations.json"
     changes_json_path = "civ_changes.json"
     output_civilizations_path = "civilizations.json"
 

@@ -7,8 +7,11 @@ Drop Site 变更处理器
 
 import json
 import copy
+import os
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+
+os.chdir(Path(__file__).parent)
 
 
 class DropSiteChangeProcessor:
@@ -170,7 +173,7 @@ class DropSiteChangeProcessor:
 
 
 def main():
-    BASE_FILE = "E:/Programs/steamapps/common/AoE2DE/resources/_common/dat/dropsites.json"
+    BASE_FILE = "C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/dropsites.json"
     CHANGES_FILE = "dr_changes.json"
     OUTPUT_FILE = "dropsites.json"
     

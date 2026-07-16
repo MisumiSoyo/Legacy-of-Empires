@@ -1,8 +1,12 @@
 import json
+import os
+from pathlib import Path
+
+os.chdir(Path(__file__).parent)
 
 def main():
     # Load source data
-    with open('E:/Programs/steamapps/common/AoE2DE/resources/_common/dat/futuravailableunits.json', 'r', encoding='utf-8') as f:
+    with open('C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/futuravailableunits.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     # Load changes

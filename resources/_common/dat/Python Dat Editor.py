@@ -4,6 +4,10 @@ sys.dont_write_bytecode = True
 from utils import *
 from inputs import *
 
+official_data_file = "C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/empires2_x2_p1.dat"
+old_loe_file = "empires2_x2_p1.dat"
+save_file = "empires2_x2_p1.dat"
+
 def run():
     data = DatFile.parse(official_data_file)
     loe = DatFile.parse(old_loe_file)
