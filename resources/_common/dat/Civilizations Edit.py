@@ -1,6 +1,11 @@
 import json
 import os
+import sys
+from pathlib import Path
 from typing import List, Union, Dict, Any
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
+from paths import OFFICIAL_CIVILIZATIONS_FILE, CIV_CHANGES_FILE, OUTPUT_CIVILIZATIONS_FILE
 
 def read_json_file(file_path: str) -> Dict[str, Any]:
     """读取 JSON 文件内容"""
@@ -63,17 +68,12 @@ def update_civilizations(
     return updated_civilizations
 
 if __name__ == "__main__":
-    # 文件路径配置
-    official_civilizations_path = r"C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/civilizations.json"
-    changes_json_path = "civ_changes.json"
-    output_civilizations_path = "civilizations.json"
-
     # 读取官方 civilizations.json
-    official_data = read_json_file(official_civilizations_path)
+    official_data = read_json_file(str(OFFICIAL_CIVILIZATIONS_FILE))
     official_civilizations = official_data["civilization_list"]
 
     # 读取 civ_changes.json
-    changes_data = read_json_file(changes_json_path)
+    changes_data = read_json_file(str(CIV_CHANGES_FILE))
     changes = changes_data.get("changes", [])
 
     # 应用修改规则
@@ -81,6 +81,6 @@ if __name__ == "__main__":
 
     # 将结果写入输出文件
     output_data = {"civilization_list": custom_civilizations}
-    write_json_file(output_civilizations_path, output_data)
+    write_json_file(str(OUTPUT_CIVILIZATIONS_FILE), output_data)
 
-    print(f"自定义 civilizations.json 文件已生成，保存至 {os.path.abspath(output_civilizations_path)}")
+    print(f"自定义 civilizations.json 文件已生成，保存至 {os.path.abspath(str(OUTPUT_CIVILIZATIONS_FILE))}")

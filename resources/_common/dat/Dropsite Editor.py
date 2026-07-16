@@ -8,8 +8,12 @@ Drop Site 变更处理器
 import json
 import copy
 import os
+import sys
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
+from paths import OFFICIAL_DROPSITES_FILE, DR_CHANGES_FILE, OUTPUT_DROPSITES_FILE
 
 os.chdir(Path(__file__).parent)
 
@@ -173,13 +177,9 @@ class DropSiteChangeProcessor:
 
 
 def main():
-    BASE_FILE = "C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/dropsites.json"
-    CHANGES_FILE = "dr_changes.json"
-    OUTPUT_FILE = "dropsites.json"
-    
-    processor = DropSiteChangeProcessor(BASE_FILE)
-    processor.load_changes(CHANGES_FILE)
-    processor.process(OUTPUT_FILE)
+    processor = DropSiteChangeProcessor(str(OFFICIAL_DROPSITES_FILE))
+    processor.load_changes(str(DR_CHANGES_FILE))
+    processor.process(str(OUTPUT_DROPSITES_FILE))
     
     print(f"\n完成！新条目数: {len(processor.base_data['drop_site_list'])}")
 

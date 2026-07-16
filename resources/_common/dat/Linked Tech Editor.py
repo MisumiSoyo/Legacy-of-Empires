@@ -1,6 +1,10 @@
 import json
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
+from paths import OFFICIAL_LINKED_TECHS_FILE, LT_CHANGES_FILE, OUTPUT_LINKED_TECHS_FILE
 
 os.chdir(Path(__file__).parent)
 
@@ -39,21 +43,18 @@ def add_linked_techs(base_data, changes):
 
 def main():
     # 加载原始游戏数据文件
-    base_file_path = "C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/linkedTechs.json"
-    base_data = load_json_file(base_file_path)
+    base_data = load_json_file(str(OFFICIAL_LINKED_TECHS_FILE))
 
     # 加载修改指令文件
-    changes_file_path = "lt_changes.json"
-    changes = load_json_file(changes_file_path)
+    changes = load_json_file(str(LT_CHANGES_FILE))
 
     # 根据修改指令修改游戏数据
     modified_data = add_linked_techs(base_data, changes)
 
     # 保存修改后的数据到新文件
-    output_file_path = "linkedTechs.json"
-    save_json_file(modified_data, output_file_path)
+    save_json_file(modified_data, str(OUTPUT_LINKED_TECHS_FILE))
 
-    print(f"修改完成，已保存到文件：{output_file_path}")
+    print(f"修改完成，已保存到文件：{OUTPUT_LINKED_TECHS_FILE}")
 
 if __name__ == "__main__":
     main()

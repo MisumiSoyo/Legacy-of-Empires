@@ -1,12 +1,16 @@
 import sys
 sys.dont_write_bytecode = True
 
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
+
 from utils import *
 from inputs import *
+from paths import OFFICIAL_DATA_FILE, OUTPUT_DATA_FILE
 
-official_data_file = "C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/empires2_x2_p1.dat"
-old_loe_file = "empires2_x2_p1.dat"
-save_file = "empires2_x2_p1.dat"
+official_data_file = str(OFFICIAL_DATA_FILE)
+old_loe_file = str(OUTPUT_DATA_FILE)
+save_file = str(OUTPUT_DATA_FILE)
 
 def run():
     data = DatFile.parse(official_data_file)

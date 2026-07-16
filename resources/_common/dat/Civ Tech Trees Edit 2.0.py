@@ -1,7 +1,11 @@
 import json
 import copy
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
+from paths import OFFICIAL_CIVTECHTREES_FOLDER, CTT_CHANGES_FILE, OUTPUT_CIVTECHTREES_FOLDER
 
 os.chdir(Path(__file__).parent)
 
@@ -165,6 +169,7 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
 
 # 使用示例
 apply_changes(
-    original_folder="C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/CivTechTrees",
-    changes_file="ctt_changes.json"
+    original_folder=str(OFFICIAL_CIVTECHTREES_FOLDER),
+    changes_file=str(CTT_CHANGES_FILE),
+    output_folder=str(OUTPUT_CIVTECHTREES_FOLDER)
 )

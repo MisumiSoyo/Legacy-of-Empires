@@ -1,16 +1,20 @@
 import json
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
+from paths import OFFICIAL_FUTUR_AVAILABLE_UNITS_FILE, FAU_CHANGES_FILE, OUTPUT_FUTUR_AVAILABLE_UNITS_FILE
 
 os.chdir(Path(__file__).parent)
 
 def main():
     # Load source data
-    with open('C:/Steam/steamapps/common/AoE2DE/resources/_common/dat/futuravailableunits.json', 'r', encoding='utf-8') as f:
+    with open(str(OFFICIAL_FUTUR_AVAILABLE_UNITS_FILE), 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     # Load changes
-    with open('fau_changes.json', 'r', encoding='utf-8') as f:
+    with open(str(FAU_CHANGES_FILE), 'r', encoding='utf-8') as f:
         changes_data = json.load(f)
     
     changes = changes_data.get('changes', [])
@@ -456,7 +460,7 @@ def main():
             print("Error: Change item must contain either 'unit_id', 'tech_id', or 'building_id' with type 'add'.")
 
     # Save modified data
-    with open('futuravailableunits.json', 'w', encoding='utf-8') as f:
+    with open(str(OUTPUT_FUTUR_AVAILABLE_UNITS_FILE), 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4)
 
 if __name__ == '__main__':

@@ -1,6 +1,10 @@
 import json
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from paths import OFFICIAL_ICONS_FILE, OFFICIAL_MATERIALS_FILE, IM_CHANGES_FILE
 
 os.chdir(Path(__file__).parent)
 
@@ -164,9 +168,4 @@ def _update_atlas_textures(materials_data, icon_name, source_file, atlas_name, c
 # ==================== 使用示例 ====================
 
 if __name__ == "__main__":
-    # 输入文件路径（源文件位置）
-    icons_path = r"C:\Steam\steamapps\common\AoE2DE\widgetui\icons.json"
-    materials_path = r"C:\Steam\steamapps\common\AoE2DE\widgetui\materials.json"
-    changes_path = r"im_changes.json"
-
-    update_json_files(icons_path, materials_path, changes_path)
+    update_json_files(str(OFFICIAL_ICONS_FILE), str(OFFICIAL_MATERIALS_FILE), str(IM_CHANGES_FILE))
