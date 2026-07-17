@@ -937,21 +937,6 @@ void EffectFunction10059(int playerId = -1)
 }
 
 
-//  10060 - C-Bonus, Cavalry +50% base attack vs skirmishers
-void EffectFunction10060(int playerId = -1)
-{
-    int PlayerObjectCount = xsGetPlayerNumberOfObjects(playerId);
-    int i = 0;
-    for (i = 0; < PlayerObjectCount)
-        if ((i < 900) || (i > 964))
-        {
-            int ClassID = xsGetObjectClass(playerId, i);
-            if ((ClassID == cScoutCavalryClass) || (ClassID == cCavalryClass))
-                ModAttack(playerId, i, cDamageClassSkirmishers, xsGetObjectAttribute(playerId, i, cAttack, cDamageClassMelee) / 2);
-        }
-}
-
-
 //  10069 - Caravan Guard
 void EffectFunction10069(int playerId = -1)
 {
@@ -1440,7 +1425,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 342  2026.07.16");
+    xsChatData("Patch: 343  2026.07.18");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

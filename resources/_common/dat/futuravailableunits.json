@@ -13966,6 +13966,11 @@
                         "ID": 3004
                     },
                     {
+                        "Name": "Plate Mail Armor",
+                        "RequiredAge": 4,
+                        "ID": 77
+                    },
+                    {
                         "Name": "Plate Barding Armor",
                         "RequiredAge": 4,
                         "ID": 80

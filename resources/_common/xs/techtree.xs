@@ -82,6 +82,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, ArsonTechID);
+            EnableTech(playerId, PlateMailArmorTechID);
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, HandCannoneerTechID);
             DisableTech(playerId, BombardCannonTechID);
