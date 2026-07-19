@@ -45143,26 +45143,6 @@
                         "Name": "Tithe",
                         "RequiredAge": 4,
                         "ID": 3005
-                    },
-                    {
-                        "Name": "Monk Armor",
-                        "RequiredAge": 3,
-                        "ID": 3340
-                    },
-                    {
-                        "Name": "Melee Attack",
-                        "RequiredAge": 3,
-                        "ID": 3341
-                    },
-                    {
-                        "Name": "Archer Armor",
-                        "RequiredAge": 3,
-                        "ID": 3342
-                    },
-                    {
-                        "Name": "Navy Bonus",
-                        "RequiredAge": 3,
-                        "ID": 3343
                     }
                 ],
                 "Units": [
@@ -45211,6 +45191,16 @@
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
+                    },
+                    {
+                        "Name": "Karma",
+                        "RequiredAge": 3,
+                        "ID": 3283
+                    },
+                    {
+                        "Name": "Ganges Economy",
+                        "RequiredAge": 4,
+                        "ID": 3284
                     }
                 ],
                 "Units": [

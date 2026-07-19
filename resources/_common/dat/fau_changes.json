@@ -965,38 +965,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "孟加拉僧侣护甲",
-            "civilizations": "Bengalis",
-            "tech_id": 3340,
-            "building_id": 104,
-            "Name": "Monk Armor",
-            "RequiredAge": 3
-        },
-        {
-            "note": "孟加拉步兵和骑兵攻击力",
-            "civilizations": "Bengalis",
-            "tech_id": 3341,
-            "building_id": 104,
-            "Name": "Melee Attack",
-            "RequiredAge": 3
-        },
-        {
-            "note": "孟加拉射手护甲",
-            "civilizations": "Bengalis",
-            "tech_id": 3342,
-            "building_id": 104,
-            "Name": "Archer Armor",
-            "RequiredAge": 3
-        },
-        {
-            "note": "孟加拉海军强化",
-            "civilizations": "Bengalis",
-            "tech_id": 3343,
-            "building_id": 104,
-            "Name": "Navy Bonus",
-            "RequiredAge": 3
-        },
-        {
             "note": "魏, 保加利亚启用冠军剑士",
             "civilizations": ["Wei", "Bulgarians"],
             "tech_id": 264,
@@ -2514,6 +2482,22 @@
             "tech_id": 3492,
             "building_id": 87,
             "Name": "Elite Amazon Archer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "业力",
+            "civilizations": "Bengalis",
+            "tech_id": 3283,
+            "building_id": 109,
+            "Name": "Karma",
+            "RequiredAge": 3
+        },
+        {
+            "note": "恒河经济",
+            "civilizations": "Bengalis",
+            "tech_id": 3284,
+            "building_id": 109,
+            "Name": "Ganges Economy",
             "RequiredAge": 4
         }
     ]

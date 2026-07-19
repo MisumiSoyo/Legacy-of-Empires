@@ -1229,44 +1229,11 @@
 
 
 #load-if-defined BENGALIS-CIV
-;   Monk Armor
+;   Ganges Economy
 (defrule
-    (strategic-number sn-current-age < imperial)
-    (unit-type-count-total monk >= 8)
-    (can-research ri-bengalis-monk-armor)
+    (can-research ri-ganges-economy)
 =>
-    (research ri-bengalis-monk-armor)
-)
-
-
-;   Melee Attack
-(defrule
-    (or (unit-type-count-total cavalry-class >= 10)
-        (unit-type-count-total scout-cavalry-class >= 13))
-    (can-research ri-bengalis-melee-attack)
-=>
-    (research ri-bengalis-melee-attack)
-)
-
-
-;   Archer Armor
-(defrule
-    (or (unit-type-count-total archery-class >= 12)
-        (unit-type-count-total cavalry-archer-class >= 9))
-    (can-research ri-bengalis-archer-armor)
-=>
-    (research ri-bengalis-archer-armor)
-)
-
-
-;   Navy Bonus
-(defrule
-    (unit-type-count-total warship-class >= 9)
-    (or (current-age <= castle-age)
-        (unit-type-count-total warship-class >= 16))
-    (can-research ri-bengalis-navy-bonus)
-=>
-    (research ri-bengalis-navy-bonus)
+    (research ri-ganges-economy)
 )
 #end-if
 

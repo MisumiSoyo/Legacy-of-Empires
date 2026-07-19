@@ -15,6 +15,7 @@ EXCLUDE_DIRS = [
 
 EXCLUDE_FILE_PATTERNS = [
     "*.py",
+    "*.md",
     "Patch Notes.txt",
     ".gitignore",
     "*.code-workspace",
