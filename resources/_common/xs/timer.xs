@@ -105,6 +105,18 @@ void TurksTradeIncome(int playerId = -1, int Time = -1)
 }
 
 
+void VikingsDeathBonus(int playerId = -1, int Time = -1)
+{
+    int CountedDeath = xsPlayerAttribute(playerId, cAttributeVikingsCountedDeath);
+    int TotalDeath = xsPlayerAttribute(playerId, cAttributeKilledByOthers);
+    float Rate1 = VikingsDeathBonusRate(CountedDeath);
+    float Rate2 = VikingsDeathBonusRate(TotalDeath);
+    if (Rate2 > Rate1)
+        MulAllResourceOut(playerId, Rate2 / Rate1);
+    SetResource(playerId, cAttributeVikingsCountedDeath, TotalDeath);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -119,6 +131,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cTurks:
         {
             TurksTradeIncome(playerId, Time);
+            break;
+        }
+        case cVikings:
+        {
+            VikingsDeathBonus(playerId, Time);
             break;
         }
         case cKoreans:

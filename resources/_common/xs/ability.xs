@@ -623,6 +623,44 @@ void PospoliteRuszenieApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
+void MulAllResourceOut(int playerId = -1, float value = -1.0)
+{
+    MulResource(playerId, cAttributeFoodBonus, value);
+    MulResource(playerId, cAttributeForagingProductivity, value);
+    MulResource(playerId, cAttributeFishingProductivity, value);
+    MulResource(playerId, cAttributeFishTrapProductivity, value);
+    MulResource(playerId, cAttributeWoodBonus, value);
+    MulResource(playerId, cAttributeGoldBonus, value);
+    MulResource(playerId, cAttributeRelicRate, value);
+    MulResource(playerId, cAttributeGoldFishingProductivity, value);
+    MulResource(playerId, cAttributeStoneBonus, value);
+    MulAttribute(playerId, cTradeBoatClass, cWorkRate, value);
+    MulAttribute(playerId, cTradeCartClass, cWorkRate, value);
+}
+
+
+float VikingsDeathBonusRate(int DeathCount = -1)
+{
+    if (DeathCount < 30)
+        return (1.0);
+    else
+        if (DeathCount < 75)
+            return (1.05);
+        else
+            if (DeathCount < 135)
+                return (1.1);
+            else
+                if (DeathCount < 210)
+                    return (1.15);
+                else
+                    if (DeathCount < 300)
+                        return (1.2);
+                    else
+                        return (1.25);
+    return (1.25);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {

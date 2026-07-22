@@ -289,18 +289,21 @@ void EffectFunction10017(int playerId = -1)
 void EffectFunction10018(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.41);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeHunterGoldProductivity);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeHunterGoldGenerationProductivity);
+    xsTaskAmount(cTaskAttrAutoSearch, 1);
+    xsTaskAmount(cTaskAttrEnableTargeting, 1);
+    xsTaskAmount(cTaskAttrOwnerType, 5);
+    xsTaskAmount(cTaskAttrGatherType, 1);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGoldGeneration);
+    xsTaskAmount(cTaskAttrWorkValue1, xsGetObjectAttribute(playerId, MaleHunterID, cWorkRate) * 0.01);
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000019);
     xsTask(MaleHunterID, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
     xsTask(MaleHunterID, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
-    xsTask(MaleHunterID, cTaskTypeGenerateResources, cBirdClass, playerId);
     xsTask(FemaleHunterID, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
     xsTask(FemaleHunterID, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
-    xsTask(FemaleHunterID, cTaskTypeGenerateResources, cBirdClass, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeHunterGoldProductivity, 0.33333333);
+    SetResource(playerId, cAttributeHunterGoldGenerationProductivity, 5.0 * 1.04);  //  multply 1.04 to adjust actual output
 }
 
 
@@ -376,10 +379,13 @@ void EffectFunction10022(int playerId = -1)
     xsTaskAmount(cTaskAttrObjectClass, 899);
     xsTaskAmount(cTaskAttrWorkValue1, 40);
     xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributePiracyProductivity);
     xsTaskAmount(cTaskAttrWorkRange, 0);
     ApplyModifyAllTargets(playerId, cWarshipClass);
     ApplyModifyBuildingTargets(playerId, cWarshipClass, false);
     xsResetTaskAmount();
+
+    SetResource(playerId, cAttributePiracyProductivity, 1);
 }
 
 
@@ -388,6 +394,8 @@ void EffectFunction10023(int playerId = -1)
 {
     xsEffectAmount(cModResource, cAttributeFishingProductivity, 0, 0.5, playerId);
     xsEffectAmount(cModResource, cAttributeGoldFishingProductivity, 1, 1, playerId);
+    MulResource(playerId, cAttributeFishingProductivity, VikingsDeathBonusRate(xsPlayerAttribute(playerId, cAttributeVikingsCountedDeath)));
+    MulResource(playerId, cAttributeGoldFishingProductivity, VikingsDeathBonusRate(xsPlayerAttribute(playerId, cAttributeVikingsCountedDeath)));
 
     //  Reset Fishing Ships' tasks
     xsResetTaskAmount();
@@ -1425,7 +1433,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 344  2026.07.19");
+    xsChatData("Patch: 345  2026.07.20");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
