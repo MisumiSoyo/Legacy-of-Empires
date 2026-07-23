@@ -513,6 +513,7 @@ extern const int GenitourID = 1010;
 extern const int EliteGenitourID = 1012;
 extern const int FeitoriaID = 1021;
 extern const int FireGalleyID = 1103;
+extern const int SiegeTowerID = 1105;
 extern const int BallistaElephantID = 1120;
 extern const int EliteBallistaElephantID = 1122;
 extern const int KarambitWarriorID = 1123;

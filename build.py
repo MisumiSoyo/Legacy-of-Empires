@@ -34,6 +34,7 @@ def build_robocopy_command():
         str(PROJECT_ROOT),
         str(TARGET_PATH),
         "/E",
+        "/PURGE",
         "/MT:16",
         "/NFL",
         "/NDL",
@@ -63,15 +64,6 @@ def main():
     if not MODS_LOCAL_PATH.exists():
         print(f"错误: 模组目录不存在: {MODS_LOCAL_PATH}")
         sys.exit(1)
-    
-    if TARGET_PATH.exists():
-        print(f"删除旧目标目录: {TARGET_PATH}")
-        result = subprocess.run(
-            ["cmd", "/c", "rmdir", "/s", "/q", str(TARGET_PATH)],
-            capture_output=True, text=True
-        )
-        if result.returncode != 0:
-            print(f"警告: 删除目录失败，但继续执行")
     
     cmd = build_robocopy_command()
     print(f"执行命令: {' '.join(cmd)}")

@@ -62,7 +62,7 @@ void MalayFreeArmy(int playerId = -1, int Time = -1)
 void MuiscaFreeWood(int playerId = -1, int Time = -1)
 {
     if ((Time > 0) && (Time % 360 == 0) && (Time <= 3600))
-        ModResource(playerId, cAttributeWoodGeneration, 30);
+        ModResource(playerId, cAttributeWoodGeneration, 36);
 }
 
 

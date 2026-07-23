@@ -427,7 +427,7 @@
             "name": "西班牙科技返还黄金调整",
             "effect_id": 237,
             "match": [1, 3, 1, -1, "any"],
-            "modifications": ["d", "set", -40]
+            "modifications": ["d", "set", 0]
         },
         {
             "type": "modify",
@@ -784,9 +784,33 @@
         {
             "type": "modify",
             "name": "孟加拉骑兵对掷矛手攻击力加成调整",
-            "effect_id": [888],
+            "effect_id": 888,
             "match": [4, -1, "any", 9, "any"],
             "modifications": ["d", "add", 2]
+        },
+        {
+            "type": "modify",
+            "name": "勃艮第团队加成改动",
+            "effect_id": 783,
+            "match": [1, 225, "any", -1, "any"],
+            "modifications": ["d", "set", 30]
+        },
+        {
+            "type": "modify",
+            "name": "罗马村民工作效率加成调整",
+            "effect_id": 898,
+            "match": [[5, -1, 4, 13, "any"],
+                      [5, 50, -1, 13, "any"],
+                      [5, 1187, -1, 13, "any"]],
+            "modifications": ["d", "set", 1.07]
+        },
+        {
+            "type": "modify",
+            "name": "罗马农夫工作效率加成调整",
+            "effect_id": 898,
+            "match": [[5, 214, -1, 13, "any"],
+                      [5, 259, -1, 13, "any"]],
+            "modifications": ["d", "set", 1.045]
         }
     ],
     "unit_changes":

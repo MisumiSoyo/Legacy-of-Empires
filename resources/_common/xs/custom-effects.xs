@@ -570,7 +570,7 @@ void EffectFunction10029(int playerId = -1)
 }
 
 
-// 10033 - Frontline Outpost
+//  10033 - Frontline Outpost
 void EffectFunction10033(int playerId = -1)
 {
     xsResetTaskAmount();
@@ -1367,7 +1367,7 @@ void EffectFunction10120(int playerId = -1)
     float RelicGoldRate = xsPlayerAttribute(playerId, cAttributeRelicRate);
     if (AllyCiv(playerId, cAztecs))
         RelicGoldRate = RelicGoldRate * 1.33;
-    ModResource(playerId, cAttributeRelicFoodRate, RelicGoldRate * 2);
+    ModResource(playerId, cAttributeRelicFoodRate, RelicGoldRate * 1.5);
     SetResource(playerId, cAttributeRelicRate, 0);
 }
 
@@ -1433,7 +1433,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 345  2026.07.20");
+    xsChatData("Patch: 346  2026.07.24");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
