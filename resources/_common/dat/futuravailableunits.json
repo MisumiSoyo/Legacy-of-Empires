@@ -27864,6 +27864,11 @@
                         "ID": 1372,
                         "Name": "Elite Steppe Lancer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4,
+                        "ID": 1230
                     }
                 ]
             },
@@ -28576,6 +28581,64 @@
                         "RequiredAge": 4,
                         "RequiredTechID": 1013,
                         "ID": 1012
+                    }
+                ]
+            },
+            {
+                "ID": 1897,
+                "Name": null,
+                "Techs": [
+                    {
+                        "Name": "Light Cavalry",
+                        "RequiredAge": 3,
+                        "ID": 254
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 428
+                    },
+                    {
+                        "Name": "Heavy Camel Rider",
+                        "RequiredAge": 4,
+                        "ID": 236
+                    },
+                    {
+                        "Name": "Elite Steppe Lancer",
+                        "RequiredAge": 4,
+                        "ID": 715
+                    },
+                    {
+                        "Name": "Bloodlines",
+                        "RequiredAge": 2,
+                        "ID": 435
+                    },
+                    {
+                        "Name": "Husbandry",
+                        "RequiredAge": 3,
+                        "ID": 39
+                    }
+                ],
+                "Units": [
+                    {
+                        "Name": "Scout Cavalry",
+                        "RequiredAge": 2,
+                        "ID": 448
+                    },
+                    {
+                        "Name": "Elite Keshik",
+                        "RequiredAge": 4,
+                        "ID": 1230
+                    },
+                    {
+                        "Name": "Camel Rider",
+                        "RequiredAge": 3,
+                        "ID": 329
+                    },
+                    {
+                        "Name": "Steppe Lancer",
+                        "RequiredAge": 3,
+                        "ID": 1370
                     }
                 ]
             }
@@ -54203,6 +54266,11 @@
                         "ID": 715,
                         "Name": "Elite Steppe Lancer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Bloodlines",
+                        "RequiredAge": 2,
+                        "ID": 435
                     }
                 ],
                 "Units": [

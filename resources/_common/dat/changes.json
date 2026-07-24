@@ -811,6 +811,20 @@
             "match": [[5, 214, -1, 13, "any"],
                       [5, 259, -1, 13, "any"]],
             "modifications": ["d", "set", 1.045]
+        },
+        {
+            "type": "modify",
+            "name": "匈奴骑射手价格调整",
+            "effect_id": 497,
+            "match": [5, -1, 36, 100, "any"],
+            "modifications": ["d", "set", 0.85]
+        },
+        {
+            "type": "modify",
+            "name": "匈奴骑射手价格调整",
+            "effect_id": 498,
+            "match": [5, -1, 36, 100, "any"],
+            "modifications": ["d", "set", 0.94117647]
         }
     ],
     "unit_changes":
@@ -844,9 +858,14 @@
             "attributes": [["hit_points", 75]]
         },
         {
-            "note": "牧民工作效率提升",
+            "note": "牧民工作效率改动",
             "unit_id": [1891, 1892],
-            "attributes": [["bird.work_rate", 0.49]]
+            "attributes": [["bird.work_rate", 0.45]]
+        },
+        {
+            "note": "牧场价格改动",
+            "unit_id": [1889, 1893, 1897],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 90]]]
         },
         {
             "note": "兵营, 靶场, 马厩 费用降低至 150",
@@ -935,6 +954,12 @@
             "note": "大庄园建造价格减少",
             "unit_id": [1711, 1720, 1734],
             "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", 50]]]
+        },
+        {
+            "note": "辽刀近战护甲增加",
+            "unit_id": [1920, 1922],
+            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 5]],
+                           ["type_50.displayed_melee_armour", 5]]
         }
     ],
     "tech_changes":
@@ -1004,6 +1029,21 @@
                            ["research_locations[0].research_time", 60],
                            ["research_locations[0].button_id", 8],
                            ["research_locations[0].hot_key_id", 18008]]
+        },
+        {
+            "note": "马厩科技添加新的空训练位置",
+            "tech_id": [39, 435],
+            "attributes": [["research_locations", "list_add", {"location_id": -1}]]
+        },
+        {
+            "note": "斡鲁朵骑兵研究费用增加",
+            "tech_id": 1007,
+            "attributes": [["resource_costs", "list_search", ["type", 3], ["amount", 800]]]
+        },
+        {
+            "note": "匈奴马在所有模式下均可获得",
+            "tech_id": 238,
+            "attributes": [["required_techs", [639, 307, -1, -1 ,-1, -1]]]
         }
     ],
     "resource_changes":

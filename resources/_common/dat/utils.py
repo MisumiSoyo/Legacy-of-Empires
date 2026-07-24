@@ -262,6 +262,75 @@ def find_in_list(obj_list, element_search_config):
     return results
 
 
+def applyListAdd(obj, list_attr_path, element_attrs):
+    """
+    在列表中添加新元素
+    
+    自动识别列表元素类型并创建实例，通过字典设置属性值
+    
+    参数:
+        obj: 父对象
+        list_attr_path: 列表属性路径，如 "creatable.resource_costs"
+        element_attrs: 新元素的属性字典，如 {"type": 0, "amount": 100}
+    """
+    from copy import copy
+    
+    try:
+        obj_list = getNestedAttribute(obj, list_attr_path)
+    except (AttributeError, IndexError, KeyError):
+        raise ValueError(f"无法找到列表属性: {list_attr_path}")
+    
+    if not isinstance(obj_list, list):
+        raise ValueError(f"属性 {list_attr_path} 不是列表，实际类型: {type(obj_list).__name__}")
+    
+    if len(obj_list) > 0:
+        elem_type = type(obj_list[0])
+        new_elem = copy(obj_list[0])
+    else:
+        elem_type = None
+        parent_obj = obj
+        tokens = parseAttrPath(list_attr_path)
+        for token in tokens[:-1]:
+            if token.startswith('[') and token.endswith(']'):
+                idx = int(token[1:-1])
+                parent_obj = parent_obj[idx]
+            else:
+                parent_obj = getattr(parent_obj, token)
+        
+        list_name = tokens[-1]
+        elem_type = infer_element_type(parent_obj, list_name)
+        
+        if elem_type is None:
+            raise ValueError(f"无法推断空列表 {list_attr_path} 的元素类型，请确保列表不为空或在代码中显式处理")
+        
+        new_elem = elem_type()
+    
+    for attr_name, attr_value in element_attrs.items():
+        setattr(new_elem, attr_name, attr_value)
+    
+    obj_list.append(new_elem)
+
+
+def infer_element_type(parent_obj, list_name):
+    """
+    从父对象和列表名推断列表元素类型
+    """
+    from genieutils.effect import EffectCommand
+    from genieutils.unit import AttackOrArmor, ResourceStorage
+    from genieutils.tech import ResearchLocation
+    
+    type_map = {
+        "effect_commands": EffectCommand,
+        "attacks": AttackOrArmor,
+        "armours": AttackOrArmor,
+        "resource_costs": ResourceStorage,
+        "resource_storages": ResourceStorage,
+        "research_locations": ResearchLocation,
+    }
+    
+    return type_map.get(list_name)
+
+
 def applyListElementChange(obj, list_attr_path, element_search_config, attr_change):
     """
     在列表/元组属性中查找匹配元素并修改或删除

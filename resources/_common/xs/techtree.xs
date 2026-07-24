@@ -587,6 +587,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, HerbalMedicineTechID);
             EnableTech(playerId, HalberdierID);
+            EnableTech(playerId, BloodlinesTechID);
             DisableTech(playerId, CashCropTechID);
             break;
         }

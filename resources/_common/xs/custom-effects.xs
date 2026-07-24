@@ -466,9 +466,6 @@ void EffectFunction10025(int playerId = -1)
     PaxMongolicaApplier(playerId, EliteGenitourID);
     xsResetTaskAmount();
 
-    SetAttribute(playerId, EliteKeshikID, cTrainLocation, StableID);
-    SetAttribute(playerId, EliteKeshikID, cTrainButton, 2);
-    SetAttribute(playerId, EliteKeshikID, cHotkeyId, WHotkeyID);
     EnableObject(playerId, EliteKeshikID);
 }
 
@@ -1433,7 +1430,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 346  2026.07.24");
+    xsChatData("Patch: 347  2026.07.24");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -1329,8 +1329,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "拜占庭获得血统",
-            "civilizations": ["Byzantines"],
+            "note": "拜占庭, 契丹获得血统",
+            "civilizations": ["Byzantines", "Khitans"],
             "tech_id": 435,
             "building_id": 101, 
             "Name": "Bloodlines",
@@ -2499,6 +2499,93 @@
             "building_id": 109,
             "Name": "Ganges Economy",
             "RequiredAge": 4
+        },
+        {
+            "note": "蒙古牧场",
+            "civilizations": "Mongols",
+            "building_id": 1897,
+            "Name": "Pasture",
+            "type": "add"
+        },
+        {
+            "note": "蒙古牧场斥候骑兵",
+            "civilizations": "Mongols",
+            "unit_id": 448,
+            "building_id": 1897,
+            "Name": "Scout Cavalry",
+            "RequiredAge": 2
+        },
+        {
+            "note": "蒙古牧场轻骑兵",
+            "civilizations": "Mongols",
+            "tech_id": 254,
+            "building_id": 1897,
+            "Name": "Light Cavalry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "蒙古牧场翼骑兵",
+            "civilizations": "Mongols",
+            "tech_id": 428,
+            "building_id": 1897,
+            "Name": "Hussar",
+            "RequiredAge": 4
+        },
+        {
+            "note": "蒙古精锐怯薛",
+            "civilizations": "Mongols",
+            "unit_id": 1230,
+            "building_id": [101, 1897],
+            "Name": "Elite Keshik",
+            "RequiredAge": 4
+        },
+        {
+            "note": "蒙古牧场骆驼兵",
+            "civilizations": "Mongols",
+            "unit_id": 329,
+            "building_id": 1897,
+            "Name": "Camel Rider",
+            "RequiredAge": 3
+        },
+        {
+            "note": "蒙古牧场重装骆驼兵",
+            "civilizations": "Mongols",
+            "tech_id": 236,
+            "building_id": 1897,
+            "Name": "Heavy Camel Rider",
+            "RequiredAge": 4
+        },
+        {
+            "note": "蒙古牧场草原枪兵",
+            "civilizations": "Mongols",
+            "unit_id": 1370,
+            "building_id": 1897,
+            "Name": "Steppe Lancer",
+            "RequiredAge": 3
+        },
+        {
+            "note": "蒙古牧场精锐草原枪兵",
+            "civilizations": "Mongols",
+            "tech_id": 715,
+            "building_id": 1897,
+            "Name": "Elite Steppe Lancer",
+            "RequiredAge": 4
+        },
+        {
+            "note": "蒙古牧场血统",
+            "civilizations": "Mongols",
+            "tech_id": 435,
+            "building_id": 1897,
+            "Name": "Bloodlines",
+            "RequiredAge": 2
+        },
+        {
+            "note": "蒙古牧场畜牧",
+            "civilizations": "Mongols",
+            "tech_id": 39,
+            "building_id": 1897,
+            "Name": "Husbandry",
+            "RequiredAge": 3
         }
     ]
 }

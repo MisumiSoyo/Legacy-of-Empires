@@ -130,13 +130,15 @@ def applyEffectChanges(data, effect_change_list):
 
 def applyAttributeChange(obj, attr_change):
     """
-    应用单个属性修改，支持列表元素搜索修改或删除
+    应用单个属性修改，支持列表元素搜索修改、删除或添加
     
     格式1: [path, value]                    -> 直接赋值
     格式2: [path, op, value]                -> 运算修改
     格式3: [list_path, "list_search", element_search, elem_attr_change]  
                                           -> 在列表中搜索元素并修改或删除
-                                          
+    格式4: [list_path, "list_add", {"attr1": val1, "attr2": val2, ...}]  
+                                          -> 在列表中添加新元素
+    
     element_search 支持:
         - 单层列表: ["field", "op", value] 或 ["field", value]  单条件
         - 两层列表: [["field1", "op1", val1], ["field2", "op2", val2]]  多条件AND
@@ -154,14 +156,15 @@ def applyAttributeChange(obj, attr_change):
     elif len(attr_change) == 3:
         attr_path, op, value = attr_change
         
-        # 检查是否是列表搜索操作
         if op == "list_search":
-            # attr_change = ["resource_costs", "list_search", element_search, elem_attr_change]
-            # 但这里只有3个元素，说明格式不对，需要4个元素
             raise ValueError(
                 "list_search 格式需要4个元素: [list_path, 'list_search', element_search_config, elem_attr_change]. "
                 "例如: ['resource_costs', 'list_search', ['type', '=', 0], ['amount', 'add', 50]]"
             )
+        
+        if op == "list_add":
+            applyListAdd(obj, attr_path, value)
+            return
         
         current = getNestedAttribute(obj, attr_path)
         if op == "set":
@@ -177,10 +180,12 @@ def applyAttributeChange(obj, attr_change):
     elif len(attr_change) == 4:
         list_path, op, element_search, elem_attr_change = attr_change
         
-        if op != "list_search":
-            raise ValueError(f"4元素格式只支持 list_search 操作，当前 op={op}")
-        
-        applyListElementChange(obj, list_path, element_search, elem_attr_change)
+        if op == "list_search":
+            applyListElementChange(obj, list_path, element_search, elem_attr_change)
+        elif op == "list_add":
+            applyListAdd(obj, list_path, element_search)
+        else:
+            raise ValueError(f"4元素格式只支持 list_search 和 list_add 操作，当前 op={op}")
     
     else:
         raise ValueError(f"不支持的属性修改格式: {attr_change}")

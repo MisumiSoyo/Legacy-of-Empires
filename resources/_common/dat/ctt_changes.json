@@ -3155,24 +3155,6 @@
             "Link ID": 687
         },
         {
-            "note": "蒙古黑暗时代可建造马厩",
-            "action": "modify",
-            "civ_id": "MONGOLS",
-            "Node ID": 101,
-            "Use Type": "Building",
-            "Age ID": 1,
-            "Building ID": 101,
-            "Link ID": -1
-        },
-        {
-            "note": "蒙古黑暗时代斥候骑兵",
-            "action": "modify",
-            "civ_id": "MONGOLS",
-            "Node ID": 448,
-            "Use Type": "Unit",
-            "Age ID": 1
-        },
-        {
             "note": "猛安谋克",
             "action": "add",
             "civ_id": "JURCHENS",
@@ -3522,10 +3504,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "契丹获得钻井采金法, 脚踏起重机, 造船匠, 草药",
+            "note": "契丹获得钻井采金法, 脚踏起重机, 造船匠, 草药, 血统",
             "action": "modify",
             "civ_id": "KHITANS",
-            "Node ID": [54, 182, 373, 441],
+            "Node ID": [54, 182, 373, 435, 441],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
