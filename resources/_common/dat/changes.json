@@ -1032,7 +1032,7 @@
         },
         {
             "note": "马厩科技添加新的空训练位置",
-            "tech_id": [39, 435],
+            "tech_id": [39, 236, 254, 428, 435, 715],
             "attributes": [["research_locations", "list_add", {"location_id": -1}]]
         },
         {
