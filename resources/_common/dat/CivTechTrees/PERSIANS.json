@@ -2222,34 +2222,18 @@
             "Trigger Tech ID": 367
         },
         {
+            "Name": "Petard",
+            "Node Type": "Unit",
+            "Link Node Type": "BuildingTech",
+            "Draw Node Type": "UnitTech",
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted",
+            "Name String ID": 14660,
             "Age ID": 3,
             "Building ID": 82,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800038,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Assassin",
-            "Name String ID": 700038,
-            "Node ID": 4078,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 163,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
+            "Help String ID": 105660,
+            "Node ID": 440,
+            "Picture Index": 113
         },
         {
             "Name": "Trebuchet (Packed)",

@@ -825,6 +825,27 @@
             "effect_id": 498,
             "match": [5, -1, 36, 100, "any"],
             "modifications": ["d", "set", 0.94117647]
+        },
+        {
+            "type": "modify",
+            "name": "亚美尼亚一级采矿科技加成调整",
+            "effect_id": [958, 959],
+            "match": [5, "any", -1, 13, "any"],
+            "modifications": ["d", "set", 1.06521739]
+        },
+        {
+            "type": "modify",
+            "name": "亚美尼亚一二级伐木加成调整",
+            "effect_id": 956,
+            "match": [5, "any", -1, 13, "any"],
+            "modifications": ["d", "set", 1.08333333]
+        },
+        {
+            "type": "modify",
+            "name": "亚美尼亚三级伐木加成调整",
+            "effect_id": 957,
+            "match": ["any", "any", "any", "any", "any"],
+            "modifications": ["d", "set", 1.04545455]
         }
     ],
     "unit_changes":
@@ -960,6 +981,12 @@
             "unit_id": [1920, 1922],
             "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 5]],
                            ["type_50.displayed_melee_armour", 5]]
+        },
+        {
+            "note": "格查战士盾牌增加",
+            "unit_id": [2562, 2564],
+            "attributes": [["type_50.armours", "list_search", ["class_", 3], ["amount", "add", 1]],
+                           ["creatable.displayed_pierce_armour", "add", 1]]
         }
     ],
     "tech_changes":

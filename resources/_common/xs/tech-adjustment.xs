@@ -363,7 +363,7 @@ void ButalmapuCivCustomChanges(int playerId = -1)
         MulAttribute(playerId, HandCannoneerID, cResourceCost, 0.85);
     }
 
-    if ((playerCiv == cIndians) || (playerCiv == cBengalis) || (playerCiv == cRomans) || (isResearched(playerId, WingedHussarTechID)))
+    if ((playerCiv == cIndians) || (playerCiv == cBengalis) || (playerCiv == cDravidians) || (playerCiv == cRomans) || (isResearched(playerId, WingedHussarTechID)))
     {
         MulAttribute(playerId, ScoutCavalryID, cResourceCost, 0.85);
         MulAttribute(playerId, LightCavalryID, cResourceCost, 0.85);

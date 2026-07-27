@@ -177,36 +177,6 @@
             "Use Type": "Unit"
         },
         {
-            "note": "阿萨辛",
-            "action": "add",
-            "civ_id": ["PERSIANS", "SARACENS"],
-            "Age ID": 3,
-            "Building ID": 82,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800038,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Assassin",
-            "Name String ID": 700038,
-            "Node ID": 4078,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 163,
-            "Prerequisite IDs": [0, 0, 0, 0, 0],
-            "Prerequisite Types": ["None", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit",
-            "position": "before",
-            "target_id": 440
-        },
-        {
-            "note": "波斯, 萨拉森移除爆破兵",
-            "action": "delete",
-            "civ_id": ["PERSIANS", "SARACENS"],
-            "Node ID": 440,
-            "Use Type": "Unit"
-        },
-        {
             "note": "射击军",
             "action": "add",
             "civ_id": "SLAVS",
@@ -1482,7 +1452,7 @@
             "Use Type": "Tech"
         },
         {
-            "note": "徳夫希尔梅",
+            "note": "德夫希尔梅",
             "action": "add",
             "civ_id": "TURKS",
             "Age ID": 3,
@@ -1493,7 +1463,7 @@
             "Link Node Type": "BuildingTech",
             "Name": "Devsirme",
             "Name String ID": 500050,
-            "Node ID": 3076,
+            "Node ID": 3133,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
@@ -6625,6 +6595,29 @@
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "note": "贝都因剑士",
+            "action": "add",
+            "civ_id": "SARACENS",
+            "Age ID": 2,
+            "Building ID": 12,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800141,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Bedouin Swordsman",
+            "Name String ID": 700141,
+            "Node ID": 4156,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 186,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 359
         }
     ]
 }

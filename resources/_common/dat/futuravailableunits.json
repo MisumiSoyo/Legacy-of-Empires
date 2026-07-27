@@ -31224,6 +31224,10 @@
                         "ID": 358,
                         "Name": "Pikeman",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Bedouin Swordsman",
+                        "ID": 4156
                     }
                 ]
             },

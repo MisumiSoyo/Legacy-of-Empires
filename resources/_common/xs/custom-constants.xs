@@ -191,6 +191,7 @@ extern const int ConscriptedArmyID = 4152;
 extern const int ConscriptedArmy2ID = 4153;
 extern const int AmazonArcherID = 4154;
 extern const int EliteAmazonArcherID = 4155;
+extern const int BedouinSwordsmanID = 4156;
 extern const int ManilaGalleonID = 4157;
 extern const int ProjectileGuanNingCavalryID = 4158;
 extern const int IronHawkID = 4159;
