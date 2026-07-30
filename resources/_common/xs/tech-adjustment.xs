@@ -371,7 +371,7 @@ void ButalmapuCivCustomChanges(int playerId = -1)
     }
 
     if ((playerCiv == cJapanese) || (playerCiv == cTurks) || (playerCiv == cKoreans) || (playerCiv == cEthiopians) || (playerCiv == cVietnamese)
-        || (isResearched(playerId, CrusaderKnightTechID)))
+        || (playerCiv == cBurmese) || (isResearched(playerId, CrusaderKnightTechID)))
     {
         MulAttribute(playerId, KnightID, cResourceCost, 0.85);
         MulAttribute(playerId, CavalierID, cResourceCost, 0.85);

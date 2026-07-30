@@ -31227,6 +31227,7 @@
                     },
                     {
                         "Name": "Bedouin Swordsman",
+                        "RequiredAge": 2,
                         "ID": 4156
                     }
                 ]

@@ -971,6 +971,66 @@
             "Trigger Tech ID": 428
         },
         {
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800142,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Bamar Rider",
+            "Name String ID": 700142,
+            "Node ID": 4091,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 181,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800143,
+            "Link ID": 4091,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Bamar Rider",
+            "Name String ID": 700143,
+            "Node ID": 4092,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 181,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3494,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Knight",
             "Node Type": "Unit",
             "Link Node Type": "BuildingTech",

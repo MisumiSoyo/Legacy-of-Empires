@@ -536,10 +536,10 @@
             "target_id": 4080
         },
         {
-            "note": "土耳其, 高丽, 日本, 越南, 亚美尼亚移除骑士系",
+            "note": "土耳其, 高丽, 日本, 越南, 亚美尼亚, 缅甸移除骑士系 (暂时取消)",
             "action": "delete",
-            "civ_id": ["TURKS", "KOREANS", "JAPANESE", "VIETNAMESE", "ARMENIANS"],
-            "Node ID": [38, 283, 569],
+            "civ_id": ["TURKS", "KOREANS", "JAPANESE", "VIETNAMESE", "ARMENIANS", "KHMER", "BURMESE"],
+            "Node ID": [],
             "Use Type": "Unit"
         },
         {
@@ -6618,6 +6618,52 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 359
+        },
+        {
+            "note": "缅族骑手",
+            "action": "add",
+            "civ_id": "BURMESE",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800142,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Bamar Rider",
+            "Name String ID": 700142,
+            "Node ID": 4091,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 181,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 441
+        },
+        {
+            "note": "精锐缅族骑手",
+            "action": "add",
+            "civ_id": "BURMESE",
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800143,
+            "Link ID": 4091,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Bamar Rider",
+            "Name String ID": 700143,
+            "Node ID": 4092,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 181,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3494,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 4091
         }
     ]
 }
