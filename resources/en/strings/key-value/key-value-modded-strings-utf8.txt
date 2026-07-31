@@ -122,7 +122,7 @@
 //	Japanese
 120154 "Infantry civilization\n\n• Fishing Ships +100% HP; Fishermen and Fishing Ships +5/10/15/20% work rate at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps cost -50%\n• Infantry -25% reload time starting in Feudal Age\n• Cavalry Archer class units +2 attack vs Archers (excepts Skirmishers and Genitours)\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Archer that ignores base armor), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Mounted Samurai (Heavy cavalry), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2)\n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Enable you to train Soheis, but villagers -10% work rate)\n• Yari Cavalry (Light Cavalry +9 attack vs Cavalry)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 //	Chinese
-120155 "All-around and Gunpowder civilization\n\n• Start with +1 villager\n• Technologies -15% cost\n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n• Hei Guang Cavalry line +15% attack speed\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flamethrower (Siege weapon)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)\n• Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)\n• Yuan Dynasty (Land units +8% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
+120155 "All-around and Gunpowder civilization\n\n• Start with +1 villager\n• Technologies -15% cost\n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n• Hei Guang Cavalry line +15% attack speed\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flamethrower (Siege weapon), Yuan Raider (Light Cavalry)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)\n• Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)\n• Yuan Dynasty (Land units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Can train Yuan Dynasty Raider)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
 //	Byzantines
 120156 "All-around civilization\n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age\n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost\n• Fire Ships, Flamethrowers and Dromons +25% attack speed\n• Advance to Imperial Age -33% costs\n• Town Watch, Town Patrol and Town Defense free\n• Can train an additional 4 unique units since Castle Age; You need to spend gold to train 3 at once\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries and can cause blast damage), Varangian Guard (Infantries that gain gold from killing units)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)\n• Logistica (Cataphracts, Knight-line units and Varangian Guards +6 attack vs Infantry; Cataphracts +2 area damage)\n• Polutasvarf (Military units can loot 30 gold from every destroyed building)\n• Golden Horn Tower (Trade units can additionally generate 15% stone)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 //	Persians
@@ -130,7 +130,7 @@
 //	Saracens
 120158 "Camel and Naval civilization\n\n• Market -100 wood cost, and trade cost only 5%\n• Transport Ships +100% HP, carry capacity +100%\n• All camel units +25% HP\n• Galley-Line -20% reload time\n• Get 30 food from each trade unit produced\n• Each completed research produces 3 wood, food and gold per minute\n• Petards -33% cost and train time\n\n<b>Unique Unit: <b>\n• Mameluke (Ranged camel rider), Bedouin Swordsman (Light infantry)\n\n<b>Unique Techs: <b>\n• Bimaristan (Monks passively heal multiple nearby units)\n• Counterweights (Trebuchets and Mangonel-line units +15% all damage)\n• Suftaja (Spawn 8 trade carts, with each market +1)\n• Red Sea Fleet (Warships -20% population space)\n\n<b>Team bonus: <b>\nArcher class unit +3 attack vs Buildings"
 //	Turks
-120159 "Gunpowder civilization\n\n• Gunpowder units +25% HP; researching gunpowder technologies -50% cost; Chemistry free\n• Gold miners +35% work rate\n• Scout Cavalry line upgrades free, and +1 pierce armor\n• Elite Steppe Lancer and Heavy Camel Rider upgrades are available in Castle Age, with a research speed increase of +200%\n• Can get gold equivalent to 5% of other players' trade income\n\n<b>Unique Unit:<b>\n• Janissary (High attack hand cannon), Sipahi (Cavalries that can reduce nearby enemy ranged soldiers' attack speed), Mehter (Cavalry that can strengthen allies)\n\n<b>Unique Techs: <b>\n• Sipahi (Cavalry Archers +20 HP)\n• Artillery (Cannon Tower, Bombard Cannon and Cannon Galley +2 max range)\n• Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)\n• Sail on Land (Warships can move at 50% speed on land)\n\n<b>Team bonus: <b>\nGunpowder units +25% creation speed"
+120159 "Gunpowder civilization\n\n• Gunpowder units +25% HP; researching gunpowder technologies -50% cost; Chemistry free\n• Gold miners +33% work rate\n• Scout Cavalry line upgrades free, and +1 pierce armor\n• Elite Steppe Lancer and Heavy Camel Rider upgrades are available in Castle Age, with a research speed increase of +200%\n• Can get gold equivalent to 5% of other players' trade income\n• Siege Workshop can produce and upgrade warships, and warships can move on land at 33% speed\n\n<b>Unique Unit:<b>\n• Janissary (High attack hand cannon), Sipahi (Cavalries that can reduce nearby enemy ranged soldiers' attack speed), Mehter (Cavalry that can strengthen allies)\n\n<b>Unique Techs: <b>\n• Sipahi (Cavalry Archers +20 HP)\n• Artillery (Cannon Tower, Bombard Cannon and Cannon Galley +2 max range)\n• Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)\n• Steppe Legacy (Steppe Lancer returns 50% food cost when defeated)\n\n<b>Team bonus: <b>\nGunpowder units +25% creation speed"
 //	Vikings
 120160 "Infantry and Naval civilization\n\n• War Ships -10/15/20% cost at Feudal/Castle/Imperial Age\n• Wheelbarrow, Hand Cart free\n• Arson, Squires and Siege Training can be researched an age in advance\n• +5/10/15/20/25 basical resources output after 30/75/135/210/300 units being killed by enemies\n\n<b>Unique Units:<b>\n• Berserk (Infantry with regeneration), Longboat (War ship with multiple arrows), Jarl (Cavalries that can throw axes), Wooden Fortress (unique tower)\n\n<b>Unique Techs: <b>\n• Chieftains (Infantry +5 damage vs cavalries, +4 damage vs camels, gain 5 gold for each killed villager and 20 gold for monks and trade units.)\n• Bogsveigar (Archer-line and Longboats +1 attack)\n• Frozen Sea Dominance (Transport Ships +250% hit points; Warships can loot 40 gold when killing enemies or destroying buildings)\n• Stockfish Trade (Fishermen and Fishing Ships convert 50% food production into gold)\n\n<b>Team bonus: <b>\nDock cost -15%"
 //	Mongols
@@ -377,7 +377,7 @@
 500156 "Veteran Heavy Skirmisher"
 500157 "Elite Heavy Skirmisher"
 500158 "Fervor of Battle"
-500159 "Sail on Land"
+500159 "Steppe Legacy"
 500160 "Train Guecha Warrior"
 500161 "Train Temple Guard"
 500162 "Train Kona"
@@ -579,7 +579,7 @@
 501128 "Research Hill Training (Knight-line units +45 HP regeneration per minute)"
 501129 "Enter Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)"
 501130 "Enter Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)"
-501131 "Enter Yuan Dynasty (Land units +8% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)"
+501131 "Enter Yuan Dynasty (Land units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Can train Yuan Dynasty Raider)"
 501132 "Enter Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guanning Cavalry; All military units +10% HP)"
 501133 "Research Greuthungi Cavalry (Knight-line units -80% food cost)"
 501134 "Upgrade to Elephant Archer"
@@ -607,7 +607,7 @@
 501156 "Upgrade to Veteran Heavy Skirmisher"
 501157 "Upgrade to Elite Heavy Skirmisher"
 501158 "Research Fervor of Battle (Mounted units can increase nearby infantries' movement speed by 15%)"
-501159 "Research Sail on Land (Warships can move at 50% speed on land)"
+501159 "Research Steppe Legacy (Steppe Lancer returns 50% food cost when defeated)"
 501160 "Switch to train Guecha Warrior"
 501161 "Switch to train Temple Guard"
 501162 "Switch to train Kona"
@@ -807,10 +807,10 @@
 521126 "Research <b>Kipchak Reinforcements<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrade Cavalry Archers to Kipchaks and spawn a Kipchak at each Archery Range."
 521127 "Research <b>Foederati Army<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nEnable your team to train Foederati units. Receive 7 food and gold from killing enemies with Foederati units.\n\n<GREY>If multiple players researched this technology, the rewards will be divided equally."
 521128 "Research <b>Hill Training<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nKnight-line units +45 HP regeneration per minute."
-521129 "Enter <b>Tang Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nInfantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)"
-521130 "Enter <b>Song Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nVillagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)"
-521131 "Enter <b>Yuan Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nLand units +8% movement speed; Upgrade all military units to Castle Age quality for free; Immediately get all cavalry armor technologies in Blacksmith)"
-521132 "Enter <b>Ming Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nImmediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)"
+521129 "Enter <b>Tang Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nInfantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost."
+521130 "Enter <b>Song Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nVillagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack."
+521131 "Enter <b>Yuan Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nLand units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Can train Yuan Dynasty Raider."
+521132 "Enter <b>Ming Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nImmediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP."
 521133 "Research <b>Greuthungi Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nKnight-line units -80% food cost."
 521134 "Upgrade to <b>Elephant Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Early Elephant Archers and lets you create Elephant Archers."
 521135 "Research <b>Boyar's Fortitude<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nKnight-line units and Boyars +6 attack vs buildings."
@@ -837,7 +837,7 @@
 521156 "Upgrade to <b>Veteran Heavy Skirmisher<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Heavy Skirmishers and lets you create Veteran Heavy Skirmishers."
 521157 "Upgrade to <b>Elite Heavy Skirmisher<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Heavy Skirmishers and lets you create Elite Heavy Skirmishers."
 521158 "Research <b>Fervor of Battle<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nMounted units can increase nearby infantries' movement speed by 15%."
-521159 "Research <b>Sail on Land<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nWarships can move at 50% speed on land."
+521159 "Research <b>Steppe Legacy<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nSteppe Lancer returns 50% food cost when defeated."
 521160 "Switch to train Guecha Warriors. Automatically spawn 1 Guecha Warrior every 70 seconds.\n(Need Castle)"
 521161 "Switch to train Temple Guards. Automatically spawn 1 Temple Guard every 80 seconds."
 521162 "Switch to train Konas. Automatically spawn 1 Kona every 75 seconds.\n(Need Castle)"
@@ -1062,6 +1062,7 @@
 700141 "Bedouin Swordsman"
 700142 "Bamar Rider"
 700143 "Elite Bamar Rider"
+700144 "Yuan Raider"
 
 
 
@@ -1203,6 +1204,9 @@
 701139 "Create Amazon Archer"
 701140 "Create Elite Amazon Archer"
 701141 "Create Bedouin Swordsman"
+701142 "Create Bamar Rider"
+701143 "Create Elite Bamar Rider"
+701144 "Create Yuan Raider"
 
 
 
@@ -1488,5 +1492,9 @@
 721142 "Create <b>Bamar Rider<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nBurmese unique medium cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
 
 721143 "Create <b>Elite Bamar Rider<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nBurmese unique medium cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
+
+721144 "Create <b>Yuan Raider<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nChinese unique light cavalry, requires Yuan Dynasty to train.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.66 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Light Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +6 vs Villagers and Trade Units."
+
+
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."

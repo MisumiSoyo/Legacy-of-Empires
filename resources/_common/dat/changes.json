@@ -448,7 +448,7 @@
             "name": "土耳其村民采金效率加成调整",
             "effect_id": 295,
             "match": [5, "any", -1, 13, "any"],
-            "modifications": ["d", "set", 1.35]
+            "modifications": ["d", "set", 1.33]
         },
         {
             "type": "delete",
@@ -1071,6 +1071,11 @@
             "note": "匈奴马在所有模式下均可获得",
             "tech_id": 238,
             "attributes": [["required_techs", [639, 307, -1, -1 ,-1, -1]]]
+        },
+        {
+            "note": "战舰升级科技添加新的空训练位置",
+            "tech_id": [34, 35, 244, 905],
+            "attributes": [["research_locations", "list_add", {"location_id": -1}]]
         }
     ],
     "resource_changes":

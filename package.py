@@ -21,6 +21,9 @@ EXCLUDE_FILE_PATTERNS = [
     "changes.json",
     "*_changes.json",
     "key-value-merge.txt",
+    "*.doc",
+    "*.docx",
+    "*.xlsx",
 ]
 
 def build_exclude_args():

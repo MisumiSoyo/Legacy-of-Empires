@@ -1473,7 +1473,7 @@
             "Use Type": "Tech"
         },
         {
-            "note": "旱地行舟",
+            "note": "草原遗产",
             "action": "add",
             "civ_id": "TURKS",
             "Age ID": 4,
@@ -1482,7 +1482,7 @@
             "Help String ID": 600159,
             "Link ID": 3133,
             "Link Node Type": "BuildingTech",
-            "Name": "Sail on Land",
+            "Name": "Steppe Legacy",
             "Name String ID": 500159,
             "Node ID": 3134,
             "Node Status": "ResearchedCompleted",
@@ -6664,6 +6664,29 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4091
+        },
+        {
+            "note": "元朝掠夺者",
+            "action": "add",
+            "civ_id": "CHINESE",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800144,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Yuan Raider",
+            "Name String ID": 700144,
+            "Node ID": 4163,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 255,
+            "Prerequisite IDs": [3095, 0, 0, 0, 0],
+            "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1946
         }
     ]
 }

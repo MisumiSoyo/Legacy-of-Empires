@@ -26,6 +26,9 @@ EXCLUDE_FILE_PATTERNS = [
     "dr_changes.json",
     "fau_changes.json",
     "im_changes.json",
+    "*.doc",
+    "*.docx",
+    "*.xlsx",
 ]
 
 def build_robocopy_command():

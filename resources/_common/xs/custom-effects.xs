@@ -146,7 +146,7 @@ void EffectFunction10011(int playerId = -1)
 //  10012 - Yuan Dynasty
 void EffectFunction10012(int playerId = -1)
 {
-    float MovementSpeedBonus = 1.08;
+    float MovementSpeedBonus = 1.10;
     MulAttribute(playerId, cArcherClass, cMovementSpeed, MovementSpeedBonus);
     MulAttribute(playerId, cBuildingClass, cMovementSpeed, MovementSpeedBonus);
     MulAttribute(playerId, cVillagerClass, cMovementSpeed, MovementSpeedBonus);
@@ -171,13 +171,13 @@ void EffectFunction10012(int playerId = -1)
 
     MulAttribute(playerId, cTradeCartClass, cWorkRate, MovementSpeedBonus);
 
-    SetTechAuto(playerId, ManAtArmsTechID);
-    SetTechAuto(playerId, LongSwordmanTechID);
-    SetTechAuto(playerId, PikemanTechID);
-    SetTechAuto(playerId, CrossbowmanTechID);
-    SetTechAuto(playerId, EliteSkirmisherTechID);
-    SetTechAuto(playerId, LightCavalryTechID);
-    SetTechAuto(playerId, GalleonTechID);
+    //SetTechAuto(playerId, ManAtArmsTechID);
+    //SetTechAuto(playerId, LongSwordmanTechID);
+    //SetTechAuto(playerId, PikemanTechID);
+    //SetTechAuto(playerId, CrossbowmanTechID);
+    //SetTechAuto(playerId, EliteSkirmisherTechID);
+    //SetTechAuto(playerId, LightCavalryTechID);
+    //SetTechAuto(playerId, MediumWarshipsTechID);
 
     if (isResearched(playerId, ScaleBardingArmorTechID) == false)
         ForceResearchTech(playerId, ScaleBardingArmorTechID, true);
@@ -185,6 +185,10 @@ void EffectFunction10012(int playerId = -1)
         ForceResearchTech(playerId, ChainBardingArmorTechID, true);
     if (isResearched(playerId, PlateBardingArmorTechID) == false)
         ForceResearchTech(playerId, PlateBardingArmorTechID, true);
+    if (isResearched(playerId, ParthianTacticsTechID) == false)
+        ForceResearchTech(playerId, ParthianTacticsTechID, true);
+
+    EnableObject(playerId, YuanRaiderID);
 
     DisableTech(playerId, TangDynastyTechID);
     DisableTech(playerId, SongDynastyTechID);
@@ -356,7 +360,7 @@ void EffectFunction10020(int playerId = -1)
 }
 
 
-//  10021 - Sail on Land
+//  10021 - C-Bonus, Sail on Land
 void EffectFunction10021(int playerId = -1)
 {
     SetAttribute(playerId, cWarshipClass, cTerrainTable, 0);
@@ -364,9 +368,33 @@ void EffectFunction10021(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrTaskType, cTaskTypeAmphibious);
     xsTaskAmount(cTaskAttrTerrain, -32);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.5);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.33);
     xsModifyObjectTasks(cWarshipClass, playerId, 1000);
     xsResetTaskAmount();
+
+    AddTrainLocation(playerId, GalleyID, true, SiegeWorkshopID, NullInt, QKeyID + 20, QHotkeyID);
+    AddTrainLocation(playerId, WarGalleyID, true, SiegeWorkshopID, NullInt, QKeyID + 20, QHotkeyID);
+    AddTrainLocation(playerId, GalleonID, true, SiegeWorkshopID, NullInt, QKeyID + 20, QHotkeyID);
+    AddTrainLocation(playerId, FireGalleyID, true, SiegeWorkshopID, NullInt, WKeyID + 20, WHotkeyID);
+    AddTrainLocation(playerId, FireShipID, true, SiegeWorkshopID, NullInt, WKeyID + 20, WHotkeyID);
+    AddTrainLocation(playerId, FastFireShipID, true, SiegeWorkshopID, NullInt, WKeyID + 20, WHotkeyID);
+    AddTrainLocation(playerId, HulkID, true, SiegeWorkshopID, NullInt, EKeyID + 20, EHotkeyID);
+    AddTrainLocation(playerId, WarHulkID, true, SiegeWorkshopID, NullInt, EKeyID + 20, EHotkeyID);
+    AddTrainLocation(playerId, CarrackID, true, SiegeWorkshopID, NullInt, EKeyID + 20, EHotkeyID);
+    AddTrainLocation(playerId, CannonGalleonID, true, SiegeWorkshopID, NullInt, RKeyID + 20, RHotkeyID);
+    AddTrainLocation(playerId, EliteCannonGalleonID, true, SiegeWorkshopID, NullInt, RKeyID + 20, RHotkeyID);
+    AddTrainLocation(playerId, DemolitionRaftID, true, SiegeWorkshopID, NullInt, AKeyID + 20, AHotkeyID);
+    AddTrainLocation(playerId, DemolitionShipID, true, SiegeWorkshopID, NullInt, AKeyID + 20, AHotkeyID);
+    AddTrainLocation(playerId, HeavyDemolitionShipID, true, SiegeWorkshopID, NullInt, AKeyID + 20, AHotkeyID);
+
+    xsEffectAmount(cModifyTech, MediumWarshipsTechID, cAttrSetLocation, SiegeWorkshopID);
+    xsEffectAmount(cModifyTech, HeavyWarshipsTechID, cAttrSetLocation, SiegeWorkshopID);
+    xsEffectAmount(cModifyTech, DemolitionShipTechID, cAttrSetLocation, SiegeWorkshopID);
+    xsEffectAmount(cModifyTech, HeavyDemolitionShipTechID, cAttrSetLocation, SiegeWorkshopID);
+    xsEffectAmount(cModifyTech, MediumWarshipsTechID, cAttrSetButton, XKeyID + 20);
+    xsEffectAmount(cModifyTech, HeavyWarshipsTechID, cAttrSetButton, XKeyID + 20);
+    xsEffectAmount(cModifyTech, DemolitionShipTechID, cAttrSetButton, CKeyID + 20);
+    xsEffectAmount(cModifyTech, HeavyDemolitionShipTechID, cAttrSetButton, CKeyID + 20);
 }
 
 
@@ -564,6 +592,21 @@ void EffectFunction10029(int playerId = -1)
     SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.81 * 1.15 * 0.40);
     SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.81 * 1.15 * 0.10);
     SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.81 * 1.15 * 0.20);
+}
+
+
+//  10030 - Steppe Legacy
+void EffectFunction10030(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000021);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.5);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTask(SteppeLancerID, cTaskTypeRefund, -1, playerId);
+    xsTask(EliteSteppeLancerID, cTaskTypeRefund, -1, playerId);
+    xsResetTaskAmount();
 }
 
 
@@ -1430,7 +1473,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 351  2026.07.31");
+    xsChatData("Patch: 352  2026.08.01");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
@@ -1438,6 +1481,4 @@ void main()
     int i = 0;
     for (i = 0; <= xsGetNumPlayers())
         SetAttribute(i, TimerBuildingID, cRegenerationHpPercent, -267);
-    if (xsGetObjectCount(1, TimerBuildingID) <= 0)
-        PrintMessage("" +  xsCreateUnit(TimerBuildingID, 1, pos, false, false));
 }

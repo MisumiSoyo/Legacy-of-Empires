@@ -141,9 +141,9 @@ void ForceResearchTech(int playerId = -1, int TechID = -1, bool SetAuto = false)
 {
     if (isResearched(playerId, TechID) == false)
     {
+        xsEffectAmount(cModifyTech, TechID, cAttrSetState, cAttributeResearch, playerId);
         if (SetAuto)
             xsEffectAmount(cModifyTech, TechID, cAttrSetTime, 0, playerId);
-        xsEffectAmount(cModifyTech, TechID, cAttrSetState, cAttributeResearch, playerId);
     }
 }
 

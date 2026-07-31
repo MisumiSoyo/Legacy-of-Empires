@@ -9378,6 +9378,11 @@
                         "Name": "Heavy Hei Guang Cavalry",
                         "RequiredAge": 4,
                         "ID": 1946
+                    },
+                    {
+                        "Name": "Yuan Raider",
+                        "RequiredAge": 3,
+                        "ID": 4163
                     }
                 ]
             },
@@ -38062,6 +38067,26 @@
                         "ID": 239,
                         "Name": "Heavy Scorpion",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Galley",
+                        "RequiredAge": 3,
+                        "ID": 34
+                    },
+                    {
+                        "Name": "Galleon",
+                        "RequiredAge": 4,
+                        "ID": 35
+                    },
+                    {
+                        "Name": "Demolition Ship",
+                        "RequiredAge": 3,
+                        "ID": 905
+                    },
+                    {
+                        "Name": "Heavy Demolition Ship",
+                        "RequiredAge": 4,
+                        "ID": 244
                     }
                 ],
                 "Units": [
@@ -38661,7 +38686,7 @@
                         "ID": 3022
                     },
                     {
-                        "Name": "Sail on Land",
+                        "Name": "Steppe Legacy",
                         "RequiredAge": 4,
                         "ID": 3134
                     }

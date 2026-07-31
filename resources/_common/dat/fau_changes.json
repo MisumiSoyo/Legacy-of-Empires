@@ -1788,11 +1788,11 @@
             "RequiredAge": 4
         },
         {
-            "note": "旱地行舟",
+            "note": "草原遗产",
             "civilizations": "Turks",
             "tech_id": 3134,
             "building_id": 109,
-            "Name": "Sail on Land",
+            "Name": "Steppe Legacy",
             "RequiredAge": 4
         },
         {
@@ -2594,6 +2594,46 @@
             "building_id": 12,
             "Name": "Bedouin Swordsman",
             "RequiredAge": 2
+        },
+        {
+            "note": "土耳其攻城武器厂中型战船",
+            "civilizations": "Turks",
+            "tech_id": 34,
+            "building_id": 49,
+            "Name": "Galley",
+            "RequiredAge": 3
+        },
+        {
+            "note": "土耳其攻城武器厂重型战船",
+            "civilizations": "Turks",
+            "tech_id": 35,
+            "building_id": 49,
+            "Name": "Galleon",
+            "RequiredAge": 4
+        },
+        {
+            "note": "土耳其攻城武器厂爆破船",
+            "civilizations": "Turks",
+            "tech_id": 905,
+            "building_id": 49,
+            "Name": "Demolition Ship",
+            "RequiredAge": 3
+        },
+        {
+            "note": "土耳其攻城武器厂重型爆破船",
+            "civilizations": "Turks",
+            "tech_id": 244,
+            "building_id": 49,
+            "Name": "Heavy Demolition Ship",
+            "RequiredAge": 4
+        },
+        {
+            "note": "元朝掠夺者",
+            "civilizations": "Chinese",
+            "unit_id": 4163,
+            "building_id": 101,
+            "Name": "Yuan Raider",
+            "RequiredAge": 3
         }
     ]
 }

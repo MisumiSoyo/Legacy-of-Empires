@@ -1047,6 +1047,36 @@
             "Use Type": "Unit"
         },
         {
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800144,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Yuan Raider",
+            "Name String ID": 700144,
+            "Node ID": 4163,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 255,
+            "Prerequisite IDs": [
+                3095,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "Tech",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
             "Age ID": 4,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
