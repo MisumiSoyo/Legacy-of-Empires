@@ -31984,6 +31984,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },

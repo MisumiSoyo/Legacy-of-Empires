@@ -1635,8 +1635,8 @@
             "type": "delete"
         },
         {
-            "note": "孟加拉, 不列颠, 法兰克, 马扎尔, 土耳其获得钻井采石法",
-            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars", "Turks"],
+            "note": "孟加拉, 不列颠, 法兰克, 马扎尔, 土耳其, 萨拉森获得钻井采石法",
+            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars", "Turks", "Saracens"],
             "tech_id": 279,
             "building_id": 584,
             "Name": "Stone Shaft Mining",

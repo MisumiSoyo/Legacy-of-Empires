@@ -171,6 +171,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HeavyScorpionTechID);
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, HeatedShotTechID);
+            EnableTech(playerId, StoneShaftMiningTechID);
             break;
         }
         case cTurks:
