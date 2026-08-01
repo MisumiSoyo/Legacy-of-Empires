@@ -611,6 +611,7 @@ void EffectFunction10001(int playerId = -1)
         }
         case cTupi:
         {
+            EnableTech(playerId, BlastFurnaceTechID);
             DisableTech(playerId, WheelBarrowTechID);
             DisableTech(playerId, HandCartTechID);
             break;

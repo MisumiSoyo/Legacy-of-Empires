@@ -878,8 +878,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "马里, 高丽, 拜占庭, 瞿折罗, 越南, 立陶宛, 穆伊斯卡获得鼓风炉",
-            "civilizations": ["Koreans", "Malians", "Byzantines", "Gurjaras", "Vietnamese", "Lithuanians", "Muisca"],
+            "note": "马里, 高丽, 拜占庭, 瞿折罗, 越南, 立陶宛, 穆伊斯卡, 图皮获得鼓风炉",
+            "civilizations": ["Koreans", "Malians", "Byzantines", "Gurjaras", "Vietnamese", "Lithuanians", "Muisca",
+                              "Tupi"],
             "tech_id": 75,
             "building_id": 103,
             "RequiredAge": 4

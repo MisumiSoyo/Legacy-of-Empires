@@ -201,6 +201,7 @@ extern const int XolotlBuildingID = 4160;
 extern const int MacuahuitlWarriorID = 4161;
 extern const int EliteMacuahuitlWarriorID = 4162;
 extern const int YuanRaiderID = 4163;
+extern const int MonkChampiBuildingID = 4164;
 
 
 
