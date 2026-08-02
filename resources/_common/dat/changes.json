@@ -907,7 +907,7 @@
             "note": "精锐飞轮刃投掷手攻击力降低",
             "unit_id": 1743,
             "attributes": [["type_50.attacks", "list_search", ["class_", 4], ["amount", "set", 3]],
-                           ["displayed_attack", 3]]
+                           ["type_50.displayed_attack", 3]]
         },
         {
             "note": "攻城塔改动",
@@ -987,6 +987,12 @@
             "unit_id": [2562, 2564],
             "attributes": [["type_50.armours", "list_search", ["class_", 3], ["amount", "add", 1]],
                            ["creatable.displayed_pierce_armour", "add", 1]]
+        },
+        {
+            "note": "精锐弯刀勇士攻击力增加",
+            "unit_id": 1018,
+            "attributes": [["type_50.attacks", "list_search", ["class_", 4], ["amount", 20]],
+                           ["type_50.displayed_attack", 20]]
         }
     ],
     "tech_changes":

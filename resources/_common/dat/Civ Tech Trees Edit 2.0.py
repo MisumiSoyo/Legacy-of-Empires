@@ -52,11 +52,13 @@ def save_civs_to_folder(output_folder, civs_data, civ_files_mapping):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(civ, f, indent=4, ensure_ascii=False)
 
-def move_item_in_list(target_list, item, position="last", target_id=None):
+def move_item_in_list(target_list, item, position="last", target_id=None, search_list=None, target_type=None):
     """
     将指定item移动到列表中的新位置
     position: "first", "last", "before", "after"
     target_id: 当position为"before"或"after"时，指定目标节点的Node ID
+    search_list: 指定搜索目标节点的列表，默认为target_list（用于跨类型定位）
+    target_type: 指定目标节点的Use Type，用于在相同Node ID但不同类型的节点中区分
     """
     # 先从列表中移除该item（如果存在）
     if item in target_list:
@@ -70,13 +72,17 @@ def move_item_in_list(target_list, item, position="last", target_id=None):
     if position == "first":
         insert_position = 0
     elif position in ["before", "after"] and target_id is not None:
-        for idx, existing_item in enumerate(target_list):
+        # 使用指定的搜索列表，或默认使用target_list
+        lookup_list = search_list if search_list is not None else target_list
+        
+        for idx, existing_item in enumerate(lookup_list):
             if existing_item.get("Node ID") == target_id:
-                if position == "before":
-                    insert_position = idx
-                else:  # after
-                    insert_position = idx + 1
-                break
+                if target_type is None or existing_item.get("Use Type") == target_type:
+                    if position == "before":
+                        insert_position = idx
+                    else:  # after
+                        insert_position = idx + 1
+                    break
     # "last" 或其他未识别的值，保持默认的 len(target_list)
     
     target_list.insert(insert_position, item)
@@ -120,38 +126,61 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
                     continue
 
                 if action == "add":
-                    new_item = {key: value for key, value in change.items() if key not in ["action", "civ_id", "position", "target_id", "note"]}
+                    new_item = {key: value for key, value in change.items() if key not in ["action", "civ_id", "position", "target_id", "target_type", "note"]}
                     insert_position = len(target_list)
                     position = change.get("position", "last").lower()
                     target_id = change.get("target_id", None)
+                    target_type = change.get("target_type", None)
+                    # 根据target_type确定搜索列表
+                    if target_type is not None:
+                        if target_type in ["Unit", "Tech"]:
+                            search_list = civ["civ_techs_units"]
+                        elif target_type == "Building":
+                            search_list = civ["civ_techs_buildings"]
+                        else:
+                            search_list = target_list
+                    else:
+                        search_list = target_list
                     if position == "first":
                         insert_position = 0
                     elif position in ["before", "after"] and target_id is not None:
-                        for idx, item in enumerate(target_list):
+                        for idx, item in enumerate(search_list):
                             if item["Node ID"] == target_id:
-                                if position == "before":
-                                    insert_position = idx
-                                else:
-                                    insert_position = idx + 1
-                                break
+                                if target_type is None or item.get("Use Type") == target_type:
+                                    if position == "before":
+                                        insert_position = idx
+                                    else:
+                                        insert_position = idx + 1
+                                    break
                     target_list.insert(insert_position, new_item)
                 
                 elif action == "modify":
                     node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
                     position = change.get("position", None)  # 新增：获取位置参数
                     target_id = change.get("target_id", None)  # 新增：获取目标ID
+                    target_type = change.get("target_type", None)  # 新增：获取目标类型
+                    # 根据target_type确定搜索列表
+                    if target_type is not None:
+                        if target_type in ["Unit", "Tech"]:
+                            search_list = civ["civ_techs_units"]
+                        elif target_type == "Building":
+                            search_list = civ["civ_techs_buildings"]
+                        else:
+                            search_list = None
+                    else:
+                        search_list = None
                     
                     for node_id in node_ids:
                         for item in target_list:
                             if item["Node ID"] == node_id and (item.get("Use Type") == use_type or (item.get("Use Type") == "Building" and use_type == "Unit")):
                                 # 先修改属性
                                 for key, value in change.items():
-                                    if key not in ["action", "civ_id", "Node ID", "note", "position", "target_id"]:
+                                    if key not in ["action", "civ_id", "Node ID", "note", "position", "target_id", "target_type"]:
                                         item[key] = value
                                 
                                 # 如果指定了位置，移动该item到新位置
                                 if position is not None:
-                                    move_item_in_list(target_list, item, position, target_id)
+                                    move_item_in_list(target_list, item, position, target_id, search_list, target_type)
                                 
                                 break
                             elif item["Node ID"] == node_id and item.get("Use Type") != use_type:

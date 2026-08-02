@@ -369,6 +369,7 @@ void EffectFunction10021(int playerId = -1)
     xsTaskAmount(cTaskAttrTaskType, cTaskTypeAmphibious);
     xsTaskAmount(cTaskAttrTerrain, -32);
     xsTaskAmount(cTaskAttrWorkValue1, 0.33);
+    xsTaskAmount(cTaskAttrWorkValue2, 1.0);
     xsModifyObjectTasks(cWarshipClass, playerId, 1000);
     xsResetTaskAmount();
 
@@ -1473,7 +1474,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 353  2026.08.02");
+    xsChatData("Patch: 354  2026.08.03");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

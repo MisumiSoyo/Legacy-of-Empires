@@ -160,7 +160,7 @@
 //	印度斯坦
 120169 "骆驼和火药文明\n\n• 村民 -15% 训练费用\n• 骆驼兵系 +20% 攻击速度\n• 火药单位 +1 护甲/盾牌\n• 可在帝王时代建造商队驿站\n• 研究科技免费, 但研究速度 -70% (除时代升级, 单位升级, 独特科技和间谍)\n\n<b>独特单位：<b>\n• 古拉姆 (可造成穿刺伤害的步兵), 帝王骆驼兵 (高级骆驼兵)\n\n<b>独特科技：<b>\n• 大干道 (所有黄金收入速度提升 10%; 贸易费用降至 10%)\n• 印度火铳 (火枪手 +2 射程)\n• 坎达操练 (古拉姆和曼沙布达尔骑兵 +25% 攻击速度, +5 黄金费用)\n• 苏丹王 (步兵/骑兵/远程单位 +10/10/6 攻击力 vs 大象单位)\n\n<b>团队加成：<b>\n轻骑兵和骆驼单位对建筑 +2 攻击力"
 //	印加
-120170 "步兵文明\n\n• 军事单位在黑暗/封建/城堡/帝王时代 -20/30/40/50% 食物费用\n• 城堡时代起铁匠铺步兵科技升级可以加成村民\n• 房屋和定居点 +5 人口空间\n• 建筑石料费用 -15% (对游牧模式的首个城镇中心无效)\n• 兵营, 靶场, 马厩, 攻城武器厂 建造速度 +200%\n• 可蓄养动物 +3 视野范围\n\n<b>独特单位：<b>\n• 印加枪兵长 (步兵系), 亚马逊步弓手 (可闪避抛射物的射手)\n\n<b>独特科技：<b>\n• 安第斯弹弓 (掷矛手和投石手无最小射程, 投石手攻击力 +1)\n• 织物盾 (印加枪兵长、投石手和蔷琵战士 +1 护甲/盾牌)\n• 信使 (步兵和步行射手 +6 视野)\n• 奇普 (僧侣 -50% 训练费用)\n\n<b>团队加成：<b>\n游戏开始时获得一只羊驼"
+120170 "步兵文明\n\n• 军事单位在黑暗/封建/城堡/帝王时代 -20/30/40/50% 食物费用\n• 城堡时代起铁匠铺步兵科技升级可以加成村民\n• 房屋和定居点 +5 人口空间\n• 建筑石料费用 -15% (对游牧模式的首个城镇中心无效)\n• 兵营, 靶场, 马厩, 攻城武器厂 建造速度 +200%\n• 可蓄养动物 +3 视野范围\n\n<b>独特单位：<b>\n• 印加枪兵长 (克制骑兵的步兵), 亚马逊步弓手 (可闪避抛射物的射手), 曼科骑手 (击杀骑乘单位可训练的反骑兵骑兵)\n\n<b>独特科技：<b>\n• 安第斯弹弓 (掷矛手和投石手无最小射程, 投石手攻击力 +1)\n• 织物盾 (印加枪兵长、投石手和蔷琵战士 +1 护甲/盾牌)\n• 信使 (步兵和步行射手 +6 视野)\n• 奇普 (僧侣 -50% 训练费用)\n\n<b>团队加成：<b>\n游戏开始时获得一只羊驼"
 //	马扎尔
 120171 "骑兵文明\n\n• 村民一击就能杀死狼群\n• 锻造、铸铁和鼓风炉 免费升级\n• 斥候骑兵系 -25% 训练费用\n• 每驻扎 1 件圣物，草原枪兵 +1 护甲 (最多 +5)\n• 可在城堡以 +75% 速度训练兵营, 靶场和马厩单位\n• 骑射手免费享受血统和畜牧效果\n\n<b>独特单位：<b>\n• 马扎尔骠骑 (克制攻城武器的轻骑兵), 黑军步兵 (适于对抗长矛兵和冲击步兵的重装步兵)\n\n<b>独特科技：<b>\n• 科维尼安军队 (马扎尔骠骑 +45 食物费用，无需黄金)\n• 反曲弓 (骑射手射程 +1，攻击力 +1)\n• 轮牧 (牧场 -75% 建造费用)\n• 黑军 (骑兵可以增加附近己方火枪手最多 30 生命值)\n\n<b>团队加成：<b>\n骑射手 +25% 训练速度"
 //	斯拉夫
@@ -1072,6 +1072,7 @@
 700142 "缅族骑手"
 700143 "精锐缅族骑手"
 700144 "元朝掠夺者"
+700145 "曼科骑手"
 
 
 
@@ -1216,6 +1217,7 @@
 701142 "生产缅族骑手"
 701143 "生产精锐缅族骑手"
 701144 "生产元朝掠夺者"
+701145 "生产曼科骑手"
 
 
 
@@ -1501,6 +1503,8 @@
 721143 "生产<b>精锐缅族骑手<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\n缅甸独特中型骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\n主类: 骑兵; 标签: 骑兵, 独特单位。"
 
 721144 "生产<b>元朝掠夺者<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n中国独特轻骑兵, 需要进入元朝训练。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.66 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\n主类: 轻骑兵; 标签: 骑兵, 轻骑兵, 独特单位。\n攻击加成: +6 vs 村民和贸易单位。"
+
+721145 "生产<b>曼科骑手<b> (<cost>, 14 <MATERIAL=MPIconGoodCPU>)\n印加独特骑兵, 每击杀一名敌方骑乘单位可生产一名。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +5 vs 骑兵, +8 vs 火药单位\n<MATERIAL=TechIconsT032ImperialAge> +20 生命值, +1 攻击力, +1 护甲/盾牌。"
 
 
 

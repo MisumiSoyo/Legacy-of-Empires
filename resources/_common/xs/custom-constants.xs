@@ -51,6 +51,7 @@ extern const int cAttributeCashCropProductivity = 750;
 extern const int cAttributeCondottieroMercenaryTimer = 751;
 extern const int cAttributeTurksTradeIncome = 752;
 extern const int cAttributeEnclosureProductivity = 753;
+extern const int cAttributeKillCavalryCount = 754;
 
 
 
@@ -177,6 +178,7 @@ extern const int EliteFootKonnik2ID = 4132;
 extern const int KhanID = 4133;
 extern const int GoldBuilding1ID = 4134;
 extern const int TaboriteWarriorID = 4135;
+extern const int MancosHorsemanID = 4136;
 extern const int RaiderElephantID = 4137;
 extern const int VeteranRaiderElephantID = 4138;
 extern const int EliteRaiderElephantID = 4139;

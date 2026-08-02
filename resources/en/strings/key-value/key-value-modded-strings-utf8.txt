@@ -152,7 +152,7 @@
 //	Hindustanis
 120169 "Camel and Gunpowder civilization\n\n• Villagers -15% cost\n• Camel Rider-line +20% attack speed\n• Gunpowder units +1/+1P armor\n• Can build Caravanserai in Imperial Age\n• Technologies are free but researched 70% slower (except age upgrades, unit upgrades and Spies)\n\n<b>Unique Units:<b>\n• Ghulam (Infantry can deal spear damages), Imperial Camel (High-level Camel rider)\n\n<b>Unique Techs: <b>\n• Grand Trunk Road (All gold incomes +10% rate, trading fee reduced to 10%)\n• Shatagni (Hand cannoneers +2 max range)\n• Khanda Drills (Ghulams and Mansabdars +25% attack speed, +5 gold cost)\n• Sultans (Infantries/Cavalries/Ranged units +10/10/6 attack vs elephants)\n\n<b>Team bonus: <b>\nLight Cavalries and Camel units +2 attack vs Buildings"
 //	Incas
-120170 "Infantry civilization\n\n• Military units -20%/30%/40%/50% food cost in Dark/Feudal/Castle/Imperial Age\n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age)\n• Houses and Settlements support +5 population\n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +3 LOS\n• Barracks, Archery Ranges, Stables and Siege Workshops build 200% faster\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Amazon Archer (Archer that can dodge projectiles)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack)\n• Fabric Shields (Kamayuks, Slingers and Champi Warrior +1 melee/pierce armor)\n• Couriers (Infantries and foot archers +6 line of sight)\n• Quipu (Monks -50% cost)\n\n<b>Team bonus: <b>\nStart with a free Llama"
+120170 "Infantry civilization\n\n• Military units -20%/30%/40%/50% food cost in Dark/Feudal/Castle/Imperial Age\n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age)\n• Houses and Settlements support +5 population\n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +3 LOS\n• Barracks, Archery Ranges, Stables and Siege Workshops build 200% faster\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Amazon Archer (Archer that can dodge projectiles), Manco's Horseman (Anti-cavalry cavalry, trained by killing mounted units)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack)\n• Fabric Shields (Kamayuks, Slingers and Champi Warrior +1 melee/pierce armor)\n• Couriers (Infantries and foot archers +6 line of sight)\n• Quipu (Monks -50% cost)\n\n<b>Team bonus: <b>\nStart with a free Llama"
 //	Magyars
 120171 "Cavalry civilization\n\n• Villagers kill wolves with 1 strike\n• Forging, Iron Casting, Blast Furnace free\n• Scout Cavalry line -25% cost\n• Every 1 garrisoned relics give +1 melee armor to Steppe Lancers (maximum +5)\n• Can train Barrack, Archery Range and Stable units at Castle with +75% speed\n• Cavalry archers can enjoy Bloodlines and Husbandry for free\n\n<b>Unique Unit:<b>\n• Magyar Huszar (Light cavalry better combats with siege weapons), Black Army Infantry (Heavy infantry better combats with spearmen and shock infantries)\n\n<b>Unique Techs: <b>\n• Corvinian Army (Magyar Huszars gold cost converts to food)\n• Recurve Bow (Cavalry Archer class unit +1 max range, +1 attack)\n• Rotation Grazing (Pastures -75% cost)\n• Black Army (Cavalries can increase your nearby hand cannoneers' hit points by 30 at most)\n\n<b>Team bonus: <b>\nCavalry archer class units -20% training time"
 //	Slavs
@@ -1063,6 +1063,7 @@
 700142 "Bamar Rider"
 700143 "Elite Bamar Rider"
 700144 "Yuan Raider"
+700145 "Manco's Horseman"
 
 
 
@@ -1207,6 +1208,7 @@
 701142 "Create Bamar Rider"
 701143 "Create Elite Bamar Rider"
 701144 "Create Yuan Raider"
+701145 "Create Manco's Horseman"
 
 
 
@@ -1494,6 +1496,8 @@
 721143 "Create <b>Elite Bamar Rider<b> (<cost>, 20 <MATERIAL=MPIconGoodCPU>)\nBurmese unique medium cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit."
 
 721144 "Create <b>Yuan Raider<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nChinese unique light cavalry, requires Yuan Dynasty to train.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.66 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Light Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.\nAttack Bonus: +6 vs Villagers and Trade Units."
+
+721145 "Create <b>Manco's Horseman<b> (<cost>, 14 <MATERIAL=MPIconGoodCPU>)\nInca unique cavalry. Can train 1 unit for each enemy mounted unit killed.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +5 vs Cavalry, +8 vs Gunpowder Units.\n<MATERIAL=TechIconsT032ImperialAge> +20 HP, +1 attack, +1 melee/pierce armor."
 
 
 

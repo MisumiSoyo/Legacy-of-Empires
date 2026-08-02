@@ -2236,6 +2236,36 @@
             "Picture Index": 107
         },
         {
+            "Age ID": 3,
+            "Building ID": 82,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800145,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Manco's Horseman",
+            "Name String ID": 700145,
+            "Node ID": 4136,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 103,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Hoardings",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",

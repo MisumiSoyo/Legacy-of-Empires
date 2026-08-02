@@ -2635,6 +2635,14 @@
             "building_id": 101,
             "Name": "Yuan Raider",
             "RequiredAge": 3
+        },
+        {
+            "note": "曼科骑手",
+            "civilizations": "Incas",
+            "unit_id": 4136,
+            "building_id": 82,
+            "Name": "Manco's Horseman",
+            "RequiredAge": 3
         }
     ]
 }

@@ -661,6 +661,23 @@ float VikingsDeathBonusRate(int DeathCount = -1)
 }
 
 
+//  10128 - Kill cavalry count
+void EffectFunction10128(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000022);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeKillCavalryCount);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+
+    ApplyAllToTarget(playerId, cCavalryClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cConquistadorClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cCavalryArcherClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cScoutCavalryClass, cTaskTypeLoot, true, true, true, true);
+    xsResetTaskAmount();
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
