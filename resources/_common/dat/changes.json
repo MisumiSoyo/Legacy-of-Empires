@@ -846,6 +846,12 @@
             "effect_id": 957,
             "match": ["any", "any", "any", "any", "any"],
             "modifications": ["d", "set", 1.04545455]
+        },
+        {
+            "type": "delete",
+            "name": "日本骑射手移除对掷矛手减少的攻击力",
+            "effect_id": 185,
+            "match": [4, "any", "any", 9, -9730]
         }
     ],
     "unit_changes":
@@ -1080,7 +1086,7 @@
         },
         {
             "note": "战舰升级科技添加新的空训练位置",
-            "tech_id": [34, 35, 244, 905],
+            "tech_id": [34, 35, 244, 376, 905],
             "attributes": [["research_locations", "list_add", {"location_id": -1}]]
         }
     ],

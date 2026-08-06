@@ -534,10 +534,9 @@ void GendarmesdOrdonnanceApplier(int playerId = -1, int ClassTarget = -1)
 //  10112 - Free Jaguar kill effect
 void EffectFunction10112(int playerId = -1)
 {
-    int KillCount = xsPlayerAttribute(playerId, cAttributeIxipltaKillCount) + 1;
+    int KillCount = xsPlayerAttribute(playerId, cAttributeKills);
     if (KillCount % 30 == 0)
-        SpawnUnit(playerId, JaguarWarriorID, TownCenterID, 7, 1);
-    SetResource(playerId, cAttributeIxipltaKillCount, KillCount);
+        SpawnUnit(playerId, EliteJaguarWarriorID, TownCenterID, 7, 1);
 }
 
 

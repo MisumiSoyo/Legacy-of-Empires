@@ -392,10 +392,12 @@ void EffectFunction10021(int playerId = -1)
     xsEffectAmount(cModifyTech, HeavyWarshipsTechID, cAttrSetLocation, SiegeWorkshopID);
     xsEffectAmount(cModifyTech, DemolitionShipTechID, cAttrSetLocation, SiegeWorkshopID);
     xsEffectAmount(cModifyTech, HeavyDemolitionShipTechID, cAttrSetLocation, SiegeWorkshopID);
+    xsEffectAmount(cModifyTech, EliteCannonGalleonTechID, cAttrSetLocation, SiegeWorkshopID);
     xsEffectAmount(cModifyTech, MediumWarshipsTechID, cAttrSetButton, XKeyID + 20);
     xsEffectAmount(cModifyTech, HeavyWarshipsTechID, cAttrSetButton, XKeyID + 20);
     xsEffectAmount(cModifyTech, DemolitionShipTechID, cAttrSetButton, CKeyID + 20);
     xsEffectAmount(cModifyTech, HeavyDemolitionShipTechID, cAttrSetButton, CKeyID + 20);
+    xsEffectAmount(cModifyTech, EliteCannonGalleonTechID, cAttrSetButton, VKeyID + 20);
 }
 
 
@@ -499,18 +501,17 @@ void EffectFunction10025(int playerId = -1)
 }
 
 
-//  10026 - C-Bonus, free Jaguar Warrior from kills
+//  10026 - Ixiptla
 void EffectFunction10026(int playerId = -1)
 {
+    int UnitKills = xsPlayerAttribute(playerId, cAttributeKills);
+    SpawnUnit(playerId, EliteJaguarWarriorID, TownCenterID, (UnitKills / 30) * 7, 1);
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrWorkValue1, 1);
     xsTaskAmount(cTaskAttrWorkRange, 0);
     xsTaskAmount(cTaskAttrResourceIn, FreeJaguarKillEffectID);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000001);
-    int i = 0;
-    for (i = 900; <= 964)
-        if (isLandMilitaryClass(i))
-            ApplyAllToTarget(playerId, i, cTaskTypeLoot);
+    ApplyAllToTarget(playerId, -1, cTaskTypeLoot, true, true, true, true);
     xsResetTaskAmount();
 }
 
@@ -545,25 +546,12 @@ void EffectFunction10028(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
     xsTaskAmount(cTaskAttrOwnerType, 1);
-    xsTaskAmount(cTaskAttrCarryCheck, 2);
-    xsTaskAmount(cTaskAttrGatherType, 2);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 9);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
-    xsTaskAmount(cTaskAttrWorkFlag2, 4);
-    ApplyToAllMilitaryTargets(playerId, JaguarWarriorID, cTaskTypeLoot);
-    ApplyToAllMilitaryTargets(playerId, EliteJaguarWarriorID, cTaskTypeLoot);
-    xsResetTaskAmount();
-
-    xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
-    xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCarryCheck, 104);
     xsTaskAmount(cTaskAttrSearchWaitTime, 9.000005);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrWorkFlag2, 4);
-    xsTaskAmount(cTaskAttrGatherType, 1);
-    ApplyToAllMilitaryTargets(playerId, EagleScoutID, cTaskTypeLoot);
-    ApplyToAllMilitaryTargets(playerId, EagleWarriorID, cTaskTypeLoot);
-    ApplyToAllMilitaryTargets(playerId, EliteEagleWarriorID, cTaskTypeLoot);
+    xsTaskAmount(cTaskAttrGatherType, 2);
+    ApplyToAllMilitaryTargets(playerId, cInfantryClass, cTaskTypeLoot);
     xsResetTaskAmount();
 }
 
@@ -1474,7 +1462,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 354  2026.08.03");
+    xsChatData("Patch: 355  2026.08.04");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
