@@ -546,13 +546,27 @@ void EffectFunction10028(int playerId = -1)
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrProceedingGraphic, 12263);
     xsTaskAmount(cTaskAttrOwnerType, 1);
-    xsTaskAmount(cTaskAttrCarryCheck, 104);
+    xsTaskAmount(cTaskAttrCarryCheck, 11);
     xsTaskAmount(cTaskAttrSearchWaitTime, 9.000005);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
     xsTaskAmount(cTaskAttrWorkFlag2, 4);
     xsTaskAmount(cTaskAttrGatherType, 2);
+    xsTaskAmount(cTaskAttrOwnerType, 1);
     ApplyToAllMilitaryTargets(playerId, cInfantryClass, cTaskTypeLoot);
+
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 0);
+    xsTaskAmount(cTaskAttrWorkFlag2, 0);
+    ApplyToAllMilitaryTargets(playerId, JaguarWarriorID, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, EliteJaguarWarriorID, cTaskTypeLoot);
+    xsTaskAmount(cTaskAttrCarryCheck, 2);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 9);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTaskAmount(cTaskAttrWorkFlag2, 4);
+    xsTaskAmount(cTaskAttrGatherType, 3);
+    ApplyToAllMilitaryTargets(playerId, JaguarWarriorID, cTaskTypeLoot);
+    ApplyToAllMilitaryTargets(playerId, EliteJaguarWarriorID, cTaskTypeLoot);
     xsResetTaskAmount();
+    PrintObjectTasks(playerId, JaguarWarriorID);
 }
 
 
@@ -1462,7 +1476,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 355  2026.08.04");
+    xsChatData("Patch: 356  2026.08.07");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
