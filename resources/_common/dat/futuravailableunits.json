@@ -16698,6 +16698,11 @@
                         "ID": 437,
                         "Name": "Thumb Ring",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Zamburak",
+                        "RequiredAge": 4,
+                        "ID": 3505
                     }
                 ],
                 "Units": [
@@ -16735,6 +16740,16 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Zamburak",
+                        "RequiredAge": 3,
+                        "ID": 4165
+                    },
+                    {
+                        "Name": "Elite Zamburak",
+                        "RequiredAge": 4,
+                        "ID": 4166
                     }
                 ]
             },
@@ -31943,7 +31958,7 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Red Sea Fleet",
+                        "Name": "Grand Bazzar",
                         "RequiredAge": 4,
                         "ID": 3125
                     },

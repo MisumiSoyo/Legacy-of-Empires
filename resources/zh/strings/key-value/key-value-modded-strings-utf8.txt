@@ -134,9 +134,9 @@
 //	拜占庭
 120156 "全能型文明\n\n• 建筑在黑暗/封建/城堡/帝王时代 +10/15/20/25% 生命值\n• 骆驼兵系、掷矛手、长枪兵系 -25% 训练费用\n• 喷火船, 喷火车和德罗蒙战舰 +25% 攻击速度\n• 升级到帝王时代的费用 -33%\n• 城镇瞭望, 城镇巡逻和城镇防御 免费升级\n• 城堡时代起可花费黄金额外训练 4 种独特单位, 一次训练 3 名\n\n<b>独特单位：<b>\n• 甲胄骑兵 (克制步兵并且可造成范围伤害的骑兵), 瓦兰吉卫队 (击杀单位可获得黄金的步兵), 喷火车 (可喷火的攻城武器)\n\n<b>独特科技：<b>\n• 希腊火 (喷火船和喷火车 +1 射程; 德罗蒙战舰和炮塔的爆炸范围增加)\n• 后勤学 (甲胄骑兵, 骑士系和瓦兰吉卫队 +6 攻击力 vs 步兵; 甲胄骑兵 +2 范围伤害)\n• 宫殿掠夺 (军事单位摧毁每个敌方建筑可获取 30 黄金)\n• 金角湾塔 (贸易单位可额外产生 15% 石料)\n\n<b>团队加成：<b>\n僧侣治疗速度 +100%"
 //	波斯
-120157 "骑兵文明\n\n• 开局 +50 木材和食物\n• 城镇中心和船坞 +100% 生命值，在黑暗/封建/城堡/帝王时代 +5/10/15/20% 工作效率\n• 可在城堡时代研究帕提亚战术\n• 帝王时代可建造商队旅馆\n• 铸币术, 银行业 免费研究\n\n<b>独特单位：<b>\n• 战象 (低速、高攻击、高生命值重骑兵), 萨瓦尔 (对射手有加成、替代游侠的重骑兵), 安息骑射手 (高速骑射手)\n\n<b>独特科技：<b>\n• 波斯步弓手 (生产步弓手系木材费用 +50, 而不消耗黄金)\n• 堡垒 (城堡发射子弹, 受到的伤害加成 -25%)\n• 总督 (城镇中心和城堡可提高周围建筑 33% 的工作效率, 并每分钟产生 30 黄金)\n• 骆驼长矛骑兵 (骆驼兵系 +1 射程)\n\n<b>团队加成：<b>\n骑兵 (除轻骑兵外) +2 攻击力 vs 射手"
+120157 "骑兵文明\n\n• 开局 +50 木材和食物\n• 城镇中心和船坞 +100% 生命值，在黑暗/封建/城堡/帝王时代 +5/10/15/20% 工作效率\n• 可在城堡时代研究帕提亚战术\n• 帝王时代可建造商队旅馆\n• 每生产 1 个贸易单位, 获得 30 食物\n\n<b>独特单位：<b>\n• 战象 (低速、高攻击、高生命值重骑兵), 萨瓦尔 (对射手有加成、替代游侠的重骑兵), 安息骑射手 (高速骑射手)\n\n<b>独特科技：<b>\n• 波斯步弓手 (生产步弓手系木材费用 +50, 而不消耗黄金)\n• 堡垒 (城堡发射子弹, 受到的伤害加成 -25%)\n• 总督 (城镇中心和城堡可提高周围建筑 33% 的工作效率, 并每分钟产生 30 黄金)\n• 骆驼长矛骑兵 (骆驼兵系 +1 射程)\n\n<b>团队加成：<b>\n骑兵 (除轻骑兵外) +2 攻击力 vs 射手"
 //	萨拉森
-120158 "骆驼和海军文明\n\n• 市场 -100 木材费用, 并且贸易费用降低到 5%\n• 运输船生命值和运载量 +100%\n• 箭船系 +25% 攻击速度\n• 骆驼单位 +25% 生命值\n• 每生产 1 个贸易单位, 获得 30 食物\n• 每个已研究的科技每分钟提供 3 木材, 食物和黄金\n• 爆破兵 -33% 训练费用和时间\n\n<b>独特单位：<b>\n• 马穆鲁克 (有射程的骆驼兵), 贝都因剑士 (轻型步兵)\n\n<b>独特科技：<b>\n• 穆斯林诊所 (僧侣 5 格范围内己方和盟友单位每分钟回复 75 生命值(不叠加))\n• 配重 (巨型投石机和投石车系 +15% 攻击力)\n• 苏福塔亚 (立刻生产 8 辆贸易车, 每个市场再额外产出 1 辆)\n• 红海舰队 (战斗舰艇 -20% 人口空间占用)\n\n<b>团队加成：<b>\n射手对建筑 +3 攻击力"
+120158 "骆驼和海军文明\n\n• 市场 -100 木材费用, 并且不需要贸易费用\n• 运输船生命值和运载量 +100%\n• 箭船系 +25% 攻击速度, -25% 人口空间占用\n• 骆驼单位 +25% 生命值\n• 每个已研究的科技每分钟提供 3 木材, 食物和黄金\n• 爆破兵 -33% 训练费用和时间\n• 斥候骑兵系消耗 70 黄金代替食物\n\n<b>独特单位：<b>\n• 马穆鲁克 (有射程的骆驼兵), 贝都因剑士 (轻型步兵)\n\n<b>独特科技：<b>\n• 穆斯林诊所 (僧侣 5 格范围内己方和盟友单位每分钟回复 75 生命值(不叠加))\n• 配重 (巨型投石机和投石车系 +15% 攻击力)\n• 苏福塔亚 (立刻生产 8 辆贸易车, 每个市场再额外产出 1 辆)\n• 大集市 (斥候骑兵系 -33% 黄金费用)\n\n<b>团队加成：<b>\n射手对建筑 +3 攻击力"
 //	土耳其
 120159 "火药文明\n\n• 火药单位生命值 +25%; 火药科技研究费用 -50%, 化学免费升级\n• 金矿工 +33% 工作效率\n• 斥候骑兵系自动升级, 并且 +1 盾牌\n• 精锐草原枪兵和重装骆驼兵可在城堡时代升级, 并且研究速度 +200%\n• 可获得相当于其他玩家贸易收入 5% 的黄金\n• 攻城武器厂可以生产和升级战舰, 并且战舰可以在陆地上以 33% 速度移动\n\n<b>独特单位：<b>\n• 苏丹亲兵 (高攻击火枪手), 西帕希骑兵 (可降低敌方远程单位攻击速度的骑兵), 奥斯曼军乐队 (可强化友军的骑兵)\n\n<b>独特科技：<b>\n• 突厥骑射 (骑射手 +20 生命值)\n• 火炮术 (炮塔、手推炮、炮舰射程 +2)\n• 德夫希尔梅 (立即产出 5 名苏丹亲兵, 每个城镇中心再 +1)\n• 草原遗产 (草原枪兵战败后返还 50% 食物费用)\n\n<b>团队加成：<b>\n火药单位 +25% 训练速度"
 //	维京
@@ -158,7 +158,7 @@
 //	意大利
 120168 "步弓手和海军文明\n\n• 升级时代费用 -15%\n• 船坞和大学科技费用 -25%\n• 渔船木材费用 -15%\n• 火药单位费用 -20%\n• 步行射手 (除投矛手外) 和意大利佣兵 +1 护甲/盾牌\n• 封建时代起每分钟获得 45 黄金\n\n<b>独特单位: <b>\n• 热那亚弩手 (克制骑兵的射手), 意大利佣兵 (克制火药单位的步兵), 医院骑士 (可治疗友军的骑兵)\n\n<b>独特科技: <b>\n• 丝绸之路 (贸易单位费用 -50%)\n• 烟火之术 (火枪手造成的穿透伤害 +15%，准确度增加到 90%)\n• 海上据点 (战船可以建造海塔)\n• 佣兵合同 (立即并每 120 秒在城镇中心产生 5 名意大利佣兵)\n• 高级佣兵合同 (佣兵合同产生的意大利佣兵 +5)\n\n<b>团队加成: <b>\n帝王时代时可以在兵营训练意大利佣兵"
 //	印度斯坦
-120169 "骆驼和火药文明\n\n• 村民 -15% 训练费用\n• 骆驼兵系 +20% 攻击速度\n• 火药单位 +1 护甲/盾牌\n• 可在帝王时代建造商队驿站\n• 研究科技免费, 但研究速度 -70% (除时代升级, 单位升级, 独特科技和间谍)\n\n<b>独特单位：<b>\n• 古拉姆 (可造成穿刺伤害的步兵), 帝王骆驼兵 (高级骆驼兵)\n\n<b>独特科技：<b>\n• 大干道 (所有黄金收入速度提升 10%; 贸易费用降至 10%)\n• 印度火铳 (火枪手 +2 射程)\n• 坎达操练 (古拉姆和曼沙布达尔骑兵 +25% 攻击速度, +5 黄金费用)\n• 苏丹王 (步兵/骑兵/远程单位 +10/10/6 攻击力 vs 大象单位)\n\n<b>团队加成：<b>\n轻骑兵和骆驼单位对建筑 +2 攻击力"
+120169 "骆驼和火药文明\n\n• 村民 -15% 训练费用\n• 骆驼兵系 +20% 攻击速度\n• 火药单位 +1 护甲/盾牌\n• 可在帝王时代建造商队驿站\n• 研究科技免费, 但研究速度 -70% (除时代升级, 单位升级, 独特科技和间谍)\n\n<b>独特单位：<b>\n• 古拉姆 (可造成穿刺伤害的步兵), 帝王骆驼兵 (高级骆驼兵), 骆驼火枪手 (可降低敌方骑乘单位攻击速度的骆驼火枪单位)\n\n<b>独特科技：<b>\n• 大干道 (所有黄金收入速度提升 10%; 贸易费用降至 10%)\n• 印度火铳 (火枪手 +2 射程)\n• 坎达操练 (古拉姆和曼沙布达尔骑兵 +25% 攻击速度, +5 黄金费用)\n• 苏丹王 (步兵/骑兵/远程单位 +10/10/6 攻击力 vs 大象单位)\n\n<b>团队加成：<b>\n轻骑兵和骆驼单位对建筑 +2 攻击力"
 //	印加
 120170 "步兵文明\n\n• 军事单位在黑暗/封建/城堡/帝王时代 -20/30/40/50% 食物费用\n• 城堡时代起铁匠铺步兵科技升级可以加成村民\n• 房屋和定居点 +5 人口空间\n• 建筑石料费用 -15% (对游牧模式的首个城镇中心无效)\n• 兵营, 靶场, 马厩, 攻城武器厂 建造速度 +200%\n• 可蓄养动物 +3 视野范围\n\n<b>独特单位：<b>\n• 印加枪兵长 (克制骑兵的步兵), 亚马逊步弓手 (可闪避抛射物的射手), 曼科骑手 (击杀骑乘单位可训练的反骑兵骑兵)\n\n<b>独特科技：<b>\n• 安第斯弹弓 (掷矛手和投石手无最小射程, 投石手攻击力 +1)\n• 织物盾 (印加枪兵长、投石手和蔷琵战士 +1 护甲/盾牌)\n• 信使 (步兵和步行射手 +6 视野)\n• 奇普 (僧侣 -50% 训练费用)\n\n<b>团队加成：<b>\n游戏开始时获得一只羊驼"
 //	马扎尔
@@ -274,7 +274,7 @@
 500044 "贵族军队"
 500045 "前哨"
 500046 "海盗行为"
-500047 "红海舰队"
+500047 "大集市"
 500048 "商队护卫"
 500049 "精锐索法骑手"
 500050 "德夫希尔梅"
@@ -455,6 +455,7 @@
 500225 "业力"
 500226 "恒河经济"
 500227 "精锐缅族骑手"
+500228 "精锐骆驼火枪手"
 
 
 
@@ -504,7 +505,7 @@
 501044 "研究贵族军队 (大庄园可以驻扎村民和射箭, 并且能够训练斥候骑兵系单位)"
 501045 "研究前哨 (木制要塞周围己方陆地军事单位(除攻城武器和僧侣) +10% 移动速度, 并且每分钟回复 30 生命值; 木制要塞 +100%建造速度)"
 501046 "研究海盗行为 (运输船 +250% 生命值; 战舰击杀敌人和摧毁建筑时可获得 40 黄金)"
-501047 "研究红海舰队 (战斗舰艇 -20% 人口空间占用)"
+501047 "研究大集市 (斥候骑兵系 -33% 黄金费用)"
 501048 "研究商队护卫 (贸易车 +100% 生命值, +2 护甲/盾牌, 每分钟回复 70 生命值并额外产生 6 黄金)"
 501049 "升级到精锐索法骑手"
 501050 "研究德夫希尔梅 (立即产出 5 名苏丹亲兵, 每个城镇中心再 +1)"
@@ -685,6 +686,7 @@
 501225 "研究业力 (曼沙布达尔骑兵训练不需要黄金, 但 -2 盾牌)"
 501226 "研究恒河经济 (村民 -75% 训练费用, +100% 生产速度)"
 501227 "升级到精锐缅族骑手"
+501228 "升级到精锐骆驼火枪手"
 
 
 
@@ -734,7 +736,7 @@
 521044 "研究<b>贵族军队<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n大庄园可以驻扎村民和射箭, 并且能够训练斥候骑兵系单位。"
 521045 "研究<b>前哨<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n木制要塞周围己方陆地军事单位(除攻城武器和僧侣) +10% 移动速度, 并且每分钟回复 30 生命值; 木制要塞 +100%建造速度。"
 521046 "研究<b>海盗行为<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n运输船 +250% 生命值; 战舰击杀敌人和摧毁建筑时可获得 40 黄金。"
-521047 "研究<b>红海舰队<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n战斗舰艇 -20% 人口空间占用。"
+521047 "研究<b>大集市<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n斥候骑兵系 -33% 黄金费用。"
 521048 "研究<b>商队护卫<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n贸易车 +100% 生命值, +2 护甲/盾牌, 每分钟回复 70 生命值并额外产生 6 黄金。"
 521049 "升级到<b>精锐索法骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的索法骑手升级, 生产更为强大的精锐索法骑手。"
 521050 "研究<b>德夫希尔梅<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n立即产出 5 名苏丹亲兵, 每个城镇中心再 +1。"
@@ -915,6 +917,7 @@
 521225 "研究<b>业力<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n曼沙布达尔骑兵训练不需要黄金, 但 -2 盾牌。"
 521226 "研究<b>恒河经济<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n村民 -75% 训练费用, +100% 生产速度。"
 521227 "升级到<b>精锐缅族骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的缅族骑手升级, 生产更为强大的精锐缅族骑手。"
+521228 "升级到<b>精锐骆驼火枪手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的骆驼火枪手升级, 生产更为强大的精锐骆驼火枪手。"
 
 
 
@@ -1073,6 +1076,8 @@
 700143 "精锐缅族骑手"
 700144 "元朝掠夺者"
 700145 "曼科骑手"
+700146 "骆驼火枪手"
+700147 "精锐骆驼火枪手"
 
 
 
@@ -1218,6 +1223,8 @@
 701143 "生产精锐缅族骑手"
 701144 "生产元朝掠夺者"
 701145 "生产曼科骑手"
+701146 "生产骆驼火枪手"
+701147 "生产精锐骆驼火枪手"
 
 
 
@@ -1478,9 +1485,9 @@
 
 721131 "生产<b>精锐阿伊鲁兹<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n亚美尼亚独特骑兵, 可发动冲锋攻击以造成范围伤害。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.35 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsPowerUpRange> 2 <MATERIAL=StatIconsPowerUpReloadTime> 8 <MATERIAL=StatIconsPowerUpMovementSpeed> 1.6875 <MATERIAL=StatIconsBlastRadius> 0.5 100% (+6 攻击力)\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +7 vs 骑兵, +6 vs 骆驼。"
 
-721132 "生产<b>弩骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n勃艮第独特骑射手, 可无视目标敌人的盾牌。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.8 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 80%\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手, 独特单位。"
+721132 "生产<b>弩骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n勃艮第独特骑射手, 可无视目标敌人的盾牌。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.8 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 80%\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手, 独特单位。"
 
-721133 "生产<b>精锐弩骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n勃艮第独特骑射手, 可无视目标敌人的盾牌。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.7 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 90%\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手, 独特单位。"
+721133 "生产<b>精锐弩骑兵<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n勃艮第独特骑射手, 可无视目标敌人的盾牌。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.7 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 90%\n主类: 骑射手; 标签: 射手, 骑兵, 骑射手, 独特单位。"
 
 721134 "生产<b>卢奇尼克<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\n保加利亚独特弓箭手, 适于对抗长矛兵和掷矛手。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 80%\n主类: 射手; 标签: 射手, 独特单位。\n攻击加成: +6 vs 枪兵, +4 vs 投矛手。\n护甲加成: +1 射手护甲。"
 
@@ -1506,8 +1513,13 @@
 
 721145 "生产<b>曼科骑手<b> (<cost>, 14 <MATERIAL=MPIconGoodCPU>)\n印加独特骑兵, 每击杀一名敌方骑乘单位可生产一名。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\n主类: 骑兵; 标签: 骑兵, 独特单位。\n攻击加成: +5 vs 骑兵, +8 vs 火药单位\n<MATERIAL=TechIconsT032ImperialAge> +20 生命值, +3 攻击力, +1 护甲/盾牌。"
 
+721146 "生产<b>骆驼火枪手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n印度斯坦独特单位, 可降低 5 格范围内敌方骑乘单位 20% 攻击速度。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.3 <MATERIAL=StatIconsReloadTime> 3.25 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 60%\n主类: 征服者; 标签: 射手, 骆驼, 骑射手, 独特单位, 火药单位。\n攻击加成: +8 vs 步兵, +10 vs 大象。"
+
+721147 "生产<b>精锐骆驼火枪手<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n印度斯坦独特单位, 可降低 5 格范围内敌方骑乘单位 20% 攻击速度。\n升级: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.3 <MATERIAL=StatIconsReloadTime> 3.25 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 80%\n主类: 征服者; 标签: 射手, 骆驼, 骑射手, 独特单位, 火药单位。\n攻击加成: +12 vs 步兵, +15 vs 大象。"
+
 
 
 900001 "<b>西帕希之怒</b>\n西帕希骑兵能减少附近敌方远程单位的攻击速度。"
+900002 "<b>骆驼惊吓</b>\n周围骑乘单位 -20% 攻击速度。"
 
 IDS_CIV_SELECTION_FEATURES "文明加成："

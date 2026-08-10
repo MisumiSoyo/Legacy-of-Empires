@@ -852,6 +852,13 @@
             "name": "日本骑射手移除对掷矛手减少的攻击力",
             "effect_id": 185,
             "match": [4, "any", "any", 9, -9730]
+        },
+        {
+            "type": "modify",
+            "name": "萨拉森市场交易费用为0",
+            "effect_id": 354,
+            "match": [1, 78, "any", "any", "any"],
+            "modifications": ["d", "set", 0.0]
         }
     ],
     "unit_changes":
@@ -999,6 +1006,11 @@
             "unit_id": 1018,
             "attributes": [["type_50.attacks", "list_search", ["class_", 4], ["amount", 20]],
                            ["type_50.displayed_attack", 20]]
+        },
+        {
+            "note": "日本武士费用减少",
+            "unit_id": [291, 560],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 0], ["amount", 40]]]
         }
     ],
     "tech_changes":

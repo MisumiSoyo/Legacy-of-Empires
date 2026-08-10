@@ -747,6 +747,66 @@
             "Trigger Tech ID": 218
         },
         {
+            "Age ID": 3,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800146,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Zamburak",
+            "Name String ID": 700146,
+            "Node ID": 4165,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 191,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800147,
+            "Link ID": 4165,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Zamburak",
+            "Name String ID": 700147,
+            "Node ID": 4166,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 191,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3505,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Thumb Ring",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",

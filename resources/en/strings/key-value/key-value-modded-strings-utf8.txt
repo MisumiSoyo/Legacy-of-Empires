@@ -126,9 +126,9 @@
 //	Byzantines
 120156 "All-around civilization\n\n• All buildings +10%/+15%/+20%/+25% HP at Dark/Feudal/Castle/Imperial Age\n• Camel Rider-Line, Skirmisher-Line, Spearman-Line and Genitours -25% cost\n• Fire Ships, Flamethrowers and Dromons +25% attack speed\n• Advance to Imperial Age -33% costs\n• Town Watch, Town Patrol and Town Defense free\n• Can train an additional 4 unique units since Castle Age; You need to spend gold to train 3 at once\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries and can cause blast damage), Varangian Guard (Infantries that gain gold from killing units)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)\n• Logistica (Cataphracts, Knight-line units and Varangian Guards +6 attack vs Infantry; Cataphracts +2 area damage)\n• Polutasvarf (Military units can loot 30 gold from every destroyed building)\n• Golden Horn Tower (Trade units can additionally generate 15% stone)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 //	Persians
-120157 "Cavalry civilization\n\n• Start with +50 wood and food (received when the first TC is built up in Nomad mode)\n• Town Center, Dock +100% HP, +5%/+10%/+15%/+20% work rate at Dark/Feudal/Castle/Imperial Age\n• Can build Caravanserai in Imperial Age\n• Coinage and Banking free\n\n<b>Unique Unit:<b>\n• War Elephant (low-speed heary cavalry), Savar (heavy cavalry replaces Paladin and better combat vs archers), Parthian Cavalry Archer (high-speed cavalry archers)\n\n<b>Unique Techs: <b>\n• Kamandaran (Archer-Line cost no gold, but +50 wood cost)\n• Citadels (Castles fire Bullets, receive -25% bonus damage)\n• Satrap (Town Centers and Castles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute)\n• Camel Lancer (Camel Riders +1 attack range)\n\n<b>Team bonus: <b>\nCavalry (except Light Cavalry) +2 attack vs archers"
+120157 "Cavalry civilization\n\n• Start with +50 wood and food (received when the first TC is built up in Nomad mode)\n• Town Center, Dock +100% HP, +5%/+10%/+15%/+20% work rate at Dark/Feudal/Castle/Imperial Age\n• Can build Caravanserai in Imperial Age\n• Get 30 food from each trade unit produced\n\n<b>Unique Unit:<b>\n• War Elephant (low-speed heary cavalry), Savar (heavy cavalry replaces Paladin and better combat vs archers), Parthian Cavalry Archer (high-speed cavalry archers)\n\n<b>Unique Techs: <b>\n• Kamandaran (Archer-Line cost no gold, but +50 wood cost)\n• Citadels (Castles fire Bullets, receive -25% bonus damage)\n• Satrap (Town Centers and Castles can increase surrounding buildings' work rates by 33% and generate 20 gold per minute)\n• Camel Lancer (Camel Riders +1 attack range)\n\n<b>Team bonus: <b>\nCavalry (except Light Cavalry) +2 attack vs archers"
 //	Saracens
-120158 "Camel and Naval civilization\n\n• Market -100 wood cost, and trade cost only 5%\n• Transport Ships +100% HP, carry capacity +100%\n• All camel units +25% HP\n• Galley-Line -20% reload time\n• Get 30 food from each trade unit produced\n• Each completed research produces 3 wood, food and gold per minute\n• Petards -33% cost and train time\n\n<b>Unique Unit: <b>\n• Mameluke (Ranged camel rider), Bedouin Swordsman (Light infantry)\n\n<b>Unique Techs: <b>\n• Bimaristan (Monks passively heal multiple nearby units)\n• Counterweights (Trebuchets and Mangonel-line units +15% all damage)\n• Suftaja (Spawn 8 trade carts, with each market +1)\n• Red Sea Fleet (Warships -20% population space)\n\n<b>Team bonus: <b>\nArcher class unit +3 attack vs Buildings"
+120158 "Camel and Naval civilization\n\n• Market -100 wood cost, and removes trade cost\n• Transport Ships +100% HP, carry capacity +100%\n• All camel units +25% HP\n• Galley-Line +25% attack speed, -25% population space\n• Each completed research produces 3 wood, food and gold per minute\n• Petards -33% cost and train time\n• Scout Cavalry line costs 70 gold instead of food\n\n<b>Unique Unit: <b>\n• Mameluke (Ranged camel rider), Bedouin Swordsman (Light infantry)\n\n<b>Unique Techs: <b>\n• Bimaristan (Monks passively heal multiple nearby units)\n• Counterweights (Trebuchets and Mangonel-line units +15% all damage)\n• Suftaja (Spawn 8 trade carts, with each market +1)\n• Grand Bazzar (Scout Cavalry line -33% gold cost)\n\n<b>Team bonus: <b>\nArcher class unit +3 attack vs Buildings"
 //	Turks
 120159 "Gunpowder civilization\n\n• Gunpowder units +25% HP; researching gunpowder technologies -50% cost; Chemistry free\n• Gold miners +33% work rate\n• Scout Cavalry line upgrades free, and +1 pierce armor\n• Elite Steppe Lancer and Heavy Camel Rider upgrades are available in Castle Age, with a research speed increase of +200%\n• Can get gold equivalent to 5% of other players' trade income\n• Siege Workshop can produce and upgrade warships, and warships can move on land at 33% speed\n\n<b>Unique Unit:<b>\n• Janissary (High attack hand cannon), Sipahi (Cavalries that can reduce nearby enemy ranged soldiers' attack speed), Mehter (Cavalry that can strengthen allies)\n\n<b>Unique Techs: <b>\n• Sipahi (Cavalry Archers +20 HP)\n• Artillery (Cannon Tower, Bombard Cannon and Cannon Galley +2 max range)\n• Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)\n• Steppe Legacy (Steppe Lancer returns 50% food cost when defeated)\n\n<b>Team bonus: <b>\nGunpowder units +25% creation speed"
 //	Vikings
@@ -150,7 +150,7 @@
 //	Italians
 120168 "Archer and Naval civilization\n\n• Advancing to the next age -15% costs\n• Foot Archers and Condottiero +1 melee/+1 pierce armor\n• University and Dock technologies -25% cost\n• Fishing Ships -15% wood cost\n• Gunpowder units -20% cost\n• Archers (except Skirmishers) and Condottieros +1/+1P armor\n• Get 45 gold per minute since Feudal Age\n\n<b>Unique Units:<b>\n• Genoese Crossbowman (archer better combats with cavalries), Condottiero (Infantry better combats with gunpowder units), Hospitaller Knight (cavalry that can heal allies)\n\n<b>Unique Techs: <b>\n• Silk Road (Trade Units cost -50%)\n• Pirotechnia (Hand Cannoneers deal +15% pass through damage and accuracy increased to 90%)\n• Maritime Stronghold (Warships can build Sea Towers)\n• Mercenary Contract (Spawn 5 Condottieros at Town Center every 120 seconds)\n• Advanced Mercenary Contract (Mercenary Contract will spawn additionally 5 Condottieros)\n\n<b>Team bonus: <b>\n Can create Condottieros at barracks at Imperial Age"
 //	Hindustanis
-120169 "Camel and Gunpowder civilization\n\n• Villagers -15% cost\n• Camel Rider-line +20% attack speed\n• Gunpowder units +1/+1P armor\n• Can build Caravanserai in Imperial Age\n• Technologies are free but researched 70% slower (except age upgrades, unit upgrades and Spies)\n\n<b>Unique Units:<b>\n• Ghulam (Infantry can deal spear damages), Imperial Camel (High-level Camel rider)\n\n<b>Unique Techs: <b>\n• Grand Trunk Road (All gold incomes +10% rate, trading fee reduced to 10%)\n• Shatagni (Hand cannoneers +2 max range)\n• Khanda Drills (Ghulams and Mansabdars +25% attack speed, +5 gold cost)\n• Sultans (Infantries/Cavalries/Ranged units +10/10/6 attack vs elephants)\n\n<b>Team bonus: <b>\nLight Cavalries and Camel units +2 attack vs Buildings"
+120169 "Camel and Gunpowder civilization\n\n• Villagers -15% cost\n• Camel Rider-line +20% attack speed\n• Gunpowder units +1/+1P armor\n• Can build Caravanserai in Imperial Age\n• Technologies are free but researched 70% slower (except age upgrades, unit upgrades and Spies)\n\n<b>Unique Units:<b>\n• Ghulam (Infantry can deal spear damages), Imperial Camel (High-level Camel rider), Zamburak (Camel gunpowder unit that reduces enemy mounted units' attack speed)\n\n<b>Unique Techs: <b>\n• Grand Trunk Road (All gold incomes +10% rate, trading fee reduced to 10%)\n• Shatagni (Hand cannoneers +2 max range)\n• Khanda Drills (Ghulams and Mansabdars +25% attack speed, +5 gold cost)\n• Sultans (Infantries/Cavalries/Ranged units +10/10/6 attack vs elephants)\n\n<b>Team bonus: <b>\nLight Cavalries and Camel units +2 attack vs Buildings"
 //	Incas
 120170 "Infantry civilization\n\n• Military units -20%/30%/40%/50% food cost in Dark/Feudal/Castle/Imperial Age\n• Villagers can be affected by Blacksmith infantry upgrades (Techs researched before Castle Age will apply when enter Castle Age)\n• Houses and Settlements support +5 population\n• Buildings cost -15% stone (not applied on the first TC in Nomad mode)\n• Livestock animals +3 LOS\n• Barracks, Archery Ranges, Stables and Siege Workshops build 200% faster\n\n<b>Unique Units:<b>\n• Kamayuk (Infantry better combats with cavalries), Amazon Archer (Archer that can dodge projectiles), Manco's Horseman (Anti-cavalry cavalry, trained by killing mounted units)\n\n<b>Unique Techs: <b>\n• Andean Sling (Skirmishers and Slingers have no min range, Slingers +1 attack)\n• Fabric Shields (Kamayuks, Slingers and Champi Warrior +1 melee/pierce armor)\n• Couriers (Infantries and foot archers +6 line of sight)\n• Quipu (Monks -50% cost)\n\n<b>Team bonus: <b>\nStart with a free Llama"
 //	Magyars
@@ -265,7 +265,7 @@
 500044 "Pospolite Ruszenie"
 500045 "Frontline Outpost"
 500046 "Piracy"
-500047 "Red Sea Fleet"
+500047 "Grand Bazzar"
 500048 "Caravan Guard"
 500049 "Elite Sofa"
 500050 "Devsirme"
@@ -446,6 +446,7 @@
 500225 "Karma"
 500226 "Ganges Economy"
 500227 "Elite Bamar Rider"
+500228 "Elite Zamburak"
 
 
 
@@ -495,7 +496,7 @@
 501044 "Research Pospolite Ruszenie (Folwarks can be garrisoned in by villagers, shoot arrows and train scout cavalry line units)"
 501045 "Research Frontline Outpost (Land military units (except siege weapons and monks) around Wooden Fortress +10% movement speed and regenerate 30 HP per minute; Wooden Fortress +100% build speed)"
 501046 "Research Piracy (Transport Ships +250% hit points; Warships can loot 40 gold when killing enemies or destroying buildings)"
-501047 "Research Red Sea Fleet (Warships -20% population space)"
+501047 "Research Grand Bazzar (Scout Cavalry line -33% gold cost)"
 501048 "Research Caravan Guard (Trade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute)"
 501049 "Upgrade to Elite Sofa"
 501050 "Research Devsirme (Immediately spawn 5 Janissaries, and +1 additional spawn for each Town Center)"
@@ -676,6 +677,7 @@
 501225 "Research Karma (Mansabdars remove gold cost, but -2 pierce armor)"
 501226 "Research Ganges Economy (Villagers -75% cost, +100% creation speed)"
 501227 "Upgrade to Elite Bamar Rider"
+501228 "Upgrade to Elite Zamburak"
 
 
 
@@ -725,7 +727,7 @@
 521044 "Research <b>Pospolite Ruszenie<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nFolwarks can be garrisoned in by villagers, shoot arrows and train scout cavalry line units."
 521045 "Research <b>Frontline Outpost<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nLand military units (except siege weapons and monks) around Wooden Fortress +10% movement speed and regenerate 30 HP per minute; Wooden Fortress +100% build speed."
 521046 "Research <b>Frozen Sea Dominance<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTransport Ships +250% hit points; Warships can loot 40 gold when killing enemies or destroying buildings."
-521047 "Research <b>Red Sea Fleet<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nWarships -20% population space."
+521047 "Research <b>Grand Bazzar<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nScout Cavalry line -33% gold cost."
 521048 "Research <b>Caravan Guard<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTrade Carts +100% hit points, +2 melee/pierce armor, regenerate 70 hit points and generate 6 gold per minute."
 521049 "Upgrade to <b>Elite Sofa<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Sofas and lets you create Elite Sofas."
 521050 "Research <b>Devsirme<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nImmediately spawn 5 Janissaries, and +1 additional spawn for each Town Center."
@@ -906,6 +908,7 @@
 521225 "Research <b>Karma<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMansabdars remove gold cost, but -2 pierce armor."
 521226 "Research <b>Ganges Economy<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nVillagers -75% cost, +100% creation speed."
 521227 "Upgrade to <b>Elite Bamar Rider<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Bamar Riders and lets you create Elite Bamar Riders."
+521228 "Upgrade to <b>Elite Zamburak<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Zamburaks and lets you create Elite Zamburaks."
 
 
 
@@ -1064,6 +1067,8 @@
 700143 "Elite Bamar Rider"
 700144 "Yuan Raider"
 700145 "Manco's Horseman"
+700146 "Zamburak"
+700147 "Elite Zamburak"
 
 
 
@@ -1209,6 +1214,8 @@
 701143 "Create Elite Bamar Rider"
 701144 "Create Yuan Raider"
 701145 "Create Manco's Horseman"
+701146 "Create Zamburak"
+701147 "Create Elite Zamburak"
 
 
 
@@ -1469,9 +1476,9 @@
 
 721131 "Create <b>Elite Ayrudzi<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nArmenian unique cavalry. Can charge attack to deal area damage.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.35 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5 <MATERIAL=StatIconsPowerUpRange> 2 <MATERIAL=StatIconsPowerUpReloadTime> 8 <MATERIAL=StatIconsPowerUpMovementSpeed> 1.6875 <MATERIAL=StatIconsBlastRadius> 0.5 100% (+6 attack)\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +7 vs Cavalry, +6 vs Camel."
 
-721132 "Create <b>Mounted Crossbowman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nBurguandian unique cavalry archer that can ignore enemies' pierce armor.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.8 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 80%\nClass: Cavalry Archer; Tags: Archer, Cavalry, Cavalry Archer, Unique Unit."
+721132 "Create <b>Mounted Crossbowman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nBurguandian unique cavalry archer that can ignore enemies' pierce armor.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.8 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 80%\nClass: Cavalry Archer; Tags: Archer, Cavalry, Cavalry Archer, Unique Unit."
 
-721133 "Create <b>Elite Mounted Crossbowman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nBurguandian unique cavalry archer that can ignore enemies' pierce armor.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.7 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 90%\nClass: Cavalry Archer; Tags: Archer, Cavalry, Cavalry Archer, Unique Unit."
+721133 "Create <b>Elite Mounted Crossbowman<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nBurguandian unique cavalry archer that can ignore enemies' pierce armor.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT111ParthianTactics> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 2.7 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 90%\nClass: Cavalry Archer; Tags: Archer, Cavalry, Cavalry Archer, Unique Unit."
 
 721134 "Create <b>Luchnik<b> (<cost>, 35 <MATERIAL=MPIconGoodCPU>)\nBulgarian unique archer. Strong vs spearmen and skirmishers.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 80%\nClass: Archer; Tags: Archer, Unique Unit.\nAttack Bonus: +6 vs Spearman, +4 vs Skirmisher.\nArmor Bonus: +1 Archer Armor."
 
@@ -1499,6 +1506,11 @@
 
 721145 "Create <b>Manco's Horseman<b> (<cost>, 14 <MATERIAL=MPIconGoodCPU>)\nInca unique cavalry. Can train 1 unit for each enemy mounted unit killed.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.4 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\nClass: Cavalry; Tags: Cavalry, Unique Unit.\nAttack Bonus: +5 vs Cavalry, +8 vs Gunpowder Units.\n<MATERIAL=TechIconsT032ImperialAge> +20 HP, +3 attack, +1 melee/pierce armor."
 
+721146 "Create <b>Zamburak<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nHindustani unique unit. Can reduce enemy mounted units' attack speed by 20% within 5 range.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.3 <MATERIAL=StatIconsReloadTime> 3.25 <MATERIAL=EyeIcon> 6 <MATERIAL=TechIconsT112ThumbRing> 60%\nClass: Conquistador; Tags: Archer, Camel, Cavalry Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +8 vs Infantry, +10 vs Elephant."
+
+721147 "Create <b>Elite Zamburak<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nHindustani unique unit. Can reduce enemy mounted units' attack speed by 20% within 5 range.\nUpgrades: <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.3 <MATERIAL=StatIconsReloadTime> 3.25 <MATERIAL=EyeIcon> 7 <MATERIAL=TechIconsT112ThumbRing> 80%\nClass: Conquistador; Tags: Archer, Camel, Cavalry Archer, Unique Unit, Gunpowder Unit.\nAttack Bonus: +12 vs Infantry, +15 vs Elephant."
+
 
 
 900001 "<b>Sipahis' Fury</b>\nSipahis can increase nearby enemy ranged soldiers' reload time."
+900002 "<b>Camel Intimidation</b>\nReduces nearby mounted units' attack speed by 20%."

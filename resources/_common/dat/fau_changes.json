@@ -438,11 +438,11 @@
             "RequiredAge": 3
         },
         {
-            "note": "红海舰队",
+            "note": "大集市",
             "civilizations": "Saracens",
             "tech_id": 3125,
             "building_id": 109,
-            "Name": "Red Sea Fleet",
+            "Name": "Grand Bazzar",
             "RequiredAge": 4
         },
         {
@@ -2643,6 +2643,30 @@
             "building_id": 82,
             "Name": "Manco's Horseman",
             "RequiredAge": 3
+        },
+        {
+            "note": "骆驼火枪手",
+            "civilizations": "Indians",
+            "unit_id": 4165,
+            "building_id": 87,
+            "Name": "Zamburak",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐骆驼火枪手",
+            "civilizations": "Indians",
+            "unit_id": 4166,
+            "building_id": 87,
+            "Name": "Elite Zamburak",
+            "RequiredAge": 4
+        },
+        {
+            "note": "精锐骆驼火枪手",
+            "civilizations": "Indians",
+            "tech_id": 3505,
+            "building_id": 87,
+            "Name": "Elite Zamburak",
+            "RequiredAge": 4
         }
     ]
 }
