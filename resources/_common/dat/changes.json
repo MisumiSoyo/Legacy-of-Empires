@@ -859,6 +859,13 @@
             "effect_id": 354,
             "match": [1, 78, "any", "any", "any"],
             "modifications": ["d", "set", 0.0]
+        },
+        {
+            "type": "modify",
+            "name": "维京金冠改为 +2 攻击力",
+            "effect_id": 467,
+            "match": [4, "any", "any", 9, "any"],
+            "modifications": ["d", "set", 770]
         }
     ],
     "unit_changes":
@@ -1100,6 +1107,11 @@
             "note": "战舰升级科技添加新的空训练位置",
             "tech_id": [34, 35, 244, 376, 905],
             "attributes": [["research_locations", "list_add", {"location_id": -1}]]
+        },
+        {
+            "note": "维京金冠价格增加",
+            "tech_id": 49,
+            "attributes": [["resource_costs", "list_search", ["type", 3], ["amount", 800]]]
         }
     ],
     "resource_changes":

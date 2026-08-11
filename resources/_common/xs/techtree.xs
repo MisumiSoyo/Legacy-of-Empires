@@ -172,6 +172,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, HeatedShotTechID);
             EnableTech(playerId, StoneShaftMiningTechID);
+            EnableTech(playerId, HalberdierTechID);
             break;
         }
         case cTurks:
@@ -194,6 +195,7 @@ void EffectFunction10001(int playerId = -1)
             DisableTech(playerId, ChampionTechID);
             DisableTech(playerId, CropRotationTechID);
             DisableTech(playerId, 416);
+            DisableTech(playerId, ArbalesterTechID);
             break;
         }
         case cMongols:

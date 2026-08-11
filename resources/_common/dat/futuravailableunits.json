@@ -31209,6 +31209,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
@@ -40162,11 +40167,6 @@
                         "RequiredAge": 3
                     },
                     {
-                        "ID": 237,
-                        "Name": "Arbalester",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 98,
                         "Name": "Elite Skirmisher",
                         "RequiredAge": 3
@@ -40187,11 +40187,6 @@
                         "ID": 24,
                         "Name": "Crossbowman",
                         "RequiredAge": 3
-                    },
-                    {
-                        "ID": 492,
-                        "Name": "Arbalester",
-                        "RequiredAge": 4
                     },
                     {
                         "ID": 7,

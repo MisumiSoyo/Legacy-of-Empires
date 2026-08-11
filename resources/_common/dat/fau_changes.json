@@ -1211,8 +1211,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "波兰, 意大利, 维京, 契丹, 阿兹特克获得长戟兵",
-            "civilizations": ["Poles", "Italians", "Vikings", "Khitans", "Aztecs"],
+            "note": "波兰, 意大利, 维京, 契丹, 阿兹特克, 萨拉森获得长戟兵",
+            "civilizations": ["Poles", "Italians", "Vikings", "Khitans", "Aztecs", "Saracens"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",
@@ -1528,6 +1528,18 @@
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
+        },
+        {
+            "note": "维京失去劲弩手",
+            "civilizations": ["Vikings"],
+            "unit_id": 492,
+            "type": "delete"
+        },
+        {
+            "note": "维京失去劲弩手",
+            "civilizations": ["Vikings"],
+            "tech_id": 237,
+            "type": "delete"
         },
         {
             "note": "奥斯曼军乐队",

@@ -4802,10 +4802,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "萨拉森启用重型弩炮",
+            "note": "萨拉森启用重型弩炮, 长戟兵",
             "action": "modify",
             "civ_id": "SARACENS",
-            "Node ID": [542],
+            "Node ID": [359, 542],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
@@ -4847,6 +4847,14 @@
             "civ_id": "VIKINGS",
             "Node ID": [875],
             "Use Type": "Tech",
+            "Node Status": "NotAvailable"
+        },
+        {
+            "note": "维京失去劲弩手",
+            "action": "modify",
+            "civ_id": "VIKINGS",
+            "Node ID": [492],
+            "Use Type": "Unit",
             "Node Status": "NotAvailable"
         },
         {
