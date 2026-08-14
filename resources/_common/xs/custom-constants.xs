@@ -52,6 +52,7 @@ extern const int cAttributeCondottieroMercenaryTimer = 751;
 extern const int cAttributeTurksTradeIncome = 752;
 extern const int cAttributeEnclosureProductivity = 753;
 extern const int cAttributeKillCavalryCount = 754;
+extern const int cAttributeFreeCavalier = 755;
 
 
 
@@ -206,6 +207,7 @@ extern const int YuanRaiderID = 4163;
 extern const int MonkChampiBuildingID = 4164;
 extern const int ZamburakID = 4165;
 extern const int EliteZamburakID = 4166;
+extern const int FreeCavalierBuildingID = 4167;
 
 
 

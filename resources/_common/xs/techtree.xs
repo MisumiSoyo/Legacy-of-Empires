@@ -739,4 +739,6 @@ void EffectFunction10087(int playerId = -1)
     MulAttribute(playerId, VeteranRaiderElephantID, cTrainTime, 0.8);
     MulAttribute(playerId, EliteRaiderElephantID, cTrainTime, 0.8);
     MulAttribute(playerId, EarlyElephantArcherID, cTrainTime, 0.8);
+    MulAttribute(playerId, ZamburakID, cTrainTime, 0.8);
+    MulAttribute(playerId, EliteZamburakID, cTrainTime, 0.8);
 }

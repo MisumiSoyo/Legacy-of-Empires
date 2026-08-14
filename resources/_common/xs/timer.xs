@@ -117,6 +117,13 @@ void VikingsDeathBonus(int playerId = -1, int Time = -1)
 }
 
 
+void LithuniansPopulationGold(int playerId = -1, int Time = -1)
+{
+    float PopulationCap = xsPlayerAttribute(playerId, cAttributePopulationCap) + xsPlayerAttribute(playerId, cAttributePopulation);
+    ModResource(playerId, cAttributeGold, PopulationCap / 5.0 * 4.0 / 60.0);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -156,6 +163,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cMalay:
         {
             MalayFreeArmy(playerId, Time);
+            break;
+        }
+        case cLithuanians:
+        {
+            LithuniansPopulationGold(playerId, Time);
             break;
         }
         case cMuisca:

@@ -975,16 +975,18 @@ void EffectFunction10052(int playerId = -1)
 }
 
 
-//  10059 - C-Bonus, Barrack and Archery Range units + attack bonus
-void EffectFunction10059(int playerId = -1)
+//  10053 - C-Bonus, Free Cavalier for Killing Cavalry
+void EffectFunction10053(int playerId = -1)
 {
-    MulAttackBonus(playerId, cInfantryClass, 1.25);
-    MulAttackBonus(playerId, cArcherClass, 1.25);
-    MulAttackBonus(playerId, cCavalryArcherClass, 1.25);
-    MulAttackBonus(playerId, cHandCannoneerClass, 1.25);
-    MulAttackBonus(playerId, SpearmanID, 0.8);
-    MulAttackBonus(playerId, PikemanID, 0.8);
-    MulAttackBonus(playerId, HalberdierID, 0.8);
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFreeCavalier);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000023);
+    ApplyAllToTarget(playerId, cCavalryClass, cTaskTypeLoot, true, true, true, true);
+    ApplyAllToTarget(playerId, cScoutCavalryClass, cTaskTypeLoot, true, true, true, true);
+    xsResetTaskAmount();
+    EnableObject(playerId, FreeCavalierBuildingID);
 }
 
 
@@ -1476,7 +1478,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 358  2026.08.11");
+    xsChatData("Patch: 359  2026.08.14");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
