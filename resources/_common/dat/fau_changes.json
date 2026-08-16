@@ -1236,8 +1236,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 埃塞俄比亚, 波兰, 魏获得骑兵钢甲",
-            "civilizations": ["Goths", "Ethiopians", "Poles", "Wei"],
+            "note": "埃塞俄比亚, 波兰, 魏获得骑兵钢甲",
+            "civilizations": ["Ethiopians", "Poles", "Wei"],
             "tech_id": 80,
             "building_id": 103,
             "Name": "Plate Barding Armor",
@@ -1634,6 +1634,21 @@
             "civilizations": ["Chinese", "Huns"],
             "unit_id": 283,
             "type": "delete"
+        },
+        {
+            "note": "哥特获得游侠",
+            "civilizations": ["Goths"],
+            "unit_id": 569,
+            "building_id": 101,
+            "Name": "Paladin",
+            "RequiredAge": 4
+        },
+        {
+            "note": "哥特获得游侠",
+            "civilizations": ["Goths"],
+            "tech_id": 265,
+            "building_id": 101,
+            "RequiredAge": 4
         },
         {
             "note": "匈奴失去游侠",

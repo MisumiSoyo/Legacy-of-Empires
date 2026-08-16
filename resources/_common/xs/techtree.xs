@@ -78,11 +78,11 @@ void EffectFunction10001(int playerId = -1)
         }
         case cGoths:
         {
-            EnableTech(playerId, PlateBardingArmorTechID);
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, ArsonTechID);
             EnableTech(playerId, PlateMailArmorTechID);
+            EnableTech(playerId, PaladinTechID);
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, HandCannoneerTechID);
             DisableTech(playerId, BombardCannonTechID);

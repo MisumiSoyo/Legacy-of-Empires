@@ -29,38 +29,6 @@ void FreeTech(int playerId = -1, int TechID = -1)
 }
 
 
-void FoederatiArmyInit(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrResourceIn, FoederatiArmyKillEffectID);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 1.000008);
-    ApplyToAllPlayerTargets(playerId, FoederatiSwordmanID, cTaskTypeLoot);
-    ApplyToAllPlayerTargets(playerId, FoederatiCavalryArcherID, cTaskTypeLoot);
-    ApplyToAllPlayerTargets(playerId, FoederatiKnightID, cTaskTypeLoot);
-    xsResetTaskAmount();
-}
-
-
-//  10008 - Foederati Army Kill Effect
-void EffectFunction10008(int playerId = -1)
-{
-    int i = 0;
-    int n = xsGetNumPlayers();
-    int cnt = 0;
-    for (i = 0; <= n)
-        if (isAlly(i, playerId))
-            if (isResearched(i, FoederatiArmyTechID))
-                cnt ++;
-    for (i = 0; <= n)
-        if (isAlly(i, playerId))
-            if (isResearched(i, FoederatiArmyTechID))
-            {
-                ModResource(i, cAttributeFood, 7.0 / cnt);
-                ModResource(i, cAttributeGold, 7.0 / cnt);
-            }
-}
-
-
 void AccoladeApplier(int playerId = -1)
 {
     ApplyToAllMilitaryTargets(playerId, cArcherClass, cTaskTypeLoot);
@@ -639,7 +607,6 @@ void EffectFunction10128(int playerId = -1)
 void AbilityApplier(int playerId = -1)
 {
     SetNewArmorForms(playerId);
-    FoederatiArmyInit(playerId);
     KhanInit(playerId);
     MangonelAdjustment(playerId);
     SetCustomResources(playerId);

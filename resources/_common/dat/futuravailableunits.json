@@ -13806,6 +13806,10 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 265
                     }
                 ],
                 "Units": [
@@ -13834,6 +13838,11 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Paladin",
+                        "RequiredAge": 4,
+                        "ID": 569
                     }
                 ]
             },
@@ -13974,11 +13983,6 @@
                         "Name": "Plate Mail Armor",
                         "RequiredAge": 4,
                         "ID": 77
-                    },
-                    {
-                        "Name": "Plate Barding Armor",
-                        "RequiredAge": 4,
-                        "ID": 80
                     }
                 ]
             },

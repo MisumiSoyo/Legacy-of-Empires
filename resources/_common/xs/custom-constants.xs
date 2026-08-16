@@ -63,9 +63,6 @@ extern const int TimerEventBuildingID = 4002;
 extern const int HobelarID = 4003;
 extern const int EliteHobelarID = 4004;
 extern const int SwissPikemanID = 4005;
-extern const int FoederatiSwordmanID = 4006;
-extern const int FoederatiCavalryArcherID = 4007;
-extern const int FoederatiKnightID = 4008;
 extern const int CrusaderKnightID = 4009;
 extern const int YumiAshigaruID = 4010;
 extern const int VeteranYumiAshigaruID = 4011;
@@ -350,7 +347,6 @@ extern const int RattanSwordmanTechID = 3433;
 
 
 // Custom Effect IDs
-extern const int FoederatiArmyKillEffectID = 3055;
 extern const int FreeJaguarKillEffectID = 3078;
 extern const int RajaKillEffectID = 3380;
 

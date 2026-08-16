@@ -613,6 +613,25 @@ void EffectFunction10030(int playerId = -1)
 }
 
 
+//  10031 - Greuthungi Cavalry
+void EffectFunction10031(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000024);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.6);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+
+    xsTask(KnightID, cTaskTypeRefund, -1, playerId);
+    xsTask(CavalierID, cTaskTypeRefund, -1, playerId);
+    xsTask(PaladinID, cTaskTypeRefund, -1, playerId);
+    xsTask(SavarID, cTaskTypeRefund, -1, playerId);
+    xsTask(CrusaderKnightID, cTaskTypeRefund, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
 //  10033 - Frontline Outpost
 void EffectFunction10033(int playerId = -1)
 {
@@ -1478,7 +1497,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 359  2026.08.14");
+    xsChatData("Patch: 360  2026.08.17");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 
