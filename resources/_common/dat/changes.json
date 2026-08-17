@@ -1018,6 +1018,13 @@
             "note": "日本武士费用减少",
             "unit_id": [291, 560],
             "attributes": [["creatable.resource_costs", "list_search", ["type", 0], ["amount", 40]]]
+        },
+        {
+            "note": "大商站占用人口减少",
+            "unit_id": 1021,
+            "attributes": [["resource_storages", "list_search", ["type", 4], ["amount", -15]],
+                           ["resource_storages", "list_search", ["type", 11], ["amount", 15]],
+                           ["resource_storages", "list_search", ["type", 19], ["amount", 1]]]
         }
     ],
     "tech_changes":
