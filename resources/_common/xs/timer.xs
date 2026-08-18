@@ -120,7 +120,7 @@ void VikingsDeathBonus(int playerId = -1, int Time = -1)
 void LithuniansPopulationGold(int playerId = -1, int Time = -1)
 {
     float PopulationCap = xsPlayerAttribute(playerId, cAttributePopulationCap) + xsPlayerAttribute(playerId, cAttributePopulation);
-    ModResource(playerId, cAttributeGold, PopulationCap / 5.0 * 4.0 / 60.0);
+    ModResource(playerId, cAttributeGold, PopulationCap / 5.0 * 3.0 / 60.0);
 }
 
 

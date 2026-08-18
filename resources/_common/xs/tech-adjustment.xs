@@ -47,8 +47,9 @@ void EffectFunction10082(int playerId = -1)
 //  10083 - Logistica Adjustment
 void EffectFunction10083(int playerId = -1)
 {
-    AddAttackForm(playerId, VarangianID, cDamageClassInfantry, 6);
-    AddAttackForm(playerId, EliteVarangianID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, EarlyVarangianGuardID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, VarangianGuardID, cDamageClassInfantry, 6);
+    AddAttackForm(playerId, EliteVarangianGuardID, cDamageClassInfantry, 6);
     AddAttackForm(playerId, CataphractID, cDamageClassInfantry, 6);
     AddAttackForm(playerId, EliteCataphractID, cDamageClassInfantry, 6);
     AddAttackForm(playerId, KnightID, cDamageClassInfantry, 6);

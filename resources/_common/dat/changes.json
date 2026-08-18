@@ -866,6 +866,12 @@
             "effect_id": 467,
             "match": [4, "any", "any", 9, "any"],
             "modifications": ["d", "set", 770]
+        },
+        {
+            "type": "adjustment",
+            "name": "禁用LOE区域单位",
+            "effect_id": 79,
+            "function_id": 10129
         }
     ],
     "unit_changes":
@@ -1127,6 +1133,11 @@
             "note": "圣物黄金产出增加",
             "resource_id": 191,
             "num": 45
+        },
+        {
+            "note": "瓦兰吉卫队每秒产出 0.5 黄金",
+            "resource_id": 717,
+            "num": 100
         },
         {
             "note": "LOE 毛驴产出 50% 的食物",

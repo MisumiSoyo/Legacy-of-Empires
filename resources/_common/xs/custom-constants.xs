@@ -23,7 +23,7 @@ extern const int cAttributeTechEffectTime = 713;
 extern const int cAttributeHerderGoldProductivity = 714;
 extern const int cAttributeStoneMinerFoodProductivity = 715;
 extern const int cAttributeLastRuleTime = 716;
-extern const int cAttributeVarangianLootProductivity = 717;
+extern const int cAttributeVarangianGuardLootProductivity = 717;
 extern const int cAttributeWubaoFoodWoodProductivity = 718;
 extern const int cAttributeWubaoGoldProductivity = 719;
 extern const int cAttributeCavalryLootBuildingGoldProductivity = 720;
@@ -74,8 +74,8 @@ extern const int SoheiID = 4016;
 extern const int SoheiWithRelicID = 4017;
 extern const int GuanNingCavalryID = 4018;
 extern const int FlameThrowerID = 4019;
-extern const int VarangianID = 4020;
-extern const int EliteVarangianID = 4021;
+extern const int VarangianGuardID = 4020;
+extern const int EliteVarangianGuardID = 4021;
 extern const int EliteObuch2ID = 4022;
 extern const int ChariotJavelineerID = 4023;
 extern const int EliteChariotJavelineerID = 4024;
@@ -95,7 +95,7 @@ extern const int DoubleMilitiaBuildingID = 4038;
 extern const int DoubleSpearmenBuildingID = 4039;
 extern const int DoubleCondottierosBuildingID = 4040;
 extern const int BlackArmyInfantryID = 4041;
-extern const int EarlyVarangianID = 4042;
+extern const int EarlyVarangianGuardID = 4042;
 extern const int HeavyCrossbowmanID = 4043;
 extern const int VeteranHeavyCrossbowmanID = 4044;
 extern const int EliteHeavyCrossbowmanID = 4045;
@@ -205,6 +205,7 @@ extern const int MonkChampiBuildingID = 4164;
 extern const int ZamburakID = 4165;
 extern const int EliteZamburakID = 4166;
 extern const int FreeCavalierBuildingID = 4167;
+extern const int BlackArmyArquebusierID = 4168;
 
 
 
@@ -237,8 +238,8 @@ extern const int YuanDynastyTechID = 3095;
 extern const int MingDynastyTechID = 3096;
 extern const int GuanNingCavalryTechID = 3097;
 extern const int TributarySystemTechID = 3098;
-extern const int VarangianTechID = 3106;
-extern const int EliteVarangianTechID = 3107;
+extern const int EarlyVarangianGuardTechID = 3106;
+extern const int EliteVarangianGuardTechID = 3107;
 extern const int PhkakTechID = 3113;
 extern const int PolutasvarfTechID = 3114;
 extern const int GoldenHornTowerTechID = 3115;
@@ -343,6 +344,7 @@ extern const int FlankingCavalryTechID = 3405;
 extern const int RajaTechID = 3409;
 extern const int LateenSailTechID = 3414;
 extern const int RattanSwordmanTechID = 3433;
+extern const int VarangianGuardTechID = 3451;
 
 
 

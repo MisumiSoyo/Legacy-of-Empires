@@ -2,6 +2,7 @@ include "ability.xs";
 include "tech-adjustment.xs";
 
 
+
 // 10001 - Tech Tree Adjustment
 void EffectFunction10001(int playerId = -1)
 {
@@ -147,6 +148,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BloodlinesTechID);
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, SiegeOnagerTechID);
+            EnableTech(playerId, EarlyVarangianGuardTechID);
+            EnableTech(playerId, VarangianGuardTechID);
+            EnableTech(playerId, EliteVarangianGuardTechID);
             break;
         }
         case cPersians:
@@ -189,6 +193,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, HalberdierTechID);
             EnableTech(playerId, ThumbRingTechID);
+            EnableTech(playerId, EarlyVarangianGuardTechID);
+            EnableTech(playerId, VarangianGuardTechID);
+            EnableTech(playerId, EliteVarangianGuardTechID);
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, ArrowslitsTechID);
             DisableTech(playerId, GambesonsTechID);
@@ -621,6 +628,15 @@ void EffectFunction10001(int playerId = -1)
         default:
             break;
     }
+}
+
+
+//  10129 - Disable LOE regionals
+void EffectFunction10129(int playerId = -1)
+{
+    DisableTech(playerId, EarlyVarangianGuardTechID);
+    DisableTech(playerId, VarangianGuardTechID);
+    DisableTech(playerId, EliteVarangianGuardID);
 }
 
 

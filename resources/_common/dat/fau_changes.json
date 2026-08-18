@@ -48,7 +48,7 @@
         },
         {
             "note": "早期瓦兰吉卫队",
-            "civilizations": "Byzantines",
+            "civilizations": ["Byzantines", "Vikings"],
             "unit_id": 4042,
             "building_id": 12,
             "Name": "Early Varangian Guard",
@@ -56,7 +56,7 @@
         },
         {
             "note": "瓦兰吉卫队",
-            "civilizations": "Byzantines",
+            "civilizations": ["Byzantines", "Vikings"],
             "unit_id": 4020,
             "building_id": 12,
             "Name": "Varangian Guard",
@@ -65,7 +65,7 @@
         },
         {
             "note": "精锐瓦兰吉卫队",
-            "civilizations": "Byzantines",
+            "civilizations": ["Byzantines", "Vikings"],
             "unit_id": 4021,
             "building_id": 12,
             "Name": "Elite Varangian Guard",
@@ -74,7 +74,7 @@
         },
         {
             "note": "瓦兰吉卫队",
-            "civilizations": "Byzantines",
+            "civilizations": ["Byzantines", "Vikings"],
             "tech_id": 3451,
             "building_id": 12,
             "Name": "Varangian Guard",
@@ -82,7 +82,7 @@
         },
         {
             "note": "精锐瓦兰吉卫队",
-            "civilizations": "Byzantines",
+            "civilizations": ["Byzantines", "Vikings"],
             "tech_id": 3107,
             "building_id": 12,
             "Name": "Elite Varangian Guard",

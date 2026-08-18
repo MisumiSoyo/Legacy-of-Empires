@@ -747,6 +747,7 @@ void EffectFunction10039(int playerId = -1)
     FasterCastleUnits(playerId, 39, 28, 18008);
     FasterCastleUnits(playerId, 474, 28, 18008);
     FasterCastleUnits(playerId, HandCannoneerID, 29, 18034);
+    FasterCastleUnits(playerId, BlackArmyArquebusierID, FKeyID + 20, FHotkeyID);
     FasterCastleUnits(playerId, 448, 31, 18090);
     FasterCastleUnits(playerId, 546, 31, 18090);
     FasterCastleUnits(playerId, 441, 31, 18090);
@@ -1297,25 +1298,6 @@ void EffectFunction10104(int playerId = -1)
 }
 
 
-//  10105 - Black Army
-void EffectFunction10105(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000018);
-    xsTaskAmount(cTaskAttrWorkValue1, 30);
-    xsTaskAmount(cTaskAttrWorkValue2, 30);
-    xsTaskAmount(cTaskAttrWorkRange, 8);
-    xsTaskAmount(cTaskAttrOwnerType, 1);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrAutoSearch, 0);
-    xsTask(cHandCannoneerClass, cTaskTypeAura, cCavalryClass, playerId);
-    xsTaskAmount(cTaskAttrAutoSearch, 1);
-    xsTask(cHandCannoneerClass, cTaskTypeAura, cScoutCavalryClass, playerId);
-    xsResetTaskAmount();
-    LaunchAura(playerId, cHandCannoneerClass, true);
-}
-
-
 //  10106 - Druid
 void EffectFunction10106(int playerId = -1)
 {
@@ -1497,7 +1479,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 361  2026.08.17");
+    xsChatData("Patch: 362  2026.08.18");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

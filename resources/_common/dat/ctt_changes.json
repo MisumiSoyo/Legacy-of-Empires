@@ -423,7 +423,7 @@
         {
             "note": "早期瓦兰吉卫队",
             "action": "add",
-            "civ_id": "BYZANTINES",
+            "civ_id": ["BYZANTINES", "VIKINGS"],
             "Age ID": 2,
             "Building ID": 12,
             "Draw Node Type": "UnitTech",
@@ -446,7 +446,7 @@
         {
             "note": "瓦兰吉卫队",
             "action": "add",
-            "civ_id": "BYZANTINES",
+            "civ_id": ["BYZANTINES", "VIKINGS"],
             "Age ID": 3,
             "Building ID": 12,
             "Draw Node Type": "UnitTech",
@@ -469,7 +469,7 @@
         {
             "note": "精锐瓦兰吉卫队",
             "action": "add",
-            "civ_id": "BYZANTINES",
+            "civ_id": ["BYZANTINES", "VIKINGS"],
             "Age ID": 4,
             "Building ID": 12,
             "Draw Node Type": "UnitTech",
@@ -2287,9 +2287,9 @@
             "Name String ID": 500078
         },
         {
-            "note": "马扎尔, 缅甸, 波兰, 中国, 越南启用火枪手",
+            "note": "缅甸, 波兰, 中国, 越南启用火枪手",
             "action": "modify",
-            "civ_id": ["MAGYAR", "BURMESE", "POLES", "CHINESE", "VIETNAMESE"],
+            "civ_id": ["BURMESE", "POLES", "CHINESE", "VIETNAMESE"],
             "Node ID": 5,
             "Use Type": "Unit",
             "Node Status": "ResearchRequired"
@@ -2928,9 +2928,19 @@
             "note": "维京护卫, 攻城训练提前一个时代",
             "action": "modify",
             "civ_id": "VIKINGS",
-            "Node ID": [215, 3508],
+            "Node ID": [215, 3024],
             "Use Type": "Tech",
             "Age ID": 2
+        },
+        {
+            "note": "维京软甲位置移动",
+            "action": "move",
+            "civ_id": "VIKINGS",
+            "Node ID": [875],
+            "Use Type": "Tech",
+            "target_id": 215,
+            "target_type": "Tech",
+            "position": "after"
         },
         {
             "note": "维京移除民兵系",
@@ -4853,6 +4863,13 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "马扎尔获得火枪手",
+            "action": "delete",
+            "civ_id": "MAGYAR",
+            "Node ID": [5],
+            "Use Type": "Unit"
+        },
+        {
             "note": "斯拉夫获得建筑学, 护腕, 异教, 热情",
             "action": "modify",
             "civ_id": "SLAVS",
@@ -6704,6 +6721,29 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4165
+        },
+        {
+            "note": "黑军火枪手",
+            "action": "add",
+            "civ_id": "MAGYAR",
+            "Age ID": 4,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800148,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Black Army Arquebusier",
+            "Name String ID": 700148,
+            "Node ID": 4168,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 22,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 6
         }
     ]
 }

@@ -40251,6 +40251,17 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Varangian Guard",
+                        "RequiredAge": 3,
+                        "ID": 3451
+                    },
+                    {
+                        "Name": "Elite Varangian Guard",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3451,
+                        "ID": 3107
+                    },
+                    {
                         "Name": "Halberdier",
                         "RequiredAge": 4,
                         "ID": 429
@@ -40296,6 +40307,23 @@
                         "ID": 358,
                         "Name": "Pikeman",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Early Varangian Guard",
+                        "RequiredAge": 2,
+                        "ID": 4042
+                    },
+                    {
+                        "Name": "Varangian Guard",
+                        "RequiredAge": 3,
+                        "RequiredUnitID": 4042,
+                        "ID": 4020
+                    },
+                    {
+                        "Name": "Elite Varangian Guard",
+                        "RequiredAge": 4,
+                        "RequiredUnitID": 4020,
+                        "ID": 4021
                     }
                 ]
             },

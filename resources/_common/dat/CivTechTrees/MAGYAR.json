@@ -598,32 +598,34 @@
             "Trigger Tech ID": 98
         },
         {
-            "Name": "Hand Cannoneer",
-            "Node Type": "Unit",
-            "Link Node Type": "BuildingTech",
-            "Draw Node Type": "UnitTech",
-            "Use Type": "Unit",
-            "Node Status": "ResearchRequired",
-            "Name String ID": 14086,
             "Age ID": 4,
             "Building ID": 87,
-            "Help String ID": 105086,
-            "Node ID": 5,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800148,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Black Army Arquebusier",
+            "Name String ID": 700148,
+            "Node ID": 4168,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
             "Picture Index": 22,
             "Prerequisite IDs": [
-                47,
+                0,
                 0,
                 0,
                 0,
                 0
             ],
             "Prerequisite Types": [
-                "Tech",
+                "None",
                 "None",
                 "None",
                 "None",
                 "None"
-            ]
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         },
         {
             "Name": "Cavalry Archer",

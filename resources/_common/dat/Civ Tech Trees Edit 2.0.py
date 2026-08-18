@@ -186,6 +186,28 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
                             elif item["Node ID"] == node_id and item.get("Use Type") != use_type:
                                 pass
                 
+                elif action == "move":
+                    node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
+                    position = change.get("position", "last").lower()
+                    target_id = change.get("target_id", None)
+                    target_type = change.get("target_type", None)
+                    # 根据target_type确定搜索列表
+                    if target_type is not None:
+                        if target_type in ["Unit", "Tech"]:
+                            search_list = civ["civ_techs_units"]
+                        elif target_type == "Building":
+                            search_list = civ["civ_techs_buildings"]
+                        else:
+                            search_list = target_list
+                    else:
+                        search_list = target_list
+
+                    for node_id in node_ids:
+                        for item in target_list:
+                            if item["Node ID"] == node_id and (item.get("Use Type") == use_type or (item.get("Use Type") == "Building" and use_type == "Unit")):
+                                move_item_in_list(target_list, item, position, target_id, search_list, target_type)
+                                break
+
                 elif action == "delete":
                     node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
                     target_list[:] = [
