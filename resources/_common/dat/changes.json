@@ -714,7 +714,7 @@
             "name": "马扎尔斥候骑兵系训练费用减免增加",
             "effect_id": 524,
             "match": [5, "any", "any", 103, "any"],
-            "modifications": ["d", "set", 0.75]
+            "modifications": ["d", "set", 0.8]
         },
         {
             "type": "modify",
@@ -872,6 +872,18 @@
             "name": "禁用LOE区域单位",
             "effect_id": 79,
             "function_id": 10129
+        },
+        {
+            "type": "delete",
+            "name": "移除魏国原有的黑光铠骑兵和鲜卑掠骑兵生命值加成",
+            "effect_id": [1056, 1057, 1058, 1059],
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "delete",
+            "name": "柏柏尔移除马厩单位减费加成",
+            "effect_id": [610, 638],
+            "match": ["any", "any", "any", "any", "any"]
         }
     ],
     "unit_changes":
@@ -907,7 +919,7 @@
         {
             "note": "牧民工作效率改动",
             "unit_id": [1891, 1892],
-            "attributes": [["bird.work_rate", 0.45]]
+            "attributes": [["bird.work_rate", 0.44]]
         },
         {
             "note": "牧场价格改动",
@@ -1031,6 +1043,11 @@
             "attributes": [["resource_storages", "list_search", ["type", 4], ["amount", -15]],
                            ["resource_storages", "list_search", ["type", 11], ["amount", 15]],
                            ["resource_storages", "list_search", ["type", 19], ["amount", 1]]]
+        },
+        {
+            "note": "鲜卑掠骑兵生命值提高",
+            "unit_id": 1952,
+            "attributes": [["hit_points", 36]]
         }
     ],
     "tech_changes":

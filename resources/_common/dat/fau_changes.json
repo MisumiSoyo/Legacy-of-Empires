@@ -48,7 +48,7 @@
         },
         {
             "note": "早期瓦兰吉卫队",
-            "civilizations": ["Byzantines", "Vikings"],
+            "civilizations": ["Byzantines"],
             "unit_id": 4042,
             "building_id": 12,
             "Name": "Early Varangian Guard",
@@ -56,12 +56,20 @@
         },
         {
             "note": "瓦兰吉卫队",
-            "civilizations": ["Byzantines", "Vikings"],
+            "civilizations": ["Byzantines"],
             "unit_id": 4020,
             "building_id": 12,
             "Name": "Varangian Guard",
             "RequiredAge": 3,
             "RequiredUnitID": 4042
+        },
+        {
+            "note": "瓦兰吉卫队",
+            "civilizations": ["Vikings"],
+            "unit_id": 4020,
+            "building_id": 12,
+            "Name": "Varangian Guard",
+            "RequiredAge": 3
         },
         {
             "note": "精锐瓦兰吉卫队",
@@ -74,7 +82,7 @@
         },
         {
             "note": "瓦兰吉卫队",
-            "civilizations": ["Byzantines", "Vikings"],
+            "civilizations": ["Byzantines"],
             "tech_id": 3451,
             "building_id": 12,
             "Name": "Varangian Guard",
@@ -744,8 +752,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭, 条顿, 萨拉森, 马扎尔, 斯拉夫, 越南, 柏柏尔, 鞑靼获得建筑学",
-            "civilizations": ["Teutons", "Byzantines", "Saracens", "Magyars", "Slavs", "Vietnamese", "Berbers", "Tatars"],
+            "note": "拜占庭, 条顿, 萨拉森, 马扎尔, 斯拉夫, 越南, 柏柏尔, 鞑靼, 魏获得建筑学",
+            "civilizations": ["Teutons", "Byzantines", "Saracens", "Magyars", "Slavs", "Vietnamese", "Berbers", "Tatars", "Wei"],
             "tech_id": 51,
             "building_id": 209,
             "Name": "Architecture",
@@ -1352,8 +1360,8 @@
             "type": "delete"
         },
         {
-            "note": "勃艮第, 中国, 意大利, 波斯, 马里, 达罗毗荼, 拜占庭获得攻城技师",
-            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians", "Dravidians", "Byzantines"],
+            "note": "勃艮第, 中国, 意大利, 波斯, 马里, 达罗毗荼, 拜占庭, 魏获得攻城技师",
+            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians", "Dravidians", "Byzantines", "Wei"],
             "tech_id": 377,
             "building_id": 209,
             "Name": "Siege Engineers",
@@ -1663,8 +1671,8 @@
             "type": "delete"
         },
         {
-            "note": "孟加拉, 不列颠, 法兰克, 马扎尔, 土耳其, 萨拉森获得钻井采石法",
-            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars", "Turks", "Saracens"],
+            "note": "孟加拉, 不列颠, 法兰克, 马扎尔, 土耳其, 萨拉森, 蜀获得钻井采石法",
+            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars", "Turks", "Saracens", "Shu"],
             "tech_id": 279,
             "building_id": 584,
             "Name": "Stone Shaft Mining",

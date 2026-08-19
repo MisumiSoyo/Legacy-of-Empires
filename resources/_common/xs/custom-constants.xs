@@ -53,6 +53,7 @@ extern const int cAttributeTurksTradeIncome = 752;
 extern const int cAttributeEnclosureProductivity = 753;
 extern const int cAttributeKillCavalryCount = 754;
 extern const int cAttributeFreeCavalier = 755;
+extern const int cAttributeMagyarFreeArmyTimer = 756;
 
 
 
@@ -336,7 +337,7 @@ extern const int RingPommeledSwordTechID = 3388;
 extern const int PilumTechID = 3389;
 extern const int GoldenSpursTechID = 3390;
 extern const int FirearmCastingTechID = 3393;
-extern const int BlackArmyTechID = 3394;
+extern const int HussarHeritageTechID = 3394;
 extern const int DruidTechID = 3395;
 extern const int ThunderclapCartTechID = 3396;
 extern const int MenganMoukeTechID = 3404;

@@ -193,9 +193,6 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, HalberdierTechID);
             EnableTech(playerId, ThumbRingTechID);
-            EnableTech(playerId, EarlyVarangianGuardTechID);
-            EnableTech(playerId, VarangianGuardTechID);
-            EnableTech(playerId, EliteVarangianGuardTechID);
             DisableTech(playerId, WatchTowerTechID);
             DisableTech(playerId, ArrowslitsTechID);
             DisableTech(playerId, GambesonsTechID);
@@ -558,6 +555,7 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, StoneShaftMiningTechID);
             break;
         }
         case cWu:
@@ -581,6 +579,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, PlateMailArmorTechID);
             EnableTech(playerId, PlateBardingArmorTechID);
             EnableTech(playerId, ArbalesterTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, ArchitectureTechID);
             break;
         }
         case cJurchens:

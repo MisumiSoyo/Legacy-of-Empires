@@ -40251,11 +40251,6 @@
                         "RequiredAge": 2
                     },
                     {
-                        "Name": "Varangian Guard",
-                        "RequiredAge": 3,
-                        "ID": 3451
-                    },
-                    {
                         "Name": "Elite Varangian Guard",
                         "RequiredAge": 4,
                         "RequiredTechID": 3451,
@@ -40309,14 +40304,8 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Early Varangian Guard",
-                        "RequiredAge": 2,
-                        "ID": 4042
-                    },
-                    {
                         "Name": "Varangian Guard",
                         "RequiredAge": 3,
-                        "RequiredUnitID": 4042,
                         "ID": 4020
                     },
                     {
@@ -50675,6 +50664,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -52565,6 +52559,16 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
                     }
                 ]
             },

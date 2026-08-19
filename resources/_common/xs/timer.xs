@@ -124,6 +124,21 @@ void LithuniansPopulationGold(int playerId = -1, int Time = -1)
 }
 
 
+void MagyarFreeArmy(int playerId = -1, int Time = -1)
+{
+    int Progress = xsPlayerAttribute(playerId, cAttributeMagyarFreeArmyTimer);
+    if (isResearched(playerId, HussarHeritageTechID) == false)
+        return;
+    if ((Progress >= 120) && (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0))
+    {
+        SpawnUnit(playerId, EliteMagyarHuszarID, CastleID, 1);
+        SpawnUnit(playerId, PaladinID, CastleID, 1);
+        Progress = Progress - 120;
+    }
+    SetResource(playerId, cAttributeMagyarFreeArmyTimer, minInt(Progress + 1, 120));
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -182,6 +197,7 @@ void TimerEvent(int playerId = -1, int Time = -1)
     }
 
     MercenaryContract(playerId, Time);
+    MagyarFreeArmy(playerId, Time);
 }
 
 
