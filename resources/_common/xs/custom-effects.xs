@@ -307,7 +307,7 @@ void EffectFunction10018(int playerId = -1)
     xsTask(FemaleHunterID, cTaskTypeGenerateResources, cPreyAnimalClass, playerId);
     xsTask(FemaleHunterID, cTaskTypeGenerateResources, cPredatorAnimalClass, playerId);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeHunterGoldGenerationProductivity, 5.0 * 1.04);  //  multply 1.04 to adjust actual output
+    SetResource(playerId, cAttributeHunterGoldGenerationProductivity, 4.0 * 1.04);  //  multply 1.04 to adjust actual output
 }
 
 
@@ -792,8 +792,8 @@ void EffectFunction10041(int playerId = -1)
 void EffectFunction10042(int playerId = -1)
 {
     int ArmyCount = xsPlayerAttribute(playerId, cAttributeMilitaryPopulation);
-    ModResource(playerId, cAttributeFood, ArmyCount * 7);
-    ModResource(playerId, cAttributeWood, ArmyCount * 7);
+    ModResource(playerId, cAttributeFood, ArmyCount * 5);
+    ModResource(playerId, cAttributeWood, ArmyCount * 5);
     ModResource(playerId, cAttributeGold, ArmyCount * 5);
 }
 
@@ -1479,7 +1479,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 363  2026.08.20");
+    xsChatData("Patch: 364  2026.08.21");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

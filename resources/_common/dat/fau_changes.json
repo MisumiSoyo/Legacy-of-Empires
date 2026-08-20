@@ -1626,21 +1626,15 @@
             "RequiredAge": 3
         },
         {
-            "note": "中国, 匈奴, 蒙古失去骑士系",
-            "civilizations": ["Chinese", "Huns", "Mongols"],
+            "note": "中国, 匈奴, 蒙古, 柏柏尔失去骑士系",
+            "civilizations": ["Chinese", "Huns", "Mongols", "Berbers"],
             "unit_id": [38, 283],
             "type": "delete"
         },
         {
-            "note": "中国, 匈奴, 蒙古失去重装骑士",
-            "civilizations": ["Chinese", "Huns", "Mongols"],
+            "note": "中国, 匈奴, 蒙古, 柏柏尔失去重装骑士",
+            "civilizations": ["Chinese", "Huns", "Mongols", "Berbers"],
             "tech_id": 209,
-            "type": "delete"
-        },
-        {
-            "note": "中国, 匈奴失去重装骑士",
-            "civilizations": ["Chinese", "Huns"],
-            "unit_id": 283,
             "type": "delete"
         },
         {
@@ -2701,6 +2695,30 @@
             "tech_id": 3505,
             "building_id": 87,
             "Name": "Elite Zamburak",
+            "RequiredAge": 4
+        },
+        {
+            "note": "马格里布骑兵",
+            "civilizations": "Berbers",
+            "unit_id": 4169,
+            "building_id": 101,
+            "Name": "Maghrebi Cavalry",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐马格里布骑兵",
+            "civilizations": "Berbers",
+            "unit_id": 4170,
+            "building_id": 101,
+            "Name": "Elite Maghrebi Cavalry",
+            "RequiredAge": 4
+        },
+        {
+            "note": "精锐马格里布骑兵",
+            "civilizations": "Berbers",
+            "tech_id": 3509,
+            "building_id": 101,
+            "Name": "Elite Maghrebi Cavalry",
             "RequiredAge": 4
         }
     ]

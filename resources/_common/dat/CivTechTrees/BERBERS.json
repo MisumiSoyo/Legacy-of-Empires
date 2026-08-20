@@ -941,12 +941,72 @@
             "Trigger Tech ID": 428
         },
         {
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800149,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Maghrebi Cavalry",
+            "Name String ID": 700149,
+            "Node ID": 4169,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 411,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800150,
+            "Link ID": 4169,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Maghrebi Cavalry",
+            "Name String ID": 700150,
+            "Node ID": 4170,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 411,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3509,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Knight",
             "Node Type": "Unit",
             "Link Node Type": "BuildingTech",
             "Draw Node Type": "UnitTech",
             "Use Type": "Unit",
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Name String ID": 14068,
             "Age ID": 3,
             "Building ID": 101,
@@ -960,7 +1020,7 @@
             "Link Node Type": "Unit",
             "Draw Node Type": "UnitTech",
             "Use Type": "Unit",
-            "Node Status": "ResearchedCompleted",
+            "Node Status": "NotAvailable",
             "Name String ID": 14070,
             "Age ID": 4,
             "Building ID": 101,

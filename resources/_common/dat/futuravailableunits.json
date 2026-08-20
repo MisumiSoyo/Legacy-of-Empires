@@ -1319,11 +1319,6 @@
                         "RequiredAge": 2
                     },
                     {
-                        "ID": 209,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 236,
                         "Name": "Heavy Camel Rider",
                         "RequiredAge": 4
@@ -1332,6 +1327,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Elite Maghrebi Cavalry",
+                        "RequiredAge": 4,
+                        "ID": 3509
                     }
                 ],
                 "Units": [
@@ -1352,16 +1352,6 @@
                         "RequiredUnitID": 546
                     },
                     {
-                        "ID": 38,
-                        "Name": "Knight",
-                        "RequiredAge": 3
-                    },
-                    {
-                        "ID": 283,
-                        "Name": "Cavalier",
-                        "RequiredAge": 4
-                    },
-                    {
                         "ID": 329,
                         "Name": "Camel Rider",
                         "RequiredAge": 3
@@ -1370,6 +1360,16 @@
                         "ID": 330,
                         "Name": "Heavy Camel Rider",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Maghrebi Cavalry",
+                        "RequiredAge": 3,
+                        "ID": 4169
+                    },
+                    {
+                        "Name": "Elite Maghrebi Cavalry",
+                        "RequiredAge": 4,
+                        "ID": 4170
                     }
                 ]
             },

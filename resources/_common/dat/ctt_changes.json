@@ -547,11 +547,12 @@
             "target_id": 4080
         },
         {
-            "note": "土耳其, 高丽, 日本, 越南, 亚美尼亚, 缅甸移除骑士系 (暂时取消)",
-            "action": "delete",
-            "civ_id": ["TURKS", "KOREANS", "JAPANESE", "VIETNAMESE", "ARMENIANS", "KHMER", "BURMESE"],
-            "Node ID": [],
-            "Use Type": "Unit"
+            "note": "土耳其, 高丽, 日本, 越南, 亚美尼亚, 缅甸, 柏柏尔移除骑士系 (暂时取消)",
+            "action": "modify",
+            "civ_id": ["TURKS", "KOREANS", "JAPANESE", "VIETNAMESE", "ARMENIANS", "KHMER", "BURMESE", "BERBERS"],
+            "Node ID": [38, 283, 569],
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable"
         },
         {
             "note": "安息骑射手",
@@ -6755,6 +6756,52 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 6
+        },
+        {
+            "note": "马格里布骑兵",
+            "action": "add",
+            "civ_id": "BERBERS",
+            "Age ID": 3,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800149,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Maghrebi Cavalry",
+            "Name String ID": 700149,
+            "Node ID": 4169,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 411,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 441
+        },
+        {
+            "note": "精锐马格里布骑兵",
+            "action": "add",
+            "civ_id": "BERBERS",
+            "Age ID": 4,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800150,
+            "Link ID": 4169,
+            "Link Node Type": "UniqueUnit",
+            "Name": "Elite Maghrebi Cavalry",
+            "Name String ID": 700150,
+            "Node ID": 4170,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 411,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3509,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 4169
         }
     ]
 }

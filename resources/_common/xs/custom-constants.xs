@@ -207,6 +207,8 @@ extern const int ZamburakID = 4165;
 extern const int EliteZamburakID = 4166;
 extern const int FreeCavalierBuildingID = 4167;
 extern const int BlackArmyArquebusierID = 4168;
+extern const int MaghrabiCavalryID = 4169;
+extern const int EliteMaghrabiCavalryID = 4170;
 
 
 

@@ -369,6 +369,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SiegeRamTechID);
             EnableTech(playerId, ArchitectureTechID);
             EnableTech(playerId, KeepTechID);
+            DisableTech(playerId, KnightTechID);
+            DisableTech(playerId, CavalierTechID);
             break;
         }
         case cKhmer:
