@@ -884,6 +884,13 @@
             "name": "柏柏尔移除马厩单位减费加成",
             "effect_id": [610, 638],
             "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "modify",
+            "name": "波兰石矿产金增加",
+            "effect_id": 827,
+            "match": ["any", 241, "any", "any", "any"],
+            "modifications": ["d", "set", 18.2]
         }
     ],
     "unit_changes":

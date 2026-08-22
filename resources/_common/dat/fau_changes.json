@@ -2459,14 +2459,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "奇观训练索洛托勇士",
-            "civilizations": "Aztecs",
-            "unit_id": 4160,
-            "building_id": 276,
-            "Name": "Xolotl",
-            "RequiredAge": 4
-        },
-        {
             "note": "黑曜石剑士",
             "civilizations": "Mayans",
             "unit_id": 4161,

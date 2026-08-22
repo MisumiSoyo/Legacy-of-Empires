@@ -198,7 +198,6 @@ extern const int BedouinSwordsmanID = 4156;
 extern const int ManilaGalleonID = 4157;
 extern const int ProjectileGuanNingCavalryID = 4158;
 extern const int IronHawkID = 4159;
-extern const int XolotlBuildingID = 4160;
 extern const int MacuahuitlWarriorID = 4161;
 extern const int EliteMacuahuitlWarriorID = 4162;
 extern const int YuanRaiderID = 4163;
