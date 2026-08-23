@@ -318,24 +318,24 @@
             "RequiredAge": 4
         },
         {
-            "note": "马扎尔, 土耳其和匈奴启用草原枪兵",
-            "civilizations": ["Turks", "Huns", "Magyars"],
+            "note": "马扎尔和匈奴启用草原枪兵",
+            "civilizations": ["Huns", "Magyars"],
             "unit_id": 1370,
             "building_id": 101,
             "Name": "Steppe Lancer",
             "RequiredAge": 3
         },
         {
-            "note": "马扎尔, 土耳其和匈奴启用精锐草原枪兵",
-            "civilizations": ["Turks", "Huns", "Magyars"],
+            "note": "马扎尔和匈奴启用精锐草原枪兵",
+            "civilizations": ["Huns", "Magyars"],
             "unit_id": 1372,
             "building_id": 101,
             "Name": "Steppe Lancer",
             "RequiredAge": 4
         },
         {
-            "note": "马扎尔, 土耳其和匈奴启用精锐草原枪兵",
-            "civilizations": ["Turks", "Magyars", "Huns"],
+            "note": "马扎尔和匈奴启用精锐草原枪兵",
+            "civilizations": ["Magyars", "Huns"],
             "tech_id": 715,
             "building_id": 101,
             "Name": "Elite Steppe Lancer",
@@ -1818,11 +1818,11 @@
             "RequiredAge": 4
         },
         {
-            "note": "草原遗产",
+            "note": "帝国商路",
             "civilizations": "Turks",
             "tech_id": 3134,
             "building_id": 109,
-            "Name": "Steppe Legacy",
+            "Name": "Imperial Trade Routes",
             "RequiredAge": 4
         },
         {
@@ -1978,30 +1978,6 @@
             "civilizations": ["Mayans"],
             "tech_id": 3003,
             "type": "delete"
-        },
-        {
-            "note": "军犬",
-            "civilizations": ["Spanish"],
-            "unit_id": 4089,
-            "building_id": 12,
-            "Name": "War Dog",
-            "RequiredAge": 3
-        },
-        {
-            "note": "精锐军犬",
-            "civilizations": ["Spanish"],
-            "unit_id": 4090,
-            "building_id": 12,
-            "Name": "Elite War Dog",
-            "RequiredAge": 4
-        },
-        {
-            "note": "精锐军犬",
-            "civilizations": ["Spanish"],
-            "tech_id": 3167,
-            "building_id": 12,
-            "Name": "Elite War Dog",
-            "RequiredAge": 4
         },
         {
             "note": "越南, 鞑靼, 拜占庭获得重型投石车",

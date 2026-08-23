@@ -1017,96 +1017,6 @@
             "Trigger Tech ID": 265
         },
         {
-            "Age ID": 3,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 105009,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Steppe Lancer",
-            "Name String ID": 14009,
-            "Node ID": 1370,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "RegionalUnit",
-            "Picture Index": 273,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 105010,
-            "Link ID": 1370,
-            "Link Node Type": "RegionalUnit",
-            "Name": "Elite Steppe Lancer",
-            "Name String ID": 14010,
-            "Node ID": 1372,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "RegionalUnit",
-            "Picture Index": 274,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": 715,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 2,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800059,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Mehter",
-            "Name String ID": 700059,
-            "Node ID": 4079,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 180,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
             "Name": "Camel Rider",
             "Node Type": "RegionalUnit",
             "Link Node Type": "BuildingTech",
@@ -3084,7 +2994,7 @@
             "Help String ID": 600159,
             "Link ID": 3133,
             "Link Node Type": "BuildingTech",
-            "Name": "Steppe Legacy",
+            "Name": "Imperial Trade Routes",
             "Name String ID": 500159,
             "Node ID": 3134,
             "Node Status": "ResearchedCompleted",
@@ -3136,6 +3046,36 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "Age ID": 2,
+            "Building ID": 101,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800059,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Mehter",
+            "Name String ID": 700059,
+            "Node ID": 4079,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 180,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         }
     ]
 }

@@ -854,66 +854,6 @@
             "Trigger Tech ID": 429
         },
         {
-            "Age ID": 3,
-            "Building ID": 12,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800082,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "War Dog",
-            "Name String ID": 700082,
-            "Node ID": 4089,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 586,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 12,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800083,
-            "Link ID": 4089,
-            "Link Node Type": "UniqueUnit",
-            "Name": "Elite War Dog",
-            "Name String ID": 700083,
-            "Node ID": 4090,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 587,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": 3167,
-            "Use Type": "Unit"
-        },
-        {
             "Name": "Arson",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",

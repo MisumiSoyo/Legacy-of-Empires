@@ -87,24 +87,6 @@ void MercenaryContract(int playerId = -1, int Time = -1)
 }
 
 
-void TurksTradeIncome(int playerId = -1, int Time = -1)
-{
-    float IncomePercent = 0.05;
-    float IncomeSum = xsPlayerAttribute(playerId, cAttributeTurksTradeIncome);
-    float tmp = 0.0;
-    int i = 0;
-    for (i = 1; <= xsGetNumPlayers())
-        if (i != playerId)
-            tmp = tmp + xsPlayerAttribute(i, cAttributeTradeIncomeSummation);
-    tmp = tmp * IncomePercent;
-    if (tmp > IncomeSum)
-    {
-        ModResource(playerId, cAttributeGold, tmp - IncomeSum);
-        SetResource(playerId, cAttributeTurksTradeIncome, tmp);
-    }
-}
-
-
 void VikingsDeathBonus(int playerId = -1, int Time = -1)
 {
     int CountedDeath = xsPlayerAttribute(playerId, cAttributeVikingsCountedDeath);
@@ -148,11 +130,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cFranks:
         {
             FranksLoan(playerId, Time);
-            break;
-        }
-        case cTurks:
-        {
-            TurksTradeIncome(playerId, Time);
             break;
         }
         case cVikings:

@@ -181,8 +181,6 @@ void EffectFunction10001(int playerId = -1)
         }
         case cTurks:
         {
-            EnableTech(playerId, SteppeLancerTechID);
-            EnableTech(playerId, EliteSteppeLancerTechID);
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, GambesonsTechID);
             EnableTech(playerId, StoneShaftMiningTechID);
@@ -469,7 +467,6 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, SappersTechID);
-            EnableTech(playerId, PaladinTechID);
             break;
         }
         case cPoles:

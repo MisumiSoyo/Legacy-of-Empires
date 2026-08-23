@@ -34541,11 +34541,6 @@
                         "RequiredAge": 2
                     },
                     {
-                        "Name": "Elite War Dog",
-                        "RequiredAge": 4,
-                        "ID": 3167
-                    },
-                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
@@ -34591,16 +34586,6 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "War Dog",
-                        "RequiredAge": 3,
-                        "ID": 4089
-                    },
-                    {
-                        "Name": "Elite War Dog",
-                        "RequiredAge": 4,
-                        "ID": 4090
                     }
                 ]
             },
@@ -38010,11 +37995,6 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Elite Steppe Lancer",
-                        "RequiredAge": 4,
-                        "ID": 715
                     }
                 ],
                 "Units": [
@@ -38053,16 +38033,6 @@
                         "ID": 330,
                         "Name": "Heavy Camel Rider",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Steppe Lancer",
-                        "RequiredAge": 3,
-                        "ID": 1370
-                    },
-                    {
-                        "Name": "Steppe Lancer",
-                        "RequiredAge": 4,
-                        "ID": 1372
                     },
                     {
                         "Name": "Mehter",
@@ -38708,7 +38678,7 @@
                         "ID": 3022
                     },
                     {
-                        "Name": "Steppe Legacy",
+                        "Name": "Imperial Trade Routes",
                         "RequiredAge": 4,
                         "ID": 3134
                     }
