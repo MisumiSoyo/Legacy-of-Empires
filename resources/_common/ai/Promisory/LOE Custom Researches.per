@@ -578,10 +578,22 @@
 #load-if-defined SPANISH-CIV
 ;   Jinete Tactics
 (defrule
-    (unit-type-count-total genitour-line >= 10)
+    (or
+        (unit-type-count-total scout-cavalry-line >= 6)
+        (unit-type-count-total knight-line >= 4)
+    )
     (can-research ri-jinete-tactics)
 =>
     (research ri-jinete-tactics)
+)
+
+
+;   Imperial Genitour
+(defrule
+    (unit-type-count-total genitour-line >= 5)
+    (can-research ri-imperial-genitour)
+=>
+    (research ri-imperial-genitour)
 )
 
 

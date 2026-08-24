@@ -701,6 +701,36 @@
             "Use Type": "Unit"
         },
         {
+            "Age ID": 4,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800151,
+            "Link ID": 1012,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Imperial Genitour",
+            "Name String ID": 700151,
+            "Node ID": 4171,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 499,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3044,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Thumb Ring",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",

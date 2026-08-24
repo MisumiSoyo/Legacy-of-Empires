@@ -3520,6 +3520,14 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "西西里获得翼骑兵",
+            "action": "modify",
+            "civ_id": "SICILIANS",
+            "Node ID": [441],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
             "note": "高棉获得双人锯, 护卫",
             "action": "modify",
             "civ_id": "KHMER",
@@ -6756,6 +6764,29 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 4169
+        },
+        {
+            "note": "帝王标枪骑兵",
+            "action": "add",
+            "civ_id": "SPANISH",
+            "Age ID": 4,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800151,
+            "Link ID": 1012,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Imperial Genitour",
+            "Name String ID": 700151,
+            "Node ID": 4171,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 499,
+            "Prerequisite IDs": [0, 0, 0, 0, 0],
+            "Prerequisite Types": ["None", "None", "None", "None", "None"],
+            "Trigger Tech ID": 3044,
+            "Use Type": "Unit",
+            "position": "after",
+            "target_id": 1012
         }
     ]
 }

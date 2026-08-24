@@ -141,7 +141,7 @@
 //	Celts
 120162 "Infantry and Siege civilization\n\n• Infantry +15% movement speed since Feudal Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight\n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry), Celtic Hunter (Archer that uses 2 population space), Chariot Javelineer (Heavy mounted skirmisher)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP)\n• Druid (Monks can increase your nearby lumberjacks and miners' work rate by 12%)\n• Kern (Villagers +10 attack vs scout units, +10 attack vs Standard Buildings, +6 attack vs Stone Defensive Buildings, +10 attack vs Castle)\n\n<b>Team bonus: <b>\nSiege Workshop +20% work rate"
 //	Spanish
-120163 "Gunpowder and Monk civilization\n\n• Builders +30% work rate (not applied on the first TC in Nomad mode)\n• Blacksmith upgrades don't cost gold\n• Cannon Galleon's projectile speed increases to 7 and enables Ballistics effect\n• Gunpowder units +18% attack speed\n• Gain 40 gold for each technology researched\n• Genitour line available an age in advance, and -50% food cost for upgrade\n• Rams and Mangonel line -50% gold cost\n\n<b>Unique Unit:<b>\n• Conquistador (mounted hand cannon), Missionary (mounted monk), Manila Galleon (Armed trade boat)\n\n<b>Unique Techs:<b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range)\n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Genitours +2 max range)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
+120163 "Gunpowder and Monk civilization\n\n• Builders +30% work rate (not applied on the first TC in Nomad mode)\n• Blacksmith upgrades don't cost gold\n• Cannon Galleon's projectile speed increases to 7 and enables Ballistics effect\n• Gunpowder units +18% attack speed\n• Gain 40 gold for each technology researched\n• Genitour and Elite Genitour available an age in advance\n• Rams and Mangonel line -50% gold cost\n\n<b>Unique Unit:<b>\n• Conquistador (Mounted hand cannon), Missionary (Mounted monk), Manila Galleon (Armed trade boat), Imperial Genitour (Mounted skirmisher)\n\n<b>Unique Techs:<b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range)\n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Scout Cavalry line and Knight line periodically throw javelins)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 //	Aztecs
 120164 "Infantry and Monk civilization\n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +100 gold\n• Eagle Warrior line -10/20 food cost at Castle/Imperial Age\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries), Tlaxcalan Slinger (Archer that counters cavalry)\n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range)\n• Garland Wars (Infantries +4 attack)\n• Ixiptla (Town Center will produce 7 Jaguar Warriors for every 30 enemy land units killed; Eagle Warrior line +100% train speed)\n• Cuauhocelotl (Infantry get +2 attack when killing enemy military units (maximum 4 times))\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
 //	Mayans
@@ -161,7 +161,7 @@
 //	Slavs
 120172 "Infantry and Siege civilization\n\n• Farmers +15% work rate\n• Arson, Gambesons and Siege Training free\n• Siege Workshop units -15% cost\n• Monk +15% moving speed\n• Recieve 4% of the hunters' total gathering output in gold per minute\n\n<b>Unique Unit:<b>\n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood)\n• Druzhina (Infantry units make blast damage)\n• Boyar's Fortitude (Knight-line units and Boyars +6 attack vs buildings)\n• Orthodoxy (Streltsys take -50% population space, and Militia-Line take -20% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
 //	Portuguese
-120173 "Naval and Gunpowder civilization\n\n• All units -20% gold cost\n• Foragers generate 0.67 wood per meat\n• Ships +10/15/20% HP at Feudal/Castle/Imperial Age\n• Can build Feitoria in Imperial Age\n• Genitours +15% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b>\n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Circumnavigation (Sets the entire map to explored; Ships train +33% faster)\n• Arquebus (Increase gunpowder units' projectile speed and enable Ballistics effect)\n• Iberian Light Cavalry (Genitours +5 attack vs Archer, +3 attack vs Cavalry Archer, +3 attack vs Spearman)\n• Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
+120173 "Naval and Gunpowder civilization\n\n• All units -20% gold cost\n• Foragers generate 0.67 wood per meat\n• Ships +10/15/20% HP at Feudal/Castle/Imperial Age\n• Can build Feitoria in Imperial Age\n• Genitours +15% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b>\n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Circumnavigation (Sets the entire map to explored; Ships train +33% faster)\n• Arquebus (Increase gunpowder units' projectile speed and enable Ballistics effect)\n• Iberian Light Cavalry (Genitours +2 range)\n• Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 //	Ethiopians
 120174 "Archer civilization\n\n• Archer-Line -15% reload time\n• Receive +100/250/400 food and gold when advancing to Feudal/Castle/Imperial Age\n• Spearman-line, Skirmisher line and Genitours upgrade free\n• Units deal +25% damage when fighting from lower elevation\n\n<b>Unique Unit:<b>\n• Shotel Warrior (High attack, low HP infantry), Chewa Rider (Cavalries that are strong vs Infantries)\n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, but +40 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 //	Malians
@@ -451,6 +451,7 @@
 500227 "Elite Bamar Rider"
 500228 "Elite Zamburak"
 500229 "Elite Maghrebi Cavalry"
+500230 "Imperial Genitour"
 
 
 
@@ -539,9 +540,9 @@
 501083 "Research Apostle (Military units/monks can generate 3/6 gold per minute)"
 501084 "Research Hesychast (Monks +250% heal range, +100% heal rate)"
 501085 "Research Kopalnia Soli Wieliczka (Stone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles)"
-501086 "Research Jinete Tactics (Genitours +2 max range)"
+501086 "Research Jinete Tactics (Scout Cavalry line and Knight line periodically throw javelins)"
 501087 "Research Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)"
-501088 "Research Iberian Light Cavalry (Genitours +5 attack vs Archer, +3 attack vs Cavalry Archer, +3 attack vs Spearman)"
+501088 "Research Iberian Light Cavalry (Genitours +2 range)"
 501089 "Research Siha Bow Limbs (Ranged soldiers remove attack delay and -15% gold cost)"
 501090 "Recruit a mercenary squad."
 501091 "Research Polutasvarf (Military units can loot 30 gold from every destroyed building)"
@@ -683,6 +684,7 @@
 501227 "Upgrade to Elite Bamar Rider"
 501228 "Upgrade to Elite Zamburak"
 501229 "Upgrade to Elite Maghrebi Cavalry"
+501230 "Upgrade to Imperial Genitour"
 
 
 
@@ -771,9 +773,9 @@
 521083 "Research <b>Apostle<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMilitary units/monks can generate 3/6 gold per minute."
 521084 "Research <b>Hesychast<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMonks +250% heal range, +100% heal rate."
 521085 "Research <b>Kopalnia Soli Wieliczka<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nStone resource lasts 100% longer; You can train Elite Obuches with 50 stone at Barracks and Castles."
-521086 "Research <b>Jinete Tactics<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nGenitours +2 max range."
+521086 "Research <b>Jinete Tactics<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nScout Cavalry line and Knight line periodically throw javelins."
 521087 "Research <b>Tercio<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nSpearman line units can deal 33% area damage in 0.5 blast range."
-521088 "Research <b>Iberian Light Cavalry<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nGenitours +5 attack vs Archer, +3 attack vs Cavalry Archer, +3 attack vs Spearman."
+521088 "Research <b>Iberian Light Cavalry<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nGenitours +2 range."
 521089 "Research <b>Siha Bow Limbs<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nRanged soldiers remove attack delay and -15% gold cost."
 521090 "Recruit a mercenary squad (<cost>) (time: 15), with values and troop types determined by your luck. You can accumulate 1 recruitment opportunity every 90 seconds."
 521091 "Research <b>Polutasvarf<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nMilitary units can loot 30 gold from every destroyed building."
@@ -914,8 +916,8 @@
 521226 "Research <b>Ganges Economy<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nVillagers -75% cost, +100% creation speed."
 521227 "Upgrade to <b>Elite Bamar Rider<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Bamar Riders and lets you create Elite Bamar Riders."
 521228 "Upgrade to <b>Elite Zamburak<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Zamburaks and lets you create Elite Zamburaks."
-
 521229 "Upgrade to <b>Elite Maghrebi Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Maghrebi Cavalry and lets you create Elite Maghrebi Cavalry."
+521230 "Upgrade to <b>Imperial Genitour<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Elite Genitours and lets you create Imperial Genitour."
 
 
 
@@ -1079,6 +1081,7 @@
 700148 "Black Army Arquebusier"
 700149 "Maghrebi Cavalry"
 700150 "Elite Maghrebi Cavalry"
+700151 "Imperial Genitour"
 
 
 
@@ -1229,6 +1232,7 @@
 701148 "Create Black Army Arquebusier"
 701149 "Create Maghrebi Cavalry"
 701150 "Create Elite Maghrebi Cavalry"
+701151 "Create Imperial Genitour"
 
 
 
@@ -1529,7 +1533,9 @@
 
 721149 "Create <b>Maghrebi Cavalry<b> (<cost>, 14 <MATERIAL=MPIconGoodCPU>)\nBerber unique cavalry. Takes 0.5 population space.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\nClass: Light Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit."
 
-721150 "Create <b>Elite Maghrebi Cavalry<b> (<cost>, 11 <MATERIAL=MPIconGoodCPU>)\nBerber unique cavalry. Takes 0.5 population space.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\nClass: Light Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit."
+721150 "Create <b>Elite Maghrebi Cavalry<b> (<cost>, 11 <MATERIAL=MPIconGoodCPU>)\nBerber unique cavalry. Takes 0.5 population space.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\nClass: Light Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit.
+
+721151 "Create <b>Imperial Genitour<b> (<cost>, 23 <MATERIAL=MPIconGoodCPU>)\nSpanish unique mounted javelineer. Strong vs archers, weak against enemy units at close range.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.35 <MATERIAL=StatIconsReloadTime> 3 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 6\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Skirmisher.\nAttack Bonus: +9 vs Archers, +4 vs Cavalry Archers, +3 vs Spearmen.\nArmor Bonus: +2 Cavalry Archer Armor.
 
 900001 "<b>Sipahi Corps</b>\nSipahis gain bonus HP based on the number of nearby friendly cavalry units, up to +30% at 20 cavalry units."
 900002 "<b>Camel Intimidation</b>\nReduces nearby mounted units' attack speed by 20%."

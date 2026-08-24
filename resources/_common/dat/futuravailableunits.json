@@ -32416,6 +32416,11 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 428
                     }
                 ],
                 "Units": [
@@ -32438,6 +32443,11 @@
                         "ID": 283,
                         "Name": "Cavalier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hussar",
+                        "RequiredAge": 4,
+                        "ID": 441
                     }
                 ]
             },
@@ -34439,6 +34449,11 @@
                         "Name": "Arbalester",
                         "RequiredAge": 4,
                         "ID": 237
+                    },
+                    {
+                        "Name": "Imperial Genitour",
+                        "RequiredAge": 4,
+                        "ID": 3044
                     }
                 ],
                 "Units": [
@@ -34486,6 +34501,11 @@
                         "Name": "Arbalester",
                         "RequiredAge": 4,
                         "ID": 492
+                    },
+                    {
+                        "Name": "Imperial Genitour",
+                        "RequiredAge": 4,
+                        "ID": 4171
                     }
                 ]
             },

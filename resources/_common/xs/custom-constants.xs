@@ -208,6 +208,7 @@ extern const int FreeCavalierBuildingID = 4167;
 extern const int BlackArmyArquebusierID = 4168;
 extern const int MaghrabiCavalryID = 4169;
 extern const int EliteMaghrabiCavalryID = 4170;
+extern const int ImperialGenitourID = 4171;
 
 
 
@@ -226,6 +227,7 @@ extern const int SiegeTrainingTechID = 3024;
 extern const int PaviseTechID = 3031;
 extern const int GendarmesdOrdonnanceTechID = 3032;
 extern const int FoederatiArmyTechID = 3033;
+extern const int ImperialGenitourTechID = 3044;
 extern const int GreuthungiCavalryTechID = 3060;
 extern const int SacredRitualTechID = 3068;
 extern const int ManilaGalleonTechID = 3069;

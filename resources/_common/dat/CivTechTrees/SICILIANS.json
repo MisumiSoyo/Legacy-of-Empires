@@ -915,7 +915,7 @@
             "Link Node Type": "UnitUpgrade",
             "Draw Node Type": "UnitTech",
             "Use Type": "Unit",
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Name String ID": 14661,
             "Age ID": 4,
             "Building ID": 101,
