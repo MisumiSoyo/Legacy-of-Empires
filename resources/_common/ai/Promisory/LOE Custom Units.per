@@ -406,3 +406,14 @@
 =>
     (train maghrabi-cavalry)
 )
+
+
+#load-if-defined BURGUNDIANS-CIV
+;   Mounted Grenadier
+(defrule
+    (goal traincavarcher yes)
+    (can-train mounted-grenadier)
+=>
+    (train mounted-grenadier)
+)
+#end-if

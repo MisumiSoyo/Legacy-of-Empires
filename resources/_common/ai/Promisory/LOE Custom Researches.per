@@ -1149,13 +1149,21 @@
 )
 
 
-;   Firearm Casting
+;   Order of the Golden Fleece
 (defrule
-    (or (goal trainhandcannon yes)
-        (goal trainbombard yes))
-    (can-research ri-firearm-casting)
+    (goal trainknight yes)
+    (can-research ri-golden-fleece)
 =>
-    (research ri-firearm-casting)
+    (research ri-golden-fleece)
+)
+
+
+;   Elite Mounted Grenadier
+(defrule
+    (unit-type-count-total mounted-grenadier >= 5)
+    (can-research ri-elite-mounted-grenadier)
+=>
+    (research ri-elite-mounted-grenadier)
 )
 #end-if
 

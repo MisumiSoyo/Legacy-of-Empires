@@ -337,18 +337,6 @@
             "function_id": 10109
         },
         {
-            "type": "delete",
-            "name": "波兰文明加成改动, 血统和斥候系升级食物费用单独减免删除",
-            "effect_id": 801,
-            "match": [[101, "any", 0, 2, 0.5]]
-        },
-        {
-            "type": "delete",
-            "name": "勃艮第文明加成改动, 马厩科技费用减免删除",
-            "effect_id": 782,
-            "match": [101, "any", "any", 2, 0.5]
-        },
-        {
             "type": "modify",
             "name": "护卫改动",
             "effect_id": 204,
@@ -891,6 +879,18 @@
             "effect_id": 827,
             "match": ["any", 241, "any", "any", "any"],
             "modifications": ["d", "set", 18.2]
+        },
+        {
+            "type": "add",
+            "name": "勃艮第马厩科技费用给畜牧补丁",
+            "effect_id": 782,
+            "commands": [101, 39, 3, 2, 0.5]
+        },
+        {
+            "type": "adjustment",
+            "name": "勃艮第火药单位加成适用于新单位",
+            "effect_id": 794,
+            "function_id": 10130
         }
     ],
     "unit_changes":
@@ -1064,12 +1064,6 @@
             "tech_id": 194,
             "attributes": [["resource_costs[0].amount", 300],
                            ["resource_costs[1].amount", 200]]
-        },
-        {
-            "note": "勃艮第移除火药单位加成",
-            "tech_id": 769,
-            "attributes": [["required_techs", [-1, -1, -1, -1, -1, -1]],
-                           ["required_tech_count", 1]]
         },
         {
             "note": "亚美尼亚二级采金科技加成调整",

@@ -1287,14 +1287,11 @@ void EffectFunction10099(int playerId = -1)
 }
 
 
-//  10104 - Firearm Casting
+//  10104 - Order of the Golden Fleece
 void EffectFunction10104(int playerId = -1)
 {
-    ForceResearchTech(playerId, 769);
-    MulAttack(playerId, GuanNingCavalryID, -1, 1.25);
-    MulAttack(playerId, ProjectileGuanNingCavalryID, -1, 1.25);
-    MulAttack(playerId, HandcannonAshigaruID, -1, 1.25);
-    MulAttack(playerId, StreltsyID, -1, 1.25);
+    int Time = xsGetGameTime();
+    SpawnUnit(playerId, KnightID, TownCenterID, Time / 120, 1);
 }
 
 
@@ -1413,7 +1410,7 @@ void EffectFunction10120(int playerId = -1)
     float RelicGoldRate = xsPlayerAttribute(playerId, cAttributeRelicRate);
     if (AllyCiv(playerId, cAztecs))
         RelicGoldRate = RelicGoldRate * 1.33;
-    ModResource(playerId, cAttributeRelicFoodRate, RelicGoldRate * 1.5);
+    ModResource(playerId, cAttributeRelicFoodRate, RelicGoldRate);
     SetResource(playerId, cAttributeRelicRate, 0);
 }
 
@@ -1479,7 +1476,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 367  2026.08.25");
+    xsChatData("Patch: 368  2026.08.26");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

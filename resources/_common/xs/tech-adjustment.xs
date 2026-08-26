@@ -467,3 +467,15 @@ void EffectFunction10125(int playerId = -1)
   
   xsResetTaskAmount();
 }
+
+
+//  10130 - Burgundians Gunpowder Bonus Adjustment
+void EffectFunction10130(int playerId = -1)
+{
+    MulAttack(playerId, GuanNingCavalryID, -1, 1.25);
+    MulAttack(playerId, ProjectileGuanNingCavalryID, -1, 1.25);
+    MulAttack(playerId, HandcannonAshigaruID, -1, 1.25);
+    MulAttack(playerId, StreltsyID, -1, 1.25);
+    MulAttack(playerId, MountedGrenadierID, -1, 1.25);
+    MulAttack(playerId, EliteMountedGrenadierID, -1, 1.25);
+}

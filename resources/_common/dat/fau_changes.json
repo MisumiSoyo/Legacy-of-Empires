@@ -131,15 +131,15 @@
             "RequiredTechID": 3244
         },
         {
-            "note": "波斯移除骑射手系",
-            "civilizations": "Persians",
+            "note": "波斯, 勃艮第移除骑射手系",
+            "civilizations": ["Persians", "Burgundians"],
             "unit_id": [39, 474],
             "building_id": 87,
             "type": "delete"
         },
         {
-            "note": "波斯移除骑射手系",
-            "civilizations": "Persians",
+            "note": "波斯, 勃艮第移除骑射手系",
+            "civilizations": ["Persians", "Burgundians"],
             "tech_id": [218],
             "building_id": 87,
             "type": "delete"
@@ -1274,9 +1274,9 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切, 阿兹特克, 维京, 女真获得扳指",
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切, 阿兹特克, 维京, 女真, 勃艮第获得扳指",
             "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians", "Mapuche", "Aztecs",
-                              "Vikings", "Jurchens"],
+                              "Vikings", "Jurchens", "Burgundians"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1399,16 +1399,16 @@
             "type": "delete"
         },
         {
-            "note": "重装骑射手",
-            "civilizations": ["Burgundians"],
+            "note": "获得重装骑射手",
+            "civilizations": [],
             "unit_id": 474,
             "building_id": 87,
             "Name": "Heavy Cavalry Archer",
             "RequiredAge": 4
         },
         {
-            "note": "重装骑射手",
-            "civilizations": ["Burgundians"],
+            "note": "获得重装骑射手",
+            "civilizations": [],
             "tech_id": 218,
             "building_id": 87,
             "Name": "Heavy Cavalry Archer",
@@ -1522,16 +1522,16 @@
             "RequiredAge": 3
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏, 女真获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei", "Jurchens"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏, 女真, 勃艮第获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei", "Jurchens", "Burgundians"],
             "tech_id": 237,
             "building_id": 87,
             "Name": "Arbalester",
             "RequiredAge": 4
         },
         {
-            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏, 女真获得劲弩手",
-            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei", "Jurchens"],
+            "note": "条顿, 凯尔特, 波斯, 罗马, 法兰克, 西班牙, 缅甸, 保加利亚, 魏, 女真, 勃艮第获得劲弩手",
+            "civilizations": ["Teutons", "Celts", "Persians", "Romans", "Franks", "Spanish", "Burmese", "Bulgarians", "Wei", "Jurchens", "Burgundians"],
             "unit_id": 492,
             "building_id": 87,
             "Name": "Arbalester",
@@ -2146,15 +2146,15 @@
             "tech_id": 3390,
             "building_id": 109,
             "Name": "Golden Spurs",
-            "RequiredAge": 3
+            "RequiredAge": 4
         },
         {
-            "note": "火器铸造",
+            "note": "金羊毛骑士团",
             "civilizations": "Burgundians",
             "tech_id": 3393,
             "building_id": 109,
-            "Name": "Firearm Casting",
-            "RequiredAge": 4
+            "Name": "Order of the Golden Fleece",
+            "RequiredAge": 3
         },
         {
             "note": "轮牧",
@@ -2703,6 +2703,30 @@
             "tech_id": 3044,
             "building_id": 87,
             "Name": "Imperial Genitour",
+            "RequiredAge": 4
+        },
+        {
+            "note": "骑马掷弹兵",
+            "civilizations": "Burgundians",
+            "unit_id": 4069,
+            "building_id": 87,
+            "Name": "Mounted Grenadier",
+            "RequiredAge": 3
+        },
+        {
+            "note": "精锐骑马掷弹兵",
+            "civilizations": "Burgundians",
+            "unit_id": 4070,
+            "building_id": 87,
+            "Name": "Elite Mounted Grenadier",
+            "RequiredAge": 4
+        },
+        {
+            "note": "精锐骑马掷弹兵",
+            "civilizations": "Burgundians",
+            "tech_id": 3483,
+            "building_id": 87,
+            "Name": "Elite Mounted Grenadier",
             "RequiredAge": 4
         }
     ]

@@ -717,6 +717,36 @@
             "Use Type": "Unit"
         },
         {
+            "Name": "Cavalry Archer",
+            "Node Type": "Unit",
+            "Link Node Type": "BuildingTech",
+            "Draw Node Type": "UnitTech",
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable",
+            "Name String ID": 14085,
+            "Age ID": 3,
+            "Building ID": 87,
+            "Help String ID": 105085,
+            "Node ID": 39,
+            "Picture Index": 19
+        },
+        {
+            "Name": "Heavy Cavalry Archer",
+            "Node Type": "UnitUpgrade",
+            "Link Node Type": "Unit",
+            "Draw Node Type": "UnitTech",
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable",
+            "Name String ID": 14412,
+            "Age ID": 4,
+            "Building ID": 87,
+            "Help String ID": 105412,
+            "Link ID": 39,
+            "Node ID": 474,
+            "Picture Index": 71,
+            "Trigger Tech ID": 218
+        },
+        {
             "Name": "Thumb Ring",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",

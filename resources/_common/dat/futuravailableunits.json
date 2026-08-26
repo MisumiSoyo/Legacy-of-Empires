@@ -3436,9 +3436,19 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Heavy Cavalry Archer",
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
+                    },
+                    {
+                        "Name": "Arbalester",
                         "RequiredAge": 4,
-                        "ID": 218
+                        "ID": 237
+                    },
+                    {
+                        "Name": "Elite Mounted Grenadier",
+                        "RequiredAge": 4,
+                        "ID": 3483
                     }
                 ],
                 "Units": [
@@ -3468,14 +3478,19 @@
                         "RequiredAge": 4
                     },
                     {
-                        "ID": 39,
-                        "Name": "Cavalry Archer",
-                        "RequiredAge": 3
+                        "Name": "Arbalester",
+                        "RequiredAge": 4,
+                        "ID": 492
                     },
                     {
-                        "ID": 474,
-                        "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "Name": "Mounted Grenadier",
+                        "RequiredAge": 3,
+                        "ID": 4069
+                    },
+                    {
+                        "Name": "Elite Mounted Grenadier",
+                        "RequiredAge": 4,
+                        "ID": 4070
                     }
                 ]
             },
@@ -4240,12 +4255,12 @@
                     },
                     {
                         "Name": "Golden Spurs",
-                        "RequiredAge": 3,
+                        "RequiredAge": 4,
                         "ID": 3390
                     },
                     {
-                        "Name": "Firearm Casting",
-                        "RequiredAge": 4,
+                        "Name": "Order of the Golden Fleece",
+                        "RequiredAge": 3,
                         "ID": 3393
                     }
                 ],

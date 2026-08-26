@@ -624,11 +624,12 @@
             "target_id": 4075
         },
         {
-            "note": "波斯, 移除骑射手系",
-            "action": "delete",
+            "note": "波斯, 勃艮第失去骑射手系",
+            "action": "modify",
             "civ_id": ["PERSIANS", "BURGUNDIANS"],
             "Node ID": [39, 474],
-            "Use Type": "Unit"
+            "Use Type": "Unit",
+            "Node Status": "NotAvailable"
         },
         {
             "note": "单于",
@@ -3633,11 +3634,19 @@
             "Use Type": "Tech"
         },
         {
-            "note": "勃艮第获得射手锁甲, 攻城技师, 重型冲车",
+            "note": "勃艮第获得射手锁甲, 攻城技师, 重型冲车, 扳指",
             "action": "modify",
             "civ_id": "BURGUNDIANS",
-            "Node ID": [219, 255, 377],
+            "Node ID": [219, 255, 377, 437],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "勃艮第获得劲弩手",
+            "action": "modify",
+            "civ_id": "BURGUNDIANS",
+            "Node ID": [492],
+            "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
         {
@@ -5285,18 +5294,18 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "金马刺",
+            "note": "金羊毛骑士团",
             "action": "add",
             "civ_id": "BURGUNDIANS",
             "Age ID": 3,
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 600184,
+            "Help String ID": 600185,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Golden Spurs",
-            "Name String ID": 500184,
-            "Node ID": 3390,
+            "Name": "Order of the Golden Fleece",
+            "Name String ID": 500185,
+            "Node ID": 3393,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
@@ -5306,18 +5315,18 @@
             "Use Type": "Tech"
         },
         {
-            "note": "火器铸造",
+            "note": "金马刺",
             "action": "add",
             "civ_id": "BURGUNDIANS",
             "Age ID": 4,
             "Building ID": 109,
             "Draw Node Type": "UnitTech",
-            "Help String ID": 600185,
-            "Link ID": 3390,
+            "Help String ID": 600184,
+            "Link ID": 3393,
             "Link Node Type": "BuildingTech",
-            "Name": "Firearm Casting",
-            "Name String ID": 500185,
-            "Node ID": 3393,
+            "Name": "Golden Spurs",
+            "Name String ID": 500184,
+            "Node ID": 3390,
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 107,
@@ -6266,7 +6275,7 @@
             "target_id": 4067
         },
         {
-            "note": "弩骑兵",
+            "note": "骑马掷弹兵",
             "action": "add",
             "civ_id": "BURGUNDIANS",
             "Age ID": 3,
@@ -6275,7 +6284,7 @@
             "Help String ID": 800132,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Mounted Crossbowman",
+            "Name": "Mounted Grenadier",
             "Name String ID": 700132,
             "Node ID": 4069,
             "Node Status": "ResearchedCompleted",
@@ -6289,7 +6298,7 @@
             "target_id": 5
         },
         {
-            "note": "精锐弩骑兵",
+            "note": "骑马掷弹兵",
             "action": "add",
             "civ_id": "BURGUNDIANS",
             "Age ID": 4,
@@ -6298,7 +6307,7 @@
             "Help String ID": 800133,
             "Link ID": 4069,
             "Link Node Type": "UniqueUnit",
-            "Name": "Elite Mounted Crossbowman",
+            "Name": "Elite Grenadier",
             "Name String ID": 700133,
             "Node ID": 4070,
             "Node Status": "ResearchedCompleted",
