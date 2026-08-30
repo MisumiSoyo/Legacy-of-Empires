@@ -2,3 +2,4 @@
 /resources/en/strings/key-value/key-value-merge.txt
 *.code-workspace
 *.zip
+__pycache__/

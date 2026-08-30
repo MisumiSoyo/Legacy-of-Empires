@@ -4,6 +4,7 @@ import os
 import sys
 from pathlib import Path
 
+sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
 from paths import OFFICIAL_CIVTECHTREES_FOLDER, CTT_CHANGES_FILE, OUTPUT_CIVTECHTREES_FOLDER
 

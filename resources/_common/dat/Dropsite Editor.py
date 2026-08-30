@@ -12,6 +12,7 @@ import sys
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
+sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
 from paths import OFFICIAL_DROPSITES_FILE, DR_CHANGES_FILE, OUTPUT_DROPSITES_FILE
 

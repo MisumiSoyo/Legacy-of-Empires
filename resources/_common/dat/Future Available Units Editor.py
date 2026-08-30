@@ -3,6 +3,7 @@ import os
 import sys
 from pathlib import Path
 
+sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
 from paths import OFFICIAL_FUTUR_AVAILABLE_UNITS_FILE, FAU_CHANGES_FILE, OUTPUT_FUTUR_AVAILABLE_UNITS_FILE
 

@@ -74,6 +74,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GuildsTechID);
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, StoneShaftMiningTechID);
+            EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, TreadmillCraneTechID);
             break;
         }
@@ -516,6 +517,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BlastFurnaceTechID);
             EnableTech(playerId, GuildsTechID);
             EnableTech(playerId, TwoManSawTechID);
+            EnableTech(playerId, SquiresTechID);
             DisableTech(playerId, 854);
             DisableTech(playerId, 859);
             DisableTech(playerId, 874);

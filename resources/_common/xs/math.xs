@@ -256,7 +256,7 @@ void MulAttack(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float
     if (value > 0)
         xsEffectAmount(cMulAttribute, ObjectID, cAttack, value * 100 + DamageClass * 256, playerId);
     else
-        xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - i * 256 + DamageClass * 100, playerId);
+        xsEffectAmount(cMulAttribute, ObjectID, cAttack, 0.0 - value * 256 + DamageClass * 100, playerId);
 }
 
 
@@ -309,7 +309,7 @@ void MulArmor(int playerId = -1, int ObjectID = -1, int DamageClass = -1, float 
     if (value > 0)
         xsEffectAmount(cMulAttribute, ObjectID, cArmor, value * 100 + DamageClass * 256, playerId);
     else
-        xsEffectAmount(cMulAttribute, ObjectID, cArmor, 0.0 - i * 256 + DamageClass * 100, playerId);
+        xsEffectAmount(cMulAttribute, ObjectID, cArmor, 0.0 - value * 256 + DamageClass * 100, playerId);
 }
 
 

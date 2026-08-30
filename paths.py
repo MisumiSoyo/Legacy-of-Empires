@@ -1,4 +1,6 @@
 import sys
+sys.dont_write_bytecode = True
+
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent

@@ -1,3 +1,6 @@
+import sys
+sys.dont_write_bytecode = True
+
 import json
 with open('changes.json', 'r', encoding='utf-8') as f:
     changes_json = json.load(f)

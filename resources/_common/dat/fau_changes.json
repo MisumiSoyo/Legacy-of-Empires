@@ -1274,9 +1274,9 @@
             "type": "delete"
         },
         {
-            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切, 阿兹特克, 维京, 女真, 勃艮第获得扳指",
+            "note": "哥特, 波希米亚, 缅甸, 条顿, 孟加拉, 凯尔特, 西西里, 吴, 亚美尼亚, 马普切, 阿兹特克, 维京, 女真, 勃艮第, 法兰克获得扳指",
             "civilizations": ["Goths", "Teutons", "Burmese", "Bohemians", "Bengalis", "Celts", "Sicilians", "Wu", "Armenians", "Mapuche", "Aztecs",
-                              "Vikings", "Jurchens", "Burgundians"],
+                              "Vikings", "Jurchens", "Burgundians", "Franks"],
             "tech_id": 437,
             "building_id": 87,
             "Name": "Thumb Ring",
@@ -1907,8 +1907,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "马扎尔, 凯尔特, 马普切, 高棉获得护卫",
-            "civilizations": ["Magyars", "Celts", "Mapuche", "Khmer"],
+            "note": "马扎尔, 凯尔特, 马普切, 高棉, 瞿折罗获得护卫",
+            "civilizations": ["Magyars", "Celts", "Mapuche", "Khmer", "Gurjaras"],
             "tech_id": 215,
             "building_id": 12,
             "Name": "Squires",

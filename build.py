@@ -1,5 +1,7 @@
-import os
 import sys
+sys.dont_write_bytecode = True
+
+import os
 import subprocess
 from pathlib import Path
 

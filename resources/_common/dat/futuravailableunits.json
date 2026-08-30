@@ -12565,6 +12565,11 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Thumb Ring",
+                        "RequiredAge": 3,
+                        "ID": 437
+                    },
+                    {
                         "Name": "Arbalester",
                         "RequiredAge": 4,
                         "ID": 237
@@ -45683,6 +45688,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Squires",
+                        "RequiredAge": 3,
+                        "ID": 215
                     },
                     {
                         "Name": "Siege Training",

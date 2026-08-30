@@ -3232,10 +3232,10 @@
             "Use Type": "Tech"
         },
         {
-            "note": "法兰克获得护腕, 造船匠, 工兵, 预热射击, 炮塔, 行会, 双人锯, 钻井采石法, 脚踏起重机",
+            "note": "法兰克获得护腕, 造船匠, 工兵, 预热射击, 炮塔, 行会, 双人锯, 钻井采石法, 脚踏起重机, 扳指",
             "action": "modify",
             "civ_id": "FRANKS",
-            "Node ID": [15, 54, 64, 201, 221, 279, 321, 373, 380],
+            "Node ID": [15, 54, 64, 201, 221, 279, 321, 373, 380, 437],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -4923,10 +4923,10 @@
             "Node Status": "NotAvailable"
         },
         {
-            "note": "瞿折罗获得行会, 鼓风炉, 工兵, 双人锯",
+            "note": "瞿折罗获得行会, 鼓风炉, 工兵, 双人锯, 护卫",
             "action": "modify",
             "civ_id": "GURJARAS",
-            "Node ID": [15, 75, 221, 321],
+            "Node ID": [15, 75, 215, 221, 321],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
