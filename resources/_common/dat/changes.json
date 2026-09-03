@@ -891,6 +891,18 @@
             "name": "勃艮第火药单位加成适用于新单位",
             "effect_id": 794,
             "function_id": 10130
+        },
+        {
+            "type": "add",
+            "name": "中国文明移速加成适用于帝王火矛兵",
+            "effect_id": 983,
+            "commands": [5, 4173, -1, 5, 1.05]
+        },
+        {
+            "type": "add",
+            "name": "中国文明移速加成适用于帝王火矛兵",
+            "effect_id": 984,
+            "commands": [5, 4173, -1, 5, 1.04762]
         }
     ],
     "unit_changes":
@@ -1060,6 +1072,12 @@
             "note": "箭塔系消耗石料减少",
             "unit_id": [79, 234, 235],
             "attributes": [["creatable.resource_costs", "list_search", ["type", 2], ["amount", 100]]]
+        },
+        {
+            "note": "单位最小体积乘数调整为 1",
+            "unit_id": "all",
+            "search": ["dead_fish", "ne", null],
+            "attributes": [["dead_fish.min_collision_size_multiplier", 1]]
         }
     ],
     "tech_changes":

@@ -125,7 +125,7 @@
 //	Japanese
 120154 "Infantry civilization\n\n• Fishing Ships +100% HP; Fishermen and Fishing Ships +5/10/15/20% work rate at Dark/Feudal/Castle/Imperial Age\n• Mill, Lumber/Mining Camps and Dock -50% cost and construction time\n• Infantry +33% attack speed starting in Feudal Age\n• Cavalry archers +2 attack vs Archers\n\n<b>Unique Unit:<b>\n• Samurai (Infantry better combats with other unique units), Yumi Ashigaru (Archer that ignores base armor), Handcannon Ashigaru (Hand cannoneers that counters cavalries), Mounted Samurai (Heavy cavalry), Sohei (Religious infantry)\n\n<b>Unique Techs: <b>\n• Yasama (Watch Tower-Line arrows +2/max arrows +2)\n• Kataparuto (Trebuchet x4 packing/unpacking rate, -20% reload time)\n• Ikko-Ikki (Enable you to train Soheis, but villagers -10% work rate)\n• Yari Cavalry (Light Cavalry +9 attack vs Cavalry)\n\n<b>Team bonus: <b>\n War Galley-Line units +50% LOS"
 //	Chinese
-120155 "All-around and Gunpowder civilization\n\n• Start with +1 villager\n• Technologies -15% cost\n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n• Hei Guang Cavalry line +15% attack speed\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Guan Ning Cavalry (cavalry with gunpowder), Flamethrower (Siege weapon), Yuan Raider (Light Cavalry)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)\n• Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)\n• Yuan Dynasty (Land units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Can train Yuan Dynasty Raider)\n• Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP)\n• Tributary System (You can train elite unique units from surrounding civilizations at Castle with 50% of their unique bonuses)\n\n<b>Team bonus: <b>\nFarm +10% food"
+120155 "All-around and Gunpowder civilization\n\n• Start with +1 villager\n• Technologies -15% cost\n• Town Centers support +10 population and +7 LOS\n• Fire Lancers and Fire ships +5%/+10% moving speed in Castle/Imperial Age\n• Can choose a dynasty to enter since Castle Age\n\n<b>Unique Unit:<b>\n• Chu Ko Nu (archer with multiple arrows), Flamethrower (Siege weapon), Mo Dao (Infantry), Imperial Fire Lancer (Infantry), Yuan Raider (Light Cavalry), Guan Ning Cavalry (cavalry with gunpowder)\n\n<b>Unique Techs: <b>\n• Great Wall (Wall and Watch Tower-Line +30% HP)\n• Rocketry (Scorpion-Line, Rocket Carts Lou Chuans +25% attack and extra damages, Lou Chuan charge projectile replaced by Rockets)\n• Tang Dynasty (+25 population capacity and population headroom; Hei Guang Cavalry +33% attack speed; Each Town Center (up to 4) and Castle spawns 1 Mo Dao every 2 minutes)\n• Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Unlocks Imperial Fire Lancer)\n• Yuan Dynasty (Land units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Unlocks Yuan Dynasty Raider)\n• Ming Dynasty (Immediately get Chemistry; Unlocks Guan Ning Cavalry; All military units +10% HP)\n\n<b>Team bonus: <b>\nFarm +10% food"
 //	Byzantines
 120156 "All-around civilization\n\n• All buildings +10/15/20/25% HP at Dark/Feudal/Castle/Imperial Age\n• Skirmisher line, Spearman line, Genitours, Camel Rider line and Varangian Guard -25% cost\n• Fire Ships, Flamethrowers and Dromons +25% attack speed\n• Advance to Imperial Age -33% costs\n• Town Watch, Town Patrol and Town Defense free\n• Can receive unique unit mercenaries every 5 minutes at Town Center since Castle Age\n\n<b>Unique Unit:<b>\n• Cataphract (Cavalry better combats with infantries and can cause blast damage), Varangian Guard (Infantry that generates gold while attacking)\n\n<b>Unique Techs: <b>\n• Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)\n• Logistica (Cataphracts, Knight-line units and Varangian Guards +6 attack vs Infantry; Cataphracts +2 area damage)\n• Polutasvarf (Military units can loot 30 gold from every destroyed building)\n• Golden Horn Tower (Trade units can additionally generate 15% stone)\n\n<b>Team bonus: <b>\nMonk class unit +100% heal rate"
 //	Persians
@@ -452,6 +452,7 @@
 500228 "Elite Zamburak"
 500229 "Elite Maghrebi Cavalry"
 500230 "Imperial Genitour"
+500231 "Imperial Fire Lancer"
 
 
 
@@ -583,10 +584,10 @@
 501126 "Research Kipchak Reinforcements (Upgrade Cavalry Archers to Kipchaks and spawn a Kipchak at each Archery Range)"
 501127 "Research Foederati Army (Each team military building spawns a Champion; Each research adds +100 Food and +75 Gold cost)"
 501128 "Research Hill Training (Knight-line units +45 HP regeneration per minute)"
-501129 "Enter Tang Dynasty (Infantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost)"
-501130 "Enter Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack)"
-501131 "Enter Yuan Dynasty (Land units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Can train Yuan Dynasty Raider)"
-501132 "Enter Ming Dynasty (Immediately get Chemistry; Knight-line units can be upgraded to Guanning Cavalry; All military units +10% HP)"
+501129 "Enter Tang Dynasty (+25 population capacity and population headroom; Hei Guang Cavalry +33% attack speed; Each Town Center (up to 4) and Castle spawns 1 Mo Dao every 2 minutes)"
+501130 "Enter Song Dynasty (Villagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Unlocks Imperial Fire Lancer)"
+501131 "Enter Yuan Dynasty (Land units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Unlocks Yuan Dynasty Raider)"
+501132 "Enter Ming Dynasty (Immediately get Chemistry; Unlocks Guan Ning Cavalry; All military units +10% HP)"
 501133 "Research Greuthungi Cavalry (Knight line returns 60% food cost when defeated)"
 501134 "Upgrade to Elephant Archer"
 501135 "Research Boyar's Fortitude (Knight-line units and Boyars +6 attack vs buildings)"
@@ -685,6 +686,7 @@
 501228 "Upgrade to Elite Zamburak"
 501229 "Upgrade to Elite Maghrebi Cavalry"
 501230 "Upgrade to Imperial Genitour"
+501231 "Upgrade to Imperial Fire Lancer"
 
 
 
@@ -816,10 +818,10 @@
 521126 "Research <b>Kipchak Reinforcements<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nUpgrade Cavalry Archers to Kipchaks and spawn a Kipchak at each Archery Range."
 521127 "Research <b>Foederati Army<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nEach team military building spawns a Champion; Each research adds +100 Food and +75 Gold cost."
 521128 "Research <b>Hill Training<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nKnight-line units +45 HP regeneration per minute."
-521129 "Enter <b>Tang Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nInfantries and Cavalries +3 attack, +4 LOS; +25 population capacity and population headroom; Tributary System -50% cost."
-521130 "Enter <b>Song Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nVillagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Fire Lancer +2 pierce attack."
-521131 "Enter <b>Yuan Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nLand units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Can train Yuan Dynasty Raider."
-521132 "Enter <b>Ming Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nImmediately get Chemistry; Knight-line units can be upgraded to Guan Ning Cavalry; All military units +10% HP."
+521129 "Enter <b>Tang Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n+25 population capacity and population headroom; Hei Guang Cavalry +33% attack speed; Each Town Center (up to 4) and Castle spawns 1 Mo Dao every 2 minutes."
+521130 "Enter <b>Song Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nVillagers and trade units -35% cost; Trade units -50% train time; Reduce technology costs by 10%; Unlocks Imperial Fire Lancer."
+521131 "Enter <b>Yuan Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nLand units +10% movement speed; Immediately get all cavalry armor technologies in Blacksmith and Parthian Tactics; Unlocks Yuan Dynasty Raider."
+521132 "Enter <b>Ming Dynasty<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nImmediately get Chemistry; Unlocks Guan Ning Cavalry; All military units +10% HP."
 521133 "Research <b>Greuthungi Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nKnight line returns 60% food cost when defeated."
 521134 "Upgrade to <b>Elephant Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Early Elephant Archers and lets you create Elephant Archers."
 521135 "Research <b>Boyar's Fortitude<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nKnight-line units and Boyars +6 attack vs buildings."
@@ -918,6 +920,7 @@
 521228 "Upgrade to <b>Elite Zamburak<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Zamburaks and lets you create Elite Zamburaks."
 521229 "Upgrade to <b>Elite Maghrebi Cavalry<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Maghrebi Cavalry and lets you create Elite Maghrebi Cavalry."
 521230 "Upgrade to <b>Imperial Genitour<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Elite Genitours and lets you create Imperial Genitour."
+521231 "Upgrade to <b>Imperial Fire Lancer<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Fire Lancers and lets you create Imperial Fire Lancer."
 
 
 
@@ -1082,6 +1085,8 @@
 700149 "Maghrebi Cavalry"
 700150 "Elite Maghrebi Cavalry"
 700151 "Imperial Genitour"
+700152 "Imperial Fire Lancer"
+700153 "Mo Dao"
 
 
 
@@ -1233,6 +1238,8 @@
 701149 "Create Maghrebi Cavalry"
 701150 "Create Elite Maghrebi Cavalry"
 701151 "Create Imperial Genitour"
+701152 "Create Imperial Fire Lancer"
+701153 "Create Mo Dao"
 
 
 
@@ -1534,6 +1541,10 @@
 721150 "Create <b>Elite Maghrebi Cavalry<b> (<cost>, 11 <MATERIAL=MPIconGoodCPU>)\nBerber unique cavalry. Takes 0.5 population space.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\nClass: Light Cavalry; Tags: Cavalry, Light Cavalry, Unique Unit."
 
 721151 "Create <b>Imperial Genitour<b> (<cost>, 23 <MATERIAL=MPIconGoodCPU>)\nSpanish unique mounted javelineer. Strong vs archers, weak against enemy units at close range.\nUpgrades: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.35 <MATERIAL=StatIconsReloadTime> 3 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 6\nClass: Cavalry Archer; Tags: Cavalry, Archer, Cavalry Archer, Skirmisher.\nAttack Bonus: +9 vs Archers, +4 vs Cavalry Archers, +3 vs Spearmen.\nArmor Bonus: +2 Cavalry Archer Armor."
+
+721152 "Create <b>Imperial Fire Lancer<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\nSong unique infantry. Charges up to fire bullets, strong vs cavalry.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\nClass: Infantry; Tags: Infantry, Shock Infantry, Gunpowder Unit.\nAttack Bonus: +15 vs Cavalry, +12 vs Camels, +15 vs Elephants, +12 vs Ships, +1 vs Buildings."
+
+721153 "Create <b>Mo Dao<b> (<cost>)\nTang unique infantry. Charges up to deal area damage. Cannot be trained directly; obtained periodically after entering the Tang Dynasty.\nUpgrades: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\nClass: Infantry; Tags: Infantry, Unique Unit.\nAttack Bonus: +10 vs Cavalry, +8 vs Camels, +8 vs Shock Infantry, +4 vs Buildings."
 
 900001 "<b>Sipahi Corps</b>\nSipahis gain bonus HP based on the number of nearby friendly cavalry units, up to +30% at 20 cavalry units."
 900002 "<b>Camel Intimidation</b>\nReduces nearby mounted units' attack speed by 20%."

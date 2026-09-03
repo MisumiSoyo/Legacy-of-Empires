@@ -823,6 +823,36 @@
             "Trigger Tech ID": 982
         },
         {
+            "Age ID": 4,
+            "Building ID": 12,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800152,
+            "Link ID": 1903,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Imperial Fire Lancer",
+            "Name String ID": 700152,
+            "Node ID": 4173,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 458,
+            "Prerequisite IDs": [
+                3094,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "Tech",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 3046,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Arson",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",
@@ -2352,6 +2382,36 @@
             "Picture Index": 107
         },
         {
+            "Age ID": 3,
+            "Building ID": 82,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800153,
+            "Link ID": -1,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Mo Dao",
+            "Name String ID": 700153,
+            "Node ID": 4174,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 72,
+            "Prerequisite IDs": [
+                3093,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "Tech",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Hoardings",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",
@@ -2664,6 +2724,36 @@
             "Link ID": 102,
             "Node ID": 103,
             "Picture Index": 32
+        },
+        {
+            "Age ID": 3,
+            "Building ID": 109,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800153,
+            "Link ID": 103,
+            "Link Node Type": "RegionalUnit",
+            "Name": "Mo Dao",
+            "Name String ID": 700153,
+            "Node ID": 4174,
+            "Node Status": "ResearchRequired",
+            "Node Type": "UniqueUnit",
+            "Picture Index": 72,
+            "Prerequisite IDs": [
+                3093,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "Tech",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         },
         {
             "Name": "Loom",
@@ -3211,36 +3301,6 @@
             "Node Status": "ResearchedCompleted",
             "Node Type": "Research",
             "Picture Index": 33,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Tech"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 109,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 600059,
-            "Link ID": 3094,
-            "Link Node Type": "BuildingTech",
-            "Name": "Tributary System",
-            "Name String ID": 500059,
-            "Node ID": 3098,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "Research",
-            "Picture Index": 107,
             "Prerequisite IDs": [
                 0,
                 0,

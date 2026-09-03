@@ -133,7 +133,7 @@
 //	日本
 120154 "步兵文明\n\n• 渔船 +100% 生命值; 渔夫和渔船在黑暗/封建/城堡/帝王时代 +5/10/15/20% 工作效率\n• 磨坊, 伐木场, 采矿场和船坞 -50% 建造费用和时间\n• 封建时代起步兵攻击速度 +33%\n• 骑射手 +2 攻击力 vs 射手\n\n<b>独特单位：<b>\n• 日本武士 (克制独特单位的步兵), 弓足轻 (攻击可无视护甲的弓箭手), 铁炮足轻 (克制骑兵的火枪手), 骑马武士 (重装骑兵), 僧兵 (宗教步兵)\n\n<b>独特科技：<b>\n• 射箭孔 (箭塔系和海塔放箭数和最大放箭数 +2)\n• 弹射器 (巨型投石机展开/组装速度 +300%，攻击速度 +33%)\n• 一向一揆 (解锁僧兵, 村民 -10% 工作效率)\n• 日本长枪骑兵 (轻骑兵 +9 攻击力 vs 骑兵)\n\n<b>团队加成：<b>\n箭船系视野 +50%"
 //	中国
-120155 "火药和全能型文明\n\n• 初始村民数 +1\n• 科技研究费用 -15%\n• 城镇中心 +7 视野，提供 +10 人口空间\n• 火矛兵和喷火船在城堡/帝王时代 +5/10% 移动速度\n• 城堡时代起可选择进入一个朝代\n• 黑光铠骑兵系 +15% 攻击速度\n\n<b>独特单位：<b>\n• 诸葛弩 (步弓手), 龙舟 (战船), 关宁铁骑 (可使用火枪的骑兵), 猛火油柜 (可喷火的攻城武器), 元朝掠夺者 (轻骑兵)\n\n<b>独特科技：<b>\n• 长城 (城墙、瞭望箭塔系和炮塔的生命值 +30%)\n• 火箭术 (弩炮、火箭推车和楼船攻击力 +25%；楼船可发射火箭)\n• 唐朝 (步兵和骑兵 +3 攻击力, +4 视野, 人口空间和人口上限 +25, 朝贡体系 -50% 研究费用)\n• 宋朝 (村民和贸易单位 -35% 费用, 贸易单位 +100% 生产速度, 科技研究费用 -10%, 火矛兵的远程攻击伤害 +2)\n• 元朝 (陆地单位 +10% 移动速度, 立即获得所有铁匠铺骑兵防御科技和帕提亚战术, 可训练元朝掠夺者)\n• 明朝 (立即获得化学, 骑士系可升级到关宁铁骑, 军事单位 +10% 生命值)\n• 朝贡体系 (可在城堡训练周围文明的精锐独特部队, 并且附带 50% 的独特加成)\n\n<b>团队加成：<b>\n农田食物产量 +10%"
+120155 "火药和全能型文明\n\n• 初始村民数 +1\n• 科技研究费用 -15%\n• 城镇中心 +7 视野，提供 +10 人口空间\n• 火矛兵和喷火船在城堡/帝王时代 +5/10% 移动速度\n• 城堡时代起可选择进入一个朝代\n\n<b>独特单位：<b>\n• 诸葛弩 (步弓手), 龙舟 (战船), 猛火油柜 (可喷火的攻城武器), 陌刀手 (步兵), 帝王火矛兵 (步兵), 元朝掠夺者 (轻骑兵), 关宁铁骑 (可使用火枪的骑兵)\n\n<b>独特科技：<b>\n• 长城 (城墙、瞭望箭塔系和炮塔的生命值 +30%)\n• 火箭术 (弩炮、火箭推车和楼船攻击力 +25%；楼船可发射火箭)\n• 唐朝 (人口空间和人口上限 +25, 黑光铠骑兵 +33% 攻击速度, 每座城镇中心 (最多 4 座) 和城堡每 2 分钟产生 1 名陌刀手)\n• 宋朝 (村民和贸易单位 -35% 费用, 贸易单位 +100% 生产速度, 科技研究费用 -10%, 解锁帝王火矛兵)\n• 元朝 (陆地单位 +10% 移动速度, 立即获得所有铁匠铺骑兵防御科技和帕提亚战术, 解锁元朝掠夺者)\n• 明朝 (立即获得化学, 解锁关宁铁骑, 军事单位 +10% 生命值)\n\n<b>团队加成：<b>\n农田食物产量 +10%"
 //	拜占庭
 120156 "全能型文明\n\n• 建筑在黑暗/封建/城堡/帝王时代 +10/15/20/25% 生命值\n• 掷矛手, 长枪兵系, 骆驼兵系, 标枪骑兵和瓦兰吉卫队 -25% 训练费用\n• 喷火船, 喷火车和德罗蒙战舰 +25% 攻击速度\n• 升级到帝王时代的费用 -33%\n• 城镇瞭望, 城镇巡逻和城镇防御 免费升级\n• 城堡时代起每 5 分钟可在城镇中心获得 1 队独特单位雇佣军\n\n<b>独特单位：<b>\n• 甲胄骑兵 (克制步兵并且可造成范围伤害的骑兵), 瓦兰吉卫队 (攻击时产生黄金的步兵), 喷火车 (可喷火的攻城武器)\n\n<b>独特科技：<b>\n• 希腊火 (喷火船和喷火车 +1 射程; 德罗蒙战舰和炮塔的爆炸范围增加)\n• 后勤学 (甲胄骑兵, 骑士系和瓦兰吉卫队 +6 攻击力 vs 步兵; 甲胄骑兵 +2 范围伤害)\n• 宫殿掠夺 (军事单位摧毁每个敌方建筑可获取 30 黄金)\n• 金角湾塔 (贸易单位可额外产生 15% 石料)\n\n<b>团队加成：<b>\n僧侣治疗速度 +100%"
 //	波斯
@@ -461,6 +461,7 @@
 500228 "精锐骆驼火枪手"
 500229 "精锐马格里布骑兵"
 500230 "帝王标枪骑兵"
+500231 "帝王火矛兵"
 
 
 
@@ -592,10 +593,10 @@
 501126 "研究钦察援军 (将骑射手升级为钦察骑射手, 并在每个靶场产生 1 名钦察骑射手)"
 501127 "研究契约军团 (团队每个军事建筑产生 1 名冠军剑士; 每次研究时 +100 食物费用, +75 黄金费用)"
 501128 "研究山地训练 (骑士系 +45 每分钟回复的生命值)"
-501129 "进入唐朝 (步兵和骑兵 +3 攻击力, +4 视野, 人口空间和人口上限 +25, 朝贡体系 -50% 研究费用)"
-501130 "进入宋朝 (村民和贸易单位 -35% 费用, 贸易单位 +100% 生产速度, 科技研究费用 -10%, 火矛兵的远程攻击伤害 +2)"
-501131 "进入元朝 (陆地单位 +10% 移动速度, 立即获得所有铁匠铺骑兵防御科技和帕提亚战术, 可训练元朝掠夺者)"
-501132 "进入明朝 (立即获得化学效果, 骑士系可升级到关宁铁骑, 军事单位 +10% 生命值)"
+501129 "进入唐朝 (人口空间和人口上限 +25, 黑光铠骑兵 +33% 攻击速度, 每座城镇中心 (最多 4 座) 和城堡每 2 分钟产生 1 名陌刀手)"
+501130 "进入宋朝 (村民和贸易单位 -35% 费用, 贸易单位 +100% 生产速度, 科技研究费用 -10%, 解锁帝王火矛兵)"
+501131 "进入元朝 (陆地单位 +10% 移动速度, 立即获得所有铁匠铺骑兵防御科技和帕提亚战术, 解锁元朝掠夺者)"
+501132 "进入明朝 (立即获得化学效果, 解锁关宁铁骑, 军事单位 +10% 生命值)"
 501133 "研究格鲁森尼骑兵 (骑士系战败后返还 60% 食物费用)"
 501134 "升级到骑象射手"
 501135 "研究贵族铁骑的坚毅 (骑士系和贵族铁骑对建筑 +6 攻击力)"
@@ -694,6 +695,7 @@
 501228 "升级到精锐骆驼火枪手"
 501229 "升级到精锐马格里布骑兵"
 501230 "升级到帝王标枪骑兵"
+501231 "升级到帝王火矛兵"
 
 
 
@@ -825,10 +827,10 @@
 521126 "研究<b>钦察援军<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n将骑射手升级为钦察骑射手, 并在每个靶场产生 1 名钦察骑射手。"
 521127 "研究<b>契约军团<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n团队每个军事建筑产生 1 名冠军剑士; 每次研究时 +100 食物费用, +75 黄金费用。"
 521128 "研究<b>山地训练<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n骑士系 +45 每分钟回复的生命值。"
-521129 "进入<b>唐朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n步兵和骑兵 +3 攻击力, +4 视野, 人口空间和人口上限 +25, 朝贡体系 -50% 研究费用。"
-521130 "进入<b>宋朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n村民和贸易单位 -35% 费用, 贸易单位 +100% 生产速度, 科技研究费用 -10%, 火矛兵的远程攻击伤害 +2。"
-521131 "进入<b>元朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n陆地单位 +10% 移动速度, 立即获得所有铁匠铺骑兵防御科技和帕提亚战术, 可训练元朝掠夺者。"
-521132 "进入<b>明朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n立即获得化学效果, 骑士系可升级到关宁铁骑, 军事单位 +10% 生命值。"
+521129 "进入<b>唐朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n人口空间和人口上限 +25, 黑光铠骑兵 +33% 攻击速度, 每座城镇中心 (最多 4 座) 和城堡每 2 分钟产生 1 名陌刀手。"
+521130 "进入<b>宋朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n村民和贸易单位 -35% 费用, 贸易单位 +100% 生产速度, 科技研究费用 -10%, 解锁帝王火矛兵。"
+521131 "进入<b>元朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n陆地单位 +10% 移动速度, 立即获得所有铁匠铺骑兵防御科技和帕提亚战术, 解锁元朝掠夺者。"
+521132 "进入<b>明朝<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n立即获得化学效果, 解锁关宁铁骑, 军事单位 +10% 生命值。"
 521133 "研究<b>格鲁森尼骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n骑士系战败后返还 60% 食物费用。"
 521134 "升级到<b>骑象射手<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\n将您的早期骑象射手升级, 生产更为强大的骑象射手。"
 521135 "研究<b>贵族铁骑的坚毅<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\n骑士系和贵族铁骑对建筑 +6 攻击力。"
@@ -925,15 +927,15 @@
 521226 "研究<b>恒河经济<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n村民 -75% 训练费用, +100% 生产速度。"
 521227 "升级到<b>精锐缅族骑手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的缅族骑手升级, 生产更为强大的精锐缅族骑手。"
 521228 "升级到<b>精锐骆驼火枪手<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的骆驼火枪手升级, 生产更为强大的精锐骆驼火枪手。"
-
 521229 "升级到<b>精锐马格里布骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的马格里布骑兵升级, 生产更为强大的精锐马格里布骑兵。"
 521230 "升级到<b>帝王标枪骑兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的精锐标枪骑兵升级, 生产更为强大的帝王标枪骑兵。"
+521231 "升级到<b>帝王火矛兵<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\n将您的火矛兵升级, 生产更为强大的帝王火矛兵。"
 
 
 
 600001 "在移动中对最近的目标进行一次攻击"
 600002 "使用火枪对最近的目标进行一次攻击\n(冷却时间: 60 秒)"
-600003 "隐身并获得速度加成，持续10秒。\n(冷却时间: 60 秒)"
+600003 "隐身并获得速度加成，持续 10 秒。\n(冷却时间: 60 秒)"
 600004 "切换形态, 不攻击, 持续治疗附近单位。"
 600005 "切换形态, 进行攻击。"
 600006 "切换为防御战鼓, 为附近友军提供 1 护甲/盾牌。"
@@ -1092,6 +1094,8 @@
 700149 "马格里布骑兵"
 700150 "精锐马格里布骑兵"
 700151 "帝王标枪骑兵"
+700152 "帝王火矛兵"
+700153 "陌刀手"
 
 
 
@@ -1243,6 +1247,8 @@
 701149 "生产马格里布骑兵"
 701150 "生产精锐马格里布骑兵"
 701151 "生产帝王标枪骑兵"
+701152 "生产帝王火矛兵"
+701153 "生产陌刀手"
 
 
 
@@ -1540,6 +1546,10 @@
 721150 "生产<b>精锐马格里布骑兵<b> (<cost>, 11 <MATERIAL=MPIconGoodCPU>)\n柏柏尔独特骑兵, 占用 0.5 人口空间。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT066ScaleBardingArmor> <MATERIAL=TechIconsT023ChainBardingArmor> <MATERIAL=TechIconsT065PlateBardingArmor> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.45 <MATERIAL=StatIconsReloadTime> 1.8 <MATERIAL=EyeIcon> 5\n主类: 轻骑兵; 标签: 骑兵, 轻骑兵, 独特单位。"
 
 721151 "生产<b>帝王标枪骑兵<b> (<cost>, 23 <MATERIAL=MPIconGoodCPU>)\n西班牙独特马上掷矛手。适于攻击步弓手, 不适于近程攻击敌方单位。\n升级: <MATERIAL=TechIconsT034Fletching> <MATERIAL=TechIconsT035BodkinArrow> <MATERIAL=TechIconsT037Bracer> <MATERIAL=TechIconsT049PaddedArcherArmor> <MATERIAL=TechIconsT050LeatherArcherArmor> <MATERIAL=TechIconsT051RingArcherArmor> <MATERIAL=TechIconsT112ThumbRing> <MATERIAL=TechIconsT110Bloodlines> <MATERIAL=TechIconsT010Husbandry> <MATERIAL=TechIconsT025Ballistics> <MATERIAL=TechIconsT012Chemistry> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1.35 <MATERIAL=StatIconsReloadTime> 3 <MATERIAL=TechIconsT112ThumbRing> 100% <MATERIAL=EyeIcon> 6\n主类: 骑射手; 标签: 骑兵, 射手, 骑射手, 投矛兵。\n攻击加成: +9 vs 射手, +4 vs 骑射手, +3 vs 枪兵。\n护甲加成: +2 骑射手护甲。"
+
+721152 "生产<b>帝王火矛兵<b> (<cost>, 25 <MATERIAL=MPIconGoodCPU>)\n宋朝独特步兵, 可充能发射子弹, 适于对抗骑兵。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 0.96 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 6\n主类: 步兵; 标签: 步兵, 冲击步兵, 火药单位。\n攻击加成: +15 vs 骑兵, +12 vs 骆驼, +15 vs 大象, +12 vs 船, +1 vs 建筑。"
+
+721153 "生产<b>陌刀手<b> (<cost>)\n唐朝独特步兵, 可充能造成范围伤害。无法直接训练, 只能通过进入唐朝后定期产生获得。\n升级: <MATERIAL=TechIconsT017Forging> <MATERIAL=TechIconsT018IronCasting> <MATERIAL=TechIconsT021BlastFurnace> <MATERIAL=TechIconsT063ScaleMailArmor> <MATERIAL=TechIconsT022ChainMailArmor> <MATERIAL=TechIconsT064PlateMailArmor> <MATERIAL=TechIconsT080Squires> <MATERIAL=TechIconsT118Arson> <MATERIAL=TechIconsT131Devotion> <MATERIAL=TechIconsT011Faith> <MATERIAL=TechIconsT108Heresy> <MATERIAL=TechIconsT091Conscription>\n<hp> <attack> <armor> <piercearmor> <range>\n<MATERIAL=StatIconsMovementSpeed> 1 <MATERIAL=StatIconsReloadTime> 2 <MATERIAL=EyeIcon> 5\n主类: 步兵; 标签: 步兵, 独特单位。\n攻击加成: +10 vs 骑兵, +8 vs 骆驼, +8 vs 冲击步兵, +4 vs 建筑。"
 
 
 

@@ -55,6 +55,7 @@ extern const int cAttributeFreeCavalier = 755;
 extern const int cAttributeMagyarFreeArmyTimer = 756;
 extern const int cAttributeByzantinesMercenaryTimer = 757;
 extern const int cAttributeByzantinesMercenaryCompensation = 758;
+extern const int cAttributeTangFreeMoDaoTimer = 759;
 
 
 
@@ -212,6 +213,9 @@ extern const int BlackArmyArquebusierID = 4168;
 extern const int MaghrabiCavalryID = 4169;
 extern const int EliteMaghrabiCavalryID = 4170;
 extern const int ImperialGenitourID = 4171;
+extern const int ProjectileJineteTacticsID = 4172;
+extern const int ImperialFireLancerID = 4173;
+extern const int MoDaoID = 4174;
 
 
 
@@ -244,7 +248,6 @@ extern const int SongDynastyTechID = 3094;
 extern const int YuanDynastyTechID = 3095;
 extern const int MingDynastyTechID = 3096;
 extern const int GuanNingCavalryTechID = 3097;
-extern const int TributarySystemTechID = 3098;
 extern const int EarlyVarangianGuardTechID = 3106;
 extern const int EliteVarangianGuardTechID = 3107;
 extern const int PhkakTechID = 3113;

@@ -12,6 +12,7 @@ SEVEN_ZIP_PATH = r"C:\Program Files\7-Zip\7z.exe"
 EXCLUDE_DIRS = [
     ".git",
     "__pycache__",
+    ".trae",
 ]
 
 EXCLUDE_FILE_PATTERNS = [

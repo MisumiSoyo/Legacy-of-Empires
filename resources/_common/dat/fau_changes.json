@@ -534,14 +534,6 @@
             "RequiredAge": 4
         },
         {
-            "note": "朝贡体系",
-            "civilizations": "Chinese",
-            "tech_id": 3098,
-            "building_id": 109,
-            "Name": "Tributary System",
-            "RequiredAge": 4
-        },
-        {
             "note": "塔博尔派",
             "civilizations": "Bohemians",
             "tech_id": 3327,

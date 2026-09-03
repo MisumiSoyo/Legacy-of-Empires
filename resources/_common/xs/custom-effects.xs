@@ -110,15 +110,11 @@ void EffectFunction10009(int playerId = -1)
 //  10010 - Tang Dynasty
 void EffectFunction10010(int playerId = -1)
 {
-    ModAttack(playerId, cInfantryClass, cDamageClassMelee, 3);
-    ModAttack(playerId, cCavalryClass, cDamageClassMelee, 3);
-    ModAttack(playerId, cScoutCavalryClass, cDamageClassMelee, 3);
-    ModAttribute(playerId, cInfantryClass, cLineOfSight, 4);
-    ModAttribute(playerId, cCavalryClass, cLineOfSight, 4);
-    ModAttribute(playerId, cScoutCavalryClass, cLineOfSight, 4);
+    MulAttribute(playerId, HeiGuangCavalryID, cAttackReloadTime, 0.75);
+    MulAttribute(playerId, HeavyHeiGuangCavalryID, cAttackReloadTime, 0.75);
+    MulAttribute(playerId, GuanNingCavalryID, cAttackReloadTime, 0.75);
     ModResource(playerId, cAttributePopulationCap, 25);
     ModResource(playerId, cAttributeUnitLimit, 25);
-    xsEffectAmount(cModifyTech, TributarySystemTechID, cAttrMulAllCosts, 0.5, playerId);
 
     DisableTech(playerId, SongDynastyTechID);
     DisableTech(playerId, YuanDynastyTechID);
@@ -135,8 +131,6 @@ void EffectFunction10011(int playerId = -1)
     MulAttribute(playerId, cTradeBoatClass, cTrainTime, 0.5);
     MulAttribute(playerId, cTradeCartClass, cTrainTime, 0.5);
     ModResource(playerId, cAttributeResearchCostMod, -0.1);
-    ModAttack(playerId, ProjectileFireLancerID, cDamageClassPierce, 2);
-    ModAttribute(playerId, ProjectileFireLancerID, cShownAttack, 2);
     DisableTech(playerId, TangDynastyTechID);
     DisableTech(playerId, YuanDynastyTechID);
     DisableTech(playerId, MingDynastyTechID);
@@ -1476,7 +1470,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 371  2026.09.03");
+    xsChatData("Patch: 372  2026.09.03");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -88,8 +88,9 @@ def getNestedAttribute(obj, attr_path):
 
 
 def normalizeIdList(ids):
-    if ids is None:
-        return None  # None 表示搜索所有
+    # None 或字符串 "all"(忽略大小写) 都表示搜索所有
+    if ids is None or (isinstance(ids, str) and ids.lower() == "all"):
+        return None
     if isinstance(ids, (int, float)):
         return [int(ids)]
     return [int(x) for x in ids]

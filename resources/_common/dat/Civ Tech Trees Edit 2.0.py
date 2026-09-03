@@ -128,6 +128,16 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
 
                 if action == "add":
                     new_item = {key: value for key, value in change.items() if key not in ["action", "civ_id", "position", "target_id", "target_type", "note"]}
+                    # Building ID 支持列表: 对多个建筑分别添加(深拷贝), 每个条目只保留单个建筑ID
+                    building_ids = new_item.get("Building ID")
+                    if isinstance(building_ids, list):
+                        add_items = []
+                        for bid in building_ids:
+                            item_copy = copy.deepcopy(new_item)
+                            item_copy["Building ID"] = bid
+                            add_items.append(item_copy)
+                    else:
+                        add_items = [new_item]
                     insert_position = len(target_list)
                     position = change.get("position", "last").lower()
                     target_id = change.get("target_id", None)
@@ -153,13 +163,17 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
                                     else:
                                         insert_position = idx + 1
                                     break
-                    target_list.insert(insert_position, new_item)
+                    for offset, item_to_add in enumerate(add_items):
+                        target_list.insert(insert_position + offset, item_to_add)
                 
                 elif action == "modify":
                     node_ids = change["Node ID"] if isinstance(change["Node ID"], list) else [change["Node ID"]]
                     position = change.get("position", None)  # 新增：获取位置参数
                     target_id = change.get("target_id", None)  # 新增：获取目标ID
                     target_type = change.get("target_type", None)  # 新增：获取目标类型
+                    # Building ID 为列表时作为匹配过滤条件(只改这些建筑下的条目), 不写入条目
+                    building_filter = change.get("Building ID")
+                    building_filter = building_filter if isinstance(building_filter, list) else None
                     # 根据target_type确定搜索列表
                     if target_type is not None:
                         if target_type in ["Unit", "Tech"]:
@@ -170,13 +184,13 @@ def apply_changes(original_folder, changes_file, output_folder="CivTechTrees"):
                             search_list = None
                     else:
                         search_list = None
-                    
+
                     for node_id in node_ids:
                         for item in target_list:
-                            if item["Node ID"] == node_id and (item.get("Use Type") == use_type or (item.get("Use Type") == "Building" and use_type == "Unit")):
+                            if item["Node ID"] == node_id and (item.get("Use Type") == use_type or (item.get("Use Type") == "Building" and use_type == "Unit")) and (building_filter is None or item.get("Building ID") in building_filter):
                                 # 先修改属性
                                 for key, value in change.items():
-                                    if key not in ["action", "civ_id", "Node ID", "note", "position", "target_id", "target_type"]:
+                                    if key not in ["action", "civ_id", "Node ID", "note", "position", "target_id", "target_type"] and not (key == "Building ID" and building_filter is not None):
                                         item[key] = value
                                 
                                 # 如果指定了位置，移动该item到新位置

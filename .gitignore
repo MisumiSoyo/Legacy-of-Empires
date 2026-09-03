@@ -3,3 +3,4 @@
 *.code-workspace
 *.zip
 __pycache__/
+.trae/

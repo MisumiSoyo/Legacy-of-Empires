@@ -128,7 +128,7 @@ void ByzantinesFreeMercenary(int playerId = -1, int Time = -1)
         return;
     Progress = minInt(Progress + 1, 300);
     if (Progress >= 300)
-        if (xsGetObjectCount(playerId, TownCenterID) > 0)
+        if ((xsGetObjectCount(playerId, TownCenterID) > 0) && (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0))
         {
             int MercenaryID = xsGetRandomNumberMax(CivCount) + 1;
             int Compensation = xsPlayerAttribute(playerId, cAttributeByzantinesMercenaryCompensation);
@@ -154,6 +154,23 @@ void ByzantinesFreeMercenary(int playerId = -1, int Time = -1)
 }
 
 
+void TangFreeMoDaoWarrior(int playerId = -1, int Time = -1)
+{
+    if (isResearched(playerId, TangDynastyTechID) == false)
+        return;
+    int Progress = xsPlayerAttribute(playerId, cAttributeTangFreeMoDaoTimer);
+    Progress = minInt(Progress + 1, 120);
+    if (Progress >= 120)
+        if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)
+        {
+            SpawnUnit(playerId, MoDaoID, TownCenterID, 1, 4);
+            SpawnUnit(playerId, MoDaoID, CastleID, 1);
+            Progress = Progress - 120;
+        }
+    SetResource(playerId, cAttributeTangFreeMoDaoTimer, Progress);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -163,6 +180,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cFranks:
         {
             FranksLoan(playerId, Time);
+            break;
+        }
+        case cChinese:
+        {
+            TangFreeMoDaoWarrior(playerId, Time);
             break;
         }
         case cByzantines:

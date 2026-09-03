@@ -13,6 +13,7 @@ TARGET_PATH = MODS_LOCAL_PATH / "Mimiso LOE"
 EXCLUDE_DIRS = [
     ".git",
     "__pycache__",
+    ".trae",
 ]
 
 EXCLUDE_FILE_PATTERNS = [
