@@ -121,6 +121,39 @@ void MagyarFreeArmy(int playerId = -1, int Time = -1)
 }
 
 
+void ByzantinesFreeMercenary(int playerId = -1, int Time = -1)
+{
+    int Progress = xsPlayerAttribute(playerId, cAttributeByzantinesMercenaryTimer);
+    if (MinAge(playerId, CastleAge) == false)
+        return;
+    Progress = minInt(Progress + 1, 300);
+    if (Progress >= 300)
+        if (xsGetObjectCount(playerId, TownCenterID) > 0)
+        {
+            int MercenaryID = xsGetRandomNumberMax(CivCount) + 1;
+            int Compensation = xsPlayerAttribute(playerId, cAttributeByzantinesMercenaryCompensation);
+            while (isChroniclesCiv(MercenaryID))
+                MercenaryID = xsGetRandomNumberMax(CivCount) + 1;
+            int MercenaryUnitID = 0;
+            if (isAge(playerId, CastleAge))
+                MercenaryUnitID = GetUniqueUnitID(MercenaryID);
+            else
+                MercenaryUnitID = GetUniqueUnitID(MercenaryID, true);
+            int MercenaryValue = 450 + Compensation;
+            if (xsGetObjectClass(playerId, MercenaryUnitID) == cInfantryClass)
+                MercenaryValue = MercenaryValue + 50;
+            int UnitValue = ObjectTotalCost(playerId, MercenaryUnitID);
+            if ((MercenaryUnitID == BlackwoodArcherID) || (MercenaryUnitID == EliteBlackwoodArcherID))
+                UnitValue = UnitValue / 2;
+            int MercenaryNum = MercenaryValue / UnitValue;
+            SpawnUnit(playerId, MercenaryUnitID, TownCenterID, MercenaryNum, 1);
+            Progress = Progress - 300;
+            SetResource(playerId, cAttributeByzantinesMercenaryCompensation, MercenaryValue - UnitValue * MercenaryNum);
+        }
+    SetResource(playerId, cAttributeByzantinesMercenaryTimer, Progress);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
@@ -130,6 +163,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cFranks:
         {
             FranksLoan(playerId, Time);
+            break;
+        }
+        case cByzantines:
+        {
+            ByzantinesFreeMercenary(playerId, Time);
             break;
         }
         case cVikings:

@@ -1055,6 +1055,11 @@
             "note": "鲜卑掠骑兵生命值提高",
             "unit_id": 1952,
             "attributes": [["hit_points", 36]]
+        },
+        {
+            "note": "箭塔系消耗石料减少",
+            "unit_id": [79, 234, 235],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 2], ["amount", 100]]]
         }
     ],
     "tech_changes":

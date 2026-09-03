@@ -27,7 +27,6 @@ extern const int cAttributeVarangianGuardLootProductivity = 717;
 extern const int cAttributeWubaoFoodWoodProductivity = 718;
 extern const int cAttributeWubaoGoldProductivity = 719;
 extern const int cAttributeCavalryLootBuildingGoldProductivity = 720;
-extern const int cAttributeByzantinesMercenaryIDStart = 721;
 extern const int cAttributeInfantryLootFarmFoodProductivity = 731;
 extern const int cAttributeHunterFoodProductivity = 732;
 extern const int cAttributeFarmFoodGenerateProductivity = 733;
@@ -54,6 +53,8 @@ extern const int cAttributeEnclosureProductivity = 753;
 extern const int cAttributeKillCavalryCount = 754;
 extern const int cAttributeFreeCavalier = 755;
 extern const int cAttributeMagyarFreeArmyTimer = 756;
+extern const int cAttributeByzantinesMercenaryTimer = 757;
+extern const int cAttributeByzantinesMercenaryCompensation = 758;
 
 
 

@@ -1150,7 +1150,7 @@
         {
             "note": "金角湾塔",
             "civilizations": "Byzantines",
-            "tech_id": 3208,
+            "tech_id": 3115,
             "building_id": 109,
             "Name": "Golden Horn Tower",
             "RequiredAge": 4

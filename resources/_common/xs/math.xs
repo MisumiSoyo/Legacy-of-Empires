@@ -485,10 +485,18 @@ void RemoveStinger(int playerId = -1, int ObjectID = -1)
 }
 
 
-float ObjectTotalCost(int playerId = -1, int ObjectID = -1)
+int ObjectTotalCost(int playerId = -1, int ObjectID = -1)
 {
-    return (xsGetObjectAttribute(playerId, ObjectID, cFoodCost) + xsGetObjectAttribute(playerId, ObjectID, cWoodCost)
-            + xsGetObjectAttribute(playerId, ObjectID, cGoldCost) + xsGetObjectAttribute(playerId, ObjectID, cStoneCost));
+    int Ans = 0;
+    int i = 0;
+    int cost = 0;
+    for (i = cFoodCost; <= cStoneCost)
+    {
+        cost = xsGetObjectAttribute(playerId, ObjectID, i);
+        if (cost > -1)
+            Ans = Ans + cost;
+    }
+    return (Ans);
 }
 
 
@@ -1015,4 +1023,18 @@ void PrintTrainLocations(int playerId = -1, int ObjectID = -1)
             + ", BTN = " + xsGetObjectAttribute(playerId, ObjectID, cTrainButton) + ", HK = " + xsGetObjectAttribute(playerId, ObjectID, cHotkeyId));
     }
     SetAttribute(playerId, ObjectID, cTrainLocationsEntryMod, 0);
+}
+
+
+bool MinAge(int playerId = -1, int AgeID = -1)
+{
+    int Age = xsPlayerAttribute(playerId, cAttributeCurrentAge);
+    return (Age >= AgeID);
+}
+
+
+bool isAge(int playerId = -1, int AgeID = -1)
+{
+    int Age = xsPlayerAttribute(playerId, cAttributeCurrentAge);
+    return (Age == AgeID);
 }
