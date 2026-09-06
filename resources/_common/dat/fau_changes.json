@@ -694,8 +694,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波兰, 越南获得火枪手",
-            "civilizations": ["Chinese", "Poles", "Vietnamese"],
+            "note": "中国, 波兰, 越南, 不列颠获得火枪手",
+            "civilizations": ["Chinese", "Poles", "Vietnamese", "Britons"],
             "unit_id": 5,
             "building_id": 87,
             "Name": "Hand Cannoneer",
@@ -744,8 +744,9 @@
             "RequiredAge": 3
         },
         {
-            "note": "拜占庭, 条顿, 萨拉森, 马扎尔, 斯拉夫, 越南, 柏柏尔, 鞑靼, 魏获得建筑学",
-            "civilizations": ["Teutons", "Byzantines", "Saracens", "Magyars", "Slavs", "Vietnamese", "Berbers", "Tatars", "Wei"],
+            "note": "拜占庭, 条顿, 萨拉森, 马扎尔, 斯拉夫, 越南, 柏柏尔, 鞑靼, 魏, 西西里, 亚美尼亚获得建筑学",
+            "civilizations": ["Teutons", "Byzantines", "Saracens", "Magyars", "Slavs", "Vietnamese", "Berbers", "Tatars", "Wei",
+                              "Sicilians", "Armenians"],
             "tech_id": 51,
             "building_id": 209,
             "Name": "Architecture",
@@ -966,8 +967,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "魏, 保加利亚启用冠军剑士",
-            "civilizations": ["Wei", "Bulgarians"],
+            "note": "魏, 保加利亚, 瞿折罗启用冠军剑士",
+            "civilizations": ["Wei", "Bulgarians", "Gurjaras"],
             "tech_id": 264,
             "building_id": 12,
             "Name": "Champion",
@@ -1108,8 +1109,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 条顿, 法兰克, 契丹, 西班牙, 格鲁吉亚, 罗马获得脚踏起重机",
-            "civilizations": ["Teutons", "Chinese", "Franks", "Khitans", "Spanish", "Georgians"],
+            "note": "中国, 条顿, 法兰克, 契丹, 西班牙, 格鲁吉亚, 罗马, 西西里, 亚美尼亚获得脚踏起重机",
+            "civilizations": ["Teutons", "Chinese", "Franks", "Khitans", "Spanish", "Georgians", "Sicilians", "Armenians"],
             "tech_id": 54,
             "building_id": 209,
             "Name": "Treadmill Crane",
@@ -1170,9 +1171,9 @@
             "type": "delete"
         },
         {
-            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏, 拜占庭, 罗马, 达罗毗荼, 印度斯坦获得工兵",
+            "note": "立陶宛, 缅甸, 高丽, 孟加拉, 意大利, 西西里, 柏柏尔, 吴, 法兰克, 萨拉森, 保加利亚, 蜀, 魏, 拜占庭, 罗马, 达罗毗荼, 印度斯坦, 穆伊斯卡获得工兵",
             "civilizations": ["Koreans", "Burmese", "Lithuanians", "Bengalis", "Italians", "Sicilians", "Berbers", "Wu", "Franks", "Saracens", "Bulgarians",
-                              "Shu", "Wei", "Byzantines", "Romans", "Dravidians", "Indians"],
+                              "Shu", "Wei", "Byzantines", "Romans", "Dravidians", "Indians", "Muisca"],
             "tech_id": 321,
             "building_id": 82,
             "Name": "Sappers",
@@ -1195,8 +1196,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙, 越南, 马里, 亚美尼亚, 格鲁吉亚获得造船匠",
-            "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens", "Portuguese", "Vietnamese", "Malians", "Armenians", "Georgians"],
+            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙, 越南, 马里, 亚美尼亚, 格鲁吉亚, 吴获得造船匠",
+            "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens", "Portuguese", "Vietnamese", "Malians", "Armenians", "Georgians",
+                              "Wu"],
             "tech_id": 373,
             "building_id": 209,
             "Name": "Shipwright",
@@ -1211,8 +1213,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "波兰, 意大利, 维京, 契丹, 阿兹特克, 萨拉森获得长戟兵",
-            "civilizations": ["Poles", "Italians", "Vikings", "Khitans", "Aztecs", "Saracens"],
+            "note": "波兰, 意大利, 维京, 契丹, 阿兹特克, 萨拉森, 穆伊斯卡获得长戟兵",
+            "civilizations": ["Poles", "Italians", "Vikings", "Khitans", "Aztecs", "Saracens", "Muisca"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",
@@ -1244,8 +1246,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 波兰, 条顿, 意大利, 契丹, 立陶宛, 葡萄牙, 越南获得钻井采金法",
-            "civilizations": ["Goths", "Teutons", "Poles", "Italians", "Khitans", "Lithuanians", "Portuguese", "Vietnamese"],
+            "note": "哥特, 波兰, 条顿, 意大利, 契丹, 立陶宛, 葡萄牙, 越南, 魏获得钻井采金法",
+            "civilizations": ["Goths", "Teutons", "Poles", "Italians", "Khitans", "Lithuanians", "Portuguese", "Vietnamese", "Wei"],
             "tech_id": 182,
             "building_id": 584,
             "Name": "Gold Shaft Mining",
@@ -1338,8 +1340,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "阿兹特克, 波兰, 勃艮第, 吴, 格鲁吉亚, 穆伊斯卡, 蒙古获得射手锁甲",
-            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu", "Georgians", "Muisca", "Mongols"],
+            "note": "阿兹特克, 波兰, 勃艮第, 吴, 格鲁吉亚, 穆伊斯卡, 蒙古, 瞿折罗, 西西里获得射手锁甲",
+            "civilizations": ["Aztecs", "Burgundians", "Poles", "Wu", "Georgians", "Muisca", "Mongols", "Gurjaras", "Sicilians"],
             "tech_id": 219,
             "building_id": 103,
             "Name": "Ring Archer Armor",
@@ -1352,8 +1354,9 @@
             "type": "delete"
         },
         {
-            "note": "勃艮第, 中国, 意大利, 波斯, 马里, 达罗毗荼, 拜占庭, 魏获得攻城技师",
-            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians", "Dravidians", "Byzantines", "Wei"],
+            "note": "勃艮第, 中国, 意大利, 波斯, 马里, 达罗毗荼, 拜占庭, 魏, 瞿折罗, 吴, 亚美尼亚获得攻城技师",
+            "civilizations": ["Burgundians", "Chinese", "Italians", "Persians", "Malians", "Dravidians", "Byzantines", "Wei",
+                              "Gurjaras", "Wu", "Armenians"],
             "tech_id": 377,
             "building_id": 209,
             "Name": "Siege Engineers",
@@ -1474,8 +1477,8 @@
             "type": "delete"
         },
         {
-            "note": "缅甸, 吴, 波斯, 葡萄牙, 马里, 马扎尔获得射箭槽",
-            "civilizations": ["Burmese", "Wu", "Persians", "Portuguese", "Malians", "Magyars"],
+            "note": "缅甸, 吴, 波斯, 葡萄牙, 马里, 马扎尔, 亚美尼亚获得射箭槽",
+            "civilizations": ["Burmese", "Wu", "Persians", "Portuguese", "Malians", "Magyars", "Armenians"],
             "tech_id": 608,
             "building_id": 209,
             "Name": "Arrowslits",
@@ -1866,16 +1869,16 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 拜占庭启用燃烧弹",
-            "civilizations": ["Chinese", "Byzantines"],
+            "note": "中国, 拜占庭, 吴启用燃烧弹",
+            "civilizations": ["Chinese", "Byzantines", "Wu"],
             "tech_id": 910,
             "building_id": 209,
             "Name": "Incendiaries",
             "RequiredAge": 4
         },
         {
-            "note": "波斯, 柏柏尔获得大型箭塔",
-            "civilizations": ["Persians", "Berbers"],
+            "note": "波斯, 柏柏尔, 亚美尼亚获得大型箭塔",
+            "civilizations": ["Persians", "Berbers", "Armenians"],
             "tech_id": 63,
             "building_id": 209,
             "Name": "Keep",
@@ -1972,16 +1975,16 @@
             "type": "delete"
         },
         {
-            "note": "越南, 鞑靼, 拜占庭获得重型投石车",
-            "civilizations": ["Vietnamese", "Tatars", "Byzantines"],
+            "note": "越南, 鞑靼, 拜占庭, 亚美尼亚获得重型投石车",
+            "civilizations": ["Vietnamese", "Tatars", "Byzantines", "Armenians"],
             "unit_id": 588,
             "building_id": 49,
             "Name": "Siege Onager",
             "RequiredAge": 4
         },
         {
-            "note": "越南, 鞑靼, 拜占庭获得重型投石车",
-            "civilizations": ["Vietnamese", "Tatars", "Byzantines"],
+            "note": "越南, 鞑靼, 拜占庭, 亚美尼亚获得重型投石车",
+            "civilizations": ["Vietnamese", "Tatars", "Byzantines", "Armenians"],
             "tech_id": 320,
             "building_id": 49,
             "RequiredAge": 4

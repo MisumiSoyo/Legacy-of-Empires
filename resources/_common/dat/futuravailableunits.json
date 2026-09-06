@@ -2354,6 +2354,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Hand Cannoneer",
+                        "RequiredAge": 4,
+                        "ID": 5
                     }
                 ]
             },
@@ -32614,6 +32619,11 @@
                         "Name": "Military Training",
                         "RequiredAge": 2,
                         "ID": 3004
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
@@ -32828,6 +32838,16 @@
                         "ID": 909,
                         "Name": "Siphons",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
+                    },
+                    {
+                        "Name": "Treadmill Crane",
+                        "RequiredAge": 3,
+                        "ID": 54
                     }
                 ]
             },
@@ -45685,6 +45705,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Champion",
+                        "RequiredAge": 4,
+                        "ID": 264
+                    },
+                    {
                         "Name": "Squires",
                         "RequiredAge": 3,
                         "ID": 215
@@ -45945,6 +45970,11 @@
                     {
                         "RequiredAge": 4,
                         "ID": 75
+                    },
+                    {
+                        "Name": "Ring Archer Armor",
+                        "RequiredAge": 4,
+                        "ID": 219
                     }
                 ]
             },
@@ -46159,6 +46189,11 @@
                         "ID": 54,
                         "Name": "Treadmill Crane",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
                     }
                 ]
             },
@@ -47932,6 +47967,10 @@
                         "ID": 239,
                         "Name": "Heavy Scorpion",
                         "RequiredAge": 4
+                    },
+                    {
+                        "RequiredAge": 4,
+                        "ID": 320
                     }
                 ],
                 "Units": [
@@ -47975,6 +48014,11 @@
                         "ID": 1105,
                         "Name": "Siege Tower",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Siege Onager",
+                        "RequiredAge": 4,
+                        "ID": 588
                     }
                 ]
             },
@@ -48249,6 +48293,32 @@
                         "ID": 910,
                         "Name": "Incendiaries",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Architecture",
+                        "RequiredAge": 4,
+                        "ID": 51
+                    },
+                    {
+                        "Name": "Treadmill Crane",
+                        "RequiredAge": 3,
+                        "ID": 54
+                    },
+                    {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
+                    },
+                    {
+                        "Name": "Arrowslits",
+                        "RequiredAge": 4,
+                        "ID": 608
+                    },
+                    {
+                        "Name": "Keep",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 140,
+                        "ID": 63
                     }
                 ]
             },
@@ -51458,8 +51528,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 375,
@@ -51487,6 +51557,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Siege Engineers",
+                        "RequiredAge": 4,
+                        "ID": 377
+                    },
+                    {
                         "Name": "Arrowslits",
                         "RequiredAge": 4,
                         "ID": 608
@@ -51495,6 +51570,11 @@
                         "Name": "Fortified Wall",
                         "RequiredAge": 3,
                         "ID": 194
+                    },
+                    {
+                        "Name": "Incendiaries",
+                        "RequiredAge": 4,
+                        "ID": 910
                     }
                 ]
             },
@@ -52823,6 +52903,11 @@
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
@@ -57080,6 +57165,11 @@
                         "ID": 408,
                         "Name": "Spies/Treason",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Sappers",
+                        "RequiredAge": 4,
+                        "ID": 321
                     }
                 ],
                 "Units": [

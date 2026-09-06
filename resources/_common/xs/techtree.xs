@@ -61,6 +61,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, StoneShaftMiningTechID);
             EnableTech(playerId, CarrackTechID);
             EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, HandCannoneerTechID);
             break;
         }
         case cFranks:
@@ -471,6 +472,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, SappersTechID);
             EnableTech(playerId, HussarTechID);
+            EnableTech(playerId, TreadmillCraneTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, RingArcherArmorTechID);
             break;
         }
         case cPoles:
@@ -518,6 +522,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GuildsTechID);
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, SquiresTechID);
+            EnableTech(playerId, ChampionTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, RingArcherArmorTechID);
             DisableTech(playerId, 854);
             DisableTech(playerId, 859);
             DisableTech(playerId, 874);
@@ -542,6 +549,12 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, TreadmillCraneTechID);
+            EnableTech(playerId, KeepTechID);
+            EnableTech(playerId, ArchitectureTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, SiegeOnagerTechID);
+            EnableTech(playerId, ArrowslitsTechID);
             break;
         }
         case cGeorgians:
@@ -572,6 +585,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, ArrowslitsTechID);
             EnableTech(playerId, FortifiedWallTechID);
+            EnableTech(playerId, SiegeEngineersTechID);
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, IncendiariesTechID);
             break;
         }
         case cWei:
@@ -610,6 +626,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ArsonTechID);
             EnableTech(playerId, RingArcherArmorTechID);
             EnableTech(playerId, BlastFurnaceTechID);
+            EnableTech(playerId, HalberdierTechID);
+            EnableTech(playerId, SappersTechID);
             DisableTech(playerId, WheelBarrowTechID);
             DisableTech(playerId, HandCartTechID);
             break;

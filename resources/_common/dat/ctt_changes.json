@@ -3492,10 +3492,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "西西里获得扳指, 双人锯, 工兵",
+            "note": "西西里获得扳指, 双人锯, 工兵, 射手锁甲, 建筑学, 脚踏起重机",
             "action": "modify",
             "civ_id": "SICILIANS",
-            "Node ID": [221, 321, 437],
+            "Node ID": [51, 54, 219, 221, 321, 437],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -4435,10 +4435,10 @@
             "Use Type": "Tech"
         },
         {
-            "note": "吴国获得软甲, 工兵, 围墙, 扳指, 射手锁甲, 轮作, 射箭槽, 垛墙",
+            "note": "吴国获得软甲, 工兵, 围墙, 扳指, 射手锁甲, 轮作, 射箭槽, 垛墙, 攻城技师, 造船匠, 燃烧弹",
             "action": "modify",
             "civ_id": "WU",
-            "Node ID": [12, 194, 219, 321, 379, 437, 608, 875],
+            "Node ID": [12, 194, 219, 321, 373, 377, 379, 437, 608, 875, 910],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -4802,6 +4802,14 @@
             "Node Status": "ResearchedCompleted"
         },
         {
+            "note": "不列颠获得火枪手",
+            "action": "modify",
+            "civ_id": "BRITONS",
+            "Node ID": [5],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
             "note": "萨拉森启用造船匠, 轮作, 工兵, 炮塔, 建筑学, 预热射击, 钻井采石法",
             "action": "modify",
             "civ_id": "SARACENS",
@@ -4818,9 +4826,9 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "波斯启用大型箭塔",
+            "note": "波斯获得大型箭塔",
             "action": "modify",
-            "civ_id": ["PERSIANS"],
+            "civ_id": ["PERSIANS", "ARMENIANS"],
             "Node ID": 235,
             "Use Type": "Building",
             "Node Status": "ResearchedCompleted"
@@ -4961,11 +4969,19 @@
             "Node Status": "NotAvailable"
         },
         {
-            "note": "瞿折罗获得行会, 鼓风炉, 工兵, 双人锯, 护卫",
+            "note": "瞿折罗获得行会, 鼓风炉, 工兵, 双人锯, 护卫, 攻城技师, 射手锁甲",
             "action": "modify",
             "civ_id": "GURJARAS",
-            "Node ID": [15, 75, 215, 221, 321],
+            "Node ID": [15, 75, 215, 219, 221, 321, 377],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "瞿折罗获得冠军剑士",
+            "action": "modify",
+            "civ_id": "GURJARAS",
+            "Node ID": [567],
+            "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
         {
@@ -5001,10 +5017,10 @@
             "Node Status": "NotAvailable"
         },
         {
-            "note": "穆伊斯卡获得纵火, 射手锁甲, 鼓风炉",
+            "note": "穆伊斯卡获得纵火, 射手锁甲, 鼓风炉, 工兵",
             "action": "modify",
             "civ_id": "MUISCA",
-            "Node ID": [75, 219, 602],
+            "Node ID": [75, 219, 321, 602],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -5015,6 +5031,14 @@
             "Node ID": [213, 249],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
+        },
+        {
+            "note": "穆伊斯卡获得长戟兵",
+            "action": "modify",
+            "civ_id": "MUISCA",
+            "Node ID": [359],
+            "Use Type": "Unit",
+            "Node Status": "ResearchedCompleted"
         },
         {
             "note": "瑞士枪兵",
@@ -5192,18 +5216,18 @@
             "Use Type": "Tech"
         },
         {
-            "note": "亚美尼亚获得双人锯, 钻井采石法, 扳指, 造船匠, 轮作",
+            "note": "亚美尼亚获得双人锯, 钻井采石法, 扳指, 造船匠, 轮作, 建筑学, 射箭槽, 攻城技师, 大型箭塔, 脚踏起重机",
             "action": "modify",
             "civ_id": "ARMENIANS",
-            "Node ID": [12, 221, 279, 373, 437],
+            "Node ID": [12, 51, 54, 63, 221, 279, 373, 377, 437, 608],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "亚美尼亚获得",
+            "note": "亚美尼亚获得重型投石车",
             "action": "modify",
             "civ_id": "ARMENIANS",
-            "Node ID": [],
+            "Node ID": [588],
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },

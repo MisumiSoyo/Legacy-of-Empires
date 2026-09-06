@@ -1078,6 +1078,18 @@
             "unit_id": "all",
             "search": ["dead_fish", "ne", null],
             "attributes": [["dead_fish.min_collision_size_multiplier", 1]]
+        },
+        {
+            "note": "爆破兵攻击力提升",
+            "unit_id": 440,
+            "attributes": [["type_50.attacks", "list_search", ["class_", 4], ["amount", 50]],
+                           ["type_50.displayed_attack", 50]]
+        },
+        {
+            "note": "火焰骆驼攻击力提升",
+            "unit_id": 1263,
+            "attributes": [["type_50.attacks", "list_search", ["class_", 4], ["amount", 30]],
+                           ["type_50.displayed_attack", 30]]
         }
     ],
     "tech_changes":
