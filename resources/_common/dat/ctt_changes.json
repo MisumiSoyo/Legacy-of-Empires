@@ -2,6 +2,14 @@
     "changes":
     [
         {
+            "note": "经济科技全开",
+            "action": "modify",
+            "civ_id": "all",
+            "Node ID": [12, 13, 14, 202, 203, 221, 55, 182, 278, 279],
+            "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
             "note": "攻城训练",
             "action": "add",
             "civ_id": "all",
@@ -1927,7 +1935,7 @@
             "Use Type": "Tech"
         },
         {
-            "note": "铁鹞子",
+            "note": "大畜牧",
             "action": "add",
             "civ_id": "KHITANS",
             "Age ID": 3,
@@ -1936,7 +1944,7 @@
             "Help String ID": 600193,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Iron Hawk",
+            "Name": "Stockyard",
             "Name String ID": 500193,
             "Node ID": 3148,
             "Node Status": "ResearchedCompleted",
@@ -3476,10 +3484,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "契丹获得钻井采金法, 脚踏起重机, 造船匠, 草药, 血统",
+            "note": "契丹获得钻井采金法, 脚踏起重机, 造船匠, 草药, 血统, 围墙",
             "action": "modify",
             "civ_id": "KHITANS",
-            "Node ID": [54, 182, 373, 435, 441],
+            "Node ID": [54, 182, 373, 379, 435, 441],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -3731,18 +3739,10 @@
             "Trigger Tech ID": 3265
         },
         {
-            "note": "阿兹特克, 玛雅, 印加禁用钻井采金法, 钻井采石法",
-            "action": "modify",
-            "civ_id": ["AZTECS", "MAYANS", "INCAS"],
-            "Node ID": [182, 279],
-            "Use Type": "Tech",
-            "Node Status": "NotAvailable"
-        },
-        {
-            "note": "阿兹特克获得射手锁甲, 扳指",
+            "note": "阿兹特克获得射手锁甲, 扳指, 双人锯",
             "action": "modify",
             "civ_id": "AZTECS",
-            "Node ID": [219, 437],
+            "Node ID": [219, 221, 437],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -3983,6 +3983,14 @@
             "civ_id": "ETHIOPIANS",
             "Node ID": [12, 64, 80, 379],
             "Use Type": "Tech",
+            "Node Status": "ResearchedCompleted"
+        },
+        {
+            "note": "埃塞俄比亚获得冠军剑士",
+            "action": "modify",
+            "civ_id": "ETHIOPIANS",
+            "Node ID": [567],
+            "Use Type": "Unit",
             "Node Status": "ResearchedCompleted"
         },
         {
@@ -4590,10 +4598,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "波斯获得护腕, 攻城技师, 大型箭塔, 炮塔, 垛墙, 射箭槽",
+            "note": "波斯获得护腕, 攻城技师, 大型箭塔, 炮塔, 垛墙, 射箭槽, 造船匠",
             "action": "modify",
             "civ_id": "PERSIANS",
-            "Node ID": [63, 64, 194, 201, 377, 608],
+            "Node ID": [63, 64, 194, 201, 373, 377, 608],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -4914,10 +4922,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "西班牙禁用钻井采石法",
+            "note": "西班牙禁用",
             "action": "modify",
             "civ_id": "SPANISH",
-            "Node ID": [279],
+            "Node ID": [],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
         },
@@ -5540,29 +5548,6 @@
             "Node Status": "NotAvailable"
         },
         {
-            "note": "铁鹞子",
-            "action": "add",
-            "civ_id": "KHITANS",
-            "Age ID": 3,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800090,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Iron Hawk",
-            "Name String ID": 700090,
-            "Node ID": 4159,
-            "Node Status": "ResearchRequired",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 147,
-            "Prerequisite IDs": [3148, 0, 0, 0, 0],
-            "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit",
-            "position": "after",
-            "target_id": 569
-        },
-        {
             "note": "神王",
             "action": "add",
             "civ_id": "KHMER",
@@ -6123,10 +6108,10 @@
             "target_id": 4053
         },
         {
-            "note": "印度斯坦获得轮作, 工兵",
+            "note": "印度斯坦获得轮作, 工兵, 造船匠, 救赎",
             "action": "modify",
             "civ_id": "INDIANS",
-            "Node ID": [12, 321],
+            "Node ID": [12, 316, 321, 373],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },

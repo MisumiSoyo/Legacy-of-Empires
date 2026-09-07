@@ -3,11 +3,28 @@ include "tech-adjustment.xs";
 
 
 
+void EnableAllEconomicTechs(int playerId = -1)
+{
+    EnableTech(playerId, DoubleBitAxeTechID);
+    EnableTech(playerId, BowSawTechID);
+    EnableTech(playerId, TwoManSawTechID);
+    EnableTech(playerId, HorseCollarTechID);
+    EnableTech(playerId, HeavyPlowTechID);
+    EnableTech(playerId, CropRotationTechID);
+    EnableTech(playerId, GoldMiningTechID);
+    EnableTech(playerId, StoneMiningTechID);
+    EnableTech(playerId, GoldShaftMiningTechID);
+    EnableTech(playerId, StoneShaftMiningTechID);
+}
+
+
 // 10001 - Tech Tree Adjustment
 void EffectFunction10001(int playerId = -1)
 {
     AbilityApplier(playerId);
     int playerCiv = xsGetPlayerCivilization(playerId);
+
+    EnableAllEconomicTechs(playerId);
 
     //  Some civs' Tithe descriptions adjustment
     if ((playerCiv == cChinese) || (playerCiv == cJapanese) || (playerCiv == cKoreans) || (playerCiv == cVietnamese) || (playerCiv == cBurmese)
@@ -164,6 +181,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, KeepTechID);
             EnableTech(playerId, ArrowslitsTechID);
             EnableTech(playerId, BombardTowerTechID);
+            EnableTech(playerId, ShipwrightTechID);
             DisableTech(playerId, CavalryArcherTechID);
             DisableTech(playerId, HeavyCavalryArcherTechID);
             break;
@@ -229,7 +247,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, SiegeEngineersTechID);
             EnableTech(playerId, HeavyScorpionTechID);
             EnableTech(playerId, TreadmillCraneTechID);
-            DisableTech(playerId, StoneShaftMiningTechID);
+            EnableTech(playerId, GenitourTechID);
+            EnableTech(playerId, EliteGenitourTechID);
             break;
         }
         case cAztecs:
@@ -237,9 +256,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, RingArcherArmorTechID);
             EnableTech(playerId, HalberdierTechID);
             EnableTech(playerId, ThumbRingTechID);
-            DisableTech(playerId, GoldShaftMiningTechID);
-            DisableTech(playerId, StoneShaftMiningTechID);
-            DisableTech(playerId, CropRotationTechID);
+            EnableTech(playerId, TwoManSawTechID);
             DisableTech(playerId, WheelBarrowTechID);
             DisableTech(playerId, HandCartTechID);
             DisableTech(playerId, TreadmillCraneTechID);
@@ -247,7 +264,6 @@ void EffectFunction10001(int playerId = -1)
         }
         case cMayans:
         {
-            DisableTech(playerId, StoneShaftMiningTechID);
             DisableTech(playerId, CropRotationTechID);
             DisableTech(playerId, TreadmillCraneTechID);
             DisableTech(playerId, HeavyPlowTechID);
@@ -293,6 +309,8 @@ void EffectFunction10001(int playerId = -1)
         {
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, SappersTechID);
+            EnableTech(playerId, ShipwrightTechID);
+            EnableTech(playerId, RedemptionTechID);
             break;
         }
         case cIncas:
@@ -300,8 +318,6 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, FervorTechID);
             EnableTech(playerId, AtonementTechID);
-            DisableTech(playerId, GoldShaftMiningTechID);
-            DisableTech(playerId, StoneShaftMiningTechID);
             DisableTech(playerId, WheelBarrowTechID);
             DisableTech(playerId, HandCartTechID);
             DisableTech(playerId, TreadmillCraneTechID);
@@ -339,6 +355,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, GoldShaftMiningTechID);
             EnableTech(playerId, ArrowslitsTechID);
             EnableTech(playerId, HoardingsTechID);
+            EnableTech(playerId, GenitourTechID);
+            EnableTech(playerId, EliteGenitourTechID);
             break;
         }
         case cEthiopians:
@@ -349,6 +367,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BombardTowerTechID);
             EnableTech(playerId, HoardingsTechID);
             EnableTech(playerId, PaladinTechID);
+            EnableTech(playerId, ChampionTechID);
             break;
         }
         case cMalians:
@@ -618,6 +637,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HerbalMedicineTechID);
             EnableTech(playerId, HalberdierID);
             EnableTech(playerId, BloodlinesTechID);
+            EnableTech(playerId, HoardingsTechID);
             DisableTech(playerId, CashCropTechID);
             break;
         }
@@ -659,6 +679,8 @@ void EffectFunction10129(int playerId = -1)
     DisableTech(playerId, EarlyVarangianGuardTechID);
     DisableTech(playerId, VarangianGuardTechID);
     DisableTech(playerId, EliteVarangianGuardID);
+    DisableTech(playerId, GenitourTechID);
+    DisableTech(playerId, EliteGenitourTechID);
 }
 
 
@@ -759,6 +781,8 @@ void EffectFunction10080(int playerId = -1)
 {
     xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetFoodCost, 0, playerId);
     xsEffectAmount(cModifyTech, GenitourTechID, cAttrSetTime, 0, playerId);
+    EnableTech(playerId, GenitourTechID);
+    EnableTech(playerId, EliteGenitourTechID);
 
     int playerCiv = xsGetPlayerCivilization(playerId);
 

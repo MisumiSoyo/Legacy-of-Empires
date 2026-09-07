@@ -986,36 +986,6 @@
             "Trigger Tech ID": 265
         },
         {
-            "Age ID": 3,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 800090,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Iron Hawk",
-            "Name String ID": 700090,
-            "Node ID": 4159,
-            "Node Status": "ResearchRequired",
-            "Node Type": "UniqueUnit",
-            "Picture Index": 147,
-            "Prerequisite IDs": [
-                3148,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "Tech",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
             "Name": "Camel Rider",
             "Node Type": "RegionalUnit",
             "Link Node Type": "BuildingTech",
@@ -2340,7 +2310,7 @@
             "Link Node Type": "BuildingTech",
             "Draw Node Type": "UnitTech",
             "Use Type": "Tech",
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Name String ID": 17376,
             "Age ID": 4,
             "Building ID": 82,
@@ -3037,7 +3007,7 @@
             "Help String ID": 600193,
             "Link ID": -1,
             "Link Node Type": "BuildingTech",
-            "Name": "Iron Hawk",
+            "Name": "Stockyard",
             "Name String ID": 500193,
             "Node ID": 3148,
             "Node Status": "ResearchedCompleted",

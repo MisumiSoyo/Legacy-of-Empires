@@ -903,6 +903,12 @@
             "name": "中国文明移速加成适用于帝王火矛兵",
             "effect_id": 984,
             "commands": [5, 4173, -1, 5, 1.04762]
+        },
+        {
+            "type": "add",
+            "name": "意大利文明加成适用于工兵",
+            "effect_id": 10,
+            "commands": [101, 321, -1, 2, 0.75]
         }
     ],
     "unit_changes":
@@ -1036,8 +1042,8 @@
         {
             "note": "辽刀近战护甲增加",
             "unit_id": [1920, 1922],
-            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 5]],
-                           ["type_50.displayed_melee_armour", 5]]
+            "attributes": [["type_50.armours", "list_search", ["class_", 4], ["amount", 4]],
+                           ["type_50.displayed_melee_armour", 4]]
         },
         {
             "note": "格查战士盾牌增加",
@@ -1090,6 +1096,14 @@
             "unit_id": 1263,
             "attributes": [["type_50.attacks", "list_search", ["class_", 4], ["amount", 30]],
                            ["type_50.displayed_attack", 30]]
+        },
+        {
+            "note": "长剑士以上护甲提升",
+            "unit_id": [77, 473, 567],
+            "attributes": [["type_50.armours", "list_search", ["class_", 3], ["amount", 2]],
+                           ["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
+                           ["type_50.displayed_melee_armour", 2],
+                           ["creatable.displayed_pierce_armour", 2]]
         }
     ],
     "tech_changes":

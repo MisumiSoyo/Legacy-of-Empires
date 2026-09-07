@@ -582,19 +582,11 @@
             "RequiredAge": 4
         },
         {
-            "note": "铁鹞子",
+            "note": "大畜牧",
             "civilizations": "Khitans",
             "tech_id": 3148,
             "building_id": 109,
-            "Name": "Iron Hawk",
-            "RequiredAge": 3
-        },
-        {
-            "note": "铁鹞子",
-            "civilizations": "Khitans",
-            "unit_id": 4159,
-            "building_id": 101,
-            "Name": "Iron Hawk",
+            "Name": "Stockyard",
             "RequiredAge": 3
         },
         {
@@ -726,11 +718,10 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 波希米亚, 凯尔特, 埃塞俄比亚, 吴, 萨拉森, 土耳其, 西班牙, 高丽, 蜀, 达罗毗荼, 不列颠, 亚美尼亚, 印度斯坦启用轮作",
-            "civilizations": ["Chinese", "Celts", "Ethiopians", "Bohemians", "Wu", "Saracens", "Turks", "Spanish", "Koreans", "Shu", "Dravidians",
-                              "Britons", "Armenians", "Indians"],
+            "note": "经济科技全开, 启用轮作",
+            "civilizations": "all",
             "tech_id": 12,
-            "building_id": 68,
+            "building_id": [68, 2556],
             "Name": "Crop Rotation",
             "RequiredAge": 4,
             "RequiredTechID": 13
@@ -967,8 +958,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "魏, 保加利亚, 瞿折罗启用冠军剑士",
-            "civilizations": ["Wei", "Bulgarians", "Gurjaras"],
+            "note": "魏, 保加利亚, 瞿折罗, 埃塞俄比亚启用冠军剑士",
+            "civilizations": ["Wei", "Bulgarians", "Gurjaras", "Ethiopians"],
             "tech_id": 264,
             "building_id": 12,
             "Name": "Champion",
@@ -1085,8 +1076,9 @@
             "type": "delete"
         },
         {
-            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙, 保加利亚, 鞑靼, 罗马启用围墙",
-            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese", "Bulgarians", "Tatars", "Romans"],
+            "note": "中国, 波希米亚, 缅甸, 高丽, 埃塞俄比亚, 孟加拉, 吴, 葡萄牙, 保加利亚, 鞑靼, 罗马, 契丹启用围墙",
+            "civilizations": ["Chinese", "Koreans", "Ethiopians", "Burmese", "Bohemians", "Bengalis", "Wu", "Portuguese", "Bulgarians", "Tatars", "Romans",
+                              "Khitans"],
             "tech_id": 379,
             "building_id": 82,
             "Name": "Hoardings",
@@ -1196,9 +1188,9 @@
             "RequiredAge": 4
         },
         {
-            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙, 越南, 马里, 亚美尼亚, 格鲁吉亚, 吴获得造船匠",
+            "note": "契丹, 波希米亚, 法兰克, 萨拉森, 维京, 葡萄牙, 越南, 马里, 亚美尼亚, 格鲁吉亚, 吴, 波斯, 印度斯坦获得造船匠",
             "civilizations": ["Bohemians", "Khitans", "Franks", "Saracens", "Portuguese", "Vietnamese", "Malians", "Armenians", "Georgians",
-                              "Wu"],
+                              "Wu", "Persians", "Indians"],
             "tech_id": 373,
             "building_id": 209,
             "Name": "Shipwright",
@@ -1221,11 +1213,10 @@
             "RequiredAge": 4
         },
         {
-            "note": "柏柏尔, 波兰, 凯尔特, 西西里, 高棉, 法兰克, 蒙古, 瞿折罗, 马里, 马来, 保加利亚, 鞑靼, 亚美尼亚, 魏, 格鲁吉亚, 罗马, 印加, 马普切获得双人锯",
-            "civilizations": ["Celts", "Berbers", "Poles", "Sicilians", "Khmer", "Franks", "Mongols", "Gurjaras", "Malians", "Malay", "Bulgarians", "Tatars",
-                              "Armenians", "Wei", "Georgians", "Romans", "Incas", "Mapuche"],
+            "note": "双人锯",
+            "civilizations": "all",
             "tech_id": 221,
-            "building_id": 562,
+            "building_id": [562, 1808, 2556],
             "Name": "Two-Man Saw",
             "RequiredAge": 4
         },
@@ -1246,10 +1237,10 @@
             "RequiredAge": 4
         },
         {
-            "note": "哥特, 波兰, 条顿, 意大利, 契丹, 立陶宛, 葡萄牙, 越南, 魏获得钻井采金法",
-            "civilizations": ["Goths", "Teutons", "Poles", "Italians", "Khitans", "Lithuanians", "Portuguese", "Vietnamese", "Wei"],
+            "note": "经济科技全开, 启用钻井采金法",
+            "civilizations": "all",
             "tech_id": 182,
-            "building_id": 584,
+            "building_id": [584, 1808, 2556],
             "Name": "Gold Shaft Mining",
             "RequiredAge": 3
         },
@@ -1450,15 +1441,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "阿兹特克, 玛雅, 印加, 西班牙禁用钻井采金法, 钻井采石法",
-            "civilizations": ["Aztecs", "Mayans", "Incas", "Spanish"],
-            "tech_id": [182, 279],
-            "building_id": 584,
-            "type": "delete"
-        },
-        {
-            "note": "玛雅, 阿兹特克, 维京禁用轮作",
-            "civilizations": ["Mayans", "Aztecs", "Vikings"],
+            "note": "玛雅禁用轮作",
+            "civilizations": ["Mayans"],
             "tech_id": 12,
             "type": "delete"
         },
@@ -1660,10 +1644,10 @@
             "type": "delete"
         },
         {
-            "note": "孟加拉, 不列颠, 法兰克, 马扎尔, 土耳其, 萨拉森, 蜀获得钻井采石法",
-            "civilizations": ["Bengalis", "Britons", "Franks", "Magyars", "Turks", "Saracens", "Shu"],
+            "note": "钻井采石法",
+            "civilizations": "all",
             "tech_id": 279,
-            "building_id": 584,
+            "building_id": [584, 1808, 2556],
             "Name": "Stone Shaft Mining",
             "RequiredAge": 3
         },
@@ -2120,22 +2104,6 @@
             "RequiredAge": 3
         },
         {
-            "note": "格鲁吉亚获得钻井采金法",
-            "civilizations": ["Georgians"],
-            "tech_id": 182,
-            "building_id": 1808,
-            "Name": "Gold Shaft Mining",
-            "RequiredAge": 3
-        },
-        {
-            "note": "亚美尼亚获得钻井采石法",
-            "civilizations": ["Armenians"],
-            "tech_id": 279,
-            "building_id": 1808,
-            "Name": "Stone Shaft Mining",
-            "RequiredAge": 3
-        },
-        {
             "note": "金马刺",
             "civilizations": "Burgundians",
             "tech_id": 3390,
@@ -2319,8 +2287,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国启用救赎",
-            "civilizations": "Chinese",
+            "note": "中国, 印度斯坦启用救赎",
+            "civilizations": ["Chinese", "Indians"],
             "tech_id": 316,
             "building_id": 104,
             "Name": "Redemption",

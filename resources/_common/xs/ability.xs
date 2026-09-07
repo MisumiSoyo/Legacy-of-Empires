@@ -24,7 +24,7 @@ void CastleNetworkEffect(int ClassTarget = -1, int playerId = -1)
 
 void FreeTech(int playerId = -1, int TechID = -1)
 {
-    xsEffectAmount(cModifyTech, TechID, cAttrMulTime, 4, playerId);
+    xsEffectAmount(cModifyTech, TechID, cAttrMulTime, 6, playerId);
     xsEffectAmount(cModifyTech, TechID, cAttrMulAllCosts, 0, playerId);
 }
 
@@ -47,14 +47,6 @@ void AccoladeApplier(int playerId = -1)
     ApplyToAllMilitaryTargets(playerId, cPackedUnitClass, cTaskTypeLoot);
     ApplyToAllMilitaryTargets(playerId, cUnpackedSiegeUnitClass, cTaskTypeLoot);
     ApplyToAllMilitaryTargets(playerId, cScorpionClass, cTaskTypeLoot);
-}
-
-
-void TributarySystemApplier(int playerId = -1, int ObjectTarget = -1, int TrainButtonID = -1, int HotKeyID = -1)
-{
-    EnableObject(playerId, ObjectTarget);
-    SetAttribute(playerId, ObjectTarget, cTrainButton, TrainButtonID);
-    SetAttribute(playerId, ObjectTarget, cHotkeyId, HotKeyID);
 }
 
 

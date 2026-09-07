@@ -903,9 +903,19 @@
                         "RequiredAge": 2
                     },
                     {
+                        "ID": 182,
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3
+                    },
+                    {
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "ID": 279,
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3
                     }
                 ]
             },
@@ -922,6 +932,11 @@
                         "ID": 203,
                         "Name": "Bow Saw",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Forestry",
@@ -983,6 +998,12 @@
                         "Name": "Heavy Plow",
                         "RequiredAge": 3,
                         "RequiredTechID": 14
+                    },
+                    {
+                        "ID": 12,
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13
                     },
                     {
                         "Name": "Cash Crop",
@@ -4299,7 +4320,7 @@
                     {
                         "ID": 182,
                         "Name": "Gold Shaft Mining",
-                        "RequiredAge": 2
+                        "RequiredAge": 3
                     },
                     {
                         "ID": 278,
@@ -4309,7 +4330,7 @@
                     {
                         "ID": 279,
                         "Name": "Stone Shaft Mining",
-                        "RequiredAge": 2
+                        "RequiredAge": 3
                     }
                 ]
             },
@@ -4330,7 +4351,7 @@
                     {
                         "ID": 221,
                         "Name": "Two-Man Saw",
-                        "RequiredAge": 3
+                        "RequiredAge": 4
                     },
                     {
                         "Name": "Forestry",
@@ -4401,7 +4422,7 @@
                     {
                         "ID": 12,
                         "Name": "Crop Rotation",
-                        "RequiredAge": 3,
+                        "RequiredAge": 4,
                         "RequiredTechID": 13
                     },
                     {
@@ -6560,6 +6581,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -11179,6 +11205,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -11526,6 +11557,11 @@
                         "ID": 602,
                         "Name": "Arson",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Champion",
+                        "RequiredAge": 4,
+                        "ID": 264
                     },
                     {
                         "Name": "Siege Training",
@@ -15443,6 +15479,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -16494,6 +16535,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
+                    },
+                    {
                         "Name": "Forestry",
                         "RequiredAge": 3,
                         "ID": 3003
@@ -17241,8 +17287,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 908,
@@ -19743,6 +19789,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -19835,6 +19886,12 @@
                         "Name": "Cash Crop",
                         "RequiredAge": 3,
                         "ID": 3002
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -27472,6 +27529,16 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "ID": 279,
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
@@ -29429,8 +29496,8 @@
                     },
                     {
                         "ID": 373,
-                        "Name": "Careening",
-                        "RequiredAge": 3
+                        "Name": "Shipwright",
+                        "RequiredAge": 4
                     },
                     {
                         "ID": 375,
@@ -34212,6 +34279,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -35381,6 +35453,16 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "ID": 279,
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
                     }
                 ]
             },
@@ -36501,6 +36583,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -40997,6 +41084,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -41079,6 +41171,12 @@
                         "Name": "Heavy Plow",
                         "RequiredAge": 3,
                         "RequiredTechID": 14
+                    },
+                    {
+                        "ID": 12,
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13
                     },
                     {
                         "Name": "Cash Crop",
@@ -44280,6 +44378,16 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Gold Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 182
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -47494,6 +47602,11 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     }
                 ]
             },
@@ -48612,14 +48725,19 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3003
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Stone Shaft Mining",
                         "RequiredAge": 3,
                         "ID": 279
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3003
                     }
                 ]
             },
@@ -49712,14 +49830,19 @@
                         "RequiredAge": 3
                     },
                     {
-                        "Name": "Forestry",
-                        "RequiredAge": 3,
-                        "ID": 3003
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
                     },
                     {
                         "Name": "Gold Shaft Mining",
                         "RequiredAge": 3,
                         "ID": 182
+                    },
+                    {
+                        "Name": "Forestry",
+                        "RequiredAge": 3,
+                        "ID": 3003
                     }
                 ]
             },
@@ -54483,11 +54606,6 @@
                         "ID": 1372,
                         "Name": "Elite Steppe Lancer",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Iron Hawk",
-                        "RequiredAge": 3,
-                        "ID": 4159
                     }
                 ]
             },
@@ -55045,7 +55163,7 @@
                         "ID": 3022
                     },
                     {
-                        "Name": "Iron Hawk",
+                        "Name": "Stockyard",
                         "RequiredAge": 3,
                         "ID": 3148
                     },
@@ -55184,6 +55302,12 @@
                         "Name": "Transhumance",
                         "RequiredAge": 4,
                         "RequiredTechID": 1013
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
                     }
                 ]
             }
@@ -58375,6 +58499,11 @@
                         "RequiredAge": 4
                     },
                     {
+                        "Name": "Two-Man Saw",
+                        "RequiredAge": 4,
+                        "ID": 221
+                    },
+                    {
                         "Name": "Forestry",
                         "RequiredAge": 3,
                         "ID": 3003
@@ -59324,6 +59453,17 @@
                         "ID": 278,
                         "Name": "Stone Mining",
                         "RequiredAge": 2
+                    },
+                    {
+                        "Name": "Crop Rotation",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 13,
+                        "ID": 12
+                    },
+                    {
+                        "Name": "Stone Shaft Mining",
+                        "RequiredAge": 3,
+                        "ID": 279
                     },
                     {
                         "Name": "Forestry",

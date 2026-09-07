@@ -253,22 +253,6 @@ void EffectFunction10013(int playerId = -1)
 }
 
 
-//  10014 - Tributary System
-void EffectFunction10014(int playerId = -1)
-{
-    TributarySystemApplier(playerId, EliteMangudaiID, 21, 16079);
-    TributarySystemApplier(playerId, EliteRattanArcherID, 22, 16068);
-    TributarySystemApplier(playerId, EliteTarkanID, 23, 16085);
-    TributarySystemApplier(playerId, EliteWarWagonID, 26, 18022);
-    TributarySystemApplier(playerId, EliteLiaoDaoID, 27, 18045);
-    TributarySystemApplier(playerId, EliteIronPagodaID, 28, 18008);
-    MulAttribute(playerId, EliteMangudaiID, cAttackReloadTime, 1.0 / 1.125);
-    MulAttribute(playerId, EliteWarWagonID, cWoodCost, 0.75);
-    ModAttribute(playerId, EliteLiaoDaoID, cDamageReflection, 0.125);
-    MulAttribute(playerId, EliteIronPagodaID, cAttackReloadTime, 1.0 / 1.1);
-}
-
-
 //  10017 - Polutasvarf
 void EffectFunction10017(int playerId = -1)
 {
@@ -586,9 +570,9 @@ void EffectFunction10029(int playerId = -1)
     xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
     xsResetTaskAmount();
 
-    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.81 * 1.15 * 0.40);
-    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.81 * 1.15 * 0.10);
-    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.81 * 1.15 * 0.20);
+    SetResource(playerId, cAttributeMayansFarmWoodProductivity, 53.0 * 0.81 * 1.15 * 0.25);
+    SetResource(playerId, cAttributeMayansFarmStoneProductivity, 53.0 * 0.81 * 1.15 * 0.07);
+    SetResource(playerId, cAttributeMayansFarmGoldProductivity, 53.0 * 0.81 * 1.15 * 0.15);
 }
 
 
@@ -1131,18 +1115,50 @@ void EffectFunction10074(int playerId = -1)
 }
 
 
-//  10081 - C-Bonus, infantry generates food from attacking farms
+//  10081 - C-Bonus, infantry generates food from attacking buildings
 void EffectFunction10081(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000020);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeInfantryLootFarmFoodProductivity);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeInfantryLootBuildingFoodProductivity);
     xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
     xsTaskAmount(cTaskAttrWorkValue1, 0.01);
 
-    xsTask(cInfantryClass, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(MilitiaID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(ManAtArmsID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(LongSwordmanID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(TwoHandedSwordmanID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(ChampionID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(ShotelWarriorID, cTaskTypeGenerateResources, cFarmClass, playerId);
+    xsTask(EliteShotelWarriorID, cTaskTypeGenerateResources, cFarmClass, playerId);
+
+    xsTask(MilitiaID, cTaskTypeGenerateResources, cBuildingClass, playerId);
+    xsTask(ManAtArmsID, cTaskTypeGenerateResources, cBuildingClass, playerId);
+    xsTask(LongSwordmanID, cTaskTypeGenerateResources, cBuildingClass, playerId);
+    xsTask(TwoHandedSwordmanID, cTaskTypeGenerateResources, cBuildingClass, playerId);
+    xsTask(ChampionID, cTaskTypeGenerateResources, cBuildingClass, playerId);
+    xsTask(ShotelWarriorID, cTaskTypeGenerateResources, cBuildingClass, playerId);
+    xsTask(EliteShotelWarriorID, cTaskTypeGenerateResources, cBuildingClass, playerId);
+
+    xsTaskAmount(cTaskAttrWorkValue1, 0.005);
+    xsTask(MilitiaID, cTaskTypeGenerateResources, cWallClass, playerId);
+    xsTask(ManAtArmsID, cTaskTypeGenerateResources, cWallClass, playerId);
+    xsTask(LongSwordmanID, cTaskTypeGenerateResources, cWallClass, playerId);
+    xsTask(TwoHandedSwordmanID, cTaskTypeGenerateResources, cWallClass, playerId);
+    xsTask(ChampionID, cTaskTypeGenerateResources, cWallClass, playerId);
+    xsTask(ShotelWarriorID, cTaskTypeGenerateResources, cWallClass, playerId);
+    xsTask(EliteShotelWarriorID, cTaskTypeGenerateResources, cWallClass, playerId);
+
+    xsTask(MilitiaID, cTaskTypeGenerateResources, cGateClass, playerId);
+    xsTask(ManAtArmsID, cTaskTypeGenerateResources, cGateClass, playerId);
+    xsTask(LongSwordmanID, cTaskTypeGenerateResources, cGateClass, playerId);
+    xsTask(TwoHandedSwordmanID, cTaskTypeGenerateResources, cGateClass, playerId);
+    xsTask(ChampionID, cTaskTypeGenerateResources, cGateClass, playerId);
+    xsTask(ShotelWarriorID, cTaskTypeGenerateResources, cGateClass, playerId);
+    xsTask(EliteShotelWarriorID, cTaskTypeGenerateResources, cGateClass, playerId);
+
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeInfantryLootFarmFoodProductivity, 100);
+    SetResource(playerId, cAttributeInfantryLootBuildingFoodProductivity, 50);
 }
 
 
@@ -1210,34 +1226,6 @@ void EffectFunction10094(int playerId = -1)
     xsTaskAmount(cTaskAttrResourceOut, cAttributeStone);
     xsTask(cMonkWithRelicClass, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
-}
-
-
-//  10095 - Khazar Lancers
-void EffectFunction10095(int playerId = -1)
-{
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkRange, 1);
-    xsTaskAmount(cTaskAttrWorkValue2, 3);
-    xsTaskAmount(cTaskAttrOwnerType, 0);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000005);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrWorkValue1, -60);
-    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
-    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
-    xsTaskAmount(cTaskAttrWorkValue1, -1);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 9.000003);
-    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
-    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
-    xsTaskAmount(cTaskAttrWorkValue1, -0.15);
-    xsTaskAmount(cTaskAttrSearchWaitTime, 5.000003);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
-    ApplyToAllPlayerTargets(playerId, SteppeLancerID, cTaskTypeStinger);
-    ApplyToAllPlayerTargets(playerId, EliteSteppeLancerID, cTaskTypeStinger);
-    xsResetTaskAmount();
-    LaunchStinger(playerId, SteppeLancerID);
-    LaunchStinger(playerId, EliteSteppeLancerID);
 }
 
 
@@ -1457,20 +1445,13 @@ void EffectFunction10126(int playerId = -1)
 }
 
 
-//  10127 - Remove wonder victory
-void EffectFunction10127(int playerId = -1)
-{
-    xsRemoveTask(WonderID, cTaskTypeGenerateWonderVictory, -1, playerId);
-}
-
-
 include "timer.xs";
 
 
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 373  2026.09.06");
+    xsChatData("Patch: 374  2026.09.07");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

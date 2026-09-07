@@ -1107,10 +1107,8 @@
 
 ;   Siha Bow Limbs
 (defrule
-    (or (goal trainarcher yes)
-        (or (goal traincavarcher yes)
-            (or (goal trainhandcannon yes)
-                (goal trainunique yes))))
+    (or (goal traincavarcher yes)
+        (goal trainunique yes))
     (can-research ri-siha-bow-limbs)
 =>
     (research ri-siha-bow-limbs)
@@ -1372,7 +1370,8 @@
 
 ;   Siege Technique
 (defrule
-    (unit-type-count-total battering-ram-line >= 3)
+    (or (unit-type-count-total militia-line >= 5)
+        (unit-type-count-total battering-ram-line >= 3))
     (can-research ri-siege-technique)
 =>
     (research ri-siege-technique)
@@ -1449,14 +1448,11 @@
 
 
 #load-if-defined KHITANS-CIV
-;   Iron Hawk
+;   Stockyard
 (defrule
-    (current-age < imperial-age)
-    (goal milunits yes)
-    (players-unit-type-count focus-player archer-line >= 17)
-    (can-research ri-iron-hawk)
+    (can-research ri-stockyard)
 =>
-    (research ri-iron-hawk)
+    (research ri-stockyard)
 )
 
 
