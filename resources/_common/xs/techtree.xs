@@ -257,8 +257,6 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HalberdierTechID);
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, TwoManSawTechID);
-            DisableTech(playerId, WheelBarrowTechID);
-            DisableTech(playerId, HandCartTechID);
             DisableTech(playerId, TreadmillCraneTechID);
             break;
         }
@@ -663,8 +661,6 @@ void EffectFunction10001(int playerId = -1)
         case cTupi:
         {
             EnableTech(playerId, BlastFurnaceTechID);
-            DisableTech(playerId, WheelBarrowTechID);
-            DisableTech(playerId, HandCartTechID);
             break;
         }
         default:
