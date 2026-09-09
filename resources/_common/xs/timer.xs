@@ -171,12 +171,53 @@ void TangFreeMoDaoWarrior(int playerId = -1, int Time = -1)
 }
 
 
+void AztecsFreeArmy(int playerId = -1, int Time = -1)
+{
+    int CountedDeath = xsPlayerAttribute(playerId, cAttributeAztecsCountedDeath);
+    int TotalDeath = xsPlayerAttribute(playerId, cAttributeKilledByOthers);
+    if (TotalDeath / 15 > CountedDeath / 15)
+        if (CountedDeath < 150)
+            SpawnUnit(playerId, MaleVillagerID, TownCenterID, 1, 1);
+    SetResource(playerId, cAttributeAztecsCountedDeath, TotalDeath);
+
+    if (MinAge(playerId, FeudalAge) == false)
+        return;
+    int FreeArmyTimer = minInt(xsPlayerAttribute(playerId, cAttributeAztecsArmyTimer) + 1, 120);
+    if (FreeArmyTimer >= 120)
+        if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)
+        {
+            SpawnUnit(playerId, JaguarWarriorID, TownCenterID, minInt(TotalDeath / 15, 10), 1);
+            FreeArmyTimer = FreeArmyTimer - 120;
+        }
+    SetResource(playerId, cAttributeAztecsArmyTimer, FreeArmyTimer);
+}
+
+
+void EnclosureSheep(int playerId = -1, int Time = -1)
+{
+    if (isResearched(playerId, EnclosureTechID) == false)
+        return;
+    int Timer = xsPlayerAttribute(playerId, cAttributeEnclosureTimer) + 1;
+    if (Timer >= 120)
+    {
+        SpawnUnit(playerId, SheepID, TownCenterID, 1, 5);
+        Timer = Timer - 120;
+    }
+    SetResource(playerId, cAttributeEnclosureTimer, Timer);
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
 
     switch (playerCiv)
     {
+        case cBritons:
+        {
+            EnclosureSheep(playerId, Time);
+            break;
+        }
         case cFranks:
         {
             FranksLoan(playerId, Time);
@@ -195,6 +236,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cVikings:
         {
             VikingsDeathBonus(playerId, Time);
+            break;
+        }
+        case cAztecs:
+        {
+            AztecsFreeArmy(playerId, Time);
             break;
         }
         case cKoreans:

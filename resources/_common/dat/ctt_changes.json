@@ -63,9 +63,9 @@
             "Link ID": -1
         },
         {
-            "note": "马扎尔, 匈奴获得草原枪兵",
+            "note": "匈奴获得草原枪兵",
             "action": "add",
-            "civ_id": ["HUNS", "MAGYAR"],
+            "civ_id": ["HUNS"],
             "Age ID": 3,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
@@ -86,9 +86,9 @@
             "target_id": 569
         },
         {
-            "note": "马扎尔, 匈奴获得精锐草原枪兵",
+            "note": "匈奴获得精锐草原枪兵",
             "action": "add",
-            "civ_id": ["HUNS", "MAGYAR"],
+            "civ_id": ["HUNS"],
             "Age ID": 4,
             "Building ID": 101,
             "Draw Node Type": "UnitTech",
@@ -4969,10 +4969,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "阿兹特克禁用轮作,  脚踏起重机",
+            "note": "阿兹特克禁用轮作, 脚踏起重机, 独轮推车, 手推车",
             "action": "modify",
             "civ_id": "AZTECS",
-            "Node ID": [12, 54],
+            "Node ID": [12, 54, 213, 249],
             "Use Type": "Tech",
             "Node Status": "NotAvailable"
         },

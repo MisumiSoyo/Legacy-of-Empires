@@ -321,15 +321,6 @@ void GendarmesdOrdonnanceApplier(int playerId = -1, int ClassTarget = -1)
 }
 
 
-//  10112 - Free Jaguar kill effect
-void EffectFunction10112(int playerId = -1)
-{
-    int KillCount = xsPlayerAttribute(playerId, cAttributeKills);
-    if (KillCount % 30 == 0)
-        SpawnUnit(playerId, EliteJaguarWarriorID, TownCenterID, 7, 1);
-}
-
-
 void KadalPaarvaiApplier(int playerId = -1, int ObjectID = -1)
 {
     int TaskID = FindTask(playerId, ObjectID, cTaskTypeGatherRebuild, 899, FishTrapID);

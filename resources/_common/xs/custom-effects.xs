@@ -42,25 +42,6 @@ void EffectFunction10003(int playerId = -1)
 }
 
 
-// 10004 - Enclosure
-void EffectFunction10004(int playerId = -1)
-{
-    MulResource(playerId, cAttributeFoodBonus, 0.8);
-    ModResource(playerId, cAttributeEnclosureProductivity, 0.53 * 100 * 0.2);
-    ModAttribute(playerId, cVillagerClass, cHitpoints, -15);
-
-    xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeEnclosureProductivity);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
-    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
-
-    xsTask(MaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsTask(FemaleFarmerID, cTaskTypeGenerateResources, cFarmClass, playerId);
-    xsResetTaskAmount();
-}
-
-
 //  10005 - Frank Loan (500 gold)
 void EffectFunction10005(int playerId = -1)
 {
@@ -482,14 +463,14 @@ void EffectFunction10025(int playerId = -1)
 //  10026 - Ixiptla
 void EffectFunction10026(int playerId = -1)
 {
-    int UnitKills = xsPlayerAttribute(playerId, cAttributeKills);
-    SpawnUnit(playerId, EliteJaguarWarriorID, TownCenterID, (UnitKills / 30) * 7, 1);
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkValue1, 30);
     xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrResourceIn, FreeJaguarKillEffectID);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
     xsTaskAmount(cTaskAttrSearchWaitTime, 1.000001);
-    ApplyAllToTarget(playerId, -1, cTaskTypeLoot, true, true, true, true);
+    xsTask(EagleScoutID, cTaskTypeRefund, -1, playerId);
+    xsTask(EagleWarriorID, cTaskTypeRefund, -1, playerId);
+    xsTask(EliteEagleWarriorID, cTaskTypeRefund, -1, playerId);
     xsResetTaskAmount();
 }
 
@@ -1451,7 +1432,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 375  2026.09.08");
+    xsChatData("Patch: 376  2026.09.10");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

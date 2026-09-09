@@ -974,66 +974,6 @@
             "Trigger Tech ID": 265
         },
         {
-            "Age ID": 3,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 105009,
-            "Link ID": -1,
-            "Link Node Type": "BuildingTech",
-            "Name": "Steppe Lancer",
-            "Name String ID": 14009,
-            "Node ID": 1370,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "RegionalUnit",
-            "Picture Index": 273,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": -1,
-            "Use Type": "Unit"
-        },
-        {
-            "Age ID": 4,
-            "Building ID": 101,
-            "Draw Node Type": "UnitTech",
-            "Help String ID": 105010,
-            "Link ID": 1370,
-            "Link Node Type": "RegionalUnit",
-            "Name": "Elite Steppe Lancer",
-            "Name String ID": 14010,
-            "Node ID": 1372,
-            "Node Status": "ResearchedCompleted",
-            "Node Type": "RegionalUnit",
-            "Picture Index": 274,
-            "Prerequisite IDs": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "Prerequisite Types": [
-                "None",
-                "None",
-                "None",
-                "None",
-                "None"
-            ],
-            "Trigger Tech ID": 715,
-            "Use Type": "Unit"
-        },
-        {
             "Name": "Bloodlines",
             "Node Type": "Research",
             "Link Node Type": "BuildingTech",

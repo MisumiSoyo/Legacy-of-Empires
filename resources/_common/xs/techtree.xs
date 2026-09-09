@@ -258,6 +258,8 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, ThumbRingTechID);
             EnableTech(playerId, TwoManSawTechID);
             DisableTech(playerId, TreadmillCraneTechID);
+            DisableTech(playerId, WheelBarrowTechID);
+            DisableTech(playerId, HandCartTechID);
             break;
         }
         case cMayans:
@@ -323,8 +325,6 @@ void EffectFunction10001(int playerId = -1)
         }
         case cMagyars:
         {
-            EnableTech(playerId, SteppeLancerTechID);
-            EnableTech(playerId, EliteSteppeLancerTechID);
             EnableTech(playerId, HandCannoneerTechID);
             EnableTech(playerId, BombardCannonTechID);
             EnableTech(playerId, SquiresTechID);

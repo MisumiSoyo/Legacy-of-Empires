@@ -367,13 +367,6 @@
                          [8, 22, -1, -1, 0]]
         },
         {
-            "type": "modify",
-            "name": "阿兹特克初始黄金改动",
-            "effect_id": 213,
-            "match": [1, 94, 1, -1, "any"],
-            "modifications": ["d", "set", 100]
-        },
-        {
             "type": "adjustment",
             "name": "宝伞加成骑象射手生命值",
             "effect_id": 668,
@@ -422,7 +415,7 @@
             "name": "西班牙科技返还黄金调整",
             "effect_id": 300,
             "match": [1, 3, 1, -1, "any"],
-            "modifications": ["d", "set", 40]
+            "modifications": ["d", "set", 30]
         },
         {
             "type": "add",
@@ -696,13 +689,6 @@
             "name": "马普切骑兵击杀获得的黄金增加",
             "effect_id": 62,
             "function_id": 10125
-        },
-        {
-            "type": "modify",
-            "name": "马扎尔斥候骑兵系训练费用减免增加",
-            "effect_id": 524,
-            "match": [5, "any", "any", 103, "any"],
-            "modifications": ["d", "set", 0.8]
         },
         {
             "type": "modify",

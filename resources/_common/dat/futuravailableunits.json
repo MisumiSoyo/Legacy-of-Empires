@@ -860,16 +860,6 @@
                         "RequiredAge": 1
                     },
                     {
-                        "ID": 213,
-                        "Name": "Wheelbarrow",
-                        "RequiredAge": 2
-                    },
-                    {
-                        "ID": 249,
-                        "Name": "Hand Cart",
-                        "RequiredAge": 3
-                    },
-                    {
                         "Name": "Town Defense",
                         "RequiredAge": 4,
                         "ID": 3022
@@ -23638,11 +23628,6 @@
                         "ID": 39,
                         "Name": "Husbandry",
                         "RequiredAge": 3
-                    },
-                    {
-                        "Name": "Elite Steppe Lancer",
-                        "RequiredAge": 4,
-                        "ID": 715
                     }
                 ],
                 "Units": [
@@ -23676,16 +23661,6 @@
                         "ID": 569,
                         "Name": "Paladin",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Steppe Lancer",
-                        "RequiredAge": 3,
-                        "ID": 1370
-                    },
-                    {
-                        "Name": "Steppe Lancer",
-                        "RequiredAge": 4,
-                        "ID": 1372
                     }
                 ]
             },
