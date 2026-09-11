@@ -3890,7 +3890,7 @@
         {
             "note": "早期骑射手",
             "action": "add",
-            "civ_id": "HUNS",
+            "civ_id": ["MONGOLS", "HUNS", "MAGYAR", "TATARS", "CUMANS", "KHITANS"],
             "Age ID": 2,
             "Building ID": 87,
             "Draw Node Type": "UnitTech",
@@ -3901,7 +3901,7 @@
             "Name String ID": 700013,
             "Node ID": 4094,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
+            "Node Type": "RegionalUnit",
             "Picture Index": 19,
             "Prerequisite IDs": [0, 0, 0, 0, 0],
             "Prerequisite Types": ["None", "None", "None", "None", "None"],
@@ -3911,13 +3911,22 @@
             "target_id": 5
         },
         {
-            "note": "匈奴骑射手调整",
+            "note": "游牧文明骑射手调整",
             "action": "modify",
-            "civ_id": "HUNS",
+            "civ_id": ["MONGOLS", "HUNS", "MAGYAR", "TATARS", "CUMANS", "KHITANS"],
             "Node ID": 39,
             "Use Type": "Unit",
             "Link ID": 4094,
-            "Link Node Type": "UniqueUnit"
+            "Link Node Type": "RegionalUnit",
+            "Trigger Tech ID": 3195
+        },
+        {
+            "note": "契丹骑射手提前一个时代",
+            "action": "modify",
+            "civ_id": "KHITANS",
+            "Node ID": 39,
+            "Use Type": "Unit",
+            "Age ID": 2
         },
         {
             "note": "高丽获得鼓风炉, 工兵, 围墙, 轮作",

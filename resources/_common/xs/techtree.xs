@@ -59,15 +59,6 @@ void EffectFunction10001(int playerId = -1)
         DisableTech(playerId, StrongFortressTechID);
     //}
 
-    if ((playerCiv == cAztecs) || (playerCiv == cMayans) || (playerCiv == cIncas) || (playerCiv == cMuisca) || (playerCiv == cMapuche) || (playerCiv == cTupi))
-    {
-        EnableTech(playerId, CanoeTechID);
-    }
-    else
-    {
-        DisableTech(playerId, CanoeTechID);
-    }
-
     switch (playerCiv)
     {
         case cBritons:
@@ -637,6 +628,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, BloodlinesTechID);
             EnableTech(playerId, HoardingsTechID);
             DisableTech(playerId, CashCropTechID);
+            DisableTech(playerId, 1004);
             break;
         }
         case cMuisca:
@@ -669,14 +661,37 @@ void EffectFunction10001(int playerId = -1)
 }
 
 
+void EnableLOERegionals(int playerId = -1)
+{
+    int playerCiv = xsGetPlayerCivilization(playerId);
+    if ((playerCiv == cMongols) || (playerCiv == cHuns) || (playerCiv == cMagyars) || (playerCiv == cTatars)
+        || (playerCiv == cCumans) || (playerCiv == cKhitans))
+    {
+        EnableTech(playerId, EarlyCavalryArcherTechID);
+        EnableTech(playerId, EarlyCavalryArcherAge2TechID);
+        EnableTech(playerId, ECAtoCATechID);
+        DisableTech(playerId, CavalryArcherTechID);
+    }
+
+    if ((playerCiv == cAztecs) || (playerCiv == cMayans) || (playerCiv == cIncas) || (playerCiv == cMuisca) || (playerCiv == cMapuche) || (playerCiv == cTupi))
+        EnableTech(playerId, CanoeTechID);
+}
+
+
 //  10129 - Disable LOE regionals
 void EffectFunction10129(int playerId = -1)
 {
+    DisableTech(playerId, CanoeTechID);
     DisableTech(playerId, EarlyVarangianGuardTechID);
     DisableTech(playerId, VarangianGuardTechID);
     DisableTech(playerId, EliteVarangianGuardID);
     DisableTech(playerId, GenitourTechID);
     DisableTech(playerId, EliteGenitourTechID);
+    DisableTech(playerId, EarlyCavalryArcherTechID);
+    DisableTech(playerId, EarlyCavalryArcherAge2TechID);
+    DisableTech(playerId, ECAtoCATechID);
+
+    EnableLOERegionals(playerId);
 }
 
 

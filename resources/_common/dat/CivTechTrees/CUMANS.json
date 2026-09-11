@@ -625,9 +625,39 @@
             ]
         },
         {
+            "Age ID": 2,
+            "Building ID": 87,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 800013,
+            "Link ID": -1,
+            "Link Node Type": "BuildingTech",
+            "Name": "Early Cavalry Archer",
+            "Name String ID": 700013,
+            "Node ID": 4094,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "RegionalUnit",
+            "Picture Index": 19,
+            "Prerequisite IDs": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": 192,
+            "Use Type": "Unit"
+        },
+        {
             "Name": "Cavalry Archer",
             "Node Type": "Unit",
-            "Link Node Type": "BuildingTech",
+            "Link Node Type": "RegionalUnit",
             "Draw Node Type": "UnitTech",
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted",
@@ -636,7 +666,9 @@
             "Building ID": 87,
             "Help String ID": 105085,
             "Node ID": 39,
-            "Picture Index": 19
+            "Picture Index": 19,
+            "Link ID": 4094,
+            "Trigger Tech ID": 3195
         },
         {
             "Name": "Heavy Cavalry Archer",

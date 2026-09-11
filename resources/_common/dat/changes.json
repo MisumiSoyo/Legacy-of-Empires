@@ -791,7 +791,7 @@
             "name": "匈奴骑射手价格调整",
             "effect_id": 497,
             "match": [5, -1, 36, 100, "any"],
-            "modifications": ["d", "set", 0.85]
+            "modifications": ["d", "set", 0.94444444]
         },
         {
             "type": "modify",
@@ -895,6 +895,18 @@
             "name": "意大利文明加成适用于工兵",
             "effect_id": 10,
             "commands": [101, 321, -1, 2, 0.75]
+        },
+        {
+            "type": "adjustment",
+            "name": "步兵护甲科技额外效果",
+            "effect_id": [74, 76],
+            "function_id": 10131
+        },
+        {
+            "type": "adjustment",
+            "name": "步兵钢甲额外效果",
+            "effect_id": 77,
+            "function_id": 10132
         }
     ],
     "unit_changes":
@@ -1178,6 +1190,16 @@
             "note": "维京金冠价格增加",
             "tech_id": 49,
             "attributes": [["resource_costs", "list_search", ["type", 3], ["amount", 800]]]
+        },
+        {
+            "note": "契丹原有骑射手科技加成移除",
+            "tech_id": 1004,
+            "attributes": [["required_tech_count", 1]]
+        },
+        {
+            "note": "修改重装骑射手前置科技",
+            "tech_id": 218,
+            "attributes": [["required_techs", [103, 192, 3195, -1, -1, -1]]]
         }
     ],
     "resource_changes":

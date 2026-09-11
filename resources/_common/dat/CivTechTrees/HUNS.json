@@ -668,7 +668,7 @@
             "Name String ID": 700013,
             "Node ID": 4094,
             "Node Status": "ResearchedCompleted",
-            "Node Type": "UniqueUnit",
+            "Node Type": "RegionalUnit",
             "Picture Index": 19,
             "Prerequisite IDs": [
                 0,
@@ -690,7 +690,7 @@
         {
             "Name": "Cavalry Archer",
             "Node Type": "Unit",
-            "Link Node Type": "UniqueUnit",
+            "Link Node Type": "RegionalUnit",
             "Draw Node Type": "UnitTech",
             "Use Type": "Unit",
             "Node Status": "ResearchedCompleted",
@@ -700,7 +700,8 @@
             "Help String ID": 105085,
             "Node ID": 39,
             "Picture Index": 19,
-            "Link ID": 4094
+            "Link ID": 4094,
+            "Trigger Tech ID": 3195
         },
         {
             "Name": "Heavy Cavalry Archer",

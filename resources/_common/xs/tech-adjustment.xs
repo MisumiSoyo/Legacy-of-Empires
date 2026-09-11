@@ -479,3 +479,15 @@ void EffectFunction10130(int playerId = -1)
     MulAttack(playerId, MountedGrenadierID, -1, 1.25);
     MulAttack(playerId, EliteMountedGrenadierID, -1, 1.25);
 }
+
+
+//  10131 - Scale/Chain Mail Armor Adjustment
+void EffectFunction10131(int playerId = -1)
+{
+}
+
+
+//  10132 - Plate Mail Armor Adjustment
+void EffectFunction10132(int playerId = -1)
+{
+}

@@ -99,11 +99,29 @@
         },
         {
             "note": "早期骑射手",
-            "civilizations": "Huns",
+            "civilizations": ["Mongols","Huns", "Magyars", "Tatars", "Cumans", "Khitans"],
             "unit_id": 4094,
             "building_id": 87,
             "Name": "Early Cavalry Archer",
             "RequiredAge": 2
+        },
+        {
+            "note": "骑射手",
+            "civilizations": ["Mongols","Huns", "Magyars", "Tatars", "Cumans", "Khitans"],
+            "tech_id": 3195,
+            "building_id": 87,
+            "Name": "Cavalry Archer",
+            "RequiredAge": 3,
+            "position": "before",
+            "target_id": 218
+        },
+        {
+            "note": "游牧文明重装骑射手调整",
+            "civilizations": ["Mongols","Huns", "Magyars", "Tatars", "Cumans", "Khitans"],
+            "tech_id": 218,
+            "type": "modify",
+            "building_id": 87,
+            "RequiredTechID": 3195
         },
         {
             "note": "安息骑射手",

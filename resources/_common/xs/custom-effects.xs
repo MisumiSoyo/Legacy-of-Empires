@@ -42,6 +42,23 @@ void EffectFunction10003(int playerId = -1)
 }
 
 
+//  10004 - Enclosure
+void EffectFunction10004(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000025);
+    xsTaskAmount(cTaskAttrProductivityResource, cAttributeEnclosureProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
+    xsTaskAmount(cTaskAttrWorkValue1, 0.01);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 2);
+
+    xsTask(FarmID, cTaskTypeGenerateResources, -1, playerId);
+    xsTask(RiceFarmID, cTaskTypeGenerateResources, -1, playerId);
+    xsResetTaskAmount();
+    ModResource(playerId, cAttributeEnclosureProductivity, 200.0 / 60);
+}
+
+
 //  10005 - Frank Loan (500 gold)
 void EffectFunction10005(int playerId = -1)
 {
@@ -662,6 +679,26 @@ void EffectFunction10035(int playerId = -1)
 }
 
 
+//  10036 - C-Bonus, Free Long Swordsman with Hei Guang/Siege
+void EffectFunction10036(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000026);
+    xsTaskAmount(cTaskAttrWorkValue1, MilitiaID);
+    xsTaskAmount(cTaskAttrWorkValue2, 1);
+    xsTask(HeiGuangCavalryID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(HeavyHeiGuangCavalryID, cTaskTypeExtraSpawn, -1, playerId);
+
+    xsTaskAmount(cTaskAttrWorkValue2, 2);
+    xsTask(cSiegeWeaponClass, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(cUnpackedSiegeUnitClass, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(cScorpionClass, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(WarChariot1ID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTask(WarChariot2ID, cTaskTypeExtraSpawn, -1, playerId);
+    xsResetTaskAmount();
+}
+
+
 //  10016 - Advanced Mercenary Contract
 void EffectFunction10016(int playerId = -1)
 {
@@ -714,8 +751,6 @@ void EffectFunction10039(int playerId = -1)
     FasterCastleUnits(playerId, 38, 32, 18039);
     FasterCastleUnits(playerId, 283, 32, 18039);
     FasterCastleUnits(playerId, 569, 32, 18039);
-    FasterCastleUnits(playerId, 1370, 33, 18258);
-    FasterCastleUnits(playerId, 1372, 33, 18258);
 }
 
 
@@ -1218,7 +1253,7 @@ void EffectFunction10096(int playerId = -1)
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000002);
     xsTaskAmount(cTaskAttrWorkRange, 7);
     xsTaskAmount(cTaskAttrWorkValue1, 1.0);
-    xsTaskAmount(cTaskAttrWorkValue2, 40);
+    xsTaskAmount(cTaskAttrWorkValue2, 30);
     xsTaskAmount(cTaskAttrOwnerType, 1);
     xsTaskAmount(cTaskAttrCombatLevelFlag, 3);
 
@@ -1432,7 +1467,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 376  2026.09.10");
+    xsChatData("Patch: 377  2026.09.11");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

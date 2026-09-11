@@ -193,17 +193,42 @@ void AztecsFreeArmy(int playerId = -1, int Time = -1)
 }
 
 
-void EnclosureSheep(int playerId = -1, int Time = -1)
+void BritonsMilitiaLineDiscount(int playerId = -1, int Time = -1)
 {
-    if (isResearched(playerId, EnclosureTechID) == false)
-        return;
-    int Timer = xsPlayerAttribute(playerId, cAttributeEnclosureTimer) + 1;
-    if (Timer >= 120)
+    int CountedCastle = xsPlayerAttribute(playerId, cAttributeBritonsCountedCastle);
+    int CastleCount = minInt(xsPlayerAttribute(playerId, cAttributeCastle), 5);
+
+    if (CastleCount != CountedCastle)
     {
-        SpawnUnit(playerId, SheepID, TownCenterID, 1, 5);
-        Timer = Timer - 120;
+        ModAttribute(playerId, MilitiaID, cFoodCost, (CountedCastle - CastleCount) * 4);
+        ModAttribute(playerId, ManAtArmsID, cFoodCost, (CountedCastle - CastleCount) * 5);
+        ModAttribute(playerId, LongSwordmanID, cFoodCost, (CountedCastle - CastleCount) * 5);
+        ModAttribute(playerId, TwoHandedSwordmanID, cFoodCost, (CountedCastle - CastleCount) * 4);
+        ModAttribute(playerId, ChampionID, cFoodCost, (CountedCastle - CastleCount) * 4);
     }
-    SetResource(playerId, cAttributeEnclosureTimer, Timer);
+    SetResource(playerId, cAttributeBritonsCountedCastle, CastleCount);
+}
+
+
+void TatarsFreeScoutAndCA(int playerId = -1, int Time = -1)
+{
+    if (MinAge(playerId, FeudalAge) == false)
+        return;
+    int Timer = minInt(xsPlayerAttribute(playerId, cAttributeTatarsScoutTimer) + 1, 240);
+    if (Timer >= 240)
+    {
+        SpawnUnit(playerId, ScoutCavalryID, StableID, 1, 5);
+        Timer = Timer - 240;
+    }
+    SetResource(playerId, cAttributeTatarsScoutTimer, Timer);
+
+    Timer = minInt(xsPlayerAttribute(playerId, cAttributeTatarsCATimer) + 1, 300);
+    if (Timer >= 300)
+    {
+        SpawnUnit(playerId, CavalryArcherID, ArcheryRangeID, 1, 5);
+        Timer = Timer - 300;
+    }
+    SetResource(playerId, cAttributeTatarsCATimer, Timer);
 }
 
 
@@ -215,7 +240,7 @@ void TimerEvent(int playerId = -1, int Time = -1)
     {
         case cBritons:
         {
-            EnclosureSheep(playerId, Time);
+            BritonsMilitiaLineDiscount(playerId, Time);
             break;
         }
         case cFranks:
@@ -261,6 +286,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cMalay:
         {
             MalayFreeArmy(playerId, Time);
+            break;
+        }
+        case cTatars:
+        {
+            TatarsFreeScoutAndCA(playerId, Time);
             break;
         }
         case cLithuanians:

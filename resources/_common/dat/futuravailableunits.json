@@ -10367,9 +10367,15 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Cavalry Archer",
+                        "RequiredAge": 3,
+                        "ID": 3195
+                    },
+                    {
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3195
                     },
                     {
                         "ID": 437,
@@ -10412,6 +10418,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Early Cavalry Archer",
+                        "RequiredAge": 2,
+                        "ID": 4094
                     }
                 ]
             },
@@ -14730,9 +14741,15 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Cavalry Archer",
+                        "RequiredAge": 3,
+                        "ID": 3195
+                    },
+                    {
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3195
                     },
                     {
                         "ID": 437,
@@ -23437,9 +23454,15 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Cavalry Archer",
+                        "RequiredAge": 3,
+                        "ID": 3195
+                    },
+                    {
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3195
                     },
                     {
                         "ID": 437,
@@ -23487,6 +23510,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Early Cavalry Archer",
+                        "RequiredAge": 2,
+                        "ID": 4094
                     },
                     {
                         "Name": "Hand Cannoneer",
@@ -27749,9 +27777,15 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Cavalry Archer",
+                        "RequiredAge": 3,
+                        "ID": 3195
+                    },
+                    {
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3195
                     },
                     {
                         "ID": 437,
@@ -27799,6 +27833,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Early Cavalry Archer",
+                        "RequiredAge": 2,
+                        "ID": 4094
                     }
                 ]
             },
@@ -35707,9 +35746,15 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Cavalry Archer",
+                        "RequiredAge": 3,
+                        "ID": 3195
+                    },
+                    {
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3195
                     },
                     {
                         "ID": 437,
@@ -35757,6 +35802,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Early Cavalry Archer",
+                        "RequiredAge": 2,
+                        "ID": 4094
                     }
                 ]
             },
@@ -54362,9 +54412,15 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Cavalry Archer",
+                        "RequiredAge": 3,
+                        "ID": 3195
+                    },
+                    {
                         "ID": 218,
                         "Name": "Heavy Cavalry Archer",
-                        "RequiredAge": 4
+                        "RequiredAge": 4,
+                        "RequiredTechID": 3195
                     },
                     {
                         "ID": 437,
@@ -54407,6 +54463,11 @@
                         "ID": 474,
                         "Name": "Heavy Cavalry Archer",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Early Cavalry Archer",
+                        "RequiredAge": 2,
+                        "ID": 4094
                     }
                 ]
             },
