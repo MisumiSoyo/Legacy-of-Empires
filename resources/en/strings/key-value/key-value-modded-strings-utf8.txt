@@ -13,7 +13,6 @@
 8282 "Research Town Patrol (Building class, tower class units +4 LOS, Town Center +2 arrows/max arrows)"
 8295 "Research Howdah (Battle Elephants +2 melee/pierce armor)"
 8296 "Research Manipur Cavalry (Cavalry +6 attack vs archers and cavalry archers)"
-8307 "Research Stirrups (Cavalry +45% attack speed)"
 8298 "Research Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)"
 8313 "Research Greek Fire (Fire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range)"
 8318 "Research Logistica (Cataphracts, Knight-line units and Varangian Guards +6 attack vs Infantry; Cataphracts +2 area damage)"
@@ -91,8 +90,6 @@
 
 28298 "Research <b>Paper Money<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nLumberjacks generate 1 extra gold for every 13 wood gathered."
 
-28307 "Research <b>Stirrups<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nCavalry +45% attack speed."
-
 28313 "Research <b>Greek Fire<b> (<cost>, 40 <MATERIAL=MPIconGoodCPU>)\nFire Ships and Flamethrowers +1 range; Increases Bombard Towers and Dromons' blast range."
 
 28318 "Research <b>Logistica<b> (<cost>, 50 <MATERIAL=MPIconGoodCPU>)\nCataphracts, Knight-line units and Varangian Guards +6 attack vs Infantry; Cataphracts +2 area damage."
@@ -137,11 +134,11 @@
 //	Vikings
 120160 "Infantry and Naval civilization\n\n• War Ships -10/15/20% cost at Feudal/Castle/Imperial Age\n• Wheelbarrow, Hand Cart free\n• Arson, Squires and Siege Training can be researched an age in advance\n• +5/10/15/20/25 basical resources output after 30/75/135/210/300 units being killed by enemies\n\n<b>Unique Units:<b>\n• Berserk (Infantry with regeneration), Longboat (War ship with multiple arrows), Jarl (Cavalries that can throw axes), Wooden Fortress (unique tower), Varangian Guard (Infantry that generates gold while attacking)\n\n<b>Unique Techs: <b>\n• Chieftains (Infantry +5 damage vs cavalries, +4 damage vs camels, gain 5 gold for each killed villager and 20 gold for monks and trade units.)\n• Bogsveigar (Archer line and Longboats +2 attack)\n• Piracy (Transport Ships +250% hit points; Warships can loot 40 gold when killing enemies or destroying buildings)\n• Stockfish Trade (Fishermen and Fishing Ships convert 50% food production into gold)\n\n<b>Team bonus: <b>\nDock cost -15%"
 //	Mongols
-120161 "Cavalry Archer civilization\n\n• Cavalry archers +25% attack speed\n• Scout Cavalry-line and Steppe Lancers +20/30% HP at Castle/Imperial Age\n• Hunters +40% work rate\n• Infantries/Cavalries can loot 0.45/0.33 gold per second when attacking buildings (except gates, walls and farms)\n• Pastures provide +2 animals, and can work as Stables with 40% work rate\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom)\n• Drill (Siege Workshop units +50% moving speed)\n• Mutual Trade (Trade units' gold cost convert to food)\n• Pax Mongolica (Barracks and Archery Range units can regenerate 2 HP from each attack; Can train Elite Keshiks at stable)\n\n<b>Team bonus: <b>\nLight Cavalry +2 Line of Sight"
+120161 "Cavalry Archer civilization\n\n• Cavalry archers +25% attack speed\n• Scout Cavalry-line and Steppe Lancers +20/30% HP at Castle/Imperial Age\n• Hunters +40% work rate\n• Infantries/Cavalries can loot 0.45/0.33 gold per second when attacking buildings (except gates, walls and farms)\n• Pastures provide +2 animals, and can work as Stables with 40% work rate\n\n<b>Unique Unit:<b>\n• Mangudai (Low reload time Cavalry archer), Keshik (Cavalry which can regenerate HP when attacking)\n\n<b>Unique Techs: <b>\n• Nomads (lost houses do not decrease population headroom)\n• Drill (Siege Workshop units +50% moving speed)\n• Mutual Trade (Trade units' gold cost convert to food, and produce 20% wood additionally)\n• Pax Mongolica (Barracks and Archery Range units can regenerate 2 HP from each attack; Can train Elite Keshiks at stable)\n\n<b>Team bonus: <b>\nLight Cavalry +2 Line of Sight"
 //	Celts
 120162 "Infantry and Siege civilization\n\n• Infantry +15% movement speed since Feudal Age\n• Lumberjacks +15% work rate\n• Siege weapons +25% attack speed\n• Sheep not converted if in any Celt unit's line of sight\n• Infantries and Cavalries more resistance to conversion\n\n<b>Unique Unit:<b>\n• Woad Raider (High moving speed infantry), Celtic Hunter (Archer that uses 2 population space), Chariot Javelineer (Heavy mounted skirmisher)\n\n<b>Unique Techs: <b>\n• Stronghold (Castle and Watch Tower-Line -25% reload time; Castles provide +30 HP/min regeneration for infantry class units within 7 tile range)\n• Furor Celtica (Siege Weapons +40% HP)\n• Druid (Monks can increase your nearby lumberjacks and miners' work rate by 12%)\n• Kern (Villagers +10 attack vs scout units, +10 attack vs Standard Buildings, +6 attack vs Stone Defensive Buildings, +10 attack vs Castle)\n\n<b>Team bonus: <b>\nSiege Workshop +20% work rate"
 //	Spanish
-120163 "Gunpowder and Monk civilization\n\n• Builders +30% work rate (not applied on the first TC in Nomad mode)\n• Blacksmith upgrades don't cost gold\n• Cannon Galleon's projectile speed increases to 7 and enables Ballistics effect\n• Gunpowder units +18% attack speed\n• Gain 30 gold for each technology researched\n• Genitour and Elite Genitour available an age in advance\n• Knight line -15% cost\n\n<b>Unique Unit:<b>\n• Conquistador (Mounted hand cannon), Missionary (Mounted monk), Manila Galleon (Armed trade boat), Imperial Genitour (Mounted skirmisher)\n\n<b>Unique Techs:<b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range)\n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Scout Cavalry line and Knight line periodically throw javelins)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
+120163 "Gunpowder and Monk civilization\n\n• Builders +30% work rate\n• Blacksmith upgrades don't cost gold\n• Cannon Galleon's projectile speed increases to 7 and enables Ballistics effect\n• Gunpowder units +18% attack speed\n• Gain 30 gold for each technology researched\n• Genitour and Elite Genitour available an age in advance\n• Knight line -15% cost\n\n<b>Unique Unit:<b>\n• Conquistador (Mounted hand cannon), Missionary (Mounted monk), Manila Galleon (Armed trade boat), Imperial Genitour (Mounted skirmisher)\n\n<b>Unique Techs:<b>\n• Inquisition (Monk conversion min/max time -1 sec for units, -5 sec for bulidings, +5% conversion proability for buildings; Missionaries +1 conversion range)\n• Supremacy (Villagers +40 HP, +6 attack, +2/2P armor)\n• Jinete Tactics (Scout Cavalry line and Knight line periodically throw javelins)\n• Tercio (Spearman line units can deal 33% area damage in 0.5 blast range)\n\n<b>Team bonus: <b>\nTrade units +25% gold generation"
 //	Aztecs
 120164 "Infantry and Monk civilization\n\n• Villagers +3 carry capacity\n• Military units +15% train speed\n• +5 Monk hit points for each Monastery technology\n• Start with +50 gold\n• Every 15 of your units killed by enemies immediately grants 1 Villager, and 1 Jaguar Warrior is granted every 2 minutes since Feudal Age (both capped at 10)\n• Receive 2 Monks when advancing to Castle Age\n\n<b>Unique Unit:<b>\n• Jaguar Warrior (Infantry better combats with infantries), Tlaxcalan Slinger (Archer that counters cavalry)\n\n<b>Unique Techs: <b>\n• Atlatl (Skirmisher and Genitour +1 attack, +1 max range)\n• Garland Wars (Infantries +4 attack)\n• Ixiptla (Eagle Warrior line +100% train speed; Eagle Warrior line returns 30 food when defeated)\n• Cuauhocelotl (Infantry get +2 attack when killing enemy military units (maximum 4 times))\n\n<b>Team bonus: <b>\nRelics +33% gold generation rate"
 //	Mayans
@@ -161,7 +158,7 @@
 //	Slavs
 120172 "Infantry and Siege civilization\n\n• Farmers +15% work rate\n• Arson, Gambesons and Siege Training free\n• Siege Workshop units -15% cost\n• Monk +15% moving speed\n• Recieve 4% of the hunters' total gathering output in gold per minute\n\n<b>Unique Unit:<b>\n• Boyar (Heavy armored cavalry), Streltsy (Fast hand cannoneer)\n\n<b>Unique Techs: <b>\n• Detinets (Replaces 40% of Castles' and Towers' stone cost with wood)\n• Druzhina (Infantry units make blast damage)\n• Boyar's Fortitude (Knight-line units and Boyars +6 attack vs buildings)\n• Orthodoxy (Militia-Line and Streltsys take -30% population space)\n\n<b>Team bonus: <b>\nMilitary buildings provide +5 population room"
 //	Portuguese
-120173 "Naval and Gunpowder civilization\n\n• All units -20% gold cost\n• Foragers generate 0.67 wood per meat\n• Ships +10/15/20% HP at Feudal/Castle/Imperial Age\n• Can build Feitoria in Imperial Age\n• Genitours +15% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b>\n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Circumnavigation (Sets the entire map to explored; Ships train +33% faster)\n• Arquebus (Increase gunpowder units' projectile speed and enable Ballistics effect)\n• Iberian Light Cavalry (Genitours +2 range)\n• Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
+120173 "Naval and Gunpowder civilization\n\n• All units -20% gold cost\n• Foragers generate 0.67 wood per meat\n• Ships +10/15/20% HP at Feudal/Castle/Imperial Age\n• Can build 1 Feitoria per age since Feudal Age\n• Genitours +15% movement speed\n• Each researched technology provides +5 population space\n\n<b>Unique Units:<b>\n• Organ Gun (Siege with multiple bullets), Caravel (War ship with penetrating attack)\n\n<b>Unique Techs: <b>\n• Circumnavigation (Sets the entire map to explored; Ships train +33% faster)\n• Arquebus (Increase gunpowder units' projectile speed and enable Ballistics effect)\n• Iberian Light Cavalry (Genitours +2 range)\n• Carta Regia (Feitoria build limit +1, and can train enhanced Champions and Paladins)\n\n<b>Team bonus: <b>\nAll technologies -20% research time (expcets age ups)"
 //	Ethiopians
 120174 "Archer civilization\n\n• Archer-Line -15% reload time\n• Receive +100/250/400 food and gold when advancing to Feudal/Castle/Imperial Age\n• Spearman-line, Skirmisher line and Genitours upgrade free\n• Units deal +25% damage when fighting from lower elevation\n• Militia line and Shotel Warriors generate 0.5 food per second when attacking buildings (-50% from walls and gates)\n\n<b>Unique Unit:<b>\n• Shotel Warrior (High attack, low HP infantry), Chewa Rider (Cavalries that are strong vs Infantries)\n\n<b>Unique Techs: <b>\n• Royal Heirs (Shotel Warriors and all camels receive -3 damage vs Cavalries and Cavalry Archers)\n• Torsion Engines (Siege Workshop Units' blast radius increased)\n• Heavy Spear (Spearman line and cavalries' attack can break 1 melee/pierce armor of enemy land units)\n• Abhara Elephant (Battle Elephants don't cost good to train, but +40 food cost)\n\n<b>Team bonus: <b>\nOutposts +3 LOS and stone cost removed"
 //	Malians
@@ -177,7 +174,7 @@
 //	Vietnamese
 120180 "Archer civilization\n\n• Enemy positions are revealed at the start of the game\n• Archery Range units (except Elephant Archers) and Fire Lancers +20% HP\n• Military Training and Conscription free\n• Economic upgrading techs cost no wood and research time\n• Get 5 wood, food and gold for each military unit when advancing to the next age\n\n<b>Unique Units:<b>\n• Rattan Archer (archer better combats with archers), Imperial Skirmisher (skirmisher), Rung Scout (high-speed infantry that can lurk), Truong Guom Cavalry (Cavalry that counters cavalry)\n\n<b>Unique Techs: <b>\n• Chatras (Elephant units +100 HP)\n• Paper Money (Lumberjacks generate 1 extra gold for every 13 wood gathered)\n• Monsoon Navigation (Fish ships and Transport ships +60% movement speed; Fishing ships +33% work rate when gathering sea fish)\n• Elephant Formation (Battle Elephants +100% area damage radius)\n\n<b>Team bonus: <b>\nImperial Skirmisher upgrade available in the Imperial Age"
 //	Bulgarians
-120181 "Infantry and Cavalry civilization\n\n• Militia-line upgrades free (except Champion)\n• Town Centers cost -75% stone (not applied on the first TC in Nomad mode)\n• Blacksmith and Siege Workshop technologies cost -50% food\n• Siege weapons +25% attack bonus vs buildings\n• Economic units refunds full cost when being killed\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification), Luchnik (Archer that counters spearmen and skirmishers)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +45% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +250% heal range, +100% heal rate)\n• Fervor of Battle (Mounted units can increase nearby infantries' movement speed by 15%)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
+120181 "Infantry and Cavalry civilization\n\n• Militia-line upgrades free (except Champion)\n• Town Centers cost -50% stone \n• Blacksmith and Siege Workshop technologies cost -50% food\n• Economic units refunds full cost when being killed\n• Receive a batch of reinforcements for every (20 + 4 * past reinforcement count) military units produced, up to 10 batches\n  - Skirmisher and Militia Reinforcements: 3 Skirmishers and 3 Militia-line units\n  - Scout and Spearman Reinforcements: 3 Scout Cavalry-line units and 3 Spearman-line units\n  - Luchnik Reinforcements: 5 Luchniks and 1 Villager\n\n<b>Unique Unit:<b>\n• Konnik (Cavalry which becomes unmount infantry when dead), Krepost (Fortification), Luchnik (Archer that counters spearmen and skirmishers)\n\n<b>Unique Techs: <b>\n• Stirrups (Cavalries +33% attack speed)\n• Bagains (Militia-Line +5 melee armor)\n• Hesychast (Monks +250% heal range, +100% heal rate)\n• Fervor of Battle (Mounted units can increase nearby infantries' movement speed by 15%)\n\n<b>Team bonus: <b>\nBlacksmiths +80% work rate"
 //	Tatars
 120182 "Cavalry Archer civilization\n\n• Shepherds and herders -50% collection consumption\n• After advanced to Castle Age, each new constructed Town Center spawn 2 sheeps\n• Units deal +25% damage when fighting from higher elevation\n• Parthian Tactics and Thumb Ring free\n• Pasture technologies free\n• Each Stable/Archery Range produce 1 Scout Cavalry line/Cavalry Archer line unit every 4/5 minutes since Feudal Age, up to 5 each\n\n<b>Unique Unit:<b>\n• Keshik (Cavalry which can regenerate HP when attacking), Flaming Camel (Petards better combats with cavalries and buildings), Khan (Strong cavalry archers)\n\n<b>Unique Techs: <b>\n• Silk Armor (Light Cavalry-Line, Cavalry Archers class units and Steppe Lancer +1/+1P armor)\n• Timurid Siegecraft (Trebuchet +2 max range/LOS/search radius)\n• Raide Horn (Knight line and Keshiks regenerate 3 HP from each attack; Keshiks generate double gold)\n• Khan's Conscription (Immediately conscript 12 Keshiks and 12 Cavalry Archers, and each castle provides 2 additional conscription)\n\n<b>Team bonus: <b>\nCavalry Archer class units +2 LOS"
 //	Cumans
@@ -454,6 +451,9 @@
 500230 "Imperial Genitour"
 500231 "Imperial Fire Lancer"
 500232 "Cavalry Archer"
+500233 "Skirmisher and Militia Reinforcements"
+500234 "Scout and Spearman Reinforcements"
+500235 "Luchnik Reinforcements"
 
 
 
@@ -481,15 +481,15 @@
 501022 "Switch to training Eagle Warrior"
 501023 "Switch to training Archer line"
 501024 "Switch to training Skirmisher line"
-501025 "Lend 500 gold and retrieve a total of 750 gold within 3 minutes"
-501026 "Lend 1000 gold and retrieve a total of 1800 gold within 6 minutes"
+501025 "Lend 500 gold and retrieve a total of 900 gold within 3 minutes"
+501026 "Lend 1000 gold and retrieve a total of 2100 gold within 6 minutes"
 501027 "Lend 2000 gold and retrieve a total of 4000 gold within 8 minutes"
 501028 "Upgrade to Elite Hobelar"
 501029 "Research Tithe (Each relic produces 20 wood and 20 food per minute)"
 501030 "Research Horticulture (Farmers and farms +9% work rate)"
 501031 "Research Fertilization (Farmers and farms +7% work rate)"
 501032 "Research Breeding (Farmers and farms +5% work rate)"
-501033 "Research Mutual Trade (Trade units' gold cost convert to food)"
+501033 "Research Mutual Trade (Trade units' gold cost convert to food, and produce 20% wood additionally)"
 501034 "Research Sahara Caravan Route (The gold generated by trading units will no longer decrease)"
 501035 "Research Taurus Ambush (Scout Cavalry line units is immune to additional damage)"
 501036 "Research Lettre de Change (Enable you to loan in the market)"
@@ -609,7 +609,7 @@
 501150 "Research Trouble-Freeing Army (Jian Swordmen and Cavalries +3 attack, +10 gold cost)"
 501151 "Upgrade to Veteran Auxiliary Cavalry"
 501152 "Upgrade to Elite Auxiliary Cavalry"
-501153 "Research Carta Regia (You and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way)"
+501153 "Research Carta Regia (Feitoria build limit +1, and can train enhanced Champions and Paladins)"
 501154 "Research Forestry (Lumberjacks generate 1 gold per 45 seconds)"
 501155 "Research Korean Bow (Remove Archer-line and Cavalry Archer-line units' wood cost)"
 501156 "Upgrade to Veteran Heavy Skirmisher"
@@ -689,6 +689,9 @@
 501230 "Upgrade to Imperial Genitour"
 501231 "Upgrade to Imperial Fire Lancer"
 501232 "Upgrade to Cavalry Archer"
+501233 "Research Skirmisher and Militia Reinforcements (Set each free reinforcement batch to 3 Skirmishers and 3 Militia-line units)"
+501234 "Research Scout and Spearman Reinforcements (Set each free reinforcement batch to 3 Scout Cavalry-line units and 3 Spearman-line units)"
+501235 "Research Luchnik Reinforcements (Set each free reinforcement batch to 5 Luchniks and 1 Villager)"
 
 
 
@@ -716,15 +719,15 @@
 521022 "Switch to training Eagle Scout line. Automatically spawn 1 Eagle-Scout-Line unit every 50 seconds."
 521023 "Switch to training Archer line. Automatically spawn 1 Archer-Line unit every 50 seconds."
 521024 "Switch to training Skirmisher line. Automatically spawn 1 Skirmisher-Line unit every 36 seconds."
-521025 "Lend 500 gold and retrieve a total of 750 gold within 3 minutes.\n<GREY>Only one loan can exist at a time"
-521026 "Lend 1000 gold and retrieve a total of 1800 gold within 6 minutes.\n<GREY>Only one loan can exist at a time"
+521025 "Lend 500 gold and retrieve a total of 900 gold within 3 minutes.\n<GREY>Only one loan can exist at a time"
+521026 "Lend 1000 gold and retrieve a total of 2100 gold within 6 minutes.\n<GREY>Only one loan can exist at a time"
 521027 "Lend 2000 gold and retrieve a total of 4000 gold within 8 minutes.\n<GREY>Only one loan can exist at a time"
 521028 "Upgrade to <b>Elite Hobelar<b> (<cost>, 50 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Hobelars and lets you create Elite Hobelars."
 521029 "Research <b>Tithe<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nEach relic produces 20 wood and 20 food per minute."
 521030 "Research <b>Horticulture<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nFarmers and farms +9% work rate."
 521031 "Research <b>Fertilization<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nFarmers and farms +7% work rate."
 521032 "Research <b>Breeding<b> (<cost>, 75 <MATERIAL=MPIconGoodCPU>)\nFarmers and farms +5% work rate."
-521033 "Research <b>Mutual Trade<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTrade units' gold cost convert to food."
+521033 "Research <b>Mutual Trade<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nTrade units' gold cost convert to food, and produce 20% wood additionally."
 521034 "Research <b>Sahara Caravan Route<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nThe gold generated by trading units will no longer decrease."
 521035 "Research <b>Taurus Ambush<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nScout Cavalry line units is immune to additional damage."
 521036 "Research <b>Lettre de Change<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nEnable you to loan in the market."
@@ -844,7 +847,7 @@
 521150 "Research <b>Trouble-Freeing Army<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nJian Swordmen and Cavalries +3 attack, +10 gold cost."
 521151 "Upgrade to <b>Veteran Auxiliary Cavalry<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Auxiliary Cavalries and lets you create Veteran Auxiliary Cavalries."
 521152 "Upgrade to <b>Elite Auxiliary Cavalry<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Veteran Auxiliary Cavalries and lets you create Elite Auxiliary Cavalries."
-521153 "Research <b>Carta Regia<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nYou and your allies can build a Feitoria for free, and you can additionally receive 50% of the incomes from your ally's Feitorias built in this way."
+521153 "Research <b>Carta Regia<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nFeitoria build limit +1, and can train enhanced Champions and Paladins."
 521154 "Research <b>Forestry<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nLumberjacks generate 1 gold per 45 seconds."
 521155 "Research <b>Korean Bow<b> (<cost>, 45 <MATERIAL=MPIconGoodCPU>)\nRemove Archer-line and Cavalry Archer-line units' wood cost."
 521156 "Upgrade to <b>Veteran Heavy Skirmisher<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Heavy Skirmishers and lets you create Veteran Heavy Skirmishers."
@@ -924,6 +927,9 @@
 521230 "Upgrade to <b>Imperial Genitour<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Elite Genitours and lets you create Imperial Genitour."
 521231 "Upgrade to <b>Imperial Fire Lancer<b> (<cost>, 60 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Fire Lancers and lets you create Imperial Fire Lancer."
 521232 "Upgrade to <b>Cavalry Archer<b> (<cost>, 30 <MATERIAL=MPIconGoodCPU>)\nUpgrades your Early Cavalry Archers, enabling you to create stronger Cavalry Archers."
+521233 "Research <b>Skirmisher and Militia Reinforcements<b>\nSet each free reinforcement batch to 3 Skirmishers and 3 Militia-line units."
+521234 "Research <b>Scout and Spearman Reinforcements<b>\nSet each free reinforcement batch to 3 Scout Cavalry-line units and 3 Spearman-line units."
+521235 "Research <b>Luchnik Reinforcements<b>\nSet each free reinforcement batch to 5 Luchniks and 1 Villager."
 
 
 

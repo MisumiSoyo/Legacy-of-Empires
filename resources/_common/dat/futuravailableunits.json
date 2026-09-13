@@ -11648,6 +11648,11 @@
                         "RequiredAge": 3
                     },
                     {
+                        "Name": "Bloodlines",
+                        "RequiredAge": 2,
+                        "ID": 435
+                    },
+                    {
                         "Name": "Paladin",
                         "RequiredAge": 4,
                         "ID": 265
@@ -11859,11 +11864,6 @@
                         "Name": "Military Training",
                         "RequiredAge": 2,
                         "ID": 3004
-                    },
-                    {
-                        "Name": "Plate Barding Armor",
-                        "RequiredAge": 4,
-                        "ID": 80
                     }
                 ]
             },
@@ -30198,6 +30198,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Squires",
+                        "RequiredAge": 3,
+                        "ID": 215
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
@@ -30923,7 +30928,19 @@
             },
             {
                 "ID": 1021,
-                "Name": "Feitoria"
+                "Name": "Feitoria",
+                "Units": [
+                    {
+                        "Name": "Champion",
+                        "RequiredAge": 4,
+                        "ID": 4175
+                    },
+                    {
+                        "Name": "Paladin",
+                        "RequiredAge": 4,
+                        "ID": 4176
+                    }
+                ]
             },
             {
                 "ID": 584,

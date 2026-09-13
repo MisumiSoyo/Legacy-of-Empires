@@ -63,7 +63,7 @@ void EffectFunction10004(int playerId = -1)
 void EffectFunction10005(int playerId = -1)
 {
     SetResource(playerId, cAttributeTechEffectTime, 180);
-    SetResource(playerId, cAttributeFrankLoan, 250);
+    SetResource(playerId, cAttributeFrankLoan, 300);
 }
 
 
@@ -71,7 +71,7 @@ void EffectFunction10005(int playerId = -1)
 void EffectFunction10006(int playerId = -1)
 {
     SetResource(playerId, cAttributeTechEffectTime, 360);
-    SetResource(playerId, cAttributeFrankLoan, 300);
+    SetResource(playerId, cAttributeFrankLoan, 350);
 }
 
 
@@ -1467,7 +1467,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 377  2026.09.11");
+    xsChatData("Patch: 378  2026.09.12");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

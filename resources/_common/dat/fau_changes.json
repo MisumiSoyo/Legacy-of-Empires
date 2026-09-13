@@ -1247,8 +1247,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "埃塞俄比亚, 波兰, 魏获得骑兵钢甲",
-            "civilizations": ["Ethiopians", "Poles", "Wei"],
+            "note": "波兰, 魏获得骑兵钢甲",
+            "civilizations": ["Poles", "Wei"],
             "tech_id": 80,
             "building_id": 103,
             "Name": "Plate Barding Armor",
@@ -1341,8 +1341,8 @@
             "RequiredAge": 2
         },
         {
-            "note": "拜占庭, 契丹获得血统",
-            "civilizations": ["Byzantines", "Khitans"],
+            "note": "拜占庭, 契丹, 埃塞俄比亚获得血统",
+            "civilizations": ["Byzantines", "Khitans", "Ethiopians"],
             "tech_id": 435,
             "building_id": 101, 
             "Name": "Bloodlines",
@@ -1904,8 +1904,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "马扎尔, 凯尔特, 马普切, 高棉, 瞿折罗获得护卫",
-            "civilizations": ["Magyars", "Celts", "Mapuche", "Khmer", "Gurjaras"],
+            "note": "马扎尔, 凯尔特, 马普切, 高棉, 瞿折罗, 葡萄牙获得护卫",
+            "civilizations": ["Magyars", "Celts", "Mapuche", "Khmer", "Gurjaras", "Portuguese"],
             "tech_id": 215,
             "building_id": 12,
             "Name": "Squires",
@@ -2708,6 +2708,22 @@
             "tech_id": 3483,
             "building_id": 87,
             "Name": "Elite Mounted Grenadier",
+            "RequiredAge": 4
+        },
+        {
+            "note": "葡萄牙大商站冠军剑士",
+            "civilizations": "Portuguese",
+            "unit_id": 4175,
+            "building_id": 1021,
+            "Name": "Champion",
+            "RequiredAge": 4
+        },
+        {
+            "note": "葡萄牙大商站游侠",
+            "civilizations": "Portuguese",
+            "unit_id": 4176,
+            "building_id": 1021,
+            "Name": "Paladin",
             "RequiredAge": 4
         }
     ]

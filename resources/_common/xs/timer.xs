@@ -1,3 +1,9 @@
+void DataCount(int playerId = -1)
+{
+    SetResource(playerId, LoeAttrTotalMilitaryOwned, xsPlayerAttribute(playerId, cAttributeMilitaryPopulation) + xsPlayerAttribute(playerId, LoeAttrMilitaryDeath));
+}
+
+
 //  Franks, loan
 void FranksLoan(int playerId = -1, int Time = 0)
 {
@@ -18,23 +24,6 @@ void KoreansMineral(int playerId = -1, int Time = -1)
 {
     float TotalMineCount = xsPlayerAttribute(playerId, cAttributeGoldTotal) + xsPlayerAttribute(playerId, cAttributeStoneTotal);
     ModResource(playerId, cAttributeGold, minFloat(TotalMineCount/ 1980.0, 2.5));
-}
-
-
-void PortugueseFeitoria(int playerId = -1, int Time = -1)
-{
-    if (isResearched(playerId, CartaRegiaTechID) == false)
-        return;
-    int TeamFeitoriaCount = 0;
-    int i = 0;
-    for (i = 0; <= xsGetNumPlayers())
-        if (i != playerId)
-            if (isAlly(i, playerId))
-                TeamFeitoriaCount = TeamFeitoriaCount + xsPlayerAttribute(i, cAttributeExtraFeitoriaCount);
-    ModResource(playerId, cAttributeFood, 0.8 * TeamFeitoriaCount);
-    ModResource(playerId, cAttributeWood, 0.35 * TeamFeitoriaCount);
-    ModResource(playerId, cAttributeStone, 0.15 * TeamFeitoriaCount);
-    ModResource(playerId, cAttributeGold, 0.5* TeamFeitoriaCount);
 }
 
 
@@ -232,9 +221,44 @@ void TatarsFreeScoutAndCA(int playerId = -1, int Time = -1)
 }
 
 
+void BulgariansFreeArmy(int playerId = -1, int Time = -1)
+{
+    int ArmyCount = xsPlayerAttribute(playerId, LoeAttrBulgariansArmyCount);
+    if (ArmyCount >= 10)
+        return;
+    int ArmyType = xsPlayerAttribute(playerId, LoeAttrBulgariansArmyType);
+    int TotalMilitaryCount = xsPlayerAttribute(playerId, LoeAttrTotalMilitaryOwned) - xsPlayerAttribute(playerId, LoeAttrBulgariansArmyFlag);
+
+    if (TotalMilitaryCount >= (20 + 2 * ArmyCount) * (ArmyCount + 1))
+    {
+        if (ArmyType == 0)
+        {
+            SpawnUnit(playerId, SkirmisherID, TownCenterID, 3, 1);
+            SpawnUnit(playerId, MilitiaID, TownCenterID, 3, 1);
+            ModResource(playerId, LoeAttrBulgariansArmyFlag, 6);
+        }
+        if (ArmyType == 1)
+        {
+            SpawnUnit(playerId, ScoutCavalryID, TownCenterID, 3, 1);
+            SpawnUnit(playerId, SpearmanID, TownCenterID, 3, 1);
+            ModResource(playerId, LoeAttrBulgariansArmyFlag, 6);
+        }
+        if (ArmyType == 2)
+        {
+            SpawnUnit(playerId, ArcherID, TownCenterID, 5, 1);
+            SpawnUnit(playerId, MaleVillagerID, TownCenterID, 1, 1);
+            ModResource(playerId, LoeAttrBulgariansArmyFlag, 5);
+        }
+        SetResource(playerId, LoeAttrBulgariansArmyCount, ArmyCount + 1);
+    }
+}
+
+
 void TimerEvent(int playerId = -1, int Time = -1)
 {
     int playerCiv = xsGetPlayerCivilization(playerId);
+
+    DataCount(playerId);
 
     switch (playerCiv)
     {
@@ -273,11 +297,6 @@ void TimerEvent(int playerId = -1, int Time = -1)
             KoreansMineral(playerId, Time);
             break;
         }
-        case cPortuguese:
-        {
-            PortugueseFeitoria(playerId, Time);
-            break;
-        }
         case cBerbers:
         {
             BerbersDonkeyNumLimit(playerId, Time);
@@ -286,6 +305,11 @@ void TimerEvent(int playerId = -1, int Time = -1)
         case cMalay:
         {
             MalayFreeArmy(playerId, Time);
+            break;
+        }
+        case cBulgarians:
+        {
+            BulgariansFreeArmy(playerId, Time);
             break;
         }
         case cTatars:

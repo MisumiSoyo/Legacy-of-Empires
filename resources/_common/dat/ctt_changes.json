@@ -3987,10 +3987,10 @@
             "Use Type": "Tech"
         },
         {
-            "note": "埃塞俄比亚获得围墙, 轮作, 骑兵钢甲, 炮塔",
+            "note": "埃塞俄比亚获得围墙, 轮作, 血统, 炮塔",
             "action": "modify",
             "civ_id": "ETHIOPIANS",
-            "Node ID": [12, 64, 80, 379],
+            "Node ID": [12, 64, 379, 435],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -4970,10 +4970,10 @@
             "Node Status": "ResearchedCompleted"
         },
         {
-            "note": "葡萄牙获得造船匠, 启发, 钻井采金法, 射箭槽, 围墙",
+            "note": "葡萄牙获得造船匠, 启发, 钻井采金法, 射箭槽, 围墙, 护卫",
             "action": "modify",
             "civ_id": "PORTUGUESE",
-            "Node ID": [182, 233, 373, 379, 608],
+            "Node ID": [182, 215, 233, 373, 379, 608],
             "Use Type": "Tech",
             "Node Status": "ResearchedCompleted"
         },
@@ -6852,6 +6852,56 @@
             "Use Type": "Unit",
             "position": "after",
             "target_id": 1012
+        },
+        {
+            "note": "冠军剑士",
+            "action": "add",
+            "civ_id": "PORTUGUESE",
+            "Age ID": 4,
+            "Building ID": 1021,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105469,
+            "Link ID": -1,
+            "Link Node Type": "UniqueBuilding",
+            "Name": "Champion",
+            "Name String ID": 5469,
+            "Node ID": 4175,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Unit",
+            "Picture Index": 72,
+            "Prerequisite IDs": [3238, 0, 0, 0, 0],
+            "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "note": "游侠",
+            "action": "add",
+            "civ_id": "PORTUGUESE",
+            "Age ID": 4,
+            "Building ID": 1021,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105471,
+            "Link ID": -1,
+            "Link Node Type": "UniqueBuilding",
+            "Name": "Paladin",
+            "Name String ID": 5471,
+            "Node ID": 4176,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Unit",
+            "Picture Index": 2,
+            "Prerequisite IDs": [3238, 0, 0, 0, 0],
+            "Prerequisite Types": ["Tech", "None", "None", "None", "None"],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "note": "葡萄牙大商站位置调整",
+            "action": "modify",
+            "civ_id": "PORTUGUESE",
+            "Node ID": 1021,
+            "Use Type": "Building",
+            "Link ID": -1
         }
     ]
 }

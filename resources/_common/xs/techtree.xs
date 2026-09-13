@@ -346,13 +346,14 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, HoardingsTechID);
             EnableTech(playerId, GenitourTechID);
             EnableTech(playerId, EliteGenitourTechID);
+            EnableTech(playerId, SquiresTechID);
             break;
         }
         case cEthiopians:
         {
             EnableTech(playerId, BattleElephantTechID);
             EnableTech(playerId, CropRotationTechID);
-            EnableTech(playerId, PlateBardingArmorTechID);
+            EnableTech(playerId, BloodlinesTechID);
             EnableTech(playerId, BombardTowerTechID);
             EnableTech(playerId, HoardingsTechID);
             EnableTech(playerId, PaladinTechID);

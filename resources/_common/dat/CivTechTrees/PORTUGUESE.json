@@ -436,7 +436,7 @@
             "Building ID": 1021,
             "Building upgraded from ID": -1,
             "Help String ID": 105159,
-            "Link ID": 276,
+            "Link ID": -1,
             "Node ID": 1021,
             "Picture Index": 53
         },
@@ -931,7 +931,7 @@
             "Link Node Type": "BuildingTech",
             "Draw Node Type": "UnitTech",
             "Use Type": "Tech",
-            "Node Status": "NotAvailable",
+            "Node Status": "ResearchedCompleted",
             "Name String ID": 17210,
             "Age ID": 3,
             "Building ID": 12,
@@ -3062,6 +3062,66 @@
             ],
             "Trigger Tech ID": -1,
             "Use Type": "Tech"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 1021,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105469,
+            "Link ID": -1,
+            "Link Node Type": "UniqueBuilding",
+            "Name": "Champion",
+            "Name String ID": 5469,
+            "Node ID": 4175,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Unit",
+            "Picture Index": 72,
+            "Prerequisite IDs": [
+                3238,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "Tech",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
+        },
+        {
+            "Age ID": 4,
+            "Building ID": 1021,
+            "Draw Node Type": "UnitTech",
+            "Help String ID": 105471,
+            "Link ID": -1,
+            "Link Node Type": "UniqueBuilding",
+            "Name": "Paladin",
+            "Name String ID": 5471,
+            "Node ID": 4176,
+            "Node Status": "ResearchedCompleted",
+            "Node Type": "Unit",
+            "Picture Index": 2,
+            "Prerequisite IDs": [
+                3238,
+                0,
+                0,
+                0,
+                0
+            ],
+            "Prerequisite Types": [
+                "Tech",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "Trigger Tech ID": -1,
+            "Use Type": "Unit"
         }
     ]
 }

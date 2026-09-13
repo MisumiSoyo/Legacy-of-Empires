@@ -281,19 +281,6 @@ void SetCustomResources(int playerId = -1)
 }
 
 
-void FeitoriaAdjustment(int playerId = -1)
-{
-    SetAttribute(playerId, FeitoriaID, cAmountFirstStorage, -15);
-    SetAttribute(playerId, FeitoriaID, cAmountSecondStorage, 15);
-    SetAttribute(playerId, FeitoriaID, cAmountThirdStorage, 15);
-}
-
-
-void GenitourAdjustment(int playerId = -1)
-{
-}
-
-
 void MulFishingWorkValue(int playerId = -1, int ObjectID = -1)
 {
     int TaskID = FindTask(playerId, ObjectID, cTaskTypeGatherRebuild, cSeaFishClass, -1);
@@ -458,6 +445,19 @@ void EffectFunction10128(int playerId = -1)
 }
 
 
+void DataCountInit(int playerId = -1)
+{
+    xsResetTaskAmount();
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000027);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceOut, LoeAttrMilitaryDeath);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 0);
+    ApplyAllMilitaryToTarget(playerId, -1, cTaskTypeRefund);
+    xsResetTaskAmount();
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
@@ -465,7 +465,6 @@ void AbilityApplier(int playerId = -1)
     KhanInit(playerId);
     MangonelAdjustment(playerId);
     SetCustomResources(playerId);
-    FeitoriaAdjustment(playerId);
-    GenitourAdjustment(playerId);
     UniqueUnitInit();
+    DataCountInit(playerId);
 }

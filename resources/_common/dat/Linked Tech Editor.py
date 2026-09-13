@@ -25,20 +25,21 @@ def add_linked_techs(base_data, changes):
     existing_name_ids = [tech["NameId"] for tech in base_data["LinkedTechs"]]
     max_name_id = max(existing_name_ids) if existing_name_ids else 0
 
+    # 需要排除的字段：note 用于备注，action 用于控制指令，NameId 自动生成
+    excluded_fields = {"note", "action", "NameId"}
+
     for change in changes:
         if change.get("action") == "add":
-            # 动态生成新的NameId
-            max_name_id += 1
-            new_tech_group = {
-                "NameId": max_name_id,
-                "Comment": change.get("Comment"),
-                "Type": change.get("Type"),
-                "Techs": change.get("Techs")
-            }
-            # 检查并移除note字段（如果存在）
             if "note" in change:
                 print(f"Note: {change['note']}")
-                del change["note"]
+
+            # 动态生成新的NameId
+            max_name_id += 1
+
+            # 复制 change 中除排除字段外的所有内容
+            new_tech_group = {k: v for k, v in change.items() if k not in excluded_fields}
+            new_tech_group["NameId"] = max_name_id
+
             base_data["LinkedTechs"].append(new_tech_group)
     return base_data
 

@@ -200,7 +200,6 @@
             ]
         },
         {
-            "NameId": 424021,
             "Comment": "Chinese Dynasties",
             "Type": "MutuallyExclusive",
             "Techs": [
@@ -208,18 +207,19 @@
                 3094,
                 3095,
                 3096
-            ]
+            ],
+            "NameId": 424021
         },
         {
-            "NameId": 424022,
-            "Comment": "Bengalis Relic Bonus",
-            "Type": "MutuallyExclusive",
+            "Comment": "Bulgarians Free Army Type",
+            "Type": "Toggleable",
+            "StartingTech": 3050,
             "Techs": [
-                3340,
-                3341,
-                3342,
-                3343
-            ]
+                3050,
+                3051,
+                3052
+            ],
+            "NameId": 424022
         }
     ]
 }

@@ -7,10 +7,11 @@
         "Techs": [3093, 3094, 3095, 3096]
     },
     {
-        "note": "孟加拉, 选择一个圣物加成",
+        "note": "保加利亚免费军队切换",
         "action": "add",
-        "Comment": "Bengalis Relic Bonus",
-        "Type": "MutuallyExclusive",
-        "Techs": [3340, 3341, 3342, 3343]
+        "Comment": "Bulgarians Free Army Type",
+        "Type": "Toggleable",
+        "StartingTech": 3050,
+        "Techs": [3050, 3051, 3052]
     }
 ]
