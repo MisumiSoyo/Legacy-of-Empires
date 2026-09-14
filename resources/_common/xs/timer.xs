@@ -148,13 +148,13 @@ void TangFreeMoDaoWarrior(int playerId = -1, int Time = -1)
     if (isResearched(playerId, TangDynastyTechID) == false)
         return;
     int Progress = xsPlayerAttribute(playerId, cAttributeTangFreeMoDaoTimer);
-    Progress = minInt(Progress + 1, 120);
-    if (Progress >= 120)
+    Progress = minInt(Progress + 1, 180);
+    if (Progress >= 180)
         if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)
         {
             SpawnUnit(playerId, MoDaoID, TownCenterID, 1, 4);
             SpawnUnit(playerId, MoDaoID, CastleID, 1);
-            Progress = Progress - 120;
+            Progress = Progress - 180;
         }
     SetResource(playerId, cAttributeTangFreeMoDaoTimer, Progress);
 }

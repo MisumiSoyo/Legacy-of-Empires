@@ -158,7 +158,8 @@ bool isBuildingUnit(int UnitID = -1)
 
 bool isAnimalClass(int ClassID = -1)
 {
-    return ((ClassID == cBuildingClass) || (ClassID == cWallClass) || (ClassID == cGateClass) || (ClassID == cTowerClass) || (ClassID == cFarmClass));
+    return ((ClassID == cPreyAnimalClass) || (ClassID == cPredatorAnimalClass) || (ClassID == cDomesticAnimalClass)
+            || (ClassID == cLivestockClass) || (ClassID == cControlledAnimalClass));
 }
 
 

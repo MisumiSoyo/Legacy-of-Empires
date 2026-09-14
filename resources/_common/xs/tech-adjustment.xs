@@ -491,3 +491,21 @@ void EffectFunction10131(int playerId = -1)
 void EffectFunction10132(int playerId = -1)
 {
 }
+
+
+//  10133 - Blacksmith Techs
+void EffectFunction10133(int playerId = -1)
+{
+    int playerCiv = xsGetPlayerCivilization(playerId);
+
+    switch (playerCiv)
+    {
+        case cWu:
+        {
+            WuGoldDiscount(playerId);
+            break;
+        }
+        default:
+            break;
+    }
+}

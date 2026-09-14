@@ -77,10 +77,18 @@ def applyEffectChanges(data, effect_change_list):
                 
                 position = effect_change.get("position", None)
                 effect_commands = effect.effect_commands
+                skip_duplicate = effect_change.get("skip_duplicate", False)
                 
                 for cmd in commands:
                     cmd_type, a, b, c, d = cmd
                     d = float(d)
+                    
+                    if skip_duplicate and any(
+                        match_command(existing, [[cmd_type, a, b, c, d]])
+                        for existing in effect_commands
+                    ):
+                        continue
+                    
                     new_cmd = EffectCommand(type=cmd_type, a=a, b=b, c=c, d=d)
                     
                     if position is None:
@@ -125,7 +133,16 @@ def applyEffectChanges(data, effect_change_list):
                             
             else:
                 function_id = effect_change["function_id"]
-                data.effects[effect_id].effect_commands.append(EffectCommand(type=1, a=33, b=0, c=-1, d=function_id))
+                skip_duplicate = effect_change.get("skip_duplicate", False)
+                effect_commands = data.effects[effect_id].effect_commands
+                
+                if skip_duplicate and any(
+                    match_command(existing, [[1, 33, 0, -1, function_id]])
+                    for existing in effect_commands
+                ):
+                    continue
+                
+                effect_commands.append(EffectCommand(type=1, a=33, b=0, c=-1, d=function_id))
 
 
 def applyAttributeChange(obj, attr_change):

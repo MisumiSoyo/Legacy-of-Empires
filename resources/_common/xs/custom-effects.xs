@@ -684,12 +684,10 @@ void EffectFunction10036(int playerId = -1)
 {
     xsResetTaskAmount();
     xsTaskAmount(cTaskAttrSearchWaitTime, 0.000026);
-    xsTaskAmount(cTaskAttrWorkValue1, MilitiaID);
+    xsTaskAmount(cTaskAttrWorkValue1, LongSwordmanID);
     xsTaskAmount(cTaskAttrWorkValue2, 1);
     xsTask(HeiGuangCavalryID, cTaskTypeExtraSpawn, -1, playerId);
     xsTask(HeavyHeiGuangCavalryID, cTaskTypeExtraSpawn, -1, playerId);
-
-    xsTaskAmount(cTaskAttrWorkValue2, 2);
     xsTask(cSiegeWeaponClass, cTaskTypeExtraSpawn, -1, playerId);
     xsTask(cUnpackedSiegeUnitClass, cTaskTypeExtraSpawn, -1, playerId);
     xsTask(cScorpionClass, cTaskTypeExtraSpawn, -1, playerId);
@@ -1467,7 +1465,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 378  2026.09.12");
+    xsChatData("Patch: 379  2026.09.14");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

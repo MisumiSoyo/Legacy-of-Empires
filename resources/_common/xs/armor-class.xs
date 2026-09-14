@@ -74,9 +74,6 @@ void SetScoutArmor(int playerId = -1)
     AddArmorForm(playerId, AuxiliaryCavalryID, cDamageClassScout);
     AddArmorForm(playerId, VeteranAuxiliaryCavalryID, cDamageClassScout);
     AddArmorForm(playerId, EliteAuxiliaryCavalryID, cDamageClassScout);
-    AddArmorForm(playerId, AuxiliaryCavalry2ID, cDamageClassScout);
-    AddArmorForm(playerId, VeteranAuxiliaryCavalry2ID, cDamageClassScout);
-    AddArmorForm(playerId, EliteAuxiliaryCavalry2ID, cDamageClassScout);
     AddArmorForm(playerId, EagleScoutID, cDamageClassScout);
     AddArmorForm(playerId, EagleWarriorID, cDamageClassScout);
     AddArmorForm(playerId, EliteEagleWarriorID, cDamageClassScout);

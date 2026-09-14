@@ -458,6 +458,44 @@ void DataCountInit(int playerId = -1)
 }
 
 
+void WuGoldDiscount(int playerId = -1)
+{
+    ModAttribute(playerId, cArcherClass, cGoldCost, -1);
+    ModAttribute(playerId, cInfantryClass, cGoldCost, -1);
+    ModAttribute(playerId, cCavalryClass, cGoldCost, -1);
+    ModAttribute(playerId, cSiegeWeaponClass, cGoldCost, -1);
+    ModAttribute(playerId, cMonkClass, cGoldCost, -1);
+    ModAttribute(playerId, cConquistadorClass, cGoldCost, -1);
+    ModAttribute(playerId, cPetardClass, cGoldCost, -1);
+    ModAttribute(playerId, cCavalryArcherClass, cGoldCost, -1);
+    ModAttribute(playerId, cMonkWithRelicClass, cGoldCost, -1);
+    ModAttribute(playerId, cHandCannoneerClass, cGoldCost, -1);
+    ModAttribute(playerId, cScoutCavalryClass, cGoldCost, -1);
+    ModAttribute(playerId, cPackedUnitClass, cGoldCost, -1);
+    ModAttribute(playerId, cUnpackedSiegeUnitClass, cGoldCost, -1);
+    ModAttribute(playerId, cScorpionClass, cGoldCost, -1);
+    ModAttribute(playerId, cPhalanxClass, cGoldCost, -1);
+    ModAttribute(playerId, cTransportShipClass, cGoldCost, -1);
+    ModAttribute(playerId, cWarshipClass, cGoldCost, -1);
+    ModAttribute(playerId, cVillagerClass, cGoldCost, -1);
+    ModAttribute(playerId, cTradeCartClass, cGoldCost, -1);
+    ModAttribute(playerId, cTradeBoatClass, cGoldCost, -1);
+    ModAttribute(playerId, cFishingBoatClass, cGoldCost, -1);
+    ModAttribute(playerId, cBuildingClass, cGoldCost, -1);
+    ModAttribute(playerId, cWallClass, cGoldCost, -1);
+    ModAttribute(playerId, cGateClass, cGoldCost, -1);
+    ModAttribute(playerId, cTowerClass, cGoldCost, -1);
+    ModAttribute(playerId, cFarmClass, cGoldCost, -1);
+}
+
+
+//  Castle built effect
+void EffectFunction10134(int playerId = -1)
+{
+    ModResource(playerId, cAttributeFood, 10000);
+}
+
+
 //  Interface
 void AbilityApplier(int playerId = -1)
 {
