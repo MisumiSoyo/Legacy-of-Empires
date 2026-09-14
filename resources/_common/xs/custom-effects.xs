@@ -1465,7 +1465,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 379  2026.09.14");
+    xsChatData("Patch: 380  2026.09.15");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

@@ -11,6 +11,7 @@
         "action": "add",
         "Comment": "Bulgarians Free Army Type",
         "Type": "Toggleable",
+        "Instant": true,
         "StartingTech": 3050,
         "Techs": [3050, 3051, 3052]
     }
