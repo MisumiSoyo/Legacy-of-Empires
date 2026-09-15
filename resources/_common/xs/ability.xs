@@ -50,28 +50,15 @@ void AccoladeApplier(int playerId = -1)
 }
 
 
-void GenerateGoldFromBuilding(int playerId = -1, int ClassTarget = -1, float Rate = 0.0)
+void GenerateResFromBuilding(int playerId = -1, int ClassTarget = -1, int ResID = -1, float Rate = 0.0, float Flag = 0.0)
 {
+    xsTaskAmount(cTaskAttrSearchWaitTime, Flag);
     xsTaskAmount(cTaskAttrWorkValue1, Rate);
-    xsTaskAmount(cTaskAttrResourceOut, cAttributeGold);
-    xsTaskAmount(cTaskAttrProductivityResource, cAttributeCavalryLootBuildingGoldProductivity);
+    xsTaskAmount(cTaskAttrResourceOut, ResID);
+    xsTaskAmount(cTaskAttrProductivityResource, LoeAttrMongolsLootRate);
 
     xsTask(ClassTarget, cTaskTypeGenerateResources, cBuildingClass, playerId);
     xsTask(ClassTarget, cTaskTypeGenerateResources, cTowerClass, playerId);
-}
-
-
-void PaxMongolicaApplier(int playerId = -1, int ClassTarget = -1)
-{
-    xsTaskAmount(cTaskAttrWorkValue1, 2.0 * 60);
-    xsTask(ClassTarget, cTaskTypeStinger, -1, playerId);
-    xsTaskAmount(cTaskAttrWorkValue1, 0.0 - 2.0 * 60);
-    xsTask(ClassTarget, cTaskTypeStinger, cBuildingClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cWallClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cGateClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cTowerClass, playerId);
-    xsTask(ClassTarget, cTaskTypeStinger, cFarmClass, playerId);
-    LaunchStinger(playerId, ClassTarget);
 }
 
 
@@ -486,13 +473,6 @@ void WuGoldDiscount(int playerId = -1)
     ModAttribute(playerId, cGateClass, cGoldCost, -1);
     ModAttribute(playerId, cTowerClass, cGoldCost, -1);
     ModAttribute(playerId, cFarmClass, cGoldCost, -1);
-}
-
-
-//  Castle built effect
-void EffectFunction10134(int playerId = -1)
-{
-    ModResource(playerId, cAttributeFood, 10000);
 }
 
 

@@ -434,46 +434,26 @@ void EffectFunction10023(int playerId = -1)
 void EffectFunction10024(int playerId = -1)
 {
     xsResetTaskAmount();
-    GenerateGoldFromBuilding(playerId, cScoutCavalryClass, 0.33);
-    GenerateGoldFromBuilding(playerId, cCavalryClass, 0.33);
-    GenerateGoldFromBuilding(playerId, cInfantryClass, 0.45);
+    GenerateResFromBuilding(playerId, cScoutCavalryClass, cAttributeGold, 0.33, 0.000028);
+    GenerateResFromBuilding(playerId, cCavalryClass, cAttributeGold, 0.33, 0.000028);
+    GenerateResFromBuilding(playerId, cInfantryClass, cAttributeGold, 0.45, 0.000028);
     xsResetTaskAmount();
-    SetResource(playerId, cAttributeCavalryLootBuildingGoldProductivity, 1);
+    SetResource(playerId, LoeAttrMongolsLootRate, 1);
 }
 
 
 //  10025 - Pax Mongolica
 void EffectFunction10025(int playerId = -1)
 {
+    MulResource(playerId, LoeAttrMongolsLootRate, 1.5);
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrSearchWaitTime, 109.000007);
-    xsTaskAmount(cTaskAttrWorkRange, 0);
-    xsTaskAmount(cTaskAttrWorkValue2, 1);
-    xsTaskAmount(cTaskAttrOwnerType, 0);
-
-    PaxMongolicaApplier(playerId, MilitiaID);
-    PaxMongolicaApplier(playerId, ManAtArmsID);
-    PaxMongolicaApplier(playerId, LongSwordmanID);
-    PaxMongolicaApplier(playerId, TwoHandedSwordmanID);
-    PaxMongolicaApplier(playerId, ChampionID);
-    PaxMongolicaApplier(playerId, SpearmanID);
-    PaxMongolicaApplier(playerId, PikemanID);
-    PaxMongolicaApplier(playerId, HalberdierID);
-    PaxMongolicaApplier(playerId, ArcherID);
-    PaxMongolicaApplier(playerId, CrossbowmanID);
-    PaxMongolicaApplier(playerId, ArbalesterID);
-    PaxMongolicaApplier(playerId, SkirmisherID);
-    PaxMongolicaApplier(playerId, EliteSkirmisherID);
-    PaxMongolicaApplier(playerId, ImperialSkirmisherID);
-    PaxMongolicaApplier(playerId, EarlyCavalryArcherID);
-    PaxMongolicaApplier(playerId, CavalryArcherID);
-    PaxMongolicaApplier(playerId, HeavyCavalryArcherID);
-    PaxMongolicaApplier(playerId, HandCannoneerID);
-    PaxMongolicaApplier(playerId, GenitourID);
-    PaxMongolicaApplier(playerId, EliteGenitourID);
+    GenerateResFromBuilding(playerId, cScoutCavalryClass, cAttributeFood, 0.33, 0.000029);
+    GenerateResFromBuilding(playerId, cCavalryClass, cAttributeFood, 0.33, 0.000029);
+    GenerateResFromBuilding(playerId, cInfantryClass, cAttributeFood, 0.45, 0.000029);
+    GenerateResFromBuilding(playerId, cScoutCavalryClass, cAttributeWood, 0.33, 0.000030);
+    GenerateResFromBuilding(playerId, cCavalryClass, cAttributeWood, 0.33, 0.000030);
+    GenerateResFromBuilding(playerId, cInfantryClass, cAttributeWood, 0.45, 0.000030);
     xsResetTaskAmount();
-
-    EnableObject(playerId, EliteKeshikID);
 }
 
 
@@ -1465,7 +1445,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 380  2026.09.15");
+    xsChatData("Patch: 381  2026.09.15");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

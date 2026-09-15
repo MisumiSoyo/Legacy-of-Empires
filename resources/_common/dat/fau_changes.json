@@ -365,7 +365,7 @@
             "tech_id": 3155,
             "building_id": 109,
             "Name": "Mutual Trade",
-            "RequiredAge": 3
+            "RequiredAge": 4
         },
         {
             "note": "撒哈拉商道",
@@ -1140,7 +1140,7 @@
             "tech_id": 3156,
             "building_id": 109,
             "Name": "Pax Mongolica",
-            "RequiredAge": 4
+            "RequiredAge": 3
         },
         {
             "note": "马里精锐当佐兵",
@@ -1223,8 +1223,8 @@
             "RequiredAge": 3
         },
         {
-            "note": "波兰, 意大利, 维京, 契丹, 阿兹特克, 萨拉森, 穆伊斯卡获得长戟兵",
-            "civilizations": ["Poles", "Italians", "Vikings", "Khitans", "Aztecs", "Saracens", "Muisca"],
+            "note": "波兰, 意大利, 维京, 契丹, 阿兹特克, 萨拉森, 穆伊斯卡, 蒙古获得长戟兵",
+            "civilizations": ["Poles", "Italians", "Vikings", "Khitans", "Aztecs", "Saracens", "Muisca", "Mongols"],
             "tech_id": 429,
             "building_id": 12,
             "Name": "Halberdier",
@@ -1479,8 +1479,8 @@
             "type": "delete"
         },
         {
-            "note": "缅甸, 吴, 波斯, 葡萄牙, 马里, 马扎尔, 亚美尼亚获得射箭槽",
-            "civilizations": ["Burmese", "Wu", "Persians", "Portuguese", "Malians", "Magyars", "Armenians"],
+            "note": "缅甸, 吴, 波斯, 葡萄牙, 马里, 马扎尔, 亚美尼亚, 蒙古获得射箭槽",
+            "civilizations": ["Burmese", "Wu", "Persians", "Portuguese", "Malians", "Magyars", "Armenians", "Mongols"],
             "tech_id": 608,
             "building_id": 209,
             "Name": "Arrowslits",
@@ -1879,8 +1879,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "波斯, 柏柏尔, 亚美尼亚获得大型箭塔",
-            "civilizations": ["Persians", "Berbers", "Armenians"],
+            "note": "波斯, 柏柏尔, 亚美尼亚, 蒙古获得大型箭塔",
+            "civilizations": ["Persians", "Berbers", "Armenians", "Mongols"],
             "tech_id": 63,
             "building_id": 209,
             "Name": "Keep",
@@ -2508,14 +2508,6 @@
             "tech_id": 428,
             "building_id": 1897,
             "Name": "Hussar",
-            "RequiredAge": 4
-        },
-        {
-            "note": "蒙古精锐怯薛",
-            "civilizations": "Mongols",
-            "unit_id": 1230,
-            "building_id": [101, 1897],
-            "Name": "Elite Keshik",
             "RequiredAge": 4
         },
         {

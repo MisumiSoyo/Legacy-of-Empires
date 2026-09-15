@@ -509,3 +509,72 @@ void EffectFunction10133(int playerId = -1)
             break;
     }
 }
+
+
+//  10134 - Mill Farm Techs
+void EffectFunction10134(int playerId = -1)
+{
+    int playerCiv = xsGetPlayerCivilization(playerId);
+
+    if (playerCiv == cSicilians)
+    {
+        MulAttribute(playerId, FarmID, cWorkRate, 1.15 / 1.1);
+        MulAttribute(playerId, RiceFarmID, cWorkRate, 1.15 / 1.1);
+        MulAttribute(playerId, MaleFarmerID, cWorkRate, 1.06);
+        MulAttribute(playerId, FemaleFarmerID, cWorkRate, 1.06);
+    }
+}
+
+
+//  10135 - Man-At-Arms
+void EffectFunction10135(int playerId = -1)
+{
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cNameId, 5080);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cDescriptionId, 6080);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cIconId, 10);
+}
+
+
+//  10136 - Long Swordsman
+void EffectFunction10136(int playerId = -1)
+{
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cNameId, 5081);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cDescriptionId, 6081);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cIconId, 13);
+}
+
+
+//  10137 - Two-Handed Swordsman
+void EffectFunction10137(int playerId = -1)
+{
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cNameId, 5411);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cDescriptionId, 6411);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cIconId, 12);
+}
+
+
+//  10138 - Champion
+void EffectFunction10138(int playerId = -1)
+{
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cNameId, 5469);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cDescriptionId, 6469);
+    SetAttribute(playerId, JapaneseFreeMilitiaID, cIconId, 72);
+}
+
+
+//  10139 - Pikeman
+void EffectFunction10139(int playerId = -1)
+{
+    SetAttribute(playerId, JapaneseFreeSpearmanID, cNameId, 5408);
+    SetAttribute(playerId, JapaneseFreeSpearmanID, cDescriptionId, 6408);
+    SetAttribute(playerId, JapaneseFreeSpearmanID, cIconId, 11);
+}
+
+
+//  10140 - Halberdier
+void EffectFunction10140(int playerId = -1)
+{
+    SetAttribute(playerId, JapaneseFreeSpearmanID, cNameId, 5409);
+    SetAttribute(playerId, JapaneseFreeSpearmanID, cDescriptionId, 6409);
+    SetAttribute(playerId, JapaneseFreeSpearmanID, cIconId, 104);
+}

@@ -26,7 +26,7 @@ extern const int cAttributeLastRuleTime = 716;
 extern const int cAttributeVarangianGuardLootProductivity = 717;
 extern const int cAttributeWubaoFoodWoodProductivity = 718;
 extern const int cAttributeWubaoGoldProductivity = 719;
-extern const int cAttributeCavalryLootBuildingGoldProductivity = 720;
+extern const int LoeAttrMongolsLootRate = 720;
 extern const int cAttributeAztecsCountedDeath = 721;
 extern const int cAttributeAztecsArmyTimer = 722;
 extern const int cAttributeBritonsCountedCastle = 723;
@@ -223,6 +223,9 @@ extern const int ImperialGenitourID = 4171;
 extern const int ProjectileJineteTacticsID = 4172;
 extern const int ImperialFireLancerID = 4173;
 extern const int MoDaoID = 4174;
+extern const int JapaneseFreeMilitiaID = 4178;
+extern const int JapaneseFreeSpearmanID = 4179;
+extern const int JapaneseFreeCondottieroID = 4180;
 
 
 

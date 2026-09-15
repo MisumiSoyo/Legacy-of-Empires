@@ -1,0 +1,27 @@
+{
+    "unit_changes":
+    [
+        {
+            "note": "步弓手类别木材和黄金费用减少调整, 统一 -5",
+            "unit_id": "all",
+            "search": [["class_", 0],
+                       ["id", "lte", 4000]],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", "add", -5]],
+                           ["creatable.resource_costs", "list_search", ["type", 3], ["amount", "add", -5]]]
+        },
+        {
+            "note": "骑射手类别木材费用减少调整, 统一 -10",
+            "unit_id": "all",
+            "search": [["class_", 36],
+                       ["id", "lte", 4000]],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", "add", -10]]]
+        },
+        {
+            "note": "步兵木材费用 -5",
+            "unit_id": "all",
+            "search": [["class_", 6],
+                       ["id", "lte", 4000]],
+            "attributes": [["creatable.resource_costs", "list_search", ["type", 1], ["amount", "add", -5]]]
+        }
+    ]
+}

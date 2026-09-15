@@ -115,8 +115,11 @@ void ByzantinesFreeMercenary(int playerId = -1, int Time = -1)
     int Progress = xsPlayerAttribute(playerId, cAttributeByzantinesMercenaryTimer);
     if (MinAge(playerId, CastleAge) == false)
         return;
-    Progress = minInt(Progress + 1, 300);
-    if (Progress >= 300)
+    int TimeRequired = 240;
+    if (isAge(playerId, ImperialAge))
+        TimeRequired = 180;
+    Progress = minInt(Progress + 1, TimeRequired);
+    if (Progress >= TimeRequired)
         if ((xsGetObjectCount(playerId, TownCenterID) > 0) && (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0))
         {
             int MercenaryID = xsGetRandomNumberMax(CivCount) + 1;
@@ -136,7 +139,7 @@ void ByzantinesFreeMercenary(int playerId = -1, int Time = -1)
                 UnitValue = UnitValue / 2;
             int MercenaryNum = MercenaryValue / UnitValue;
             SpawnUnit(playerId, MercenaryUnitID, TownCenterID, MercenaryNum, 1);
-            Progress = Progress - 300;
+            Progress = Progress - TimeRequired;
             SetResource(playerId, cAttributeByzantinesMercenaryCompensation, MercenaryValue - UnitValue * MercenaryNum);
         }
     SetResource(playerId, cAttributeByzantinesMercenaryTimer, Progress);

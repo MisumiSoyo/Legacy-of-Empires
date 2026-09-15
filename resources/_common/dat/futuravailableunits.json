@@ -27883,6 +27883,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Halberdier",
+                        "RequiredAge": 4,
+                        "ID": 429
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
@@ -27997,11 +28002,6 @@
                         "ID": 1372,
                         "Name": "Elite Steppe Lancer",
                         "RequiredAge": 4
-                    },
-                    {
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4,
-                        "ID": 1230
                     }
                 ]
             },
@@ -28370,6 +28370,17 @@
                         "ID": 909,
                         "Name": "Siphons",
                         "RequiredAge": 3
+                    },
+                    {
+                        "Name": "Arrowslits",
+                        "RequiredAge": 4,
+                        "ID": 608
+                    },
+                    {
+                        "Name": "Keep",
+                        "RequiredAge": 4,
+                        "RequiredTechID": 140,
+                        "ID": 63
                     }
                 ]
             },
@@ -28571,7 +28582,7 @@
                     },
                     {
                         "Name": "Mutual Trade",
-                        "RequiredAge": 3,
+                        "RequiredAge": 4,
                         "ID": 3155
                     },
                     {
@@ -28581,7 +28592,7 @@
                     },
                     {
                         "Name": "Pax Mongolica",
-                        "RequiredAge": 4,
+                        "RequiredAge": 3,
                         "ID": 3156
                     }
                 ],
@@ -28757,11 +28768,6 @@
                         "Name": "Scout Cavalry",
                         "RequiredAge": 2,
                         "ID": 448
-                    },
-                    {
-                        "Name": "Elite Keshik",
-                        "RequiredAge": 4,
-                        "ID": 1230
                     },
                     {
                         "Name": "Camel Rider",

@@ -216,6 +216,9 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, TwoManSawTechID);
             EnableTech(playerId, BombardCannonTechID);
             EnableTech(playerId, RingArcherArmorTechID);
+            EnableTech(playerId, HalberdierTechID);
+            EnableTech(playerId, KeepTechID);
+            EnableTech(playerId, ArrowslitsTechID);
             DisableTech(playerId, KnightTechID);
             DisableTech(playerId, CavalierTechID);
             break;

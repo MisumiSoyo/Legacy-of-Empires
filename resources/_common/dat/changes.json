@@ -1,4 +1,8 @@
 {
+    "includes":
+    [
+        "cost_changes.json"
+    ],
     "copy_from_old_datafile":
     {
         "unit_list":
@@ -8,8 +12,8 @@
                 "id": [692, 694]
             },
             {
-                "name": "大商站",
-                "id": [273]
+                "name": "大庄园",
+                "id": [1711, 1720, 1734]
             }
         ],
         "tech_list":
@@ -158,19 +162,28 @@
             "type": "add",
             "name": "马轭调整",
             "effect_id": 14,
-            "commands": [[5, 50, -1, 13, 1.05],
-                         [5, 1187, -1, 13, 1.05],
-                         [5, 214, -1, 13, 1.08],
-                         [5, 259, -1, 13, 1.08]]
+            "commands": [[5, 50, -1, 13, 1.1],
+                         [5, 1187, -1, 13, 1.1],
+                         [5, 214, -1, 13, 1.15],
+                         [5, 259, -1, 13, 1.15]]
         },
         {
             "type": "add",
             "name": "耕犁调整",
             "effect_id": 13,
-            "commands": [[5, 50, -1, 13, 1.05],
-                         [5, 1187, -1, 13, 1.05],
-                         [5, 214, -1, 13, 1.08],
-                         [5, 259, -1, 13, 1.08]]
+            "commands": [[5, 50, -1, 13, 1.1],
+                         [5, 1187, -1, 13, 1.1],
+                         [5, 214, -1, 13, 1.15],
+                         [5, 259, -1, 13, 1.15]]
+        },
+        {
+            "type": "add",
+            "name": "轮作调整",
+            "effect_id": 12,
+            "commands": [[5, 50, -1, 13, 1.1],
+                         [5, 1187, -1, 13, 1.1],
+                         [5, 214, -1, 13, 1.12],
+                         [5, 259, -1, 13, 1.12]]
         },
         {
             "type": "delete",
@@ -179,27 +192,10 @@
             "match": [4, "any", "any", 14, "any"]
         },
         {
-            "type": "modify",
-            "name": "耕犁增加的农田产量提升到 150",
-            "effect_id": 13,
-            "match": [1, 36, "any", "any", "any"],
-            "modifications": ["d", "set", 150]
-        },
-        {
-            "type": "add",
-            "name": "轮作调整",
-            "effect_id": 12,
-            "commands": [[5, 50, -1, 13, 1.05],
-                         [5, 1187, -1, 13, 1.05],
-                         [5, 214, -1, 13, 1.07],
-                         [5, 259, -1, 13, 1.07]]
-        },
-        {
-            "type": "modify",
-            "name": "轮作增加的农田产量提升到 225",
-            "effect_id": 12,
-            "match": [1, 36, "any", "any", "any"],
-            "modifications": ["d", "set", 225]
+            "type": "delete",
+            "name": "马轭, 耕犁, 轮作不再增加农田产量",
+            "effect_id": [12, 13, 14],
+            "match": [1, 36, "any", "any", "any"]
         },
         {
             "type": "modify",
@@ -601,13 +597,6 @@
         },
         {
             "type": "modify",
-            "name": "条顿农田减价调整",
-            "effect_id": 314,
-            "match": [5, "any", "any", 100, "any"],
-            "modifications": ["d", "set", 0.5]
-        },
-        {
-            "type": "modify",
             "name": "鞑靼牧羊人和牧民采集消耗调整",
             "effect_id": 741,
             "match": [6, 216, "any", "any", "any"],
@@ -686,10 +675,18 @@
         },
         {
             "type": "modify",
-            "name": "波兰大庄园立即收集的食物增加到 12%",
-            "effect_id": [12, 13, 14],
+            "name": "波兰大庄园立即收集的食物改为 30",
+            "effect_id": 816,
             "match": [1, 237, "any", "any", "any"],
-            "modifications": ["d", "set", 0.12]
+            "modifications": [["b", "set", -1],
+                              ["c", "set", -1],
+                              ["d", "set", 30]]
+        },
+        {
+            "type": "delete",
+            "name": "农田科技不再影响大庄园",
+            "effect_id": [12, 13, 14],
+            "match": ["any", 237, "any", "any", "any"]
         },
         {
             "type": "delete",
@@ -913,6 +910,101 @@
             "effect_id": [67, 68, 74, 75, 76, 77, 80, 81, 82, 192, 193, 194, 202, 203, 208, 3004],
             "function_id": 10133,
             "skip_duplicate": true
+        },
+        {
+            "type": "modify",
+            "name": "哥特猎人采集加成调整",
+            "effect_id": 414,
+            "match": [6, 268, "any", "any", "any"],
+            "modifications": ["d", "set", 1.492537]
+        },
+        {
+            "type": "modify",
+            "name": "哥特猎人采集加成调整",
+            "effect_id": 414,
+            "match": [5, "any", -1, 13, "any"],
+            "modifications": ["d", "set", 0.67]
+        },
+        {
+            "type": "delete",
+            "name": "马来养鱼场无限食物加成移除",
+            "effect_id": 677,
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "adjustment",
+            "name": "磨坊农田科技",
+            "effect_id": [12, 13, 14],
+            "function_id": 10134
+        },
+        {
+            "type": "delete",
+            "name": "中国原有团队加成移除",
+            "effect_id": 402,
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "add",
+            "name": "中国新团队加成, 农田建造费用减免",
+            "effect_id": 402,
+            "commands": [[5, 50, -1, 100, 0.9],
+                         [5, 1187, -1, 100, 0.9]]
+        },
+        {
+            "type": "delete",
+            "name": "日本封建时代起的渔船工作效率加成移除",
+            "effect_id": [434, 435, 436],
+            "match": ["any", "any", "any", "any", "any"]
+        },
+        {
+            "type": "modify",
+            "name": "日本渔船工作效率加成提升到 15%",
+            "effect_id": 306,
+            "match": [5, -1, 21, 13, "any"],
+            "modifications": ["d", "set", 1.15]
+        },
+        {
+            "type": "adjustment",
+            "name": "剑士额外效果",
+            "effect_id": 211,
+            "function_id": 10135
+        },
+        {
+            "type": "adjustment",
+            "name": "长剑士额外效果",
+            "effect_id": 182,
+            "function_id": 10136
+        },
+        {
+            "type": "adjustment",
+            "name": "双手剑士额外效果",
+            "effect_id": 206,
+            "function_id": 10137
+        },
+        {
+            "type": "adjustment",
+            "name": "冠军剑士额外效果",
+            "effect_id": 252,
+            "function_id": 10138
+        },
+        {
+            "type": "adjustment",
+            "name": "长枪兵额外效果",
+            "effect_id": 190,
+            "function_id": 10139
+        },
+        {
+            "type": "adjustment",
+            "name": "长戟兵额外效果",
+            "effect_id": 189,
+            "function_id": 10140
+        },
+        {
+            "type": "modify",
+            "name": "土耳其火药科技免费升级",
+            "effect_id": 263,
+            "match": [101, "any", "any", 2, "any"],
+            "modifications": ["d", "set", 0]
         }
     ],
     "unit_changes":
@@ -1112,6 +1204,12 @@
                            ["type_50.armours", "list_search", ["class_", 4], ["amount", 2]],
                            ["type_50.displayed_melee_armour", 2],
                            ["creatable.displayed_pierce_armour", 2]]
+        },
+        {
+            "note": "村民基础移动速度提升",
+            "unit_id": "all",
+            "search": ["class_", 4],
+            "attributes": [["speed", 0.9]]
         }
     ],
     "tech_changes":
@@ -1151,12 +1249,6 @@
             "note": "印加军事单位食物费用减免调整",
             "tech_id": 155,
             "attributes": [["effect_id", 3414]]
-        },
-        {
-            "note": "保加利亚马镫科技调整",
-            "tech_id": 685,
-            "attributes": [["research_locations[0].research_time", 45],
-                           ["resource_costs", "list_search", ["type", 3], ["amount", 325]]]
         },
         {
             "note": "象轿改为城堡时代科技",
@@ -1220,6 +1312,16 @@
             "note": "葡萄牙原有启用大商站科技禁用",
             "tech_id": 570,
             "attributes": [["required_tech_count", 3]]
+        },
+        {
+            "note": "不列颠城镇中心费用减免开局生效",
+            "tech_id": 381,
+            "attributes": [["required_tech_count", 0]]
+        },
+        {
+            "note": "中国原有团队加成科技移除",
+            "tech_id": 232,
+            "attributes": [["effect_id", -1]]
         }
     ],
     "resource_changes":
@@ -1238,6 +1340,11 @@
             "note": "LOE 毛驴产出 50% 的食物",
             "resource_id": 748,
             "num": 0.5
+        },
+        {
+            "note": "农田, 养鱼场无限食物",
+            "resource_id": [36, 88],
+            "num": 1e+37
         }
     ]
 }
