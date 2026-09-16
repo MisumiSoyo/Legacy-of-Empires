@@ -42562,6 +42562,11 @@
                         "RequiredAge": 2
                     },
                     {
+                        "Name": "Gambesons",
+                        "RequiredAge": 3,
+                        "ID": 875
+                    },
+                    {
                         "Name": "Siege Training",
                         "RequiredAge": 3,
                         "ID": 3024
@@ -42607,6 +42612,11 @@
                         "ID": 359,
                         "Name": "Halberdier",
                         "RequiredAge": 4
+                    },
+                    {
+                        "Name": "Petard",
+                        "RequiredAge": 2,
+                        "ID": 440
                     }
                 ]
             },

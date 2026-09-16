@@ -23,7 +23,7 @@ void FranksLoan(int playerId = -1, int Time = 0)
 void KoreansMineral(int playerId = -1, int Time = -1)
 {
     float TotalMineCount = xsPlayerAttribute(playerId, cAttributeGoldTotal) + xsPlayerAttribute(playerId, cAttributeStoneTotal);
-    ModResource(playerId, cAttributeGold, minFloat(TotalMineCount/ 1980.0, 2.5));
+    ModResource(playerId, cAttributeGold, minFloat(TotalMineCount/ 1980.0, 3.0));
 }
 
 
@@ -40,9 +40,9 @@ void MalayFreeArmy(int playerId = -1, int Time = -1)
     }
     int TimeRequired = 120;
     if (Age == CastleAge)
-        TimeRequired = 105;
-    if (Age == ImperialAge)
         TimeRequired = 90;
+    if (Age == ImperialAge)
+        TimeRequired = 60;
     MalayArmyTimer = minFloat(MalayArmyTimer + 1.0 / TimeRequired, 5.0);
     SetResource(playerId, cAttributeMalayArmyTimer, MalayArmyTimer);
 }
@@ -51,7 +51,7 @@ void MalayFreeArmy(int playerId = -1, int Time = -1)
 void MuiscaFreeWood(int playerId = -1, int Time = -1)
 {
     if ((Time > 0) && (Time % 360 == 0) && (Time <= 3600))
-        ModResource(playerId, cAttributeWoodGeneration, 36);
+        ModResource(playerId, cAttributeWoodGeneration, 48);
 }
 
 
@@ -91,7 +91,7 @@ void VikingsDeathBonus(int playerId = -1, int Time = -1)
 void LithuniansPopulationGold(int playerId = -1, int Time = -1)
 {
     float PopulationCap = xsPlayerAttribute(playerId, cAttributePopulationCap) + xsPlayerAttribute(playerId, cAttributePopulation);
-    ModResource(playerId, cAttributeGold, PopulationCap / 5.0 * 3.0 / 60.0);
+    ModResource(playerId, cAttributeGold, PopulationCap / 5.0 * 4.0 / 60.0);
 }
 
 
@@ -167,19 +167,19 @@ void AztecsFreeArmy(int playerId = -1, int Time = -1)
 {
     int CountedDeath = xsPlayerAttribute(playerId, cAttributeAztecsCountedDeath);
     int TotalDeath = xsPlayerAttribute(playerId, cAttributeKilledByOthers);
-    if (TotalDeath / 15 > CountedDeath / 15)
-        if (CountedDeath < 150)
+    if (TotalDeath / 12 > CountedDeath / 12)
+        if (CountedDeath < 120)
             SpawnUnit(playerId, MaleVillagerID, TownCenterID, 1, 1);
     SetResource(playerId, cAttributeAztecsCountedDeath, TotalDeath);
 
     if (MinAge(playerId, FeudalAge) == false)
         return;
-    int FreeArmyTimer = minInt(xsPlayerAttribute(playerId, cAttributeAztecsArmyTimer) + 1, 120);
-    if (FreeArmyTimer >= 120)
+    int FreeArmyTimer = minInt(xsPlayerAttribute(playerId, cAttributeAztecsArmyTimer) + 1, 90);
+    if (FreeArmyTimer >= 90)
         if (xsPlayerAttribute(playerId, cAttributePopulationCap) > 0)
         {
             SpawnUnit(playerId, JaguarWarriorID, TownCenterID, minInt(TotalDeath / 15, 10), 1);
-            FreeArmyTimer = FreeArmyTimer - 120;
+            FreeArmyTimer = FreeArmyTimer - 90;
         }
     SetResource(playerId, cAttributeAztecsArmyTimer, FreeArmyTimer);
 }
@@ -209,7 +209,7 @@ void TatarsFreeScoutAndCA(int playerId = -1, int Time = -1)
     int Timer = minInt(xsPlayerAttribute(playerId, cAttributeTatarsScoutTimer) + 1, 240);
     if (Timer >= 240)
     {
-        SpawnUnit(playerId, ScoutCavalryID, StableID, 1, 5);
+        SpawnUnit(playerId, ScoutCavalryID, StableID, 1, 6);
         Timer = Timer - 240;
     }
     SetResource(playerId, cAttributeTatarsScoutTimer, Timer);
@@ -217,7 +217,7 @@ void TatarsFreeScoutAndCA(int playerId = -1, int Time = -1)
     Timer = minInt(xsPlayerAttribute(playerId, cAttributeTatarsCATimer) + 1, 300);
     if (Timer >= 300)
     {
-        SpawnUnit(playerId, CavalryArcherID, ArcheryRangeID, 1, 5);
+        SpawnUnit(playerId, CavalryArcherID, ArcheryRangeID, 1, 6);
         Timer = Timer - 300;
     }
     SetResource(playerId, cAttributeTatarsCATimer, Timer);
@@ -232,7 +232,7 @@ void BulgariansFreeArmy(int playerId = -1, int Time = -1)
     int ArmyType = xsPlayerAttribute(playerId, LoeAttrBulgariansArmyType);
     int TotalMilitaryCount = xsPlayerAttribute(playerId, LoeAttrTotalMilitaryOwned) - xsPlayerAttribute(playerId, LoeAttrBulgariansArmyFlag);
 
-    if (TotalMilitaryCount >= (20 + 2 * ArmyCount) * (ArmyCount + 1))
+    if (TotalMilitaryCount >= (20 + ArmyCount) * (ArmyCount + 1))
     {
         if (ArmyType == 0)
         {

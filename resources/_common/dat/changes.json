@@ -162,28 +162,28 @@
             "type": "add",
             "name": "马轭调整",
             "effect_id": 14,
-            "commands": [[5, 50, -1, 13, 1.1],
-                         [5, 1187, -1, 13, 1.1],
-                         [5, 214, -1, 13, 1.15],
-                         [5, 259, -1, 13, 1.15]]
+            "commands": [[5, 50, -1, 13, 1.07],
+                         [5, 1187, -1, 13, 1.07],
+                         [5, 214, -1, 13, 1.1],
+                         [5, 259, -1, 13, 1.1]]
         },
         {
             "type": "add",
             "name": "耕犁调整",
             "effect_id": 13,
-            "commands": [[5, 50, -1, 13, 1.1],
-                         [5, 1187, -1, 13, 1.1],
-                         [5, 214, -1, 13, 1.15],
-                         [5, 259, -1, 13, 1.15]]
+            "commands": [[5, 50, -1, 13, 1.07],
+                         [5, 1187, -1, 13, 1.07],
+                         [5, 214, -1, 13, 1.1],
+                         [5, 259, -1, 13, 1.1]]
         },
         {
             "type": "add",
             "name": "轮作调整",
             "effect_id": 12,
-            "commands": [[5, 50, -1, 13, 1.1],
-                         [5, 1187, -1, 13, 1.1],
-                         [5, 214, -1, 13, 1.12],
-                         [5, 259, -1, 13, 1.12]]
+            "commands": [[5, 50, -1, 13, 1.07],
+                         [5, 1187, -1, 13, 1.07],
+                         [5, 214, -1, 13, 1.09],
+                         [5, 259, -1, 13, 1.09]]
         },
         {
             "type": "delete",
@@ -219,12 +219,11 @@
             "modifications": ["d", "set", 8.333333333333]
         },
         {
-            "type": "add",
+            "type": "modify",
             "name": "波斯步弓手",
             "effect_id": 543,
-            "commands": [[4, 4, -1, 104, 25],
-                         [4, 24, -1, 104, 25],
-                         [4, 492, -1, 104, 25]]
+            "match": [4, "any", -1, 104, "any"],
+            "modifications": ["d", "set", 40]
         },
         {
             "type": "adjustment",
@@ -1005,6 +1004,40 @@
             "effect_id": 263,
             "match": [101, "any", "any", 2, "any"],
             "modifications": ["d", "set", 0]
+        },
+        {
+            "type": "modify",
+            "name": "意大利渔船减费调整",
+            "effect_id": 10,
+            "match": [5, 13, "any", "any", "any"],
+            "modifications": ["d", "set", 0.8]
+        },
+        {
+            "type": "delete",
+            "name": "印加建筑石料费用减免对第一个TC生效",
+            "effect_id": 575,
+            "match": [5, "any", -1, 106, "any"]
+        },
+        {
+            "type": "modify",
+            "name": "马里建筑费用减免调整",
+            "effect_id": 617,
+            "match": [5, -1, "any", 104, "any"],
+            "modifications": ["d", "set", 0.8]
+        },
+        {
+            "type": "modify",
+            "name": "波兰村民生命回复调整",
+            "effect_id": 815,
+            "match": [4, -1, 4, 109, "any"],
+            "modifications": ["d", "set", 15]
+        },
+        {
+            "type": "modify",
+            "name": "瞿折罗牲畜食物产出增加",
+            "effect_id": 871,
+            "match": [1, 254, "any", -1, "any"],
+            "modifications": ["d", "set", 25]
         }
     ],
     "unit_changes":
@@ -1036,11 +1069,6 @@
             "note": "冠军剑士生命值加强",
             "unit_id": 567,
             "attributes": [["hit_points", 75]]
-        },
-        {
-            "note": "牧民工作效率改动",
-            "unit_id": [1891, 1892],
-            "attributes": [["bird.work_rate", 0.44]]
         },
         {
             "note": "牧场价格改动",
@@ -1210,6 +1238,11 @@
             "unit_id": "all",
             "search": ["class_", 4],
             "attributes": [["speed", 0.9]]
+        },
+        {
+            "note": "立陶宛城镇中心提供的食物增加",
+            "unit_id": 888,
+            "attributes": [["resource_storages", "list_search", ["type", 0], ["amount", 125]]]
         }
     ],
     "tech_changes":
@@ -1304,24 +1337,59 @@
             "attributes": [["required_techs", [103, 192, 3195, -1, -1, -1]]]
         },
         {
-            "note": "保加利亚城镇中心减费在开局即可获得",
-            "tech_id": 694,
-            "attributes": [["required_tech_count", 0]]
-        },
-        {
             "note": "葡萄牙原有启用大商站科技禁用",
             "tech_id": 570,
             "attributes": [["required_tech_count", 3]]
         },
         {
-            "note": "不列颠城镇中心费用减免开局生效",
-            "tech_id": 381,
+            "note": "保加利亚/不列颠/印加/马里城镇中心费用减免开局生效",
+            "tech_id": [381, 694, 158, 156],
             "attributes": [["required_tech_count", 0]]
         },
         {
             "note": "中国原有团队加成科技移除",
             "tech_id": 232,
             "attributes": [["effect_id", -1]]
+        },
+        {
+            "note": "印加建筑石料费用减免开局生效",
+            "tech_id": 158,
+            "attributes": [["required_tech_count", 0]]
+        },
+        {
+            "note": "印加铁匠铺科技对村民立刻生效",
+            "tech_id": 474,
+            "attributes": [["required_techs", [67, -1, -1, -1, -1, -1]]]
+        },
+        {
+            "note": "印加铁匠铺科技对村民立刻生效",
+            "tech_id": 475,
+            "attributes": [["required_techs", [68, -1, -1, -1, -1, -1]]]
+        },
+        {
+            "note": "印加铁匠铺科技对村民立刻生效",
+            "tech_id": 476,
+            "attributes": [["required_techs", [75, -1, -1, -1, -1, -1]]]
+        },
+        {
+            "note": "印加铁匠铺科技对村民立刻生效",
+            "tech_id": 477,
+            "attributes": [["required_techs", [74, -1, -1, -1, -1, -1]]]
+        },
+        {
+            "note": "印加铁匠铺科技对村民立刻生效",
+            "tech_id": 478,
+            "attributes": [["required_techs", [76, -1, -1, -1, -1, -1]]]
+        },
+        {
+            "note": "印加铁匠铺科技对村民立刻生效",
+            "tech_id": 479,
+            "attributes": [["required_techs", [77, -1, -1, -1, -1, -1]]]
+        },
+        {
+            "note": "印加铁匠铺科技对村民立刻生效",
+            "tech_id": [474, 475, 476, 477, 478, 479],
+            "attributes": [["required_tech_count", 1]]
         }
     ],
     "resource_changes":

@@ -1,0 +1,15 @@
+{
+   "DefConsts": [
+      {
+         "Name": "jump-end-of-file",
+         "Hint": "When used with jump-rule this will jump to the end of the file",
+         "Value": 10000
+      }
+   ],
+   "Defines": [
+      {
+         "Name": "Legacy of Empires",
+         "Hint": "Defines the Legacy of Empires mod as the game mode."
+      }
+   ]
+}

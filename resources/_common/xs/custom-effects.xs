@@ -15,9 +15,9 @@ void EffectFunction10002(int playerId = -1)
     xsTask(FemaleLumberjackID, cTaskTypeGenerateResources, cTreeClass, playerId);
     xsResetTaskAmount();
     if (isResearched(playerId, GrandTrunkRoadTechID))
-        ModResource(playerId, cAttributeForestryProductivity, 2.2 * 1.1);
+        ModResource(playerId, cAttributeForestryProductivity, 2.475 * 1.1);
     else
-        ModResource(playerId, cAttributeForestryProductivity, 2.2);
+        ModResource(playerId, cAttributeForestryProductivity, 2.475);
 }
 
 
@@ -764,9 +764,9 @@ void EffectFunction10041(int playerId = -1)
 void EffectFunction10042(int playerId = -1)
 {
     int ArmyCount = xsPlayerAttribute(playerId, cAttributeMilitaryPopulation);
-    ModResource(playerId, cAttributeFood, ArmyCount * 5);
-    ModResource(playerId, cAttributeWood, ArmyCount * 5);
-    ModResource(playerId, cAttributeGold, ArmyCount * 5);
+    ModResource(playerId, cAttributeFood, ArmyCount * 7);
+    ModResource(playerId, cAttributeWood, ArmyCount * 7);
+    ModResource(playerId, cAttributeGold, ArmyCount * 7);
 }
 
 
@@ -833,7 +833,7 @@ void EffectFunction10045(int playerId = -1)
     xsTask(FarmID, cTaskTypeGenerateResources, -1, playerId);
     xsTask(RiceFarmID, cTaskTypeGenerateResources, -1, playerId);
     xsResetTaskAmount();
-    xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 20.0 / 6, playerId);
+    xsEffectAmount(cModResource, cAttributeFarmFoodGenerateProductivity, 0, 4.0, playerId);
 }
 
 
@@ -1068,13 +1068,18 @@ void EffectFunction10071(int playerId = -1)
 }
 
 
-//  10072 - Meng'an Mouke
+//  10072 - Woven Talismans
 void EffectFunction10072(int playerId = -1)
 {
     xsResetTaskAmount();
-    xsTaskAmount(cTaskAttrWorkValue1, ConscriptedArmy2ID);
-    xsTaskAmount(cTaskAttrWorkValue2, 3);
-    xsTask(ConscriptedArmyID, cTaskTypeExtraSpawn, -1, playerId);
+    xsTaskAmount(cTaskAttrSearchWaitTime, 0.000028);
+    xsTaskAmount(cTaskAttrWorkValue1, 1);
+    xsTaskAmount(cTaskAttrWorkRange, 0);
+    xsTaskAmount(cTaskAttrResourceOut, cAttributeFood);
+    xsTaskAmount(cTaskAttrCombatLevelFlag, 1);
+    xsTask(SpearmanID, cTaskTypeRefund, -1, playerId);
+    xsTask(PikemanID, cTaskTypeRefund, -1, playerId);
+    xsTask(HalberdierID, cTaskTypeRefund, -1, playerId);
     xsResetTaskAmount();
 }
 
@@ -1445,7 +1450,7 @@ include "timer.xs";
 void main()
 {
     xsChatData("Mod: Legacy of Empires");
-    xsChatData("Patch: 381  2026.09.15");
+    xsChatData("Patch: 382  2026.09.16");
     xsChatData("Author: Misumi Soyo");
     xsChatData("Please ensure that the [Graphics] Legacy of Empires mod is enabled.");
 

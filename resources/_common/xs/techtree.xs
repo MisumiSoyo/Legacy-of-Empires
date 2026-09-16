@@ -507,6 +507,7 @@ void EffectFunction10001(int playerId = -1)
             EnableTech(playerId, CropRotationTechID);
             EnableTech(playerId, ShipwrightTechID);
             EnableTech(playerId, HoardingsTechID);
+            EnableTech(playerId, GambesonsTechID);
             break;
         }
         case cDravidians:

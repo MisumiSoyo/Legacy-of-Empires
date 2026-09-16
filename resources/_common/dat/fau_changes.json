@@ -1080,8 +1080,8 @@
             "RequiredAge": 4
         },
         {
-            "note": "中国, 吴, 魏, 波兰, 意大利, 土耳其启用软甲",
-            "civilizations": ["Chinese", "Wu", "Wei", "Poles", "Italians", "Turks"],
+            "note": "中国, 吴, 魏, 波兰, 意大利, 土耳其, 波希米亚启用软甲",
+            "civilizations": ["Chinese", "Wu", "Wei", "Poles", "Italians", "Turks", "Bohemians"],
             "tech_id": 875,
             "building_id": 12,
             "Name": "Gambesons",
@@ -2717,6 +2717,14 @@
             "building_id": 1021,
             "Name": "Paladin",
             "RequiredAge": 4
+        },
+        {
+            "note": "波希米亚兵营爆破兵",
+            "civilizations": "Bohemians",
+            "unit_id": 440,
+            "building_id": 12,
+            "Name": "Petard",
+            "RequiredAge": 2
         }
     ]
 }
